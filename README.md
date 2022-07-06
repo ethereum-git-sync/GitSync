@@ -10,3 +10,8 @@ ethereum/PM
 ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM
 ```
+
+Current Hosts:
+```
+Gitea: https://gitea.com/ethereum-git-sync
+       https://gitea.com/tweth

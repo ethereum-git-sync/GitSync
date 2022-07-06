@@ -1,0 +1,6 @@
+# Ignore non bin directories
+/bin/deprecated
+
+# Ignore unnecessary scripts
+/bin/get_repos.sh
+/bin/issue.sh

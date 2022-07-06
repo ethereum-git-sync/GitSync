@@ -65,7 +65,7 @@ sudo apt update
 sudo apt install gh
 ```
 
-From there, you must log into a GitHub account with access rights to the synced repos using the command ```gh auth login```. This process requires a personal access token to be completed. One must be generated on the GitHub web client under the account you are attempting to log into. The necessary scope for the token is listed below, as well as a link to the page to create one. 
+From there, you must log into a GitHub account with access rights to the synced repos using the command ```gh auth login```. The following shows the dialog and necessary input following this command. 
 
 ```
 $ gh auth login
@@ -75,3 +75,5 @@ $ gh auth login
 Tip: you can generate a Personal Access Token here https://github.com/settings/tokens
 The minimum required scopes are 'repo', 'read:org', 'workflow'.
 ```
+
+This process requires a personal access token to be completed. One must be generated on the GitHub web client under the account you are attempting to log into. The necessary scope for the token is listed above, as well as a link to the page to create one. 

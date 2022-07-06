@@ -35,7 +35,7 @@ If one does not exist, create one
 
 ```touch ~/.ssh/config```
 
-The contents of the config file should be as shown...
+The contents of the config file should be as shown:
 ```
 Host github.com
 	User git
@@ -52,3 +52,26 @@ Host gitea.com
 	IdentityFile ~/.ssh/SSH_KEY
 ```
 SSH_KEY is to be replaced with your own private keys that corrispond to the public keys attached to the GitHub/Gitea/etc. accounts being used in the syncing scripts. 
+
+# GitHub Credentials
+
+The GitHub cli is necessary for gaining access to issues in the synced repos, as issues are not a native feature of git.
+Installation for Ubuntu (verified using 20.04.2 LTS):
+```
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install gh
+```
+
+From there, you must log into a GitHub account with access rights to the synced repos using the command ```gh auth login```. This process requires a personal access token to be completed. One must be generated on the GitHub web client under the account you are attempting to log into. The necessary scope for the token is listed below, as well as a link to the page to create one. 
+
+```
+$ gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? HTTPS
+? How would you like to authenticate GitHub CLI? Paste an authentication token
+Tip: you can generate a Personal Access Token here https://github.com/settings/tokens
+The minimum required scopes are 'repo', 'read:org', 'workflow'.
+```

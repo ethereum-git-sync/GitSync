@@ -27,13 +27,7 @@ Gitea: https://gitea.com/ethereum-git-sync
 
 Upon accessing the server terminal, verify that an SSH config file exists. 
 
-It can be found at 
-
-```~/.ssh/config```
-
-If one does not exist, create one
-
-```touch ~/.ssh/config```
+It can be found at ```~/.ssh/config```. If one does not exist, create one using ```touch ~/.ssh/config```
 
 The contents of the config file should be as shown:
 ```
@@ -51,7 +45,11 @@ Host gitea.com
         IdentitiesOnly yes
 	IdentityFile ~/.ssh/SSH_KEY
 ```
-SSH_KEY is to be replaced with your own private keys that corrispond to the public keys attached to the GitHub/Gitea/etc. accounts being used in the syncing scripts. 
+SSH_KEY is to be replaced with your own private keys that corrispond to public keys attached to the GitHub/Gitea/etc accounts being used in the syncing scripts. A public key can be added at...
+
+GitHub: https://github.com/settings/keys
+
+Gitea: https://gitea.com/user/settings/keys
 
 # GitHub Credentials
 
@@ -76,4 +74,4 @@ Tip: you can generate a Personal Access Token here https://github.com/settings/t
 The minimum required scopes are 'repo', 'read:org', 'workflow'.
 ```
 
-The user is then prompted for a personal access token. The token is necessary for the login process to complete. One must be generated on the GitHub web client under the account you are attempting to log into. The necessary scope for the token is listed above, as well as a link to the page to create one. 
+The user is then prompted for a personal access token. The token is necessary for the login process to complete. One must be generated on the GitHub web client at https://github.com/settings/tokens. The necessary permissions are 'repo', 'read:org', and 'workflow'.

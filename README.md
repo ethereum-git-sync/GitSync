@@ -21,9 +21,9 @@ Gitea: https://gitea.com/ethereum-git-sync
        https://gitea.com/tweth
 ```
 
-# Server Set-up
+## Server Set-up
 
-# SSH Config
+### SSH Config
 
 Upon accessing the server terminal, verify that an SSH config file exists. 
 
@@ -51,7 +51,7 @@ GitHub: https://github.com/settings/keys
 
 Gitea: https://gitea.com/user/settings/keys
 
-# GitHub Credentials
+### GitHub Credentials
 
 The GitHub cli is necessary for gaining access to issues in the synced repos, as issues are not a native feature of git.
 Installation for Ubuntu (verified using 20.04.2 LTS):

@@ -53,7 +53,7 @@ Gitea: https://gitea.com/user/settings/keys
 
 ### GitHub Credentials
 
-The GitHub cli is necessary for gaining access to issues in the synced repos, as issues are not a native feature of git.
+The GitHub CLI is necessary for gaining access to issues in the synced repos, as issues are not a native feature of git.
 Installation for Ubuntu (verified using 20.04.2 LTS):
 ```
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
@@ -75,3 +75,19 @@ The minimum required scopes are 'repo', 'read:org', 'workflow'.
 ```
 
 The user is then prompted for a personal access token. The token is necessary for the login process to complete. One must be generated on the GitHub web client at https://github.com/settings/tokens. The necessary permissions are 'repo', 'read:org', and 'workflow'.
+
+### Automation
+
+Script usage is automated via a cronjob. To edit currently running cronjobs, use the command ```crontab -e``` From there, the following job must be added:
+
+```
+0 * * * * /usr/bin/bash /home/ubuntu/bin/init.sh >> /home/ubuntu/log/gitsync.log 2>&1
+```
+
+This job will run the main script ```init.sh```, which handles the rest of the scripts. Both standard and error output from the scripts are posted to a log file ```gitsync.log```.
+
+### Scripts
+
+```init.sh``` - The main script responsible for executing the other scripts. It is the only one that should be interacted with by the user, either manually or through automation. It is responsible for reading input from a file containing the names of repos that must be maintained, and delegating other scripts to handle repo mirroring and extraction of issue/PR data. 
+
+```sync.sh``` - The script responsible for mirroring repos across multiple git hosting services. It reads in the name of a GitHub repo and distributes the repo to other hosts.

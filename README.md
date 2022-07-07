@@ -84,7 +84,7 @@ Script usage is automated via a cronjob. To edit currently running cronjobs, use
 0 * * * * /usr/bin/bash /home/ubuntu/bin/init.sh >> /home/ubuntu/log/gitsync.log 2>&1
 ```
 
-This job will run the main script ```init.sh```, which handles the rest of the scripts. Both standard and error output from the scripts are posted to a log file ```gitsync.log```.
+This job will run the main script ```init.sh```, which handles the rest of the scripts. Both standard and error output from the scripts are posted to a log file ```gitsync.log```. This job is set to run hourly; it can and should be edited to match a desired frequency.
 
 ### Scripts
 

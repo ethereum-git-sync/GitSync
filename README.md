@@ -91,3 +91,5 @@ This job will run the main script ```init.sh```, which handles the rest of the s
 ```init.sh``` - The main script responsible for executing the other scripts. It is the only one that should be interacted with by the user, either manually or through automation. It is responsible for reading input from a file containing the names of repos that must be maintained, and delegating other scripts to handle repo mirroring and extraction of issue/PR data. 
 
 ```sync.sh``` - The script responsible for mirroring repos across multiple git hosting services. It reads in the name of a GitHub repo and distributes the repo to other hosts.
+
+```issue.sh``` - The script responsible for pulling issue data from GitHub for a given synced repo and archiving it. 

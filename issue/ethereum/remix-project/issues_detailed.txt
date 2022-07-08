@@ -1,0 +1,1271 @@
+2597	OPEN	implement ts plugin api in core plugins	enhancement	2022-07-08 08:20:44 +0000 UTC
+2593	OPEN	Add an icon to reload localhost workspace		2022-07-07 13:52:40 +0000 UTC
+2589	OPEN	Solidity `console.log` handlers are not ABI-compliant		2022-07-06 19:45:21 +0000 UTC
+2587	OPEN	update environment documentation according to latest additions		2022-07-06 06:42:39 +0000 UTC
+2580	OPEN	Explore @openzeppelin/wizard for workspace templates	enhancement, workspace templates	2022-07-04 07:10:24 +0000 UTC
+2578	OPEN	Password prompt stalls deployment process		2022-07-05 08:34:01 +0000 UTC
+2576	OPEN	Kickoff the discussion of CYFS integration		2022-06-29 22:46:11 +0000 UTC
+2573	OPEN	At Address should be disabled when the input is empty	bug, UI, UX	2022-06-27 16:18:26 +0000 UTC
+2572	OPEN	Udapp provider connections are not closed		2022-06-27 14:27:43 +0000 UTC
+2568	OPEN	editor slices long error or warning	UI, editor	2022-06-23 13:12:01 +0000 UTC
+2564	OPEN	Running mocha tests having contract deployment creates an instance in UDapp plugin	discussion	2022-06-27 14:11:09 +0000 UTC
+2563	OPEN	improve interaction with contract loaded using At Address		2022-06-23 04:58:15 +0000 UTC
+2562	CLOSED	show passed mocha tests in green		2022-06-24 13:05:19 +0000 UTC
+2561	OPEN	show colours in terminal for interaction with contracts	UI, UX, discussion	2022-06-22 08:40:55 +0000 UTC
+2560	CLOSED	tooltip got sliced		2022-06-24 12:45:52 +0000 UTC
+2559	OPEN	merge tx value and unit textboxes	UX, discussion	2022-06-22 08:22:50 +0000 UTC
+2558	OPEN	console.log shows error in terminal	Terminal	2022-06-22 08:18:43 +0000 UTC
+2555	CLOSED	Remove Embark plugin folder		2022-06-24 13:23:22 +0000 UTC
+2552	OPEN	DEPLOY & RUN TRANSACTIONS is missing		2022-06-29 14:44:02 +0000 UTC
+2550	OPEN	Cannot attach to Yul-compiled contract via "At Address" button		2022-06-20 22:01:13 +0000 UTC
+2548	OPEN	All files gone		2022-06-26 00:00:50 +0000 UTC
+2544	CLOSED	Deploy & Run: the contract select box is not needed when there are no contracts compiled	UI, discussion	2022-07-04 13:14:05 +0000 UTC
+2543	CLOSED	Deploy & Run: x icon to the right of blank contract select box has no use	UI	2022-06-21 21:18:47 +0000 UTC
+2542	CLOSED	When switching between and ABI and a sol file, the contract select box disappears	bug, discussion	2022-07-07 07:59:50 +0000 UTC
+2541	CLOSED	Remove the docs directory from remix-project		2022-06-20 14:27:38 +0000 UTC
+2539	OPEN	solc gas output different from remix		2022-07-07 16:14:50 +0000 UTC
+2538	CLOSED	Udapp: 1st instance is not evenly spaced (vertically)	UI	2022-07-05 11:31:40 +0000 UTC
+2535	OPEN	Easier encoding of arrays/structs of basic types in the deploy sidebar		2022-06-15 02:25:29 +0000 UTC
+2534	OPEN	Main scrollbar doesn't work		2022-06-14 21:36:28 +0000 UTC
+2533	OPEN	Can't move a file to another folder???		2022-07-03 08:53:37 +0000 UTC
+2529	OPEN	Source location not available while debugging		2022-06-13 13:05:10 +0000 UTC
+2528	CLOSED	Js		2022-06-13 05:45:44 +0000 UTC
+2527	CLOSED	Transfer		2022-06-13 05:45:43 +0000 UTC
+2526	CLOSED	> https://metamask.app.link/send/0xc081d461F18550B4CAf92Be14339A0e1dA29AF9C@3?value=1.0001010001e28		2022-06-13 05:45:43 +0000 UTC
+2525	CLOSED	Received		2022-06-13 05:45:43 +0000 UTC
+2524	CLOSED	Ok.		2022-06-09 15:25:04 +0000 UTC
+2523	CLOSED	import json import os import sys import asyncio import pathlib import websockets import concurrent.futures import logging from vosk import Model, KaldiRecognizer # Enable loging if needed # # logger = logging.getLogger('websockets') # logger.setLevel(logging.INFO) # logger.addHandler(logging.StreamHandler()) vosk_interface = os.environ.get('VOSK_SERVER_INTERFACE', '0.0.0.0') vosk_port = int(os.environ.get('VOSK_SERVER_PORT', 270 # pool = concurrent.futures.ThreadPoolExecutor(initializer=thread_init) model = Model(vosk_model_path) pool = concurrent.futures.ThreadPoolExecutor(     rec = None     word_list = None     sample_rate = vosk_sample_rate     while True:         message = await websocket.recv()         # Load configuration if provided		2022-06-09 15:25:03 +0000 UTC
+2520	CLOSED	The pool's implementation contract is replaced with one that does not allow transfers or other state changes. The pool's implementation contract is replaced with one that does not allow transfers or other state changes.		2022-06-09 15:25:03 +0000 UTC
+2516	CLOSED	Good		2022-06-09 09:15:33 +0000 UTC
+2515	CLOSED	Calling		2022-06-09 09:15:33 +0000 UTC
+2514	CLOSED	Credit		2022-06-09 09:15:33 +0000 UTC
+2513	CLOSED	Clearly love the time over here due to where I work in		2022-06-09 09:15:33 +0000 UTC
+2512	CLOSED	Remixd name: remixd Remixd or RemixD	UX	2022-06-08 15:57:10 +0000 UTC
+2508	CLOSED	Why isn't the openzeppelin library loaded automatically now?		2022-06-21 02:06:15 +0000 UTC
+2507	CLOSED	https://github.com/trezor/connect/blob/getAccountInfo-response-type/scripts/protobuf-patches.js		2022-06-08 06:36:13 +0000 UTC
+2506	CLOSED	Enthereum		2022-06-07 11:19:09 +0000 UTC
+2505	CLOSED	Wallet		2022-06-07 11:18:59 +0000 UTC
+2504	CLOSED	"Jan Pochyla <jpochyla@gmail.com>"		2022-06-07 11:18:53 +0000 UTC
+2503	CLOSED	J.son		2022-06-07 11:18:44 +0000 UTC
+2502	CLOSED	Issue in changing compiler config file		2022-07-04 11:58:42 +0000 UTC
+2501	CLOSED	Issue in UI of deployed contracts	UI	2022-06-16 13:54:47 +0000 UTC
+2500	OPEN	remix-tests JavaScript heap out of memory. And remix web client often crash.	bug	2022-07-04 07:50:34 +0000 UTC
+2499	CLOSED	Generate and create Ethereum remix project contract		2022-06-08 06:36:52 +0000 UTC
+2493	OPEN	data bytes argument in safeTransferFrom for erc1155 & erc721		2022-06-06 13:44:16 +0000 UTC
+2489	OPEN	Solidity compiler config issues.		2022-06-06 10:51:46 +0000 UTC
+2487	CLOSED	remix-tests CLI，too many logs come out		2022-06-06 13:25:02 +0000 UTC
+2486	CLOSED	Cannot edit in read-only editor		2022-07-07 04:50:12 +0000 UTC
+2485	CLOSED	Unable to select compiler	UI	2022-07-08 19:00:52 +0000 UTC
+2484	CLOSED	update ports usage for truffle remixd plugin	documentation	2022-06-08 15:43:48 +0000 UTC
+2480	CLOSED	Double file creation with path		2022-06-15 19:13:17 +0000 UTC
+2478	OPEN	remix-tests CLI，cannot find the npm package sol file		2022-06-03 00:54:11 +0000 UTC
+2474	OPEN	Paste function in ME browser doesn't appear		2022-06-01 23:33:00 +0000 UTC
+2472	CLOSED	the choice of current workspace is not getting saved upon refresh	bug, UX, beta testing	2022-07-08 13:24:32 +0000 UTC
+2469	CLOSED	null workspace on loading Remix		2022-06-04 07:36:45 +0000 UTC
+2466	CLOSED	change name of File Explorers to File Explorer	UX, discussion	2022-06-29 09:04:37 +0000 UTC
+2465	CLOSED	key bindings page issues		2022-06-01 12:20:01 +0000 UTC
+2460	OPEN	remixd reconnecting issue	bug, solidity compiler plugin	2022-07-05 16:52:44 +0000 UTC
+2459	OPEN	In Candy Theme White View Problem		2022-05-26 14:19:37 +0000 UTC
+2458	OPEN	JS/TS integration issues		2022-07-04 10:36:42 +0000 UTC
+2457	OPEN	issue in compilation of same file name in different workspace		2022-05-26 09:19:17 +0000 UTC
+2454	CLOSED	update remixd to uppercase		2022-07-08 02:11:09 +0000 UTC
+2451	CLOSED	Clone from github button/icon	enhancement	2022-07-07 10:18:22 +0000 UTC
+2447	OPEN	Remix crashes/hangs in browser with long iterations which store many variables		2022-06-23 08:00:17 +0000 UTC
+2446	CLOSED	tool tips- deploy & run	UI, UX	2022-06-30 06:12:08 +0000 UTC
+2445	CLOSED	Proxy Contract - should have ready made functions	UX, devconnect	2022-06-09 14:14:58 +0000 UTC
+2443	OPEN	process output of compiler dynamically to show all available sections	solidity compiler plugin	2022-05-24 09:25:48 +0000 UTC
+2440	OPEN	a medium article about issues in security when using remix	documentation	2022-05-23 21:05:20 +0000 UTC
+2435	CLOSED	Openzeppelin-solidity not found and Remix IDE unable to accept New Edit		2022-06-09 07:58:19 +0000 UTC
+2434	CLOSED	consult with a UX Designer		2022-06-09 14:12:50 +0000 UTC
+2433	OPEN	mockups of homepage design	UI	2022-05-23 03:33:03 +0000 UTC
+2432	OPEN	Make all tooltips custom	UX	2022-05-23 03:31:18 +0000 UTC
+2431	CLOSED	Environment section of Deploy & Run	UI, UX	2022-07-05 11:31:40 +0000 UTC
+2430	OPEN	Improve UX of Compile & Run		2022-06-09 14:10:37 +0000 UTC
+2429	OPEN	In a script -put in a play button - if a JS or a SOL file	UI	2022-05-23 03:18:47 +0000 UTC
+2428	OPEN	Mocha Test - indication of success in FE	UI	2022-05-23 03:20:56 +0000 UTC
+2427	OPEN	Review plugin list & move appropriate external plugins to a repo remix controls		2022-05-23 03:13:51 +0000 UTC
+2426	OPEN	add badge for Verified Plugins	STORY, UX	2022-07-05 17:21:31 +0000 UTC
+2425	CLOSED	DGIT to GIT	UX	2022-06-09 14:02:50 +0000 UTC
+2424	OPEN	Drag & Drop from the desktop to the FE as well as from inside the FE	UI, UX	2022-05-23 03:09:18 +0000 UTC
+2423	CLOSED	Should Safari be supported?		2022-06-09 14:01:14 +0000 UTC
+2421	CLOSED	Download and Restore backup` option is displayed even if workspace is localhost. is that relevant?		2022-05-25 08:23:45 +0000 UTC
+2420	OPEN	Debugger crashes the whole window		2022-05-22 16:08:45 +0000 UTC
+2419	CLOSED	Remix fails to call (read) functions when no account is available	bug	2022-07-06 07:38:07 +0000 UTC
+2418	CLOSED	Contract Deploy fails with TypeError reading 'length' of undefined		2022-06-09 14:32:42 +0000 UTC
+2415	OPEN	Implement upgrades option for proxy contracts (Openzeppelin UUPS pattern)	enhancement	2022-07-04 12:59:19 +0000 UTC
+2414	CLOSED	Support proxy deployment Openzeppelin UUPS pattern	enhancement	2022-06-21 07:44:54 +0000 UTC
+2413	CLOSED	update remixd doc & modal about the simplied version of the command	documentation, UX	2022-06-06 16:25:02 +0000 UTC
+2408	OPEN	UI forcing True/1 in Vyper function call		2022-05-17 18:05:49 +0000 UTC
+2402	CLOSED	Improve Error reporting from the terminal	discussion	2022-06-13 09:49:56 +0000 UTC
+2400	OPEN	Publish buttons not working. Error: No such file or directory Cannot read file @0x/contracts-utils/contracts/src/v06/interfaces/IOwnableV06.sol		2022-05-15 14:59:32 +0000 UTC
+2396	OPEN	clicking in an opcode in the debuger should select the opcode and show all the details.		2022-05-12 21:35:42 +0000 UTC
+2395	OPEN	New intro page		2022-05-12 20:45:29 +0000 UTC
+2394	CLOSED	Web3 provider -> HTTP provider	discussion	2022-06-13 15:07:26 +0000 UTC
+2393	CLOSED	Injected web3 provider, say MetaMask if it's MetaMask	UI, UX	2022-07-06 06:12:17 +0000 UTC
+2391	OPEN	Add note: publishing to IPFS results in contract getting verified on Etherscan		2022-05-12 20:00:41 +0000 UTC
+2385	CLOSED	color of mainpanel plugin icon should be changed with theme	bug	2022-05-25 10:11:46 +0000 UTC
+2384	OPEN	docs - more about deployment	documentation	2022-05-11 02:26:09 +0000 UTC
+2383	OPEN	docs a page (or medium article) about using Remix to Draft	documentation	2022-05-11 02:24:46 +0000 UTC
+2382	OPEN	docs - a page (or medium article) about using Remix for teaching	documentation	2022-05-11 02:23:38 +0000 UTC
+2381	OPEN	Update docs about Compile & Run		2022-05-10 21:21:04 +0000 UTC
+2380	CLOSED	After clicking deploy, the confirmation dialog box shows 'Gas limit' with a dollar sign $	bug	2022-05-12 08:11:58 +0000 UTC
+2379	CLOSED	Project template feedback		2022-05-17 08:26:35 +0000 UTC
+2378	OPEN	JavaScript VM of Remix Eats up RAM when Running HardHat Tests	bug	2022-06-27 14:07:33 +0000 UTC
+2377	CLOSED	More Descriptive and Dynamic Transaction Recording (enhancement)	enhancement	2022-07-04 12:09:36 +0000 UTC
+2375	OPEN	Permission modal adjustments	UX	2022-06-27 16:29:24 +0000 UTC
+2373	CLOSED	onboarding is broken	bug	2022-07-08 05:15:08 +0000 UTC
+2372	OPEN	Has REMIX a code size indicator?		2022-05-08 18:00:21 +0000 UTC
+2371	OPEN	Contract interaction: nonsensical conversion of input to boolean. Defaults to true		2022-05-07 18:21:44 +0000 UTC
+2370	OPEN	Hardhat: cannot deploy contract on custom (non-eth) chains		2022-05-06 20:44:25 +0000 UTC
+2369	OPEN	Remix Unit Testing feature request: override/specify msg.sender and msg.value of external function call inside the test functions	enhancement	2022-05-09 05:11:01 +0000 UTC
+2358	CLOSED	Flattener's logo is too big in the plugin list	plugins, effort: 1	2022-05-10 21:22:21 +0000 UTC
+2357	CLOSED	remove 3box from plugin list	plugins	2022-05-04 06:30:40 +0000 UTC
+2351	OPEN	open multimple tabs on remix cause the browser to crash		2022-05-02 23:05:48 +0000 UTC
+2350	OPEN	Add an option for `via-ir` for compiling solidity using the new codegen		2022-05-02 20:13:40 +0000 UTC
+2349	OPEN	Declining the permissions modal can be ambiguous	UX	2022-05-02 18:28:06 +0000 UTC
+2348	CLOSED	Matomo modal closing by itself	bug	2022-05-19 13:28:58 +0000 UTC
+2347	CLOSED	add label when pushing files to ipfs	effort: 1	2022-06-13 09:56:53 +0000 UTC
+2346	CLOSED	Artifacts collapse triggers UI flickering	effort: 3	2022-05-19 15:29:06 +0000 UTC
+2345	OPEN	Highlights the word and the next one for example "contract" first then "contract Name"		2022-05-02 09:18:53 +0000 UTC
+2344	CLOSED	Closing all the opened tabs does not go to empty page rather still shows the last closed tab content	bug	2022-05-16 08:52:07 +0000 UTC
+2337	OPEN	Move dgit to remix-project codebase		2022-04-27 10:06:29 +0000 UTC
+2334	OPEN	compile solidity contract failed		2022-04-26 12:40:41 +0000 UTC
+2330	CLOSED	scriptRunner plugin is already rendered		2022-04-27 04:29:01 +0000 UTC
+2329	CLOSED	Plugin FLATTENER: 502 Bad Gateway	bug	2022-04-27 04:28:52 +0000 UTC
+2328	CLOSED	Can not run a script using metamask.		2022-04-26 13:12:30 +0000 UTC
+2326	OPEN	Some features of Remix not working on Microsoft Edge		2022-04-25 06:38:58 +0000 UTC
+2325	OPEN	Copy file not working if a text is already copied		2022-04-22 16:02:49 +0000 UTC
+2322	OPEN	Show icon for DGit cloned repos in the workspace dropdown		2022-04-20 14:43:52 +0000 UTC
+2321	CLOSED	files are NOT closed in editor on remixd disconnection		2022-05-03 05:12:45 +0000 UTC
+2320	CLOSED	Error assigning 0 to map value in Remix IDE.		2022-04-19 11:35:54 +0000 UTC
+2313	CLOSED	Can't send transaction to a contract with already-encoded hex data		2022-04-18 16:24:21 +0000 UTC
+2311	CLOSED	Error when assigning zero to contract variables		2022-04-18 16:24:21 +0000 UTC
+2310	CLOSED	pop() or delete error: "The transaction ran out of gas"		2022-04-18 16:24:21 +0000 UTC
+2309	CLOSED	Remix-Desktop no longer working after Remix-Project release v0.23		2022-05-02 14:55:22 +0000 UTC
+2308	CLOSED	The keyword delete is not working in Remix		2022-04-18 16:24:21 +0000 UTC
+2307	CLOSED	Resetting address storage variables errors with "Transaction ran out of gas"		2022-04-18 16:24:21 +0000 UTC
+2300	CLOSED	Running a script: show error line number	effort: 5	2022-05-31 08:20:15 +0000 UTC
+2299	CLOSED	Folders in FE expand without showing files	bug, effort: 1	2022-05-25 08:23:45 +0000 UTC
+2296	CLOSED	Add file icon for cairo and typescript		2022-05-25 12:34:14 +0000 UTC
+2295	OPEN	readd metamask e2e and E2E missing "always use JavaScript VM" setttings	browser-tests, effort: 2	2022-05-18 08:02:39 +0000 UTC
+2294	OPEN	plugin idea	plugins	2022-04-12 02:40:40 +0000 UTC
+2290	CLOSED	Truffle compilation creates artifacts for all the contracts - not just the one that is compiled	bug	2022-05-02 09:23:56 +0000 UTC
+2289	CLOSED	Default workspace README needs info about TS	UI, workspace templates	2022-06-09 13:48:50 +0000 UTC
+2287	CLOSED	Check title properties		2022-06-30 06:12:08 +0000 UTC
+2285	CLOSED	only load with javascript VM settings		2022-04-12 10:23:06 +0000 UTC
+2280	CLOSED	Auto exec script throws error if script file content is cleared and populated back.		2022-04-11 12:27:47 +0000 UTC
+2279	CLOSED	Static Analysis Improvements		2022-05-10 11:54:21 +0000 UTC
+2277	CLOSED	make internal plugin of wallet connect		2022-06-13 09:36:05 +0000 UTC
+2273	CLOSED	current file not updated once a file is deleted	bug	2022-05-05 08:50:27 +0000 UTC
+2268	OPEN	Short Cut Proposals	UX	2022-06-12 06:53:58 +0000 UTC
+2267	OPEN	List keyboard shortcuts in docs		2022-06-13 08:32:11 +0000 UTC
+2266	CLOSED	Docs should be updated to describe usage of config file in solidity plugin	documentation	2022-06-06 16:26:51 +0000 UTC
+2264	CLOSED	WorkSpace File Label Text Overflows Container		2022-04-06 14:15:42 +0000 UTC
+2263	OPEN	Functions display is inconsistent when an deployed contract is deleted		2022-04-06 03:57:45 +0000 UTC
+2261	OPEN	Remix IDE (Desktop) Crashes When Interacting with Contract on Polygon Mumbai		2022-04-05 01:22:39 +0000 UTC
+2259	CLOSED	update Readthedocs file explorer - migration section	documentation	2022-04-04 02:03:50 +0000 UTC
+2256	CLOSED	Compile button text overflows outside of button		2022-04-06 20:42:01 +0000 UTC
+2255	CLOSED	ipfs://QmRzsPPNH3uXvTG7MgLYNL1N4BQQGzf2itX58ad4YuW5dE		2022-04-11 02:11:34 +0000 UTC
+2254	CLOSED	Hardhat: cannot send transaction that fails		2022-04-12 10:32:38 +0000 UTC
+2252	OPEN	SOLIDITY UNIT TESTING plugin crashes the webpage after running tests one after the other.	bug	2022-06-13 08:22:23 +0000 UTC
+2250	CLOSED	Remix-ide defaults to wrong environment when connected to injected web3 and a reload is initiated.	bug, effort: 1	2022-04-13 08:47:19 +0000 UTC
+2248	CLOSED	IMHO It shouldn't be a separate plugin but part of File Explorer. can be activated with a key combination or/and search icon.		2022-03-30 05:48:29 +0000 UTC
+2247	CLOSED	Using remixd with remix-ide localhost http://127.0.0.1:8080 breaks ide on compilation.	effort: 3	2022-03-28 13:30:48 +0000 UTC
+2245	CLOSED	Fix docs for downloading files	documentation	2022-07-08 13:19:53 +0000 UTC
+2239	CLOSED	KingVon		2022-06-08 06:49:40 +0000 UTC
+2238	CLOSED	KingVon		2022-06-08 06:49:56 +0000 UTC
+2237	CLOSED	Hardhat config not picked up if TypeScript (hardhat.config.ts)		2022-06-08 06:50:43 +0000 UTC
+2236	CLOSED	Run remix-tests without remix-tests.sol	effort: 2	2022-04-07 13:32:49 +0000 UTC
+2235	CLOSED	Publish Source files on Swarm	fix	2022-05-05 10:22:40 +0000 UTC
+2231	OPEN	UI to create custom Remix IDE link with URL params	feature request	2022-03-23 06:35:39 +0000 UTC
+2230	OPEN	Add 'Copy Path' in file & folder context menu		2022-03-28 10:54:33 +0000 UTC
+2229	CLOSED	supported browsers	documentation	2022-05-25 11:53:30 +0000 UTC
+2228	CLOSED	JS integration	Roadmap2022, effort: 8	2022-05-19 09:05:13 +0000 UTC
+2225	OPEN	UX improvement to showcase git integration through file-explorer.	STORY, UI, UX, file-explorer, Roadmap2022, effort: 13	2022-07-07 10:18:22 +0000 UTC
+2223	CLOSED	Issue with UI for At Address	effort: 2	2022-04-11 14:52:49 +0000 UTC
+2222	CLOSED	Help Please for running remix locally!		2022-06-08 06:51:48 +0000 UTC
+2221	OPEN	Feat: Support proxy contract deployment.	STORY, feature request, effort: 13	2022-07-04 08:47:11 +0000 UTC
+2220	CLOSED	Loading a contract at an address from ABI was broken in a recent update	bug	2022-06-13 08:34:05 +0000 UTC
+2218	OPEN	Create template using remix default workspace		2022-03-21 12:04:18 +0000 UTC
+2217	OPEN	Deploy & Run: angle-down/chevron is the same when it is opened and closed		2022-03-21 14:39:25 +0000 UTC
+2216	CLOSED	File Explorer: horizontal scroll	bug, effort: 1	2022-05-25 09:03:04 +0000 UTC
+2212	CLOSED	Tabs: there is some confusion between tabs	bug, UI, effort: 1	2022-05-02 14:43:30 +0000 UTC
+2199	CLOSED	Add support for hardhat.config.ts typescript projects		2022-03-21 05:37:18 +0000 UTC
+2198	OPEN	Improve Slither analysis UX	effort: 5	2022-07-04 12:26:31 +0000 UTC
+2192	CLOSED	Update tab-proxy to remove renderCOmponent.		2022-03-28 14:08:04 +0000 UTC
+2179	CLOSED	Feature Requests in Search plugin		2022-03-23 07:56:44 +0000 UTC
+2178	CLOSED	DGit storage issue	dgit	2022-03-23 07:57:02 +0000 UTC
+2177	CLOSED	Recursion in copy past	bug	2022-05-02 09:28:30 +0000 UTC
+2176	CLOSED	Less storage on remix-alpha		2022-03-28 13:52:33 +0000 UTC
+2175	CLOSED	DGit Storage calculation	dgit	2022-04-11 09:01:22 +0000 UTC
+2174	CLOSED	Error on DGit Activation	dgit	2022-03-16 10:58:43 +0000 UTC
+2173	CLOSED	Show message on duplicate import		2022-06-16 06:25:45 +0000 UTC
+2172	CLOSED	debugging	bug, debugger, effort: 5	2022-06-13 09:56:40 +0000 UTC
+2171	OPEN	remin-ide appimage crash	installation	2022-03-21 09:46:30 +0000 UTC
+2165	CLOSED	Images(icons) should be updated with theme change	bug	2022-03-14 09:55:17 +0000 UTC
+2161	CLOSED	Got an error when executed "remixd -s ./exercise/ -u http://localhost:8080"	installation	2022-06-13 08:35:46 +0000 UTC
+2158	CLOSED	Debugger step over back	bug	2022-03-14 02:07:10 +0000 UTC
+2157	CLOSED	Gas estimation failed		2022-03-21 09:45:55 +0000 UTC
+2155	CLOSED	Search plugin and highlight	plugins	2022-05-02 09:19:15 +0000 UTC
+2153	CLOSED	Copying and pasting a file into a sub directory, then not being able to close it	bug	2022-03-16 14:35:21 +0000 UTC
+2152	CLOSED	the code URL param auto loads & puts focus on the solidity compiler - less useful for starknet	UX, effort: 1	2022-03-30 08:00:54 +0000 UTC
+2147	CLOSED	debugger update - is not saying that it did not find the file in Etherscan	bug, UI	2022-03-10 18:03:21 +0000 UTC
+2146	CLOSED	When the a call is logged in the terminal and then clicked on, the caret doesn't face up	bug, UI	2022-03-09 06:10:47 +0000 UTC
+2145	CLOSED	Optimism deployment improvement.	effort: 2	2022-07-08 07:23:39 +0000 UTC
+2141	OPEN	Uncaught JavaScript exception: RuntimeError: memory access out of bounds		2022-03-05 15:31:42 +0000 UTC
+2139	CLOSED	Local storage of the browser is full even though it indicates "0%"		2022-03-25 08:15:59 +0000 UTC
+2135	CLOSED	Importing ABI files using GitHub or HTTPS results in null characters. Gists work fine.	bug	2022-03-07 13:39:50 +0000 UTC
+2130	OPEN	argument="type", value="fixed168x10", code=INVALID_ARGUMENT, version=abi/5.5.0	bug, effort: 5	2022-06-13 09:39:38 +0000 UTC
+2127	CLOSED	The certificate for vyper.dyn.plugin.remixproject.org expired on 02/03/2022.		2022-03-02 16:54:34 +0000 UTC
+2123	CLOSED	non functioning trash		2022-03-10 12:41:08 +0000 UTC
+2118	OPEN	Documentation: About backup & restore	documentation	2022-02-28 13:58:59 +0000 UTC
+2115	CLOSED	H		2022-03-02 22:59:44 +0000 UTC
+2111	OPEN	Matomo tracking for A/B testors	User research	2022-03-21 09:50:29 +0000 UTC
+2110	OPEN	Feature Request: drag-and-drop feature for valid Solidity project files into an existing Remix workspace		2022-02-27 09:33:54 +0000 UTC
+2108	OPEN	Description misspelled in the Ballot contract template test		2022-02-26 13:47:35 +0000 UTC
+2107	CLOSED	MultiSelect in FE turned on without me knowing it	bug	2022-03-23 14:05:25 +0000 UTC
+2105	OPEN	Remix IDE crashing compiling medium contracts	bug	2022-03-01 16:28:53 +0000 UTC
+2103	OPEN	Remix becomes unresponsive while trying to load		2022-03-21 09:53:24 +0000 UTC
+2102	OPEN	Uncaught (in promise) Error: Model is disposed!		2022-04-27 02:32:04 +0000 UTC
+2100	CLOSED	update Remix default workspace	effort: 1	2022-03-29 07:23:24 +0000 UTC
+2097	CLOSED	Reset Udapp contract list when switching between opened files.	publish	2022-03-02 22:49:43 +0000 UTC
+2096	CLOSED	Add support for foundry-style imports	effort: 5	2022-07-06 10:44:39 +0000 UTC
+2095	CLOSED	new API for udapp		2022-06-13 09:33:34 +0000 UTC
+2094	CLOSED	can't writefile via API on remixd with the file opened	bug	2022-03-23 07:58:01 +0000 UTC
+2088	OPEN	Page not responding		2022-02-20 01:25:47 +0000 UTC
+2087	CLOSED	Hardhat console.log()s don't print with a contract deployed in an Injected Web3 environment		2022-03-23 06:54:34 +0000 UTC
+2084	OPEN	sometimes the folders in the FE don't open or close	bug	2022-02-18 22:33:32 +0000 UTC
+2077	CLOSED	Undeclared identifier Error solidity		2022-03-21 08:28:14 +0000 UTC
+2069	CLOSED	Using setFile from a plugin doesn't update the file explorer view with the newly created file		2022-02-28 14:41:45 +0000 UTC
+2068	OPEN	Can't test a contract with another account using remix_accounts	bug, discussion	2022-06-13 08:19:42 +0000 UTC
+2066	OPEN	List of supported browsers	documentation	2022-02-16 15:10:56 +0000 UTC
+2058	OPEN	Allow file drag and drop	enhancement, UI	2022-02-09 04:21:40 +0000 UTC
+2057	OPEN	Improve debugger performances		2022-02-08 13:36:11 +0000 UTC
+2056	CLOSED	Support js unit tests for contracts	enhancement, Roadmap2022, Q1	2022-02-18 11:04:33 +0000 UTC
+2055	CLOSED	Source code fetching when debug mainnet transaction		2022-03-03 20:12:18 +0000 UTC
+2049	CLOSED	UI Broken when running test case - Model is disposed		2022-02-25 11:20:49 +0000 UTC
+2047	CLOSED	Error encoding arguments: Error: types/values length mismatch when passing in 2 args but require 4 and 2 empty	bug	2022-02-10 14:03:02 +0000 UTC
+2041	CLOSED	Metamask signing error	bug, injected web3	2022-02-07 13:31:14 +0000 UTC
+2040	CLOSED	UI broken for call details in terminal	UI	2022-02-07 12:07:44 +0000 UTC
+2037	CLOSED	Bug(?): deleting all browser workspaces eliminates icons for creating new workspace	bug	2022-02-17 10:24:18 +0000 UTC
+2034	CLOSED	Bug: Invalid parameters: must provide an Ethereum address.		2022-02-04 10:57:25 +0000 UTC
+2033	CLOSED	restore backup - should make the plugin the active tab	UX	2022-03-25 07:48:55 +0000 UTC
+2032	CLOSED	Switching wallet on Chrome Metamask showing Invalid parameter errors		2022-02-04 10:57:25 +0000 UTC
+2031	CLOSED	Feature request: Add the storage layout in the "compilation details" section.	solidity compiler plugin	2022-03-23 11:27:43 +0000 UTC
+2028	CLOSED	Can't connect to existing contract wth ABI		2022-02-04 10:38:19 +0000 UTC
+2024	CLOSED	Switching file tab clears code in solidity code on previous file tab: observed on Chrome	bug	2022-02-22 05:03:25 +0000 UTC
+2022	CLOSED	Encode Constructor Argument Copy Button Now Broken (< 24 hours old)		2022-02-01 12:25:34 +0000 UTC
+2010	CLOSED	In Candy Theme it Creates Visual Pollution	UX	2022-02-28 22:50:33 +0000 UTC
+2009	CLOSED	Remix debugger throwing TypeError		2022-02-07 10:51:51 +0000 UTC
+2008	CLOSED	remix.ethereum.org not working		2022-02-07 23:48:11 +0000 UTC
+2007	CLOSED	Cursor not in the right place	bug	2022-02-02 08:38:30 +0000 UTC
+2002	CLOSED	Warning when deploying an Abstract contract	UX	2022-03-23 11:40:48 +0000 UTC
+1992	OPEN	Canot create files in desktop safari 15.1	bug, file-explorer	2022-02-07 22:34:08 +0000 UTC
+1991	CLOSED	spacing issue on vert icons panel	UI	2022-02-21 12:27:45 +0000 UTC
+1988	CLOSED	Modal/Toaster not showing if their parent is not visible		2022-01-28 10:37:32 +0000 UTC
+1986	CLOSED	Auto-complete popup doesn't show up from first character.		2022-02-21 12:52:32 +0000 UTC
+1983	CLOSED	DOCS: SUT a broken image	documentation	2022-05-09 15:42:07 +0000 UTC
+1982	CLOSED	remixd modal	UI	2022-01-20 19:15:26 +0000 UTC
+1981	CLOSED	Compiler stuck	bug, UX	2022-02-28 09:41:23 +0000 UTC
+1980	OPEN	Remixd problems on alpha or just problems with upgrading remixd	bug	2022-02-08 21:02:22 +0000 UTC
+1979	CLOSED	Clicking on the Solhint Linter multiple times	bug	2022-01-20 15:19:14 +0000 UTC
+1978	CLOSED	terminal dragbar possible UI bug	bug, UI	2022-01-24 07:01:59 +0000 UTC
+1974	CLOSED	home tab issue		2022-01-20 14:15:17 +0000 UTC
+1972	CLOSED	filemanager alert issues	bug	2022-01-25 13:46:06 +0000 UTC
+1970	CLOSED	issue with url params in compiler	bug	2022-02-15 09:47:26 +0000 UTC
+1969	CLOSED	AST node highlight in editor issues	bug	2022-01-25 15:08:46 +0000 UTC
+1968	CLOSED	gist-handler issues	bug	2022-02-10 16:26:05 +0000 UTC
+1967	CLOSED	remix-handler issue in `connect to Localhost`	bug	2022-07-07 13:59:17 +0000 UTC
+1966	OPEN	Deployed contract address coincides with another deployed contract in a different chain.		2022-01-31 14:18:21 +0000 UTC
+1963	OPEN	Create filters in pluginManager to filter using badges	enhancement, effort: 8	2022-03-28 09:24:08 +0000 UTC
+1962	CLOSED	Hardhat Provider issues	UDapp plugin	2022-03-03 11:24:57 +0000 UTC
+1961	CLOSED	wrong margines on SUT plugin result elements		2022-01-23 10:09:01 +0000 UTC
+1951	CLOSED	Add pop up to warn inexperienced users about malicious copy/paste code scams		2022-02-07 23:55:25 +0000 UTC
+1946	OPEN	Current workspace should be saved in storage	enhancement	2022-01-14 13:41:58 +0000 UTC
+1945	CLOSED	Permissions modal	bug, UX	2022-01-18 11:32:07 +0000 UTC
+1944	CLOSED	Deploy & run refactoring issues	bug	2022-01-25 14:17:37 +0000 UTC
+1937	CLOSED	Issue in tx details on injected web3 and VM switch	UDapp plugin	2022-01-20 19:19:15 +0000 UTC
+1936	OPEN	Etherscan remix debugger should be fixed		2022-01-13 08:35:31 +0000 UTC
+1935	CLOSED	Error in workspace creation	bug	2022-03-23 11:10:08 +0000 UTC
+1934	CLOSED	UDApp Tx recorder issue	UDapp plugin	2022-01-18 11:15:54 +0000 UTC
+1932	CLOSED	Remix url parameter bugs	bug	2022-01-18 10:12:41 +0000 UTC
+1928	CLOSED	Medium articles window of hometab		2022-01-19 13:34:18 +0000 UTC
+1927	CLOSED	`New File` in hometab creates a bug in file-explorer when clicked and file-explorer is not loaded in side panel.		2022-01-18 11:28:22 +0000 UTC
+1926	CLOSED	`Open files` in hometab no longer works.		2022-01-18 11:28:29 +0000 UTC
+1924	CLOSED	Error on compiler loading doesn't load the compiler in SUT on second attempt	Solidity Unit Testing Plugin	2022-01-17 08:36:31 +0000 UTC
+1923	CLOSED	Reloading Remix closes all opened files		2022-01-26 09:43:52 +0000 UTC
+1922	CLOSED	UDAPP copy values input		2022-01-13 08:48:08 +0000 UTC
+1920	CLOSED	at address in UDAPP	bug	2022-01-12 11:04:39 +0000 UTC
+1919	CLOSED	editor hover failes		2022-01-12 09:20:20 +0000 UTC
+1916	OPEN	Restore discard changes in context menu for loaded external dependencies.		2022-02-08 14:52:19 +0000 UTC
+1912	CLOSED	cannot encode arguments while deployment	bug	2022-01-11 07:55:41 +0000 UTC
+1911	CLOSED	udapp crashes upon plugin call	bug	2022-01-21 10:06:20 +0000 UTC
+1907	CLOSED	Make toaster a plugin.		2022-01-11 15:54:00 +0000 UTC
+1906	CLOSED	Move permission-handler to react.		2022-01-11 14:06:59 +0000 UTC
+1904	OPEN	Move javascript classes to typescript.		2022-02-08 15:43:31 +0000 UTC
+1903	OPEN	Improve remix-ide performance.		2022-03-21 09:58:22 +0000 UTC
+1902	OPEN	Create error boundaries for React components.	enhancement	2022-02-08 14:46:54 +0000 UTC
+1900	OPEN	remix-tests cli broken on Windows, Remix extension works fine	bug	2022-03-21 08:33:02 +0000 UTC
+1899	OPEN	(0.5) crazy issue		2022-01-30 16:05:01 +0000 UTC
+1894	CLOSED	Runtab and custom provider no longer working in master		2022-01-11 12:56:55 +0000 UTC
+1893	CLOSED	Remove Optimism plugin.	enhancement	2022-01-14 11:44:11 +0000 UTC
+1887	OPEN	Is there any way to support vim mode on the IDE?		2022-01-06 04:59:11 +0000 UTC
+1886	OPEN	Would like to use an old compiler but it forces back to last one		2022-03-21 10:00:01 +0000 UTC
+1885	OPEN	Handle problems with solc-bin more gracefully		2022-01-10 17:21:56 +0000 UTC
+1884	CLOSED	Cannot see solidity Compilers		2022-01-06 16:29:55 +0000 UTC
+1882	CLOSED	Broken compiler list: Only one compiler available		2022-03-21 08:33:52 +0000 UTC
+1881	CLOSED	Only one compiler available		2022-03-21 08:34:01 +0000 UTC
+1878	CLOSED	Debugger is not working for several chains	bug, remix-debug, debugger	2022-01-12 08:39:58 +0000 UTC
+1874	OPEN	Improve typescript typings		2022-01-03 20:45:57 +0000 UTC
+1873	CLOSED	Delete unnecessary files in yoyo		2022-01-11 15:54:00 +0000 UTC
+1872	CLOSED	Remove make-udapp etherscan link		2022-01-06 19:54:59 +0000 UTC
+1871	CLOSED	Get rid of MigrateFileSystem and use download insted		2022-01-24 11:38:36 +0000 UTC
+1870	CLOSED	get rid of yo in HardhatProvider		2022-01-06 18:59:38 +0000 UTC
+1869	CLOSED	get rid of yo in GitHandler and make a plugin out of it		2022-01-06 12:16:56 +0000 UTC
+1863	CLOSED	remixd creating empty default folders for shared folder	bug, remixD	2022-01-06 05:59:29 +0000 UTC
+1853	CLOSED	View code in remix	enhancement, effort: 5	2022-07-04 08:08:58 +0000 UTC
+1845	CLOSED	Issue with errors tooltip pop up in code		2022-03-21 10:01:00 +0000 UTC
+1844	CLOSED	Not accepting an array for constructor in deployment		2021-12-16 04:44:58 +0000 UTC
+1843	OPEN	Debugger reports "debug_traceTransaction" does not exists when connected through Metamask with private RPC which has 'debug_traceTransaction"		2022-06-28 05:16:52 +0000 UTC
+1842	CLOSED	Remix IDE not allowing tPLS or PLS or Pulse or pulse as a method of payment		2021-12-28 14:50:54 +0000 UTC
+1841	OPEN	Debugger not working on Rinkeby		2022-04-06 06:17:23 +0000 UTC
+1839	CLOSED	Mehdish14		2021-12-28 14:41:59 +0000 UTC
+1838	CLOSED	High gas fee		2021-12-28 14:52:18 +0000 UTC
+1837	CLOSED	High gas fee		2021-12-28 14:44:27 +0000 UTC
+1836	CLOSED	Code window autoupdated		2021-12-28 14:47:43 +0000 UTC
+1835	OPEN	Code vanished		2021-12-12 17:55:10 +0000 UTC
+1834	CLOSED	Syntax Hightlight		2021-12-14 05:23:58 +0000 UTC
+1833	CLOSED	console.log `DeclarationError: Undeclared identifier.`		2021-12-18 13:36:13 +0000 UTC
+1832	OPEN	Recover Workspace.		2022-06-14 08:31:49 +0000 UTC
+1830	OPEN	Terminal Improvements	STORY, Terminal, Roadmap2022	2022-01-07 17:46:36 +0000 UTC
+1829	OPEN	Cant load remix properly. DevTools failed to load source map	can't reproduce	2021-12-17 04:07:37 +0000 UTC
+1826	OPEN	improving dropdown menu of compiled contracts, before deployments	remix-ide, UI, UX, UDapp plugin, Roadmap2022	2021-12-18 22:12:20 +0000 UTC
+1823	OPEN	Remix Desktop: Current change is not fired when file removed	bug, remix-desktop	2021-12-02 13:31:19 +0000 UTC
+1820	CLOSED	ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/@remix-project/remixd/bin/remixd.js'		2021-12-02 08:35:44 +0000 UTC
+1819	CLOSED	Cannot highlight and copy	bug	2022-01-18 11:30:32 +0000 UTC
+1818	CLOSED	remixd 0.5.3 executable file not found		2021-12-02 08:35:44 +0000 UTC
+1817	CLOSED	Deploying a contract from a learneth Tutorial does not work	bug	2022-01-11 16:23:20 +0000 UTC
+1816	CLOSED	the solidity compiler is not checking the contract's pragma and using the specified version	bug	2022-01-24 11:01:31 +0000 UTC
+1815	CLOSED	Mehdish14		2021-12-03 15:03:29 +0000 UTC
+1811	CLOSED	remix.help() is not a function ?	bug, question, UX	2022-02-21 12:52:32 +0000 UTC
+1809	CLOSED	npm install issue / missing remixd cmd		2021-12-02 08:35:44 +0000 UTC
+1806	CLOSED	A global install issue with new version of remixd on Ubuntu 20		2021-12-02 08:35:44 +0000 UTC
+1805	CLOSED	doesn't open any files		2021-12-06 11:18:32 +0000 UTC
+1804	CLOSED	empty screen bug in Debug screen...	bug	2022-02-28 14:51:24 +0000 UTC
+1803	OPEN	Creation of Contract errored: VM error: revert.		2022-02-02 01:01:49 +0000 UTC
+1802	OPEN	Selecting Workspaces selects wrong one		2021-12-06 11:21:10 +0000 UTC
+1801	OPEN	Text Editor Makes Remix Unusable	bug	2022-01-04 18:13:10 +0000 UTC
+1800	OPEN	replace all toasters for copy update to tooltips	enhancement, UX, Roadmap2022	2021-11-29 21:01:27 +0000 UTC
+1796	CLOSED	File Explorer improvements	STORY, file-explorer, Roadmap2022	2021-11-25 13:52:37 +0000 UTC
+1795	OPEN	Debugger improvements	STORY, Roadmap2022	2021-12-06 09:29:46 +0000 UTC
+1794	OPEN	Solidity Plugin improvements	STORY, solidity compiler plugin, Roadmap2022	2022-03-21 09:21:00 +0000 UTC
+1793	OPEN	Monaco Editor improvements	enhancement, remix-ide, STORY, UX, Roadmap2022	2021-12-13 10:55:53 +0000 UTC
+1792	OPEN	Uncontrolled highlighting and underrepresenting font colors	bug	2021-12-09 13:23:33 +0000 UTC
+1791	OPEN	Output Data in Remix VMs shows correctly, not on testnets		2021-11-24 16:29:04 +0000 UTC
+1787	CLOSED	remix not		2021-11-24 08:10:51 +0000 UTC
+1786	CLOSED	A global install issue with new version of remixd on window 10		2022-07-04 07:40:56 +0000 UTC
+1776	CLOSED	Cripto		2021-11-23 10:33:21 +0000 UTC
+1775	CLOSED	Debugger not working on Ropsten	bug, debugger	2021-11-25 10:35:50 +0000 UTC
+1774	OPEN	Research Monaco Editor Features	UI, Roadmap2022	2021-12-06 09:23:51 +0000 UTC
+1773	CLOSED	Slither UX	UX	2021-11-22 09:37:09 +0000 UTC
+1768	CLOSED	Move abstract panel to react.	refactoring/coding style, Roadmap2021	2022-01-06 19:06:11 +0000 UTC
+1767	CLOSED	Solidity compiler: add all missing flags for compiler	enhancement, solidity compiler plugin, Roadmap2022, effort: 8	2022-05-25 12:11:56 +0000 UTC
+1765	CLOSED	[]		2021-11-21 14:20:17 +0000 UTC
+1764	CLOSED	Gas estimation error why???		2021-11-26 03:15:05 +0000 UTC
+1763	CLOSED	Unable to connect remix IDE to hardhat local blockchain	can't reproduce	2022-05-18 08:26:33 +0000 UTC
+1759	CLOSED	Cannabis3		2021-11-23 12:42:31 +0000 UTC
+1758	CLOSED	Editor highlighting blocks out text	bug	2021-12-06 09:22:15 +0000 UTC
+1757	OPEN	Docs: known issues page	documentation	2021-11-13 05:19:16 +0000 UTC
+1753	OPEN	Matomo seems to delay loading of WalletConnect	bug, UX	2021-11-11 03:16:26 +0000 UTC
+1752	CLOSED	Terminal dragbar wrong behavior	publish	2021-12-24 18:51:46 +0000 UTC
+1751	OPEN	Solidity's SMTChecker compiler options		2021-11-11 13:42:14 +0000 UTC
+1748	CLOSED	Syntax highlight for new editor	bug	2021-11-21 19:09:35 +0000 UTC
+1745	CLOSED	Multiple files with the same name in the tabs & cannot close the multiple files	bug	2021-11-11 11:49:32 +0000 UTC
+1744	CLOSED	Editor's theme change is still broken	bug	2021-12-06 09:32:12 +0000 UTC
+1743	CLOSED	With lots of tabs - the scroll is not working	bug	2021-11-19 12:35:29 +0000 UTC
+1737	CLOSED	bug when replacing upload that is opened in editor	bug	2021-11-22 15:11:30 +0000 UTC
+1735	OPEN	Cant copy error messages to so a simple google search		2021-11-09 08:01:38 +0000 UTC
+1733	OPEN	bug: Fix remix IPFS gateway		2021-11-15 09:38:31 +0000 UTC
+1732	CLOSED	compiler warning in Red	bug, solidity compiler plugin, effort: 1	2022-05-30 08:31:44 +0000 UTC
+1730	OPEN	Debugger crashes on unknown types		2021-11-04 16:14:10 +0000 UTC
+1729	OPEN	Zoom in/Zoom out move to context menu	enhancement, remix-ide, UI, Roadmap2022	2021-12-06 09:33:42 +0000 UTC
+1728	OPEN	Add 'close all' and 'settings'(F1 with api) to editor's title	remix-ide, UI, UX, Roadmap2022	2021-12-06 09:21:39 +0000 UTC
+1724	OPEN	remix deploys partial code		2021-11-02 09:49:47 +0000 UTC
+1723	CLOSED	how to remove the "metadata saved" popups		2021-11-05 11:01:26 +0000 UTC
+1722	OPEN	deleting folders	bug	2021-11-01 15:19:25 +0000 UTC
+1721	CLOSED	UX for the tab component	remix-ide, UX	2021-11-08 09:13:30 +0000 UTC
+1719	CLOSED	Move theme-module to react.js		2021-12-21 15:05:24 +0000 UTC
+1718	CLOSED	Move contextView to react.js		2021-12-27 10:49:53 +0000 UTC
+1717	OPEN	Button to verify Contract on Etherscan through API?		2021-11-04 11:16:41 +0000 UTC
+1716	OPEN	Gas estimation error		2021-10-30 14:11:55 +0000 UTC
+1714	CLOSED	create workspace named test		2021-11-02 12:09:36 +0000 UTC
+1712	CLOSED	Issue in printing hardhat console logs	bug, UDapp plugin, Terminal	2021-11-08 14:50:52 +0000 UTC
+1711	CLOSED	Issues with editor		2021-11-10 14:43:24 +0000 UTC
+1710	OPEN	color is not changed for string in single quotes	UI	2021-10-28 08:47:58 +0000 UTC
+1708	OPEN	Right click context menu in editor doesn't allow copy/paste in firefox		2021-10-28 00:02:29 +0000 UTC
+1705	CLOSED	Error while deleting a file on remix alpha	remix-ide, file-explorer	2021-11-02 15:44:13 +0000 UTC
+1704	CLOSED	Error in browser console while activating SUT plugin on remix alpha	bug, Solidity Unit Testing Plugin	2021-11-02 08:21:19 +0000 UTC
+1698	CLOSED	Move tab-proxy to react.	refactoring/coding style, Roadmap2021	2021-11-01 14:10:56 +0000 UTC
+1696	OPEN	Feature request: Be able to backup workspace e.g. through secret Github gist		2021-10-22 12:13:58 +0000 UTC
+1695	CLOSED	remix-tests version command throws error		2021-10-25 07:59:01 +0000 UTC
+1690	CLOSED	unable to retrieve storage while debugging		2021-11-09 13:30:36 +0000 UTC
+1689	OPEN	Terminal in React fixes	UI, refactoring/coding style, Terminal	2022-01-07 17:46:48 +0000 UTC
+1684	CLOSED	Move app.js to react.	refactoring/coding style, Roadmap2021	2021-12-21 15:16:49 +0000 UTC
+1683	CLOSED	Wei Gwei Finney Ether		2021-10-25 08:46:35 +0000 UTC
+1682	OPEN	Remix security improvements	enhancement, help wanted	2021-10-26 10:00:45 +0000 UTC
+1680	CLOSED	incorrect bytes indexing		2021-10-28 10:06:13 +0000 UTC
+1679	CLOSED	Whole code shifts horizontally when scrolling through	enhancement, UI	2021-12-06 09:50:37 +0000 UTC
+1677	OPEN	"Compiler not yet loaded." in Remix IDE on Chrome Browser		2021-10-20 06:56:17 +0000 UTC
+1675	CLOSED	Compiler in SUT plugin is not loading when it is loading in Compiler plugin		2021-11-10 06:50:48 +0000 UTC
+1670	OPEN	vm-debugger/dropdown-panel -> isHex will be always true here, something wrong with this code		2021-10-28 10:20:48 +0000 UTC
+1669	CLOSED	The "compilerMetadata is modifying X.json" message looks like a serious error		2021-10-28 13:43:33 +0000 UTC
+1668	CLOSED	`muirGlacier` is on the EVM list even though it's not supported by the compiler		2021-10-25 08:15:47 +0000 UTC
+1667	OPEN	Support hardhat console.log for remix-tests CLI too	remix-tests	2021-10-26 10:05:02 +0000 UTC
+1665	CLOSED	root folder cannot be selected for test directory in SUT plugin	bug, Solidity Unit Testing Plugin	2021-12-31 13:11:53 +0000 UTC
+1661	CLOSED	File selected even after removing from editor		2022-01-10 14:16:47 +0000 UTC
+1659	OPEN	nx serve		2021-10-26 10:05:31 +0000 UTC
+1651	OPEN	Run&Deploy: Auto-select contract list with contract that was compiled	enhancement, plugins, Roadmap2022	2021-12-06 09:51:03 +0000 UTC
+1644	CLOSED	fix dumpStorage	refactoring/coding style, Remix Libraries, e2e-tests-needed	2021-10-07 15:38:34 +0000 UTC
+1641	OPEN	'import directory' import	remix-ide, UX, file-explorer, Roadmap2022	2021-12-06 09:21:21 +0000 UTC
+1636	CLOSED	Error not cleared when compiling via right click -> compile	bug	2021-10-06 09:00:00 +0000 UTC
+1633	OPEN	Editor: improvements	remix-ide, plugins, UX, Roadmap2021, Roadmap2022, effort: 13	2022-05-02 09:53:00 +0000 UTC
+1632	OPEN	Improve UX of IDE by improving the Terminal	remix-ide, plugins, UX, Roadmap2021, Terminal, Roadmap2022	2021-12-06 09:33:57 +0000 UTC
+1631	OPEN	More items to add to FE context menu	remix-ide, STORY, plugins, UX, Roadmap2021, file-explorer, Roadmap2022	2021-12-06 09:20:29 +0000 UTC
+1630	OPEN	FE serach in files	enhancement, UX, file-explorer, Roadmap2022	2022-03-28 10:55:09 +0000 UTC
+1628	OPEN	Remix NPM INSTRALL ERROR		2021-09-27 08:14:18 +0000 UTC
+1627	OPEN	interoperability with L2	enhancement, Roadmap2022	2021-12-06 09:51:25 +0000 UTC
+1626	CLOSED	Matomo: Stop tracking autocompile	analytics	2021-10-18 03:17:00 +0000 UTC
+1623	CLOSED	Switching the selected file to a js file removes the compilation result (from compile tab and udapp)		2021-10-14 07:41:35 +0000 UTC
+1620	OPEN	JavaScript doesn't work	question	2021-10-26 10:07:01 +0000 UTC
+1618	CLOSED	Solidity Unit Testing: Custom transaction context does not persist into function calls		2022-03-08 23:03:00 +0000 UTC
+1616	CLOSED	No file selected error on loading	remix-ide	2021-10-06 10:36:42 +0000 UTC
+1615	CLOSED	console.log is not printed for test if transaction fails with revert in SUT plugin	Solidity Unit Testing Plugin	2021-09-23 08:28:36 +0000 UTC
+1614	CLOSED	Issue in source location highlighting in SUT plugin for compilation error	bug, Solidity Unit Testing Plugin	2021-09-24 05:45:52 +0000 UTC
+1613	CLOSED	remix-tests is not working as CLI	bug, remix-tests, tests	2021-10-26 06:38:33 +0000 UTC
+1612	OPEN	Re-add Publish To Mainnet E2E Tests.	e2e-tests-needed	2021-09-28 10:30:14 +0000 UTC
+1610	CLOSED	Swarm Intergration & Swarm Plugin	plugins	2022-03-03 16:04:40 +0000 UTC
+1609	OPEN	remixd 0.5.2 can not be installed for windows os		2021-09-19 07:58:38 +0000 UTC
+1608	OPEN	Internal JSON-RPC error. { "code": -32000, "message": "gas required exceeds allowance (20329961)" } even if I raise the gas limit		2021-09-18 05:48:39 +0000 UTC
+1607	OPEN	Feature request : please roll back the deployed debugger version’s		2021-10-26 10:08:56 +0000 UTC
+1605	OPEN	Remix browser crashes after gas exceed limit		2022-02-05 04:45:51 +0000 UTC
+1604	CLOSED	nx serve "Module not found"		2021-09-29 02:47:13 +0000 UTC
+1601	OPEN	Proper formatting/coloring for compiler errors and warnings		2021-09-15 15:30:34 +0000 UTC
+1596	OPEN	Slither not working on windows	wontfix	2021-10-26 11:38:20 +0000 UTC
+1595	CLOSED	Hardhat compile goes timeout when a compilation is done after having switched compiler version		2021-09-15 11:54:40 +0000 UTC
+1593	OPEN	hometab UI	documentation, STORY, UI, UX, Roadmap2022	2022-06-09 13:45:41 +0000 UTC
+1589	OPEN	CSS on the compiler warning used a class defined in the remix-tabs	UI	2021-09-14 08:44:14 +0000 UTC
+1587	CLOSED	Update to Remix URL docs	documentation	2022-01-25 22:37:35 +0000 UTC
+1581	OPEN	Solidity Compiler: 'Hide warnings' doesn't work for YUL	bug, plugins, solidity compiler plugin, Roadmap2022	2021-12-06 09:34:20 +0000 UTC
+1572	OPEN	Random Jumps		2021-09-09 21:19:54 +0000 UTC
+1570	CLOSED	can not connect to remix-rinkeby.ethdevops.io		2021-09-14 08:37:38 +0000 UTC
+1568	CLOSED	Can't load compiler list in Chrome		2021-09-07 13:42:09 +0000 UTC
+1566	CLOSED	Remix-SyntaxError & Compiler issues		2021-09-06 17:57:50 +0000 UTC
+1564	CLOSED	Move main panel to react.	refactoring/coding style, Roadmap2021	2022-01-06 19:05:30 +0000 UTC
+1563	CLOSED	Move side panel to react.	refactoring/coding style, Roadmap2021	2022-01-06 19:04:49 +0000 UTC
+1562	CLOSED	Allow debugging for all tests in SUT plugin		2021-10-15 07:45:09 +0000 UTC
+1561	OPEN	Move runTestFile inside the UnitTestRunner class		2021-09-06 11:24:08 +0000 UTC
+1559	CLOSED	Feature request: let us disable the metadata hash		2021-10-26 11:43:23 +0000 UTC
+1558	OPEN	can I use gzip compress in rpc transfer		2021-09-04 05:36:54 +0000 UTC
+1556	CLOSED	hardhat: when compilation trigger a warning "compiler not supported", the compilation finished log is not logged in the remix terminal	hardhat	2021-09-09 06:18:51 +0000 UTC
+1555	CLOSED	Move Hometab to react	refactoring/coding style, Roadmap2021	2022-01-03 12:38:56 +0000 UTC
+1554	OPEN	Javascript VM crash on function call		2021-09-02 13:42:05 +0000 UTC
+1553	CLOSED	Matomo: trigger new events		2021-09-08 13:44:02 +0000 UTC
+1552	CLOSED	Doubling of localhost	bug	2021-12-02 14:06:13 +0000 UTC
+1550	CLOSED	debugger dissappears	bug	2021-09-09 20:27:28 +0000 UTC
+1541	CLOSED	web3.js personal mode API change	bug	2021-09-01 07:43:50 +0000 UTC
+1538	CLOSED	remove local plugin when activation fails	enhancement	2021-10-05 13:06:29 +0000 UTC
+1537	OPEN	error in deployment of smart contract		2022-01-01 09:19:10 +0000 UTC
+1536	CLOSED	Solidity Unit Testing plugin deactivation shows error		2021-09-08 08:04:18 +0000 UTC
+1531	OPEN	Unit Test Add-In crashes consistently on long running test.		2021-10-26 10:12:09 +0000 UTC
+1530	OPEN	Debugger hangs than reverts on simple string array assignment		2021-08-29 03:14:41 +0000 UTC
+1529	OPEN	Restore Remix Backup Zip doesn't work in Alpha		2021-09-02 08:15:11 +0000 UTC
+1524	CLOSED	using 'code' parameters crashes the app		2021-08-26 14:17:34 +0000 UTC
+1521	OPEN	Ability to Define Custom Fonts		2021-08-25 17:27:31 +0000 UTC
+1520	OPEN	External native integration tools installation and usage improvement		2021-08-25 13:48:53 +0000 UTC
+1516	CLOSED	Code doesn't load from external websites		2021-08-27 09:28:35 +0000 UTC
+1513	OPEN	transact to TokenInterface.transferToken errored: [object Object]		2021-09-05 11:13:09 +0000 UTC
+1512	OPEN	plugin ( manager ) improvements	enhancement, remix-ide, STORY, UI, plugins, UX, Roadmap2022	2021-12-06 09:18:24 +0000 UTC
+1505	OPEN	Cannot create new files on iPad Pro		2022-02-06 20:43:36 +0000 UTC
+1501	CLOSED	Remove compiler logic plugin from plugin manager list	bug	2021-08-24 07:14:45 +0000 UTC
+1493	CLOSED	Move PluginManager To Reactjs.		2021-08-26 09:34:05 +0000 UTC
+1492	CLOSED	Remix IDE Terminal Commands not working	bug	2021-10-18 06:35:41 +0000 UTC
+1491	CLOSED	Show the compiler sidebar by default when using a link with an embedded code snippet and add 'autocompile" as a url param		2021-10-07 19:39:39 +0000 UTC
+1490	OPEN	Accept Solidity version without commit hash in the `version` query parameter		2021-08-23 11:31:13 +0000 UTC
+1489	CLOSED	Allow switching between Solidity and Yul via a URL parameter		2022-01-21 11:56:35 +0000 UTC
+1488	OPEN	Getting a error during contract deployment: Invalid transaction params: params specify an EIP-1559 transaction but the current network does not support EIP-1559		2021-09-21 06:07:35 +0000 UTC
+1479	CLOSED	Coding Best Practices Link Broken		2021-08-26 05:53:40 +0000 UTC
+1474	OPEN	Publish to Swarm on Compile - cannot connect to Swarm	bug	2021-08-18 06:32:53 +0000 UTC
+1473	CLOSED	Upload to IPFS - JS error on Compiler	enhancement	2021-09-24 05:49:32 +0000 UTC
+1472	OPEN	Generate Solidity input json	enhancement, remix-ide, plugins, UX, Roadmap2022	2021-12-06 09:17:25 +0000 UTC
+1471	CLOSED	Deploying on mainnet can't tick "don't ask again"		2021-08-16 10:59:12 +0000 UTC
+1470	CLOSED	Deploying on mainnet with MetaMask errors		2021-08-13 16:39:32 +0000 UTC
+1467	CLOSED	Solidity Compiler: Use only plugin calls		2021-08-18 11:12:25 +0000 UTC
+1463	CLOSED	Deploy & run: reset state on workspace change	remix-ide	2022-03-01 08:49:30 +0000 UTC
+1462	OPEN	Deploy & run: add a link to docs to explain faucet usage for all testnets	documentation, enhancement, remix-ide, UI, UX, Roadmap2022	2021-12-06 09:16:33 +0000 UTC
+1461	OPEN	running test got "Cannot find module" error		2021-08-11 11:45:36 +0000 UTC
+1456	CLOSED	running hardhat on remix desktop		2021-08-19 08:21:08 +0000 UTC
+1455	CLOSED	Debugger panel entirely disappears during debugging session.	bug, remix-ide, debugger	2021-08-31 08:24:33 +0000 UTC
+1452	CLOSED	Warning/error are not accurate in new react compiler plugin	bug, UI	2022-04-27 09:31:43 +0000 UTC
+1450	OPEN	I cannot write anything in Remix IDE. It gets stuck even if I hit space or any character. Please help me. Thanks.		2021-08-09 04:47:45 +0000 UTC
+1444	OPEN	Compiler not loaded yet		2021-08-06 13:14:00 +0000 UTC
+1443	CLOSED	Use existing plugins to improve UX	STORY, plugins, UX, Roadmap2021	2021-09-28 11:54:16 +0000 UTC
+1439	CLOSED	Update screenshots for Hardhat and Slither with info icon in docs	documentation	2021-08-10 07:50:33 +0000 UTC
+1438	CLOSED	Changing environments does not properly reset JavaScript VM state		2021-08-17 13:49:37 +0000 UTC
+1434	CLOSED	Slither tool tip should be updated...	UI	2021-08-03 15:15:07 +0000 UTC
+1433	CLOSED	Hometab import from GITHUB & from HTTPS don't work	bug	2021-08-09 12:03:44 +0000 UTC
+1431	CLOSED	JSON parsing error in Yul metadata field in Compilation Details		2021-09-10 15:05:49 +0000 UTC
+1421	CLOSED	Enable slither checkbox in SSA plugin not disappearing if remixd is stopped		2021-08-03 05:07:36 +0000 UTC
+1418	CLOSED	Warn users about the fact that they need to install hardhat and slither		2021-08-02 09:57:54 +0000 UTC
+1414	OPEN	NotFoundError: Key not found in database [h?n]		2021-08-01 22:10:11 +0000 UTC
+1408	CLOSED	Solidity Compiler gives wrong source location	bug, remix-ide, solidity compiler plugin	2021-08-26 05:39:41 +0000 UTC
+1406	CLOSED	When switching out of localhost - the Enable Slither button remains in static analysis plugin	bug, remix-ide	2021-07-27 13:35:44 +0000 UTC
+1405	OPEN	Sync Editor and FE for current selected	bug, remix-ide, UX, Roadmap2022	2021-12-06 09:14:29 +0000 UTC
+1400	CLOSED	Static Analysis Plugin Not working After Deactivation and Re-activation		2021-07-27 05:08:26 +0000 UTC
+1396	OPEN	Allow file tabs ordering		2021-07-21 17:13:07 +0000 UTC
+1395	OPEN	Common interface for file providers		2021-07-21 14:13:47 +0000 UTC
+1393	CLOSED	Location and code highlighting for imported contract in Solidity Static Analysis with localhost workspace		2021-08-26 05:39:41 +0000 UTC
+1388	OPEN	remix - smart contrat problem		2021-07-15 22:38:05 +0000 UTC
+1386	OPEN	Mutliple version of same solc compiler with different commit id		2021-07-15 13:44:04 +0000 UTC
+1381	CLOSED	Matomo: Track usage of special actions in FE context menu	remix-ide, Roadmap2021	2021-08-10 09:11:44 +0000 UTC
+1379	CLOSED	change IPFS url in project		2021-07-14 11:09:58 +0000 UTC
+1378	CLOSED	Comments have the same grey color as variable names and functions actions (would be white). it's confusing	remix-ide, UI, UX	2021-08-06 09:07:15 +0000 UTC
+1377	CLOSED	Refactor/Improve Workspaces	enhancement, STORY	2021-12-06 09:51:41 +0000 UTC
+1373	OPEN	remixd 安装无效 windows10环境		2021-07-13 02:54:52 +0000 UTC
+1372	OPEN	PS: after setting the gasLimit to 3M in MetaMask, the contract is deployed		2021-07-12 19:04:16 +0000 UTC
+1366	OPEN	Gas Limit not set		2021-07-07 14:10:31 +0000 UTC
+1362	OPEN	share and upload a contract file on Remix IDE using QR code	enhancement, discussion	2021-07-13 12:30:23 +0000 UTC
+1351	CLOSED	Custum transaction context not updating balance of test contract instance		2021-08-05 09:19:22 +0000 UTC
+1349	CLOSED	Can't close Matamo modal	bug	2021-07-06 12:44:28 +0000 UTC
+1345	CLOSED	Open Slither integration for Solidity Static analysis & Remixd	bug	2021-10-26 12:04:16 +0000 UTC
+1338	CLOSED	URL parameter for importing code from Github	enhancement	2021-07-15 14:24:29 +0000 UTC
+1333	CLOSED	Move vertical icon bar to Reactjs		2022-01-19 21:30:40 +0000 UTC
+1332	CLOSED	Move terminal to Reactjs	enhancement, remix-ide, Roadmap2021	2021-10-29 14:17:31 +0000 UTC
+1331	CLOSED	Move Editor to Reactjs		2021-10-28 10:57:31 +0000 UTC
+1317	OPEN	File Explorers Workspaces - copying and pasting between workspaces is not possible	UX, file-explorer, Roadmap2022	2021-12-06 09:13:33 +0000 UTC
+1316	OPEN	Remix could not compile		2021-06-23 12:42:16 +0000 UTC
+1311	CLOSED	Include tslib as a dependency in remix-tests		2021-06-23 12:20:59 +0000 UTC
+1307	OPEN	Cannot read/write to path outside shared folder.		2021-06-26 03:55:44 +0000 UTC
+1305	OPEN	Passing arguments to functions in the sidebar in expanded view converts everything passed to strings		2021-06-22 05:04:34 +0000 UTC
+1300	CLOSED	hardhat provider modal won't stop reappearing	bug	2021-06-30 13:13:15 +0000 UTC
+1295	CLOSED	Going from OZ Wizard to Remix opens in default_workspace and not code-sample	bug	2021-06-21 12:29:34 +0000 UTC
+1294	OPEN	Validate and sanitise input & args to remixd, git & hardhat clients when spawning commands		2021-06-16 14:43:34 +0000 UTC
+1293	OPEN	When paying an non-payable constructor	UI	2021-06-16 11:33:12 +0000 UTC
+1292	CLOSED	fix vertical scroll of ide	bug	2021-07-14 08:19:08 +0000 UTC
+1291	CLOSED	Move Solidity Unit Testing Plugin Tab to Reactjs	remix-ide, refactoring/coding style	2021-12-30 15:09:17 +0000 UTC
+1290	CLOSED	Move Run and Deploy Tab to React.	remix-ide, refactoring/coding style, Roadmap2021	2022-01-06 16:08:25 +0000 UTC
+1288	CLOSED	debugging on Goerli fails	remix-debug	2021-06-17 14:44:17 +0000 UTC
+1285	OPEN	`--init` option in remixd		2021-06-14 14:05:40 +0000 UTC
+1283	OPEN	Remix-After clearing History Remix do not save new contracts / file		2021-06-13 10:50:54 +0000 UTC
+1282	CLOSED	[Bug] Contract call failing in Remix UI (failing to read on-chain data)	bug	2021-06-23 11:56:52 +0000 UTC
+1272	CLOSED	E2E test for checking use of BigNumber as transaction value		2021-06-29 08:34:11 +0000 UTC
+1270	CLOSED	Error not getting removed from editor after it is fixed	bug	2021-06-10 10:01:38 +0000 UTC
+1264	CLOSED	ethereum vm on settings	UI	2021-06-29 10:24:33 +0000 UTC
+1260	CLOSED	Hardhat Integration documentation	documentation	2021-06-10 15:44:23 +0000 UTC
+1259	CLOSED	remixd data syncing over websocket	bug	2021-07-23 08:22:26 +0000 UTC
+1258	CLOSED	Order event firing for file-explorer.	bug	2021-06-03 14:42:18 +0000 UTC
+1256	CLOSED	tabs should be closed when folder/file is removed from localstorage provider	bug	2021-07-23 08:22:26 +0000 UTC
+1255	CLOSED	Unit testing plugin path issue from @yann300		2021-06-09 14:05:20 +0000 UTC
+1253	OPEN	Error! Unable to generate Contract ByteCode and ABI		2022-05-19 06:42:05 +0000 UTC
+1247	CLOSED	Solidity Static Analysis Plugin UI improvements	remix-beta, beta testing	2021-06-04 09:11:15 +0000 UTC
+1246	CLOSED	Transactions failing in remix-tests with bytecode of a particular size		2021-06-02 15:37:06 +0000 UTC
+1242	OPEN	Event name conflicts and data out-of-bounds error in Remix		2022-03-29 01:38:26 +0000 UTC
+1241	CLOSED	`connect to localhost` modal should also inform about hardhat ws plugin connection	remix-beta, beta testing	2021-06-08 06:36:08 +0000 UTC
+1239	CLOSED	pragma update is having problems with builtin version		2021-08-12 09:10:52 +0000 UTC
+1238	CLOSED	Deactivating through appmanager		2021-05-31 08:53:40 +0000 UTC
+1235	CLOSED	error or 'new file' and 'open file' when no workspace	bug	2021-05-31 13:44:12 +0000 UTC
+1231	CLOSED	e2e tests for debugging a contract against our debug node.		2021-05-31 15:32:31 +0000 UTC
+1228	CLOSED	e2e tests for contract call with injected web3 and web3 provider		2021-05-28 11:30:40 +0000 UTC
+1226	CLOSED	Memory Leak when interacting with workspaces and file-explorer.	bug	2021-05-27 10:19:37 +0000 UTC
+1225	CLOSED	Unnecessary call for websocket connection		2021-05-31 08:19:41 +0000 UTC
+1223	CLOSED	Issue in calling method with web3 provider	bug	2021-05-27 09:26:43 +0000 UTC
+1221	CLOSED	Allow pasting mutliple times in file-explorer	remix-ide	2021-05-26 10:00:08 +0000 UTC
+1217	CLOSED	Refreshing file explorer		2021-05-24 13:08:53 +0000 UTC
+1215	OPEN	error code 13		2021-05-25 12:01:21 +0000 UTC
+1212	CLOSED	Remix-Desktop needs a README	documentation	2021-08-10 07:03:59 +0000 UTC
+1211	OPEN	Copy folder internal function	remix-ide	2021-05-20 13:19:38 +0000 UTC
+1207	OPEN	Javascript Error on Contract Deployment		2021-05-19 19:49:13 +0000 UTC
+1203	CLOSED	Blockhash causes VM to revert	bug	2021-06-03 18:33:28 +0000 UTC
+1201	CLOSED	Show hardhat compilation result in remix terminal	remixD, solidity compiler plugin	2021-05-24 08:50:52 +0000 UTC
+1200	CLOSED	Discuss if udapp should be cleaned up on workspace change	remix-ide, UX, discussion	2021-08-12 10:44:39 +0000 UTC
+1199	CLOSED	reset static analyzer plugin on workspace change	UX, Static Analysis Plugin	2021-07-20 09:14:01 +0000 UTC
+1197	OPEN	Refactor remix-ui for switching workspace	workspace	2021-05-18 07:57:39 +0000 UTC
+1191	CLOSED	Activating plugins from call manager times out		2021-05-26 13:17:59 +0000 UTC
+1189	CLOSED	put the solc latest version as default and as local		2021-06-04 07:35:05 +0000 UTC
+1187	OPEN	Autcomplete for curly brackets?	enhancement, remix-ide	2021-05-17 06:49:14 +0000 UTC
+1186	OPEN	Please help to Debug		2021-05-15 12:18:19 +0000 UTC
+1183	CLOSED	Issues in switching to and from localhost workspace	workspace	2021-11-11 05:21:53 +0000 UTC
+1178	CLOSED	project		2021-05-17 06:48:06 +0000 UTC
+1173	CLOSED	Creating new workspace accesses old directory	bug	2021-05-11 04:15:43 +0000 UTC
+1163	OPEN	my token and contract		2021-06-14 19:57:17 +0000 UTC
+1159	CLOSED	Move settings tab to Reactjs	remix-ide, refactoring/coding style	2021-06-30 07:17:03 +0000 UTC
+1158	OPEN	Remix doesn't save my file	bug, remix-ide, file-explorer	2021-07-30 21:06:26 +0000 UTC
+1156	CLOSED	Debugger: Data display: make nonzero entries more prominent	remix-ide, UX, remix-debug	2021-06-29 13:04:51 +0000 UTC
+1155	CLOSED	Debugger: Enhanced code display	remix-ide, UI, UX, remix-debug	2021-07-15 15:22:53 +0000 UTC
+1154	CLOSED	Debugger: Memory display should use teletype font	remix-ide, UI, UX	2021-06-29 13:04:52 +0000 UTC
+1153	CLOSED	Source location reference is lost during debugging	bug, remix-ide, remix-debug	2021-05-10 19:27:57 +0000 UTC
+1152	CLOSED	Support decoding custom errors	enhancement, remix-ide	2021-06-29 12:51:04 +0000 UTC
+1151	CLOSED	Test wallet connect		2021-05-26 13:17:06 +0000 UTC
+1141	OPEN	[ENHANCEMENT] Deploy and Fund	enhancement, remix-ide, UI, UX, Roadmap2022	2021-12-06 09:13:21 +0000 UTC
+1138	CLOSED	Contract that reverts with Solidity Custom Error fails to deploy to Javascript VM		2021-04-29 06:45:07 +0000 UTC
+1137	OPEN	Remixd is not running on Mac OS		2022-06-15 03:30:25 +0000 UTC
+1136	OPEN	Make workspace name reserved keyword for file/folder names.		2021-04-22 11:47:21 +0000 UTC
+1135	CLOSED	Create download workspace button in file-explorer	effort: 1	2022-04-04 13:04:02 +0000 UTC
+1134	CLOSED	creation of Contract errored: invalid fragment object		2021-12-26 18:55:46 +0000 UTC
+1132	CLOSED	Rename the plugin fileExplorers to filePanel		2021-04-30 15:14:13 +0000 UTC
+1131	OPEN	multiselection in FE	remix-ide, STORY, UI, UX, Roadmap2022	2021-12-06 09:11:25 +0000 UTC
+1130	CLOSED	update compiler documentation with optimization	documentation	2021-08-31 07:55:03 +0000 UTC
+1127	CLOSED	Support Solidity 0.3.6		2021-04-21 14:59:44 +0000 UTC
+1126	CLOSED	copy workspace to localhost	UX	2021-04-21 13:28:30 +0000 UTC
+1125	OPEN	Themes loaded over http instead of https		2021-04-16 14:43:58 +0000 UTC
+1124	OPEN	Load a local file into current workspace not working on Brave Browser		2021-04-15 23:54:11 +0000 UTC
+1123	CLOSED	Refactoring events part 1	refactoring/coding style	2021-05-19 09:51:20 +0000 UTC
+1118	CLOSED	Downloading the source code creates zip with no contents		2021-04-16 19:46:20 +0000 UTC
+1117	OPEN	Sharing a gist flattens directories		2021-04-14 16:25:04 +0000 UTC
+1116	OPEN	File permission calls should not time out or UI should reflect the error		2021-04-14 07:38:37 +0000 UTC
+1107	OPEN	call to deactivate plugin doesn't seem to work	bug	2021-09-13 11:02:57 +0000 UTC
+1103	CLOSED	Main panel plugins need a link to docs	UX	2021-05-24 08:12:24 +0000 UTC
+1102	CLOSED	Ask to include default set of files and folders for new workspace	remix-ide, UI, UX, Roadmap2022, effort: 8	2022-05-10 06:56:28 +0000 UTC
+1100	OPEN	can't input float number in value field	bug, remix-ide	2021-05-21 16:43:24 +0000 UTC
+1099	CLOSED	Cannot deploy contract AtAddress button disabled	bug	2022-01-15 08:01:23 +0000 UTC
+1097	OPEN	How to build the docker image?		2021-04-07 23:43:10 +0000 UTC
+1094	CLOSED	how does remix convert string input to actual type?		2021-04-09 03:12:07 +0000 UTC
+1092	OPEN	can't copy compile error msg from the page		2021-04-07 06:26:13 +0000 UTC
+1090	CLOSED	Page unresponsive		2021-04-07 05:09:31 +0000 UTC
+1089	OPEN	Unable to create new file		2021-04-08 02:47:10 +0000 UTC
+1088	CLOSED	Update Migration FAQs on home tab	priority:P1	2021-04-13 04:42:02 +0000 UTC
+1087	CLOSED	Learneth should put files under its own workspace.	priority:P1	2021-04-08 09:53:13 +0000 UTC
+1083	CLOSED	File Explorer goes blank where there are no workspaces but files in root FS		2021-04-07 13:41:18 +0000 UTC
+1082	CLOSED	display error alerts when migrating		2021-04-07 13:41:36 +0000 UTC
+1080	CLOSED	npm version spec needed	UX	2021-06-29 18:56:28 +0000 UTC
+1079	CLOSED	homepage tab import	UX	2021-06-29 07:29:53 +0000 UTC
+1078	CLOSED	Initiate Instance & Using ABI need to be edited for clairity	documentation	2021-06-16 12:32:43 +0000 UTC
+1077	OPEN	Copying the ABI from the modal - the toaster is hidden	UI	2021-04-05 19:06:11 +0000 UTC
+1076	CLOSED	add address button is not clickable		2021-05-27 08:36:51 +0000 UTC
+1075	CLOSED	Save artifacts issue when connected with remixd	bug, remixD, priority:P1	2021-04-08 10:16:16 +0000 UTC
+1074	OPEN	JavaScript error on page load		2021-04-08 02:45:57 +0000 UTC
+1067	OPEN	Gas estimation failed error improvement		2021-08-02 02:30:23 +0000 UTC
+1064	CLOSED	old Remixd on NPM needs to clearly state it is depricated for new one	UI, UX	2021-04-07 11:38:27 +0000 UTC
+1060	CLOSED	Add option to check version	remixD	2021-04-07 12:47:07 +0000 UTC
+1058	CLOSED	Remixd Modal - move up update message & small rewrites	UX	2021-04-01 21:16:38 +0000 UTC
+1056	OPEN	Show gas price ranges from etherscan in Run and Deploy	remix-ide, UX	2021-12-06 09:09:05 +0000 UTC
+1055	CLOSED	Upload zip file to remix	remix-ide, discussion, priority:P1	2021-04-12 11:58:13 +0000 UTC
+1051	CLOSED	Clear compilationResult on changing workspace	remix-ide, workspace	2021-05-20 07:23:40 +0000 UTC
+1050	OPEN	Remix crashes when trying to add files, or create a new workspace		2021-03-30 05:44:03 +0000 UTC
+1049	CLOSED	Issue in test files update on workspace change	Solidity Unit Testing Plugin	2021-07-21 12:21:04 +0000 UTC
+1048	CLOSED	Mainnet transactions modal is confusing	UI	2021-05-26 15:22:48 +0000 UTC
+1042	OPEN	Remix hanging while creating a new file		2021-03-27 10:25:35 +0000 UTC
+1035	CLOSED	Enabling Matomo leaves File Explorer blank		2021-03-25 06:07:51 +0000 UTC
+1033	CLOSED	The fucking website doesent work		2021-03-24 22:08:42 +0000 UTC
+1028	CLOSED	handle error on file/folder creation in internal/external plugins	bug, remix-ide, UX, priority:P1	2021-04-14 17:33:27 +0000 UTC
+1024	OPEN	TypeError: remixd.Router is not a constructor		2021-03-24 17:22:26 +0000 UTC
+1022	CLOSED	0.11.0 Release breaks gists		2021-03-25 08:05:03 +0000 UTC
+1017	OPEN	kovan network reverted txn don't return the error msg		2021-03-23 14:29:47 +0000 UTC
+1016	CLOSED	Activate react production build when deploying to remix_live		2021-08-25 09:32:32 +0000 UTC
+1015	OPEN	Create library from remix-ide helper functions.		2021-03-23 14:10:24 +0000 UTC
+1014	OPEN	Refactor mode of access to file provider.	refactoring/coding style	2021-04-06 12:42:12 +0000 UTC
+1012	CLOSED	External plugin can create folder with spaces	workspace	2021-04-27 11:09:50 +0000 UTC
+1011	OPEN	Remix + Hardhat	STORY	2021-03-23 10:10:37 +0000 UTC
+1010	OPEN	Hardhat commands in Remix terminal	investigate	2021-03-23 10:05:26 +0000 UTC
+1008	OPEN	Hardhat and Remix compilationResult	investigate	2021-05-26 13:07:02 +0000 UTC
+1007	OPEN	hardhat console logs in remix	investigate	2021-03-23 10:00:08 +0000 UTC
+1006	OPEN	check if event emitted in assert library	remix-tests	2021-03-30 05:35:35 +0000 UTC
+1005	CLOSED	After update Ide does not compile source code		2021-03-24 10:33:58 +0000 UTC
+1004	CLOSED	page unresponsive (only a remix logo shows in the page)		2021-03-26 08:25:34 +0000 UTC
+1000	CLOSED	Switch on Matomo for remix.ethereum.org	remix-ide	2021-03-24 14:53:41 +0000 UTC
+999	CLOSED	Fix possible security issues from dep. packages		2021-03-23 13:48:30 +0000 UTC
+991	OPEN	Reports of Parse error : source file requires different compiler version	bug	2022-02-04 15:40:11 +0000 UTC
+989	CLOSED	Editor: when switching between localhost & workspaces - the localhost files are still there	bug, UI, UX, priority:P2	2021-04-12 19:18:20 +0000 UTC
+985	CLOSED	Move Static Analysis Tab To Reactjs	remix-ide, refactoring/coding style	2021-06-16 09:33:33 +0000 UTC
+983	OPEN	Add remix-desktop on home tab	remix-ide	2021-03-17 11:59:44 +0000 UTC
+977	CLOSED	remixd modal grabs the url including all the url parameters	documentation, UX	2021-05-12 11:33:16 +0000 UTC
+976	CLOSED	file provider sends out full paths in workspace version		2021-04-29 09:00:01 +0000 UTC
+969	CLOSED	Improve Error Messages	remix-ide, UX	2021-04-29 10:05:38 +0000 UTC
+967	CLOSED	Blank name for files with the same name displayed in editor tabs.	bug, remix-ide	2021-03-16 14:47:49 +0000 UTC
+965	CLOSED	switch from localhost to another workspace gives a console error	bug	2021-03-16 17:00:18 +0000 UTC
+964	CLOSED	default workspace is selected showing remixd file when remix is turned on in the Plugin man	bug, UI	2021-03-18 01:46:52 +0000 UTC
+963	CLOSED	terminated remixd modal needs a space in the modal.	UI	2021-03-15 12:10:36 +0000 UTC
+962	CLOSED	remixd: when switching between localhost & another workspace...	bug, UX	2021-03-18 01:37:36 +0000 UTC
+961	CLOSED	compiler multiple badges	bug	2021-03-15 08:00:47 +0000 UTC
+960	CLOSED	using struct declared out of contract scope in public function makes debugger to disappear	bug	2021-06-04 07:41:51 +0000 UTC
+959	CLOSED	load a local file into workspace - only loads to the root	bug, priority:P2	2021-04-09 05:42:16 +0000 UTC
+958	CLOSED	why is there a caret to the left of the workspace icons		2021-03-30 05:43:19 +0000 UTC
+957	CLOSED	publish to gist fail	bug	2021-03-17 12:24:55 +0000 UTC
+956	CLOSED	modal for pubishing gist still refers to browser folder		2021-03-16 01:57:10 +0000 UTC
+955	OPEN	a did you know section in the documentation	documentation	2021-03-15 04:32:58 +0000 UTC
+954	CLOSED	FE context menu appears north of the folder that was clicked on		2021-03-15 01:57:18 +0000 UTC
+952	OPEN	add example to load file from a directory	documentation, good first issue	2021-03-10 17:02:24 +0000 UTC
+951	OPEN	Update examples in docs	documentation, good first issue	2021-09-12 21:29:29 +0000 UTC
+950	CLOSED	File Explorer rerendering the entire tree.	remix-ide, UI	2021-05-12 14:55:43 +0000 UTC
+945	CLOSED	We don't have remix-beta.ethereum.org as an accepted origin for remixd.	remixD	2021-04-21 01:53:35 +0000 UTC
+944	CLOSED	Should switch to none or default workspace when localhost connection is not established.	bug, remix-ide	2021-03-09 10:32:41 +0000 UTC
+943	CLOSED	Remix fails to compile contract "No Contract Compiled yet" without showing actual error	bug	2021-03-09 15:26:46 +0000 UTC
+939	OPEN	path for externally loaded files	discussion	2021-03-04 10:28:13 +0000 UTC
+938	CLOSED	Warn if not latest version (remixd)	UX, remixD	2021-06-07 11:55:08 +0000 UTC
+937	CLOSED	Change ok.fn and cancel.fn callbacks to props so react can manage state better in modals.	remix-ide, performance	2021-06-29 10:40:21 +0000 UTC
+935	OPEN	Modal dialog custom versions in react	remix-ide, refactoring/coding style, Roadmap2021	2021-10-26 10:15:16 +0000 UTC
+930	CLOSED	Remix transaction sends the wrong amount of wei...	bug	2021-05-17 08:44:03 +0000 UTC
+927	OPEN	remixd seems not read folder properly in Windows		2021-03-01 09:57:37 +0000 UTC
+926	CLOSED	Use '@ethereumjs/*' packages	Remix Libraries	2021-05-03 12:00:03 +0000 UTC
+925	CLOSED	Rename JavaScript VM to Remix VM	remix-ide, UI, UX, discussion	2022-07-06 06:11:25 +0000 UTC
+917	CLOSED	add a space between an icon and title of tabs	remix-ide, UI	2021-04-21 12:51:14 +0000 UTC
+916	OPEN	Check for version < 'v0.4.12+commit.194ff033.js' to disable Unit Testing Plugin	remix-ide, UX, Solidity Unit Testing Plugin, Roadmap2022	2021-12-06 09:08:16 +0000 UTC
+915	OPEN	Check for version < 'v0.4.12+commit.194ff033.js' to disable Static Analysis plugin	remix-ide, UX, Static Analysis Plugin, Roadmap2022	2021-12-06 09:08:02 +0000 UTC
+908	CLOSED	update the old remixd repo	documentation, UX	2021-04-07 11:20:08 +0000 UTC
+907	OPEN	artifacts/[Contract].json is empty for large contracts		2022-01-20 12:14:53 +0000 UTC
+901	CLOSED	Function Stack, Solidity Locals and Solidity State not working if contract has immutable variable	bug	2021-06-29 13:18:49 +0000 UTC
+899	OPEN	FAS.md needs updating	documentation	2021-02-17 05:06:14 +0000 UTC
+898	CLOSED	update links from ballot.sol	documentation	2021-06-04 18:30:37 +0000 UTC
+897	CLOSED	update https://remix-ide.readthedocs.io/en/latest/remixd.html	documentation	2021-04-21 01:53:35 +0000 UTC
+896	CLOSED	update https://remix-ide.readthedocs.io/en/latest/remix_tutorials_github.html	documentation	2021-06-10 19:18:55 +0000 UTC
+895	CLOSED	update https://remix-ide.readthedocs.io/en/latest/running_js_scripts.html with info about default scripts	documentation	2021-08-31 07:43:06 +0000 UTC
+894	CLOSED	Small edit to https://remix-ide.readthedocs.io/en/latest/create_deploy.html	documentation	2021-06-04 18:30:37 +0000 UTC
+890	OPEN	Improve renderer to support errors and warnings of compiler and analyzer	remix-ide	2021-02-16 10:43:30 +0000 UTC
+889	CLOSED	Remixd always connecting to root of system		2021-02-27 11:44:07 +0000 UTC
+887	CLOSED	Matomo: how many active users do we have and some general statistics. initial PR	remix-ide, UX	2021-02-16 12:30:05 +0000 UTC
+886	CLOSED	Matomo: user flow ( which module in which order ) - create af file / compile it / deploy / at address / static analysis	remix-ide, UX	2021-09-13 12:15:07 +0000 UTC
+885	CLOSED	Matomo: run tab : using atAddress input / deploy	remix-ide, UX	2021-09-13 12:13:51 +0000 UTC
+884	CLOSED	Matomo: usage of mainnet / testnet and vm		2021-05-12 14:13:28 +0000 UTC
+883	CLOSED	Matomo: usage publish to IPFS (from run tab)	remix-ide, UX	2021-05-12 14:13:28 +0000 UTC
+882	CLOSED	Matomo: Doc link, plugin docs	remix-ide, UX	2021-04-29 06:46:39 +0000 UTC
+881	CLOSED	Matomo: duration	remix-ide, UX	2021-08-12 11:36:41 +0000 UTC
+879	CLOSED	Matomo: track used themes	remix-ide, UX	2021-02-23 11:03:52 +0000 UTC
+878	OPEN	static analysis - wrong extracted file path	bug	2021-02-15 12:03:20 +0000 UTC
+877	CLOSED	RPC and RPCCorsDomain are deprecated in geth		2021-03-15 07:05:45 +0000 UTC
+875	OPEN	renaming folders with an open file keeps the file in the tab		2021-02-15 11:15:26 +0000 UTC
+873	CLOSED	renaming folders adds that full path to the tab name		2021-04-06 08:43:52 +0000 UTC
+872	CLOSED	using spaces in folder names	bug	2021-02-18 15:31:03 +0000 UTC
+868	OPEN	Support typescript files execution in Remix	enhancement, remix-ide	2021-02-12 07:49:42 +0000 UTC
+865	CLOSED	Add 'muirGlacier' in the list of EVM version in solidity compiler	good first issue, solidity compiler plugin	2021-02-17 18:15:52 +0000 UTC
+857	CLOSED	create/save workspace		2021-02-24 13:31:40 +0000 UTC
+855	CLOSED	Remixd connects to the root folder -> Critical security issue		2021-02-14 13:03:25 +0000 UTC
+853	CLOSED	Remix web UI connected to remixd shows contents of a root folder instead of the <shared folder>		2021-02-09 13:50:56 +0000 UTC
+852	CLOSED	Deep linking with the contents of a file for the editor in the URL		2021-02-09 20:34:36 +0000 UTC
+851	OPEN	Publish to GIST with a right click on multi selected files	UI, UX, file-explorer, Roadmap2022	2021-12-06 09:07:47 +0000 UTC
+850	CLOSED	Rt click to publish a folder or file to a GIST	UI, UX, file-explorer	2021-05-20 15:42:17 +0000 UTC
+849	CLOSED	git plugin	UX	2021-02-22 12:30:53 +0000 UTC
+846	CLOSED	Static Analysis gives wrong source location	bug	2021-07-13 11:48:13 +0000 UTC
+845	CLOSED	Remixd isn't connecting		2021-02-10 21:20:49 +0000 UTC
+844	CLOSED	Update remix-tests solidity libs to work with 0.8.0	remix-tests	2021-02-09 14:17:13 +0000 UTC
+843	CLOSED	update linking to default files	documentation	2021-03-02 15:28:33 +0000 UTC
+840	CLOSED	remixd deactivate workflow	UX	2021-04-21 12:46:32 +0000 UTC
+838	CLOSED	UI Break on 0.10.8 on Windows		2021-02-06 21:52:00 +0000 UTC
+834	CLOSED	right click in file explorer doesn't work over the folder icon	bug, UI, UX	2021-04-21 12:47:31 +0000 UTC
+833	CLOSED	Remix server not launching at the specified directory		2021-02-04 22:37:08 +0000 UTC
+826	CLOSED	Validate AtAddress Input Field To Check For Valid Eth Address	remix-ide	2021-02-16 14:18:11 +0000 UTC
+823	CLOSED	remixd console error	bug	2021-02-22 05:36:47 +0000 UTC
+817	OPEN	compiler autodetection from pragma is broken	bug	2021-07-13 14:10:37 +0000 UTC
+816	CLOSED	Debugging a complex input - console errors	bug	2021-02-01 17:39:12 +0000 UTC
+815	CLOSED	debugger opcode panel has some funny characters in remix-beta	bug	2021-02-01 14:12:38 +0000 UTC
+812	CLOSED	Making a file empty doesn't save it	bug, remix-ide	2021-02-17 16:57:55 +0000 UTC
+811	OPEN	debugging a txn of a verified contract brings up lots of toasters	UI	2021-01-28 03:09:02 +0000 UTC
+810	CLOSED	Debugger jump out button is always deactivated	bug	2021-02-01 09:34:40 +0000 UTC
+809	CLOSED	Debugger doesn't always turn off source hightlighting when stop debugging is clicked	bug	2021-02-19 16:38:36 +0000 UTC
+808	CLOSED	Remixd points to the filesystem root instead of specified folder	bug	2021-02-08 04:52:39 +0000 UTC
+807	CLOSED	Edits to the README.txt file in the default contracts	UI	2021-02-02 09:35:40 +0000 UTC
+804	CLOSED	in case of array var the label and triangle are not alligned in debugger ui	bug, remix-ide, UI, debugger	2021-01-28 13:29:11 +0000 UTC
+803	CLOSED	Static analysis is not receiving compilationfinished after reactivation	bug, remix-ide, Static Analysis Plugin	2021-02-10 18:43:54 +0000 UTC
+802	CLOSED	Add a negative test for Publish to gist when id is not set	remix-ide, browser-tests, file-explorer	2021-02-11 09:19:38 +0000 UTC
+801	OPEN	Add Publish to gist to context menu of each folder	enhancement, UI, UX, file-explorer, Roadmap2022	2021-12-06 09:05:47 +0000 UTC
+800	CLOSED	Publishing all files to gist not working	bug, file-explorer	2021-01-28 15:27:13 +0000 UTC
+799	CLOSED	Static analysis warning location	bug, Static Analysis Plugin	2021-02-02 07:02:07 +0000 UTC
+798	OPEN	Hide contracts section / Disable AtAddress Input if no contract is compiled.	remix-ide	2021-01-27 10:51:27 +0000 UTC
+797	OPEN	Load more button for older articles and tweets in home page.	remix-ide	2021-01-27 10:34:27 +0000 UTC
+796	CLOSED	Uploading file in selected folder	enhancement, remix-ide, file-explorer	2021-05-08 12:05:04 +0000 UTC
+795	CLOSED	Issue with file/directory creation	remix-ide, file-explorer	2021-01-28 15:27:13 +0000 UTC
+794	CLOSED	issue in overwriting the file by uploading from local device	remix-ide, file-explorer	2021-01-28 15:27:13 +0000 UTC
+793	CLOSED	Plugin API for selecting the environment (VM, injected, external provider)	remix-plugin	2021-02-17 09:49:43 +0000 UTC
+787	CLOSED	Decoration in the gutter also need to be discarded if the plugin is deactivated or loose focus	bug	2021-02-16 18:15:29 +0000 UTC
+778	CLOSED	Onchange on file upload won't fire again if the file is the same	bug	2021-02-01 09:21:54 +0000 UTC
+777	CLOSED	new file and open file on home errors		2021-02-01 09:22:30 +0000 UTC
+773	CLOSED	remove dweb:/ from IPFS addresses in modal	UI, UX	2021-04-30 07:06:02 +0000 UTC
+772	CLOSED	Contentimport resolve incosistent with API definition		2021-03-17 10:14:49 +0000 UTC
+771	CLOSED	using calldata causes remix debugger disappear	bug	2021-06-03 13:26:13 +0000 UTC
+770	CLOSED	DeclarationError: Undeclared identifier; when passing constructor args to parent contract		2021-01-23 07:25:29 +0000 UTC
+762	CLOSED	JumpOut Action is always disabled	bug, debugger	2021-02-11 14:01:49 +0000 UTC
+761	CLOSED	RegisterMenuItem / CustomAction	STORY	2021-07-01 19:30:29 +0000 UTC
+755	OPEN	Issue in deletion of file opened in editor	remix-ide	2021-01-20 11:06:28 +0000 UTC
+754	OPEN	New File explorer improvements		2021-01-20 12:06:42 +0000 UTC
+750	CLOSED	Removing file events are not always received by plugins		2021-01-19 09:50:50 +0000 UTC
+746	CLOSED	Description in the profile needs updating to have the 1st letter capitalized	UI	2021-02-01 13:31:51 +0000 UTC
+739	OPEN	Insuring all plugins provide links to documentation, repo, & issues list in plugins	UI, remix-plugin, UX	2022-07-06 02:42:27 +0000 UTC
+737	CLOSED	Remixd gives an error and quits	bug	2021-09-19 17:54:02 +0000 UTC
+736	CLOSED	Remixd quits and give an error		2021-01-21 20:23:51 +0000 UTC
+733	CLOSED	Display warning in settings tab for page reload after token update.	remix-ide, UI, UX	2021-01-28 12:25:16 +0000 UTC
+729	OPEN	Fix Run And Deploy Test & Update Metamask Extension	browser-tests, investigate	2021-01-13 09:31:43 +0000 UTC
+728	CLOSED	Mention default solidity version for remix somewhere on the platform	discussion	2021-05-17 07:39:00 +0000 UTC
+721	CLOSED	Deleting request var in remix-plugin causes uncaught error blocking promise reject	bug	2021-01-18 12:51:31 +0000 UTC
+718	CLOSED	[bug] wrong return type by udapp.getAccounts()		2021-01-06 16:16:00 +0000 UTC
+717	CLOSED	investigate possible problems with solc 0.8.0	remix-ide, investigate	2021-03-04 14:42:35 +0000 UTC
+712	CLOSED	error while running unit tests of remix-tests	remix-tests, tests	2021-01-11 12:14:59 +0000 UTC
+705	CLOSED	Allow plugins to collapse panels	remix-ide, plugins	2021-01-05 10:34:28 +0000 UTC
+704	CLOSED	Allow Defi tutorials plugin to activate uma tutorials plugin	remix-ide	2021-02-11 09:11:31 +0000 UTC
+703	OPEN	Allow plugins to set tabs as active	plugins	2021-01-14 09:13:54 +0000 UTC
+702	OPEN	Allow plugins to get the current selected account	remix-plugin	2021-01-05 09:47:11 +0000 UTC
+701	CLOSED	Jump to error line does not work	bug, remix-ide	2021-01-12 18:38:18 +0000 UTC
+696	CLOSED	Cannot pass in address tuple as the parameter to a function		2021-12-16 00:08:57 +0000 UTC
+695	CLOSED	Suggestion for remix-tests / examples_4	remix-tests	2021-01-11 14:48:54 +0000 UTC
+691	CLOSED	Unable to debug contract which has external import ( using sourcify )	bug	2021-01-05 09:25:48 +0000 UTC
+688	OPEN	Fix debugger navigation panel	enhancement, remix-ide, UI, UX, discussion, debugger, Roadmap2022	2021-12-06 08:54:15 +0000 UTC
+687	CLOSED	Annotations disappear when changing file	remix-ide, plugins, solidity compiler plugin	2021-02-16 18:15:29 +0000 UTC
+686	OPEN	Allow gas profiler to activate debugger plugin	remix-ide, solidity compiler plugin	2021-10-18 02:24:17 +0000 UTC
+685	OPEN	test a negative value for "value" in deploy&run	good first issue, remix-ide, browser-tests	2021-02-12 07:44:42 +0000 UTC
+684	OPEN	How do I connect to the test network locally?		2020-12-17 10:57:09 +0000 UTC
+682	OPEN	Website UI update	website, Roadmap2022	2021-12-06 09:38:43 +0000 UTC
+680	OPEN	update the logo of sourcify	remix-ide, UI, plugins, Roadmap2022	2021-12-06 09:39:40 +0000 UTC
+677	OPEN	Common Solidity Static Analyzer Plugin	enhancement, STORY, Roadmap2021	2021-07-14 07:38:22 +0000 UTC
+676	OPEN	Interoperability with other contract frameworks like openzepplin etc.	enhancement, Roadmap2021	2020-12-10 15:25:34 +0000 UTC
+675	OPEN	Interoperability with dev tools like truffle, hardhat etc	enhancement, Roadmap2021	2021-08-17 13:55:05 +0000 UTC
+674	OPEN	Config file for remix workspace	enhancement, investigate, discussion, Roadmap2022	2021-12-06 09:53:08 +0000 UTC
+673	OPEN	remix-tests/Solidity unit testing plugin Improvements	remix-tests, Roadmap2021, Solidity Unit Testing Plugin	2021-09-08 12:49:51 +0000 UTC
+672	CLOSED	Walkthrough for beginners	remix-ide, UX, Roadmap2021	2021-07-30 13:46:18 +0000 UTC
+671	OPEN	File explorer improvements	remix-ide, STORY, UI, UX, Roadmap2021, Roadmap2022	2021-12-06 09:29:40 +0000 UTC
+670	OPEN	contract directory is expanded without showing files in it	browser-tests, investigate	2020-12-10 06:45:06 +0000 UTC
+667	CLOSED	remix-plugin api usage in IDE	remix-ide, STORY, plugins, refactoring/coding style, Roadmap2021	2021-10-04 13:48:24 +0000 UTC
+666	CLOSED	don't call pluginManager API directly, use plugin call instead	duplicate, remix-ide, refactoring/coding style, Roadmap2021	2021-04-26 08:18:55 +0000 UTC
+663	CLOSED	running scripts has a bad link	documentation	2021-01-05 20:11:05 +0000 UTC
+662	CLOSED	add a page documenting plugins	documentation	2022-05-11 18:37:16 +0000 UTC
+661	OPEN	Remix IDE themes plugin full support for remix plugin 0.3		2021-01-12 12:31:55 +0000 UTC
+658	OPEN	Create file using file template	remix-ide, discussion	2020-12-10 10:04:59 +0000 UTC
+657	OPEN	Can't run with docker		2020-12-07 15:25:41 +0000 UTC
+650	OPEN	Extract MainView into plugins	remix-ide, UI, refactoring/coding style	2020-11-30 16:29:32 +0000 UTC
+647	CLOSED	Try removing ensureActivated and ensureDeactivated from the remix plugin manager	remix-ide, remix-plugin	2021-01-05 09:26:56 +0000 UTC
+645	CLOSED	Undo change from SVG to WEBP	remix-ide, UI, x platform	2020-12-09 16:58:39 +0000 UTC
+643	CLOSED	Fix Failing Recorder Test For Firefox	bug, browser-tests	2021-01-14 09:52:10 +0000 UTC
+640	OPEN	blockhash(block.number-1) returns 0x000..00 in JS VM	bug, remix-lib	2020-12-03 14:35:23 +0000 UTC
+635	CLOSED	remixd modal instructions	remix-ide, UI, UX	2021-05-26 07:51:05 +0000 UTC
+634	OPEN	Cannot read property 'lastIndexOf' of undefined	bug, remix-ide	2021-07-02 16:33:39 +0000 UTC
+619	CLOSED	Expose handleImportCall	enhancement, remix-solidity	2020-11-30 14:59:57 +0000 UTC
+618	OPEN	Promisify remix-solidity	enhancement, remix-solidity	2020-11-24 12:34:36 +0000 UTC
+614	OPEN	compiler version mixup ?		2020-11-23 10:16:08 +0000 UTC
+609	CLOSED	Failed to run a script while being connected to "web3 provider"	bug	2020-11-20 14:16:56 +0000 UTC
+608	CLOSED	Improve Remix project template	enhancement	2020-12-10 19:20:46 +0000 UTC
+607	CLOSED	inform users about old versions of solidity issues in docs	documentation	2021-01-22 08:11:59 +0000 UTC
+606	CLOSED	update debugger docs for use generated sources checkbox	documentation	2021-01-21 13:04:58 +0000 UTC
+605	CLOSED	Use local assets for the offline desktop version	enhancement, remix-desktop, UX	2020-11-19 13:51:29 +0000 UTC
+604	CLOSED	Impove scrolling of editor title bar(tabs line)	remix-ide, refactoring/coding style	2021-12-06 09:39:51 +0000 UTC
+600	CLOSED	Reset optimizer runs	bug, solidity compiler plugin	2020-12-07 09:03:46 +0000 UTC
+598	CLOSED	FileManager missing API	plugins	2020-11-23 13:35:39 +0000 UTC
+595	OPEN	Show 'Become a beta tester' on home tab	enhancement, discussion, Roadmap2022, User research	2021-12-06 09:54:13 +0000 UTC
+594	CLOSED	js scripts as default loaded files	enhancement, discussion	2020-12-10 19:20:46 +0000 UTC
+592	CLOSED	Use remixd to forward command from the remix terminal to the host.	remix-ide, remixD, Roadmap2020	2020-12-07 16:25:30 +0000 UTC
+591	CLOSED	use react component for the file explorer	remix-ide, Roadmap2020	2021-02-09 09:02:50 +0000 UTC
+588	CLOSED	Refactor the debugger react app	enhancement, remix-ide	2021-01-15 22:40:49 +0000 UTC
+587	CLOSED	Make the solidity compiler a React component	enhancement, remix-ide, Roadmap2021	2021-07-15 13:04:02 +0000 UTC
+586	CLOSED	Update copyright on docs	documentation	2021-01-27 12:02:12 +0000 UTC
+585	CLOSED	Beginner Developer		2020-11-18 08:06:43 +0000 UTC
+584	OPEN	'Return value' section always show '0'	bug, remix-ide	2020-11-16 13:35:38 +0000 UTC
+583	CLOSED	Debug button in terminal doesn't work	bug, remix-ide	2021-01-13 14:31:05 +0000 UTC
+582	CLOSED	fix label "Full Storages Changes" in debugger	good first issue, remix-ide, UI, UX	2021-02-15 19:00:15 +0000 UTC
+580	CLOSED	Javascript VM error	bug, remix-ide	2020-11-19 11:16:24 +0000 UTC
+579	CLOSED	Fetch imports automatically from `raw.githubusercontent.com` instead of `github.com`	enhancement	2021-01-06 10:25:33 +0000 UTC
+578	CLOSED	Debugger Config UI design needs a slight makeover	documentation, remix-ide, UI, discussion	2021-06-30 20:19:44 +0000 UTC
+577	OPEN	Web3Deploy isn't working - no bytecode inside	bug, remix-ide	2020-11-18 12:07:13 +0000 UTC
+576	CLOSED	Plugin Deactivation option	enhancement, discussion	2021-01-18 18:24:05 +0000 UTC
+575	CLOSED	in Compilation Detail: the carets are out of alignment with text	UI	2021-01-20 11:12:23 +0000 UTC
+570	OPEN	Show 'Recently Added Plugins' on home tab	enhancement, discussion	2020-11-09 08:40:35 +0000 UTC
+569	CLOSED	Personal mode on settings module needs editing	documentation, UI	2021-06-30 07:17:03 +0000 UTC
+568	CLOSED	How does Remix get gas cost for a read-only function?	question	2020-11-18 11:53:56 +0000 UTC
+565	CLOSED	make input for Value on Run & Deploy type=number	enhancement, remix-ide, UX	2021-01-07 01:27:51 +0000 UTC
+562	CLOSED	[Remix-IDE-E2E]: Enable linting and Eslint Standard	browser-tests, refactoring/coding style	2021-02-10 14:14:08 +0000 UTC
+561	OPEN	[Remix-UI React Libs]: Enable linting and Eslint Standard	refactoring/coding style	2021-06-29 10:44:20 +0000 UTC
+560	OPEN	[RemixD]: Enable linting and Eslint Standard	remixD, refactoring/coding style	2020-11-18 11:50:23 +0000 UTC
+559	CLOSED	[Remix-Libs]: Enable linting and Eslint Standard	STORY, remix-debug, remix-analyzer, remix-solidity, remix-lib, remix-astwalker, remix-simulator, refactoring/coding style	2021-02-11 16:29:07 +0000 UTC
+558	OPEN	[Remix-IDE]: Enable linting and Eslint Standard	remix-ide, refactoring/coding style	2020-11-18 11:49:35 +0000 UTC
+550	CLOSED	testRunner crashing on test with receipt events having more than 1 of the same type	remix-tests, investigate	2020-11-05 17:48:34 +0000 UTC
+548	CLOSED	issue in running parent and child test file together	bug, remix-tests	2021-05-17 05:57:42 +0000 UTC
+547	OPEN	A Newbie Plugin		2020-11-02 20:49:38 +0000 UTC
+546	OPEN	.js files get unnessary warnings in the gutter of editor	remix-ide	2021-05-09 20:53:28 +0000 UTC
+542	OPEN	group static analysis warnings	UI, discussion	2020-11-02 15:53:02 +0000 UTC
+540	CLOSED	Custom compiler context for remix-tests CLI	remix-tests	2021-01-19 14:03:53 +0000 UTC
+537	CLOSED	a page in remix.readthedocs page is still active	documentation	2021-08-05 07:43:41 +0000 UTC
+535	CLOSED	Debugger: show error in UI when tx number is invalid	bug, UI, remix-debug	2021-01-25 12:38:19 +0000 UTC
+533	CLOSED	Add e2e tests to check compiler configuration through URL	browser-tests	2020-11-27 11:55:18 +0000 UTC
+528	CLOSED	Load custom compiler from URL	enhancement	2020-10-30 13:51:25 +0000 UTC
+524	CLOSED	e2e case for the recorder: use more than one contract with multiple abis	browser-tests	2020-11-25 10:56:37 +0000 UTC
+519	CLOSED	The 'Drak' theme is being load after reload	bug, remix-ide	2020-11-06 11:25:48 +0000 UTC
+639	OPEN	Can't connect new remix using remixd (Error: Specified protocol was not requested by the client.)		2020-11-26 14:57:56 +0000 UTC
+515	CLOSED	Publish to Docker sometimes fails		2020-11-04 10:01:55 +0000 UTC
+512	CLOSED	remix-ide readthedocs index page needs an update	documentation	2020-11-09 08:07:34 +0000 UTC
+481	CLOSED	Debugger doesn't decode the calldata type correctly	bug	2021-05-14 05:03:54 +0000 UTC
+477	CLOSED	Add custom transaction context tests in default generated test file in SUT Plugin	enhancement, remix-tests	2020-10-30 14:32:54 +0000 UTC
+476	CLOSED	Allow plugins to deploy scenarios	enhancement, plugins	2020-10-20 10:53:28 +0000 UTC
+475	CLOSED	Show info about usage of compiler older that 0.4.12	remix-ide	2021-02-23 14:25:05 +0000 UTC
+473	OPEN	Highly confusing local install instruction in README	documentation	2021-01-23 03:59:55 +0000 UTC
+470	CLOSED	Not all the locals are shown while debugging	bug, remix-debug	2020-10-20 11:18:18 +0000 UTC
+469	CLOSED	Debugging import failed to show sources code	bug, remix-debug	2020-10-12 08:25:22 +0000 UTC
+467	OPEN	NPM Module to manage Solidity AST	enhancement, STORY, Roadmap2021, on hold	2021-02-25 11:18:05 +0000 UTC
+466	CLOSED	Remixd now can use allowed origins.json	documentation, remixD	2021-01-08 17:19:33 +0000 UTC
+463	CLOSED	Napspec errors don't show line numbers	remix-ide, UX	2021-11-25 13:53:50 +0000 UTC
+462	OPEN	webapp remixd and remix desktop conflict	remix-desktop, remixD	2020-11-18 11:40:30 +0000 UTC
+459	CLOSED	Show user friendly message to inform that Kovan network transaction can not be debugged	remix-ide	2021-06-07 11:52:25 +0000 UTC
+457	CLOSED	Remove legacyAST throughout Remix		2020-10-13 07:43:42 +0000 UTC
+456	CLOSED	Clicking on 'Open Files' on Home tab does nothing	bug, remix-ide	2020-10-13 12:33:08 +0000 UTC
+455	CLOSED	Signature not shown on dialog when sign using Metamask	bug, remix-ide	2020-10-19 07:59:57 +0000 UTC
+450	OPEN	Improvements to data shown when 'listen to network' is checked	enhancement, remix-ide, UI, Roadmap2022	2021-12-06 09:55:46 +0000 UTC
+447	CLOSED	Loading a gist from the url param should also select the gist file in the file explorer	enhancement	2020-11-25 17:57:07 +0000 UTC
+443	CLOSED	Update Default Solidity Version to latest	remix-ide	2020-10-26 15:18:02 +0000 UTC
+435	CLOSED	How Can I Find Out What EVM Version the Javascript VM is?	remix-ide, UX	2021-11-25 13:54:17 +0000 UTC
+483	CLOSED	Which URL to use for the remix desktop client?		2020-10-19 08:30:39 +0000 UTC
+433	CLOSED	Running a script which use the web3 provider fails	bug	2020-10-12 11:30:28 +0000 UTC
+431	CLOSED	Refactor execution context & Remix simulator provider	refactoring/coding style	2021-05-19 12:34:04 +0000 UTC
+430	CLOSED	Remove remix-ide package.json	remix-ide	2020-10-30 11:00:50 +0000 UTC
+425	CLOSED	Refactor modal part 3	remix-ide, UI, Roadmap2020	2020-10-20 11:14:45 +0000 UTC
+420	CLOSED	trailing slash when run remixd	enhancement, UX, remixD	2020-12-11 11:45:53 +0000 UTC
+418	CLOSED	solidity locals and states don't show up when debugging	bug	2020-09-14 18:37:23 +0000 UTC
+416	CLOSED	References in editor are broken	remix-ide	2020-09-22 08:23:21 +0000 UTC
+415	CLOSED	Update remix-astwalker for latest AST	remix-astwalker	2020-10-06 12:30:17 +0000 UTC
+414	CLOSED	Frequenty Asked Scripts	documentation, discussion	2020-11-25 17:57:21 +0000 UTC
+413	OPEN	Export from Remix IDE	enhancement, remix-ide	2021-03-15 07:13:48 +0000 UTC
+411	CLOSED	Old repos visible without a note in the readme	documentation	2020-09-09 12:32:10 +0000 UTC
+408	CLOSED	Incorrect time taken for unit tests execution (0.00s)	bug, remix-tests	2020-09-09 08:32:09 +0000 UTC
+406	OPEN	Workspace Management	remix-ide, STORY	2021-04-21 14:24:37 +0000 UTC
+405	OPEN	Select a specific learneth tutorial when it's loaded through the URL parameters	remix-ide, remix-plugin	2021-02-09 07:39:43 +0000 UTC
+404	OPEN	Error during deployment "invalid type (arg="type", value="function", version=4.0.47)"	bug	2020-10-07 07:19:37 +0000 UTC
+403	CLOSED	Remix Desktop: Use offline solidity compilers, plugins resources using for example IPFS	remix-desktop, Roadmap2020	2021-01-20 14:15:20 +0000 UTC
+402	CLOSED	Remix Desktop: Use local assets for the offline desktop version	remix-desktop, Roadmap2020	2020-12-22 10:32:58 +0000 UTC
+401	CLOSED	Separate Environment toolbox in a component.	remix-ide, UI, UX	2020-11-17 13:39:19 +0000 UTC
+400	CLOSED	Tabs: put icons for file types	remix-ide, UX, Roadmap2020	2021-02-09 13:04:09 +0000 UTC
+399	CLOSED	Debugger: make it a plugin	remix-ide, plugins, Roadmap2020	2020-11-02 09:21:11 +0000 UTC
+398	OPEN	Terminal as another location for plugins	enhancement, remix-ide, plugins	2020-11-17 13:41:40 +0000 UTC
+397	CLOSED	File Explorer: give access to context menu for plugins	enhancement, remix-ide, plugins, UX, Roadmap2020	2021-03-18 14:27:03 +0000 UTC
+396	CLOSED	Receiving "Error: Invalid buffer..." on contract load	bug, remix-ide	2021-07-18 03:03:24 +0000 UTC
+393	CLOSED	0.10.5 - gather feedback	STORY	2020-09-22 12:43:37 +0000 UTC
+391	OPEN	Terminal: Disable 'Listen on network' for VM mode	enhancement, remix-ide, UI, UX	2020-09-01 11:23:40 +0000 UTC
+389	CLOSED	Update all links to the old repos in docs	documentation	2020-11-19 15:09:10 +0000 UTC
+485	CLOSED	creation of helloWorld errored: call to plugin has timed out compilerMetadata - deployMetadataOf - {"from":"udapp","path":"compilerMetadata"}	remixD	2022-03-23 06:53:20 +0000 UTC
+385	CLOSED	Show expected vs returned values in remix-tests CLI	enhancement, remix-tests	2020-09-01 07:56:55 +0000 UTC
+383	CLOSED	Update Contributing.md	documentation	2020-10-05 12:23:04 +0000 UTC
+381	CLOSED	Update libs version in dependency too after publishing		2020-09-08 06:33:02 +0000 UTC
+486	OPEN	should --read-only mode allow changes to file outside of remix IDE?	remixD	2020-10-19 09:42:11 +0000 UTC
+378	OPEN	using estimateGas with WalletConnect returns no result nor error.	remix-lib	2020-08-26 10:14:52 +0000 UTC
+376	CLOSED	Highlight code in unit testing plugin for failed tests	enhancement, UI, remix-tests, investigate	2020-11-18 11:37:41 +0000 UTC
+375	CLOSED	Check remix-tests usage as CLI	remix-tests	2020-08-27 08:51:46 +0000 UTC
+372	CLOSED	source highlight of not active plugins should be removed	remix-ide, UI, UX	2020-11-04 09:16:15 +0000 UTC
+369	CLOSED	activate `Generate contract metadata` by default	remix-ide	2020-08-26 06:38:46 +0000 UTC
+364	CLOSED	Some transactions sent through `udapp.sendTransaction` cannot be analyzed with the debugger		2020-08-18 10:16:08 +0000 UTC
+363	CLOSED	Remix-alpha. udapp.sendTransaction. Uncaught Error: The data field must be HEX encoded data.	bug	2020-08-18 10:15:22 +0000 UTC
+361	CLOSED	Compiler - Add evm.assembly to the desire output	enhancement, remix-ide	2020-08-18 09:29:16 +0000 UTC
+360	CLOSED	remix-plugin : update origins link	remix-plugin	2020-09-14 07:57:40 +0000 UTC
+358	CLOSED	Website: update links to old repos	website	2020-08-19 10:02:44 +0000 UTC
+346	CLOSED	Migrate libs to typescript	remix-debug, remix-lib, remix-simulator, Roadmap2020	2020-12-21 11:27:18 +0000 UTC
+344	CLOSED	Show expected vs returned in Unit testing plugin UI	remix-ide, UI	2020-09-14 07:47:46 +0000 UTC
+336	CLOSED	Add the last stable Solc version to 'Assets', to be able to load if github is down	enhancement, remix-ide, UX	2021-12-06 08:59:56 +0000 UTC
+340	CLOSED	Cann't load compiler	bug, remix-ide	2020-08-17 02:15:25 +0000 UTC
+337	CLOSED	remix-ide/readme Documentation specifies incorrect (and non-functional) way to install remix-ide	bug, documentation	2020-08-26 19:30:50 +0000 UTC
+338	CLOSED	Unable to use as Chrome extension after adding _config.yml	bug, documentation	2020-08-24 09:45:02 +0000 UTC
+341	CLOSED	Remix use all of my CPU	bug, remix-ide	2020-11-03 08:50:13 +0000 UTC
+296	CLOSED	Refine dependencies and devDependencies in package.json	enhancement	2021-05-03 07:34:35 +0000 UTC
+279	OPEN	Editor Documentation		2022-02-08 14:02:26 +0000 UTC
+59	OPEN	Debugger Memory Panel UI	remix-ide, UI	2020-07-24 21:47:15 +0000 UTC
+44	CLOSED	Home tab refactoring	remix-ide, STORY	2021-04-21 12:42:48 +0000 UTC
+57	OPEN	Gas limit issues	remix-ide, STORY	2021-02-17 17:47:37 +0000 UTC
+45	OPEN	Editor navigation	remix-ide, STORY	2020-07-24 11:32:43 +0000 UTC
+46	OPEN	Deploy and Run improvements	remix-ide, STORY, Roadmap2022	2021-12-06 10:52:56 +0000 UTC
+25	OPEN	Status bar plugin	remix-ide, STORY, Roadmap2020	2021-04-21 12:41:41 +0000 UTC
+16	CLOSED	Run button doesn't activate once disabled	bug	2020-07-20 14:10:58 +0000 UTC
+29	CLOSED	Expose terminal API to remix plugins	documentation, remix-ide, effort: 1	2022-05-25 09:32:38 +0000 UTC
+64	OPEN	transfer built remix-ide to non-internet connected machine	remix-desktop	2020-07-29 08:21:46 +0000 UTC
+30	CLOSED	Integrate the ability of running provider plugins.	remix-ide	2020-09-11 14:42:48 +0000 UTC
+31	CLOSED	remixD docs update	documentation	2020-10-05 12:28:13 +0000 UTC
+32	OPEN	Docker Container Documentation	documentation	2020-11-19 14:59:52 +0000 UTC
+33	CLOSED	support the changes in soljson for 0.7.0		2021-12-06 09:40:34 +0000 UTC
+34	CLOSED	Calling a getter function too many times empties all test wallets in JS VM	bug, remix-ide	2020-10-05 11:39:46 +0000 UTC
+35	CLOSED	embedding url for remix	documentation	2020-10-07 07:32:48 +0000 UTC
+36	CLOSED	update debugger docs	documentation	2021-01-21 13:04:58 +0000 UTC
+488	OPEN	Error: Specified protocol was not requested by the client.	remixD	2020-10-19 09:52:57 +0000 UTC
+37	CLOSED	Theme: fade out the background outside of modal dialog	remix-ide	2021-12-06 09:41:11 +0000 UTC
+38	CLOSED	bad ui in Confirm transaction modal for deploying on mainnet	remix-ide	2021-12-06 09:41:26 +0000 UTC
+65	CLOSED	Deploy & Run compiled contract names have incorrect file names	bug, remix-ide	2020-10-19 10:07:48 +0000 UTC
+66	CLOSED	Update docs for Unit testing plugin	documentation	2020-11-12 08:21:19 +0000 UTC
+67	OPEN	Update suggested command for running a local geth node	remix-ide, UI	2021-02-23 09:52:47 +0000 UTC
+326	OPEN	Unit Testing - base locals/state variables test on location in source code instead of vm trace step	remix-tests	2020-07-30 11:46:47 +0000 UTC
+68	OPEN	Feature request: Allow plugins to activate other plugins	remix-ide, plugins	2021-12-06 08:56:29 +0000 UTC
+334	OPEN	Can't compile my token to verify it in Etherscan	bug, remix-ide	2020-07-30 11:42:42 +0000 UTC
+69	OPEN	Debugger E2E tests	browser-tests	2020-07-27 06:52:29 +0000 UTC
+70	CLOSED	Update UI of Settings module	remix-ide, UI	2021-02-09 03:13:57 +0000 UTC
+71	OPEN	After using npm run build,the build/app.js is too huge	installation	2020-08-04 09:28:02 +0000 UTC
+6	CLOSED	Build libs using @nrwl/node:package		2020-07-10 13:21:36 +0000 UTC
+72	CLOSED	Memory leak	bug, remix-ide	2020-11-03 08:00:08 +0000 UTC
+73	CLOSED	Homepage: put twitter & medium	remix-ide, UI	2020-09-03 09:06:20 +0000 UTC
+74	OPEN	setCompilerConfig should return a promise which resolve when the compiler is actually loaded.	remix-ide, plugins	2020-07-27 06:58:24 +0000 UTC
+75	OPEN	Save Static Analysis report to a file	enhancement, remix-ide, UI, Static Analysis Plugin	2021-12-06 09:41:47 +0000 UTC
+76	OPEN	add 'interface methods' to local plugins UI	remix-ide, UI	2020-07-27 07:02:52 +0000 UTC
+77	OPEN	Update remix-ide internal/native plugins to use new file manager api	remix-ide	2020-07-27 07:04:14 +0000 UTC
+78	OPEN	[ Feature Request ] Persist Deployed Contracts across Restarts	enhancement, remix-ide, UI	2020-10-12 08:39:28 +0000 UTC
+79	OPEN	Execute low level call as "call" and not "transaction"	remix-ide	2020-07-27 07:08:07 +0000 UTC
+80	OPEN	Compiler plugin: support compilation from Yul & to ewasm	remix-ide, plugins	2020-07-27 07:09:38 +0000 UTC
+81	OPEN	Static Analysis is not working for versions < 0.4.2. It should be disabled	bug, remix-ide, plugins	2020-09-23 11:18:11 +0000 UTC
+489	CLOSED	using remix-ide and remixd together	remixD	2020-10-19 09:58:27 +0000 UTC
+83	CLOSED	Vyper is not compiling with remote compiler	bug, remix-ide, plugins	2021-01-24 14:36:02 +0000 UTC
+490	OPEN	remixd can't be closed via ctrl +c	remixD	2021-03-08 12:14:37 +0000 UTC
+84	CLOSED	Add more details to the Readme for the installation process.	documentation	2020-08-26 13:49:14 +0000 UTC
+85	CLOSED	adding right click "execute" for Javascript file	enhancement, remix-ide, UI	2020-11-18 11:59:44 +0000 UTC
+82	OPEN	srcmap-runtime is inaccurate	bug, remix-ide	2020-07-27 07:13:47 +0000 UTC
+176	OPEN	add license to the example and test files of solidity	enhancement, remix-ide, UI, UX, Roadmap2022	2021-12-06 09:42:59 +0000 UTC
+177	OPEN	if gitid is not valid remix shows useless error while importing from github	remix-ide, UX, Roadmap2022	2021-12-06 09:01:07 +0000 UTC
+179	OPEN	About "Compiler not yet loaded."	bug, remix-ide	2020-07-28 09:03:17 +0000 UTC
+28	OPEN	Switch to Jest unit testing	remix-tests	2020-07-29 08:20:44 +0000 UTC
+180	CLOSED	Cannot delete ipfs directory	remix-ide, UI, UX	2021-12-06 09:01:32 +0000 UTC
+325	CLOSED	Make modules as much as possible independent		2020-08-31 06:49:45 +0000 UTC
+324	CLOSED	upgrade remix-debug	remix-debug	2021-06-16 07:38:20 +0000 UTC
+47	OPEN	Solidity Unit Testing Plugin Enhancements	remix-ide, STORY	2020-07-24 11:34:09 +0000 UTC
+48	OPEN	Solidity Static Analysis Plugin Enhancements	remix-ide, STORY, UI	2020-07-30 09:32:38 +0000 UTC
+212	CLOSED	Static Analysis: show expandable modules and not accordion	remix-ide, UI, UX	2021-12-06 09:02:01 +0000 UTC
+49	CLOSED	Clean up bootstrap css theme	remix-ide, UI	2020-09-04 07:13:54 +0000 UTC
+50	OPEN	UI Translation	remix-ide, STORY	2022-07-04 11:40:21 +0000 UTC
+332	CLOSED	Source map decoder doesn't take in account the "modifier depth"	enhancement, wontfix, remix-debug	2021-10-05 08:13:37 +0000 UTC
+185	CLOSED	Switching from `Injected` to `JavaScript VM` reset balance of account	bug, remix-ide	2020-08-24 14:09:08 +0000 UTC
+186	CLOSED	Static Analysis: add a checkbox to checkAll to each categorie	enhancement, remix-ide, UI, UX	2021-12-06 09:02:19 +0000 UTC
+187	OPEN	terminal: navigate with arrow up/down in history	enhancement, remix-ide, UI, UX, Terminal, Roadmap2022	2021-12-06 09:43:17 +0000 UTC
+491	CLOSED	Broken tutorial (readthedocs) link in README.md	remixD	2020-10-19 09:58:20 +0000 UTC
+188	OPEN	Improve contract name of generated sample test file	remix-ide, UI	2020-07-28 09:48:33 +0000 UTC
+189	CLOSED	code completion for web3 needs updating	documentation, remix-ide	2020-11-16 20:16:54 +0000 UTC
+190	OPEN	error: Failed to decode output: Error: insufficuent data for address type (arg="", coderType="address", value="0x", version=4.0.45)	bug, remix-ide	2020-07-29 02:06:11 +0000 UTC
+191	CLOSED	Autoactivate plugins	enhancement, remix-ide, plugins, UX, solidity compiler plugin, Solidity Unit Testing Plugin, Static Analysis Plugin	2021-10-21 11:03:31 +0000 UTC
+26	CLOSED	Add custom transaction context tests for 'Solidity Unit Testing'	browser-tests	2022-02-01 08:25:08 +0000 UTC
+323	OPEN	Incorrect error from remix-tests	remix-tests	2020-07-30 11:17:54 +0000 UTC
+322	CLOSED	remix-debug still uses the legacyAST	remix-debug, investigate	2020-09-09 08:31:53 +0000 UTC
+192	CLOSED	Remove remix.call() from autocomplete & document remix.execute with a js script	documentation, remix-ide	2021-02-17 08:16:52 +0000 UTC
+193	CLOSED	Some out of date docs are visible	documentation	2020-08-26 19:48:05 +0000 UTC
+194	CLOSED	Improve Splash screen	enhancement, remix-ide, UI	2021-12-06 09:43:44 +0000 UTC
+195	CLOSED	Using web3 doesn't work when connected to the JavaScript VM.	bug, remix-ide	2020-09-23 12:23:03 +0000 UTC
+196	CLOSED	add a website link to Home page	enhancement, remix-ide, UI	2020-12-15 09:59:48 +0000 UTC
+184	OPEN	[feature request] Reset VM	enhancement, remix-ide, UX, UDapp plugin, Roadmap2022	2021-11-24 13:15:53 +0000 UTC
+331	CLOSED	Bypass the remix debug nodes	enhancement, remix-debug	2021-08-17 13:54:52 +0000 UTC
+197	CLOSED	Add Dapp Development & Remix in Docs	documentation	2020-11-16 20:42:42 +0000 UTC
+52	CLOSED	Matomo integration	remix-ide, STORY, Roadmap2021	2021-09-13 12:16:50 +0000 UTC
+308	CLOSED	Debug remix-test	enhancement, remix-tests, investigate	2021-12-06 09:56:13 +0000 UTC
+321	CLOSED	remix-tests could export result with difference in expected vs returned values	remix-tests, investigate	2020-08-20 13:21:40 +0000 UTC
+330	CLOSED	Debugger should show about the block & solidity globals	remix-ide, UI, UX, remix-debug	2021-08-18 08:47:57 +0000 UTC
+307	OPEN	[remix-analyzer] Improve unit testing	remix-analyzer, tests	2020-07-30 10:35:25 +0000 UTC
+86	CLOSED	profile.json new fields - issues_url, author_mail	remix-ide, UI, remix-plugin	2022-05-27 10:15:45 +0000 UTC
+87	OPEN	Feature to sign hexadecimal string?	enhancement, remix-ide, UI	2020-07-27 07:40:17 +0000 UTC
+88	CLOSED	Description of terminal commands should be improved	documentation	2021-08-23 04:49:55 +0000 UTC
+89	CLOSED	Recorder Enhancement	documentation	2021-06-16 03:57:23 +0000 UTC
+90	OPEN	Contract state	enhancement, remix-ide, UI, Roadmap2022	2021-12-06 09:57:19 +0000 UTC
+91	OPEN	Add the support that the privateKey or seed of Javascript VM's default account	documentation	2020-11-21 17:40:15 +0000 UTC
+306	OPEN	I cant get Right Address balance		2020-07-30 10:33:36 +0000 UTC
+92	CLOSED	Can't install remix-ide using npm install	remix-ide, installation	2020-07-27 08:31:35 +0000 UTC
+93	OPEN	Browser crashes	bug	2020-07-27 08:34:59 +0000 UTC
+305	OPEN	Allow rename "browser" folder to anything and use relative path	remix-ide	2020-07-30 10:32:50 +0000 UTC
+94	OPEN	[Feature request] Allow plugins to collapse panels	enhancement, remix-ide, plugins	2020-07-29 10:18:18 +0000 UTC
+51	OPEN	Toward a standardized API	remix-ide, remix-plugin	2020-07-24 11:38:20 +0000 UTC
+95	OPEN	Low level interaction in udapp	remix-ide, UI	2020-08-10 08:49:33 +0000 UTC
+96	OPEN	link to doc (server hosting)	documentation	2020-10-19 19:08:02 +0000 UTC
+53	OPEN	Extend Settings in IDE	enhancement, remix-ide, UI	2020-07-24 11:42:09 +0000 UTC
+182	OPEN	[Feature request] Allow plugins to listen when a tab is activated	remix-ide, plugins, UX	2021-11-30 08:54:40 +0000 UTC
+183	OPEN	[Feature request] Allow plugins to collapse panels	remix-ide, UI, plugins, UX	2020-07-28 09:24:48 +0000 UTC
+97	CLOSED	Use remix-url-resolver in remix IDE code base	enhancement, Roadmap2020	2021-01-04 12:28:57 +0000 UTC
+304	OPEN	Solidity contract compiles in JSVM, recieves error on compile in Injected Web3		2020-07-30 10:30:31 +0000 UTC
+303	OPEN	remix-lib: allow to reload JavaScript VM with a different fork.	remix-lib	2020-07-30 10:28:30 +0000 UTC
+99	OPEN	Feature Request: apply pragma button	enhancement, remix-ide, UI, Roadmap2022	2021-12-06 10:10:29 +0000 UTC
+100	OPEN	"Content Security Policy" violation	remix-ide, installation	2020-07-27 09:06:36 +0000 UTC
+301	OPEN	Verify contract size in Remix	enhancement	2020-07-30 10:27:16 +0000 UTC
+101	OPEN	Document the new "compiler version selection according to pragma range" feature	documentation	2020-07-30 06:01:56 +0000 UTC
+102	CLOSED	Unable to compile contracts in firefox.	bug, remix-ide	2020-09-28 04:03:14 +0000 UTC
+103	OPEN	regarding to installation	installation	2020-07-27 09:41:35 +0000 UTC
+104	OPEN	Feature Request: Add option under Settings to use 2 spaces on tab	enhancement, remix-ide, UI	2021-03-08 01:11:33 +0000 UTC
+105	OPEN	recorder filename improvement	remix-ide	2020-07-27 09:45:59 +0000 UTC
+300	OPEN	[remix-debug] Debugger doesn't show error/warning on UI	remix-ide, UI, remix-debug	2020-07-30 11:51:07 +0000 UTC
+106	OPEN	remix ide debugger can not debug due to network errors	bug, remix-ide	2020-07-27 10:03:13 +0000 UTC
+107	OPEN	terminal: refactor terminal UI to use "PanelsResize" and flex	remix-ide, UI	2020-07-27 10:04:06 +0000 UTC
+295	OPEN	trying to interact with rinkeby contract	remix-ide, UI	2021-01-10 16:02:04 +0000 UTC
+108	OPEN	Solidity plugin: "copy bytecode" should copy only the bytecode	bug, remix-ide	2020-07-27 10:05:20 +0000 UTC
+294	OPEN	Solidity compiler: cache loaded versions	investigate, remix-solidity	2020-07-30 10:09:44 +0000 UTC
+213	OPEN	Plugins category	enhancement, browser-tests, UX, discussion	2021-11-24 13:12:36 +0000 UTC
+214	CLOSED	Improve Settings tab	remix-ide, UI, UX	2020-08-31 13:12:36 +0000 UTC
+54	CLOSED	Make communication link more reachable	remix-ide, UI	2020-09-03 09:06:20 +0000 UTC
+215	CLOSED	Notify users about new feature	enhancement, remix-ide, UI, Roadmap2021	2021-04-21 12:16:43 +0000 UTC
+216	OPEN	Remix lockup: Cannot read property 'trigger' of undefined	bug, remix-ide	2020-07-28 11:58:19 +0000 UTC
+217	CLOSED	Refactor modal part 2	remix-ide, UX	2021-11-24 13:12:09 +0000 UTC
+218	CLOSED	Refactor modal part 1	remix-ide, UX, Roadmap2020	2020-10-20 11:14:45 +0000 UTC
+219	CLOSED	Tabs: Would be nice to show least path difference in a title of tabs	enhancement, remix-ide, UX, Roadmap2020	2020-11-02 08:48:42 +0000 UTC
+42	CLOSED	COULD NOT compile USDT-ERC20 solidity source code		2021-04-29 10:16:04 +0000 UTC
+293	OPEN	Different metadata hash between Remix and compiling contract locally with solc	investigate	2020-07-30 10:08:01 +0000 UTC
+492	OPEN	Support multiple whitelisted commands with commandforwarder on remixd	remixD	2020-10-19 09:59:39 +0000 UTC
+220	OPEN	Plugin Iframe doesn't reload automatically	bug, remix-ide	2020-07-28 12:01:32 +0000 UTC
+222	CLOSED	search results without a page in docs	documentation	2020-08-26 13:24:39 +0000 UTC
+55	CLOSED	FE: issues with File Explorer	remix-ide, STORY, UI	2021-03-18 14:27:18 +0000 UTC
+223	OPEN	Drop the old file system structure when the old UI will be dropped	remix-ide, UI	2020-07-28 12:07:50 +0000 UTC
+224	CLOSED	Solidity tab: add "loading" or spinner while waiting for publishing to swarm/ipfs	enhancement, UI, UX	2021-11-24 13:11:51 +0000 UTC
+225	CLOSED	metadatas are created under the artifacts folder	documentation	2020-10-20 07:39:29 +0000 UTC
+226	OPEN	FE add a display name option for ipfs/swarm file	remix-ide, UI, UX, file-explorer, Roadmap2022	2021-11-24 13:11:08 +0000 UTC
+493	CLOSED	can't install remixd on macos	remixD	2022-03-23 06:50:39 +0000 UTC
+333	OPEN	FE: add "copy file name" to readonly(ipfs/swarm) files context menu	remix-ide, UI, UX, file-explorer, Roadmap2022	2021-11-24 13:10:19 +0000 UTC
+227	OPEN	it's not possible to import file from ipfs without "ipfs://" prefix	remix-ide, UX, Roadmap2022	2021-11-24 13:08:15 +0000 UTC
+228	OPEN	no way to re-import a file from github..	remix-ide, UI	2020-07-28 12:18:59 +0000 UTC
+229	OPEN	Github FE: Import from github doesn't work second time	bug, remix-ide	2020-10-01 21:33:41 +0000 UTC
+282	CLOSED	How many smart contract problems solidity static analysis can be detected?	documentation, remix-analyzer	2020-08-28 01:14:00 +0000 UTC
+230	CLOSED	Adding value to a function	remix-ide, UI, UX, Roadmap2022	2022-06-09 13:40:49 +0000 UTC
+231	OPEN	When debug-tracing through a transaction, the Debugger should attempt to download the source.	remix-ide, UX	2021-11-24 14:42:40 +0000 UTC
+181	OPEN	property "algo" for remix-analysis	remix-ide, UI, remix-analyzer	2020-07-28 09:20:23 +0000 UTC
+109	OPEN	Infinite gas vs. undefined gas	remix-ide	2020-07-27 10:06:18 +0000 UTC
+56	OPEN	Files API refactor	remix-ide, STORY, Roadmap2020	2021-01-18 18:54:03 +0000 UTC
+299	OPEN	Add Ethereum name or address to package.json		2020-07-30 10:24:00 +0000 UTC
+110	OPEN	Getting the github access token from the compilerImport is using the registry now, it should use the plugin API	remix-ide	2021-06-22 12:48:39 +0000 UTC
+27	OPEN	Test Vyper compiler	browser-tests	2020-07-24 11:21:57 +0000 UTC
+111	CLOSED	plugins: warn in connect to local plugin to use http	remix-ide, UI, UX	2021-11-30 08:54:08 +0000 UTC
+298	OPEN	debugger get trace incorrect gas costs	remix-debug	2020-07-30 10:22:08 +0000 UTC
+112	OPEN	side panel: change width when iframe is open	remix-ide, UI, UX, Roadmap2022	2021-11-24 11:51:15 +0000 UTC
+113	OPEN	Web3 Provider Dialog Ideas	remix-ide, UI, UX	2020-07-27 10:17:04 +0000 UTC
+297	OPEN	Debugger doesn’t loads target contract on DelegateCall when debugging a transaction on mainnet	remix-debug, investigate	2020-07-30 10:19:41 +0000 UTC
+494	OPEN	Connection error 400 Bad Request	remixD	2020-10-19 10:01:58 +0000 UTC
+115	CLOSED	Update text on readthedocs run	documentation	2020-07-30 06:03:37 +0000 UTC
+116	OPEN	Error in Vyper plugin when using decimals	bug, remix-ide, plugins	2020-07-27 10:58:07 +0000 UTC
+117	CLOSED	Remove all "this.events.emit()" in plugin by "this.emit()"	wontfix, remix-ide, discussion, refactoring/coding style, Roadmap2021	2021-10-04 13:46:25 +0000 UTC
+119	OPEN	Replace pendingTransactionsCount call by an event listener	remix-ide	2020-07-27 11:21:49 +0000 UTC
+120	OPEN	remix/remixd, claims files altered outside of remix	remix-ide, remixD	2020-12-05 18:55:22 +0000 UTC
+121	CLOSED	Multiple localplugin and test methods exposed	remix-ide, UI, UX	2021-11-30 08:52:50 +0000 UTC
+122	OPEN	Compile tab: compilation details for Yul are not complete	bug, remix-ide, UI, Roadmap2022	2021-12-06 09:44:25 +0000 UTC
+123	OPEN	File Explorer - make files sort alphabetically by default	enhancement, remix-ide, UI, UX, Roadmap2022	2021-11-24 11:26:44 +0000 UTC
+124	CLOSED	Walk through	documentation, remix-ide, UI, Roadmap2021	2021-07-30 13:46:30 +0000 UTC
+125	CLOSED	Update plugin manager doc	documentation	2020-11-10 08:02:30 +0000 UTC
+126	CLOSED	Try to not include `browser` path prefix for Solidity if not necessary	remix-ide	2021-05-25 14:00:20 +0000 UTC
+127	OPEN	Switch File Manager to reactive programing	remix-ide	2020-07-27 12:06:59 +0000 UTC
+128	OPEN	[UX] Permission management	remix-ide, UI, UX	2020-07-27 12:08:48 +0000 UTC
+329	OPEN	split remix-lib so it doesn't have a dependency on solc	remix-lib	2020-07-30 11:34:39 +0000 UTC
+320	CLOSED	optimization runs	enhancement, remix-ide	2020-11-09 14:26:08 +0000 UTC
+319	OPEN	remix-AstWalker - its name	remix-astwalker	2020-07-30 10:51:07 +0000 UTC
+318	OPEN	remix-ast: Replace `walk()` and `walkAST()` with `walkFull()`	remix-astwalker	2020-07-30 11:47:56 +0000 UTC
+317	OPEN	ASTQ compatibility for solc - add getchildNodes(), getParentNode(), ...	remix-astwalker	2020-07-30 10:49:24 +0000 UTC
+316	OPEN	remix-astwalker: more efficient findNodeAtSourceLocation	remix-astwalker	2020-07-30 10:48:48 +0000 UTC
+129	CLOSED	Running scripts - (not using the terminal commands to hit the compile)	documentation	2021-05-10 03:43:30 +0000 UTC
+130	OPEN	View and select vyper version	plugins	2020-07-27 12:15:03 +0000 UTC
+495	OPEN	Clean windows 10 node 10 lts install fails	remixD	2020-10-19 10:03:30 +0000 UTC
+131	OPEN	Plugin Manager: Mark native plugins	remix-ide, UI, plugins, Roadmap2022	2021-12-06 09:45:18 +0000 UTC
+134	OPEN	Metamask compatibility completely broken	bug, remix-ide	2020-12-03 15:03:39 +0000 UTC
+132	OPEN	Set the editor in vim mode	enhancement, remix-ide, UI	2022-01-06 04:57:51 +0000 UTC
+133	CLOSED	Vertical icon panel: show more	remix-ide, UI, UX, Roadmap2021	2021-12-14 14:38:39 +0000 UTC
+198	CLOSED	icons for files	enhancement, remix-ide, UI, UX, Roadmap2020	2021-02-19 16:36:39 +0000 UTC
+199	OPEN	Autocomplete for solidity	enhancement, remix-ide, UX, Roadmap2022	2022-04-13 05:22:27 +0000 UTC
+200	OPEN	Deploy and Run: define the name for address	enhancement, remix-ide, UX, Roadmap2022	2021-12-06 09:48:11 +0000 UTC
+201	OPEN	[UI] Customized swap panel width need to be remembered	remix-ide, UI, UX	2020-07-28 10:17:03 +0000 UTC
+202	CLOSED	Improve stack and memory rendering in debugger	enhancement, remix-ide, UI, UX	2021-06-29 13:04:51 +0000 UTC
+203	CLOSED	Button "Copy value to clipboard" copies address contract not converted to сhecksum	remix-ide, UX	2020-10-20 08:04:09 +0000 UTC
+496	CLOSED	remixd worked first time then never again	remixD	2020-10-24 01:31:11 +0000 UTC
+204	CLOSED	publish a gist for only selected files	remix-ide, UI, UX	2021-04-21 13:33:12 +0000 UTC
+205	CLOSED	Deploy tab and compile tab order matters	enhancement, remix-ide, UX	2021-12-06 09:48:55 +0000 UTC
+206	OPEN	Editor: make obvious for user that she/he is in read only mode	remix-ide, UI, UX, Roadmap2022	2021-11-24 11:13:58 +0000 UTC
+207	CLOSED	File explorers: disable context menu for loaded tree view items	remix-ide, UX	2021-11-24 11:13:25 +0000 UTC
+497	OPEN	Make Remixd compatible with Node.js 12 version	remixD	2020-11-18 11:43:02 +0000 UTC
+208	OPEN	Status not available at the moment on private chain	remix-ide	2020-07-28 10:34:33 +0000 UTC
+209	OPEN	Bootstrap tooltip	enhancement, remix-ide, UI	2020-07-28 10:35:29 +0000 UTC
+210	OPEN	npm -install -g -remixd 'command' showing this error. How to resolve the issue	remix-ide	2020-07-28 10:36:09 +0000 UTC
+211	CLOSED	Terminal. Compiler in title bar of terminal	enhancement, remix-ide, UI, UX	2021-11-24 11:12:47 +0000 UTC
+259	OPEN	Compiler tab: show "compilation details" in a tab	remix-ide, UI, UX, solidity compiler plugin, Roadmap2022	2021-12-06 09:49:24 +0000 UTC
+328	OPEN	compiler: button to select deploy tab	remix-ide, UI	2020-07-30 11:25:19 +0000 UTC
+327	CLOSED	Deploy tab: easy way to switch to compiler	remix-ide, UI	2021-12-06 09:49:34 +0000 UTC
+258	OPEN	Fileexplorer: add delete and rename files with "delete" and F2 keys	remix-ide, UI, UX, Roadmap2022	2021-11-24 11:10:37 +0000 UTC
+257	CLOSED	Options to enable/disable ace shortcuts	remix-ide, UI, UX	2021-11-24 11:10:17 +0000 UTC
+315	OPEN	Move contextListener to a new remix lib module	enhancement	2020-07-30 10:46:38 +0000 UTC
+256	OPEN	Remix IDE with Ganache: VM Exception while processing transaction: out of gas	remix-ide	2020-07-28 13:26:06 +0000 UTC
+221	OPEN	Injected Web3 does not use the parameter "Gas limit"	bug, remix-ide	2020-07-28 12:06:08 +0000 UTC
+254	OPEN	Web3 deploy code outdated inside `details` button	enhancement, remix-ide	2020-07-28 13:08:58 +0000 UTC
+498	CLOSED	remix-ide used the local compilier failed.		2020-11-18 11:45:09 +0000 UTC
+255	OPEN	Metamask deploy transaction call no longer filling in Gas.	bug	2020-07-28 13:15:00 +0000 UTC
+253	CLOSED	Remix IDE hangs when using slider in debug mode	bug, remix-ide	2020-10-21 08:29:46 +0000 UTC
+499	OPEN	Firefox: Upgrading insecure request to use wss	remixD	2020-10-19 10:46:56 +0000 UTC
+314	OPEN	Testing if a method throws	remix-tests, investigate	2020-07-30 10:45:00 +0000 UTC
+252	OPEN	Injected Metamask Rinkeby provider out of sync	bug, remix-ide	2020-07-28 13:07:38 +0000 UTC
+151	OPEN	In the Remix Web3 Provider IDE, how do you call a function in an ERC20 token contract from another contract without getting an estimateGas error?	remix-ide	2020-07-28 07:06:51 +0000 UTC
+313	OPEN	[Debugger] execution fails warning	bug, remix-ide	2020-07-30 11:48:28 +0000 UTC
+500	OPEN	Why is there an undeclared dependency on npip?	remixD	2020-10-19 10:49:28 +0000 UTC
+135	OPEN	invalid member of stdlib		2022-06-22 17:46:04 +0000 UTC
+501	OPEN	servicesList[name][fn] is not a function	remixD	2020-10-19 10:53:38 +0000 UTC
+312	OPEN	Adding remix-code-coverage	remix-tests, investigate, Roadmap2021	2021-01-04 11:19:42 +0000 UTC
+136	OPEN	Plugin API - set Run tab values	remix-ide, plugins	2020-07-27 14:32:26 +0000 UTC
+311	OPEN	Remix IDE doesn't compile in Tor browser	remix-ide, investigate	2020-07-30 11:48:59 +0000 UTC
+137	OPEN	Support for Nodes with Basic Auth	enhancement, remix-ide	2020-07-27 14:33:55 +0000 UTC
+310	OPEN	deleteFromDynamicArray shows warning even if shifted and removed item.	remix-analyzer	2020-07-30 10:40:24 +0000 UTC
+138	OPEN	This contract does not implement all functions and thus cannot be created.	enhancement, remix-ide, UI, plugins, UX, remix-analyzer	2021-11-27 23:01:42 +0000 UTC
+309	OPEN	Use winston logger across packages	investigate	2020-07-30 10:39:41 +0000 UTC
+302	OPEN	Remix Crash Array	remix-ide, performance	2020-07-30 10:28:20 +0000 UTC
+292	OPEN	Workflow with local files: Automatically reload when changed on disk	investigate	2020-12-05 18:54:42 +0000 UTC
+251	OPEN	AWS geth node plugin	plugins	2020-07-28 13:04:38 +0000 UTC
+152	OPEN	VM: display out of gas	enhancement, remix-ide	2020-07-28 07:08:41 +0000 UTC
+139	OPEN	same codes but different results	bug, remix-ide	2020-07-27 14:39:16 +0000 UTC
+291	OPEN	remix-tests: Specify block number before running a test	remix-tests	2020-07-30 10:00:33 +0000 UTC
+140	OPEN	Feature: Show current block number in the UI	enhancement, remix-ide, UI, UX, Roadmap2022	2021-11-24 11:07:46 +0000 UTC
+290	OPEN	Consider using web3-extended	investigate	2020-07-30 09:55:11 +0000 UTC
+141	OPEN	`import "filename.sol"` is treated as url import		2020-07-27 14:45:40 +0000 UTC
+289	OPEN	Multidimensional array freezes debugger	remix-debug, performance	2020-07-30 09:51:14 +0000 UTC
+288	OPEN	Cannot handle fancy commas	enhancement, investigate	2020-07-30 09:42:46 +0000 UTC
+502	OPEN	Firefox SecurityError	remixD	2020-10-19 10:58:01 +0000 UTC
+153	OPEN	When deploying from Remix, automatically verify contract on Etherscan?	enhancement, remix-ide, plugins	2021-05-17 08:14:28 +0000 UTC
+143	OPEN	Internal logic of the function affect the operability of other functions.	bug	2020-07-29 08:26:30 +0000 UTC
+144	CLOSED	Add an option to set optimizer runs.	enhancement, remix-ide, UI, UX	2021-11-24 11:07:13 +0000 UTC
+287	OPEN	[Static analysis] Random number generation	remix-analyzer, investigate	2020-07-30 09:24:59 +0000 UTC
+286	OPEN	[Static analysis] Constant state variables	remix-analyzer	2020-07-30 09:23:20 +0000 UTC
+285	OPEN	[Static analysis] Multiplication should come before the division	remix-analyzer	2020-07-30 09:21:59 +0000 UTC
+145	OPEN	In udapp, for each function and if applicable, allow to jump to the source code.	remix-ide, UI	2020-07-27 14:52:22 +0000 UTC
+146	OPEN	Warn if hash collision in function signature	enhancement, remix-ide, UI, UX, Roadmap2022	2021-11-24 11:06:50 +0000 UTC
+147	OPEN	Gas limit is ignored.	remix-ide, UX	2020-07-27 15:01:42 +0000 UTC
+148	OPEN	Open combined-json files from the File Explorer	remix-ide, UX, solidity compiler plugin, file-explorer, Roadmap2022	2021-11-27 23:05:51 +0000 UTC
+149	OPEN	Sometimes, the debugger on https://remix.ethereum.org/ doesn’t use the matching source code	remix-ide, UX, remix-debug, debugger, Roadmap2022	2021-11-24 11:00:32 +0000 UTC
+150	OPEN	Highlight input field in UDapp when missing param (encoding error)	remix-ide, UI, UX, Roadmap2022	2021-11-24 10:59:04 +0000 UTC
+154	OPEN	parameter name suggestion	enhancement, remix-ide, UX	2020-07-28 07:15:29 +0000 UTC
+155	OPEN	Option to load contract state with a block number or tx hash	remix-ide, UX, Roadmap2022	2021-11-24 10:55:35 +0000 UTC
+156	OPEN	Option to try loading every key via debug_storageAt when hitting it via SLOAD	remix-ide	2020-07-28 07:18:32 +0000 UTC
+250	OPEN	Storage debugging should have an option to load every key	remix-ide, UX, remix-debug, debugger, Roadmap2022	2021-11-24 10:51:58 +0000 UTC
+284	OPEN	Parity Trace	enhancement, STORY	2020-07-30 11:54:12 +0000 UTC
+157	OPEN	Mock compiler get packaged while deploying from Travis	browser-tests	2020-07-28 07:20:08 +0000 UTC
+503	OPEN	Windows 10 installation issue	remixD	2020-10-19 11:08:21 +0000 UTC
+504	CLOSED	install remixd failed, looks like some depandency not installable		2022-03-23 06:52:53 +0000 UTC
+249	OPEN	Check why gas cost incorrectly computed for the javascript VM	bug, remix-ide	2020-08-10 08:51:09 +0000 UTC
+158	OPEN	Debugger doesn't work after selfdestruct	bug, remix-ide, remix-debug	2020-07-28 07:26:46 +0000 UTC
+505	OPEN	npm err! code 1	remixD	2020-10-19 11:14:50 +0000 UTC
+159	OPEN	Popup an alert after 10 unsucessful attempt to retrieve the tx receipt	enhancement, remix-ide, UX	2020-07-28 07:27:56 +0000 UTC
+160	OPEN	Add type checks for input arguments of contract methods	enhancement, remix-ide, UI, UX, Roadmap2022	2021-11-24 10:46:22 +0000 UTC
+161	OPEN	Use HD key for VM accounts		2020-12-01 14:21:47 +0000 UTC
+162	CLOSED	Put app in learn mode	documentation, remix-ide, UI, UX	2021-11-24 10:45:36 +0000 UTC
+506	OPEN	Lose connection (remixd exit) when try to access deleted file	remixD	2020-10-19 11:15:37 +0000 UTC
+283	OPEN	Feature Request: Export contract execution code history as test suites	enhancement, remix-tests	2020-07-30 08:58:46 +0000 UTC
+280	CLOSED	Flowcharts to outline the preprocessing, solc compile, and execution engine.	documentation	2020-08-26 13:20:53 +0000 UTC
+163	OPEN	Gas for Execution Cost doesn't add up	bug	2020-07-28 07:39:51 +0000 UTC
+164	OPEN	Add a warning if referencce slot not resolvable	enhancement, remix-analyzer	2020-07-28 07:42:57 +0000 UTC
+165	OPEN	Static analyzer - warn when using control-flow modifiers in assembly	remix-analyzer	2020-07-28 07:43:54 +0000 UTC
+507	OPEN	package remix-ide, mist, geth	remixD	2020-10-19 11:16:45 +0000 UTC
+166	OPEN	Cannot select a blob of text to copy-paste-google-fu, as the click event is moving editor to the place where error occurred.	remix-ide, UI, UX, Roadmap2022	2021-11-24 10:44:26 +0000 UTC
+278	OPEN	Warning when contract tries to call external contract in constructor	remix-analyzer	2020-07-29 13:28:26 +0000 UTC
+276	OPEN	"Loaded address" does not always follow inter-contract calls	remix-ide, UX, remix-debug, Roadmap2022	2021-11-24 10:42:23 +0000 UTC
+98	OPEN	Use Monospace for Error/Warning	remix-ide, UI	2020-07-27 09:02:47 +0000 UTC
+275	CLOSED	Memory value rendering	remix-ide	2020-07-30 11:59:56 +0000 UTC
+274	CLOSED	Update deprecated babel-preset-es2015	remix-project	2021-08-05 13:25:57 +0000 UTC
+248	OPEN	start/stop Mining from remix	enhancement, remix-ide	2020-07-28 12:58:17 +0000 UTC
+508	OPEN	add a .remixignore file	remixD	2020-10-19 11:17:20 +0000 UTC
+509	OPEN	relative and path with ˜ should work	remixD	2020-10-19 11:17:49 +0000 UTC
+510	OPEN	Watch lib is polling	remixD	2020-10-20 14:02:30 +0000 UTC
+247	OPEN	Display compiler license somewhere (in an about window)	enhancement, remix-ide, UX, solidity compiler plugin	2021-11-28 23:02:45 +0000 UTC
+273	OPEN	display storage keys	remix-debug	2020-07-29 13:10:12 +0000 UTC
+272	OPEN	show nested contracts in contracts tab	enhancement, remix-ide, UX	2020-07-29 13:14:18 +0000 UTC
+246	CLOSED	Remix doesn't recognize auto generated functions as a valid abstract interface implementation	bug, remix-ide, UX	2020-10-01 10:05:14 +0000 UTC
+271	CLOSED	mappings in memory	bug, remix-debug	2021-06-29 08:10:34 +0000 UTC
+244	OPEN	Deploy ABI to reverse record in ENS	remix-ide	2020-07-28 12:46:22 +0000 UTC
+232	OPEN	save to swarm	enhancement, remix-ide, plugins	2020-07-28 12:24:03 +0000 UTC
+233	OPEN	Insert code snippet	enhancement, remix-ide, UI, UX, Roadmap2022	2021-11-24 10:05:26 +0000 UTC
+234	OPEN	Contract properties should live update	remix-ide, UI, UX, Roadmap2022	2021-11-24 10:04:15 +0000 UTC
+270	OPEN	Change storage Panel to fit with storage Resolver	UI, remix-debug	2020-07-30 08:35:07 +0000 UTC
+269	OPEN	check if storage is properly reverted	remix-debug	2020-07-30 08:37:16 +0000 UTC
+235	OPEN	Support EditorConfig	enhancement, remix-ide, UI, UX, Roadmap2022	2021-11-24 10:03:17 +0000 UTC
+268	OPEN	Display storage variables even if source does not match perfectly	enhancement, remix-debug	2020-07-29 12:39:50 +0000 UTC
+236	CLOSED	Check chrome extension		2020-07-28 12:34:12 +0000 UTC
+277	OPEN	getSourceMap only checks the prefix	investigate	2020-07-30 08:35:45 +0000 UTC
+237	OPEN	add test module for Firefox 49 and >50	browser-tests	2020-07-28 12:30:19 +0000 UTC
+238	OPEN	Support the EPM specification	remix-ide	2020-07-28 12:31:11 +0000 UTC
+239	CLOSED	Allow to manually set gas price	remix-ide, UI, UX	2021-11-24 10:01:06 +0000 UTC
+241	OPEN	Add Built time and Version number	enhancement, remix-ide	2020-07-28 12:41:07 +0000 UTC
+243	OPEN	Static analysis: Improve gas checker	enhancement, remix-analyzer	2020-07-28 12:45:30 +0000 UTC
+242	OPEN	Warn if trying to send value to a non-payable method	enhancement, remix-ide, UI, UX, Roadmap2022	2021-11-24 10:39:10 +0000 UTC
+167	OPEN	Add the remix' simple disassembler as a tool	remix-ide	2020-07-28 07:49:51 +0000 UTC
+266	OPEN	Support finding the origins of values in the stack	remix-debug	2020-07-29 12:30:23 +0000 UTC
+169	OPEN	Different variable highlight depending on storage type	remix-ide, UI, UX, Roadmap2022	2021-11-24 09:59:06 +0000 UTC
+265	OPEN	Assess performance	enhancement, remix-debug	2020-07-29 12:26:27 +0000 UTC
+41	CLOSED	Document API		2020-07-24 09:52:17 +0000 UTC
+170	OPEN	Markers similar to "flame diagram" above / below slider	enhancement, remix-ide, UI, UX, remix-debug, Roadmap2022	2021-11-24 09:54:36 +0000 UTC
+281	OPEN	Support more types in request inputs	enhancement, remix-ide	2020-07-30 11:52:15 +0000 UTC
+40	CLOSED	Add a TODO list	remix-ide	2021-11-25 09:33:57 +0000 UTC
+171	OPEN	Add toolbar for creating Solidity packed hashes	enhancement, remix-ide	2020-07-28 07:58:06 +0000 UTC
+172	OPEN	Have an option to run any transaction as a call	enhancement, remix-ide, UI, UX	2020-07-28 07:59:53 +0000 UTC
+173	OPEN	Show and update balances of deployed contracts	enhancement, remix-ide, UI, UX, UDapp plugin, Roadmap2022	2021-11-24 09:57:27 +0000 UTC
+174	CLOSED	Unit testing for applications	remix-ide, UX, remix-tests	2021-11-24 10:39:26 +0000 UTC
+175	CLOSED	Consider using a newer version of ACE	remix-ide, UX	2021-11-24 09:49:04 +0000 UTC

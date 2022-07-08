@@ -1,0 +1,893 @@
+5190	OPEN	A recommendation to refer to an ERC category proposal (for documentation)		2022-07-08 10:19:17 +0000 UTC
+5183	CLOSED	Discussion for EIP-3525: The Semi-fungible Token Standard		2022-06-29 07:06:16 +0000 UTC
+5158	OPEN	Example relative link in EIP-1 is rendered as absolute		2022-06-15 04:49:43 +0000 UTC
+5132	CLOSED	Possible duplicate EIP		2022-06-04 05:52:57 +0000 UTC
+5127	CLOSED	Proposals to close EIP Discussion Issues		2022-06-29 19:05:07 +0000 UTC
+5119	CLOSED	Close a few more issues		2022-06-02 12:31:33 +0000 UTC
+5113	CLOSED	Help about EIP-1559		2022-06-04 05:24:13 +0000 UTC
+5112	CLOSED	EIP-1's list of optional sections is inconsistent		2022-06-14 15:51:51 +0000 UTC
+5111	CLOSED	Close issues that are duplicates of an existing EIP		2022-05-28 05:19:40 +0000 UTC
+5102	CLOSED	Suggesting ERC20 and ERC721 one-time off-chain approval for safer NFT trading		2022-05-23 03:50:29 +0000 UTC
+5084	CLOSED	typo in 4626		2022-05-09 05:29:56 +0000 UTC
+5082	OPEN	One-time NFT Sale of unused EIP numbers.		2022-06-23 23:12:43 +0000 UTC
+5077	CLOSED	Why are there missing EIP numbers?		2022-06-01 06:56:14 +0000 UTC
+5062	CLOSED	EIP-644: A standard for permission token		2022-05-01 16:26:37 +0000 UTC
+5060	CLOSED	EIPs with wrong license		2022-05-31 16:16:45 +0000 UTC
+5059	CLOSED	[DRAFT] opcode for transferring eth without transferring control flow		2022-05-01 11:50:22 +0000 UTC
+5054	CLOSED	Redirect legacy URLs		2022-05-06 07:16:26 +0000 UTC
+5052	CLOSED	Should `eip-20-token-standard.md` be deleted?		2022-05-01 16:51:33 +0000 UTC
+5048	CLOSED	Formalize EIP Editor Apprentice Project		2022-05-06 07:38:21 +0000 UTC
+5046	CLOSED	EIP-5555 Flashloan-supported Non-Fungible Token Vault Standard		2022-05-06 07:05:52 +0000 UTC
+5031	CLOSED	Replace the link to CC0 with a link to the LICENCE file		2022-05-06 06:38:34 +0000 UTC
+5009	CLOSED	Should we discourage the word "standard" in EIP titles and descriptions?		2022-05-05 07:41:48 +0000 UTC
+4991	CLOSED	minting of NFT with on-chain auction		2022-05-06 06:19:43 +0000 UTC
+4979	CLOSED	Phantom NFT Standard		2022-04-07 05:33:44 +0000 UTC
+4949	CLOSED	Three days after submitting code, no Travis CI results are available.		2022-03-28 03:48:44 +0000 UTC
+4948	CLOSED	EIPs		2022-03-26 07:13:32 +0000 UTC
+4945	OPEN	Rename master branch to main branch		2022-05-31 16:23:02 +0000 UTC
+4943	CLOSED	How to handle a struct with an array of struct in EIP-712?		2022-03-26 08:27:25 +0000 UTC
+4941	CLOSED	Diamond contracts cannot be verified in blockchain browsers.		2022-03-25 06:37:50 +0000 UTC
+4939	CLOSED	NFT Commission Standard		2022-03-25 04:29:10 +0000 UTC
+4933	CLOSED	Who would implement this EIP? Developers using several protocols or the protocols themselves?		2022-03-21 22:18:27 +0000 UTC
+4928	CLOSED	Satoshi Nakamoto candidate		2022-03-19 07:23:53 +0000 UTC
+4927	CLOSED	cargo install eipv eipv <INPUT FILE / DIRECTORY>		2022-03-18 08:33:17 +0000 UTC
+4921	CLOSED	Travis CI should not validate Git Submodules		2022-04-22 15:38:33 +0000 UTC
+4918	CLOSED	ERC-4884 Rentable NFT Standard		2022-03-18 08:28:33 +0000 UTC
+4917	OPEN	Proposal: How about having an ERC Meetup?		2022-03-23 13:59:21 +0000 UTC
+4912	CLOSED	nft		2022-03-15 08:36:56 +0000 UTC
+4900	CLOSED	```suggestion		2022-03-11 12:32:24 +0000 UTC
+4879	CLOSED	Github discussions for discussions-to		2022-03-25 06:09:18 +0000 UTC
+4874	CLOSED	Coin		2022-03-05 09:22:45 +0000 UTC
+4868	CLOSED	Add a LICENCE file		2022-03-14 16:40:14 +0000 UTC
+4864	CLOSED	MIR		2022-03-02 10:00:31 +0000 UTC
+4857	CLOSED	CLOSE		2022-02-28 16:10:30 +0000 UTC
+4856	CLOSED	EIPS-2612: wrong indentation for the typed structure		2022-02-28 04:40:38 +0000 UTC
+4834	CLOSED	ERC-4834 Draft: Hierarchical Domains Standard		2022-02-28 20:33:15 +0000 UTC
+4831	CLOSED	ERC: CallistoNFT standard		2022-02-23 04:27:11 +0000 UTC
+4828	CLOSED	IDEA: A Standardized Interface for On-chain Exchanges		2022-02-22 03:43:44 +0000 UTC
+4823	CLOSED	Royalty Bearing NFTs		2022-02-17 19:01:09 +0000 UTC
+4818	CLOSED	EIP-4399: [RFC] reconsider the `RANDOM` name		2022-02-17 08:06:11 +0000 UTC
+4816	CLOSED	Expandable Onchain SVG Images Storage Structure		2022-02-17 08:20:56 +0000 UTC
+4804	CLOSED	EIP-4804: Web3		2022-02-15 07:07:30 +0000 UTC
+4789	CLOSED	G		2022-02-11 08:53:48 +0000 UTC
+4783	CLOSED	EIP 4337 typos		2022-02-21 06:04:18 +0000 UTC
+4763	CLOSED	Discussions: EIP-4762		2022-02-10 05:56:33 +0000 UTC
+4761	CLOSED	Discussions: EIP-4760		2022-02-10 05:56:26 +0000 UTC
+4759	CLOSED	Discussions: EIP-4758		2022-02-10 05:47:58 +0000 UTC
+4733	CLOSED	Idea RFC - delegating proof of ERC-721 token ownership to another wallet		2022-01-31 01:55:40 +0000 UTC
+4708	CLOSED	Using EIP-3009 with web3.js in a react-native app,		2022-01-23 03:50:31 +0000 UTC
+4695	CLOSED	test		2022-01-18 04:59:38 +0000 UTC
+4678	CLOSED	Discussion: 2-hop Blockchain, Combining PoW and PoS Securely on ETH (EIPxxxx)		2022-01-15 08:34:33 +0000 UTC
+4674	CLOSED	Multi-Fractional Non-Fungible Token Standard		2022-01-15 08:06:19 +0000 UTC
+4672	CLOSED	Discussion: EIP-4671		2022-01-13 10:47:48 +0000 UTC
+4666	CLOSED	ERC: Non-tradable Token Standard		2022-01-13 11:05:24 +0000 UTC
+4650	CLOSED	Controllable Resolution Path For NFT Ownership		2022-01-09 18:35:01 +0000 UTC
+4643	CLOSED	(EIP712) Unclear `encodeType` protocol/implementation for >2nd order nested structure		2022-01-07 18:32:14 +0000 UTC
+4638	CLOSED	Idea : Adding block in two way order of genesis block		2022-01-06 19:26:26 +0000 UTC
+4627	CLOSED	Eips		2022-01-06 09:05:16 +0000 UTC
+4614	CLOSED	Incorrect naming for eip-micropayments_standard_for_nfts_and_multi_tokens.md.		2022-01-01 15:06:06 +0000 UTC
+4608	CLOSED	ERC-4608: Delegator Extension That Enables ERC721 to be loaned		2021-12-28 03:13:26 +0000 UTC
+4597	CLOSED	Discussion: EIP-4444, EIP-2028, EIP-4488		2021-12-20 19:06:55 +0000 UTC
+4583	CLOSED	Tether Token Smart Contract Upgrade Request		2021-12-18 18:15:16 +0000 UTC
+4573	CLOSED	Procedures for the EVM		2022-04-29 21:26:08 +0000 UTC
+4563	CLOSED	Since this is your first issue, we kindly remind you to check out [EIP-1](https://eips.ethereum.org/EIPS/eip-1) for guidance.		2021-12-18 07:32:43 +0000 UTC
+4561	CLOSED	Hi @flexsurfer, that's because MetaMask implements [EIP-1102](https://eips.ethereum.org/EIPS/eip-1102). You have to call `ethereum.request({ method: 'eth_requestAccounts' })` first. Since you're asking about MetaMask specifically, I'll also refer you to the relevant section of our [documentation](https://docs.metamask.io/guide/ethereum-provider.html#using-the-provider).		2021-12-18 07:33:16 +0000 UTC
+4556	CLOSED	I need to add the token icon, is there a detailed operation process		2021-12-18 07:34:00 +0000 UTC
+4554	CLOSED	Discussion for EIP-4554: Non Fungible Fractionalization of ERC-721 Tokens		2021-12-15 22:38:49 +0000 UTC
+4549	CLOSED	Luna coins		2021-12-11 15:36:58 +0000 UTC
+4548	CLOSED	EIP-3220 automatic generation of crosschainId		2021-12-13 02:32:11 +0000 UTC
+4526	CLOSED	Only run github actions on the canonical EIPs repository		2021-12-27 17:55:26 +0000 UTC
+4525	CLOSED	safeTransferFrom function require modification		2021-12-06 03:43:15 +0000 UTC
+4523	CLOSED	And then here it calls "ERC-1411" which is not linked.		2021-12-06 03:37:36 +0000 UTC
+4514	CLOSED	that is, not all nodes participate in the round?		2021-12-01 12:18:48 +0000 UTC
+4509	CLOSED	Unsecured Leasing NFT Promotes the Development of Metaverse's Sharing Economy		2021-11-30 07:04:26 +0000 UTC
+4500	CLOSED	RFC: Delegated identities for social dApps, improving the "Sign-in with Ethereum" UX		2021-12-06 10:27:32 +0000 UTC
+4477	CLOSED	[EIP-722] Allow everyone migrate token URI		2021-11-23 07:17:10 +0000 UTC
+4474	CLOSED	[EIP-2233] Stock Token		2021-11-24 06:28:00 +0000 UTC
+4469	CLOSED	EIP-4469: Wrapped metaverse tokens	stale	2022-06-04 09:02:45 +0000 UTC
+4435	CLOSED	Help		2021-11-09 12:10:49 +0000 UTC
+4431	CLOSED	Discussions: EIP-4430	discussions-to	2022-06-10 13:12:03 +0000 UTC
+4426	CLOSED	Bug: Duplicate Event Topics for ERC20 and ERC721 Transfer Events		2021-11-07 03:14:46 +0000 UTC
+4423	CLOSED	Francisco Ramos		2021-11-05 09:32:10 +0000 UTC
+4422	CLOSED	Francisc Ramos		2021-11-05 09:32:16 +0000 UTC
+4413	CLOSED	Rename `review-period-end` to `last-call-end` or `last-call-deadline`	type: EIP1 (Process)	2021-11-10 15:26:18 +0000 UTC
+4398	CLOSED	@eth-bot gives EIP file name error problem for new submission		2021-11-28 22:55:45 +0000 UTC
+4384	CLOSED	Remove `updated` from EIP-1	type: EIP1 (Process)	2021-11-11 12:36:01 +0000 UTC
+4381	CLOSED	[EIP-4381] General metadata container contract		2021-12-15 22:24:47 +0000 UTC
+4358	CLOSED	EIP for the Replication and Regeneration of an NFT Properties and Attributes		2021-10-11 10:18:30 +0000 UTC
+4353	CLOSED	Interface for Staked Tokens in NFTs		2022-05-23 04:05:25 +0000 UTC
+4348	CLOSED	eth		2021-10-08 08:58:12 +0000 UTC
+4343	CLOSED	ERC: Discussion around Creditable NFT	stale	2022-04-15 21:02:35 +0000 UTC
+4339	CLOSED	721 Token belongs to seraphineapreko@gmail.com active it		2021-10-02 08:31:12 +0000 UTC
+4335	OPEN	EIP registries		2022-03-02 15:55:38 +0000 UTC
+4209	CLOSED	Scripts as NFTs, looking for a standard.		2021-09-25 08:58:33 +0000 UTC
+4186	CLOSED	Disable the bot		2021-09-26 15:00:11 +0000 UTC
+3977	CLOSED	Idea/RfC: Validating MUST specified in ERCs	stale	2022-04-08 14:07:45 +0000 UTC
+3974	CLOSED	EIP-1155 is subject to the Billion-dolar-mistake, risking value lost		2021-09-14 04:59:30 +0000 UTC
+3857	CLOSED	[EIP-725] Upgrade		2022-03-25 09:22:53 +0000 UTC
+3850	CLOSED	Native flash minting (in progress)	stale	2022-03-30 23:02:40 +0000 UTC
+3802	CLOSED	meta		2021-09-05 00:39:44 +0000 UTC
+3785	CLOSED	New		2021-09-06 10:59:28 +0000 UTC
+3782	OPEN	[EIP-4341] Multi NFT Ordered Standard		2022-01-23 15:37:49 +0000 UTC
+3779	CLOSED	Safer Control Flow for the EVM		2021-12-16 22:47:23 +0000 UTC
+3774	CLOSED	New		2021-08-28 07:19:26 +0000 UTC
+3772	OPEN	ERC: Compressed Integers		2022-02-01 15:10:37 +0000 UTC
+3753	OPEN	[EIP-3754] A vanilla non-fungible token standard	discussions-to	2021-11-11 13:10:10 +0000 UTC
+3741	CLOSED	why ownerOf is not included in ERC1155 ? how can developer get owner info		2021-08-19 12:40:16 +0000 UTC
+3733	CLOSED	How can i get more views in my nft works?~		2021-08-17 03:56:16 +0000 UTC
+3710	CLOSED	Bankkub		2021-08-10 05:19:38 +0000 UTC
+3697	CLOSED	[Idea] Expanding ERC-721 NFT's with corresponding rarity, semi-fungibility and randomness.		2021-08-24 09:55:26 +0000 UTC
+3653	CLOSED	EIP-3652: Hierarchical NFT (Discussion)		2021-08-27 20:46:50 +0000 UTC
+3641	CLOSED	[EIP-3525]Proposal of Semi Fungible Token Standard		2022-06-27 07:41:29 +0000 UTC
+3637	CLOSED	ValueError: {'code': -32000, 'message': 'invalid opcode: SHL'}		2021-07-01 13:34:28 +0000 UTC
+3636	CLOSED	Decentralized blacklist	stale	2021-11-07 02:28:33 +0000 UTC
+3619	CLOSED	Security bug: nothing-at-stake for tokens - no ERC-721 value anymore attack	stale	2021-11-07 02:28:35 +0000 UTC
+3615	CLOSED	Why does the following error occur in 0.5.+ version?		2021-06-18 05:57:12 +0000 UTC
+3611	CLOSED	Hello how i can copy anther coin source and edit and used on my coin		2021-06-15 11:09:04 +0000 UTC
+3608	CLOSED	Discussion for EIP-3607: Reject transactions from senders with deployed code		2022-06-10 08:32:48 +0000 UTC
+3604	CLOSED	Update mobile layout to wrap vs. overflow		2021-08-28 07:33:12 +0000 UTC
+3601	CLOSED	NFT and FT with Royalty Distribution System	stale	2022-04-16 04:02:46 +0000 UTC
+3590	CLOSED	Discussion for EIP-3589: Exclusive Assembly NFT		2022-06-10 08:35:18 +0000 UTC
+3585	CLOSED	[Idea] to use an additional consensus mechanism, which I call "additional block hardening" (along with the Proof-of-Stake)	stale	2021-11-22 05:20:21 +0000 UTC
+3583	CLOSED	[Idea] Alternative contract address assignment scheme as replay protection	stale	2021-11-07 02:28:38 +0000 UTC
+3574	CLOSED	[idea] Cryptonote-style block size and gas limit	stale	2021-11-07 02:28:40 +0000 UTC
+3562	CLOSED	[Discussion] Increasing decentralization on ethv2 and future proofing by algorithmically reducing node costs	stale	2021-11-07 02:28:41 +0000 UTC
+3548	CLOSED	[URGENT] [DISCUSSION] Proposal to have fee-burning mechanism of EIP-1559 be more useful to society		2021-10-15 16:37:41 +0000 UTC
+3546	CLOSED	[Discussion] Thread about the benefits of an EIP allowing Token Flagging at contract level, to notify aggregators (marketplaces, wallets & co)	stale	2021-11-07 02:28:43 +0000 UTC
+3544	CLOSED	Allowing multiple addresses to own one address.	stale	2021-11-07 02:28:45 +0000 UTC
+3543	CLOSED	ISBLOCKHASH	stale	2022-05-09 15:04:00 +0000 UTC
+3519	CLOSED	Discussion for EIP-3440	stale	2022-01-04 18:19:32 +0000 UTC
+3517	CLOSED	update EIP editors: Apr 2021	type: EIP1 (Process), stale	2022-05-24 14:13:20 +0000 UTC
+3515	CLOSED	ERC-721 Enrichable	stale	2021-11-07 02:28:48 +0000 UTC
+3494	CLOSED	Require at least one Github handle in author field	type: EIP1 (Process), stale	2022-05-24 14:13:22 +0000 UTC
+3491	CLOSED	[Discussion] Opening a .test domain root on Mainnet deployment		2021-04-15 14:50:58 +0000 UTC
+3489	CLOSED	Please DELETE		2021-04-13 03:15:15 +0000 UTC
+3477	CLOSED	ERC: Antitoken - Representing debt in a token	stale	2021-11-07 02:28:50 +0000 UTC
+3467	CLOSED	ERC3475: Multiple Callable Bonds Standard	stale	2022-03-07 11:38:51 +0000 UTC
+3447	CLOSED	New transaction parameter for latest block number inclusion	stale	2021-11-07 02:28:52 +0000 UTC
+3437	CLOSED	Proof of storage	stale	2021-11-07 02:28:53 +0000 UTC
+3427	CLOSED	The Draft uses the following language : "NFTs can represent ownership over digital or physical assets." Would it be more accurate to say that "NFTs can represent claims of ownership over digital or physical assets." As the protocol currently does not provide for establishing whether that claim of ownership is verified.		2021-03-27 04:02:43 +0000 UTC
+3420	CLOSED	How to write Security Considerations ?	stale	2022-03-01 09:28:19 +0000 UTC
+3414	CLOSED	```suggestion		2021-03-19 04:06:12 +0000 UTC
+3408	CLOSED	Feature Request: Strict Smart Contract Address Check.	stale	2021-11-07 02:28:55 +0000 UTC
+3399	CLOSED	Jekyll theme only supports headings up to `###`	type: EIP1 (Process), stale	2022-05-24 14:13:25 +0000 UTC
+3396	CLOSED	Add anchor tags to eip headings	type: EIP1 (Process), stale	2021-11-11 12:34:50 +0000 UTC
+3387	CLOSED	Style Guide for EIPs	type: EIP1 (Process), stale	2022-05-24 14:13:27 +0000 UTC
+3384	CLOSED	ERC-721 and ERC-1155 to ERC-20 Wrapper	discussions-to	2022-06-10 08:35:17 +0000 UTC
+3375	CLOSED	Combine shared ownership & NFT divisibility	stale	2021-11-07 02:29:00 +0000 UTC
+3349	CLOSED	Generalized interface for ERC721 wrapping and unwrapping		2021-03-09 02:08:22 +0000 UTC
+3342	CLOSED	Since this is your first issue, we kindly remind you to check out [EIP-1](https://eips.ethereum.org/EIPS/eip-1) for guidance.		2021-03-08 09:26:34 +0000 UTC
+3341	CLOSED	ethereum		2021-03-08 04:56:14 +0000 UTC
+3334	CLOSED	Jfixed, right?		2021-03-06 07:53:31 +0000 UTC
+3304	CLOSED	Contract-scoped state replication for layer 2 applications and infrastructure	stale	2021-11-07 02:29:02 +0000 UTC
+3292	CLOSED	To minimize redundancy, drop the first sentence in the security section of crosschain identification specification"		2021-02-24 13:09:36 +0000 UTC
+3291	CLOSED	Let addresses directly store gas for refunds	stale	2021-11-07 02:29:03 +0000 UTC
+3286	CLOSED	Time based switch EIP	stale	2021-11-07 02:29:05 +0000 UTC
+3278	CLOSED	Block Gas Limit		2021-02-19 07:39:42 +0000 UTC
+3264	CLOSED	hello world		2021-02-11 05:29:08 +0000 UTC
+3257	CLOSED	EIP-1102 Discussion: eth_requestAccounts		2021-03-04 17:20:37 +0000 UTC
+3255	CLOSED	Burning value in a world where some value is desperately needed.	stale	2021-11-07 02:29:07 +0000 UTC
+3239	CLOSED	EIP-3238: Difficulty Bomb Delay to Summer 2022	discussions-to	2022-05-10 16:32:04 +0000 UTC
+3225	OPEN	Discussion for EIP-3224: Described Data	discussions-to	2022-06-30 03:12:35 +0000 UTC
+3222	CLOSED	Etc		2021-01-26 16:49:36 +0000 UTC
+3215	CLOSED	Possible miner exodus and 51%		2021-01-22 06:28:50 +0000 UTC
+3214	CLOSED	ERC20 Extending: token with fee on transfer	stale	2021-11-23 06:41:50 +0000 UTC
+3197	CLOSED	Add deadline for ERC20 approve	stale	2021-11-07 02:29:12 +0000 UTC
+3196	CLOSED	ERC777 based token standard that simplifies on-chain voting		2021-01-18 12:26:27 +0000 UTC
+3191	CLOSED	Eip: Socialistic gwei change to prevent “gwei sweeping”	stale	2021-11-07 02:29:14 +0000 UTC
+3188	CLOSED	is:open		2021-01-05 20:44:07 +0000 UTC
+3183	CLOSED	nodejs deb not installing , please help		2021-01-03 00:15:53 +0000 UTC
+3182	CLOSED	Proposal for debt system in Ethereum		2021-01-03 15:44:44 +0000 UTC
+3167	CLOSED	Does Ethereum support just bilinear pairing calculation not the pairing check?		2020-12-17 13:33:34 +0000 UTC
+3164	CLOSED	New statuses don't show on EIPs site		2020-12-14 15:18:25 +0000 UTC
+3145	CLOSED	Discussion for EIP-3143: Increase block rewards to 5 ETH	stale	2022-06-29 05:15:56 +0000 UTC
+3132	CLOSED	Discussion for EIP-3135: Exclusive Claimable Token	discussions-to	2022-06-10 08:35:02 +0000 UTC
+3117	CLOSED	Invalid EIP's		2020-12-05 07:53:42 +0000 UTC
+3113	CLOSED	https://github.com/ethereum/EIPs/issues/3113#issue-741184819		2020-12-31 08:30:25 +0000 UTC
+3086	CLOSED	EIP-3085 Discussion: wallet_addEthereumChain		2022-04-02 20:34:17 +0000 UTC
+3067	CLOSED	ert		2020-10-23 10:56:04 +0000 UTC
+3066	CLOSED	How to determine whether the contract type is ERC20 or ERC721 based on the bytecode of the contract that has been deployed on the chain.		2020-10-22 06:42:41 +0000 UTC
+3059	CLOSED	EIP: another method to pay gas with tokens directly	stale	2021-11-07 02:29:19 +0000 UTC
+3055	CLOSED	ERC: transferFrom Token Standard	stale	2021-11-07 02:29:21 +0000 UTC
+3051	CLOSED	EIP: Alternative ETH2.0 - A Non-Sharding Approach	stale	2021-11-07 02:29:23 +0000 UTC
+3043	CLOSED	Accomplish a call or transfer in a pre-determined future time	stale	2021-11-07 02:29:24 +0000 UTC
+3042	CLOSED	ERC-3000 discussion	discussions-to	2022-06-10 08:34:56 +0000 UTC
+3037	CLOSED	ERC-1155 events for approval		2021-01-08 00:42:47 +0000 UTC
+3032	CLOSED	Copy all contract data to another contract; join N contracts into one	stale	2021-11-07 02:29:28 +0000 UTC
+3012	CLOSED	Provide blockchain info for wallets via RPC endpoint	stale	2021-11-07 02:29:29 +0000 UTC
+3011	CLOSED	Create a standard for joining together two chains, if possible	stale	2021-11-07 02:29:31 +0000 UTC
+3010	CLOSED	EIP-3009: "Transfer With Authorization" - ERC20 meta-transactions	stale	2022-02-08 15:01:57 +0000 UTC
+3002	CLOSED	provide a reserved range of opcodes for chain-specific extensions	stale	2021-11-07 02:29:33 +0000 UTC
+2987	CLOSED	Greeter failed on PR	stale	2022-05-12 10:08:03 +0000 UTC
+2983	OPEN	Discussion for EIP-2980	discussions-to	2022-05-21 11:24:55 +0000 UTC
+2968	CLOSED	Questions about ETH2 BLS key derivation		2020-09-11 11:55:55 +0000 UTC
+2967	CLOSED	EIP-1: Stronger rules for discussion-url	type: EIP1 (Process)	2021-11-04 11:22:50 +0000 UTC
+2965	CLOSED	Disccussion on Finalizable Service Token (FST)	stale	2021-11-15 16:21:23 +0000 UTC
+2962	CLOSED	Archival of Abandoned/Withdrawn EIPs	type: EIP1 (Process), stale	2022-03-12 04:02:59 +0000 UTC
+2961	CLOSED	Introduce more automation	type: EIP1 (Process)	2022-06-01 07:00:05 +0000 UTC
+2960	CLOSED	EIP-1: Include RFC 2119 recommendation into EIP-1 so EIPs do not need to duplicate it	type: EIP1 (Process)	2021-11-04 11:24:08 +0000 UTC
+2959	CLOSED	Discussion for EIP2390 - GeoENS	stale	2022-05-17 16:03:11 +0000 UTC
+2951	CLOSED	SHA3 Precompile		2022-05-10 16:27:52 +0000 UTC
+2941	CLOSED	EIP-1: abandoned vs withdrawn	type: EIP1 (Process)	2021-09-25 17:11:16 +0000 UTC
+2940	CLOSED	EIP-1: Implementation section	type: EIP1 (Process)	2020-12-16 15:33:36 +0000 UTC
+2925	CLOSED	Discussion on ERC-2917: Staking Reward Calculation	stale	2021-11-21 03:11:11 +0000 UTC
+2907	CLOSED	Discussion for EIP-2981: NFT Royalty Standard		2022-06-10 08:32:39 +0000 UTC
+2895	CLOSED	PLS HELP		2020-08-23 12:21:24 +0000 UTC
+2879	CLOSED	Token		2020-08-16 02:51:41 +0000 UTC
+2863	CLOSED	Add arbitrary aggregate contract calls	stale	2021-11-21 03:11:13 +0000 UTC
+2851	CLOSED	Discussion: EIP-2844 - Decrypt/Sign with DIDs and JOSE/COSE		2020-11-02 08:35:08 +0000 UTC
+2846	CLOSED	File for EIP-2803 is in wrong folder		2020-08-03 11:38:49 +0000 UTC
+2845	CLOSED	Discussions for EIP: Add DID related methods to the JSON-RPC	stale	2022-03-26 13:05:55 +0000 UTC
+2802	CLOSED	Discussion: New ERC for deposit forwarding (Centralized Exchanges and Merchants)		2020-08-13 05:49:08 +0000 UTC
+2801	CLOSED	Discussion for E-signatures	stale	2021-11-21 03:11:14 +0000 UTC
+2791	CLOSED	Ethereum should be able to combine several transactions into one	stale	2021-11-21 03:11:16 +0000 UTC
+2790	CLOSED	Wallet Permissions System		2020-07-24 22:34:11 +0000 UTC
+2787	CLOSED	Discussion for EIP-2786: Ethereum Provider Connect/Disconnect Events		2022-04-23 09:53:40 +0000 UTC
+2775	CLOSED	Discussion for EIP-2774	stale	2021-11-21 03:11:18 +0000 UTC
+2766	CLOSED	ERC: Contract Ownership Governance Standard	stale	2022-03-31 11:07:22 +0000 UTC
+2708	CLOSED	transactions pending		2020-06-10 07:36:14 +0000 UTC
+2701	CLOSED	Discussion for EIP-2700	stale	2021-11-21 03:11:19 +0000 UTC
+2697	CLOSED	Discussion for EIP-2696	stale	2021-11-21 03:11:21 +0000 UTC
+2674	CLOSED	CI fails for all builds due to current state of master		2020-06-02 23:22:08 +0000 UTC
+2665	CLOSED	ERC-721 Transfer Fee Extension	stale	2022-05-29 14:02:48 +0000 UTC
+2664	CLOSED	WIP		2020-05-21 10:57:52 +0000 UTC
+2648	CLOSED	Make sure EIP/ERCs do not use external links for diagrams/images	maintenance/editing	2020-07-23 20:43:36 +0000 UTC
+2644	CLOSED	Consider IANA registration of URI Scheme for ethereum?		2020-05-16 15:57:49 +0000 UTC
+2640	CLOSED	ProgPoW working draft	stale	2021-11-21 03:11:23 +0000 UTC
+2630	CLOSED	Tagging Tokens Indicator Interface - Discussion	stale	2021-11-21 03:11:25 +0000 UTC
+2616	CLOSED	EIP2615: Non-Fungible Token with mortgage and rental functions	stale	2022-06-01 09:04:16 +0000 UTC
+2613	OPEN	ERC-2612 `permit`: 712-signed token approvals	discussions-to	2022-06-24 11:40:16 +0000 UTC
+2608	CLOSED	ERC2608 Token Standard with Safe Arbitrary Call (ERC20 Extension)	stale	2021-11-21 03:11:27 +0000 UTC
+2607	CLOSED	Add site search	type: Meta, stale	2021-11-21 03:11:28 +0000 UTC
+2603	CLOSED	EIPs		2020-05-16 13:51:09 +0000 UTC
+2595	CLOSED	Eips		2020-04-12 11:14:41 +0000 UTC
+2594	CLOSED	Transaction deadlines and increasing gas prices for more efficient auctions		2020-04-11 21:55:38 +0000 UTC
+2585	CLOSED	Minimal And Extensible Meta Transaction Forwarder	stale	2021-11-21 03:11:30 +0000 UTC
+2575	CLOSED	ERC: Creators' Royalty Token standard		2020-03-31 15:58:44 +0000 UTC
+2574	CLOSED	noop		2020-03-29 12:31:33 +0000 UTC
+2573	CLOSED	noop		2020-03-29 12:31:09 +0000 UTC
+2572	CLOSED	noop		2020-03-29 12:28:22 +0000 UTC
+2571	CLOSED	ERC-2571: Creators’ Royalty Token standard	stale	2022-04-02 17:03:40 +0000 UTC
+2570	CLOSED	Add Ownbit Wallet as EIP-55 wallet		2020-08-29 01:03:02 +0000 UTC
+2567	CLOSED	Human-Readable Parameters for Contract Function Execution	stale	2021-11-21 03:11:32 +0000 UTC
+2564	CLOSED	EIP-2022		2020-03-22 00:21:17 +0000 UTC
+2561	CLOSED	EIP: eth_simulateTransaction - transaction dry runs	stale	2022-04-24 20:03:15 +0000 UTC
+2557	CLOSED	Feature Request: Enable mining only when transactions are pending for Clique	stale	2021-11-21 04:13:49 +0000 UTC
+2554	CLOSED	broken link on erc721 EIP site to EIP 223		2020-04-02 10:31:33 +0000 UTC
+2552	CLOSED	Lỗi		2020-03-06 14:14:50 +0000 UTC
+2535	OPEN	Diamonds		2022-06-17 14:29:04 +0000 UTC
+2534	CLOSED	noop		2020-02-25 21:00:50 +0000 UTC
+2533	CLOSED	noop		2020-02-25 21:00:37 +0000 UTC
+2532	CLOSED	noop		2020-02-25 21:00:22 +0000 UTC
+2531	CLOSED	noop		2020-02-25 20:59:59 +0000 UTC
+2501	CLOSED	Add support to PlantUML in EIP website.	type: Meta, stale	2021-11-21 04:13:51 +0000 UTC
+2493	CLOSED	Discussions-to thread for EIP-2494 (Baby Jubjub Elliptic Curve)		2020-01-30 10:03:00 +0000 UTC
+2492	CLOSED	ERC1400 contract deployment	stale	2021-11-21 04:13:52 +0000 UTC
+2487	CLOSED	Fix link		2020-04-07 09:25:23 +0000 UTC
+2483	CLOSED	ERC-2477 the discussion	stale	2022-03-30 16:07:45 +0000 UTC
+2482	CLOSED	Discussion thread to EIP-2481 arguing for request ids in the eth protocol	stale	2021-11-21 04:13:53 +0000 UTC
+2479	CLOSED	Feature Request: Create sanity check for solidity interfaces in the EIPs	stale	2021-11-21 04:13:55 +0000 UTC
+2472	CLOSED	"Optional EIPs" field in header	type: EIP1 (Process), stale	2021-11-21 04:13:56 +0000 UTC
+2469	CLOSED	how to lock token certain amount of time? Please help me asap..		2020-01-18 11:34:49 +0000 UTC
+2465	CLOSED	Discussion thread for EIP-2464: eth/65: transaction annoucements and retrievals	discussions-to	2022-06-04 06:07:47 +0000 UTC
+2463	CLOSED	Discussions-to thread for EIP-2462 (Interface standard for Ethereum compatibles)	stale	2021-11-21 04:13:59 +0000 UTC
+2461	CLOSED	กุ้คืนบันชี		2020-01-11 23:19:31 +0000 UTC
+2460	CLOSED	ดด		2020-01-11 23:19:35 +0000 UTC
+2453	CLOSED	Draft EIP, Discussions-to. Add `updates` and `updated-by` EIP Header Options for `active` EIPs		2020-06-01 22:53:34 +0000 UTC
+2450	CLOSED	Mermaid (graphs) support in EIPs	type: Meta, stale	2021-11-21 04:14:01 +0000 UTC
+2445	CLOSED	0xdadBdBb13B52fe76348ffB5A18996e909a1e75B2		2019-12-20 10:35:12 +0000 UTC
+2440	CLOSED	Discussions-to thread for EIP-2098 (Compact Signature Representation)		2022-03-22 04:56:52 +0000 UTC
+2439	OPEN	Discussions-to thread for EIP-634 (Storage of text records in ENS)		2022-01-21 21:08:02 +0000 UTC
+2425	CLOSED	EIP-2424 Discussion: EIP Code of Conduct		2019-12-04 11:41:26 +0000 UTC
+2415	CLOSED	Name for erc 20 won't update on any of the interfaces if updated after deployment		2020-08-29 01:06:49 +0000 UTC
+2407	CLOSED	EIP-2020: E-Money Standard Token	stale	2021-12-04 20:11:38 +0000 UTC
+2401	CLOSED	ERC721 safeTransferFrom description	stale	2021-12-04 20:11:39 +0000 UTC
+2393	CLOSED	Discussion: Multiple contenthash records for ENS	stale	2021-12-04 20:11:41 +0000 UTC
+2379	CLOSED	Draft EIP: Pull Oracle Interface Standard #2362	stale	2021-12-04 20:11:43 +0000 UTC
+2374	CLOSED	Broken links	type: Meta	2020-08-28 20:13:15 +0000 UTC
+2367	CLOSED	ERC: Open Grant Standard	stale	2021-12-04 20:11:44 +0000 UTC
+2365	CLOSED	EIP-2364: eth/64: forkid-extended protocol handshake	discussions-to	2022-06-07 07:14:50 +0000 UTC
+2350	CLOSED	ERC-2350 Semantic contracts (ERC extension - draft)		2022-06-11 07:10:03 +0000 UTC
+2343	CLOSED	Yellow Paper and Potential EIP Licensing Violation	type: Meta, type: EIP1 (Process), stale	2021-12-04 20:11:46 +0000 UTC
+2339	CLOSED	Draft EIP: BLS12-381 Keystore	stale	2022-02-07 07:10:35 +0000 UTC
+2338	CLOSED	Draft EIP: BLS12-381 Deterministic Account Hierarchy	stale	2022-06-28 06:36:14 +0000 UTC
+2337	CLOSED	Draft EIP: BLS12-381 Key Generation		2022-06-10 08:34:51 +0000 UTC
+2324	CLOSED	ERC: The Subscription Standard	stale	2021-12-04 20:11:49 +0000 UTC
+2319	CLOSED	Discussion: EIP-1193		2022-06-30 13:31:34 +0000 UTC
+2315	CLOSED	Simple Subroutines for the EVM		2022-01-30 02:32:37 +0000 UTC
+2312	CLOSED	GalaticToken		2019-10-28 20:14:53 +0000 UTC
+2309	CLOSED	ERC-2309: ERC-721 Consecutive Transfer Extension		2022-06-10 07:28:01 +0000 UTC
+2307	CLOSED	ERC 2307: Store data by logging to reduce gas cost	stale	2021-12-04 20:11:50 +0000 UTC
+2303	CLOSED	ERC: Standard interface to fork tokens	stale	2021-12-04 20:11:52 +0000 UTC
+2294	CLOSED	EIP-2294: Explicit bound to Chain ID size	stale	2021-12-04 20:11:54 +0000 UTC
+2292	CLOSED	แม่แบบEIP1		2019-09-18 16:20:46 +0000 UTC
+2291	CLOSED	ดูแม่แบบสำหรับตัวอย่างเกี่ยวกลับคำขอดึงEIP1		2019-09-17 18:25:30 +0000 UTC
+2290	CLOSED	"Standard ERC20" -- new approach to tokens: Objects from universal factory, not a specification.	stale	2021-11-22 09:54:58 +0000 UTC
+2289	CLOSED	XML External Entity (XXE) Injection		2019-09-17 01:10:19 +0000 UTC
+2288	CLOSED	Improper Access Control		2019-09-17 01:10:07 +0000 UTC
+2287	CLOSED	Denial of Service (DoS)		2019-09-17 01:10:00 +0000 UTC
+2286	CLOSED	DLL Loading Issue		2019-09-17 01:09:49 +0000 UTC
+2285	CLOSED	Command Injection		2019-09-17 01:09:40 +0000 UTC
+2284	CLOSED	Arbitrary File Write via Archive Extraction (Zip Slip)		2019-09-17 01:09:24 +0000 UTC
+2281	CLOSED	(discussion) EIP-2280: erc-20 extension for native meta transactions support	stale	2021-12-04 20:11:56 +0000 UTC
+2270	CLOSED	EIP-2270: Generate Ethereum account from Digital ID	stale	2021-12-04 20:11:58 +0000 UTC
+2269	CLOSED	EIP-2269: The Fiat Representation Contract (FRC): Standard for fiat representation	stale	2021-12-04 20:11:59 +0000 UTC
+2266	CLOSED	EIP2266: Atomic Swap-based American Call Option Contract Standard	stale	2021-12-04 20:12:00 +0000 UTC
+2265	CLOSED	whether the contract code size limit is more than 2,675,000 bytes ?		2019-09-07 12:41:11 +0000 UTC
+2258	CLOSED	ERC 2258: Custodial Ownership Standard	stale	2021-12-04 20:12:02 +0000 UTC
+2255	CLOSED	EIP-2255: Web3 Wallet Permissions	stale	2022-05-28 05:16:37 +0000 UTC
+2247	CLOSED	EIP-1898: Precedence not specified for conflicting values	stale	2021-12-04 20:12:04 +0000 UTC
+2246	CLOSED	EIP-1808: A Non-homogenous digital asset data sharing standard	stale	2021-12-04 20:12:05 +0000 UTC
+2243	CLOSED	EIP-2243: Stateless upgradable smart contracts for account addresses	stale	2021-12-04 20:12:07 +0000 UTC
+2229	CLOSED	EIP-2229: Ping Interface	stale	2021-12-04 20:12:09 +0000 UTC
+2228	CLOSED	EIP-2228 Canonicalize the name of network ID 1 and chain ID 1	type: Informational, discussions-to	2022-05-28 05:16:12 +0000 UTC
+2222	CLOSED	ERC-2222 - Funds Distribution Standard	stale	2021-12-04 20:12:10 +0000 UTC
+2221	CLOSED	[bounty] Missing ~Byzantium~ EIPS		2019-09-19 14:42:29 +0000 UTC
+2220	CLOSED	[Missing] EIP-684	stale	2021-12-04 20:12:12 +0000 UTC
+2217	CLOSED	EIP-1108 How to test performance		2019-07-29 10:55:08 +0000 UTC
+2212	CLOSED	ERC-2212: Interest Earning Stakes		2020-09-09 11:40:29 +0000 UTC
+2208	CLOSED	EIP-2208: Thought Rewards Proposal for funding good thoughts & also leaders of good thoughts	stale	2022-05-24 19:02:37 +0000 UTC
+2204	CLOSED	EIP: Global Identity Tokens - ERC Proposal		2019-12-04 17:33:21 +0000 UTC
+2192	CLOSED	ERC-2193: dType Alias Extension - Decentralized Type System	stale	2021-12-04 20:12:14 +0000 UTC
+2187	CLOSED	Discussion: Consider Moving EIPs to Another Medium	stale	2021-12-04 20:12:15 +0000 UTC
+2184	CLOSED	Ethereum Symmetric Key Agreement	stale	2021-12-04 20:12:17 +0000 UTC
+2173	CLOSED	Discussion: EIP-1 - EIP Editor Criteria (process for new editors)	type: EIP1 (Process), stale	2021-12-04 20:12:18 +0000 UTC
+2169	CLOSED	;kl		2019-07-03 10:00:52 +0000 UTC
+2157	CLOSED	ERC-2157: dType Storage Extension - Decentralized Type System for EVM	stale	2021-12-04 20:12:19 +0000 UTC
+2154	CLOSED	Proposal to Incentivize Chain Compression	stale	2021-12-04 20:12:21 +0000 UTC
+2142	CLOSED	..		2019-06-24 16:15:24 +0000 UTC
+2137	CLOSED	112		2019-06-24 10:28:23 +0000 UTC
+2135	CLOSED	ERC-2135: Consumable Interface		2022-05-28 05:15:49 +0000 UTC
+2125	CLOSED	EIP-2124: Fork identifier for chain compatibility checks	discussions-to	2022-05-28 05:12:49 +0000 UTC
+2106	CLOSED	EIP-2021: Payoutable Token	stale	2021-12-04 20:12:22 +0000 UTC
+2105	CLOSED	EIP-2019: Fundable Token	stale	2021-12-04 20:12:24 +0000 UTC
+2104	CLOSED	EIP-2018: Clearable Token	stale	2021-12-04 20:12:26 +0000 UTC
+2103	CLOSED	EIP-1996: Holdable token	stale	2021-12-04 20:12:27 +0000 UTC
+2100	CLOSED	Proposal for Streaming Token Standard	stale	2021-12-04 20:12:28 +0000 UTC
+2062	CLOSED	List of EIPs/ERCs without a copyright statement	type: Meta, stale	2021-12-04 20:12:30 +0000 UTC
+2061	CLOSED	Discussion: Kickbacks for contract authors	stale	2021-12-04 20:12:31 +0000 UTC
+2060	CLOSED	Research into Protobuffs for new transaction-type serialization.	stale	2021-12-04 20:12:33 +0000 UTC
+2054	CLOSED	EIP-2054 Add missing cheap unique ID and external call hierarchy introspection	stale	2021-12-04 20:12:35 +0000 UTC
+2053	CLOSED	Up-to-date JSON-RPC API spec		2019-06-20 11:44:39 +0000 UTC
+2022	CLOSED	EIP-2009: Compliance Service	stale	2021-12-04 20:12:37 +0000 UTC
+1981	CLOSED	EIP-1352 doesn't have an associated registry?		2019-05-16 07:41:13 +0000 UTC
+1964	CLOSED	eip-1767 miner of type Block seems not need a filter	stale	2021-12-04 20:12:38 +0000 UTC
+1958	CLOSED	EIP-1958: Smart contract functions payable in tokens	stale	2021-12-04 20:12:40 +0000 UTC
+1956	CLOSED	Er-Tokens		2019-05-08 14:49:00 +0000 UTC
+1951	CLOSED	BCASHAirdrop		2019-05-08 14:52:38 +0000 UTC
+1935	CLOSED	Consider EIP1344 for the next upgrade (Meta: EIP1679)		2019-04-24 08:28:39 +0000 UTC
+1933	CLOSED	fat finger, please ignore		2019-04-10 22:55:59 +0000 UTC
+1930	CLOSED	EIP-1930: call variant with strict gas to ensure a specific amount is sent	stale	2022-05-28 05:12:25 +0000 UTC
+1923	CLOSED	EIP-1923: zk-SNARKs Verifier Registry Standard Interface	stale	2021-12-04 20:12:41 +0000 UTC
+1922	CLOSED	EIP-1922: zk-SNARKs Verifier Standard Interface	stale	2021-12-04 20:12:43 +0000 UTC
+1921	CLOSED	EIP-1921 dType - Extending the Decentralized Type System for Functions	stale	2021-12-04 20:12:44 +0000 UTC
+1913	CLOSED	ERC: Casper PEPoW Token Standard for Layer 2 Solutions	stale	2021-12-04 20:12:46 +0000 UTC
+1909	CLOSED	EIP for DApp Website URL and Web3 HTTP Extension	stale	2021-12-04 20:12:48 +0000 UTC
+1902	CLOSED	Discussion: EIP 1901 Add OpenRPC Service Discovery To JSON-RPC Services	stale	2022-06-04 07:02:53 +0000 UTC
+1894	CLOSED	Discussion: EIP 1881 - Introduce a sound money and store of value as secondary block reward	stale	2021-12-04 20:12:49 +0000 UTC
+1892	CLOSED	ERC20D: rent-compatible ERC20 migration		2019-05-31 16:00:58 +0000 UTC
+1888	CLOSED	ERC-1888: Transferable Certificate (Claim)		2022-06-11 07:09:39 +0000 UTC
+1882	CLOSED	ERC-1900: Decentralized Type System for EVM	stale	2021-12-04 20:12:51 +0000 UTC
+1878	CLOSED	EIP1474 Does not render correctly on main EIPs website	type: Meta	2019-08-08 20:05:53 +0000 UTC
+1860	CLOSED	MathTeX does not render correctly	type: Meta	2019-12-15 23:21:30 +0000 UTC
+1851	CLOSED	ERC 1850 Discussion	stale	2022-05-16 19:02:37 +0000 UTC
+1849	CLOSED	eip-721 issue		2019-03-19 15:38:43 +0000 UTC
+1843	CLOSED	ERC-1843 - Claims Token Standard	stale	2021-12-04 20:12:52 +0000 UTC
+1840	CLOSED	Patent covenant for EIP submissions	type: Meta, type: EIP1 (Process), stale	2021-12-04 20:12:54 +0000 UTC
+1837	CLOSED	EIP-1837 Explicit transaction fees	stale	2021-12-04 20:12:55 +0000 UTC
+1836	CLOSED	ERC1836 - Upgradable Identity Proxy	stale	2021-12-04 20:12:57 +0000 UTC
+1832	CLOSED	ether classic	stale	2021-11-20 22:50:18 +0000 UTC
+1831	CLOSED	Where is the auto-merger maintained and run?		2019-05-01 10:15:43 +0000 UTC
+1826	CLOSED	EIPS WEBSITE IS DOWN		2019-03-05 16:39:36 +0000 UTC
+1825	CLOSED	Dynamic ENS resolution		2019-12-17 23:18:16 +0000 UTC
+1806	CLOSED	EIPs		2019-03-02 02:12:28 +0000 UTC
+1789	CLOSED	ERC 1789 — Stable Funding for Open Source Maintainers		2019-06-12 08:42:36 +0000 UTC
+1788	CLOSED	d		2019-02-28 20:19:22 +0000 UTC
+1784	CLOSED	Discussion: implementation scheme of blind auction	stale	2021-12-04 20:12:58 +0000 UTC
+1776	CLOSED	ERC-1776 Native Meta Transactions	stale	2021-12-04 20:13:00 +0000 UTC
+1761	CLOSED	ERC-1761 Scoped Approval Interface	stale	2021-12-04 20:13:01 +0000 UTC
+1760	CLOSED	Discussion: Why using the ethereum public chain for STO contracts is not a good idea	stale	2021-12-04 20:13:03 +0000 UTC
+1757	CLOSED	ERC-1757: Reputation Mechanism to Claim Issuers	stale	2021-12-04 20:13:05 +0000 UTC
+1756	CLOSED	ERC-1756: Practical Randomness via Dual Contract	stale	2021-12-04 20:13:06 +0000 UTC
+1750	CLOSED	EIP-1750: gas paying agent mechanism	stale	2021-12-04 20:13:08 +0000 UTC
+1747	CLOSED	EIP-155: design problem in unique chain IDs		2019-03-08 11:22:13 +0000 UTC
+1745	CLOSED	Discussion: ERC-1815: Standard interface for blind auctions	stale	2021-12-04 20:13:09 +0000 UTC
+1742	CLOSED	EIP-721 Metadata JSON schema provides insufficient detail		2019-05-16 07:42:23 +0000 UTC
+1741	CLOSED	How do we return status code from an external function?		2019-07-04 22:41:18 +0000 UTC
+1736	CLOSED	EIP-1175 and EIP-1491 are duplicated		2019-03-08 19:10:41 +0000 UTC
+1726	CLOSED	ERC-1726: Dividend-Paying Token Standard		2022-05-15 18:26:28 +0000 UTC
+1724	CLOSED	zkERC20: Confidential Token Standard	stale	2021-12-05 15:04:23 +0000 UTC
+1723	CLOSED	ERC: Cryptography Engine Standard	stale	2021-12-04 20:13:13 +0000 UTC
+1711	CLOSED	EIP-155 Eth compatible networks must have different Chain IDs right?	stale	2021-12-04 20:13:14 +0000 UTC
+1708	CLOSED	Document status of EIP-999		2019-05-23 23:52:29 +0000 UTC
+1700	CLOSED	ERC1700: Non-Exhaustible Token	stale	2021-12-04 20:13:16 +0000 UTC
+1699	CLOSED	EIP-1052 failed to go through the workflow		2019-05-18 01:52:56 +0000 UTC
+1698	CLOSED	EIP-1014 failed to go through the workflow	stale	2021-12-04 20:13:18 +0000 UTC
+1690	CLOSED	ERC-1690 - Mortability Standard	stale	2021-12-04 20:13:19 +0000 UTC
+1688	CLOSED	Improve feeds available from the EIPs website	type: Meta, stale	2021-12-04 20:13:21 +0000 UTC
+1683	CLOSED	URLs with asset and onboarding functionality	stale	2021-12-04 20:13:22 +0000 UTC
+1671	CLOSED	Bonded Fungible Tokens	stale	2021-12-04 20:13:24 +0000 UTC
+1668	CLOSED	ERC-1668 - Root contract	stale	2021-12-04 20:13:25 +0000 UTC
+1667	CLOSED	ERC-1667 - Standardized Plasma MVP Proposal	stale	2021-12-04 20:13:27 +0000 UTC
+1663	CLOSED	Questions (and suggestions) for EIP1577		2019-01-07 11:23:40 +0000 UTC
+1662	CLOSED	Removing Contract Size Limit	stale	2021-12-08 04:57:17 +0000 UTC
+1654	CLOSED	ERC-1654 Dapp-wallet authentication process with contract wallets support	stale	2021-12-05 05:10:31 +0000 UTC
+1651	CLOSED	A document management proposal for legally binding token	stale	2021-12-05 05:10:33 +0000 UTC
+1649	CLOSED	ERC-1646: Decentralized Autonomous Zero-identity Protocol	stale	2021-12-05 05:10:35 +0000 UTC
+1644	CLOSED	ERC-1644: Controller Token Operation Standard	stale	2021-12-05 05:10:36 +0000 UTC
+1643	CLOSED	ERC-1643: Document Management Standard	stale	2021-12-05 05:10:38 +0000 UTC
+1641	CLOSED	I'm thinking about proposing a standard for traceability registries	stale	2021-12-05 05:10:39 +0000 UTC
+1637	CLOSED	EIP 1637 - Adding chainId parameter to eth_sendTransaction	stale	2021-12-05 05:10:41 +0000 UTC
+1634	CLOSED	ERC 1633 - RFT (Re-Fungible Token)	stale	2021-12-05 05:10:43 +0000 UTC
+1631	CLOSED	ERC 1630 Discussion	stale	2022-06-03 23:02:54 +0000 UTC
+1621	CLOSED	EIP1621: Referral Interface	stale	2021-12-05 05:10:44 +0000 UTC
+1620	CLOSED	ERC-1620: Money Streaming	stale	2021-12-05 05:10:46 +0000 UTC
+1616	CLOSED	ERC: Attribute Registry Standard	stale	2021-12-05 05:10:48 +0000 UTC
+1610	CLOSED	EIP1607 - Separation of Block Gas Limit and Transaction Gas Limit.	stale	2021-12-05 05:10:49 +0000 UTC
+1606	CLOSED	EIP1606 - Context based contracts in Solidity	stale	2021-12-05 05:10:50 +0000 UTC
+1602	CLOSED	EIP1600 Block reward for smart efficient miners.	stale	2021-12-05 05:10:52 +0000 UTC
+1597	CLOSED	ERC1592 Address and ERC20-compliant transfer rules	stale	2021-12-05 05:10:53 +0000 UTC
+1594	CLOSED	ERC 1594: Core Security Token Standard	stale	2021-12-06 12:18:00 +0000 UTC
+1590	CLOSED	EIP-1485 PR. Anti ETHASIC ethash upgrade to TETHASHV1		2021-11-22 06:07:51 +0000 UTC
+1587	CLOSED	EIP-1588: Ethereum ProgPoW, Proposal for a new hardfork meta to implement a new Proof-of-Work algorithm		2018-12-31 16:15:22 +0000 UTC
+1586	CLOSED	ERC1586: Risk Redistribution Standard for Stable Cryptocurrency Payment	stale	2021-12-05 05:10:55 +0000 UTC
+1572	CLOSED	ERC1572: Contact Card	stale	2021-12-05 05:10:56 +0000 UTC
+1559	CLOSED	Fee market change for ETH 1.0 chain		2019-06-10 08:45:42 +0000 UTC
+1554	CLOSED	Fee market change for ETH 1.0 chain		2018-11-05 17:34:48 +0000 UTC
+1553	CLOSED	ERC1540: Asset Token Standard	stale	2022-06-06 11:02:29 +0000 UTC
+1538	CLOSED	ERC1538: Transparent Contract Standard	stale	2022-03-04 11:58:58 +0000 UTC
+1537	CLOSED	Non-fungible Data Token		2019-07-05 06:55:25 +0000 UTC
+1535	CLOSED	RSS needs to include last-call date		2019-01-11 20:10:55 +0000 UTC
+1530	CLOSED	ERC XXXX - Standard Contract Upgrade Events		2019-01-29 19:26:08 +0000 UTC
+1528	CLOSED	Refungible ERC721 Asset with Fungible ERC20	stale	2021-12-18 21:11:15 +0000 UTC
+1526	CLOSED	Discussion: Dividend Standard	stale	2021-12-18 21:11:16 +0000 UTC
+1524	CLOSED	Standard for Insurance Policies as ERC-721 Non-fungible Tokens		2018-10-22 12:23:54 +0000 UTC
+1523	CLOSED	Discussion: Standard for Insurance Policies as ERC-721 Non fungible tokens		2022-06-10 08:34:46 +0000 UTC
+1522	CLOSED	Governance Taxation for Abstainees		2019-01-30 18:14:05 +0000 UTC
+1505	CLOSED	Token forwarding (ERC20 extension)	stale	2021-12-18 21:11:18 +0000 UTC
+1503	CLOSED	ERC-54 Upgradable Smart Contract (USC)	stale	2021-12-18 21:11:19 +0000 UTC
+1502	CLOSED	Changing Nomenclature Convention		2019-01-30 18:13:51 +0000 UTC
+1500	CLOSED	ERC 1500: Non-transferrable, configurable vouchers for free usage of dApps	stale	2021-12-18 21:11:21 +0000 UTC
+1499	CLOSED	Standardized messaging layer for smart contract weakness classifications	stale	2021-12-18 21:11:22 +0000 UTC
+1498	CLOSED	Standardized method of calculating relayer gas refunds	stale	2021-12-18 21:11:24 +0000 UTC
+1497	CLOSED	ERC 1497: Evidence Standard	stale	2022-04-16 13:07:15 +0000 UTC
+1495	CLOSED	ERC-1484: Digital Identity Aggregator	stale	2021-12-18 21:11:26 +0000 UTC
+1481	CLOSED	EIP-1480: Access Control Standard	stale	2021-12-18 21:11:28 +0000 UTC
+1471	CLOSED	icrosoft1!		2018-10-04 22:22:56 +0000 UTC
+1469	CLOSED	EIP-1470: Smart Contract Weakness Classification (SWC)		2021-12-13 02:20:06 +0000 UTC
+1467	CLOSED	Role of editors in EIP process	type: Meta, type: EIP1 (Process), stale	2021-12-18 21:11:29 +0000 UTC
+1465	CLOSED	Solidity Standard Library: function overloading for implementations/abstract contracts		2018-10-03 13:56:39 +0000 UTC
+1464	CLOSED	Style Guide -- EIP123 or EIP-123?	type: Meta	2020-08-28 23:45:21 +0000 UTC
+1449	CLOSED	ERC1449: Reliable ERC20 API	stale	2021-12-18 21:11:30 +0000 UTC
+1448	CLOSED	ERC - BeakerOS: An Operating System Protocol	stale	2021-12-18 21:11:31 +0000 UTC
+1447	CLOSED	ERC - A Capability Based Exokernel Protocol		2018-09-25 13:49:43 +0000 UTC
+1445	CLOSED	Sequentially Queued Transactions	stale	2021-12-18 21:11:33 +0000 UTC
+1442	CLOSED	Document JSON-RPC interface in an EIP		2020-01-23 10:57:37 +0000 UTC
+1441	CLOSED	Smart transactions with gas price ramp-up	stale	2021-12-18 21:11:34 +0000 UTC
+1440	CLOSED	ERC-165 requires EIP-214		2019-01-22 00:31:08 +0000 UTC
+1425	CLOSED	ERC-1425: Action Standard	stale	2021-12-18 21:11:35 +0000 UTC
+1420	CLOSED	Simplify the allocation of accounts in puppeth		2018-09-20 18:46:09 +0000 UTC
+1419	CLOSED	Proposed ERC20 change: Total Supply should subtract tokens in the 0 address	stale	2021-12-18 21:11:37 +0000 UTC
+1418	CLOSED	Blockchain rent: fixed cost per word-block	stale	2022-05-14 05:28:50 +0000 UTC
+1417	CLOSED	EIP - 1417 Poll Standard	stale	2021-12-18 21:11:38 +0000 UTC
+1412	CLOSED	ERC1412: Batch Transfers For Non-Fungible Tokens	stale	2022-01-04 07:04:53 +0000 UTC
+1411	CLOSED	ERC 1400: Security Token Standard	stale	2022-06-11 07:09:25 +0000 UTC
+1410	CLOSED	ERC 1410: Partially Fungible Token Standard	stale	2021-12-18 21:11:41 +0000 UTC
+1407	CLOSED	ERC1407 :Namespacing ABI interface to allow function signature reuse in different context but same contract	stale	2021-12-18 21:11:43 +0000 UTC
+1405	CLOSED	Crypto item with identity	stale	2021-12-18 21:11:44 +0000 UTC
+1404	CLOSED	ERC-1404: Simple Restricted Token Standard	stale	2022-03-26 13:05:59 +0000 UTC
+1403	CLOSED	Batch cancellation of transactions	stale	2021-12-18 21:11:46 +0000 UTC
+1402	CLOSED	ERC-1402: Signature Composition and Verification	stale	2021-12-18 21:11:47 +0000 UTC
+1400	CLOSED	ERC-1400: Security Token Standard		2018-10-04 13:05:01 +0000 UTC
+1399	CLOSED	test1		2018-09-10 14:36:21 +0000 UTC
+1398	CLOSED	test1		2018-09-10 14:36:41 +0000 UTC
+1397	CLOSED	test1		2018-09-10 14:36:34 +0000 UTC
+1396	CLOSED	test1		2018-09-10 14:35:07 +0000 UTC
+1395	CLOSED	How about to pay to full nodes and increase blocksize limit as a temporarily solving of scalability problem		2018-09-18 16:42:13 +0000 UTC
+1392	CLOSED	Storing the token metadata as a simple string	waiting: response from author, stale	2021-12-18 21:11:48 +0000 UTC
+1390	CLOSED	WIP - Standards track		2018-09-10 14:42:48 +0000 UTC
+1388	CLOSED	ERC1388- Managing Trusted Smart Contract Identifiers	stale	2021-12-18 21:11:50 +0000 UTC
+1387	CLOSED	ERC1387 - Buy beer in a smart contract - Privacy enabled Merkle Tree Attestations	stale	2021-12-18 21:11:51 +0000 UTC
+1386	CLOSED	ERC1386 - Managing issuers of cryptographic attestations	stale	2021-12-18 21:11:52 +0000 UTC
+1384	CLOSED	ERC-1384(FAS) --- Equity Agreement Standard on Ethereum	stale	2021-12-18 21:11:54 +0000 UTC
+1376	CLOSED	ERC-1376 Service-Friendly Token	stale	2021-12-18 21:11:55 +0000 UTC
+1372	CLOSED	ERC-1372 Multi-Class Token Standard vNext		2018-09-07 19:15:02 +0000 UTC
+1363	CLOSED	ERC-1363 Payable Token		2022-07-01 15:24:01 +0000 UTC
+1361	CLOSED	ERC 1361 - ETHPay : Standardized AppLinks for signing ETH transactions using an installed wallet on mobiles	stale	2021-12-18 21:11:57 +0000 UTC
+1354	CLOSED	Idea: Interacting with contracts without spending gas	stale	2021-12-18 21:11:58 +0000 UTC
+1350	CLOSED	Secure DelegateCall	stale	2021-12-18 21:11:59 +0000 UTC
+1341	CLOSED	ERC-1341: Ethereum Web Tokens	stale	2021-12-18 21:12:00 +0000 UTC
+1339	CLOSED	Listener Functions	stale	2021-12-18 21:12:02 +0000 UTC
+1332	CLOSED	ERC-1332: Global Messaging Hub	stale	2021-12-18 21:12:04 +0000 UTC
+1329	CLOSED	ERC-1329: Inalienable Reputation Token	stale	2021-12-18 21:12:05 +0000 UTC
+1328	CLOSED	ERC-1328 - WalletConnect Standard URI Format		2019-03-09 19:25:09 +0000 UTC
+1327	CLOSED	ERC - Extendable Atomic Swaps		2018-11-12 15:38:37 +0000 UTC
+1324	CLOSED	SEREBRO		2018-09-20 18:45:41 +0000 UTC
+1319	CLOSED	ERC-1319 Smart Contract Package Registry Interface		2022-05-28 05:11:43 +0000 UTC
+1317	CLOSED	Need a last call date for 1167	type: Meta	2019-05-24 00:00:29 +0000 UTC
+1314	CLOSED	Website: show permalink on mouseover	type: Meta	2020-08-28 19:21:00 +0000 UTC
+1306	CLOSED	Всё хорошо новый выпуск		2018-09-20 18:45:16 +0000 UTC
+1305	CLOSED	Новый выпуск		2018-09-20 18:45:13 +0000 UTC
+1302	CLOSED	lightweighted improvement over ERC20	stale	2021-12-18 21:12:06 +0000 UTC
+1298	CLOSED	Require ERC20 token creations emit Transfer event	stale	2021-12-18 21:12:08 +0000 UTC
+1289	CLOSED	0x6aaDfeA8B7E660326250BcebF762944D26d4f2AD		2018-08-02 04:36:38 +0000 UTC
+1288	CLOSED	Get contract return values from transaction recepts		2018-10-03 16:37:21 +0000 UTC
+1285	CLOSED	EIP-1285: Increase Gcallstipend in the CALL OPCODE	stale	2021-12-18 21:12:09 +0000 UTC
+1271	CLOSED	ERC-1271 : Standard Signature Validation Method for Contracts		2022-05-28 05:10:56 +0000 UTC
+1263	CLOSED	ERC-1263: NFT Index Proposal	stale	2021-12-18 21:12:10 +0000 UTC
+1261	CLOSED	ERC 1261:Membership Verification Token	stale	2021-12-18 21:12:12 +0000 UTC
+1257	CLOSED	ERC 1257: Proof of Payment by smart contracts	stale	2022-06-11 07:09:03 +0000 UTC
+1246	CLOSED	ERC ? : Token Migration		2018-12-16 10:23:28 +0000 UTC
+1238	CLOSED	ERC1238: Non-transferrable Non-Fungible Tokens (NTT)		2022-06-11 07:08:52 +0000 UTC
+1230	CLOSED	Idea: Making some functions self executable	stale	2021-12-18 21:12:14 +0000 UTC
+1228	CLOSED	ERC-1228 Delegated Execution	stale	2021-12-18 21:12:15 +0000 UTC
+1227	CLOSED	Defuse Difficulty Bomb and Reset Block Reward	stale	2021-12-18 21:12:17 +0000 UTC
+1218	CLOSED	Simpler alternative to BLOCKHASH extension (#210)	stale	2021-12-18 21:12:19 +0000 UTC
+1217	CLOSED	EIP1192: Standard interface for reading & cancelling subscription payments	stale	2021-12-18 21:12:20 +0000 UTC
+1214	CLOSED	ERC-1214 (ERC extension)	stale	2021-12-18 21:12:21 +0000 UTC
+1211	CLOSED	ERC-1211 Common Ownership Self-Assessed Tax (COST) Interface [Draft]	stale	2021-12-18 21:12:23 +0000 UTC
+1210	CLOSED	Technical Issue: Travis Built Disallowing Cananical EIP repo		2018-07-10 17:55:39 +0000 UTC
+1207	CLOSED	ERC-1207 DAuth Access Delegation Standard	stale	2021-12-18 21:12:24 +0000 UTC
+1203	CLOSED	ERC-1203 Multi-Class Token Standard (ERC-20 Extension)		2018-09-25 02:01:47 +0000 UTC
+1202	CLOSED	ERC-1202 Voting Standard		2022-05-28 05:10:32 +0000 UTC
+1201	CLOSED	ERC-1201 Two Tiered Token Structure for Non-fungible Asset Ownership and Rental Rights	stale	2022-01-07 20:12:34 +0000 UTC
+1200	CLOSED	ERC-1200 (ERC extension)	stale	2021-12-19 02:03:21 +0000 UTC
+1198	CLOSED	A standard contracts to have for Self Contained HTML	stale	2021-12-19 02:03:22 +0000 UTC
+1197	CLOSED	ERC-1197 Meta Payments	stale	2021-12-19 02:03:23 +0000 UTC
+1194	CLOSED	Trophy smart contract standard or draft	stale	2021-12-19 06:13:16 +0000 UTC
+1190	CLOSED	Non-fungible royalty token	stale	2022-06-11 07:08:36 +0000 UTC
+1189	CLOSED	Intertwine PoS protocol with state-channel network	stale	2021-12-19 06:13:17 +0000 UTC
+1187	CLOSED	Gas cost reduction for ECADD, ECMUL and ECPAIRING		2019-07-05 14:16:34 +0000 UTC
+1186	CLOSED	EIP-1186: RPC-Method to get Merkle Proofs - eth_getProof		2021-11-30 12:10:14 +0000 UTC
+1182	CLOSED	ERC-1175 : Wallets and Shops standard for safe pay	stale	2021-12-19 06:13:18 +0000 UTC
+1180	CLOSED	Non-Fungible Token State Verification (for exchanges)	stale	2021-12-19 06:13:20 +0000 UTC
+1179	CLOSED	ERC-1178: Multi-Class Fungible Token Standard	stale	2021-12-19 06:13:21 +0000 UTC
+1169	CLOSED	Please specify full inherited context parts for CALLCODE and DELEGATECALL	stale	2021-12-19 06:13:22 +0000 UTC
+1165	CLOSED	ERC: Descriptions for Smart Contracts and Functions	stale	2021-12-19 06:13:23 +0000 UTC
+1161	CLOSED	EIP 1154: Oracle interface		2019-07-23 21:41:08 +0000 UTC
+1155	CLOSED	ERC: Multi Token Standard		2022-06-23 03:41:34 +0000 UTC
+1149	CLOSED	Official ERC20 document declares named return parameters that cause compiler warnings	stale	2021-12-19 06:13:25 +0000 UTC
+1147	CLOSED	Display the review end period for last calls on eips.ethereum.org	type: Meta	2020-09-03 22:40:43 +0000 UTC
+1145	CLOSED	EVM & Structure Standardisation by Reduction to Bit Compositor & BitWise Logic		2018-06-08 09:44:43 +0000 UTC
+1141	CLOSED	EVM & Structure Standardisation by Reduction to Bit Compositor & BitWise Logic		2018-06-08 08:02:22 +0000 UTC
+1139	CLOSED	EIP20 Optional functions	stale	2021-12-19 06:13:26 +0000 UTC
+1138	CLOSED	ERC: Human-Readable Transaction Requests	stale	2021-12-19 06:13:27 +0000 UTC
+1133	CLOSED	ERC1133 Token Standard (deriving ERC20 token and nesting ERC20 tokens)	stale	2021-12-19 06:13:28 +0000 UTC
+1132	CLOSED	Extending ERC20 with token locking capability	stale	2021-12-19 06:13:29 +0000 UTC
+1128	CLOSED	Add mission statement	type: Meta, type: EIP1 (Process), stale	2021-12-19 06:13:31 +0000 UTC
+1127	CLOSED	Split ERC-20 contract into token, token registry, ICO and ICO registry	stale	2021-12-20 04:15:08 +0000 UTC
+1123	CLOSED	ERC-1123 – Revised Ethereum Smart Contract Packaging Standard	stale	2021-12-19 07:11:07 +0000 UTC
+1121	CLOSED	EIP-1191: Extend EIP-55: Add chain id to mixed-case checksum address encoding		2022-05-28 05:08:46 +0000 UTC
+1115	CLOSED	ERC 1115 : Decentralized user authentication standard	stale	2021-12-20 03:11:58 +0000 UTC
+1111	CLOSED	Introspective metadata definition disclosure (discussion to establish a standard)	stale	2021-12-20 03:11:59 +0000 UTC
+1106	CLOSED	Support anchor tags on eips.ethereum.org (direct links to sections)	type: Meta	2020-10-28 16:06:00 +0000 UTC
+1103	CLOSED	Folders for EIPs 1-999 and 1000+ for better chronological ordering		2018-05-19 07:16:03 +0000 UTC
+1088	CLOSED	EIP: Reduce ECADD and ECMUL gas costs		2018-05-21 14:30:27 +0000 UTC
+1085	CLOSED	Common genesis.json format scheme across all client implementations	stale	2021-12-20 03:12:01 +0000 UTC
+1082	CLOSED	atomic swappable token	stale	2021-12-20 04:15:09 +0000 UTC
+1074	CLOSED	Get transaction-cost after settlement of a transaction		2021-04-05 10:07:25 +0000 UTC
+1070	CLOSED	ERC-1070 Standard Bounties		2018-05-08 21:42:41 +0000 UTC
+1068	CLOSED	ERC-1068 Loan Standard	stale	2021-12-27 23:11:21 +0000 UTC
+1067	CLOSED	ERC-1067 (ERC extension)	stale	2021-12-20 04:15:11 +0000 UTC
+1065	CLOSED	Suggestion: Add Logarithm Opcode	stale	2021-12-20 04:15:13 +0000 UTC
+1058	CLOSED	EIP-ProgPoW: a programmatic Proof-of-Work algorithm	stale	2021-12-20 05:12:10 +0000 UTC
+1056	CLOSED	ERC: Lightweight Identity	stale	2022-01-01 23:11:22 +0000 UTC
+1054	CLOSED	Unified Documentation	stale	2021-12-20 13:20:41 +0000 UTC
+1053	CLOSED	A proposal to move the content in ethereum/wiki to a Wikipedia-style wiki site		2018-05-14 06:45:10 +0000 UTC
+1048	CLOSED	On the go storage gas refunds		2021-01-06 03:11:40 +0000 UTC
+1037	CLOSED	EIP-908 [for discussion] (discussion moved to the Fellowship of Ethereum Magicians)		2018-04-28 01:54:30 +0000 UTC
+1035	CLOSED	EIP1035: Transaction execution batching and delegation	stale	2021-12-21 21:09:52 +0000 UTC
+1030	CLOSED	Modify Contract Code at 0xfb4f9E002763b9D8A48EFcE8AB8A33e4d3bC9efC	stale	2022-01-02 06:13:18 +0000 UTC
+1027	CLOSED	On ETH economic incentives (Casper FFG / EIP 1011)...	stale	2022-01-01 23:11:24 +0000 UTC
+1003	CLOSED	ERC1003 Token Standard (ERC20 Extension)	stale	2022-01-01 23:11:26 +0000 UTC
+1002	CLOSED	Deleted, will save for a later issue.		2018-04-15 11:33:23 +0000 UTC
+1000	CLOSED	whats gonig on ERC 20 tokens		2018-04-15 10:43:56 +0000 UTC
+998	CLOSED	ERC-998 Composable Non-Fungible Token Standard		2022-05-28 05:07:08 +0000 UTC
+997	CLOSED	EIP20: Missing example contract declaration in documentation	stale	2022-01-01 23:11:27 +0000 UTC
+996	CLOSED	A simple solution (NO FORK) and blow bitmains rigs off the system	stale	2022-01-01 23:11:29 +0000 UTC
+995	CLOSED	ERC995 Token Standard	stale	2022-01-01 23:11:30 +0000 UTC
+994	CLOSED	ERC994: Delegated Non-Fungible Token Standard		2022-01-31 11:07:39 +0000 UTC
+988	CLOSED	Assign the EIP based on the PR number	type: Meta	2019-05-21 01:12:11 +0000 UTC
+981	CLOSED	ERC981: Partial Ownership Standard	stale	2022-01-01 23:11:32 +0000 UTC
+980	CLOSED	ASIC Hardfork Suggestion and Discussion		2018-04-07 09:08:53 +0000 UTC
+970	CLOSED	Possible to add telemetry to mining rewards?		2018-04-04 21:49:47 +0000 UTC
+965	CLOSED	Send by Signature (ERC777 extension) - transfer without paying for gas	stale	2022-01-01 23:11:34 +0000 UTC
+964	CLOSED	Transfer token via cheque (ERC20 Extension)		2018-08-05 11:19:05 +0000 UTC
+963	CLOSED	Suggested modifications of EIP758		2018-06-28 05:13:49 +0000 UTC
+960	CLOSED	Meta: cap total ether supply at ~120 million	stale	2022-01-01 23:11:36 +0000 UTC
+959	CLOSED	ASIC resistance		2018-04-01 08:10:05 +0000 UTC
+958	CLOSED	EIP: Modify block mining to be ASIC resistant.		2022-06-11 07:08:11 +0000 UTC
+948	CLOSED	Recurring Subscription Models are a Good Thing and should be viable on Ethereum (Merit + Architecture ERC)	stale	2022-01-08 15:54:48 +0000 UTC
+945	CLOSED	ERC: Web 3 QR Code Scanning API	stale	2022-01-01 23:11:40 +0000 UTC
+942	CLOSED	Test 1		2018-03-22 08:41:37 +0000 UTC
+941	CLOSED	Test02		2018-03-22 08:41:48 +0000 UTC
+939	CLOSED	ERC 939: Identity Claim Holder	stale	2022-01-01 23:11:42 +0000 UTC
+935	CLOSED	Signature idea for use with account abstraction, proof_of_public_key = keccak256(nextPublicKey)	stale	2022-01-01 23:11:43 +0000 UTC
+932	CLOSED	Transactions may include the hash of the previous transaction (i.e. transaction dependencies)	stale	2022-01-01 23:11:45 +0000 UTC
+930	CLOSED	ERC930 - Eternal Storage Standard	stale	2022-01-01 23:11:46 +0000 UTC
+928	CLOSED	Feedback on "ETH Avatar Standard" Direction	stale	2022-01-01 23:11:48 +0000 UTC
+924	CLOSED	Outdated proposals in the Ethereum wiki	type: Meta	2019-07-04 22:59:47 +0000 UTC
+921	CLOSED	Pros and cons of making the Foundation more transparent (Discussion)		2018-03-12 17:12:57 +0000 UTC
+920	CLOSED	Why is there an eip-EIPS directory?		2018-03-09 09:50:52 +0000 UTC
+914	CLOSED	EIP-197, generator P2 is not a point on Y^2 = X^3 + 3 over F_p^2		2018-03-05 23:50:46 +0000 UTC
+912	CLOSED	(discussion) Request for comments: convention for a Transparent Open Company/Organisation Contract/standard	stale	2022-01-01 23:11:49 +0000 UTC
+911	CLOSED	EIP 911 - Zero redundancy/overhead bytecode deployments (Discussion/Draft)	stale	2022-04-05 18:02:58 +0000 UTC
+909	CLOSED	EIP 909: New opcode STORREVERT (Draft)	EVM, stale	2022-01-01 23:11:51 +0000 UTC
+905	CLOSED	EIP 905: New Opcode SCLONE - fast clone the storage by copying the storage root hash of the source contract (Draft)	EVM, stale	2022-01-01 23:11:52 +0000 UTC
+901	CLOSED	EIP901: Additional EVM Transaction Global Variables	EVM	2020-11-30 09:40:26 +0000 UTC
+900	CLOSED	ERC900: Simple Staking Interface	stale	2022-01-01 23:11:54 +0000 UTC
+898	CLOSED	Formalize EIP acceptance protocol		2019-05-18 17:42:18 +0000 UTC
+896	CLOSED	EPIC Proposal (separation of contract interfaces)	type: Meta, stale	2022-01-01 23:11:56 +0000 UTC
+892	CLOSED	ERC 892: Permission Standard	stale	2022-01-01 23:11:57 +0000 UTC
+891	CLOSED	ERC 891: Mineable Distribution Layer	stale	2022-01-01 23:11:59 +0000 UTC
+888	CLOSED	ERC 888: MultiDimensional Token Standard	stale	2022-01-01 23:12:00 +0000 UTC
+882	CLOSED	ERC 882: ENS Custom Protocols	stale	2022-01-01 23:12:02 +0000 UTC
+875	CLOSED	ERC875 for non fungible tokens and simple atomic swaps	stale	2021-12-19 01:28:36 +0000 UTC
+869	CLOSED	How to use gas from other wallet		2018-02-05 06:58:49 +0000 UTC
+866	CLOSED	EIP 867: Standardized Ethereum Recovery Proposals		2018-04-20 15:23:10 +0000 UTC
+865	CLOSED	ERC865: Pay transfers in tokens instead of gas, in one transaction		2022-05-28 05:18:39 +0000 UTC
+864	CLOSED	Divisible non-fungible tokens (Shared ownership over NFTs)	stale	2022-06-09 16:03:01 +0000 UTC
+863	CLOSED	EIP: Ether balance updation/modification	stale	2022-01-02 02:03:51 +0000 UTC
+861	CLOSED	EIP 858: Reduce block reward		2022-05-28 05:08:40 +0000 UTC
+860	CLOSED	ERC860: Custodian-Client Contract Standard	stale	2022-01-02 02:03:53 +0000 UTC
+859	CLOSED	Account abstraction for main chain	type: Core, stale	2022-01-02 03:12:37 +0000 UTC
+857	CLOSED	ERC: Search interface standard		2020-06-03 22:41:45 +0000 UTC
+839	CLOSED	A clearer naming convention for events		2018-01-24 19:48:02 +0000 UTC
+838	CLOSED	EIP 838: ABI specification for REVERT reason string	stale	2022-01-02 03:12:39 +0000 UTC
+834	CLOSED	Having Issues with Smart Contract Transactions "Value transfer dis not complete, most likely as a result of a Revert opcode"		2018-03-05 09:58:14 +0000 UTC
+829	CLOSED	ERC: Functions as first class citizens	stale	2022-01-02 03:12:41 +0000 UTC
+827	CLOSED	ERC827 Token Standard (ERC20 Extension)		2022-05-28 05:04:28 +0000 UTC
+825	CLOSED	No file for EIP-198		2018-01-19 17:12:49 +0000 UTC
+822	CLOSED	Idea: Making transaction nonce checking more flexible	stale	2022-01-02 08:13:40 +0000 UTC
+821	CLOSED	EIP 821: Distinguishable Assets Registry (Contract for NFTs)		2018-03-04 07:39:47 +0000 UTC
+820	CLOSED	EIP 820: Pseudo-introspection using a registry contract.	stale	2022-01-02 08:13:42 +0000 UTC
+811	CLOSED	EIP: Hyperlocal Dapps with DAG-ish sub-layer: For unclogging and faster ETH	stale	2022-01-02 08:13:44 +0000 UTC
+810	CLOSED	ERC: Account Reputation System	stale	2022-01-02 08:13:46 +0000 UTC
+809	CLOSED	ERC: Renting Standard for Rival, Non-Fungible Tokens	stale	2022-05-30 11:25:09 +0000 UTC
+807	CLOSED	plie		2017-12-28 04:17:55 +0000 UTC
+804	CLOSED	ERC: Separating Token Balance from Voting Rights	stale	2022-01-02 08:13:49 +0000 UTC
+802	CLOSED	ERC: address-to-address messaging system protocol	stale	2022-01-02 08:13:51 +0000 UTC
+800	CLOSED	List of EIPs for each hard fork.		2017-12-16 05:20:44 +0000 UTC
+798	CLOSED	ERC : Sellable Contracts	stale	2022-01-02 08:13:52 +0000 UTC
+797	CLOSED	Extend EIP1 with an option for "EIP editor"	type: Meta, type: EIP1 (Process), stale	2022-01-02 08:13:54 +0000 UTC
+795	CLOSED	ERC20 error		2017-12-11 15:36:39 +0000 UTC
+792	CLOSED	ERC 792: Arbitration Standard	stale	2022-01-02 08:13:55 +0000 UTC
+782	CLOSED	Killable Models for Recoverable Systems	stale	2022-01-02 08:13:57 +0000 UTC
+781	CLOSED	RFC: API method `eth_watchCall`	stale	2022-01-02 08:13:59 +0000 UTC
+780	CLOSED	ERC: Ethereum Claims Registry	stale	2022-05-04 02:57:45 +0000 UTC
+777	CLOSED	ERC777 Token Standard	stale	2022-07-06 19:09:05 +0000 UTC
+776	CLOSED	Create an Estimated Gas Modifier Standard	stale	2022-01-03 05:12:17 +0000 UTC
+774	CLOSED	EIP ( draft ) The Post Office issues Contract Notes	stale	2022-01-03 05:12:18 +0000 UTC
+773	CLOSED	Transaction deadline for chain inclusion		2022-05-08 23:54:01 +0000 UTC
+771	CLOSED	EIP ( draft ) SelfDestruct Waiting List ( a Garbage Filter for Statically Referred Common Libraries )	stale	2022-01-03 06:14:16 +0000 UTC
+769	CLOSED	ERC - Multi-signature standard API for Second Layer Applications	stale	2022-01-03 06:14:17 +0000 UTC
+763	CLOSED	ERC: Standard API for multisig wallet smart contracts	stale	2022-01-03 06:14:18 +0000 UTC
+762	CLOSED	EIP20 wiki example could use improvements		2017-12-03 15:02:57 +0000 UTC
+761	CLOSED	Unbounded total supply for EIP20	stale	2022-01-03 06:14:20 +0000 UTC
+753	CLOSED	ERC: Micro Contract Architecture	stale	2022-01-03 07:11:43 +0000 UTC
+748	CLOSED	Specify the range of chain IDs	stale	2022-01-03 11:09:46 +0000 UTC
+747	CLOSED	New Web3 Provider Method: eth_watchToken		2019-06-26 00:15:21 +0000 UTC
+745	CLOSED	ERC: Permission Contract	stale	2022-01-03 11:09:49 +0000 UTC
+744	CLOSED	TokenFallback Function		2018-08-09 10:04:58 +0000 UTC
+743	CLOSED	manukhiya		2017-11-17 22:13:21 +0000 UTC
+740	CLOSED	ERC: registry for token symbol?		2017-10-23 23:35:05 +0000 UTC
+738	CLOSED	Resolution on the EIP20 API Approve / TransferFrom multiple withdrawal attack	stale	2022-01-04 18:13:24 +0000 UTC
+736	CLOSED	Add definitions of SHOULD, MUST, OPTIONAL to EIP1	type: Meta, type: EIP1 (Process)	2021-11-11 13:30:24 +0000 UTC
+735	CLOSED	ERC: Claim Holder	type: ERC, stale	2022-01-16 09:11:14 +0000 UTC
+734	CLOSED	ERC: Key Manager	type: ERC	2022-01-12 15:23:55 +0000 UTC
+731	CLOSED	mild		2017-10-06 16:38:03 +0000 UTC
+730	CLOSED	Strict encoding order for ABI	stale	2022-01-16 00:43:38 +0000 UTC
+728	CLOSED	add eth_signTransaction to the RPC API	stale	2022-01-16 00:43:40 +0000 UTC
+726	CLOSED	Execute EVM inside EVM	stale	2022-06-01 15:53:51 +0000 UTC
+725	CLOSED	ERC: Proxy Account	type: ERC, stale	2022-03-19 11:03:05 +0000 UTC
+724	CLOSED	Proposed ERC20 change: make 18 decimal places compulsory	stale	2022-01-16 00:43:43 +0000 UTC
+723	CLOSED	Question on EIP137	question	2017-11-17 23:41:49 +0000 UTC
+722	CLOSED	Unique tokens system to prevent forging tokens.	stale	2022-01-27 05:10:29 +0000 UTC
+721	CLOSED	ERC: Non-fungible Token Standard		2022-05-25 01:07:50 +0000 UTC
+719	CLOSED	Trustless Signing UI Protocol	stale	2022-01-16 00:43:47 +0000 UTC
+717	CLOSED	Unlimited ERC20 token allowance	stale	2022-01-16 00:43:48 +0000 UTC
+716	CLOSED	Clarification about when touchedness is reverted during state clearance	stale	2022-01-16 00:43:50 +0000 UTC
+715	CLOSED	Autonomous contract execution at each new block	stale	2022-01-16 00:43:52 +0000 UTC
+714	CLOSED	cdfexsad		2017-09-18 03:22:47 +0000 UTC
+709	CLOSED	Let deployer destroy a blank contract and get fund back		2017-11-18 13:31:53 +0000 UTC
+708	CLOSED	ENS Improvement Proposal: Utility Rent	stale	2022-01-16 00:43:54 +0000 UTC
+705	CLOSED	ENS Improvement Proposal: Slow deposit withdrawal	stale	2022-01-16 00:43:55 +0000 UTC
+703	CLOSED	Crowdnext		2017-09-07 07:05:19 +0000 UTC
+698	CLOSED	EIP-698: Add opcode 0x46 BLOCKREWARD	stale	2022-01-16 00:43:58 +0000 UTC
+697	CLOSED	Proposal for read only calls		2017-10-09 10:36:50 +0000 UTC
+696	CLOSED	Invalid receipt array RLP		2017-08-24 12:15:29 +0000 UTC
+694	CLOSED	Add RPC eth_chainId for querying the current blockchain chain ID		2017-08-22 23:38:23 +0000 UTC
+684	CLOSED	Prevent overwriting contracts	stale	2022-03-15 18:53:38 +0000 UTC
+680	CLOSED	Proposal for automatic ETH payments	stale	2022-05-29 12:03:30 +0000 UTC
+678	CLOSED	On EIP 86 and EIP 648: account abstraction, DoS vectors, and parallelizability	stale	2022-01-16 00:44:01 +0000 UTC
+677	CLOSED	ERC: transferAndCall Token Standard		2022-06-07 16:27:36 +0000 UTC
+672	CLOSED	ReverseENS Pseudo-Introspection, or standard interface detection		2018-02-20 15:27:03 +0000 UTC
+670	CLOSED	Ethereum Node Sync stuck at 4008445		2017-08-03 14:02:16 +0000 UTC
+668	CLOSED	ERC: Light Naming Service (DexNS)	stale	2022-01-16 00:44:03 +0000 UTC
+662	CLOSED	Standard Functions for Preauthorized Actions	stale	2022-01-16 00:44:06 +0000 UTC
+661	CLOSED	Provable Burn: ERC20 Extension	stale	2022-01-16 00:44:07 +0000 UTC
+659	CLOSED	Contract code size remove fixed limit	stale	2022-01-16 00:44:09 +0000 UTC
+650	CLOSED	Istanbul Byzantine Fault Tolerance	stale	2022-03-16 03:29:30 +0000 UTC
+649	CLOSED	Metropolis Difficulty Bomb Delay		2017-11-19 00:57:39 +0000 UTC
+648	CLOSED	Easy parallelizability	stale	2022-01-16 00:44:11 +0000 UTC
+644	CLOSED	ERC 644: Token Standard for Modular and Upgradeable Tokens	stale	2022-01-16 03:14:15 +0000 UTC
+642	CLOSED	ERC: Fairer token crowdsale with proportional token allocation	stale	2022-01-16 05:12:09 +0000 UTC
+640	CLOSED	12		2017-06-12 16:16:19 +0000 UTC
+637	CLOSED	change of tx.origin for account abstraction		2022-06-11 07:07:38 +0000 UTC
+636	CLOSED	Asynchronous signing	stale	2022-01-16 05:12:11 +0000 UTC
+633	CLOSED	.json tests format	stale	2022-01-16 08:13:42 +0000 UTC
+620	CLOSED	Storage of SECP256k1 public keys in ENS: discussion	discussions-to	2022-01-02 08:33:28 +0000 UTC
+616	CLOSED	EIP-616: SIMD Operations for the EVM	stale	2022-01-16 09:11:15 +0000 UTC
+615	CLOSED	EIP-615: Subroutines and Static Jumps for the EVM		2021-08-19 09:53:17 +0000 UTC
+611	CLOSED	Deprecate net_version API endpoint	type: ERC, stale	2022-01-16 09:11:17 +0000 UTC
+605	CLOSED	SIMD operations for the EVM		2017-05-06 17:47:13 +0000 UTC
+604	CLOSED	Define realistic limits for transaction and block header values		2019-07-08 10:34:28 +0000 UTC
+603	CLOSED	Add ECADD and ECMUL precompiles for secp256k1	stale	2022-05-03 18:07:37 +0000 UTC
+598	CLOSED	ERC: add decimal fixed point support to ABI	stale	2022-01-16 09:11:19 +0000 UTC
+235	CLOSED	Inclusion of network ID in consensus and exposure as Opcode allows hard-fork voting with economic commitment	stale	2022-01-04 12:19:07 +0000 UTC
+234	CLOSED	Add `blockHash` to JSON-RPC filter options.		2021-05-19 08:30:28 +0000 UTC
+232	CLOSED	New transaction formats	stale	2022-01-16 09:11:20 +0000 UTC
+231	CLOSED	Setting aside address range for standard library implementations	stale	2022-01-16 09:11:21 +0000 UTC
+230	CLOSED	token		2017-03-26 19:32:31 +0000 UTC
+229	CLOSED	change token		2017-03-26 19:32:40 +0000 UTC
+228	CLOSED	ERC: Token Changer		2018-06-02 20:17:09 +0000 UTC
+227	CLOSED	ERC: State Snapshot JSON format	stale	2022-01-16 09:11:22 +0000 UTC
+226	CLOSED	Add support for encryption and decryption using the EOA public/private keys	stale	2022-01-16 09:11:24 +0000 UTC
+225	CLOSED	Clique PoA protocol & Rinkeby PoA testnet	discussions-to	2022-07-04 02:02:51 +0000 UTC
+223	CLOSED	ERC223 token standard	type: ERC	2022-05-28 23:28:19 +0000 UTC
+222	CLOSED	TRXID opcode		2022-02-01 10:22:41 +0000 UTC
+219	CLOSED	Truffle is broken, I've checked out the blog but can't make anything work including a fresh install		2017-02-21 23:52:18 +0000 UTC
+218	CLOSED	Opcode proposal: CREATE_INSTANCE		2017-02-18 16:30:09 +0000 UTC
+217	CLOSED	Universal specs for JSON-RPC API methods	stale	2022-01-16 09:11:25 +0000 UTC
+209	CLOSED	Deprecate eth_compile family of methods	stale	2022-01-16 09:11:26 +0000 UTC
+201	CLOSED	EVM opcode: breakpoint	stale	2022-01-16 09:11:28 +0000 UTC
+199	CLOSED	New Opcode: INJECTED_STATIC_CALL	editor-needs-to-review	2017-05-05 16:16:59 +0000 UTC
+197	CLOSED	DRAFT: Precompiled contracts for pairing function check	editor-needs-to-review	2017-06-30 23:06:09 +0000 UTC
+196	CLOSED	Precompiled contracts for addition and scalar multiplication on the elliptic curve alt_bn128	editor-needs-to-review	2017-02-13 13:39:11 +0000 UTC
+191	CLOSED	ERC: Signed Data Standard		2021-05-14 03:38:30 +0000 UTC
+190	CLOSED	ERC: Ethereum Smart Contract Packaging Specification		2022-05-06 07:26:46 +0000 UTC
+189	CLOSED	Casper/PoS based solution for actual ethereum inflation problem (see EIP186)	stale	2022-01-17 06:14:41 +0000 UTC
+188	CLOSED	Specify ambiguity in eth_getTransactionCount	stale	2022-01-17 06:14:42 +0000 UTC
+186	CLOSED	Reduce ETH issuance before proof-of-stake	editor-needs-to-review	2022-01-12 03:26:13 +0000 UTC
+185	CLOSED	Make eth_sign human readable	type: ERC, stale	2022-01-17 08:15:15 +0000 UTC
+184	CLOSED	Subroutines and Static Jumps for the EVM		2020-01-21 16:13:52 +0000 UTC
+182	CLOSED	Control Protocol Parameters with on-chain governance	stale	2022-01-17 08:15:17 +0000 UTC
+181	CLOSED	ENS support for reverse resolution of Ethereum addresses	editor-needs-to-review	2017-11-25 09:08:49 +0000 UTC
+180	CLOSED	Precompiled SHA-1 Implementation	stale	2022-01-17 08:15:19 +0000 UTC
+179	CLOSED	ERC: Simpler Token Standard	stale	2022-07-03 06:16:47 +0000 UTC
+178	CLOSED	Assigning version numbers to EVM changes	stale	2022-01-17 08:15:23 +0000 UTC
+176	CLOSED	General State Tests Proposal	stale	2022-01-17 12:20:14 +0000 UTC
+175	CLOSED	RPC Protection		2016-11-21 13:01:33 +0000 UTC
+174	CLOSED	Extend DUP1-16 / SWAP1-16 With DUPN / SWAPN		2019-09-06 13:29:29 +0000 UTC
+173	CLOSED	ERC: Owned Standard	stale	2022-05-18 05:06:08 +0000 UTC
+172	CLOSED	Large Hashrate Pools Accidental DDOS!		2016-11-08 09:33:09 +0000 UTC
+170	CLOSED	Contract code size limit		2018-08-03 03:44:07 +0000 UTC
+169	CLOSED	Dust account replay security	stale	2022-01-18 21:15:10 +0000 UTC
+168	CLOSED	Kill dust accounts	stale	2022-01-18 21:15:12 +0000 UTC
+167	CLOSED	Scratch space	stale	2022-01-19 04:13:31 +0000 UTC
+166	CLOSED	Replay protection via high-order bits of nonce	stale	2022-01-19 05:09:45 +0000 UTC
+165	CLOSED	Pseudo-Introspection, or standard interface detection	type: ERC, editor-needs-to-review	2021-10-16 22:40:04 +0000 UTC
+163	CLOSED	EIP150 write-up and catalog it as Accepted		2016-11-16 23:51:47 +0000 UTC
+162	CLOSED	Initial ENS Registrar Specification	stale	2022-01-07 18:06:44 +0000 UTC
+161	CLOSED	State trie clearing (invariant-preserving alternative)		2017-08-15 15:01:43 +0000 UTC
+160	CLOSED	EXP cost increase		2017-08-15 14:59:23 +0000 UTC
+159	CLOSED	EVM: overflow detection in arithmetic instructions	stale	2022-01-21 22:10:46 +0000 UTC
+158	CLOSED	State clearing	editor-needs-to-review	2019-06-18 19:06:41 +0000 UTC
+157	CLOSED	Dynamic gas pricing for opcodes (miner decided opcode pricing)	stale	2022-01-22 04:13:45 +0000 UTC
+156	CLOSED	Reclaiming of ether in common classes of stuck accounts	stale	2022-02-15 15:01:21 +0000 UTC
+155	CLOSED	Simple replay attack protection		2019-05-17 01:29:21 +0000 UTC
+154	CLOSED	EVM Version Identifier	stale	2022-01-22 19:08:32 +0000 UTC
+152	CLOSED	BLAKE2b `F` Compression Function Precompile	stale	2022-01-22 19:08:34 +0000 UTC
+151	CLOSED	Callbacks for network change and account change		2016-10-05 15:01:38 +0000 UTC
+150	CLOSED	Long-term gas cost changes for IO-heavy operations to mitigate transaction spam attacks		2017-08-15 14:57:10 +0000 UTC
+149	CLOSED	Ability For Developers or Security Auditors To Cryptographically Sign Contracts	stale	2022-01-25 18:13:59 +0000 UTC
+148	CLOSED	EIP/ERC process improvement	type: Meta	2017-02-02 00:36:33 +0000 UTC
+147	CLOSED	ERC: $ETHEREUM_SOCKET	type: ERC, stale	2022-01-11 19:38:25 +0000 UTC
+146	CLOSED	EVM opcode: CALLGAS	type: Core, EVM, stale	2022-01-25 21:10:42 +0000 UTC
+145	CLOSED	EVM opcodes: bitwise shifting	type: Core, EVM, editor-needs-to-review	2019-03-01 19:24:48 +0000 UTC
+144	CLOSED	Off-chain evaluation of Solidity snippets	stale	2022-01-26 09:16:29 +0000 UTC
+143	CLOSED	Creator Contract abstraction	stale	2022-01-27 04:13:28 +0000 UTC
+142	CLOSED	EVM: SSTORE/SLOAD gas costs split into processing and storage costs	type: Core, waiting: response from author, stale	2022-01-27 06:13:17 +0000 UTC
+141	CLOSED	EVM opcode: designated invalid instruction	editor-needs-to-review	2017-07-29 13:32:50 +0000 UTC
+140	CLOSED	New opcode: REVERT ("cheap throw")		2018-02-20 12:50:03 +0000 UTC
+139	CLOSED	EIP new opcode "codehash"	EVM	2016-09-09 14:35:46 +0000 UTC
+138	CLOSED	Proposal: Bomb 2.0	stale	2022-01-27 06:13:18 +0000 UTC
+137	CLOSED	ERC: Ethereum Name Service	type: ERC, editor-needs-to-review	2021-10-03 18:43:03 +0000 UTC
+136	CLOSED	EIP RPC errors	type: Core	2019-03-07 13:48:50 +0000 UTC
+135	CLOSED	Remove the need of transaction fees by rate limiting transaction based on address balance	stale	2022-01-30 02:23:56 +0000 UTC
+134	CLOSED	Replay Attack Protection: Include Blocklimit and Blockhash in each Transaction	stale	2022-01-30 02:23:57 +0000 UTC
+133	CLOSED	Include Recent Blockhash in each Transaction		2016-07-13 19:22:21 +0000 UTC
+132	CLOSED	Ethereum Chain Naming Convention	stale	2022-01-30 02:23:59 +0000 UTC
+130	CLOSED	Add web3.eth.encrypt method for RPC & web3	stale	2022-01-30 02:24:01 +0000 UTC
+129	CLOSED	Precompiled BLAKE2b	EVM	2016-10-04 15:25:06 +0000 UTC
+128	CLOSED	Replace (ORIGIN) and (SENDER) with (CALLSTACKSIZE) and (CALLSTACK <N>)	stale	2022-01-30 02:24:03 +0000 UTC
+127	CLOSED	RFC: Cross Blockchain Transaction Replay Protection without IAN		2016-09-02 15:17:17 +0000 UTC
+126	CLOSED	Transaction Receipts – Gas Details	stale	2022-01-30 02:24:05 +0000 UTC
+125	CLOSED	Pattern matching through a precompiled contract.	stale	2022-01-30 02:24:06 +0000 UTC
+124	CLOSED	Cap new contracts at 100,000 eth		2016-06-30 03:41:01 +0000 UTC
+123	CLOSED	Add multisig transactions.		2016-07-08 03:36:22 +0000 UTC
+122	CLOSED	New secondary function visibility modifier 'critical'	stale	2022-01-30 02:24:08 +0000 UTC
+121	CLOSED	ERC: Proxy standard	stale	2022-01-30 02:24:10 +0000 UTC
+120	CLOSED	LOG abstraction	stale	2022-01-30 02:24:11 +0000 UTC
+119	CLOSED	New Opcode: SSTORE_COUNT	type: Core, EVM, stale	2022-01-30 02:24:13 +0000 UTC
+118	CLOSED	New Opcode ASYNC_CALL	stale	2022-01-30 02:24:15 +0000 UTC
+117	CLOSED	New opcodes: SANDBOXED_CALL		2020-06-04 22:52:21 +0000 UTC
+116	CLOSED	New opcode: STATIC_CALL	editor-needs-to-review	2017-02-13 13:52:40 +0000 UTC
+115	CLOSED	Eliminate side effects from failed transactions.		2016-06-25 02:24:04 +0000 UTC
+114	CLOSED	Substitute call stack limit with child gas restriction	stale	2022-01-30 02:24:16 +0000 UTC
+113	CLOSED	New "unlock to send a transaction" method name discussion	type: ERC	2016-06-19 22:04:58 +0000 UTC
+108	CLOSED	Transaction Authorization without CORS	stale	2022-01-30 02:24:18 +0000 UTC
+106	CLOSED	Upper bound for block gas limit		2019-07-06 11:34:39 +0000 UTC
+105	CLOSED	Bitwise shifting in EVM		2016-09-02 10:08:46 +0000 UTC
+104	CLOSED	SAR, SHR, SHL bitshifting operations as opcodes		2016-08-15 21:03:36 +0000 UTC
+102	CLOSED	Precompiles for ECADD and ECMUL	type: Core, EVM	2018-09-04 19:45:44 +0000 UTC
+101	CLOSED	Precompiles for bigint arithmetic	stale	2022-01-30 02:49:26 +0000 UTC
+100	CLOSED	Change difficulty adjustment to target mean block time including uncles	editor-needs-to-review	2018-01-07 20:19:28 +0000 UTC
+99	CLOSED	EVM Dashboard (for objective comparison of clients)	stale	2022-01-30 05:09:05 +0000 UTC
+98	CLOSED	Remove medstate from receipts	editor-needs-to-review	2018-03-23 15:17:22 +0000 UTC
+97	CLOSED	SSTORE/SLOAD for byte arrays	stale	2022-06-16 05:15:54 +0000 UTC
+96	CLOSED	Blockhash and state root changes	stale	2022-01-30 07:10:27 +0000 UTC
+95	CLOSED	Make jsonrpc api engine agnostic.	stale	2022-01-30 10:10:41 +0000 UTC
+94	CLOSED	Proposal of standard contract API feature query	stale	2022-01-30 11:08:15 +0000 UTC
+93	CLOSED	Enable cost differences between SSTORE8-248		2017-01-09 06:23:04 +0000 UTC
+92	CLOSED	Lower maximum transaction gas limit	type: Core	2022-06-27 06:34:41 +0000 UTC
+91	CLOSED	bytecode compression	type: ERC, stale	2022-01-30 11:08:16 +0000 UTC
+90	CLOSED	Send all gas in call	type: Core, EVM, editor-needs-to-review	2018-07-26 16:13:33 +0000 UTC
+89	CLOSED	Clean up EIPs	type: Meta	2017-02-02 00:36:11 +0000 UTC
+88	CLOSED	Blockchain rent: user-side resurrectable edition	type: Core, stale	2022-01-30 11:08:18 +0000 UTC
+87	CLOSED	Blockchain rent: exponential rent-to-own edition	stale	2022-01-30 11:08:20 +0000 UTC
+86	CLOSED	Proposed initial abstraction changes for Metropolis	needs-merge, stale	2022-02-07 10:16:20 +0000 UTC
+85	CLOSED	Standardizing HD wallet paths for Ethereum Standard Tokens	type: ERC, stale	2022-03-12 08:06:40 +0000 UTC
+84	CLOSED	Standardizing of HD wallet derivation paths (BIP32, BIP39, BIP44)	type: ERC, stale	2022-01-30 11:08:24 +0000 UTC
+83	CLOSED	Contraction creation with colliding addresses	question, stale	2022-01-30 11:08:25 +0000 UTC
+82	CLOSED	Package and Dapp Descriptor Format	type: ERC, stale	2022-01-30 11:08:27 +0000 UTC
+81	CLOSED	Identity based Standard Global Dictionary - Localisation / Categories / Descriptions	stale	2022-01-30 11:08:29 +0000 UTC
+80	CLOSED	eth_sendTransactionToNonNeighbors	type: ERC, stale	2022-01-30 11:08:30 +0000 UTC
+79	CLOSED	Simpler signing and verifying procedure		2018-02-23 02:08:15 +0000 UTC
+78	CLOSED	NEW TO ETHELEUM		2016-03-21 13:32:54 +0000 UTC
+77	CLOSED	Safer Ethereum Address Format	type: ERC, stale	2022-01-30 15:09:56 +0000 UTC
+76	CLOSED	brain wallet discussion	type: ERC, stale	2022-01-30 15:09:58 +0000 UTC
+75	CLOSED	Standard Writeable Mnemonic Seed Proposal	type: ERC, editor-needs-to-review	2018-03-23 15:03:30 +0000 UTC
+74	CLOSED	Support RSA signature verification	type: Core, EVM	2019-03-01 18:58:42 +0000 UTC
+73	CLOSED	Serenity Validators, As Official Decentralized Casper Staking Pool Smart Contracts	stale	2022-01-31 08:13:12 +0000 UTC
+72	CLOSED	Change EIP 6 from "Draft" to "Accepted"	type: Meta, editor-needs-to-review	2017-11-19 14:37:32 +0000 UTC
+70	CLOSED	Extend the case-sensitive checksum to ICAPs	type: ERC, stale	2022-01-31 10:13:58 +0000 UTC
+68	CLOSED	web3.js contract object re-design	type: ERC	2019-03-08 13:29:30 +0000 UTC
+67	CLOSED	ERC: Standard URI scheme with metadata, value and byte code	type: ERC, editor-needs-to-review	2019-12-15 12:01:54 +0000 UTC
+66	CLOSED	EIP 106: Rename "contract" to "snork" in documentation and everywhere else.	type: Core	2016-02-15 04:49:06 +0000 UTC
+63	CLOSED	Some kind of incentive to perform a selfdestruct operation		2016-02-24 16:24:47 +0000 UTC
+62	CLOSED	Change ABI to provide a string reason for a throw in Solidity	ABI, stale	2022-01-31 10:13:59 +0000 UTC
+61	CLOSED	Spending gas from contract's balance - proposed optional opcode for a contract	type: Core, EVM, stale	2022-01-31 10:14:00 +0000 UTC
+60	CLOSED	ABI: 'byte' as an alias to 'bytes1'	ABI	2019-03-01 17:46:16 +0000 UTC
+59	CLOSED	Rename/alias sha3 to minimize confusion with SHA-3 standard		2019-04-30 21:18:33 +0000 UTC
+58	CLOSED	Standardize start of version string reported by clients	stale	2022-01-31 10:14:02 +0000 UTC
+57	CLOSED	Remove ICAP "basic" format		2018-09-04 19:35:54 +0000 UTC
+56	CLOSED	Ethereum VM C interface	type: ERC, EVM	2018-09-04 19:55:00 +0000 UTC
+55	CLOSED	Yet another cool checksum address encoding	type: ERC, editor-needs-to-review	2021-07-28 01:00:03 +0000 UTC
+53	CLOSED	EIP 105 (Serenity): Binary sharding plus contract calling semantics	stale	2022-01-31 10:14:08 +0000 UTC
+51	CLOSED	ERC: Pub/Sub + web sockets in web3.js	type: ERC	2017-09-04 16:17:12 +0000 UTC
+50	CLOSED	ABI: enums, structs and timestamps	ABI, stale	2022-01-31 14:12:07 +0000 UTC
+48	CLOSED	EVM 2/wasm 105	type: Core, EVM	2019-05-28 15:11:45 +0000 UTC
+47	CLOSED	ENUM as ABI type	ABI, stale	2022-01-31 14:12:09 +0000 UTC
+46	CLOSED	timestamp as ABI type	ABI, stale	2022-02-01 02:29:46 +0000 UTC
+36	CLOSED	EIP 104 (Serenity): Unlimited storage key or value size	type: Core, stale	2022-02-01 02:29:47 +0000 UTC
+35	CLOSED	EIP 103 (Serenity): Blockchain rent	type: Core, stale	2022-02-05 00:34:11 +0000 UTC
+34	CLOSED	Contract autobounce funds		2016-09-17 17:18:12 +0000 UTC
+33	CLOSED	ERC: finalise unit names	type: ERC	2016-02-25 03:03:20 +0000 UTC
+31	CLOSED	Question on SHA3		2015-11-25 11:25:03 +0000 UTC
+30	CLOSED	sub-categorizing Informational EIPs	type: Meta	2017-02-02 00:37:24 +0000 UTC
+29	CLOSED	EIP 102 (Serenity): Rename "gas" to "mana"	type: Core	2022-04-28 20:17:44 +0000 UTC
+28	CLOSED	EIP 101 (Serenity): Currency and Crypto Abstraction	type: Core, stale	2022-02-01 23:11:00 +0000 UTC
+27	CLOSED	A binary format for EVM code		2016-03-11 20:46:27 +0000 UTC
+26	CLOSED	ERC: Default Ethereum Name Registrar	type: ERC, editor-needs-to-review	2018-03-23 15:45:22 +0000 UTC
+25	CLOSED	Question on EIP3: CALLDEPTH	question, type: Core, stale	2022-02-02 01:54:44 +0000 UTC
+23	CLOSED	EIP 7: DELEGATECALL	type: Core	2018-06-20 21:56:27 +0000 UTC
+22	CLOSED	ERC: Token Registries	type: ERC, stale	2022-02-02 05:10:07 +0000 UTC
+21	CLOSED	Extend contract ABI with structs		2018-09-19 06:39:44 +0000 UTC
+20	CLOSED	ERC: Token standard	type: ERC, editor-needs-to-review	2018-01-24 03:01:44 +0000 UTC
+19	CLOSED	APIs for Transferable Fungibles		2015-11-19 10:36:26 +0000 UTC
+16	CLOSED	Ethereum Request for Comments (ERCs) and Ethereum Standards (ESDs)		2021-04-30 14:25:09 +0000 UTC
+8	CLOSED	EIP 5: Gas costs for return values	type: Core, EVM	2018-09-18 22:48:47 +0000 UTC
+5	CLOSED	Does any have the old PoC etherpad notes?		2015-11-17 17:37:57 +0000 UTC
+2	CLOSED	links to the yellow paper and wiki		2015-10-27 07:53:43 +0000 UTC
+1	CLOSED	Research Questions - What can we learn from prior art		2019-07-04 04:52:03 +0000 UTC

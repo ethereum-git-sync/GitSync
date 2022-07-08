@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/1324",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/1324/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/1324/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/1324/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/1324",
+  "id": 350337297,
+  "node_id": "MDU6SXNzdWUzNTAzMzcyOTc=",
+  "number": 1324,
+  "title": "SEREBRO",
+  "user": {
+    "login": "MIXAIL1987",
+    "id": 42037978,
+    "node_id": "MDQ6VXNlcjQyMDM3OTc4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42037978?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MIXAIL1987",
+    "html_url": "https://github.com/MIXAIL1987",
+    "followers_url": "https://api.github.com/users/MIXAIL1987/followers",
+    "following_url": "https://api.github.com/users/MIXAIL1987/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MIXAIL1987/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MIXAIL1987/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MIXAIL1987/subscriptions",
+    "organizations_url": "https://api.github.com/users/MIXAIL1987/orgs",
+    "repos_url": "https://api.github.com/users/MIXAIL1987/repos",
+    "events_url": "https://api.github.com/users/MIXAIL1987/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MIXAIL1987/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-08-14T08:53:37Z",
+  "updated_at": "2018-09-20T18:45:41Z",
+  "closed_at": "2018-09-20T18:45:41Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "pragma solidity ^0.4.18;\r\n\r\n// ----------------------------------------------------------------------------\r\n// 'SEREBRO' token contract\r\n// \r\n// Deployed to : 0x6ec8247cdc03F336118B96f4e862b24B1F947fa2\r\n// Symbol      : SER\r\n// Name        : SEREBRO\r\n// Total supply: 100000000000000000000000000\r\n// Decimals    : 18\r\n//\r\n// Enjoy.\r\n//\r\n// (c) by Moritz Neto with BokkyPooBah / Bok Consulting Pty Ltd Au 2017. The MIT Licence.\r\n// ----------------------------------------------------------------------------\r\n\r\n\r\n// ----------------------------------------------------------------------------\r\n// Safe maths\r\n// ----------------------------------------------------------------------------\r\ncontract SafeMath {\r\n    function safeAdd(uint a, uint b) public pure returns (uint c) {\r\n        c = a + b;\r\n        require(c >= a);\r\n    }\r\n    function safeSub(uint a, uint b) public pure returns (uint c) {\r\n        require(b <= a);\r\n        c = a - b;\r\n    }\r\n    function safeMul(uint a, uint b) public pure returns (uint c) {\r\n        c = a * b;\r\n        require(a == 0 || c / a == b);\r\n    }\r\n    function safeDiv(uint a, uint b) public pure returns (uint c) {\r\n        require(b > 0);\r\n        c = a / b;\r\n    }\r\n}\r\n\r\n\r\n// ----------------------------------------------------------------------------\r\n// ERC Token Standard #20 Interface\r\n// https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md\r\n// ----------------------------------------------------------------------------\r\ncontract ERC20Interface {\r\n    function totalSupply() public constant returns (uint);\r\n    function balanceOf(address tokenOwner) public constant returns (uint balance);\r\n    function allowance(address tokenOwner, address spender) public constant returns (uint remaining);\r\n    function transfer(address to, uint tokens) public returns (bool success);\r\n    function approve(address spender, uint tokens) public returns (bool success);\r\n    function transferFrom(address from, address to, uint tokens) public returns (bool success);\r\n\r\n    event Transfer(address indexed from, address indexed to, uint tokens);\r\n    event Approval(address indexed tokenOwner, address indexed spender, uint tokens);\r\n}\r\n\r\n\r\n// ----------------------------------------------------------------------------\r\n// Contract function to receive approval and execute function in one call\r\n//\r\n// Borrowed from MiniMeToken\r\n// ----------------------------------------------------------------------------\r\ncontract ApproveAndCallFallBack {\r\n    function receiveApproval(address from, uint256 tokens, address token, bytes data) public;\r\n}\r\n\r\n\r\n// ----------------------------------------------------------------------------\r\n// Owned contract\r\n// ----------------------------------------------------------------------------\r\ncontract Owned {\r\n    address public owner;\r\n    address public newOwner;\r\n\r\n    event OwnershipTransferred(address indexed _from, address indexed _to);\r\n\r\n    function Owned() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    modifier onlyOwner {\r\n        require(msg.sender == owner);\r\n        _;\r\n    }\r\n\r\n    function transferOwnership(address _newOwner) public onlyOwner {\r\n        newOwner = _newOwner;\r\n    }\r\n    function acceptOwnership() public {\r\n        require(msg.sender == newOwner);\r\n        OwnershipTransferred(owner, newOwner);\r\n        owner = newOwner;\r\n        newOwner = address(0);\r\n    }\r\n}\r\n\r\n\r\n// ----------------------------------------------------------------------------\r\n// ERC20 Token, with the addition of symbol, name and decimals and assisted\r\n// token transfers\r\n// ----------------------------------------------------------------------------\r\ncontract SEREBRO is ERC20Interface, Owned, SafeMath {\r\n    string public symbol;\r\n    string public  name;\r\n    uint8 public decimals;\r\n    uint public _totalSupply;\r\n\r\n    mapping(address => uint) balances;\r\n    mapping(address => mapping(address => uint)) allowed;\r\n\r\n\r\n    // ------------------------------------------------------------------------\r\n    // Constructor\r\n    // ------------------------------------------------------------------------\r\n    function SEREBRO() public {\r\n        symbol = \"SER\";\r\n        name = \"SEREBRO\";\r\n        decimals = 18;\r\n        _totalSupply = 100000000000000000000000000;\r\n        balances[0x6ec8247cdc03F336118B96f4e862b24B1F947fa2] = _totalSupply;\r\n        Transfer(address(0), 0x6ec8247cdc03F336118B96f4e862b24B1F947fa2, _totalSupply);\r\n    }\r\n\r\n\r\n    // ------------------------------------------------------------------------\r\n    // Total supply\r\n    // ------------------------------------------------------------------------\r\n    function totalSupply() public constant returns (uint) {\r\n        return _totalSupply  - balances[address(0)];\r\n    }\r\n\r\n\r\n    // ------------------------------------------------------------------------\r\n    // Get the token balance for account tokenOwner\r\n    // ------------------------------------------------------------------------\r\n    function balanceOf(address tokenOwner) public constant returns (uint balance) {\r\n        return balances[tokenOwner];\r\n    }\r\n\r\n\r\n    // ------------------------------------------------------------------------\r\n    // Transfer the balance from token owner's account to to account\r\n    // - Owner's account must have sufficient balance to transfer\r\n    // - 0 value transfers are allowed\r\n    // ------------------------------------------------------------------------\r\n    function transfer(address to, uint tokens) public returns (bool success) {\r\n        balances[msg.sender] = safeSub(balances[msg.sender], tokens);\r\n        balances[to] = safeAdd(balances[to], tokens);\r\n        Transfer(msg.sender, to, tokens);\r\n        return true;\r\n    }\r\n\r\n\r\n    // ------------------------------------------------------------------------\r\n    // Token owner can approve for spender to transferFrom(...) tokens\r\n    // from the token owner's account\r\n    //\r\n    // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md\r\n    // recommends that there are no checks for the approval double-spend attack\r\n    // as this should be implemented in user interfaces \r\n    // ------------------------------------------------------------------------\r\n    function approve(address spender, uint tokens) public returns (bool success) {\r\n        allowed[msg.sender][spender] = tokens;\r\n        Approval(msg.sender, spender, tokens);\r\n        return true;\r\n    }\r\n\r\n\r\n    // ------------------------------------------------------------------------\r\n    // Transfer tokens from the from account to the to account\r\n    // \r\n    // The calling account must already have sufficient tokens approve(...)-d\r\n    // for spending from the from account and\r\n    // - From account must have sufficient balance to transfer\r\n    // - Spender must have sufficient allowance to transfer\r\n    // - 0 value transfers are allowed\r\n    // ------------------------------------------------------------------------\r\n    function transferFrom(address from, address to, uint tokens) public returns (bool success) {\r\n        balances[from] = safeSub(balances[from], tokens);\r\n        allowed[from][msg.sender] = safeSub(allowed[from][msg.sender], tokens);\r\n        balances[to] = safeAdd(balances[to], tokens);\r\n        Transfer(from, to, tokens);\r\n        return true;\r\n    }\r\n\r\n\r\n    // ------------------------------------------------------------------------\r\n    // Returns the amount of tokens approved by the owner that can be\r\n    // transferred to the spender's account\r\n    // ------------------------------------------------------------------------\r\n    function allowance(address tokenOwner, address spender) public constant returns (uint remaining) {\r\n        return allowed[tokenOwner][spender];\r\n    }\r\n\r\n\r\n    // ------------------------------------------------------------------------\r\n    // Token owner can approve for spender to transferFrom(...) tokens\r\n    // from the token owner's account. The spender contract function\r\n    // receiveApproval(...) is then executed\r\n    // ------------------------------------------------------------------------\r\n    function approveAndCall(address spender, uint tokens, bytes data) public returns (bool success) {\r\n        allowed[msg.sender][spender] = tokens;\r\n        Approval(msg.sender, spender, tokens);\r\n        ApproveAndCallFallBack(spender).receiveApproval(msg.sender, tokens, this, data);\r\n        return true;\r\n    }\r\n\r\n\r\n    // ------------------------------------------------------------------------\r\n    // Don't accept ETH\r\n    // ------------------------------------------------------------------------\r\n    function () public payable {\r\n        revert();\r\n    }\r\n\r\n\r\n    // ------------------------------------------------------------------------\r\n    // Owner can transfer out any accidentally sent ERC20 tokens\r\n    // ------------------------------------------------------------------------\r\n    function transferAnyERC20Token(address tokenAddress, uint tokens) public onlyOwner returns (bool success) {\r\n        return ERC20Interface(tokenAddress).transfer(owner, tokens);\r\n    }\r\n}",
+  "closed_by": {
+    "login": "nicksavers",
+    "id": 7483198,
+    "node_id": "MDQ6VXNlcjc0ODMxOTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7483198?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicksavers",
+    "html_url": "https://github.com/nicksavers",
+    "followers_url": "https://api.github.com/users/nicksavers/followers",
+    "following_url": "https://api.github.com/users/nicksavers/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicksavers/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicksavers/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicksavers/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicksavers/orgs",
+    "repos_url": "https://api.github.com/users/nicksavers/repos",
+    "events_url": "https://api.github.com/users/nicksavers/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicksavers/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/1324/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/1324/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

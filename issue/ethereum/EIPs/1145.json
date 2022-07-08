@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/1145",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/1145/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/1145/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/1145/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/1145",
+  "id": 330560079,
+  "node_id": "MDU6SXNzdWUzMzA1NjAwNzk=",
+  "number": 1145,
+  "title": "EVM & Structure Standardisation by Reduction to Bit Compositor & BitWise Logic",
+  "user": {
+    "login": "AhliLi",
+    "id": 37812754,
+    "node_id": "MDQ6VXNlcjM3ODEyNzU0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/37812754?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AhliLi",
+    "html_url": "https://github.com/AhliLi",
+    "followers_url": "https://api.github.com/users/AhliLi/followers",
+    "following_url": "https://api.github.com/users/AhliLi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AhliLi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AhliLi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AhliLi/subscriptions",
+    "organizations_url": "https://api.github.com/users/AhliLi/orgs",
+    "repos_url": "https://api.github.com/users/AhliLi/repos",
+    "events_url": "https://api.github.com/users/AhliLi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AhliLi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-06-08T08:08:29Z",
+  "updated_at": "2018-06-08T09:44:43Z",
+  "closed_at": "2018-06-08T09:44:43Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "EVM & Structure Standardisation by Reduction to Bit Compositor & BitWise Logic\r\n\r\nThe structure of the EVM and the data structures should be reduced to a minimum bitwise compositor and minimal logic tree, allowing for accurate accounting and implementations in all current and theorhetical environments. Though the initial structure requires extraction, parallelism and exhaustive host optimization WITHOUT constraints allows implementation of both the system and its accessory scripts in all host environments including quantum & photonic and electronic circuits. This constructor implementation will remain valid for any hardware (or software) implementation in or on any physical configuration.\r\n\r\nFor reference, here's some typical SOA implementations in linear, parallel, and non-linear from a few decades ago, in bitwise photonic implementations:\r\n\r\nhttps://www.osapublishing.org/oe/fulltext.cfm?uri=oe-24-26-30245&id=356764\r\nhttps://www.osapublishing.org/ol/abstract.cfm?uri=ol-23-16-1271\r\n\r\nExplained further:\r\n\r\nAs in the above example, 100ghz through a standard photonic logic gate typical of the time when Al Gore invented the \"Internet\" has a bit-length of about 3 millimeters, the length of a Byte being 24mm across, and parallel operations of bitwise logic can be implemented easily in one photonic cycle.\r\n\r\nEliminating fixed-scope registers in EVM and reducing logic representation to well formed structure that exhaustively represents the process flow and its optimizations provides the maximal opportunity and efficiency in all implementations.\r\n\r\nThis optimal definition uses one cycle to load the constructor and composit the structures, then the host can select valid implementation for available hardware.\r\n\r\nParallel and higher efficiency cyclic processes are intrinsicly known and optimised with all fully formed process sequence elements included.\r\n\r\nAppropriate machine logic is a simple primitive tree and includes various characteristics of the process flow.\r\n\r\nTotal number of required primitives is minimal and not influenced by \"register\" scope nor host implementation. Size in bits of the structure is less than fixed opcodes and provides full machine optimization especially for cyclic and parallel computations.\r\n\r\nUsing the optimal universal & standard logic and structure definitions, anyone can implement with certainty that the REAL process length is accurate and maximally efficient in implementation.\r\n\r\nThe underlying logic and structure definition and its representation is universally standard. (Code, logic, compilers, electronic circuits and other implementations, structured data, semantic graph, machine learning, AI solvers, ... all use the same convention.)\r\n\r\nThe efficiency gained in highly repetitive or parallel processes is overwhelming, the structure of the definition of both the data and the protocol is exhaustive and complete. (\"Completeness\": formally valid for all known cases.) ",
+  "closed_by": {
+    "login": "Arachnid",
+    "id": 17865,
+    "node_id": "MDQ6VXNlcjE3ODY1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17865?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Arachnid",
+    "html_url": "https://github.com/Arachnid",
+    "followers_url": "https://api.github.com/users/Arachnid/followers",
+    "following_url": "https://api.github.com/users/Arachnid/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Arachnid/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Arachnid/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Arachnid/subscriptions",
+    "organizations_url": "https://api.github.com/users/Arachnid/orgs",
+    "repos_url": "https://api.github.com/users/Arachnid/repos",
+    "events_url": "https://api.github.com/users/Arachnid/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Arachnid/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/1145/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/1145/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

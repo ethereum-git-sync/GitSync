@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/1074",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/1074/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/1074/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/1074/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/1074",
+  "id": 322118852,
+  "node_id": "MDU6SXNzdWUzMjIxMTg4NTI=",
+  "number": 1074,
+  "title": "Get transaction-cost after settlement of a transaction",
+  "user": {
+    "login": "LucasAschenbach",
+    "id": 37406743,
+    "node_id": "MDQ6VXNlcjM3NDA2NzQz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/37406743?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LucasAschenbach",
+    "html_url": "https://github.com/LucasAschenbach",
+    "followers_url": "https://api.github.com/users/LucasAschenbach/followers",
+    "following_url": "https://api.github.com/users/LucasAschenbach/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LucasAschenbach/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LucasAschenbach/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LucasAschenbach/subscriptions",
+    "organizations_url": "https://api.github.com/users/LucasAschenbach/orgs",
+    "repos_url": "https://api.github.com/users/LucasAschenbach/repos",
+    "events_url": "https://api.github.com/users/LucasAschenbach/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LucasAschenbach/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-05-10T23:20:57Z",
+  "updated_at": "2021-04-05T10:07:25Z",
+  "closed_at": "2021-04-05T10:07:25Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#EIP1035: Transaction execution batching and delegation \r\n\r\n # Issue\r\nGiven the case that there is a set of functions called from a token contract, each individual function by a different address, however, all serving one purpose and every tx being equally important, it is desired to make sure that every caller is paying the same for this process. As described in the [EIP1035](https://github.com/ethereum/EIPs/issues/1035), the token contract can pay for the transaction and then later withdraw the corresponding amount in tokens from each caller so that adopters of this token can seamlessly transfer tokens without holding ether.  However, equally distributing the tx-costs among the callers afterward is, as I see it, not quite possible since there is no way of getting the precise cost of a transaction after it has been settled in Solidity.\r\n\r\n # Request\r\nI would like to request the implementation of a function call, giving solidity contracts access to the precise cost of previously settled tx as there are certain scenarios, such as the one described above, where this information would be extremely helpful.",
+  "closed_by": {
+    "login": "LucasAschenbach",
+    "id": 37406743,
+    "node_id": "MDQ6VXNlcjM3NDA2NzQz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/37406743?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LucasAschenbach",
+    "html_url": "https://github.com/LucasAschenbach",
+    "followers_url": "https://api.github.com/users/LucasAschenbach/followers",
+    "following_url": "https://api.github.com/users/LucasAschenbach/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LucasAschenbach/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LucasAschenbach/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LucasAschenbach/subscriptions",
+    "organizations_url": "https://api.github.com/users/LucasAschenbach/orgs",
+    "repos_url": "https://api.github.com/users/LucasAschenbach/repos",
+    "events_url": "https://api.github.com/users/LucasAschenbach/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LucasAschenbach/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/1074/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/1074/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

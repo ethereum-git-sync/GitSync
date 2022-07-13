@@ -272,8 +272,8 @@
     "body": "> 3. Allow using only \"ERC-20\" and not \"EIP-20\".\r\n\r\nPrefer this option, since the relationship between two ERCs is often quite different from the relationship between an ERC and a non standard-track EIP, the former always belongs to compatible/extends/requires/etc., while the later various. So refer to ERCs using the \"ERC\" prefix will help one to easily understand the purpose of the reference, distinguish from the reference to other EIPs.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1178817178/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

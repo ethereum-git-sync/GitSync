@@ -448,7 +448,7 @@
     "body": "I really did this idea, although I wish it was implemented sooner 😅\r\n\r\nAnyway, a simultaneous dutch auction for each of the numbers seems like the right mechanism to sell the numbers.\r\n\r\nI wonder if a fork of ENS might be the right solution for ownership, so there is ongoing cost/revenue for squatting numbers? Once they are burned, there would obviously be no ongoing cost.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1126676712/reactions",
-      "total_count": 2,
+      "total_count": 3,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
@@ -456,7 +456,7 @@
       "confused": 0,
       "heart": 0,
       "rocket": 0,
-      "eyes": 2
+      "eyes": 3
     },
     "performed_via_github_app": null
   },
@@ -1152,7 +1152,7 @@
     "body": "> [There](https://polygon.technology/) [are](https://www.binance.org/en/smartChain) [many](https://offchainlabs.com/) [sidechains](https://community.optimism.io/) with just as much security as the Ethereum Mainnet (due to zk-rollups).\r\n\r\nThere are no L2 networks that are censorship resistant, permissionless, and trustless at the moment.  The side chains mentioned are not functionally not censorship resistant.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1140173290/reactions",
-      "total_count": 3,
+      "total_count": 4,
       "+1": 1,
       "-1": 0,
       "laugh": 0,
@@ -1160,7 +1160,7 @@
       "confused": 0,
       "heart": 1,
       "rocket": 0,
-      "eyes": 1
+      "eyes": 2
     },
     "performed_via_github_app": null
   },
@@ -1240,8 +1240,8 @@
     "body": "@Pandapip1 \r\n\r\n> a fork of ENS should be used instead\r\n\r\nI think I originally suggested an ENS fork, however since then I realized that a subdomain of the canonical instance of ENS is probably a much better option.\r\n\r\n> NFTs are not the right way to do this\r\n\r\nENS names are also NFTs ¯\\_(ツ)_/¯\r\n\r\nFor the sake of simplicity, future flexibility, and minimizing workload, I'd opt for the ENS subdomain option.\r\n\r\nI also don't think metatransaction/gas abstraction are important for this, at least not initially. Better to solve one problem at a time.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1140645195/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

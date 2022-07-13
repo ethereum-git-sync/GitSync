@@ -1,0 +1,103 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/276",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/276/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/276/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/276/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/276",
+  "id": 667841633,
+  "node_id": "MDU6SXNzdWU2Njc4NDE2MzM=",
+  "number": 276,
+  "title": "\"Loaded address\" does not always follow inter-contract calls",
+  "user": {
+    "login": "christoph2806",
+    "id": 431015,
+    "node_id": "MDQ6VXNlcjQzMTAxNQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/431015?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/christoph2806",
+    "html_url": "https://github.com/christoph2806",
+    "followers_url": "https://api.github.com/users/christoph2806/followers",
+    "following_url": "https://api.github.com/users/christoph2806/following{/other_user}",
+    "gists_url": "https://api.github.com/users/christoph2806/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/christoph2806/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/christoph2806/subscriptions",
+    "organizations_url": "https://api.github.com/users/christoph2806/orgs",
+    "repos_url": "https://api.github.com/users/christoph2806/repos",
+    "events_url": "https://api.github.com/users/christoph2806/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/christoph2806/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2233501827,
+      "node_id": "MDU6TGFiZWwyMjMzNTAxODI3",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UX",
+      "name": "UX",
+      "color": "c5ebf9",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2235994228,
+      "node_id": "MDU6TGFiZWwyMjM1OTk0MjI4",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-debug",
+      "name": "remix-debug",
+      "color": "ebfc8a",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 3576183210,
+      "node_id": "LA_kwDODtLRw87VKDmq",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/Roadmap2022",
+      "name": "Roadmap2022",
+      "color": "FF1678",
+      "default": false,
+      "description": "All issues marked with this label should be closed by Dec 2022"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-10-24T08:09:47Z",
+  "updated_at": "2021-11-24T10:42:23Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "If a contract calls another, the \"loaded address\" in the \"Step Details\" tab shows the current loaded contract, at least most of the time. \r\nExample: \r\nhttp://etherscan.io/remix?txhash=0xea9332a2d33b659e1520c3927741bdc1d15bcd13601c413220bc8de9c271d917\r\nLocation 4019\r\nVM trace Step 699\r\nExecution step 259\r\n\r\nThere is a call to  0xbd5af6f705e4582c3f2b368ccf278ce39c3cfc17 but the \"loaded address\" doesn't keep track of this. \r\n\r\nRationale: I use the remix debugger to quickly fly over the instructions (with the slider) to see which internal calls happen. If loaded address doesn't change correctly, you have to manually click through every step. \r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/276/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/276/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

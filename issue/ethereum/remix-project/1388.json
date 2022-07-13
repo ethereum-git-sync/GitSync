@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1388",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1388/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1388/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1388/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1388",
+  "id": 945800652,
+  "node_id": "MDU6SXNzdWU5NDU4MDA2NTI=",
+  "number": 1388,
+  "title": "remix - smart contrat problem",
+  "user": {
+    "login": "maltabernardino",
+    "id": 20554910,
+    "node_id": "MDQ6VXNlcjIwNTU0OTEw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20554910?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/maltabernardino",
+    "html_url": "https://github.com/maltabernardino",
+    "followers_url": "https://api.github.com/users/maltabernardino/followers",
+    "following_url": "https://api.github.com/users/maltabernardino/following{/other_user}",
+    "gists_url": "https://api.github.com/users/maltabernardino/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/maltabernardino/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/maltabernardino/subscriptions",
+    "organizations_url": "https://api.github.com/users/maltabernardino/orgs",
+    "repos_url": "https://api.github.com/users/maltabernardino/repos",
+    "events_url": "https://api.github.com/users/maltabernardino/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/maltabernardino/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-15T22:38:05Z",
+  "updated_at": "2021-07-15T22:38:05Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Good afternoon, I have a problem at http://remix.ethereum.org.\r\nI made the contract on metaMask and I did it well but the address to send my ETH did not appear at http://remix.ethereum.org/\r\n\r\nHow do I get the address to ship my ETH?\r\n\r\nI leave the transaction data below:\r\n\r\ntransaction hash: 0xda428898bf82e83fd9a78cee0cc0770cdc2ac8a63b4ce6b6809b3188c7a87bae.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1388/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1388/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

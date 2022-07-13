@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2493",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2493/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2493/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2493/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2493",
+  "id": 1261867641,
+  "node_id": "I_kwDODtLRw85LNpJ5",
+  "number": 2493,
+  "title": "data bytes argument in safeTransferFrom  for erc1155 & erc721",
+  "user": {
+    "login": "Boulardos",
+    "id": 52192939,
+    "node_id": "MDQ6VXNlcjUyMTkyOTM5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/52192939?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Boulardos",
+    "html_url": "https://github.com/Boulardos",
+    "followers_url": "https://api.github.com/users/Boulardos/followers",
+    "following_url": "https://api.github.com/users/Boulardos/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Boulardos/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Boulardos/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Boulardos/subscriptions",
+    "organizations_url": "https://api.github.com/users/Boulardos/orgs",
+    "repos_url": "https://api.github.com/users/Boulardos/repos",
+    "events_url": "https://api.github.com/users/Boulardos/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Boulardos/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-06T13:44:16Z",
+  "updated_at": "2022-06-06T13:44:16Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "the last argument in safeTransferfrom function is byte. when empty  \"\"  as argument is supposed to work, but in remix it doesnt . You need to write [] instead .",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2493/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2493/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/684",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/684/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/684/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/684/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/684",
+  "id": 769864790,
+  "node_id": "MDU6SXNzdWU3Njk4NjQ3OTA=",
+  "number": 684,
+  "title": "How do I connect to the test network locally?",
+  "user": {
+    "login": "Daemon1992",
+    "id": 17067217,
+    "node_id": "MDQ6VXNlcjE3MDY3MjE3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17067217?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Daemon1992",
+    "html_url": "https://github.com/Daemon1992",
+    "followers_url": "https://api.github.com/users/Daemon1992/followers",
+    "following_url": "https://api.github.com/users/Daemon1992/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Daemon1992/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Daemon1992/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Daemon1992/subscriptions",
+    "organizations_url": "https://api.github.com/users/Daemon1992/orgs",
+    "repos_url": "https://api.github.com/users/Daemon1992/repos",
+    "events_url": "https://api.github.com/users/Daemon1992/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Daemon1992/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-12-17T10:57:09Z",
+  "updated_at": "2020-12-17T10:57:09Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I installed Remix-ide on Windows using the exe installation package...but.metamask cannot be automatically detected as in a browser....how should i do?please help me.....",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/684/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/684/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

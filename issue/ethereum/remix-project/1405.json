@@ -1,0 +1,103 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1405",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1405/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1405/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1405/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1405",
+  "id": 953677781,
+  "node_id": "MDU6SXNzdWU5NTM2Nzc3ODE=",
+  "number": 1405,
+  "title": "Sync Editor and FE for current selected",
+  "user": {
+    "login": "LianaHus",
+    "id": 9685356,
+    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LianaHus",
+    "html_url": "https://github.com/LianaHus",
+    "followers_url": "https://api.github.com/users/LianaHus/followers",
+    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+    "repos_url": "https://api.github.com/users/LianaHus/repos",
+    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155226,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjI2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/bug",
+      "name": "bug",
+      "color": "d73a4a",
+      "default": true,
+      "description": "Something isn't working"
+    },
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2233501827,
+      "node_id": "MDU6TGFiZWwyMjMzNTAxODI3",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UX",
+      "name": "UX",
+      "color": "c5ebf9",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 3576183210,
+      "node_id": "LA_kwDODtLRw87VKDmq",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/Roadmap2022",
+      "name": "Roadmap2022",
+      "color": "FF1678",
+      "default": false,
+      "description": "All issues marked with this label should be closed by Dec 2022"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-27T09:17:36Z",
+  "updated_at": "2021-12-06T09:14:29Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "If one file is current on editor it should be also selected in File explorer.\r\nIt is not always a case.\r\n\r\n**Steps to reproduce:** Load a file with url https://remix-beta.ethereum.org/#optimize=false&runs=200&evmVersion=istanbul&version=soljson-v0.7.4+commit.3f05b770.js&url=https://github.com/ethereum/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol\r\n**Result:** it is open in editor but the path in File explorer is not expanded.\r\n**Expected:** The path of the file is expanded in File Explorer and the file itself is selected",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1405/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1405/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

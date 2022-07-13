@@ -1,0 +1,112 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1141",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1141/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1141/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1141/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1141",
+  "id": 867186366,
+  "node_id": "MDU6SXNzdWU4NjcxODYzNjY=",
+  "number": 1141,
+  "title": "[ENHANCEMENT] Deploy and Fund",
+  "user": {
+    "login": "PatrickAlphaC",
+    "id": 54278053,
+    "node_id": "MDQ6VXNlcjU0Mjc4MDUz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/54278053?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/PatrickAlphaC",
+    "html_url": "https://github.com/PatrickAlphaC",
+    "followers_url": "https://api.github.com/users/PatrickAlphaC/followers",
+    "following_url": "https://api.github.com/users/PatrickAlphaC/following{/other_user}",
+    "gists_url": "https://api.github.com/users/PatrickAlphaC/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/PatrickAlphaC/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/PatrickAlphaC/subscriptions",
+    "organizations_url": "https://api.github.com/users/PatrickAlphaC/orgs",
+    "repos_url": "https://api.github.com/users/PatrickAlphaC/repos",
+    "events_url": "https://api.github.com/users/PatrickAlphaC/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/PatrickAlphaC/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155232,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjMy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/enhancement",
+      "name": "enhancement",
+      "color": "a2eeef",
+      "default": true,
+      "description": "New feature or request"
+    },
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2227556002,
+      "node_id": "MDU6TGFiZWwyMjI3NTU2MDAy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UI",
+      "name": "UI",
+      "color": "6ff7e5",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2233501827,
+      "node_id": "MDU6TGFiZWwyMjMzNTAxODI3",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UX",
+      "name": "UX",
+      "color": "c5ebf9",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 3576183210,
+      "node_id": "LA_kwDODtLRw87VKDmq",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/Roadmap2022",
+      "name": "Roadmap2022",
+      "color": "FF1678",
+      "default": false,
+      "description": "All issues marked with this label should be closed by Dec 2022"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-04-26T01:52:41Z",
+  "updated_at": "2021-12-06T09:13:21Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Right now, when working with Remix, I often have to make 2 transactions before I can get started.\r\n\r\n1. Deploy with the deploy button\r\n2. Fund with LINK to make oracle calls\r\n\r\nIt would be great if there was a \"deploy and fund\" button, that way we could skip the step of having to fund the contract with LINK, and just have it \"automatically\" be funded with LINK from our wallets. ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1141/reactions",
+    "total_count": 3,
+    "+1": 3,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1141/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

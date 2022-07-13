@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1628",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1628/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1628/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1628/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1628",
+  "id": 1007840447,
+  "node_id": "I_kwDODtLRw848Emy_",
+  "number": 1628,
+  "title": "Remix NPM INSTRALL  ERROR ",
+  "user": {
+    "login": "1b1og-com",
+    "id": 42143002,
+    "node_id": "MDQ6VXNlcjQyMTQzMDAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42143002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/1b1og-com",
+    "html_url": "https://github.com/1b1og-com",
+    "followers_url": "https://api.github.com/users/1b1og-com/followers",
+    "following_url": "https://api.github.com/users/1b1og-com/following{/other_user}",
+    "gists_url": "https://api.github.com/users/1b1og-com/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/1b1og-com/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/1b1og-com/subscriptions",
+    "organizations_url": "https://api.github.com/users/1b1og-com/orgs",
+    "repos_url": "https://api.github.com/users/1b1og-com/repos",
+    "events_url": "https://api.github.com/users/1b1og-com/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/1b1og-com/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-09-27T08:14:18Z",
+  "updated_at": "2021-09-27T08:14:18Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "```\r\n remix-project % sudo npm install\r\nnpm ERR! code ERESOLVE\r\nnpm ERR! ERESOLVE unable to resolve dependency tree\r\nnpm ERR! \r\nnpm ERR! While resolving: remix-project@0.19.0-dev\r\nnpm ERR! Found: @babel/core@7.15.5\r\nnpm ERR! node_modules/@babel/core\r\nnpm ERR!   dev @babel/core@\"^7.4.5\" from the root project\r\nnpm ERR! \r\nnpm ERR! Could not resolve dependency:\r\nnpm ERR! peer @babel/core@\">=7.0.0-beta.50 <7.0.0-rc.0\" from @babel/preset-es2015@7.0.0-beta.53\r\nnpm ERR! node_modules/@babel/preset-es2015\r\nnpm ERR!   dev @babel/preset-es2015@\"^7.0.0-beta.53\" from the root project\r\nnpm ERR! \r\nnpm ERR! Fix the upstream dependency conflict, or retry\r\nnpm ERR! this command with --force, or --legacy-peer-deps\r\nnpm ERR! to accept an incorrect (and potentially broken) dependency resolution.\r\nnpm ERR! \r\nnpm ERR! See /Users/yuriy/.npm/eresolve-report.txt for a full report.\r\n\r\nnpm ERR! A complete log of this run can be found in:\r\nnpm ERR!     /Users/yuriy/.npm/_logs/2021-09-27T07_16_27_091Z-debug.log\r\nyuriy@YuriydeMacBook-Pro remix-project % npm update babel                                     \r\nnpm ERR! code ERESOLVE\r\nnpm ERR! code EACCES\r\nnpm ERR! syscall open\r\nnpm ERR! path /Users/yuriy/.npm/eresolve-report.txt\r\nnpm ERR! errno -13\r\nnpm ERR! \r\nnpm ERR! Your cache folder contains root-owned files, due to a bug in\r\nnpm ERR! previous versions of npm which has since been addressed.\r\nnpm ERR! \r\nnpm ERR! To permanently fix this problem, please run:\r\nnpm ERR!   sudo chown -R 501:20 \"/Users/yuriy/.npm\"\r\n\r\nnpm ERR! A complete log of this run can be found in:\r\nnpm ERR!     /Users/yuriy/.npm/_logs/2021-09-27T08_06_46_725Z-debug.log\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1628/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1628/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

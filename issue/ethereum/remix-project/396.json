@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/396",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/396/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/396/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/396/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/396",
+  "id": 692251234,
+  "node_id": "MDU6SXNzdWU2OTIyNTEyMzQ=",
+  "number": 396,
+  "title": "Receiving \"Error: Invalid buffer...\" on contract load",
+  "user": {
+    "login": "michaelotis",
+    "id": 34221002,
+    "node_id": "MDQ6VXNlcjM0MjIxMDAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34221002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelotis",
+    "html_url": "https://github.com/michaelotis",
+    "followers_url": "https://api.github.com/users/michaelotis/followers",
+    "following_url": "https://api.github.com/users/michaelotis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelotis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelotis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelotis/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelotis/orgs",
+    "repos_url": "https://api.github.com/users/michaelotis/repos",
+    "events_url": "https://api.github.com/users/michaelotis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelotis/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155226,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjI2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/bug",
+      "name": "bug",
+      "color": "d73a4a",
+      "default": true,
+      "description": "Something isn't working"
+    },
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-09-03T19:34:36Z",
+  "updated_at": "2021-07-18T03:03:24Z",
+  "closed_at": "2021-07-18T03:03:24Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "When attempting to load an existing contract into the Remix IDE, clicking on the file does not load into the frame, except I get an error:\r\n\r\n`Error: Invalid buffer: Buffer is 29628 long, yet Stats object specifies that file is 0 long.\r\n    at e.n [as constructor] (browserfs.min.js:formatted:5926)\r\n    at new e (browserfs.min.js:formatted:7605)\r\n    at e.n.openFileSync (browserfs.min.js:formatted:7717)\r\n    at e.ze.openSync (browserfs.min.js:formatted:5499)\r\n    at e.open (browserfs.min.js:formatted:5778)\r\n    at e.ze.readFile (browserfs.min.js:formatted:5602)\r\n    at Te.readFile (browserfs.min.js:formatted:4488)\r\n    at Object.Le.<computed>.xe.<computed> [as readFile] (browserfs.min.js:formatted:5054)\r\n    at FileProvider.get (main.js:2830)\r\n    at _openFile (main.js:2804)`",
+  "closed_by": {
+    "login": "michaelotis",
+    "id": 34221002,
+    "node_id": "MDQ6VXNlcjM0MjIxMDAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34221002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelotis",
+    "html_url": "https://github.com/michaelotis",
+    "followers_url": "https://api.github.com/users/michaelotis/followers",
+    "following_url": "https://api.github.com/users/michaelotis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelotis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelotis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelotis/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelotis/orgs",
+    "repos_url": "https://api.github.com/users/michaelotis/repos",
+    "events_url": "https://api.github.com/users/michaelotis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelotis/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/396/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/396/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

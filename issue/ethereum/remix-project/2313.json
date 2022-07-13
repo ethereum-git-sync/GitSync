@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2313",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2313/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2313/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2313/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2313",
+  "id": 1206494867,
+  "node_id": "I_kwDODtLRw85H6aaT",
+  "number": 2313,
+  "title": "Can't send transaction to a contract with already-encoded hex data",
+  "user": {
+    "login": "php4fan",
+    "id": 13969584,
+    "node_id": "MDQ6VXNlcjEzOTY5NTg0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13969584?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/php4fan",
+    "html_url": "https://github.com/php4fan",
+    "followers_url": "https://api.github.com/users/php4fan/followers",
+    "following_url": "https://api.github.com/users/php4fan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/php4fan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/php4fan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/php4fan/subscriptions",
+    "organizations_url": "https://api.github.com/users/php4fan/orgs",
+    "repos_url": "https://api.github.com/users/php4fan/repos",
+    "events_url": "https://api.github.com/users/php4fan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/php4fan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-04-17T21:55:44Z",
+  "updated_at": "2022-04-18T16:24:21Z",
+  "closed_at": "2022-04-18T16:24:21Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I have compiled and deployed a contract.\r\nNow I can call its functions by entering each argument (and the value i.e. amount, if any):\r\n![image](https://user-images.githubusercontent.com/13969584/163733134-12ed47c9-9656-4d56-9fab-d3f436adcd46.png)\r\n\r\nBut suppose I have the already-encoded, already-packed hex data that calls a given function with given values for its arguments, e.g.\r\n```\r\n0xc1a03b8016e3365b6cd3ac6eeee54f71d4dcf96c317337b54a1cd54d94bae775550c33294286490f7339e472b3a15641f4d541309cd040e6e91ffdb43e65c19b392007f3000000000000000000000000000000000000000000000000000000000000001c000000000000000000000000000000000000000000000000000000000000003600000000000000000000000000000000000000000000000000000000625c803900000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000001a68747470733a2f2f73616e64736361702e65733f7265663d3534000000000000\r\n```\r\n I want to send a transaction with those raw data to the contract, and with a certain amount of ETH.\r\n\r\nSo, I would assume that's what the \"Low level interaction\" bit at the bottom is for.\r\nI enter the ETH amount at the top:\r\n![image](https://user-images.githubusercontent.com/13969584/163733299-2245a2fb-3141-4bf2-81f5-46343178a2ce.png)\r\n\r\nand then I enter the hex data in \"Call data\" at the bottom and click \"Transact\":\r\n![image](https://user-images.githubusercontent.com/13969584/163733250-0c760eeb-2194-4a47-87eb-f4885c641259.png)\r\n\r\nHowever, I get this error:\r\n![image](https://user-images.githubusercontent.com/13969584/163733335-6633e1cb-3697-44c2-a5c3-97a81df26ec9.png)\r\n\r\nBut that makes no sense because the \"transfer\" or \"fallback\" functions are supposedly for sending transactions **with ETH and no data**, but I am trying to send a transaction **_with_** data.\r\n\r\n\r\n",
+  "closed_by": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2313/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2313/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

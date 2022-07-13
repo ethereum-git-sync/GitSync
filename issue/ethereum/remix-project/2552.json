@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2552",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2552/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2552/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2552/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2552",
+  "id": 1278085006,
+  "node_id": "I_kwDODtLRw85MLgeO",
+  "number": 2552,
+  "title": "DEPLOY & RUN TRANSACTIONS is missing",
+  "user": {
+    "login": "magicbrighter",
+    "id": 881637,
+    "node_id": "MDQ6VXNlcjg4MTYzNw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/881637?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/magicbrighter",
+    "html_url": "https://github.com/magicbrighter",
+    "followers_url": "https://api.github.com/users/magicbrighter/followers",
+    "following_url": "https://api.github.com/users/magicbrighter/following{/other_user}",
+    "gists_url": "https://api.github.com/users/magicbrighter/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/magicbrighter/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/magicbrighter/subscriptions",
+    "organizations_url": "https://api.github.com/users/magicbrighter/orgs",
+    "repos_url": "https://api.github.com/users/magicbrighter/repos",
+    "events_url": "https://api.github.com/users/magicbrighter/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/magicbrighter/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-21T08:25:42Z",
+  "updated_at": "2022-06-29T14:44:02Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "docker -d run -p 8552:80 remixproject/remix-ide:latest\r\n\r\nfound  2 plugin missing\r\nSOLIDITY COMPILER\r\nDEPLOY & RUN TRANSACTIONS\r\n\r\nadd SOLIDITY COMPILER    by    PLUGIN MANAGER， but  DEPLOY & RUN TRANSACTIONS  not in PLUGIN MANAGER\r\nso DEPLOY & RUN TRANSACTIONS can‘t using\r\n\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2552/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2552/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

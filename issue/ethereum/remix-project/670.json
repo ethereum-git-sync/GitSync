@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/670",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/670/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/670/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/670/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/670",
+  "id": 760958686,
+  "node_id": "MDU6SXNzdWU3NjA5NTg2ODY=",
+  "number": 670,
+  "title": "contract directory is expanded without showing files in it",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2210742395,
+      "node_id": "MDU6TGFiZWwyMjEwNzQyMzk1",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/browser-tests",
+      "name": "browser-tests",
+      "color": "0d9912",
+      "default": false,
+      "description": "e2e  tests for remix-ide"
+    },
+    {
+      "id": 2239365015,
+      "node_id": "MDU6TGFiZWwyMjM5MzY1MDE1",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/investigate",
+      "name": "investigate",
+      "color": "e99695",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-12-10T06:41:26Z",
+  "updated_at": "2020-12-10T06:45:06Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "In https://github.com/ethereum/remix-project/pull/659 PR, contract files were moved into a directory. While running some e2e tests, on loading remix, `contracts` directory is expanded but files in it were not appearing.\r\n\r\n<img width=\"243\" alt=\"files\" src=\"https://user-images.githubusercontent.com/30843294/101730722-8e55b900-3ae0-11eb-9028-76b7030a792e.png\">\r\n\r\nBecause of this, in some tests, we need to click twice on `contracts` to get the files like here \r\n https://github.com/ethereum/remix-project/pull/659/files/a83d8174f15ac2f81f3f315f9a2a1dfc0644cdcc#diff-25a6f0c317b2eaffd0e81fa608a04c78c3b045959d2f59dff23376239b44c957R104 in `editor.test.ts` and here https://github.com/ethereum/remix-project/pull/659/files#diff-be796db79c0c7616c194328f2833fc50a1cfb57fe105aaa4a390f89e30aa1513R46 in `publishContract.test.ts`",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/670/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/670/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

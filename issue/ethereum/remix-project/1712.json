@@ -1,0 +1,113 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1712",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1712/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1712/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1712/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1712",
+  "id": 1038262562,
+  "node_id": "I_kwDODtLRw8494qEi",
+  "number": 1712,
+  "title": "Issue in printing hardhat console logs",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155226,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjI2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/bug",
+      "name": "bug",
+      "color": "d73a4a",
+      "default": true,
+      "description": "Something isn't working"
+    },
+    {
+      "id": 3035253510,
+      "node_id": "MDU6TGFiZWwzMDM1MjUzNTEw",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UDapp%20plugin",
+      "name": "UDapp plugin",
+      "color": "D1ED2D",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 3396955166,
+      "node_id": "LA_kwDODtLRw87KeWwe",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/Terminal",
+      "name": "Terminal",
+      "color": "111111",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-28T08:57:31Z",
+  "updated_at": "2021-11-08T14:50:52Z",
+  "closed_at": "2021-11-08T14:50:52Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "- Logs are not printed for first method interaction\r\n- Logs are printed from second interaction onwards\r\n- Logs are appended for continuous calls to the method, not for transactions\r\n\r\nIt is reproducible on live.\r\n\r\nFor a contract:\r\n```\r\n// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity >=0.7.0 <0.9.0;\r\n\r\nimport \"hardhat/console.sol\";\r\n\r\n/**\r\n * @title Owner\r\n * @dev Set & change owner\r\n */\r\ncontract Owner {\r\n\r\n    address private owner;\r\n    \r\n    // event for EVM logging\r\n    event OwnerSet(address indexed oldOwner, address indexed newOwner);\r\n    \r\n    // modifier to check if caller is owner\r\n    modifier isOwner() {\r\n        // If the first argument of 'require' evaluates to 'false', execution terminates and all\r\n        // changes to the state and to Ether balances are reverted.\r\n        // This used to consume all gas in old EVM versions, but not anymore.\r\n        // It is often a good idea to use 'require' to check if functions are called correctly.\r\n        // As a second argument, you can also provide an explanation about what went wrong.\r\n        require(msg.sender == owner, \"Caller is not owner\");\r\n        _;\r\n    }\r\n    \r\n    /**\r\n     * @dev Set contract deployer as owner\r\n     */\r\n    constructor() {\r\n        owner = msg.sender; // 'msg.sender' is sender of current call, contract deployer for a constructor\r\n        emit OwnerSet(address(0), owner);\r\n    }\r\n\r\n    /**\r\n     * @dev Change owner\r\n     * @param newOwner address of new owner\r\n     */\r\n    function changeOwner(address newOwner) public isOwner {\r\n        console.log(\"inside changeOwner\");\r\n        emit OwnerSet(owner, newOwner);\r\n        owner = newOwner;\r\n    }\r\n\r\n    /**\r\n     * @dev Return owner address \r\n     * @return address of owner\r\n     */\r\n    function getOwner() external view returns (address) {\r\n        console.log(\"inside getOwner\");\r\n        return owner;\r\n    }\r\n}\r\n```\r\nIt prints:\r\n<img width=\"1057\" alt=\"Screenshot 2021-10-28 at 2 23 02 PM\" src=\"https://user-images.githubusercontent.com/30843294/139222821-c9ff8e16-92e0-4dbe-8973-ccb1dcdd927d.png\">\r\n\r\n",
+  "closed_by": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1712/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1712/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

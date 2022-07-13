@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1395",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1395/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1395/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1395/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1395",
+  "id": 949753736,
+  "node_id": "MDU6SXNzdWU5NDk3NTM3MzY=",
+  "number": 1395,
+  "title": "Common interface for file providers",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-21T14:13:35Z",
+  "updated_at": "2021-07-21T14:13:47Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "For file manager accordingly communicates with fileProvider and remixDProvider by calling same methods on them. \r\n\r\nBut method execution is not same for the provider. \r\n Example: `set` method is not `async` in fileprovider [here](https://github.com/ethereum/remix-project/blob/master/apps/remix-ide/src/app/files/fileProvider.js#L95)  but it is `async` in remixDprovider [here](https://github.com/ethereum/remix-project/blob/master/apps/remix-ide/src/app/files/remixDProvider.js#L114) . Similar for `isDirectory` method.\r\n\r\nThere should be a common interface defined which should be extended by each provider.\r\n\r\ncc: @LianaHus ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1395/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1395/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

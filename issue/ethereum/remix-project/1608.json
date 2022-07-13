@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1608",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1608/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1608/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1608/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1608",
+  "id": 999928191,
+  "node_id": "I_kwDODtLRw847mbF_",
+  "number": 1608,
+  "title": "Internal JSON-RPC error. { \"code\": -32000, \"message\": \"gas required exceeds allowance (20329961)\" } even if I raise the gas limit ",
+  "user": {
+    "login": "legamenon",
+    "id": 60286323,
+    "node_id": "MDQ6VXNlcjYwMjg2MzIz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/60286323?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/legamenon",
+    "html_url": "https://github.com/legamenon",
+    "followers_url": "https://api.github.com/users/legamenon/followers",
+    "following_url": "https://api.github.com/users/legamenon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/legamenon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/legamenon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/legamenon/subscriptions",
+    "organizations_url": "https://api.github.com/users/legamenon/orgs",
+    "repos_url": "https://api.github.com/users/legamenon/repos",
+    "events_url": "https://api.github.com/users/legamenon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/legamenon/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-09-18T05:48:39Z",
+  "updated_at": "2021-09-18T05:48:39Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I am trying to mint 10000 nft in the polygon network and when I do not do 10k but 100 units there is enough gas but when I try to do 10000 units I get an error Gas estimation errored with the following message (see below). The transaction execution will likely fail. Do you want to force sending?\r\nInternal JSON-RPC error. { \"code\": -32000, \"message\": \"gas required exceeds allowance (20329961)\" } even if I raise the gas limit nothing happens ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1608/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1608/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

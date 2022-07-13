@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1724",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1724/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1724/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1724/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1724",
+  "id": 1042092780,
+  "node_id": "I_kwDODtLRw84-HRLs",
+  "number": 1724,
+  "title": "remix deploys partial code",
+  "user": {
+    "login": "drortirosh",
+    "id": 40341007,
+    "node_id": "MDQ6VXNlcjQwMzQxMDA3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/40341007?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drortirosh",
+    "html_url": "https://github.com/drortirosh",
+    "followers_url": "https://api.github.com/users/drortirosh/followers",
+    "following_url": "https://api.github.com/users/drortirosh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drortirosh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drortirosh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drortirosh/subscriptions",
+    "organizations_url": "https://api.github.com/users/drortirosh/orgs",
+    "repos_url": "https://api.github.com/users/drortirosh/repos",
+    "events_url": "https://api.github.com/users/drortirosh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drortirosh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-11-02T09:49:47Z",
+  "updated_at": "2021-11-02T09:49:47Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "remix automatically save and compile the code periodically, or after some modification is made.\r\n\r\nIn general this looks good, but occasionally, when I hit \"deploy\" it deploys a code before latest changes.\r\nMy suggestion:\r\n- don't compile so often. its a burden on the browser, and make it feel unresponsive\r\n- make sure to compile (if there are any changes since last compile) when doing \"deploy\"\r\n\r\nan slightly unrelated:\r\n- make sure to give an error message if \"deploy\" is hit when there are compilation errors. its annoying to deploy previous code because of a missing \";\"",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1724/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1724/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

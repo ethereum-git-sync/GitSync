@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/316",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/316/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/316/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/316/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/316",
+  "id": 668601978,
+  "node_id": "MDU6SXNzdWU2Njg2MDE5Nzg=",
+  "number": 316,
+  "title": "remix-astwalker: more efficient findNodeAtSourceLocation",
+  "user": {
+    "login": "rocky",
+    "id": 8851,
+    "node_id": "MDQ6VXNlcjg4NTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rocky",
+    "html_url": "https://github.com/rocky",
+    "followers_url": "https://api.github.com/users/rocky/followers",
+    "following_url": "https://api.github.com/users/rocky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rocky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rocky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rocky/subscriptions",
+    "organizations_url": "https://api.github.com/users/rocky/orgs",
+    "repos_url": "https://api.github.com/users/rocky/repos",
+    "events_url": "https://api.github.com/users/rocky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rocky/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2241548571,
+      "node_id": "MDU6TGFiZWwyMjQxNTQ4NTcx",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-astwalker",
+      "name": "remix-astwalker",
+      "color": "05b256",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-06-19T20:15:28Z",
+  "updated_at": "2020-07-30T10:48:48Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Right now `findNodeAtSourceLocation()` traverses an entire AST tree (las does its predecessor in `astWalker.js` did). \r\n\r\nMore efficient and better would be to revise this using `try`/`catch` with a custom error . There may a stigmatism in the JavaScript community around for this kind of thing, so I mention it here first. \r\n\r\nHowever this kind of use of `try`/`catch` happens quite frequently in other programming languages. For example Python uses it to stop Iteration, Ruby does something like this too (I am told) . \r\n\r\nThis was mentioned on Jun14 on the discord remix channel. ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/316/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/316/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

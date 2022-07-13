@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/103",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/103/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/103/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/103/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/103",
+  "id": 666133934,
+  "node_id": "MDU6SXNzdWU2NjYxMzM5MzQ=",
+  "number": 103,
+  "title": "regarding to installation",
+  "user": {
+    "login": "saifullah27",
+    "id": 6271581,
+    "node_id": "MDQ6VXNlcjYyNzE1ODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6271581?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/saifullah27",
+    "html_url": "https://github.com/saifullah27",
+    "followers_url": "https://api.github.com/users/saifullah27/followers",
+    "following_url": "https://api.github.com/users/saifullah27/following{/other_user}",
+    "gists_url": "https://api.github.com/users/saifullah27/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/saifullah27/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/saifullah27/subscriptions",
+    "organizations_url": "https://api.github.com/users/saifullah27/orgs",
+    "repos_url": "https://api.github.com/users/saifullah27/repos",
+    "events_url": "https://api.github.com/users/saifullah27/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/saifullah27/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2233116932,
+      "node_id": "MDU6TGFiZWwyMjMzMTE2OTMy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/installation",
+      "name": "installation",
+      "color": "6fbaed",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-01-01T19:14:41Z",
+  "updated_at": "2020-07-27T09:41:35Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "hi i m trying to install remix-ide in windows10 with nodev10.16.0 and npmv4.6 but its throwing me error\r\n![remix error](https://user-images.githubusercontent.com/6271581/71645103-c7908100-2cf4-11ea-9bc1-605c1830095d.png)\r\ncan u please help me? i m stuck. spend whole day but no success... :(",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/103/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/103/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1042",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1042/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1042/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1042/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1042",
+  "id": 842473455,
+  "node_id": "MDU6SXNzdWU4NDI0NzM0NTU=",
+  "number": 1042,
+  "title": "Remix hanging while creating a new file",
+  "user": {
+    "login": "gpersoon",
+    "id": 5469459,
+    "node_id": "MDQ6VXNlcjU0Njk0NTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5469459?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gpersoon",
+    "html_url": "https://github.com/gpersoon",
+    "followers_url": "https://api.github.com/users/gpersoon/followers",
+    "following_url": "https://api.github.com/users/gpersoon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gpersoon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gpersoon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gpersoon/subscriptions",
+    "organizations_url": "https://api.github.com/users/gpersoon/orgs",
+    "repos_url": "https://api.github.com/users/gpersoon/repos",
+    "events_url": "https://api.github.com/users/gpersoon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gpersoon/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-03-27T10:25:35Z",
+  "updated_at": "2021-03-27T10:25:35Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I noticed remix getting stuck when i added a new filename in the file explorer.\r\nThe entire browser-tab got stuck.\r\n\r\nUsing the chrome debugger I saw the following error. It seems to looping. If i ignore the error, directly after it i see the same error. \r\n```JS\r\nException: n\r\ncode: \"ENOENT\"\r\nerrno: 2\r\nmessage: \"Error: ENOENT: No such file or directory., '/.workspaces/default_workspace/test.sol'\"\r\npath: \"/.workspaces/default_workspace/test.sol\"\r\nstack: \"Error↵    at new n (https://remix.ethereum.org/assets/js/browserfs.min.js:7:62518)↵    at Function.n.FileError (https://remix.ethereum.org/assets/js/browserfs.min.js:7:62983)↵    at Function.n.ENOENT (https://remix.ethereum.org/assets/js/browserfs.min.js:7:63034)↵    at i (https://remix.ethereum.org/assets/js/browserfs.min.js:7:122604)↵    at e.n._findINode (https://remix.ethereum.org/assets/js/browserfs.min.js:7:122680)↵    at e.n.findINode (https://remix.ethereum.org/assets/js/browserfs.min.js:7:122826)↵    at e.n.statSync (https://remix.ethereum.org/assets/js/browserfs.min.js:7:121092)↵    at e.ze.existsSync (https://remix.ethereum.org/assets/js/browserfs.min.js:7:86674)↵    at Te.existsSync (https://remix.ethereum.org/assets/js/browserfs.min.js:7:67729)↵    at Object.Le.<computed>.xe.<computed> [as existsSync] (https://remix.ethereum.org/assets/js/browserfs.min.js:7:78203)\"\r\nsyscall: \"\"\r\n```\r\n\r\nAfter clearing the application/local storage of remix the problem was gone.\r\n\r\nMight be related to: https://github.com/ethereum/remix-project/issues/1028\r\nPerhaps it is useful to both fix the error as well as the error handling in general.\r\n\r\nEnvironment:\r\n- Windows 10\r\n- Chrome Version 89.0.4389.90 (Official Build) (64-bit)\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1042/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1042/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

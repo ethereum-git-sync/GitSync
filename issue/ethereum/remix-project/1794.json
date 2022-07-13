@@ -1,0 +1,137 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1794",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1794/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1794/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1794/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1794",
+  "id": 1063331318,
+  "node_id": "I_kwDODtLRw84_YSX2",
+  "number": 1794,
+  "title": "Solidity Plugin improvements",
+  "user": {
+    "login": "LianaHus",
+    "id": 9685356,
+    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LianaHus",
+    "html_url": "https://github.com/LianaHus",
+    "followers_url": "https://api.github.com/users/LianaHus/followers",
+    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+    "repos_url": "https://api.github.com/users/LianaHus/repos",
+    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2227543966,
+      "node_id": "MDU6TGFiZWwyMjI3NTQzOTY2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/STORY",
+      "name": "STORY",
+      "color": "f4aea6",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2517648573,
+      "node_id": "MDU6TGFiZWwyNTE3NjQ4NTcz",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/solidity%20compiler%20plugin",
+      "name": "solidity compiler plugin",
+      "color": "7ef26a",
+      "default": false,
+      "description": "Related to Solidity Compiler Plugin"
+    },
+    {
+      "id": 3576183210,
+      "node_id": "LA_kwDODtLRw87VKDmq",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/Roadmap2022",
+      "name": "Roadmap2022",
+      "color": "FF1678",
+      "default": false,
+      "description": "All issues marked with this label should be closed by Dec 2022"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-11-25T09:15:21Z",
+  "updated_at": "2022-03-21T09:21:00Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "- [ ] Show compiler license (https://github.com/ethereum/remix-project/issues/247)\r\n- [ ] Show \"compilation details\" in a tab (https://github.com/ethereum/remix-project/issues/259)\r\n- [ ] Autocomplete for solidity (https://github.com/ethereum/remix-project/issues/199)\r\n- [ ] add license to the example and test files of solidity  (https://github.com/ethereum/remix-project/issues/176)\r\n- [ ] Generate Solidity input json (https://github.com/ethereum/remix-project/issues/1472)\r\n- [ ] Solidity compiler: add all missing flags for compiler https://github.com/ethereum/remix-project/issues/1767\r\n- [ ] 'Hide warnings' doesn't work for YUL https://github.com/ethereum/remix-project/issues/1581\r\n- [ ] compilation details for Yul are not complete https://github.com/ethereum/remix-project/issues/122\r\n- [ ] Apply pragma if possible https://github.com/ethereum/remix-project/issues/99",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1794/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1794/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/992244063",
+    "html_url": "https://github.com/ethereum/remix-project/issues/1794#issuecomment-992244063",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/1794",
+    "id": 992244063,
+    "node_id": "IC_kwDODtLRw847JHFf",
+    "user": {
+      "login": "dev-tom-0108",
+      "id": 29230603,
+      "node_id": "MDQ6VXNlcjI5MjMwNjAz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29230603?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dev-tom-0108",
+      "html_url": "https://github.com/dev-tom-0108",
+      "followers_url": "https://api.github.com/users/dev-tom-0108/followers",
+      "following_url": "https://api.github.com/users/dev-tom-0108/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dev-tom-0108/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dev-tom-0108/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dev-tom-0108/subscriptions",
+      "organizations_url": "https://api.github.com/users/dev-tom-0108/orgs",
+      "repos_url": "https://api.github.com/users/dev-tom-0108/repos",
+      "events_url": "https://api.github.com/users/dev-tom-0108/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dev-tom-0108/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2021-12-13T08:58:19Z",
+    "updated_at": "2021-12-13T08:58:19Z",
+    "author_association": "NONE",
+    "body": "Yes, the functions you mentioned here are in remix.org.\r\nI think the remix is the best program to compile and deploy the smart contract.\r\nAfter that, I hope you are going well and discuss with me about that.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/992244063/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/495",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/495/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/495/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/495/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/495",
+  "id": 724466677,
+  "node_id": "MDU6SXNzdWU3MjQ0NjY2Nzc=",
+  "number": 495,
+  "title": "Clean windows 10 node 10 lts install fails",
+  "user": {
+    "login": "Vasiliy-Bondarenko",
+    "id": 5263184,
+    "node_id": "MDQ6VXNlcjUyNjMxODQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5263184?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Vasiliy-Bondarenko",
+    "html_url": "https://github.com/Vasiliy-Bondarenko",
+    "followers_url": "https://api.github.com/users/Vasiliy-Bondarenko/followers",
+    "following_url": "https://api.github.com/users/Vasiliy-Bondarenko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Vasiliy-Bondarenko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Vasiliy-Bondarenko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Vasiliy-Bondarenko/subscriptions",
+    "organizations_url": "https://api.github.com/users/Vasiliy-Bondarenko/orgs",
+    "repos_url": "https://api.github.com/users/Vasiliy-Bondarenko/repos",
+    "events_url": "https://api.github.com/users/Vasiliy-Bondarenko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Vasiliy-Bondarenko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2233648248,
+      "node_id": "MDU6TGFiZWwyMjMzNjQ4MjQ4",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remixD",
+      "name": "remixD",
+      "color": "203cc9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-06-18T06:26:02Z",
+  "updated_at": "2020-10-19T10:03:30Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Fail to install on windows 10, node v10.16.0\r\n```\r\n>npm install -g remixd\r\nnpm WARN deprecated fs-promise@2.0.3: Use mz or fs-extra^3.0 with Promise Support\r\nnpm WARN deprecated tar.gz@1.0.7: ⚠️  WARNING ⚠️ tar.gz module has been deprecated and your application is vulnerable. Please use tar module instead: https://npmjs.com/tar\r\n\r\n> scrypt@6.0.3 preinstall C:\\Users\\info\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\scrypt\r\n> node node-scrypt-preinstall.js\r\n\r\nC:\\Users\\info\\AppData\\Roaming\\npm\\remixd -> C:\\Users\\info\\AppData\\Roaming\\npm\\node_modules\\remixd\\bin\\remixd\r\n\r\n> scrypt@6.0.3 install C:\\Users\\info\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\scrypt\r\n> node-gyp rebuild\r\n\r\n\r\nC:\\Users\\info\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\scrypt>if not defined npm_config_node_gyp (node \"C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin\\\\..\\..\\node_modules\\node-gyp\\bin\\node-gyp.js\" rebuild )  else (node \"C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js\" rebuild )\r\ngyp ERR! configure error\r\ngyp ERR! stack Error: Command failed: C:\\Users\\info\\AppData\\Local\\Programs\\Python\\Python37\\python.EXE -c import sys; print \"%s.%s.%s\" % sys.version_info[:3];\r\ngyp ERR! stack   File \"<string>\", line 1\r\ngyp ERR! stack     import sys; print \"%s.%s.%s\" % sys.version_info[:3];\r\ngyp ERR! stack                                ^\r\ngyp ERR! stack SyntaxError: invalid syntax\r\ngyp ERR! stack\r\ngyp ERR! stack     at ChildProcess.exithandler (child_process.js:294:12)\r\ngyp ERR! stack     at ChildProcess.emit (events.js:198:13)\r\ngyp ERR! stack     at maybeClose (internal/child_process.js:982:16)\r\ngyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:259:5)\r\ngyp ERR! System Windows_NT 10.0.17763\r\ngyp ERR! command \"C:\\\\Program Files\\\\nodejs\\\\node.exe\" \"C:\\\\Program Files\\\\nodejs\\\\node_modules\\\\npm\\\\node_modules\\\\node-gyp\\\\bin\\\\node-gyp.js\" \"rebuild\"\r\ngyp ERR! cwd C:\\Users\\info\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\scrypt\r\ngyp ERR! node -v v10.16.0\r\ngyp ERR! node-gyp -v v3.8.0\r\ngyp ERR! not ok\r\nnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\\remixd\\node_modules\\fsevents):\r\nnpm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {\"os\":\"darwin\",\"arch\":\"any\"} (current: {\"os\":\"win32\",\"arch\":\"x64\"})\r\n\r\nnpm ERR! code ELIFECYCLE\r\nnpm ERR! errno 1\r\nnpm ERR! scrypt@6.0.3 install: `node-gyp rebuild`\r\nnpm ERR! Exit status 1\r\nnpm ERR!\r\nnpm ERR! Failed at the scrypt@6.0.3 install script.\r\nnpm ERR! This is probably not a problem with npm. There is likely additional logging output above.\r\n\r\nnpm ERR! A complete log of this run can be found in:\r\nnpm ERR!     C:\\Users\\info\\AppData\\Roaming\\npm-cache\\_logs\\2019-06-18T06_19_21_715Z-debug.log\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/495/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/495/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

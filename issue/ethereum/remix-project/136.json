@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/136",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/136/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/136/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/136/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/136",
+  "id": 666341901,
+  "node_id": "MDU6SXNzdWU2NjYzNDE5MDE=",
+  "number": 136,
+  "title": "Plugin API - set Run tab values ",
+  "user": {
+    "login": "loredanacirstea",
+    "id": 4785356,
+    "node_id": "MDQ6VXNlcjQ3ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4785356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/loredanacirstea",
+    "html_url": "https://github.com/loredanacirstea",
+    "followers_url": "https://api.github.com/users/loredanacirstea/followers",
+    "following_url": "https://api.github.com/users/loredanacirstea/following{/other_user}",
+    "gists_url": "https://api.github.com/users/loredanacirstea/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/loredanacirstea/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/loredanacirstea/subscriptions",
+    "organizations_url": "https://api.github.com/users/loredanacirstea/orgs",
+    "repos_url": "https://api.github.com/users/loredanacirstea/repos",
+    "events_url": "https://api.github.com/users/loredanacirstea/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/loredanacirstea/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2233124974,
+      "node_id": "MDU6TGFiZWwyMjMzMTI0OTc0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/plugins",
+      "name": "plugins",
+      "color": "ddb87c",
+      "default": false,
+      "description": "internal & external plugins' issues"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2018-11-02T20:01:12Z",
+  "updated_at": "2020-07-27T14:32:26Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Adding APIs for allowing plugins to set (some of the) Run tab values directly:\r\n- contract name value for the `select` active option\r\n- constructor arguments for deployment\r\n- `At Address` value\r\n\r\nThis would make the user experience easy, but they might also be a security risk if the user is unaware that a plugin can do this. ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/136/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/136/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/606671044",
+    "html_url": "https://github.com/ethereum/remix-project/issues/136#issuecomment-606671044",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/136",
+    "id": 606671044,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDYwNjY3MTA0NA==",
+    "user": {
+      "login": "yann300",
+      "id": 6940742,
+      "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/yann300",
+      "html_url": "https://github.com/yann300",
+      "followers_url": "https://api.github.com/users/yann300/followers",
+      "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+      "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+      "organizations_url": "https://api.github.com/users/yann300/orgs",
+      "repos_url": "https://api.github.com/users/yann300/repos",
+      "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/yann300/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2020-03-31T14:42:29Z",
+    "updated_at": "2020-03-31T14:42:29Z",
+    "author_association": "MEMBER",
+    "body": "@LianaHus @GrandSchtroumpf  bumping up this (very) old issue, shall we add it at some point?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/606671044/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

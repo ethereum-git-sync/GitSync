@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1753",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1753/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1753/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1753/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1753",
+  "id": 1050528688,
+  "node_id": "I_kwDODtLRw84-ncuw",
+  "number": 1753,
+  "title": "Matomo seems to delay loading of WalletConnect",
+  "user": {
+    "login": "ryestew",
+    "id": 6050001,
+    "node_id": "MDQ6VXNlcjYwNTAwMDE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6050001?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ryestew",
+    "html_url": "https://github.com/ryestew",
+    "followers_url": "https://api.github.com/users/ryestew/followers",
+    "following_url": "https://api.github.com/users/ryestew/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ryestew/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ryestew/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ryestew/subscriptions",
+    "organizations_url": "https://api.github.com/users/ryestew/orgs",
+    "repos_url": "https://api.github.com/users/ryestew/repos",
+    "events_url": "https://api.github.com/users/ryestew/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ryestew/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155226,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjI2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/bug",
+      "name": "bug",
+      "color": "d73a4a",
+      "default": true,
+      "description": "Something isn't working"
+    },
+    {
+      "id": 2233501827,
+      "node_id": "MDU6TGFiZWwyMjMzNTAxODI3",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UX",
+      "name": "UX",
+      "color": "c5ebf9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-11-11T03:16:26Z",
+  "updated_at": "2021-11-11T03:16:26Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "I had to wait ...maybe 30sec or 1 min for the WalletConnect plugin to load.  I took this screenshot:\r\n<img width=\"557\" alt=\"image\" src=\"https://user-images.githubusercontent.com/6050001/141230929-80dceb4f-3808-44c0-9ed5-773530b76666.png\">\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1753/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1753/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1730",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1730/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1730/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1730/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1730",
+  "id": 1044939272,
+  "node_id": "I_kwDODtLRw84-SIII",
+  "number": 1730,
+  "title": "Debugger crashes on unknown types",
+  "user": {
+    "login": "ngotchac",
+    "id": 2864519,
+    "node_id": "MDQ6VXNlcjI4NjQ1MTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2864519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ngotchac",
+    "html_url": "https://github.com/ngotchac",
+    "followers_url": "https://api.github.com/users/ngotchac/followers",
+    "following_url": "https://api.github.com/users/ngotchac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ngotchac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ngotchac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ngotchac/subscriptions",
+    "organizations_url": "https://api.github.com/users/ngotchac/orgs",
+    "repos_url": "https://api.github.com/users/ngotchac/repos",
+    "events_url": "https://api.github.com/users/ngotchac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ngotchac/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-11-04T16:14:10Z",
+  "updated_at": "2021-11-04T16:14:10Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "It seems that the debugger panel crashes when debugging a transaction with special types, in my case a function type.\r\nTo reproduce the issue, with this contract:\r\n```solidity\r\npragma solidity >=0.8.0 <0.9.0;\r\n\r\ncontract DebuggerCrasher {\r\n    uint256 public value = 42;\r\n    \r\n    event Log(uint256 value);\r\n    \r\n    function run() public {\r\n        function() view external returns (uint256) f = this.value;\r\n        emit Log(f());\r\n    }\r\n}\r\n```\r\n\r\none just need to deploy it, call the `run()` method, and click on _Debug_.  Stepping forward eventually crashes the Debugger, with those logs:\r\n```\r\nTypeError: e.type is null\r\n    solidityLocals https://remix.ethereum.org/main.js:2\r\n    [...]\r\nmain.js:2:1997109\r\n\r\nTypeError: Q.type is undefined\r\n    formatSelfFunc https://remix.ethereum.org/main.js:146\r\n    [...]\r\nmain.js:146:2978240\r\n```\r\n\r\nIt seems that the issue can be fixed by adding a `try / catch` [here](https://github.com/ethereum/remix-project/blob/ea3d3c41f0d867f9a18415ba282e113d144c3853/libs/remix-ui/debugger-ui/src/lib/vm-debugger/solidity-locals.tsx#L13-L43) as it was done in https://github.com/ethereum/remix-project/pull/1350",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1730/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1730/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

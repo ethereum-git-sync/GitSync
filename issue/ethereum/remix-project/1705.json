@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1705",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1705/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1705/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1705/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1705",
+  "id": 1037136667,
+  "node_id": "I_kwDODtLRw8490XMb",
+  "number": 1705,
+  "title": "Error while deleting a file on remix alpha",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2691470839,
+      "node_id": "MDU6TGFiZWwyNjkxNDcwODM5",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/file-explorer",
+      "name": "file-explorer",
+      "color": "9EA10A",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-27T08:39:10Z",
+  "updated_at": "2021-11-02T15:44:13Z",
+  "closed_at": "2021-11-02T15:44:13Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Error in browser console is:\r\n```\r\nUnhandled promise rejection TypeError: Cannot read property 'replace' of undefined\r\n    at l.value (main.js:146)\r\n    at l.<anonymous> (main.js:146)\r\n    at G (main.js:2)\r\n    at Generator._invoke (main.js:2)\r\n    at Generator.next (main.js:2)\r\n    at e (main.js:146)\r\n    at C (main.js:146)\r\n    at main.js:146\r\n    at new T (retainable.js:20)\r\n    at l.<anonymous> (main.js:146)\r\n```",
+  "closed_by": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1705/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1705/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

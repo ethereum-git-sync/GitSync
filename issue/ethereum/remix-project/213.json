@@ -1,0 +1,146 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/213",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/213/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/213/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/213/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/213",
+  "id": 667013704,
+  "node_id": "MDU6SXNzdWU2NjcwMTM3MDQ=",
+  "number": 213,
+  "title": "Plugins category",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155232,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjMy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/enhancement",
+      "name": "enhancement",
+      "color": "a2eeef",
+      "default": true,
+      "description": "New feature or request"
+    },
+    {
+      "id": 2210742395,
+      "node_id": "MDU6TGFiZWwyMjEwNzQyMzk1",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/browser-tests",
+      "name": "browser-tests",
+      "color": "0d9912",
+      "default": false,
+      "description": "e2e  tests for remix-ide"
+    },
+    {
+      "id": 2233501827,
+      "node_id": "MDU6TGFiZWwyMjMzNTAxODI3",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UX",
+      "name": "UX",
+      "color": "c5ebf9",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2335546845,
+      "node_id": "MDU6TGFiZWwyMzM1NTQ2ODQ1",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/discussion",
+      "name": "discussion",
+      "color": "fffdaa",
+      "default": false,
+      "description": "Require discussion"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2019-11-22T13:26:08Z",
+  "updated_at": "2021-11-24T13:12:36Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "We can introduce a category or tags for plugins. Tags can be shown around plugin search box. User can easily click on a tag and all related plugins will be shown.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/213/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/213/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/559014859",
+    "html_url": "https://github.com/ethereum/remix-project/issues/213#issuecomment-559014859",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/213",
+    "id": 559014859,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDU1OTAxNDg1OQ==",
+    "user": {
+      "login": "LianaHus",
+      "id": 9685356,
+      "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LianaHus",
+      "html_url": "https://github.com/LianaHus",
+      "followers_url": "https://api.github.com/users/LianaHus/followers",
+      "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+      "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+      "repos_url": "https://api.github.com/users/LianaHus/repos",
+      "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2019-11-27T09:54:02Z",
+    "updated_at": "2019-11-27T09:54:02Z",
+    "author_association": "MEMBER",
+    "body": "we already have tags but maybe using in UI is not optimal.\r\nwe can filter by tag as Github does.\r\nThe problem is who and where should assign tags to plugins?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/559014859/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

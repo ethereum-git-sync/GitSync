@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2420",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2420/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2420/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2420/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2420",
+  "id": 1244297525,
+  "node_id": "I_kwDODtLRw85KKnk1",
+  "number": 2420,
+  "title": "Debugger crashes the whole window",
+  "user": {
+    "login": "ezra100",
+    "id": 3751364,
+    "node_id": "MDQ6VXNlcjM3NTEzNjQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3751364?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ezra100",
+    "html_url": "https://github.com/ezra100",
+    "followers_url": "https://api.github.com/users/ezra100/followers",
+    "following_url": "https://api.github.com/users/ezra100/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ezra100/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ezra100/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ezra100/subscriptions",
+    "organizations_url": "https://api.github.com/users/ezra100/orgs",
+    "repos_url": "https://api.github.com/users/ezra100/repos",
+    "events_url": "https://api.github.com/users/ezra100/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ezra100/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-05-22T16:04:10Z",
+  "updated_at": "2022-05-22T16:08:45Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi\r\nI'm trying to debug tx [`0xd45111d7c22a4ba4a1cd110c8224859000fcb0cd5cefd02bd40434ac42a07be6`](https://etherscan.io/tx/0xd45111d7c22a4ba4a1cd110c8224859000fcb0cd5cefd02bd40434ac42a07be6) using the source code from Etherscan.\r\nSomeway in the middle the debugger crashes and the whole window just goes blank.\r\nI guess there are 2 issues here:\r\n1. Some bug causes the debugger to crash.\r\n2. When the debugger crashes it takes with it the whole app (I've experienced that a few times but only now I bother to report).\r\n\r\n## Steps to reproduce\r\n1. Open Remix\r\n2.  Set an Etherscan access token in the settings\r\n3. Set the environment to some mainnet provider (e.g. `https://rpc.ankr.com/eth`) \r\n4. Activate the debugger and load tx  `0xd45111d7c22a4ba4a1cd110c8224859000fcb0cd5cefd02bd40434ac42a07be6`\r\n5. Make sure the debugger loaded the source files from Etherscan\r\n6. Move the debugger slider to somewhere in the middle (try a few points in the middle if it doesn't crash immediately)\r\n7. The whole window will crash\r\n\r\n\r\n## Screenshots\r\n\r\n![image](https://user-images.githubusercontent.com/3751364/169704658-8246b4d4-6cd2-43bf-9fbc-873369d7c63d.png)\r\n![image](https://user-images.githubusercontent.com/3751364/169704671-6533740a-7b5a-4b83-865b-975f54933cb2.png)\r\n![image](https://user-images.githubusercontent.com/3751364/169704228-8de67542-4abf-4335-90a8-7e25644585f6.png)\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2420/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2420/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1479",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1479/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1479/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1479/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1479",
+  "id": 970439037,
+  "node_id": "MDU6SXNzdWU5NzA0MzkwMzc=",
+  "number": 1479,
+  "title": "Coding Best Practices Link Broken",
+  "user": {
+    "login": "seaona",
+    "id": 54408225,
+    "node_id": "MDQ6VXNlcjU0NDA4MjI1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/54408225?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/seaona",
+    "html_url": "https://github.com/seaona",
+    "followers_url": "https://api.github.com/users/seaona/followers",
+    "following_url": "https://api.github.com/users/seaona/following{/other_user}",
+    "gists_url": "https://api.github.com/users/seaona/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/seaona/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/seaona/subscriptions",
+    "organizations_url": "https://api.github.com/users/seaona/orgs",
+    "repos_url": "https://api.github.com/users/seaona/repos",
+    "events_url": "https://api.github.com/users/seaona/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/seaona/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-08-13T14:13:37Z",
+  "updated_at": "2021-08-26T05:53:40Z",
+  "closed_at": "2021-08-26T05:53:40Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Inside the project file [remix-project/team-best-practices.md](https://github.com/ethereum/remix-project/blob/master/team-best-practices.md), on the Coding best practices Section, text is pointing to this [broken link](https://github.com/ethereum/remix-ide/blob/master/best-practices.md).\r\n\r\n![Screenshot from 2021-08-13 16-02-33](https://user-images.githubusercontent.com/54408225/129370065-139aa564-0660-44c6-97b9-3f20fc38427a.png)\r\n",
+  "closed_by": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1479/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1479/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

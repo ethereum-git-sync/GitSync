@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1609",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1609/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1609/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1609/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1609",
+  "id": 1000240929,
+  "node_id": "I_kwDODtLRw847nnch",
+  "number": 1609,
+  "title": "remixd 0.5.2 can not be installed for windows os",
+  "user": {
+    "login": "leverwwz",
+    "id": 75786669,
+    "node_id": "MDQ6VXNlcjc1Nzg2NjY5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/75786669?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leverwwz",
+    "html_url": "https://github.com/leverwwz",
+    "followers_url": "https://api.github.com/users/leverwwz/followers",
+    "following_url": "https://api.github.com/users/leverwwz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leverwwz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leverwwz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leverwwz/subscriptions",
+    "organizations_url": "https://api.github.com/users/leverwwz/orgs",
+    "repos_url": "https://api.github.com/users/leverwwz/repos",
+    "events_url": "https://api.github.com/users/leverwwz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leverwwz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-09-19T07:58:38Z",
+  "updated_at": "2021-09-19T07:58:38Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "when i install remixd,  i can get 0.5.1,\r\n\r\nnpm install -g @remix-project/remixd\r\n\r\n\r\nbut the logs show that not work for windows",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1609/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1609/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

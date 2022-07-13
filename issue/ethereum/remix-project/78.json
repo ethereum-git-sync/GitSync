@@ -1,0 +1,137 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/78",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/78/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/78/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/78/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/78",
+  "id": 666037638,
+  "node_id": "MDU6SXNzdWU2NjYwMzc2Mzg=",
+  "number": 78,
+  "title": "[ Feature Request ] Persist Deployed Contracts across Restarts",
+  "user": {
+    "login": "anudit",
+    "id": 12015553,
+    "node_id": "MDQ6VXNlcjEyMDE1NTUz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12015553?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/anudit",
+    "html_url": "https://github.com/anudit",
+    "followers_url": "https://api.github.com/users/anudit/followers",
+    "following_url": "https://api.github.com/users/anudit/following{/other_user}",
+    "gists_url": "https://api.github.com/users/anudit/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/anudit/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/anudit/subscriptions",
+    "organizations_url": "https://api.github.com/users/anudit/orgs",
+    "repos_url": "https://api.github.com/users/anudit/repos",
+    "events_url": "https://api.github.com/users/anudit/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/anudit/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155232,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjMy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/enhancement",
+      "name": "enhancement",
+      "color": "a2eeef",
+      "default": true,
+      "description": "New feature or request"
+    },
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2227556002,
+      "node_id": "MDU6TGFiZWwyMjI3NTU2MDAy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UI",
+      "name": "UI",
+      "color": "6ff7e5",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2020-05-28T11:22:37Z",
+  "updated_at": "2020-10-12T08:39:28Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Would be it possible to persist the deployed contracts instances list while restarting Remix (closing and reopening the tab/browser)? or have a flag in General Settings to enable this if this is something not required as a default behavior in Remix.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/78/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/78/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/706972874",
+    "html_url": "https://github.com/ethereum/remix-project/issues/78#issuecomment-706972874",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/78",
+    "id": 706972874,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDcwNjk3Mjg3NA==",
+    "user": {
+      "login": "TbLtzk",
+      "id": 8383712,
+      "node_id": "MDQ6VXNlcjgzODM3MTI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8383712?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/TbLtzk",
+      "html_url": "https://github.com/TbLtzk",
+      "followers_url": "https://api.github.com/users/TbLtzk/followers",
+      "following_url": "https://api.github.com/users/TbLtzk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/TbLtzk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/TbLtzk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/TbLtzk/subscriptions",
+      "organizations_url": "https://api.github.com/users/TbLtzk/orgs",
+      "repos_url": "https://api.github.com/users/TbLtzk/repos",
+      "events_url": "https://api.github.com/users/TbLtzk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/TbLtzk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2020-10-12T08:39:28Z",
+    "updated_at": "2020-10-12T08:39:28Z",
+    "author_association": "NONE",
+    "body": "Yes, this would help a lot!",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/706972874/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

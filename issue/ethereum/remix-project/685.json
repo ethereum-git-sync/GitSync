@@ -1,0 +1,94 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/685",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/685/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/685/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/685/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/685",
+  "id": 770782748,
+  "node_id": "MDU6SXNzdWU3NzA3ODI3NDg=",
+  "number": 685,
+  "title": "test a negative value for \"value\" in deploy&run",
+  "user": {
+    "login": "LianaHus",
+    "id": 9685356,
+    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LianaHus",
+    "html_url": "https://github.com/LianaHus",
+    "followers_url": "https://api.github.com/users/LianaHus/followers",
+    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+    "repos_url": "https://api.github.com/users/LianaHus/repos",
+    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155233,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjMz",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "7057ff",
+      "default": true,
+      "description": "Good for newcomers"
+    },
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2210742395,
+      "node_id": "MDU6TGFiZWwyMjEwNzQyMzk1",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/browser-tests",
+      "name": "browser-tests",
+      "color": "0d9912",
+      "default": false,
+      "description": "e2e  tests for remix-ide"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-12-18T10:45:27Z",
+  "updated_at": "2021-02-12T07:44:42Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/685/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/685/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

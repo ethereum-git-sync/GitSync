@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/317",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/317/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/317/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/317/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/317",
+  "id": 668602518,
+  "node_id": "MDU6SXNzdWU2Njg2MDI1MTg=",
+  "number": 317,
+  "title": "ASTQ compatibility for solc - add getchildNodes(),  getParentNode(), ... ",
+  "user": {
+    "login": "rocky",
+    "id": 8851,
+    "node_id": "MDQ6VXNlcjg4NTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rocky",
+    "html_url": "https://github.com/rocky",
+    "followers_url": "https://api.github.com/users/rocky/followers",
+    "following_url": "https://api.github.com/users/rocky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rocky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rocky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rocky/subscriptions",
+    "organizations_url": "https://api.github.com/users/rocky/orgs",
+    "repos_url": "https://api.github.com/users/rocky/repos",
+    "events_url": "https://api.github.com/users/rocky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rocky/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2241548571,
+      "node_id": "MDU6TGFiZWwyMjQxNTQ4NTcx",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-astwalker",
+      "name": "remix-astwalker",
+      "color": "05b256",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-06-19T20:29:58Z",
+  "updated_at": "2020-07-30T10:49:24Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "[solidity-autocomplete](https://github.com/ethereum/remix/blob/autoc/solidity-autocomplete/src/autoc.ts#L3) is currently using ASTQ. \r\n\r\nThe API spec to support to support this  is given [here](https://github.com/rse/astq/blob/master/README.md#astqadapter-api) need to be handled.  \r\n\r\n`getchildNodes()` is easily added by simple restructuring` walkFull()`.  `getParentNode()` can easily be done but that means a traversal of the AST since that information is not directly provided in the AST. \r\n\r\nAlso we might consider asynchronous versions of `getChildNodes()` since this is, after all, javascript. ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/317/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/317/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

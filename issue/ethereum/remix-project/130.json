@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/130",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/130/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/130/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/130/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/130",
+  "id": 666247384,
+  "node_id": "MDU6SXNzdWU2NjYyNDczODQ=",
+  "number": 130,
+  "title": "View and select vyper version",
+  "user": {
+    "login": "samajammin",
+    "id": 8097623,
+    "node_id": "MDQ6VXNlcjgwOTc2MjM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8097623?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/samajammin",
+    "html_url": "https://github.com/samajammin",
+    "followers_url": "https://api.github.com/users/samajammin/followers",
+    "following_url": "https://api.github.com/users/samajammin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/samajammin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/samajammin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/samajammin/subscriptions",
+    "organizations_url": "https://api.github.com/users/samajammin/orgs",
+    "repos_url": "https://api.github.com/users/samajammin/repos",
+    "events_url": "https://api.github.com/users/samajammin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/samajammin/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2233124974,
+      "node_id": "MDU6TGFiZWwyMjMzMTI0OTc0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/plugins",
+      "name": "plugins",
+      "color": "ddb87c",
+      "default": false,
+      "description": "internal & external plugins' issues"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-06-18T17:29:48Z",
+  "updated_at": "2020-07-27T12:15:03Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Hey folks,\r\n\r\nI couldn't find any way to view the vyper version being used in Remix.\r\n\r\nI tried compiling [this contract](https://github.com/Uniswap/contracts-vyper/blob/master/contracts/uniswap_factory.vy), which was written with vyper version `0.1.0b4`:\r\n\r\n![Image 2019-06-18 at 10 16 51 AM](https://user-images.githubusercontent.com/8097623/59705478-4be54180-91b3-11e9-87fd-2ee10d129795.png)\r\n\r\nIt appears Remix is using a newer version when the mapping syntax was updated:\r\nhttps://github.com/ethereum/vyper/pull/1090\r\n\r\nIs there a way to specify the vyper version to use, similar to the Solidity compiler?\r\n\r\nThanks in advance!\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/130/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/130/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

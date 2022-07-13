@@ -1,0 +1,113 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/205",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/205/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/205/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/205/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/205",
+  "id": 666964363,
+  "node_id": "MDU6SXNzdWU2NjY5NjQzNjM=",
+  "number": 205,
+  "title": "Deploy tab and compile tab order matters",
+  "user": {
+    "login": "LianaHus",
+    "id": 9685356,
+    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LianaHus",
+    "html_url": "https://github.com/LianaHus",
+    "followers_url": "https://api.github.com/users/LianaHus/followers",
+    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+    "repos_url": "https://api.github.com/users/LianaHus/repos",
+    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155232,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjMy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/enhancement",
+      "name": "enhancement",
+      "color": "a2eeef",
+      "default": true,
+      "description": "New feature or request"
+    },
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2233501827,
+      "node_id": "MDU6TGFiZWwyMjMzNTAxODI3",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UX",
+      "name": "UX",
+      "color": "c5ebf9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-05-07T08:53:02Z",
+  "updated_at": "2021-12-06T09:48:55Z",
+  "closed_at": "2021-12-06T09:48:55Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "**Steps to reproduce:**\r\n\r\n- activate compile tab\r\n- compile\r\n- activate Deploy and run\r\n\r\n**result:**\r\nthe list of compiled contracts is empty though we have it in the compile tab. need to recompile to load them in Deploy tab\r\n\r\n**expected:**\r\nto have the list of compiled contracts also in Deploy tab",
+  "closed_by": {
+    "login": "LianaHus",
+    "id": 9685356,
+    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LianaHus",
+    "html_url": "https://github.com/LianaHus",
+    "followers_url": "https://api.github.com/users/LianaHus/followers",
+    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+    "repos_url": "https://api.github.com/users/LianaHus/repos",
+    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/205/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/205/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2487",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2487/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2487/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2487/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2487",
+  "id": 1260963347,
+  "node_id": "I_kwDODtLRw85LKMYT",
+  "number": 2487,
+  "title": "remix-tests CLI，too many logs come out",
+  "user": {
+    "login": "iranran",
+    "id": 6753107,
+    "node_id": "MDQ6VXNlcjY3NTMxMDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6753107?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/iranran",
+    "html_url": "https://github.com/iranran",
+    "followers_url": "https://api.github.com/users/iranran/followers",
+    "following_url": "https://api.github.com/users/iranran/following{/other_user}",
+    "gists_url": "https://api.github.com/users/iranran/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/iranran/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/iranran/subscriptions",
+    "organizations_url": "https://api.github.com/users/iranran/orgs",
+    "repos_url": "https://api.github.com/users/iranran/repos",
+    "events_url": "https://api.github.com/users/iranran/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/iranran/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-05T05:14:47Z",
+  "updated_at": "2022-06-06T13:25:02Z",
+  "closed_at": "2022-06-06T13:25:02Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "When I run   \"remix-tests test/Decimal_test.sol\" , many logs come out before every testcase, just like below, what can I do to remove them?\r\n\r\n👁 :: Running remix-tests - Unit testing for solidity :: 👁\r\n\r\nLoading remote solc version v0.6.9+commit.3e3065ac ...\r\n[]\r\n'creation of library remix_tests.sol:Assert pending...'\r\n[\r\n  FeeMarketEIP1559Transaction {\r\n    cache: {\r\n      hash: <Buffer a3 3d e3 74 0b 75 47 3f 71 7b 9e ec d1 9f 31 ca b6 ed 6f c0 1c 90 1e 19 be 3a c0 0c 3c 9d 34 64>,\r\n      dataFee: [Object]\r\n    },\r\n    activeCapabilities: [ 1559, 2718, 2930 ],\r\n    DEFAULT_CHAIN: 1,\r\n    DEFAULT_HARDFORK: 'london',\r\n    _type: 2,\r\n    txOptions: { common: [Common] },\r\n    nonce: <BN: 0>,\r\n    gasLimit: <BN: 2a6c54>,\r\n    to: undefined,\r\n    value: <BN: 0>,\r\n    data: <Buffer 61 23 7b 61 00 26 60 0b 82 82 82 39 80 51 60 00 1a 60 73 14 61 00 19 57 fe 5b 30 60 00 52 60 73 81 53 82 81 f3 fe 73 00 00 00 00 00 00 00 00 00 00 00 ... 9071 more bytes>,\r\n    v: <BN: 0>,\r\n    r: <BN: 247d3807b169016107f8911ae5da03fe7ee8f390fe2194f7fe1acde4b60a730a>,\r\n    s: <BN: 67ea8d7d4a2f5f3174aa1e560abff4268558d7b4acd6f17cc6e7458721dcfaff>,\r\n    common: Common {\r\n      _events: [Object: null prototype] {},\r\n      _eventsCount: 0,\r\n      _maxListeners: undefined,\r\n      _supportedHardforks: [],\r\n      _eips: [],\r\n      _customChains: [],\r\n      _chainParams: [Object],\r\n      DEFAULT_HARDFORK: 'istanbul',\r\n      _hardfork: 'london',\r\n      [Symbol(kCapture)]: false\r\n    },\r\n    chainId: <BN: 1>,\r\n    accessList: [],\r\n    AccessListJSON: [],\r\n    maxFeePerGas: <BN: 1>,\r\n    maxPriorityFeePerGas: <BN: 1>\r\n  }\r\n]\r\n[\r\n  FeeMarketEIP1559Transaction {\r\n    cache: {\r\n      hash: <Buffer ad 2e f0 05 10 66 14 36 d6 2f f0 38 5a f6 08 43 bc 2d a3 9d a3 04 97 ed 3c 68 6a 72 7a ee 95 e3>,\r\n      dataFee: [Object]\r\n    },\r\n    activeCapabilities: [ 1559, 2718, 2930 ],\r\n    DEFAULT_CHAIN: 1,\r\n    DEFAULT_HARDFORK: 'london',\r\n    _type: 2,\r\n    txOptions: { common: [Common] },\r\n    nonce: <BN: 1>,\r\n    gasLimit: <BN: 2a6c54>,\r\n    to: undefined,\r\n    value: <BN: 0>,\r\n    data: <Buffer 61 23 7b 61 00 26 60 0b 82 82 82 39 80 51 60 00 1a 60 73 14 61 00 19 57 fe 5b 30 60 00 52 60 73 81 53 82 81 f3 fe 73 00 00 00 00 00 00 00 00 00 00 00 ... 9071 more bytes>,\r\n    v: <BN: 0>,\r\n    r: <BN: 355e4017a85bfd99a30208f25f6c745746e857c0e898c6320ee6d71094be8e64>,\r\n    s: <BN: 33eea30e9940043e4460af1e96fe97f96787d37acfda8de574a5a5c094ef73ed>,\r\n    common: Common {\r\n      _events: [Object: null prototype] {},\r\n      _eventsCount: 0,\r\n      _maxListeners: undefined,\r\n      _supportedHardforks: [],\r\n      _eips: [],\r\n      _customChains: [],\r\n      _chainParams: [Object],\r\n      DEFAULT_HARDFORK: 'istanbul',\r\n      _hardfork: 'london',\r\n      [Symbol(kCapture)]: false\r\n    },\r\n    chainId: <BN: 1>,\r\n    accessList: [],\r\n    AccessListJSON: [],\r\n    maxFeePerGas: <BN: 1>,\r\n    maxPriorityFeePerGas: <BN: 1>\r\n  }\r\n]\r\n",
+  "closed_by": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2487/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2487/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

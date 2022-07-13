@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/pm/issues/287",
+  "repository_url": "https://api.github.com/repos/ethereum/pm",
+  "labels_url": "https://api.github.com/repos/ethereum/pm/issues/287/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/pm/issues/287/comments",
+  "events_url": "https://api.github.com/repos/ethereum/pm/issues/287/events",
+  "html_url": "https://github.com/ethereum/pm/issues/287",
+  "id": 843501247,
+  "node_id": "MDU6SXNzdWU4NDM1MDEyNDc=",
+  "number": 287,
+  "title": "Ethereum Core Devs Meeting 107 Agenda ",
+  "user": {
+    "login": "timbeiko",
+    "id": 9390255,
+    "node_id": "MDQ6VXNlcjkzOTAyNTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9390255?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/timbeiko",
+    "html_url": "https://github.com/timbeiko",
+    "followers_url": "https://api.github.com/users/timbeiko/followers",
+    "following_url": "https://api.github.com/users/timbeiko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/timbeiko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/timbeiko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/timbeiko/subscriptions",
+    "organizations_url": "https://api.github.com/users/timbeiko/orgs",
+    "repos_url": "https://api.github.com/users/timbeiko/repos",
+    "events_url": "https://api.github.com/users/timbeiko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/timbeiko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2866593601,
+      "node_id": "MDU6TGFiZWwyODY2NTkzNjAx",
+      "url": "https://api.github.com/repos/ethereum/pm/labels/agenda",
+      "name": "agenda",
+      "color": "0052cc",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-03-29T15:44:28Z",
+  "updated_at": "2021-03-29T15:51:30Z",
+  "closed_at": "2021-03-29T15:51:30Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "  #### ACD 107 Meeting Info\r\n  * [March 5, 2021, 14:00 UTC](https://savvytime.com/converter/utc-to-germany-berlin-united-kingdom-london-ny-new-york-city-ca-san-francisco-china-shanghai-japan-tokyo-australia-sydney/mar-5-2021/2pm)\r\n  * Duration: 90 minutes\r\n  * Youtube Stream: https://youtu.be/xWfR-WxjmYg\r\n\r\n  #### Agenda\r\n  1. [Berlin](https://github.com/ethereum/eth1.0-specs/blob/master/network-upgrades/berlin.md) Updates\r\n     1. EIP-2315 [#263](https://github.com/ethereum/pm/issues/263)\r\n     1. Berlin timing [#248](https://github.com/ethereum/pm/issues/248#issuecomment-782106181)\r\n     3. Client releases that support Berlin ETA + Berlin announcement \r\n  1. Potential London EIPs \r\n     1. EIP-1559 - Fee Market Change [#254](https://github.com/ethereum/pm/issues/254)\r\n     1. EIP-3238 - Difficulty Bomb Delay [#256](https://github.com/ethereum/pm/issues/256)\r\n     1. EIP-3298 - Disabling Gas Refunds [#255](https://github.com/ethereum/pm/issues/255) vs. EIP-3300 - Phase Out Refunds [#258](https://github.com/ethereum/pm/issues/258) vs. EIP-3322 - Efficient Gas Storage [#266](https://github.com/ethereum/pm/issues/266)\r\n     1. [Not covered] EIP-3074 - Sponsored Transaction Precompile [#260](https://github.com/ethereum/pm/issues/260)\r\n     1. [Not covered] EIP-2327 - BEGINDATA [#262](https://github.com/ethereum/pm/issues/262)\r\n     1. [Not covered] Other CFI EIPs [#259](https://github.com/ethereum/pm/issues/259)",
+  "closed_by": {
+    "login": "timbeiko",
+    "id": 9390255,
+    "node_id": "MDQ6VXNlcjkzOTAyNTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9390255?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/timbeiko",
+    "html_url": "https://github.com/timbeiko",
+    "followers_url": "https://api.github.com/users/timbeiko/followers",
+    "following_url": "https://api.github.com/users/timbeiko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/timbeiko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/timbeiko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/timbeiko/subscriptions",
+    "organizations_url": "https://api.github.com/users/timbeiko/orgs",
+    "repos_url": "https://api.github.com/users/timbeiko/repos",
+    "events_url": "https://api.github.com/users/timbeiko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/timbeiko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/pm/issues/287/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/pm/issues/287/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

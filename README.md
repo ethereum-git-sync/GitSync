@@ -94,5 +94,5 @@ This job will run the main script ```init.sh```, which handles the rest of the s
 
 ```issue.sh``` - The script responsible for pulling issue data from GitHub for a given synced repo and archiving it. 
 
-### Repository List
+## Repository List
 ```repolist.txt``` contains the list of repos currently being synced. Repos can be submitted for syncing via a pull request containing an edit of this file.

@@ -1,0 +1,137 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1348",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1348/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1348/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1348/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/1348",
+  "id": 478280950,
+  "node_id": "MDU6SXNzdWU0NzgyODA5NTA=",
+  "number": 1348,
+  "title": "Prevent validators from exiting when there are open bit or chunk challenges or when not all custody keys were revealed",
+  "user": {
+    "login": "dankrad",
+    "id": 6130607,
+    "node_id": "MDQ6VXNlcjYxMzA2MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6130607?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dankrad",
+    "html_url": "https://github.com/dankrad",
+    "followers_url": "https://api.github.com/users/dankrad/followers",
+    "following_url": "https://api.github.com/users/dankrad/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dankrad/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dankrad/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dankrad/subscriptions",
+    "organizations_url": "https://api.github.com/users/dankrad/orgs",
+    "repos_url": "https://api.github.com/users/dankrad/repos",
+    "events_url": "https://api.github.com/users/dankrad/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dankrad/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1063043866,
+      "node_id": "MDU6TGFiZWwxMDYzMDQzODY2",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:bug",
+      "name": "general:bug",
+      "color": "DD1C1A",
+      "default": false,
+      "description": "Something isn't working"
+    },
+    {
+      "id": 1170173759,
+      "node_id": "MDU6TGFiZWwxMTcwMTczNzU5",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/phase1",
+      "name": "phase1",
+      "color": "F7C242",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2000873822,
+      "node_id": "MDU6TGFiZWwyMDAwODczODIy",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:custody",
+      "name": "scope:custody",
+      "color": "E98B2A",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2019-08-08T06:42:17Z",
+  "updated_at": "2021-07-05T15:07:03Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "We need to prevent validators from exiting voluntarily if any of these conditions are fulfilled:\r\n\r\n- Open chunk/bit challenges\r\n- Custody keys not revealed\r\n\r\nThis was originally implemented by the function below, but the function and its attachment point was lost over some refactoring of the exit queue:\r\n\r\n```python\r\ndef eligible(state: BeaconState, index: ValidatorIndex) -> bool:\r\n    validator = state.validator_registry[index]\r\n    # Cannot exit if there are still open chunk challenges\r\n    if len([record for record in state.custody_chunk_challenge_records if record.responder_index == index]) > 0:\r\n        return False\r\n    # Cannot exit if there are still open bit challenges\r\n    if len([record for record in state.custody_bit_challenge_records if record.responder_index == index]) > 0:\r\n        return False\r\n    # Cannot exit if you have not revealed all of your custody keys\r\n    elif validator.next_custody_reveal_period <= get_validators_custody_reveal_period(state, index, validator.exit_epoch):\r\n        return False\r\n    # Cannot exit if you already have\r\n    elif validator.withdrawable_epoch < FAR_FUTURE_EPOCH:\r\n        return False\r\n    # Return minimum time\r\n    else:\r\n        return current_epoch >= validator.exit_epoch + MIN_VALIDATOR_WITHDRAWAL_EPOCHS\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1348/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1348/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/519458433",
+    "html_url": "https://github.com/ethereum/consensus-specs/issues/1348#issuecomment-519458433",
+    "issue_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1348",
+    "id": 519458433,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDUxOTQ1ODQzMw==",
+    "user": {
+      "login": "hwwhww",
+      "id": 9263930,
+      "node_id": "MDQ6VXNlcjkyNjM5MzA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9263930?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hwwhww",
+      "html_url": "https://github.com/hwwhww",
+      "followers_url": "https://api.github.com/users/hwwhww/followers",
+      "following_url": "https://api.github.com/users/hwwhww/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hwwhww/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hwwhww/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hwwhww/subscriptions",
+      "organizations_url": "https://api.github.com/users/hwwhww/orgs",
+      "repos_url": "https://api.github.com/users/hwwhww/repos",
+      "events_url": "https://api.github.com/users/hwwhww/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hwwhww/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2019-08-08T10:14:32Z",
+    "updated_at": "2019-08-08T10:14:32Z",
+    "author_association": "MEMBER",
+    "body": "\r\n\r\n### Recap\r\n#### Case 1: the validator initiated exit at epoch N, and then got slashed at epoch N+k\r\n1. In `initiate_validator_exit`, `validator.withdrawable_epoch` is set to `Epoch(validator.exit_epoch + MIN_VALIDATOR_WITHDRAWABILITY_DELAY)`\r\n2. In `process_chunk_challenge` and `process_bit_challenge`, `responder.withdrawable_epoch` is set to `FAR_FUTURE_EPOCH`.\r\n\r\n#### Case 2: the validator got challenged at epoch N, and then initiated exit  at epoch N+k\r\n1. In `process_chunk_challenge` and `process_bit_challenge`, `responder.withdrawable_epoch` is set to `FAR_FUTURE_EPOCH`.\r\n2. In `initiate_validator_exit`, `validator.withdrawable_epoch` is set to `Epoch(validator.exit_epoch + MIN_VALIDATOR_WITHDRAWABILITY_DELAY)` <--- oh no!! 🤯\r\n\r\n### Proposing solutions\r\n\r\n#### Solution 1: update `after_process_final_updates` to delay `withdrawable_epoch`\r\n```python\r\n    for index, validator in enumerate(state.validators):\r\n        if index in validator_indices_in_records:\r\n            # Delay withdrawable epochs if challenge records are not empty\r\n            validator.withdrawable_epoch = Epoch(current_epoch + MIN_VALIDATOR_WITHDRAWABILITY_DELAY)\r\n        else:\r\n            # Reset withdrawable epochs if challenge records are empty\r\n            if validator.exit_epoch != FAR_FUTURE_EPOCH and validator.withdrawable_epoch == FAR_FUTURE_EPOCH:\r\n                validator.withdrawable_epoch = Epoch(validator.exit_epoch + MIN_VALIDATOR_WITHDRAWABILITY_DELAY)\r\n```\r\n\r\n#### Solution 2: Extract checks into `initiate_validator_withdrawable`:\r\nhttps://github.com/ethereum/eth2.0-specs/pull/1066 was the patch before #1035 was merged… and somehow I was convinced that #1035 already fixed everything. 🙈\r\n",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/519458433/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

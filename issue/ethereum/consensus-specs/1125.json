@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1125",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1125/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1125/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1125/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/1125",
+  "id": 448708020,
+  "node_id": "MDU6SXNzdWU0NDg3MDgwMjA=",
+  "number": 1125,
+  "title": "Attester slashings are done in an arbitrary order and do not commute",
+  "user": {
+    "login": "michaelsproul",
+    "id": 4452260,
+    "node_id": "MDQ6VXNlcjQ0NTIyNjA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4452260?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelsproul",
+    "html_url": "https://github.com/michaelsproul",
+    "followers_url": "https://api.github.com/users/michaelsproul/followers",
+    "following_url": "https://api.github.com/users/michaelsproul/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelsproul/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelsproul/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelsproul/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelsproul/orgs",
+    "repos_url": "https://api.github.com/users/michaelsproul/repos",
+    "events_url": "https://api.github.com/users/michaelsproul/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelsproul/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-05-27T07:32:21Z",
+  "updated_at": "2019-05-27T15:14:14Z",
+  "closed_at": "2019-05-27T15:14:14Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "While testing Lighthouse against the [new test vectors](https://github.com/ethereum/eth2.0-spec-tests) I encountered a discrepancy in the attester slashing tests which seems to arise from the spec iterating over the indices to slash in the arbitrary order used by Python's hashset implementation. The buggy line is:\r\n\r\n```python\r\nfor index in set(attesting_indices_1).intersection(attesting_indices_2):\r\n```\r\n\r\nin `process_attester_slashing`.\r\n\r\nIf slashings commuted the order could be arbitrary, but due to the `exit_epoch` being based upon the churn limit (and therefore the validators who have been previously slashed), you get different `exit_epoch`s and different final states for different slashing orders. One test that exemplifies this is `success_double` (mainnet) which slashes `[2, 143, 287, 353, 464, 475, 487, 496]`, which in Python set ordering is `{353, 2, 487, 143, 464, 496, 475, 287}`.\r\n\r\nI think the best solution is to specify that the indices should be sorted before iteration, but I'm open to other ideas.",
+  "closed_by": {
+    "login": "djrtwo",
+    "id": 1433595,
+    "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/djrtwo",
+    "html_url": "https://github.com/djrtwo",
+    "followers_url": "https://api.github.com/users/djrtwo/followers",
+    "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+    "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+    "repos_url": "https://api.github.com/users/djrtwo/repos",
+    "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1125/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1125/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

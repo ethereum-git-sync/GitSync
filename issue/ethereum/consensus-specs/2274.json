@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2274",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2274/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2274/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2274/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2274",
+  "id": 841103037,
+  "node_id": "MDU6SXNzdWU4NDExMDMwMzc=",
+  "number": 2274,
+  "title": "Duck typing in pyspecs (upgrade_to_* functions)",
+  "user": {
+    "login": "ericsson49",
+    "id": 10426192,
+    "node_id": "MDQ6VXNlcjEwNDI2MTky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10426192?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ericsson49",
+    "html_url": "https://github.com/ericsson49",
+    "followers_url": "https://api.github.com/users/ericsson49/followers",
+    "following_url": "https://api.github.com/users/ericsson49/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ericsson49/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ericsson49/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ericsson49/subscriptions",
+    "organizations_url": "https://api.github.com/users/ericsson49/orgs",
+    "repos_url": "https://api.github.com/users/ericsson49/repos",
+    "events_url": "https://api.github.com/users/ericsson49/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ericsson49/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-03-25T16:30:01Z",
+  "updated_at": "2021-07-05T14:58:24Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "There are cases in pyspecs (found during static analysis of them), which rely on [duck typing](https://en.wikipedia.org/wiki/Duck_typing).\r\n\r\nFor example, [upgrade_to_altair(phase0.BeaconState)](https://github.com/ethereum/eth2.0-specs/blob/dev/specs/altair/fork.md#upgrading-the-state`) in Altair or [upgrade_to_phase1(phase0.BeaconState)](https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase1/fork.md#upgrading-the-state) in Phase1.\r\nThe functions receive an instance of `phase0.BeaconState` and then pass it or its components to other functions, which expect instances of `altair` or `phase1` classes (e.g. `BeaconState`, `Version`, `Slot`, etc), e.g. `get_current_epoch(altair.BeaconState)`.\r\n\r\nThis works with the dynamic type checking of Python, but leads to static type checking problems, for which there are no straightforward way to fix. It actually may hide bugs (e.g. #1924), which can be revealed with static type checking, e.g. when a new field introduced in `altair` or `phase1`, which is absent in `phase0`.\r\n\r\nI'm not aware of real existing bugs introduced by mixing `altair/phase` classes with `phase0` ones, but there are examples which are close to. For example, the generated `altair/spec.py` file contains functions like `get_matching_source_attestations` or `process_participation_record_updates`, which either directly or indirectly accesses `current_epoch_attestations` field of `BeaconState`, which is present in the `phase0.BeaconState`, but absent in the `altair.BeaconState`.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2274/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2274/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

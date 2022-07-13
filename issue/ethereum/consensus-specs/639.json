@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/639",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/639/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/639/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/639/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/639",
+  "id": 411013620,
+  "node_id": "MDU6SXNzdWU0MTEwMTM2MjA=",
+  "number": 639,
+  "title": "get_crosslink_committees reads previous_seed during genesis_epoch",
+  "user": {
+    "login": "paulhauner",
+    "id": 6660660,
+    "node_id": "MDQ6VXNlcjY2NjA2NjA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6660660?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paulhauner",
+    "html_url": "https://github.com/paulhauner",
+    "followers_url": "https://api.github.com/users/paulhauner/followers",
+    "following_url": "https://api.github.com/users/paulhauner/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paulhauner/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paulhauner/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paulhauner/subscriptions",
+    "organizations_url": "https://api.github.com/users/paulhauner/orgs",
+    "repos_url": "https://api.github.com/users/paulhauner/repos",
+    "events_url": "https://api.github.com/users/paulhauner/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paulhauner/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1063043866,
+      "node_id": "MDU6TGFiZWwxMDYzMDQzODY2",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:bug",
+      "name": "general:bug",
+      "color": "DD1C1A",
+      "default": false,
+      "description": "Something isn't working"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-02-16T02:04:45Z",
+  "updated_at": "2019-02-22T19:51:10Z",
+  "closed_at": "2019-02-22T19:51:10Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "## Problem\r\n\r\n### Summary\r\n\r\nDuring `GENESIS_EPOCH`, `get_crosslink_committees_at_slot(..)` reads `state.previous_shuffling_epoch` when `epoch == current_epoch`.\r\n\r\n### Detail\r\n\r\n`get_crosslink_committees_at_slot(...)` first checks for `epoch == previous_epoch`, then checks for `epoch == current_epoch`.\r\n\r\nDuring the genesis epoch, `current_epoch == previous_epoch` and the function so uses `state.previous_shuffling_epoch == ZERO_HASH` for shuffling.\r\n\r\nDuring the next epoch (`GENESIS_EPOCH + 1`), when you wish to get the shuffling for `GENESIS_EPOCH`, you also trigger the `current_epoch == previous_epoch` path. However, `state.previous_shuffling_epoch != ZERO_HASH` anymore -- it is now the value that was set during `get_genesis_beacon_state(...)` (a.k.a. `current_shuffling_seed` during `GENESIS_EPOCH`).\r\n\r\n## Proposed Solutions\r\n\r\n1. (Preferred) Swap the `if` statements for so we first check for `epoch == current_epoch`, then `epoch == previous_epoch`.\r\n2. (Seems wrong) During `get_genesis_beacon_state(..)`  ensure `state.previous_shuffling_seed` is also set to `generate_seed(state, GENESIS_EPOCH)`.",
+  "closed_by": {
+    "login": "JustinDrake",
+    "id": 731743,
+    "node_id": "MDQ6VXNlcjczMTc0Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/731743?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JustinDrake",
+    "html_url": "https://github.com/JustinDrake",
+    "followers_url": "https://api.github.com/users/JustinDrake/followers",
+    "following_url": "https://api.github.com/users/JustinDrake/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JustinDrake/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JustinDrake/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JustinDrake/subscriptions",
+    "organizations_url": "https://api.github.com/users/JustinDrake/orgs",
+    "repos_url": "https://api.github.com/users/JustinDrake/repos",
+    "events_url": "https://api.github.com/users/JustinDrake/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JustinDrake/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/639/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/639/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2566",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2566/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2566/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2566/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2566",
+  "id": 977768739,
+  "node_id": "MDU6SXNzdWU5Nzc3Njg3Mzk=",
+  "number": 2566,
+  "title": "Issues with fork choice and non-genesis anchors",
+  "user": {
+    "login": "michaelsproul",
+    "id": 4452260,
+    "node_id": "MDQ6VXNlcjQ0NTIyNjA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4452260?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michaelsproul",
+    "html_url": "https://github.com/michaelsproul",
+    "followers_url": "https://api.github.com/users/michaelsproul/followers",
+    "following_url": "https://api.github.com/users/michaelsproul/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michaelsproul/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michaelsproul/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michaelsproul/subscriptions",
+    "organizations_url": "https://api.github.com/users/michaelsproul/orgs",
+    "repos_url": "https://api.github.com/users/michaelsproul/repos",
+    "events_url": "https://api.github.com/users/michaelsproul/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michaelsproul/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1324776822,
+      "node_id": "MDU6TGFiZWwxMzI0Nzc2ODIy",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:fork-choice",
+      "name": "scope:fork-choice",
+      "color": "81C7D4",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2499986208,
+      "node_id": "MDU6TGFiZWwyNDk5OTg2MjA4",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:weak-subjectivity",
+      "name": "scope:weak-subjectivity",
+      "color": "A5DEE4",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-08-24T06:54:22Z",
+  "updated_at": "2022-06-24T22:41:36Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "The fork choice specification allows an arbitrary block to be provided as the root of the block tree, which it refers to as an _anchor_. In practice, this is almost always the genesis block or some block that is finalized and has all of the blocks that finalize it as descendants in the tree. Issues arise when providing a single finalized block to [`get_forkchoice_store`](https://github.com/ethereum/consensus-specs/blob/v1.1.0-beta.2/specs/phase0/fork-choice.md#get_forkchoice_store), as one may want to do when performing a checkpoint sync.\r\n\r\n```python\r\ndef get_forkchoice_store(anchor_state: BeaconState, anchor_block: BeaconBlock) -> Store:\r\n    assert anchor_block.state_root == hash_tree_root(anchor_state)\r\n    anchor_root = hash_tree_root(anchor_block)\r\n    anchor_epoch = get_current_epoch(anchor_state)\r\n    justified_checkpoint = Checkpoint(epoch=anchor_epoch, root=anchor_root)\r\n    finalized_checkpoint = Checkpoint(epoch=anchor_epoch, root=anchor_root)\r\n    return Store(\r\n        time=uint64(anchor_state.genesis_time + SECONDS_PER_SLOT * anchor_state.slot),\r\n        genesis_time=anchor_state.genesis_time,\r\n        justified_checkpoint=justified_checkpoint,\r\n        finalized_checkpoint=finalized_checkpoint,\r\n        best_justified_checkpoint=justified_checkpoint,\r\n        blocks={anchor_root: copy(anchor_block)},\r\n        block_states={anchor_root: copy(anchor_state)},\r\n        checkpoint_states={justified_checkpoint: copy(anchor_state)},\r\n    )\r\n```\r\n\r\nThe fork choice store is initialized with synthetic justified and finalized checkpoints constructed from the anchor block's root and current epoch, notably **_not_** the justified and finalized checkpoints of the anchor state, i.e. `anchor_state.current_justified_checkpoint`, `anchor_state.finalized_checkpoint`.\r\n\r\nThe problem with using these synthetic checkpoints is that they are _ahead_ of the checkpoints of the anchor block's descendants, and they remain ahead until some descendant block finalizes the anchor block. For example, if we initialize the store with the block at slot 3200 from the start of epoch 100, we will set both checkpoints to `Checkpoint(epoch=100, root=...)`. When a block at slot 3201 is applied, it will (likely) have a justified checkpoint with epoch=99 and a finalized checkpoint with epoch=98. The checks in [`filter_block_tree`](https://github.com/ethereum/consensus-specs/blob/v1.1.0-beta.2/specs/phase0/fork-choice.md#filter_block_tree) then prevent this block from becoming the head, even though it a sense _it should_. It takes several epochs worth of blocks before a block arrives that is able to update the store's idea of the justified and finalized checkpoints, at which point the head will jump from slot 3200 to the finalization-updating descendant.\r\n\r\nIn Lighthouse I tried changing `get_forkchoice_store` to use the state's checkpoints, but this quickly uncovered a myriad of violated assumptions. Things like not being able to find the justified checkpoint in the store to start `get_head`, or being unable to check whether a newly added block is a descendant of the finalized block (because it is missing).\r\n\r\nI suspect the best solution (particularly temporarily) is to work around this issue and live with fork choice being a bit slow to update the head when initialized from an anchor. Usually during checkpoint sync new blocks will be applied quickly and the head will update.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2566/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 1
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2566/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1165996834",
+    "html_url": "https://github.com/ethereum/consensus-specs/issues/2566#issuecomment-1165996834",
+    "issue_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2566",
+    "id": 1165996834,
+    "node_id": "IC_kwDOCOoGbc5Ff7Mi",
+    "user": {
+      "login": "ajsutton",
+      "id": 72675,
+      "node_id": "MDQ6VXNlcjcyNjc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72675?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ajsutton",
+      "html_url": "https://github.com/ajsutton",
+      "followers_url": "https://api.github.com/users/ajsutton/followers",
+      "following_url": "https://api.github.com/users/ajsutton/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ajsutton/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ajsutton/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ajsutton/subscriptions",
+      "organizations_url": "https://api.github.com/users/ajsutton/orgs",
+      "repos_url": "https://api.github.com/users/ajsutton/repos",
+      "events_url": "https://api.github.com/users/ajsutton/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ajsutton/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-06-24T22:41:36Z",
+    "updated_at": "2022-06-24T22:41:36Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "For the record, in Teku we resolve this by considering all blocks viable for head so long as the current justified and finalized epochs are the initial epoch from the anchor.  That is in [filter_block_tree](https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/fork-choice.md#filter_block_tree) where the spec has:\r\n```\r\ncorrect_justified = (\r\n        store.justified_checkpoint.epoch == GENESIS_EPOCH\r\n        or head_state.current_justified_checkpoint == store.justified_checkpoint\r\n    )\r\n    correct_finalized = (\r\n        store.finalized_checkpoint.epoch == GENESIS_EPOCH\r\n        or head_state.finalized_checkpoint == store.finalized_checkpoint\r\n    )\r\n```\r\n\r\nwe effectively have:\r\n```\r\ncorrect_justified = (\r\n        store.justified_checkpoint.epoch == INITIAL_EPOCH\r\n        or head_state.current_justified_checkpoint == store.justified_checkpoint\r\n    )\r\n    correct_finalized = (\r\n        store.finalized_checkpoint.epoch == INITIAL_EPOCH\r\n        or head_state.finalized_checkpoint == store.finalized_checkpoint\r\n    )\r\n```\r\n\r\nwhere `INITIAL_EPOCH` is the epoch the anchor is from. Essentially the anchor state is the genesis, just not at slot 0 so we need to treat it as such here.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1165996834/reactions",
+      "total_count": 2,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 2,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

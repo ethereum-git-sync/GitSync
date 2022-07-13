@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2515",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2515/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2515/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2515/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2515",
+  "id": 943374995,
+  "node_id": "MDU6SXNzdWU5NDMzNzQ5OTU=",
+  "number": 2515,
+  "title": "Fork Choice Store Justified-Finalized Inconsistency",
+  "user": {
+    "login": "hwwhww",
+    "id": 9263930,
+    "node_id": "MDQ6VXNlcjkyNjM5MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9263930?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hwwhww",
+    "html_url": "https://github.com/hwwhww",
+    "followers_url": "https://api.github.com/users/hwwhww/followers",
+    "following_url": "https://api.github.com/users/hwwhww/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hwwhww/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hwwhww/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hwwhww/subscriptions",
+    "organizations_url": "https://api.github.com/users/hwwhww/orgs",
+    "repos_url": "https://api.github.com/users/hwwhww/repos",
+    "events_url": "https://api.github.com/users/hwwhww/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hwwhww/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1324776822,
+      "node_id": "MDU6TGFiZWwxMzI0Nzc2ODIy",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:fork-choice",
+      "name": "scope:fork-choice",
+      "color": "81C7D4",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2734068619,
+      "node_id": "MDU6TGFiZWwyNzM0MDY4NjE5",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:security",
+      "name": "scope:security",
+      "color": "9C18CB",
+      "default": false,
+      "description": "General protocol security-related items"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-13T13:25:23Z",
+  "updated_at": "2021-08-23T15:41:12Z",
+  "closed_at": "2021-08-23T15:41:12Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Thank @adiasg and @djrtwo for the discussion.\r\n\r\n### Issue\r\nSee **[full proof here](https://notes.ethereum.org/@hww/fork-choice-store-inconsistency)**.\r\n\r\nIn the edge cases, `store.justified_checkpoint` would be reverted by `store.best_justified_checkpoint` and it may be NOT a descendant of `store.finalized_checkpoint`.\r\n\r\nNote that this edge case would only happen with more than **1/3rd slashable validators**.\r\n\r\n### Proposed solutions\r\n#### Solution 1: Update `store.best_justified_checkpoint` in Case 1 and Case 2 to ensure that  `store.best_justified_checkpoint` is always on the `store.finalized_checkpoint` chain \r\n\r\nThat is:\r\n```python\r\n            # Update justified if new justified is later than store justified\r\n            if state.current_justified_checkpoint.epoch > store.justified_checkpoint.epoch:\r\n                # ------------------------\r\n                # >>>>>>>> CASE 1 <<<<<<<<\r\n                # ------------------------\r\n                store.justified_checkpoint = state.current_justified_checkpoint\r\n                store.best_justified_checkpoint = store.justified_checkpoint\r\n                return\r\n```\r\n\r\n```python\r\n            # Update justified if store justified is not in chain with finalized checkpoint\r\n            finalized_slot = compute_start_slot_at_epoch(store.finalized_checkpoint.epoch)\r\n            ancestor_at_finalized_slot = get_ancestor(store, store.justified_checkpoint.root, finalized_slot)\r\n            if ancestor_at_finalized_slot != store.finalized_checkpoint.root:\r\n                # ------------------------\r\n                # >>>>>>>> CASE 2 <<<<<<<<\r\n                # ------------------------\r\n                store.justified_checkpoint = state.current_justified_checkpoint\r\n                store.best_justified_checkpoint = store.justified_checkpoint\r\n                return\r\n```\r\n\r\n#### Solution 2: add checks in the `on_tick` function to ensure that `store.justified_checkpoint` will be on the `store.finalized_checkpoint` chain \r\n\r\n```python\r\ndef on_tick(store: Store, time: uint64) -> None:\r\n    ...\r\n    # Update store.justified_checkpoint if a better checkpoint is known\r\n    if store.best_justified_checkpoint.epoch > store.justified_checkpoint.epoch:\r\n        # Check if store.best_justified_checkpoint is on the store.finalized_checkpoint chain\r\n        finalized_slot = compute_start_slot_at_epoch(store.finalized_checkpoint.epoch)    \r\n        ancestor_at_finalized_slot = get_ancestor(store, store.best_justified_checkpoint.root, finalized_slot)\r\n        if ancestor_at_finalized_slot == store.finalized_checkpoint.root:\r\n            store.justified_checkpoint = store.best_justified_checkpoint\r\n```",
+  "closed_by": {
+    "login": "hwwhww",
+    "id": 9263930,
+    "node_id": "MDQ6VXNlcjkyNjM5MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9263930?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hwwhww",
+    "html_url": "https://github.com/hwwhww",
+    "followers_url": "https://api.github.com/users/hwwhww/followers",
+    "following_url": "https://api.github.com/users/hwwhww/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hwwhww/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hwwhww/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hwwhww/subscriptions",
+    "organizations_url": "https://api.github.com/users/hwwhww/orgs",
+    "repos_url": "https://api.github.com/users/hwwhww/repos",
+    "events_url": "https://api.github.com/users/hwwhww/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hwwhww/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2515/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2515/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

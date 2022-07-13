@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2546",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2546/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2546/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2546/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2546",
+  "id": 965264327,
+  "node_id": "MDU6SXNzdWU5NjUyNjQzMjc=",
+  "number": 2546,
+  "title": "Sharding spec tracker",
+  "user": {
+    "login": "protolambda",
+    "id": 19571989,
+    "node_id": "MDQ6VXNlcjE5NTcxOTg5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19571989?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/protolambda",
+    "html_url": "https://github.com/protolambda",
+    "followers_url": "https://api.github.com/users/protolambda/followers",
+    "following_url": "https://api.github.com/users/protolambda/following{/other_user}",
+    "gists_url": "https://api.github.com/users/protolambda/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/protolambda/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/protolambda/subscriptions",
+    "organizations_url": "https://api.github.com/users/protolambda/orgs",
+    "repos_url": "https://api.github.com/users/protolambda/repos",
+    "events_url": "https://api.github.com/users/protolambda/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/protolambda/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2832120852,
+      "node_id": "MDU6TGFiZWwyODMyMTIwODUy",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:sharding",
+      "name": "scope:sharding",
+      "color": "6BC5A1",
+      "default": false,
+      "description": "Sharding"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-08-10T19:00:41Z",
+  "updated_at": "2021-08-10T19:00:41Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The Sharding spec is still **experimental**. This issue tracks the development progress.\r\n\r\nTODO:\r\n- [ ] reward header includer (beacon proposer) when header is confirmed\r\n  - add to epoch processing: for each slot in previous epoch, check if union selector equals `SHARD_WORK_CONFIRMED`, and reward the includer_index in the `AttestedDataCommitment`\r\n- [ ] reward less to shard-proposer if header is not confirmed (suggestion by Danny)\r\n  - Currently we reward the priority fee immediately. Instead, we could burn it along with the base-fee, and reward to the shard-proposer upon epoch-processing of previous epoch (along with other TODO above)\r\n- [ ] Clarify attesters get rewarded for attesting the confirmed shard-data timely\r\n  - \"timely\": confirmation was part of the attestation-processing, not part of the very last moment during rotation of previous-epoch data (`process_pending_shard_confirmations`)\r\n  - the Altair `WEIGHT_DENOMINATOR` needs adjustment, but in a compatible way\r\n  - extending `PARTICIPATION_FLAG_WEIGHTS` is too silent, this changes behavior of Altair (in compatible way). Also, we don't override constants in any fork, so modifying it is a bad pattern.\r\n- [ ] Fix attack vector from builders to build multiple blobs in parallel, without sufficient balance for priority fees. Possible solutions:\r\n  - 1 builder balance per shard (problematic with transactions, liquidity, state size)\r\n  - Enforce builder balance buffer to cover N shards (does not cover super high priority fees though)\r\n  - slashable builders, if building on multiple shards at the same time? (introduces builder entry/exit queue problem)\r\n- [ ] replacement data-transactions, i.e. speed up by paying a higher fee (affects p2p propagation conditions)\r\n- [ ] ensure multiple transactions for sequential slots, while unconfirmed, can be paid by the builder. I.e. the parallel payment problem also applies to a single shard while the txs are unconfirmed.\r\n\r\nOther questions:\r\n- Builder entry/exit options. Just baked into genesis state for devnets for now. But some ideas:\r\n  - re-use the existing deposit mechanism, with special withdrawal credential, to indicate it's a builder deposit instead of validator deposit. And similarly for withdrawals.\r\n  - introduce new transaction type for beacon-proposers to create builders with their balance? There could be an eth1 contract that buffers funds, and tops up validators with deposits if supplied with a proof that the validator created a builder with certain credentials.\r\n  - wait for EVM beacon-chain integration to mature, make receipts accessible to the beacon-chain block processing, and implement builder-deposits/withdrawals without new SSZ transaction type? (drawback: one-directional synchrony between execution and consensus layer during sync)",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2546/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2546/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,94 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1903",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1903/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1903/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1903/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/1903",
+  "id": 640004124,
+  "node_id": "MDU6SXNzdWU2NDAwMDQxMjQ=",
+  "number": 1903,
+  "title": "Phase 1 Validator guide todo",
+  "user": {
+    "login": "djrtwo",
+    "id": 1433595,
+    "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/djrtwo",
+    "html_url": "https://github.com/djrtwo",
+    "followers_url": "https://api.github.com/users/djrtwo/followers",
+    "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+    "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+    "repos_url": "https://api.github.com/users/djrtwo/repos",
+    "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1170173759,
+      "node_id": "MDU6TGFiZWwxMTcwMTczNzU5",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/phase1",
+      "name": "phase1",
+      "color": "F7C242",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1234124284,
+      "node_id": "MDU6TGFiZWwxMjM0MTI0Mjg0",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:v-guide",
+      "name": "scope:v-guide",
+      "color": "113285",
+      "default": false,
+      "description": "Validator guide"
+    },
+    {
+      "id": 2001926658,
+      "node_id": "MDU6TGFiZWwyMDAxOTI2NjU4",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:checklist",
+      "name": "general:checklist",
+      "color": "000000",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2020-06-16T22:10:20Z",
+  "updated_at": "2021-07-05T15:04:22Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Tracking the phase 1 validator items\r\n\r\n- [x] Block proposal\r\n- [ ] Attesting\r\n    - [x] Join shard block subnet in addition to attestation subnet\r\n    - [ ] On-time attestation\r\n        - [x] Attestation data\r\n        - [ ] Custody 0.01 bit to decide if to sign or note\r\n        - [x] Compute signature\r\n        - [x] aggregation\r\n    - [ ] Late attestation (stub `shard_transition`, when to broadcast, when to aggregate)\r\n    - [ ] [Think about] Split `shard_transition` from `attestation_data` in p2p for deduplication gains (OR split `attestation_data` from `attestation`...)\r\n- [ ] Custody key reveal\r\n- [ ] Custody challenge response\r\n- [x] Light client committee\r\n    - [x] clean up beacon chain spec and add validator duties\r\n- [ ] Shard duties\r\n    - [ ] Persistent committee subnets and lookahead (replacement for random subnets)\r\n    - [ ] Shard block creation and broadcast\r\n- [ ] Additional slashing avoidance",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1903/reactions",
+    "total_count": 2,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 2,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1903/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

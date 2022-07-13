@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2155",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2155/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2155/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2155/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2155",
+  "id": 769743056,
+  "node_id": "MDU6SXNzdWU3Njk3NDMwNTY=",
+  "number": 2155,
+  "title": "Proposal: Same gossipsub ids for duplicate attestation aggregates",
+  "user": {
+    "login": "blacktemplar",
+    "id": 3133334,
+    "node_id": "MDQ6VXNlcjMxMzMzMzQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3133334?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/blacktemplar",
+    "html_url": "https://github.com/blacktemplar",
+    "followers_url": "https://api.github.com/users/blacktemplar/followers",
+    "following_url": "https://api.github.com/users/blacktemplar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/blacktemplar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/blacktemplar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/blacktemplar/subscriptions",
+    "organizations_url": "https://api.github.com/users/blacktemplar/orgs",
+    "repos_url": "https://api.github.com/users/blacktemplar/repos",
+    "events_url": "https://api.github.com/users/blacktemplar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/blacktemplar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-12-17T09:14:59Z",
+  "updated_at": "2020-12-17T09:52:00Z",
+  "closed_at": "2020-12-17T09:52:00Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "Currently there are around 16 aggregators per subnet and in a healthy network some of them will produce exactly the same aggregate. Based on the third rule in https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/p2p-interface.md#beacon_aggregate_and_proof we ignore such duplicate aggregates on the gossipsub level. I evaluated those ignores on my mainnet node and found out that over `50%` of the messages in the `beacon_aggregate_and_proof` topic get ignored because of that rule. This means that half of the traffic in this topic (which is the main gossipsub traffic if we are only subscribed to a few subnets) is useless. \r\n\r\nFurthermore, one could argue that ignored messages should be the exception and not the rule (I am currently working on a gossipsub scoring extension that basically evaluates mesh peers by tracking if they send us some messages that we received from other peers, which gets clearly heavily skewed if peers ignore half of the messages and their view of the current relevant messages can be completely different to the view of another peer).\r\n\r\nTo reduce traffic and to make ignores less frequent I propose changing the message id function only for the `beacon_aggregate_and_proof` topic. We could use as message id for this topic the first twenty bytes of the hash of the decompressed part corresponding to the `aggregate: Attestation` property in the `AggregateAndProof` object. This would have the effect that the third rule I mentioned above wouldn't be needed anymore since exactly those messages would be considered duplicates by gossipsub directly because they have now the same id. Therefore, we would not send around all those \"different\" messages of the same aggregates and then ignore them on receiving.\r\n\r\nWe currently have already the situation that different compressed messages may have the same id, so it wouldn't be a problem from this perspective to also have different uncompressed messages that may have the same id.\r\n\r\nEdit: Thinking more about it and found out that my proposal is not working since an invalid message (invalid `aggregator_index` or invalid `selection_proof`) may have the same id as a valid message which is a problem for gossipsub (for example if we receive the invalid message before the valid, the valid message will never be processed because it is a duplicate)",
+  "closed_by": {
+    "login": "blacktemplar",
+    "id": 3133334,
+    "node_id": "MDQ6VXNlcjMxMzMzMzQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3133334?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/blacktemplar",
+    "html_url": "https://github.com/blacktemplar",
+    "followers_url": "https://api.github.com/users/blacktemplar/followers",
+    "following_url": "https://api.github.com/users/blacktemplar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/blacktemplar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/blacktemplar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/blacktemplar/subscriptions",
+    "organizations_url": "https://api.github.com/users/blacktemplar/orgs",
+    "repos_url": "https://api.github.com/users/blacktemplar/repos",
+    "events_url": "https://api.github.com/users/blacktemplar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/blacktemplar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2155/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2155/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

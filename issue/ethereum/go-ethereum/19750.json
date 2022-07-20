@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19750",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19750/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19750/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19750/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/19750",
+  "id": 459170772,
+  "node_id": "MDU6SXNzdWU0NTkxNzA3NzI=",
+  "number": 19750,
+  "title": "abi pack amount overflow",
+  "user": {
+    "login": "Lobesien",
+    "id": 39983274,
+    "node_id": "MDQ6VXNlcjM5OTgzMjc0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/39983274?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Lobesien",
+    "html_url": "https://github.com/Lobesien",
+    "followers_url": "https://api.github.com/users/Lobesien/followers",
+    "following_url": "https://api.github.com/users/Lobesien/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Lobesien/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Lobesien/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Lobesien/subscriptions",
+    "organizations_url": "https://api.github.com/users/Lobesien/orgs",
+    "repos_url": "https://api.github.com/users/Lobesien/repos",
+    "events_url": "https://api.github.com/users/Lobesien/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Lobesien/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-06-21T12:22:41Z",
+  "updated_at": "2019-06-24T03:33:41Z",
+  "closed_at": "2019-06-24T03:33:41Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\nI use go-ethereum to build transaction offline.My contract method need pack amount.but amount mul 10^18 overflow int64，pack a wrong amount to abi.\r\n`bytesData, err := abi.Pack(\"test\", common.HexToAddress(addr), amount)`\r\nHow could I do?\r\n\r\n#### System information\r\n\r\nNo need\r\n\r\n#### Expected behaviour\r\npack amount is 21.123 * 10^18\r\n\r\n#### Actual behaviour\r\npack amount is 2676711926290448384\r\n",
+  "closed_by": {
+    "login": "Lobesien",
+    "id": 39983274,
+    "node_id": "MDQ6VXNlcjM5OTgzMjc0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/39983274?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Lobesien",
+    "html_url": "https://github.com/Lobesien",
+    "followers_url": "https://api.github.com/users/Lobesien/followers",
+    "following_url": "https://api.github.com/users/Lobesien/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Lobesien/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Lobesien/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Lobesien/subscriptions",
+    "organizations_url": "https://api.github.com/users/Lobesien/orgs",
+    "repos_url": "https://api.github.com/users/Lobesien/repos",
+    "events_url": "https://api.github.com/users/Lobesien/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Lobesien/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19750/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19750/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

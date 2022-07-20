@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20751",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20751/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20751/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20751/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/20751",
+  "id": 578155044,
+  "node_id": "MDU6SXNzdWU1NzgxNTUwNDQ=",
+  "number": 20751,
+  "title": "Issue with running a contract properly on 1.9.11",
+  "user": {
+    "login": "alexy97",
+    "id": 33332028,
+    "node_id": "MDQ6VXNlcjMzMzMyMDI4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/33332028?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexy97",
+    "html_url": "https://github.com/alexy97",
+    "followers_url": "https://api.github.com/users/alexy97/followers",
+    "following_url": "https://api.github.com/users/alexy97/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexy97/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexy97/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexy97/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexy97/orgs",
+    "repos_url": "https://api.github.com/users/alexy97/repos",
+    "events_url": "https://api.github.com/users/alexy97/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexy97/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-03-09T19:58:10Z",
+  "updated_at": "2020-03-10T16:54:05Z",
+  "closed_at": "2020-03-10T16:54:05Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\n\r\nI am currently trying to create a throughput test script on a simple ERC-20 token. I managed to compile& deploy the contract, as well as test it using scripts with truffle tests. However, since I wanted to perform the test with more miner nodes,  I decided to move my code and setup to a ubuntu docker container so that I can run it on a faster server. I managed to deploy it on the local chain in my container but when I run simple transfer transactions, they seem to get stuck and consume the full block gas. Also I am unable to get results on read operations such as calling totalSupply as it returns Returned values aren't valid, did it run Out of Gas?. The code is literally the same in both situations and it is standard ERC-20 token code. From my research, I have been told that the issue might be due to different EVMs  being incompatible. Should I somehow downgrade my version to 1.9.9 so that it matches the one on my other setup or the issue can be fixed anyway?\r\nHere is my token code : https://pastebin.com/4uDnjZC0 \r\n\r\n\r\n#### System information\r\n\r\nGeth version:  Version: 1.9.11-stable\r\nGit Commit: 6a62fe399b68ab9e3625ef5e7900394f389adc3a\r\nArchitecture: amd64\r\nProtocol Versions: [65 64 63]\r\nGo Version: go1.13.8\r\nOperating System: linux\r\n\r\nOS & Version:  Linux Docker container\r\n\r\n\r\n\r\n\r\n#### Steps to reproduce the behaviour\r\nDeploy the contract on geth 1.9.11 in a ubuntu docker container using truffle migrate\r\nOpen truffle console and try to perform any method calls on the contract\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n",
+  "closed_by": {
+    "login": "alexy97",
+    "id": 33332028,
+    "node_id": "MDQ6VXNlcjMzMzMyMDI4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/33332028?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexy97",
+    "html_url": "https://github.com/alexy97",
+    "followers_url": "https://api.github.com/users/alexy97/followers",
+    "following_url": "https://api.github.com/users/alexy97/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexy97/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexy97/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexy97/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexy97/orgs",
+    "repos_url": "https://api.github.com/users/alexy97/repos",
+    "events_url": "https://api.github.com/users/alexy97/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexy97/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20751/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20751/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

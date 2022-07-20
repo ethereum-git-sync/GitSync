@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21863",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21863/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21863/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21863/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21863",
+  "id": 745278098,
+  "node_id": "MDU6SXNzdWU3NDUyNzgwOTg=",
+  "number": 21863,
+  "title": "panic: runtime error: index out of range [0] with length 0",
+  "user": {
+    "login": "ligi",
+    "id": 111600,
+    "node_id": "MDQ6VXNlcjExMTYwMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ligi",
+    "html_url": "https://github.com/ligi",
+    "followers_url": "https://api.github.com/users/ligi/followers",
+    "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ligi/orgs",
+    "repos_url": "https://api.github.com/users/ligi/repos",
+    "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ligi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-11-18T02:42:11Z",
+  "updated_at": "2020-11-18T20:50:12Z",
+  "closed_at": "2020-11-18T20:50:12Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "full log:\r\n\r\n```\r\nWARN [11-18|02:17:08.504] The flag --pprofaddr is deprecated and will be removed in the future, please use --pprof.addr \r\nINFO [11-18|02:17:08.504] Starting pprof server                    addr=http://0.0.0.0:6060/debug/pprof\r\nINFO [11-18|02:17:08.504] Starting Geth on Ethereum mainnet... \r\nWARN [11-18|02:17:08.504] Sanitizing cache to Go's GC limits       provided=16384 updated=10721\r\nINFO [11-18|02:17:08.504] Enabling metrics collection \r\nINFO [11-18|02:17:08.508] Enabling metrics export to InfluxDB \r\nINFO [11-18|02:17:08.512] Maximum peer count                       ETH=5 LES=0 total=5\r\nWARN [11-18|02:17:08.512] The flag --rpccorsdomain is deprecated and will be removed in the future, please use --http.corsdomain \r\nWARN [11-18|02:17:08.512] The flag --rpcapi is deprecated and will be removed in the future, please use --http.api \r\nINFO [11-18|02:17:08.512] Smartcard socket not found, disabling    err=\"stat /run/pcscd/pcscd.comm: no such file or directory\"\r\nINFO [11-18|02:17:08.518] Set global gas cap                       cap=25000000\r\nINFO [11-18|02:17:08.519] Allocated trie memory caches             clean=7.33GiB dirty=0.00B\r\nINFO [11-18|02:17:08.519] Allocated cache and file handles         database=/home/archive/geth_data/geth/chaindata cache=5.23GiB handles=524288\r\nINFO [11-18|02:18:22.984] Opened ancient database                  database=/home/archive/geth_data/geth/chaindata/ancient\r\nINFO [11-18|02:18:27.921] Initialised chain configuration          config=\"{ChainID: 1 Homestead: 1150000 DAO: 1920000 DAOSupport: true EIP150: 2463000 EIP155: 2675000 EIP158: 2675000 Byzantium: 4370000 Constantinople: 7280000 Petersburg: 7280000 Istanbul: 9069000, Muir Glacier: 9200000, YOLO v2: <nil>, Engine: ethash}\"\r\nINFO [11-18|02:18:27.921] Disk storage enabled for ethash caches   dir=/home/archive/geth_data/geth/ethash count=3\r\nINFO [11-18|02:18:27.921] Disk storage enabled for ethash DAGs     dir=/home/archive/.ethash               count=2\r\nINFO [11-18|02:18:30.610] Initialising Ethereum protocol           versions=\"[65 64 63]\" network=1 dbversion=8\r\nINFO [11-18|02:19:31.608] Loaded most recent local header          number=11275361 hash=\"f09700…c3869b\" td=18767999359520045058012 age=14h9m33s\r\nINFO [11-18|02:19:31.609] Loaded most recent local full block      number=11275361 hash=\"f09700…c3869b\" td=18767999359520045058012 age=14h9m33s\r\nINFO [11-18|02:19:31.609] Loaded most recent local fast block      number=11275361 hash=\"f09700…c3869b\" td=18767999359520045058012 age=14h9m33s\r\nINFO [11-18|02:19:34.924] Loaded local transaction journal         transactions=0 dropped=0\r\nINFO [11-18|02:19:34.925] Regenerated local transaction journal    transactions=0 accounts=0\r\nINFO [11-18|02:19:35.752] Starting peer-to-peer node               instance=Geth/v1.9.24-stable-cc05b050/linux-amd64/go1.15.5\r\nINFO [11-18|02:19:35.955] New local node record                    seq=44 id=4ca81c2b43e24e8a ip=127.0.0.1 udp=30303 tcp=30303\r\nINFO [11-18|02:19:35.959] Started P2P networking                   self=enode://a722b2fe56cfdadaf67ca5cb6ddb0ac66bc743d04409023577a143dd1a505cd1457e62b7636afcac8c790aade8c29cc114965d0d4ee67e5440f41f84c4719662@127.0.0.1:30303\r\nINFO [11-18|02:19:35.960] IPC endpoint opened                      url=/home/archive/geth_data/geth.ipc\r\nINFO [11-18|02:19:35.961] HTTP server started                      endpoint=10.10.42.123:8545 cors=* vhosts=*\r\nINFO [11-18|02:19:39.164] New local node record                    seq=45 id=4ca81c2b43e24e8a ip=178.19.221.38 udp=30303 tcp=30303\r\nINFO [11-18|02:19:39.823] Mapped network port                      proto=tcp extport=30303 intport=30303 interface=\"UPNP IGDv1-IP1\"\r\nINFO [11-18|02:19:41.180] Mapped network port                      proto=udp extport=30303 intport=30303 interface=\"UPNP IGDv1-IP1\"\r\nINFO [11-18|02:19:45.979] Looking for peers                        peercount=4 tried=13 static=0\r\nINFO [11-18|02:19:46.795] Block synchronisation started \r\nINFO [11-18|02:19:55.980] Looking for peers                        peercount=4 tried=23 static=0\r\nINFO [11-18|02:20:10.959] Looking for peers                        peercount=4 tried=22 static=0\r\nINFO [11-18|02:20:26.536] Looking for peers                        peercount=4 tried=11 static=0\r\nINFO [11-18|02:20:37.046] Looking for peers                        peercount=4 tried=7  static=0\r\nINFO [11-18|02:20:47.243] Looking for peers                        peercount=4 tried=12 static=0\r\nINFO [11-18|02:20:57.593] Downloader queue stats                   receiptTasks=0 blockTasks=3009 itemSize=18.54KiB throttle=3535\r\nINFO [11-18|02:20:59.256] Looking for peers                        peercount=4 tried=2  static=0\r\nWARN [11-18|02:21:21.583] Checkpoint challenge timed out, dropping id=e92b653b1053099d conn=dyndial addr=47.94.111.100:30303             type=Parity-Ethereum/v2.5...\r\nINFO [11-18|02:21:22.244] Looking for peers                        peercount=4 tried=6  static=0\r\nWARN [11-18|02:21:33.982] Served eth_getTransactionReceipt         conn=10.10.42.2:36442 reqid=9958 t=\"64.036µs\" err=\"invalid argument 0: hex string has length 40, want 64 for common.Hash\"\r\nINFO [11-18|02:21:34.256] Looking for peers                        peercount=4 tried=25 static=0\r\nWARN [11-18|02:21:38.628] Served eth_getTransactionReceipt         conn=10.10.42.2:36442 reqid=10009 t=\"86.035µs\" err=\"invalid argument 0: hex string has length 40, want 64 for common.Hash\"\r\nINFO [11-18|02:21:44.319] Looking for peers                        peercount=4 tried=12 static=0\r\nWARN [11-18|02:22:08.011] Served eth_getTransactionReceipt         conn=10.10.42.2:40288 reqid=35632 t=\"104.033µs\" err=\"invalid argument 0: json: cannot unmarshal hex string of odd length into Go value of type common.Hash\"\r\nWARN [11-18|02:22:36.998] Served eth_getTransactionReceipt         conn=10.10.42.2:44044 reqid=10419 t=\"74.155µs\"  err=\"invalid argument 0: hex string has length 40, want 64 for common.Hash\"\r\nWARN [11-18|02:31:05.094] Served debug_traceTransaction            conn=10.10.42.2:52444 reqid=78106 t=1.015367942s err=\"transaction 2af2e4d514b74392b6b032a71fd16b443192c449bd760a07714a5dc14fa937b9 not found\"\r\nWARN [11-18|02:31:16.872] Served debug_traceTransaction            conn=10.10.42.2:53452 reqid=78455 t=852.634222ms err=\"transaction 6ce67b8b25a9b1f8349b37c0d32c426432c935c8bed112680153ac898563c220 not found\"\r\nWARN [11-18|02:31:20.532] Served debug_traceTransaction            conn=10.10.42.2:53452 reqid=78522 t=944.768697ms err=\"transaction 7e835262615d653619dd3239a3da8f324bc4216d59c6819e71e4da76442e68bb not found\"\r\npanic: runtime error: index out of range [0] with length 0\r\n\r\ngoroutine 10 [running]:\r\ngithub.com/ethereum/go-ethereum/metrics.ReadCPUStats(0xc000272520)\r\n\tgithub.com/ethereum/go-ethereum/metrics/cpu_enabled.go:35 +0x1a6\r\ngithub.com/ethereum/go-ethereum/metrics.CollectProcessMetrics(0xb2d05e00)\r\n\tgithub.com/ethereum/go-ethereum/metrics/metrics.go:101 +0x9d2\r\ncreated by main.prepare\r\n\tgithub.com/ethereum/go-ethereum/cmd/geth/main.go:342 +0x398\r\n\r\n```\r\n\r\nFWIW: happened after the archive node db repair - so *might* be due to this - but as the stacktrace does not really sound related dropping this here",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21863/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21863/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

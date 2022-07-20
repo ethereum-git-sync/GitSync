@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15212",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15212/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15212/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15212/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/15212",
+  "id": 261049054,
+  "node_id": "MDU6SXNzdWUyNjEwNDkwNTQ=",
+  "number": 15212,
+  "title": "abigen and the geth library can't work together with bytes32[] <=> [][32]byte",
+  "user": {
+    "login": "coreyog",
+    "id": 2836207,
+    "node_id": "MDQ6VXNlcjI4MzYyMDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2836207?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/coreyog",
+    "html_url": "https://github.com/coreyog",
+    "followers_url": "https://api.github.com/users/coreyog/followers",
+    "following_url": "https://api.github.com/users/coreyog/following{/other_user}",
+    "gists_url": "https://api.github.com/users/coreyog/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/coreyog/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/coreyog/subscriptions",
+    "organizations_url": "https://api.github.com/users/coreyog/orgs",
+    "repos_url": "https://api.github.com/users/coreyog/repos",
+    "events_url": "https://api.github.com/users/coreyog/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/coreyog/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-09-27T17:02:01Z",
+  "updated_at": "2018-12-22T10:26:50Z",
+  "closed_at": "2018-12-22T10:26:50Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: 1.7.0-stable\r\nOS & Version: Linux Mint 18.2 x64\r\nCommit hash : N/A\r\nGo Version: go version go1.9 linux/amd64\r\n\r\n#### Expected behaviour\r\n\r\nWhen I run the latest version of abigen on a contract I expect the output go code to work with the latest version of go-ethereum. My contract uses `bytes32` as the type for IDs of objects. In one struct I have a list of IDs and use `bytes32[]` to hold that list. Abigen properly outputs it to the go type `[][32]byte`. I expect that when I use the generated code to call my contract, that the proper types are returned from the call without error.\r\n\r\n#### Actual behaviour\r\n\r\nWhen I call in to the generated code, I receive an error stating `abi: cannot unmarshal [][]uint8 in to [][32]uint8`. If I modify the generated go code so that it's just `[][]byte` instead of `[][32]byte` then the function call works as expected.\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nContract Test.sol:\r\n```\r\npragma solidity ^0.4.15;\r\n\r\ncontract Test {\r\n  function testDynamicFixedBytes() constant returns (bytes32[]) {\r\n    var array = new bytes32[](2);\r\n    array[0] = \"0x1234567890\";\r\n    array[1] = \"0x0987654321\";\r\n    return array;\r\n  }\r\n}\r\n```\r\n\r\nRun `abigen -pkg main -sol Test.sol -out Test.go`\r\n\r\nGo:\r\n```\r\npackage main\r\n\r\nimport (\r\n\t\"context\"\r\n\t\"encoding/hex\"\r\n\t\"fmt\"\r\n\r\n\t\"github.com/ethereum/go-ethereum/accounts/abi/bind\"\r\n\t\"github.com/ethereum/go-ethereum/common\"\r\n\t\"github.com/ethereum/go-ethereum/ethclient\"\r\n)\r\n\r\nfunc main() {\r\n\tcontract := \"b1815f478391d8fb7a22af0c9a1a5523a16e2429\"\r\n\tethURL := \"/home/corey/eth/data/geth.ipc\"\r\n\tfromAddress := \"fcf5e6a6ce24cdeef66697a41ba75b039c17d2cb\"\r\n\tcontractAddress := common.HexToAddress(contract)\r\n\tclient, err := ethclient.Dial(ethURL)\r\n\tif err != nil {\r\n\t\tpanic(err)\r\n\t}\r\n\ttest, err := NewTest(contractAddress, client)\r\n\tif err != nil {\r\n\t\tpanic(err)\r\n\t}\r\n\r\n\topts := bind.CallOpts{\r\n\t\tContext: context.Background(),\r\n\t\tFrom:    common.HexToAddress(fromAddress),\r\n\t}\r\n\tarray, err := test.TestDynamicFixedBytes(&opts)\r\n\tif err != nil {\r\n\t\tpanic(err)\r\n\t}\r\n\tfor _, v := range array {\r\n\t\tfmt.Println(hex.EncodeToString(v[:]))\r\n\t}\r\n}\r\n```\r\n\r\n#### Backtrace\r\n\r\n````\r\npanic: abi: cannot unmarshal [][]uint8 in to [][32]uint8\r\n\r\ngoroutine 1 [running]:\r\nmain.main()\r\n        /home/corey/src/goprojects/src/playground/main.go:33 +0x32d\r\n````\r\n\r\nThe line that's generating the error is in go-ethereum/accounts/abi/reflect.go at line 90.",
+  "closed_by": {
+    "login": "gballet",
+    "id": 3272758,
+    "node_id": "MDQ6VXNlcjMyNzI3NTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3272758?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gballet",
+    "html_url": "https://github.com/gballet",
+    "followers_url": "https://api.github.com/users/gballet/followers",
+    "following_url": "https://api.github.com/users/gballet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gballet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gballet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gballet/subscriptions",
+    "organizations_url": "https://api.github.com/users/gballet/orgs",
+    "repos_url": "https://api.github.com/users/gballet/repos",
+    "events_url": "https://api.github.com/users/gballet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gballet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15212/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15212/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

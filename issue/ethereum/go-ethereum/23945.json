@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23945",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23945/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23945/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23945/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/23945",
+  "id": 1059494439,
+  "node_id": "I_kwDOAOvK984_Jpon",
+  "number": 23945,
+  "title": "`db inspect` doesn't accept ancient flag",
+  "user": {
+    "login": "lightclient",
+    "id": 14004106,
+    "node_id": "MDQ6VXNlcjE0MDA0MTA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/14004106?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lightclient",
+    "html_url": "https://github.com/lightclient",
+    "followers_url": "https://api.github.com/users/lightclient/followers",
+    "following_url": "https://api.github.com/users/lightclient/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lightclient/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lightclient/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lightclient/subscriptions",
+    "organizations_url": "https://api.github.com/users/lightclient/orgs",
+    "repos_url": "https://api.github.com/users/lightclient/repos",
+    "events_url": "https://api.github.com/users/lightclient/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lightclient/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-11-21T21:42:12Z",
+  "updated_at": "2021-11-22T07:07:17Z",
+  "closed_at": "2021-11-22T07:07:17Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `1.10.13-unstable` (e761255b)\r\n\r\n#### Expected behaviour\r\nShow `db inspect` output.\r\n\r\n#### Actual behaviour\r\nFails to accept `database.ancient` flag.\r\n\r\n#### Steps to reproduce the behaviour\r\n```\r\n$ geth db inspect --datadir=/chain/fast/geth-mainnet\r\nFatal: Could not open database: ancient chain segments already extracted, please set --datadir.ancient to the correct path\r\n\r\n$ geth db inspect --datadir=/chain/fast/geth-mainnet --datadir.ancient=/chain/\r\nancient/geth-mainnet\r\nIncorrect Usage: flag provided but not defined: -datadir.ancient\r\n```",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23945/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23945/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15364",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15364/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15364/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15364/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/15364",
+  "id": 268002529,
+  "node_id": "MDU6SXNzdWUyNjgwMDI1Mjk=",
+  "number": 15364,
+  "title": "Data race in les.Stop()",
+  "user": {
+    "login": "JekaMas",
+    "id": 3192700,
+    "node_id": "MDQ6VXNlcjMxOTI3MDA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3192700?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JekaMas",
+    "html_url": "https://github.com/JekaMas",
+    "followers_url": "https://api.github.com/users/JekaMas/followers",
+    "following_url": "https://api.github.com/users/JekaMas/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JekaMas/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JekaMas/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JekaMas/subscriptions",
+    "organizations_url": "https://api.github.com/users/JekaMas/orgs",
+    "repos_url": "https://api.github.com/users/JekaMas/repos",
+    "events_url": "https://api.github.com/users/JekaMas/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JekaMas/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-10-24T11:54:59Z",
+  "updated_at": "2017-11-09T09:34:35Z",
+  "closed_at": "2017-11-09T09:34:35Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: 1.7.2\r\nOS & Version: Windows/Linux/OSX\r\nCommit hash : 6d6a5a93370371a33fb815d7ae47b60c7021c86a\r\n\r\n#### Expected behaviour\r\nNo data races in the code.\r\n\r\n#### Actual behaviour\r\nData race caused unsave operation with wait group: any wg.Add() should be after wg.Wait().\r\n\r\n#### Steps to reproduce the behaviour\r\nI've found this data race while running test of Status-IM project: `github.com/status-im/status-go/e2e/node_test.(*ManagerTestSuite).TestNodeStartCrash()`\r\n\r\n#### Backtrace\r\n\r\n````\r\n==================\r\nWARNING: DATA RACE\r\nWrite at 0x00c4200fa46c by goroutine 106:\r\n  internal/race.Write()\r\n      /usr/local/go/src/internal/race/race.go:41 +0x38\r\n  sync.(*WaitGroup).Wait()\r\n      /usr/local/go/src/sync/waitgroup.go:129 +0xf4\r\n  github.com/status-im/status-go/vendor/github.com/ethereum/go-ethereum/les.(*ProtocolManager).Stop()\r\n      /home/eugene/go/src/github.com/status-im/status-go/build/_workspace/project/src/github.com/status-im/status-go/vendor/github.com/ethereum/go-ethereum/les/handler.go:246 +0x114\r\n  github.com/status-im/status-go/vendor/github.com/ethereum/go-ethereum/les.(*LightEthereum).Stop()\r\n      /home/eugene/go/src/github.com/status-im/status-go/build/_workspace/project/src/github.com/status-im/status-go/vendor/github.com/ethereum/go-ethereum/les/backend.go:222 +0xb3\r\n  github.com/status-im/status-go/vendor/github.com/ethereum/go-ethereum/node.(*Node).Stop()\r\n      /home/eugene/go/src/github.com/status-im/status-go/build/_workspace/project/src/github.com/status-im/status-go/vendor/github.com/ethereum/go-ethereum/node/node.go:488 +0x337\r\n...\r\n\r\nPrevious read at 0x00c4200fa46c by goroutine 35:\r\n  internal/race.Read()\r\n      /usr/local/go/src/internal/race/race.go:37 +0x38\r\n  sync.(*WaitGroup).Add()\r\n      /usr/local/go/src/sync/waitgroup.go:71 +0x16f\r\n  github.com/status-im/status-go/vendor/github.com/ethereum/go-ethereum/les.(*lightFetcher).syncLoop()\r\n      /home/eugene/go/src/github.com/status-im/status-go/build/_workspace/project/src/github.com/status-im/status-go/vendor/github.com/ethereum/go-ethereum/les/fetcher.go:126 +0x95\r\n````\r\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15364/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15364/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

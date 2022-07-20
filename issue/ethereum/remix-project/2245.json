@@ -114,8 +114,8 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/2245/reactions",
-    "total_count": 1,
-    "+1": 1,
+    "total_count": 2,
+    "+1": 2,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -205,8 +205,8 @@
     "body": "It was shown [here](https://remix-ide.readthedocs.io/en/latest/file_explorer.html), second screenshot \r\n\r\nDownload backup only gave me a single README.txt file (with nothing else) that says: \r\n\r\n```\r\nThis is a Remix backup file.\r\nThis zip should be used by the restore backup tool in Remix.\r\nThe .workspaces directory contains your workspaces.\r\n```\r\n\r\n> in which post did you see \"Download All Files\"? this has been renamed \"Download Backup\"\r\n\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1086782059/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

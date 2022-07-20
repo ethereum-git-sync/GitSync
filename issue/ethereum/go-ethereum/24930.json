@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24930",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24930/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24930/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24930/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24930",
+  "id": 1244640866,
+  "node_id": "I_kwDOAOvK985KL7Zi",
+  "number": 24930,
+  "title": "Crash via `abi.JSON`",
+  "user": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-05-23T06:21:42Z",
+  "updated_at": "2022-05-23T15:35:46Z",
+  "closed_at": "2022-05-23T15:35:46Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "reported by @samczsun \r\n\r\nThere's a crasher in abi: \r\n```diff\r\ndiff --git a/accounts/abi/bind/base_test.go b/accounts/abi/bind/base_test.go\r\nindex f59459a0ab..daf2444340 100644\r\n--- a/accounts/abi/bind/base_test.go\r\n+++ b/accounts/abi/bind/base_test.go\r\n@@ -488,3 +488,7 @@ func TestCall(t *testing.T) {\r\n \t\t}\r\n \t}\r\n }\r\n+\r\n+func TestCrasher(t *testing.T) {\r\n+\tabi.JSON(strings.NewReader(`[{\"inputs\":[{\"type\":\"tuple[]\",\"components\":[{\"type\":\"bool\",\"name\":\"_1\"}]}]}]`))\r\n+}\r\n\r\n```\r\n\r\nResults in \r\n```\r\n=== RUN   TestCrasher\r\n--- FAIL: TestCrasher (0.00s)\r\npanic: reflect.StructOf: field 0 has invalid name [recovered]\r\n\tpanic: reflect.StructOf: field 0 has invalid name\r\n\r\ngoroutine 28 [running]:\r\ntesting.tRunner.func1.2({0x9e15a0, 0xc0001d7100})\r\n\t/usr/local/go/src/testing/testing.go:1389 +0x24e\r\ntesting.tRunner.func1()\r\n\t/usr/local/go/src/testing/testing.go:1392 +0x39f\r\npanic({0x9e15a0, 0xc0001d7100})\r\n\t/usr/local/go/src/runtime/panic.go:838 +0x207\r\nreflect.StructOf({0xc0001d1ea0, 0x1, 0x2?})\r\n\t/usr/local/go/src/reflect/type.go:2454 +0x28e5\r\ngithub.com/ethereum/go-ethereum/accounts/abi.NewType({0xc0001ffd40, 0x5}, {0x0, 0x0}, {0xc00014da40?, 0x1, 0x4})\r\n\t/home/user/go/src/github.com/ethereum/go-ethereum/accounts/abi/type.go:191 +0xbe8\r\ngithub.com/ethereum/go-ethereum/accounts/abi.NewType({0xc0001ffd40, 0x7}, {0x0, 0x0}, {0xc00014da40?, 0x1, 0x4})\r\n\t/home/user/go/src/github.com/ethereum/go-ethereum/accounts/abi/type.go:85 +0x22b\r\ngithub.com/ethereum/go-ethereum/accounts/abi.(*Argument).UnmarshalJSON(0xc0002546c0, {0xc00025200c, 0x3d, 0x1f4})\r\n\t/home/user/go/src/github.com/ethereum/go-ethereum/accounts/abi/argument.go:52 +0x13c\r\nencoding/json.(*decodeState).object(0xc0001765a0, {0xa41680?, 0xc0002546c0?, 0xb?})\r\n\t/usr/local/go/src/encoding/json/decode.go:612 +0x68a\r\nencoding/json.(*decodeState).value(0xc0001765a0, {0xa41680?, 0xc0002546c0?, 0x1?})\r\n\t/usr/local/go/src/encoding/json/decode.go:373 +0x45\r\nencoding/json.(*decodeState).array(0xc0001765a0, {0x9d6aa0?, 0xc00024e840?, 0xf9b601?})\r\n\t/usr/local/go/src/encoding/json/decode.go:561 +0x626\r\nencoding/json.(*decodeState).value(0xc0001765a0, {0x9d6aa0?, 0xc00024e840?, 0xc000252003?})\r\n\t/usr/local/go/src/encoding/json/decode.go:363 +0x7e\r\nencoding/json.(*decodeState).object(0xc0001765a0, {0xa74260?, 0xc00024e820?, 0x199?})\r\n\t/usr/local/go/src/encoding/json/decode.go:774 +0xca5\r\nencoding/json.(*decodeState).value(0xc0001765a0, {0xa74260?, 0xc00024e820?, 0x1?})\r\n\t/usr/local/go/src/encoding/json/decode.go:373 +0x45\r\nencoding/json.(*decodeState).array(0xc0001765a0, {0x9c8200?, 0xc00011e7e0?, 0x0?})\r\n\t/usr/local/go/src/encoding/json/decode.go:561 +0x626\r\nencoding/json.(*decodeState).value(0xc0001765a0, {0x9c8200?, 0xc00011e7e0?, 0x90?})\r\n\t/usr/local/go/src/encoding/json/decode.go:363 +0x7e\r\nencoding/json.(*decodeState).unmarshal(0xc0001765a0, {0x9c8200?, 0xc00011e7e0?})\r\n\t/usr/local/go/src/encoding/json/decode.go:180 +0x1de\r\nencoding/json.Unmarshal({0xc000252000, 0x4c, 0x200}, {0x9c8200, 0xc00011e7e0})\r\n\t/usr/local/go/src/encoding/json/decode.go:107 +0x125\r\ngithub.com/ethereum/go-ethereum/accounts/abi.(*ABI).UnmarshalJSON(0xc000113d40, {0xc000252000, 0x4c, 0x200})\r\n\t/home/user/go/src/github.com/ethereum/go-ethereum/accounts/abi/abi.go:156 +0x8b\r\nencoding/json.(*decodeState).array(0xc00014d928, {0xa6a160?, 0xc000113d40?, 0xc00005ec70?})\r\n\t/usr/local/go/src/encoding/json/decode.go:506 +0x3f6\r\nencoding/json.(*decodeState).value(0xc00014d928, {0xa6a160?, 0xc000113d40?, 0xc00005ecc0?})\r\n\t/usr/local/go/src/encoding/json/decode.go:363 +0x7e\r\nencoding/json.(*decodeState).unmarshal(0xc00014d928, {0xa6a160?, 0xc000113d40?})\r\n\t/usr/local/go/src/encoding/json/decode.go:180 +0x1de\r\nencoding/json.(*Decoder).Decode(0xc00014d900, {0xa6a160, 0xc000113d40})\r\n\t/usr/local/go/src/encoding/json/stream.go:73 +0x177\r\ngithub.com/ethereum/go-ethereum/accounts/abi.JSON({_, _})\r\n\t/home/user/go/src/github.com/ethereum/go-ethereum/accounts/abi/abi.go:51 +0xbf\r\ngithub.com/ethereum/go-ethereum/accounts/abi/bind_test.TestCrasher(0x0?)\r\n\t/home/user/go/src/github.com/ethereum/go-ethereum/accounts/abi/bind/base_test.go:493 +0x65\r\ntesting.tRunner(0xc00024e4e0, 0xb5fda0)\r\n\t/usr/local/go/src/testing/testing.go:1439 +0x102\r\ncreated by testing.(*T).Run\r\n\t/usr/local/go/src/testing/testing.go:1486 +0x35f\r\n```\r\nThe method we're using, `reflect.StructOf` has the following doc: \r\n\r\n> StructOf currently does not generate wrapper methods for embedded\r\n> fields and panics if passed unexported StructFields.\r\n\r\nSo there appears to be no publically available version of StructOf which returns an error rather than `panic`ing. Also, the check that fails is `isValidFieldName(field.Name)`, which is also an unexported method from package `reflect`, so we can't just check it in advance before calling `StructOf`. \r\n\r\nReflect seems to have a thing for `panic` which is not very nice to have to work around. ",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24930/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24930/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

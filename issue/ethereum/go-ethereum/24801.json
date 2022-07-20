@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24801",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24801/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24801/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24801/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24801",
+  "id": 1222491957,
+  "node_id": "I_kwDOAOvK985I3b81",
+  "number": 24801,
+  "title": "Opensea / MonkeVerse team query",
+  "user": {
+    "login": "MonkeVerse",
+    "id": 93553456,
+    "node_id": "U_kgDOBZODMA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/93553456?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MonkeVerse",
+    "html_url": "https://github.com/MonkeVerse",
+    "followers_url": "https://api.github.com/users/MonkeVerse/followers",
+    "following_url": "https://api.github.com/users/MonkeVerse/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MonkeVerse/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MonkeVerse/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MonkeVerse/subscriptions",
+    "organizations_url": "https://api.github.com/users/MonkeVerse/orgs",
+    "repos_url": "https://api.github.com/users/MonkeVerse/repos",
+    "events_url": "https://api.github.com/users/MonkeVerse/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MonkeVerse/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233652,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1Mg==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:feature",
+      "name": "type:feature",
+      "color": "84b6eb",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-05-02T05:17:32Z",
+  "updated_at": "2022-05-02T05:21:59Z",
+  "closed_at": "2022-05-02T05:21:59Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi Ethereum team,\r\n\r\nWhat would it take to make eth transactions more efficient from a gas perspective? Is this an issue which could be resolved in a short duration? \r\n\r\nhttps://opensea.io/collection/monkeverse\r\nhttps://monkeverse.io/\r\n\r\nThe launch of Coinbase NFT this year is an opportunity to have more efficient gas transactions as it takes ERC721 trading mainstream with increased transaction volume\r\n\r\nBest, Titian",
+  "closed_by": {
+    "login": "ligi",
+    "id": 111600,
+    "node_id": "MDQ6VXNlcjExMTYwMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ligi",
+    "html_url": "https://github.com/ligi",
+    "followers_url": "https://api.github.com/users/ligi/followers",
+    "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ligi/orgs",
+    "repos_url": "https://api.github.com/users/ligi/repos",
+    "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ligi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24801/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24801/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

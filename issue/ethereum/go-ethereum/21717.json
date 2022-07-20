@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21717",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21717/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21717/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21717/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21717",
+  "id": 723135369,
+  "node_id": "MDU6SXNzdWU3MjMxMzUzNjk=",
+  "number": 21717,
+  "title": "Execution aborted (timeout = 5s)",
+  "user": {
+    "login": "muthu-param",
+    "id": 22792905,
+    "node_id": "MDQ6VXNlcjIyNzkyOTA1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22792905?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muthu-param",
+    "html_url": "https://github.com/muthu-param",
+    "followers_url": "https://api.github.com/users/muthu-param/followers",
+    "following_url": "https://api.github.com/users/muthu-param/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muthu-param/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muthu-param/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muthu-param/subscriptions",
+    "organizations_url": "https://api.github.com/users/muthu-param/orgs",
+    "repos_url": "https://api.github.com/users/muthu-param/repos",
+    "events_url": "https://api.github.com/users/muthu-param/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muthu-param/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-10-16T11:24:40Z",
+  "updated_at": "2020-10-16T11:27:20Z",
+  "closed_at": "2020-10-16T11:27:20Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\n\r\nRecently I have upgraded geth and tessera to the latest version. After the upgrade, we are facing one of the most blockers is \r\n\r\n> getting execution aborted (timeout = 5s)\r\n\r\nIn the previous version, we are not getting these issues. Even we have less than one lakh blocks ( around 95k blocks are there). Is there any solution to fix these issues? \r\n\r\nCan anyone clarify this ASAP....? Thanks in advance.\r\n\r\n#### System information\r\n\r\nGeth version: `geth 1.9.7-stable`\r\nOS & Version: Linux\r\n\r\n#### Expected behaviour\r\nWe should get the data from the blockchain.\r\n\r\n#### Actual behaviour\r\n\r\n> err=\"execution aborted (timeout = 5s)\"\r\n\r\n\r\n#### Steps to reproduce the behaviour\r\nIt's happening randomly. Ex: When we are syncing the smart contract data from the blockchain network.\r\n\r\n#### Backtrace\r\n\r\n````\r\nWARN [10-03|10:01:54.054] Served eth_call                          reqid=76  t=5.161607327s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:01:54.134] Served eth_call                          reqid=78  t=5.058150698s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:01:54.261] Served eth_call                          reqid=77  t=5.311992711s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:01:54.461] Served eth_call                          reqid=81  t=5.198990542s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.235] Served eth_call                          reqid=128 t=5.042588426s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.348] Served eth_call                          reqid=129 t=5.155202891s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.368] Served eth_call                          reqid=132 t=5.140124889s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.408] Served eth_call                          reqid=127 t=5.219717193s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.602] Served eth_call                          reqid=133 t=5.359242588s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.781] Served eth_call                          reqid=143 t=5.268965372s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.808] Served eth_call                          reqid=131 t=5.613000588s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.815] Served eth_call                          reqid=130 t=5.620166645s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.828] Served eth_call                          reqid=139 t=5.393770983s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.955] Served eth_call                          reqid=134 t=5.683248589s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.968] Served eth_call                          reqid=142 t=5.480163235s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:45.988] Served eth_call                          reqid=138 t=5.611346017s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:46.115] Served eth_call                          reqid=135 t=5.820318627s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:46.121] Served eth_call                          reqid=140 t=5.68203593s  err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:46.128] Served eth_call                          reqid=136 t=5.810234761s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:46.188] Served eth_call                          reqid=141 t=5.727460755s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:02:46.195] Served eth_call                          reqid=137 t=5.821505624s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:07:22.518] Served eth_call                          reqid=1574 t=5.324584254s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:07:24.098] Served eth_call                          reqid=1580 t=5.061619423s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.386] Served eth_call                          reqid=133  t=5.12355727s  err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.446] Served eth_call                          reqid=135  t=5.139419821s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.466] Served eth_call                          reqid=142  t=5.000434662s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.726] Served eth_call                          reqid=146  t=5.170135841s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.792] Served eth_call                          reqid=145  t=5.252541727s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.799] Served eth_call                          reqid=140  t=5.377890122s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.806] Served eth_call                          reqid=132  t=5.566173481s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.812] Served eth_call                          reqid=147  t=5.235061661s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.819] Served eth_call                          reqid=141  t=5.375251038s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.826] Served eth_call                          reqid=134  t=5.542840071s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.832] Served eth_call                          reqid=143  t=5.343198793s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.852] Served eth_call                          reqid=138  t=5.476621153s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.912] Served eth_call                          reqid=137  t=5.559165756s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:50.986] Served eth_call                          reqid=139  t=5.586428045s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:51.059] Served eth_call                          reqid=144  t=5.548721573s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:51.119] Served eth_call                          reqid=136  t=5.791148623s err=\"execution aborted (timeout = 5s)\"\r\nWARN [10-03|10:08:51.146] Served eth_call                          reqid=148  t=5.545945095s err=\"execution aborted (timeout = 5s)\"\r\n\r\n````\r\n",
+  "closed_by": {
+    "login": "muthu-param",
+    "id": 22792905,
+    "node_id": "MDQ6VXNlcjIyNzkyOTA1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22792905?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muthu-param",
+    "html_url": "https://github.com/muthu-param",
+    "followers_url": "https://api.github.com/users/muthu-param/followers",
+    "following_url": "https://api.github.com/users/muthu-param/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muthu-param/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muthu-param/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muthu-param/subscriptions",
+    "organizations_url": "https://api.github.com/users/muthu-param/orgs",
+    "repos_url": "https://api.github.com/users/muthu-param/repos",
+    "events_url": "https://api.github.com/users/muthu-param/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muthu-param/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21717/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21717/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14378",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14378/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14378/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14378/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/14378",
+  "id": 224120800,
+  "node_id": "MDU6SXNzdWUyMjQxMjA4MDA=",
+  "number": 14378,
+  "title": "Too far in the future?",
+  "user": {
+    "login": "Lordomus",
+    "id": 28005641,
+    "node_id": "MDQ6VXNlcjI4MDA1NjQx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/28005641?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Lordomus",
+    "html_url": "https://github.com/Lordomus",
+    "followers_url": "https://api.github.com/users/Lordomus/followers",
+    "following_url": "https://api.github.com/users/Lordomus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Lordomus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Lordomus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Lordomus/subscriptions",
+    "organizations_url": "https://api.github.com/users/Lordomus/orgs",
+    "repos_url": "https://api.github.com/users/Lordomus/repos",
+    "events_url": "https://api.github.com/users/Lordomus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Lordomus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-04-25T12:29:07Z",
+  "updated_at": "2017-04-25T12:30:16Z",
+  "closed_at": "2017-04-25T12:30:16Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: 1.5.9\r\nOS & Version: Win10Pro x64\r\nCommit hash : (if `develop`).\r\n\r\nI restarted my PC because my GPU was glitching out and now when i try to open geth i get this. Anyone help? :\r\n\r\n```\r\nC:\\Users\\XXX\\AppData\\Roaming\\Mist\\binaries\\Geth\\unpacked>Geth.exe --fast --cache=512 --rpc console\r\nI0425 12:23:45.437192 node/config.go:445] Failed to start Ledger hub, disabling: libusb: not found [code -5]\r\nI0425 12:23:45.449189 ethdb/database.go:83] Allotted 512MB cache and 1024 file handles to C:\\Users\\XXX\\AppData\\Roaming\\Ethereum\\geth\\chaindata\r\nI0425 12:23:45.587332 ethdb/database.go:176] closed db:C:\\Users\\XXX\\AppData\\Roaming\\Ethereum\\geth\\chaindata\r\nI0425 12:23:45.588322 node/node.go:176] instance: Geth/v1.5.9-stable/windows/go1.7.4\r\nI0425 12:23:45.588322 ethdb/database.go:83] Allotted 512MB cache and 1024 file handles to C:\\Users\\XXX\\AppData\\Roaming\\Ethereum\\geth\\chaindata\r\nI0425 12:23:45.697426 eth/backend.go:187] Protocol Versions: [63 62], Network Id: 1\r\nI0425 12:23:45.698258 eth/backend.go:215] Chain config: {ChainID: 1 Homestead: 1150000 DAO: 1920000 DAOSupport: true EIP150: 2463000 EIP155: 2675000 EIP158: 2675000}\r\nI0425 12:23:45.700286 core/blockchain.go:219] Last header: #3597905 [2f6349c6…] TD=226334296804114739033\r\nI0425 12:23:45.700564 core/blockchain.go:220] Last block: #3597906 [83d63e80…] TD=226334595279520023787\r\nI0425 12:23:45.700658 core/blockchain.go:221] Fast block: #3597905 [2f6349c6…] TD=226334296804114739033\r\nI0425 12:23:45.700752 eth/handler.go:119] blockchain not empty, fast sync disabled\r\nI0425 12:23:45.700752 miner/worker.go:430] We are too far in the future. Waiting for 1h37m22s\r\n```",
+  "closed_by": {
+    "login": "Lordomus",
+    "id": 28005641,
+    "node_id": "MDQ6VXNlcjI4MDA1NjQx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/28005641?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Lordomus",
+    "html_url": "https://github.com/Lordomus",
+    "followers_url": "https://api.github.com/users/Lordomus/followers",
+    "following_url": "https://api.github.com/users/Lordomus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Lordomus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Lordomus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Lordomus/subscriptions",
+    "organizations_url": "https://api.github.com/users/Lordomus/orgs",
+    "repos_url": "https://api.github.com/users/Lordomus/repos",
+    "events_url": "https://api.github.com/users/Lordomus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Lordomus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14378/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14378/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

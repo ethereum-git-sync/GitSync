@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20772",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20772/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20772/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20772/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/20772",
+  "id": 582633641,
+  "node_id": "MDU6SXNzdWU1ODI2MzM2NDE=",
+  "number": 20772,
+  "title": "Clique API regression",
+  "user": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-03-16T22:24:07Z",
+  "updated_at": "2020-03-19T08:06:45Z",
+  "closed_at": "2020-03-19T08:06:45Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The `clique.getSnapshot()` without a parameter currently defaults to block `0`. It should be the latest block. This is a regression from the original behavior.",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20772/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20772/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

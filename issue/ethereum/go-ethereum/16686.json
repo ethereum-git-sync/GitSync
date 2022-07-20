@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16686",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16686/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16686/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16686/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/16686",
+  "id": 320509492,
+  "node_id": "MDU6SXNzdWUzMjA1MDk0OTI=",
+  "number": 16686,
+  "title": "How to recover keystore after removedb",
+  "user": {
+    "login": "congnghiakhiem",
+    "id": 6909690,
+    "node_id": "MDQ6VXNlcjY5MDk2OTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6909690?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/congnghiakhiem",
+    "html_url": "https://github.com/congnghiakhiem",
+    "followers_url": "https://api.github.com/users/congnghiakhiem/followers",
+    "following_url": "https://api.github.com/users/congnghiakhiem/following{/other_user}",
+    "gists_url": "https://api.github.com/users/congnghiakhiem/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/congnghiakhiem/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/congnghiakhiem/subscriptions",
+    "organizations_url": "https://api.github.com/users/congnghiakhiem/orgs",
+    "repos_url": "https://api.github.com/users/congnghiakhiem/repos",
+    "events_url": "https://api.github.com/users/congnghiakhiem/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/congnghiakhiem/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-05-05T13:28:21Z",
+  "updated_at": "2018-05-05T13:42:36Z",
+  "closed_at": "2018-05-05T13:42:36Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "This morning, my geth wallet is crash. I found some help from Google that I needed to removedb then resync. Therefore, I ran 'geth removedb' command. Then resync successfully.\r\nThe wiki said that \"This is useful for deleting an old chain and sync'ing to a new one. It only affects data directories that can be re-created on synchronisation and does not touch the keystore.\"\r\nI saw that I needed to import old key to new wallet. So, I merged all key files to one text file.\r\nBut when I ran 'geth account import <keyfile>'. It return failed:\r\nFatal: Failed to load the private key: encoding/hex: invalid byte: U+007B '{'\r\n\r\nPlease help me to recover all of my old address.\r\n\r\n#### System information\r\nGeth\r\nVersion: 1.8.0-unstable\r\nGit Commit: 02aeb3d76652a4c0451e5c3734e6881aefe46249\r\nArchitecture: amd64\r\nProtocol Versions: [63 62]\r\nNetwork Id: 1\r\nGo Version: go1.8.3\r\nOperating System: linux\r\nGOPATH=\r\nGOROOT=/usr/lib/golang\r\n\r\n\r\n",
+  "closed_by": {
+    "login": "congnghiakhiem",
+    "id": 6909690,
+    "node_id": "MDQ6VXNlcjY5MDk2OTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6909690?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/congnghiakhiem",
+    "html_url": "https://github.com/congnghiakhiem",
+    "followers_url": "https://api.github.com/users/congnghiakhiem/followers",
+    "following_url": "https://api.github.com/users/congnghiakhiem/following{/other_user}",
+    "gists_url": "https://api.github.com/users/congnghiakhiem/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/congnghiakhiem/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/congnghiakhiem/subscriptions",
+    "organizations_url": "https://api.github.com/users/congnghiakhiem/orgs",
+    "repos_url": "https://api.github.com/users/congnghiakhiem/repos",
+    "events_url": "https://api.github.com/users/congnghiakhiem/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/congnghiakhiem/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16686/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16686/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

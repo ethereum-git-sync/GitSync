@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24562",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24562/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24562/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24562/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24562",
+  "id": 1173826239,
+  "node_id": "I_kwDOAOvK985F9yq_",
+  "number": 24562,
+  "title": "Satoshi Nakamoto candidate",
+  "user": {
+    "login": "sahil5d",
+    "id": 5514802,
+    "node_id": "MDQ6VXNlcjU1MTQ4MDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5514802?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sahil5d",
+    "html_url": "https://github.com/sahil5d",
+    "followers_url": "https://api.github.com/users/sahil5d/followers",
+    "following_url": "https://api.github.com/users/sahil5d/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sahil5d/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sahil5d/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sahil5d/subscriptions",
+    "organizations_url": "https://api.github.com/users/sahil5d/orgs",
+    "repos_url": "https://api.github.com/users/sahil5d/repos",
+    "events_url": "https://api.github.com/users/sahil5d/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sahil5d/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-18T17:15:13Z",
+  "updated_at": "2022-03-18T17:28:51Z",
+  "closed_at": "2022-03-18T17:28:51Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "This Paypal cofounder is likely Satoshi Nakamoto, based on common\r\n\r\n- technical capability\r\n- psychological motivation\r\n- time availability plausibility\r\n- physical location coincidence\r\n- software stylistic similarity\r\n- technical jargon similarity\r\n- unusual and quirky expressions similarity.\r\n\r\nhttps://medium.com/p/4120f36da702",
+  "closed_by": {
+    "login": "MariusVanDerWijden",
+    "id": 16664698,
+    "node_id": "MDQ6VXNlcjE2NjY0Njk4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16664698?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MariusVanDerWijden",
+    "html_url": "https://github.com/MariusVanDerWijden",
+    "followers_url": "https://api.github.com/users/MariusVanDerWijden/followers",
+    "following_url": "https://api.github.com/users/MariusVanDerWijden/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MariusVanDerWijden/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MariusVanDerWijden/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MariusVanDerWijden/subscriptions",
+    "organizations_url": "https://api.github.com/users/MariusVanDerWijden/orgs",
+    "repos_url": "https://api.github.com/users/MariusVanDerWijden/repos",
+    "events_url": "https://api.github.com/users/MariusVanDerWijden/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MariusVanDerWijden/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24562/reactions",
+    "total_count": 3,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 1,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 2,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24562/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

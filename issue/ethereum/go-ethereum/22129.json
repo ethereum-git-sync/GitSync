@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22129",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22129/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22129/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22129/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22129",
+  "id": 780600519,
+  "node_id": "MDU6SXNzdWU3ODA2MDA1MTk=",
+  "number": 22129,
+  "title": "Fast-synced node crushes",
+  "user": {
+    "login": "liquid-8",
+    "id": 72107640,
+    "node_id": "MDQ6VXNlcjcyMTA3NjQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107640?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/liquid-8",
+    "html_url": "https://github.com/liquid-8",
+    "followers_url": "https://api.github.com/users/liquid-8/followers",
+    "following_url": "https://api.github.com/users/liquid-8/following{/other_user}",
+    "gists_url": "https://api.github.com/users/liquid-8/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/liquid-8/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/liquid-8/subscriptions",
+    "organizations_url": "https://api.github.com/users/liquid-8/orgs",
+    "repos_url": "https://api.github.com/users/liquid-8/repos",
+    "events_url": "https://api.github.com/users/liquid-8/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/liquid-8/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-01-06T14:40:14Z",
+  "updated_at": "2021-01-25T13:29:46Z",
+  "closed_at": "2021-01-25T13:29:46Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `1.9.25`\r\nOS & Version: Windows 10\r\n\r\n#### Expected behaviour\r\nFast synced geth starts and works as local node\r\n\r\n#### Actual behaviour\r\nFast synced geth throws the error at startup\r\n\r\n>panic: runtime error: invalid memory address or nil pointer dereference\r\n\r\nand shuts down then\r\n\r\n#### Steps to reproduce the behaviour\r\nruns w/admin privs as follow\r\n\r\nZ:\\gth\\geth.exe --datadir \".\\data\" --syncmode fast --cache 1024 --http --http.addr 127.0.0.1 --http.port 8545\r\n\r\n#### Backtrace\r\n\r\n````\r\npanic: runtime error: invalid memory address or nil pointer dereference\r\n[signal 0xc0000005 code=0x0 addr=0x0 pc=0xd5717a]\r\n\r\ngoroutine 1 [running]:\r\ngithub.com/ethereum/go-ethereum/core/types.(*Block).Root(...)\r\n        github.com/ethereum/go-ethereum/core/types/block.go:336\r\ngithub.com/ethereum/go-ethereum/core.(*BlockChain).SetHeadBeyondRoot.func1(0x217217b5a68, 0xc000099f60, 0xc008ed8480, 0x217217b5a68, 0xc000099f60)\r\n        github.com/ethereum/go-ethereum/core/blockchain.go:528 +0x31a\r\ngithub.com/ethereum/go-ethereum/core.(*BlockChain).SetHeadBeyondRoot(0xc0000df900, 0xb0ec07, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)\r\n        github.com/ethereum/go-ethereum/core/blockchain.go:606 +0x2a8\r\ngithub.com/ethereum/go-ethereum/core.(*BlockChain).SetHead(...)\r\n        github.com/ethereum/go-ethereum/core/blockchain.go:484\r\ngithub.com/ethereum/go-ethereum/core.NewBlockChain(0x1b357a0, 0xc000099f60, 0xc0018102d0, 0x1649020, 0x1b33260, 0xc0003696c0, 0x0, 0x0, 0x0, 0x0, ...)\r\n        github.com/ethereum/go-ethereum/core/blockchain.go:310 +0x1b18\r\ngithub.com/ethereum/go-ethereum/eth.New(0xc00029b2b0, 0xc000125200, 0x1636ba0, 0x1, 0x1)\r\n        github.com/ethereum/go-ethereum/eth/backend.go:175 +0xae5\r\ngithub.com/ethereum/go-ethereum/cmd/utils.RegisterEthService(0xc00029b2b0, 0xc000125200, 0x0, 0x1)\r\n        github.com/ethereum/go-ethereum/cmd/utils/flags.go:1701 +0xec\r\nmain.makeFullNode(0xc00029c2c0, 0x18ff47f, 0x1, 0xc000005b80)\r\n        github.com/ethereum/go-ethereum/cmd/geth/config.go:165 +0xfe\r\nmain.geth(0xc00029c2c0, 0x0, 0x0)\r\n        github.com/ethereum/go-ethereum/cmd/geth/main.go:354 +0x105\r\ngopkg.in/urfave/cli%2ev1.HandleAction(0x1730e40, 0x19db098, 0xc00029c2c0, 0xc00007ae40, 0x0)\r\n        gopkg.in/urfave/cli.v1@v1.20.0/app.go:490 +0x89\r\ngopkg.in/urfave/cli%2ev1.(*App).Run(0xc00008e9c0, 0xc0000d8000, 0xc, 0x10, 0x0, 0x0)\r\n        gopkg.in/urfave/cli.v1@v1.20.0/app.go:264 +0x5f5\r\nmain.main()\r\n        github.com/ethereum/go-ethereum/cmd/geth/main.go:273 +0x5c\r\n\r\n````\r\n\r\nThanks in advance!",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22129/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22129/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

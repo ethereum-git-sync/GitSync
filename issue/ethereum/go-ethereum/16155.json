@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16155",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16155/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16155/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16155/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/16155",
+  "id": 299063606,
+  "node_id": "MDU6SXNzdWUyOTkwNjM2MDY=",
+  "number": 16155,
+  "title": "puppeth installs ethstats but does not detect it in health-check",
+  "user": {
+    "login": "nileshtrivedi",
+    "id": 19304,
+    "node_id": "MDQ6VXNlcjE5MzA0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19304?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nileshtrivedi",
+    "html_url": "https://github.com/nileshtrivedi",
+    "followers_url": "https://api.github.com/users/nileshtrivedi/followers",
+    "following_url": "https://api.github.com/users/nileshtrivedi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nileshtrivedi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nileshtrivedi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nileshtrivedi/subscriptions",
+    "organizations_url": "https://api.github.com/users/nileshtrivedi/orgs",
+    "repos_url": "https://api.github.com/users/nileshtrivedi/repos",
+    "events_url": "https://api.github.com/users/nileshtrivedi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nileshtrivedi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-02-21T17:40:52Z",
+  "updated_at": "2018-02-22T08:41:18Z",
+  "closed_at": "2018-02-22T07:57:18Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "```\r\npuppeth version: 0.0.0\r\ngeth version: 1.8.1 (geth-alltools-darwin-amd64-1.8.1-1e67410e)\r\nNetwork type: Clique\r\nDocker version on server: 17.12.0-ce, build c97c6d6\r\n```\r\n\r\nDeployment of ethstats seems to have gone fine (I can access the ethstats page in my browser), but puppeth health-check does not detect it. Trying to deploy the next item (bootnode), shows this message:\r\n\r\n`ERROR[02-21|23:04:34] No ethstats server configured`\r\n\r\nDigging deeper, it seems puppeth is running this command for healthcheck: `docker inspect my-test-net_ethstats_1`, which returns: `Error: No such object: my-test-net_ethstats_1`\r\n\r\nbut this is the output of `docker ps`:\r\n```\r\nCONTAINER ID        IMAGE                        COMMAND                  CREATED             STATUS              PORTS                NAMES\r\nb48c6e8c5f23        my-test-net/ethstats   \"npm start\"              13 minutes ago      Up 13 minutes       3000/tcp             mytestnet_ethstats_1\r\n8716c22815db        my-test-net/nginx      \"/app/docker-entrypo…\"   13 minutes ago      Up 13 minutes       0.0.0.0:80->80/tcp   mytestnet_nginx_1\r\n```\r\n\r\nThe issue is that `my-test-net` is being changed to `mytestnet` in container names. Puppeth should warn to not use hyphens while choosing the network name. This is implemented in #16157 . Review and merge as appropriate.",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16155/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16155/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

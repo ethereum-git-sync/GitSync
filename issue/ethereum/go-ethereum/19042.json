@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19042",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19042/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19042/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19042/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/19042",
+  "id": 409240477,
+  "node_id": "MDU6SXNzdWU0MDkyNDA0Nzc=",
+  "number": 19042,
+  "title": "Handle multi-page binary listing results on Azure / download page",
+  "user": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-02-12T11:01:12Z",
+  "updated_at": "2019-06-25T09:02:32Z",
+  "closed_at": "2019-06-25T09:02:32Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "https://geth.ethereum.org/downloads/ is missing a few stable binaries because we merge so many PRs, the unstable builds exceed one page of results from Azure (https://gethstore.blob.core.windows.net/builds?restype=container&comp=list).\r\n\r\nWe need to extend the download page to handle multiple results from Azure.",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19042/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19042/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

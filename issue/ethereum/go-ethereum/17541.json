@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17541",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17541/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17541/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17541/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/17541",
+  "id": 354878472,
+  "node_id": "MDU6SXNzdWUzNTQ4Nzg0NzI=",
+  "number": 17541,
+  "title": "Go doesn't compile",
+  "user": {
+    "login": "elsampsa",
+    "id": 13978980,
+    "node_id": "MDQ6VXNlcjEzOTc4OTgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13978980?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/elsampsa",
+    "html_url": "https://github.com/elsampsa",
+    "followers_url": "https://api.github.com/users/elsampsa/followers",
+    "following_url": "https://api.github.com/users/elsampsa/following{/other_user}",
+    "gists_url": "https://api.github.com/users/elsampsa/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/elsampsa/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/elsampsa/subscriptions",
+    "organizations_url": "https://api.github.com/users/elsampsa/orgs",
+    "repos_url": "https://api.github.com/users/elsampsa/repos",
+    "events_url": "https://api.github.com/users/elsampsa/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/elsampsa/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-08-28T19:51:05Z",
+  "updated_at": "2018-08-28T19:54:03Z",
+  "closed_at": "2018-08-28T19:54:03Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\n\r\nplease note that this is an issue tracker reserved for bug reports and feature requests.\r\n\r\nFor general questions please use the gitter channel or the Ethereum stack exchange at https://ethereum.stackexchange.com.\r\n\r\n#### System information\r\n\r\nGeth version: `origin/release/1.8`\r\nOS & Version: Linux Ubuntu 16.04\r\nCommit hash : (if `develop`)\r\n\r\n(go version go1.11 linux/amd64)\r\n\r\n\r\n#### Expected behaviour\r\n\r\nmake geth\r\n=> should compile\r\n\r\n#### Actual behaviour\r\n\r\nsampsa@jontxuPc:~/go-ethereum$ make geth\r\nbuild/env.sh go run build/ci.go install ./cmd/geth\r\n# runtime\r\n/usr/local/go/src/runtime/map.go:64:2: bucketCntBits redeclared in this block\r\n        previous declaration at /usr/local/go/src/runtime/hashmap.go:64:18\r\n/usr/local/go/src/runtime/map.go:65:2: bucketCnt redeclared in this block\r\n        previous declaration at /usr/local/go/src/runtime/hashmap.go:65:23\r\n/usr/local/go/src/runtime/map.go:76:2: maxKeySize redeclared in this block\r\n\r\n...\r\n#### Steps to reproduce the behaviour\r\n\r\nInstall go version 1.11\r\nmake geth\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n",
+  "closed_by": {
+    "login": "elsampsa",
+    "id": 13978980,
+    "node_id": "MDQ6VXNlcjEzOTc4OTgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13978980?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/elsampsa",
+    "html_url": "https://github.com/elsampsa",
+    "followers_url": "https://api.github.com/users/elsampsa/followers",
+    "following_url": "https://api.github.com/users/elsampsa/following{/other_user}",
+    "gists_url": "https://api.github.com/users/elsampsa/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/elsampsa/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/elsampsa/subscriptions",
+    "organizations_url": "https://api.github.com/users/elsampsa/orgs",
+    "repos_url": "https://api.github.com/users/elsampsa/repos",
+    "events_url": "https://api.github.com/users/elsampsa/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/elsampsa/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17541/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17541/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

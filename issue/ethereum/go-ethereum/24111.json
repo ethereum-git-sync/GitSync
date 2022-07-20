@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24111",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24111/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24111/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24111/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24111",
+  "id": 1080831928,
+  "node_id": "I_kwDOAOvK985AbC-4",
+  "number": 24111,
+  "title": "Look at me",
+  "user": {
+    "login": "Chalo0",
+    "id": 93707679,
+    "node_id": "U_kgDOBZXdnw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/93707679?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Chalo0",
+    "html_url": "https://github.com/Chalo0",
+    "followers_url": "https://api.github.com/users/Chalo0/followers",
+    "following_url": "https://api.github.com/users/Chalo0/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Chalo0/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Chalo0/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Chalo0/subscriptions",
+    "organizations_url": "https://api.github.com/users/Chalo0/orgs",
+    "repos_url": "https://api.github.com/users/Chalo0/repos",
+    "events_url": "https://api.github.com/users/Chalo0/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Chalo0/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233652,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1Mg==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:feature",
+      "name": "type:feature",
+      "color": "84b6eb",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-12-15T10:03:36Z",
+  "updated_at": "2021-12-15T10:51:37Z",
+  "closed_at": "2021-12-15T10:51:37Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "# Rationale\r\n\r\nWhy should this feature exist?\r\nWhat are the use-cases?\r\n\r\n# Implementation\r\n\r\nDo you have ideas regarding the implementation of this feature?\r\nAre you willing to implement this feature?",
+  "closed_by": {
+    "login": "s1na",
+    "id": 1591639,
+    "node_id": "MDQ6VXNlcjE1OTE2Mzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1591639?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/s1na",
+    "html_url": "https://github.com/s1na",
+    "followers_url": "https://api.github.com/users/s1na/followers",
+    "following_url": "https://api.github.com/users/s1na/following{/other_user}",
+    "gists_url": "https://api.github.com/users/s1na/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/s1na/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/s1na/subscriptions",
+    "organizations_url": "https://api.github.com/users/s1na/orgs",
+    "repos_url": "https://api.github.com/users/s1na/repos",
+    "events_url": "https://api.github.com/users/s1na/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/s1na/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24111/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 1
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24111/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

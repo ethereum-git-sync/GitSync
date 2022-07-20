@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21049",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21049/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21049/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21049/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21049",
+  "id": 614711779,
+  "node_id": "MDU6SXNzdWU2MTQ3MTE3Nzk=",
+  "number": 21049,
+  "title": "abi/abigen: incorrect handling of overloaded params in struct",
+  "user": {
+    "login": "MariusVanDerWijden",
+    "id": 16664698,
+    "node_id": "MDQ6VXNlcjE2NjY0Njk4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16664698?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MariusVanDerWijden",
+    "html_url": "https://github.com/MariusVanDerWijden",
+    "followers_url": "https://api.github.com/users/MariusVanDerWijden/followers",
+    "following_url": "https://api.github.com/users/MariusVanDerWijden/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MariusVanDerWijden/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MariusVanDerWijden/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MariusVanDerWijden/subscriptions",
+    "organizations_url": "https://api.github.com/users/MariusVanDerWijden/orgs",
+    "repos_url": "https://api.github.com/users/MariusVanDerWijden/repos",
+    "events_url": "https://api.github.com/users/MariusVanDerWijden/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MariusVanDerWijden/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-05-08T12:27:01Z",
+  "updated_at": "2020-05-12T11:02:25Z",
+  "closed_at": "2020-05-12T11:02:25Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Running abigen on the following contract blows up:\r\n\r\n````\r\ncontract Overloader {\r\n    struct F { uint _f; uint __f; uint f; }\r\n    function f(F memory f) public {}\r\n}\r\n````\r\nError:\r\n````\r\npanic: reflect.StructOf: duplicate field F\r\n\r\ngoroutine 1 [running]:\r\nreflect.StructOf(0xc0000b4820, 0x3, 0x4, 0x0, 0x0)\r\n        /usr/lib/go/src/reflect/type.go:2541 +0x3067\r\ngithub.com/ethereum/go-ethereum/accounts/abi.NewType(0xc00064fc70, 0x5, 0xc00048afe0, 0x13, 0xc0000d9b80, 0x3, 0x4, 0x0, 0x19, 0x0, ...)\r\n        /home/matematik/go/src/github.com/ethereum/go-ethereum/accounts/abi/type.go:203 +0x13b7\r\ngithub.com/ethereum/go-ethereum/accounts/abi.(*Argument).UnmarshalJSON(0xc0002bdb80, 0xc0005a260c, 0xf7, 0x1f4, 0x7fc79199c188, 0xc0002bdb80)\r\n        /home/matematik/go/src/github.com/ethereum/go-ethereum/accounts/abi/argument.go:52 +0x16c\r\nencoding/json.(*decodeState).object(0xc00026f550, 0xc3c300, 0xc0002bdb80, 0x199, 0xcd7184, 0xb)\r\n        /usr/lib/go/src/encoding/json/decode.go:626 +0x2082\r\nencoding/json.(*decodeState).value(0xc00026f550, 0xc3c300, 0xc0002bdb80, 0x199, 0xc3c300, 0xc0002bdb80)\r\n        /usr/lib/go/src/encoding/json/decode.go:387 +0x6d\r\nencoding/json.(*decodeState).array(0xc00026f550, 0xb97900, 0xc0000b46a0, 0x197, 0xc00026f578, 0x5b)\r\n        /usr/lib/go/src/encoding/json/decode.go:575 +0x1a7\r\nencoding/json.(*decodeState).value(0xc00026f550, 0xb97900, 0xc0000b46a0, 0x197, 0x1, 0xc000486dc0)\r\n        /usr/lib/go/src/encoding/json/decode.go:377 +0xfd\r\nencoding/json.(*decodeState).object(0xc00026f550, 0xc82fe0, 0xc0000b4680, 0x199, 0xcd7184, 0xb)\r\n        /usr/lib/go/src/encoding/json/decode.go:782 +0x12e5\r\nencoding/json.(*decodeState).value(0xc00026f550, 0xc82fe0, 0xc0000b4680, 0x199, 0xc82fe0, 0xc0000b4680)\r\n        /usr/lib/go/src/encoding/json/decode.go:387 +0x6d\r\nencoding/json.(*decodeState).array(0xc00026f550, 0xb7eb20, 0xc00000e180, 0x16, 0xc00026f578, 0xc000256c5b)\r\n        /usr/lib/go/src/encoding/json/decode.go:575 +0x1a7\r\nencoding/json.(*decodeState).value(0xc00026f550, 0xb7eb20, 0xc00000e180, 0x16, 0xc00063d790, 0x53b031)\r\n        /usr/lib/go/src/encoding/json/decode.go:377 +0xfd\r\nencoding/json.(*decodeState).unmarshal(0xc00026f550, 0xb7eb20, 0xc00000e180, 0xc00026f578, 0x0)\r\n        /usr/lib/go/src/encoding/json/decode.go:180 +0x1f0\r\nencoding/json.Unmarshal(0xc0005a2600, 0x14f, 0x200, 0xb7eb20, 0xc00000e180, 0xc00064f960, 0xc00063d890)\r\n        /usr/lib/go/src/encoding/json/decode.go:107 +0x112\r\ngithub.com/ethereum/go-ethereum/accounts/abi.(*ABI).UnmarshalJSON(0xc0000f9b00, 0xc0005a2600, 0x14f, 0x200, 0x7fc79199c168, 0xc0000f9b00)\r\n        /home/matematik/go/src/github.com/ethereum/go-ethereum/accounts/abi/abi.go:135 +0x8b\r\nencoding/json.(*decodeState).array(0xc00025cb28, 0xc73760, 0xc0000f9b00, 0x16, 0xc00025cb50, 0x5b)\r\n        /usr/lib/go/src/encoding/json/decode.go:520 +0xc10\r\nencoding/json.(*decodeState).value(0xc00025cb28, 0xc73760, 0xc0000f9b00, 0x16, 0xc00063df60, 0x53ef1e)\r\n        /usr/lib/go/src/encoding/json/decode.go:377 +0xfd\r\nencoding/json.(*decodeState).unmarshal(0xc00025cb28, 0xc73760, 0xc0000f9b00, 0x0, 0x1)\r\n        /usr/lib/go/src/encoding/json/decode.go:180 +0x1f0\r\nencoding/json.(*Decoder).Decode(0xc00025cb00, 0xc73760, 0xc0000f9b00, 0x20, 0xc45000)\r\n        /usr/lib/go/src/encoding/json/stream.go:73 +0x166\r\ngithub.com/ethereum/go-ethereum/accounts/abi.JSON(0xe25da0, 0xc00000e060, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)\r\n        /home/matematik/go/src/github.com/ethereum/go-ethereum/accounts/abi/abi.go:50 +0xb7\r\ngithub.com/ethereum/go-ethereum/accounts/abi/bind.Bind(0xc000495400, 0x8, 0x8, 0xc000495300, 0x8, 0x8, 0xc000495380, 0x8, 0x8, 0xc00048e380, ...)\r\n        /home/matematik/go/src/github.com/ethereum/go-ethereum/accounts/abi/bind/bind.go:63 +0x1e11\r\nmain.abigen(0xc0000fbb80, 0x0, 0x0)\r\n        /home/matematik/go/src/github.com/ethereum/go-ethereum/cmd/abigen/main.go:256 +0x8ef\r\ngithub.com/ethereum/go-ethereum/cmd/utils.MigrateFlags.func1(0xc0000fbb80, 0xc0000fbb80, 0xc00035fbe7)\r\n        /home/matematik/go/src/github.com/ethereum/go-ethereum/cmd/utils/flags.go:1823 +0xbe\r\ngopkg.in/urfave/cli%2ev1.HandleAction(0xbbb620, 0xc000430fd0, 0xc0000fbb80, 0xc000548900, 0x0)\r\n        /home/matematik/go/pkg/mod/gopkg.in/urfave/cli.v1@v1.20.0/app.go:490 +0xc8\r\ngopkg.in/urfave/cli%2ev1.(*App).Run(0xc0001e3040, 0xc000032090, 0x9, 0x9, 0x0, 0x0)\r\n        /home/matematik/go/pkg/mod/gopkg.in/urfave/cli.v1@v1.20.0/app.go:264 +0x5dd\r\nmain.main()\r\n        /home/matematik/go/src/github.com/ethereum/go-ethereum/cmd/abigen/main.go:274 +0xe6\r\ngenerate.go:3: running \"abigen\": exit status 2\r\n````",
+  "closed_by": {
+    "login": "gballet",
+    "id": 3272758,
+    "node_id": "MDQ6VXNlcjMyNzI3NTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3272758?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gballet",
+    "html_url": "https://github.com/gballet",
+    "followers_url": "https://api.github.com/users/gballet/followers",
+    "following_url": "https://api.github.com/users/gballet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gballet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gballet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gballet/subscriptions",
+    "organizations_url": "https://api.github.com/users/gballet/orgs",
+    "repos_url": "https://api.github.com/users/gballet/repos",
+    "events_url": "https://api.github.com/users/gballet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gballet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21049/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21049/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

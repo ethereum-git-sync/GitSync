@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23463",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23463/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23463/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23463/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/23463",
+  "id": 979030687,
+  "node_id": "MDU6SXNzdWU5NzkwMzA2ODc=",
+  "number": 23463,
+  "title": "Wrong block hash returned by ethclient.Client.HeaderByNumber",
+  "user": {
+    "login": "tclemos",
+    "id": 1298871,
+    "node_id": "MDQ6VXNlcjEyOTg4NzE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1298871?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tclemos",
+    "html_url": "https://github.com/tclemos",
+    "followers_url": "https://api.github.com/users/tclemos/followers",
+    "following_url": "https://api.github.com/users/tclemos/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tclemos/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tclemos/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tclemos/subscriptions",
+    "organizations_url": "https://api.github.com/users/tclemos/orgs",
+    "repos_url": "https://api.github.com/users/tclemos/repos",
+    "events_url": "https://api.github.com/users/tclemos/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tclemos/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-08-25T11:25:59Z",
+  "updated_at": "2021-08-27T08:11:56Z",
+  "closed_at": "2021-08-26T06:35:38Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `1.10.8`\r\nOS & Version: Linux\r\n\r\n#### Expected behaviour\r\n\r\nWhen calling `ethclient.Client.HeaderByNumber` should return the correct block hash\r\n\r\n#### Actual behaviour\r\n\r\nInvalid block hash is returned when Geth version on the server is v1.10.8 and the call is made using the `ethclient.Client.HeaderByNumber`. The problem also happens when calling the `ethclient.Client.BlockByNumber`.\r\n\r\nI've tried calling the method using the client library with versions v1.10.4, v1.10.5, v1.10.6, v1.10.7 and v1.10.8, the behavior is the same, it seems to be something related to the server response instead of something in the client.\r\n\r\nThe behaviour is the same independently of the network, we tested it in `Goerli` and `Rinkeby`\r\n\r\nWhen making the `jsonRPC` request directly via HTTP, the hash is correct:\r\n\r\n```bash\r\ncurl -X POST --data '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBlockByNumber\",\"params\":[\"0x504174\", false],\"id\":1}' -H \"Content-Type: application/json\" --dump-header - <<geth address>>\r\n```\r\n\r\noutput: \r\n```log\r\nHTTP/1.1 200 OK\r\nServer: nginx/1.18.0 (Ubuntu)\r\nDate: Wed, 25 Aug 2021 11:40:59 GMT\r\nContent-Type: application/json\r\nContent-Length: 1910\r\nConnection: keep-alive\r\nVary: Origin\r\n\r\n{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"baseFeePerGas\":\"0x7\",\"difficulty\":\"0x1\",\"extraData\":\"0x000000000000436f6e73656e5379732048797065726c65646765722042657375c646a88f9833b01f1bdb897db5890c15c04d932b70cd7eba1d0cab041a0a597c537e7f529e499e759e8205979e9d152a958aede503fa65e12ed7132bb8b869f901\",\"gasLimit\":\"0x1c9c380\",\"gasUsed\":\"0x2958c2\",\"hash\":\"0x3705a71830dab88c25ca3b5765ffba738bea10339d629b4fb225679b5d8be9de\",\"logsBloom\":\"0x000000008000000040000000100000004000100200000042100000000002020202000406088080400000008010000081000100000400000002800001802020000000010010200002000043080000000280800040100800a002200000080000000408000102000800000002000000080010000002000000001000001480000001000001c0000040600000000800000000000c00000100000002040000800002000200000000400000000000200000000000000100012000000008a00001000000080000020000000000000000000000000000000000090000001000000000224000100000001000008000000010000001000820000000000000008c0010000004\",\"miner\":\"0x22ea9f6b28db76a7162054c05ed812deb2f519cd\",\"mixHash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"nonce\":\"0x0000000000000000\",\"number\":\"0x504174\",\"parentHash\":\"0x029c7181addbed120ada15160cb8022641f035ffb5d2d6e08714227122bd30a8\",\"receiptsRoot\":\"0x63cee320c5f2708a08c9e2d2f67780edbabc01a0b560ba6ababbb9d1188c7766\",\"sha3Uncles\":\"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347\",\"size\":\"0xc665\",\"stateRoot\":\"0x93f5316da7fc3351f57ed5dc030e28cfaefef59d18300ada9a019964b1ded065\",\"timestamp\":\"0x610a4f50\",\"totalDifficulty\":\"0x754af2\",\"transactions\":[\"0xdb758e501a9701c65d7522084f83f6e4e3bd2105de90647ca08425727dddf9bf\",\"0x0409bb7eaec02f593ed345ad6df9b835a0c2435e33faad57ae94d433314e4b3a\",\"0x1957dde4c3912da6c9cb22c1e236f40dd8fc652cab15450dff2f4e53081ac13b\",\"0x0d8f5a3c3b9e4b408bbb4150fe7f435cc84b09fa0641423d7173ce1962088a98\"],\"transactionsRoot\":\"0xb63e1a997f37e896811c01415bacdc4ee052d9744e0fd6b4d3cbe5cbf86cd08f\",\"uncles\":[]}}\r\n```\r\n\r\nit also works properly via when querying via `GraphQL`:\r\n\r\n```graphql\r\nquery {\r\n  block(number:5259636) {\r\n    number\r\n    hash\r\n  }\r\n}\r\n``` \r\n\r\nresponse:\r\n```json\r\n{\r\n  \"data\": {\r\n    \"block\": {\r\n      \"number\": 5259636,\r\n      \"hash\": \"0x3705a71830dab88c25ca3b5765ffba738bea10339d629b4fb225679b5d8be9de\"\r\n    }\r\n  }\r\n}\r\n```\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n**Ref block:** https://goerli.etherscan.io/block/5259636\r\n\r\n```go\r\npackage main\r\n\r\nimport (\r\n\t\"context\"\r\n\t\"fmt\"\r\n\t\"math/big\"\r\n\r\n\t\"github.com/ethereum/go-ethereum/ethclient\"\r\n)\r\n\r\nconst (\r\n\tgeth_1_10_7_url = \"\"\r\n\tgeth_1_10_8_url = \"\"\r\n\r\n\tblock = 5259636\r\n)\r\n\r\nfunc main() {\r\n\r\n\tctx := context.Background()\r\n\r\n\tclient_1_10_7, err := ethclient.Dial(geth_1_10_7_url)\r\n\tpanicErr(err)\r\n\r\n\tclient_1_10_8, err := ethclient.Dial(geth_1_10_8_url)\r\n\tpanicErr(err)\r\n\r\n\tb_1_10_7, err := client_1_10_7.HeaderByNumber(ctx, big.NewInt(block))\r\n\tpanicErr(err)\r\n\r\n\tb_1_10_8, err := client_1_10_8.HeaderByNumber(ctx, big.NewInt(block))\r\n\tpanicErr(err)\r\n\r\n\tfmt.Printf(\"Number - b_1_10_7: %v b_1_10_8: %v\\n\", b_1_10_7.Number, b_1_10_8.Number)\r\n\tfmt.Printf(\"Hash - b_1_10_7: %v b_1_10_8: %v\\n\", b_1_10_7.Hash(), b_1_10_8.Hash())\r\n\tfmt.Printf(\"Hash Hex - b_1_10_7: %v b_1_10_8: %v\\n\", b_1_10_7.Hash().Hex(), b_1_10_8.Hash().Hex())\r\n\r\n\tif b_1_10_7.Number.Cmp(b_1_10_8.Number) != 0 {\r\n\t\tpanic(\"hold on, wait a minute, different block number\")\r\n\t}\r\n\r\n\tif b_1_10_7.Hash() != b_1_10_8.Hash() {\r\n\t\tpanic(\"hold on, wait a minute, different block hash\")\r\n\t}\r\n\r\n\tif b_1_10_7.Hash().Hex() != b_1_10_8.Hash().Hex() {\r\n\t\tpanic(\"hold on, wait a minute, diffferent block hash hex\")\r\n\t}\r\n}\r\n\r\nfunc panicErr(err error) {\r\n\tif err != nil {\r\n\t\tpanic(err)\r\n\t}\r\n}\r\n```\r\n\r\noutput:\r\n```log\r\nNumber - b_1_10_7: 5259636 b_1_10_8: 5259636\r\nHash - b_1_10_7: 0x3705a71830dab88c25ca3b5765ffba738bea10339d629b4fb225679b5d8be9de b_1_10_8: 0xc7c6eee418abf033c0d1247598dc73ad39e047573fe703c8e995716534725cee\r\nHash Hex - b_1_10_7: 0x3705a71830dab88c25ca3b5765ffba738bea10339d629b4fb225679b5d8be9de b_1_10_8: 0xc7c6eee418abf033c0d1247598dc73ad39e047573fe703c8e995716534725cee\r\npanic: hold on, wait a minute, different block hash\r\n```\r\n",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23463/reactions",
+    "total_count": 14,
+    "+1": 14,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23463/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

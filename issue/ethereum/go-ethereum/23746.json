@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23746",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23746/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23746/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23746/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/23746",
+  "id": 1027350754,
+  "node_id": "I_kwDOAOvK9849PCDi",
+  "number": 23746,
+  "title": "evm t9n export transaction intrinsic gas if transaction is valid",
+  "user": {
+    "login": "winsvega",
+    "id": 4492341,
+    "node_id": "MDQ6VXNlcjQ0OTIzNDE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4492341?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/winsvega",
+    "html_url": "https://github.com/winsvega",
+    "followers_url": "https://api.github.com/users/winsvega/followers",
+    "following_url": "https://api.github.com/users/winsvega/following{/other_user}",
+    "gists_url": "https://api.github.com/users/winsvega/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/winsvega/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/winsvega/subscriptions",
+    "organizations_url": "https://api.github.com/users/winsvega/orgs",
+    "repos_url": "https://api.github.com/users/winsvega/repos",
+    "events_url": "https://api.github.com/users/winsvega/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/winsvega/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233652,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1Mg==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:feature",
+      "name": "type:feature",
+      "color": "84b6eb",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-15T11:28:51Z",
+  "updated_at": "2021-10-18T20:36:46Z",
+  "closed_at": "2021-10-18T20:36:46Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Would be nice to know the intrinsic gas price of a transaction unit \r\nfor this rules \r\nhttps://github.com/ethereum/tests/pull/957/files#diff-c838aa6c0864dca1e3dec55c510e409317c9b7806251d9124a529d6ec693d22aR11\r\n\r\nso then we can make even more test for transaction gas calculation",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23746/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23746/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

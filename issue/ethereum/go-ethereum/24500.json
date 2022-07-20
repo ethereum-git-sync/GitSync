@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24500",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24500/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24500/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24500/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24500",
+  "id": 1158670274,
+  "node_id": "I_kwDOAOvK985FD-fC",
+  "number": 24500,
+  "title": "snapsync progress show as +Inf%",
+  "user": {
+    "login": "hadv",
+    "id": 941411,
+    "node_id": "MDQ6VXNlcjk0MTQxMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/941411?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hadv",
+    "html_url": "https://github.com/hadv",
+    "followers_url": "https://api.github.com/users/hadv/followers",
+    "following_url": "https://api.github.com/users/hadv/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hadv/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hadv/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hadv/subscriptions",
+    "organizations_url": "https://api.github.com/users/hadv/orgs",
+    "repos_url": "https://api.github.com/users/hadv/repos",
+    "events_url": "https://api.github.com/users/hadv/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hadv/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1132689577,
+      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
+      "name": "status:triage",
+      "color": "6be514",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-03T17:07:05Z",
+  "updated_at": "2022-03-11T08:40:56Z",
+  "closed_at": "2022-03-11T08:40:56Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `geth master`\r\nOS & Version: Windows/Linux/OSX\r\n\r\n#### Expected behaviour\r\nsnapsync progress should show as `0.00%`\r\n\r\n#### Actual behaviour\r\nsnapsync progress show as `synced=+Inf%` when `estBytes == 0`\r\nhttps://github.com/ethereum/go-ethereum/blob/master/eth/protocols/snap/sync.go#L2835\r\n\r\n#### Steps to reproduce the behaviour\r\n- Just run geth in snapsync mode \r\n\r\n#### Backtrace\r\n\r\n````\r\nINFO [03-03|17:00:57.754] State sync in progress                   synced=+Inf% state=325.02KiB accounts=0@0.00B slots=1573@325.02KiB codes=0@0.00B eta=-315.414ms\r\n````\r\n\r\n",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24500/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24500/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

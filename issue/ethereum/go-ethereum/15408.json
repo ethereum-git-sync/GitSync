@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15408",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15408/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15408/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15408/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/15408",
+  "id": 269944657,
+  "node_id": "MDU6SXNzdWUyNjk5NDQ2NTc=",
+  "number": 15408,
+  "title": "Geth does not start after `panic: runtime error: invalid memory address or nil pointer dereference`",
+  "user": {
+    "login": "gkapkowski",
+    "id": 114996,
+    "node_id": "MDQ6VXNlcjExNDk5Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/114996?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gkapkowski",
+    "html_url": "https://github.com/gkapkowski",
+    "followers_url": "https://api.github.com/users/gkapkowski/followers",
+    "following_url": "https://api.github.com/users/gkapkowski/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gkapkowski/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gkapkowski/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gkapkowski/subscriptions",
+    "organizations_url": "https://api.github.com/users/gkapkowski/orgs",
+    "repos_url": "https://api.github.com/users/gkapkowski/repos",
+    "events_url": "https://api.github.com/users/gkapkowski/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gkapkowski/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-10-31T12:44:21Z",
+  "updated_at": "2017-12-14T12:24:44Z",
+  "closed_at": "2017-12-14T12:24:44Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Is there anything else I can do except removing whole db and resynchronizing?\r\n\r\n#### System information\r\n\r\nGeth version: 1.7.2-stable\r\nOS & Version: Linux (Ubuntu 16.04)\r\n\r\n#### Expected behaviour\r\n\r\nNo runtime errors\r\n\r\n#### Actual behaviour\r\n\r\nRuntime error occured and now geth wont start\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nRun geth and a script that will query for transaction receipts for every transaction in current block.\r\n\r\n#### Backtrace\r\n\r\n````\r\nINFO [10-31|05:05:52] Imported new chain segment               blocks=1 txs=27  mgas=0.592 elapsed=93.329ms  mgasps=6.339  number=4462051 hash=4b6792…c74d34\r\nINFO [10-31|05:06:21] Imported new chain segment               blocks=1 txs=171 mgas=6.729 elapsed=918.634ms mgasps=7.325  number=4462052 hash=011522…5f3cbb\r\nERROR[10-31|05:06:22] Receipt refereced missing                number=4462052 hash=40d8ed…c89dc6 index=76\r\npanic: runtime error: invalid memory address or nil pointer dereference\r\n[signal SIGSEGV: segmentation violation code=0x1 addr=0x178 pc=0xb54334]\r\n\r\ngoroutine 2512754 [running]:\r\ngithub.com/ethereum/go-ethereum/internal/ethapi.(*PublicTransactionPoolAPI).GetTransactionReceipt(0xc42dd92420, 0xa395c60d0e3a1444, 0x2c86b8ca5a70150c, 0x76595a9d599100f1, 0xb0a60862a67e279d, 0x0, 0x0, 0x0)\r\n        /go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/internal/ethapi/api.go:1003 +0x2f4\r\nreflect.Value.call(0xc42dd8b560, 0xc42de9d0c0, 0x13, 0xf24633, 0x4, 0xc4e445f2c0, 0x2, 0x2, 0xc42bdc8b98, 0xc4e445f2c0, ...)\r\n        /usr/local/go/src/reflect/value.go:434 +0x906\r\nreflect.Value.Call(0xc42dd8b560, 0xc42de9d0c0, 0x13, 0xc4e445f2c0, 0x2, 0x2, 0x1, 0x1, 0x19)\r\n        /usr/local/go/src/reflect/value.go:302 +0xa4\r\ngithub.com/ethereum/go-ethereum/rpc.(*Server).handle(0xc42e049200, 0x18258c0, 0xc4e445f230, 0x182a360, 0xc455a21db0, 0xc42b701860, 0xc4e19c4840, 0x182e8e0, 0x8216f3)\r\n        /go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/rpc/server.go:311 +0x6ce\r\ngithub.com/ethereum/go-ethereum/rpc.(*Server).exec(0xc42e049200, 0x18258c0, 0xc4e445f230, 0x182a360, 0xc455a21db0, 0xc42b701860)\r\n        /go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/rpc/server.go:333 +0x1ba\r\ngithub.com/ethereum/go-ethereum/rpc.(*Server).serveRequest.func2(0xc44c783360, 0xc42e049200, 0xc5913a16e0, 0x182a360, 0xc455a21db0, 0xc51e3a2040, 0x1, 0x1, 0xc420074700)\r\n        /go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/rpc/server.go:206 +0xad\r\ncreated by github.com/ethereum/go-ethereum/rpc.(*Server).serveRequest\r\n        /go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/rpc/server.go:201 +0x2ab\r\nWARN [10-31|05:06:24] No etherbase set and no accounts found as default \r\nINFO [10-31|05:06:24] Starting peer-to-peer node               instance=Geth/v1.7.2-stable/linux-amd64/go1.9.1\r\nINFO [10-31|05:06:24] Allocated cache and file handles         database=/gethdata/geth/chaindata cache=4096 handles=1024\r\nFatal: Error starting protocol stack: missing block number for head header hash\r\nFatal: Error starting protocol stack: missing block number for head header hash\r\nWARN [10-31|05:06:41] No etherbase set and no accounts found as default \r\nINFO [10-31|05:06:41] Starting peer-to-peer node               instance=Geth/v1.7.2-stable/linux-amd64/go1.9.1\r\nINFO [10-31|05:06:41] Allocated cache and file handles         database=/gethdata/geth/chaindata cache=4096 handles=1024\r\nFatal: Error starting protocol stack: missing block number for head header hash\r\nFatal: Error starting protocol stack: missing block number for head header hash\r\n````\r\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15408/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15408/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

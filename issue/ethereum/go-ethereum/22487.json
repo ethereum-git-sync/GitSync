@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22487",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22487/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22487/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22487/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22487",
+  "id": 829344971,
+  "node_id": "MDU6SXNzdWU4MjkzNDQ5NzE=",
+  "number": 22487,
+  "title": "GraphQL schema is not EIP-2718/EIP-2930 aware",
+  "user": {
+    "login": "ryanschneider",
+    "id": 53520,
+    "node_id": "MDQ6VXNlcjUzNTIw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/53520?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ryanschneider",
+    "html_url": "https://github.com/ryanschneider",
+    "followers_url": "https://api.github.com/users/ryanschneider/followers",
+    "following_url": "https://api.github.com/users/ryanschneider/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ryanschneider/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ryanschneider/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ryanschneider/subscriptions",
+    "organizations_url": "https://api.github.com/users/ryanschneider/orgs",
+    "repos_url": "https://api.github.com/users/ryanschneider/repos",
+    "events_url": "https://api.github.com/users/ryanschneider/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ryanschneider/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-03-11T17:06:14Z",
+  "updated_at": "2021-04-06T13:58:36Z",
+  "closed_at": "2021-04-06T13:58:36Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nLatest master, last relevant commit https://github.com/ethereum/go-ethereum/commit/39b3b8ffb44983a260031d5077226d952ddfb9bf\r\n\r\n#### Expected behaviour\r\n\r\nThe GraphQL schema for `Transaction` should have `Type` and `AccessList` fields:\r\n\r\nhttps://github.com/ethereum/go-ethereum/blob/master/graphql/schema.go#L73\r\n\r\n#### Actual behaviour\r\n\r\nThe schema was not updated for EIP-2718/-2930.  With EIP-1559 on the horizon it might make sense long-term to refactor `Transaction` into a [union type](https://graphql.org/learn/schema/#union-types), something like `union Transaction = LegacyTransaction | AccessListTransaction | BaseFeeTransaction`.\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nAs reported on go-ethereum discord the access list and type fields aren't queryable via GraphQL, obviously because they are not yet included in the schema.\r\n\r\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22487/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22487/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

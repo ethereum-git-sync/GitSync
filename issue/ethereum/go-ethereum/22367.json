@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22367",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22367/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22367/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22367/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22367",
+  "id": 814322174,
+  "node_id": "MDU6SXNzdWU4MTQzMjIxNzQ=",
+  "number": 22367,
+  "title": "Windows - `customFlags` should use `filepath.Clean()` instead of `path.Clean()`",
+  "user": {
+    "login": "tintinweb",
+    "id": 2865694,
+    "node_id": "MDQ6VXNlcjI4NjU2OTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2865694?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tintinweb",
+    "html_url": "https://github.com/tintinweb",
+    "followers_url": "https://api.github.com/users/tintinweb/followers",
+    "following_url": "https://api.github.com/users/tintinweb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tintinweb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tintinweb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tintinweb/subscriptions",
+    "organizations_url": "https://api.github.com/users/tintinweb/orgs",
+    "repos_url": "https://api.github.com/users/tintinweb/repos",
+    "events_url": "https://api.github.com/users/tintinweb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tintinweb/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 164891915,
+      "node_id": "MDU6TGFiZWwxNjQ4OTE5MTU=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/os:windows",
+      "name": "os:windows",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-02-23T10:21:08Z",
+  "updated_at": "2021-03-18T08:28:19Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "`go-ethereum/cmd/utils/customflags.go` is handling OS paths and therefore it should use `filepath.Clean()` (works for windows path separator) instead of `path.Clean()` (nix path separator)\r\n\r\nhttps://github.com/ethereum/go-ethereum/blob/fdb742419e6ff8373e57bdf99836c22f689b0e55/cmd/utils/customflags.go#L199-L199\r\n\r\n`path.Clean()`\r\nhttps://github.com/golang/go/blob/master/src/path/path.go#L51-L62\r\n\r\n`filepath.Clean()`\r\nhttps://github.com/golang/go/blob/master/src/path/filepath/path.go#L66-L79\r\n\r\n\r\n#### Expected behaviour\r\n\r\nshould cleanup for OS path separator\r\n\r\n#### Actual behaviour\r\n\r\n`path.Clean()` assumes the path separator is `/` while it might be `\\\\`\r\n\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22367/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22367/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/784283886",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/22367#issuecomment-784283886",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22367",
+    "id": 784283886,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDc4NDI4Mzg4Ng==",
+    "user": {
+      "login": "karalabe",
+      "id": 129561,
+      "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/karalabe",
+      "html_url": "https://github.com/karalabe",
+      "followers_url": "https://api.github.com/users/karalabe/followers",
+      "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+      "organizations_url": "https://api.github.com/users/karalabe/orgs",
+      "repos_url": "https://api.github.com/users/karalabe/repos",
+      "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/karalabe/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2021-02-23T15:29:00Z",
+    "updated_at": "2021-02-23T15:29:00Z",
+    "author_association": "MEMBER",
+    "body": "Good catch. Though we'd need to update that sole test too to pass on Windows if we update the test. I assume it will break because it explicitly hard codes Linux paths and expansions.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/784283886/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

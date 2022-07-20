@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15491",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15491/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15491/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15491/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/15491",
+  "id": 274177854,
+  "node_id": "MDU6SXNzdWUyNzQxNzc4NTQ=",
+  "number": 15491,
+  "title": "Make txpool.inspect output a bit clearer",
+  "user": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 717742232,
+      "node_id": "MDU6TGFiZWw3MTc3NDIyMzI=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/help%20wanted",
+      "name": "help wanted",
+      "color": "0e8a16",
+      "default": true,
+      "description": null
+    },
+    {
+      "id": 717743019,
+      "node_id": "MDU6TGFiZWw3MTc3NDMwMTk=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-11-15T14:35:37Z",
+  "updated_at": "2017-11-17T13:25:32Z",
+  "closed_at": "2017-11-17T13:25:32Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "If you run `txpool.inspect` in a Geth console, the output is something like:\r\n\r\n```\r\n[...]\r\n\r\n    0x955f26CDe0a01B7182333a922D5f6b82AaD516ED: {\r\n      772: \"0x70525258C67C2a203a26b9F889d87d493D1Cf072: 0 wei + 90000 × 5000000000 gas\"\r\n    },\r\n    0x98791b854B8c1F00BBca8762363516E1729f85b5: {\r\n      0: \"0xE9FA060aEd8e170bEd56e8FC54c43c515c09C49f: 3157553 wei + 21120 × 12592 gas\"\r\n    },\r\n\r\n[...]\r\n```\r\n\r\nIt's not really clear from `21120 × 12592` which is the gas and which is the gas price. The output should be fixed so it displays something like:\r\n\r\n```\r\n0: \"0xE9FA060aEd8e170bEd56e8FC54c43c515c09C49f: 3157553 wei + 21120 gas × 12592 wei\"\r\n```\r\n\r\nHint: https://github.com/ethereum/go-ethereum/blob/master/internal/ethapi/api.go#L142",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15491/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15491/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

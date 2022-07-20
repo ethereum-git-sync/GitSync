@@ -47,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-06-24T15:43:50Z",
-  "updated_at": "2022-06-24T15:47:27Z",
+  "updated_at": "2022-07-18T18:02:11Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -72,5 +72,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1187977432",
+    "html_url": "https://github.com/ethereum/consensus-specs/issues/2922#issuecomment-1187977432",
+    "issue_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2922",
+    "id": 1187977432,
+    "node_id": "IC_kwDOCOoGbc5GzxjY",
+    "user": {
+      "login": "djrtwo",
+      "id": 1433595,
+      "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/djrtwo",
+      "html_url": "https://github.com/djrtwo",
+      "followers_url": "https://api.github.com/users/djrtwo/followers",
+      "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+      "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+      "repos_url": "https://api.github.com/users/djrtwo/repos",
+      "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-07-18T18:02:11Z",
+    "updated_at": "2022-07-18T18:02:11Z",
+    "author_association": "MEMBER",
+    "body": "do we want to get this into the test suite prior to the Bellatrix spec release coming soon?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1187977432/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

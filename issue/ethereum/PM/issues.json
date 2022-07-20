@@ -1,11 +1,43 @@
 [
   {
     "author": {
+      "login": "timbeiko"
+    },
+    "number": 572,
+    "title": "Ethereum Core Devs Meeting 143 Agenda",
+    "updatedAt": "2022-07-19T14:38:26Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 581,
+    "title": "EIP-4844 Breakout Room #2",
+    "updatedAt": "2022-07-18T16:50:59Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 580,
+    "title": "Merge Community Call #6",
+    "updatedAt": "2022-07-18T16:43:36Z"
+  },
+  {
+    "author": {
       "login": "djrtwo"
     },
-    "number": 566,
-    "title": "Consensus-layer Call 91",
-    "updatedAt": "2022-07-12T17:02:20Z"
+    "number": 574,
+    "title": "Consensus-layer Call 92",
+    "updatedAt": "2022-07-18T16:43:30Z"
+  },
+  {
+    "author": {
+      "login": "ganyuanmen"
+    },
+    "number": 573,
+    "title": "wss://nunki.htznr.fault.dev/ws Connection error",
+    "updatedAt": "2022-07-18T16:43:22Z"
   },
   {
     "author": {
@@ -13,15 +45,47 @@
     },
     "number": 564,
     "title": "Merge Community Call #5",
-    "updatedAt": "2022-07-11T16:46:10Z"
+    "updatedAt": "2022-07-18T15:24:04Z"
+  },
+  {
+    "author": {
+      "login": "Dkisza7887"
+    },
+    "number": 577,
+    "title": "T",
+    "updatedAt": "2022-07-18T02:34:14Z"
   },
   {
     "author": {
       "login": "timbeiko"
     },
-    "number": 572,
-    "title": "Ethereum Core Devs Meeting 143 Agenda",
-    "updatedAt": "2022-07-08T16:16:43Z"
+    "number": 449,
+    "title": "Ethereum Core Devs Meeting 130 Agenda",
+    "updatedAt": "2022-07-16T18:16:29Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 450,
+    "title": "Shanghai Planning",
+    "updatedAt": "2022-07-16T18:14:22Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 508,
+    "title": "Ethereum Core Devs Meeting 136 Agenda",
+    "updatedAt": "2022-07-16T18:12:49Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 566,
+    "title": "Consensus-layer Call 91",
+    "updatedAt": "2022-07-14T18:12:01Z"
   },
   {
     "author": {
@@ -102,14 +166,6 @@
     "number": 558,
     "title": "KZG-Ceremony Call #2",
     "updatedAt": "2022-06-23T13:57:16Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 450,
-    "title": "Shanghai Planning",
-    "updatedAt": "2022-06-20T17:50:48Z"
   },
   {
     "author": {
@@ -262,14 +318,6 @@
     "number": 514,
     "title": "Ethereum Core Devs Meeting 137 Agenda",
     "updatedAt": "2022-04-29T19:56:15Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 508,
-    "title": "Ethereum Core Devs Meeting 136 Agenda",
-    "updatedAt": "2022-04-15T21:51:33Z"
   },
   {
     "author": {
@@ -550,14 +598,6 @@
     "number": 430,
     "title": "Proposal: Use B-star name for The Merge (at least for CL)",
     "updatedAt": "2022-01-21T19:02:29Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 449,
-    "title": "Ethereum Core Devs Meeting 130 Agenda",
-    "updatedAt": "2022-01-21T16:06:01Z"
   },
   {
     "author": {

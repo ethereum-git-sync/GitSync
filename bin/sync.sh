@@ -14,10 +14,13 @@ else
 fi
 
 echo "Copying ${1}..."
+gitea_account=""
 if [ "$repo_owner" = "ethereum" ]
 then
-	/usr/bin/git -C ~/repo/github/$"$1" push --prune --mirror git@gitea.com:ethereum-git-sync/$"$repo_name"
+	gitea_account="ethereum-git-sync"
 elif [ "$repo_owner" = "ethereum-cat-herders" ]
 then
-        /usr/bin/git -C ~/repo/github/$"$1" push --prune --mirror git@gitea.com:tweth/$"$repo_name"
+	gitea_account="tweth"
 fi
+
+/usr/bin/git -C ~/repo/github/$"$1" push --prune --mirror git@gitea.com:$gitea_account/$"$repo_name"

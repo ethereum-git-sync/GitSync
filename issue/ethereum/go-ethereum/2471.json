@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2471",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2471/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2471/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2471/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/2471",
+  "id": 149297464,
+  "node_id": "MDU6SXNzdWUxNDkyOTc0NjQ=",
+  "number": 2471,
+  "title": "New node starts DAG generation before syncing",
+  "user": {
+    "login": "kumavis",
+    "id": 1474978,
+    "node_id": "MDQ6VXNlcjE0NzQ5Nzg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1474978?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kumavis",
+    "html_url": "https://github.com/kumavis",
+    "followers_url": "https://api.github.com/users/kumavis/followers",
+    "following_url": "https://api.github.com/users/kumavis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kumavis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kumavis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kumavis/subscriptions",
+    "organizations_url": "https://api.github.com/users/kumavis/orgs",
+    "repos_url": "https://api.github.com/users/kumavis/repos",
+    "events_url": "https://api.github.com/users/kumavis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kumavis/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-04-18T23:08:27Z",
+  "updated_at": "2017-03-09T14:50:16Z",
+  "closed_at": "2017-03-09T14:50:16Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "#### System information\n\nGeth version: `Starting Geth/v1.3.6/linux/go1.5.1`\nOS & Version: Linux/Ubuntu\n#### Expected behaviour\n\nsyncs blockchain, then begins mining\n#### Actual behaviour\n\nstarts building DAG from block zero, and will simultaneously build mutliple DAGs at the same time as the blockchain syncs.\n#### Steps to reproduce the behaviour\n\nstart a fresh node with the mine flag `geth --mine`\n#### Logs\n\nsyncing from start:\n\n```\ndatabase.go:71] Alloted 16MB cache to /root/.ethereum/testnet/chaindata\ndatabase.go:71] Alloted 16MB cache to /root/.ethereum/testnet/dapp\nbackend.go:314] Protocol Versions: [63 62 61], Network Id: 2\nbackend.go:362] Blockchain DB Version: 3\nblockchain.go:214] Last header: #0 [0cd786a2…] TD=131072\nblockchain.go:215] Last block: #0 [0cd786a2…] TD=131072\nblockchain.go:216] Fast block: #0 [0cd786a2…] TD=131072\ncmd.go:115] Starting Geth/v1.3.6/linux/go1.5.1\nserver.go:311] Starting Server\nudp.go:212] Listening, enode://ee44ebc754df8dd9eca31f24ed12434da155956241cc281fc0a24b712c73bcfa9a1167142a9f0a94211b304391545e7f8f6be45be21c3fd05649d7735201aed4@[::]:30303\nbackend.go:526] Server started\nminer.go:119] Starting mining operation (CPU=1 TOT=2)\nworker.go:569] commit new work on block 1 with 0 txs & 0 uncles. Took 408.173µs\nethash.go:220] Generating DAG for epoch 0 (size 1073739904) (0000000000000000000000000000000000000000000000000000000000000000)\nbackend.go:584] Automatic pregeneration of ethash DAG ON (ethash dir: /root/.ethash)\nipc.go:112] IPC service started (/root/.ethereum/geth.ipc)\nbackend.go:591] checking DAG (ethash dir: /root/.ethash)\nserver.go:552] Listening on [::]:30303\nethash.go:252] Generating DAG: 0%\nethash.go:252] Generating DAG: 1%\nethash.go:252] Generating DAG: 2%\nethash.go:252] Generating DAG: 3%\n```\n\nmultiple DAGs at once\n\n```\nethash.go:220] Generating DAG for epoch 14 (size 1191180416) (526ee6e688a9b3d466fe4a7355197a89898593509d75c570942cc73a5ca8299d)\nethash.go:252] Generating DAG: 40%\nethash.go:252] Generating DAG: 91%\nethash.go:252] Generating DAG: 0%\nblockchain.go:1251] imported 256 block(s) (0 queued 0 ignored) including 635 txs in 7.631242763s. #420416 [b2a9f017 / 17a76e63]\nworker.go:569] commit new work on block 420417 with 0 txs & 0 uncles. Took 878.832µs\nblockchain.go:1251] imported 256 block(s) (0 queued 0 ignored) including 60 txs in 2.864135036s. #420672 [3bd31dfb / b4293d6f]\nworker.go:569] commit new work on block 420673 with 0 txs & 0 uncles. Took 1.257414ms\nblockchain.go:1251] imported 256 block(s) (0 queued 0 ignored) including 53 txs in 4.226514752s. #420928 [63b39c63 / dc07fc94]\nworker.go:569] commit new work on block 420929 with 0 txs & 0 uncles. Took 997.89µs\nethash.go:252] Generating DAG: 54%\nethash.go:252] Generating DAG: 70%\nethash.go:252] Generating DAG: 41%\nethash.go:252] Generating DAG: 92%\n```\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2471/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2471/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

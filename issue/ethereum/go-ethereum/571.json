@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/571",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/571/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/571/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/571/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/571",
+  "id": 64403128,
+  "node_id": "MDU6SXNzdWU2NDQwMzEyOA==",
+  "number": 571,
+  "title": "Mist create contract Error: Insufficient arguments",
+  "user": {
+    "login": "ethers",
+    "id": 6937903,
+    "node_id": "MDQ6VXNlcjY5Mzc5MDM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6937903?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ethers",
+    "html_url": "https://github.com/ethers",
+    "followers_url": "https://api.github.com/users/ethers/followers",
+    "following_url": "https://api.github.com/users/ethers/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ethers/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ethers/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ethers/subscriptions",
+    "organizations_url": "https://api.github.com/users/ethers/orgs",
+    "repos_url": "https://api.github.com/users/ethers/repos",
+    "events_url": "https://api.github.com/users/ethers/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ethers/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-03-26T00:26:27Z",
+  "updated_at": "2015-06-23T09:59:05Z",
+  "closed_at": "2015-06-23T09:59:04Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "develop branch 505f1fb\n\nRun Mist, (Mist says Wallet has 20 Ether), go to New Transaction, enter 0 finney, and then set gas price to 10 Wei.  In the data, paste the following:\n61007c8061000e60003961008a56600060ff537c01000000000000000000000000000000000000000000000000000000006000350463f31a696981141561007a576024600435808060200159905901600090528181526020810190509050604052808260405137808201915050506005600555600f600f55601060105560405160e052602060e0f35b505b6000f3\n\nClick Send, nothing happens, and log says:\n\n```\n2015/03/25 17:23:14 transaction.qml:172: file:////home/user/go/src/github.com/ethereum/go-ethereum/cmd/mist/assets/qml/views/transaction.qml:172: Error: Insufficient arguments\n```\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/571/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/571/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3797",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3797/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3797/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3797/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/3797",
+  "id": 215213924,
+  "node_id": "MDU6SXNzdWUyMTUyMTM5MjQ=",
+  "number": 3797,
+  "title": "ethstats tracking issue",
+  "user": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-03-18T18:55:08Z",
+  "updated_at": "2017-03-20T11:04:57Z",
+  "closed_at": "2017-03-20T11:04:57Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "There are a few issues with the ethstats package currently:\r\n\r\n - [ ] Some stats servers serve on port 80 (ws://), others on port 443 (wss://). Geth currently defaults to TLS if no protocol scheme is specified, optionally having the capacity to use non TLS if explicitly requested. The issue with this is that if there's a cloudflare instance in front of ethstats which forces TLS, only the tls will work, but turning cloudflare off will make everything fail, and vice versa. Similar issues crop up with private networks where it's just extra confusion as to how to make it \"just work\". The solution is to drop the protocol schemes altogether and instead try wss/ws interchangeably, so if one fails, the other can be attempted. This will make everything much more robust. And after all, it's just a stats page, so it's not like we really care about security here :P \r\n- [ ] The stats page has a feature that it requests the most recent 3000 blocks from a client when it boots up (stats page that is). Our ethstats code chokes on this for some reason if they don't have 3000 blocks available, and disconnect. This causes annoying reconnect cycles for new networks until the block count reaches 3000.",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3797/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3797/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

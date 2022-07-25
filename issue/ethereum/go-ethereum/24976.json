@@ -123,14 +123,14 @@
     "body": "See [this tweet](https://twitter.com/vdWijden/status/1529895417881800714) for info on how to get a Ropsten client to sync.\r\nTL;DR: you can use `--override.terminaltotaldifficulty 100000000000000000000000` to allow your client to start to sync again and you can run `debug.setHead(\"0xBBCE88\")` in [the console](https://geth.ethereum.org/docs/interface/javascript-console) to sync the right blockchain.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1139098814/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 4,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
-      "hooray": 0,
+      "hooray": 1,
       "confused": 0,
       "heart": 0,
-      "rocket": 0,
+      "rocket": 1,
       "eyes": 0
     },
     "performed_via_github_app": null

@@ -123,8 +123,8 @@
     "body": "There are two different notions: `gcmode` and `syncmode`. The latter refers how to do the initial sync and the former is how to behave garbage collection wide.\r\n\r\nIn fast/snap sync, the \"current\" state of the network is downloaded directly. As such, any state before it (not block, just the state) will not be available for serving. If you are running with `gcmode=archive` after snap sync, then your node will hold onto all generated state **after** initial sync, but anything before it will still be missing.\r\n\r\nIn `full` sync, blocks are processed one by one from the genesis. By default get will garbage collect the generated state, but if `cgmode=archive` is specified it will hold onto them. Thus you will have all the state available from genesis.\r\n\r\n>  This allows a fast synced node to still retain its status an an archive node\r\n\r\nThat statement is wrong (I guess I messed it up at the time). I was meaning to write it \"retains it's status a a full node\".\r\n\r\n> Author speculates that the node is not able to serve requests prior to a \"pivot block\".\r\n\r\nArchive mode retains all the state that gets generated *during* block processing. If you reprocess all the blocks from genesis - with archive flag set - you will have all that state. If you do the initial sync without block processing, the state for that segment will not be available.\r\n\r\n> Does --gcmode=archive require --syncmode=full? -- Answer is not known.\r\n\r\nDepends on the behavior you want. If you want everything since genesis, then `full` is required. There are also use cases where you don't want everything, only from \"today onward\". In that case you can fast/snap sync and have archive keeping only the states after.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1042756269/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

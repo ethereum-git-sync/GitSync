@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/283",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/283/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/283/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/283/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/283",
+  "id": 56235333,
+  "node_id": "MDU6SXNzdWU1NjIzNTMzMw==",
+  "number": 283,
+  "title": "One to one watchers done t work in mist",
+  "user": {
+    "login": "frozeman",
+    "id": 232662,
+    "node_id": "MDQ6VXNlcjIzMjY2Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/232662?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frozeman",
+    "html_url": "https://github.com/frozeman",
+    "followers_url": "https://api.github.com/users/frozeman/followers",
+    "following_url": "https://api.github.com/users/frozeman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frozeman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frozeman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frozeman/subscriptions",
+    "organizations_url": "https://api.github.com/users/frozeman/orgs",
+    "repos_url": "https://api.github.com/users/frozeman/repos",
+    "events_url": "https://api.github.com/users/frozeman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frozeman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-02-02T13:16:07Z",
+  "updated_at": "2015-02-03T15:16:33Z",
+  "closed_at": "2015-02-03T15:16:32Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "One to one encryption doesn't work, the watcher doesn't receive any message, if i send it with:\n\n``` js\ntopic: [x,identityOfReceiver]\nto: identityOfReceiver\nfrom: myIdentity\n```\n",
+  "closed_by": {
+    "login": "obscuren",
+    "id": 6264126,
+    "node_id": "MDQ6VXNlcjYyNjQxMjY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6264126?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/obscuren",
+    "html_url": "https://github.com/obscuren",
+    "followers_url": "https://api.github.com/users/obscuren/followers",
+    "following_url": "https://api.github.com/users/obscuren/following{/other_user}",
+    "gists_url": "https://api.github.com/users/obscuren/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/obscuren/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/obscuren/subscriptions",
+    "organizations_url": "https://api.github.com/users/obscuren/orgs",
+    "repos_url": "https://api.github.com/users/obscuren/repos",
+    "events_url": "https://api.github.com/users/obscuren/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/obscuren/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/283/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/283/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

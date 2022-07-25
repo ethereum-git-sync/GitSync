@@ -47,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 33,
+  "comments": 34,
   "created_at": "2021-07-17T13:16:57Z",
-  "updated_at": "2022-06-13T08:45:39Z",
+  "updated_at": "2022-07-22T13:31:52Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -588,14 +588,14 @@
     "body": "I am doubling my cloud now to 20K IOPS and will see how state healing does when it comes to that stage. Bare Metal VMs is going to be the solution perhaps, I wish Geth honesty places logs saying hardware is not good enough if it can detect that. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/885610206/reactions",
-      "total_count": 1,
-      "+1": 0,
+      "total_count": 3,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
       "heart": 0,
-      "rocket": 1,
+      "rocket": 2,
       "eyes": 0
     },
     "performed_via_github_app": null

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/489",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/489/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/489/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/489/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/489",
+  "id": 62048620,
+  "node_id": "MDU6SXNzdWU2MjA0ODYyMA==",
+  "number": 489,
+  "title": "Right-clicking in browser on OS X causes type error.",
+  "user": {
+    "login": "simondlr",
+    "id": 716965,
+    "node_id": "MDQ6VXNlcjcxNjk2NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/716965?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/simondlr",
+    "html_url": "https://github.com/simondlr",
+    "followers_url": "https://api.github.com/users/simondlr/followers",
+    "following_url": "https://api.github.com/users/simondlr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/simondlr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/simondlr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/simondlr/subscriptions",
+    "organizations_url": "https://api.github.com/users/simondlr/orgs",
+    "repos_url": "https://api.github.com/users/simondlr/repos",
+    "events_url": "https://api.github.com/users/simondlr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/simondlr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-03-16T11:17:28Z",
+  "updated_at": "2015-06-23T09:59:05Z",
+  "closed_at": "2015-06-23T09:59:04Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "2015/03/16 13:15:02 Menu.qml:146: file:///usr/local/Cellar/qt5/5.4.0/qml/QtQuick/Controls/Menu.qml:146: TypeError: Cannot read property '__contentItem' of null\n\nWhen I want to copy/paste something in Mist, doing a right-click in the browser causes the above error. This locks up the rest of the UI and I must then quit Mist for it to work again.\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/489/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/489/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

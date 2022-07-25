@@ -49,7 +49,7 @@
   "milestone": null,
   "comments": 10,
   "created_at": "2022-04-04T15:35:00Z",
-  "updated_at": "2022-04-15T21:51:33Z",
+  "updated_at": "2022-07-16T18:12:49Z",
   "closed_at": "2022-04-15T21:51:33Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -471,7 +471,7 @@
     },
     "created_at": "2022-04-15T13:33:17Z",
     "updated_at": "2022-04-15T13:33:17Z",
-    "author_association": "NONE",
+    "author_association": "MEMBER",
     "body": "If there is time today, I would like to briefly get some feedback on how important a security fix people think [EIP-4396](https://eips.ethereum.org/EIPS/eip-4396) would be. Being mindful of the desire to pause CFIs for Shanghai, and given that the EIP still requires significant work in comparing its different variants & picking the optimal one, it would be helpful to get a feeling for whether this should realistically target Shanghai.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/pm/issues/comments/1100113606/reactions",

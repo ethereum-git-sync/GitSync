@@ -43,7 +43,7 @@
   "created_at": "2021-10-29T04:07:11Z",
   "updated_at": "2021-11-12T19:18:01Z",
   "closed_at": null,
-  "author_association": "NONE",
+  "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "I just now [opened the PR](https://github.com/ethereum/EIPs/pull/4396) to create what will presumably become [EIP-4396](https://github.com/quilt/EIPs/blob/time-aware-basefee/EIPS/eip-4396.md).\r\n\r\nThe EIP proposes accounting for time between blocks in the base fee calculation to target a stable throughput by time, instead of by block. It appears to be desirable to have something like this in place already for the merge, to avoid (or at least greatly reduce) throughput degradation due to missed slots, or even due to potential consensus issues.\r\n\r\nTo maximize the chance of this EIP being included in the merge fork, the adjustments are kept to a minimum, with more involved changes discussed in the rationale section.",
   "closed_by": null,
@@ -180,7 +180,7 @@
     },
     "created_at": "2021-11-12T19:18:01Z",
     "updated_at": "2021-11-12T19:18:01Z",
-    "author_association": "NONE",
+    "author_association": "MEMBER",
     "body": "@timbeiko did it for you 🙂",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/pm/issues/comments/967362438/reactions",

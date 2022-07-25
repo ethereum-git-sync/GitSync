@@ -1,11 +1,43 @@
 [
   {
     "author": {
+      "login": "djrtwo"
+    },
+    "number": 574,
+    "title": "Consensus-layer Call 92",
+    "updatedAt": "2022-07-25T15:06:45Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 583,
+    "title": "Ethereum Core Devs Meeting 144 Agenda ",
+    "updatedAt": "2022-07-25T15:06:02Z"
+  },
+  {
+    "author": {
+      "login": "ru0xjr669"
+    },
+    "number": 584,
+    "title": "Jru",
+    "updatedAt": "2022-07-25T15:05:34Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 569,
+    "title": "KZG-Ceremony Call #4",
+    "updatedAt": "2022-07-22T14:14:07Z"
+  },
+  {
+    "author": {
       "login": "timbeiko"
     },
     "number": 572,
     "title": "Ethereum Core Devs Meeting 143 Agenda",
-    "updatedAt": "2022-07-19T14:38:26Z"
+    "updatedAt": "2022-07-21T16:37:34Z"
   },
   {
     "author": {
@@ -22,14 +54,6 @@
     "number": 580,
     "title": "Merge Community Call #6",
     "updatedAt": "2022-07-18T16:43:36Z"
-  },
-  {
-    "author": {
-      "login": "djrtwo"
-    },
-    "number": 574,
-    "title": "Consensus-layer Call 92",
-    "updatedAt": "2022-07-18T16:43:30Z"
   },
   {
     "author": {
@@ -102,14 +126,6 @@
     "number": 560,
     "title": "KZG-Ceremony Call #3",
     "updatedAt": "2022-07-07T16:51:12Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 569,
-    "title": "KZG-Ceremony Call #4",
-    "updatedAt": "2022-07-07T12:47:42Z"
   },
   {
     "author": {

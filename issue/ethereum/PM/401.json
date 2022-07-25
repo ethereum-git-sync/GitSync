@@ -163,7 +163,7 @@
     },
     "created_at": "2021-10-29T04:08:09Z",
     "updated_at": "2021-10-29T04:08:09Z",
-    "author_association": "NONE",
+    "author_association": "MEMBER",
     "body": "If there is time, I would like to briefly discuss the base fee calculation EIP I just published: https://github.com/ethereum/pm/issues/406",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/pm/issues/comments/954413734/reactions",
@@ -339,7 +339,7 @@
     },
     "created_at": "2021-10-29T15:06:15Z",
     "updated_at": "2021-10-29T15:06:15Z",
-    "author_association": "NONE",
+    "author_association": "MEMBER",
     "body": "> @adietrichs I saw a write-up a few weeks ago, I think written by Vitalik, where he proposed a basefee modification + explainer with concrete examples about how it would work with regards to transactions in the pool. I don't know if you know what write-up I'm talking about, but if you do -- do you know where it is? And is it about the same thing as you describe in that EIP?\r\n\r\nI assume you might be thinking of the \"[Make EIP 1559 more like an AMM curve](https://ethresear.ch/t/make-eip-1559-more-like-an-amm-curve/9082)\" proposal? Or maybe some similar proposal.\r\n\r\nI'd argue those are orthogonal to this EIP: The EIP modifies the signal used for the base fee update (how full was the last block? how full should it have been?), whereas these proposals by Vitalik & co deal with how to update the base fee given a specific signal. I also have some thoughts on the latter, but decided to keep them out of the EIP to really make it single-purpose.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/pm/issues/comments/954818549/reactions",

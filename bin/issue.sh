@@ -77,6 +77,15 @@ then
 	cd /home/ubuntu/repo/github/${1}
 	echo ${1}
 	gather_issues ${1}
+	
+	#Push to GitHub
+	cp -r /home/ubuntu/issue/${1}/. /home/ubuntu/git/GitSync/issue/${1}
+	cd /home/ubuntu/git/GitSync
+	git fetch
+	git merge
+	git add *
+	git commit -m "Updated issues for $1"
+	git push
 else
 	echo "There is no repo to collect issues from."
 fi

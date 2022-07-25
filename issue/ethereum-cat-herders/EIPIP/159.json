@@ -32,21 +32,40 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 2,
+  "comments": 3,
   "created_at": "2022-07-11T18:13:57Z",
-  "updated_at": "2022-07-25T16:50:56Z",
-  "closed_at": null,
+  "updated_at": "2022-07-25T22:34:40Z",
+  "closed_at": "2022-07-25T22:34:40Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "## Date and Time\r\n\r\n#### Monday, July 25, 2022, at 17:00 UTC\r\n\r\n## Location\r\n\r\nDiscord: Zoom link shared on #eip-editor on ECH Discord\r\nJoin Zoom Meeting https://us02web.zoom.us/j/81736588987?pwd=U2RSTjkvb05QVW80VERPeHhvVUdUdz09\r\n\r\nRecording: https://www.youtube.com/playlist?list=PL4cwHXAawZxqniL-N770HeaDUjeNu2arB\r\n\r\n## Agenda\r\n\r\n### 1. Replace [EIP-831](https://eips.ethereum.org/EIPS/eip-831) with a new EIP that will handle ethereum[-<type>]: namespace, and also propose a shortcut eth[-<type>]:\r\nThis namespace EIP can list all URL-URIs that will be finalized with this workgroup.\r\n\r\n### 2.  Progress on \"Idea for compact URL proposals\" Ref: [FEM thread](https://ethereum-magicians.org/t/idea-proposal-introducing/9906)\r\n\r\n### 3. Progress on EIPs\r\n- [EIP-2400: URL Format for Transaction Receipts](https://eips.ethereum.org/EIPS/eip-2400)\r\n- [EIP-4804: Web3 URL to EVM Call Message Translation](https://eips.ethereum.org/EIPS/eip-4804)\r\n\r\n(Anything else, please add a comment)\r\n\r\n**Next meeting** - Aug 8, 2022\r\n\r\nFollow earlier meeting notes [here](https://hackmd.io/@poojaranjan/URLWorkingGroup)",
-  "closed_by": null,
+  "closed_by": {
+    "login": "poojaranjan",
+    "id": 29681685,
+    "node_id": "MDQ6VXNlcjI5NjgxNjg1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29681685?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/poojaranjan",
+    "html_url": "https://github.com/poojaranjan",
+    "followers_url": "https://api.github.com/users/poojaranjan/followers",
+    "following_url": "https://api.github.com/users/poojaranjan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/poojaranjan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/poojaranjan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/poojaranjan/subscriptions",
+    "organizations_url": "https://api.github.com/users/poojaranjan/orgs",
+    "repos_url": "https://api.github.com/users/poojaranjan/repos",
+    "events_url": "https://api.github.com/users/poojaranjan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/poojaranjan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/159/reactions",
     "total_count": 0,
@@ -61,7 +80,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/159/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -140,6 +159,50 @@
     "body": "@3esmit \r\n\r\nAdded to the agenda!",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1194107626/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1194722118",
+    "html_url": "https://github.com/ethereum-cat-herders/EIPIP/issues/159#issuecomment-1194722118",
+    "issue_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/159",
+    "id": 1194722118,
+    "node_id": "IC_kwDODfkRC85HNgNG",
+    "user": {
+      "login": "poojaranjan",
+      "id": 29681685,
+      "node_id": "MDQ6VXNlcjI5NjgxNjg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29681685?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/poojaranjan",
+      "html_url": "https://github.com/poojaranjan",
+      "followers_url": "https://api.github.com/users/poojaranjan/followers",
+      "following_url": "https://api.github.com/users/poojaranjan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/poojaranjan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/poojaranjan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/poojaranjan/subscriptions",
+      "organizations_url": "https://api.github.com/users/poojaranjan/orgs",
+      "repos_url": "https://api.github.com/users/poojaranjan/repos",
+      "events_url": "https://api.github.com/users/poojaranjan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/poojaranjan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-07-25T22:34:40Z",
+    "updated_at": "2022-07-25T22:34:40Z",
+    "author_association": "MEMBER",
+    "body": "CLosing in favor of #165 ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1194722118/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

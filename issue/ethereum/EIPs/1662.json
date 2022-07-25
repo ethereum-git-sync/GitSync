@@ -123,9 +123,9 @@
     "body": "If your contract is 24KB or larger, your contract architecture needs a seriously big redesign",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/448468559/reactions",
-      "total_count": 85,
+      "total_count": 89,
       "+1": 0,
-      "-1": 85,
+      "-1": 89,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
@@ -167,8 +167,8 @@
     "body": "> If your contract is 24KB or larger, your contract architecture needs a seriously big redesign\r\n\r\nThank you for your feedback. That's a debatable point but I get why you think so.\r\n\r\nContract size increases due to multiple factors that don't really add to the complexity of the code. For example,\r\n1) Reason strings take a hell lot of space.\r\n2) Getter functions for ease of use of front-end devs or normal users take a lot of space.\r\n3) Solidity 0.5.0 produces larger bytecode than solidity 0.4.24 for the same contract with required explicit definitions.\r\netc\r\n\r\nObviously, the contract size also increases when you add functionality.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/448470166/reactions",
-      "total_count": 37,
-      "+1": 37,
+      "total_count": 38,
+      "+1": 38,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

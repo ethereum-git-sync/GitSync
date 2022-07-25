@@ -159,8 +159,8 @@
     "body": "Great! Some minor nit-picks:\r\n\r\nI think TYPE should be removed or defined. I would vote for removing it\r\n\r\nBtw: It is better to directly start your EIP as a PR - so one can directly write comments like the above on the corresponding line. Also You do not have this waste and overhead of having issue+pr.\r\n\r\nI would leave out:\r\n\r\n> Optional parameters can include vanity parameters as color or image for providing additional UI elements for displaying the connection and transaction requests for the WalletConnect session\r\n\r\nand properly add this when a new version is created. Otherwise this opens it up for getting really messy- people will just start using their custom solutions under the banner of \"Optional parameters\" and we will loose interoperability and open the door for bugs from this corner.\r\n\r\nAlso I think we should define the length of symKey\r\n\r\nI would replace dapp with application ;-) - you know the context - just for context for others: https://twitter.com/mr_ligi/status/1029682384965316608\r\n\r\nPerhaps also this link should be added for context and discussion https://ethereum-magicians.org/t/wallet-connect-eip/850\r\n\r\nOther than that - great! Let's finalize and implement - I Think I can have [WallETH](https://waleth.org) compatible to this today ,-)\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/413511502/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

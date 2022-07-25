@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/pm/issues/288",
+  "repository_url": "https://api.github.com/repos/ethereum/pm",
+  "labels_url": "https://api.github.com/repos/ethereum/pm/issues/288/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/pm/issues/288/comments",
+  "events_url": "https://api.github.com/repos/ethereum/pm/issues/288/events",
+  "html_url": "https://github.com/ethereum/pm/issues/288",
+  "id": 843508064,
+  "node_id": "MDU6SXNzdWU4NDM1MDgwNjQ=",
+  "number": 288,
+  "title": "Ethereum Core Devs Meeting 108 Agenda",
+  "user": {
+    "login": "timbeiko",
+    "id": 9390255,
+    "node_id": "MDQ6VXNlcjkzOTAyNTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9390255?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/timbeiko",
+    "html_url": "https://github.com/timbeiko",
+    "followers_url": "https://api.github.com/users/timbeiko/followers",
+    "following_url": "https://api.github.com/users/timbeiko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/timbeiko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/timbeiko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/timbeiko/subscriptions",
+    "organizations_url": "https://api.github.com/users/timbeiko/orgs",
+    "repos_url": "https://api.github.com/users/timbeiko/repos",
+    "events_url": "https://api.github.com/users/timbeiko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/timbeiko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2866593601,
+      "node_id": "MDU6TGFiZWwyODY2NTkzNjAx",
+      "url": "https://api.github.com/repos/ethereum/pm/labels/agenda",
+      "name": "agenda",
+      "color": "0052cc",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-03-29T15:52:11Z",
+  "updated_at": "2021-03-29T15:52:16Z",
+  "closed_at": "2021-03-29T15:52:16Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "  #### ACD 108 Meeting Info\r\n  * [March 19, 2021, 14:00 UTC](https://savvytime.com/converter/utc-to-germany-berlin-united-kingdom-london-ny-new-york-city-ca-san-francisco-china-shanghai-japan-tokyo-australia-sydney/mar-19-2021/2pm)\r\n  * Duration: 90 minutes\r\n  * Youtube Stream: https://youtu.be/AclPXsRlgSc\r\n\r\n  #### Agenda\r\n  1. [Berlin](https://github.com/ethereum/eth1.0-specs/blob/master/network-upgrades/berlin.md) Updates\r\n      - Ropsten & Goerli fork updates [#248](https://github.com/ethereum/pm/issues/248#issuecomment-791499728)\r\n  1. EIPs Proposals related to [Included London EIPs](https://github.com/ethereum/eth1.0-specs/blob/master/network-upgrades/london.md#included-eips)\r\n     1. Gas Refunds Alternatives:\r\n        1.  EIP-3298 - Disabling Gas Refunds [#255](https://github.com/ethereum/pm/issues/255) \r\n        2.  EIP-3300 - Phase Out Refunds [#258](https://github.com/ethereum/pm/issues/258) \r\n        3.  EIP-3322 - Efficient Gas Storage [#266](https://github.com/ethereum/pm/issues/266)\r\n        4.  EIP-3403 - Partial Removal of Refunds [#277](https://github.com/ethereum/pm/issues/277) \r\n     1. EIP-3198 - `BASE FEE` Opcode [#270](https://github.com/ethereum/pm/issues/270)\r\n     1. EIP-3368 -  Increase block rewards to 3 ETH, with 2 Year Decay to 1 ETH Scheduled [#273](https://github.com/ethereum/pm/issues/273)\r\n  1. Network Upgrade Timing & Scope\r\n     1. London [#245](https://github.com/ethereum/pm/issues/245)\r\n        - Should we include anything beyond the current list? \r\n     1. Shanghai: Shortly after London ([#267](https://github.com/ethereum/pm/issues/267)), or focus on The Merge ([#278](https://github.com/ethereum/pm/issues/278))\r\n     1. EIP-3238 - Difficulty Bomb [#256](https://github.com/ethereum/pm/issues/256)\r\n         - Need to agree on pushback period \r\n  1. [If time permits] Other EIPs Proposals \r\n     1. EIP-2315 - Simple Subroutines [#274](https://github.com/ethereum/pm/issues/274) \r\n     1. BLS Support [#269](https://github.com/ethereum/pm/issues/269) \r\n     1. EIP-3074 - `AUTH` and `AUTHCALL` opcodes [#260](https://github.com/ethereum/pm/issues/260)\r\n     1. EIP-2327 - BEGINDATA [#262](https://github.com/ethereum/pm/issues/262)\r\n     1. EIP-2677 - Limit size of `initcode` [#271](https://github.com/ethereum/pm/issues/271)\r\n     1. EIP-2935 - Save historical block hashes in state [#279](https://github.com/ethereum/pm/issues/279)\r\n     3. Other CFI EIPs [#259](https://github.com/ethereum/pm/issues/259)",
+  "closed_by": {
+    "login": "timbeiko",
+    "id": 9390255,
+    "node_id": "MDQ6VXNlcjkzOTAyNTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9390255?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/timbeiko",
+    "html_url": "https://github.com/timbeiko",
+    "followers_url": "https://api.github.com/users/timbeiko/followers",
+    "following_url": "https://api.github.com/users/timbeiko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/timbeiko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/timbeiko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/timbeiko/subscriptions",
+    "organizations_url": "https://api.github.com/users/timbeiko/orgs",
+    "repos_url": "https://api.github.com/users/timbeiko/repos",
+    "events_url": "https://api.github.com/users/timbeiko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/timbeiko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/pm/issues/288/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/pm/issues/288/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

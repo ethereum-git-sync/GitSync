@@ -1,19 +1,203 @@
 [
   {
     "author": {
-      "login": "iamsethsamuel"
+      "login": "pokrovskyy"
     },
-    "number": 2658,
-    "title": "Undo and Redo not working",
-    "updatedAt": "2022-07-20T09:50:58Z"
+    "number": 2684,
+    "title": "Yul-compiled contract does not show up in Contracts since v0.25.0",
+    "updatedAt": "2022-07-25T17:33:59Z"
   },
   {
     "author": {
       "login": "ryestew"
     },
-    "number": 2629,
-    "title": "Update Remixd  problems & instructions confusion",
-    "updatedAt": "2022-07-20T08:25:42Z"
+    "number": 2683,
+    "title": "Double scroll bars in side panel plugins",
+    "updatedAt": "2022-07-25T17:04:05Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2349,
+    "title": "Declining the permissions modal can be ambiguous",
+    "updatedAt": "2022-07-25T12:14:14Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 2673,
+    "title": "Encode input arguments does not encode input arguments",
+    "updatedAt": "2022-07-25T12:12:33Z"
+  },
+  {
+    "author": {
+      "login": "Boulardos"
+    },
+    "number": 2493,
+    "title": "data bytes argument in safeTransferFrom  for erc1155 & erc721",
+    "updatedAt": "2022-07-25T12:10:26Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 2573,
+    "title": "At Address should be disabled when the input is empty",
+    "updatedAt": "2022-07-25T12:10:07Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2563,
+    "title": "improve interaction with contract loaded using At Address",
+    "updatedAt": "2022-07-25T12:09:55Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2561,
+    "title": "show colours in terminal for interaction with contracts",
+    "updatedAt": "2022-07-25T12:08:11Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 173,
+    "title": "Show and update balances of deployed contracts",
+    "updatedAt": "2022-07-25T12:05:18Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 177,
+    "title": "if gitid is not valid remix shows useless error while importing from github",
+    "updatedAt": "2022-07-25T12:04:45Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 450,
+    "title": "Improvements to data shown when 'listen to network' is checked",
+    "updatedAt": "2022-07-25T12:03:41Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 1593,
+    "title": "hometab UI",
+    "updatedAt": "2022-07-25T12:03:21Z"
+  },
+  {
+    "author": {
+      "login": "pappas999"
+    },
+    "number": 1651,
+    "title": "Run&Deploy: Auto-select contract list with contract that was compiled",
+    "updatedAt": "2022-07-25T11:58:00Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 247,
+    "title": "Display compiler license somewhere (in an about window)",
+    "updatedAt": "2022-07-25T11:57:39Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 1800,
+    "title": "replace all toasters for copy update to tooltips",
+    "updatedAt": "2022-07-25T11:57:17Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 1830,
+    "title": "Terminal Improvements",
+    "updatedAt": "2022-07-25T11:55:51Z"
+  },
+  {
+    "author": {
+      "login": "streamerd"
+    },
+    "number": 1826,
+    "title": "improving dropdown menu of compiled contracts, before deployments",
+    "updatedAt": "2022-07-25T11:54:30Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2572,
+    "title": "Udapp provider connections are not closed",
+    "updatedAt": "2022-07-25T11:51:25Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 2610,
+    "title": "Support Goerli contract verification",
+    "updatedAt": "2022-07-25T11:47:38Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2617,
+    "title": "Expanding method view on Udapp add quotes for integer",
+    "updatedAt": "2022-07-25T11:43:21Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2643,
+    "title": "Add e2e",
+    "updatedAt": "2022-07-25T11:36:39Z"
+  },
+  {
+    "author": {
+      "login": "ss22219"
+    },
+    "number": 2655,
+    "title": "[remixd] Crash with no message when other program is already using port 65522",
+    "updatedAt": "2022-07-25T11:34:25Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2656,
+    "title": "null workspace creation",
+    "updatedAt": "2022-07-25T11:34:11Z"
+  },
+  {
+    "author": {
+      "login": "albbeltran"
+    },
+    "number": 2661,
+    "title": "Styling issues with reserved words, require and bytes, in Black theme",
+    "updatedAt": "2022-07-25T11:32:55Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2649,
+    "title": "placeholder to provide compiler config path",
+    "updatedAt": "2022-07-25T11:32:08Z"
   },
   {
     "author": {
@@ -21,7 +205,215 @@
     },
     "number": 2657,
     "title": "files not shown in File Explorer when using address param in URL",
-    "updatedAt": "2022-07-20T08:24:23Z"
+    "updatedAt": "2022-07-25T11:28:59Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 1795,
+    "title": "Debugger improvements",
+    "updatedAt": "2022-07-25T11:28:45Z"
+  },
+  {
+    "author": {
+      "login": "yann300"
+    },
+    "number": 1627,
+    "title": "interoperability with L2",
+    "updatedAt": "2022-07-25T11:27:39Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 916,
+    "title": "Check for version < 'v0.4.12+commit.194ff033.js' to disable Unit Testing Plugin",
+    "updatedAt": "2022-07-25T11:26:56Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 915,
+    "title": "Check for version < 'v0.4.12+commit.194ff033.js' to disable Static Analysis plugin",
+    "updatedAt": "2022-07-25T11:26:48Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 199,
+    "title": "Autocomplete for solidity",
+    "updatedAt": "2022-07-25T11:25:47Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 131,
+    "title": "Plugin Manager: Mark native plugins",
+    "updatedAt": "2022-07-25T11:24:42Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 688,
+    "title": "Fix debugger navigation panel",
+    "updatedAt": "2022-07-25T11:24:04Z"
+  },
+  {
+    "author": {
+      "login": "htadashi"
+    },
+    "number": 2680,
+    "title": "Feature request: add option to enable \"Deploy with Proxy\"  by url parameter",
+    "updatedAt": "2022-07-25T11:18:08Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2432,
+    "title": "Make all tooltips custom",
+    "updatedAt": "2022-07-25T10:08:40Z"
+  },
+  {
+    "author": {
+      "login": "iranran"
+    },
+    "number": 2478,
+    "title": "remix-tests CLI，cannot find the npm package sol file",
+    "updatedAt": "2022-07-25T07:11:50Z"
+  },
+  {
+    "author": {
+      "login": "yzhou61"
+    },
+    "number": 2529,
+    "title": "Source location not available while debugging",
+    "updatedAt": "2022-07-22T12:02:53Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2558,
+    "title": "console.log shows error in terminal",
+    "updatedAt": "2022-07-22T12:01:26Z"
+  },
+  {
+    "author": {
+      "login": "ioedeveloper"
+    },
+    "number": 2225,
+    "title": "UX improvement to showcase git integration through file-explorer.",
+    "updatedAt": "2022-07-22T11:25:45Z"
+  },
+  {
+    "author": {
+      "login": "ioedeveloper"
+    },
+    "number": 2679,
+    "title": "Add a checkbox in create workspace modal to allow users to track workspace automatically",
+    "updatedAt": "2022-07-22T11:15:51Z"
+  },
+  {
+    "author": {
+      "login": "ioedeveloper"
+    },
+    "number": 2678,
+    "title": "new branch button that links to dgit plugin",
+    "updatedAt": "2022-07-22T11:13:41Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 1630,
+    "title": "FE search in files",
+    "updatedAt": "2022-07-22T06:47:12Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 1794,
+    "title": "Solidity Plugin improvements",
+    "updatedAt": "2022-07-22T06:39:34Z"
+  },
+  {
+    "author": {
+      "login": "mattjaf"
+    },
+    "number": 2675,
+    "title": "The update seemed to break injected web3 connection.",
+    "updatedAt": "2022-07-21T23:42:41Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 2674,
+    "title": "Cannot validate contracts on Rinkeby",
+    "updatedAt": "2022-07-21T18:24:37Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2580,
+    "title": "Explore @openzeppelin/wizard for workspace templates",
+    "updatedAt": "2022-07-21T12:46:21Z"
+  },
+  {
+    "author": {
+      "login": "iamsethsamuel"
+    },
+    "number": 2658,
+    "title": "Undo and Redo not working",
+    "updatedAt": "2022-07-21T12:18:14Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2629,
+    "title": "Update Remixd  problems & instructions confusion",
+    "updatedAt": "2022-07-21T12:14:25Z"
+  },
+  {
+    "author": {
+      "login": "ioedeveloper"
+    },
+    "number": 2667,
+    "title": "Remix-Tests GitHub Action",
+    "updatedAt": "2022-07-21T12:09:48Z"
+  },
+  {
+    "author": {
+      "login": "ioedeveloper"
+    },
+    "number": 2666,
+    "title": "Integrate remix-ide libs into Web2 platforms",
+    "updatedAt": "2022-07-21T10:46:48Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2662,
+    "title": "Add a toggle button to quickly switch between light and dark theme",
+    "updatedAt": "2022-07-21T08:56:41Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2644,
+    "title": "fix plugin info UI for plugin name in two lines",
+    "updatedAt": "2022-07-21T08:49:00Z"
   },
   {
     "author": {
@@ -30,14 +422,6 @@
     "number": 2322,
     "title": "Show icon for DGit cloned repos in the workspace dropdown ",
     "updatedAt": "2022-07-20T08:17:58Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2656,
-    "title": "null workspace creation",
-    "updatedAt": "2022-07-20T08:12:04Z"
   },
   {
     "author": {
@@ -67,33 +451,9 @@
     "author": {
       "login": "ryestew"
     },
-    "number": 2432,
-    "title": "Make all tooltips custom",
-    "updatedAt": "2022-07-20T08:00:43Z"
-  },
-  {
-    "author": {
-      "login": "ss22219"
-    },
-    "number": 2655,
-    "title": "[remixd] Crash with no message when other program is already using port 65522",
-    "updatedAt": "2022-07-20T07:52:42Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
     "number": 991,
     "title": "Reports of Parse error : source file requires different compiler version ",
     "updatedAt": "2022-07-19T13:09:13Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2649,
-    "title": "placeholder to provide compiler config path",
-    "updatedAt": "2022-07-19T09:03:10Z"
   },
   {
     "author": {
@@ -139,25 +499,9 @@
     "author": {
       "login": "Aniket-Engg"
     },
-    "number": 2644,
-    "title": "fix plugin info UI for plugin name in two lines",
-    "updatedAt": "2022-07-18T07:43:52Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
     "number": 2636,
     "title": "clone icon should not appear for localhost workspace",
     "updatedAt": "2022-07-18T07:40:04Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2643,
-    "title": "Add e2e",
-    "updatedAt": "2022-07-18T07:28:50Z"
   },
   {
     "author": {
@@ -233,14 +577,6 @@
   },
   {
     "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2617,
-    "title": "Expanding method view on Udapp add quotes for integer",
-    "updatedAt": "2022-07-12T14:18:28Z"
-  },
-  {
-    "author": {
       "login": "ryestew"
     },
     "number": 2616,
@@ -262,14 +598,6 @@
     "number": 2267,
     "title": "List keyboard shortcuts in docs",
     "updatedAt": "2022-07-12T05:30:06Z"
-  },
-  {
-    "author": {
-      "login": "fulldecent"
-    },
-    "number": 2610,
-    "title": "Support Goerli contract verification",
-    "updatedAt": "2022-07-12T03:58:03Z"
   },
   {
     "author": {
@@ -398,14 +726,6 @@
     "number": 2593,
     "title": "Add an icon to reload localhost workspace",
     "updatedAt": "2022-07-07T13:52:40Z"
-  },
-  {
-    "author": {
-      "login": "ioedeveloper"
-    },
-    "number": 2225,
-    "title": "UX improvement to showcase git integration through file-explorer.",
-    "updatedAt": "2022-07-07T10:18:22Z"
   },
   {
     "author": {
@@ -569,14 +889,6 @@
   },
   {
     "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2580,
-    "title": "Explore @openzeppelin/wizard for workspace templates",
-    "updatedAt": "2022-07-04T07:10:24Z"
-  },
-  {
-    "author": {
       "login": "php4fan"
     },
     "number": 2533,
@@ -638,22 +950,6 @@
     "number": 2375,
     "title": "Permission modal adjustments",
     "updatedAt": "2022-06-27T16:29:24Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
-    "number": 2573,
-    "title": "At Address should be disabled when the input is empty",
-    "updatedAt": "2022-06-27T16:18:26Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2572,
-    "title": "Udapp provider connections are not closed",
-    "updatedAt": "2022-06-27T14:27:43Z"
   },
   {
     "author": {
@@ -721,14 +1017,6 @@
   },
   {
     "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2563,
-    "title": "improve interaction with contract loaded using At Address",
-    "updatedAt": "2022-06-23T04:58:15Z"
-  },
-  {
-    "author": {
       "login": "akashde93"
     },
     "number": 135,
@@ -739,25 +1027,9 @@
     "author": {
       "login": "Aniket-Engg"
     },
-    "number": 2561,
-    "title": "show colours in terminal for interaction with contracts",
-    "updatedAt": "2022-06-22T08:40:55Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
     "number": 2559,
     "title": "merge tx value and unit textboxes",
     "updatedAt": "2022-06-22T08:22:50Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2558,
-    "title": "console.log shows error in terminal",
-    "updatedAt": "2022-06-22T08:18:43Z"
   },
   {
     "author": {
@@ -862,14 +1134,6 @@
     "number": 2394,
     "title": "Web3 provider -> HTTP provider",
     "updatedAt": "2022-06-13T15:07:26Z"
-  },
-  {
-    "author": {
-      "login": "yzhou61"
-    },
-    "number": 2529,
-    "title": "Source location not available while debugging",
-    "updatedAt": "2022-06-13T13:05:10Z"
   },
   {
     "author": {
@@ -1067,14 +1331,6 @@
     "author": {
       "login": "ryestew"
     },
-    "number": 1593,
-    "title": "hometab UI",
-    "updatedAt": "2022-06-09T13:45:41Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
     "number": 230,
     "title": "Adding value to a function",
     "updatedAt": "2022-06-09T13:40:49Z"
@@ -1233,14 +1489,6 @@
   },
   {
     "author": {
-      "login": "Boulardos"
-    },
-    "number": 2493,
-    "title": "data bytes argument in safeTransferFrom  for erc1155 & erc721",
-    "updatedAt": "2022-06-06T13:44:16Z"
-  },
-  {
-    "author": {
       "login": "iranran"
     },
     "number": 2487,
@@ -1262,14 +1510,6 @@
     "number": 2469,
     "title": "null workspace on loading Remix",
     "updatedAt": "2022-06-04T07:36:45Z"
-  },
-  {
-    "author": {
-      "login": "iranran"
-    },
-    "number": 2478,
-    "title": "remix-tests CLI，cannot find the npm package sol file",
-    "updatedAt": "2022-06-03T00:54:11Z"
   },
   {
     "author": {
@@ -1713,14 +1953,6 @@
   },
   {
     "author": {
-      "login": "ryestew"
-    },
-    "number": 2349,
-    "title": "Declining the permissions modal can be ambiguous",
-    "updatedAt": "2022-05-02T18:28:06Z"
-  },
-  {
-    "author": {
       "login": "screencredits"
     },
     "number": 2309,
@@ -1841,7 +2073,7 @@
   },
   {
     "author": {
-      "login": "fps8k"
+      "login": "0xfps"
     },
     "number": 2320,
     "title": "Error assigning 0 to map value in Remix IDE.",
@@ -1894,14 +2126,6 @@
     "number": 2250,
     "title": "Remix-ide defaults to wrong environment when connected to injected web3 and a reload is initiated.",
     "updatedAt": "2022-04-13T08:47:19Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
-    "number": 199,
-    "title": "Autocomplete for solidity",
-    "updatedAt": "2022-04-13T05:22:27Z"
   },
   {
     "author": {
@@ -2081,14 +2305,6 @@
   },
   {
     "author": {
-      "login": "LianaHus"
-    },
-    "number": 1630,
-    "title": "FE serach in files",
-    "updatedAt": "2022-03-28T10:55:09Z"
-  },
-  {
-    "author": {
       "login": "Aniket-Engg"
     },
     "number": 2230,
@@ -2185,7 +2401,7 @@
   },
   {
     "author": {
-      "login": "dave-dm"
+      "login": ""
     },
     "number": 485,
     "title": "creation of helloWorld errored: call to plugin has timed out compilerMetadata - deployMetadataOf - {\"from\":\"udapp\",\"path\":\"compilerMetadata\"}",
@@ -2286,14 +2502,6 @@
     "number": 2157,
     "title": "Gas estimation failed",
     "updatedAt": "2022-03-21T09:45:55Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
-    "number": 1794,
-    "title": "Solidity Plugin improvements",
-    "updatedAt": "2022-03-21T09:21:00Z"
   },
   {
     "author": {
@@ -3169,14 +3377,6 @@
   },
   {
     "author": {
-      "login": "LianaHus"
-    },
-    "number": 1830,
-    "title": "Terminal Improvements",
-    "updatedAt": "2022-01-07T17:46:36Z"
-  },
-  {
-    "author": {
       "login": "ioedeveloper"
     },
     "number": 1872,
@@ -3393,14 +3593,6 @@
   },
   {
     "author": {
-      "login": "streamerd"
-    },
-    "number": 1826,
-    "title": "improving dropdown menu of compiled contracts, before deployments",
-    "updatedAt": "2021-12-18T22:12:20Z"
-  },
-  {
-    "author": {
       "login": "dadaphl"
     },
     "number": 1833,
@@ -3523,14 +3715,6 @@
     "author": {
       "login": "Aniket-Engg"
     },
-    "number": 450,
-    "title": "Improvements to data shown when 'listen to network' is checked",
-    "updatedAt": "2021-12-06T09:55:46Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
     "number": 595,
     "title": "Show 'Become a beta tester' on home tab",
     "updatedAt": "2021-12-06T09:54:13Z"
@@ -3550,22 +3734,6 @@
     "number": 1377,
     "title": "Refactor/Improve Workspaces",
     "updatedAt": "2021-12-06T09:51:41Z"
-  },
-  {
-    "author": {
-      "login": "yann300"
-    },
-    "number": 1627,
-    "title": "interoperability with L2",
-    "updatedAt": "2021-12-06T09:51:25Z"
-  },
-  {
-    "author": {
-      "login": "pappas999"
-    },
-    "number": 1651,
-    "title": "Run&Deploy: Auto-select contract list with contract that was compiled",
-    "updatedAt": "2021-12-06T09:51:03Z"
   },
   {
     "author": {
@@ -3606,14 +3774,6 @@
     "number": 200,
     "title": "Deploy and Run: define the name for address",
     "updatedAt": "2021-12-06T09:48:11Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
-    "number": 131,
-    "title": "Plugin Manager: Mark native plugins",
-    "updatedAt": "2021-12-06T09:45:18Z"
   },
   {
     "author": {
@@ -3739,14 +3899,6 @@
     "author": {
       "login": "LianaHus"
     },
-    "number": 1795,
-    "title": "Debugger improvements",
-    "updatedAt": "2021-12-06T09:29:46Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
     "number": 671,
     "title": "File explorer improvements",
     "updatedAt": "2021-12-06T09:29:40Z"
@@ -3857,22 +4009,6 @@
   },
   {
     "author": {
-      "login": "LianaHus"
-    },
-    "number": 916,
-    "title": "Check for version < 'v0.4.12+commit.194ff033.js' to disable Unit Testing Plugin",
-    "updatedAt": "2021-12-06T09:08:16Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
-    "number": 915,
-    "title": "Check for version < 'v0.4.12+commit.194ff033.js' to disable Static Analysis plugin",
-    "updatedAt": "2021-12-06T09:08:02Z"
-  },
-  {
-    "author": {
       "login": "ryestew"
     },
     "number": 851,
@@ -3915,14 +4051,6 @@
     "author": {
       "login": "LianaHus"
     },
-    "number": 177,
-    "title": "if gitid is not valid remix shows useless error while importing from github",
-    "updatedAt": "2021-12-06T09:01:07Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
     "number": 336,
     "title": "Add the last stable Solc version to 'Assets', to be able to load if github is down",
     "updatedAt": "2021-12-06T08:59:56Z"
@@ -3934,14 +4062,6 @@
     "number": 68,
     "title": "Feature request: Allow plugins to activate other plugins",
     "updatedAt": "2021-12-06T08:56:29Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 688,
-    "title": "Fix debugger navigation panel",
-    "updatedAt": "2021-12-06T08:54:15Z"
   },
   {
     "author": {
@@ -4022,22 +4142,6 @@
     "number": 121,
     "title": "Multiple localplugin and test methods exposed",
     "updatedAt": "2021-11-30T08:52:50Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
-    "number": 1800,
-    "title": "replace all toasters for copy update to tooltips",
-    "updatedAt": "2021-11-29T21:01:27Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 247,
-    "title": "Display compiler license somewhere (in an about window)",
-    "updatedAt": "2021-11-28T23:02:45Z"
   },
   {
     "author": {
@@ -4374,14 +4478,6 @@
     "number": 169,
     "title": "Different variable highlight depending on storage type",
     "updatedAt": "2021-11-24T09:59:06Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 173,
-    "title": "Show and update balances of deployed contracts",
-    "updatedAt": "2021-11-24T09:57:27Z"
   },
   {
     "author": {

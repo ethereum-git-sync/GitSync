@@ -1,14 +1,14 @@
 {
-  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2610",
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2673",
   "repository_url": "https://api.github.com/repos/ethereum/remix-project",
-  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2610/labels{/name}",
-  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2610/comments",
-  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2610/events",
-  "html_url": "https://github.com/ethereum/remix-project/issues/2610",
-  "id": 1301501037,
-  "node_id": "I_kwDODtLRw85Nk1Rt",
-  "number": 2610,
-  "title": "Support Goerli contract verification",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2673/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2673/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2673/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2673",
+  "id": 1313627323,
+  "node_id": "I_kwDODtLRw85OTFy7",
+  "number": 2673,
+  "title": "Encode input arguments does not encode input arguments",
   "user": {
     "login": "fulldecent",
     "id": 382183,
@@ -31,13 +31,13 @@
   },
   "labels": [
     {
-      "id": 2233124974,
-      "node_id": "MDU6TGFiZWwyMjMzMTI0OTc0",
-      "url": "https://api.github.com/repos/ethereum/remix-project/labels/plugins",
-      "name": "plugins",
-      "color": "ddb87c",
+      "id": 2335546845,
+      "node_id": "MDU6TGFiZWwyMzM1NTQ2ODQ1",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/discussion",
+      "name": "discussion",
+      "color": "fffdaa",
       "default": false,
-      "description": "internal & external plugins' issues"
+      "description": "Require discussion"
     }
   ],
   "state": "open",
@@ -85,16 +85,16 @@
     }
   ],
   "milestone": null,
-  "comments": 0,
-  "created_at": "2022-07-12T03:58:03Z",
-  "updated_at": "2022-07-25T11:47:38Z",
+  "comments": 1,
+  "created_at": "2022-07-21T18:13:26Z",
+  "updated_at": "2022-07-25T12:12:33Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
-  "body": "Goerli is the only test network which Ethereum has committed to maintaining long term. Source: https://ethereum.org/en/developers/docs/networks/\r\n\r\nI'm hoping for first-class support of publishing contract source code and verifying on Etherscan. If this is an issue from Etherscan's end, please email them using your Ethereum.org email address and tell them to fix it and keep this issue open as a tracker.\r\n\r\n<img width=\"1624\" alt=\"Screen Shot 2022-07-11 at 23 55 55\" src=\"https://user-images.githubusercontent.com/382183/178405477-92e23e68-4b9a-421a-a4b0-e4dac673359b.png\">\r\n",
+  "body": "When deploying a contract there is a button to copy encoded input arguments.\r\n\r\nHowever when using this button, it does not give you the encoded inputs, it gives you the entire contract deployment.\r\n\r\nhttps://user-images.githubusercontent.com/382183/180284390-1c9b5881-30de-4196-ae12-95d47a629458.mov\r\n\r\nFYI, you need to be able to get the encoded input arguments in order to use the verify on Etherscan module in Remix.",
   "closed_by": null,
   "reactions": {
-    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2610/reactions",
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2673/reactions",
     "total_count": 0,
     "+1": 0,
     "-1": 0,
@@ -105,10 +105,53 @@
     "rocket": 0,
     "eyes": 0
   },
-  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2610/timeline",
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2673/timeline",
   "performed_via_github_app": null,
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1193635249",
+    "html_url": "https://github.com/ethereum/remix-project/issues/2673#issuecomment-1193635249",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/2673",
+    "id": 1193635249,
+    "node_id": "IC_kwDODtLRw85HJW2x",
+    "user": {
+      "login": "Aniket-Engg",
+      "id": 30843294,
+      "node_id": "MDQ6VXNlcjMwODQzMjk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aniket-Engg",
+      "html_url": "https://github.com/Aniket-Engg",
+      "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+      "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+      "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+      "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-07-25T06:27:45Z",
+    "updated_at": "2022-07-25T06:27:45Z",
+    "author_association": "MEMBER",
+    "body": "Yes, for now, it gives bytecode appended with encoded constructor arguments. We can still discuss it.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1193635249/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

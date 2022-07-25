@@ -67,11 +67,11 @@
   "milestone": null,
   "comments": 1,
   "created_at": "2021-11-25T09:15:21Z",
-  "updated_at": "2022-03-21T09:21:00Z",
+  "updated_at": "2022-07-22T06:39:34Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "- [ ] Show compiler license (https://github.com/ethereum/remix-project/issues/247)\r\n- [ ] Show \"compilation details\" in a tab (https://github.com/ethereum/remix-project/issues/259)\r\n- [ ] Autocomplete for solidity (https://github.com/ethereum/remix-project/issues/199)\r\n- [ ] add license to the example and test files of solidity  (https://github.com/ethereum/remix-project/issues/176)\r\n- [ ] Generate Solidity input json (https://github.com/ethereum/remix-project/issues/1472)\r\n- [ ] Solidity compiler: add all missing flags for compiler https://github.com/ethereum/remix-project/issues/1767\r\n- [ ] 'Hide warnings' doesn't work for YUL https://github.com/ethereum/remix-project/issues/1581\r\n- [ ] compilation details for Yul are not complete https://github.com/ethereum/remix-project/issues/122\r\n- [ ] Apply pragma if possible https://github.com/ethereum/remix-project/issues/99",
+  "body": "- [ ] Show compiler license (https://github.com/ethereum/remix-project/issues/247)\r\n- [ ] Show \"compilation details\" in a tab (https://github.com/ethereum/remix-project/issues/259)\r\n- [ ] Autocomplete for solidity (https://github.com/ethereum/remix-project/issues/199)\r\n- [ ] add license to the example and test files of solidity  (https://github.com/ethereum/remix-project/issues/176)\r\n- [ ] Generate Solidity input json (https://github.com/ethereum/remix-project/issues/1472)\r\n- [x] Solidity compiler: add all missing flags for compiler https://github.com/ethereum/remix-project/issues/1767\r\n- [ ] 'Hide warnings' doesn't work for YUL https://github.com/ethereum/remix-project/issues/1581\r\n- [ ] compilation details for Yul are not complete https://github.com/ethereum/remix-project/issues/122\r\n- [ ] Apply pragma if possible https://github.com/ethereum/remix-project/issues/99",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/1794/reactions",

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21094",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21094/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21094/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21094/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21094",
+  "id": 619364413,
+  "node_id": "MDU6SXNzdWU2MTkzNjQ0MTM=",
+  "number": 21094,
+  "title": "Data inconsistency problem after upgrading Ethereum code",
+  "user": {
+    "login": "james-ray",
+    "id": 26137182,
+    "node_id": "MDQ6VXNlcjI2MTM3MTgy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26137182?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/james-ray",
+    "html_url": "https://github.com/james-ray",
+    "followers_url": "https://api.github.com/users/james-ray/followers",
+    "following_url": "https://api.github.com/users/james-ray/following{/other_user}",
+    "gists_url": "https://api.github.com/users/james-ray/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/james-ray/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/james-ray/subscriptions",
+    "organizations_url": "https://api.github.com/users/james-ray/orgs",
+    "repos_url": "https://api.github.com/users/james-ray/repos",
+    "events_url": "https://api.github.com/users/james-ray/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/james-ray/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-05-16T03:10:43Z",
+  "updated_at": "2020-05-18T09:55:28Z",
+  "closed_at": "2020-05-18T09:55:28Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "We are using Tendermint+Ethereum, the old version is possibly around Apr, 2018. After upgrading to the latest version, the new node with an upgraded version fails to pull blocks of old version, it throws an exception \"AppHash mismatch\" on a certain height\r\nWe print the header of that height at both new and old versions, only state root are different, the gas_used of the two are the same.\r\n\r\nI find the logic in stateDB.go in the three methods: finalise, IntermediateRoot, and commit,  are slightly different, I try to revert the code of the three to the old version,  that height has passed, but the node fails in another higher height.\r\n\r\nNow we find the cause is in func Call in vm/evm.go\r\n```\r\nif !evm.StateDB.Exist(addr) {\r\n```\r\nwhere the new version judges the 0x00000000000000001 exists, while the old version judges it does not exist.\r\nWe are still trying to find the root cause.\r\n\r\n\r\n\r\n\r\n\r\nProblem solved!  The root cause is in \r\n```\r\nfunc (s *StateDB) createObject(addr common.Address) (newobj, prev *stateObject) {\r\n\tprev = s.getDeletedStateObject(addr) // Note, prev might have been deleted, we need that!\r\n\r\n\tnewobj = newObject(s, addr, Account{})\r\n\tnewobj.setNonce(0) // sets the object to dirty\r\n\tif prev == nil {\r\n\t\ts.journal.append(createObjectChange{account: &addr})\r\n\t} else {\r\n\t\ts.journal.append(resetObjectChange{prev: prev})\r\n\t}\r\n\ts.setStateObject(newobj)\r\n\treturn newobj, prev\r\n}\r\n```\r\nwhere in old version code, prev=s.getStateObject(addr)",
+  "closed_by": {
+    "login": "james-ray",
+    "id": 26137182,
+    "node_id": "MDQ6VXNlcjI2MTM3MTgy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26137182?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/james-ray",
+    "html_url": "https://github.com/james-ray",
+    "followers_url": "https://api.github.com/users/james-ray/followers",
+    "following_url": "https://api.github.com/users/james-ray/following{/other_user}",
+    "gists_url": "https://api.github.com/users/james-ray/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/james-ray/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/james-ray/subscriptions",
+    "organizations_url": "https://api.github.com/users/james-ray/orgs",
+    "repos_url": "https://api.github.com/users/james-ray/repos",
+    "events_url": "https://api.github.com/users/james-ray/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/james-ray/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21094/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21094/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

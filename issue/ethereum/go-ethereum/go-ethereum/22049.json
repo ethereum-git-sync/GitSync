@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22049",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22049/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22049/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22049/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22049",
+  "id": 772227790,
+  "node_id": "MDU6SXNzdWU3NzIyMjc3OTA=",
+  "number": 22049,
+  "title": "NewFallback TC bug",
+  "user": {
+    "login": "yoomee1313",
+    "id": 64360042,
+    "node_id": "MDQ6VXNlcjY0MzYwMDQy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/64360042?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yoomee1313",
+    "html_url": "https://github.com/yoomee1313",
+    "followers_url": "https://api.github.com/users/yoomee1313/followers",
+    "following_url": "https://api.github.com/users/yoomee1313/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yoomee1313/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yoomee1313/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yoomee1313/subscriptions",
+    "organizations_url": "https://api.github.com/users/yoomee1313/orgs",
+    "repos_url": "https://api.github.com/users/yoomee1313/repos",
+    "events_url": "https://api.github.com/users/yoomee1313/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yoomee1313/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-12-21T14:53:48Z",
+  "updated_at": "2020-12-30T12:10:29Z",
+  "closed_at": "2020-12-30T12:10:29Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `v1.9.21`\r\nOS & Version: OSX\r\n\r\n#### Expected behaviour\r\n* `Fallback` function of `NewFallbacks` solidity code fails due to out-of-gas.\r\n* Since it fails, it should not get an event, and it should catch an error.\r\n\r\n#### Actual behaviour\r\n* It cannot catch the error.\r\n\r\n#### Steps to reproduce the behaviour\r\ntc location: `accounts/abi/bind/bind_test.go`\r\ntc: `NewFallback` (line 1597 ~ line 1687) \r\n\r\n-> `bool gotEvent` is set to `true` at point1, and it is not initialized. Then, fallback tx is failed, and event is not arrived.\r\n-> At point2, the gotEvent is true even fallback tx is failed. So, it cannot catch the error.\r\n-> If `gotEvent = false` code is inserted just before point3, it would catch an error.\r\n-> Also, it would be nice if solidity code is fixed. `calldatacopy(data, 0, calldatasize())` is not working. For me, below fallback function passes the NewFallback tc. \r\n```\r\nfallback() external {\r\n    emit Fallback(data);\r\n}\r\n```\r\n```\r\nfunc TestNewFallbacks(t *testing.T) {\r\n\r\n        // skip code...\r\n\r\n\t// Test receive function\r\n\topts.Value = big.NewInt(100)\r\n\tc.Receive(opts)\r\n\tsim.Commit()\r\n\r\n\tvar gotEvent bool\r\n\titer, _ := c.FilterReceived(nil)\r\n\tdefer iter.Close()\r\n\tfor iter.Next() {\r\n\t\t// skip code...\r\n\t\tgotEvent = true //--------------------------------------------point1\r\n\t\tbreak\r\n\t}\r\n\tif !gotEvent {\r\n\t\tt.Fatal(\"Expect to receive event emitted by receive\")\r\n\t}\r\n\r\n\t// Test fallback function\r\n\topts.Value = nil // ------------------------------------------------point3\r\n\tcalldata := []byte{0x01, 0x02, 0x03}\r\n\tfmt.Println(\"Fallback start\")\r\n\tc.Fallback(opts, calldata)\r\n\tsim.Commit()\r\n\r\n\titer2, _ := c.FilterFallback(nil)\r\n\tdefer iter2.Close()\r\n\tfor iter2.Next() {\r\n\t\tif !bytes.Equal(iter2.Event.Data, calldata) {\r\n\t\t\tt.Fatal(\"calldata mismatch\")\r\n\t\t}\r\n\t\tgotEvent = true\r\n\t\tbreak\r\n\t}\r\n\tif !gotEvent {    //--------------------------------------------------point2\r\n\t\tt.Fatal(\"Expect to receive event emitted by fallback\")\r\n\t}\r\n}\r\n```\r\n#### Backtrace\r\n-",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22049/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22049/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

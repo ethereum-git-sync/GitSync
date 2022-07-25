@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20266",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20266/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20266/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20266/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/20266",
+  "id": 521434877,
+  "node_id": "MDU6SXNzdWU1MjE0MzQ4Nzc=",
+  "number": 20266,
+  "title": "Negative signed integers as indexed event inputs are not decoded correctly",
+  "user": {
+    "login": "shoenseiwaso",
+    "id": 5861379,
+    "node_id": "MDQ6VXNlcjU4NjEzNzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5861379?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shoenseiwaso",
+    "html_url": "https://github.com/shoenseiwaso",
+    "followers_url": "https://api.github.com/users/shoenseiwaso/followers",
+    "following_url": "https://api.github.com/users/shoenseiwaso/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shoenseiwaso/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shoenseiwaso/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shoenseiwaso/subscriptions",
+    "organizations_url": "https://api.github.com/users/shoenseiwaso/orgs",
+    "repos_url": "https://api.github.com/users/shoenseiwaso/repos",
+    "events_url": "https://api.github.com/users/shoenseiwaso/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shoenseiwaso/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-11-12T09:38:56Z",
+  "updated_at": "2019-12-18T10:16:08Z",
+  "closed_at": "2019-12-18T10:16:08Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "#### System information\r\nGeth version:\r\n```\r\n$ geth version\r\nGeth\r\nVersion: 1.9.6-stable\r\nGit Commit: bd05968077f27f7eb083404dd8448157996a8788\r\nArchitecture: amd64\r\nProtocol Versions: [63]\r\nNetwork Id: 1\r\nGo Version: go1.13.1\r\nOperating System: darwin\r\n```\r\nOS & Version: macOS 10.14.6\r\n\r\n#### Expected behaviour\r\nEvents which emit negative signed integers with size >64 bits are decoded correctly.\r\n\r\n#### Actual behaviour\r\nThey are treated as unsigned integers and not decoded correctly.\r\n\r\n#### Steps to reproduce the behaviour\r\nThe problem is here:\r\nhttps://github.com/ethereum/go-ethereum/blob/de2259d27c75fa954115420e829a954486e6de92/accounts/abi/bind/topics.go#L214-L215\r\n\r\nFor integers with size >64 bits, negative values will be encoded by the EVM with a size larger than `max(int256)`. For example, -1 for an `int256` (or `int192`, etc.) is `2^256-1`, -2 is `2^256-2`, etc.\r\n\r\nNon-indexed inputs are decoded correctly via `readInteger()` in `accounts/abi/unpack.go`:\r\nhttps://github.com/ethereum/go-ethereum/blob/de2259d27c75fa954115420e829a954486e6de92/accounts/abi/unpack.go#L56-L71\r\n\r\nTo reproduce:\r\n1. Deploy the following smart contract:\r\n```solidity\r\npragma solidity >=0.0.0;\r\n\r\ncontract TestIntEvents {\r\n    event Int192Event(int192 x);\r\n    event Int192EventIndexed(int192 indexed x);\r\n\r\n\r\n    function send192(int192 x) public {\r\n        emit Int192Event(x);\r\n    }\r\n\r\n    function send192Indexed(int192 x) public {\r\n        emit Int192EventIndexed(x);\r\n    }\r\n}\r\n```\r\n2. Try calling `send192(-1)` and `send192Indexed(-1)`.\r\n3. Observe the values returned from both events **via go-ethereum**:\r\n```\r\nInt192Event(-1)\r\n// Ok\r\n\r\nInt192EventIndexed(115792089237316195423570985008687907853269984665640564039457584007913129639935)\r\n// Not Ok! Expected -1\r\n```\r\n",
+  "closed_by": {
+    "login": "gballet",
+    "id": 3272758,
+    "node_id": "MDQ6VXNlcjMyNzI3NTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3272758?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gballet",
+    "html_url": "https://github.com/gballet",
+    "followers_url": "https://api.github.com/users/gballet/followers",
+    "following_url": "https://api.github.com/users/gballet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gballet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gballet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gballet/subscriptions",
+    "organizations_url": "https://api.github.com/users/gballet/orgs",
+    "repos_url": "https://api.github.com/users/gballet/repos",
+    "events_url": "https://api.github.com/users/gballet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gballet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20266/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20266/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23143",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23143/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23143/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23143/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/23143",
+  "id": 934639330,
+  "node_id": "MDU6SXNzdWU5MzQ2MzkzMzA=",
+  "number": 23143,
+  "title": "Change initial behavior of eth_syncing",
+  "user": {
+    "login": "ligi",
+    "id": 111600,
+    "node_id": "MDQ6VXNlcjExMTYwMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ligi",
+    "html_url": "https://github.com/ligi",
+    "followers_url": "https://api.github.com/users/ligi/followers",
+    "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ligi/orgs",
+    "repos_url": "https://api.github.com/users/ligi/repos",
+    "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ligi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-01T09:40:33Z",
+  "updated_at": "2021-07-01T09:40:42Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "This is a follow up of a discussion sparked by #23099\r\nCurrently eth_syncing initially returns nil which is suboptimal - a better approach would be to initially return syncing with current- and highest- block \"0\" that better describes the current state.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23143/reactions",
+    "total_count": 2,
+    "+1": 2,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23143/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

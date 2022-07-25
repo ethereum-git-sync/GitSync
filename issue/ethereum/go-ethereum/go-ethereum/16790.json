@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16790",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16790/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16790/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16790/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/16790",
+  "id": 325682139,
+  "node_id": "MDU6SXNzdWUzMjU2ODIxMzk=",
+  "number": 16790,
+  "title": "Unable to perform graceful shutdown with new node",
+  "user": {
+    "login": "bgrieder",
+    "id": 797684,
+    "node_id": "MDQ6VXNlcjc5NzY4NA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/797684?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bgrieder",
+    "html_url": "https://github.com/bgrieder",
+    "followers_url": "https://api.github.com/users/bgrieder/followers",
+    "following_url": "https://api.github.com/users/bgrieder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bgrieder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bgrieder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bgrieder/subscriptions",
+    "organizations_url": "https://api.github.com/users/bgrieder/orgs",
+    "repos_url": "https://api.github.com/users/bgrieder/repos",
+    "events_url": "https://api.github.com/users/bgrieder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bgrieder/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-05-23T12:26:39Z",
+  "updated_at": "2018-06-11T13:11:49Z",
+  "closed_at": "2018-06-11T13:11:49Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi,\r\n\r\nI am using geth as a library (version: `1.8.8`) and instantiating a new node on a (private) Clique network.\r\n\r\nThe node sets-up the Genesis block in the DB just fine. \r\nWhen trying to shut down the node however, the node locks when trying to close the DB\r\n\r\nThe problem is that it is indefinitely waiting for  `quitChan`  in `ethdb/database.go#Close()`:\r\n\r\n\tif db.quitChan != nil {\r\n\t\terrc := make(chan error)\r\n\t\tdb.quitChan <- errc    // <= This line\r\n\t\tif err := <-errc; err != nil {\r\n\t\t\tdb.log.Error(\"Metrics collection failed\", \"err\", err)\r\n\t\t}\r\n\t}\r\n\r\nThe reason is that nothing is ever sent to `quitChan` because the function `func (db *LDBDatabase) meter(refresh time.Duration)` returns before ever using the channel.\r\n\r\nSince the DB is new, the following test makes it return too early because `leveldb.iostats` does not exist\r\n\r\n\t\tioStats, err := db.db.GetProperty(\"leveldb.iostats\")\r\n\t\tif err != nil {\r\n\t\t\tdb.log.Error(\"Failed to read database iostats\", \"err\", err)\r\n\t\t\treturn\r\n\t\t}\r\n\r\nI believe, inside the `if` test, the statement `db.quitChan = nil` should be inserted to skip over the test in `Close()`.\r\n\r\nI guess the same reasoning applies to the test on `leveldb.stats`\r\n\r\n(alternatively, why should missing `levelddb.iostats` cause the `meter` function to return, rather than the inner loop to `continue`?)\r\n",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16790/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16790/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

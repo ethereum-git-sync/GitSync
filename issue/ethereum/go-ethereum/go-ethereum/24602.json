@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24602",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24602/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24602/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24602/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24602",
+  "id": 1184100083,
+  "node_id": "I_kwDOAOvK985Gk-7z",
+  "number": 24602,
+  "title": "Geth crashes in dev mode with `Failed to check for legacy receipts`",
+  "user": {
+    "login": "717a56e1",
+    "id": 67477536,
+    "node_id": "MDQ6VXNlcjY3NDc3NTM2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/67477536?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/717a56e1",
+    "html_url": "https://github.com/717a56e1",
+    "followers_url": "https://api.github.com/users/717a56e1/followers",
+    "following_url": "https://api.github.com/users/717a56e1/following{/other_user}",
+    "gists_url": "https://api.github.com/users/717a56e1/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/717a56e1/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/717a56e1/subscriptions",
+    "organizations_url": "https://api.github.com/users/717a56e1/orgs",
+    "repos_url": "https://api.github.com/users/717a56e1/repos",
+    "events_url": "https://api.github.com/users/717a56e1/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/717a56e1/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-28T23:17:13Z",
+  "updated_at": "2022-03-29T08:40:42Z",
+  "closed_at": "2022-03-29T08:40:42Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `geth version`\r\n`1.10.17-unstable-0fffd3ac`\r\nOS & Version: `ethereum/client-go:latest\r\nDIGEST:sha256:40e8b7cf5c7cd597c9a9f019f249f5dc1ffc34e6fbf4db37d8ddd06cb7915186`\r\n\r\n#### Expected behaviour\r\n\r\nRuns in developer mode.\r\n\r\n#### Actual behaviour\r\n\r\nCrashes with `Fatal: Failed to check db for legacy receipts: this operation is not supported`\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nJust run it in a container,\r\n` podman run -it  --network=host ethereum/client-go --mine --dev --dev.period 1` or `docker run -it  --network=host ethereum/client-go --mine --dev --dev.period 1`.\r\n\r\n#### Backtrace\r\n\r\n````\r\nINFO [03-28|23:15:00.891] Starting Geth in ephemeral dev mode... \r\nINFO [03-28|23:15:00.892] Maximum peer count                       ETH=50 LES=0 total=50\r\nINFO [03-28|23:15:00.892] Smartcard socket not found, disabling    err=\"stat /run/pcscd/pcscd.comm: no such file or directory\"\r\nINFO [03-28|23:15:00.893] Set global gas cap                       cap=50,000,000\r\nINFO [03-28|23:15:01.062] Using developer account                  address=0x42b19ac33157C646B7fe39e35705772409B842fA\r\nINFO [03-28|23:15:01.062] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB\r\nINFO [03-28|23:15:01.063] Writing custom genesis block \r\nINFO [03-28|23:15:01.063] Persisted trie from memory database      nodes=13 size=1.90KiB time=\"43.517µs\" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B\r\nINFO [03-28|23:15:01.063] Initialised chain configuration          config=\"{ChainID: 1337 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: 0 Istanbul: 0, Muir Glacier: 0, Berlin: 0, London: 0, Arrow Glacier: <nil>, MergeFork: <nil>, Terminal TD: <nil>, Engine: clique}\"\r\nINFO [03-28|23:15:01.064] Initialising Ethereum protocol           network=1337 dbversion=<nil>\r\nINFO [03-28|23:15:01.064] Loaded most recent local header          number=0 hash=6a6cac..e380a5 td=1 age=52y11mo4w\r\nINFO [03-28|23:15:01.064] Loaded most recent local full block      number=0 hash=6a6cac..e380a5 td=1 age=52y11mo4w\r\nINFO [03-28|23:15:01.064] Loaded most recent local fast block      number=0 hash=6a6cac..e380a5 td=1 age=52y11mo4w\r\nWARN [03-28|23:15:01.064] Failed to load snapshot, regenerating    err=\"missing or corrupted snapshot\"\r\nINFO [03-28|23:15:01.064] Rebuilding state snapshot \r\nINFO [03-28|23:15:01.064] Resuming state snapshot generation       root=32ce24..f8f48b accounts=0 slots=0 storage=0.00B elapsed=\"275.489µs\"\r\nINFO [03-28|23:15:01.065] Generated state snapshot                 accounts=10 slots=0 storage=412.00B elapsed=\"553.995µs\"\r\nINFO [03-28|23:15:01.065] Stored checkpoint snapshot to disk       number=0 hash=6a6cac..e380a5\r\nINFO [03-28|23:15:01.065] Gasprice oracle is ignoring threshold set threshold=2\r\nWARN [03-28|23:15:01.065] Error reading unclean shutdown markers   error=\"not found\"\r\nFatal: Failed to check db for legacy receipts: this operation is not supported\r\n\r\n````",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24602/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24602/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3640",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3640/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3640/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3640/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/3640",
+  "id": 205112146,
+  "node_id": "MDU6SXNzdWUyMDUxMTIxNDY=",
+  "number": 3640,
+  "title": "delete old DAG files in .ethash",
+  "user": {
+    "login": "SCBuergel",
+    "id": 11379673,
+    "node_id": "MDQ6VXNlcjExMzc5Njcz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11379673?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SCBuergel",
+    "html_url": "https://github.com/SCBuergel",
+    "followers_url": "https://api.github.com/users/SCBuergel/followers",
+    "following_url": "https://api.github.com/users/SCBuergel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SCBuergel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SCBuergel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SCBuergel/subscriptions",
+    "organizations_url": "https://api.github.com/users/SCBuergel/orgs",
+    "repos_url": "https://api.github.com/users/SCBuergel/repos",
+    "events_url": "https://api.github.com/users/SCBuergel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SCBuergel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-02-03T09:46:32Z",
+  "updated_at": "2017-03-09T14:50:16Z",
+  "closed_at": "2017-03-09T14:50:16Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I am using geth Version: 1.5.5-unstable on Ubuntu 16.04. I am playing on a private testnet and mine on this machine. The `.ethash` folder is growing out of control (see example below). I would suggest auto-deleting old DAG files that are not required anymore.\r\n```\r\nroot@VL-ZE:~/.ethash# ls -lah\r\ntotal 28G\r\ndrwxr-xr-x  2 root root 4.0K Feb  3 03:13 .\r\ndrwx------ 12 root root 4.0K Feb  1 22:48 ..\r\n-rw-r--r--  1 root root 1.0G Jan 10 13:17 full-R23-0000000000000000\r\n-rw-r--r--  1 root root 1.3G Jan 29 08:05 full-R23-1842cb89c0dfad7e\r\n-rw-r--r--  1 root root 1.1G Feb  2 05:47 full-R23-290decd9548b62a8\r\n-rw-r--r--  1 root root 1.1G Jan 19 12:15 full-R23-356e5a2cc1eba076\r\n-rw-r--r--  1 root root 1.4G Feb  1 20:31 full-R23-39238891c3ff3084\r\n-rw-r--r--  1 root root 1.2G Jan 23 23:42 full-R23-3db89d407a531822\r\n-rw-r--r--  1 root root 1.2G Jan 17 15:55 full-R23-4a5c69f25c2f9aa9\r\n-rw-r--r--  1 root root 1.3G Jan 31 10:32 full-R23-4b77c50b31c33143\r\n-rw-r--r--  1 root root 1.3G Feb  1 05:44 full-R23-5197b2a3898b31d4\r\n-rw-r--r--  1 root root 1.2G Jan 15 12:46 full-R23-526ee6e688a9b3d4\r\n-rw-r--r--  1 root root 1.1G Jan 12 16:00 full-R23-582b06447f087674\r\n-rw-r--r--  1 root root 1.3G Jan 30 01:54 full-R23-5a46dd85298b0bef\r\n-rw-r--r--  1 root root 1.2G Jan 27 10:29 full-R23-6a6513eeb3ff2d75\r\n-rw-r--r--  1 root root 1.2G Jan 18 09:24 full-R23-77e29faaecdca731\r\n-rw-r--r--  1 root root 1.3G Jan 29 17:14 full-R23-7e7d8bef9d86983a\r\n-rw-r--r--  1 root root 1.2G Jan 27 05:02 full-R23-81c436d08902c24b\r\n-rw-r--r--  1 root root 1.3G Jan 28 21:51 full-R23-920a075f9d5202e2\r\n-rw-r--r--  1 root root 1.2G Jan 15 04:10 full-R23-9b1ca7a86d339a3f\r\n-rw-r--r--  1 root root 1.1G Jan 22 01:18 full-R23-9b2baad7528ecec6\r\n-rw-r--r--  1 root root 1.1G Jan 19 22:58 full-R23-b903bd7696740696\r\n-rw-r--r--  1 root root 1.2G Jan 17 06:52 full-R23-c6320e3c1c345600\r\n-rw-r--r--  1 root root 1.2G Jan 18 00:41 full-R23-cdf42a47e552f9b4\r\n-rw-r--r--  1 root root 1.1G Jan 14 08:11 full-R23-d705bfceb1886284\r\n-rw-r--r--  1 root root 1.1G Jan 21 15:08 full-R23-ec9d541d1c32bec7\r\n-rw-r--r--  1 root root 1.1G Jan 12 05:49 full-R23-f2e59013a0a37983\r\n```\r\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3640/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3640/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

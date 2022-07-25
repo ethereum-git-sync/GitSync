@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24014",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24014/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24014/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24014/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24014",
+  "id": 1065764005,
+  "node_id": "I_kwDOAOvK984_hkSl",
+  "number": 24014,
+  "title": "0x2FAF487A4414Fe77e2327F0bf4AE2a264a776AD2",
+  "user": {
+    "login": "Sajadzoli",
+    "id": 93864820,
+    "node_id": "U_kgDOBZhDdA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/93864820?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Sajadzoli",
+    "html_url": "https://github.com/Sajadzoli",
+    "followers_url": "https://api.github.com/users/Sajadzoli/followers",
+    "following_url": "https://api.github.com/users/Sajadzoli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Sajadzoli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Sajadzoli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Sajadzoli/subscriptions",
+    "organizations_url": "https://api.github.com/users/Sajadzoli/orgs",
+    "repos_url": "https://api.github.com/users/Sajadzoli/repos",
+    "events_url": "https://api.github.com/users/Sajadzoli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Sajadzoli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-11-29T08:50:40Z",
+  "updated_at": "2021-11-29T09:02:25Z",
+  "closed_at": "2021-11-29T09:02:25Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `geth version`\r\nOS & Version: Windows/Linux/OSX\r\nCommit hash : (if `develop`)\r\n\r\n#### Expected behaviour\r\n\r\n\r\n#### Actual behaviour\r\n\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n\r\nWhen submitting logs: please submit them as text and not screenshots.0x2FAF487A4414Fe77e2327F0bf4AE2a264a776AD2",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24014/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24014/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

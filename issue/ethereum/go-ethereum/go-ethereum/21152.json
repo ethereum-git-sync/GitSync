@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21152",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21152/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21152/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21152/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21152",
+  "id": 627891357,
+  "node_id": "MDU6SXNzdWU2Mjc4OTEzNTc=",
+  "number": 21152,
+  "title": "help: why rpc api personal.sendTransaction(?,?) get error: version not supported: 0",
+  "user": {
+    "login": "tokyliu",
+    "id": 32065445,
+    "node_id": "MDQ6VXNlcjMyMDY1NDQ1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32065445?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tokyliu",
+    "html_url": "https://github.com/tokyliu",
+    "followers_url": "https://api.github.com/users/tokyliu/followers",
+    "following_url": "https://api.github.com/users/tokyliu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tokyliu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tokyliu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tokyliu/subscriptions",
+    "organizations_url": "https://api.github.com/users/tokyliu/orgs",
+    "repos_url": "https://api.github.com/users/tokyliu/repos",
+    "events_url": "https://api.github.com/users/tokyliu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tokyliu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-05-31T04:46:12Z",
+  "updated_at": "2020-06-01T10:11:40Z",
+  "closed_at": "2020-06-01T10:11:40Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "\r\n#### System information\r\n\r\nGeth version: `v1.9.14-stable`\r\nOS & Version & Arch: `Centos 7.2 amd64`\r\nGo version: `go1.14.3`\r\nGeth start part params : `--rpc --rpcaddr=127.0.0.1 --rpcapi=eth,web3,personal --allow-insecure-unlock`\r\n\r\nno people occur the question: api personal.sendTransaction(?,?) get error: version not supported: 0. and the same as api personal.unlockAccount(?,?,?). can anybody help me. no similar problems were found by google.\r\n",
+  "closed_by": {
+    "login": "tokyliu",
+    "id": 32065445,
+    "node_id": "MDQ6VXNlcjMyMDY1NDQ1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32065445?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tokyliu",
+    "html_url": "https://github.com/tokyliu",
+    "followers_url": "https://api.github.com/users/tokyliu/followers",
+    "following_url": "https://api.github.com/users/tokyliu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tokyliu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tokyliu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tokyliu/subscriptions",
+    "organizations_url": "https://api.github.com/users/tokyliu/orgs",
+    "repos_url": "https://api.github.com/users/tokyliu/repos",
+    "events_url": "https://api.github.com/users/tokyliu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tokyliu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21152/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21152/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

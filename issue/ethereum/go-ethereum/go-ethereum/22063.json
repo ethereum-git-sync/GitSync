@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22063",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22063/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22063/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22063/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22063",
+  "id": 773803303,
+  "node_id": "MDU6SXNzdWU3NzM4MDMzMDM=",
+  "number": 22063,
+  "title": "A large number of concurrent RPC requests resulted in excessively long response times",
+  "user": {
+    "login": "tyrone98",
+    "id": 12381947,
+    "node_id": "MDQ6VXNlcjEyMzgxOTQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12381947?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tyrone98",
+    "html_url": "https://github.com/tyrone98",
+    "followers_url": "https://api.github.com/users/tyrone98/followers",
+    "following_url": "https://api.github.com/users/tyrone98/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tyrone98/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tyrone98/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tyrone98/subscriptions",
+    "organizations_url": "https://api.github.com/users/tyrone98/orgs",
+    "repos_url": "https://api.github.com/users/tyrone98/repos",
+    "events_url": "https://api.github.com/users/tyrone98/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tyrone98/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1157707837,
+      "node_id": "MDU6TGFiZWwxMTU3NzA3ODM3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/area:rpc",
+      "name": "area:rpc",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2606146366,
+      "node_id": "MDU6TGFiZWwyNjA2MTQ2MzY2",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:performance",
+      "name": "type:performance",
+      "color": "BDA845",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2020-12-23T14:01:35Z",
+  "updated_at": "2021-01-28T09:15:53Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: 1.9.25\r\nOS & Version: Linux\r\nCommit hash : \r\n\r\n#### Expected behaviour\r\nIn response to a large number of concurrent JSONRPC requests, results can be returned in less than 200ms\r\n\r\n#### Actual behaviour\r\nOur machine is 4c16g, use geth --cache 4000 ....  and when the number of concurrent requests is greater than 200, 5% of the requests will fail due to a timeout.\r\nusing \"go pprof\" that present 80% time spent for runtime.scanobject()。\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22063/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22063/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/768914080",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/22063#issuecomment-768914080",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22063",
+    "id": 768914080,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDc2ODkxNDA4MA==",
+    "user": {
+      "login": "MariusVanDerWijden",
+      "id": 16664698,
+      "node_id": "MDQ6VXNlcjE2NjY0Njk4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16664698?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MariusVanDerWijden",
+      "html_url": "https://github.com/MariusVanDerWijden",
+      "followers_url": "https://api.github.com/users/MariusVanDerWijden/followers",
+      "following_url": "https://api.github.com/users/MariusVanDerWijden/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MariusVanDerWijden/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MariusVanDerWijden/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MariusVanDerWijden/subscriptions",
+      "organizations_url": "https://api.github.com/users/MariusVanDerWijden/orgs",
+      "repos_url": "https://api.github.com/users/MariusVanDerWijden/repos",
+      "events_url": "https://api.github.com/users/MariusVanDerWijden/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MariusVanDerWijden/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2021-01-28T09:15:53Z",
+    "updated_at": "2021-01-28T09:15:53Z",
+    "author_association": "MEMBER",
+    "body": "Can you add the svg of the pprof trace? We are aware that there are some problems with RPC since all requests are scheduled regardless of whether we have enough resources available",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/768914080/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

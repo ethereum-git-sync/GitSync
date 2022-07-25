@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18115",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18115/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18115/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18115/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/18115",
+  "id": 381293509,
+  "node_id": "MDU6SXNzdWUzODEyOTM1MDk=",
+  "number": 18115,
+  "title": "trie/proof: hasher not returned to pool",
+  "user": {
+    "login": "crackcomm",
+    "id": 206368,
+    "node_id": "MDQ6VXNlcjIwNjM2OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/206368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/crackcomm",
+    "html_url": "https://github.com/crackcomm",
+    "followers_url": "https://api.github.com/users/crackcomm/followers",
+    "following_url": "https://api.github.com/users/crackcomm/following{/other_user}",
+    "gists_url": "https://api.github.com/users/crackcomm/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/crackcomm/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/crackcomm/subscriptions",
+    "organizations_url": "https://api.github.com/users/crackcomm/orgs",
+    "repos_url": "https://api.github.com/users/crackcomm/repos",
+    "events_url": "https://api.github.com/users/crackcomm/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/crackcomm/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-11-15T18:51:28Z",
+  "updated_at": "2018-11-16T09:50:49Z",
+  "closed_at": "2018-11-16T09:50:49Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\n\r\nI've found two instances of hasher in trie not returning to the pool, both in `Prove` and `LeafProof`.\r\n\r\nhttps://github.com/ethereum/go-ethereum/blob/b91766f/trie/proof.go#L68\r\nhttps://github.com/ethereum/go-ethereum/blob/b91766f/trie/iterator.go#L183\r\n\r\nMy understanding of pooled objects in Go are that they have to be returned to the pool see [returnHasherToPool(h *hasher)](https://github.com/ethereum/go-ethereum/blob/master/trie/hasher.go#L71) I'm most certainly sure that it applies in this case.",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18115/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18115/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

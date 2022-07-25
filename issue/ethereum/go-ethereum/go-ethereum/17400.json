@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17400",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17400/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17400/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17400/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/17400",
+  "id": 350463813,
+  "node_id": "MDU6SXNzdWUzNTA0NjM4MTM=",
+  "number": 17400,
+  "title": "Problem with event data decode",
+  "user": {
+    "login": "asidorochev",
+    "id": 27499225,
+    "node_id": "MDQ6VXNlcjI3NDk5MjI1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/27499225?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/asidorochev",
+    "html_url": "https://github.com/asidorochev",
+    "followers_url": "https://api.github.com/users/asidorochev/followers",
+    "following_url": "https://api.github.com/users/asidorochev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/asidorochev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/asidorochev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/asidorochev/subscriptions",
+    "organizations_url": "https://api.github.com/users/asidorochev/orgs",
+    "repos_url": "https://api.github.com/users/asidorochev/repos",
+    "events_url": "https://api.github.com/users/asidorochev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/asidorochev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-08-14T14:51:31Z",
+  "updated_at": "2018-08-22T13:29:49Z",
+  "closed_at": "2018-08-22T13:29:49Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `1.8.1-stable`\r\nOS & Version: OSX\r\nGolang version: `go1.10 darwin/amd64`\r\n\r\n#### Steps to reproduce the behaviour\r\n````\r\npackage main\r\n\r\nimport (\r\n\t\"fmt\"\r\n\t\"log\"\r\n\t\"math/big\"\r\n\t\"strings\"\r\n\r\n\t\"github.com/ethereum/go-ethereum/accounts/abi\"\r\n\t\"github.com/ethereum/go-ethereum/common\"\r\n)\r\n\r\nvar (\r\n\trawABI string\r\n)\r\n\r\ntype tmpEvent struct {\r\n\tSender    common.Address\r\n\tRecipient common.Address\r\n\tAmount    *big.Int\r\n}\r\n\r\nfunc main() {\r\n\tlogData := \"0000000000000000000000009a0328aaf428cb9bf4f8ef824a6f155ba8699da800000000000000000000000059ab9221fbcd8ed14cdbf11d834cbd75c14c62e80000000000000000000000000000000000000000000000000000000000005240\"\r\n\r\n\tabi, err := abi.JSON(strings.NewReader(rawABI))\r\n\tif err != nil {\r\n\t\tlog.Fatal(err)\r\n\t}\r\n\r\n\tvar e tmpEvent\r\n\terr = abi.Unpack(&e, \"TmpEvent\", []byte(logData))\r\n\tif err != nil {\r\n\t\tlog.Fatal(err)\r\n\t}\r\n\r\n\tfmt.Println(e.Sender.Hex())\r\n\tfmt.Println(e.Recipient.Hex())\r\n\tfmt.Println(e.Amount.String())\r\n}\r\n\r\nfunc init() {\r\n\trawABI = `[\r\n\t\t{\r\n\t\t  \"anonymous\": false,\r\n\t\t  \"inputs\": [\r\n\t\t\t{\r\n\t\t\t  \"indexed\": false,\r\n\t\t\t  \"name\": \"sender\",\r\n\t\t\t  \"type\": \"address\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t  \"indexed\": false,\r\n\t\t\t  \"name\": \"recipient\",\r\n\t\t\t  \"type\": \"address\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t  \"indexed\": false,\r\n\t\t\t  \"name\": \"amount\",\r\n\t\t\t  \"type\": \"uint256\"\r\n\t\t\t}\r\n\t\t  ],\r\n\t\t  \"name\": \"TmpEvent\",\r\n\t\t  \"type\": \"event\"\r\n\t\t}\r\n\t  ]`\r\n}\r\n````\r\n\r\n#### Actual behaviour\r\n````\r\n0x3030303030303030303030303961303332386161\r\n0x59ab9221fbcd8ed14cdbf11d834cbd75c14c62e8\r\n21796157974083048550319244236929488537086114760591164995662966923884303102513\r\n````\r\n\r\n#### Expected behaviour\r\n````\r\n0x9a0328aaf428cb9bf4f8ef824a6f155ba8699da8\r\n0x6566383234613666313535626138363939646138\r\n21056\r\n````\r\n",
+  "closed_by": {
+    "login": "asidorochev",
+    "id": 27499225,
+    "node_id": "MDQ6VXNlcjI3NDk5MjI1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/27499225?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/asidorochev",
+    "html_url": "https://github.com/asidorochev",
+    "followers_url": "https://api.github.com/users/asidorochev/followers",
+    "following_url": "https://api.github.com/users/asidorochev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/asidorochev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/asidorochev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/asidorochev/subscriptions",
+    "organizations_url": "https://api.github.com/users/asidorochev/orgs",
+    "repos_url": "https://api.github.com/users/asidorochev/repos",
+    "events_url": "https://api.github.com/users/asidorochev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/asidorochev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17400/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17400/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

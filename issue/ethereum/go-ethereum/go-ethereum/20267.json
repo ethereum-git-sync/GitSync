@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20267",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20267/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20267/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20267/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/20267",
+  "id": 521440194,
+  "node_id": "MDU6SXNzdWU1MjE0NDAxOTQ=",
+  "number": 20267,
+  "title": "miner: may or may not have a data race",
+  "user": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1269313112,
+      "node_id": "MDU6TGFiZWwxMjY5MzEzMTEy",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:backlog",
+      "name": "status:backlog",
+      "color": "29ceb3",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-11-12T09:49:05Z",
+  "updated_at": "2021-06-03T08:41:14Z",
+  "closed_at": "2021-06-03T08:41:14Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Someone opened a PR to fix some concurrency issue https://github.com/ethereum/go-ethereum/pull/19773. We don't believe the fix is appropriate or even warranted, but the issue should not exist in the first place (not sure what it is).\r\n\r\nOP's screenshot contains a very low difficulty (1054), which is not possible without a modified Geth client. But it might trigger some issue we're not aware of. This issue report is mostly a memo that we need to investigate.",
+  "closed_by": {
+    "login": "ligi",
+    "id": 111600,
+    "node_id": "MDQ6VXNlcjExMTYwMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ligi",
+    "html_url": "https://github.com/ligi",
+    "followers_url": "https://api.github.com/users/ligi/followers",
+    "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ligi/orgs",
+    "repos_url": "https://api.github.com/users/ligi/repos",
+    "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ligi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20267/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20267/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23693",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23693/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23693/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23693/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/23693",
+  "id": 1019996954,
+  "node_id": "I_kwDOAOvK9848y-sa",
+  "number": 23693,
+  "title": "[bug] tab completion on an undefined variable cause crash",
+  "user": {
+    "login": "JABirchall",
+    "id": 3427459,
+    "node_id": "MDQ6VXNlcjM0Mjc0NTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3427459?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JABirchall",
+    "html_url": "https://github.com/JABirchall",
+    "followers_url": "https://api.github.com/users/JABirchall/followers",
+    "following_url": "https://api.github.com/users/JABirchall/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JABirchall/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JABirchall/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JABirchall/subscriptions",
+    "organizations_url": "https://api.github.com/users/JABirchall/orgs",
+    "repos_url": "https://api.github.com/users/JABirchall/repos",
+    "events_url": "https://api.github.com/users/JABirchall/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JABirchall/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-07T12:39:46Z",
+  "updated_at": "2021-10-10T12:58:47Z",
+  "closed_at": "2021-10-10T12:58:47Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: 1.10.9\r\nOS & Version: Windows\r\n\r\n#### Expected behaviour\r\nWhen tab completing a variable which is null or undefined should not crash geth and should be handled safely.\r\nAn example is to output nothing, just like when attempting to do this on a variable which does not exist.\r\n\r\n#### Actual behaviour\r\nWhen assigning a variable undefined or null, once you attempt to access a none existing property of that variable, geth will crash.\r\n\r\n#### Steps to reproduce the behaviour\r\nIt was originally reported to me by a user who thought that they needed to assign the return of miner.start() to a variable in order to stop the miner later.\r\n\r\nm = miner.start()\r\nm. <<< press tab\r\n\r\nOr just \r\n\r\nm = undefined\r\nm. <<< press tab\r\n#### Backtrace\r\n\r\n````\r\n> u = undefined\r\nundefined\r\n> u.panic: TypeError: Cannot convert undefined or null to object\r\n\r\ngoroutine 278 [running]:\r\ngithub.com/dop251/goja.(*Runtime).typeErrorResult(...)\r\n        C:/Users/owner/go/pkg/mod/github.com/dop251/goja@v0.0.0-20200721192441-a695b0cdd498/runtime.go:283\r\ngithub.com/dop251/goja.valueNull.ToObject(0xc003919e00, 0x7ff68c2fb000)\r\n        C:/Users/owner/go/pkg/mod/github.com/dop251/goja@v0.0.0-20200721192441-a695b0cdd498/value.go:337 +0x88\r\ngithub.com/ethereum/go-ethereum/internal/jsre.getCompletions(0xc003919e00, 0xc0052bd8b8, 0x2, 0x0, 0x0, 0x0)\r\n        C:/Users/owner/Documents/projects/go-ethereum/internal/jsre/completion.go:50 +0xe5\r\ngithub.com/ethereum/go-ethereum/internal/jsre.(*JSRE).CompleteKeywords.func1(0xc003919e00)\r\n        C:/Users/owner/Documents/projects/go-ethereum/internal/jsre/completion.go:31 +0x4d\r\ngithub.com/ethereum/go-ethereum/internal/jsre.(*JSRE).runEventLoop(0xc003870d80)\r\n        C:/Users/owner/Documents/projects/go-ethereum/internal/jsre/jsre.go:204 +0x851\r\ncreated by github.com/ethereum/go-ethereum/internal/jsre.New\r\n        C:/Users/owner/Documents/projects/go-ethereum/internal/jsre/jsre.go:79 +0x159\r\n````\r\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23693/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23693/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

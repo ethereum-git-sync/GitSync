@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24082",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24082/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24082/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24082/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24082",
+  "id": 1074053594,
+  "node_id": "I_kwDOAOvK985ABMHa",
+  "number": 24082,
+  "title": "需要帮助搭建该程序ETH/ETC矿池的联系微信:xserverx",
+  "user": {
+    "login": "bxstar",
+    "id": 5739005,
+    "node_id": "MDQ6VXNlcjU3MzkwMDU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5739005?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bxstar",
+    "html_url": "https://github.com/bxstar",
+    "followers_url": "https://api.github.com/users/bxstar/followers",
+    "following_url": "https://api.github.com/users/bxstar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bxstar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bxstar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bxstar/subscriptions",
+    "organizations_url": "https://api.github.com/users/bxstar/orgs",
+    "repos_url": "https://api.github.com/users/bxstar/repos",
+    "events_url": "https://api.github.com/users/bxstar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bxstar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-12-08T06:18:54Z",
+  "updated_at": "2021-12-12T08:22:40Z",
+  "closed_at": "2021-12-08T08:38:21Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "有问题的，我可以出售我的时间，来协助您解决问题 。可以尝试联系我\r\nIf there is any problem, I can sell my time to help you solve the problem. You can try to contact me\r\nwechat: xserverx\r\nemail: 276368949@qq.com\r\nqq: 276368949",
+  "closed_by": {
+    "login": "MariusVanDerWijden",
+    "id": 16664698,
+    "node_id": "MDQ6VXNlcjE2NjY0Njk4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16664698?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MariusVanDerWijden",
+    "html_url": "https://github.com/MariusVanDerWijden",
+    "followers_url": "https://api.github.com/users/MariusVanDerWijden/followers",
+    "following_url": "https://api.github.com/users/MariusVanDerWijden/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MariusVanDerWijden/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MariusVanDerWijden/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MariusVanDerWijden/subscriptions",
+    "organizations_url": "https://api.github.com/users/MariusVanDerWijden/orgs",
+    "repos_url": "https://api.github.com/users/MariusVanDerWijden/repos",
+    "events_url": "https://api.github.com/users/MariusVanDerWijden/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MariusVanDerWijden/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24082/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24082/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

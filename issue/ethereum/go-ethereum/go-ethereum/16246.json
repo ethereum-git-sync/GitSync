@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16246",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16246/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16246/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16246/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/16246",
+  "id": 302040102,
+  "node_id": "MDU6SXNzdWUzMDIwNDAxMDI=",
+  "number": 16246,
+  "title": "Implausibly Old TimeStamp?",
+  "user": {
+    "login": "zach-is-my-name",
+    "id": 16063092,
+    "node_id": "MDQ6VXNlcjE2MDYzMDky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16063092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zach-is-my-name",
+    "html_url": "https://github.com/zach-is-my-name",
+    "followers_url": "https://api.github.com/users/zach-is-my-name/followers",
+    "following_url": "https://api.github.com/users/zach-is-my-name/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zach-is-my-name/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zach-is-my-name/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zach-is-my-name/subscriptions",
+    "organizations_url": "https://api.github.com/users/zach-is-my-name/orgs",
+    "repos_url": "https://api.github.com/users/zach-is-my-name/repos",
+    "events_url": "https://api.github.com/users/zach-is-my-name/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zach-is-my-name/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-03-03T23:03:54Z",
+  "updated_at": "2018-03-03T23:33:07Z",
+  "closed_at": "2018-03-03T23:33:07Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: geth-linux-amd64-1.8.1-1e67410e\r\nOS & Version: Ubuntu 16.04.4\r\nCommit hash : (if `develop`)\r\n\r\n#### Expected behaviour\r\ntar -xzvf geth-linux-amd64-1.8.1-1e67410e.tar.gz\r\nls -t\r\n4096 Mar 3 2018 geth-linux-amd64-1.8.1-1e67410e\r\n\r\n\r\n#### Actual behaviour\r\ntar -xzvf geth-linux-amd64-1.8.1-1e67410e.tar.gz\r\nls -t\r\n4096 Dec 31  1969 geth-linux-amd64-1.8.1-1e67410e\r\n\r\nI googled this Implausibly Old TimeStamp issue and did not find very much info about why it occurs or whether it was a system/tar issue, or package specific.  Response to similar issue here ( https://raspberrypi.stackexchange.com/questions/13142/tar-extract-error-implausibly-old-time-stamp-1970-01-01-010000 ) mentions corruption, verifying checksums, and other things that make me nervous when dealing with Ethereum.  Sorry if this is pedestrian.  I generally trust https://geth.ethereum.org/downloads/ \r\n\r\nNote: I'll probably install from PPA anyway\r\n\r\n\r\n",
+  "closed_by": {
+    "login": "zach-is-my-name",
+    "id": 16063092,
+    "node_id": "MDQ6VXNlcjE2MDYzMDky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16063092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zach-is-my-name",
+    "html_url": "https://github.com/zach-is-my-name",
+    "followers_url": "https://api.github.com/users/zach-is-my-name/followers",
+    "following_url": "https://api.github.com/users/zach-is-my-name/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zach-is-my-name/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zach-is-my-name/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zach-is-my-name/subscriptions",
+    "organizations_url": "https://api.github.com/users/zach-is-my-name/orgs",
+    "repos_url": "https://api.github.com/users/zach-is-my-name/repos",
+    "events_url": "https://api.github.com/users/zach-is-my-name/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zach-is-my-name/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16246/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16246/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16236",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16236/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16236/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16236/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/16236",
+  "id": 301852353,
+  "node_id": "MDU6SXNzdWUzMDE4NTIzNTM=",
+  "number": 16236,
+  "title": "Geth 1.8.1 (Light) Won't Connect to Peers",
+  "user": {
+    "login": "shroka2",
+    "id": 34228019,
+    "node_id": "MDQ6VXNlcjM0MjI4MDE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34228019?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shroka2",
+    "html_url": "https://github.com/shroka2",
+    "followers_url": "https://api.github.com/users/shroka2/followers",
+    "following_url": "https://api.github.com/users/shroka2/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shroka2/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shroka2/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shroka2/subscriptions",
+    "organizations_url": "https://api.github.com/users/shroka2/orgs",
+    "repos_url": "https://api.github.com/users/shroka2/repos",
+    "events_url": "https://api.github.com/users/shroka2/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shroka2/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-03-02T17:57:04Z",
+  "updated_at": "2018-03-02T18:02:33Z",
+  "closed_at": "2018-03-02T18:02:33Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\n\r\nplease note that this is an issue tracker reserved for bug reports and feature requests.\r\n\r\nFor general questions please use the gitter channel or the Ethereum stack exchange at https://ethereum.stackexchange.com.\r\n\r\n#### System information\r\n\r\nGeth version: 1.8.1\r\nOS & Version: Windows 10 64bit\r\nCommit hash :\r\n\r\n#### Expected behaviour\r\n\r\nGeth light client connects to peers and syncs\r\n\r\n#### Actual behaviour\r\n\r\nGeth never connects to peers\r\n\r\nStops at:\r\nINFO [03-02|09:49:32] IPC endpoint opened                      url=\\\\\\\\.\\\\pipe\\\\geth.ipc\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nRestarted PC, Restarted Geth, Deleted lightchain folder to re-sync. Same behavior\r\n\r\nThis issue has happened with past versions of Geth as well.  Will connect fine via light client for weeks or days at a time, then this will happen.  Thought it was a port issue, but I don't think that is the case.  Why would it connect fine for a week then stop?\r\n",
+  "closed_by": {
+    "login": "shroka2",
+    "id": 34228019,
+    "node_id": "MDQ6VXNlcjM0MjI4MDE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34228019?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shroka2",
+    "html_url": "https://github.com/shroka2",
+    "followers_url": "https://api.github.com/users/shroka2/followers",
+    "following_url": "https://api.github.com/users/shroka2/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shroka2/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shroka2/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shroka2/subscriptions",
+    "organizations_url": "https://api.github.com/users/shroka2/orgs",
+    "repos_url": "https://api.github.com/users/shroka2/repos",
+    "events_url": "https://api.github.com/users/shroka2/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shroka2/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16236/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16236/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

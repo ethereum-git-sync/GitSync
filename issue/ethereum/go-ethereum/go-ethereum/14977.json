@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14977",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14977/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14977/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14977/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/14977",
+  "id": 250198436,
+  "node_id": "MDU6SXNzdWUyNTAxOTg0MzY=",
+  "number": 14977,
+  "title": "Network sync stops due to stale peers",
+  "user": {
+    "login": "slothbag",
+    "id": 811824,
+    "node_id": "MDQ6VXNlcjgxMTgyNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/811824?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/slothbag",
+    "html_url": "https://github.com/slothbag",
+    "followers_url": "https://api.github.com/users/slothbag/followers",
+    "following_url": "https://api.github.com/users/slothbag/following{/other_user}",
+    "gists_url": "https://api.github.com/users/slothbag/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/slothbag/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/slothbag/subscriptions",
+    "organizations_url": "https://api.github.com/users/slothbag/orgs",
+    "repos_url": "https://api.github.com/users/slothbag/repos",
+    "events_url": "https://api.github.com/users/slothbag/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/slothbag/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-08-15T01:34:11Z",
+  "updated_at": "2017-08-15T01:49:19Z",
+  "closed_at": "2017-08-15T01:49:19Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Geth version: 1.6.7\r\nOS & Version: Windows\r\n\r\nAttempting to do a network sync from scratch using --fast and it got 95% of the way and then froze.  I checked the peer list and it was connected to a bunch of old nodes all on similar ports :2111 :2112 :2113 for example.  The console was saying peer stalling, peer provided incorrect data, peer lied etc and no new blocks coming in.\r\n\r\nI manually removed all those peers via the console and now the sync has resumed.\r\n\r\nOr perhaps it was just a coincidence.. those peers are no longer connected and the sync appears to have stopped again.",
+  "closed_by": {
+    "login": "slothbag",
+    "id": 811824,
+    "node_id": "MDQ6VXNlcjgxMTgyNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/811824?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/slothbag",
+    "html_url": "https://github.com/slothbag",
+    "followers_url": "https://api.github.com/users/slothbag/followers",
+    "following_url": "https://api.github.com/users/slothbag/following{/other_user}",
+    "gists_url": "https://api.github.com/users/slothbag/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/slothbag/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/slothbag/subscriptions",
+    "organizations_url": "https://api.github.com/users/slothbag/orgs",
+    "repos_url": "https://api.github.com/users/slothbag/repos",
+    "events_url": "https://api.github.com/users/slothbag/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/slothbag/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14977/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14977/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

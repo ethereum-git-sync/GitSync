@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17268",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17268/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17268/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17268/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/17268",
+  "id": 345524849,
+  "node_id": "MDU6SXNzdWUzNDU1MjQ4NDk=",
+  "number": 17268,
+  "title": "getBlock('latest')  number is 0",
+  "user": {
+    "login": "lipangit",
+    "id": 2038071,
+    "node_id": "MDQ6VXNlcjIwMzgwNzE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2038071?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lipangit",
+    "html_url": "https://github.com/lipangit",
+    "followers_url": "https://api.github.com/users/lipangit/followers",
+    "following_url": "https://api.github.com/users/lipangit/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lipangit/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lipangit/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lipangit/subscriptions",
+    "organizations_url": "https://api.github.com/users/lipangit/orgs",
+    "repos_url": "https://api.github.com/users/lipangit/repos",
+    "events_url": "https://api.github.com/users/lipangit/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lipangit/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-07-29T11:55:55Z",
+  "updated_at": "2018-07-30T04:41:39Z",
+  "closed_at": "2018-07-30T04:41:39Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\n\r\ngeth --rpc to start geth\r\n\r\nthen get block by web3.py\r\n\r\n![image](https://user-images.githubusercontent.com/2038071/43366038-108daf8a-9369-11e8-9158-fa0c1236920f.png)\r\n\r\n#### System information\r\n\r\nGeth version: `1.7.3-stable`\r\nOS & Version:OSX\r\nCommit hash : not develop\r\n\r\n#### Expected behaviour\r\n\r\nthe number is not 0\r\n\r\n#### Actual behaviour\r\n\r\n![image](https://user-images.githubusercontent.com/2038071/43366043-3353da44-9369-11e8-932c-19589bbc0428.png)\r\n\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nevery time\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n",
+  "closed_by": {
+    "login": "lipangit",
+    "id": 2038071,
+    "node_id": "MDQ6VXNlcjIwMzgwNzE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2038071?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lipangit",
+    "html_url": "https://github.com/lipangit",
+    "followers_url": "https://api.github.com/users/lipangit/followers",
+    "following_url": "https://api.github.com/users/lipangit/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lipangit/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lipangit/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lipangit/subscriptions",
+    "organizations_url": "https://api.github.com/users/lipangit/orgs",
+    "repos_url": "https://api.github.com/users/lipangit/repos",
+    "events_url": "https://api.github.com/users/lipangit/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lipangit/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17268/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17268/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

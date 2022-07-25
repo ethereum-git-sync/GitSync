@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1285",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1285/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1285/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1285/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/1285",
+  "id": 89099851,
+  "node_id": "MDU6SXNzdWU4OTA5OTg1MQ==",
+  "number": 1285,
+  "title": "Chain reorg. to 100k+ blocks back on every restart.",
+  "user": {
+    "login": "frozeman",
+    "id": 232662,
+    "node_id": "MDQ6VXNlcjIzMjY2Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/232662?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frozeman",
+    "html_url": "https://github.com/frozeman",
+    "followers_url": "https://api.github.com/users/frozeman/followers",
+    "following_url": "https://api.github.com/users/frozeman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frozeman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frozeman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frozeman/subscriptions",
+    "organizations_url": "https://api.github.com/users/frozeman/orgs",
+    "repos_url": "https://api.github.com/users/frozeman/repos",
+    "events_url": "https://api.github.com/users/frozeman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frozeman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-06-17T19:09:11Z",
+  "updated_at": "2015-08-09T21:43:00Z",
+  "closed_at": "2015-08-09T21:43:00Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "I now restarted AND synced my node multiple times. Once from 535k to 555k and now even from 535k to 620k.\n\nAnd always when i restart he tells me the message below and deletes all my blocks and starts again from 535k.\n\nThats frustrating as the syncing takes the whole day :(\n\n`I0617 20:59:55.984552    8196 chain_manager.go:133] Found bad hash. Reorganising chain to state 687b0712`\n\n```\n➜  geth git:(develop) ✗ ./geth --rpccorsdomain \"*\" --rpc --unlock 0x922a519ac926f69856fcfc1b2b8b846cfb3f6b4e\nI0617 20:59:55.974858    8196 backend.go:269] Protocol Version: 60, Network Id: 0\nI0617 20:59:55.974932    8196 backend.go:279] Blockchain DB Version: 3\nI0617 20:59:55.980931    8196 chain_manager.go:247] Last block (#623732) aca665670f439e6a499ec39449cbb002eb65c4dd6fb2652a672e0fb0184a426f TD=4908640441663593\nI0617 20:59:55.984552    8196 chain_manager.go:133] Found bad hash. Reorganising chain to state 687b0712\ntest\nI0617 21:00:56.092370    8196 chain_manager.go:247] Last block (#535548) 687b0712642701dd9c7c616732d17dad0c643094c1b326d040265ad4e0fac8fd TD=2797582369790933\nI0617 21:00:56.092408    8196 chain_manager.go:140] Chain reorg was successfull. Resuming normal operation\nI0617 21:01:03.124706    8196 cmd.go:148] Starting Geth/v0.9.31/darwin/go1.4.1\nI0617 21:01:03.124854    8196 server.go:293] Starting Server\n...\n```\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1285/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1285/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

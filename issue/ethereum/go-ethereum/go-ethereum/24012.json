@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24012",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24012/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24012/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24012/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24012",
+  "id": 1065759754,
+  "node_id": "I_kwDOAOvK984_hjQK",
+  "number": 24012,
+  "title": "0x2FAF487A4414Fe77e2327F0bf4AE2a264a776AD2",
+  "user": {
+    "login": "Sajadzoli",
+    "id": 93864820,
+    "node_id": "U_kgDOBZhDdA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/93864820?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Sajadzoli",
+    "html_url": "https://github.com/Sajadzoli",
+    "followers_url": "https://api.github.com/users/Sajadzoli/followers",
+    "following_url": "https://api.github.com/users/Sajadzoli/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Sajadzoli/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Sajadzoli/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Sajadzoli/subscriptions",
+    "organizations_url": "https://api.github.com/users/Sajadzoli/orgs",
+    "repos_url": "https://api.github.com/users/Sajadzoli/repos",
+    "events_url": "https://api.github.com/users/Sajadzoli/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Sajadzoli/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-11-29T08:45:40Z",
+  "updated_at": "2021-11-29T09:02:25Z",
+  "closed_at": "2021-11-29T09:02:25Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "0x2FAF487A4414Fe77e2327F0bf4AE2a264a776AD2\r\n\r\n_Originally posted by @Sajadzoli in https://github.com/ethereum/go-ethereum/issues/24009#issuecomment-981400053_",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24012/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24012/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

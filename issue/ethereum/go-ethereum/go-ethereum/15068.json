@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15068",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15068/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15068/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15068/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/15068",
+  "id": 254568301,
+  "node_id": "MDU6SXNzdWUyNTQ1NjgzMDE=",
+  "number": 15068,
+  "title": "run 'make geth' found Error",
+  "user": {
+    "login": "897051629",
+    "id": 31534325,
+    "node_id": "MDQ6VXNlcjMxNTM0MzI1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31534325?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/897051629",
+    "html_url": "https://github.com/897051629",
+    "followers_url": "https://api.github.com/users/897051629/followers",
+    "following_url": "https://api.github.com/users/897051629/following{/other_user}",
+    "gists_url": "https://api.github.com/users/897051629/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/897051629/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/897051629/subscriptions",
+    "organizations_url": "https://api.github.com/users/897051629/orgs",
+    "repos_url": "https://api.github.com/users/897051629/repos",
+    "events_url": "https://api.github.com/users/897051629/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/897051629/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-09-01T08:15:17Z",
+  "updated_at": "2017-09-01T08:23:39Z",
+  "closed_at": "2017-09-01T08:23:39Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I run the 'make geth' command,found the Error\r\nxuebo@ubuntu:~/go-ethereum$ make geth\r\nbuild/env.sh go run build/ci.go install ./cmd/geth\r\nbuild/env.sh: 30: exec: go: not found\r\nMakefile:15: recipe for target 'geth' failed\r\nmake: *** [geth] Error 127\r\n\r\nneed your help...thanks",
+  "closed_by": {
+    "login": "897051629",
+    "id": 31534325,
+    "node_id": "MDQ6VXNlcjMxNTM0MzI1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31534325?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/897051629",
+    "html_url": "https://github.com/897051629",
+    "followers_url": "https://api.github.com/users/897051629/followers",
+    "following_url": "https://api.github.com/users/897051629/following{/other_user}",
+    "gists_url": "https://api.github.com/users/897051629/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/897051629/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/897051629/subscriptions",
+    "organizations_url": "https://api.github.com/users/897051629/orgs",
+    "repos_url": "https://api.github.com/users/897051629/repos",
+    "events_url": "https://api.github.com/users/897051629/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/897051629/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15068/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15068/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

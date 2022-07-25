@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/285",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/285/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/285/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/285/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/285",
+  "id": 56257996,
+  "node_id": "MDU6SXNzdWU1NjI1Nzk5Ng==",
+  "number": 285,
+  "title": "Mist just crashed for after 5min",
+  "user": {
+    "login": "frozeman",
+    "id": 232662,
+    "node_id": "MDQ6VXNlcjIzMjY2Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/232662?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frozeman",
+    "html_url": "https://github.com/frozeman",
+    "followers_url": "https://api.github.com/users/frozeman/followers",
+    "following_url": "https://api.github.com/users/frozeman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frozeman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frozeman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frozeman/subscriptions",
+    "organizations_url": "https://api.github.com/users/frozeman/orgs",
+    "repos_url": "https://api.github.com/users/frozeman/repos",
+    "events_url": "https://api.github.com/users/frozeman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frozeman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-02-02T16:27:19Z",
+  "updated_at": "2015-02-13T22:38:43Z",
+  "closed_at": "2015-02-13T22:38:43Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "Error:\n\n```\n...\n2015/02/02 17:20:51 [RPC] Sending payload: {\"id\":597,\"jsonrpc\":\"2.0\",\"error\":false,\"result\":null}\n2015/02/02 17:20:51 [RPC] Sending payload: {\"id\":598,\"jsonrpc\":\"2.0\",\"error\":false,\"result\":null}\n2015/02/02 17:20:51 [RPC] Sending payload: {\"id\":599,\"jsonrpc\":\"2.0\",\"error\":false,\"result\":null}\n2015/02/02 17:20:51 [RPC] Sending payload: {\"id\":600,\"jsonrpc\":\"2.0\",\"error\":false,\"result\":null}\n2015/02/02 17:20:51 [RPC] Sending payload: {\"id\":601,\"jsonrpc\":\"2.0\",\"error\":false,\"result\":null}\n[1]    582 segmentation fault  mist\n```\n",
+  "closed_by": {
+    "login": "obscuren",
+    "id": 6264126,
+    "node_id": "MDQ6VXNlcjYyNjQxMjY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6264126?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/obscuren",
+    "html_url": "https://github.com/obscuren",
+    "followers_url": "https://api.github.com/users/obscuren/followers",
+    "following_url": "https://api.github.com/users/obscuren/following{/other_user}",
+    "gists_url": "https://api.github.com/users/obscuren/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/obscuren/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/obscuren/subscriptions",
+    "organizations_url": "https://api.github.com/users/obscuren/orgs",
+    "repos_url": "https://api.github.com/users/obscuren/repos",
+    "events_url": "https://api.github.com/users/obscuren/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/obscuren/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/285/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/285/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

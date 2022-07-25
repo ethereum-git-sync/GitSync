@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21266",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21266/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21266/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21266/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21266",
+  "id": 646585396,
+  "node_id": "MDU6SXNzdWU2NDY1ODUzOTY=",
+  "number": 21266,
+  "title": "Clef - method handler crashed error for new account and import raw key apis",
+  "user": {
+    "login": "vsmk98",
+    "id": 18255997,
+    "node_id": "MDQ6VXNlcjE4MjU1OTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18255997?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vsmk98",
+    "html_url": "https://github.com/vsmk98",
+    "followers_url": "https://api.github.com/users/vsmk98/followers",
+    "following_url": "https://api.github.com/users/vsmk98/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vsmk98/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vsmk98/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vsmk98/subscriptions",
+    "organizations_url": "https://api.github.com/users/vsmk98/orgs",
+    "repos_url": "https://api.github.com/users/vsmk98/repos",
+    "events_url": "https://api.github.com/users/vsmk98/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vsmk98/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-06-27T01:51:06Z",
+  "updated_at": "2020-07-02T08:00:19Z",
+  "closed_at": "2020-07-02T08:00:19Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "**System Information**\r\n```\r\n➜  7nodes git:(geth-1.9.7) ✗ geth version\r\nGeth\r\nVersion: 1.9.16-unstable\r\nGit Commit: 02cea2330d6b4822b43a7fbaeacc12ddc8e8b1db\r\nGit Commit Date: 20200626\r\nArchitecture: amd64\r\nProtocol Versions: [65 64 63]\r\nGo Version: go1.13.8\r\nOperating System: darwin\r\nGOPATH=\r\nGOROOT=/usr/local/Cellar/go@1.13/1.13.8/libexec\r\n```\r\n**Expected Behaviour**\r\nWhen running `geth` with `clef`, executing `personal.importKey` or `personal.newAccount` at `geth` js console should return appropriate error message.\r\n\r\n**Actual behaviour**\r\nExecuting `personal.importKey` or `personal.newAccount` at `geth` js console returns `method handler crashed` error.\r\n```\r\nWelcome to the Geth JavaScript console!\r\n\r\ninstance: Geth/v1.9.16-unstable-02cea233-20200626/darwin-amd64/go1.13.8\r\ncoinbase: 0x46b8ce2e9d3e7a0eb653d574afa506087997461e\r\nat block: 9 (Sat Jun 27 2020 09:16:01 GMT+0800 (+08))\r\n datadir: \r\n modules: admin:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0\r\n\r\n> personal.importRawKey(\"<<_keyValue_>>\", \"\")\r\nError: method handler crashed\r\n\tat web3.js:6347:37(47)\r\n\tat web3.js:5081:62(37)\r\n\tat <eval>:1:22(5)\r\n\r\n> personal.newAccount()\r\nPassphrase:\r\nRepeat passphrase:\r\nGoError: Error: method handler crashed at web3.js:6347:37(47)\r\n\tat native\r\n\tat <eval>:1:1(2)\r\n```\r\n**Steps to reproduce the behaviour**\r\n\r\n1. Start clef\r\n2. Start geth with --signer /path/to/clef.ipc\r\n3. Attach to js console\r\n4. Execute `personal.importRawKey` or `personal.newAccount`\r\n\r\n**Cause**\r\nCaused by call to `fetchKeystore` to get the key store handle\r\n-  `NewAccount()` https://github.com/ethereum/go-ethereum/blob/02cea2330d6b4822b43a7fbaeacc12ddc8e8b1db/internal/ethapi/api.go#L280\r\n- `ImportRawKey()` https://github.com/ethereum/go-ethereum/blob/02cea2330d6b4822b43a7fbaeacc12ddc8e8b1db/internal/ethapi/api.go#L302\r\n",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21266/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21266/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

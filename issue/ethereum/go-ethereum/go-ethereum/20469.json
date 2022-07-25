@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20469",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20469/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20469/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20469/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/20469",
+  "id": 539825842,
+  "node_id": "MDU6SXNzdWU1Mzk4MjU4NDI=",
+  "number": 20469,
+  "title": "Is it possible that SimulatedBackend.CallContract doesn't fail when SimulatedBackend.SendTransaction does",
+  "user": {
+    "login": "Pet3ris",
+    "id": 224585,
+    "node_id": "MDQ6VXNlcjIyNDU4NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/224585?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Pet3ris",
+    "html_url": "https://github.com/Pet3ris",
+    "followers_url": "https://api.github.com/users/Pet3ris/followers",
+    "following_url": "https://api.github.com/users/Pet3ris/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Pet3ris/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Pet3ris/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Pet3ris/subscriptions",
+    "organizations_url": "https://api.github.com/users/Pet3ris/orgs",
+    "repos_url": "https://api.github.com/users/Pet3ris/repos",
+    "events_url": "https://api.github.com/users/Pet3ris/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Pet3ris/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-12-18T17:44:25Z",
+  "updated_at": "2020-01-06T12:03:39Z",
+  "closed_at": "2020-01-06T12:03:39Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\n\r\nI'm issuing a transaction which fails with `SendTransaction` but not with `CallContract` on a simulated back-end.\r\n\r\n#### System information\r\n\r\nGeth version: `1.9.9`\r\nOS & Version: OSX 10.15.2\r\nCommit hash : (if `develop`)\r\n\r\n#### Expected behaviour\r\n\r\nI'm expecting the `CallContract()`to fail when `SendTransaction()` fails as long as same arguments are used under the same conditions.\r\n\r\n#### Actual behaviour\r\n\r\nInstead the `CallContract()`returns with an empty return array (even though the function has a single `uint256` return value (vyper).\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n```go\r\n// call (doesn't fail, err != nil)\r\nmsg := ethereum.CallMsg{\r\n\t\tFrom: fromFixed,\r\n\t\tTo: &toAddress,\r\n\t\tGas: gasLimit,\r\n\t\tGasPrice: gasPrice,\r\n\t\tValue: &amount,\r\n\t\tData: data,\r\n\t}\r\nreturnValue, err := bc.CallContract(ctx, msg, nil)\r\n```\r\n\r\n```go\r\n// transaction (fails, err = nil)\r\ntx := types.NewTransaction(\r\n\tnonce,\r\n\ttoFixed,\r\n\t&amount,\r\n\tgasLimit,\r\n\tgasPrice,\r\n\tdata,\r\n)\r\ntx, _ = types.SignTx(tx, types.HomesteadSigner{}, key)\r\n\r\nerr := bc.SendTransaction(ctx, tx)\r\n```\r\n\r\n#### Backtrace\r\n\r\n-\r\n",
+  "closed_by": {
+    "login": "Pet3ris",
+    "id": 224585,
+    "node_id": "MDQ6VXNlcjIyNDU4NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/224585?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Pet3ris",
+    "html_url": "https://github.com/Pet3ris",
+    "followers_url": "https://api.github.com/users/Pet3ris/followers",
+    "following_url": "https://api.github.com/users/Pet3ris/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Pet3ris/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Pet3ris/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Pet3ris/subscriptions",
+    "organizations_url": "https://api.github.com/users/Pet3ris/orgs",
+    "repos_url": "https://api.github.com/users/Pet3ris/repos",
+    "events_url": "https://api.github.com/users/Pet3ris/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Pet3ris/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20469/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20469/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23586",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23586/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23586/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23586/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/23586",
+  "id": 998280408,
+  "node_id": "I_kwDOAOvK9847gIzY",
+  "number": 23586,
+  "title": "Remove unnecessary calls to eth_getBlockByNumber when gasPrice is set",
+  "user": {
+    "login": "oanasabau",
+    "id": 20531401,
+    "node_id": "MDQ6VXNlcjIwNTMxNDAx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20531401?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oanasabau",
+    "html_url": "https://github.com/oanasabau",
+    "followers_url": "https://api.github.com/users/oanasabau/followers",
+    "following_url": "https://api.github.com/users/oanasabau/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oanasabau/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oanasabau/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oanasabau/subscriptions",
+    "organizations_url": "https://api.github.com/users/oanasabau/orgs",
+    "repos_url": "https://api.github.com/users/oanasabau/repos",
+    "events_url": "https://api.github.com/users/oanasabau/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oanasabau/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233652,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1Mg==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:feature",
+      "name": "type:feature",
+      "color": "84b6eb",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-09-16T14:26:52Z",
+  "updated_at": "2021-10-13T20:59:13Z",
+  "closed_at": "2021-10-13T20:59:12Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "# Rationale\r\n\r\nWhy should this feature exist?\r\n\r\nStarting with geth version x geth client can specify GasFeeCap and GasTipCap as transact opts in which case London specific DynamicFeeTx is created and sent to the RPC. In order to get the base fee for the current block, eth_getBlockByNumber method is called. \r\n\r\nEven if the geth client opts to use fixed gas priced tx (also known as LegacyTx) eth_getBlockByNumber method is still called, which is unnecessary.\r\n\r\n\r\nWhat are the use-cases?\r\n\r\nGeth clients using fixed gas price transactions can avoid making unnecessary calls to the RPC.\r\n\r\n# Implementation\r\n\r\nDo you have ideas regarding the implementation of this feature?\r\nBy reorganizing the code flow in method transact from bind.BoundContract the extra call can be avoided.\r\n\r\nAre you willing to implement this feature?\r\nYes.",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23586/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23586/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

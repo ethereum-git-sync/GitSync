@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22887",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22887/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22887/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22887/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22887",
+  "id": 893348714,
+  "node_id": "MDU6SXNzdWU4OTMzNDg3MTQ=",
+  "number": 22887,
+  "title": "\"Sidechain written to disk\" repeatedly",
+  "user": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1132689577,
+      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
+      "name": "status:triage",
+      "color": "6be514",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-05-17T13:44:27Z",
+  "updated_at": "2022-05-19T08:36:53Z",
+  "closed_at": "2022-05-19T08:36:53Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "We had a quirky issue on `baikal`. Baikal has three sealers, `geth`, `besu` and `nethermind`. One transaction was sent out, and picked up by `nethermind`. When `nethermind` included it in a block, the block became invalid, and was rejected by the others. \r\n\r\nHowever, `geth` and `besu` didn't pick up the transaction, so they kept mining empty blocks. And `nethermind` would switch over to the empty `canon` chain, and build another bad block on top. That kept repeating for a while, until I eventually got the transaction into block `14629`, which caused `nethermind` to finally drop off the canon chain. \r\n\r\nNow, my local geth node keeps printing these messages every time it imports a block: \r\n\r\n```\r\nINFO [05-17|15:40:41.390] Sidechain written to disk                start=14606 end=14606 sidetd=27054 localtd=27271\r\nINFO [05-17|15:40:41.390] Sidechain written to disk                start=14609 end=14609 sidetd=27057 localtd=27271\r\nINFO [05-17|15:40:41.391] Sidechain written to disk                start=14612 end=14612 sidetd=27062 localtd=27271\r\nINFO [05-17|15:40:41.391] Sidechain written to disk                start=14615 end=14615 sidetd=27065 localtd=27271\r\nINFO [05-17|15:40:41.391] Sidechain written to disk                start=14618 end=14618 sidetd=27070 localtd=27271\r\nINFO [05-17|15:40:41.391] Sidechain written to disk                start=14621 end=14621 sidetd=27073 localtd=27271\r\nINFO [05-17|15:40:41.391] Sidechain written to disk                start=14624 end=14624 sidetd=27078 localtd=27271\r\nINFO [05-17|15:40:41.391] Sidechain written to disk                start=14627 end=14627 sidetd=27081 localtd=27271\r\nINFO [05-17|15:40:41.391] Sidechain written to disk                start=14629 end=14629 sidetd=27083 localtd=27271\r\nINFO [05-17|15:40:41.392] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=\"412.268µs\" mgasps=0.000   number=14771 hash=068289..e091e6 dirty=20.93KiB\r\n\r\n\r\n\r\nINFO [05-17|15:40:43.249] Looking for peers                        peercount=2 tried=103 static=0\r\nINFO [05-17|15:40:46.387] Sidechain written to disk                start=14528 end=14528 sidetd=26950 localtd=27272\r\nINFO [05-17|15:40:46.387] Sidechain written to disk                start=14531 end=14531 sidetd=26953 localtd=27272\r\nINFO [05-17|15:40:46.388] Sidechain written to disk                start=14534 end=14534 sidetd=26958 localtd=27272\r\nINFO [05-17|15:40:46.388] Sidechain written to disk                start=14537 end=14537 sidetd=26961 localtd=27272\r\nINFO [05-17|15:40:46.388] Sidechain written to disk                start=14540 end=14540 sidetd=26966 localtd=27272\r\nINFO [05-17|15:40:46.388] Sidechain written to disk                start=14543 end=14543 sidetd=26969 localtd=27272\r\nINFO [05-17|15:40:46.388] Sidechain written to disk                start=14546 end=14546 sidetd=26974 localtd=27272\r\nINFO [05-17|15:40:46.388] Sidechain written to disk                start=14549 end=14549 sidetd=26977 localtd=27272\r\nINFO [05-17|15:40:46.389] Sidechain written to disk                start=14552 end=14552 sidetd=26982 localtd=27272\r\nINFO [05-17|15:40:46.389] Sidechain written to disk                start=14555 end=14555 sidetd=26985 localtd=27272\r\nINFO [05-17|15:40:46.389] Sidechain written to disk                start=14558 end=14558 sidetd=26990 localtd=27272\r\nINFO [05-17|15:40:46.389] Sidechain written to disk                start=14561 end=14561 sidetd=26993 localtd=27272\r\nINFO [05-17|15:40:46.389] Sidechain written to disk                start=14564 end=14564 sidetd=26998 localtd=27272\r\nINFO [05-17|15:40:46.389] Sidechain written to disk                start=14567 end=14567 sidetd=27001 localtd=27272\r\nINFO [05-17|15:40:46.389] Sidechain written to disk                start=14570 end=14570 sidetd=27006 localtd=27272\r\nINFO [05-17|15:40:46.390] Sidechain written to disk                start=14573 end=14573 sidetd=27009 localtd=27272\r\nINFO [05-17|15:40:46.390] Sidechain written to disk                start=14576 end=14576 sidetd=27014 localtd=27272\r\nINFO [05-17|15:40:46.390] Sidechain written to disk                start=14579 end=14579 sidetd=27017 localtd=27272\r\nINFO [05-17|15:40:46.390] Sidechain written to disk                start=14582 end=14582 sidetd=27022 localtd=27272\r\nINFO [05-17|15:40:46.390] Sidechain written to disk                start=14585 end=14585 sidetd=27025 localtd=27272\r\nINFO [05-17|15:40:46.390] Sidechain written to disk                start=14588 end=14588 sidetd=27030 localtd=27272\r\nINFO [05-17|15:40:46.390] Sidechain written to disk                start=14591 end=14591 sidetd=27033 localtd=27272\r\nINFO [05-17|15:40:46.391] Sidechain written to disk                start=14594 end=14594 sidetd=27038 localtd=27272\r\nINFO [05-17|15:40:46.391] Sidechain written to disk                start=14597 end=14597 sidetd=27041 localtd=27272\r\nINFO [05-17|15:40:46.391] Sidechain written to disk                start=14600 end=14600 sidetd=27046 localtd=27272\r\nINFO [05-17|15:40:46.391] Sidechain written to disk                start=14603 end=14603 sidetd=27049 localtd=27272\r\nINFO [05-17|15:40:46.391] Sidechain written to disk                start=14606 end=14606 sidetd=27054 localtd=27272\r\nINFO [05-17|15:40:46.391] Sidechain written to disk                start=14609 end=14609 sidetd=27057 localtd=27272\r\nINFO [05-17|15:40:46.391] Sidechain written to disk                start=14612 end=14612 sidetd=27062 localtd=27272\r\nINFO [05-17|15:40:46.392] Sidechain written to disk                start=14615 end=14615 sidetd=27065 localtd=27272\r\nINFO [05-17|15:40:46.392] Sidechain written to disk                start=14618 end=14618 sidetd=27070 localtd=27272\r\nINFO [05-17|15:40:46.392] Sidechain written to disk                start=14621 end=14621 sidetd=27073 localtd=27272\r\nINFO [05-17|15:40:46.392] Sidechain written to disk                start=14624 end=14624 sidetd=27078 localtd=27272\r\nINFO [05-17|15:40:46.392] Sidechain written to disk                start=14627 end=14627 sidetd=27081 localtd=27272\r\nINFO [05-17|15:40:46.392] Sidechain written to disk                start=14629 end=14629 sidetd=27083 localtd=27272\r\n```\r\n",
+  "closed_by": {
+    "login": "ligi",
+    "id": 111600,
+    "node_id": "MDQ6VXNlcjExMTYwMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ligi",
+    "html_url": "https://github.com/ligi",
+    "followers_url": "https://api.github.com/users/ligi/followers",
+    "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ligi/orgs",
+    "repos_url": "https://api.github.com/users/ligi/repos",
+    "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ligi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22887/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22887/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

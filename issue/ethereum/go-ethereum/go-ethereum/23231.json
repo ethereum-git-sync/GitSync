@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23231",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23231/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23231/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23231/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/23231",
+  "id": 947054180,
+  "node_id": "MDU6SXNzdWU5NDcwNTQxODA=",
+  "number": 23231,
+  "title": "Always seeing \"Dropping unsynced node during sync\" messages",
+  "user": {
+    "login": "oct-month",
+    "id": 59117904,
+    "node_id": "MDQ6VXNlcjU5MTE3OTA0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/59117904?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oct-month",
+    "html_url": "https://github.com/oct-month",
+    "followers_url": "https://api.github.com/users/oct-month/followers",
+    "following_url": "https://api.github.com/users/oct-month/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oct-month/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oct-month/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oct-month/subscriptions",
+    "organizations_url": "https://api.github.com/users/oct-month/orgs",
+    "repos_url": "https://api.github.com/users/oct-month/repos",
+    "events_url": "https://api.github.com/users/oct-month/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oct-month/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-18T15:03:00Z",
+  "updated_at": "2021-07-22T01:24:10Z",
+  "closed_at": "2021-07-22T01:24:10Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## My Environment\r\nGeth\r\nVersion: 1.10.5-stable\r\nArchitecture: amd64\r\nGo Version: go1.16.3\r\nOperating System: ubuntu20.04 server\r\n\r\n## My genesis.json\r\n```json\r\n{\r\n    \"config\": {\r\n        \"chainId\": 112,\r\n        \"homsteadBlock\": 0,\r\n        \"eip155Block\": 0,\r\n        \"eip158Block\": 0\r\n    },\r\n    \"alloc\": {\r\n        \"0x6d0ae5939db75633810a03da2bc9cb2ec0f12fef\": {\"balance\": \"1000000000000000000\"},\r\n        \"0x2410512f1c503f5a8daa412f09c3f83dd1c5b0bd\": {\"balance\": \"1000000000000000000\"},\r\n        \"0x67371c6a9bf15f7e4473feb8d099137d0796f425\": {\"balance\": \"1000000000000000000\"}\r\n    },\r\n    \"coinbase\": \"0x0000000000000000000000000000000000000000\",\r\n    \"difficulty\": \"0x1\",\r\n    \"extraData\": \"\",\r\n    \"gasLimit\": \"0x2fefd8\",\r\n    \"nonce\": \"0x0000000000000042\",\r\n    \"mixhash\"    : \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"parentHash\" : \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"timestamp\"  : \"0x00\"\r\n}\r\n```\r\n\r\n## My Operation:\r\nIn `ubuntu1` node, I execute:\r\n```sh\r\nbootnode --genkey=boot.key\r\nbootnode --nodekey=boot.key\r\n```\r\nOutput:\r\n```\r\nenode://c2606d9b5056a7ce05ca516d2cb3ebabbcd7189f2183a22fda4ea74d489836056cd583e3668efb27a2d882ca2d9ee5975705ade3059cd7b6d015521c1cbedd82@127.0.0.1:0?discport=30301\r\nNote: you're using cmd/bootnode, a developer tool.\r\nWe recommend using a regular node as bootstrap node for production deployments.\r\nINFO [07-18|02:49:46.611] New local node record                    seq=1 id=3a0a3d12e3c0b551 ip=<nil> udp=0 tcp=0\r\n```\r\nThis node as a bootnode.\r\n\r\nIn `ubuntu2` and `ubuntu3` node, I execute:\r\n```sh\r\ngeth --datadir=$(pwd)/data init genesis.json\r\ngeth --datadir=$(pwd)/data --bootnodes=\"enode://c2606d9b5056a7ce05ca516d2cb3ebabbcd7189f2183a22fda4ea74d489836056cd583e3668efb27a2d882ca2d9ee5975705ade3059cd7b6d015521c1cbedd82@ubuntu1:30301\" --networkid=112 console\r\n```\r\n\r\n## My Problem\r\nThis is the output on `ubuntu2` and `ubuntu3`:\r\n```\r\nINFO [07-18|14:59:26.605] Looking for peers                        peercount=0 tried=0  static=0\r\nINFO [07-18|14:59:37.172] Looking for peers                        peercount=0 tried=0  static=0\r\nWARN [07-18|14:59:39.228] Dropping unsynced node during sync       id=b969d4f41570741a conn=dyndial addr=192.168.159.134:30303 type=Geth/v1.10.5-stable/...\r\nWARN [07-18|14:59:42.217] Dropping unsynced node during sync       id=b969d4f41570741a conn=inbound addr=192.168.159.134:60148 type=Geth/v1.10.5-stable/...\r\nWARN [07-18|14:59:44.442] Dropping unsynced node during sync       id=f031656e5e5a8222 conn=inbound addr=192.168.159.133:33216 type=Geth/v1.10.5-stable/...\r\nINFO [07-18|14:59:47.274] Looking for peers                        peercount=0 tried=2  static=0\r\nWARN [07-18|14:59:49.322] Dropping unsynced node during sync       id=f031656e5e5a8222 conn=dyndial addr=192.168.159.133:30303 type=Geth/v1.10.5-stable/...\r\nINFO [07-18|14:59:57.851] Looking for peers                        peercount=0 tried=3  static=0\r\n```\r\nThey don't seem to connect, It can't work. Did I do something wrong?\r\nCan someone help me? Thank you.\r\n",
+  "closed_by": {
+    "login": "oct-month",
+    "id": 59117904,
+    "node_id": "MDQ6VXNlcjU5MTE3OTA0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/59117904?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/oct-month",
+    "html_url": "https://github.com/oct-month",
+    "followers_url": "https://api.github.com/users/oct-month/followers",
+    "following_url": "https://api.github.com/users/oct-month/following{/other_user}",
+    "gists_url": "https://api.github.com/users/oct-month/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/oct-month/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/oct-month/subscriptions",
+    "organizations_url": "https://api.github.com/users/oct-month/orgs",
+    "repos_url": "https://api.github.com/users/oct-month/repos",
+    "events_url": "https://api.github.com/users/oct-month/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/oct-month/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23231/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23231/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

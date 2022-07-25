@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18007",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18007/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18007/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18007/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/18007",
+  "id": 375738008,
+  "node_id": "MDU6SXNzdWUzNzU3MzgwMDg=",
+  "number": 18007,
+  "title": "Swarm: Feed update with empty signature returns HTTP 200",
+  "user": {
+    "login": "agazso",
+    "id": 230163,
+    "node_id": "MDQ6VXNlcjIzMDE2Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/230163?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/agazso",
+    "html_url": "https://github.com/agazso",
+    "followers_url": "https://api.github.com/users/agazso/followers",
+    "following_url": "https://api.github.com/users/agazso/following{/other_user}",
+    "gists_url": "https://api.github.com/users/agazso/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/agazso/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/agazso/subscriptions",
+    "organizations_url": "https://api.github.com/users/agazso/orgs",
+    "repos_url": "https://api.github.com/users/agazso/repos",
+    "events_url": "https://api.github.com/users/agazso/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/agazso/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-10-30T23:32:18Z",
+  "updated_at": "2018-11-07T13:49:43Z",
+  "closed_at": "2018-11-07T13:49:43Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "The problem is when you call the feed update with an empty signature, it returns HTTP status 200 (OK). It would be more appropriate if it returned 400 (Bad Request) instead.\r\n\r\n#### System information\r\n\r\nGeth version: 1.8.18-unstable\r\nOS & Version: OSX\r\nCommit hash : 8ed4739176f435d09dfa36d8b2e2a3c8c6f407dd\r\n\r\n#### Expected behaviour\r\n\r\nWhen you call the feed update with an empty signature it returns 200.\r\n\r\n#### Actual behaviour\r\n\r\nWhen you call the feed update with an empty signature it returns 400.\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nDownload feed template:\r\n`http://localhost:8500/bzz-feed:/?user=0x377820<redacted>2af10e1c51c5f1e709&meta=1`\r\n\r\nThen call the feed update with empty signature:\r\n`http://localhost:8500/bzz-feed:/?topic=0x0000000000000000000000000000000000000000000000000000000000000000&user=0x377820<redacted>2af10e1c51c5f1e709&level=19&time=1540941850&signature=`\r\n",
+  "closed_by": {
+    "login": "nonsense",
+    "id": 50459,
+    "node_id": "MDQ6VXNlcjUwNDU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/50459?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nonsense",
+    "html_url": "https://github.com/nonsense",
+    "followers_url": "https://api.github.com/users/nonsense/followers",
+    "following_url": "https://api.github.com/users/nonsense/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nonsense/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nonsense/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nonsense/subscriptions",
+    "organizations_url": "https://api.github.com/users/nonsense/orgs",
+    "repos_url": "https://api.github.com/users/nonsense/repos",
+    "events_url": "https://api.github.com/users/nonsense/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nonsense/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18007/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18007/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

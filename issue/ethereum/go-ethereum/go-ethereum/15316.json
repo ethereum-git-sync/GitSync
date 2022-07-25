@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15316",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15316/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15316/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15316/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/15316",
+  "id": 265956349,
+  "node_id": "MDU6SXNzdWUyNjU5NTYzNDk=",
+  "number": 15316,
+  "title": "OpenCL.dll not found",
+  "user": {
+    "login": "samhkarmy",
+    "id": 32856080,
+    "node_id": "MDQ6VXNlcjMyODU2MDgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32856080?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/samhkarmy",
+    "html_url": "https://github.com/samhkarmy",
+    "followers_url": "https://api.github.com/users/samhkarmy/followers",
+    "following_url": "https://api.github.com/users/samhkarmy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/samhkarmy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/samhkarmy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/samhkarmy/subscriptions",
+    "organizations_url": "https://api.github.com/users/samhkarmy/orgs",
+    "repos_url": "https://api.github.com/users/samhkarmy/repos",
+    "events_url": "https://api.github.com/users/samhkarmy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/samhkarmy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-10-17T00:31:15Z",
+  "updated_at": "2017-10-17T01:40:45Z",
+  "closed_at": "2017-10-17T01:40:45Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hey everyone, I'm currently running a gtx 970 and followed all the correct steps and did it multiple times from multiple different sources and videos and I keep getting this error. I've turned off firewall and everything associated with it, and uninstalled norton too and I'm still having this issue. Please lend me a hand if  you can.\r\n\r\nGeth version: `geth version`\r\nOS & Version: Windows\r\nCommit hash : (if `develop`)\r\n\r\n#### Expected behaviour: Program starts and starts running and earning ethereum\r\n\r\n\r\n#### Actual behaviour: Program will run shortly then come up with said error code above from windows and exit out of itself\r\n\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n",
+  "closed_by": {
+    "login": "samhkarmy",
+    "id": 32856080,
+    "node_id": "MDQ6VXNlcjMyODU2MDgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32856080?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/samhkarmy",
+    "html_url": "https://github.com/samhkarmy",
+    "followers_url": "https://api.github.com/users/samhkarmy/followers",
+    "following_url": "https://api.github.com/users/samhkarmy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/samhkarmy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/samhkarmy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/samhkarmy/subscriptions",
+    "organizations_url": "https://api.github.com/users/samhkarmy/orgs",
+    "repos_url": "https://api.github.com/users/samhkarmy/repos",
+    "events_url": "https://api.github.com/users/samhkarmy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/samhkarmy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15316/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15316/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

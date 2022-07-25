@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/40",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/40/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/40/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/40/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/40",
+  "id": 33407548,
+  "node_id": "MDU6SXNzdWUzMzQwNzU0OA==",
+  "number": 40,
+  "title": "Blocks won't verify if started with a fresh datadir and mining",
+  "user": {
+    "login": "maran",
+    "id": 20855,
+    "node_id": "MDQ6VXNlcjIwODU1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20855?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/maran",
+    "html_url": "https://github.com/maran",
+    "followers_url": "https://api.github.com/users/maran/followers",
+    "following_url": "https://api.github.com/users/maran/following{/other_user}",
+    "gists_url": "https://api.github.com/users/maran/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/maran/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/maran/subscriptions",
+    "organizations_url": "https://api.github.com/users/maran/orgs",
+    "repos_url": "https://api.github.com/users/maran/repos",
+    "events_url": "https://api.github.com/users/maran/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/maran/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-05-13T15:11:32Z",
+  "updated_at": "2022-04-21T07:58:52Z",
+  "closed_at": "2014-05-20T12:54:48Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "When starting with a fresh data folder and mining enabled blocks that have already been found won't be validated.\n\n```\n2014/05/13 17:06:27 [PEER] Found conical block, returning chain from: c87939ffc7eb183dd22b70007d607a15e0beeb99bb9ddc842f698364c99a6c02\n2014/05/13 17:06:27 [PEER] Returning 4 blocks: c87939ffc7eb183dd22b70007d607a15e0beeb99bb9ddc842f698364c99a6c02\n[SM] Error validating block: Block timestamp less then prev block -10\n2014/05/13 17:06:27 Block timestamp less then prev block -10\n2014/05/13 17:06:27 [MINER] Mining on block. Includes 0 transactions\n```\n\nYou can replicate this by rm -rvf ~/.ethereum and then starting with ethereum -m.\n\nIf anybody is able please confirm that I'm not the only one with this problem.\n",
+  "closed_by": {
+    "login": "maran",
+    "id": 20855,
+    "node_id": "MDQ6VXNlcjIwODU1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20855?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/maran",
+    "html_url": "https://github.com/maran",
+    "followers_url": "https://api.github.com/users/maran/followers",
+    "following_url": "https://api.github.com/users/maran/following{/other_user}",
+    "gists_url": "https://api.github.com/users/maran/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/maran/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/maran/subscriptions",
+    "organizations_url": "https://api.github.com/users/maran/orgs",
+    "repos_url": "https://api.github.com/users/maran/repos",
+    "events_url": "https://api.github.com/users/maran/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/maran/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/40/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/40/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

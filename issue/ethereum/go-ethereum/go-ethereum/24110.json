@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24110",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24110/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24110/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24110/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24110",
+  "id": 1080732313,
+  "node_id": "I_kwDOAOvK985AaqqZ",
+  "number": 24110,
+  "title": "Allow to set extra headers for websocket client",
+  "user": {
+    "login": "michael-loc009",
+    "id": 32692818,
+    "node_id": "MDQ6VXNlcjMyNjkyODE4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32692818?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michael-loc009",
+    "html_url": "https://github.com/michael-loc009",
+    "followers_url": "https://api.github.com/users/michael-loc009/followers",
+    "following_url": "https://api.github.com/users/michael-loc009/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michael-loc009/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michael-loc009/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michael-loc009/subscriptions",
+    "organizations_url": "https://api.github.com/users/michael-loc009/orgs",
+    "repos_url": "https://api.github.com/users/michael-loc009/repos",
+    "events_url": "https://api.github.com/users/michael-loc009/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michael-loc009/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233652,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1Mg==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:feature",
+      "name": "type:feature",
+      "color": "84b6eb",
+      "default": false,
+      "description": null
+    },
+    {
+      "id": 1133969567,
+      "node_id": "MDU6TGFiZWwxMTMzOTY5NTY3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/need:investigation",
+      "name": "need:investigation",
+      "color": "74f450",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-12-15T08:34:52Z",
+  "updated_at": "2022-05-08T00:45:10Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "# Rationale\r\n\r\nWhy should this feature exist?\r\nFor some node providers, they require setting the api key in the header when connecting to their websocket server.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24110/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24110/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1120324103",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/24110#issuecomment-1120324103",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24110",
+    "id": 1120324103,
+    "node_id": "IC_kwDOAOvK985CxsoH",
+    "user": {
+      "login": "kallydev",
+      "id": 36319157,
+      "node_id": "MDQ6VXNlcjM2MzE5MTU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36319157?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kallydev",
+      "html_url": "https://github.com/kallydev",
+      "followers_url": "https://api.github.com/users/kallydev/followers",
+      "following_url": "https://api.github.com/users/kallydev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kallydev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kallydev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kallydev/subscriptions",
+      "organizations_url": "https://api.github.com/users/kallydev/orgs",
+      "repos_url": "https://api.github.com/users/kallydev/repos",
+      "events_url": "https://api.github.com/users/kallydev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kallydev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-05-08T00:43:07Z",
+    "updated_at": "2022-05-08T00:45:10Z",
+    "author_association": "NONE",
+    "body": "I had the same trouble yesterday with the **AWS blockchain service**, but I wrote a custom `Proxy` function for `websocket.Dialer` for **injecting Header** into it, which successfully solved the problem.\r\n\r\n### WebSocket\r\n\r\n```go\r\npackage transport\r\n\r\nimport (\r\n\t\"context\"\r\n\t\"crypto/sha256\"\r\n\t\"encoding/hex\"\r\n\t\"net/http\"\r\n\t\"net/url\"\r\n\t\"time\"\r\n\r\n\t\"github.com/aws/aws-sdk-go-v2/aws\"\r\n\t\"github.com/aws/aws-sdk-go-v2/aws/signer/v4\"\r\n\t\"github.com/gorilla/websocket\"\r\n)\r\n\r\nfunc NewWebSocketDialer(config aws.Config) (*websocket.Dialer, error) {\r\n\treturn &websocket.Dialer{\r\n\t\tHandshakeTimeout: 45 * time.Second,\r\n\t\tProxy: func(request *http.Request) (*url.URL, error) {\r\n\t\t\tcredentials, err := config.Credentials.Retrieve(request.Context())\r\n\t\t\tif err != nil {\r\n\t\t\t\treturn nil, err\r\n\t\t\t}\r\n\r\n\t\t\tinternalRequest, err := http.NewRequest(http.MethodGet, request.URL.String(), nil)\r\n\t\t\tif err != nil {\r\n\t\t\t\treturn nil, err\r\n\t\t\t}\r\n\r\n\t\t\theader := request.Header.Clone()\r\n\r\n\t\t\thash := sha256.New()\r\n\r\n\t\t\tsigner := v4.NewSigner()\r\n\r\n\t\t\tif err := signer.SignHTTP(context.Background(), credentials, internalRequest, hex.EncodeToString(hash.Sum(nil)), \"managedblockchain\", config.Region, time.Now()); err != nil {\r\n\t\t\t\treturn nil, err\r\n\t\t\t}\r\n\r\n\t\t\trequest.Header = internalRequest.Header\r\n\r\n\t\t\trequest.Header.Set(\"Connection\", header[\"Connection\"][0])\r\n\t\t\trequest.Header.Set(\"Sec-WebSocket-Key\", header[\"Sec-WebSocket-Key\"][0])\r\n\t\t\trequest.Header.Set(\"Sec-WebSocket-Version\", header[\"Sec-WebSocket-Version\"][0])\r\n\t\t\trequest.Header.Set(\"Upgrade\", header[\"Upgrade\"][0])\r\n\r\n\t\t\treturn http.ProxyFromEnvironment(request)\r\n\t\t},\r\n\t}, nil\r\n}\r\n```\r\n\r\n### HTTP\r\n\r\n```go\r\npackage transport\r\n\r\nimport (\r\n\t\"compress/gzip\"\r\n\t\"context\"\r\n\t\"crypto/sha256\"\r\n\t\"encoding/base64\"\r\n\t\"encoding/hex\"\r\n\t\"io\"\r\n\t\"net/http\"\r\n\t\"time\"\r\n\r\n\t\"github.com/aws/aws-sdk-go-v2/aws\"\r\n\t\"github.com/aws/aws-sdk-go-v2/aws/signer/v4\"\r\n)\r\n\r\nvar _ http.RoundTripper = &httpRoundTripper{}\r\n\r\ntype httpRoundTripper struct {\r\n\tconfig aws.Config\r\n}\r\n\r\nfunc (h httpRoundTripper) RoundTrip(request *http.Request) (*http.Response, error) {\r\n\tcredentials, err := h.config.Credentials.Retrieve(request.Context())\r\n\tif err != nil {\r\n\t\treturn nil, err\r\n\t}\r\n\r\n\tinternalRequest := request.Clone(request.Context())\r\n\r\n\tbodyReader, err := request.GetBody()\r\n\tif err != nil {\r\n\t\treturn nil, err\r\n\t}\r\n\r\n\thash := sha256.New()\r\n\r\n\tif _, err := io.Copy(hash, bodyReader); err != nil {\r\n\t\treturn nil, err\r\n\t}\r\n\r\n\tsigner := v4.NewSigner()\r\n\tif err := signer.SignHTTP(context.Background(), credentials, internalRequest, hex.EncodeToString(hash.Sum(nil)), \"managedblockchain\", h.config.Region, time.Now()); err != nil {\r\n\t\treturn nil, err\r\n\t}\r\n\r\n\tresponse, err := h.config.HTTPClient.Do(internalRequest)\r\n\tif err != nil {\r\n\t\treturn nil, err\r\n\t}\r\n\r\n\tif response.Header.Get(\"Content-Type\") == \"gzip\" {\r\n\t\tgzipReader, err := gzip.NewReader(base64.NewDecoder(base64.StdEncoding, response.Body))\r\n\t\tif err != nil {\r\n\t\t\treturn nil, err\r\n\t\t}\r\n\r\n\t\trequest.Header.Set(\"Content-Type\", \"application/json\")\r\n\r\n\t\tresponse.Body = gzipReader\r\n\t}\r\n\r\n\treturn response, nil\r\n}\r\n\r\nfunc NewHttpRoundTripper(cfg aws.Config) http.RoundTripper {\r\n\treturn httpRoundTripper{\r\n\t\tconfig: cfg,\r\n\t}\r\n}\r\n```",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1120324103/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

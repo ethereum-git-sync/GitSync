@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19511",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19511/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19511/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19511/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/19511",
+  "id": 438416154,
+  "node_id": "MDU6SXNzdWU0Mzg0MTYxNTQ=",
+  "number": 19511,
+  "title": "Geth uses the mainnet bootnodes for discovery by default",
+  "user": {
+    "login": "ferranbt",
+    "id": 30872539,
+    "node_id": "MDQ6VXNlcjMwODcyNTM5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30872539?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ferranbt",
+    "html_url": "https://github.com/ferranbt",
+    "followers_url": "https://api.github.com/users/ferranbt/followers",
+    "following_url": "https://api.github.com/users/ferranbt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ferranbt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ferranbt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ferranbt/subscriptions",
+    "organizations_url": "https://api.github.com/users/ferranbt/orgs",
+    "repos_url": "https://api.github.com/users/ferranbt/repos",
+    "events_url": "https://api.github.com/users/ferranbt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ferranbt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-04-29T17:06:27Z",
+  "updated_at": "2019-04-30T18:26:16Z",
+  "closed_at": "2019-04-30T18:26:16Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "\r\nI'm running Geth in fast mode on mainnet. More than half of the connected nodes have some type of error during the eth63 handshake: bad genesis block, bad network id or send a useless peer message. So far, all these errors have only happened with Geth and derivated clients (Pirl, Gubiq...).\r\n\r\nI think the problem is that Geth by default uses the mainnet bootnodes for discovery ([here](https://github.com/ethereum/go-ethereum/blob/master/cmd/utils/flags.go#L768)). Thus, all the private blockchains that use Geth (with internal genesis files) will fill the discovery tables of the mainnet nodes with non-mainnet entries.\r\n",
+  "closed_by": {
+    "login": "ferranbt",
+    "id": 30872539,
+    "node_id": "MDQ6VXNlcjMwODcyNTM5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30872539?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ferranbt",
+    "html_url": "https://github.com/ferranbt",
+    "followers_url": "https://api.github.com/users/ferranbt/followers",
+    "following_url": "https://api.github.com/users/ferranbt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ferranbt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ferranbt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ferranbt/subscriptions",
+    "organizations_url": "https://api.github.com/users/ferranbt/orgs",
+    "repos_url": "https://api.github.com/users/ferranbt/repos",
+    "events_url": "https://api.github.com/users/ferranbt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ferranbt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19511/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19511/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

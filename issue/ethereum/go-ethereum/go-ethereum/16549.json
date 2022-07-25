@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16549",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16549/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16549/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16549/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/16549",
+  "id": 316764512,
+  "node_id": "MDU6SXNzdWUzMTY3NjQ1MTI=",
+  "number": 16549,
+  "title": "mobile: bump to ndk-16",
+  "user": {
+    "login": "ligi",
+    "id": 111600,
+    "node_id": "MDQ6VXNlcjExMTYwMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ligi",
+    "html_url": "https://github.com/ligi",
+    "followers_url": "https://api.github.com/users/ligi/followers",
+    "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ligi/orgs",
+    "repos_url": "https://api.github.com/users/ligi/repos",
+    "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ligi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 306719709,
+      "node_id": "MDU6TGFiZWwzMDY3MTk3MDk=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/os:android",
+      "name": "os:android",
+      "color": "a7ea48",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-04-23T11:07:06Z",
+  "updated_at": "2018-07-10T09:56:09Z",
+  "closed_at": "2018-07-10T09:56:09Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "geth aar seems to compile with ndk-16b - currently 15 is used - but should be done after the upload problem is solved to not get more variables into this problem.\r\n\r\n```\r\n⋊> ~/g/s/g/e/go-ethereum on master ⨯ make android                                                                                 13:00:03\r\nbuild/env.sh go run build/ci.go aar --local\r\n>>> /usr/lib/go-1.10/bin/go get golang.org/x/mobile/cmd/gomobile golang.org/x/mobile/cmd/gobind\r\n>>> /home/ligi/go/src/github.com/ethereum/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/build/bin/gomobile init --ndk /home/ligi/bin/versioned/android-ndk-r16b/\r\n>>> /home/ligi/go/src/github.com/ethereum/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/build/bin/gomobile bind --target android --javapkg org.ethereum -v github.com/ethereum/go-ethereum/mobile\r\nruntime/cgo\r\ngolang.org/x/mobile/internal/mobileinit\r\ngithub.com/ethereum/go-ethereum/vendor/github.com/karalabe/hid\r\ngithub.com/ethereum/go-ethereum/crypto/secp256k1\r\nnet\r\ngithub.com/ethereum/go-ethereum/vendor/gopkg.in/olebedev/go-duktape.v3\r\ngolang.org/x/mobile/bind/java\r\ngobind\r\nruntime/cgo\r\ngolang.org/x/mobile/internal/mobileinit\r\ngithub.com/ethereum/go-ethereum/crypto/secp256k1\r\ngithub.com/ethereum/go-ethereum/vendor/github.com/karalabe/hid\r\nnet\r\ngithub.com/ethereum/go-ethereum/vendor/gopkg.in/olebedev/go-duktape.v3\r\ngolang.org/x/mobile/bind/java\r\ngobind\r\nruntime/cgo\r\ngithub.com/ethereum/go-ethereum/crypto/secp256k1\r\ngolang.org/x/mobile/internal/mobileinit\r\ngithub.com/ethereum/go-ethereum/vendor/github.com/karalabe/hid\r\nnet\r\ngithub.com/ethereum/go-ethereum/vendor/gopkg.in/olebedev/go-duktape.v3\r\ngolang.org/x/mobile/bind/java\r\ngobind\r\nruntime/cgo\r\ngithub.com/ethereum/go-ethereum/crypto/secp256k1\r\ngithub.com/ethereum/go-ethereum/vendor/github.com/karalabe/hid\r\ngolang.org/x/mobile/internal/mobileinit\r\nnet\r\ngithub.com/ethereum/go-ethereum/vendor/gopkg.in/olebedev/go-duktape.v3\r\ngolang.org/x/mobile/bind/java\r\ngobind\r\naar: AndroidManifest.xml\r\naar: proguard.txt\r\naar: classes.jar\r\njar: META-INF/MANIFEST.MF\r\njar: go/LoadJNI.class\r\njar: go/Seq$GoObject.class\r\njar: go/Seq$GoRef.class\r\njar: go/Seq$GoRefQueue$1.class\r\njar: go/Seq$GoRefQueue.class\r\njar: go/Seq$Proxy.class\r\njar: go/Seq$Ref.class\r\njar: go/Seq$RefMap.class\r\njar: go/Seq$RefTracker.class\r\njar: go/Seq.class\r\njar: go/Universe$proxyerror.class\r\njar: go/Universe.class\r\njar: go/error.class\r\njar: org/ethereum/geth/Account.class\r\njar: org/ethereum/geth/Accounts.class\r\njar: org/ethereum/geth/Address.class\r\njar: org/ethereum/geth/Addresses.class\r\njar: org/ethereum/geth/BigInt.class\r\njar: org/ethereum/geth/BigInts.class\r\njar: org/ethereum/geth/Block.class\r\njar: org/ethereum/geth/Bloom.class\r\njar: org/ethereum/geth/BoundContract.class\r\njar: org/ethereum/geth/CallMsg.class\r\njar: org/ethereum/geth/CallOpts.class\r\njar: org/ethereum/geth/Context.class\r\njar: org/ethereum/geth/Enode.class\r\njar: org/ethereum/geth/Enodes.class\r\njar: org/ethereum/geth/EthereumClient.class\r\njar: org/ethereum/geth/FilterLogsHandler.class\r\njar: org/ethereum/geth/FilterQuery.class\r\njar: org/ethereum/geth/Geth$proxyFilterLogsHandler.class\r\njar: org/ethereum/geth/Geth$proxyNewHeadHandler.class\r\njar: org/ethereum/geth/Geth$proxySigner.class\r\njar: org/ethereum/geth/Geth.class\r\njar: org/ethereum/geth/Hash.class\r\njar: org/ethereum/geth/Hashes.class\r\njar: org/ethereum/geth/Header.class\r\njar: org/ethereum/geth/Headers.class\r\njar: org/ethereum/geth/Interface.class\r\njar: org/ethereum/geth/Interfaces.class\r\njar: org/ethereum/geth/KeyStore.class\r\njar: org/ethereum/geth/Log.class\r\njar: org/ethereum/geth/Logs.class\r\njar: org/ethereum/geth/NewHeadHandler.class\r\njar: org/ethereum/geth/Node.class\r\njar: org/ethereum/geth/NodeConfig.class\r\njar: org/ethereum/geth/NodeInfo.class\r\njar: org/ethereum/geth/Nonce.class\r\njar: org/ethereum/geth/PeerInfo.class\r\njar: org/ethereum/geth/PeerInfos.class\r\njar: org/ethereum/geth/Receipt.class\r\njar: org/ethereum/geth/Signer.class\r\njar: org/ethereum/geth/Strings.class\r\njar: org/ethereum/geth/Subscription.class\r\njar: org/ethereum/geth/SyncProgress.class\r\njar: org/ethereum/geth/Topics.class\r\njar: org/ethereum/geth/TransactOpts.class\r\njar: org/ethereum/geth/Transaction.class\r\njar: org/ethereum/geth/Transactions.class\r\naar: jni/armeabi-v7a/libgojni.so\r\naar: jni/arm64-v8a/libgojni.so\r\naar: jni/x86/libgojni.so\r\naar: jni/x86_64/libgojni.so\r\naar: R.txt\r\naar: res/\r\njar: META-INF/MANIFEST.MF\r\njar: go/LoadJNI.java\r\njar: go/Seq.java\r\njar: go/Universe.java\r\njar: go/error.java\r\njar: org/ethereum/geth/Account.java\r\njar: org/ethereum/geth/Accounts.java\r\njar: org/ethereum/geth/Address.java\r\njar: org/ethereum/geth/Addresses.java\r\njar: org/ethereum/geth/BigInt.java\r\njar: org/ethereum/geth/BigInts.java\r\njar: org/ethereum/geth/Block.java\r\njar: org/ethereum/geth/Bloom.java\r\njar: org/ethereum/geth/BoundContract.java\r\njar: org/ethereum/geth/CallMsg.java\r\njar: org/ethereum/geth/CallOpts.java\r\njar: org/ethereum/geth/Context.java\r\njar: org/ethereum/geth/Enode.java\r\njar: org/ethereum/geth/Enodes.java\r\njar: org/ethereum/geth/EthereumClient.java\r\njar: org/ethereum/geth/FilterLogsHandler.java\r\njar: org/ethereum/geth/FilterQuery.java\r\njar: org/ethereum/geth/Geth.java\r\njar: org/ethereum/geth/Hash.java\r\njar: org/ethereum/geth/Hashes.java\r\njar: org/ethereum/geth/Header.java\r\njar: org/ethereum/geth/Headers.java\r\njar: org/ethereum/geth/Interface.java\r\njar: org/ethereum/geth/Interfaces.java\r\njar: org/ethereum/geth/KeyStore.java\r\njar: org/ethereum/geth/Log.java\r\njar: org/ethereum/geth/Logs.java\r\njar: org/ethereum/geth/NewHeadHandler.java\r\njar: org/ethereum/geth/Node.java\r\njar: org/ethereum/geth/NodeConfig.java\r\njar: org/ethereum/geth/NodeInfo.java\r\njar: org/ethereum/geth/Nonce.java\r\njar: org/ethereum/geth/PeerInfo.java\r\njar: org/ethereum/geth/PeerInfos.java\r\njar: org/ethereum/geth/Receipt.java\r\njar: org/ethereum/geth/Signer.java\r\njar: org/ethereum/geth/Strings.java\r\njar: org/ethereum/geth/Subscription.java\r\njar: org/ethereum/geth/SyncProgress.java\r\njar: org/ethereum/geth/Topics.java\r\njar: org/ethereum/geth/TransactOpts.java\r\njar: org/ethereum/geth/Transaction.java\r\njar: org/ethereum/geth/Transactions.java\r\nDone building.\r\nImport \"/home/ligi/go/src/github.com/ethereum/go-ethereum/build/bin/geth.aar\" to use the library.\r\n⋊> ~/g/s/g/e/go-ethereum on master ⨯        \r\n```",
+  "closed_by": {
+    "login": "ligi",
+    "id": 111600,
+    "node_id": "MDQ6VXNlcjExMTYwMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ligi",
+    "html_url": "https://github.com/ligi",
+    "followers_url": "https://api.github.com/users/ligi/followers",
+    "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ligi/orgs",
+    "repos_url": "https://api.github.com/users/ligi/repos",
+    "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ligi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16549/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16549/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/68",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/68/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/68/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/68/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/68",
+  "id": 34684013,
+  "node_id": "MDU6SXNzdWUzNDY4NDAxMw==",
+  "number": 68,
+  "title": "panic: object does not expose a method \"addLog\"",
+  "user": {
+    "login": "tymat",
+    "id": 849457,
+    "node_id": "MDQ6VXNlcjg0OTQ1Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/849457?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tymat",
+    "html_url": "https://github.com/tymat",
+    "followers_url": "https://api.github.com/users/tymat/followers",
+    "following_url": "https://api.github.com/users/tymat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tymat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tymat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tymat/subscriptions",
+    "organizations_url": "https://api.github.com/users/tymat/orgs",
+    "repos_url": "https://api.github.com/users/tymat/repos",
+    "events_url": "https://api.github.com/users/tymat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tymat/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-05-30T21:49:10Z",
+  "updated_at": "2014-05-31T09:34:49Z",
+  "closed_at": "2014-05-31T09:34:49Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "go-ethereum Commit be27309dbb75730c74fed1c355411997472203c6 (develop)\neth-go Commit 9e8127accba0d926436d3c0adf65b91149a94783 (develop)\n\n```\n$ ethereal\n2014/05/30 17:46:13 UPnP failed write udp4: i/o timeout\n2014/05/30 17:46:13 [CHAIN] Last known block height #0\n2014/05/30 17:46:13 Last block: c305511e7cb9b33767e50f5e94ecd7b1c51359a04f45183860ec6808d80b0d3f\n2014/05/30 17:46:13 Starting Ethereum GUI v0.5.0 RC11\n2014/05/30 17:46:13 Ready and accepting connections\n2014/05/30 17:46:13 [SERV] Retrieving seed nodes\n2014/05/30 17:46:13 [SERV] Found DNS Go Peer: 94.242.229.217:30303\n2014/05/30 17:46:13 [SERV] Adding peer (94.242.229.217:30303) 1 / 10\n2014/05/30 17:46:13 [SERV] Found DNS Bootstrap Peer: 54.200.139.158:30303\n2014/05/30 17:46:13 [SERV] Adding peer (54.200.139.158:30303) 2 / 10\n2014/05/30 17:46:15 Requesting blockchain c305511e... from peer 94.242.229.217:30303\n2014/05/30 17:46:15 [PEER] [connected] (outbound) 94.242.229.217:30303  [Peer discovery | Block chain relaying | Transaction relaying]\n2014/05/30 17:46:15 [GUI] Starting GUI\npanic: object does not expose a method \"addLog\"\n\ngoroutine 1 [running]:\nruntime.panic(0x43b4de0, 0xc210e61100)\n    /usr/local/go/src/pkg/runtime/panic.c:266 +0xb6\ngithub.com/go-qml/qml.cmust(0x6aa4fe0)\n    /Users/aeufemio/go/src/github.com/go-qml/qml/qml.go:832 +0x7c\ngithub.com/go-qml/qml.(*Common).Call(0xc210e610a0, 0x45040e0, 0x6, 0xc210e610b0, 0x1, ...)\n    /Users/aeufemio/go/src/github.com/go-qml/qml/qml.go:687 +0x1ae\ngithub.com/ethereum/go-ethereum/ethereal/ui.(*Gui).Println(0xc2109d43c0, 0xc210e61050, 0x1, 0x1)\n    /Users/aeufemio/go/src/github.com/ethereum/go-ethereum/ethereal/ui/gui.go:297 +0x1eb\ngithub.com/ethereum/eth-go/ethutil.(*Logger).Infoln(0xc210080f20, 0xc210e61050, 0x1, 0x1)\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/ethutil/config.go:183 +0x8d\ngithub.com/ethereum/go-ethereum/ethereal/ui.(*Gui).Start(0xc2109d43c0, 0xc21003866d, 0x46)\n    /Users/aeufemio/go/src/github.com/ethereum/go-ethereum/ethereal/ui/gui.go:100 +0x70d\nmain.main()\n    /Users/aeufemio/go/src/github.com/ethereum/go-ethereum/ethereal/ethereum.go:141 +0x9af\n\ngoroutine 3 [syscall]:\nos/signal.loop()\n    /usr/local/go/src/pkg/os/signal/signal_unix.go:21 +0x1e\ncreated by os/signal.init·1\n    /usr/local/go/src/pkg/os/signal/signal_unix.go:27 +0x31\n\ngoroutine 4 [syscall]:\nruntime.goexit()\n    /usr/local/go/src/pkg/runtime/proc.c:1394\n\ngoroutine 6 [syscall]:\ngithub.com/go-qml/qml._Cfunc_applicationExec(0x4a3ab48)\n    github.com/go-qml/qml/_obj/_cgo_defun.c:69 +0x31\ngithub.com/go-qml/qml.guiLoop()\n    /Users/aeufemio/go/src/github.com/go-qml/qml/bridge.go:43 +0x132\ncreated by github.com/go-qml/qml.Init\n    /Users/aeufemio/go/src/github.com/go-qml/qml/qml.go:44 +0xa0\n\ngoroutine 7 [select]:\ngithub.com/syndtr/goleveldb/leveldb.(*DB).compactionError(0xc2100826c0)\n    /Users/aeufemio/go/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:115 +0x1c5\ncreated by github.com/syndtr/goleveldb/leveldb.openDB\n    /Users/aeufemio/go/src/github.com/syndtr/goleveldb/leveldb/db.go:114 +0x402\n\ngoroutine 8 [select]:\ngithub.com/syndtr/goleveldb/leveldb.(*DB).compaction(0xc2100826c0)\n    /Users/aeufemio/go/src/github.com/syndtr/goleveldb/leveldb/db_compaction.go:437 +0x75f\ncreated by github.com/syndtr/goleveldb/leveldb.openDB\n    /Users/aeufemio/go/src/github.com/syndtr/goleveldb/leveldb/db.go:117 +0x443\n\ngoroutine 9 [select]:\ngithub.com/syndtr/goleveldb/leveldb.(*DB).writeJournal(0xc2100826c0)\n    /Users/aeufemio/go/src/github.com/syndtr/goleveldb/leveldb/db_write.go:36 +0x142\ncreated by github.com/syndtr/goleveldb/leveldb.openDB\n    /Users/aeufemio/go/src/github.com/syndtr/goleveldb/leveldb/db.go:118 +0x45a\n\ngoroutine 11 [select]:\ngithub.com/ethereum/eth-go/ethchain.(*TxPool).queueHandler(0xc2100383c0)\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/ethchain/transaction_pool.go:184 +0x2c8\ncreated by github.com/ethereum/eth-go/ethchain.(*TxPool).Start\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/ethchain/transaction_pool.go:255 +0x2e\n\ngoroutine 15 [IO wait]:\nnet.runtime_pollWait(0x6c2a970, 0x72, 0x0)\n    /private/var/folders/00/0sdwh000h01000cxqpysvccm0035qk/T/makerelease023741545/go/src/pkg/runtime/netpoll.goc:116 +0x6a\nnet.(*pollDesc).Wait(0xc21004c060, 0x72, 0x6c28120, 0x23)\n    /usr/local/go/src/pkg/net/fd_poll_runtime.go:81 +0x34\nnet.(*pollDesc).WaitRead(0xc21004c060, 0x23, 0x6c28120)\n    /usr/local/go/src/pkg/net/fd_poll_runtime.go:86 +0x30\nnet.(*netFD).accept(0xc21004c000, 0x45ea0d0, 0x0, 0x6c28120, 0x23)\n    /usr/local/go/src/pkg/net/fd_unix.go:382 +0x2c2\nnet.(*TCPListener).AcceptTCP(0xc210000b88, 0x0, 0x0, 0x0)\n    /usr/local/go/src/pkg/net/tcpsock_posix.go:233 +0x47\nnet.(*TCPListener).Accept(0xc210000b88, 0x0, 0x0, 0x0, 0x0)\n    /usr/local/go/src/pkg/net/tcpsock_posix.go:243 +0x27\ngithub.com/ethereum/eth-go.(*Ethereum).peerHandler(0xc21007c2c0, 0x6c2c040, 0xc210000b88)\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/ethereum.go:429 +0x2d\ncreated by github.com/ethereum/eth-go.(*Ethereum).Start\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/ethereum.go:356 +0x2a5\n\ngoroutine 16 [chan receive]:\ngithub.com/ethereum/eth-go.(*Ethereum).ReapDeadPeerHandler(0xc21007c2c0)\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/ethereum.go:338 +0x67\ncreated by github.com/ethereum/eth-go.(*Ethereum).Start\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/ethereum.go:364 +0x18e\n\ngoroutine 18 [IO wait]:\nnet.runtime_pollWait(0x6c2a820, 0x77, 0x0)\n    /private/var/folders/00/0sdwh000h01000cxqpysvccm0035qk/T/makerelease023741545/go/src/pkg/runtime/netpoll.goc:116 +0x6a\nnet.(*pollDesc).Wait(0xc210e500d0, 0x77, 0x6c28120, 0x24)\n    /usr/local/go/src/pkg/net/fd_poll_runtime.go:81 +0x34\nnet.(*pollDesc).WaitWrite(0xc210e500d0, 0x24, 0x6c28120)\n    /usr/local/go/src/pkg/net/fd_poll_runtime.go:90 +0x30\nnet.(*netFD).connect(0xc210e50070, 0x0, 0x0, 0x6c29a30, 0xc210080060, ...)\n    /usr/local/go/src/pkg/net/fd_unix.go:86 +0x166\nnet.(*netFD).dial(0xc210e50070, 0x6c2c078, 0x0, 0x6c2c078, 0xc2100a8030, ...)\n    /usr/local/go/src/pkg/net/sock_posix.go:121 +0x2fd\nnet.socket(0x45169e0, 0x3, 0x2, 0x1, 0x0, ...)\n    /usr/local/go/src/pkg/net/sock_posix.go:91 +0x40b\nnet.internetSocket(0x45169e0, 0x3, 0x6c2c078, 0x0, 0x6c2c078, ...)\n    /usr/local/go/src/pkg/net/ipsock_posix.go:136 +0x161\nnet.dialTCP(0x45169e0, 0x3, 0x0, 0xc2100a8030, 0xecb1af343, ...)\n    /usr/local/go/src/pkg/net/tcpsock_posix.go:155 +0xef\nnet.dialSingle(0x45169e0, 0x3, 0xc2100b6620, 0x14, 0x0, ...)\n    /usr/local/go/src/pkg/net/dial.go:225 +0x3d8\nnet.func·015(0xecb1af343, 0x3b46bbeb, 0x4a31a00, 0x6fc23ac00, 0xecb1af343, ...)\n    /usr/local/go/src/pkg/net/dial.go:158 +0xde\nnet.dial(0x45169e0, 0x3, 0x6c2c010, 0xc2100a8030, 0x9c90e38, ...)\n    /usr/local/go/src/pkg/net/fd_unix.go:40 +0x45\nnet.(*Dialer).Dial(0xc2100482c0, 0x45169e0, 0x3, 0xc2100b6620, 0x14, ...)\n    /usr/local/go/src/pkg/net/dial.go:165 +0x3e0\nnet.DialTimeout(0x45169e0, 0x3, 0xc2100b6620, 0x14, 0x6fc23ac00, ...)\n    /usr/local/go/src/pkg/net/dial.go:145 +0xaa\ngithub.com/ethereum/eth-go.func·010()\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/peer.go:168 +0x5f\ncreated by github.com/ethereum/eth-go.NewOutboundPeer\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/peer.go:182 +0x14f\n\ngoroutine 19 [select]:\ngithub.com/ethereum/eth-go.(*Peer).HandleOutbound(0xc21006e300)\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/peer.go:226 +0x246\ncreated by github.com/ethereum/eth-go.(*Peer).Start\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/peer.go:507 +0x2a0\n\ngoroutine 20 [sleep]:\ntime.Sleep(0x1dcd6500)\n    /private/var/folders/00/0sdwh000h01000cxqpysvccm0035qk/T/makerelease023741545/go/src/pkg/runtime/time.goc:31 +0x31\ngithub.com/ethereum/eth-go.(*Peer).HandleInbound(0xc21006e300)\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/peer.go:268 +0x5f\ncreated by github.com/ethereum/eth-go.(*Peer).Start\n    /Users/aeufemio/go/src/github.com/ethereum/eth-go/peer.go:509 +0x2ba\n\n\n\n```\n",
+  "closed_by": {
+    "login": "obscuren",
+    "id": 6264126,
+    "node_id": "MDQ6VXNlcjYyNjQxMjY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6264126?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/obscuren",
+    "html_url": "https://github.com/obscuren",
+    "followers_url": "https://api.github.com/users/obscuren/followers",
+    "following_url": "https://api.github.com/users/obscuren/following{/other_user}",
+    "gists_url": "https://api.github.com/users/obscuren/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/obscuren/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/obscuren/subscriptions",
+    "organizations_url": "https://api.github.com/users/obscuren/orgs",
+    "repos_url": "https://api.github.com/users/obscuren/repos",
+    "events_url": "https://api.github.com/users/obscuren/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/obscuren/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/68/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/68/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

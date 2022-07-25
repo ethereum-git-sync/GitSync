@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21070",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21070/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21070/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21070/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21070",
+  "id": 617242735,
+  "node_id": "MDU6SXNzdWU2MTcyNDI3MzU=",
+  "number": 21070,
+  "title": "[ethstats]: stop report ticker in each loop cycle",
+  "user": {
+    "login": "duanhao0814",
+    "id": 38761526,
+    "node_id": "MDQ6VXNlcjM4NzYxNTI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/38761526?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/duanhao0814",
+    "html_url": "https://github.com/duanhao0814",
+    "followers_url": "https://api.github.com/users/duanhao0814/followers",
+    "following_url": "https://api.github.com/users/duanhao0814/following{/other_user}",
+    "gists_url": "https://api.github.com/users/duanhao0814/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/duanhao0814/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/duanhao0814/subscriptions",
+    "organizations_url": "https://api.github.com/users/duanhao0814/orgs",
+    "repos_url": "https://api.github.com/users/duanhao0814/repos",
+    "events_url": "https://api.github.com/users/duanhao0814/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/duanhao0814/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-05-13T08:16:45Z",
+  "updated_at": "2020-05-13T09:30:28Z",
+  "closed_at": "2020-05-13T09:30:28Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "Now, we may start a fullReport ticker in every loop cycle, but we only stop those tickers when this function returns rather than stop it when one cycle ends which may cause many ticker running at the same time.\r\n\r\nhttps://github.com/ethereum/go-ethereum/blob/0b63915430e5921722004345228c5239a8784d6b/ethstats/ethstats.go#L243",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21070/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21070/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

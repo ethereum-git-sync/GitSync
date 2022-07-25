@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18349",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18349/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18349/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18349/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/18349",
+  "id": 393283822,
+  "node_id": "MDU6SXNzdWUzOTMyODM4MjI=",
+  "number": 18349,
+  "title": "I have some questions on Ethereum Constantinople( Hard fork).",
+  "user": {
+    "login": "AhnSungHyeon",
+    "id": 31264787,
+    "node_id": "MDQ6VXNlcjMxMjY0Nzg3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31264787?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AhnSungHyeon",
+    "html_url": "https://github.com/AhnSungHyeon",
+    "followers_url": "https://api.github.com/users/AhnSungHyeon/followers",
+    "following_url": "https://api.github.com/users/AhnSungHyeon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AhnSungHyeon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AhnSungHyeon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AhnSungHyeon/subscriptions",
+    "organizations_url": "https://api.github.com/users/AhnSungHyeon/orgs",
+    "repos_url": "https://api.github.com/users/AhnSungHyeon/repos",
+    "events_url": "https://api.github.com/users/AhnSungHyeon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AhnSungHyeon/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-12-21T02:03:26Z",
+  "updated_at": "2018-12-21T04:38:17Z",
+  "closed_at": "2018-12-21T04:38:17Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "1. How and what do I need to prepare on the hard fork and the Ethereum node that I'm currently used? \r\n\r\n2. Currently, I deleted all the useless files while I'm using the \"Geth Console\" on my ethereum node.  Is this able to upgrade with this condition?\r\n\r\n2.1. If will causing the problem, can you please tell me what files do I need to fix the problem?\r\n\r\n3.  Are there precautions and changes will notify me when I'm using Ethereum Hard Fork? ",
+  "closed_by": {
+    "login": "AhnSungHyeon",
+    "id": 31264787,
+    "node_id": "MDQ6VXNlcjMxMjY0Nzg3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31264787?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AhnSungHyeon",
+    "html_url": "https://github.com/AhnSungHyeon",
+    "followers_url": "https://api.github.com/users/AhnSungHyeon/followers",
+    "following_url": "https://api.github.com/users/AhnSungHyeon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AhnSungHyeon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AhnSungHyeon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AhnSungHyeon/subscriptions",
+    "organizations_url": "https://api.github.com/users/AhnSungHyeon/orgs",
+    "repos_url": "https://api.github.com/users/AhnSungHyeon/repos",
+    "events_url": "https://api.github.com/users/AhnSungHyeon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AhnSungHyeon/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18349/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/18349/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/421",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/421/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/421/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/421/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/421",
+  "id": 59773445,
+  "node_id": "MDU6SXNzdWU1OTc3MzQ0NQ==",
+  "number": 421,
+  "title": "panic: ethereum flag redefined: minerthreads",
+  "user": {
+    "login": "jorisbontje",
+    "id": 620959,
+    "node_id": "MDQ6VXNlcjYyMDk1OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/620959?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jorisbontje",
+    "html_url": "https://github.com/jorisbontje",
+    "followers_url": "https://api.github.com/users/jorisbontje/followers",
+    "following_url": "https://api.github.com/users/jorisbontje/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jorisbontje/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jorisbontje/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jorisbontje/subscriptions",
+    "organizations_url": "https://api.github.com/users/jorisbontje/orgs",
+    "repos_url": "https://api.github.com/users/jorisbontje/repos",
+    "events_url": "https://api.github.com/users/jorisbontje/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jorisbontje/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-03-04T09:49:09Z",
+  "updated_at": "2015-03-04T09:51:20Z",
+  "closed_at": "2015-03-04T09:51:20Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "```\nmids@mids106 ~ $ mist-version.sh\n2b3c55f\nmids@mids106 ~ $ ethereum -h\nethereum flag redefined: minerthreads\npanic: ethereum flag redefined: minerthreads\n\ngoroutine 1 [running]:\nflag.(*FlagSet).Var(0xc20803e240, 0x4d9b680, 0x4bacf60, 0x47905b0, 0xc, 0x47ca3d0, 0x17)\n    /usr/local/Cellar/go/1.4.2/libexec/src/flag/flag.go:679 +0x494\nflag.IntVar(0x4bacf60, 0x47905b0, 0xc, 0x8, 0x47ca3d0, 0x17)\n    /usr/local/Cellar/go/1.4.2/libexec/src/flag/flag.go:484 +0x8e\nmain.Init()\n    /private/tmp/go-ethereum-tln8uw/src/github.com/ethereum/go-ethereum/cmd/ethereum/flags.go:137 +0xabc\nmain.main()\n    /private/tmp/go-ethereum-tln8uw/src/github.com/ethereum/go-ethereum/cmd/ethereum/main.go:55 +0x59\n```\n",
+  "closed_by": {
+    "login": "obscuren",
+    "id": 6264126,
+    "node_id": "MDQ6VXNlcjYyNjQxMjY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6264126?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/obscuren",
+    "html_url": "https://github.com/obscuren",
+    "followers_url": "https://api.github.com/users/obscuren/followers",
+    "following_url": "https://api.github.com/users/obscuren/following{/other_user}",
+    "gists_url": "https://api.github.com/users/obscuren/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/obscuren/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/obscuren/subscriptions",
+    "organizations_url": "https://api.github.com/users/obscuren/orgs",
+    "repos_url": "https://api.github.com/users/obscuren/repos",
+    "events_url": "https://api.github.com/users/obscuren/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/obscuren/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/421/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/421/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

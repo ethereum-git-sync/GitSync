@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14636",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14636/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14636/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14636/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/14636",
+  "id": 236535195,
+  "node_id": "MDU6SXNzdWUyMzY1MzUxOTU=",
+  "number": 14636,
+  "title": "Swarm - Enable mainnet ENS integration",
+  "user": {
+    "login": "cobordism",
+    "id": 12838530,
+    "node_id": "MDQ6VXNlcjEyODM4NTMw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12838530?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cobordism",
+    "html_url": "https://github.com/cobordism",
+    "followers_url": "https://api.github.com/users/cobordism/followers",
+    "following_url": "https://api.github.com/users/cobordism/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cobordism/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cobordism/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cobordism/subscriptions",
+    "organizations_url": "https://api.github.com/users/cobordism/orgs",
+    "repos_url": "https://api.github.com/users/cobordism/repos",
+    "events_url": "https://api.github.com/users/cobordism/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cobordism/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-06-16T16:41:17Z",
+  "updated_at": "2017-06-29T16:09:02Z",
+  "closed_at": "2017-06-29T16:09:02Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "**Swarm works with ENS on Ropsten:**\r\n\r\nWhen swarm is started with `--ethapi /path/to/testnet/geth.ipc` ENS resolution will work.\r\nIndeed the address configured here:\r\nhttps://github.com/ethereum/go-ethereum/blob/master/swarm/api/config.go#L40\r\nis the same as this one here:\r\nhttps://github.com/ethereum/ens/blob/master/ensutils-testnet.js#L213\r\n\r\n\r\n**Swarm does not work with ENS on mainnet:**\r\nTo enable mainnet ENS resolution for Swarm assets, the address would have to be set to \r\nhttps://github.com/ethereum/ens/blob/master/ensutils.js#L213\r\n\r\n**Solution:**\r\nAllow a command line flag to switch between mainnet and ropsten ENS, or better still swarm should detect which eth network it is connected to and use the correct ENS root for each one.\r\n\r\n\r\nNote: see also this issue: https://github.com/ethereum/go-ethereum/issues/14386",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14636/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14636/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

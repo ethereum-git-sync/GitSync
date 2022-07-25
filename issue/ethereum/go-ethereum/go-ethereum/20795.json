@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20795",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20795/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20795/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20795/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/20795",
+  "id": 585568665,
+  "node_id": "MDU6SXNzdWU1ODU1Njg2NjU=",
+  "number": 20795,
+  "title": "LES Announce messages don't match what's described in specification",
+  "user": {
+    "login": "iCodeSometime",
+    "id": 4149002,
+    "node_id": "MDQ6VXNlcjQxNDkwMDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4149002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/iCodeSometime",
+    "html_url": "https://github.com/iCodeSometime",
+    "followers_url": "https://api.github.com/users/iCodeSometime/followers",
+    "following_url": "https://api.github.com/users/iCodeSometime/following{/other_user}",
+    "gists_url": "https://api.github.com/users/iCodeSometime/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/iCodeSometime/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/iCodeSometime/subscriptions",
+    "organizations_url": "https://api.github.com/users/iCodeSometime/orgs",
+    "repos_url": "https://api.github.com/users/iCodeSometime/repos",
+    "events_url": "https://api.github.com/users/iCodeSometime/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/iCodeSometime/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-03-21T19:55:22Z",
+  "updated_at": "2020-03-23T14:52:56Z",
+  "closed_at": "2020-03-23T14:52:56Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I'm not certain if this should be a bug in geth, or in the les specification, but the format of announce messages seems to differ between the two.\r\n\r\nGeth requires the key value pairs to be wrapped as their own sequence, but the LES specification does not.\r\n\r\n#### System information\r\n\r\nGeth version: `geth version`\r\n\r\n```\r\nGeth\r\nVersion: 1.9.11-stable\r\nGit Commit: 6a62fe399b68ab9e3625ef5e7900394f389adc3a\r\nGit Commit Date: 20200218\r\nArchitecture: amd64\r\nProtocol Versions: [65 64 63]\r\nGo Version: go1.13.8\r\nOperating System: windows\r\nGOPATH=\r\nGOROOT=C:\\go\r\n```\r\n\r\nOS & Version: Windows/Linux/OSX\r\n\r\n```\r\nWindows 10 build 18363\r\n```\r\n\r\n\r\n#### Expected behaviour\r\n\r\nAnnounce messages follow the format described at https://github.com/ethereum/devp2p/blob/master/caps/les.md\r\n\r\n```\r\n[headHash: B_32, headNumber: P, headTd: P, reorgDepth: P, [key_0, value_0], [key_1, value_1], ...]\r\n```\r\n\r\nwhere including any key/value pairs are optional (assuming announce type 1)\r\n\r\n#### Actual behaviour\r\n\r\nWhen sending an announce message to geth that matches the above format, an error is given -\r\n\r\nIn order for geth to process the announce message correctly, it must be sent in the following format\r\n```\r\n[headHash: B_32, headNumber: P, headTd: P, reorgDepth: P, [[key_0, value_0], [key_1, value_1], ...]]\r\n```\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n1. Send a message of the format `[headHash: B_32, headNumber: P, headTd: P, reorgDepth: P]`\r\ne.g. `e7a03612095712df252ada2cb76b259a0c046f58925b14923eb339a6f991eacc7775018302000180`\r\nError logged: \r\n```\r\nDEBUG[03-21|14:17:29.357] Light Ethereum message handling failed   id=c96aa77cc4dd8845 conn=staticdial             err=\"Invalid message - msg #1 (40 bytes): invalid message: (code 1) (size 40) rlp: too few elements for les.announceData\"\r\n```\r\n\r\n2. Send a message of the format `[headHash: B_32, headNumber: P, headTd: P, reorgDepth: P, []]`\r\ne.g. `e8a0a7cc994a77573a8ebf999603336f37406ae5d3694b744a7ce35326438eea8988018302000180c0`\r\ngeth log: \r\n```\r\nDEBUG[03-21|14:49:48.584] Received new announcement                id=c96aa77cc4dd8845 conn=staticdial             number=1 hash=a7cc99…ea8988 reorg=0\r\nDEBUG[03-21|14:49:48.592] Fetching batch of headers                id=c96aa77cc4dd8845 conn=staticdial             count=1 fromhash=a7cc99…ea8988 skip=0 reverse=true\r\n```\r\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20795/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20795/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

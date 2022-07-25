@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25301",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25301/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25301/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25301/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25301",
+  "id": 1305057028,
+  "node_id": "I_kwDOAOvK985NyZcE",
+  "number": 25301,
+  "title": "Unable to validate EIP712 TypedData signer from a valid go-ethereum signed TypedData",
+  "user": {
+    "login": "IanDorion",
+    "id": 104385170,
+    "node_id": "U_kgDOBjjKkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/104385170?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/IanDorion",
+    "html_url": "https://github.com/IanDorion",
+    "followers_url": "https://api.github.com/users/IanDorion/followers",
+    "following_url": "https://api.github.com/users/IanDorion/following{/other_user}",
+    "gists_url": "https://api.github.com/users/IanDorion/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/IanDorion/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/IanDorion/subscriptions",
+    "organizations_url": "https://api.github.com/users/IanDorion/orgs",
+    "repos_url": "https://api.github.com/users/IanDorion/repos",
+    "events_url": "https://api.github.com/users/IanDorion/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/IanDorion/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-07-14T17:02:53Z",
+  "updated_at": "2022-07-18T06:04:06Z",
+  "closed_at": "2022-07-18T05:12:27Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I'm having trouble verifying a valid go EIP712 signature in solidity.\r\n\r\nHere is a link to the my question.\r\n\r\nhttps://ethereum.stackexchange.com/questions/131756/verified-go-signature-fails-in-solidity-eip712-typeddata\r\n\r\nI have tested and validate this signature with Ethers.\r\nWhen signed with Ethers the contract validates it and V = 28\r\n\r\nReproduced with go and validated with go.\r\nThe contract failed to validate it and V = 27\r\n\r\nCould a go-ethereum expert look at it please?\r\n\r\n",
+  "closed_by": {
+    "login": "IanDorion",
+    "id": 104385170,
+    "node_id": "U_kgDOBjjKkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/104385170?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/IanDorion",
+    "html_url": "https://github.com/IanDorion",
+    "followers_url": "https://api.github.com/users/IanDorion/followers",
+    "following_url": "https://api.github.com/users/IanDorion/following{/other_user}",
+    "gists_url": "https://api.github.com/users/IanDorion/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/IanDorion/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/IanDorion/subscriptions",
+    "organizations_url": "https://api.github.com/users/IanDorion/orgs",
+    "repos_url": "https://api.github.com/users/IanDorion/repos",
+    "events_url": "https://api.github.com/users/IanDorion/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/IanDorion/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25301/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25301/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

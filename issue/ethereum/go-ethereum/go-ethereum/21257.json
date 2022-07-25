@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21257",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21257/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21257/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21257/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21257",
+  "id": 644381766,
+  "node_id": "MDU6SXNzdWU2NDQzODE3NjY=",
+  "number": 21257,
+  "title": "[Memo]: drop peer through reference",
+  "user": {
+    "login": "rjl493456442",
+    "id": 5959481,
+    "node_id": "MDQ6VXNlcjU5NTk0ODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5959481?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rjl493456442",
+    "html_url": "https://github.com/rjl493456442",
+    "followers_url": "https://api.github.com/users/rjl493456442/followers",
+    "following_url": "https://api.github.com/users/rjl493456442/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rjl493456442/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rjl493456442/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rjl493456442/subscriptions",
+    "organizations_url": "https://api.github.com/users/rjl493456442/orgs",
+    "repos_url": "https://api.github.com/users/rjl493456442/repos",
+    "events_url": "https://api.github.com/users/rjl493456442/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rjl493456442/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1380070748,
+      "node_id": "MDU6TGFiZWwxMzgwMDcwNzQ4",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/area:p2p",
+      "name": "area:p2p",
+      "color": "ea9adb",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1486629004,
+      "node_id": "MDU6TGFiZWwxNDg2NjI5MDA0",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/priority:2",
+      "name": "priority:2",
+      "color": "f76ac8",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-06-24T07:20:47Z",
+  "updated_at": "2021-01-14T09:52:37Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "We have quite a bit of code in the eth handler that operates on peer IDs(e.g. removePeer(id))\r\n\r\n### Problem\r\n\r\nBut there's an inherent race in this design. Peer does something stupid, I call drop peer. Before the drop proceeds, peer disconnects and reconnects.\r\nDrop gets sheduled after a reconnect, since it's the same peer id, the peer gets nuked off again or similar weird races.\r\n\r\n### Solution\r\nI think in general this was a wrong design to address/drop/whatnot peers by id instead of passing around the actual reference to them.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21257/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21257/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

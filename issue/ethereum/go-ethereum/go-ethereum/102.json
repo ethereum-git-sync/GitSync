@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/102",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/102/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/102/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/102/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/102",
+  "id": 37279950,
+  "node_id": "MDU6SXNzdWUzNzI3OTk1MA==",
+  "number": 102,
+  "title": "rc16 won't let user add contracts",
+  "user": {
+    "login": "stephantual",
+    "id": 1596070,
+    "node_id": "MDQ6VXNlcjE1OTYwNzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1596070?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/stephantual",
+    "html_url": "https://github.com/stephantual",
+    "followers_url": "https://api.github.com/users/stephantual/followers",
+    "following_url": "https://api.github.com/users/stephantual/following{/other_user}",
+    "gists_url": "https://api.github.com/users/stephantual/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/stephantual/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/stephantual/subscriptions",
+    "organizations_url": "https://api.github.com/users/stephantual/orgs",
+    "repos_url": "https://api.github.com/users/stephantual/repos",
+    "events_url": "https://api.github.com/users/stephantual/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/stephantual/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-07-07T15:30:25Z",
+  "updated_at": "2014-07-24T11:55:16Z",
+  "closed_at": "2014-07-24T11:55:16Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "To reproduce:\n\nAdd the following contract with the correct amount of gas and gas price, with sufficient funds to fund the creation. \n\n```\nthis.store[this.origin()] = 10**20\n\nexit compile {\n    var to = this.data[0]\n    var from = this.origin()\n    var value = this.data[1]\n\n    if this.store[from] > value {\n      this.store[from] = this.store[from] - value\n        this.store[to] = this.store[to] + value\n    }\n}\n```\n\nExpected result: contract is added\nActual result: nothing happens beside the contract being given an address in the logs. No transaction ever appear in subsequent blocks\n\nWhy i think it's a bug: If you omit gas on purpose, or set the gas price too low, a transaction is created and the creation fails, as expected. \n\nPlatform used: private chain between a GCE debian install and osx . \n\nReproduced on 2 different setups by 2 different individuals\n",
+  "closed_by": {
+    "login": "obscuren",
+    "id": 6264126,
+    "node_id": "MDQ6VXNlcjYyNjQxMjY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6264126?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/obscuren",
+    "html_url": "https://github.com/obscuren",
+    "followers_url": "https://api.github.com/users/obscuren/followers",
+    "following_url": "https://api.github.com/users/obscuren/following{/other_user}",
+    "gists_url": "https://api.github.com/users/obscuren/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/obscuren/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/obscuren/subscriptions",
+    "organizations_url": "https://api.github.com/users/obscuren/orgs",
+    "repos_url": "https://api.github.com/users/obscuren/repos",
+    "events_url": "https://api.github.com/users/obscuren/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/obscuren/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/102/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/102/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

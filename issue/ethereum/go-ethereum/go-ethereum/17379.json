@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17379",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17379/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17379/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17379/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/17379",
+  "id": 349772749,
+  "node_id": "MDU6SXNzdWUzNDk3NzI3NDk=",
+  "number": 17379,
+  "title": "Random SegFault 1.8.13-stable-225171a4",
+  "user": {
+    "login": "avocadochicken",
+    "id": 10255755,
+    "node_id": "MDQ6VXNlcjEwMjU1NzU1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10255755?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/avocadochicken",
+    "html_url": "https://github.com/avocadochicken",
+    "followers_url": "https://api.github.com/users/avocadochicken/followers",
+    "following_url": "https://api.github.com/users/avocadochicken/following{/other_user}",
+    "gists_url": "https://api.github.com/users/avocadochicken/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/avocadochicken/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/avocadochicken/subscriptions",
+    "organizations_url": "https://api.github.com/users/avocadochicken/orgs",
+    "repos_url": "https://api.github.com/users/avocadochicken/repos",
+    "events_url": "https://api.github.com/users/avocadochicken/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/avocadochicken/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-08-12T00:05:09Z",
+  "updated_at": "2018-11-18T10:49:23Z",
+  "closed_at": "2018-11-18T10:49:23Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\n\r\nmy node just crashed. I want to submit some information that might be helpful...\r\nI don't know if this is a bug of any importance. I will just restart geth ;)\r\n\r\n#### System information\r\ngeth 1.8.13-stable-225171a4\r\nLinux machine 4.15.0-24-generic #26-Ubuntu SMP\r\n\r\nNode was synchronizing. Started with:\r\ngeth --syncmode fast --rpc console\r\n\r\n#### Steps to reproduce the behaviour\r\nCan't tell...\r\n\r\n#### Backtrace\r\n\r\n````\r\npanic: runtime error: invalid memory address or nil pointer dereference\r\n[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x511606]\r\n\r\ngoroutine 2182 [running]:\r\nmath/big.(*Int).Cmp(0x0, 0xc4229541c0, 0x607df981b8c0af6b)\r\n\t/usr/lib/go-1.10/src/math/big/int.go:319 +0x26\r\ngithub.com/ethereum/go-ethereum/eth.(*ProtocolManager).synchronise(0xc4211560c0, 0xc449923e00)\r\n\t/build/ethereum-6UP7Nh/ethereum-1.8.13+build14601+bionic/build/_workspace/src/github.com/ethereum/go-ethereum/eth/sync.go:194 +0x2e8\r\ncreated by github.com/ethereum/go-ethereum/eth.(*ProtocolManager).syncer\r\n\t/build/ethereum-6UP7Nh/ethereum-1.8.13+build14601+bionic/build/_workspace/src/github.com/ethereum/go-ethereum/eth/sync.go:155 +0x21e\r\n````\r\n",
+  "closed_by": {
+    "login": "avocadochicken",
+    "id": 10255755,
+    "node_id": "MDQ6VXNlcjEwMjU1NzU1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10255755?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/avocadochicken",
+    "html_url": "https://github.com/avocadochicken",
+    "followers_url": "https://api.github.com/users/avocadochicken/followers",
+    "following_url": "https://api.github.com/users/avocadochicken/following{/other_user}",
+    "gists_url": "https://api.github.com/users/avocadochicken/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/avocadochicken/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/avocadochicken/subscriptions",
+    "organizations_url": "https://api.github.com/users/avocadochicken/orgs",
+    "repos_url": "https://api.github.com/users/avocadochicken/repos",
+    "events_url": "https://api.github.com/users/avocadochicken/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/avocadochicken/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17379/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17379/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

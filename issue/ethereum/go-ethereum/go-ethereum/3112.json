@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3112",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3112/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3112/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3112/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/3112",
+  "id": 181894360,
+  "node_id": "MDU6SXNzdWUxODE4OTQzNjA=",
+  "number": 3112,
+  "title": "Unable to import partial blockchain",
+  "user": {
+    "login": "maheshmurthy",
+    "id": 70360,
+    "node_id": "MDQ6VXNlcjcwMzYw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/70360?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/maheshmurthy",
+    "html_url": "https://github.com/maheshmurthy",
+    "followers_url": "https://api.github.com/users/maheshmurthy/followers",
+    "following_url": "https://api.github.com/users/maheshmurthy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/maheshmurthy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/maheshmurthy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/maheshmurthy/subscriptions",
+    "organizations_url": "https://api.github.com/users/maheshmurthy/orgs",
+    "repos_url": "https://api.github.com/users/maheshmurthy/repos",
+    "events_url": "https://api.github.com/users/maheshmurthy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/maheshmurthy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-10-09T15:57:39Z",
+  "updated_at": "2017-08-17T02:26:08Z",
+  "closed_at": "2017-08-17T02:26:08Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I am trying to import a part of the blockchain I exported from my another machine but the import fails saying it's a bad block\n#### System information\n\nGeth version: 1.5\nOS & Version: OSX 10.11.4\nCommit hash : a4c4125b\n#### Expected behaviour\n\ngeth --testnet import backup\n\nShould import the blockchain from file named backup\n#### Actual behaviour\n\nBackup fails with: \nBad block #1561911 (0xb74225334e2da1a7e5f05d2bcf95565b1dac3c28ef8fa671f002b8a4f67dec7d)\n#### Steps to reproduce the behaviour\n\nOn machine 1: geth --testnet export backup 1561910 1700000\n\nCopy backup to machine 2\nOn machine 2: geth --testnet import backup\n#### Backtrace\n\nI1009 11:31:39.045852 ethdb/database.go:82] Allotted 128MB cache and 1024 file handles to /Users/userme/Library/Ethereum/testnet/chaindata\nI1009 11:31:39.209263 core/blockchain.go:204] Last header: #1561910 [e74d5ec4…] TD=373991494463761\nI1009 11:31:39.209310 core/blockchain.go:205] Last block: #1561910 [e74d5ec4…] TD=373991494463761\nI1009 11:31:39.209326 core/blockchain.go:206] Fast block: #1561910 [e74d5ec4…] TD=373991494463761\nI1009 11:31:39.210828 cmd/utils/cmd.go:123] Importing blockchain backup\nE1009 11:31:45.164179 core/blockchain.go:1135] Bad block #1561911 (0xb74225334e2da1a7e5f05d2bcf95565b1dac3c28ef8fa671f002b8a4f67dec7d)\nE1009 11:31:45.164232 core/blockchain.go:1136]     invalid receipt root hash. received=91d6c2438cc0ef7752c8a4f82f8ab7385b6dede88eb344cae2a107a3e506d6fd calculated=bae7639057bd1631f2a284e0b2a93e540dd9771b77f1c10f9fd283d0d68bf1d8\nI1009 11:31:45.180218 ethdb/database.go:169] closed db:/Users/userme/Library/Ethereum/testnet/chaindata\nFatal: Import error: invalid block 2500: invalid receipt root hash. received=91d6c2438cc0ef7752c8a4f82f8ab7385b6dede88eb344cae2a107a3e506d6fd calculated=bae7639057bd1631f2a284e0b2a93e540dd9771b77f1c10f9fd283d0d68bf1d8\n",
+  "closed_by": {
+    "login": "maheshmurthy",
+    "id": 70360,
+    "node_id": "MDQ6VXNlcjcwMzYw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/70360?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/maheshmurthy",
+    "html_url": "https://github.com/maheshmurthy",
+    "followers_url": "https://api.github.com/users/maheshmurthy/followers",
+    "following_url": "https://api.github.com/users/maheshmurthy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/maheshmurthy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/maheshmurthy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/maheshmurthy/subscriptions",
+    "organizations_url": "https://api.github.com/users/maheshmurthy/orgs",
+    "repos_url": "https://api.github.com/users/maheshmurthy/repos",
+    "events_url": "https://api.github.com/users/maheshmurthy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/maheshmurthy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3112/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3112/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

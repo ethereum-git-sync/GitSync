@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17456",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17456/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17456/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17456/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/17456",
+  "id": 352344941,
+  "node_id": "MDU6SXNzdWUzNTIzNDQ5NDE=",
+  "number": 17456,
+  "title": "Expose securely your network question",
+  "user": {
+    "login": "marcosmartinez7",
+    "id": 14795944,
+    "node_id": "MDQ6VXNlcjE0Nzk1OTQ0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/14795944?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/marcosmartinez7",
+    "html_url": "https://github.com/marcosmartinez7",
+    "followers_url": "https://api.github.com/users/marcosmartinez7/followers",
+    "following_url": "https://api.github.com/users/marcosmartinez7/following{/other_user}",
+    "gists_url": "https://api.github.com/users/marcosmartinez7/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/marcosmartinez7/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/marcosmartinez7/subscriptions",
+    "organizations_url": "https://api.github.com/users/marcosmartinez7/orgs",
+    "repos_url": "https://api.github.com/users/marcosmartinez7/repos",
+    "events_url": "https://api.github.com/users/marcosmartinez7/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/marcosmartinez7/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-08-21T00:45:24Z",
+  "updated_at": "2019-01-15T13:47:51Z",
+  "closed_at": "2019-01-15T13:47:51Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Im implementing a ethereum PoA network using go-ethereum\r\n\r\nI have deployed a ERC20 Token on the network, and the idea is that the network **must be accessed from any wallet on the internet** (i.e metamask, myetherwallet, etc)\r\n\r\nThe idea for this network is: \r\n\r\n- Having N full nodes that are able to seal blocks (the nodes has the unlocked accounts)\r\n- Deploy a smart contract that is a ERC20 Token\r\n- Having one node that expose the network **in order to be accessed from any origin**, for example, Metamask, MyEtherWallet, a mobile app with a wallet, etc. The idea is that **anybody can hit the ERC20 Token** if they have the appropiate client. \r\n\r\nIn order to achive that, i create 2 full nodes that are in charge of sealing the blocks. \r\n\r\nI run those nodes like this:\r\n\r\n    geth --datadir sealer1/  --syncmode 'full' --port 30351 --rpc --rpcaddr 'localhost' --rpcport 8502 --rpcapi='admin,personal,db,eth,net,web3,txpool,miner' --networkid 20 --gasprice '1' -unlock 'someaccount' --password s2/password.txt --mine\r\n\r\nAs you can see, there are some important things about those nodes:\r\n\r\n1. Unlocks the accounts\r\n2. Are only accessed from localhost (note the rpcaddres)\r\n3. Those nodes are miners\r\n\r\nIf i expose a node like that to the internet (enabling RPC access from any origin) any hacker could send the ether to another account, so, i create a third node, a standard node, that doesnt expose rpc apis but allows connections on port 8545 (in order to be hitted from metamask, myetherwallet, etc) \r\n\r\nI run the node with this command:\r\n\r\n    geth --datadir standard1/ --syncmode 'full' --port 30352 --rpc --rpcport 8545--rpccorsdomain '*' --rpcaddr 'SERVER_PUBLIC_IP' --networkid 20 --gasprice '1'  \r\n\r\nas you can see this node:\r\n\r\n1. Doesnt unlock account\r\n2. Allow rpc accesing from any origin\r\n3. Doesnt expose rpc apis like personal, admin, etc\r\n\r\nMy questions are:\r\n\r\n- is this aproach secure? \r\n- Is there another way to allow anyone in the world to use Metamask to hit my smartcontract without open the RPC access on the standard node? \r\n\r\n\r\n",
+  "closed_by": {
+    "login": "marcosmartinez7",
+    "id": 14795944,
+    "node_id": "MDQ6VXNlcjE0Nzk1OTQ0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/14795944?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/marcosmartinez7",
+    "html_url": "https://github.com/marcosmartinez7",
+    "followers_url": "https://api.github.com/users/marcosmartinez7/followers",
+    "following_url": "https://api.github.com/users/marcosmartinez7/following{/other_user}",
+    "gists_url": "https://api.github.com/users/marcosmartinez7/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/marcosmartinez7/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/marcosmartinez7/subscriptions",
+    "organizations_url": "https://api.github.com/users/marcosmartinez7/orgs",
+    "repos_url": "https://api.github.com/users/marcosmartinez7/repos",
+    "events_url": "https://api.github.com/users/marcosmartinez7/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/marcosmartinez7/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17456/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17456/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

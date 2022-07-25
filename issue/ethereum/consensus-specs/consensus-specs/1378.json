@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1378",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1378/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1378/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1378/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/1378",
+  "id": 484802442,
+  "node_id": "MDU6SXNzdWU0ODQ4MDI0NDI=",
+  "number": 1378,
+  "title": "Update the proof of custody construction using inputs from the Khovratovich audit",
+  "user": {
+    "login": "dankrad",
+    "id": 6130607,
+    "node_id": "MDQ6VXNlcjYxMzA2MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6130607?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dankrad",
+    "html_url": "https://github.com/dankrad",
+    "followers_url": "https://api.github.com/users/dankrad/followers",
+    "following_url": "https://api.github.com/users/dankrad/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dankrad/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dankrad/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dankrad/subscriptions",
+    "organizations_url": "https://api.github.com/users/dankrad/orgs",
+    "repos_url": "https://api.github.com/users/dankrad/repos",
+    "events_url": "https://api.github.com/users/dankrad/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dankrad/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1170173759,
+      "node_id": "MDU6TGFiZWwxMTcwMTczNzU5",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/phase1",
+      "name": "phase1",
+      "color": "F7C242",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2000873822,
+      "node_id": "MDU6TGFiZWwyMDAwODczODIy",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:custody",
+      "name": "scope:custody",
+      "color": "E98B2A",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2019-08-24T10:19:30Z",
+  "updated_at": "2020-04-20T16:41:33Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Dmitry Khovratovich has completed the audit of our proof of custody construction. The highlights are:\r\n\r\n- He improved the previous best algorithm for key recovery from the Legendre PRF to O(sqrt(p) log p) from O(p log p) previously. He published a paper about it [here](https://eprint.iacr.org/2019/862.pdf). This is a nice improvement on the previous algorithms but not very worrying for us as his attack is only very effective for a very large number (O(sqrt(p))) of queries, whereas we expose a tiny number. For a smaller number of queries M, the time complexity resolves to O(p log M/M).\r\n - He found several problems that make the proof of custody independent from the validator keys by carefully crafting the blocks. This is indeed a problem of the construction I originally suggested, but he suggested a very nice remedy in the form of a polynomial Universal Hash Function that provably fixes this problem and stays very close to the current framework\r\n\r\nAudit report:[Legendre (7).pdf](https://github.com/ethereum/eth2.0-specs/files/3537084/Legendre.7.pdf)\r\nSuggested updated construction: [legendre_proof_of_custody_uhf.pdf](https://github.com/ethereum/eth2.0-specs/files/3551615/legendre_proof_of_custody_uhf.pdf)\r\n\r\n\r\nAlso: At Crypto'19, we announced some bounties for breaking the Legendre PRF that can be found here: https://legendreprf.org/bounties ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1378/reactions",
+    "total_count": 3,
+    "+1": 3,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1378/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/565857067",
+    "html_url": "https://github.com/ethereum/consensus-specs/issues/1378#issuecomment-565857067",
+    "issue_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1378",
+    "id": 565857067,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDU2NTg1NzA2Nw==",
+    "user": {
+      "login": "JustinDrake",
+      "id": 731743,
+      "node_id": "MDQ6VXNlcjczMTc0Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/731743?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JustinDrake",
+      "html_url": "https://github.com/JustinDrake",
+      "followers_url": "https://api.github.com/users/JustinDrake/followers",
+      "following_url": "https://api.github.com/users/JustinDrake/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JustinDrake/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JustinDrake/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JustinDrake/subscriptions",
+      "organizations_url": "https://api.github.com/users/JustinDrake/orgs",
+      "repos_url": "https://api.github.com/users/JustinDrake/repos",
+      "events_url": "https://api.github.com/users/JustinDrake/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JustinDrake/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2019-12-15T23:10:52Z",
+    "updated_at": "2019-12-15T23:10:52Z",
+    "author_association": "MEMBER",
+    "body": "Would it make sense to close this issue in favour of https://github.com/ethereum/eth2.0-specs/issues/1080?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/565857067/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2055",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2055/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2055/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2055/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2055",
+  "id": 700455053,
+  "node_id": "MDU6SXNzdWU3MDA0NTUwNTM=",
+  "number": 2055,
+  "title": "Preset/Config standard - formatting, contents, etc.",
+  "user": {
+    "login": "protolambda",
+    "id": 19571989,
+    "node_id": "MDQ6VXNlcjE5NTcxOTg5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19571989?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/protolambda",
+    "html_url": "https://github.com/protolambda",
+    "followers_url": "https://api.github.com/users/protolambda/followers",
+    "following_url": "https://api.github.com/users/protolambda/following{/other_user}",
+    "gists_url": "https://api.github.com/users/protolambda/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/protolambda/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/protolambda/subscriptions",
+    "organizations_url": "https://api.github.com/users/protolambda/orgs",
+    "repos_url": "https://api.github.com/users/protolambda/repos",
+    "events_url": "https://api.github.com/users/protolambda/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/protolambda/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1137720193,
+      "node_id": "MDU6TGFiZWwxMTM3NzIwMTkz",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:discussion",
+      "name": "general:discussion",
+      "color": "F17C67",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1244734333,
+      "node_id": "MDU6TGFiZWwxMjQ0NzM0MzMz",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:presentation",
+      "name": "general:presentation",
+      "color": "2EA9DF",
+      "default": false,
+      "description": "Presentation (as opposed to content)"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-09-13T02:06:00Z",
+  "updated_at": "2020-09-17T20:24:46Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Eth2 clients mostly follow the spec configuration, but there are still some subtle differences, as well as inefficiencies (in the spec configs too), which we should address.\r\n\r\nAs of v0.12.2, all clients support the current phase0 spec configs, but with some differences, and formatting that is different between all implementations.\r\n\r\n```yaml\r\n# Present in testnet configs of all clients, but not in spec, since it is a constant per phase\r\nBASE_REWARDS_PER_EPOCH: 4\r\n\r\n# missing in clients\r\nDEPOSIT_CHAIN_ID: 1\r\nDEPOSIT_CONTRACT_ADDRESS: 0x1234567890123456789012345678901234567890\r\nDEPOSIT_NETWORK_ID: 1\r\n\r\n# Teku doesn't have this. Prysm and Lighthouse do have it. But it's not in spec anymore.\r\nGENESIS_EPOCH: 0\r\nGENESIS_SLOT: 0\r\n\r\n# lighthouse uses 4-byte unquoted hex encoding here, but reads as uint32, so just 4 should work.\r\n# spec doesn't have it anymore. It's a constant for phase 0.\r\nJUSTIFICATION_BITS_LENGTH: 4\r\n\r\n# Spec has this, but no clients have it. Not used in phase 0, can be removed from spec phase0 file.\r\nMAX_EPOCHS_PER_CROSSLINK: 64\r\n# Future in spec (dev branch), no clients have it yet\r\nPROPORTIONAL_SLASHING_MULTIPLIER: 3\r\n\r\n# Only prysm has these two\r\nNEXT_FORK_EPOCH: 18446744073709551615\r\nNEXT_FORK_VERSION: 0x01fafafa\r\n```\r\n\r\nTo try and converge on one solid format, I think we should introduce a spec for the formatting/contents of the config. Instead of just guessing at the datatype formatting, and looking at the spec examples.\r\n\r\nHere is a proof of concept (we can add comments for each constant too): [`/config_spec.yaml`](https://github.com/protolambda/eth2-config-tester/blob/master/config_spec.yaml)\r\n\r\nTo enforce and automate this, I started a tool that takes the config, and checks all the YAML formatting (incl quoting and styles), config value formatting, and more.\r\nTry it here: https://github.com/protolambda/eth2-config-tester\r\n\r\nAction points:\r\n- [x] remove `MAX_EPOCHS_PER_CROSSLINK` from phase0 config if it's really not used anywhere\r\n- [ ] remove  `NEXT_FORK_*` from Prysm, default to current fork and far-future-epoch. We can start talking about fork configuration, but let's keep interop (need to specify these values now for valid custom prysm testnet config).\r\n- [ ] should forever-constants really live alongside presets? Maybe just remove them, wherever they remain. Endianness and genesis=0 are things that are really baked in at this point.\r\n- [ ] Maybe separate deposit contract configuration from chain configuration. This is the biggest pain with configuring custom testnets. Each client takes the args differently, and config is not the place most of the time.\r\n- [ ] Feedback for new config-tester tool, maybe start running in CI in clients/spec\r\n- [ ] naming. I'm still convinced we should have a single config, and extend, not override, the config during forks. This makes switching back and forth between blocks pre- and post-fork more easy. When it's likely something changes in a later fork, it can have \"PHASE_0\" in the name to avoid future confusion and mess.\r\n- [ ] Add config value bounds/relation checks to the config checker tool, as outlined in https://github.com/ethereum/eth2.0-specs/issues/407\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2055/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2055/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

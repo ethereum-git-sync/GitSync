@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/285",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/285/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/285/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/285/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/285",
+  "id": 389816685,
+  "node_id": "MDU6SXNzdWUzODk4MTY2ODU=",
+  "number": 285,
+  "title": "Rename hash tree roots as \"root\"",
+  "user": {
+    "login": "djrtwo",
+    "id": 1433595,
+    "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/djrtwo",
+    "html_url": "https://github.com/djrtwo",
+    "followers_url": "https://api.github.com/users/djrtwo/followers",
+    "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+    "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+    "repos_url": "https://api.github.com/users/djrtwo/repos",
+    "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-12-11T15:25:40Z",
+  "updated_at": "2018-12-11T20:56:40Z",
+  "closed_at": "2018-12-11T20:56:40Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Rename all hash tree roots as such:\r\n\r\n* `SSZTreeHash` => `hash_tree_root`\r\n* `parent_hash` => `parent_root`\r\n* `get_block_hash` => `get_block_root`\r\n* `justified_block_hash` => `justified_block_root`\r\n* etc.",
+  "closed_by": {
+    "login": "djrtwo",
+    "id": 1433595,
+    "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/djrtwo",
+    "html_url": "https://github.com/djrtwo",
+    "followers_url": "https://api.github.com/users/djrtwo/followers",
+    "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+    "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+    "repos_url": "https://api.github.com/users/djrtwo/repos",
+    "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/285/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/285/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

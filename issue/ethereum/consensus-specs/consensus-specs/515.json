@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/515",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/515/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/515/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/515/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/515",
+  "id": 404109794,
+  "node_id": "MDU6SXNzdWU0MDQxMDk3OTQ=",
+  "number": 515,
+  "title": "assertion in `get_active_index_root` too strong",
+  "user": {
+    "login": "djrtwo",
+    "id": 1433595,
+    "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/djrtwo",
+    "html_url": "https://github.com/djrtwo",
+    "followers_url": "https://api.github.com/users/djrtwo/followers",
+    "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+    "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+    "repos_url": "https://api.github.com/users/djrtwo/repos",
+    "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1063043866,
+      "node_id": "MDU6TGFiZWwxMDYzMDQzODY2",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:bug",
+      "name": "general:bug",
+      "color": "DD1C1A",
+      "default": false,
+      "description": "Something isn't working"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-01-29T03:45:47Z",
+  "updated_at": "2019-01-31T01:24:46Z",
+  "closed_at": "2019-01-31T01:24:46Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "# Issue\r\nIn [validator registry and shuffling seed data](https://github.com/ethereum/eth2.0-specs/blob/master/specs/core/0_beacon-chain.md#validator-registry-and-shuffling-seed-data) we set `state.current_calculation_epoch = next_epoch` and then do `state.current_epoch_seed = generate_seed(state, state.current_calculation_epoch)`, but the assertion in `get_active_index_root` (used in `generate_seed`) asserts that the largest epoch you can access is `current_epoch`.\r\n\r\n# Proposed Solution\r\nAllow access of `next_epoch` (`current_epoch + 1`). This is safe as long as we make sure we run \"Set `state.latest_index_roots[next_epoch % LATEST_INDEX_ROOTS_LENGTH] = hash_tree_root(get_active_validator_indices(state, next_epoch))` before any calls to `get_active_index_root` which we currently do.",
+  "closed_by": {
+    "login": "djrtwo",
+    "id": 1433595,
+    "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/djrtwo",
+    "html_url": "https://github.com/djrtwo",
+    "followers_url": "https://api.github.com/users/djrtwo/followers",
+    "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+    "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+    "repos_url": "https://api.github.com/users/djrtwo/repos",
+    "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/515/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/515/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

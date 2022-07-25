@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/237",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/237/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/237/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/237/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/237",
+  "id": 387796821,
+  "node_id": "MDU6SXNzdWUzODc3OTY4MjE=",
+  "number": 237,
+  "title": "`candidate_pow_receipt_root(s)` typo in genesis block",
+  "user": {
+    "login": "jannikluhn",
+    "id": 29854669,
+    "node_id": "MDQ6VXNlcjI5ODU0NjY5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29854669?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jannikluhn",
+    "html_url": "https://github.com/jannikluhn",
+    "followers_url": "https://api.github.com/users/jannikluhn/followers",
+    "following_url": "https://api.github.com/users/jannikluhn/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jannikluhn/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jannikluhn/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jannikluhn/subscriptions",
+    "organizations_url": "https://api.github.com/users/jannikluhn/orgs",
+    "repos_url": "https://api.github.com/users/jannikluhn/repos",
+    "events_url": "https://api.github.com/users/jannikluhn/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jannikluhn/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-12-05T15:01:09Z",
+  "updated_at": "2018-12-05T17:17:19Z",
+  "closed_at": "2018-12-05T17:17:19Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "There seems to be a simple typo in the definition of the [genesis block](https://github.com/ethereum/eth2.0-specs/blob/master/specs/core/0_beacon-chain.md#on-startup):\r\n\r\n```\r\n    'candidate_pow_receipt_roots': [],\r\n```\r\n\r\nshould be\r\n\r\n```\r\n    'candidate_pow_receipt_root': ?,\r\n```\r\n\r\nI would have opened a PR, but I don't know what the correct value is. I guess either the value at deployment of the deposit contract or the most recent one at launch of the beacon chain?\r\n\r\nThe root of the issue is probably that `block.candidate_pow_receipt_root` is very similar to `state.candidate_pow_receipt_roots`, so renaming one might be a good idea. It seems like the state contains actually `CandidatePoWReceiptRootRecord`s, so maybe `state.candidate_pow_receipt_root_records` could work?",
+  "closed_by": {
+    "login": "JustinDrake",
+    "id": 731743,
+    "node_id": "MDQ6VXNlcjczMTc0Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/731743?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JustinDrake",
+    "html_url": "https://github.com/JustinDrake",
+    "followers_url": "https://api.github.com/users/JustinDrake/followers",
+    "following_url": "https://api.github.com/users/JustinDrake/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JustinDrake/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JustinDrake/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JustinDrake/subscriptions",
+    "organizations_url": "https://api.github.com/users/JustinDrake/orgs",
+    "repos_url": "https://api.github.com/users/JustinDrake/repos",
+    "events_url": "https://api.github.com/users/JustinDrake/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JustinDrake/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/237/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/237/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/101",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/101/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/101/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/101/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/101",
+  "id": 374027518,
+  "node_id": "MDU6SXNzdWUzNzQwMjc1MTg=",
+  "number": 101,
+  "title": "`bytes1()`, `bytes3()`, and `bytes32()` in `add_validator_set_change_record()`",
+  "user": {
+    "login": "Mikerah",
+    "id": 4249799,
+    "node_id": "MDQ6VXNlcjQyNDk3OTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4249799?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Mikerah",
+    "html_url": "https://github.com/Mikerah",
+    "followers_url": "https://api.github.com/users/Mikerah/followers",
+    "following_url": "https://api.github.com/users/Mikerah/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Mikerah/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Mikerah/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Mikerah/subscriptions",
+    "organizations_url": "https://api.github.com/users/Mikerah/orgs",
+    "repos_url": "https://api.github.com/users/Mikerah/repos",
+    "events_url": "https://api.github.com/users/Mikerah/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Mikerah/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-10-25T16:18:50Z",
+  "updated_at": "2018-11-14T22:08:45Z",
+  "closed_at": "2018-11-14T22:08:45Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "After asking about `bytes1()`, `bytes3()` and `bytes32()` in the sharding gitter channel, @hwwhww has defined these functions as follows:\r\nFor `n`, define `bytesn()` to be `int.to_bytes(n, byteorder='big')` for any `int`. \r\n\r\nThese should be added to the spec to make it clear when implementing the `add_validator_set_change_record()` helper function.",
+  "closed_by": {
+    "login": "djrtwo",
+    "id": 1433595,
+    "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/djrtwo",
+    "html_url": "https://github.com/djrtwo",
+    "followers_url": "https://api.github.com/users/djrtwo/followers",
+    "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+    "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+    "repos_url": "https://api.github.com/users/djrtwo/repos",
+    "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/101/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/101/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

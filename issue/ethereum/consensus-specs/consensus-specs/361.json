@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/361",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/361/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/361/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/361/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/361",
+  "id": 394009271,
+  "node_id": "MDU6SXNzdWUzOTQwMDkyNzE=",
+  "number": 361,
+  "title": " `poc_commitment` parameter should be passed through `validate_proof_of_possession` for `DepositInput`",
+  "user": {
+    "login": "hwwhww",
+    "id": 9263930,
+    "node_id": "MDQ6VXNlcjkyNjM5MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9263930?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hwwhww",
+    "html_url": "https://github.com/hwwhww",
+    "followers_url": "https://api.github.com/users/hwwhww/followers",
+    "following_url": "https://api.github.com/users/hwwhww/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hwwhww/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hwwhww/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hwwhww/subscriptions",
+    "organizations_url": "https://api.github.com/users/hwwhww/orgs",
+    "repos_url": "https://api.github.com/users/hwwhww/repos",
+    "events_url": "https://api.github.com/users/hwwhww/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hwwhww/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1063043866,
+      "node_id": "MDU6TGFiZWwxMDYzMDQzODY2",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:bug",
+      "name": "general:bug",
+      "color": "DD1C1A",
+      "default": false,
+      "description": "Something isn't working"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-12-25T11:25:38Z",
+  "updated_at": "2018-12-27T18:11:38Z",
+  "closed_at": "2018-12-27T18:11:38Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "[validate_proof_of_possession](https://github.com/ethereum/eth2.0-specs/blob/master/specs/core/0_beacon-chain.md#routine-for-processing-deposits)\r\n\r\nShould be:\r\n```python\r\ndef validate_proof_of_possession(state: BeaconState,\r\n                                 pubkey: int,\r\n                                 proof_of_possession: bytes,\r\n                                 withdrawal_credentials: Hash32,\r\n                                 randao_commitment: Hash32,\r\n                                 poc_commitment: Hash32) -> bool:\r\n    proof_of_possession_data = DepositInput(\r\n        pubkey=pubkey,\r\n        withdrawal_credentials=withdrawal_credentials,\r\n        randao_commitment=randao_commitment,\r\n        poc_commitment=poc_commitment,\r\n        proof_of_possession=EMPTY_SIGNATURE,\r\n    )\r\n\r\n    return bls_verify(\r\n        pubkey=pubkey,\r\n        message=hash_tree_root(proof_of_possession_data),\r\n        signature=proof_of_possession,\r\n        domain=get_domain(\r\n            state.fork_data,\r\n            state.slot,\r\n            DOMAIN_DEPOSIT,\r\n        )\r\n    )\r\n```",
+  "closed_by": {
+    "login": "JustinDrake",
+    "id": 731743,
+    "node_id": "MDQ6VXNlcjczMTc0Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/731743?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JustinDrake",
+    "html_url": "https://github.com/JustinDrake",
+    "followers_url": "https://api.github.com/users/JustinDrake/followers",
+    "following_url": "https://api.github.com/users/JustinDrake/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JustinDrake/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JustinDrake/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JustinDrake/subscriptions",
+    "organizations_url": "https://api.github.com/users/JustinDrake/orgs",
+    "repos_url": "https://api.github.com/users/JustinDrake/repos",
+    "events_url": "https://api.github.com/users/JustinDrake/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JustinDrake/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/361/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/361/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

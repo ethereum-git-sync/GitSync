@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2111",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2111/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2111/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2111/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2111",
+  "id": 727851592,
+  "node_id": "MDU6SXNzdWU3Mjc4NTE1OTI=",
+  "number": 2111,
+  "title": "Maybe we should verify the FFG vote target in p2p beacon_aggregate_and_proof screening ",
+  "user": {
+    "login": "lucianyao",
+    "id": 1046069,
+    "node_id": "MDQ6VXNlcjEwNDYwNjk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1046069?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucianyao",
+    "html_url": "https://github.com/lucianyao",
+    "followers_url": "https://api.github.com/users/lucianyao/followers",
+    "following_url": "https://api.github.com/users/lucianyao/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucianyao/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucianyao/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucianyao/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucianyao/orgs",
+    "repos_url": "https://api.github.com/users/lucianyao/repos",
+    "events_url": "https://api.github.com/users/lucianyao/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucianyao/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-10-23T02:55:52Z",
+  "updated_at": "2020-10-23T03:19:11Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "We don't verify the FFG vote target when screening message `beacon_aggregate_and_proof`, as we do when screening `beacon_attestation_{subnet_id}`:\r\n```\r\n[REJECT] The attestation's epoch matches its target -- i.e. \r\nattestation.data.target.epoch == compute_epoch_at_slot(attestation.data.slot)\r\n\r\n[REJECT] The attestation's target block is an ancestor of the block named in the LMD vote -- i.e. \r\nget_ancestor(store, \r\n    attestation.data.beacon_block_root, \r\n    compute_start_slot_at_epoch(attestation.data.target.epoch)) == \r\nattestation.data.target.root\r\n```\r\n( also there is no verification in `process_attestation`, but I think it's not able to do it)",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2111/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 1
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2111/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1041",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1041/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1041/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1041/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/1041",
+  "id": 440211208,
+  "node_id": "MDU6SXNzdWU0NDAyMTEyMDg=",
+  "number": 1041,
+  "title": "Epoch processing is too eager",
+  "user": {
+    "login": "JustinDrake",
+    "id": 731743,
+    "node_id": "MDQ6VXNlcjczMTc0Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/731743?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JustinDrake",
+    "html_url": "https://github.com/JustinDrake",
+    "followers_url": "https://api.github.com/users/JustinDrake/followers",
+    "following_url": "https://api.github.com/users/JustinDrake/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JustinDrake/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JustinDrake/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JustinDrake/subscriptions",
+    "organizations_url": "https://api.github.com/users/JustinDrake/orgs",
+    "repos_url": "https://api.github.com/users/JustinDrake/repos",
+    "events_url": "https://api.github.com/users/JustinDrake/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JustinDrake/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1063043866,
+      "node_id": "MDU6TGFiZWwxMDYzMDQzODY2",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:bug",
+      "name": "general:bug",
+      "color": "DD1C1A",
+      "default": false,
+      "description": "Something isn't working"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-05-03T20:34:36Z",
+  "updated_at": "2019-05-03T21:13:11Z",
+  "closed_at": "2019-05-03T21:13:11Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The current state transition function structure (as #1018 makes clear) is:\r\n\r\n```python\r\ndef state_transition(state: BeaconState, block: BeaconBlock) -> BeaconBlock:\r\n    # Process slots (including those with no blocks) since block\r\n    process_slots(state, block.slot)\r\n    # Process block\r\n    process_block(state, block)\r\n    # Return post-state\r\n    return state\r\n```\r\n\r\n```python\r\ndef process_slots(state: BeaconState, slot: Slot) -> None:\r\n    assert state.slot < slot\r\n    while state.slot < slot:\r\n        process_slot(state)\r\n        # Process epoch on the last slot of every epoch\r\n        if (state.slot + 1) % SLOTS_PER_EPOCH == 0:\r\n            process_epoch(state)\r\n        state.slot += 1\r\n```\r\n\r\nNotice on the last slot of every epoch, i.e. when `(state.slot + 1) % SLOTS_PER_EPOCH == 0`, `process_epoch` is run before `process_block`. This is bad because the attestations (and other operations such as eth1 votes) in the last block are ignored by `process_epoch`.\r\n\r\nMy best guess is that we want something like:\r\n\r\n```python\r\ndef state_transition(state: BeaconState, block: BeaconBlock) -> BeaconBlock:\r\n    assert state.slot < block.slot\r\n    while state.slot < block.slot:\r\n        process_slot(state)\r\n        if (state.slot + 1) == block.slot:\r\n            process_block(state, block)\r\n        if (state.slot + 1) % SLOTS_PER_EPOCH == 0:\r\n            process_epoch(state)\r\n        state.slot += 1\r\n    return state\r\n```\r\n\r\nNotice that we are actually quite constrained:\r\n\r\n1) `process_slot` must come first, to \"catch up\" the skip slots\r\n2) `process_block` must come before the final `process_epoch` as highlighted by this issue\r\n\r\nThe above two imply that we want `process_slot`, then `process_block`, then the final `process_epoch`.",
+  "closed_by": {
+    "login": "JustinDrake",
+    "id": 731743,
+    "node_id": "MDQ6VXNlcjczMTc0Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/731743?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JustinDrake",
+    "html_url": "https://github.com/JustinDrake",
+    "followers_url": "https://api.github.com/users/JustinDrake/followers",
+    "following_url": "https://api.github.com/users/JustinDrake/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JustinDrake/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JustinDrake/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JustinDrake/subscriptions",
+    "organizations_url": "https://api.github.com/users/JustinDrake/orgs",
+    "repos_url": "https://api.github.com/users/JustinDrake/repos",
+    "events_url": "https://api.github.com/users/JustinDrake/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JustinDrake/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1041/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1041/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

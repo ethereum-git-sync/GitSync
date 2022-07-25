@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2825",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2825/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2825/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2825/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2825",
+  "id": 1124914521,
+  "node_id": "I_kwDOCOoGbc5DDNVZ",
+  "number": 2825,
+  "title": "phase0/epoch_processing updated_participation_record spec test has wrong bits len",
+  "user": {
+    "login": "dapplion",
+    "id": 35266934,
+    "node_id": "MDQ6VXNlcjM1MjY2OTM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35266934?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dapplion",
+    "html_url": "https://github.com/dapplion",
+    "followers_url": "https://api.github.com/users/dapplion/followers",
+    "following_url": "https://api.github.com/users/dapplion/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dapplion/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dapplion/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dapplion/subscriptions",
+    "organizations_url": "https://api.github.com/users/dapplion/orgs",
+    "repos_url": "https://api.github.com/users/dapplion/repos",
+    "events_url": "https://api.github.com/users/dapplion/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dapplion/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-02-05T12:11:40Z",
+  "updated_at": "2022-02-05T12:11:40Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "The PendingAttestations from this spec test\r\n\r\nhttps://github.com/ethereum/consensus-specs/blob/824ff970f5e6f0b3ba472e942ce6ca38ced0ecf0/tests/core/pyspec/eth2spec/test/phase0/epoch_processing/test_process_participation_record_updates.py#L15\r\n\r\nHave aggregation_bits with bit length = 0, when the committee length for it is 4. Should aggregation_bits be set to a zero'ed value of length 4?\r\n\r\n_PendingAttestation_\r\n```\r\n  {\r\n    aggregation_bits: '0x01',\r\n    data: {\r\n      slot: '0',\r\n      index: '0',\r\n      beacon_block_root: '0x0000000000000000000000000000000000000000000000000000000000000000',\r\n      source: [Object],\r\n      target: [Object]\r\n    },\r\n    inclusion_delay: '0',\r\n    proposer_index: '200'\r\n  }\r\n```\r\n\r\n_Shuffling_\r\n```\r\n[\r\n    15, 30,  6, 33, 14, 38,  9, 60, 61,  8, 45, 37,\r\n    21,  1, 42, 11, 53, 36, 58, 55, 51, 23, 34, 54,\r\n     2, 29, 43, 50, 62, 56,  3, 26, 63, 46, 57, 27,\r\n    35, 12, 17, 10, 13,  0, 20,  4, 28, 41, 31, 52,\r\n    24, 40,  5,  7, 25, 39, 49, 47, 32, 22, 19, 44,\r\n    59, 48, 16, 18\r\n  ]\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2825/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2825/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

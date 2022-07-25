@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/425",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/425/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/425/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/425/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/425",
+  "id": 398002427,
+  "node_id": "MDU6SXNzdWUzOTgwMDI0Mjc=",
+  "number": 425,
+  "title": "integer_squareroot(n) prevent possible division by zero",
+  "user": {
+    "login": "jrhea",
+    "id": 5555162,
+    "node_id": "MDQ6VXNlcjU1NTUxNjI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5555162?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jrhea",
+    "html_url": "https://github.com/jrhea",
+    "followers_url": "https://api.github.com/users/jrhea/followers",
+    "following_url": "https://api.github.com/users/jrhea/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jrhea/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jrhea/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jrhea/subscriptions",
+    "organizations_url": "https://api.github.com/users/jrhea/orgs",
+    "repos_url": "https://api.github.com/users/jrhea/repos",
+    "events_url": "https://api.github.com/users/jrhea/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jrhea/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-01-10T20:31:31Z",
+  "updated_at": "2019-01-11T01:20:59Z",
+  "closed_at": "2019-01-11T01:20:59Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "It is possible for `integer_squareroot(n: int)` to div by zero if an input n is provided s.t. `0 < n < 1`.    \r\n\r\nI was expecting python type hinting to ensure that n is truncated to 0, but this doesn't seem to be the case:\r\n\r\n```\r\njonny@jonnys-MBP:$ python3\r\nPython 3.7.1 (default, Nov  6 2018, 18:45:35) \r\n[Clang 10.0.0 (clang-1000.11.45.5)] on darwin\r\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\r\n>>> def integer_squareroot(n: int) -> int:\r\n...     \"\"\"\r\n...     The largest integer ``x`` such that ``x**2`` is less than ``n``.\r\n...     \"\"\"\r\n...     x = n\r\n...     y = (x + 1) // 2\r\n...     i = 0\r\n...     print(\"n=\"+str(n)+\" x=\"+str(x)+\" y=\"+str(y)+\"\\n\")\r\n...     while y < x:\r\n...         x = y\r\n...         y = (x + n // x) // 2\r\n...         i+=1\r\n...     return x\r\n... \r\n>>> integer_squareroot(0.4)\r\nn=0.4 x=0.4 y=0.0\r\n\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\n  File \"<stdin>\", line 11, in integer_squareroot\r\nZeroDivisionError: float divmod()\r\n```\r\nYou can see that this line: `x = y` sets x = 0.0 and this line: `y = (x + n // x) // 2` results in the ZeroDivisionError.  Now I realize that this scenario shouldn't happen given how the function is used; however, it is not good practice to assume this will always be true, or that the function will never be used another way.  It is better for this function to groom the inputs appropriately so that it can withstand a barrage of unit test inputs.\r\n\r\n",
+  "closed_by": {
+    "login": "djrtwo",
+    "id": 1433595,
+    "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/djrtwo",
+    "html_url": "https://github.com/djrtwo",
+    "followers_url": "https://api.github.com/users/djrtwo/followers",
+    "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+    "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+    "repos_url": "https://api.github.com/users/djrtwo/repos",
+    "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/425/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/425/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

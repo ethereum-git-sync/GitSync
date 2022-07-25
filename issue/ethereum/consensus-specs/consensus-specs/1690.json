@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1690",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1690/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1690/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1690/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/1690",
+  "id": 589264065,
+  "node_id": "MDU6SXNzdWU1ODkyNjQwNjU=",
+  "number": 1690,
+  "title": "Tests for attester-slashing bitfield intersection variations",
+  "user": {
+    "login": "protolambda",
+    "id": 19571989,
+    "node_id": "MDQ6VXNlcjE5NTcxOTg5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19571989?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/protolambda",
+    "html_url": "https://github.com/protolambda",
+    "followers_url": "https://api.github.com/users/protolambda/followers",
+    "following_url": "https://api.github.com/users/protolambda/following{/other_user}",
+    "gists_url": "https://api.github.com/users/protolambda/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/protolambda/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/protolambda/subscriptions",
+    "organizations_url": "https://api.github.com/users/protolambda/orgs",
+    "repos_url": "https://api.github.com/users/protolambda/repos",
+    "events_url": "https://api.github.com/users/protolambda/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/protolambda/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1295439957,
+      "node_id": "MDU6TGFiZWwxMjk1NDM5OTU3",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:CI/tests/pyspec",
+      "name": "scope:CI/tests/pyspec",
+      "color": "BDC0BA",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-03-27T16:47:41Z",
+  "updated_at": "2020-03-27T16:47:41Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Prysm experienced a bad bug with attester slashings where the intersection effectively always returned the full committee of the first attestation, due to intersection being called with the duplicate inputs: https://github.com/prysmaticlabs/prysm/pull/5229\r\n\r\nThe spec-tests cover indices missing/extra in various ways, but missed more variants of the valid case where different indices are slashed: https://github.com/ethereum/eth2.0-specs/blob/dev/tests/core/pyspec/eth2spec/test/phase_0/block_processing/test_process_attester_slashing.py\r\n\r\nAnd the sanity tests seems to be testing this, but the utility code actually returns a full-participation attestation, so it went unnoticed through this test as well. https://github.com/ethereum/eth2.0-specs/blob/9f7a5491d749ced2f2fe9b44f2b467bb6db8c746/tests/core/pyspec/eth2spec/test/helpers/attester_slashings.py#L4\r\n\r\nMore valid test cases should be introduced to cover combinations of:\r\n- full attestations\r\n- partial participation attestations, different permutations\r\n- empty attestations\r\n\r\nThanks to @mcdee for finding this gap in tests and helping Prysm.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1690/reactions",
+    "total_count": 3,
+    "+1": 3,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1690/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2204",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2204/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2204/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2204/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2204",
+  "id": 812501725,
+  "node_id": "MDU6SXNzdWU4MTI1MDE3MjU=",
+  "number": 2204,
+  "title": "Makefile warning",
+  "user": {
+    "login": "kevin-chau",
+    "id": 6045301,
+    "node_id": "MDQ6VXNlcjYwNDUzMDE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6045301?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kevin-chau",
+    "html_url": "https://github.com/kevin-chau",
+    "followers_url": "https://api.github.com/users/kevin-chau/followers",
+    "following_url": "https://api.github.com/users/kevin-chau/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kevin-chau/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kevin-chau/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kevin-chau/subscriptions",
+    "organizations_url": "https://api.github.com/users/kevin-chau/orgs",
+    "repos_url": "https://api.github.com/users/kevin-chau/repos",
+    "events_url": "https://api.github.com/users/kevin-chau/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kevin-chau/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1295439957,
+      "node_id": "MDU6TGFiZWwxMjk1NDM5OTU3",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:CI/tests/pyspec",
+      "name": "scope:CI/tests/pyspec",
+      "color": "BDC0BA",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-02-20T03:29:43Z",
+  "updated_at": "2021-03-15T10:50:31Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "It seems that whenever I build any of the make targets, I get the following warnings:\r\n```\r\nMakefile:168: warning: overriding commands for target `../eth2.0-spec-tests/tests'\r\nMakefile:165: warning: ignoring old commands for target `../eth2.0-spec-tests/tests'\r\n```\r\n\r\nI believe this is because we have duplicate definitions for the target `$(TEST_VECTOR_DIR)` (lines 164 and lines 167):\r\n```\r\n$(TEST_VECTOR_DIR):\r\n\t$(info creating test output directory, for generators: ${GENERATOR_TARGETS})\r\n\tmkdir -p $@\r\n$(TEST_VECTOR_DIR)/:\r\n\t$(info ignoring duplicate tests dir)\r\n```\r\nIf I'm understanding the warning correctly, the first definition isn't even used. This is probably just an issue with cleaning up the Makefile, which I understand to be extremely low priority. Still, it's nice to eliminate any warnings if we can!\r\n\r\nThe appropriate solution is pretty easy, we should just pick one of the definitions. I can't really tell what was the intended purpose of providing two definitions (one has a forward slash, but doesn't seem to make a difference), so I don't have an opinion on which one we should pick.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2204/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2204/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

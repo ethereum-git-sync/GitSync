@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1521",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1521/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1521/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1521/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/1521",
+  "id": 537074102,
+  "node_id": "MDU6SXNzdWU1MzcwNzQxMDI=",
+  "number": 1521,
+  "title": "Exit fee",
+  "user": {
+    "login": "djrtwo",
+    "id": 1433595,
+    "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/djrtwo",
+    "html_url": "https://github.com/djrtwo",
+    "followers_url": "https://api.github.com/users/djrtwo/followers",
+    "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+    "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+    "repos_url": "https://api.github.com/users/djrtwo/repos",
+    "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1063043868,
+      "node_id": "MDU6TGFiZWwxMDYzMDQzODY4",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:enhancement",
+      "name": "general:enhancement",
+      "color": "086788",
+      "default": false,
+      "description": "New feature or request"
+    },
+    {
+      "id": 1170173759,
+      "node_id": "MDU6TGFiZWwxMTcwMTczNzU5",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/phase1",
+      "name": "phase1",
+      "color": "F7C242",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2019-12-12T16:11:49Z",
+  "updated_at": "2021-07-05T15:06:08Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Taken from the previous Phase 0 state transition checklist in #1054 \r\n\r\n> (post-freeze discussion) Exit fee: See #850 (comment).\r\n\r\nI'm inclined to _not_ add this for Phase 0 to reduce changes to the near-final spec.\r\nCan be revisited in Phase 1+\r\n\r\nCC: @JustinDrake @vbuterin ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1521/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1521/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/565716836",
+    "html_url": "https://github.com/ethereum/consensus-specs/issues/1521#issuecomment-565716836",
+    "issue_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/1521",
+    "id": 565716836,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDU2NTcxNjgzNg==",
+    "user": {
+      "login": "JustinDrake",
+      "id": 731743,
+      "node_id": "MDQ6VXNlcjczMTc0Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/731743?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JustinDrake",
+      "html_url": "https://github.com/JustinDrake",
+      "followers_url": "https://api.github.com/users/JustinDrake/followers",
+      "following_url": "https://api.github.com/users/JustinDrake/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JustinDrake/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JustinDrake/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JustinDrake/subscriptions",
+      "organizations_url": "https://api.github.com/users/JustinDrake/orgs",
+      "repos_url": "https://api.github.com/users/JustinDrake/repos",
+      "events_url": "https://api.github.com/users/JustinDrake/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JustinDrake/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2019-12-14T13:21:51Z",
+    "updated_at": "2019-12-14T13:21:51Z",
+    "author_association": "MEMBER",
+    "body": "> I'm inclined to not add this for Phase 0\r\n\r\nAgreed :)",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/565716836/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2697",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2697/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2697/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2697/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2697",
+  "id": 1038816665,
+  "node_id": "I_kwDOCOoGbc496xWZ",
+  "number": 2697,
+  "title": "Implementation",
+  "user": {
+    "login": "Cokebottlebody999",
+    "id": 38342787,
+    "node_id": "MDQ6VXNlcjM4MzQyNzg3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/38342787?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Cokebottlebody999",
+    "html_url": "https://github.com/Cokebottlebody999",
+    "followers_url": "https://api.github.com/users/Cokebottlebody999/followers",
+    "following_url": "https://api.github.com/users/Cokebottlebody999/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Cokebottlebody999/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Cokebottlebody999/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Cokebottlebody999/subscriptions",
+    "organizations_url": "https://api.github.com/users/Cokebottlebody999/orgs",
+    "repos_url": "https://api.github.com/users/Cokebottlebody999/repos",
+    "events_url": "https://api.github.com/users/Cokebottlebody999/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Cokebottlebody999/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-28T18:22:02Z",
+  "updated_at": "2021-10-28T18:38:23Z",
+  "closed_at": "2021-10-28T18:38:23Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": null,
+  "closed_by": {
+    "login": "djrtwo",
+    "id": 1433595,
+    "node_id": "MDQ6VXNlcjE0MzM1OTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1433595?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/djrtwo",
+    "html_url": "https://github.com/djrtwo",
+    "followers_url": "https://api.github.com/users/djrtwo/followers",
+    "following_url": "https://api.github.com/users/djrtwo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/djrtwo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/djrtwo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/djrtwo/subscriptions",
+    "organizations_url": "https://api.github.com/users/djrtwo/orgs",
+    "repos_url": "https://api.github.com/users/djrtwo/repos",
+    "events_url": "https://api.github.com/users/djrtwo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/djrtwo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2697/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2697/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

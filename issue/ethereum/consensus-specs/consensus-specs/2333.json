@@ -1,0 +1,146 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2333",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2333/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2333/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2333/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2333",
+  "id": 858942098,
+  "node_id": "MDU6SXNzdWU4NTg5NDIwOTg=",
+  "number": 2333,
+  "title": "Fork choice `Store` contains objects cross the spec versions",
+  "user": {
+    "login": "hwwhww",
+    "id": 9263930,
+    "node_id": "MDQ6VXNlcjkyNjM5MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9263930?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hwwhww",
+    "html_url": "https://github.com/hwwhww",
+    "followers_url": "https://api.github.com/users/hwwhww/followers",
+    "following_url": "https://api.github.com/users/hwwhww/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hwwhww/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hwwhww/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hwwhww/subscriptions",
+    "organizations_url": "https://api.github.com/users/hwwhww/orgs",
+    "repos_url": "https://api.github.com/users/hwwhww/repos",
+    "events_url": "https://api.github.com/users/hwwhww/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hwwhww/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1244734333,
+      "node_id": "MDU6TGFiZWwxMjQ0NzM0MzMz",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:presentation",
+      "name": "general:presentation",
+      "color": "2EA9DF",
+      "default": false,
+      "description": "Presentation (as opposed to content)"
+    },
+    {
+      "id": 1295439957,
+      "node_id": "MDU6TGFiZWwxMjk1NDM5OTU3",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:CI/tests/pyspec",
+      "name": "scope:CI/tests/pyspec",
+      "color": "BDC0BA",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1324776822,
+      "node_id": "MDU6TGFiZWwxMzI0Nzc2ODIy",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:fork-choice",
+      "name": "scope:fork-choice",
+      "color": "81C7D4",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2789549886,
+      "node_id": "MDU6TGFiZWwyNzg5NTQ5ODg2",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/Altair",
+      "name": "Altair",
+      "color": "FB966E",
+      "default": false,
+      "description": "aka HF1"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-04-15T14:31:33Z",
+  "updated_at": "2021-04-27T14:15:50Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "### Fork choice `Store.blocks` and `Store.states`\r\n- The [`Store`](https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/fork-choice.md#store) storage is an abstract data structure that clients can design their own implementations.\r\n    - The `Store.blocks` filed is type of `Dict[Root, BeaconBlock]`.\r\n- In our spec presentation, `BeaconBlock` means the `BeaconBlock` of each *spec*.\r\n    - However, right after the fork boundary, `store` contains both `phase0.BeaconBlock` and `altair.BeaconBlock`.\r\n- In the view of implementation, there should be only one head `store` object.\r\n    - p.s. pyspec tests could choose to execute  `phase0.on_block` or `altair.on_block` by the given block slot. Both with Altair store.\r\n\r\n### Proposed solution\r\n1. Define \"Union\" `SignedBeaconBlock` and `BeaconBlock`. Since it's fork choice storage and not consensus container, it's not necessary to be the [SSZ `Union` type](https://github.com/ethereum/eth2.0-specs/blob/dev/ssz/simple-serialize.md#composite-types). [Python `Union`](https://docs.python.org/3/library/typing.html#typing.Union) might be fine enough.\r\n2. Add `upgrade_to_altair_store(store: phase0.Store) -> altair.Store` helper to handle the fork boundary transition.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2333/reactions",
+    "total_count": 3,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 3
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2333/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/825576547",
+    "html_url": "https://github.com/ethereum/consensus-specs/issues/2333#issuecomment-825576547",
+    "issue_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2333",
+    "id": 825576547,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDgyNTU3NjU0Nw==",
+    "user": {
+      "login": "ericsson49",
+      "id": 10426192,
+      "node_id": "MDQ6VXNlcjEwNDI2MTky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10426192?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ericsson49",
+      "html_url": "https://github.com/ericsson49",
+      "followers_url": "https://api.github.com/users/ericsson49/followers",
+      "following_url": "https://api.github.com/users/ericsson49/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ericsson49/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ericsson49/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ericsson49/subscriptions",
+      "organizations_url": "https://api.github.com/users/ericsson49/orgs",
+      "repos_url": "https://api.github.com/users/ericsson49/repos",
+      "events_url": "https://api.github.com/users/ericsson49/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ericsson49/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2021-04-23T10:54:22Z",
+    "updated_at": "2021-04-23T10:54:22Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "As far as I remember, fork choice logic depends rather on `BeaconBlockHeader` and doesn't really need `BeaconBlockBody` contents, just its `hash_tree_root`. And the former is less likely to change between phases (in an \"incompatible\" way).\r\n\r\nThere are still problems. The `Store` contains `BeaconState` too, which is altered in superseding phases, sometimes in an incompatible way (e.g. replacing fields and w/o subclassing a prior version).\r\nHowever, fork choice logic itself doesn't really need entire `BeaconState` contents, but rather balances, checkpoints, slot, perhaps something else.\r\nA more problematic here is that `state_transition` is invoked during fork choice, which **does** access `BeaconState` fields. And it differs from phase to phase.\r\n\r\nThis looks like a more serious problem to me, though there are methods like `upgrade_to_altair`. I expect that `Store` has to be converted when transitioning to newer phases. Basically, blocks can be children of blocks from prior phases, so corresponding `BeaconState`s should be retrieved and `state_transition` should somehow handle it.\r\n\r\nIn my opinion, in the context of a specification, converting `Store` with one shot looks like a better approach. Lazy handling is more like an optimization and can be tricky to implement.\r\n\r\nIn a broader perspective, I have encountered more problems which are quite similar. Basically, superseding phases refer to classes/methods from previous phases. And it can be really tricky to handle, if one wants to enforce typing rules while not hurting readability too much. At least within nominal subtyping (default in MyPy).\r\nThe problem doesn't manifest itself with `altair` and `merge`, but is rather severe with `sharding` (\"circular\" dependencies between methods and classes of different phases). I expect it will be even more prominent with later phases. I'm writing an issue (perhaps a couple) about that currently.\r\n\r\nOne possible solution can be to employ structural sub-typing, which MyPy has support for, via [Protocols](https://mypy.readthedocs.io/en/stable/protocols.html). One problem with structural subtyping is that it misses problems like a `Slot` used as an `Epoch` (e.g. #1962), which I consider to be a severe problem. Hopefully, MyPy can handle both approaches at the same time. More powerful static analysis can model Python dynamic behavior more precisely and I'm going to explore it during my research too.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/825576547/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

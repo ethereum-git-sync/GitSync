@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2910",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2910/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2910/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2910/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2910",
+  "id": 1264503351,
+  "node_id": "I_kwDOCOoGbc5LXso3",
+  "number": 2910,
+  "title": "Acceptable Certification",
+  "user": {
+    "login": "hartonosugi792",
+    "id": 105017326,
+    "node_id": "U_kgDOBkJv7g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/105017326?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hartonosugi792",
+    "html_url": "https://github.com/hartonosugi792",
+    "followers_url": "https://api.github.com/users/hartonosugi792/followers",
+    "following_url": "https://api.github.com/users/hartonosugi792/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hartonosugi792/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hartonosugi792/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hartonosugi792/subscriptions",
+    "organizations_url": "https://api.github.com/users/hartonosugi792/orgs",
+    "repos_url": "https://api.github.com/users/hartonosugi792/repos",
+    "events_url": "https://api.github.com/users/hartonosugi792/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hartonosugi792/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-08T10:04:51Z",
+  "updated_at": "2022-06-08T15:12:31Z",
+  "closed_at": "2022-06-08T15:12:31Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Acceptable Certification\n\nA SINGLE INHERITANCE\nGENERAL MANAGEMENT MERGER AUTHORITY\nOWNER ACTUAL GENUINE CURRENCY PAPER-MONEY WORLD ( GOLD & SILVER COINS), COLLATERAL FOR THE TREASURY TAX AND LOAN PROGRAM.\n\nEXHIBIT'S A AND B \nExhibit A: 255 SBG. Gold Certificate UBS, Exhibit B: 29 SBG. Platinum Certificate of UBS, Exhibit B: 17 SBG. Obligation Certificate of UBS;\n\nIn accordance's  to the contents of Re-Confirmation of the Union Bank of Switzerland on July 15, 2001 with code name of Pancar Soeryo to all the return of Cash Funds and for this overbooking of the HSBC-Investment Usage, Instrument of Cash Fund MT. 103 with amount of USD. 9900 Trillion for keeps treaties international agreements and treaties international transactions in all locations to Blockchain Cryptocurrency and principle represent ALL of FIATS (Currencies of stock order nationality) Global Financial System of the UN-SWISSINDO MERGER or is call WORLD KINGDOM EMPIRE as the good contents of the global changing on this planet of Earth.\n\nThe interface has it already.\r\n\r\nDepends on Solidity implementing Natspec inheritance (https://github.com/ethereum/solidity/issues/8911) -- the 0.6.11 release. This release also supports natspec on events.\r\n\r\nThis change should not change the bytecode, only the metadata hash.\r\n\r\nDepends on #39.\n\n__Originally posted by @axic in https://github.com/axic/eth2-deposit-contract/pull/36__\n\n__Originally posted by @hartonosugi792 in https://github.com/hartonosugi792/United-Nations-Group/issues/2__",
+  "closed_by": {
+    "login": "ralexstokes",
+    "id": 3113781,
+    "node_id": "MDQ6VXNlcjMxMTM3ODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3113781?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ralexstokes",
+    "html_url": "https://github.com/ralexstokes",
+    "followers_url": "https://api.github.com/users/ralexstokes/followers",
+    "following_url": "https://api.github.com/users/ralexstokes/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ralexstokes/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ralexstokes/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ralexstokes/subscriptions",
+    "organizations_url": "https://api.github.com/users/ralexstokes/orgs",
+    "repos_url": "https://api.github.com/users/ralexstokes/repos",
+    "events_url": "https://api.github.com/users/ralexstokes/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ralexstokes/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2910/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2910/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

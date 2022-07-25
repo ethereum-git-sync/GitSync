@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2675",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2675/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2675/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2675/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2675",
+  "id": 1028362421,
+  "node_id": "I_kwDOCOoGbc49S5C1",
+  "number": 2675,
+  "title": "A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER",
+  "user": {
+    "login": "IcannotThinkOfAnymoreNames",
+    "id": 92683155,
+    "node_id": "U_kgDOBYY7kw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/92683155?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/IcannotThinkOfAnymoreNames",
+    "html_url": "https://github.com/IcannotThinkOfAnymoreNames",
+    "followers_url": "https://api.github.com/users/IcannotThinkOfAnymoreNames/followers",
+    "following_url": "https://api.github.com/users/IcannotThinkOfAnymoreNames/following{/other_user}",
+    "gists_url": "https://api.github.com/users/IcannotThinkOfAnymoreNames/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/IcannotThinkOfAnymoreNames/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/IcannotThinkOfAnymoreNames/subscriptions",
+    "organizations_url": "https://api.github.com/users/IcannotThinkOfAnymoreNames/orgs",
+    "repos_url": "https://api.github.com/users/IcannotThinkOfAnymoreNames/repos",
+    "events_url": "https://api.github.com/users/IcannotThinkOfAnymoreNames/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/IcannotThinkOfAnymoreNames/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-17T15:45:48Z",
+  "updated_at": "2021-10-18T04:01:57Z",
+  "closed_at": "2021-10-18T04:01:57Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Thanks for evNerOything ether. You made us, as we made you. You made us because we made you. But they fork you without us? Flower leaf and stem in water by vase,  with potential but no root, admired by all with what future, but minor leaves on the table? ETH - 2.0 === 15min fame.",
+  "closed_by": {
+    "login": "hwwhww",
+    "id": 9263930,
+    "node_id": "MDQ6VXNlcjkyNjM5MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9263930?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hwwhww",
+    "html_url": "https://github.com/hwwhww",
+    "followers_url": "https://api.github.com/users/hwwhww/followers",
+    "following_url": "https://api.github.com/users/hwwhww/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hwwhww/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hwwhww/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hwwhww/subscriptions",
+    "organizations_url": "https://api.github.com/users/hwwhww/orgs",
+    "repos_url": "https://api.github.com/users/hwwhww/repos",
+    "events_url": "https://api.github.com/users/hwwhww/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hwwhww/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2675/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2675/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2021",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2021/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2021/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2021/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2021",
+  "id": 680777199,
+  "node_id": "MDU6SXNzdWU2ODA3NzcxOTk=",
+  "number": 2021,
+  "title": "should we distinguish the exceptions caused by invalid block or program internal errors?",
+  "user": {
+    "login": "lucianyao",
+    "id": 1046069,
+    "node_id": "MDQ6VXNlcjEwNDYwNjk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1046069?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucianyao",
+    "html_url": "https://github.com/lucianyao",
+    "followers_url": "https://api.github.com/users/lucianyao/followers",
+    "following_url": "https://api.github.com/users/lucianyao/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucianyao/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucianyao/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucianyao/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucianyao/orgs",
+    "repos_url": "https://api.github.com/users/lucianyao/repos",
+    "events_url": "https://api.github.com/users/lucianyao/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucianyao/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-08-18T07:49:18Z",
+  "updated_at": "2020-08-25T00:52:55Z",
+  "closed_at": "2020-08-25T00:52:55Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "(at version b529d47) , we have a statement that:\r\n```\r\nState transitions that trigger an unhandled exception (e.g. a failed assert or an out-of-range list access)\r\nare considered invalid\r\n```\r\nIn my understanding, a failed assert means that the block is invalid, we can recover from it and wait for a valid block.\r\nBut in our spec, not all the failed asserts imply the block is invalid, but some of them are caused by the internal errors. In these cases we need to stop the program and fix the bugs. Should we distinguish them so that we can be aware of the logical errors?\r\n\r\nFor example, in the method `process_block_header ()`:\r\n```\r\n# Verify that the slots match\r\n    assert block.slot == state.slot  #(1)\r\n\r\n# Verify that the block is newer than latest block header\r\n    assert block.slot > state.latest_block_header.slot #(2)\r\n```\r\nbut, in method`process_slots()`, we have:\r\n```\r\n assert state.slot < slot\r\nwhile state.slot < slot:\r\n......\r\n```\r\nwhich means, when we reach the method `process_block_header ()`, (1) is guaranteed;\r\nAnd also (2) is guaranteed., since :\r\n* the latest_block_header.slot is always <= state.slot, \r\n* and `assert state.slot < slot` implies the state  just advanced from a smaller slot. ",
+  "closed_by": {
+    "login": "lucianyao",
+    "id": 1046069,
+    "node_id": "MDQ6VXNlcjEwNDYwNjk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1046069?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucianyao",
+    "html_url": "https://github.com/lucianyao",
+    "followers_url": "https://api.github.com/users/lucianyao/followers",
+    "following_url": "https://api.github.com/users/lucianyao/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucianyao/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucianyao/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucianyao/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucianyao/orgs",
+    "repos_url": "https://api.github.com/users/lucianyao/repos",
+    "events_url": "https://api.github.com/users/lucianyao/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucianyao/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2021/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2021/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

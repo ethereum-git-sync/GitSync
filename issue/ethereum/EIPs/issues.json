@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5009,
+    "title": "Should we discourage the word \"standard\" in EIP titles and descriptions?",
+    "updatedAt": "2022-07-25T20:48:04Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5308,
+    "title": "Disallow the word \"Smart\" in the titles (and descriptions) of EIPs",
+    "updatedAt": "2022-07-25T20:45:55Z"
+  },
+  {
+    "author": {
       "login": "Pandapip1"
     },
     "number": 5315,
@@ -70,14 +86,6 @@
     "number": 4945,
     "title": "Rename master branch to main branch",
     "updatedAt": "2022-07-22T19:46:12Z"
-  },
-  {
-    "author": {
-      "login": "Pandapip1"
-    },
-    "number": 5308,
-    "title": "Disallow the word \"Smart\" in the titles (and descriptions) of EIPs",
-    "updatedAt": "2022-07-22T19:28:19Z"
   },
   {
     "author": {
@@ -686,14 +694,6 @@
     "number": 4991,
     "title": "minting of NFT with on-chain auction",
     "updatedAt": "2022-07-18T18:08:06Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5009,
-    "title": "Should we discourage the word \"standard\" in EIP titles and descriptions?",
-    "updatedAt": "2022-07-18T18:08:04Z"
   },
   {
     "author": {

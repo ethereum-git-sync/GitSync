@@ -41,7 +41,7 @@
   "milestone": null,
   "comments": 3,
   "created_at": "2022-07-22T12:55:10Z",
-  "updated_at": "2022-07-25T20:45:55Z",
+  "updated_at": "2022-07-25T20:52:46Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -179,9 +179,9 @@
       "site_admin": false
     },
     "created_at": "2022-07-25T20:45:55Z",
-    "updated_at": "2022-07-25T20:45:55Z",
+    "updated_at": "2022-07-25T20:52:46Z",
     "author_association": "CONTRIBUTOR",
-    "body": "I object to this editorial rule. I think it shall be author to decide the name. I don't think editor group already have or shall have the power to make such judgement.",
+    "body": "As much as I appreciate the intention to make description more readable, I object to this editorial rule. I think it shall be author to decide the name. I don't think editor group already have or shall have the power to make such judgement.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1194608091/reactions",
       "total_count": 0,

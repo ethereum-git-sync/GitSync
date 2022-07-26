@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5298,
+    "title": "[Security] Pin all GitHub Action dependencies to hash version.",
+    "updatedAt": "2022-07-26T18:42:54Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5310,
+    "title": "[Bug]: GitHub actions don't run for first time contributors",
+    "updatedAt": "2022-07-26T18:42:50Z"
+  },
+  {
+    "author": {
       "login": "SamWilsn"
     },
     "number": 5009,
@@ -62,22 +78,6 @@
     "number": 5318,
     "title": "[Bug]: Branch protection rules need updating",
     "updatedAt": "2022-07-23T14:38:16Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5298,
-    "title": "[Security] Pin all GitHub Action dependencies to hash version.",
-    "updatedAt": "2022-07-23T12:07:47Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5310,
-    "title": "[Bug]: GitHub actions don't run for first time contributors",
-    "updatedAt": "2022-07-23T12:07:47Z"
   },
   {
     "author": {

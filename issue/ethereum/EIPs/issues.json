@@ -1,11 +1,11 @@
 [
   {
     "author": {
-      "login": "se3000"
+      "login": "SamWilsn"
     },
-    "number": 677,
-    "title": "ERC: transferAndCall Token Standard",
-    "updatedAt": "2022-07-25T23:26:39Z"
+    "number": 5009,
+    "title": "Should we discourage the word \"standard\" in EIP titles and descriptions?",
+    "updatedAt": "2022-07-26T07:50:25Z"
   },
   {
     "author": {
@@ -13,15 +13,15 @@
     },
     "number": 5308,
     "title": "Disallow the word \"Smart\" in the titles (and descriptions) of EIPs",
-    "updatedAt": "2022-07-25T20:52:46Z"
+    "updatedAt": "2022-07-26T07:48:22Z"
   },
   {
     "author": {
-      "login": "SamWilsn"
+      "login": "se3000"
     },
-    "number": 5009,
-    "title": "Should we discourage the word \"standard\" in EIP titles and descriptions?",
-    "updatedAt": "2022-07-25T20:48:04Z"
+    "number": 677,
+    "title": "ERC: transferAndCall Token Standard",
+    "updatedAt": "2022-07-25T23:26:39Z"
   },
   {
     "author": {

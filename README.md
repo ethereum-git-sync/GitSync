@@ -13,6 +13,7 @@ ethereum/EIPs
 ethereum/PM
 ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM
+ethereum-git-sync/GitSync
 ```
 
 Current Hosts:

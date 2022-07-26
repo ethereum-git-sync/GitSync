@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "ryestew"
+    },
+    "number": 2687,
+    "title": "Remove Environment plugins from the plugin manager",
+    "updatedAt": "2022-07-26T11:00:55Z"
+  },
+  {
+    "author": {
       "login": "Aniket-Engg"
     },
     "number": 2693,
@@ -46,14 +54,6 @@
     "number": 2688,
     "title": "save file with .yul when URL params have code given & language set as yul",
     "updatedAt": "2022-07-26T07:55:43Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
-    "number": 2687,
-    "title": "Remove Environment plugins from the plugin manager",
-    "updatedAt": "2022-07-26T07:50:02Z"
   },
   {
     "author": {

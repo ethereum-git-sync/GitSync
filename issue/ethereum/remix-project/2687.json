@@ -40,7 +40,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "LianaHus",
@@ -87,12 +87,31 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-07-26T07:50:02Z",
-  "updated_at": "2022-07-26T07:50:02Z",
-  "closed_at": null,
+  "updated_at": "2022-07-26T11:00:55Z",
+  "closed_at": "2022-07-26T11:00:55Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "These plugins are always in the Environment select box of Deploy & Run so they should be removed from the plugin man\r\n- INJECTED ARBITRUM ONE PROVIDER\r\n- INJECTED OPTIMISM PROVIDER\r\n- FOUNDRY PROVIDER\r\n- GANACHE PROVIDER\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "LianaHus",
+    "id": 9685356,
+    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LianaHus",
+    "html_url": "https://github.com/LianaHus",
+    "followers_url": "https://api.github.com/users/LianaHus/followers",
+    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+    "repos_url": "https://api.github.com/users/LianaHus/repos",
+    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/2687/reactions",
     "total_count": 0,
@@ -107,7 +126,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2687/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
 

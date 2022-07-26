@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "se3000"
+    },
+    "number": 677,
+    "title": "ERC: transferAndCall Token Standard",
+    "updatedAt": "2022-07-25T23:26:39Z"
+  },
+  {
+    "author": {
       "login": "Pandapip1"
     },
     "number": 5308,
@@ -1174,14 +1182,6 @@
     "number": 864,
     "title": "Divisible non-fungible tokens (Shared ownership over NFTs)",
     "updatedAt": "2022-06-09T16:03:01Z"
-  },
-  {
-    "author": {
-      "login": "se3000"
-    },
-    "number": 677,
-    "title": "ERC: transferAndCall Token Standard",
-    "updatedAt": "2022-06-07T16:27:36Z"
   },
   {
     "author": {

@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "cryptonana"
+    },
+    "number": 25386,
+    "title": "puppeth setup blockchain",
+    "updatedAt": "2022-07-26T03:00:36Z"
+  },
+  {
+    "author": {
+      "login": "bert2002"
+    },
+    "number": 25404,
+    "title": "CPU usage trippelt after upgrade to v1.10.20",
+    "updatedAt": "2022-07-26T02:32:26Z"
+  },
+  {
+    "author": {
       "login": "Vitahabtc"
     },
     "number": 25382,
@@ -126,14 +142,6 @@
     "number": 25393,
     "title": "Geth Command failed ",
     "updatedAt": "2022-07-25T09:41:37Z"
-  },
-  {
-    "author": {
-      "login": "cryptonana"
-    },
-    "number": 25386,
-    "title": "puppeth setup blockchain",
-    "updatedAt": "2022-07-25T09:30:01Z"
   },
   {
     "author": {

@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25404",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25404/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25404/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25404/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25404",
+  "id": 1317616265,
+  "node_id": "I_kwDOAOvK985OiTqJ",
+  "number": 25404,
+  "title": "CPU usage trippelt after upgrade to v1.10.20",
+  "user": {
+    "login": "bert2002",
+    "id": 1042226,
+    "node_id": "MDQ6VXNlcjEwNDIyMjY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1042226?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bert2002",
+    "html_url": "https://github.com/bert2002",
+    "followers_url": "https://api.github.com/users/bert2002/followers",
+    "following_url": "https://api.github.com/users/bert2002/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bert2002/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bert2002/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bert2002/subscriptions",
+    "organizations_url": "https://api.github.com/users/bert2002/orgs",
+    "repos_url": "https://api.github.com/users/bert2002/repos",
+    "events_url": "https://api.github.com/users/bert2002/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bert2002/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-07-26T02:32:26Z",
+  "updated_at": "2022-07-26T02:32:26Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\n```\r\n# geth version\r\nGeth\r\nVersion: 1.10.20-stable\r\nGit Commit: 8f2416a89a3def6ec2c749d5afafbf2c9a18e3c8\r\nGit Commit Date: 20220629\r\nArchitecture: amd64\r\nGo Version: go1.18.1\r\nOperating System: linux\r\nGOPATH=\r\nGOROOT=go\r\n```\r\n\r\nAfter the upgrade we are seeing the cpu usage increased threefold. Our `geth` nodes were running happily on 2-3 cores, but since the upgrade it is using more and more. It doubled the usage within a couple days which is odd. \r\n![Screenshot from 2022-07-26 10-00-56](https://user-images.githubusercontent.com/1042226/180909336-5ea3aa42-bb18-4668-aca6-7134637d1629.png)\r\nThis is the load average of 1m.\r\n\r\nPlease let me know what else I can provide to give more insights. This is a real problem for us :cry: \r\n\r\nThanks,\r\nbert",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25404/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25404/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

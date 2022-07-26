@@ -38,6 +38,15 @@
       "color": "FF5E5E",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 1132754722,
+      "node_id": "MDU6TGFiZWwxMTMyNzU0NzIy",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/need:more-information",
+      "name": "need:more-information",
+      "color": "db6fa3",
+      "default": false,
+      "description": ""
     }
   ],
   "state": "open",
@@ -47,9 +56,9 @@
 
   ],
   "milestone": null,
-  "comments": 2,
+  "comments": 3,
   "created_at": "2022-07-22T14:47:57Z",
-  "updated_at": "2022-07-25T16:23:55Z",
+  "updated_at": "2022-07-26T11:56:09Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -148,6 +157,50 @@
     "body": "I could fixed after a resync from scratch, you were right , it seems a corrupted data error. Thanks!",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1194313905/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1195386616",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25376#issuecomment-1195386616",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25376",
+    "id": 1195386616,
+    "node_id": "IC_kwDOAOvK985HQCb4",
+    "user": {
+      "login": "ligi",
+      "id": 111600,
+      "node_id": "MDQ6VXNlcjExMTYwMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ligi",
+      "html_url": "https://github.com/ligi",
+      "followers_url": "https://api.github.com/users/ligi/followers",
+      "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+      "organizations_url": "https://api.github.com/users/ligi/orgs",
+      "repos_url": "https://api.github.com/users/ligi/repos",
+      "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ligi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-07-26T11:56:03Z",
+    "updated_at": "2022-07-26T11:56:03Z",
+    "author_association": "MEMBER",
+    "body": "Did you have an unclean shutdown?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1195386616/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

@@ -38,6 +38,15 @@
       "color": "FF5E5E",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 1132754722,
+      "node_id": "MDU6TGFiZWwxMTMyNzU0NzIy",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/need:more-information",
+      "name": "need:more-information",
+      "color": "db6fa3",
+      "default": false,
+      "description": ""
     }
   ],
   "state": "open",
@@ -47,9 +56,9 @@
 
   ],
   "milestone": null,
-  "comments": 4,
+  "comments": 5,
   "created_at": "2022-07-25T11:39:35Z",
-  "updated_at": "2022-07-25T15:33:03Z",
+  "updated_at": "2022-07-26T11:46:13Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -236,6 +245,50 @@
     "body": "No a sethead can not fix a broken database, you need to remove the state database: `geth removedb` `y` `n`. This will remove the state but not the history. Then you need to resync the state",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1194103600/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1195377387",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25396#issuecomment-1195377387",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25396",
+    "id": 1195377387,
+    "node_id": "IC_kwDOAOvK985HQALr",
+    "user": {
+      "login": "ligi",
+      "id": 111600,
+      "node_id": "MDQ6VXNlcjExMTYwMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ligi",
+      "html_url": "https://github.com/ligi",
+      "followers_url": "https://api.github.com/users/ligi/followers",
+      "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+      "organizations_url": "https://api.github.com/users/ligi/orgs",
+      "repos_url": "https://api.github.com/users/ligi/repos",
+      "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ligi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-07-26T11:46:06Z",
+    "updated_at": "2022-07-26T11:46:06Z",
+    "author_association": "MEMBER",
+    "body": "did you have an unclean shutdown?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1195377387/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

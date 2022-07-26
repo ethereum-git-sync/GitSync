@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2693,
+    "title": "fix compiler version setting using URL params",
+    "updatedAt": "2022-07-26T08:59:52Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2692,
+    "title": "Automatically update language in compile plugin according to file selected for compilation",
+    "updatedAt": "2022-07-26T08:55:00Z"
+  },
+  {
+    "author": {
       "login": "ryestew"
     },
     "number": 2690,

@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "tvanepps"
+    },
+    "number": 546,
+    "title": "KZG-Ceremony Breakout Call #1",
+    "updatedAt": "2022-07-26T21:38:03Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 558,
+    "title": "KZG-Ceremony Call #2",
+    "updatedAt": "2022-07-26T21:37:57Z"
+  },
+  {
+    "author": {
       "login": "djrtwo"
     },
     "number": 574,
@@ -177,14 +193,6 @@
   },
   {
     "author": {
-      "login": "tvanepps"
-    },
-    "number": 558,
-    "title": "KZG-Ceremony Call #2",
-    "updatedAt": "2022-06-23T13:57:16Z"
-  },
-  {
-    "author": {
       "login": "timbeiko"
     },
     "number": 543,
@@ -230,14 +238,6 @@
     "number": 525,
     "title": "Ropsten beacon chain",
     "updatedAt": "2022-06-09T17:12:50Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 546,
-    "title": "KZG-Ceremony Breakout Call #1",
-    "updatedAt": "2022-06-09T15:44:52Z"
   },
   {
     "author": {

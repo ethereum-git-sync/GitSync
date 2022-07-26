@@ -49,7 +49,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -58,12 +58,31 @@
   "milestone": null,
   "comments": 2,
   "created_at": "2022-07-25T19:50:58Z",
-  "updated_at": "2022-07-26T11:56:05Z",
-  "closed_at": null,
+  "updated_at": "2022-07-26T13:09:01Z",
+  "closed_at": "2022-07-26T13:09:01Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "#### System information\r\n\r\n**Geth version: `latest version `\r\nOS & Version: Linux ubuntu 22.04\r\nGo version : go 1.18beta1**\r\n\r\nwhen i run following code : \" _go get github.com/ethereum/go-ethereum/ethclient_\"\r\n\r\nface with this error :\r\n\r\n**github.com/ethereum/go-ethereum/rpc\r\nsrc/github.com/ethereum/go-ethereum/rpc/server.go:49:11: cannot use generic type mapset.Set[T comparable] without instantiation\r\nsrc/github.com/ethereum/go-ethereum/rpc/server.go:54:69: cannot infer T (/home/dramintoosi/go/src/github.com/deckarep/golang-set/set.go:180:13)\r\nsrc/github.com/ethereum/go-ethereum/rpc/websocket.go:72:26: cannot infer T (/home/dramintoosi/go/src/github.com/deckarep/golang-set/set.go:180:13)\r\nsrc/github.com/ethereum/go-ethereum/rpc/websocket.go:125:37: cannot use generic type mapset.Set[T comparable] without instantiation**\r\n\r\nin https://github.com/ethereum/go-ethereum/issues/24903 talked about \"switche golang-set back to 1.8.0\", but i dont know how, when and where switch that? have \"go get\" any option for that?\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25402/reactions",
     "total_count": 0,
@@ -78,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25402/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

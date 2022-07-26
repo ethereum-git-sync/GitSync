@@ -79,7 +79,19 @@ then
 	gather_issues ${1}
 	
 	#Push to GitHub
+	if [ ! -d /home/ubuntu/git/GitSync/issue/${1} ]
+	then
+		mkdir -p /home/ubuntu/git/GitSync/issue/${1}
+	fi
+
+	if [ ! -d /home/ubuntu/issue/${1} ]
+	then
+		mkdir -p /home/ubuntu/issue/${1}
+	fi
+
+        /usr/bin/git -C ~/repo/github/$"$repo_owner" clone git@github.com:$"$1"
 	cp -r /home/ubuntu/issue/${1}/. /home/ubuntu/git/GitSync/issue/${1}
+	
 	cd /home/ubuntu/git/GitSync
 	git fetch
 	git merge

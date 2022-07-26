@@ -7,6 +7,10 @@ repo_name=${1#*/}
 if [ ! -d /home/ubuntu/repo/github/$1 ]
 then
 	echo "Initializing ${1} git repository..."
+	if [ ! -d ~/repo/github/$"$repo_owner" ]
+	then
+		mkdir ~/repo/github/$"$repo_owner"
+	fi
         /usr/bin/git -C ~/repo/github/$"$repo_owner" clone git@github.com:$"$1"
 else
 	echo "Updating ${1} git repository..."
@@ -18,9 +22,11 @@ gitea_account=""
 if [ "$repo_owner" = "ethereum" ]
 then
 	gitea_account="ethereum-git-sync"
-elif [ "$repo_owner" = "ethereum-cat-herders" ]
+	gitea_ssh="gitea.com-ethereum-git-sync"
+elif [ "$repo_owner" = "ethereum-cat-herders" ] || [ "$repo_owner" = "ethereum-git-sync" ] 
 then
 	gitea_account="tweth"
+	gitea_ssh="gitea.com-tweth"
 fi
 
-/usr/bin/git -C ~/repo/github/$"$1" push --prune --mirror git@gitea.com:$gitea_account/$"$repo_name"
+/usr/bin/git -C ~/repo/github/$"$1" push --prune --mirror git@${gitea_ssh}:$gitea_account/$"$repo_name"

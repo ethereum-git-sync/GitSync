@@ -1,11 +1,19 @@
 [
   {
     "author": {
-      "login": "pokrovskyy"
+      "login": "ryestew"
     },
-    "number": 2684,
-    "title": "Yul-compiled contract does not show up in Contracts since v0.25.0",
-    "updatedAt": "2022-07-26T07:01:14Z"
+    "number": 2690,
+    "title": "In permissions modal, reset should be underlined on hover.",
+    "updatedAt": "2022-07-26T07:59:23Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2689,
+    "title": "update text in permissions modal ",
+    "updatedAt": "2022-07-26T07:57:46Z"
   },
   {
     "author": {
@@ -13,7 +21,31 @@
     },
     "number": 2685,
     "title": "Don't show anything",
-    "updatedAt": "2022-07-26T06:20:47Z"
+    "updatedAt": "2022-07-26T07:56:06Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2688,
+    "title": "save file with .yul when URL params have code given & language set as yul",
+    "updatedAt": "2022-07-26T07:55:43Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2687,
+    "title": "Remove Environment plugins from the plugin manager",
+    "updatedAt": "2022-07-26T07:50:02Z"
+  },
+  {
+    "author": {
+      "login": "pokrovskyy"
+    },
+    "number": 2684,
+    "title": "Yul-compiled contract does not show up in Contracts since v0.25.0",
+    "updatedAt": "2022-07-26T07:01:14Z"
   },
   {
     "author": {

@@ -3,6 +3,6 @@ ethereum/go-ethereum
 ethereum/remix-project
 ethereum/EIPs
 ethereum/PM
-ethereum/solidity
 ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM
+ethereum-git-sync/GitSync

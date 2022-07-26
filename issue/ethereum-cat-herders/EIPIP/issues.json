@@ -3,9 +3,25 @@
     "author": {
       "login": "poojaranjan"
     },
+    "number": 166,
+    "title": "EIP editor apprenticeship meeting 23",
+    "updatedAt": "2022-07-26T18:25:25Z"
+  },
+  {
+    "author": {
+      "login": "TimDaub"
+    },
+    "number": 156,
+    "title": "EIP-4907 has inconsistencies with EIP-721 but it is flagged final and hence cannot be changed?",
+    "updatedAt": "2022-07-26T18:23:38Z"
+  },
+  {
+    "author": {
+      "login": "poojaranjan"
+    },
     "number": 161,
     "title": "EIPIP Meeting 61 Agenda ",
-    "updatedAt": "2022-07-26T17:15:28Z"
+    "updatedAt": "2022-07-26T18:14:10Z"
   },
   {
     "author": {
@@ -86,14 +102,6 @@
     "number": 142,
     "title": "Permacast link 404's",
     "updatedAt": "2022-07-11T17:30:17Z"
-  },
-  {
-    "author": {
-      "login": "TimDaub"
-    },
-    "number": 156,
-    "title": "EIP-4907 has inconsistencies with EIP-721 but it is flagged final and hence cannot be changed?",
-    "updatedAt": "2022-07-11T16:45:27Z"
   },
   {
     "author": {

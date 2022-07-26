@@ -38,6 +38,24 @@
       "color": "FF5E5E",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 717742232,
+      "node_id": "MDU6TGFiZWw3MTc3NDIyMzI=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/help%20wanted",
+      "name": "help wanted",
+      "color": "0e8a16",
+      "default": true,
+      "description": null
+    },
+    {
+      "id": 1132689577,
+      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
+      "name": "status:triage",
+      "color": "6be514",
+      "default": false,
+      "description": ""
     }
   ],
   "state": "open",
@@ -87,7 +105,7 @@
   "milestone": null,
   "comments": 3,
   "created_at": "2022-03-22T22:05:27Z",
-  "updated_at": "2022-04-12T09:28:19Z",
+  "updated_at": "2022-07-26T12:24:17Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,

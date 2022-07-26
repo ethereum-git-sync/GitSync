@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "axic"
+    },
+    "number": 2967,
+    "title": "EIP-1: Stronger rules for discussion-url",
+    "updatedAt": "2022-07-26T20:05:19Z"
+  },
+  {
+    "author": {
       "login": "MicahZoltu"
     },
     "number": 5298,
@@ -4910,14 +4918,6 @@
     "number": 2960,
     "title": "EIP-1: Include RFC 2119 recommendation into EIP-1 so EIPs do not need to duplicate it",
     "updatedAt": "2021-11-04T11:24:08Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 2967,
-    "title": "EIP-1: Stronger rules for discussion-url",
-    "updatedAt": "2021-11-04T11:22:50Z"
   },
   {
     "author": {

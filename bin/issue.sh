@@ -78,10 +78,10 @@ then
 	echo ${1}
 	gather_issues ${1}
 	
-	cd /home/ubuntu/GitSync
+	cd /home/ubuntu/GitSync/issue/
 	git fetch
 	git merge
-	git add /home/ubuntu/GitSync/issue/*
+	git add .
 	git commit -m "Updated issues for $1"
 	git push
 else

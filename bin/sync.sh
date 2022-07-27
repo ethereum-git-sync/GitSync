@@ -4,17 +4,17 @@
 repo_owner="${1%%/*}"
 repo_name=${1#*/}
 
-if [ ! -d /home/ubuntu/repo/github/$1 ]
+if [ ! -d /home/ubuntu/GitSync/repo/github/$1 ]
 then
 	echo "Initializing ${1} git repository..."
-	if [ ! -d ~/repo/github/$"$repo_owner" ]
+	if [ ! -d /home/ubuntu/GitSync/repo/github/$"$repo_owner" ]
 	then
-		mkdir ~/repo/github/$"$repo_owner"
+		mkdir /home/ubuntu/GitSync/repo/github/$"$repo_owner"
 	fi
-        /usr/bin/git -C ~/repo/github/$"$repo_owner" clone git@github.com:$"$1"
+        /usr/bin/git -C /home/ubuntu/GitSync/repo/github/$"$repo_owner" clone git@github.com:$"$1"
 else
 	echo "Updating ${1} git repository..."
-	/usr/bin/git -C ~/repo/github/$"$1" pull --all 
+	/usr/bin/git -C /home/ubuntu/GitSync/repo/github/$"$1" pull --all 
 fi
 
 echo "Copying ${1}..."
@@ -29,4 +29,4 @@ then
 	gitea_ssh="gitea.com-tweth"
 fi
 
-/usr/bin/git -C ~/repo/github/$"$1" push --prune --mirror git@${gitea_ssh}:$gitea_account/$"$repo_name"
+/usr/bin/git -C /home/ubuntu/GitSync/repo/github/$"$1" push --prune --mirror git@${gitea_ssh}:$gitea_account/$"$repo_name"

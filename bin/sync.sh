@@ -9,7 +9,7 @@ then
 	echo "Initializing ${1} git repository..."
 	if [ ! -d /home/ubuntu/GitSync/repo/github/$"$repo_owner" ]
 	then
-		mkdir /home/ubuntu/GitSync/repo/github/$"$repo_owner"
+		mkdir -p /home/ubuntu/GitSync/repo/github/$"$repo_owner"
 	fi
         /usr/bin/git -C /home/ubuntu/GitSync/repo/github/$"$repo_owner" clone git@github.com:$"$1"
 else

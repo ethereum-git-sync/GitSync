@@ -5,7 +5,7 @@ API_LIMIT_REACHED=0
 function create_directory() {
         if [ ! -d /home/ubuntu/GitSync/issue/$1 ]
         then
-                mkdir /home/ubuntu/GitSync/issue/$1
+                mkdir -p /home/ubuntu/GitSync/issue/$1
         fi
 }
 

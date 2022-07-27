@@ -1,19 +1,19 @@
 [
   {
     "author": {
+      "login": "bert2002"
+    },
+    "number": 25404,
+    "title": "CPU usage trippelt after upgrade to v1.10.20",
+    "updatedAt": "2022-07-27T01:53:02Z"
+  },
+  {
+    "author": {
       "login": "MariusVanDerWijden"
     },
     "number": 25412,
     "title": "Impossible reorg",
     "updatedAt": "2022-07-27T00:30:18Z"
-  },
-  {
-    "author": {
-      "login": "bert2002"
-    },
-    "number": 25404,
-    "title": "CPU usage trippelt after upgrade to v1.10.20",
-    "updatedAt": "2022-07-26T19:40:23Z"
   },
   {
     "author": {

@@ -46,6 +46,8 @@ Host gitea.com
         IdentitiesOnly yes
 	IdentityFile ~/.ssh/SSH_KEY
 ```
+If multiple users for the same host are needed, a Host block can be copied, with only the Host name and IdentityFile needing updated to represent an additional user and their SSH key. Scripts should be updated to reflect this change as well (git@gitea.com, git@gitea.com-2, etc.).
+
 SSH_KEY is to be replaced with your own private keys that corrispond to public keys attached to the GitHub/Gitea/etc accounts being used in the syncing scripts. A public key can be added at...
 
 GitHub: https://github.com/settings/keys

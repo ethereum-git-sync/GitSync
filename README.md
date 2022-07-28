@@ -10,6 +10,8 @@ ethereum/consensus-specs
 ethereum/go-ethereum
 ethereum/remix-project
 ethereum/EIPs
+ethereum/Solidity
+ethereum/DevOps
 ethereum/PM
 ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM

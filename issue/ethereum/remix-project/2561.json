@@ -56,6 +56,15 @@
       "color": "fffdaa",
       "default": false,
       "description": "Require discussion"
+    },
+    {
+      "id": 3954919482,
+      "node_id": "LA_kwDODtLRw87ru0g6",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/effort:%203",
+      "name": "effort: 3",
+      "color": "E3304A",
+      "default": false,
+      "description": ""
     }
   ],
   "state": "open",
@@ -105,7 +114,7 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-06-22T08:40:42Z",
-  "updated_at": "2022-07-25T12:08:11Z",
+  "updated_at": "2022-07-27T11:43:54Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,

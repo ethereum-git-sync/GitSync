@@ -47,6 +47,15 @@
       "color": "111111",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 3954918051,
+      "node_id": "LA_kwDODtLRw87ru0Kj",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/effort:%202",
+      "name": "effort: 2",
+      "color": "E3304A",
+      "default": false,
+      "description": ""
     }
   ],
   "state": "open",
@@ -96,7 +105,7 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-06-22T08:18:36Z",
-  "updated_at": "2022-07-22T12:01:26Z",
+  "updated_at": "2022-07-27T11:44:03Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,

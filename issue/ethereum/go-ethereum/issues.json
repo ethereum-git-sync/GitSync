@@ -1,6 +1,86 @@
 [
   {
     "author": {
+      "login": "cryptonana"
+    },
+    "number": 25409,
+    "title": "puppeth nginx issue",
+    "updatedAt": "2022-07-27T23:36:58Z"
+  },
+  {
+    "author": {
+      "login": "xrchz"
+    },
+    "number": 23191,
+    "title": "State heal phase is very slow (not finished after 2 weeks)",
+    "updatedAt": "2022-07-27T21:12:10Z"
+  },
+  {
+    "author": {
+      "login": "rezaeghbal01"
+    },
+    "number": 25424,
+    "title": "Share the CoinGecko App",
+    "updatedAt": "2022-07-27T21:04:19Z"
+  },
+  {
+    "author": {
+      "login": "dzou"
+    },
+    "number": 24413,
+    "title": "[Question] Snap/Fast sync vs. Full sync for Archive nodes?",
+    "updatedAt": "2022-07-27T20:11:29Z"
+  },
+  {
+    "author": {
+      "login": "phahulin"
+    },
+    "number": 20170,
+    "title": "gcmode missing in toml config?",
+    "updatedAt": "2022-07-27T19:39:40Z"
+  },
+  {
+    "author": {
+      "login": "rjl493456442"
+    },
+    "number": 25390,
+    "title": "all: PRs for Path-based state scheme",
+    "updatedAt": "2022-07-27T18:37:26Z"
+  },
+  {
+    "author": {
+      "login": "holiman"
+    },
+    "number": 22736,
+    "title": "London hardfork tracker",
+    "updatedAt": "2022-07-27T17:39:50Z"
+  },
+  {
+    "author": {
+      "login": "ryanschneider"
+    },
+    "number": 25421,
+    "title": "Apparent Performance regression in `eth_getLogs`",
+    "updatedAt": "2022-07-27T17:31:26Z"
+  },
+  {
+    "author": {
+      "login": "lorenzourb"
+    },
+    "number": 25420,
+    "title": "Eth-merge: `eth_feeHistory` crashes when `finalized` block is passed",
+    "updatedAt": "2022-07-27T16:16:52Z"
+  },
+  {
+    "author": {
+      "login": "rezaeghbal01"
+    },
+    "number": 25410,
+    "title": "bip-0322.mediawiki",
+    "updatedAt": "2022-07-27T09:05:11Z"
+  },
+  {
+    "author": {
       "login": "bert2002"
     },
     "number": 25404,
@@ -17,35 +97,11 @@
   },
   {
     "author": {
-      "login": "cryptonana"
-    },
-    "number": 25409,
-    "title": "puppeth nginx issue",
-    "updatedAt": "2022-07-26T19:40:10Z"
-  },
-  {
-    "author": {
-      "login": "rezaeghbal01"
-    },
-    "number": 25410,
-    "title": "bip-0322.mediawiki",
-    "updatedAt": "2022-07-26T19:39:57Z"
-  },
-  {
-    "author": {
       "login": "mars4science"
     },
     "number": 25375,
     "title": "Error: could not decrypt key with given password (in geth when personal.signTransaction after personal.unlockAccount)",
     "updatedAt": "2022-07-26T16:03:16Z"
-  },
-  {
-    "author": {
-      "login": "xrchz"
-    },
-    "number": 23191,
-    "title": "State heal phase is very slow (not finished after 2 weeks)",
-    "updatedAt": "2022-07-26T14:11:09Z"
   },
   {
     "author": {
@@ -206,14 +262,6 @@
     "number": 24524,
     "title": "Add newPendingRawTransactions to filter system to save bandwidth",
     "updatedAt": "2022-07-25T13:36:18Z"
-  },
-  {
-    "author": {
-      "login": "rjl493456442"
-    },
-    "number": 25390,
-    "title": "all: PRs for Path-based state scheme",
-    "updatedAt": "2022-07-25T12:00:45Z"
   },
   {
     "author": {
@@ -1969,14 +2017,6 @@
   },
   {
     "author": {
-      "login": "dzou"
-    },
-    "number": 24413,
-    "title": "[Question] Snap/Fast sync vs. Full sync for Archive nodes?",
-    "updatedAt": "2022-06-01T04:02:04Z"
-  },
-  {
-    "author": {
       "login": "berktaylan"
     },
     "number": 24964,
@@ -2926,14 +2966,6 @@
     "number": 24753,
     "title": "@rjl493456442 @mcdee yeah, having thought about it some more, i'm thinking to not bother with the hash tree root here and use the usual algorithm for determining the transaction hash",
     "updatedAt": "2022-04-25T02:03:33Z"
-  },
-  {
-    "author": {
-      "login": "phahulin"
-    },
-    "number": 20170,
-    "title": "gcmode missing in toml config?",
-    "updatedAt": "2022-04-22T06:56:59Z"
   },
   {
     "author": {
@@ -8326,14 +8358,6 @@
     "number": 23106,
     "title": "How to get information from the ETH node(geth) about the USDT token ",
     "updatedAt": "2021-08-17T09:36:34Z"
-  },
-  {
-    "author": {
-      "login": "holiman"
-    },
-    "number": 22736,
-    "title": "London hardfork tracker",
-    "updatedAt": "2021-08-17T09:25:45Z"
   },
   {
     "author": {

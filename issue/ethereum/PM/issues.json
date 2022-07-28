@@ -1,6 +1,30 @@
 [
   {
     "author": {
+      "login": "djrtwo"
+    },
+    "number": 574,
+    "title": "Consensus-layer Call 92",
+    "updatedAt": "2022-07-27T18:44:52Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 581,
+    "title": "EIP-4844 Breakout Room #2",
+    "updatedAt": "2022-07-27T17:32:54Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 569,
+    "title": "KZG-Ceremony Call #4",
+    "updatedAt": "2022-07-27T15:09:05Z"
+  },
+  {
+    "author": {
       "login": "tvanepps"
     },
     "number": 546,
@@ -14,14 +38,6 @@
     "number": 558,
     "title": "KZG-Ceremony Call #2",
     "updatedAt": "2022-07-26T21:37:57Z"
-  },
-  {
-    "author": {
-      "login": "djrtwo"
-    },
-    "number": 574,
-    "title": "Consensus-layer Call 92",
-    "updatedAt": "2022-07-26T19:45:40Z"
   },
   {
     "author": {
@@ -41,27 +57,11 @@
   },
   {
     "author": {
-      "login": "tvanepps"
-    },
-    "number": 569,
-    "title": "KZG-Ceremony Call #4",
-    "updatedAt": "2022-07-22T14:14:07Z"
-  },
-  {
-    "author": {
       "login": "timbeiko"
     },
     "number": 572,
     "title": "Ethereum Core Devs Meeting 143 Agenda",
     "updatedAt": "2022-07-21T16:37:34Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 581,
-    "title": "EIP-4844 Breakout Room #2",
-    "updatedAt": "2022-07-18T16:50:59Z"
   },
   {
     "author": {

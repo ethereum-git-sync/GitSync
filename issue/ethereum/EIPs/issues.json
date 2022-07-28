@@ -1,11 +1,19 @@
 [
   {
     "author": {
-      "login": "axic"
+      "login": "xinbenlv"
     },
-    "number": 2967,
-    "title": "EIP-1: Stronger rules for discussion-url",
-    "updatedAt": "2022-07-26T20:05:19Z"
+    "number": 5274,
+    "title": "Proposal for EIP preamble: include separate `relates-to:` as an optional field",
+    "updatedAt": "2022-07-27T14:25:51Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5352,
+    "title": "Display a \"citation\" when hovering over links to other EIPs",
+    "updatedAt": "2022-07-27T14:21:18Z"
   },
   {
     "author": {
@@ -13,7 +21,7 @@
     },
     "number": 5298,
     "title": "[Security] Pin all GitHub Action dependencies to hash version.",
-    "updatedAt": "2022-07-26T18:42:54Z"
+    "updatedAt": "2022-07-27T05:46:47Z"
   },
   {
     "author": {
@@ -21,7 +29,15 @@
     },
     "number": 5310,
     "title": "[Bug]: GitHub actions don't run for first time contributors",
-    "updatedAt": "2022-07-26T18:42:50Z"
+    "updatedAt": "2022-07-27T05:02:51Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 2967,
+    "title": "EIP-1: Stronger rules for discussion-url",
+    "updatedAt": "2022-07-26T20:05:19Z"
   },
   {
     "author": {
@@ -86,14 +102,6 @@
     "number": 5318,
     "title": "[Bug]: Branch protection rules need updating",
     "updatedAt": "2022-07-23T14:38:16Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5274,
-    "title": "Proposal for EIP preamble: include separate `relates-to:` as an optional field",
-    "updatedAt": "2022-07-23T03:26:25Z"
   },
   {
     "author": {

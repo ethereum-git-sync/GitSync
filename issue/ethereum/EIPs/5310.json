@@ -32,17 +32,17 @@
   "labels": [
 
   ],
-  "state": "closed",
+  "state": "open",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 5,
+  "comments": 6,
   "created_at": "2022-07-22T15:06:20Z",
-  "updated_at": "2022-07-26T18:42:50Z",
-  "closed_at": "2022-07-23T12:07:47Z",
+  "updated_at": "2022-07-27T05:02:51Z",
+  "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "### Pull Request\n\nhttps://github.com/ethereum/EIPs/pull/5164\n\n### What happened?\n\n`eipw` and friends didn't run automatically for this PR since this is the authors first time contributing.\n\n### Relevant log output\n\n_No response_",
@@ -80,7 +80,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/5310/timeline",
   "performed_via_github_app": null,
-  "state_reason": "completed"
+  "state_reason": "reopened"
 }
 [
   {
@@ -291,6 +291,50 @@
     "body": "Needs reopening.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1195851132/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1196268984",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5310#issuecomment-1196268984",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5310",
+    "id": 1196268984,
+    "node_id": "IC_kwDOAq426M5HTZ24",
+    "user": {
+      "login": "MicahZoltu",
+      "id": 886059,
+      "node_id": "MDQ6VXNlcjg4NjA1OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/886059?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MicahZoltu",
+      "html_url": "https://github.com/MicahZoltu",
+      "followers_url": "https://api.github.com/users/MicahZoltu/followers",
+      "following_url": "https://api.github.com/users/MicahZoltu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MicahZoltu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MicahZoltu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MicahZoltu/subscriptions",
+      "organizations_url": "https://api.github.com/users/MicahZoltu/orgs",
+      "repos_url": "https://api.github.com/users/MicahZoltu/repos",
+      "events_url": "https://api.github.com/users/MicahZoltu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MicahZoltu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-07-27T05:02:51Z",
+    "updated_at": "2022-07-27T05:02:51Z",
+    "author_association": "MEMBER",
+    "body": "> We should probably limit the set of actions that can be run to protect against that attack vector more broadly, though I think there are actions that let you run arbitrary shell commands so I'm not sure that would help much.\r\n\r\nThe prescience of this comment is alarming.  😬 ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1196268984/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

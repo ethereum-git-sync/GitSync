@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/9048",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/9048/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/9048/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/9048/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/9048",
+  "id": 626337886,
+  "node_id": "MDU6SXNzdWU2MjYzMzc4ODY=",
+  "number": 9048,
+  "title": "[SMTChecker] Support FixedPoint",
+  "user": {
+    "login": "leonardoalt",
+    "id": 504195,
+    "node_id": "MDQ6VXNlcjUwNDE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonardoalt",
+    "html_url": "https://github.com/leonardoalt",
+    "followers_url": "https://api.github.com/users/leonardoalt/followers",
+    "following_url": "https://api.github.com/users/leonardoalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonardoalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonardoalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonardoalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonardoalt/orgs",
+    "repos_url": "https://api.github.com/users/leonardoalt/repos",
+    "events_url": "https://api.github.com/users/leonardoalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonardoalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-05-28T08:54:17Z",
+  "updated_at": "2020-05-28T08:54:17Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Even though Solidity doesn't compile FixedPoint yet, it could make sense for the SMTChecker to support them as Real. Right now they are abstracted as Integers because they're not compiled anyway.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/9048/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/9048/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

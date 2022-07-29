@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13314",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13314/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13314/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13314/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13314",
+  "id": 1320722011,
+  "node_id": "I_kwDOAm_5kc5OuJ5b",
+  "number": 13314,
+  "title": "Using constant from library gives error",
+  "user": {
+    "login": "zemse",
+    "id": 22412996,
+    "node_id": "MDQ6VXNlcjIyNDEyOTk2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412996?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zemse",
+    "html_url": "https://github.com/zemse",
+    "followers_url": "https://api.github.com/users/zemse/followers",
+    "following_url": "https://api.github.com/users/zemse/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zemse/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zemse/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zemse/subscriptions",
+    "organizations_url": "https://api.github.com/users/zemse/orgs",
+    "repos_url": "https://api.github.com/users/zemse/repos",
+    "events_url": "https://api.github.com/users/zemse/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zemse/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-07-28T10:24:55Z",
+  "updated_at": "2022-07-28T10:26:17Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "<!--## Prerequisites\r\n\r\n- First, many thanks for taking part in the community. We really appreciate that.\r\n- We realize there is a lot of information requested here. We ask only that you do your best to provide as much information as possible so we can better help you.\r\n- Support questions are better asked in one of the following locations:\r\n    - [Solidity chat](https://gitter.im/ethereum/solidity)\r\n    - [Stack Overflow](https://ethereum.stackexchange.com/)\r\n- Ensure the issue isn't already reported.\r\n- The issue should be reproducible with the latest solidity version; however, this isn't a hard requirement and being reproducible with an older version is sufficient.\r\n\r\n*Delete the above section and the instructions in the sections below before submitting*\r\n-->\r\n\r\n## Description\r\n\r\n<!--Please shortly describe the bug you have found, and what you expect instead.-->\r\n\r\n```solidity\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nlibrary MyLib {\r\n    uint internal constant val1 = 3;\r\n\r\n\r\n    uint internal constant useVal1InMyLib = val1 / 2;\r\n}\r\n\r\ncontract MyContract {\r\n    uint constant useVal1InMyContract = MyLib.val1 / 2; // this line errors\r\n}\r\n```\r\n\r\nError:\r\n\r\n```\r\nTypeError: Initial value for constant variable has to be compile-time constant.\r\n--> contracts/Const.sol:12:41:\r\n|\r\n12 | uint constant useVal1InMyContract = MyLib.val1 / 2;\r\n| ^^^^^^^^^^^^^^\r\n```\r\n\r\nSince the val1 is marked as constant, it is seen as compile time constant in MyLib, but it should be compile time constant in MyContract too.\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.15\r\n- Target EVM version (as per compiler settings): berlin\r\n- Framework/IDE (e.g. Truffle or Remix): Remix\r\n- EVM execution environment / backend / blockchain client: hardhat\r\n- Operating system: macos\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13314/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13314/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

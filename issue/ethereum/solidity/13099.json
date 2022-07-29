@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13099",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13099/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13099/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13099/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13099",
+  "id": 1263083018,
+  "node_id": "I_kwDOAm_5kc5LSR4K",
+  "number": 13099,
+  "title": "[Yul Optimizer] Extend LoadResolver to assume zeroed storage during creation code. (And zeroed memory at transaction start.)",
+  "user": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1012614240,
+      "node_id": "MDU6TGFiZWwxMDEyNjE0MjQw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20challenging",
+      "name": "difficulty: challenging",
+      "color": "c300d8",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-06-07T10:35:28Z",
+  "updated_at": "2022-06-20T10:34:26Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Consider the following contract:\r\n```\r\ncontract C {\r\n        bytes x = \"0123\";\r\n}\r\n```\r\n\r\nThe creation code of ``C`` has to initialize the state variable ``x``. However, in order to do so, it first *reads* the length field from storage, resulting in ``--ir-optimized --optimize`` of above contract to produce:\r\n\r\n```\r\nobject \"C_4\" {\r\n    code {\r\n        {\r\n            let _1 := memoryguard(0x80)\r\n            mstore(64, _1)\r\n            if callvalue() { revert(0, 0) }\r\n\r\n            let _2 := 0x00\r\n            let _3 := sload( _2) // We can assume ``sload(_2)`` to return 0!\r\n            let length := _2\r\n  \r\n           ... rest of creation code....\r\n    }\r\n\r\n    object \"C_4_deployed\" {\r\n        code {\r\n            {\r\n                revert(0, 0)\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n```\r\n\r\nSince at creation time, all storage slots are zero, we can resolve ``sload(_2)`` in this snippet to plain ``0``.\r\n\r\nThis optimization should be done in the ``LoadResolver`` optimizer step, by enriching it with the knowledge that all storage is zero at creation time. To that end, ``LoadResolver`` will need to determine whether it is run on creation code - this can for example be done by checking if it is run on a Yul object with a name that is not suffixed with ``_deployed``.\r\n\r\nSimilarly, in a separate step, we can extend the ``LoadResolver`` to also assume that all memory is zero at the begin of each transaction.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13099/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13099/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1160253170",
+    "html_url": "https://github.com/ethereum/solidity/issues/13099#issuecomment-1160253170",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13099",
+    "id": 1160253170,
+    "node_id": "IC_kwDOAm_5kc5FKA7y",
+    "user": {
+      "login": "chriseth",
+      "id": 9073706,
+      "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chriseth",
+      "html_url": "https://github.com/chriseth",
+      "followers_url": "https://api.github.com/users/chriseth/followers",
+      "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+      "organizations_url": "https://api.github.com/users/chriseth/orgs",
+      "repos_url": "https://api.github.com/users/chriseth/repos",
+      "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chriseth/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-06-20T10:15:36Z",
+    "updated_at": "2022-06-20T10:34:26Z",
+    "author_association": "MEMBER",
+    "body": "It should also bring a gigantic benefit to transfer this information into functions: Whenever you call \"allocate\" there is an overflow check on the free memory pointer. This can be removed if all previous allocations are statically-sized (or even bounded later on).\r\n\r\nNot all functions will be inlined into the top level, but they might be only called from the external dispatch, which could allow us to make use of this information and remove the overflow check on the free memory pointer (and even only write to it once after a series of allocations).\r\n\r\nA complication for implementation is that the memory and storage contents works with variables and not literals values. There is a special variable for the zero value, but if we want to pull the information at the point of call into the function itself, this might be difficult because the variables are not available.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1160253170/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

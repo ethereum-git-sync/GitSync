@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11885",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11885/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11885/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11885/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11885",
+  "id": 985420848,
+  "node_id": "MDU6SXNzdWU5ODU0MjA4NDg=",
+  "number": 11885,
+  "title": "[SMTChecker] False report on `msg.value` in internal functions",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-09-01T17:40:29Z",
+  "updated_at": "2021-09-15T20:01:30Z",
+  "closed_at": "2021-09-15T20:01:30Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "```solidity\r\ncontract C {\r\n  function g() external {\r\n    f();\r\n  }\r\n  \r\n  function h() external payable {\r\n    f();\r\n  }\r\n\r\n  function f() internal {\r\n    require(msg.value == 0, \"\");\r\n  }\r\n}\r\n```\r\n\r\nHowever weird this looks, it is valid.\r\n\r\nThe SMTChecker complains with `BMC: Condition is always true.` on the `msg.value == 0` line.",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11885/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11885/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

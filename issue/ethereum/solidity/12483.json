@@ -1,0 +1,94 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12483",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12483/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12483/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12483/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12483",
+  "id": 1092643325,
+  "node_id": "I_kwDOAm_5kc5BIGn9",
+  "number": 12483,
+  "title": "Disallow virtual modifiers",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 467898404,
+      "node_id": "MDU6TGFiZWw0Njc4OTg0MDQ=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/breaking%20change%20:warning:",
+      "name": "breaking change :warning:",
+      "color": "b60205",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 692642590,
+      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
+      "name": "feature",
+      "color": "fbca04",
+      "default": false,
+      "description": null
+    },
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-01-03T16:21:51Z",
+  "updated_at": "2022-01-03T16:21:51Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Modifiers are already a very complicated concept and we should not make it more difficult by allowing them to be virtual. Except for weird cases (adding another placeholder, putting it inside a loop, ...), you can get the same behaviour by adding a virtual function that is called from the modifier.\r\n\r\nI would propose to remove this feature from the language with 0.9.0.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12483/reactions",
+    "total_count": 6,
+    "+1": 4,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 1,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 1,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12483/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

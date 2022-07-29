@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13186",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13186/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13186/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13186/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13186",
+  "id": 1278531100,
+  "node_id": "I_kwDOAm_5kc5MNNYc",
+  "number": 13186,
+  "title": "Struct typeIdentifier location",
+  "user": {
+    "login": "anton-cs",
+    "id": 92874502,
+    "node_id": "U_kgDOBYknBg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/92874502?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/anton-cs",
+    "html_url": "https://github.com/anton-cs",
+    "followers_url": "https://api.github.com/users/anton-cs/followers",
+    "following_url": "https://api.github.com/users/anton-cs/following{/other_user}",
+    "gists_url": "https://api.github.com/users/anton-cs/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/anton-cs/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/anton-cs/subscriptions",
+    "organizations_url": "https://api.github.com/users/anton-cs/orgs",
+    "repos_url": "https://api.github.com/users/anton-cs/repos",
+    "events_url": "https://api.github.com/users/anton-cs/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/anton-cs/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-21T14:24:12Z",
+  "updated_at": "2022-06-21T14:24:12Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "<!--## Prerequisites\r\n\r\n- First, many thanks for taking part in the community. We really appreciate that.\r\n- We realize there is a lot of information requested here. We ask only that you do your best to provide as much information as possible so we can better help you.\r\n- Support questions are better asked in one of the following locations:\r\n    - [Solidity chat](https://gitter.im/ethereum/solidity)\r\n    - [Stack Overflow](https://ethereum.stackexchange.com/)\r\n- Ensure the issue isn't already reported.\r\n- The issue should be reproducible with the latest solidity version; however, this isn't a hard requirement and being reproducible with an older version is sufficient.\r\n\r\n*Delete the above section and the instructions in the sections below before submitting*\r\n-->\r\n\r\n## Description\r\n\r\n<!--Please shortly describe the bug you have found, and what you expect instead.-->\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.15+commit.e14f2714.Linux.g++\r\n- Operating system: Arch\r\n\r\n## Steps to Reproduce\r\n\r\n<!--\r\nPlease provide a *minimal* source code example to trigger the bug you have found.\r\nPlease also mention any command line flags that are necessary for triggering the bug.\r\nProvide as much information as necessary to reproduce the bug.\r\n-->\r\n```solidity\r\nstruct A {\r\n    uint a;\r\n}\r\n\r\ncontract C{\r\n\r\n    type B is uint256;\r\n\r\n    function foo() external{\r\n        A memory a;\r\n        B c;\r\n    }\r\n}\r\n\r\n```\r\nFollowing snipper will produce ast json for the `A memory a`:\r\n\r\n```json\r\n{\r\n    \"constant\": false,\r\n    \"id\": 10,\r\n    \"mutability\": \"mutable\",\r\n    \"name\": \"a\",\r\n    \"nameLocation\": \"109:1:0\",\r\n    \"nodeType\": \"VariableDeclaration\",\r\n    \"scope\": 16,\r\n    \"src\": \"100:10:0\",\r\n    \"stateVariable\": false,\r\n    \"storageLocation\": \"memory\",\r\n    \"typeDescriptions\": {\r\n        \"typeIdentifier\": \"t_struct$_A_$3_memory_ptr\",\r\n        \"typeString\": \"struct A\"\r\n    },\r\n    \"typeName\": {\r\n        \"id\": 9,\r\n        \"nodeType\": \"UserDefinedTypeName\",\r\n        \"pathNode\": {\r\n            \"id\": 8,\r\n            \"name\": \"A\",\r\n            \"nodeType\": \"IdentifierPath\",\r\n            \"referencedDeclaration\": 3,\r\n            \"src\": \"100:1:0\"\r\n        },\r\n        \"referencedDeclaration\": 3,\r\n        \"src\": \"100:1:0\",\r\n        \"typeDescriptions\": {\r\n            \"typeIdentifier\": \"t_struct$_A_$3_storage_ptr\",\r\n            \"typeString\": \"struct A\"\r\n        }\r\n    },\r\n    \"visibility\": \"internal\"\r\n}\r\n\r\n```\r\nThe typeDescriptions.typeIdentifier is `\"t_struct$_A_$3_storage_ptr\"`. The type definition of struct defaults to `storage` location, even though it can be defined even outside of the contract. Can you please say what is the rational behind this and if there are any other types that behave similarly?",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13186/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13186/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

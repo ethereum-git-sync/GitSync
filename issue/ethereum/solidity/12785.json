@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12785",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12785/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12785/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12785/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12785",
+  "id": 1167844138,
+  "node_id": "I_kwDOAm_5kc5Fm-Mq",
+  "number": 12785,
+  "title": "Yul Style Guide",
+  "user": {
+    "login": "devtooligan",
+    "id": 71567643,
+    "node_id": "MDQ6VXNlcjcxNTY3NjQz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/71567643?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/devtooligan",
+    "html_url": "https://github.com/devtooligan",
+    "followers_url": "https://api.github.com/users/devtooligan/followers",
+    "following_url": "https://api.github.com/users/devtooligan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/devtooligan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/devtooligan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/devtooligan/subscriptions",
+    "organizations_url": "https://api.github.com/users/devtooligan/orgs",
+    "repos_url": "https://api.github.com/users/devtooligan/repos",
+    "events_url": "https://api.github.com/users/devtooligan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/devtooligan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 275027668,
+      "node_id": "MDU6TGFiZWwyNzUwMjc2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/documentation%20:book:",
+      "name": "documentation :book:",
+      "color": "006b75",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 3840016178,
+      "node_id": "LA_kwDOAm_5kc7k4f8y",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/style%20guide",
+      "name": "style guide",
+      "color": "0088bb",
+      "default": false,
+      "description": "Modification of the Solidity Style Guide"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-14T03:37:00Z",
+  "updated_at": "2022-03-14T11:52:37Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "The Solidity documentation includes a [Style Guide](https://docs.soliditylang.org/en/latest/style-guide.html) section which provides guidelines and recommendations for writing Solidity code. But there is no mention of Yul coding style guidelines within that page or within the Yul section of the docs. There are some indirect references to Yul style throughout the [Yul docs](https://docs.soliditylang.org/en/latest/yul.html) but usually they are more syntax guides that spill over into the realm of style.\r\n\r\nThis issue has been created to solicit feedback from the Solidity team and the community on whether a style guide for Yul style guide should be addressed, if at all.  And if so, what all should be considered.\r\n\r\n- RECOMMENDED: Make the Solidity Style Guide apply to Yul where it makes sense (whitespace, naming). Reference the Solidity Style Guide from the Yul documentation.\r\n- Make a separate style guide just for Yul, a new page on the side bar for https://docs.soliditylang.org/\r\n- Use conventions inspired by Solidity\r\n- Use conventions inspired by some other language (if so, which?)\r\n\r\nThis issue was co-authored by @fulldecent ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12785/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12785/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

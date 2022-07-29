@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/8779",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/8779/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/8779/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/8779/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/8779",
+  "id": 607165225,
+  "node_id": "MDU6SXNzdWU2MDcxNjUyMjU=",
+  "number": 8779,
+  "title": "在0.6.0中，关于 mapping 的使用如何初始化",
+  "user": {
+    "login": "xiaozhu001",
+    "id": 31197436,
+    "node_id": "MDQ6VXNlcjMxMTk3NDM2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31197436?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xiaozhu001",
+    "html_url": "https://github.com/xiaozhu001",
+    "followers_url": "https://api.github.com/users/xiaozhu001/followers",
+    "following_url": "https://api.github.com/users/xiaozhu001/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xiaozhu001/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xiaozhu001/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xiaozhu001/subscriptions",
+    "organizations_url": "https://api.github.com/users/xiaozhu001/orgs",
+    "repos_url": "https://api.github.com/users/xiaozhu001/repos",
+    "events_url": "https://api.github.com/users/xiaozhu001/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xiaozhu001/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-04-27T01:17:26Z",
+  "updated_at": "2020-04-27T01:21:47Z",
+  "closed_at": "2020-04-27T01:21:47Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "<!--## Prerequisites\r\n\r\n- First, many thanks for taking part in the community. We really appreciate that.\r\n- We realize there is a lot of data requested here. We ask only that you do your best to provide as much information as possible so we can better help you.\r\n- Support questions are better asked in one of the following locations:\r\n\t- [Solidity chat](https://gitter.im/ethereum/solidity)\r\n\t- [Stack Overflow](https://ethereum.stackexchange.com/)\r\n- Ensure the issue isn't already reported (check `feature` and `language design` labels).\r\n\r\n*Delete the above section and the instructions in the sections below before submitting*\r\n\r\n-->\r\n\r\n## Abstract\r\n\r\n<!--\r\nPlease describe by example what problem you see in the current Solidity language\r\nand reason about it.\r\n-->\r\n\r\n## Motivation\r\n\r\n<!--\r\nIn this section you describe how you propose to address the problem you described earlier,\r\nincluding by giving one or more exemplary source code snippets for demonstration.\r\n-->\r\n\r\n## Specification\r\n\r\n<!--\r\nThe technical specification should describe the syntax and semantics of any new feature. The\r\nspecification should be detailed enough to allow any developer to implement the functionality.\r\n-->\r\n\r\n## Backwards Compatibility\r\n\r\n<!--\r\nAll language changes that introduce backwards incompatibilities must include a section describing\r\nthese incompatibilities and their severity.\r\n\r\nPlease describe how you propose to deal with these incompatibilities.\r\n-->",
+  "closed_by": {
+    "login": "xiaozhu001",
+    "id": 31197436,
+    "node_id": "MDQ6VXNlcjMxMTk3NDM2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31197436?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xiaozhu001",
+    "html_url": "https://github.com/xiaozhu001",
+    "followers_url": "https://api.github.com/users/xiaozhu001/followers",
+    "following_url": "https://api.github.com/users/xiaozhu001/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xiaozhu001/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xiaozhu001/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xiaozhu001/subscriptions",
+    "organizations_url": "https://api.github.com/users/xiaozhu001/orgs",
+    "repos_url": "https://api.github.com/users/xiaozhu001/repos",
+    "events_url": "https://api.github.com/users/xiaozhu001/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xiaozhu001/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/8779/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/8779/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

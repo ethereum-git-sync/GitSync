@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12864",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12864/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12864/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12864/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12864",
+  "id": 1182645189,
+  "node_id": "I_kwDOAm_5kc5GfbvF",
+  "number": 12864,
+  "title": "Compiler is not evaluating all if/elseif/else branches to check for “Immutable variables cannot be initialized inside an if statement\"",
+  "user": {
+    "login": "StErMi",
+    "id": 146166,
+    "node_id": "MDQ6VXNlcjE0NjE2Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/146166?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/StErMi",
+    "html_url": "https://github.com/StErMi",
+    "followers_url": "https://api.github.com/users/StErMi/followers",
+    "following_url": "https://api.github.com/users/StErMi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/StErMi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/StErMi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/StErMi/subscriptions",
+    "organizations_url": "https://api.github.com/users/StErMi/orgs",
+    "repos_url": "https://api.github.com/users/StErMi/repos",
+    "events_url": "https://api.github.com/users/StErMi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/StErMi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074437,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
+      "name": "enhancement",
+      "color": "84b6eb",
+      "default": true,
+      "description": null
+    },
+    {
+      "id": 2376134343,
+      "node_id": "MDU6TGFiZWwyMzc2MTM0MzQz",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20compile%20without%20error",
+      "name": "should compile without error",
+      "color": "c48f13",
+      "default": false,
+      "description": "Error is reported even though it shouldn't. Source is fine."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-27T20:00:18Z",
+  "updated_at": "2022-04-27T19:59:40Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nCurrently, solidity compiler is correctly raising an error if an `immutable` variable is initialized only inside one branch of an if/else statement.\r\n\r\nThe following contract will raise the following compiler error: “Cannot write to immutable here: Immutable variables cannot be initialized inside an if statement.”\r\n\r\n```solidity\r\n// SPDX-License-Identifier: Unlicense\r\npragma solidity 0.8.13;\r\n\r\ncontract Immutable {\r\n    uint256 public immutable iamImmutable;\r\n\r\n    constructor(bool shouldInitWithZero) {\r\n        if (shouldInitWithZero) {\r\n            iamImmutable = 0;\r\n        }\r\n}\r\n```\r\n\r\nThe same error is thrown also if the `immutable` variable is initialized in the `else` branch of the `if/else` statement.\r\n\r\n```solidity\r\n// SPDX-License-Identifier: Unlicense\r\npragma solidity 0.8.13;\r\n\r\ncontract Immutable {\r\n    uint256 public immutable iamImmutable;\r\n\r\n    constructor(bool shouldInitWithZero) {\r\n        if (shouldInitWithZero) {\r\n            iamImmutable = 0;\r\n        } else {\r\n            iamImmutable = 1;\r\n        }\r\n    }\r\n}\r\n```\r\n\r\nBut it's **not thrown** if we use the ternary operator to initialize the variable\r\n\r\n```solidity\r\n// SPDX-License-Identifier: Unlicense\r\npragma solidity 0.8.13;\r\n\r\ncontract Immutable {\r\n    uint256 public immutable iamImmutable;\r\n\r\n    constructor(bool shouldInitWithZero) {\r\n        iamImmutable = shouldInitWithZero ? 0 : 1;\r\n    }\r\n}\r\n```\r\n\r\n## Motivation\r\n\r\nThe compiler error should be thrown **only** if the `immutable` state variable is not initialized **in all** the if/elseif/else branch.\r\n\r\n## Backwards Compatibility\r\n\r\nI don't think that there should be any backward compatibility problem.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12864/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12864/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

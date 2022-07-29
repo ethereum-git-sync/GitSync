@@ -1,0 +1,122 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12906",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12906/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12906/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12906/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12906",
+  "id": 1195926861,
+  "node_id": "I_kwDOAm_5kc5HSGVN",
+  "number": 12906,
+  "title": "Move `docs.sh` script to `docs/`",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074437,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
+      "name": "enhancement",
+      "color": "84b6eb",
+      "default": true,
+      "description": null
+    },
+    {
+      "id": 437863668,
+      "node_id": "MDU6TGFiZWw0Mzc4NjM2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/build%20system%20:building_construction:",
+      "name": "build system :building_construction:",
+      "color": "1d76db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 717596767,
+      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": ""
+    },
+    {
+      "id": 1012613901,
+      "node_id": "MDU6TGFiZWwxMDEyNjEzOTAx",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20easy",
+      "name": "difficulty: easy",
+      "color": "0b3f89",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-04-07T11:43:53Z",
+  "updated_at": "2022-04-11T11:51:06Z",
+  "closed_at": "2022-04-11T11:51:06Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Our translation repositories in [solidity-docs ](https://github.com/solidity-docs) only preserve the `docs/` directory from the main repository. The problem is that the script we use to build the documentation is currently under [`scripts/docs.sh`](https://github.com/ethereum/solidity/blob/develop/scripts/docs.sh) so it cannot be easily used by translators to render the docs locally. It would be better to have this script in `docs/`.\r\n\r\n- [ ] Move the script.\r\n- [ ] Adjust CI and paths for the new location.",
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12906/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12906/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12664",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12664/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12664/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12664/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12664",
+  "id": 1137270281,
+  "node_id": "I_kwDOAm_5kc5DyV4J",
+  "number": 12664,
+  "title": "Investigate asan/ubsan memory leak reports in Z3/spacer or selectively disable reports.",
+  "user": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-02-14T13:02:08Z",
+  "updated_at": "2022-02-14T13:02:24Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "In https://github.com/ethereum/solidity/pull/12662 I disabled running smt tests in ubsan nightly test runs. They were already disabled in asan runs.\r\n\r\nThe reason is that we get memory leaks in Z3/spacer.\r\n\r\nWe should still investigate these leaks eventually, respectively instead of adding ``--no-smt`` to the test runs, selectively disable reports from spacer-allocated memory.\r\n\r\nI'm also not sure if linking against the gcc-compiled static z3 library in these clang-based test runs is sane, so we can also see what happens if we use a clang-based static z3 build instead.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12664/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12664/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

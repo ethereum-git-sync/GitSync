@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12400",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12400/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12400/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12400/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12400",
+  "id": 1077541696,
+  "node_id": "I_kwDOAm_5kc5AOftA",
+  "number": 12400,
+  "title": "Linker error when building the compiler on Ubuntu 16.04 / GCC 8.0.1 with `/scripts/build.sh`: `undefined reference to boost::test_tools::tt_detail::print_log_value`",
+  "user": {
+    "login": "cvcook7",
+    "id": 28863949,
+    "node_id": "MDQ6VXNlcjI4ODYzOTQ5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/28863949?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cvcook7",
+    "html_url": "https://github.com/cvcook7",
+    "followers_url": "https://api.github.com/users/cvcook7/followers",
+    "following_url": "https://api.github.com/users/cvcook7/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cvcook7/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cvcook7/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cvcook7/subscriptions",
+    "organizations_url": "https://api.github.com/users/cvcook7/orgs",
+    "repos_url": "https://api.github.com/users/cvcook7/repos",
+    "events_url": "https://api.github.com/users/cvcook7/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cvcook7/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 437863668,
+      "node_id": "MDU6TGFiZWw0Mzc4NjM2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/build%20system%20:building_construction:",
+      "name": "build system :building_construction:",
+      "color": "1d76db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-12-11T13:43:43Z",
+  "updated_at": "2021-12-16T20:48:47Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi, do you guys know how to solve the following \"'boost::test_tools::tt_detail::.......\" make error? My Ubuntu 16.04 has Boost 1.66 installed.\r\n\r\n```\r\nun3481@un3481:~/solidity$ sudo ./scripts/build.sh \r\n-- Found Boost headers in \r\n-- Found Boost::filesystem at /usr/local/lib/libboost_filesystem.a\r\n-- Found Boost::unit_test_framework at /usr/local/lib/libboost_unit_test_framework.a\r\n-- Found Boost::program_options at /usr/local/lib/libboost_program_options.a\r\n-- Found Boost::system at /usr/local/lib/libboost_system.a\r\n-- Module support is disabled.\r\n-- Version: 8.0.1\r\n-- Build type: Release\r\n-- CXX_STANDARD: 17\r\n-- Required features: cxx_variadic_templates\r\n-- Performing Test fmacro-prefix-map=/home/un3481/solidity=/solidity\r\n-- Performing Test fmacro-prefix-map=/home/un3481/solidity=/solidity - Success\r\n\r\n------------------------------------------------------------------------\r\n-- Configuring solidity 0.8.11\r\n------------------------------------------------------------------------\r\n--                  CMake Version                            3.16.0\r\n-- CMAKE_BUILD_TYPE Build type                               Release\r\n-- TARGET_PLATFORM  Target platform                          Linux\r\n--------------------------------------------------------------- features\r\n-- COVERAGE         Coverage support                         OFF\r\n------------------------------------------------------------- components\r\n-- TESTS            Build tests                              ON\r\n------------------------------------------------------------------ flags\r\n-- OSSFUZZ                                                   OFF\r\n------------------------------------------------------------------------\r\n\r\n-- Could NOT find Z3 (missing: Z3_LIBRARY Z3_INCLUDE_DIR) \r\nNo SMT solver found (or it has been forcefully disabled). Optional SMT checking will not be available.  \r\nPlease install Z3 or CVC4 or remove the option disabling them (USE_Z3, USE_CVC4).\r\n-- Configuring done\r\n-- Generating done\r\n-- Build files have been written to: /home/un3481/solidity/build\r\n[  2%] Built target range-v3-project\r\n[  4%] Built target jsoncpp-project\r\n[  4%] Built target fmt\r\n[  5%] Built target evmc_loader\r\n[  5%] Built target solidity_BuildInfo.h\r\n[  8%] Built target solutil\r\n[ 11%] Built target langutil\r\n[ 12%] Built target smtutil\r\n[ 16%] Built target evmasm\r\n[ 38%] Built target yul\r\n[ 38%] Built target strictasm_opt_ossfuzz\r\n[ 38%] Built target strictasm_assembly_ossfuzz\r\nScanning dependencies of target solidity\r\n[ 38%] Building CXX object libsolidity/CMakeFiles/solidity.dir/interface/Version.cpp.o\r\n[ 39%] Linking CXX static library libsolidity.a\r\n[ 56%] Built target solidity\r\n[ 56%] Built target libsolc\r\n[ 56%] Linking CXX executable solidity-upgrade\r\nScanning dependencies of target phaser\r\n[ 56%] Building CXX object tools/CMakeFiles/phaser.dir/yulPhaser/Phaser.cpp.o\r\n[ 57%] Built target solidity-upgrade\r\nScanning dependencies of target solcli\r\n[ 57%] Building CXX object solc/CMakeFiles/solcli.dir/CommandLineInterface.cpp.o\r\n[ 57%] Linking CXX static library libphaser.a\r\n[ 60%] Built target phaser\r\n[ 61%] Built target yulInterpreter\r\n[ 61%] Linking CXX executable solfuzzer\r\n[ 61%] Built target solfuzzer\r\n[ 62%] Linking CXX executable yulrun\r\n[ 62%] Built target yulrun\r\n[ 62%] Linking CXX executable isoltest\r\n[ 70%] Built target isoltest\r\n[ 70%] Linking CXX executable yulopti\r\n[ 70%] Built target yulopti\r\n[ 70%] Built target solc_mutator_ossfuzz\r\n[ 70%] Built target const_opt_ossfuzz\r\n[ 71%] Built target strictasm_diff_ossfuzz\r\n[ 72%] Built target solc_ossfuzz\r\n[ 73%] Linking CXX executable yul-phaser\r\n[ 73%] Built target yul-phaser\r\n[ 74%] Linking CXX static library libsolcli.a\r\n[ 74%] Built target solcli\r\n[ 75%] Linking CXX executable solc\r\nScanning dependencies of target soltest\r\n[ 76%] Building CXX object test/CMakeFiles/soltest.dir/yulPhaser/Phaser.cpp.o\r\n[ 76%] Built target solc\r\n[ 76%] Linking CXX executable soltest\r\nCMakeFiles/soltest.dir/yulPhaser/Phaser.cpp.o:Phaser.cpp:function solidity::phaser::test::Phaser::PhaserTest::ProgramCacheFactoryTest::build_should_return_nullptr_for_each_input_program_if_cache_disabled::test_method(): error: undefined reference to 'boost::test_tools::tt_detail::print_log_value<decltype(nullptr)>::operator()(std::ostream&, decltype(nullptr))'\r\ncollect2: error: ld returned 1 exit status\r\ntest/CMakeFiles/soltest.dir/build.make:1710: recipe for target 'test/soltest' failed\r\nmake[2]: *** [test/soltest] Error 1\r\nCMakeFiles/Makefile2:921: recipe for target 'test/CMakeFiles/soltest.dir/all' failed\r\nmake[1]: *** [test/CMakeFiles/soltest.dir/all] Error 2\r\nMakefile:129: recipe for target 'all' failed\r\nmake: *** [all] Error 2\r\n\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12400/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12400/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/996181993",
+    "html_url": "https://github.com/ethereum/solidity/issues/12400#issuecomment-996181993",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12400",
+    "id": 996181993,
+    "node_id": "IC_kwDOAm_5kc47YIfp",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2021-12-16T20:46:47Z",
+    "updated_at": "2021-12-16T20:46:47Z",
+    "author_association": "MEMBER",
+    "body": "I think your Boost version might be too old. The failure seems to be related to the `boost::test_tools::tt_detail` namespace, which AFAIK was introduced in Boost 1.59.0. We do require Boost >= 1.65.0 though, so if yours is indeed too old, it's weird that you did not get an [error from `EthDependencies.cmake`](https://github.com/ethereum/solidity/blob/v0.8.10/cmake/EthDependencies.cmake#L40) instead.\r\n\r\nCan you check which version your are using?\r\n\r\nPlease also try updating your compiler. I think we still do support 8.0.1 but it's already pretty old. If upgrading it solves your problem then maybe we need to think about bumping the requirement.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/996181993/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

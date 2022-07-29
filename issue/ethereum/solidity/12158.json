@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12158",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12158/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12158/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12158/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12158",
+  "id": 1028439223,
+  "node_id": "I_kwDOAm_5kc49TLy3",
+  "number": 12158,
+  "title": "ICE when defining multiple Yul functions with the same name but different arguments/returns in inline assembly",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2376134343,
+      "node_id": "MDU6TGFiZWwyMzc2MTM0MzQz",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20compile%20without%20error",
+      "name": "should compile without error",
+      "color": "c48f13",
+      "default": false,
+      "description": "Error is reported even though it shouldn't. Source is fine."
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-17T21:13:45Z",
+  "updated_at": "2021-10-25T15:50:30Z",
+  "closed_at": "2021-10-25T15:50:30Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Description\r\nIf a Yul function with the same name is defined again with different parameters and/or return parameters in a completely different scope in inline assembly, the compiler throws an ICE.\r\n\r\nIt happens only with the new code generator and I did not manage to reproduce it with optimizer enabled.\r\n\r\nIt's probably related to #12090, but this one can be triggered using inline assembly rather than pure Yul. The solution should also probably be different - the compiler can just give these functions different names internally instead of completely disabling named labels (which is the solution in #12139).\r\n\r\n## Steps to Reproduce\r\n`contract.sol`:\r\n``` solidity\r\ncontract C {\r\n    function f() external {\r\n        assembly {\r\n            {\r\n                function x() -> a {}\r\n            }\r\n            {\r\n                function x() {}\r\n            }\r\n        }\r\n    }\r\n}\r\n```\r\n```bash\r\nsolc --bin --experimental-via-ir contract.sol\r\n```\r\n```\r\nException during compilation: /solidity/libevmasm/Assembly.cpp(350): Throw in function solidity::evmasm::AssemblyItem solidity::evmasm::Assembly::namedTag(const string&, size_t, size_t, std::optional<long unsigned int>)\r\nDynamic exception type: boost::wrapexcept<solidity::evmasm::AssemblyException>\r\nstd::exception::what:\r\n[solidity::util::tag_comment*] =\r\n```\r\n\r\nThe result is the same even if the functions are defined in separate assembly blocks, even if these blocks are inside different Solidity functions:\r\n```solidity\r\ncontract C {\r\n    function f() external {\r\n        assembly {\r\n            function x() -> a {}\r\n        }\r\n    }\r\n    function g() external {\r\n        assembly {\r\n            function x() {}\r\n        }\r\n    }\r\n}\r\n```\r\n\r\nNote that, unlike in #12090, just giving functions the same name is not enough to trigger this. For example this compiles fine:\r\n```solidity\r\ncontract C {\r\n    function f() external {\r\n        assembly {\r\n            function x() { mstore(0, 0) }\r\n        }\r\n    }\r\n    function g() external {\r\n        assembly {\r\n            function x() { mstore(1, 1) }\r\n        }\r\n    }\r\n}\r\n```\r\n## Environment\r\n- Compiler version: 0.8.9",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12158/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12158/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

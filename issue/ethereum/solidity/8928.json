@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/8928",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/8928/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/8928/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/8928/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/8928",
+  "id": 617410988,
+  "node_id": "MDU6SXNzdWU2MTc0MTA5ODg=",
+  "number": 8928,
+  "title": "Extract libsmtutil out of libsolidity/formal",
+  "user": {
+    "login": "leonardoalt",
+    "id": 504195,
+    "node_id": "MDQ6VXNlcjUwNDE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonardoalt",
+    "html_url": "https://github.com/leonardoalt",
+    "followers_url": "https://api.github.com/users/leonardoalt/followers",
+    "following_url": "https://api.github.com/users/leonardoalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonardoalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonardoalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonardoalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonardoalt/orgs",
+    "repos_url": "https://api.github.com/users/leonardoalt/repos",
+    "events_url": "https://api.github.com/users/leonardoalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonardoalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-05-13T12:35:13Z",
+  "updated_at": "2020-05-20T14:14:38Z",
+  "closed_at": "2020-05-20T14:14:38Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "We should extract the contents of `libsolidity/formal` into a `libsmtutil` that can also be used by `libyul`. This should contain things that do not depend on anything Solidity related.\r\nPotential cases for that:\r\n- Sorts\r\n- SolverInterface\r\n- *Interface\r\n- SMTPortfolio",
+  "closed_by": {
+    "login": "leonardoalt",
+    "id": 504195,
+    "node_id": "MDQ6VXNlcjUwNDE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonardoalt",
+    "html_url": "https://github.com/leonardoalt",
+    "followers_url": "https://api.github.com/users/leonardoalt/followers",
+    "following_url": "https://api.github.com/users/leonardoalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonardoalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonardoalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonardoalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonardoalt/orgs",
+    "repos_url": "https://api.github.com/users/leonardoalt/repos",
+    "events_url": "https://api.github.com/users/leonardoalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonardoalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/8928/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/8928/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

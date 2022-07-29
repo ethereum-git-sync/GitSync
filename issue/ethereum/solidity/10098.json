@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10098",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10098/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10098/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10098/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10098",
+  "id": 728082753,
+  "node_id": "MDU6SXNzdWU3MjgwODI3NTM=",
+  "number": 10098,
+  "title": "[SMTChecker] Missing language features",
+  "user": {
+    "login": "leonardoalt",
+    "id": 504195,
+    "node_id": "MDQ6VXNlcjUwNDE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonardoalt",
+    "html_url": "https://github.com/leonardoalt",
+    "followers_url": "https://api.github.com/users/leonardoalt/followers",
+    "following_url": "https://api.github.com/users/leonardoalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonardoalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonardoalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonardoalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonardoalt/orgs",
+    "repos_url": "https://api.github.com/users/leonardoalt/repos",
+    "events_url": "https://api.github.com/users/leonardoalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonardoalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-10-23T09:57:30Z",
+  "updated_at": "2021-04-19T19:25:24Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Opening this issue to keep track of the missing language features to be implemented in the SMTChecker:\r\n\r\n- [x] ABI functions https://github.com/ethereum/solidity/issues/5264\r\n- [x] struct constructors https://github.com/ethereum/solidity/issues/9664\r\n- [ ] selfdestruct https://github.com/ethereum/solidity/issues/9786\r\n- [x] early return https://github.com/ethereum/solidity/issues/9103\r\n- [x] free functions https://github.com/ethereum/solidity/issues/9636\r\n- [x] try/catch https://github.com/ethereum/solidity/issues/10110\r\n- [x] checked and unchecked https://github.com/ethereum/solidity/issues/10066\r\n- [x] contract types #10141",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10098/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10098/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

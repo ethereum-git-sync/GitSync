@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10631",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10631/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10631/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10631/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10631",
+  "id": 768961555,
+  "node_id": "MDU6SXNzdWU3Njg5NjE1NTU=",
+  "number": 10631,
+  "title": "[SMTChecker] Replace constant variables by their values",
+  "user": {
+    "login": "leonardoalt",
+    "id": 504195,
+    "node_id": "MDQ6VXNlcjUwNDE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonardoalt",
+    "html_url": "https://github.com/leonardoalt",
+    "followers_url": "https://api.github.com/users/leonardoalt/followers",
+    "following_url": "https://api.github.com/users/leonardoalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonardoalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonardoalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonardoalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonardoalt/orgs",
+    "repos_url": "https://api.github.com/users/leonardoalt/repos",
+    "events_url": "https://api.github.com/users/leonardoalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonardoalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-12-16T14:47:24Z",
+  "updated_at": "2020-12-18T14:22:33Z",
+  "closed_at": "2020-12-18T14:22:33Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Even after https://github.com/ethereum/solidity/pull/10623, we could help the solver even more by replacing the constants directly where they are used, similar to what the code generator does.",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10631/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10631/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

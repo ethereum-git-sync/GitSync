@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11626",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11626/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11626/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11626/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11626",
+  "id": 938636346,
+  "node_id": "MDU6SXNzdWU5Mzg2MzYzNDY=",
+  "number": 11626,
+  "title": "Parse the version pragma in the antlr grammar and choose separate parser mode for each major solidity version.",
+  "user": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-07T08:33:56Z",
+  "updated_at": "2021-07-13T13:50:52Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "For some use cases of the grammar it seems to be good to be able to parse multiple versions.\r\nWhile it should be possible and might be easier to parse the version pragma *before* actually parsing using a grammar and thereby being able to choose a version-specific grammar, that does not seem to be happening. So instead we could do the following:\r\n\r\n- Maintain a strict grammar for each major solidity version and merge them together using different parser modes.\r\n- Specifically parse the version pragma in the antlr grammar.\r\n- Select a Parser mode based on the minimal solidity version matching the grammar.\r\n\r\nAntlr is turing complete so analyzing semver  determining the minimal matching version should be possible. If that's too much hassle, though, we can also just enumerate all versions and stop at the first matching one (matching semver patterns should be trivial).\r\n\r\nIn case it's not clear: The rationale for choosing the first matching version is that - if the version pragma is correct - that solidity version has to be able to parse the code and we can assume that it only uses forward-compatible syntax otherwise. Of course this way the grammar won't realize that the code might *violate* this forward compatibility, but I'd say that's a reasonable concession, especially since the alternative for supporting multiple solidity versions at once is \"purely heuristic parsing\", respectively blind guessing, anyways (or at least a bit more so after each breaking change to the language we do).\r\n\r\nMain questions:\r\n - Is this worth the trouble?\r\n - Can we setup antlr with different parser modes, s.t. it still creates the same data structures for different versions? I.e. keep the same grammatic categories for all versions, but only have version specific production rules? It's probably possible, but might require some antlr trickery like importing from a common base grammar or sth like that - or it just works trivially, I haven't checked.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11626/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11626/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

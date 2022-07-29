@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10252",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10252/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10252/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10252/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10252",
+  "id": 740112929,
+  "node_id": "MDU6SXNzdWU3NDAxMTI5Mjk=",
+  "number": 10252,
+  "title": "[SMTChecker] SMT logic error in function static solidity::smtutil::Expression solidity::smtutil::Expression::int2bv(solidity::smtutil::Expression, size_t)",
+  "user": {
+    "login": "agroce",
+    "id": 967816,
+    "node_id": "MDQ6VXNlcjk2NzgxNg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/967816?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/agroce",
+    "html_url": "https://github.com/agroce",
+    "followers_url": "https://api.github.com/users/agroce/followers",
+    "following_url": "https://api.github.com/users/agroce/following{/other_user}",
+    "gists_url": "https://api.github.com/users/agroce/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/agroce/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/agroce/subscriptions",
+    "organizations_url": "https://api.github.com/users/agroce/orgs",
+    "repos_url": "https://api.github.com/users/agroce/repos",
+    "events_url": "https://api.github.com/users/agroce/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/agroce/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2376134343,
+      "node_id": "MDU6TGFiZWwyMzc2MTM0MzQz",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20compile%20without%20error",
+      "name": "should compile without error",
+      "color": "c48f13",
+      "default": false,
+      "description": "Error is reported even though it shouldn't. Source is fine."
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-11-10T17:42:24Z",
+  "updated_at": "2020-11-24T19:55:55Z",
+  "closed_at": "2020-11-24T19:55:55Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nThis contract:\r\n```solidity\r\npragma experimental SMTChecker;\r\ncontract C {\r\n    function f3() public returns (bytes memory r) {\r\n        bytes memory y = \"def\";\r\n        y[0]&= \"e\";\r\n    }\r\n}\r\n```\r\n\r\nproduces:\r\n\r\n```\r\nSMT logic error during analysis:\r\n/home/user/solidity/libsmtutil/SolverInterface.h(212): Throw in function static solidity::smtutil::Expression solidity::smtutil::Expression::int2bv(solidity::smtutil::Expression, size_t)\r\nDynamic exception type: boost::exception_detail::clone_impl<solidity::smtutil::SMTLogicError>\r\nstd::exception::what: \r\n[solidity::util::tag_comment*] = \r\n```\r\n\r\nwhen compiled with solc\r\n\r\nOn master, using AFL fuzzing.  Another discovery using https://github.com/agroce/afl-compiler-fuzzer. \r\n\r\n## Environment\r\n\r\n- Compiler version:  Version: 0.7.5-develop.2020.11.10+commit.d3a016b5.Linux.clang\r\n- Target EVM version (as per compiler settings): N/A\r\n- Framework/IDE (e.g. Truffle or Remix): N/A\r\n- EVM execution environment / backend / blockchain client: N/A\r\n- Operating system: Ubuntu 18.04 in docker\r\n\r\n## Steps to Reproduce\r\n\r\nAbove shows pretty clearly, I think.\r\n",
+  "closed_by": {
+    "login": "mijovic",
+    "id": 23421619,
+    "node_id": "MDQ6VXNlcjIzNDIxNjE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/23421619?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mijovic",
+    "html_url": "https://github.com/mijovic",
+    "followers_url": "https://api.github.com/users/mijovic/followers",
+    "following_url": "https://api.github.com/users/mijovic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mijovic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mijovic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mijovic/subscriptions",
+    "organizations_url": "https://api.github.com/users/mijovic/orgs",
+    "repos_url": "https://api.github.com/users/mijovic/repos",
+    "events_url": "https://api.github.com/users/mijovic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mijovic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10252/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10252/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

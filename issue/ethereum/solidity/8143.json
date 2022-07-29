@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/8143",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/8143/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/8143/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/8143/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/8143",
+  "id": 550124584,
+  "node_id": "MDU6SXNzdWU1NTAxMjQ1ODQ=",
+  "number": 8143,
+  "title": "Support nested objects for Yul tests.",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074437,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
+      "name": "enhancement",
+      "color": "84b6eb",
+      "default": true,
+      "description": null
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-01-15T11:18:21Z",
+  "updated_at": "2020-09-26T22:17:05Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "This needs to extend the analysis to recurse into the object in test/libyul/Common.cpp .",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/8143/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/8143/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10784",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10784/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10784/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10784/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10784",
+  "id": 786972194,
+  "node_id": "MDU6SXNzdWU3ODY5NzIxOTQ=",
+  "number": 10784,
+  "title": "Add ALSO_VIA_YUL to SolidityEndToEndTests that work by now.",
+  "user": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 717596767,
+      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-01-15T15:16:43Z",
+  "updated_at": "2021-12-11T01:30:00Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "At the time of writing the list of the still failing ones is this one: https://github.com/ethereum/solidity/issues/10390#issuecomment-760994515\r\n\r\nThe rest should work at least with ``ALSO_VIA_YUL { DISABLE_EWASM_TESTRUN() ... }``.\r\n\r\nA few of them test against cpp implemenations, they can stay, the rest might as well be immediately extracted.\r\n\r\nPing @axic.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10784/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10784/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

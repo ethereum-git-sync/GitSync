@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/8602",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/8602/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/8602/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/8602/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/8602",
+  "id": 594116396,
+  "node_id": "MDU6SXNzdWU1OTQxMTYzOTY=",
+  "number": 8602,
+  "title": "[solc] ICE: solidity/libsolidity/codegen/ir/IRGenerator.cpp(61): Throw in function pair<std::__1::string, std::__1::string> solidity::frontend::IRGenerator::run(const solidity::frontend::ContractDefinition &)",
+  "user": {
+    "login": "aarlt",
+    "id": 5008794,
+    "node_id": "MDQ6VXNlcjUwMDg3OTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5008794?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aarlt",
+    "html_url": "https://github.com/aarlt",
+    "followers_url": "https://api.github.com/users/aarlt/followers",
+    "following_url": "https://api.github.com/users/aarlt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aarlt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aarlt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aarlt/subscriptions",
+    "organizations_url": "https://api.github.com/users/aarlt/orgs",
+    "repos_url": "https://api.github.com/users/aarlt/repos",
+    "events_url": "https://api.github.com/users/aarlt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aarlt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-04-04T21:45:18Z",
+  "updated_at": "2020-04-22T12:17:46Z",
+  "closed_at": "2020-04-22T12:17:45Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "solidity/libsolidity/codegen/ir/IRGenerator.cpp(61): Throw in function pair<std::__1::string, std::__1::string> solidity::frontend::IRGenerator::run(const solidity::frontend::ContractDefinition &)\r\n\r\n## Description\r\n\r\ntriggered by:\r\n- test/libsolidity/semanticTests/smoke/basic.sol\r\n- test/libsolidity/semanticTests/abiEncoderV2/calldata_array_function_types.sol\r\n- test/libsolidity/semanticTests/storage/accessors_mapping_for_array.sol\r\n- test/libsolidity/semanticTests/various/literal_empty_string.sol\r\n- test/libsolidity/syntaxTests/types/function_types/function_state_mutability_success.sol\r\n\r\n## Environment\r\n\r\n- current develop\r\n\r\n## Steps to Reproduce\r\n\r\n```sh\r\n./solc --ir <file>\r\n```",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/8602/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/8602/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/7812",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/7812/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/7812/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/7812/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/7812",
+  "id": 529430400,
+  "node_id": "MDU6SXNzdWU1Mjk0MzA0MDA=",
+  "number": 7812,
+  "title": "Cleanup the scripts folder.",
+  "user": {
+    "login": "christianparpart",
+    "id": 56763,
+    "node_id": "MDQ6VXNlcjU2NzYz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/56763?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/christianparpart",
+    "html_url": "https://github.com/christianparpart",
+    "followers_url": "https://api.github.com/users/christianparpart/followers",
+    "following_url": "https://api.github.com/users/christianparpart/following{/other_user}",
+    "gists_url": "https://api.github.com/users/christianparpart/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/christianparpart/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/christianparpart/subscriptions",
+    "organizations_url": "https://api.github.com/users/christianparpart/orgs",
+    "repos_url": "https://api.github.com/users/christianparpart/repos",
+    "events_url": "https://api.github.com/users/christianparpart/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/christianparpart/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1012613901,
+      "node_id": "MDU6TGFiZWwxMDEyNjEzOTAx",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20easy",
+      "name": "difficulty: easy",
+      "color": "0b3f89",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 3515010024,
+      "node_id": "LA_kwDOAm_5kc7Rgsvo",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue%20candidate",
+      "name": "good first issue candidate",
+      "color": "91B44D",
+      "default": false,
+      "description": "Could be a \"good first issue\" but something is blocking it or it has open questions."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2019-11-27T15:48:37Z",
+  "updated_at": "2021-12-11T01:32:44Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The scripts root folder contains a lot of files, and a lot of logic inside.\r\n\r\nThe main goal should be to reevaluate if everything inside is still necessary (as of today) and whether or not the script itself could be cleaned up (for example the install_deps-family does a lot, and I doubt it's all still needed like it was written).\r\n\r\nAlso potentially re-arranging files into groups by subject for a more intuitive way could help understanding what one may need could help.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/7812/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/7812/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/563991646",
+    "html_url": "https://github.com/ethereum/solidity/issues/7812#issuecomment-563991646",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/7812",
+    "id": 563991646,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDU2Mzk5MTY0Ng==",
+    "user": {
+      "login": "axic",
+      "id": 20340,
+      "node_id": "MDQ6VXNlcjIwMzQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/axic",
+      "html_url": "https://github.com/axic",
+      "followers_url": "https://api.github.com/users/axic/followers",
+      "following_url": "https://api.github.com/users/axic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+      "organizations_url": "https://api.github.com/users/axic/orgs",
+      "repos_url": "https://api.github.com/users/axic/repos",
+      "events_url": "https://api.github.com/users/axic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/axic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2019-12-10T11:29:34Z",
+    "updated_at": "2019-12-10T11:30:08Z",
+    "author_association": "MEMBER",
+    "body": "Also consider the other set of scripts hidden under `test/`,`test/externalTests` and `.circleci/`.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/563991646/reactions",
+      "total_count": 1,
+      "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

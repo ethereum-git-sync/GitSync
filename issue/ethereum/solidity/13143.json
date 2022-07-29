@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13143",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13143/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13143/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13143/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13143",
+  "id": 1271556688,
+  "node_id": "I_kwDOAm_5kc5LympQ",
+  "number": 13143,
+  "title": "Allow \"using BaseContract.virtualMethod\" syntax when there are conflicting virtual methods.",
+  "user": {
+    "login": "leonwilly",
+    "id": 17092234,
+    "node_id": "MDQ6VXNlcjE3MDkyMjM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17092234?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonwilly",
+    "html_url": "https://github.com/leonwilly",
+    "followers_url": "https://api.github.com/users/leonwilly/followers",
+    "following_url": "https://api.github.com/users/leonwilly/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonwilly/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonwilly/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonwilly/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonwilly/orgs",
+    "repos_url": "https://api.github.com/users/leonwilly/repos",
+    "events_url": "https://api.github.com/users/leonwilly/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonwilly/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 692642590,
+      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
+      "name": "feature",
+      "color": "fbca04",
+      "default": false,
+      "description": null
+    },
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-06-15T01:47:48Z",
+  "updated_at": "2022-06-16T12:10:30Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\n```solidity \r\n\r\nabstract contract A {\r\n   function doSomething() public virtual {}\r\n}\r\n\r\nabstract contract B {\r\n  function doSomething() public virtual {}\r\n}\r\n\r\ncontract C is A, B {\r\n  // forced to re-declare the function just to call the correct implementation \r\n  function doSomething() public override(A, B) {\r\n    B.doSomething();\r\n  }\r\n  // instead of a redundant re-declaration make use of the \"using\" keyword similar to C++\r\n  using B.doSomething;\r\n}\r\n\r\n```\r\n\r\n## Motivation\r\n\r\nReduce the amount of code that needs to be written thus reducing errors.\r\n\r\n## Specification\r\n\r\nMake use of the already builtin keyword \"using\" to tell the compiler which virtual function the derived contract would like to use. The compiler can then create the required override function or do a copy / paste of the overridden function into the derived contract.\r\n\r\n```solidity\r\nusing [base].[method]\r\n```\r\n\r\n## Backwards Compatibility\r\n\r\nI don't believe this would break backwards compatibility as the former method could still be used with the newer method providing a more readable and less verbose path for future development.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13143/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13143/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1157586741",
+    "html_url": "https://github.com/ethereum/solidity/issues/13143#issuecomment-1157586741",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13143",
+    "id": 1157586741,
+    "node_id": "IC_kwDOAm_5kc5E_181",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-06-16T12:09:32Z",
+    "updated_at": "2022-06-16T12:09:32Z",
+    "author_association": "MEMBER",
+    "body": "``using`` in Solidity has quite a different meaning in other contexts, so I'm not sure it's a good idea to overload it.\r\nAlso the conveniently short ``using B.something;`` drops the intentional requirement to explicitly override all bases (indicating that you realize that the you are aware of the independent requirements of the base interfaces and making the statement of their compatibility explicit).\r\n\r\nWe did have an earlier proposal to allow short-hand delegating implementations, though, that would be\r\n```\r\nfunction doSomething() public override(A, B) = B.doSomething;\r\n```\r\nMainly since we could implement that even if all ``B.doSomething`` is ``external``.\r\n",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1157586741/reactions",
+      "total_count": 1,
+      "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

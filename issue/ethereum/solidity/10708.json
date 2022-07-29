@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10708",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10708/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10708/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10708/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10708",
+  "id": 777903651,
+  "node_id": "MDU6SXNzdWU3Nzc5MDM2NTE=",
+  "number": 10708,
+  "title": "[Optimizer] Function parameter grouper",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-01-04T08:01:22Z",
+  "updated_at": "2021-01-07T02:55:49Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Once we add memory objects, we might end up with lots of code that looks as follows:\r\n\r\n```\r\nfunction f(obj, offset, v) {\r\n  g(obj, offset, mul(v, 2))\r\n}\r\nfunction g(obj, offset, x) {\r\n  let t := add(obj, offset)\r\n  mstore(t, x)\r\n}\r\n```\r\n\r\nIt would be nice if we could pull the `add(obj, offset)` up in the call chain, because it is quiet a waste to use two parameters for them all the time.\r\n\r\nProposal:\r\n\r\nIf two parameters are used exactly once inside a function body, this use is \"cheap\" and movable and is an assignment to an SSA variable `t`, then perform the following transform:\r\n\r\n1. Make `t` a function parameter, delete its declaration statement and delete the two parameters.\r\n2. For each call of the function, delete the arguments (they have to be identifiers) and replace them with the expression (with replaced variable names). If the arguments are not identifiers, abort the whole process.\r\n\r\nComments:\r\n\r\nWe only implement it for two because I would guess that it is most common and we can just run it again to include more parameters.\r\n\r\nThe current specification does not work well for more complex expression involving the unused parameters, but it is maybe enough.\r\n\r\nThis might actually be an extension of the unused parameter pruner.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10708/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10708/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

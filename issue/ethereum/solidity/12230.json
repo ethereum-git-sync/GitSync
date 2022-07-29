@@ -1,0 +1,94 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12230",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12230/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12230/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12230/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12230",
+  "id": 1043744621,
+  "node_id": "I_kwDOAm_5kc4-Nkdt",
+  "number": 12230,
+  "title": "[CLI] Do not select any outputs by default in assembler mode",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074437,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
+      "name": "enhancement",
+      "color": "84b6eb",
+      "default": true,
+      "description": null
+    },
+    {
+      "id": 467898404,
+      "node_id": "MDU6TGFiZWw0Njc4OTg0MDQ=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/breaking%20change%20:warning:",
+      "name": "breaking change :warning:",
+      "color": "b60205",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 717596767,
+      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-11-03T15:27:56Z",
+  "updated_at": "2021-11-15T00:57:54Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "#12074 added support for CLI output options (like `--bin` or `--ewasm`) in assembler mode. If no outputs are requested though, the compiler chooses the default ones to keep the behavior backwards-compatible. We should change this so that nothing is printed by default (this is how the compiler mode behaves) but it needs to be done in a breaking release.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12230/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12230/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11710",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11710/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11710/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11710/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11710",
+  "id": 954238173,
+  "node_id": "MDU6SXNzdWU5NTQyMzgxNzM=",
+  "number": 11710,
+  "title": "[SMTChecker] ICE in SMTEncoder::identifierToVariable",
+  "user": {
+    "login": "bshastry",
+    "id": 2388185,
+    "node_id": "MDQ6VXNlcjIzODgxODU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2388185?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bshastry",
+    "html_url": "https://github.com/bshastry",
+    "followers_url": "https://api.github.com/users/bshastry/followers",
+    "following_url": "https://api.github.com/users/bshastry/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bshastry/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bshastry/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bshastry/subscriptions",
+    "organizations_url": "https://api.github.com/users/bshastry/orgs",
+    "repos_url": "https://api.github.com/users/bshastry/repos",
+    "events_url": "https://api.github.com/users/bshastry/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bshastry/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2376134343,
+      "node_id": "MDU6TGFiZWwyMzc2MTM0MzQz",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20compile%20without%20error",
+      "name": "should compile without error",
+      "color": "c48f13",
+      "default": false,
+      "description": "Error is reported even though it shouldn't. Source is fine."
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-27T20:23:18Z",
+  "updated_at": "2021-08-27T17:38:37Z",
+  "closed_at": "2021-08-27T17:38:37Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "```\r\nlibrary L{int constant one=1;function f()internal{one;}}\r\n==== Source: s1.sol ====\r\npragma experimental SMTChecker;library L{}\r\n```\r\n\r\nthrows\r\n\r\nhttps://github.com/ethereum/solidity/blob/c018cdf419e55056e72208b7f76442d1b16b38d6/libsolidity/formal/SMTEncoder.cpp#L2631",
+  "closed_by": {
+    "login": "leonardoalt",
+    "id": 504195,
+    "node_id": "MDQ6VXNlcjUwNDE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonardoalt",
+    "html_url": "https://github.com/leonardoalt",
+    "followers_url": "https://api.github.com/users/leonardoalt/followers",
+    "following_url": "https://api.github.com/users/leonardoalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonardoalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonardoalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonardoalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonardoalt/orgs",
+    "repos_url": "https://api.github.com/users/leonardoalt/repos",
+    "events_url": "https://api.github.com/users/leonardoalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonardoalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11710/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11710/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,137 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11119",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11119/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11119/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11119/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11119",
+  "id": 833897605,
+  "node_id": "MDU6SXNzdWU4MzM4OTc2MDU=",
+  "number": 11119,
+  "title": "Use solidity-docgen in the CI",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 437863668,
+      "node_id": "MDU6TGFiZWw0Mzc4NjM2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/build%20system%20:building_construction:",
+      "name": "build system :building_construction:",
+      "color": "1d76db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 3515010024,
+      "node_id": "LA_kwDOAm_5kc7Rgsvo",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue%20candidate",
+      "name": "good first issue candidate",
+      "color": "91B44D",
+      "default": false,
+      "description": "Could be a \"good first issue\" but something is blocking it or it has open questions."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-03-17T15:15:36Z",
+  "updated_at": "2021-12-11T00:08:55Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "[solidity-docgen](https://github.com/OpenZeppelin/solidity-docgen) is a tool which generates a HTML documentation out of the Natspec JSON (and the AST, see https://github.com/OpenZeppelin/solidity-docgen/issues/284).\r\n\r\nIt would be nice to run it in the CI, potentially on the extracted documentation and the semantic tests (or at least the external contracts) to catch unexpected breaking changes in Natspec, AST, or the ABI.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11119/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11119/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/801345042",
+    "html_url": "https://github.com/ethereum/solidity/issues/11119#issuecomment-801345042",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/11119",
+    "id": 801345042,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDgwMTM0NTA0Mg==",
+    "user": {
+      "login": "axic",
+      "id": 20340,
+      "node_id": "MDQ6VXNlcjIwMzQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/axic",
+      "html_url": "https://github.com/axic",
+      "followers_url": "https://api.github.com/users/axic/followers",
+      "following_url": "https://api.github.com/users/axic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+      "organizations_url": "https://api.github.com/users/axic/orgs",
+      "repos_url": "https://api.github.com/users/axic/repos",
+      "events_url": "https://api.github.com/users/axic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/axic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2021-03-17T19:17:44Z",
+    "updated_at": "2021-03-17T19:17:44Z",
+    "author_association": "MEMBER",
+    "body": "It turned out solidity-docgen is not actually using the Natspec JSON, but rather rebuilds everything from the AST. This means it won't help us testing natspec, but would be an additional means testing the AST.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/801345042/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

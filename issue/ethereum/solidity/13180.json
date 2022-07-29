@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13180",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13180/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13180/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13180/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13180",
+  "id": 1278075617,
+  "node_id": "I_kwDOAm_5kc5MLeLh",
+  "number": 13180,
+  "title": "[Legacy codegen] Higher order bits not sign-extended in signed integer array in storage that may be accessed via inline assembly",
+  "user": {
+    "login": "bshastry",
+    "id": 2388185,
+    "node_id": "MDQ6VXNlcjIzODgxODU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2388185?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bshastry",
+    "html_url": "https://github.com/bshastry",
+    "followers_url": "https://api.github.com/users/bshastry/followers",
+    "following_url": "https://api.github.com/users/bshastry/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bshastry/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bshastry/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bshastry/subscriptions",
+    "organizations_url": "https://api.github.com/users/bshastry/orgs",
+    "repos_url": "https://api.github.com/users/bshastry/repos",
+    "events_url": "https://api.github.com/users/bshastry/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bshastry/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-21T08:18:10Z",
+  "updated_at": "2022-06-21T08:18:10Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "In the semantic test below, legacy codegen does not sign-extend the second element of the storage array but via-ir does. This may be accessed via inline assembly. Bug similar to https://github.com/ethereum/solidity/pull/12050\r\n\r\nNote that Solidity access is just fine (i.e., sign-extension happens correctly via legacy or IR). Also note that the value returned by the call to `g()` in the test below is via legacy (i.e., the non-sign-extended value).\r\n\r\n```\r\ncontract C0 {\r\n  int192[2]   s3;\r\n  constructor(int192[2] memory i0)   {\r\n    s3 = i0;\r\n  }\r\n  function f() external returns (int192[2] memory o) { o = s3; }\r\n  function g() external returns (uint o) { assembly { o := sload(add(s3.slot, 1)) } }\r\n}\r\n// ====\r\n// compileViaYul: also\r\n// ----\r\n// constructor(): 0x0000000000000000000000000000000000000000000000000000000000000000, 0xFFFFFFFFFFFFFFFFF6F6BEA5083DFED985055AB0D43C9DB425C40FEAC74632E5 ->\r\n// gas irOptimized: 136872\r\n// gas legacy: 179142\r\n// gas legacyOptimized: 135428\r\n// f() -> 0, -221565838963264769260736510461167584867121330438731844891\r\n// g() -> 6055535896423415994575052912746498831235234114025302668005\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13180/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13180/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

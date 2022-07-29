@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11633",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11633/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11633/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11633/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11633",
+  "id": 939336799,
+  "node_id": "MDU6SXNzdWU5MzkzMzY3OTk=",
+  "number": 11633,
+  "title": "A Typo Describing Layout in Storage",
+  "user": {
+    "login": "maAPPsDEV",
+    "id": 78368735,
+    "node_id": "MDQ6VXNlcjc4MzY4NzM1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/78368735?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/maAPPsDEV",
+    "html_url": "https://github.com/maAPPsDEV",
+    "followers_url": "https://api.github.com/users/maAPPsDEV/followers",
+    "following_url": "https://api.github.com/users/maAPPsDEV/following{/other_user}",
+    "gists_url": "https://api.github.com/users/maAPPsDEV/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/maAPPsDEV/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/maAPPsDEV/subscriptions",
+    "organizations_url": "https://api.github.com/users/maAPPsDEV/orgs",
+    "repos_url": "https://api.github.com/users/maAPPsDEV/repos",
+    "events_url": "https://api.github.com/users/maAPPsDEV/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/maAPPsDEV/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-07T23:28:29Z",
+  "updated_at": "2021-07-08T07:38:24Z",
+  "closed_at": "2021-07-08T07:38:24Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "## Page\r\n\r\nhttps://docs.soliditylang.org/en/v0.8.6/internals/layout_in_storage.html#bytes-and-string\r\n\r\nChapter: Internals\r\nSection: Layout of State Variables in Storage\r\nPhase: Mappings and Dynamic Arrays > `bytes` and `string`\r\n\r\n## Abstract\r\n\r\n> ...\r\n> `bytes` and `string` are encoded identically. In general, the encoding is similar to `byte1[]`, in the sense that there is a slot for the array itself and a data area that is computed using a `keccak256` hash of that slot’s position. However, for short values (shorter than 32 bytes) the array elements are stored together with the length in the same slot.\r\n> ...\r\n\r\nType `byte1` doesn't exist, as the screenshot shows:\r\n\r\n![image](https://user-images.githubusercontent.com/78368735/124840499-1e65bf00-df59-11eb-99b3-60c6ecbbaf47.png)\r\n\r\nThis is a typo that should be fixed to `bytes1[]` instead.\r\n\r\n## Pull request\r\n\r\n#11634 \r\n",
+  "closed_by": {
+    "login": "hrkrshnn",
+    "id": 13174375,
+    "node_id": "MDQ6VXNlcjEzMTc0Mzc1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13174375?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hrkrshnn",
+    "html_url": "https://github.com/hrkrshnn",
+    "followers_url": "https://api.github.com/users/hrkrshnn/followers",
+    "following_url": "https://api.github.com/users/hrkrshnn/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hrkrshnn/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hrkrshnn/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hrkrshnn/subscriptions",
+    "organizations_url": "https://api.github.com/users/hrkrshnn/orgs",
+    "repos_url": "https://api.github.com/users/hrkrshnn/repos",
+    "events_url": "https://api.github.com/users/hrkrshnn/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hrkrshnn/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11633/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11633/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

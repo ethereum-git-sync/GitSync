@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11310",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11310/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11310/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11310/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11310",
+  "id": 866509521,
+  "node_id": "MDU6SXNzdWU4NjY1MDk1MjE=",
+  "number": 11310,
+  "title": "[isoltest] Add option to chose sender account",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-04-24T00:50:49Z",
+  "updated_at": "2021-05-21T12:41:08Z",
+  "closed_at": "2021-05-21T12:41:08Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Currently there is no way to change the sender account. A lot of tests (e.g. those in `test/contracts/*`) depend on the ability to call a contract with different senders.\r\n\r\nA potential option (if the semantictest tool keeps a state) is to introduce a line such as `account: <num>`, where `num` is an index starting from 0 (the default), which changes the sender.\r\n\r\nExample:\r\n```\r\n// account: 0\r\n// reserve(string), 50 ether: 0x20, 3, \"abc\" ->\r\n// owner(string): 0x20, 3, \"abc\" -> 0x1212121212121212121212121212120000000012\r\n// account: 1\r\n// reserve(string), 100 ether: 0x20, 3, \"abc\" ->\r\n// owner(string): 0x20, 3, \"abc\" -> 0x1212121212121212121212121212120000000012\r\n```\r\n\r\nThe `account: 0` can be omitted, as that is the starting value, however it can be used to go back to the initial account.\r\n\r\nAlternative is to use the actual addresses instead of indexes, but I'm not sure we need that as long as the account addresses are deterministic.",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11310/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11310/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13207",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13207/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13207/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13207/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13207",
+  "id": 1284022044,
+  "node_id": "I_kwDOAm_5kc5MiJ8c",
+  "number": 13207,
+  "title": "Functions that are generic in the data location of pointer arguments",
+  "user": {
+    "login": "frangio",
+    "id": 481465,
+    "node_id": "MDQ6VXNlcjQ4MTQ2NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/481465?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frangio",
+    "html_url": "https://github.com/frangio",
+    "followers_url": "https://api.github.com/users/frangio/followers",
+    "following_url": "https://api.github.com/users/frangio/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frangio/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frangio/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frangio/subscriptions",
+    "organizations_url": "https://api.github.com/users/frangio/orgs",
+    "repos_url": "https://api.github.com/users/frangio/repos",
+    "events_url": "https://api.github.com/users/frangio/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frangio/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 692642590,
+      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
+      "name": "feature",
+      "color": "fbca04",
+      "default": false,
+      "description": null
+    },
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-24T17:49:40Z",
+  "updated_at": "2022-06-29T14:24:07Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "Follow up to https://github.com/ethereum/solidity/issues/869#issuecomment-676517663\r\n\r\nIn order to write efficient code it's important to make good use of data locations. For example, avoiding unnecessary copies from calldata to memory. Some of the utilities we want to provide in OpenZeppelin Contracts can operate on both memory and calldata values, for example functions for validating merkle proofs. Currently we're forced to write two separate versions with almost no code reuse between them. This increases the opportunity for error for us as library developers, and makes it harder for the user to write efficient code as they have to know not to use the memory version (due to implicit copying).\r\n\r\nWe would like to be able to write functions that are generic for both memory and calldata. The compiler would emit separate implementations depending on the arguments the function is used with.\r\n\r\nI think this deserves its own issue separate from https://github.com/ethereum/solidity/issues/869.\r\n\r\nAn important question is whether these data location-generic functions should also be usable with storage pointer arguments. Similarly for a potential future [transient storage](https://eips.ethereum.org/EIPS/eip-1153) location. Storage is very different from memory and calldata in the mode of addressing and its interface, so I guess that some functions would only work with memory and calldata. On the other hand, storage and transient storage seem like they will be of the same category, and it should be possible to write a function that is generic in the kind of storage it uses. Some simpler functions may work with all locations if they only use `store` and `load` operations, but this seems less necessary.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13207/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13207/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2705",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2705/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2705/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2705/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2705",
+  "id": 1321290740,
+  "node_id": "I_kwDODtLRw85OwUv0",
+  "number": 2705,
+  "title": "Solidity compiler v0.25.1 ",
+  "user": {
+    "login": "bater53",
+    "id": 18266006,
+    "node_id": "MDQ6VXNlcjE4MjY2MDA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18266006?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bater53",
+    "html_url": "https://github.com/bater53",
+    "followers_url": "https://api.github.com/users/bater53/followers",
+    "following_url": "https://api.github.com/users/bater53/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bater53/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bater53/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bater53/subscriptions",
+    "organizations_url": "https://api.github.com/users/bater53/orgs",
+    "repos_url": "https://api.github.com/users/bater53/repos",
+    "events_url": "https://api.github.com/users/bater53/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bater53/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-07-28T17:59:44Z",
+  "updated_at": "2022-07-28T17:59:44Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "It appears you are unable to add a diferent compiler to remix v0.25.1.  Is there a workaround for this issue\r\n![2022-07-28_13-57-30](https://user-images.githubusercontent.com/18266006/181605828-f4e58b82-ec4f-4d4c-aeca-11aabcff7163.gif)\r\n?",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2705/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2705/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

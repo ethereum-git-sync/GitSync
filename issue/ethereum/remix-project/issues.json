@@ -1,11 +1,19 @@
 [
   {
     "author": {
-      "login": "pokrovskyy"
+      "login": "bater53"
     },
-    "number": 2684,
-    "title": "Yul-compiled contract does not show up in Contracts since v0.25.0",
-    "updatedAt": "2022-07-27T19:20:12Z"
+    "number": 2705,
+    "title": "Solidity compiler v0.25.1 ",
+    "updatedAt": "2022-07-28T17:59:44Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 199,
+    "title": "Autocomplete for solidity",
+    "updatedAt": "2022-07-28T15:10:33Z"
   },
   {
     "author": {
@@ -13,7 +21,39 @@
     },
     "number": 1490,
     "title": "Accept Solidity version without commit hash in the `version` query parameter",
-    "updatedAt": "2022-07-27T17:39:19Z"
+    "updatedAt": "2022-07-28T14:08:38Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2693,
+    "title": "fix compiler version setting using URL params",
+    "updatedAt": "2022-07-28T14:01:23Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2558,
+    "title": "console.log shows error in terminal",
+    "updatedAt": "2022-07-28T13:21:30Z"
+  },
+  {
+    "author": {
+      "login": "ioedeveloper"
+    },
+    "number": 2666,
+    "title": "Integrate remix-ide libs into Web2 platforms",
+    "updatedAt": "2022-07-28T10:08:41Z"
+  },
+  {
+    "author": {
+      "login": "pokrovskyy"
+    },
+    "number": 2684,
+    "title": "Yul-compiled contract does not show up in Contracts since v0.25.0",
+    "updatedAt": "2022-07-27T19:20:12Z"
   },
   {
     "author": {
@@ -46,14 +86,6 @@
     "number": 2493,
     "title": "data bytes argument in safeTransferFrom  for erc1155 & erc721",
     "updatedAt": "2022-07-27T11:44:15Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2558,
-    "title": "console.log shows error in terminal",
-    "updatedAt": "2022-07-27T11:44:03Z"
   },
   {
     "author": {
@@ -166,14 +198,6 @@
     "number": 2687,
     "title": "Remove Environment plugins from the plugin manager",
     "updatedAt": "2022-07-26T11:00:55Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2693,
-    "title": "fix compiler version setting using URL params",
-    "updatedAt": "2022-07-26T08:59:52Z"
   },
   {
     "author": {
@@ -363,14 +387,6 @@
     "author": {
       "login": "LianaHus"
     },
-    "number": 199,
-    "title": "Autocomplete for solidity",
-    "updatedAt": "2022-07-25T11:25:47Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
     "number": 131,
     "title": "Plugin Manager: Mark native plugins",
     "updatedAt": "2022-07-25T11:24:42Z"
@@ -462,14 +478,6 @@
     "number": 2667,
     "title": "Remix-Tests GitHub Action",
     "updatedAt": "2022-07-21T12:09:48Z"
-  },
-  {
-    "author": {
-      "login": "ioedeveloper"
-    },
-    "number": 2666,
-    "title": "Integrate remix-ide libs into Web2 platforms",
-    "updatedAt": "2022-07-21T10:46:48Z"
   },
   {
     "author": {

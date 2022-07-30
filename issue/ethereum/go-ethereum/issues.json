@@ -1,10 +1,10 @@
 [
   {
     "author": {
-      "login": "tropicar"
+      "login": "deivid1"
     },
-    "number": 25376,
-    "title": "Geth client does not sync on ropsten testnet",
-    "updatedAt": "2022-07-29T00:47:44Z"
+    "number": 24790,
+    "title": "WARN err=\"context canceled\" in Ubuntu 22.04",
+    "updatedAt": "2022-07-29T20:46:17Z"
   }
 ]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/1478",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/1478/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/1478/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/1478/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/1478",
+  "id": 193138312,
+  "node_id": "MDU6SXNzdWUxOTMxMzgzMTI=",
+  "number": 1478,
+  "title": "LLL: include metadata in output",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-12-02T15:08:41Z",
+  "updated_at": "2020-01-15T14:18:32Z",
+  "closed_at": "2020-01-15T14:18:32Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Here is a proposed amended metadata for LLL:\r\n\r\n```\r\n{\r\n  // Required: The version of the metadata format\r\n  version: \"1\",\r\n  // Required: Source code language, basically selects a \"sub-version\"\r\n  // of the specification\r\n  language: \"LLL\",\r\n  // Required: Details about the compiler, contents are specific\r\n  // to the language.\r\n  compiler: {\r\n    // Required for LLL: name of the compiler\r\n    name: \"lllc\",\r\n    // Required for LLL: Version of the compiler\r\n    version: \"0.4.6+commit.2dabbdf0.Emscripten.clang\",\r\n  },\r\n  // Required: Compilation source files/source units, keys are file names\r\n  sources:\r\n  {\r\n    \"myFile.lll\": {\r\n      // Required: keccak256 hash of the source file\r\n      \"keccak256\": \"0x123...\",\r\n      // Required (unless \"content\" is used, see below): URL to the\r\n      // source file, protocol is more or less arbitrary, but a Swarm\r\n      // URL is recommended\r\n      \"url\": \"bzzr://56ab...\"\r\n    }\r\n  },\r\n  // Required: Compiler settings\r\n  settings:\r\n  {\r\n    // Optional: Optimizer settings (enabled defaults to false)\r\n    optimizer: {\r\n      enabled: true,\r\n      runs: 200\r\n    },\r\n  },\r\n  // Required: Generated information about the contract.\r\n  output:\r\n  {\r\n    // Required: ABI definition of the contract\r\n    // NOTE: empty\r\n    abi: {},\r\n    // Required: NatSpec user documentation of the contract\r\n    // NOTE: empty\r\n    userdoc: {},\r\n    // Required: NatSpec developer documentation of the contract\r\n    // NOTE: empty\r\n    devdoc: {},\r\n  }\r\n}\r\n```\r\n\r\nWhile this cannot be used to retrieve an ABI or to use nastspec, it is enough to verify the compilation.",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/1478/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/1478/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

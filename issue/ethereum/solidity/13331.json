@@ -1,0 +1,137 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13331",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13331/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13331/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13331/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13331",
+  "id": 1322266958,
+  "node_id": "I_kwDOAm_5kc5O0DFO",
+  "number": 13331,
+  "title": "Solidity needs to support the trie type, so that the amount of stored data is smaller and the search is faster. The gas of contract transactions will be reduced",
+  "user": {
+    "login": "one2008",
+    "id": 108224077,
+    "node_id": "U_kgDOBnNeTQ",
+    "avatar_url": "https://avatars.githubusercontent.com/u/108224077?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/one2008",
+    "html_url": "https://github.com/one2008",
+    "followers_url": "https://api.github.com/users/one2008/followers",
+    "following_url": "https://api.github.com/users/one2008/following{/other_user}",
+    "gists_url": "https://api.github.com/users/one2008/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/one2008/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/one2008/subscriptions",
+    "organizations_url": "https://api.github.com/users/one2008/orgs",
+    "repos_url": "https://api.github.com/users/one2008/repos",
+    "events_url": "https://api.github.com/users/one2008/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/one2008/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 455256446,
+      "node_id": "MDU6TGFiZWw0NTUyNTY0NDY=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/waiting%20for%20more%20input",
+      "name": "waiting for more input",
+      "color": "fef2c0",
+      "default": false,
+      "description": "Issues waiting for more input by the reporter"
+    },
+    {
+      "id": 692642590,
+      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
+      "name": "feature",
+      "color": "fbca04",
+      "default": false,
+      "description": null
+    },
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-07-29T13:39:35Z",
+  "updated_at": "2022-07-29T16:15:33Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": null,
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13331/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13331/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1199649786",
+    "html_url": "https://github.com/ethereum/solidity/issues/13331#issuecomment-1199649786",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13331",
+    "id": 1199649786,
+    "node_id": "IC_kwDOAm_5kc5HgTP6",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-07-29T16:15:22Z",
+    "updated_at": "2022-07-29T16:15:22Z",
+    "author_association": "MEMBER",
+    "body": "Can you elaborate? What use cases do you have in mind?\r\n\r\nThis sounds like something that could be implemented as a third-party library. We're currently working on adding generics to the language, which should make implementing such libraries in a reusable way even easier. I think that's a better approach than making more data structures a core part of the language.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1199649786/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/1523",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/1523/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/1523/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/1523/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/1523",
+  "id": 197594448,
+  "node_id": "MDU6SXNzdWUxOTc1OTQ0NDg=",
+  "number": 1523,
+  "title": "error",
+  "user": {
+    "login": "Mxxim",
+    "id": 10141230,
+    "node_id": "MDQ6VXNlcjEwMTQxMjMw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10141230?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Mxxim",
+    "html_url": "https://github.com/Mxxim",
+    "followers_url": "https://api.github.com/users/Mxxim/followers",
+    "following_url": "https://api.github.com/users/Mxxim/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Mxxim/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Mxxim/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Mxxim/subscriptions",
+    "organizations_url": "https://api.github.com/users/Mxxim/orgs",
+    "repos_url": "https://api.github.com/users/Mxxim/repos",
+    "events_url": "https://api.github.com/users/Mxxim/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Mxxim/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-12-26T14:42:05Z",
+  "updated_at": "2016-12-27T08:48:36Z",
+  "closed_at": "2016-12-27T08:48:36Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "```solidity\r\ncontract contractA {\r\n    \r\n    int32[] a;\r\n    \r\n    function setA(int32[] aa) {\r\n        a = aa;\r\n    }\r\n    \r\n    function getA() returns (int32[]){\r\n        return a;\r\n    }\r\n    \r\n}\r\n\r\ncontract contractC {\r\n    \r\n    int32[] a;\r\n    \r\n    function setA(int32[] aa) {\r\n        a = aa;\r\n    }\r\n    \r\n    function getA() returns (int32[]){\r\n        return a;\r\n    }\r\n    \r\n}\r\n\r\ncontract contractB {\r\n    contractA A = new contractA();\r\n    contractC C = new contractC();\r\n    \r\n    C.setA(A.getA());\r\n    \r\n}\r\n```",
+  "closed_by": {
+    "login": "Mxxim",
+    "id": 10141230,
+    "node_id": "MDQ6VXNlcjEwMTQxMjMw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10141230?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Mxxim",
+    "html_url": "https://github.com/Mxxim",
+    "followers_url": "https://api.github.com/users/Mxxim/followers",
+    "following_url": "https://api.github.com/users/Mxxim/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Mxxim/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Mxxim/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Mxxim/subscriptions",
+    "organizations_url": "https://api.github.com/users/Mxxim/orgs",
+    "repos_url": "https://api.github.com/users/Mxxim/repos",
+    "events_url": "https://api.github.com/users/Mxxim/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Mxxim/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/1523/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/1523/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

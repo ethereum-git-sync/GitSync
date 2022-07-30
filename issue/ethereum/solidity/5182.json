@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/5182",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/5182/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/5182/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/5182/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/5182",
+  "id": 368451392,
+  "node_id": "MDU6SXNzdWUzNjg0NTEzOTI=",
+  "number": 5182,
+  "title": "CREATE2 documentation is incorrect",
+  "user": {
+    "login": "ghost",
+    "id": 10137,
+    "node_id": "MDQ6VXNlcjEwMTM3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10137?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ghost",
+    "html_url": "https://github.com/ghost",
+    "followers_url": "https://api.github.com/users/ghost/followers",
+    "following_url": "https://api.github.com/users/ghost/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ghost/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ghost/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ghost/subscriptions",
+    "organizations_url": "https://api.github.com/users/ghost/orgs",
+    "repos_url": "https://api.github.com/users/ghost/repos",
+    "events_url": "https://api.github.com/users/ghost/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ghost/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-10-10T00:44:10Z",
+  "updated_at": "2018-10-10T13:30:33Z",
+  "closed_at": "2018-10-10T13:30:33Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "The CREATE2 documentation in assembly states that:\r\n\r\n> create2(v, n, p, s)\r\n\r\n> create new contract with code mem[p…(p+s)) at address keccak256(0xff . self . n . keccak256(mem[p…(p+s))) and send v wei and return the new address, where 0xff is a 8 byte value, self is the current contract’s address as a 20 byte value and n is a big-endian 256-bit value\r\n\r\nThis is wrong. [EIP 1014](https://eips.ethereum.org/EIPS/eip-1014) states: \r\n\r\n> Adds a new opcode at 0xf5, which takes 4 stack arguments: endowment, memory_start, memory_length, salt.\r\n\r\nProposal:\r\n\r\nChange this to:\r\n\r\n> create new contract with code mem[n…(n+p)) at address keccak256(0xff . self . s . keccak256(mem[n…(n+p))) and send v wei and return the new address, where 0xff is a 8 byte value, self is the current contract’s address as a 20 byte value and s is a big-endian 256-bit value\r\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/5182/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/5182/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

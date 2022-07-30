@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13332",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13332/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13332/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13332/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13332",
+  "id": 1322358685,
+  "node_id": "I_kwDOAm_5kc5O0Zed",
+  "number": 13332,
+  "title": "Unexpected storage layout caused by interfaces",
+  "user": {
+    "login": "cyraxred",
+    "id": 12501906,
+    "node_id": "MDQ6VXNlcjEyNTAxOTA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12501906?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cyraxred",
+    "html_url": "https://github.com/cyraxred",
+    "followers_url": "https://api.github.com/users/cyraxred/followers",
+    "following_url": "https://api.github.com/users/cyraxred/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cyraxred/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cyraxred/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cyraxred/subscriptions",
+    "organizations_url": "https://api.github.com/users/cyraxred/orgs",
+    "repos_url": "https://api.github.com/users/cyraxred/repos",
+    "events_url": "https://api.github.com/users/cyraxred/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cyraxred/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-07-29T15:00:11Z",
+  "updated_at": "2022-07-29T15:00:11Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nAddition of an interface causes reordering of fields in the storage layout.\r\n\r\n## Environment\r\n\r\n- Compiler version: reproduced on 0.8.0, 0.8.4, 0.8.10. 0.8.15\r\n- Framework/IDE (e.g. Truffle or Remix): Remix, VisualStudio\r\n\r\n## Steps to Reproduce\r\n\r\nCompiling of the code below gives following storage layouts:\r\n- V1: p11, p12\r\n- V2: _p21_, p11, p12, _p22_\r\n\r\nExpected layout is:\r\n- V1: p11, p12\r\n- V2: p11, p12, p21, p22 \r\n\r\nWhen ITest is removed from P22, then the layout is generated as expected.\r\nThis effect depends on position of interfaces on the inheritance list, especially for contracts with complex composition.\r\n\r\n```solidity\r\ninterface ITest {}\r\n\r\ncontract P11 is ITest {\r\n    uint8 public p11 = 11;\r\n}\r\n\r\ncontract P12 is P11 {\r\n    uint8 public p12 = 12;\r\n}\r\n\r\ncontract V1 is P12 {}\r\n\r\ncontract P21 {\r\n    uint8 public p21 = 21;\r\n}\r\n\r\ncontract P22 is P21, ITest {\r\n    uint8 public p22 = 22;\r\n}\r\n\r\ncontract V2 is V1, P22 {}\r\n\r\n```\r\n\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13332/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13332/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

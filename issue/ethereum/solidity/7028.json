@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/7028",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/7028/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/7028/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/7028/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/7028",
+  "id": 462790412,
+  "node_id": "MDU6SXNzdWU0NjI3OTA0MTI=",
+  "number": 7028,
+  "title": "[isoltest] auto-update does not add `left(..)`",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 437863668,
+      "node_id": "MDU6TGFiZWw0Mzc4NjM2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/build%20system%20:building_construction:",
+      "name": "build system :building_construction:",
+      "color": "1d76db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-07-01T15:53:18Z",
+  "updated_at": "2020-01-20T11:38:14Z",
+  "closed_at": "2020-01-20T11:38:14Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "```\r\nsemanticTests/inlineAssembly/constant_access.sol: FAIL\r\n  Contract:\r\n    contract C {\r\n        uint constant a = 2;\r\n        bytes2 constant b = 0xabcd;\r\n        bytes3 constant c = \"abc\";\r\n        bool constant d = true;\r\n        function f() public pure returns (uint w, bytes2 x, bytes3 y, bool z) {\r\n            assembly {\r\n                w := a\r\n                x := b\r\n                y := c\r\n                z := d\r\n            }\r\n        }\r\n    }\r\n\r\n  Expected result:\r\n  // f() -> 2, 0xabcd, \"abc\", true\r\n\r\n  Obtained result:\r\n  // f() -> 2, 0xabcd, \"abc\", true\r\n```\r\n\r\n(the obtained result should show `left(0xabcd)`).",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/7028/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/7028/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

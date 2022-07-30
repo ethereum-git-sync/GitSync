@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/6455",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/6455/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/6455/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/6455/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/6455",
+  "id": 428692637,
+  "node_id": "MDU6SXNzdWU0Mjg2OTI2Mzc=",
+  "number": 6455,
+  "title": "yul proto spec: Add calldata/returndata/extcode/code opcodes",
+  "user": {
+    "login": "bshastry",
+    "id": 2388185,
+    "node_id": "MDQ6VXNlcjIzODgxODU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2388185?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bshastry",
+    "html_url": "https://github.com/bshastry",
+    "followers_url": "https://api.github.com/users/bshastry/followers",
+    "following_url": "https://api.github.com/users/bshastry/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bshastry/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bshastry/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bshastry/subscriptions",
+    "organizations_url": "https://api.github.com/users/bshastry/orgs",
+    "repos_url": "https://api.github.com/users/bshastry/repos",
+    "events_url": "https://api.github.com/users/bshastry/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bshastry/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-04-03T10:38:07Z",
+  "updated_at": "2019-05-02T08:47:55Z",
+  "closed_at": "2019-05-02T08:47:55Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nThe yul proto spec does not define the following opcodes yet\r\n\r\n| opcode  | Description |\r\n| ------------- | ------------- |\r\n| calldataload(p)  |\tcall data starting from position p (32 bytes) |\r\n| calldatasize\t|\tsize of call data in bytes |\r\n| calldatacopy(t, f, s) |\tcopy s bytes from calldata at position f to mem at position t |\r\n| codesize\t|\tsize of the code of the current contract / execution context |\r\n| codecopy(t, f, s)\t|\tcopy s bytes from code at position f to mem at position t |\r\n| extcodesize(a)\t|\tsize of the code at address a |\r\n| extcodecopy(a, t, f, s)\t|\tlike codecopy(t, f, s) but take code at address a |\r\n| returndatasize\t |\tsize of the last returndata |\r\n| returndatacopy(t, f, s)\t|\tcopy s bytes from returndata at position f to mem at position t |\r\n| extcodehash(a)  |\tcode hash of address a |\r\n\r\nAll of them have a side-effect (extend the trace) but the following ops (as implemented in the yul Interpreter) are just stubs that return hard-coded values: `extcodesize` and `extcodehash`. Nonetheless, it will still be interesting to automatically generate them.\r\n\r\n## Specification\r\n\r\nTBD\r\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/6455/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/6455/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

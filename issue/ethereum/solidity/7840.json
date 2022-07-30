@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/7840",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/7840/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/7840/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/7840/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/7840",
+  "id": 529989744,
+  "node_id": "MDU6SXNzdWU1Mjk5ODk3NDQ=",
+  "number": 7840,
+  "title": "Invalid IR generated for `push` via Yul",
+  "user": {
+    "login": "leonardoalt",
+    "id": 504195,
+    "node_id": "MDQ6VXNlcjUwNDE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonardoalt",
+    "html_url": "https://github.com/leonardoalt",
+    "followers_url": "https://api.github.com/users/leonardoalt/followers",
+    "following_url": "https://api.github.com/users/leonardoalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonardoalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonardoalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonardoalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonardoalt/orgs",
+    "repos_url": "https://api.github.com/users/leonardoalt/repos",
+    "events_url": "https://api.github.com/users/leonardoalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonardoalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-11-28T16:00:32Z",
+  "updated_at": "2020-01-21T10:20:29Z",
+  "closed_at": "2020-01-21T10:20:29Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Code:\r\n```\r\ncontract C {\r\n    uint[] arr;\r\n    function f() public {\r\n        arr.push(1);\r\n    }\r\n}\r\n```\r\n\r\nCommand line:\r\n`solc --ir bug.sol`\r\n\r\nResult on `develop`:\r\n```\r\nInternal compiler error during compilation:\r\n/solidity/libsolidity/codegen/ir/IRGeneratorForStatements.cpp(787): Throw in function virtual void dev::solidity::IRGeneratorForStatements::endVisit(const dev::solidity::MemberAccess&)\r\nDynamic exception type: boost::wrapexcept<langutil::InternalCompilerError>\r\n```\r\n\r\nResult on `develop_060`:\r\n```\r\nInternal compiler error during compilation:\r\n/solidity/libsolidity/codegen/ir/IRGenerator.cpp(60): Throw in function std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > dev::solidity::IRGenerator::run(const dev::solidity::ContractDefinition&)\r\nDynamic exception type: boost::wrapexcept<langutil::InternalCompilerError>\r\n```\r\nplus\r\nhttps://gist.github.com/leonardoalt/4a59ba13a3276c8b3a873f3104b19e25",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/7840/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/7840/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

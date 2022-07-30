@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/7443",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/7443/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/7443/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/7443/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/7443",
+  "id": 494569798,
+  "node_id": "MDU6SXNzdWU0OTQ1Njk3OTg=",
+  "number": 7443,
+  "title": "[solc] corpus based fuzzer: Randomize target evm version",
+  "user": {
+    "login": "bshastry",
+    "id": 2388185,
+    "node_id": "MDQ6VXNlcjIzODgxODU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2388185?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bshastry",
+    "html_url": "https://github.com/bshastry",
+    "followers_url": "https://api.github.com/users/bshastry/followers",
+    "following_url": "https://api.github.com/users/bshastry/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bshastry/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bshastry/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bshastry/subscriptions",
+    "organizations_url": "https://api.github.com/users/bshastry/orgs",
+    "repos_url": "https://api.github.com/users/bshastry/repos",
+    "events_url": "https://api.github.com/users/bshastry/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bshastry/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-09-17T11:38:44Z",
+  "updated_at": "2019-09-17T13:23:18Z",
+  "closed_at": "2019-09-17T13:23:18Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nWhen I was reviewing test coverage, I found that some code snippets like the following\r\n\r\nhttps://github.com/ethereum/solidity/blob/5859a69c449bf970392d792e39396467331b71ed/libsolidity/codegen/ExpressionCompiler.cpp#L1960-L1973\r\n\r\nare not covered. In general, it would be great to cover these that in turn influence coverage inside code generation\r\n\r\nhttps://github.com/ethereum/solidity/blob/5859a69c449bf970392d792e39396467331b71ed/liblangutil/EVMVersion.h#L82-L94\r\n\r\nOne suggestion to do this is to explicitly write to the \"settings\"->\"evmVersion\" field a randomly chosen evm version string from the list of supported evm versions until the current one.",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/7443/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/7443/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

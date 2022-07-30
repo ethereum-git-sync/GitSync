@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/8025",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/8025/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/8025/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/8025/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/8025",
+  "id": 538499316,
+  "node_id": "MDU6SXNzdWU1Mzg0OTkzMTY=",
+  "number": 8025,
+  "title": "0.6.0 Release",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-12-16T15:55:59Z",
+  "updated_at": "2019-12-19T15:06:50Z",
+  "closed_at": "2019-12-19T15:06:50Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Checklist for making a release:\r\n\r\n### Pre-release\r\n - [x] Ensure that a Github project exists for the release.\r\n - [x] Check that all issues and pull requests from the Github project to be released are merged to ``develop``.\r\n\r\n### Changelog\r\n - [x] Sort the changelog entries alphabetically and correct any errors you notice.\r\n - [x] Create a commit on a new branch that updates the ``Changelog`` to include a release date.\r\n - [x] Run ``./scripts/tests.sh`` to update the bug list.\r\n - [x] Create a pull request and wait for the tests, merge it.\r\n\r\n### Create the Release\r\n - [x] Create Github release page: https://github.com/ethereum/solidity/releases/new\r\n - [x] On the release page, select the ``release`` branch as new target and set tag to the new version (e.g. `v0.5.4`) (make sure you only `SAVE DRAFT` instead of `PUBLISH RELEASE` before the actual release)\r\n - [x] Thank voluntary contributors in the Github release page (use ``git shortlog -s -n -e origin/release..origin/develop``).\r\n - [x] Create a pull request from ``develop`` to ``release``, wait for the tests, then merge it.\r\n - [x] Make a final check that there are no platform-dependency issues in the ``solidity-test-bytecode`` repository.\r\n - [x] Wait for the tests for the commit on ``release``, create a release in Github, creating the tag (click the `PUBLISH RELEASE` button on the release page.)\r\n - [x] Wait for the CI runs on the tag itself (travis and appveyor should push artifacts onto the Github release page).\r\n - [x] Run ``scripts/create_source_tarball.sh`` while being on the tag to create the source tarball. Make sure to create ``prerelease.txt`` before: (``echo -n > prerelease.txt``). This will create the tarball in a directory called ``upload``.\r\n - [x] Take the tarball from the upload directory (its name should be ``solidity_x.x.x.tar.gz``, otherwise ``prerelease.txt`` was missing in the step before) and upload the source tarball to the release page.\r\n\r\n### PPA\r\n - [x] Change ``scripts/release_ppa.sh`` to match your key's email and key id.\r\n - [x] Run ``scripts/release_ppa.sh release`` to create the PPA release (you need the relevant openssl key).\r\n - [x] Wait for the ``~ethereum/ubuntu/ethereum-static`` PPA build to be finished and published for *all platforms*. SERIOUSLY: DO NOT PROCEED EARLIER!!! *After* the static builds are *published*, copy the static package to the ``~ethereum/ubuntu/ethereum`` PPA for the destination series ``Trusty`` and ``Xenial`` while selecting ``Copy existing binaries``.\r\n - [x] Check that the Docker release was pushed to Docker Hub (this still seems to have problems, run ``./scripts/docker_deploy_manual.sh v0.x.x``).\r\n\r\n### Homebrew\r\n - [x] Update the version and the hash (``sha256sum solidity_x.x.x.tar.gz``) in https://github.com/ethereum/homebrew-ethereum/blob/master/solidity.rb\r\n\r\n### Documentation\r\n - [x] Build the new version on https://readthedocs.org/projects/solidity/ (select `latest` on the bottom of the page and click `BUILD`)\r\n - [x] In the admin panel, select `Versions` in the menu and set the default version to the released one.\r\n\r\n### Release solc-js\r\n - [x] Increment the version number, create a pull request for that, merge it after tests succeeded.\r\n - [x] Run ``npm publish`` in the updated ``solc-js`` repository.\r\n - [x] Make sure to push the tag ``npm publish`` created with ``git push --tags``.\r\n\r\n### Post-release\r\n - [x] Create a commit to increase the version number on ``develop`` in ``CMakeLists.txt`` and add a new skeleton changelog entry.\r\n - [x] Merge ``release`` back into ``develop``.\r\n - [x] Announce on Twitter and Reddit.\r\n - [x] Lean back, wait for bug reports and repeat from step 1 :)\r\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/8025/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/8025/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

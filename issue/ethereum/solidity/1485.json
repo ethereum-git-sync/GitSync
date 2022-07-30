@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/1485",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/1485/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/1485/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/1485/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/1485",
+  "id": 193465490,
+  "node_id": "MDU6SXNzdWUxOTM0NjU0OTA=",
+  "number": 1485,
+  "title": "Inline assembly: switch",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-12-05T10:51:13Z",
+  "updated_at": "2017-05-26T09:24:39Z",
+  "closed_at": "2017-05-26T09:24:39Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "If we add for loops to inline assembly #1472, the only structure that is left that would generate explicit jumps is \"if\" and friends. If we are able to eliminate explicit jumps, then translation into a language that does not have jumps like web assembly will be much easier. Also, optimization on the basis of assembly is easier without explicit jumps.\r\n\r\n\"if and friends\" can all be implemented using the following construct:\r\n\r\n```\r\nswitch <functional-expression> {\r\ncase 0x123: {\r\n<expression>\r\n}\r\ncase 789: {\r\n<expression>\r\n}\r\ndefault: {\r\n<expression>\r\n}\r\n}\r\n```\r\nBraces are mandatory and control flow that reaches the end of a \"case\" will continue at the end of the switch. Ordering of the cases (including the default case) is arbitrary.\r\n\r\nA snippet as\r\n```\r\nswitch E { case A: { block_A } case B: { block_B } default: { block_default } }\r\n```\r\nis translated as follows:\r\n```\r\n{\r\nlet val := E\r\njumpi(label_A, eq(val, A))\r\njumpi(label_B, eq(val, B))\r\njump(label_default)\r\nlabel_A: block_A jump(end)\r\nlabel_B: block_B jump(end)\r\nlabel_default: block_default\r\nend:\r\n}\r\n```",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/1485/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/1485/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

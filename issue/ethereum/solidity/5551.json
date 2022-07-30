@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/5551",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/5551/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/5551/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/5551/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/5551",
+  "id": 386096851,
+  "node_id": "MDU6SXNzdWUzODYwOTY4NTE=",
+  "number": 5551,
+  "title": "Bug when converting from literals to fixed-point numbers.",
+  "user": {
+    "login": "0yi0",
+    "id": 30090427,
+    "node_id": "MDQ6VXNlcjMwMDkwNDI3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30090427?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/0yi0",
+    "html_url": "https://github.com/0yi0",
+    "followers_url": "https://api.github.com/users/0yi0/followers",
+    "following_url": "https://api.github.com/users/0yi0/following{/other_user}",
+    "gists_url": "https://api.github.com/users/0yi0/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/0yi0/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/0yi0/subscriptions",
+    "organizations_url": "https://api.github.com/users/0yi0/orgs",
+    "repos_url": "https://api.github.com/users/0yi0/repos",
+    "events_url": "https://api.github.com/users/0yi0/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/0yi0/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-11-30T09:05:31Z",
+  "updated_at": "2018-12-10T17:02:37Z",
+  "closed_at": "2018-12-10T17:02:37Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nHere's an example.\r\n\r\n```\r\ncontract C {\r\n\tfunction literalToUFixed() public pure returns (ufixed8x2) {\r\n\t\tufixed8x2 a = 0.10;\r\n\t\treturn a;\r\n\t}\r\n}\r\n```\r\n\r\nI expect `0.10` is implicitly convertible to `ufixed8x2`, but it doesn't.\r\n\r\n```\r\nError: Type rational_const 1 / 10 is not implicitly convertible to expected type ufixed8x2. Try converting to type ufixed8x1 or use an explicit conversion.\r\n\t\tufixed8x2 a = 0.10;\r\n\t\t^----------------^\r\n```\r\n\r\nThe current implementation makes a pre-conversion from the rational number literal `1/10` to some random fixed-point type (here `ufixed8x1`) and checks if the type (`ufixed8x1`) can be implicitly convertible to the target type (`ufixed8x2`).\r\n\r\nThis behavior also causes literals being not convertible to any signed fixed-point types.\r\n\r\n```\r\ncontract C {\r\n\tfunction literalToFixed() public pure returns (fixed8x1) {\r\n\t\tfixed8x1 a = 0.1;\r\n\t\treturn a;\r\n\t}\r\n}\r\n```\r\n\r\nSince `ufixed8x1` is not implicitly convertible to `fixed8x1, this does not compile.\r\n\r\n```\r\nError: Type rational_const 1 / 10 is not implicitly convertible to expected type fixed8x1. Try converting to type ufixed8x1 or use an explicit conversion.\r\n\t\tfixed8x1 a = 0.1;\r\n\t\t^--------------^\r\n```\r\n\r\n## Environment\r\n\r\n- Compiler version: b4086ac87037813eb553e92839bbc40de6bbd9ac\r\n- Target EVM version (as per compiler settings): N/A\r\n- Framework/IDE (e.g. Truffle or Remix): N/A\r\n- EVM execution environment / backend / blockchain client: N/A\r\n- Operating system: Ubuntu 16.04.5 LTS\r\n\r\n## Steps to Reproduce\r\n\r\nSee the above example.",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/5551/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/5551/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

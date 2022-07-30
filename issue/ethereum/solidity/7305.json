@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/7305",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/7305/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/7305/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/7305/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/7305",
+  "id": 485657076,
+  "node_id": "MDU6SXNzdWU0ODU2NTcwNzY=",
+  "number": 7305,
+  "title": "[SMTChecker] Null dereference during reporting error \"Internal error: Expression undefined for SMT solver.\"",
+  "user": {
+    "login": "bshastry",
+    "id": 2388185,
+    "node_id": "MDQ6VXNlcjIzODgxODU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2388185?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bshastry",
+    "html_url": "https://github.com/bshastry",
+    "followers_url": "https://api.github.com/users/bshastry/followers",
+    "following_url": "https://api.github.com/users/bshastry/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bshastry/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bshastry/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bshastry/subscriptions",
+    "organizations_url": "https://api.github.com/users/bshastry/orgs",
+    "repos_url": "https://api.github.com/users/bshastry/repos",
+    "events_url": "https://api.github.com/users/bshastry/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bshastry/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-08-27T08:16:39Z",
+  "updated_at": "2019-08-28T13:54:31Z",
+  "closed_at": "2019-08-28T13:54:31Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nossfuzz issue 16736\r\n\r\n```\r\npragma experimental SMTChecker;\r\ncontract C {\r\n\r\nfunction f() public { (int[][]); }\r\n\r\n}\r\n```\r\n\r\nleads to a null dereference here because AST Node location is null\r\n\r\nhttps://github.com/ethereum/solidity/blob/a54d69b8efa94be445012cf59a92e07133827dd8/libsolidity/formal/SMTEncoder.cpp#L1274\r\n\r\n## Environment\r\n\r\n- Compiler version: latest develop\r\n\r\n## Steps to Reproduce\r\n\r\n```\r\n$ solc <contract.sol>\r\n```",
+  "closed_by": {
+    "login": "leonardoalt",
+    "id": 504195,
+    "node_id": "MDQ6VXNlcjUwNDE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonardoalt",
+    "html_url": "https://github.com/leonardoalt",
+    "followers_url": "https://api.github.com/users/leonardoalt/followers",
+    "following_url": "https://api.github.com/users/leonardoalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonardoalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonardoalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonardoalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonardoalt/orgs",
+    "repos_url": "https://api.github.com/users/leonardoalt/repos",
+    "events_url": "https://api.github.com/users/leonardoalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonardoalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/7305/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/7305/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

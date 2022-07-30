@@ -49,11 +49,11 @@
   "milestone": null,
   "comments": 16,
   "created_at": "2020-11-12T22:28:39Z",
-  "updated_at": "2022-07-28T13:20:51Z",
+  "updated_at": "2022-07-29T04:01:37Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "This was recently mentioned in the EthOnline [Future of Solidity](https://axic.github.io/notes/summit/future_of_solidity/#/31) talk, but we have been discussing this here and there for the past months, and goes back as early as #228.  \r\n\r\nThe goal is to move functionality out of the compiler into code written in Solidity and slowly build out a standard library -- lets call it `stdlib`. Files/contracts/functions from the `stdlib` would need to be explicitly imported, and would not be exposed implicitly. Initially this file would still be part of the compiler source code and included as a literal in the binary, but potentially in the future it could live outside should importing from content addressible locations turn more naturally supported by tools.\r\n\r\nFunctionality we want to move out / include:\r\n1. Function available in the global namespace\r\n2. Functions attached to certain types (such as those on `address`)\r\n3. Potentially things like `block`, `tx`, and `msg`\r\n4. Helpers to be used within assembly\r\n\r\nThere is some initial work available in https://github.com/ethereum/solidity/tree/stdlib/stdlib\r\n\r\n",
+  "body": "This was recently mentioned in the EthOnline [Future of Solidity](https://axic.github.io/notes/summit/future_of_solidity/#/31) talk, but we have been discussing this here and there for the past months, and goes back as early as #228.  \r\n\r\nThe goal is to move functionality out of the compiler into code written in Solidity and slowly build out a standard library -- lets call it `stdlib`. Files/contracts/functions from the `stdlib` would need to be explicitly imported, and would not be exposed implicitly. Initially this file would still be part of the compiler source code and included as a literal in the binary, but potentially in the future it could live outside should importing from content addressible locations turn more naturally supported by tools.\r\n\r\nFunctionality we want to move out / include:\r\n1. Function available in the global namespace\r\n2. Functions attached to certain types (such as those on `address`)\r\n3. Potentially things like `block`, `tx`, and `msg`\r\n4. Helpers to be used within assembly\r\n\r\nThere is some initial work available in https://github.com/ethereum/solidity/tree/stdlib\r\n\r\n",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/10282/reactions",

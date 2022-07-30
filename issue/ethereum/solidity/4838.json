@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/4838",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/4838/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/4838/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/4838/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/4838",
+  "id": 351843493,
+  "node_id": "MDU6SXNzdWUzNTE4NDM0OTM=",
+  "number": 4838,
+  "title": "Wrong abi for mapping(address => uint[])",
+  "user": {
+    "login": "0xferit",
+    "id": 3106907,
+    "node_id": "MDQ6VXNlcjMxMDY5MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3106907?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/0xferit",
+    "html_url": "https://github.com/0xferit",
+    "followers_url": "https://api.github.com/users/0xferit/followers",
+    "following_url": "https://api.github.com/users/0xferit/following{/other_user}",
+    "gists_url": "https://api.github.com/users/0xferit/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/0xferit/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/0xferit/subscriptions",
+    "organizations_url": "https://api.github.com/users/0xferit/orgs",
+    "repos_url": "https://api.github.com/users/0xferit/repos",
+    "events_url": "https://api.github.com/users/0xferit/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/0xferit/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-08-18T18:57:35Z",
+  "updated_at": "2018-08-18T20:18:08Z",
+  "closed_at": "2018-08-18T20:18:08Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nCompiler generates wrong abi for `mapping(address => uint[])`. \r\n\r\nExpected a getter like this: `foo(address) returns (uint[])`\r\nGot a getter like this: `foo(address, uint) returns (uint)`\r\n\r\nActual abi: \r\n```\r\n{\r\n  \"constant\": true,\r\n  \"inputs\": [\r\n    {\r\n      \"name\": \"\",\r\n      \"type\": \"address\"\r\n    },\r\n    {\r\n      \"name\": \"\",\r\n      \"type\": \"uint256\"\r\n    }\r\n  ],\r\n  \"name\": \"userToIds\",\r\n  \"outputs\": [\r\n    {\r\n      \"name\": \"\",\r\n      \"type\": \"uint256\"\r\n    }\r\n  ],\r\n  \"payable\": false,\r\n  \"stateMutability\": \"view\",\r\n  \"type\": \"function\"\r\n}\r\n```\r\n\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.4.24\r\n- Framework/IDE (e.g. Truffle or Remix): Truffle 4.1.13\r\n- EVM execution environment / backend / blockchain client: Ganache 1.2.1\r\n- Operating system: Ubuntu 16.04.5\r\n\r\n## Steps to Reproduce\r\n\r\nCreate a contract with `mapping(address => uint[]) foo`.\r\n\r\n\r\n",
+  "closed_by": {
+    "login": "0xferit",
+    "id": 3106907,
+    "node_id": "MDQ6VXNlcjMxMDY5MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3106907?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/0xferit",
+    "html_url": "https://github.com/0xferit",
+    "followers_url": "https://api.github.com/users/0xferit/followers",
+    "following_url": "https://api.github.com/users/0xferit/following{/other_user}",
+    "gists_url": "https://api.github.com/users/0xferit/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/0xferit/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/0xferit/subscriptions",
+    "organizations_url": "https://api.github.com/users/0xferit/orgs",
+    "repos_url": "https://api.github.com/users/0xferit/repos",
+    "events_url": "https://api.github.com/users/0xferit/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/0xferit/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/4838/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/4838/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/403",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/403/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/403/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/403/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/403",
+  "id": 135241330,
+  "node_id": "MDU6SXNzdWUxMzUyNDEzMzA=",
+  "number": 403,
+  "title": "Solc preprocessor",
+  "user": {
+    "login": "androlo",
+    "id": 2809499,
+    "node_id": "MDQ6VXNlcjI4MDk0OTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2809499?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/androlo",
+    "html_url": "https://github.com/androlo",
+    "followers_url": "https://api.github.com/users/androlo/followers",
+    "following_url": "https://api.github.com/users/androlo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/androlo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/androlo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/androlo/subscriptions",
+    "organizations_url": "https://api.github.com/users/androlo/orgs",
+    "repos_url": "https://api.github.com/users/androlo/repos",
+    "events_url": "https://api.github.com/users/androlo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/androlo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-02-21T18:45:56Z",
+  "updated_at": "2016-03-21T10:31:16Z",
+  "closed_at": "2016-03-21T10:31:12Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "Been using gpp to modify and add debugging code in contracts when test-running a somewhat big application. Debug version mostly includes things like a few extra solidity events, and using different values for some constants. It works somewhat well but it is hard since it has to pre-process every contract in the build hierarchy manually. An optional pre-processing step in solc would maybe be good at some point (or something to that effect).\n",
+  "closed_by": {
+    "login": "androlo",
+    "id": 2809499,
+    "node_id": "MDQ6VXNlcjI4MDk0OTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2809499?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/androlo",
+    "html_url": "https://github.com/androlo",
+    "followers_url": "https://api.github.com/users/androlo/followers",
+    "following_url": "https://api.github.com/users/androlo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/androlo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/androlo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/androlo/subscriptions",
+    "organizations_url": "https://api.github.com/users/androlo/orgs",
+    "repos_url": "https://api.github.com/users/androlo/repos",
+    "events_url": "https://api.github.com/users/androlo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/androlo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/403/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/403/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

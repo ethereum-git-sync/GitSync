@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/349",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/349/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/349/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/349/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/349",
+  "id": 126059899,
+  "node_id": "MDU6SXNzdWUxMjYwNTk4OTk=",
+  "number": 349,
+  "title": "Docs: Blind Auction bug",
+  "user": {
+    "login": "jonasnick",
+    "id": 2582071,
+    "node_id": "MDQ6VXNlcjI1ODIwNzE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2582071?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jonasnick",
+    "html_url": "https://github.com/jonasnick",
+    "followers_url": "https://api.github.com/users/jonasnick/followers",
+    "following_url": "https://api.github.com/users/jonasnick/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jonasnick/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jonasnick/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jonasnick/subscriptions",
+    "organizations_url": "https://api.github.com/users/jonasnick/orgs",
+    "repos_url": "https://api.github.com/users/jonasnick/repos",
+    "events_url": "https://api.github.com/users/jonasnick/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jonasnick/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-01-11T23:11:52Z",
+  "updated_at": "2016-01-12T17:59:05Z",
+  "closed_at": "2016-01-12T17:59:05Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "In 'Solidity by Example' you show the following code as an implementation of a blind auction.\nA participant bids by sending coins (`deposit`) and a hash of a `value` and a `secret` (`blindedBid`). The idea is that a `deposit` is provided up front, but the actual bid (`value`) can be less than `deposit` in order to preserve the blinding property. \n\nWhen revealing the value the user should then get a refund of `deposit - value`. However, the problem is that she can actually get `value` back, _even if she never deposited anything_ (as long as the contract has enough funds).\n\nChanging the `refund += value;` line to `refund += bid.deposit;` would fix this bug.\n\nExcerpt from the [blind auction code](https://solidity.readthedocs.org/en/latest/solidity-by-example.html#id2):\n\n```\n    function bid(bytes32 _blindedBid)\n        onlyBefore(biddingEnd)\n    {\n        bids[msg.sender].push(Bid({\n            blindedBid: _blindedBid,\n            deposit: msg.value\n        }));\n    }\n\n    /// Reveal your blinded bids. You will get a refund for all\n    /// correctly blinded invalid bids and for all bids except for\n    /// the totally highest.\n    function reveal(uint[] _values, bool[] _fake,\n                    bytes32[] _secret)\n        onlyAfter(biddingEnd)\n        onlyBefore(revealEnd)\n    {\n        uint length = bids[msg.sender].length;\n        if (_values.length != length || _fake.length != length ||\n                    _secret.length != length)\n            throw;\n        uint refund;\n        for (uint i = 0; i < length; i++)\n        {\n            var bid = bids[msg.sender][i];\n            var (value, fake, secret) =\n                    (_values[i], _fake[i], _secret[i]);\n            if (bid.blindedBid != sha3(value, fake, secret))\n                // Bid was not actually revealed.\n                // Do not refund deposit.\n                continue;\n            refund += value;\n            if (!fake && bid.deposit >= value)\n                if (placeBid(msg.sender, value))\n                    refund -= value;\n            // Make it impossible for the sender to re-claim\n            // the same deposit.\n            bid.blindedBid = 0;\n        }\n        msg.sender.send(refund);\n    }\n```\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/349/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/349/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

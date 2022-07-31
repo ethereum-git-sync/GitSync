@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/719",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/719/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/719/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/719/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/719",
+  "id": 165458844,
+  "node_id": "MDU6SXNzdWUxNjU0NTg4NDQ=",
+  "number": 719,
+  "title": "How are opcodes converted to EVM bytecode?",
+  "user": {
+    "login": "yiimi",
+    "id": 20244864,
+    "node_id": "MDQ6VXNlcjIwMjQ0ODY0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20244864?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yiimi",
+    "html_url": "https://github.com/yiimi",
+    "followers_url": "https://api.github.com/users/yiimi/followers",
+    "following_url": "https://api.github.com/users/yiimi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yiimi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yiimi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yiimi/subscriptions",
+    "organizations_url": "https://api.github.com/users/yiimi/orgs",
+    "repos_url": "https://api.github.com/users/yiimi/repos",
+    "events_url": "https://api.github.com/users/yiimi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yiimi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-07-14T01:47:33Z",
+  "updated_at": "2016-07-15T02:18:08Z",
+  "closed_at": "2016-07-15T02:18:08Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I'm trying to figure out how EVM opcodes are translated into bytecode. I think Solidity compiles down to LLL and LLL then translates this into bytecode, but I haven't found that yet in the source code. Will someone please point me to a specific spot in the source code?\n# help_wanted #documentation\n",
+  "closed_by": {
+    "login": "yiimi",
+    "id": 20244864,
+    "node_id": "MDQ6VXNlcjIwMjQ0ODY0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20244864?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yiimi",
+    "html_url": "https://github.com/yiimi",
+    "followers_url": "https://api.github.com/users/yiimi/followers",
+    "following_url": "https://api.github.com/users/yiimi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yiimi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yiimi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yiimi/subscriptions",
+    "organizations_url": "https://api.github.com/users/yiimi/orgs",
+    "repos_url": "https://api.github.com/users/yiimi/repos",
+    "events_url": "https://api.github.com/users/yiimi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yiimi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/719/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/719/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

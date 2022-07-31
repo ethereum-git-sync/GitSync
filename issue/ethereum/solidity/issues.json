@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "leonardoalt"
+    },
+    "number": 13201,
+    "title": "Improve DataFlowAnalyzer's performance",
+    "updatedAt": "2022-07-30T07:08:58Z"
+  },
+  {
+    "author": {
+      "login": "lukehutch"
+    },
+    "number": 13214,
+    "title": "Add unitialized variable warning when for-loops contain uninitialized variables",
+    "updatedAt": "2022-07-30T06:00:21Z"
+  },
+  {
+    "author": {
       "login": "pcaversaccio"
     },
     "number": 13247,
@@ -529,14 +545,6 @@
   },
   {
     "author": {
-      "login": "lukehutch"
-    },
-    "number": 13214,
-    "title": "Add unitialized variable warning when for-loops contain uninitialized variables",
-    "updatedAt": "2022-07-16T09:11:26Z"
-  },
-  {
-    "author": {
       "login": "zemse"
     },
     "number": 12982,
@@ -646,14 +654,6 @@
     "number": 13249,
     "title": "Bad encoding for a dynamic array followed by a static calldata array",
     "updatedAt": "2022-07-11T14:33:15Z"
-  },
-  {
-    "author": {
-      "login": "leonardoalt"
-    },
-    "number": 13201,
-    "title": "Improve DataFlowAnalyzer's performance",
-    "updatedAt": "2022-07-11T14:11:58Z"
   },
   {
     "author": {
@@ -20001,7 +20001,7 @@
   },
   {
     "author": {
-      "login": "HongxuChen"
+      "login": "hongxuchen"
     },
     "number": 4680,
     "title": "Stack overflow errors against some crafted lll files",
@@ -29425,7 +29425,7 @@
   },
   {
     "author": {
-      "login": "HongxuChen"
+      "login": "hongxuchen"
     },
     "number": 4673,
     "title": "Unexpected hangs on some crafted sol files",
@@ -30105,7 +30105,7 @@
   },
   {
     "author": {
-      "login": "HongxuChen"
+      "login": "hongxuchen"
     },
     "number": 4679,
     "title": "AddressSanitizer: NULL pointer read at TypeChecker.cpp:1041",
@@ -39526,5 +39526,2029 @@
     "number": 814,
     "title": "Problem with the contract documentation",
     "updatedAt": "2016-08-11T17:53:08Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 821,
+    "title": "Make solidity-standalone ppa'able",
+    "updatedAt": "2016-08-11T16:16:26Z"
+  },
+  {
+    "author": {
+      "login": "euri10"
+    },
+    "number": 812,
+    "title": "debian strech fails compile, boost 1.58.02",
+    "updatedAt": "2016-08-11T16:10:01Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 726,
+    "title": "solc cli option to treat warnings as errors",
+    "updatedAt": "2016-08-11T16:06:36Z"
+  },
+  {
+    "author": {
+      "login": "euri10"
+    },
+    "number": 772,
+    "title": "segfault",
+    "updatedAt": "2016-08-11T15:59:24Z"
+  },
+  {
+    "author": {
+      "login": "SethVgr"
+    },
+    "number": 755,
+    "title": "[BUG] Solidity contract storage not working",
+    "updatedAt": "2016-08-11T15:58:00Z"
+  },
+  {
+    "author": {
+      "login": "primehat23"
+    },
+    "number": 852,
+    "title": "solc broke everything on ubuntu ",
+    "updatedAt": "2016-08-11T11:41:49Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 662,
+    "title": "Add default re-entry protection with opt-out keyword.",
+    "updatedAt": "2016-08-11T11:32:00Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 653,
+    "title": "Provide source mappings in json output for debugger",
+    "updatedAt": "2016-08-11T11:16:54Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 635,
+    "title": "Library placeholders in the bytecode (not well documented)",
+    "updatedAt": "2016-08-11T11:08:12Z"
+  },
+  {
+    "author": {
+      "login": "asinyagin"
+    },
+    "number": 742,
+    "title": "Segmentation fault on running with '--combined-json ast'",
+    "updatedAt": "2016-08-10T14:58:22Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 603,
+    "title": "Broken escape code handling in ASTJsonConverter",
+    "updatedAt": "2016-08-10T14:31:27Z"
+  },
+  {
+    "author": {
+      "login": "balboah"
+    },
+    "number": 825,
+    "title": "bool results can equal to true even when function calls throw",
+    "updatedAt": "2016-08-10T11:44:02Z"
+  },
+  {
+    "author": {
+      "login": "lastperson"
+    },
+    "number": 827,
+    "title": "Incorrect use of built-in 0x4 Identity Function",
+    "updatedAt": "2016-08-08T17:15:03Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 782,
+    "title": "Remove random and blooms from fixedhash",
+    "updatedAt": "2016-08-08T13:11:40Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 626,
+    "title": "Throw error if import not used?",
+    "updatedAt": "2016-08-08T07:43:10Z"
+  },
+  {
+    "author": {
+      "login": "rrufus"
+    },
+    "number": 813,
+    "title": "I have a compile error on Ubuntu 16.04...",
+    "updatedAt": "2016-08-07T09:06:06Z"
+  },
+  {
+    "author": {
+      "login": "stevenroose"
+    },
+    "number": 830,
+    "title": "Forming a byte array inline",
+    "updatedAt": "2016-08-06T22:41:07Z"
+  },
+  {
+    "author": {
+      "login": "Nashatyrev"
+    },
+    "number": 477,
+    "title": "Problem with running the latest solc on OS X Yosemite: Symbol not found: __ZN4Json5ValueaSERKS0_",
+    "updatedAt": "2016-08-06T00:48:00Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 164,
+    "title": "cryptic type error for multiple return values",
+    "updatedAt": "2016-08-05T15:53:19Z"
+  },
+  {
+    "author": {
+      "login": "btc2nxt"
+    },
+    "number": 592,
+    "title": "byte typecasting compare didn't work",
+    "updatedAt": "2016-08-05T15:50:58Z"
+  },
+  {
+    "author": {
+      "login": "Arachnid"
+    },
+    "number": 589,
+    "title": "Support calling library functions on literals",
+    "updatedAt": "2016-08-05T15:50:13Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 551,
+    "title": "Method overloading not supported for modifiers",
+    "updatedAt": "2016-08-05T15:45:13Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 538,
+    "title": "Assembly: invalid value assignment can cause misleading error message",
+    "updatedAt": "2016-08-05T15:43:19Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 537,
+    "title": "Declare multiple variables inline",
+    "updatedAt": "2016-08-05T15:43:06Z"
+  },
+  {
+    "author": {
+      "login": "jzu"
+    },
+    "number": 529,
+    "title": "There is no way to detect which compiler version produced a contract binary",
+    "updatedAt": "2016-08-05T15:39:36Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 524,
+    "title": "Inline arrays for addresses do not work",
+    "updatedAt": "2016-08-05T15:38:25Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 488,
+    "title": "Error message: Assembly can't access storage variables by name",
+    "updatedAt": "2016-08-05T15:29:41Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 462,
+    "title": "Standard library contracts questions",
+    "updatedAt": "2016-08-05T15:13:17Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 460,
+    "title": "Ability to declare visibility levels inside of struct fields",
+    "updatedAt": "2016-08-05T15:12:11Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 455,
+    "title": "Documentation: Updating solidity in compile from source version",
+    "updatedAt": "2016-08-05T15:11:19Z"
+  },
+  {
+    "author": {
+      "login": "karalabe"
+    },
+    "number": 451,
+    "title": "Add `hash` as a type alias for `bytes32`?",
+    "updatedAt": "2016-08-05T15:10:09Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 314,
+    "title": "[feature]  Canonical sources, viewing \"expanded\" form of derived contracts",
+    "updatedAt": "2016-08-05T14:52:22Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 292,
+    "title": "Consider semantic versioning semver",
+    "updatedAt": "2016-08-05T14:41:29Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 269,
+    "title": "FAQ: can a struct be passed to another contract?",
+    "updatedAt": "2016-08-05T14:40:07Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 240,
+    "title": "[FEATURE]:  \"addon\" arguments",
+    "updatedAt": "2016-08-05T14:03:16Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 150,
+    "title": "different ways of storing data",
+    "updatedAt": "2016-08-05T13:33:29Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 14,
+    "title": "Allow to get return value from low-level calls",
+    "updatedAt": "2016-08-05T13:25:00Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 11,
+    "title": "Feature request: Namespaces",
+    "updatedAt": "2016-08-05T13:24:04Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 8,
+    "title": "Support functions as struct members(a la c++)",
+    "updatedAt": "2016-08-05T13:20:28Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 550,
+    "title": "msg.origin is not available?",
+    "updatedAt": "2016-08-05T09:41:58Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 638,
+    "title": "String escape codes: should support Unicode escape codes",
+    "updatedAt": "2016-08-05T06:47:52Z"
+  },
+  {
+    "author": {
+      "login": "SethVgr"
+    },
+    "number": 790,
+    "title": "[BUG] Why can't solidity code return data type values when methods that change the state of the contract are called?",
+    "updatedAt": "2016-08-05T06:04:23Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 777,
+    "title": "CI: Build docs as separate matrix step to make it finish early",
+    "updatedAt": "2016-08-04T09:55:15Z"
+  },
+  {
+    "author": {
+      "login": "bobsummerwill"
+    },
+    "number": 783,
+    "title": "Unit tests - Do multiple runs (so we have the data), but succeed if ANY pass",
+    "updatedAt": "2016-08-03T07:19:59Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 495,
+    "title": "Remove libdevcore from solidity",
+    "updatedAt": "2016-08-03T05:23:12Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 397,
+    "title": "Solc: More output during builds.",
+    "updatedAt": "2016-08-02T21:36:46Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 219,
+    "title": "Strange behaviour with scopes: variable assignments can predate a declaration",
+    "updatedAt": "2016-08-02T21:10:32Z"
+  },
+  {
+    "author": {
+      "login": "Denton-L"
+    },
+    "number": 802,
+    "title": "Throw Error on Abstract Contract",
+    "updatedAt": "2016-08-02T19:14:18Z"
+  },
+  {
+    "author": {
+      "login": "slothbag"
+    },
+    "number": 692,
+    "title": "Inconsistent state during contract execution",
+    "updatedAt": "2016-08-01T23:13:40Z"
+  },
+  {
+    "author": {
+      "login": "Denton-L"
+    },
+    "number": 765,
+    "title": "Cannot Hash Struct",
+    "updatedAt": "2016-08-01T22:10:58Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 779,
+    "title": "Build system: Remove any mention of jsonrpcstub",
+    "updatedAt": "2016-08-01T14:54:57Z"
+  },
+  {
+    "author": {
+      "login": "Arachnid"
+    },
+    "number": 590,
+    "title": "Creating a memory array of length 0 generates an infinite loop ",
+    "updatedAt": "2016-07-29T14:58:29Z"
+  },
+  {
+    "author": {
+      "login": "giblfiz"
+    },
+    "number": 724,
+    "title": "Error when updating multiple properties in mapping of structs",
+    "updatedAt": "2016-07-27T18:39:47Z"
+  },
+  {
+    "author": {
+      "login": "nisamson"
+    },
+    "number": 743,
+    "title": "Log events do not fire inside functions with modifiers",
+    "updatedAt": "2016-07-27T17:21:22Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 17,
+    "title": "Compiler often creates different bytecode in different environments",
+    "updatedAt": "2016-07-27T16:06:29Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 714,
+    "title": "Formal verification including re-entrant calls",
+    "updatedAt": "2016-07-27T12:09:18Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 339,
+    "title": "formal: Syntax error on empty state.",
+    "updatedAt": "2016-07-27T10:16:52Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 713,
+    "title": "Source location as part of json output",
+    "updatedAt": "2016-07-27T10:14:23Z"
+  },
+  {
+    "author": {
+      "login": "mike80439"
+    },
+    "number": 740,
+    "title": "Error: Operator == not compatible with types string memory and string memory (line 37)",
+    "updatedAt": "2016-07-25T12:48:24Z"
+  },
+  {
+    "author": {
+      "login": "mike80439"
+    },
+    "number": 741,
+    "title": "Error: Operator == not compatible with types string memory and string storage ",
+    "updatedAt": "2016-07-25T09:57:16Z"
+  },
+  {
+    "author": {
+      "login": "aakilfernandes"
+    },
+    "number": 723,
+    "title": "Request: isMined(txHash)",
+    "updatedAt": "2016-07-18T16:56:24Z"
+  },
+  {
+    "author": {
+      "login": "asinyagin"
+    },
+    "number": 702,
+    "title": "Error \"Given source file not found\" with --ast argument",
+    "updatedAt": "2016-07-18T14:58:42Z"
+  },
+  {
+    "author": {
+      "login": "yiimi"
+    },
+    "number": 719,
+    "title": "How are opcodes converted to EVM bytecode?",
+    "updatedAt": "2016-07-15T02:18:08Z"
+  },
+  {
+    "author": {
+      "login": "slothbag"
+    },
+    "number": 688,
+    "title": "Documentation of calculating function signature for library functions with structs",
+    "updatedAt": "2016-07-11T14:42:38Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 516,
+    "title": "test solidity via json-rpc",
+    "updatedAt": "2016-07-11T13:36:21Z"
+  },
+  {
+    "author": {
+      "login": "mabeebam"
+    },
+    "number": 679,
+    "title": "Documentation of default values of data types when variable is initialized",
+    "updatedAt": "2016-07-08T18:15:28Z"
+  },
+  {
+    "author": {
+      "login": "rjl493456442"
+    },
+    "number": 695,
+    "title": "Is returning a  struct from an external function available in Solidity",
+    "updatedAt": "2016-06-30T11:47:03Z"
+  },
+  {
+    "author": {
+      "login": "codati"
+    },
+    "number": 657,
+    "title": "Unknown exception during compilation.",
+    "updatedAt": "2016-06-29T17:13:00Z"
+  },
+  {
+    "author": {
+      "login": "slothbag"
+    },
+    "number": 687,
+    "title": "Scaling contract functionality vs contract size",
+    "updatedAt": "2016-06-28T23:22:35Z"
+  },
+  {
+    "author": {
+      "login": "slothbag"
+    },
+    "number": 690,
+    "title": "Provide working web3 example for getStorageAt() in documentation.",
+    "updatedAt": "2016-06-28T01:18:35Z"
+  },
+  {
+    "author": {
+      "login": "slothbag"
+    },
+    "number": 684,
+    "title": "Simple solidity contract, issue with libraries",
+    "updatedAt": "2016-06-25T12:01:25Z"
+  },
+  {
+    "author": {
+      "login": "LefterisJP"
+    },
+    "number": 598,
+    "title": "Dynamic return data decoder should not discard components",
+    "updatedAt": "2016-06-21T17:40:45Z"
+  },
+  {
+    "author": {
+      "login": "taoteh1221"
+    },
+    "number": 663,
+    "title": "Cant All Transaction-Related Calls Be Reprogrammed To Return Boolean False When The Stack Limit Is Hit?",
+    "updatedAt": "2016-06-19T09:55:05Z"
+  },
+  {
+    "author": {
+      "login": "lastperson"
+    },
+    "number": 650,
+    "title": "Throw instead of STOP on failed CALL",
+    "updatedAt": "2016-06-15T12:38:13Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 651,
+    "title": "Exception on compilation from stdin",
+    "updatedAt": "2016-06-14T23:37:10Z"
+  },
+  {
+    "author": {
+      "login": "lastperson"
+    },
+    "number": 648,
+    "title": "CALL always returns true",
+    "updatedAt": "2016-06-14T14:40:48Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 605,
+    "title": "Versioning in build_emscripten",
+    "updatedAt": "2016-06-14T12:40:36Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 568,
+    "title": "Non-global remappings",
+    "updatedAt": "2016-06-14T12:40:06Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 486,
+    "title": "segfault on gas parameter",
+    "updatedAt": "2016-06-10T05:03:03Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 502,
+    "title": "Segfault when trying to call the AST",
+    "updatedAt": "2016-06-10T05:02:53Z"
+  },
+  {
+    "author": {
+      "login": "makoto"
+    },
+    "number": 490,
+    "title": "Getting 'Segmentation fault: 11' error when compiling with solc",
+    "updatedAt": "2016-06-10T05:02:37Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 573,
+    "title": "Segmentation fault getting worse...nothing compiling now.",
+    "updatedAt": "2016-06-10T05:02:22Z"
+  },
+  {
+    "author": {
+      "login": "isghe"
+    },
+    "number": 631,
+    "title": "Segmentation fault 11",
+    "updatedAt": "2016-06-08T07:48:43Z"
+  },
+  {
+    "author": {
+      "login": "ismaelbej"
+    },
+    "number": 577,
+    "title": "Struct with three string fields is not stored in a private blockchain ",
+    "updatedAt": "2016-06-08T04:25:17Z"
+  },
+  {
+    "author": {
+      "login": "asinyagin"
+    },
+    "number": 636,
+    "title": "solc fails with \"Compiled contract not found\" if I specify a source file with ./",
+    "updatedAt": "2016-06-07T14:58:41Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 480,
+    "title": "browser-soliditiy: Escape codes in `bytes` and `string` fail for >0x7f",
+    "updatedAt": "2016-05-26T16:59:23Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 519,
+    "title": "Cleanup is not performed for bytesXX",
+    "updatedAt": "2016-05-25T07:40:44Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 530,
+    "title": "Typecasting to bool causes unknown exception",
+    "updatedAt": "2016-05-25T07:40:44Z"
+  },
+  {
+    "author": {
+      "login": "kjsujesh"
+    },
+    "number": 570,
+    "title": "solc EXC_BAD_ACCESS in Mac OSX 10.11.4",
+    "updatedAt": "2016-05-19T20:23:54Z"
+  },
+  {
+    "author": {
+      "login": "tymat"
+    },
+    "number": 571,
+    "title": "Segmentation fault running solidity.",
+    "updatedAt": "2016-05-19T20:18:41Z"
+  },
+  {
+    "author": {
+      "login": "tymat"
+    },
+    "number": 367,
+    "title": "Need instructions on how to build just a specific version of solidity compiler",
+    "updatedAt": "2016-05-19T13:57:22Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 375,
+    "title": "Loading imports via callback does not work for jsonCompiler",
+    "updatedAt": "2016-05-19T13:56:57Z"
+  },
+  {
+    "author": {
+      "login": "ethernomad"
+    },
+    "number": 423,
+    "title": "Scope resolution operator?",
+    "updatedAt": "2016-05-19T13:56:07Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 559,
+    "title": "Emscripten builds are not minimized anymore (solc-bin)",
+    "updatedAt": "2016-05-19T13:46:34Z"
+  },
+  {
+    "author": {
+      "login": "lastperson"
+    },
+    "number": 560,
+    "title": "Introduce tx.gasrefund (uint): gas that will be refunded if the transaction is successful",
+    "updatedAt": "2016-05-19T13:46:22Z"
+  },
+  {
+    "author": {
+      "login": "Denton-L"
+    },
+    "number": 576,
+    "title": "Short-Circuit Booleans Not Implemented",
+    "updatedAt": "2016-05-18T15:47:29Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 513,
+    "title": "Inline assembly: make function labels usable",
+    "updatedAt": "2016-05-17T21:59:17Z"
+  },
+  {
+    "author": {
+      "login": "clowestab"
+    },
+    "number": 381,
+    "title": "Struct not being stored in mapping when it contains more than two 'string' properties.",
+    "updatedAt": "2016-05-17T19:09:44Z"
+  },
+  {
+    "author": {
+      "login": "moneroexamples"
+    },
+    "number": 574,
+    "title": "Arch, gcc 6.1: error: call of overloaded ‘list(int, <brace-enclosed initializer list>)’ is ambiguous",
+    "updatedAt": "2016-05-17T11:46:56Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 531,
+    "title": "Assembly: 'not' is compiled as 'iszero'",
+    "updatedAt": "2016-05-13T22:58:59Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 532,
+    "title": "Assembly: 'iszero' is not available",
+    "updatedAt": "2016-05-13T22:58:59Z"
+  },
+  {
+    "author": {
+      "login": "debris"
+    },
+    "number": 569,
+    "title": "solc does not work on osx",
+    "updatedAt": "2016-05-13T21:07:13Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 553,
+    "title": "Cannot import from parent directory",
+    "updatedAt": "2016-05-13T20:56:56Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 533,
+    "title": "`uint` variables shouldn't allow negative prefix",
+    "updatedAt": "2016-05-12T22:57:02Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 511,
+    "title": "Feature to make fallback cheaper",
+    "updatedAt": "2016-05-12T17:13:40Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 558,
+    "title": "Segfaults everywhere...end to end tests ceasing to function on smoke test OSX",
+    "updatedAt": "2016-05-12T02:31:22Z"
+  },
+  {
+    "author": {
+      "login": "Denton-L"
+    },
+    "number": 540,
+    "title": "Style Guide on Single-Line Functions?",
+    "updatedAt": "2016-05-11T19:37:28Z"
+  },
+  {
+    "author": {
+      "login": "pipaman"
+    },
+    "number": 523,
+    "title": "Build in Windows",
+    "updatedAt": "2016-05-05T19:51:51Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 493,
+    "title": "inline functions",
+    "updatedAt": "2016-05-05T11:37:05Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 539,
+    "title": "Solidity needs the ability to test its code within itself",
+    "updatedAt": "2016-05-04T20:24:18Z"
+  },
+  {
+    "author": {
+      "login": "ethernomad"
+    },
+    "number": 147,
+    "title": "Array access for strings",
+    "updatedAt": "2016-05-02T23:18:28Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 521,
+    "title": "'byte' type variable not working well with inline assembly 'byte' instruction and the likes.",
+    "updatedAt": "2016-04-29T16:41:00Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 259,
+    "title": "Can't overload function by changing only return types",
+    "updatedAt": "2016-04-27T11:32:33Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 450,
+    "title": "Sol: source references for inline assembly",
+    "updatedAt": "2016-04-22T17:28:32Z"
+  },
+  {
+    "author": {
+      "login": "elenadimitrova"
+    },
+    "number": 504,
+    "title": "Suspected transaction OOG error never thrown and tx never rolled back",
+    "updatedAt": "2016-04-21T05:32:21Z"
+  },
+  {
+    "author": {
+      "login": "bobsummerwill"
+    },
+    "number": 485,
+    "title": "critical solc bug: wrong values for bool array in constructor",
+    "updatedAt": "2016-04-15T18:26:50Z"
+  },
+  {
+    "author": {
+      "login": "lastperson"
+    },
+    "number": 484,
+    "title": "Delete array of structs results in an infinite gas usage due to an order of properties",
+    "updatedAt": "2016-04-15T15:48:14Z"
+  },
+  {
+    "author": {
+      "login": "tymat"
+    },
+    "number": 494,
+    "title": "Libraries not working",
+    "updatedAt": "2016-04-12T12:45:22Z"
+  },
+  {
+    "author": {
+      "login": "ricmoo"
+    },
+    "number": 437,
+    "title": "Complete Grammar?",
+    "updatedAt": "2016-04-11T22:18:07Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 487,
+    "title": "Suicide/Selfdestruct should throw an error on compiling when in function bodies",
+    "updatedAt": "2016-04-08T11:02:23Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 472,
+    "title": "'byte' instruction not recognized in inline assembly",
+    "updatedAt": "2016-04-06T14:40:23Z"
+  },
+  {
+    "author": {
+      "login": "ckeenan"
+    },
+    "number": 449,
+    "title": "Incorrect assignment of struct data when containing a field of type bytesX where X < 32",
+    "updatedAt": "2016-04-04T14:54:09Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 428,
+    "title": "Token::name and Token::toString do not work for fixed",
+    "updatedAt": "2016-03-31T23:09:03Z"
+  },
+  {
+    "author": {
+      "login": "Smithgift"
+    },
+    "number": 446,
+    "title": "Attempting to uint8() a larger number causes eventual throw after array access.",
+    "updatedAt": "2016-03-31T16:46:38Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 466,
+    "title": "Constant variables referenced from inline assembly causes weird error.",
+    "updatedAt": "2016-03-31T16:29:34Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 408,
+    "title": "Inline assembly",
+    "updatedAt": "2016-03-30T17:05:38Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 456,
+    "title": "mapping of a mapping example in FAQ",
+    "updatedAt": "2016-03-29T23:45:19Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 459,
+    "title": "Cannot build most recent solidity due to Assembly dependencies not being met",
+    "updatedAt": "2016-03-29T22:35:54Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 413,
+    "title": "Move libevmasm to solidity",
+    "updatedAt": "2016-03-29T16:06:54Z"
+  },
+  {
+    "author": {
+      "login": "tymat"
+    },
+    "number": 452,
+    "title": "1969704 COST: 8 ERROR: invalid jump destination (PUSH1) 2  and PC 00001228: SSTORE GAS: 673 COST: 20000 ERROR: Out of gas",
+    "updatedAt": "2016-03-28T11:55:16Z"
+  },
+  {
+    "author": {
+      "login": "Nashatyrev"
+    },
+    "number": 442,
+    "title": "Sending weis with constructor couldn't be compiled",
+    "updatedAt": "2016-03-23T21:23:30Z"
+  },
+  {
+    "author": {
+      "login": "TOMOAKI12345"
+    },
+    "number": 435,
+    "title": "$solc --gas largeBase64Storage.sol returns base64 strings and not returns gas calculation (but can upload as below)",
+    "updatedAt": "2016-03-21T16:24:49Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 403,
+    "title": "Solc preprocessor",
+    "updatedAt": "2016-03-21T10:31:16Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 436,
+    "title": "Official Solidity \"standard library\"",
+    "updatedAt": "2016-03-20T13:12:37Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 412,
+    "title": "Implement DELEGATECALL for Solidity",
+    "updatedAt": "2016-03-11T17:30:35Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 410,
+    "title": "Introduce new keywords",
+    "updatedAt": "2016-03-11T17:30:10Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 418,
+    "title": "Warn about constant division",
+    "updatedAt": "2016-03-11T16:27:20Z"
+  },
+  {
+    "author": {
+      "login": "SCBuergel"
+    },
+    "number": 404,
+    "title": "Optimizer bug",
+    "updatedAt": "2016-03-11T16:24:59Z"
+  },
+  {
+    "author": {
+      "login": "drewstone"
+    },
+    "number": 424,
+    "title": "Odd functionality between web3 and .sol SHA3",
+    "updatedAt": "2016-03-10T16:11:11Z"
+  },
+  {
+    "author": {
+      "login": "talon"
+    },
+    "number": 420,
+    "title": "Tail call optimization and finite state machines?",
+    "updatedAt": "2016-03-08T18:15:09Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 417,
+    "title": "Tons of failing tests in soltest for OS X",
+    "updatedAt": "2016-03-07T21:02:46Z"
+  },
+  {
+    "author": {
+      "login": "rkaveti1"
+    },
+    "number": 335,
+    "title": "Array Not working",
+    "updatedAt": "2016-02-22T00:26:51Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 364,
+    "title": "Online compiler throws when using wrong number of args in base constructor",
+    "updatedAt": "2016-02-13T00:24:44Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 383,
+    "title": "Putting struct with same name in two contracts makes constructor assignment fail",
+    "updatedAt": "2016-02-11T15:46:48Z"
+  },
+  {
+    "author": {
+      "login": "aaronstjohn"
+    },
+    "number": 391,
+    "title": "Initializing static memory array with a constant is unsupported",
+    "updatedAt": "2016-02-11T13:54:44Z"
+  },
+  {
+    "author": {
+      "login": ""
+    },
+    "number": 385,
+    "title": "Feature request - Pass numerical data using sendTransaction inside the data object",
+    "updatedAt": "2016-02-05T14:05:14Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 379,
+    "title": "Different uint types not recognized in library functions.",
+    "updatedAt": "2016-01-31T13:41:32Z"
+  },
+  {
+    "author": {
+      "login": "jgostylo"
+    },
+    "number": 373,
+    "title": "Solc is compiling contracts that claim code length is 0 on function calls",
+    "updatedAt": "2016-01-28T15:50:23Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 368,
+    "title": "uint176 not available",
+    "updatedAt": "2016-01-26T11:24:56Z"
+  },
+  {
+    "author": {
+      "login": "SCBuergel"
+    },
+    "number": 313,
+    "title": "buggy code when using optimizer",
+    "updatedAt": "2016-01-25T18:50:34Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 362,
+    "title": "sha3 output is not per SHA-3 standard",
+    "updatedAt": "2016-01-25T05:56:23Z"
+  },
+  {
+    "author": {
+      "login": "Georgi87"
+    },
+    "number": 333,
+    "title": "Bug in solidity optimizer. Storage changes are not persisted.",
+    "updatedAt": "2016-01-21T14:23:23Z"
+  },
+  {
+    "author": {
+      "login": "FugueWeb"
+    },
+    "number": 320,
+    "title": "SolidityLexer causing build fail on readthedocs",
+    "updatedAt": "2016-01-20T18:21:40Z"
+  },
+  {
+    "author": {
+      "login": "simondlr"
+    },
+    "number": 281,
+    "title": "Bug: Deducting balance from wrong mapping.",
+    "updatedAt": "2016-01-20T18:20:13Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 360,
+    "title": "Inline arrays in structs do not appear to return data",
+    "updatedAt": "2016-01-18T17:54:56Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 361,
+    "title": "Inline nested arrays throws type error",
+    "updatedAt": "2016-01-18T16:29:47Z"
+  },
+  {
+    "author": {
+      "login": "Smithgift"
+    },
+    "number": 352,
+    "title": "Crash when compiling structs with only subarrays.",
+    "updatedAt": "2016-01-18T08:23:21Z"
+  },
+  {
+    "author": {
+      "login": "guanqun"
+    },
+    "number": 353,
+    "title": "should we support comparison between two tuples?",
+    "updatedAt": "2016-01-15T07:23:49Z"
+  },
+  {
+    "author": {
+      "login": "tom-seddon"
+    },
+    "number": 283,
+    "title": "`call`/`callcode` discrepancy",
+    "updatedAt": "2016-01-14T10:33:34Z"
+  },
+  {
+    "author": {
+      "login": "nejucomo"
+    },
+    "number": 110,
+    "title": "Fix confusing links for build documentation.",
+    "updatedAt": "2016-01-13T20:50:22Z"
+  },
+  {
+    "author": {
+      "login": "jonasnick"
+    },
+    "number": 349,
+    "title": "Docs: Blind Auction bug",
+    "updatedAt": "2016-01-12T17:59:05Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 36,
+    "title": "Update build guide for solc 1.2 on OSX",
+    "updatedAt": "2016-01-11T09:36:08Z"
+  },
+  {
+    "author": {
+      "login": "CJentzsch"
+    },
+    "number": 340,
+    "title": "crash - calling constructor from derived contract",
+    "updatedAt": "2016-01-11T07:25:52Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 341,
+    "title": "CALL with string",
+    "updatedAt": "2016-01-08T11:00:08Z"
+  },
+  {
+    "author": {
+      "login": "pipermerriam"
+    },
+    "number": 327,
+    "title": "Add helper function for pre computing 4-byte abi signatures",
+    "updatedAt": "2016-01-05T00:43:45Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 310,
+    "title": "All identifiers should be paths.",
+    "updatedAt": "2016-01-04T10:47:11Z"
+  },
+  {
+    "author": {
+      "login": "ethernomad"
+    },
+    "number": 323,
+    "title": "Implement bitshift operators << and >>",
+    "updatedAt": "2015-12-23T21:15:13Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 247,
+    "title": "It should be possible to overload a function with uint and int arrays.",
+    "updatedAt": "2015-12-21T14:37:51Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 280,
+    "title": "Enum value is not accessible from outside",
+    "updatedAt": "2015-12-21T14:37:24Z"
+  },
+  {
+    "author": {
+      "login": "tymat"
+    },
+    "number": 266,
+    "title": "block.timestamp returning 0",
+    "updatedAt": "2015-12-18T13:08:52Z"
+  },
+  {
+    "author": {
+      "login": "jonasnick"
+    },
+    "number": 298,
+    "title": "Clarify \"private\" visibility in documentation",
+    "updatedAt": "2015-12-14T16:53:16Z"
+  },
+  {
+    "author": {
+      "login": "tymat"
+    },
+    "number": 210,
+    "title": "Support for path globbing in imports.",
+    "updatedAt": "2015-12-10T09:26:35Z"
+  },
+  {
+    "author": {
+      "login": "pipermerriam"
+    },
+    "number": 168,
+    "title": "Compilation produces different bytecode depending on how it is called.",
+    "updatedAt": "2015-12-08T11:45:32Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 173,
+    "title": "failed to inherit some members",
+    "updatedAt": "2015-12-08T11:44:58Z"
+  },
+  {
+    "author": {
+      "login": "ruchevits"
+    },
+    "number": 287,
+    "title": "real<N>x<M> and ureal<N>x<M> types",
+    "updatedAt": "2015-12-08T11:19:46Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 175,
+    "title": "Option to have everything on a single html page",
+    "updatedAt": "2015-12-07T21:38:31Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 268,
+    "title": "The libraries section of the docs site is 404ing",
+    "updatedAt": "2015-12-07T11:09:32Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 38,
+    "title": "improve Event section in Tutorial",
+    "updatedAt": "2015-12-05T00:56:55Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 270,
+    "title": "pros and cons of using bytes vs byte[]",
+    "updatedAt": "2015-12-05T00:56:34Z"
+  },
+  {
+    "author": {
+      "login": "obscuren"
+    },
+    "number": 277,
+    "title": "Usage of identifiers before the decl does not throw error",
+    "updatedAt": "2015-12-04T13:29:37Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 154,
+    "title": "Documentation of log0, log1...",
+    "updatedAt": "2015-12-03T01:07:47Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 250,
+    "title": "Install instruction on documentation site",
+    "updatedAt": "2015-12-02T15:21:17Z"
+  },
+  {
+    "author": {
+      "login": "asinyagin"
+    },
+    "number": 254,
+    "title": "Method/constructor array args are interepreted wrong",
+    "updatedAt": "2015-11-30T15:05:02Z"
+  },
+  {
+    "author": {
+      "login": "konradkonrad"
+    },
+    "number": 252,
+    "title": "unclear error message for `--combined-json`",
+    "updatedAt": "2015-11-27T19:06:08Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 243,
+    "title": "Strings in structs overwrite each other",
+    "updatedAt": "2015-11-24T15:18:41Z"
+  },
+  {
+    "author": {
+      "login": "wanderer"
+    },
+    "number": 223,
+    "title": "msg.value doesn't work inhereted classes",
+    "updatedAt": "2015-11-19T16:56:36Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 125,
+    "title": "Feature request: array literals",
+    "updatedAt": "2015-11-19T01:30:45Z"
+  },
+  {
+    "author": {
+      "login": "ethernomad"
+    },
+    "number": 140,
+    "title": "Support ternary operator",
+    "updatedAt": "2015-11-19T01:29:48Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 215,
+    "title": "Is there a way to use the BYTE instruction?",
+    "updatedAt": "2015-11-19T01:27:55Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 212,
+    "title": "Overwrites when assigning to bytes elements",
+    "updatedAt": "2015-11-17T13:46:19Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 199,
+    "title": "Strings as indexed arguments of events",
+    "updatedAt": "2015-11-17T13:46:00Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 82,
+    "title": "Successor block not found",
+    "updatedAt": "2015-11-16T11:36:04Z"
+  },
+  {
+    "author": {
+      "login": "rickmacgillis"
+    },
+    "number": 98,
+    "title": "[BUG] Struct arrays set the first element's first component to the array length.",
+    "updatedAt": "2015-11-06T18:22:44Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 151,
+    "title": "Current limitations of arrays",
+    "updatedAt": "2015-11-06T18:21:05Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 149,
+    "title": "document limitations of block.blockhash",
+    "updatedAt": "2015-11-06T18:20:38Z"
+  },
+  {
+    "author": {
+      "login": "jorisbontje"
+    },
+    "number": 93,
+    "title": "enable --optimize by default",
+    "updatedAt": "2015-11-06T18:19:44Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 177,
+    "title": "Add fivedogit's FAQ",
+    "updatedAt": "2015-11-06T12:55:37Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 180,
+    "title": "Contract fails to return public member in JS",
+    "updatedAt": "2015-11-06T12:55:26Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 184,
+    "title": "Compiler produces different code when only whitespace changed",
+    "updatedAt": "2015-11-06T12:54:57Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 197,
+    "title": "Documentation: Clarify `call`",
+    "updatedAt": "2015-11-06T01:30:33Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 179,
+    "title": "Returning tuples of strings does not work",
+    "updatedAt": "2015-11-02T16:11:02Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 178,
+    "title": "wildcard identifier collides with itself",
+    "updatedAt": "2015-10-27T09:33:00Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 148,
+    "title": "Decrease contrast for inline code",
+    "updatedAt": "2015-10-26T17:07:07Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 12,
+    "title": "solc chokes when you give it too many files",
+    "updatedAt": "2015-10-22T11:34:17Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 13,
+    "title": "Add warning about external function calls with variably-sized return values",
+    "updatedAt": "2015-10-21T09:11:56Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 155,
+    "title": "ABI examples of Method ID",
+    "updatedAt": "2015-10-20T09:23:37Z"
+  },
+  {
+    "author": {
+      "login": "retotrinkler"
+    },
+    "number": 153,
+    "title": "next button not linked -> produces 404 file not found",
+    "updatedAt": "2015-10-19T22:11:11Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 138,
+    "title": "Parse error when using type from other library/contract",
+    "updatedAt": "2015-10-16T14:56:00Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 137,
+    "title": "ICE when using struct name for array",
+    "updatedAt": "2015-10-16T13:20:44Z"
+  },
+  {
+    "author": {
+      "login": "pipermerriam"
+    },
+    "number": 127,
+    "title": "Internal Compiler Error on library compilation",
+    "updatedAt": "2015-10-16T13:20:25Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 113,
+    "title": "External function type requested",
+    "updatedAt": "2015-10-16T12:37:50Z"
+  },
+  {
+    "author": {
+      "login": "pipermerriam"
+    },
+    "number": 129,
+    "title": "Internal Compiler Error on library compilation when returning struct with constant function",
+    "updatedAt": "2015-10-16T12:02:14Z"
+  },
+  {
+    "author": {
+      "login": "ethernomad"
+    },
+    "number": 128,
+    "title": "myarray[] should be short form of myarray[myarray.length++]",
+    "updatedAt": "2015-10-16T08:22:18Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 9,
+    "title": "Source location problems with parenthesized expressions",
+    "updatedAt": "2015-10-16T08:01:34Z"
+  },
+  {
+    "author": {
+      "login": "ethernomad"
+    },
+    "number": 133,
+    "title": "Logs from anonymous events to not contain any topics or data whatsoever",
+    "updatedAt": "2015-10-15T11:56:05Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 131,
+    "title": "errors just loading solidity browser",
+    "updatedAt": "2015-10-14T10:07:49Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 120,
+    "title": "Anonymous events should be able to have 4 indexed arguments",
+    "updatedAt": "2015-10-08T10:05:52Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 106,
+    "title": "Large hex constants",
+    "updatedAt": "2015-10-07T16:20:41Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 116,
+    "title": "Solidity compiler sometimes not handling contract dependencies well",
+    "updatedAt": "2015-10-07T16:12:34Z"
+  },
+  {
+    "author": {
+      "login": "ililic"
+    },
+    "number": 112,
+    "title": "Issue building AuctionRegistrar.cpp.o ",
+    "updatedAt": "2015-10-06T22:59:52Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 37,
+    "title": "document bitwise operators",
+    "updatedAt": "2015-10-06T22:04:25Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 109,
+    "title": "warnings going to stdout",
+    "updatedAt": "2015-10-04T14:46:39Z"
+  },
+  {
+    "author": {
+      "login": "nejucomo"
+    },
+    "number": 111,
+    "title": "Build Request: minimize dependencies",
+    "updatedAt": "2015-10-04T09:59:22Z"
+  },
+  {
+    "author": {
+      "login": "expsam"
+    },
+    "number": 104,
+    "title": "Infinite loop",
+    "updatedAt": "2015-10-02T09:11:43Z"
+  },
+  {
+    "author": {
+      "login": "vermorel"
+    },
+    "number": 99,
+    "title": "Typo in project title",
+    "updatedAt": "2015-09-29T14:16:29Z"
+  },
+  {
+    "author": {
+      "login": "rickmacgillis"
+    },
+    "number": 97,
+    "title": "[BUG] Can't set a address[] key to an address.",
+    "updatedAt": "2015-09-27T17:26:30Z"
+  },
+  {
+    "author": {
+      "login": "androlo"
+    },
+    "number": 23,
+    "title": "intX, X != 256 not converted from internal representation when returned?",
+    "updatedAt": "2015-09-25T21:38:04Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 92,
+    "title": "Get storage location of variable",
+    "updatedAt": "2015-09-24T15:36:11Z"
+  },
+  {
+    "author": {
+      "login": "yann300"
+    },
+    "number": 90,
+    "title": "Storage of String in memory",
+    "updatedAt": "2015-09-24T08:23:35Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 78,
+    "title": "\"Not yet implemented\" error for returning fixed-size arrays",
+    "updatedAt": "2015-09-23T23:12:51Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 62,
+    "title": "browser-solidity does not show internal compiler errors anymore",
+    "updatedAt": "2015-09-23T15:00:20Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 84,
+    "title": "Problem with array of bytes",
+    "updatedAt": "2015-09-23T14:37:00Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 74,
+    "title": "Problem with struct accessor function and strings",
+    "updatedAt": "2015-09-22T13:41:17Z"
+  },
+  {
+    "author": {
+      "login": "FredericHeem"
+    },
+    "number": 80,
+    "title": "cmake: could not load file EthOptions",
+    "updatedAt": "2015-09-17T14:19:47Z"
+  },
+  {
+    "author": {
+      "login": "ryepdx"
+    },
+    "number": 39,
+    "title": "Build errors on Ubuntu 14.04",
+    "updatedAt": "2015-09-16T11:15:46Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 19,
+    "title": "Add eth version to compiler version string",
+    "updatedAt": "2015-09-16T11:15:08Z"
+  },
+  {
+    "author": {
+      "login": "iurimatias"
+    },
+    "number": 76,
+    "title": "solc generating different evm code in OSX than in Ubuntu",
+    "updatedAt": "2015-09-15T15:02:33Z"
+  },
+  {
+    "author": {
+      "login": "sillytuna"
+    },
+    "number": 50,
+    "title": "Too many indexed arguments compiler error",
+    "updatedAt": "2015-09-11T13:48:43Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 63,
+    "title": "Creating a contract from within itself is not caught properly",
+    "updatedAt": "2015-09-11T13:19:59Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 60,
+    "title": "address of created contract",
+    "updatedAt": "2015-09-10T21:18:52Z"
+  },
+  {
+    "author": {
+      "login": "whitj00"
+    },
+    "number": 61,
+    "title": "Functions Conflict for Unclear Reason",
+    "updatedAt": "2015-09-10T15:41:41Z"
+  },
+  {
+    "author": {
+      "login": "danielnovy"
+    },
+    "number": 59,
+    "title": "Scanner handles next line as comment for empty single-line comment",
+    "updatedAt": "2015-09-10T12:55:18Z"
+  },
+  {
+    "author": {
+      "login": "vitaliy-kuzmich"
+    },
+    "number": 58,
+    "title": "strings concatenation",
+    "updatedAt": "2015-09-09T09:58:23Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 35,
+    "title": "improve an error msg. Wrong location.",
+    "updatedAt": "2015-09-08T08:44:30Z"
+  },
+  {
+    "author": {
+      "login": "danielnovy"
+    },
+    "number": 43,
+    "title": "web3 compiler stop working with solc version 0.1.2",
+    "updatedAt": "2015-09-07T21:43:39Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 44,
+    "title": "Solidity realtime compiler crash",
+    "updatedAt": "2015-09-07T15:52:55Z"
+  },
+  {
+    "author": {
+      "login": "itsnotlupus"
+    },
+    "number": 47,
+    "title": "Setting array.length in a contract storing an msg.sender address creates an infinite loop",
+    "updatedAt": "2015-09-07T14:28:33Z"
+  },
+  {
+    "author": {
+      "login": "Nashatyrev"
+    },
+    "number": 42,
+    "title": "Multiply return values not supported.",
+    "updatedAt": "2015-09-07T11:48:02Z"
+  },
+  {
+    "author": {
+      "login": "vitaliy-kuzmich"
+    },
+    "number": 48,
+    "title": "Future: mapping iteration",
+    "updatedAt": "2015-09-07T10:43:56Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 45,
+    "title": "Eth_DEVCORE_LIBRARY NOTFOUND",
+    "updatedAt": "2015-09-03T21:36:13Z"
+  },
+  {
+    "author": {
+      "login": "aakilfernandes"
+    },
+    "number": 34,
+    "title": "Converting bytes32 to int always returning 0",
+    "updatedAt": "2015-08-30T00:31:05Z"
+  },
+  {
+    "author": {
+      "login": "smartbitcoin"
+    },
+    "number": 30,
+    "title": "build failed!",
+    "updatedAt": "2015-08-26T09:52:24Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 16,
+    "title": "  `constant` state vars do not create accessors",
+    "updatedAt": "2015-08-21T16:17:16Z"
   }
 ]

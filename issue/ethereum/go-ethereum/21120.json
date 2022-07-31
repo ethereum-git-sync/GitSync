@@ -159,8 +159,8 @@
     "body": "@karalabe Running tests is precisely the reason I'm running geth in dev mode actually. Only that I am unable to use the default chainId `1337`. I don't have any need for the networking, it's just that `networkId` is the only parameter in the command line that looked relevant. As I understand it, setting a custom genesis would be undoing a bunch of parameters that `dev` mode provides. \r\n\r\nPut simply, I'm just looking for a way to use a different chainId with dev mode. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/633658416/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

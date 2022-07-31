@@ -47,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-07-27T17:31:26Z",
-  "updated_at": "2022-07-27T17:31:26Z",
+  "updated_at": "2022-07-29T15:09:01Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -57,8 +57,8 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25421/reactions",
-    "total_count": 2,
-    "+1": 2,
+    "total_count": 4,
+    "+1": 4,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -72,5 +72,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1199491623",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25421#issuecomment-1199491623",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25421",
+    "id": 1199491623,
+    "node_id": "IC_kwDOAOvK985Hfson",
+    "user": {
+      "login": "Deniseget",
+      "id": 110244570,
+      "node_id": "U_kgDOBpIy2g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110244570?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Deniseget",
+      "html_url": "https://github.com/Deniseget",
+      "followers_url": "https://api.github.com/users/Deniseget/followers",
+      "following_url": "https://api.github.com/users/Deniseget/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Deniseget/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Deniseget/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Deniseget/subscriptions",
+      "organizations_url": "https://api.github.com/users/Deniseget/orgs",
+      "repos_url": "https://api.github.com/users/Deniseget/repos",
+      "events_url": "https://api.github.com/users/Deniseget/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Deniseget/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-07-29T15:09:01Z",
+    "updated_at": "2022-07-29T15:09:01Z",
+    "author_association": "NONE",
+    "body": "> #### System information\r\n> Geth version: 1.10.19 (but behavior appears unchanged in .21) OS & Version: Linux\r\n> \r\n> #### Expected behaviour\r\n> A node that is only asked about \"recent\" logs/receipts via `eth_getLogs` should be able to handle a high volume of that RPC without duplicate trips to the raw level DB.\r\n> \r\n> #### Actual behaviour\r\n> In #17610 we added a `receiptsCache` LRU to `BlockChain` to prevent redundant db lookups and RLP decodes of receipts and logs from the DB. However, it appears that changes introduced in #23147 circumvent that LRU cache completely, leading to what appears to me to be a performance regression in `eth_getLogs` RPC performance.\r\n> \r\n> With a recent version of geth, under only moderate `eth_getLogs` load that only accesses logs from the last 128 blocks, we quickly see that a significant portion of the nodes flamegraph is spent in the new `ReadLogs` method:\r\n> \r\n> ![image](https://user-images.githubusercontent.com/53520/181306703-2f6f9973-2362-4b64-9c6a-651c6df4b455.png)\r\n> \r\n> #### Steps to reproduce the behaviour\r\n> It's pretty easy to reproduce:\r\n> \r\n> * sync a node to head, preferably mainnet since it has the most logs in a given block.\r\n> * generate some load on the geth node, for example using `hey` (https://github.com/rakyll/hey): `hey -c 5 -z 30s -t 0 -m POST -T application/json -d '{\"jsonrpc\":\"2.0\", \"id\": 1123123, \"method\": \"eth_getLogs\", \"params\": [{}]}' http://0.0.0.0:8545/`\r\n> * even with only 5 concurrent `eth_getLogs` requests for the latest logs like the above, note that a non-trivial amount of time is spent in `ReadLogs`:\r\n> \r\n> ![image](https://user-images.githubusercontent.com/53520/181310632-135d13ef-9f7f-497a-97fe-af109dd2c0d5.png)\r\n> \r\n> * raise the number of concurrent requests to 50 (`-c 50`) and note that the amount of time spent in `ReadLogs` increases as well:\r\n> \r\n> ![image](https://user-images.githubusercontent.com/53520/181311227-12ad0632-f182-4b9a-be93-9ad3a1ccc873.png)\r\n> \r\n> One would expect that the recent block's receipts/logs is only read from the raw DB once per block, and thus that the relative amount of time spent in `ReadLogs` would go down rather than up under increased load.\r\n\r\nHad similar issues like this sorted it out with customer care via live chat https://direct.lc.chat/14345826/",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1199491623/reactions",
+      "total_count": 1,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 1,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

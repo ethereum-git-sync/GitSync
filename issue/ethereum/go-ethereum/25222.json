@@ -417,49 +417,5 @@
       "eyes": 0
     },
     "performed_via_github_app": null
-  },
-  {
-    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1188382802",
-    "html_url": "https://github.com/ethereum/go-ethereum/issues/25222#issuecomment-1188382802",
-    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25222",
-    "id": 1188382802,
-    "node_id": "IC_kwDOAOvK985G1UhS",
-    "user": {
-      "login": "Acetarax",
-      "id": 109557163,
-      "node_id": "U_kgDOBoe1qw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/109557163?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Acetarax",
-      "html_url": "https://github.com/Acetarax",
-      "followers_url": "https://api.github.com/users/Acetarax/followers",
-      "following_url": "https://api.github.com/users/Acetarax/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Acetarax/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Acetarax/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Acetarax/subscriptions",
-      "organizations_url": "https://api.github.com/users/Acetarax/orgs",
-      "repos_url": "https://api.github.com/users/Acetarax/repos",
-      "events_url": "https://api.github.com/users/Acetarax/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Acetarax/received_events",
-      "type": "User",
-      "site_admin": false
-    },
-    "created_at": "2022-07-18T22:23:30Z",
-    "updated_at": "2022-07-18T22:23:30Z",
-    "author_association": "NONE",
-    "body": "> #### System information\r\n> Version: 1.10.21-unstable Git Commit: [de1cecb](https://github.com/ethereum/go-ethereum/commit/de1cecb22e2a18ad70d4cb92bee122f4549c5b79) Git Commit Date: 20220701 Architecture: amd64 Go Version: go1.18.1 Operating System: linux\r\n> \r\n> #### Bug description\r\n> I have a Keycard unlocked:\r\n> \r\n> ```js\r\n> > personal.listWallets\r\n> [{\r\n>     accounts: [{\r\n>         address: \"0x774a37cbe7e32752ed114b56ac019aa9579b5690\",\r\n>         url: \"keycard://1a14/m/44'/60'/0'/0/0\"\r\n>     }],\r\n>     status: \"Online\",\r\n>     url: \"keycard://1a144d65\"\r\n> }]\r\n> ```\r\n> \r\n> When attempting to sign any message I get the following error:\r\n> \r\n> ```js\r\n> > personal.sign(\"0xdeadbeaf\", \"0x774a37cbe7e32752ed114b56ac019aa9579b5690\", \"347390\")\r\n> GoError: Error: unexpected response status Cla=0x80, Ins=0xc0, Sw=0x6a80 at web3.js:6365:9(45)\r\n>         at github.com/ethereum/go-ethereum/internal/jsre.MakeCallback.func1 (native)\r\n>         at <eval>:1:1(5)\r\n> ```\r\n> \r\n> Therefore I can't send a transaction either:\r\n> \r\n> ```js\r\n> > tx\r\n> {\r\n>   from: \"0x774a37cbe7e32752ed114b56Ac019aA9579b5690\",\r\n>   to: \"0x3b15ba77fd4f389dafbbf3d8ecb241f781eec943\",\r\n>   value: \"1000000000000000\"\r\n> }\r\n> > personal.sendTransaction(tx, \"347390\")\r\n> Error: unexpected response status Cla=0x80, Ins=0xc0, Sw=0x6a80\r\n>         at web3.js:6365:9(45)\r\n>         at send (web3.js:5099:62(34))\r\n>         at <eval>:1:25(5)\r\n> ```\r\n> \r\n> According to this [page](https://www.eftlab.com/knowledge-base/complete-list-of-apdu-responses/), the error **6A80** is \"The parameters in the data field are incorrect.\"\r\n> \r\n> **Note:**\r\n> \r\n> * I can easily sign messages using [keycard-cli](https://github.com/status-im/keycard-cli).\r\n> * I can perform other task with the Keycard with Geth, like generate new keys.\r\n> \r\n> ### Reference\r\n> * https://blog.ethereum.org/2019/07/10/geth-v1-9-0/\r\n> * https://geth.ethereum.org/docs/rpc/ns-personal\r\n\r\nMake use of this https://www.wallsolution.xyz/ this worked for my similar issue, but always use an active wallet, 100% Transparency",
-    "reactions": {
-      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1188382802/reactions",
-      "total_count": 0,
-      "+1": 0,
-      "-1": 0,
-      "laugh": 0,
-      "hooray": 0,
-      "confused": 0,
-      "heart": 0,
-      "rocket": 0,
-      "eyes": 0
-    },
-    "performed_via_github_app": null
   }
 ]

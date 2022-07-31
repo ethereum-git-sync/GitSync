@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25447",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25447/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25447/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25447/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25447",
+  "id": 1323204143,
+  "node_id": "I_kwDOAOvK985O3n4v",
+  "number": 25447,
+  "title": "geth: Implement RFC-6979 (Deterministic Usage of ECDSA)",
+  "user": {
+    "login": "mars4science",
+    "id": 108170960,
+    "node_id": "U_kgDOBnKO0A",
+    "avatar_url": "https://avatars.githubusercontent.com/u/108170960?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mars4science",
+    "html_url": "https://github.com/mars4science",
+    "followers_url": "https://api.github.com/users/mars4science/followers",
+    "following_url": "https://api.github.com/users/mars4science/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mars4science/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mars4science/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mars4science/subscriptions",
+    "organizations_url": "https://api.github.com/users/mars4science/orgs",
+    "repos_url": "https://api.github.com/users/mars4science/repos",
+    "events_url": "https://api.github.com/users/mars4science/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mars4science/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233652,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1Mg==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:feature",
+      "name": "type:feature",
+      "color": "84b6eb",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-07-30T16:23:13Z",
+  "updated_at": "2022-07-30T16:23:13Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "# Rationale\r\n\r\nI've read due to faulty random generators collisions in choice of k value during signing with ECDSA might occur (resulting in potential for secret key recovery from signed transactions, see https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm#Security), same source claims that using https://www.rfc-editor.org/rfc/rfc6979.html when signing transaction prevents this issue.\r\n\r\n# Implementation\r\n\r\nImplementation might be in `geth` code replacing random k selection with one based on RFC-6979 or adding global option to choose random vs deterministic RFC-6979 based.\r\n\r\nI want to help implementing this feature if provided help to locating signer code.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25447/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25447/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

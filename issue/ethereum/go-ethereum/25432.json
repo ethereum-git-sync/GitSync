@@ -47,13 +47,13 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-07-28T19:24:18Z",
-  "updated_at": "2022-07-28T20:12:54Z",
+  "updated_at": "2022-07-29T14:41:38Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
-  "body": "#### System information\r\n\r\nGeth version: Geth v1.10.21\r\nOS & Version: Linux Amazon EC2 5.10.130-118.517.amzn2.aarch64\r\n\r\n#### Expected behaviour\r\n\r\nblocks are processed very fast, several blocks usually take a few seconds, the server runs on NVME\r\n\r\nexample:\r\n\r\n Imported new chain segment               blocks=76  txs=12404 mgas=1108.491 elapsed=8.108s mgasps=136.710 number=15,197,808 hash=aab71b..b5f1e8 age=5d11h4m  dirty=123.00MiB\r\n\r\n\r\n#### Actual behaviour\r\n\r\nImported new chain segment               blocks=5   txs=1250  mgas=115.102  elapsed=59.160s   mgasps=1.946   number=15,232,749 hash=3fd81a..e5dd9d age=16m36s    dirty=5.14GiB\r\n\r\nthe blocks start to process so slowly that the node lags, the only way is to restart the node\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nlet the node run for a while,\r\n\r\nUPDATE:\r\n\r\nafter going back to version .20 the stability has improved, sometimes we have some heavy read requests like eth_getlogs, however, we have never seen this behavior before and the workload is constant",
+  "body": "#### System information\r\n\r\nGeth version: Geth v1.10.21\r\nOS & Version: Linux Amazon EC2 5.10.130-118.517.amzn2.aarch64\r\n\r\n#### Expected behaviour\r\n\r\nblocks are processed very fast, several blocks usually take a few seconds, the server runs on NVME\r\n\r\nexample:\r\n\r\n Imported new chain segment               blocks=76  txs=12404 mgas=1108.491 elapsed=8.108s mgasps=136.710 number=15,197,808 hash=aab71b..b5f1e8 age=5d11h4m  dirty=123.00MiB\r\n\r\n\r\n#### Actual behaviour\r\n\r\nImported new chain segment               blocks=5   txs=1250  mgas=115.102  elapsed=59.160s   mgasps=1.946   number=15,232,749 hash=3fd81a..e5dd9d age=16m36s    dirty=5.14GiB\r\n\r\nthe blocks start to process so slowly that the node lags, the only way is to restart the node\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nlet the node run for a while,\r\n\r\nUPDATE:\r\n\r\nafter going back to version .20 the stability has improved, we have never seen this behavior before and the workload is constant",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25432/reactions",
@@ -72,5 +72,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1199426228",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25432#issuecomment-1199426228",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25432",
+    "id": 1199426228,
+    "node_id": "IC_kwDOAOvK985Hfcq0",
+    "user": {
+      "login": "Deniseget",
+      "id": 110244570,
+      "node_id": "U_kgDOBpIy2g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110244570?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Deniseget",
+      "html_url": "https://github.com/Deniseget",
+      "followers_url": "https://api.github.com/users/Deniseget/followers",
+      "following_url": "https://api.github.com/users/Deniseget/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Deniseget/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Deniseget/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Deniseget/subscriptions",
+      "organizations_url": "https://api.github.com/users/Deniseget/orgs",
+      "repos_url": "https://api.github.com/users/Deniseget/repos",
+      "events_url": "https://api.github.com/users/Deniseget/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Deniseget/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-07-29T14:41:37Z",
+    "updated_at": "2022-07-29T14:41:37Z",
+    "author_association": "NONE",
+    "body": "> #### System information\r\n> Geth version: Geth v1.10.21 OS & Version: Linux Amazon EC2 5.10.130-118.517.amzn2.aarch64\r\n> \r\n> #### Expected behaviour\r\n> blocks are processed very fast, several blocks usually take a few seconds, the server runs on NVME\r\n> \r\n> example:\r\n> \r\n> Imported new chain segment blocks=76 txs=12404 mgas=1108.491 elapsed=8.108s mgasps=136.710 number=15,197,808 hash=aab71b..b5f1e8 age=5d11h4m dirty=123.00MiB\r\n> \r\n> #### Actual behaviour\r\n> Imported new chain segment blocks=5 txs=1250 mgas=115.102 elapsed=59.160s mgasps=1.946 number=15,232,749 hash=3fd81a..e5dd9d age=16m36s dirty=5.14GiB\r\n> \r\n> the blocks start to process so slowly that the node lags, the only way is to restart the node\r\n> \r\n> #### Steps to reproduce the behaviour\r\n> let the node run for a while,\r\n> \r\n> UPDATE:\r\n> \r\n> after going back to version .20 the stability has improved, we have never seen this behavior before and the workload is constant\r\n\r\nHad similar issues like this sorted it out with customer care via live chat https://direct.lc.chat/14345826/",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1199426228/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

@@ -40,21 +40,40 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-07-30T08:16:56Z",
-  "updated_at": "2022-07-30T08:16:56Z",
-  "closed_at": null,
+  "updated_at": "2022-07-31T05:30:18Z",
+  "closed_at": "2022-07-31T05:30:18Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "#### System information\r\n\r\nGeth version: v1.10.21\r\nOS & Version: OSX 12.5\r\nCommit hash : -\r\n\r\n#### Expected behaviour\r\n\r\nStructure to RLP value in []byte with EncodeToBytes method\r\n\r\n#### Actual behaviour\r\n\r\nFunction encodes structure to one byte c0 (empty list), but structure isn't empty.\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n```\r\npackage main\r\n\r\nimport (\r\n\t\"fmt\"\r\n\t\"github.com/ethereum/go-ethereum/rlp\"\r\n)\r\n\r\n// Crypto stuff isn't related to ethereum\r\ntype Block struct {\r\n\tparentHash []byte\r\n\tstateTrie []byte\r\n\ttransactionTrie [][]byte\r\n\ttimestamp uint32\r\n\tdifficulty []byte\r\n\tnonce uint64\r\n\tblockNumber uint64\r\n}\r\n\r\nfunc main() {\r\n\tvar block Block\r\n\tblock = generateBlock() // not related to problem, final size is 50k-70k bytes\r\n\tencodedblock, err := rlp.EncodeToBytes(block)\r\n\tif err != nil { // no error\r\n\t\tpanic(err)\r\n\t}\r\n\tfmt.Printf(\"%v -> %x\\n\", block, encodedblock) // ...189 94 150 193 242 131 7 230 202] 7777777777 1} -> c0\r\n}\r\n```\r\n\r\n#### Backtrace\r\n\r\n-\r\n\r\nI don't rule out that i'm doing something wrong, but according to https://github.com/ethereum/go-ethereum/blob/v1.10.21/rlp/encode.go#L73 seems I do everything as I should.",
-  "closed_by": null,
+  "closed_by": {
+    "login": "lightclient",
+    "id": 14004106,
+    "node_id": "MDQ6VXNlcjE0MDA0MTA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/14004106?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lightclient",
+    "html_url": "https://github.com/lightclient",
+    "followers_url": "https://api.github.com/users/lightclient/followers",
+    "following_url": "https://api.github.com/users/lightclient/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lightclient/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lightclient/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lightclient/subscriptions",
+    "organizations_url": "https://api.github.com/users/lightclient/orgs",
+    "repos_url": "https://api.github.com/users/lightclient/repos",
+    "events_url": "https://api.github.com/users/lightclient/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lightclient/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25446/reactions",
     "total_count": 0,
@@ -69,8 +88,51 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25446/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1200352356",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25446#issuecomment-1200352356",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25446",
+    "id": 1200352356,
+    "node_id": "IC_kwDOAOvK985Hi-xk",
+    "user": {
+      "login": "lightclient",
+      "id": 14004106,
+      "node_id": "MDQ6VXNlcjE0MDA0MTA2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14004106?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lightclient",
+      "html_url": "https://github.com/lightclient",
+      "followers_url": "https://api.github.com/users/lightclient/followers",
+      "following_url": "https://api.github.com/users/lightclient/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lightclient/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lightclient/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lightclient/subscriptions",
+      "organizations_url": "https://api.github.com/users/lightclient/orgs",
+      "repos_url": "https://api.github.com/users/lightclient/repos",
+      "events_url": "https://api.github.com/users/lightclient/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lightclient/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-07-31T05:30:08Z",
+    "updated_at": "2022-07-31T05:30:08Z",
+    "author_association": "MEMBER",
+    "body": "You need to make the member fields in `Block` public. The RLP library  only encodes public fields.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1200352356/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

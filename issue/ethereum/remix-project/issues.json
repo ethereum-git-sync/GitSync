@@ -14,5 +14,13 @@
     "number": 1490,
     "title": "Accept Solidity version without commit hash in the `version` query parameter",
     "updatedAt": "2022-07-29T12:28:11Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2693,
+    "title": "fix compiler version setting using URL params",
+    "updatedAt": "2022-07-29T12:28:11Z"
   }
 ]

@@ -5,7 +5,31 @@
     },
     "number": 13201,
     "title": "Improve DataFlowAnalyzer's performance",
-    "updatedAt": "2022-07-30T07:08:58Z"
+    "updatedAt": "2022-07-31T21:11:32Z"
+  },
+  {
+    "author": {
+      "login": "PigCharid"
+    },
+    "number": 13301,
+    "title": "Triggering complex events leads to transfer failure",
+    "updatedAt": "2022-07-31T15:17:37Z"
+  },
+  {
+    "author": {
+      "login": "one2008"
+    },
+    "number": 13331,
+    "title": "Solidity needs to support the trie type, so that the amount of stored data is smaller and the search is faster. The gas of contract transactions will be reduced",
+    "updatedAt": "2022-07-31T12:41:02Z"
+  },
+  {
+    "author": {
+      "login": "minhhn2910"
+    },
+    "number": 13335,
+    "title": "Some possible arithmetic issues/optimizations in the generated #utility.yul ",
+    "updatedAt": "2022-07-31T07:57:58Z"
   },
   {
     "author": {
@@ -22,14 +46,6 @@
     "number": 13247,
     "title": "Assembly language feature: add new levels for Yul",
     "updatedAt": "2022-07-29T19:07:13Z"
-  },
-  {
-    "author": {
-      "login": "one2008"
-    },
-    "number": 13331,
-    "title": "Solidity needs to support the trie type, so that the amount of stored data is smaller and the search is faster. The gas of contract transactions will be reduced",
-    "updatedAt": "2022-07-29T16:15:33Z"
   },
   {
     "author": {
@@ -294,14 +310,6 @@
     "number": 11718,
     "title": "Allow functions inside structs",
     "updatedAt": "2022-07-27T13:55:12Z"
-  },
-  {
-    "author": {
-      "login": "PigCharid"
-    },
-    "number": 13301,
-    "title": "Triggering complex events leads to transfer failure",
-    "updatedAt": "2022-07-27T13:53:18Z"
   },
   {
     "author": {

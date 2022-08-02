@@ -1,11 +1,51 @@
 [
   {
     "author": {
+      "login": "pcaversaccio"
+    },
+    "number": 12996,
+    "title": "Language feature: disallow state-changing effects after an external call by default",
+    "updatedAt": "2022-08-01T19:28:39Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 13336,
+    "title": "[Bug] Width of the Solidity docs site is artificially constrained.",
+    "updatedAt": "2022-08-01T16:17:27Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 9627,
+    "title": "Make the hard-coded parts of the optimiser sequence configurable",
+    "updatedAt": "2022-08-01T15:45:49Z"
+  },
+  {
+    "author": {
+      "login": "nishant-sachdeva"
+    },
+    "number": 13319,
+    "title": "Everything at file level + \"using for\"",
+    "updatedAt": "2022-08-01T14:33:58Z"
+  },
+  {
+    "author": {
+      "login": "one2008"
+    },
+    "number": 13331,
+    "title": "Solidity needs to support the trie type, so that the amount of stored data is smaller and the search is faster. The gas of contract transactions will be reduced",
+    "updatedAt": "2022-08-01T11:32:57Z"
+  },
+  {
+    "author": {
       "login": "leonardoalt"
     },
     "number": 13201,
     "title": "Improve DataFlowAnalyzer's performance",
-    "updatedAt": "2022-07-31T21:11:32Z"
+    "updatedAt": "2022-08-01T09:24:40Z"
   },
   {
     "author": {
@@ -14,14 +54,6 @@
     "number": 13301,
     "title": "Triggering complex events leads to transfer failure",
     "updatedAt": "2022-07-31T15:17:37Z"
-  },
-  {
-    "author": {
-      "login": "one2008"
-    },
-    "number": 13331,
-    "title": "Solidity needs to support the trie type, so that the amount of stored data is smaller and the search is faster. The gas of contract transactions will be reduced",
-    "updatedAt": "2022-07-31T12:41:02Z"
   },
   {
     "author": {
@@ -62,14 +94,6 @@
     "number": 1290,
     "title": "Access to constants through contract names",
     "updatedAt": "2022-07-29T14:30:06Z"
-  },
-  {
-    "author": {
-      "login": "pcaversaccio"
-    },
-    "number": 12996,
-    "title": "Language feature: disallow state-changing effects after an external call by default",
-    "updatedAt": "2022-07-29T14:11:37Z"
   },
   {
     "author": {
@@ -214,14 +238,6 @@
     "number": 13322,
     "title": "Further LSP features",
     "updatedAt": "2022-07-28T13:18:28Z"
-  },
-  {
-    "author": {
-      "login": "nishant-sachdeva"
-    },
-    "number": 13319,
-    "title": "Everything at file level ( events ? )  + \"using for\"",
-    "updatedAt": "2022-07-28T13:17:49Z"
   },
   {
     "author": {
@@ -1294,14 +1310,6 @@
     "number": 8775,
     "title": "Allow constants in interfaces",
     "updatedAt": "2022-06-16T22:37:08Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 9627,
-    "title": "Make the hard-coded parts of the optimiser sequence configurable",
-    "updatedAt": "2022-06-16T22:36:16Z"
   },
   {
     "author": {

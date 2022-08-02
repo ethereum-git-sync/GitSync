@@ -58,7 +58,7 @@
       "description": "All issues marked with this label should be closed by Dec 2022"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "Aniket-Engg",
@@ -105,12 +105,31 @@
   "milestone": null,
   "comments": 2,
   "created_at": "2021-10-04T10:57:53Z",
-  "updated_at": "2022-07-25T11:58:00Z",
-  "closed_at": null,
+  "updated_at": "2022-08-01T13:02:51Z",
+  "closed_at": "2022-08-01T13:02:51Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "Whenever you compile a contract that imports and uses other contracts, when you go to the Deploy and Run Transactions tab, the contract dropdown contains a list of all contracts compiled, and the one selected by default is usually a library contract, causing the user to have to change the contract to the main one they just compiled before they go to deploy. \r\n\r\nCan the IDE please be updated to auto-fill the dropdown with the main contract that was just compiled, and not one of the associated libraries? This would save developers time and hassle having to always change the value. Developers would be wanting to deploy the contract they just compiled in 99% of use cases, and not some other library or contract that is imported\r\n\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/1651/reactions",
     "total_count": 0,
@@ -125,7 +144,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1651/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

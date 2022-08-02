@@ -127,26 +127,6 @@
       "received_events_url": "https://api.github.com/users/ryestew/received_events",
       "type": "User",
       "site_admin": false
-    },
-    {
-      "login": "LianaHus",
-      "id": 9685356,
-      "node_id": "MDQ6VXNlcjk2ODUzNTY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/LianaHus",
-      "html_url": "https://github.com/LianaHus",
-      "followers_url": "https://api.github.com/users/LianaHus/followers",
-      "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
-      "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
-      "organizations_url": "https://api.github.com/users/LianaHus/orgs",
-      "repos_url": "https://api.github.com/users/LianaHus/repos",
-      "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/LianaHus/received_events",
-      "type": "User",
-      "site_admin": false
     }
   ],
   "milestone": null,

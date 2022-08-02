@@ -116,11 +116,11 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2021-11-25T09:15:25Z",
-  "updated_at": "2022-07-25T11:28:45Z",
+  "updated_at": "2022-08-01T14:23:16Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "- [ ] \"Loaded address\" does not always follow inter-contract calls  (https://github.com/ethereum/remix-project/issues/247)\r\n- [ ]  Mark call types on slider (https://github.com/ethereum/remix-project/issues/170)\r\n- [ ] Storage debugging should have an option to load every key  (https://github.com/ethereum/remix-project/issues/250)\r\n- [ ] to force Remix to use a specific solidity source code (https://github.com/ethereum/remix-project/issues/149)\r\n- [ ] Fix debugger navigation panel (https://github.com/ethereum/remix-project/issues/688)",
+  "body": "- [ ] \"Loaded address\" does not always follow inter-contract calls  (https://github.com/ethereum/remix-project/issues/247)\r\n- [ ]  Mark call types on slider (https://github.com/ethereum/remix-project/issues/170)\r\n- [ ] Storage debugging should have an option to load every key  (https://github.com/ethereum/remix-project/issues/250)\r\n- [ ] to force Remix to use a specific solidity source code (https://github.com/ethereum/remix-project/issues/149)\r\n- [ ] Fix debugger navigation panel (https://github.com/ethereum/remix-project/issues/688)\r\n- [ ] Grid the debugger view components (https://github.com/ethereum/remix-project/issues/2712)",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/1795/reactions",

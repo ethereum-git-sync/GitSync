@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25454",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25454/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25454/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25454/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25454",
+  "id": 1324154766,
+  "node_id": "I_kwDOAOvK985O7P-O",
+  "number": 25454,
+  "title": "Need to prune Geth but not enough blocks",
+  "user": {
+    "login": "StraySnake",
+    "id": 96312970,
+    "node_id": "U_kgDOBb2eig",
+    "avatar_url": "https://avatars.githubusercontent.com/u/96312970?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/StraySnake",
+    "html_url": "https://github.com/StraySnake",
+    "followers_url": "https://api.github.com/users/StraySnake/followers",
+    "following_url": "https://api.github.com/users/StraySnake/following{/other_user}",
+    "gists_url": "https://api.github.com/users/StraySnake/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/StraySnake/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/StraySnake/subscriptions",
+    "organizations_url": "https://api.github.com/users/StraySnake/orgs",
+    "repos_url": "https://api.github.com/users/StraySnake/repos",
+    "events_url": "https://api.github.com/users/StraySnake/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/StraySnake/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-01T10:01:28Z",
+  "updated_at": "2022-08-01T10:01:28Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Geth version: 1.10.21-stable\r\nOS & Version: Linux Ubuntu Server\r\n\r\nHi everyone, I need to prune my geth for prepared to the \"merge\" but the result from geth snapshot prune-state --datadir /my/data/dir I've a error \"Snaphot not old enough yet: need 128 more blocks\". but my chain is sync after shutdown geth.\r\n\r\nI've never prune geth so now the size of my chaindata are around 1.4TB (with 300GB of ancient).\r\n\r\n`$ sudo cat /etc/systemd/system/eth1.service \r\n......\r\nUser=goeth\r\nGroup=goeth\r\nExecStart       = /usr/bin/geth --cache=2048 --datadir /var/lib/goethereum --identity \"xxxx\" --http --http.api \"admin,db,eth,net,web3\" --http.port 8545 --http.addr \"0.0.0.0\" --authrpc.jwtsecret xxxxx`\r\n\r\n`$ sudo -u goeth geth --datadir /var/lib/goethereum snapshot prune-state\r\nINFO [08-01|11:52:45.130] Maximum peer count                       ETH=50 LES=0 total=50\r\nINFO [08-01|11:52:45.132] Smartcard socket not found, disabling    err=\"stat /run/pcscd/pcscd.comm: no such file or directory\"\r\nINFO [08-01|11:52:45.140] Set global gas cap                       cap=50,000,000\r\nINFO [08-01|11:52:45.141] Allocated cache and file handles         database=/var/lib/goethereum/geth/chaindata cache=512.00MiB handles=524,288\r\nINFO [08-01|11:52:54.799] Opened ancient database                  database=/var/lib/goethereum/geth/chaindata/ancient readonly=false\r\nWARN [08-01|11:52:54.858] Snapshot maintenance disabled (syncing) \r\nINFO [08-01|11:52:55.002] Initialized state bloom                  size=2.00GiB\r\nERROR[08-01|11:53:03.572] Failed to prune state                    err=\"snapshot not old enough yet: need 128 more blocks\"\r\nsnapshot not old enough yet: need 128 more blocks`\r\n\r\n`$ sudo du -h /var/lib/goethereum/geth/chaindata/\r\n290G\t/var/lib/goethereum/geth/chaindata/ancient\r\n1.1T\t/var/lib/goethereum/geth/chaindata/`\r\n\r\nThanks",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25454/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25454/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

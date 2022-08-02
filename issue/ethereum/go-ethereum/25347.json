@@ -49,7 +49,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -58,12 +58,31 @@
   "milestone": null,
   "comments": 8,
   "created_at": "2022-07-20T08:17:23Z",
-  "updated_at": "2022-07-26T11:35:52Z",
-  "closed_at": null,
+  "updated_at": "2022-08-01T09:20:33Z",
+  "closed_at": "2022-08-01T09:20:33Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "#### System information\r\nGeth\r\nVersion: 1.10.19-stable\r\nGit Commit: 23bee16208718975f9b9e012949b8d4ee1223108\r\nArchitecture: amd64\r\nGo Version: go1.18.1\r\nOperating System: linux, Ubuntu 20.04.4 LTS on AWS\r\ncommands: geth --datadir /data/geth/ --mainnet --syncmode \"snap\" --http --ws --signer /home/ubuntu/.clef/clef.ipc --cache 1024 \r\n\r\n\r\n#### Actual behaviour\r\n\r\ngeth is up to latest block.\r\npreviously I used a 16GB memory instance on AWS and geth is killed by OOM killer for every 4~5 days.\r\nthen I switched to a 32GB instance and it keeps running for about 2 weeks. I noticed it's memory usage has been increasing by ~1G each day and now its ram usage is 25G\r\n\r\n$ ps axo pid,size,comm|grep geth\r\n2697 27649956 geth\r\n\r\nWhat can I do to limit it's memory usage? Or what log should I look into to identify the problem",
-  "closed_by": null,
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25347/reactions",
     "total_count": 0,
@@ -78,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25347/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

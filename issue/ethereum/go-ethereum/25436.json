@@ -40,21 +40,40 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-07-29T03:57:32Z",
-  "updated_at": "2022-07-29T18:16:37Z",
-  "closed_at": null,
+  "updated_at": "2022-08-01T09:42:04Z",
+  "closed_at": "2022-08-01T08:06:35Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "### System information\r\n\r\nGeth version: 1.10.21-stable (checked every version back to 1.10.9 and was able to reproduce the issue with every checked version after a few tries)\r\nOS & Version: Linux (Ubuntu 20.04.4 LTS) & OSX 11.6.7 (20G630)\r\n\r\n#### Expected behaviour\r\n\r\nFresh snap sync completes successfully and the node continues to operate normally.  \r\n\r\n#### Actual behaviour\r\n\r\nFresh snap sync stops few blocks before the latest block and does not complete.\r\nRestarting the node does not solve the issue.\r\nDeleting local DB and starting a fresh snap sync does not solve the issue.\r\n\r\n````\r\nINFO [07-29|10:53:18.972] Block synchronisation started \r\nINFO [07-29|10:53:18.973] Mining aborted due to sync \r\nINFO [07-29|10:53:19.000] Successfully sealed new block            number=3 sealhash=d525c7..a3c34c hash=767387..2f1032 elapsed=4.998s\r\nINFO [07-29|10:53:19.000] 🔨 mined potential block                  number=3 hash=767387..2f1032\r\nINFO [07-29|10:53:19.002] Imported new block headers               count=192 elapsed=21.305ms    number=192 hash=7596a1..29b38f age=15h46m15s\r\nINFO [07-29|10:53:19.002] Downloader queue stats                   receiptTasks=188 blockTasks=188 itemSize=175.88B throttle=8192\r\nINFO [07-29|10:53:19.002] Imported new block receipts              count=3   elapsed=\"92.118µs\"  number=3   hash=4ce54a..c832b5 age=16h2m     size=258.00B\r\nINFO [07-29|10:53:19.004] Imported new block receipts              count=1   elapsed=\"73.113µs\"  number=4   hash=0c3313..28207c age=16h1m55s  size=252.00B\r\nINFO [07-29|10:53:19.016] Looking for peers                        peercount=1 tried=0 static=0\r\nINFO [07-29|10:53:19.022] Imported new block headers               count=192 elapsed=19.865ms    number=384 hash=3c1839..d146ab age=15h30m15s\r\nINFO [07-29|10:53:19.036] Imported new block receipts              count=128 elapsed=4.300ms     number=132 hash=8c272c..89e618 age=15h51m15s size=216.70KiB\r\nINFO [07-29|10:53:19.058] Imported new block receipts              count=128 elapsed=4.142ms     number=260 hash=58d7b4..cea62c age=15h40m35s size=217.49KiB\r\nINFO [07-29|10:53:19.068] Imported new block receipts              count=124 elapsed=5.745ms     number=384 hash=3c1839..d146ab age=15h30m15s size=212.43KiB\r\nINFO [07-29|10:53:19.082] Imported new block headers               count=576 elapsed=59.424ms    number=960 hash=be9532..923a16 age=14h42m15s\r\nINFO [07-29|10:53:19.090] Imported new block headers               count=78  elapsed=8.005ms     number=1038 hash=9b311f..e8f06c age=14h35m45s\r\nINFO [07-29|10:53:19.120] Imported new block receipts              count=128 elapsed=5.150ms     number=512  hash=37268a..d5b4ab age=15h19m35s size=219.34KiB\r\nINFO [07-29|10:53:19.125] Imported new block receipts              count=128 elapsed=4.005ms     number=640  hash=ca7e12..c54c07 age=15h8m55s  size=218.68KiB\r\nINFO [07-29|10:53:19.153] Imported new block receipts              count=128 elapsed=4.430ms     number=768  hash=90d6d5..f5af23 age=14h58m15s size=219.01KiB\r\nINFO [07-29|10:53:19.169] Imported new block receipts              count=128 elapsed=4.641ms     number=896  hash=27f77d..f365f4 age=14h47m35s size=218.69KiB\r\nINFO [07-29|10:53:19.174] Imported new block receipts              count=79  elapsed=2.792ms     number=975  hash=7af7f5..c7ef12 age=14h41m    size=134.74KiB\r\nINFO [07-29|10:53:29.072] Looking for peers                        peercount=1 tried=0 static=0\r\nINFO [07-29|10:53:39.127] Looking for peers                        peercount=1 tried=0 static=0\r\nINFO [07-29|10:53:49.177] Looking for peers                        peercount=1 tried=0 static=0\r\n(...)\r\nINFO [07-29|10:59:23.067] Looking for peers                        peercount=1 tried=0 static=0\r\nINFO [07-29|10:59:33.108] Looking for peers                        peercount=1 tried=0 static=0\r\nINFO [07-29|10:59:43.161] Looking for peers                        peercount=1 tried=0 static=0\r\n````\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nI first noticed this issue on our AWS (Ubuntu) test/production Clique private networks with v1.10.18 and could reproduce it on localhost (OSX) with v1.10.21 and other versions.\r\n\r\nMy localhost test setup is as follows:\r\n- Clique period 5s, epoch 100 (Just to make things faster)\r\n- a bootnode\r\n- \"sealer1\" (a clique miner, running full sync first, then trying to do a fresh re-sync using snap sync)\r\n- \"sealer2\" (not a miner, just a node running full sync)\r\n\r\nSteps to reproduce (might take a couple of tries, depending on your luck)\r\n\r\n1. Start the bootnode\r\n`bootnode -nodekey ./bootnode/boot.key -verbosity 9 -addr :30310`\r\n2. Init \"sealer2\" node\r\n`geth --datadir ./sealer2 init genesis.json`\r\n3. Start \"sealer2\" node (full sync)\r\n````\r\ngeth --datadir ./sealer2 --networkid 116111110106 --syncmode \"full\" --unlock \"0xf69Eb5CF50D3c4504a82cCeBe771E2773039d67F\"  --password ./sealer2/password.txt --allow-insecure-unlock --port 30314 --nat \"extip:127.0.0.1\" --bootnodes \"enode://d2c25e1c5f65391624a7cffbddeed9c5f1cd3436f1d1600e05abaf1ce1d46df9c934ac1870ebf35aac531767dfc22bc6e4a993638263514c7506a47761449e26@127.0.0.1:0?discport=30310\" --authrpc.port 8552\r\n````\r\n4. Init \"sealer1\" node\r\n`geth --datadir ./sealer1 init genesis.json` \r\n5. Start \"sealer1\" node (miner, full sync)\r\n````\r\ngeth --datadir ./sealer1 --networkid 116111110106 --syncmode \"full\" --unlock \"0x7D868c71759553F9A0D2E87241bD5Db02e1A1E99\" --password ./sealer1/password.txt --allow-insecure-unlock --port 30312 --nat \"extip:127.0.0.1\" --bootnodes \"enode://d2c25e1c5f65391624a7cffbddeed9c5f1cd3436f1d1600e05abaf1ce1d46df9c934ac1870ebf35aac531767dfc22bc6e4a993638263514c7506a47761449e26@127.0.0.1:0?discport=30310\" --authrpc.port 8551 --mine \r\n````\r\n6. Attach to \"sealer1\" and \"sealer2\" and generate some dummy transactions\r\n(this step might be irrelevant, but was not able to reproduce with empty blocks only)\r\n````\r\n$ geth --datadir ./sealer1 attach\r\nWelcome to the Geth JavaScript console!\r\n(...)\r\nTo exit, press ctrl-d or type exit\r\n> setInterval(function(){\r\n...... console.log(\"send tx: \" + eth.sendTransaction({'from':eth.coinbase, 'to':'0xf69Eb5CF50D3c4504a82cCeBe771E2773039d67F', 'value':web3.toWei(1, 'ether')}));\r\n...... }, 1000);\r\n{}\r\n> send tx: 0x2f8741ea34e7ab6cd294ee9374bb95def4ef052b0a42387a948b3faf124bafd4\r\nsend tx: 0xffef441d1fc705026d941411bca009370f992605530e71641afc0269cb352f54\r\nsend tx: 0x1e123e313032dfcbac2c97e987d2f59aae9edc736d87427923f19e277367e6bd\r\n(...)\r\n````\r\n````\r\n$ geth --datadir ./sealer2 attach\r\nWelcome to the Geth JavaScript console!\r\n(...)\r\nTo exit, press ctrl-d or type exit\r\n> setInterval(function() {\r\n...... console.log(\"send tx: \" + eth.sendTransaction({'from':eth.coinbase, 'to':'0x7D868c71759553F9A0D2E87241bD5Db02e1A1E99', 'value':web3.toWei(1, 'ether')}));\r\n...... }, 1000);\r\n{}\r\n> send tx: 0x20eda4ceaf8d1db05a1064a10ec5e6ede855a03b6823fb44121f42b501213254\r\nsend tx: 0x28a1488249bb1a73b2ade2f089fd5f028df362791642fc9d172d6c1f33cf56d9\r\nsend tx: 0x287978e0d58c4e385f4041d29ec92be467fefd33dc55e3b28961860526258c3f\r\n(...)\r\n````\r\n7. Wait until around ~1K blocks get mined\r\n8. Stop \"sealer1\"\r\n9. Delete \"sealer1\"'s data inside ./sealer1/geth (everything except \"nodekey\" file)\r\n10. Restart \"sealer2\"\r\n(this step might be irrelevant, but I found it easier to reproduce by doing it)\r\n11. Init \"sealer1\" node\r\n12. Start \"sealer1\" node (miner, snap sync)\r\n````\r\ngeth --datadir ./sealer1 --networkid 116111110106 --syncmode \"snap\" --unlock \"0x7D868c71759553F9A0D2E87241bD5Db02e1A1E99\" --password ./sealer1/password.txt --allow-insecure-unlock --port 30312 --nat \"extip:127.0.0.1\" --bootnodes \"enode://d2c25e1c5f65391624a7cffbddeed9c5f1cd3436f1d1600e05abaf1ce1d46df9c934ac1870ebf35aac531767dfc22bc6e4a993638263514c7506a47761449e26@127.0.0.1:0?discport=30310\" --authrpc.port 8551 --mine\r\n````\r\n13. If successfully reproduced, \"sealer1\"'s snap sync will stops few blocks before the latest block and does not complete.\r\n\r\nBTW. Doing a \"sealer1\" re-sync using full sync works fine.\r\n\r\n#### Backtrace\r\n\r\nI attached my `genesis.json` and logs (--verbosity 5) and traces (--trace) for both \"sealer1\" (from step 12) and \"sealer2\" (from step 10) \r\n\r\n[genesis.json.txt](https://github.com/ethereum/go-ethereum/files/9215723/genesis.json.txt)\r\n[sealer1_log.txt](https://github.com/ethereum/go-ethereum/files/9215883/sealer1_log.txt)\r\n[sealer2_log.txt](https://github.com/ethereum/go-ethereum/files/9215884/sealer2_log.txt)\r\n[sealer1_trace.out.zip](https://github.com/ethereum/go-ethereum/files/9215885/sealer1_trace.out.zip)\r\n[sealer2_trace.out.zip](https://github.com/ethereum/go-ethereum/files/9215886/sealer2_trace.out.zip)\r\n\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25436/reactions",
     "total_count": 0,
@@ -69,8 +88,95 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25436/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1200859529",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25436#issuecomment-1200859529",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25436",
+    "id": 1200859529,
+    "node_id": "IC_kwDOAOvK985Hk6mJ",
+    "user": {
+      "login": "karalabe",
+      "id": 129561,
+      "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/karalabe",
+      "html_url": "https://github.com/karalabe",
+      "followers_url": "https://api.github.com/users/karalabe/followers",
+      "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+      "organizations_url": "https://api.github.com/users/karalabe/orgs",
+      "repos_url": "https://api.github.com/users/karalabe/repos",
+      "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/karalabe/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-01T08:06:34Z",
+    "updated_at": "2022-08-01T08:06:34Z",
+    "author_association": "MEMBER",
+    "body": "Snap sync requires someone to serve the snapshot data too. If you wipe `sealer1` and want to resync it, you'll need to have `sealer2` seed it with the snapshot data.\r\n\r\nNow, if you restart `sealer2` too in between, it will only flush the state for a few milestone blocks (last, last-1, last-128), and thus will not be able to serve snap sync until the chain progresses 64+ blocks again.\r\n\r\nIn you case, you need to either:\r\n\r\n- Not restart `sealer2` so the snapshot data remains available.\r\n- Restart `sealer2`, but then mine 64+ blocks, so enough snapshot data accumulates in memory to serve remote nodes.\r\n- Have more nodes in the network that don't get restarted in lockstep with everyone else.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1200859529/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1200966313",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25436#issuecomment-1200966313",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25436",
+    "id": 1200966313,
+    "node_id": "IC_kwDOAOvK985HlUqp",
+    "user": {
+      "login": "jakub-freebit",
+      "id": 49676311,
+      "node_id": "MDQ6VXNlcjQ5Njc2MzEx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49676311?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jakub-freebit",
+      "html_url": "https://github.com/jakub-freebit",
+      "followers_url": "https://api.github.com/users/jakub-freebit/followers",
+      "following_url": "https://api.github.com/users/jakub-freebit/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jakub-freebit/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jakub-freebit/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jakub-freebit/subscriptions",
+      "organizations_url": "https://api.github.com/users/jakub-freebit/orgs",
+      "repos_url": "https://api.github.com/users/jakub-freebit/repos",
+      "events_url": "https://api.github.com/users/jakub-freebit/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jakub-freebit/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-01T09:42:04Z",
+    "updated_at": "2022-08-01T09:42:04Z",
+    "author_association": "NONE",
+    "body": "Thank you for the explanation!",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1200966313/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

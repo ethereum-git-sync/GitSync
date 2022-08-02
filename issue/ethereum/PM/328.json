@@ -255,8 +255,8 @@
     "body": "Geth's implementation currently:\r\n\r\n- `eth_gasPrice` **before** London uses the current algorithm (deliberately won't say)\r\n- `eth_gasPrice` **after** London will return the exact same number based on the total fees paid (tip + base)\r\n- `eth_maxPriorityFeePerGas` **after** London will effectively return `eth_gasPrice - baseFee`\r\n\r\nAuto-fill details:\r\n\r\n- If the user doesn't specify either `gasPrice` or 1559 gas fields, we default to 1559 style transactions\r\n- If the user doesn't specify `maxPriorityFeePerGas`, we default to the above estimation\r\n- If the user doesn't specify `maxFeePerGas`, we default to `maxPriorityFeePerGas + 2*baseFee`\r\n\r\nThe rationale's behind this thought:\r\n\r\n- Users continuing to rely on legacy transactions and `eth_gasPrice` should not observe any behavioral change. (Hence why I didn't detail how the GPO works, it works the same way as until now).\r\n- Users stuffing `eth_gasPrice` into a 1559 tx for the priorityFee or maxFee will be handled gracefully as if they just did a legacy transaction, no shooting yourself in the foot.\r\n- Advanced users who know 1559 is different and how can rely on the new endpoint `eth_maxPriorityFeePerGas` which returns a value for the tip only (thus it won't be mined if used as is without a baseFee + slack on top).\r\n\r\n---\r\n\r\nEdit: Geth's gas price oracle retrieves the cheapest 3 transactions from the past X blocks, and uses the 60th percentile as the suggestion for the price. The 60th percentile ensures we're aiming for inclusion in 2-3 blocks, whereas looking at the minimums ensures we're trying to push prices downward instead of up.\r\n\r\nEdit2: X = 20 for full nodes and 2 for light clients (they need to retrieve the entire blocks to suggest a price)",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/pm/issues/comments/853234014/reactions",
-      "total_count": 8,
-      "+1": 2,
+      "total_count": 9,
+      "+1": 3,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

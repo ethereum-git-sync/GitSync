@@ -49,7 +49,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "yann300",
@@ -116,12 +116,31 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-06-27T14:27:43Z",
-  "updated_at": "2022-07-27T11:41:09Z",
-  "closed_at": null,
+  "updated_at": "2022-08-02T13:36:35Z",
+  "closed_at": "2022-08-02T13:36:35Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "Once I try to connect, with an http provider and related node is not running, it keeps trying to  connect\r\ncc: @yann300 \r\n\r\n![Screenshot 2022-06-27 at 7 56 02 PM](https://user-images.githubusercontent.com/30843294/175965015-af33432b-423d-49ca-aab4-9a2595435190.png)\r\n\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/2572/reactions",
     "total_count": 0,
@@ -136,7 +155,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2572/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
 

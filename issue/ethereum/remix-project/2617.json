@@ -49,7 +49,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "yann300",
@@ -134,14 +134,33 @@
     }
   ],
   "milestone": null,
-  "comments": 1,
+  "comments": 2,
   "created_at": "2022-07-12T14:16:46Z",
-  "updated_at": "2022-07-25T11:43:21Z",
-  "closed_at": null,
+  "updated_at": "2022-08-02T13:46:42Z",
+  "closed_at": "2022-08-02T13:46:42Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "![Screenshot 2022-07-12 at 7 45 58 PM](https://user-images.githubusercontent.com/30843294/178511539-361ebadb-043b-4458-878b-7774fdef1aeb.png)\r\n\r\n![Screenshot 2022-07-12 at 7 46 06 PM](https://user-images.githubusercontent.com/30843294/178511578-b6113f02-8a66-4f6f-9265-2862af07bdff.png)\r\n\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/2617/reactions",
     "total_count": 0,
@@ -156,7 +175,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2617/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -191,6 +210,50 @@
     "body": "Adding an other example that shows that it only partially adds a quote:\r\n![image](https://user-images.githubusercontent.com/424752/178511931-00beebce-a791-406b-a2f5-6f458a37e2d3.png)\r\n![image](https://user-images.githubusercontent.com/424752/178511942-10b82f8a-922a-4a59-90c3-92c60e242ff1.png)\r\n\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1181819126/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1202144796",
+    "html_url": "https://github.com/ethereum/remix-project/issues/2617#issuecomment-1202144796",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/2617",
+    "id": 1202144796,
+    "node_id": "IC_kwDODtLRw85Hp0Yc",
+    "user": {
+      "login": "yann300",
+      "id": 6940742,
+      "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/yann300",
+      "html_url": "https://github.com/yann300",
+      "followers_url": "https://api.github.com/users/yann300/followers",
+      "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+      "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+      "organizations_url": "https://api.github.com/users/yann300/orgs",
+      "repos_url": "https://api.github.com/users/yann300/repos",
+      "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/yann300/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-02T07:54:30Z",
+    "updated_at": "2022-08-02T07:54:30Z",
+    "author_association": "MEMBER",
+    "body": "We need to add double quotes cause we don't know if the number will be supported by js runtime.\r\nI fixed the bug by adding double quoted to all the numbers",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1202144796/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

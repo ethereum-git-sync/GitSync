@@ -1,6 +1,54 @@
 [
   {
     "author": {
+      "login": "manoj398"
+    },
+    "number": 25227,
+    "title": "Temp files generated during DAG generation won't cleanup properly.",
+    "updatedAt": "2022-08-02T12:33:24Z"
+  },
+  {
+    "author": {
+      "login": "i11m20n"
+    },
+    "number": 25466,
+    "title": "\"Database compacting, degraded performance\" for 2 days already",
+    "updatedAt": "2022-08-02T09:41:28Z"
+  },
+  {
+    "author": {
+      "login": "pandaplusplus"
+    },
+    "number": 25464,
+    "title": "the method `engine_exchangeTransitionConfigurationV1` does not exist/is not available",
+    "updatedAt": "2022-08-02T05:18:39Z"
+  },
+  {
+    "author": {
+      "login": "pandaplusplus"
+    },
+    "number": 25216,
+    "title": "what happened, so that failed to clean stale beacon headers",
+    "updatedAt": "2022-08-02T03:32:13Z"
+  },
+  {
+    "author": {
+      "login": "BabySid"
+    },
+    "number": 25453,
+    "title": "eth_getLogs run very slowly and return null",
+    "updatedAt": "2022-08-02T02:15:37Z"
+  },
+  {
+    "author": {
+      "login": "m-yukio"
+    },
+    "number": 25462,
+    "title": "Duplicate code in gomobile production",
+    "updatedAt": "2022-08-02T00:39:50Z"
+  },
+  {
+    "author": {
       "login": "jhoenicke"
     },
     "number": 23986,
@@ -38,14 +86,6 @@
     "number": 20260,
     "title": "website/docs: Write missing doc pages",
     "updatedAt": "2022-08-01T15:41:33Z"
-  },
-  {
-    "author": {
-      "login": "BabySid"
-    },
-    "number": 25453,
-    "title": "eth_getLogs run very slowly and return null",
-    "updatedAt": "2022-08-01T13:09:22Z"
   },
   {
     "author": {
@@ -377,14 +417,6 @@
   },
   {
     "author": {
-      "login": "manoj398"
-    },
-    "number": 25227,
-    "title": "Temp files generated during DAG generation won't cleanup properly.",
-    "updatedAt": "2022-07-26T11:39:44Z"
-  },
-  {
-    "author": {
       "login": "cryptonana"
     },
     "number": 25386,
@@ -702,14 +734,6 @@
     "number": 25252,
     "title": "abigen error: Failed to generate ABI binding in Golang",
     "updatedAt": "2022-07-19T09:44:49Z"
-  },
-  {
-    "author": {
-      "login": "pandaplusplus"
-    },
-    "number": 25216,
-    "title": "what happened, so that failed to clean stale beacon headers",
-    "updatedAt": "2022-07-19T06:31:53Z"
   },
   {
     "author": {

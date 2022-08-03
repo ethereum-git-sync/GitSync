@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25466",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25466/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25466/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25466/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25466",
+  "id": 1325586790,
+  "node_id": "I_kwDOAOvK985PAtlm",
+  "number": 25466,
+  "title": "\"Database compacting, degraded performance\" for 2 days already",
+  "user": {
+    "login": "i11m20n",
+    "id": 13911593,
+    "node_id": "MDQ6VXNlcjEzOTExNTkz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13911593?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/i11m20n",
+    "html_url": "https://github.com/i11m20n",
+    "followers_url": "https://api.github.com/users/i11m20n/followers",
+    "following_url": "https://api.github.com/users/i11m20n/following{/other_user}",
+    "gists_url": "https://api.github.com/users/i11m20n/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/i11m20n/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/i11m20n/subscriptions",
+    "organizations_url": "https://api.github.com/users/i11m20n/orgs",
+    "repos_url": "https://api.github.com/users/i11m20n/repos",
+    "events_url": "https://api.github.com/users/i11m20n/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/i11m20n/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-02T09:41:28Z",
+  "updated_at": "2022-08-02T09:41:28Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "My node was already fully synced and working fine, randomly started doing that and it's not finishing or giving any progress.\r\n\r\n### System information\r\nGeth Version: `1.10.20-stable`\r\nGit Commit: `8f2416a89a3def6ec2c749d5afafbf2c9a18e3c8`\r\nOS & Version: `CentOS Linux release 8.3.2011`\r\n\r\n### Parameters\r\n```shell\r\nnohup ./geth --syncmode=full --gcmode=archive --http --http.api=admin,debug,web3,eth,net,txpool --ws --ws.api=admin,debug,web3,eth,net,txpool --maxpeers=1000 --cache=51200 --datadir=/ethereum/.ethereum &\r\n```\r\n\r\n### SSD usage\r\n```shell\r\n125M\t./geth/nodes\r\n7.3G\t./geth/fastcache.tmp.717729320\r\n348G\t./geth/chaindata/ancient\r\n15T\t./geth/chaindata\r\n239M\t./geth/ethash\r\n6.5G\t./geth/triecache\r\n15T\t./geth\r\n4.0K\t./keystore\r\n15T\t.\r\n```\r\n\r\n### log\r\n```log\r\nWARN [08-02|17:11:21.802] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:11:32.075] Snapshot extension registration failed   peer=6ec80bbf err=\"peer connected on snap without compatible eth support\"\r\nWARN [08-02|17:12:21.823] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:13:24.801] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:13:41.630] Snapshot extension registration failed   peer=04dfa983 err=\"peer connected on snap without compatible eth support\"\r\nWARN [08-02|17:14:24.838] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:15:24.875] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:16:25.050] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:17:25.079] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:18:25.083] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:19:28.070] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:20:26.848] Snapshot extension registration failed   peer=f343148b err=\"peer connected on snap without compatible eth support\"\r\nWARN [08-02|17:20:28.185] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:21:31.097] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:22:31.113] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:23:31.125] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:24:31.139] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:25:31.152] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:25:55.117] Snapshot extension registration failed   peer=7a77d37c err=\"peer connected on snap without compatible eth support\"\r\nWARN [08-02|17:26:31.697] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:27:34.170] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:28:34.277] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:29:34.341] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:30:37.305] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:31:37.361] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:32:40.326] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:33:40.396] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:34:43.381] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:35:27.373] Snapshot extension registration failed   peer=3ce52055 err=\"peer connected on snap without compatible eth support\"\r\nWARN [08-02|17:35:43.387] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\nWARN [08-02|17:36:46.406] Database compacting, degraded performance database=/ethereum/.ethereum/geth/chaindata\r\n```\r\n\r\nWhat do I need to do to restore sync? Please help me, thanks.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25466/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25466/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

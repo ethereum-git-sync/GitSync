@@ -5,7 +5,15 @@
     },
     "number": 12996,
     "title": "Language feature: disallow state-changing effects after an external call by default",
-    "updatedAt": "2022-08-01T19:28:39Z"
+    "updatedAt": "2022-08-02T23:05:17Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 13338,
+    "title": "Remove all references to \"money\"",
+    "updatedAt": "2022-08-02T19:50:00Z"
   },
   {
     "author": {
@@ -13,7 +21,31 @@
     },
     "number": 13336,
     "title": "[Bug] Width of the Solidity docs site is artificially constrained.",
-    "updatedAt": "2022-08-01T16:17:27Z"
+    "updatedAt": "2022-08-02T17:15:16Z"
+  },
+  {
+    "author": {
+      "login": "lukehutch"
+    },
+    "number": 13214,
+    "title": "Add unitialized variable warning when for-loops contain uninitialized variables",
+    "updatedAt": "2022-08-02T13:44:52Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 13339,
+    "title": "`abi.encode(...)` for custom errors",
+    "updatedAt": "2022-08-02T11:59:25Z"
+  },
+  {
+    "author": {
+      "login": "one2008"
+    },
+    "number": 13331,
+    "title": "Solidity needs to support the trie type, so that the amount of stored data is smaller and the search is faster. The gas of contract transactions will be reduced",
+    "updatedAt": "2022-08-02T01:49:04Z"
   },
   {
     "author": {
@@ -30,14 +62,6 @@
     "number": 13319,
     "title": "Everything at file level + \"using for\"",
     "updatedAt": "2022-08-01T14:33:58Z"
-  },
-  {
-    "author": {
-      "login": "one2008"
-    },
-    "number": 13331,
-    "title": "Solidity needs to support the trie type, so that the amount of stored data is smaller and the search is faster. The gas of contract transactions will be reduced",
-    "updatedAt": "2022-08-01T11:32:57Z"
   },
   {
     "author": {
@@ -62,14 +86,6 @@
     "number": 13335,
     "title": "Some possible arithmetic issues/optimizations in the generated #utility.yul ",
     "updatedAt": "2022-07-31T07:57:58Z"
-  },
-  {
-    "author": {
-      "login": "lukehutch"
-    },
-    "number": 13214,
-    "title": "Add unitialized variable warning when for-loops contain uninitialized variables",
-    "updatedAt": "2022-07-30T06:00:21Z"
   },
   {
     "author": {

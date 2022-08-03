@@ -50,8 +50,8 @@
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/EIPs/issues/5082/reactions",
     "total_count": 12,
-    "+1": 8,
-    "-1": 4,
+    "+1": 7,
+    "-1": 5,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
@@ -1328,13 +1328,13 @@
     "body": "> How much money is this trying to raise?\r\n\r\nUnspecified.  Ideally, enough that we can afford to pay one or more full time EIP editors and/or tooling developers for a substantial time into the future.  However, any amount would help toward partially achieving this goal.\r\n\r\n> How long is this auction for?\r\n\r\nUndefined at this time.  This issue is to just float the general idea.\r\n\r\n> The enforceable EIPs (e.g. JSON-RPC) have been moved out of this repo, will this cover those repos that contain EIPs now as well?\r\n\r\nMy assumption is that the keyholders for the assets would be some trusted set of people ethos-aligned with Ethereum and they would be used primarily to cover standardization costs (which would include executable specs, EIPs, JSON-RPC, etc.).  I wouldn't personally be opposed to excess funds being directed toward other ecosystem benefiting things tangential to that, but that complicates things so perhaps it is easiest to focus on \"standardization and change control processes\"?\r\n\r\n> Why can't the foundation fund this?\r\n\r\nCurrently, the Ethereum standardization process is not funded by the EF.  I don't know who is funding the development of the executable spec.  EIP editors are not funded at all.  I think someone was funding JSON-RPC standardization for a while but I believe they aren't any longer.  In theory *anyone* could fund any of these things but no one does at the moment.\r\n\r\nThe general idea here is that the EIP editors control an asset that some people value very highly, and the editors value very little.  Since we need funding, selling off that asset feels like an obvious way to address two problems at the same time.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1142035738/reactions",
-      "total_count": 2,
+      "total_count": 3,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 2,
+      "heart": 3,
       "rocket": 0,
       "eyes": 0
     },

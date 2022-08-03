@@ -123,8 +123,8 @@
     "body": "Have you considered allowing this feature set by extending ERC20 with `approveAndCall`? Inside the \"charging\" contract you'll have one function call in any case (in this case transferFrom), but on the caller side entering is now an atomic operation, similar to transferToContract",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/284240612/reactions",
-      "total_count": 7,
-      "+1": 7,
+      "total_count": 8,
+      "+1": 8,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

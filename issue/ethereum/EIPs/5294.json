@@ -272,13 +272,13 @@
     "body": "I, unfortunately, have volunteered to write and maintain whatever bot we agree on.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1189760354/reactions",
-      "total_count": 6,
+      "total_count": 14,
       "+1": 0,
       "-1": 0,
-      "laugh": 3,
-      "hooray": 1,
+      "laugh": 6,
+      "hooray": 3,
       "confused": 0,
-      "heart": 2,
+      "heart": 5,
       "rocket": 0,
       "eyes": 0
     },
@@ -668,8 +668,8 @@
     "body": "I'm against creating a ban list as it arguably won't work as number aestetic perception is subjective. E.g. the folks at Gnosis somehow got a palindrome 5005 while 5222 was argued away for being \"too nice\".\r\n\r\nAs design criteria, I'd aim for making the number assignment as little arbitrary (no human decides) and as little human controllable (no human can hack) as possible. If beautiful numbers arise from this process and we can all agree it was just luck, that's good.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1193284319/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

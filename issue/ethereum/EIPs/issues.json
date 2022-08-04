@@ -1,11 +1,19 @@
 [
   {
     "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5408,
+    "title": "Create an EIP ExternalLinkArchiveBot (EIP ELABot)",
+    "updatedAt": "2022-08-04T00:24:11Z"
+  },
+  {
+    "author": {
       "login": "Pandapip1"
     },
     "number": 4945,
     "title": "Rename master branch to main branch",
-    "updatedAt": "2022-08-03T00:22:35Z"
+    "updatedAt": "2022-08-04T00:20:35Z"
   },
   {
     "author": {
@@ -13,7 +21,7 @@
     },
     "number": 4335,
     "title": "EIP registries",
-    "updatedAt": "2022-08-03T00:22:33Z"
+    "updatedAt": "2022-08-04T00:20:33Z"
   },
   {
     "author": {
@@ -21,7 +29,7 @@
     },
     "number": 2535,
     "title": "Diamonds",
-    "updatedAt": "2022-08-03T00:22:27Z"
+    "updatedAt": "2022-08-04T00:20:31Z"
   },
   {
     "author": {
@@ -29,7 +37,15 @@
     },
     "number": 2439,
     "title": "Discussions-to thread for EIP-634 (Storage of text records in ENS)",
-    "updatedAt": "2022-08-03T00:22:26Z"
+    "updatedAt": "2022-08-04T00:20:28Z"
+  },
+  {
+    "author": {
+      "login": "dete"
+    },
+    "number": 721,
+    "title": "ERC: Non-fungible Token Standard",
+    "updatedAt": "2022-08-03T16:14:00Z"
   },
   {
     "author": {
@@ -37,7 +53,15 @@
     },
     "number": 5394,
     "title": "Revamp Labels",
-    "updatedAt": "2022-08-02T15:31:05Z"
+    "updatedAt": "2022-08-03T15:07:36Z"
+  },
+  {
+    "author": {
+      "login": "alanscarpellini"
+    },
+    "number": 2983,
+    "title": "Discussion for EIP-2980 ",
+    "updatedAt": "2022-08-03T15:04:34Z"
   },
   {
     "author": {
@@ -937,14 +961,6 @@
   },
   {
     "author": {
-      "login": "dete"
-    },
-    "number": 721,
-    "title": "ERC: Non-fungible Token Standard",
-    "updatedAt": "2022-07-18T14:13:17Z"
-  },
-  {
-    "author": {
       "login": "Pandapip1"
     },
     "number": 5237,
@@ -1478,14 +1494,6 @@
     "number": 3517,
     "title": "update EIP editors: Apr 2021",
     "updatedAt": "2022-05-24T14:13:20Z"
-  },
-  {
-    "author": {
-      "login": "alanscarpellini"
-    },
-    "number": 2983,
-    "title": "Discussion for EIP-2980 ",
-    "updatedAt": "2022-05-21T11:24:55Z"
   },
   {
     "author": {

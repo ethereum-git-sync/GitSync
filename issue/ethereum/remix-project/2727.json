@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2727",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2727/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2727/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2727/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2727",
+  "id": 1327543029,
+  "node_id": "I_kwDODtLRw85PILL1",
+  "number": 2727,
+  "title": "CVE-2021-37712",
+  "user": {
+    "login": "imhunterand",
+    "id": 109766416,
+    "node_id": "U_kgDOBornEA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/109766416?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/imhunterand",
+    "html_url": "https://github.com/imhunterand",
+    "followers_url": "https://api.github.com/users/imhunterand/followers",
+    "following_url": "https://api.github.com/users/imhunterand/following{/other_user}",
+    "gists_url": "https://api.github.com/users/imhunterand/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/imhunterand/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/imhunterand/subscriptions",
+    "organizations_url": "https://api.github.com/users/imhunterand/orgs",
+    "repos_url": "https://api.github.com/users/imhunterand/repos",
+    "events_url": "https://api.github.com/users/imhunterand/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/imhunterand/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-03T17:01:39Z",
+  "updated_at": "2022-08-03T17:01:39Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "\r\n```\r\ntar@^4.4.18:\r\n  version \"4.4.18\"\r\n```\r\n\r\nArbitrary File Creation, Arbitrary File Overwrite, Arbitrary Code Execution\r\n\r\nnode-tar aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary stat calls to determine whether a given path is a directory, paths are cached when directories are created.\r\n\r\nThis logic was insufficient when extracting tar files that contained two directories and a symlink with names containing unicode values that normalized to the same value. Additionally, on Windows systems, long path portions would resolve to the same file system entities as their 8.3 \"short path\" counterparts. A specially crafted tar archive could thus include directories with two forms of the path that resolve to the same file system entity, followed by a symbolic link with a name in the first form, lastly followed by a file using the second form. It led to bypassing node-tar symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite.\r\n\r\nThe v3 branch of ``node-tar`` has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of ``node-tar``. If this is not possible, a workaround is available below.\r\n\r\n## Patches\r\n6.1.9 || 5.0.10 || 4.4.18\r\n\r\n## Workarounds\r\nUsers may work around this vulnerability without upgrading by creating a custom filter method which prevents the extraction of symbolic links.\r\n```javascript\r\nconst tar = require('tar')\r\n\r\ntar.x({\r\n  file: 'archive.tgz',\r\n  filter: (file, entry) => {\r\n    if (entry.type === 'SymbolicLink') {\r\n      return false\r\n    } else {\r\n      return true\r\n    }\r\n  }\r\n})\r\n```\r\nUsers are encouraged to upgrade to the latest patched versions, rather than attempt to sanitize tar input themselves.\r\n\r\n## Fix\r\nThe problem is addressed in the following ways, when comparing paths in the directory cache and path reservation systems:\r\n  * The ``String.normalize('NFKD')`` method is used to first normalize all unicode to its maximally compatible and multi-code-point form.\r\n  * All slashes are normalized to ``/`` on Windows systems (on posix systems, ``\\`` is a valid filename character, and thus left intact).\r\n  * When a symbolic link is encountered on Windows systems, the entire directory cache is cleared. Collisions related to use of 8.3 short names to replace directories with other (non-symlink) types of entries may make archives fail to extract properly, but will not result in arbitrary file writes.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2727/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2727/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

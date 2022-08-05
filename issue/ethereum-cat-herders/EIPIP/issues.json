@@ -3,6 +3,14 @@
     "author": {
       "login": "poojaranjan"
     },
+    "number": 165,
+    "title": "URL-URI working group meeting #6",
+    "updatedAt": "2022-08-04T19:16:51Z"
+  },
+  {
+    "author": {
+      "login": "poojaranjan"
+    },
     "number": 160,
     "title": "EIP editor apprenticeship meeting 22",
     "updatedAt": "2022-07-27T01:36:44Z"
@@ -30,14 +38,6 @@
     "number": 156,
     "title": "EIP-4907 has inconsistencies with EIP-721 but it is flagged final and hence cannot be changed?",
     "updatedAt": "2022-07-26T18:23:38Z"
-  },
-  {
-    "author": {
-      "login": "poojaranjan"
-    },
-    "number": 165,
-    "title": "URL-URI working group meeting #6",
-    "updatedAt": "2022-07-26T10:07:31Z"
   },
   {
     "author": {

@@ -32,7 +32,7 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -41,12 +41,31 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-07-28T05:49:01Z",
-  "updated_at": "2022-07-28T05:52:28Z",
-  "closed_at": null,
+  "updated_at": "2022-08-04T11:54:12Z",
+  "closed_at": "2022-08-04T11:54:12Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "# FEATURE REQUEST\r\n\r\n## Abstract\r\n\r\nThe `require` are very helpful and easy to understand, but the problem with `require` statements is that they store a string as an error message. And strings are not much gas optimized. To make the contract gas optimized we use custom errors within `if-else` statements. Which are not quite sometimes easy to understand especially when they get rooted in.\r\n\r\n## Motivation\r\n\r\nI think we can solve this problem by making `Require` statements revert `Custom Error` instead of string.\r\nCheck This:\r\n```solidity\r\npragma solidity ^0.8.0;\r\n\r\nerror Owner__ChorChorChor();\r\n\r\ncontract Owner {\r\n    address public owner = msg.sender;\r\n\r\n    function newOwner(address _newOwner) public OnlyOwner {\r\n        owner = _newOwner;\r\n    }\r\n\r\n    modifier OnlyOwner { //Instead of this \r\n        require(owner == msg.sender, \"Chor! Chor! Chor!\");\r\n        _;\r\n    }\r\n    modifier OnlyOwner { // this would be perfect\r\n        require(owner == msg.sender, revert Owner__ChorChorChor(); );\r\n        _;\r\n    }\r\n    \r\n}\r\n```\r\n\r\n## Specification\r\n\r\nIDk C++, I wish I could make a PR with this functionality.\r\n\r\n## Backwards Compatibility\r\n\r\nN/A\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "DevABDee",
+    "id": 99166851,
+    "node_id": "U_kgDOBekqgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/99166851?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DevABDee",
+    "html_url": "https://github.com/DevABDee",
+    "followers_url": "https://api.github.com/users/DevABDee/followers",
+    "following_url": "https://api.github.com/users/DevABDee/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DevABDee/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DevABDee/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DevABDee/subscriptions",
+    "organizations_url": "https://api.github.com/users/DevABDee/orgs",
+    "repos_url": "https://api.github.com/users/DevABDee/repos",
+    "events_url": "https://api.github.com/users/DevABDee/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DevABDee/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13312/reactions",
     "total_count": 0,
@@ -61,7 +80,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13312/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "not_planned"
 }
 [
 

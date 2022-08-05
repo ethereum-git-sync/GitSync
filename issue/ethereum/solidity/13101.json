@@ -49,7 +49,7 @@
       "description": "Error is just badly reported. Should be a proper type error - source is not fine."
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "matheusaaguiar",
@@ -96,12 +96,31 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-06-07T11:08:24Z",
-  "updated_at": "2022-07-25T15:09:26Z",
-  "closed_at": null,
+  "updated_at": "2022-08-04T14:00:48Z",
+  "closed_at": "2022-08-04T14:00:48Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "## Description\r\n`abi.encodeCall()` expects a tuple as its second argument. Normally the tuple would be defined in place (e.g. `abi.encodeCall(f, (1, 2, 3))`) but it's also possible to give it a tuple that is the result of a function call. Doing so results in an unhandled `bad_cast` exception and the compiler crashes.\r\n\r\nThe same thing happens when you pass in the result of an error or event construction since technically these return an empty tuple.\r\n\r\nThe crash does not happen when the tuple has only one element.\r\n\r\nDoing this with the other functions from the `abi.encodeX()` family results in a compilation error (`This type cannot be encoded`) so I think this situation should be a compilation error too.\r\n\r\n## Steps to Reproduce\r\n```solidity\r\ncontract C {\r\n    function g0() internal {}\r\n    function g1() internal returns (uint) {}\r\n    function g2() internal returns (uint, uint) {}\r\n\r\n    event Ev();\r\n    error Er();\r\n\r\n    function f() public pure {\r\n        abi.encodeCall(this.f, g0());  // bad_cast\r\n        abi.encodeCall(this.f, g1());  // OK\r\n        abi.encodeCall(this.f, g2());  // bad_cast\r\n        abi.encodeCall(this.f, Ev());  // bad_cast\r\n        abi.encodeCall(this.f, Er());  // bad_cast\r\n    }\r\n}\r\n```\r\n```\r\nUncaught exception:\r\nDynamic exception type: std::bad_cast\r\nstd::exception::what: std::bad_cast\r\n```\r\n## Environment\r\n- Compiler version: 0.8.11, 0.8.12, 0.8.13, 0.8.14\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13101/reactions",
     "total_count": 0,
@@ -116,7 +135,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13101/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
 

@@ -1,11 +1,59 @@
 [
   {
     "author": {
+      "login": "jrynkiew"
+    },
+    "number": 13348,
+    "title": "Solidity handling of uint8 arrays",
+    "updatedAt": "2022-08-04T22:50:53Z"
+  },
+  {
+    "author": {
+      "login": "minhhn2910"
+    },
+    "number": 13335,
+    "title": "Some possible arithmetic issues/optimizations in the generated #utility.yul ",
+    "updatedAt": "2022-08-04T18:37:04Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13208,
+    "title": "[TypeChecker] Out-of-range exception when trying to assign to nested tuples",
+    "updatedAt": "2022-08-04T18:29:51Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13101,
+    "title": "`bad_cast` when passing a tuple returned from a function to `abi.encodeCall()`",
+    "updatedAt": "2022-08-04T14:00:48Z"
+  },
+  {
+    "author": {
       "login": "MicahZoltu"
     },
     "number": 13336,
     "title": "[Bug] Width of the Solidity docs site is artificially constrained.",
-    "updatedAt": "2022-08-03T18:07:47Z"
+    "updatedAt": "2022-08-04T13:48:10Z"
+  },
+  {
+    "author": {
+      "login": "DevABDee"
+    },
+    "number": 13312,
+    "title": "Require Statements Revert Custom Errors",
+    "updatedAt": "2022-08-04T11:54:12Z"
+  },
+  {
+    "author": {
+      "login": "nishant-sachdeva"
+    },
+    "number": 13318,
+    "title": "Compile-Time-Constant expression evaluation",
+    "updatedAt": "2022-08-04T00:07:55Z"
   },
   {
     "author": {
@@ -94,14 +142,6 @@
     "number": 13301,
     "title": "Triggering complex events leads to transfer failure",
     "updatedAt": "2022-07-31T15:17:37Z"
-  },
-  {
-    "author": {
-      "login": "minhhn2910"
-    },
-    "number": 13335,
-    "title": "Some possible arithmetic issues/optimizations in the generated #utility.yul ",
-    "updatedAt": "2022-07-31T07:57:58Z"
   },
   {
     "author": {
@@ -259,14 +299,6 @@
     "author": {
       "login": "nishant-sachdeva"
     },
-    "number": 13318,
-    "title": "Compile-Time-Constant expression evaluation",
-    "updatedAt": "2022-07-28T13:16:15Z"
-  },
-  {
-    "author": {
-      "login": "nishant-sachdeva"
-    },
     "number": 13317,
     "title": "Code Completion for LSP",
     "updatedAt": "2022-07-28T13:16:00Z"
@@ -310,14 +342,6 @@
     "number": 13302,
     "title": "Fix 'Open In Remix' in docs",
     "updatedAt": "2022-07-28T06:35:23Z"
-  },
-  {
-    "author": {
-      "login": "DevABDee"
-    },
-    "number": 13312,
-    "title": "Require Statements Revert Custom Errors",
-    "updatedAt": "2022-07-28T05:52:28Z"
   },
   {
     "author": {
@@ -406,14 +430,6 @@
     "number": 13294,
     "title": "Memory allocation in function return",
     "updatedAt": "2022-07-25T15:32:19Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13101,
-    "title": "`bad_cast` when passing a tuple returned from a function to `abi.encodeCall()`",
-    "updatedAt": "2022-07-25T15:09:26Z"
   },
   {
     "author": {
@@ -926,14 +942,6 @@
     "number": 13203,
     "title": "Access `this` in constructor should be allowed for non-calls stuff",
     "updatedAt": "2022-07-04T10:12:56Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 13208,
-    "title": "[TypeChecker] Out-of-range exception when trying to assign to nested tuples",
-    "updatedAt": "2022-07-04T09:52:07Z"
   },
   {
     "author": {

@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "PhiMarHal"
+    },
+    "number": 2733,
+    "title": "Dropdown menus bleed into the interface with the \"Cerulean\" theme",
+    "updatedAt": "2022-08-04T17:21:21Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 2732,
+    "title": "Get rid of native plugins list and use 'maintained by remix' i stead",
+    "updatedAt": "2022-08-04T12:46:28Z"
+  },
+  {
+    "author": {
       "login": "fulldecent"
     },
     "number": 2610,

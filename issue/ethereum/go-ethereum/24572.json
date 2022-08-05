@@ -47,15 +47,6 @@
       "color": "0e8a16",
       "default": true,
       "description": null
-    },
-    {
-      "id": 1132689577,
-      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
-      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
-      "name": "status:triage",
-      "color": "6be514",
-      "default": false,
-      "description": ""
     }
   ],
   "state": "open",
@@ -105,7 +96,7 @@
   "milestone": null,
   "comments": 3,
   "created_at": "2022-03-22T22:05:27Z",
-  "updated_at": "2022-07-26T12:24:17Z",
+  "updated_at": "2022-08-04T07:22:06Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,

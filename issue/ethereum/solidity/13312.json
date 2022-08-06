@@ -39,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-07-28T05:49:01Z",
-  "updated_at": "2022-08-04T11:54:12Z",
+  "updated_at": "2022-08-05T19:42:24Z",
   "closed_at": "2022-08-04T11:54:12Z",
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -83,5 +83,48 @@
   "state_reason": "not_planned"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1206799726",
+    "html_url": "https://github.com/ethereum/solidity/issues/13312#issuecomment-1206799726",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13312",
+    "id": 1206799726,
+    "node_id": "IC_kwDOAm_5kc5H7k1u",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-05T19:42:23Z",
+    "updated_at": "2022-08-05T19:42:23Z",
+    "author_association": "MEMBER",
+    "body": "Related: https://github.com/ethereum/solidity/issues/7877#issuecomment-780598691\r\n\r\nWe considered this but so far we could not agree on a good syntax.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1206799726/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

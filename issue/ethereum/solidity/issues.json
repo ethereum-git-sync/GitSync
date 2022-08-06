@@ -1,11 +1,139 @@
 [
   {
     "author": {
+      "login": "frangio"
+    },
+    "number": 13352,
+    "title": "Avoid copying unused returndata on .call family of functions",
+    "updatedAt": "2022-08-05T20:57:26Z"
+  },
+  {
+    "author": {
+      "login": "DevABDee"
+    },
+    "number": 13312,
+    "title": "Require Statements Revert Custom Errors",
+    "updatedAt": "2022-08-05T19:42:24Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 12822,
+    "title": "Allow public state variable with private setter",
+    "updatedAt": "2022-08-05T19:12:16Z"
+  },
+  {
+    "author": {
       "login": "jrynkiew"
     },
     "number": 13348,
-    "title": "Solidity handling of uint8 arrays",
-    "updatedAt": "2022-08-04T22:50:53Z"
+    "title": "Packed layout for memory arrays with small base types.",
+    "updatedAt": "2022-08-05T15:57:55Z"
+  },
+  {
+    "author": {
+      "login": "migoldfinger"
+    },
+    "number": 13349,
+    "title": "Are unused internal functions of libraries removed from bytecode?",
+    "updatedAt": "2022-08-05T15:37:11Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8969,
+    "title": "Implement project board automation",
+    "updatedAt": "2022-08-05T15:16:04Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 9627,
+    "title": "Make the hard-coded parts of the optimiser sequence configurable",
+    "updatedAt": "2022-08-05T14:06:18Z"
+  },
+  {
+    "author": {
+      "login": "SvenMeyer"
+    },
+    "number": 11638,
+    "title": "Compiling 16 files with 0.7.6 CompilerError: Stack too deep when compiling inline assembly: Variable headStart is 2 slot(s) too deep inside the stack.  Error HH600: Compilation failed",
+    "updatedAt": "2022-08-05T14:02:40Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13350,
+    "title": "[abi coder] Storage to calldata copy fails?",
+    "updatedAt": "2022-08-05T13:16:53Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13146,
+    "title": "CMake option to disable pedantic builds.",
+    "updatedAt": "2022-08-05T12:18:54Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 13252,
+    "title": "solfuzzer crashes in nightly",
+    "updatedAt": "2022-08-05T12:16:12Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12961,
+    "title": "Download list is empty in the flyout menu in the docs for versions 0.8.9..0.8.13",
+    "updatedAt": "2022-08-05T12:15:55Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 10645,
+    "title": "Extend DataFlowAnalyzer to not reset memory if memory ops use zero length",
+    "updatedAt": "2022-08-05T12:04:21Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 13224,
+    "title": "ENS external test fails compilation via IR: `Could not create stack layout after 1000 iterations`",
+    "updatedAt": "2022-08-05T11:56:06Z"
+  },
+  {
+    "author": {
+      "login": "cyraxred"
+    },
+    "number": 13332,
+    "title": "Unexpected storage layout caused by interfaces",
+    "updatedAt": "2022-08-05T11:14:16Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13204,
+    "title": "[TypeChecker] Bad cast of argument tuple in abi.encodeCall",
+    "updatedAt": "2022-08-05T11:10:47Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 13308,
+    "title": "Stop the war on for loops",
+    "updatedAt": "2022-08-05T09:20:07Z"
   },
   {
     "author": {
@@ -41,27 +169,11 @@
   },
   {
     "author": {
-      "login": "DevABDee"
-    },
-    "number": 13312,
-    "title": "Require Statements Revert Custom Errors",
-    "updatedAt": "2022-08-04T11:54:12Z"
-  },
-  {
-    "author": {
       "login": "nishant-sachdeva"
     },
     "number": 13318,
     "title": "Compile-Time-Constant expression evaluation",
     "updatedAt": "2022-08-04T00:07:55Z"
-  },
-  {
-    "author": {
-      "login": "cyraxred"
-    },
-    "number": 13332,
-    "title": "Unexpected storage layout caused by interfaces",
-    "updatedAt": "2022-08-03T16:15:45Z"
   },
   {
     "author": {
@@ -78,14 +190,6 @@
     "number": 13214,
     "title": "Add unitialized variable warning when for-loops contain uninitialized variables",
     "updatedAt": "2022-08-03T13:41:15Z"
-  },
-  {
-    "author": {
-      "login": "fulldecent"
-    },
-    "number": 13308,
-    "title": "Stop the war on for loops",
-    "updatedAt": "2022-08-03T10:09:10Z"
   },
   {
     "author": {
@@ -110,14 +214,6 @@
     "number": 13338,
     "title": "Remove all references to \"money\"",
     "updatedAt": "2022-08-02T19:50:00Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 9627,
-    "title": "Make the hard-coded parts of the optimiser sequence configurable",
-    "updatedAt": "2022-08-01T15:45:49Z"
   },
   {
     "author": {
@@ -374,22 +470,6 @@
     "number": 12547,
     "title": "Further Document the resiliency of storage usage",
     "updatedAt": "2022-07-27T13:48:24Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 8969,
-    "title": "Implement project board automation",
-    "updatedAt": "2022-07-27T13:34:21Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 13204,
-    "title": "[TypeChecker] Bad cast of argument tuple in abi.encodeCall",
-    "updatedAt": "2022-07-26T20:52:14Z"
   },
   {
     "author": {
@@ -689,14 +769,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 13146,
-    "title": "CMake option to disable pedantic builds.",
-    "updatedAt": "2022-07-11T18:18:22Z"
-  },
-  {
-    "author": {
       "login": "k06a"
     },
     "number": 13218,
@@ -782,14 +854,6 @@
     "number": 11359,
     "title": "Docs: NatSpec and/or style guide should specify how multi-line NatSpec works",
     "updatedAt": "2022-07-07T03:22:34Z"
-  },
-  {
-    "author": {
-      "login": "Marenz"
-    },
-    "number": 13252,
-    "title": "solfuzzer crashes in nightly",
-    "updatedAt": "2022-07-06T16:35:43Z"
   },
   {
     "author": {
@@ -918,14 +982,6 @@
     "number": 72,
     "title": "modifier overloading",
     "updatedAt": "2022-07-04T14:19:03Z"
-  },
-  {
-    "author": {
-      "login": "Marenz"
-    },
-    "number": 13224,
-    "title": "ENS external test fails compilation via IR: `Could not create stack layout after 1000 iterations`",
-    "updatedAt": "2022-07-04T12:39:12Z"
   },
   {
     "author": {
@@ -1366,14 +1422,6 @@
     "number": 9616,
     "title": "Replace \"returns\" with \"->\" in function definitions (and other use cases)",
     "updatedAt": "2022-06-16T13:35:04Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 10645,
-    "title": "Extend DataFlowAnalyzer to not reset memory if memory ops use zero length",
-    "updatedAt": "2022-06-16T13:19:22Z"
   },
   {
     "author": {
@@ -2377,14 +2425,6 @@
   },
   {
     "author": {
-      "login": "fulldecent"
-    },
-    "number": 12822,
-    "title": "Allow public state variable with private setter",
-    "updatedAt": "2022-04-27T21:22:31Z"
-  },
-  {
-    "author": {
       "login": "recmo"
     },
     "number": 12821,
@@ -2497,14 +2537,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 12961,
-    "title": "Download list is empty in the flyout menu in the docs for versions 0.8.9..0.8.13",
-    "updatedAt": "2022-04-25T17:23:41Z"
-  },
-  {
-    "author": {
       "login": "franzihei"
     },
     "number": 12238,
@@ -2534,14 +2566,6 @@
     "number": 12940,
     "title": "BUG :: OOG Error when trying to assign 0 to a struct value.",
     "updatedAt": "2022-04-18T19:21:09Z"
-  },
-  {
-    "author": {
-      "login": "SvenMeyer"
-    },
-    "number": 11638,
-    "title": "Compiling 16 files with 0.7.6 CompilerError: Stack too deep when compiling inline assembly: Variable headStart is 2 slot(s) too deep inside the stack.  Error HH600: Compilation failed",
-    "updatedAt": "2022-04-18T16:02:44Z"
   },
   {
     "author": {

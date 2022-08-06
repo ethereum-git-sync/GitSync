@@ -40,7 +40,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "matheusaaguiar",
@@ -85,14 +85,33 @@
     }
   ],
   "milestone": null,
-  "comments": 1,
+  "comments": 2,
   "created_at": "2022-06-24T02:37:49Z",
-  "updated_at": "2022-07-26T20:52:14Z",
-  "closed_at": null,
+  "updated_at": "2022-08-05T11:10:47Z",
+  "closed_at": "2022-08-05T11:10:47Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "```\r\ncontract C{\r\n  function f() { \r\n    abi.encodeCall(this.f, !());\r\n  }\r\n}\r\n```\r\n\r\nthrows\r\n\r\nhttps://github.com/ethereum/solidity/blob/3ed9a38abc9c9babf50a25f56bff2411da9cdfe7/libsolidity/analysis/TypeChecker.cpp#L2233",
-  "closed_by": null,
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13204/reactions",
     "total_count": 0,
@@ -107,7 +126,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13204/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -142,6 +161,50 @@
     "body": "This seems to be the same problem of #13101 and it should be fixed by #13299.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1195968372/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1206329071",
+    "html_url": "https://github.com/ethereum/solidity/issues/13204#issuecomment-1206329071",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13204",
+    "id": 1206329071,
+    "node_id": "IC_kwDOAm_5kc5H5x7v",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-05T11:10:47Z",
+    "updated_at": "2022-08-05T11:10:47Z",
+    "author_association": "MEMBER",
+    "body": "#13299 fixed it. Closing.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1206329071/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

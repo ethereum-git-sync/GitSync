@@ -3,6 +3,14 @@
     "author": {
       "login": "Pandapip1"
     },
+    "number": 5308,
+    "title": "Disallow the word \"Smart\" in the titles (and descriptions) of EIPs",
+    "updatedAt": "2022-08-05T16:34:06Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
     "number": 5414,
     "title": "Use settings.yml",
     "updatedAt": "2022-08-04T17:35:44Z"
@@ -182,14 +190,6 @@
     "number": 5009,
     "title": "Should we discourage the word \"standard\" in EIP titles and descriptions?",
     "updatedAt": "2022-07-26T07:50:25Z"
-  },
-  {
-    "author": {
-      "login": "Pandapip1"
-    },
-    "number": 5308,
-    "title": "Disallow the word \"Smart\" in the titles (and descriptions) of EIPs",
-    "updatedAt": "2022-07-26T07:48:22Z"
   },
   {
     "author": {

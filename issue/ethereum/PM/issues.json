@@ -1,6 +1,30 @@
 [
   {
     "author": {
+      "login": "djrtwo"
+    },
+    "number": 594,
+    "title": "Consensus-layer Call 93",
+    "updatedAt": "2022-08-05T18:05:54Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 586,
+    "title": "EIP-4844 Breakout Room #3",
+    "updatedAt": "2022-08-05T18:01:46Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 574,
+    "title": "Consensus-layer Call 92",
+    "updatedAt": "2022-08-05T14:09:19Z"
+  },
+  {
+    "author": {
       "login": "moodysalem"
     },
     "number": 438,
@@ -41,14 +65,6 @@
   },
   {
     "author": {
-      "login": "timbeiko"
-    },
-    "number": 586,
-    "title": "EIP-4844 Breakout Room #3",
-    "updatedAt": "2022-08-04T13:45:04Z"
-  },
-  {
-    "author": {
       "login": "jrynkiew"
     },
     "number": 591,
@@ -62,14 +78,6 @@
     "number": 581,
     "title": "EIP-4844 Breakout Room #2",
     "updatedAt": "2022-07-29T17:36:57Z"
-  },
-  {
-    "author": {
-      "login": "djrtwo"
-    },
-    "number": 574,
-    "title": "Consensus-layer Call 92",
-    "updatedAt": "2022-07-28T14:40:59Z"
   },
   {
     "author": {

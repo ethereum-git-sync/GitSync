@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "SvenMeyer"
+    },
+    "number": 11638,
+    "title": "Compiling 16 files with 0.7.6 CompilerError: Stack too deep when compiling inline assembly: Variable headStart is 2 slot(s) too deep inside the stack.  Error HH600: Compilation failed",
+    "updatedAt": "2022-08-06T05:35:18Z"
+  },
+  {
+    "author": {
+      "login": "migoldfinger"
+    },
+    "number": 13349,
+    "title": "Are unused internal functions of libraries removed from bytecode?",
+    "updatedAt": "2022-08-06T04:37:03Z"
+  },
+  {
+    "author": {
       "login": "frangio"
     },
     "number": 13352,
@@ -33,14 +49,6 @@
   },
   {
     "author": {
-      "login": "migoldfinger"
-    },
-    "number": 13349,
-    "title": "Are unused internal functions of libraries removed from bytecode?",
-    "updatedAt": "2022-08-05T15:37:11Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 8969,
@@ -54,14 +62,6 @@
     "number": 9627,
     "title": "Make the hard-coded parts of the optimiser sequence configurable",
     "updatedAt": "2022-08-05T14:06:18Z"
-  },
-  {
-    "author": {
-      "login": "SvenMeyer"
-    },
-    "number": 11638,
-    "title": "Compiling 16 files with 0.7.6 CompilerError: Stack too deep when compiling inline assembly: Variable headStart is 2 slot(s) too deep inside the stack.  Error HH600: Compilation failed",
-    "updatedAt": "2022-08-05T14:02:40Z"
   },
   {
     "author": {

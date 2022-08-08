@@ -1,11 +1,27 @@
 [
   {
     "author": {
+      "login": "Gilgames000"
+    },
+    "number": 12825,
+    "title": "LSP throwing an error on each and every character I type in the editor",
+    "updatedAt": "2022-08-07T18:17:14Z"
+  },
+  {
+    "author": {
+      "login": "michprev"
+    },
+    "number": 13353,
+    "title": "Type identifier string in AST is ambiguous with linear parser",
+    "updatedAt": "2022-08-07T11:29:22Z"
+  },
+  {
+    "author": {
       "login": "SvenMeyer"
     },
     "number": 11638,
     "title": "Compiling 16 files with 0.7.6 CompilerError: Stack too deep when compiling inline assembly: Variable headStart is 2 slot(s) too deep inside the stack.  Error HH600: Compilation failed",
-    "updatedAt": "2022-08-06T05:35:18Z"
+    "updatedAt": "2022-08-07T11:13:06Z"
   },
   {
     "author": {
@@ -902,14 +918,6 @@
     "number": 12782,
     "title": "allow specifying a function should be inlined in the signature",
     "updatedAt": "2022-07-05T19:44:15Z"
-  },
-  {
-    "author": {
-      "login": "Gilgames000"
-    },
-    "number": 12825,
-    "title": "LSP throwing an error on each and every character I type in the editor",
-    "updatedAt": "2022-07-05T17:14:04Z"
   },
   {
     "author": {

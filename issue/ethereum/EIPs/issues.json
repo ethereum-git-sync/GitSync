@@ -1,11 +1,27 @@
 [
   {
     "author": {
+      "login": "rsbtcpc"
+    },
+    "number": 5425,
+    "title": "[Bug]: ",
+    "updatedAt": "2022-08-07T18:22:28Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 5424,
+    "title": "[Bug]: Explain in text that ERC was renamed to EIP",
+    "updatedAt": "2022-08-07T14:37:41Z"
+  },
+  {
+    "author": {
       "login": "MrChico"
     },
     "number": 2613,
     "title": "ERC-2612 `permit`: 712-signed token approvals",
-    "updatedAt": "2022-08-06T17:14:08Z"
+    "updatedAt": "2022-08-07T12:54:19Z"
   },
   {
     "author": {

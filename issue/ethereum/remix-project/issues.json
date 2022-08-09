@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "Loverush"
+    },
+    "number": 2738,
+    "title": "cannot connect to injected provider-metamask now",
+    "updatedAt": "2022-08-08T15:18:20Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2736,
+    "title": "Remix doesn't show screen to unlock the metamask",
+    "updatedAt": "2022-08-08T06:27:24Z"
+  },
+  {
+    "author": {
       "login": "Victorybrown"
     },
     "number": 2735,

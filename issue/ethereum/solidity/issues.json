@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "cyraxred"
+    },
+    "number": 13332,
+    "title": "Unexpected storage layout caused by interfaces",
+    "updatedAt": "2022-08-08T16:16:12Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13362,
+    "title": "Fix builds for Ubuntu 22.10",
+    "updatedAt": "2022-08-08T15:57:28Z"
+  },
+  {
+    "author": {
+      "login": "vimwitch"
+    },
+    "number": 13249,
+    "title": "Bad encoding for a dynamic array followed by a static calldata array",
+    "updatedAt": "2022-08-08T11:49:14Z"
+  },
+  {
+    "author": {
+      "login": "antonper"
+    },
+    "number": 13356,
+    "title": "Function pointer assignment error when names are colliding",
+    "updatedAt": "2022-08-08T10:55:37Z"
+  },
+  {
+    "author": {
       "login": "Gilgames000"
     },
     "number": 12825,
@@ -126,14 +158,6 @@
     "number": 13224,
     "title": "ENS external test fails compilation via IR: `Could not create stack layout after 1000 iterations`",
     "updatedAt": "2022-08-05T11:56:06Z"
-  },
-  {
-    "author": {
-      "login": "cyraxred"
-    },
-    "number": 13332,
-    "title": "Unexpected storage layout caused by interfaces",
-    "updatedAt": "2022-08-05T11:14:16Z"
   },
   {
     "author": {
@@ -790,14 +814,6 @@
     "number": 13218,
     "title": "Solidity array allocation pre-erasing",
     "updatedAt": "2022-07-11T15:34:37Z"
-  },
-  {
-    "author": {
-      "login": "vimwitch"
-    },
-    "number": 13249,
-    "title": "Bad encoding for a dynamic array followed by a static calldata array",
-    "updatedAt": "2022-07-11T14:33:15Z"
   },
   {
     "author": {
@@ -26385,7 +26401,7 @@
   },
   {
     "author": {
-      "login": "elopio"
+      "login": "come-maiz"
     },
     "number": 5985,
     "title": "The solc snap fails to build because it needs a newer z3",
@@ -26625,7 +26641,7 @@
   },
   {
     "author": {
-      "login": "elopio"
+      "login": "come-maiz"
     },
     "number": 5889,
     "title": "The solc snap fails to build on xenial",
@@ -29265,7 +29281,7 @@
   },
   {
     "author": {
-      "login": "elopio"
+      "login": "come-maiz"
     },
     "number": 4871,
     "title": "Parsing fails when import is split in multiple lines",
@@ -34361,14 +34377,6 @@
   },
   {
     "author": {
-      "login": "rstormsf"
-    },
-    "number": 2753,
-    "title": "Request: contract functions check",
-    "updatedAt": "2017-12-02T01:21:02Z"
-  },
-  {
-    "author": {
       "login": "zjsunzone"
     },
     "number": 2767,
@@ -35233,7 +35241,7 @@
   },
   {
     "author": {
-      "login": "elopio"
+      "login": "come-maiz"
     },
     "number": 2789,
     "title": "fails to build in a clean ubuntu xenial",
@@ -36198,14 +36206,6 @@
     "number": 2388,
     "title": "Calling assemble twice on AssemblyStack fails",
     "updatedAt": "2017-06-14T12:12:37Z"
-  },
-  {
-    "author": {
-      "login": "rstormsf"
-    },
-    "number": 2379,
-    "title": "delete array[index] doesn't change length and leave \"0\"",
-    "updatedAt": "2017-06-13T20:00:14Z"
   },
   {
     "author": {

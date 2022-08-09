@@ -49,7 +49,7 @@
       "description": "Compiler generates invalid code. Critical."
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "Marenz",
@@ -96,12 +96,31 @@
   "milestone": null,
   "comments": 3,
   "created_at": "2022-07-05T19:54:01Z",
-  "updated_at": "2022-07-11T14:33:15Z",
-  "closed_at": null,
+  "updated_at": "2022-08-08T11:49:14Z",
+  "closed_at": "2022-08-08T11:49:14Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "## Description\r\n\r\nInconsistent abi encode behavior with tuples containing both a dynamic array and fixed length array.\r\n\r\n## Steps to Reproduce\r\n\r\n```js\r\npragma solidity >=0.7.0 <0.9.0;\r\n\r\ncontract EncodeTest {\r\n   \r\n    struct Test {\r\n        uint[] vals;\r\n        uint[2] valsFixed;\r\n    }\r\n\r\n    function testEncode(Test calldata input) public pure returns (bytes memory) {\r\n        return abi.encode(input);\r\n    }\r\n\r\n    function testDecode(bytes calldata input) public pure returns (Test memory) {\r\n        return abi.decode(input, (Test));\r\n    }\r\n}\r\n```\r\n\r\nWhen calling `testEncode` with the following argument: `{ vals: [1, 2, 3], valsFixed: [1, 1] }` the following is received (split into chunks of 64 hex characters for readability): \r\n```\r\n0000000000000000000000000000000000000000000000000000000000000020\r\n0000000000000000000000000000000000000000000000000000000000000060\r\n0000000000000000000000000000000000000000000000000000000000000001\r\n0000000000000000000000000000000000000000000000000000000000000001\r\n0000000000000000000000000000000000000000000000000000000000000000 // <- should be 0x03?\r\n0000000000000000000000000000000000000000000000000000000000000001\r\n0000000000000000000000000000000000000000000000000000000000000002\r\n0000000000000000000000000000000000000000000000000000000000000003\r\n```\r\n\r\nWhen abi encoding using web3 or ethers the following is received:\r\n\r\n```\r\n0000000000000000000000000000000000000000000000000000000000000020\r\n0000000000000000000000000000000000000000000000000000000000000060\r\n0000000000000000000000000000000000000000000000000000000000000001\r\n0000000000000000000000000000000000000000000000000000000000000001\r\n0000000000000000000000000000000000000000000000000000000000000003\r\n0000000000000000000000000000000000000000000000000000000000000001\r\n0000000000000000000000000000000000000000000000000000000000000002\r\n0000000000000000000000000000000000000000000000000000000000000003\r\n```\r\n\r\n<summary>web3/ethers code</summary>\r\n<details>\r\n\r\n```js\r\nconst { ethers } = require('ethers')\r\nconst Web3 = require('web3')\r\n\r\nconsole.log(\r\n  ethers.utils.defaultAbiCoder.encode(\r\n    [`tuple(uint[] vals, uint[2] valFixed)`],\r\n    [{vals: [1,2,3],valFixed: [1,1]}]\r\n  )\r\n)\r\n\r\nconst web3 = new Web3()\r\nconsole.log(\r\n  web3.eth.abi.encodeParameter(\r\n    'tuple(uint[] vals, uint[2] valFixed)',\r\n    [[1, 2, 3], [1, 1]]\r\n  )\r\n)\r\n```\r\n\r\n</details>\r\n\r\n--\r\n\r\nFurthermore, when using the `testDecode` function the first output does not decode the `vals` array, while the second output does. Is this expected or known behavior of `abi.encode`?",
-  "closed_by": null,
+  "closed_by": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13249/reactions",
     "total_count": 0,
@@ -116,7 +135,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13249/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

@@ -1,11 +1,75 @@
 [
   {
     "author": {
+      "login": "DubbaThony"
+    },
+    "number": 25498,
+    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
+    "updatedAt": "2022-08-08T22:00:26Z"
+  },
+  {
+    "author": {
       "login": "StraySnake"
     },
     "number": 25454,
     "title": "Need to prune Geth but not enough blocks",
-    "updatedAt": "2022-08-07T17:10:17Z"
+    "updatedAt": "2022-08-08T15:34:58Z"
+  },
+  {
+    "author": {
+      "login": "JosephK95"
+    },
+    "number": 25495,
+    "title": "Geth RPC service consistency against other client implementations #1",
+    "updatedAt": "2022-08-08T14:31:38Z"
+  },
+  {
+    "author": {
+      "login": "kuzdogan"
+    },
+    "number": 25480,
+    "title": "`Failed to write block into disk: input/output error` roll back without full resync?",
+    "updatedAt": "2022-08-08T11:00:54Z"
+  },
+  {
+    "author": {
+      "login": "bgiegel"
+    },
+    "number": 25361,
+    "title": "Geth sepolia node working with prysm consensus node stopped syncing with an error",
+    "updatedAt": "2022-08-08T09:46:09Z"
+  },
+  {
+    "author": {
+      "login": "Piradoxlanieve"
+    },
+    "number": 25491,
+    "title": "Geth not start bind: address already in use",
+    "updatedAt": "2022-08-08T09:45:42Z"
+  },
+  {
+    "author": {
+      "login": "mgcrea"
+    },
+    "number": 21918,
+    "title": "Geth loosing 2d history on every restart (docker)",
+    "updatedAt": "2022-08-08T09:25:11Z"
+  },
+  {
+    "author": {
+      "login": "rjl493456442"
+    },
+    "number": 25390,
+    "title": "all: PRs for Path-based state scheme",
+    "updatedAt": "2022-08-08T09:09:11Z"
+  },
+  {
+    "author": {
+      "login": "GamerKurisu"
+    },
+    "number": 25396,
+    "title": "I can't get geth to sync",
+    "updatedAt": "2022-08-08T00:51:34Z"
   },
   {
     "author": {
@@ -14,22 +78,6 @@
     "number": 25376,
     "title": "Geth client does not sync on ropsten testnet",
     "updatedAt": "2022-08-07T17:10:05Z"
-  },
-  {
-    "author": {
-      "login": "GamerKurisu"
-    },
-    "number": 25396,
-    "title": "I can't get geth to sync",
-    "updatedAt": "2022-08-07T17:09:50Z"
-  },
-  {
-    "author": {
-      "login": "Piradoxlanieve"
-    },
-    "number": 25491,
-    "title": "Geth not start bind: address already in use",
-    "updatedAt": "2022-08-07T17:09:38Z"
   },
   {
     "author": {
@@ -46,14 +94,6 @@
     "number": 25343,
     "title": "no reliable way to retrieve all event logs",
     "updatedAt": "2022-08-07T16:24:40Z"
-  },
-  {
-    "author": {
-      "login": "bgiegel"
-    },
-    "number": 25361,
-    "title": "Geth sepolia node working with prysm consensus node stopped syncing with an error",
-    "updatedAt": "2022-08-07T16:21:57Z"
   },
   {
     "author": {
@@ -94,14 +134,6 @@
     "number": 25471,
     "title": "Error Deploy Dashboard Step 5",
     "updatedAt": "2022-08-07T16:20:56Z"
-  },
-  {
-    "author": {
-      "login": "kuzdogan"
-    },
-    "number": 25480,
-    "title": "`Failed to write block into disk: input/output error` roll back without full resync?",
-    "updatedAt": "2022-08-07T16:20:49Z"
   },
   {
     "author": {
@@ -174,14 +206,6 @@
     "number": 25375,
     "title": "Error: could not decrypt key with given password (in geth when personal.signTransaction after personal.unlockAccount)",
     "updatedAt": "2022-08-04T15:38:27Z"
-  },
-  {
-    "author": {
-      "login": "rjl493456442"
-    },
-    "number": 25390,
-    "title": "all: PRs for Path-based state scheme",
-    "updatedAt": "2022-08-04T08:22:11Z"
   },
   {
     "author": {
@@ -13761,14 +13785,6 @@
   },
   {
     "author": {
-      "login": "mgcrea"
-    },
-    "number": 21918,
-    "title": "Geth loosing 2d history on every restart (docker)",
-    "updatedAt": "2020-11-29T16:46:47Z"
-  },
-  {
-    "author": {
       "login": "drsaluml"
     },
     "number": 21912,
@@ -15609,14 +15625,6 @@
   },
   {
     "author": {
-      "login": "rstormsf"
-    },
-    "number": 20129,
-    "title": "Rinkeby gas limit increase request",
-    "updatedAt": "2020-08-27T08:59:32Z"
-  },
-  {
-    "author": {
       "login": "BelfordZ"
     },
     "number": 20050,
@@ -16734,14 +16742,6 @@
     "number": 20146,
     "title": "[Feature] Add metric for per-message-type network packet counts ",
     "updatedAt": "2020-07-09T12:53:10Z"
-  },
-  {
-    "author": {
-      "login": "poma"
-    },
-    "number": 20620,
-    "title": "How to find bottleneck in geth sync?",
-    "updatedAt": "2020-07-09T07:57:48Z"
   },
   {
     "author": {
@@ -17918,6 +17918,14 @@
     "number": 20910,
     "title": "Not able to Initialize Geth",
     "updatedAt": "2020-04-18T00:29:28Z"
+  },
+  {
+    "author": {
+      "login": "Steellgold"
+    },
+    "number": 20817,
+    "title": "Crash",
+    "updatedAt": "2020-04-17T18:00:05Z"
   },
   {
     "author": {
@@ -20942,14 +20950,6 @@
     "number": 17485,
     "title": "API call to determine if node is synchronised",
     "updatedAt": "2019-10-05T14:45:35Z"
-  },
-  {
-    "author": {
-      "login": "rstormsf"
-    },
-    "number": 20154,
-    "title": "1.9.6 deep froze chain",
-    "updatedAt": "2019-10-04T17:38:31Z"
   },
   {
     "author": {

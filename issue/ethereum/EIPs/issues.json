@@ -1,11 +1,19 @@
 [
   {
     "author": {
-      "login": "rsbtcpc"
+      "login": "SamWilsn"
     },
-    "number": 5425,
-    "title": "[Bug]: ",
-    "updatedAt": "2022-08-07T18:22:28Z"
+    "number": 5431,
+    "title": "Update EIP-5069 to refer to new location for editors.",
+    "updatedAt": "2022-08-08T20:15:36Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5315,
+    "title": "Standardize April 1 EIPs",
+    "updatedAt": "2022-08-08T15:12:47Z"
   },
   {
     "author": {
@@ -13,7 +21,7 @@
     },
     "number": 5424,
     "title": "[Bug]: Explain in text that ERC was renamed to EIP",
-    "updatedAt": "2022-08-07T14:37:41Z"
+    "updatedAt": "2022-08-08T14:19:48Z"
   },
   {
     "author": {
@@ -158,14 +166,6 @@
     "number": 3782,
     "title": "[EIP-4341] Multi NFT Ordered Standard",
     "updatedAt": "2022-08-01T07:29:43Z"
-  },
-  {
-    "author": {
-      "login": "Pandapip1"
-    },
-    "number": 5315,
-    "title": "Standardize April 1 EIPs",
-    "updatedAt": "2022-07-30T12:04:59Z"
   },
   {
     "author": {

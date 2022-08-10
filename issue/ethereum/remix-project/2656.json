@@ -49,7 +49,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "LianaHus",
@@ -96,12 +96,31 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-07-20T08:12:04Z",
-  "updated_at": "2022-07-25T11:34:11Z",
-  "closed_at": null,
+  "updated_at": "2022-08-09T09:56:23Z",
+  "closed_at": "2022-08-09T09:56:23Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "Steps to reproduce:\r\n1. Load: https://remix.ethereum.org/#url=https://github.com/ethereum/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol\r\n2. then load: https://remix.ethereum.org/#address=0xdac17f958d2ee523a2206206994597c13d831ec7\r\n3.  And again load: https://remix.ethereum.org/#url=https://github.com/ethereum/remix-project/blob/master/apps/remix-ide/contracts/app/solidity/mode.sol\r\n\r\ncheck if there is a `null` workspace\r\n![Screenshot 2022-07-20 at 1 41 44 PM](https://user-images.githubusercontent.com/30843294/179931671-1b9adcbc-90a4-42d8-964f-0af15b77d17b.png)\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/2656/reactions",
     "total_count": 0,
@@ -116,7 +135,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2656/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
 

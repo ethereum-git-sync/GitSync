@@ -38,9 +38,18 @@
       "color": "fef2c0",
       "default": false,
       "description": null
+    },
+    {
+      "id": 1132689577,
+      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
+      "name": "status:triage",
+      "color": "6be514",
+      "default": false,
+      "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -49,12 +58,31 @@
   "milestone": null,
   "comments": 2,
   "created_at": "2022-08-05T07:05:23Z",
-  "updated_at": "2022-08-07T16:20:41Z",
-  "closed_at": null,
+  "updated_at": "2022-08-09T12:37:37Z",
+  "closed_at": "2022-08-09T12:37:37Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": ">eth.syncing\r\nfalse\r\n> eth.blockNumber\r\n12443932\r\ngeth version\r\nGeth\r\nVersion: 1.10.20-stable\r\nGit Commit: 8f2416a89a3def6ec2c749d5afafbf2c9a18e3c8\r\nGit Commit Date: 20220629\r\nArchitecture: amd64\r\nGo Version: go1.18.1\r\nOperating System: linux\r\nGOPATH=/home/ubuntu/go\r\nGOROOT=/usr/local/go\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25484/reactions",
     "total_count": 0,
@@ -69,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25484/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -104,6 +132,50 @@
     "body": "eth.syncing\r\n{\r\n  currentBlock: 12310531,\r\n  healedBytecodeBytes: 40217559,\r\n  healedBytecodes: 5678,\r\n  healedTrienodeBytes: 558816344,\r\n  healedTrienodes: 2691387,\r\n  healingBytecode: 0,\r\n  healingTrienodes: 1350,\r\n  highestBlock: 12725351,\r\n  startingBlock: 12098467,\r\n  syncedAccountBytes: 9865387177,\r\n  syncedAccounts: 409607295,\r\n  syncedBytecodeBytes: 13297506055,\r\n  syncedBytecodes: 2341970,\r\n  syncedStorage: 253218104,\r\n  syncedStorageBytes: 56901871759\r\n}\r\n> eth.syncing\r\n{\r\n  currentBlock: 12314177,\r\n  healedBytecodeBytes: 40217559,\r\n  healedBytecodes: 5678,\r\n  healedTrienodeBytes: 559244501,\r\n  healedTrienodes: 2692757,\r\n  healingBytecode: 0,\r\n  healingTrienodes: 1,\r\n  highestBlock: 12443129,\r\n  startingBlock: 12098467,\r\n  syncedAccountBytes: 9865387177,\r\n  syncedAccounts: 409607295,\r\n  syncedBytecodeBytes: 13297506055,\r\n  syncedBytecodes: 2341970,\r\n  syncedStorage: 253218104,\r\n  syncedStorageBytes: 56901871759\r\n}\r\n\r\nwhy the highestBlock from 12725351 to 12443129？",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1206148022/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1209327390",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25484#issuecomment-1209327390",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25484",
+    "id": 1209327390,
+    "node_id": "IC_kwDOAOvK985IFN8e",
+    "user": {
+      "login": "karalabe",
+      "id": 129561,
+      "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/karalabe",
+      "html_url": "https://github.com/karalabe",
+      "followers_url": "https://api.github.com/users/karalabe/followers",
+      "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+      "organizations_url": "https://api.github.com/users/karalabe/orgs",
+      "repos_url": "https://api.github.com/users/karalabe/repos",
+      "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/karalabe/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-09T12:37:37Z",
+    "updated_at": "2022-08-09T12:37:37Z",
+    "author_association": "MEMBER",
+    "body": "In Ropsten, you are still syncing in PoW mode, where the sync target is the highest difficulty seen in your peers. After you reach the merge point 12350000-ish, the sync will be directed by your beacon node. If you were to use master branch (or the next stable release `1.10.22`), thn sync would not even start until the beacon client says so.\r\n\r\nI.e. 1. Everything's fine; 2. Sync in PoW will stop a bit later without a beacon client; 3. A beacon client will get you syncing further from that point.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1209327390/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

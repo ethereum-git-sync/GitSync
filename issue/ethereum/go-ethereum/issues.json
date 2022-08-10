@@ -1,11 +1,11 @@
 [
   {
     "author": {
-      "login": "DubbaThony"
+      "login": "sjmini"
     },
-    "number": 25498,
-    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
-    "updatedAt": "2022-08-08T22:00:26Z"
+    "number": 25505,
+    "title": "Missing totalDifficulty",
+    "updatedAt": "2022-08-09T16:39:16Z"
   },
   {
     "author": {
@@ -13,7 +13,39 @@
     },
     "number": 25454,
     "title": "Need to prune Geth but not enough blocks",
-    "updatedAt": "2022-08-08T15:34:58Z"
+    "updatedAt": "2022-08-09T16:07:33Z"
+  },
+  {
+    "author": {
+      "login": "DubbaThony"
+    },
+    "number": 25498,
+    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
+    "updatedAt": "2022-08-09T13:51:51Z"
+  },
+  {
+    "author": {
+      "login": "lvgang214"
+    },
+    "number": 25484,
+    "title": "ropsten  eth.syncing is false but eth.blockNumber is not latest",
+    "updatedAt": "2022-08-09T12:37:37Z"
+  },
+  {
+    "author": {
+      "login": "JosephK95"
+    },
+    "number": 25501,
+    "title": "Geth RPC service consistency against other client implementations #2",
+    "updatedAt": "2022-08-09T12:37:02Z"
+  },
+  {
+    "author": {
+      "login": "rjl493456442"
+    },
+    "number": 25390,
+    "title": "all: PRs for Path-based state scheme",
+    "updatedAt": "2022-08-09T09:44:54Z"
   },
   {
     "author": {
@@ -21,7 +53,31 @@
     },
     "number": 25495,
     "title": "Geth RPC service consistency against other client implementations #1",
-    "updatedAt": "2022-08-08T14:31:38Z"
+    "updatedAt": "2022-08-09T08:37:36Z"
+  },
+  {
+    "author": {
+      "login": "Piradoxlanieve"
+    },
+    "number": 25491,
+    "title": "Geth not start bind: address already in use",
+    "updatedAt": "2022-08-09T07:42:24Z"
+  },
+  {
+    "author": {
+      "login": "m-yukio"
+    },
+    "number": 25462,
+    "title": "Duplicate code in gomobile production",
+    "updatedAt": "2022-08-09T07:36:57Z"
+  },
+  {
+    "author": {
+      "login": "jayboy-mabushi"
+    },
+    "number": 23442,
+    "title": "Synchronisation failed, dropping peer    peer=58eed242c8ab9eaad982c4d1e128be13c26a45d36c6cc81eaea6235b79f20ef5 err=\"retrieved hash chain is invalid: missing trie node 8f59c5b704dde5f26380515cf4867ba01d5f16c0947d9cb3737ed84f594f832f (path 080c0107)\"",
+    "updatedAt": "2022-08-09T07:35:19Z"
   },
   {
     "author": {
@@ -41,27 +97,11 @@
   },
   {
     "author": {
-      "login": "Piradoxlanieve"
-    },
-    "number": 25491,
-    "title": "Geth not start bind: address already in use",
-    "updatedAt": "2022-08-08T09:45:42Z"
-  },
-  {
-    "author": {
       "login": "mgcrea"
     },
     "number": 21918,
     "title": "Geth loosing 2d history on every restart (docker)",
     "updatedAt": "2022-08-08T09:25:11Z"
-  },
-  {
-    "author": {
-      "login": "rjl493456442"
-    },
-    "number": 25390,
-    "title": "all: PRs for Path-based state scheme",
-    "updatedAt": "2022-08-08T09:09:11Z"
   },
   {
     "author": {
@@ -121,27 +161,11 @@
   },
   {
     "author": {
-      "login": "m-yukio"
-    },
-    "number": 25462,
-    "title": "Duplicate code in gomobile production",
-    "updatedAt": "2022-08-07T16:21:04Z"
-  },
-  {
-    "author": {
       "login": "ekawibisono"
     },
     "number": 25471,
     "title": "Error Deploy Dashboard Step 5",
     "updatedAt": "2022-08-07T16:20:56Z"
-  },
-  {
-    "author": {
-      "login": "lvgang214"
-    },
-    "number": 25484,
-    "title": "ropsten  eth.syncing is false but eth.blockNumber is not latest",
-    "updatedAt": "2022-08-07T16:20:41Z"
   },
   {
     "author": {
@@ -206,14 +230,6 @@
     "number": 25375,
     "title": "Error: could not decrypt key with given password (in geth when personal.signTransaction after personal.unlockAccount)",
     "updatedAt": "2022-08-04T15:38:27Z"
-  },
-  {
-    "author": {
-      "login": "jayboy-mabushi"
-    },
-    "number": 23442,
-    "title": "Synchronisation failed, dropping peer    peer=58eed242c8ab9eaad982c4d1e128be13c26a45d36c6cc81eaea6235b79f20ef5 err=\"retrieved hash chain is invalid: missing trie node 8f59c5b704dde5f26380515cf4867ba01d5f16c0947d9cb3737ed84f594f832f (path 080c0107)\"",
-    "updatedAt": "2022-08-04T08:16:18Z"
   },
   {
     "author": {

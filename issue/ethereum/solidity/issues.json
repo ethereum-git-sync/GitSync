@@ -1,11 +1,91 @@
 [
   {
     "author": {
-      "login": "cyraxred"
+      "login": "fulldecent"
     },
-    "number": 13332,
-    "title": "Unexpected storage layout caused by interfaces",
-    "updatedAt": "2022-08-08T16:16:12Z"
+    "number": 13373,
+    "title": "Security: blog post, minified example",
+    "updatedAt": "2022-08-09T23:34:39Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 13372,
+    "title": "UB: can't create zero length array",
+    "updatedAt": "2022-08-09T22:57:57Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 13371,
+    "title": "Stop recommending .transfer",
+    "updatedAt": "2022-08-09T21:11:08Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 13224,
+    "title": "ENS external test fails compilation via IR: `Could not create stack layout after 1000 iterations`",
+    "updatedAt": "2022-08-09T15:55:34Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13368,
+    "title": "Add parser support for ``code`` data location.",
+    "updatedAt": "2022-08-09T15:21:14Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13369,
+    "title": "Type-Checking for ``code`` data location.",
+    "updatedAt": "2022-08-09T15:11:48Z"
+  },
+  {
+    "author": {
+      "login": "CodeSandwich"
+    },
+    "number": 13055,
+    "title": "Reference types design",
+    "updatedAt": "2022-08-09T14:05:20Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13366,
+    "title": "[TypeChecker] Bad cast of function call as tuple expression",
+    "updatedAt": "2022-08-09T13:59:31Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13365,
+    "title": "Refactored Type Checking and Analysis Annotations",
+    "updatedAt": "2022-08-09T12:32:59Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 9627,
+    "title": "Make the hard-coded parts of the optimiser sequence configurable",
+    "updatedAt": "2022-08-09T10:45:27Z"
+  },
+  {
+    "author": {
+      "login": "lllrdgz"
+    },
+    "number": 13364,
+    "title": "Solidity compiler issue on Arch Linux",
+    "updatedAt": "2022-08-09T09:47:31Z"
   },
   {
     "author": {
@@ -13,7 +93,15 @@
     },
     "number": 13362,
     "title": "Fix builds for Ubuntu 22.10",
-    "updatedAt": "2022-08-08T15:57:28Z"
+    "updatedAt": "2022-08-09T08:35:20Z"
+  },
+  {
+    "author": {
+      "login": "cyraxred"
+    },
+    "number": 13332,
+    "title": "Unexpected storage layout caused by interfaces",
+    "updatedAt": "2022-08-09T08:32:32Z"
   },
   {
     "author": {
@@ -105,14 +193,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 9627,
-    "title": "Make the hard-coded parts of the optimiser sequence configurable",
-    "updatedAt": "2022-08-05T14:06:18Z"
-  },
-  {
-    "author": {
       "login": "bshastry"
     },
     "number": 13350,
@@ -150,14 +230,6 @@
     "number": 10645,
     "title": "Extend DataFlowAnalyzer to not reset memory if memory ops use zero length",
     "updatedAt": "2022-08-05T12:04:21Z"
-  },
-  {
-    "author": {
-      "login": "Marenz"
-    },
-    "number": 13224,
-    "title": "ENS external test fails compilation via IR: `Could not create stack layout after 1000 iterations`",
-    "updatedAt": "2022-08-05T11:56:06Z"
   },
   {
     "author": {
@@ -1910,14 +1982,6 @@
     "number": 13053,
     "title": "Misleading text in contract docs: `Take care to assign it from somewhere that is the same contract type`",
     "updatedAt": "2022-05-24T12:24:31Z"
-  },
-  {
-    "author": {
-      "login": "CodeSandwich"
-    },
-    "number": 13055,
-    "title": "Reference types design",
-    "updatedAt": "2022-05-24T12:20:15Z"
   },
   {
     "author": {

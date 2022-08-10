@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13371",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13371/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13371/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13371/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13371",
+  "id": 1333792366,
+  "node_id": "I_kwDOAm_5kc5PgA5u",
+  "number": 13371,
+  "title": "Stop recommending .transfer",
+  "user": {
+    "login": "fulldecent",
+    "id": 382183,
+    "node_id": "MDQ6VXNlcjM4MjE4Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/382183?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fulldecent",
+    "html_url": "https://github.com/fulldecent",
+    "followers_url": "https://api.github.com/users/fulldecent/followers",
+    "following_url": "https://api.github.com/users/fulldecent/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fulldecent/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fulldecent/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fulldecent/subscriptions",
+    "organizations_url": "https://api.github.com/users/fulldecent/orgs",
+    "repos_url": "https://api.github.com/users/fulldecent/repos",
+    "events_url": "https://api.github.com/users/fulldecent/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fulldecent/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-09T21:11:08Z",
+  "updated_at": "2022-08-09T21:11:08Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "## Page\r\n\r\nThe Address.transfer function may not be compatible with smart contract recipients due to gas limits.\r\n\r\nSince smart contract recipients are first-class citizens on Ethereum we should either:\r\n\r\n1. Stop recommend `.transfer` everywhere (in documentation) and deprecate the function, or\r\n1. Clearly explain the limitations of `.transfer` everywhere it is mentioned (in documentation) and explain the difference of `.call(\"\")` inline.\r\n\r\n## Discussion\r\n\r\nI wanted to discuss this to get approval before offering any specific changes.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13371/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13371/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

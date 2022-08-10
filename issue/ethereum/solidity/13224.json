@@ -38,15 +38,6 @@
       "color": "fc1313",
       "default": false,
       "description": ""
-    },
-    {
-      "id": 249074438,
-      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzg=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/help%20wanted",
-      "name": "help wanted",
-      "color": "159818",
-      "default": true,
-      "description": null
     }
   ],
   "state": "open",
@@ -94,9 +85,9 @@
     }
   ],
   "milestone": null,
-  "comments": 2,
+  "comments": 3,
   "created_at": "2022-06-28T11:21:54Z",
-  "updated_at": "2022-08-05T11:56:06Z",
+  "updated_at": "2022-08-09T15:55:34Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -195,6 +186,50 @@
     "body": "We temporarily fixed that in #13229 by using an older commit ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1173773383/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1209571195",
+    "html_url": "https://github.com/ethereum/solidity/issues/13224#issuecomment-1209571195",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13224",
+    "id": 1209571195,
+    "node_id": "IC_kwDOAm_5kc5IGJd7",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-09T15:55:34Z",
+    "updated_at": "2022-08-09T15:55:34Z",
+    "author_association": "MEMBER",
+    "body": "This is the case triggering the bug:\r\nhttps://gist.github.com/ekpyron/faca83a32a77ba4393f88cace7e79663",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1209571195/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

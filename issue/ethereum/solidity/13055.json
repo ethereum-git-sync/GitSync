@@ -39,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-05-24T12:20:15Z",
-  "updated_at": "2022-05-24T12:20:15Z",
+  "updated_at": "2022-08-09T14:05:20Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -64,5 +64,92 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1209397028",
+    "html_url": "https://github.com/ethereum/solidity/issues/13055#issuecomment-1209397028",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13055",
+    "id": 1209397028,
+    "node_id": "IC_kwDOAm_5kc5IFe8k",
+    "user": {
+      "login": "gpersoon",
+      "id": 5469459,
+      "node_id": "MDQ6VXNlcjU0Njk0NTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5469459?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gpersoon",
+      "html_url": "https://github.com/gpersoon",
+      "followers_url": "https://api.github.com/users/gpersoon/followers",
+      "following_url": "https://api.github.com/users/gpersoon/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gpersoon/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gpersoon/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gpersoon/subscriptions",
+      "organizations_url": "https://api.github.com/users/gpersoon/orgs",
+      "repos_url": "https://api.github.com/users/gpersoon/repos",
+      "events_url": "https://api.github.com/users/gpersoon/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gpersoon/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-09T13:40:14Z",
+    "updated_at": "2022-08-09T13:40:14Z",
+    "author_association": "NONE",
+    "body": "Here are a few examples that are not obvious:\r\n\r\n```solidity\r\n// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.16;\r\nimport \"hardhat/console.sol\"; \r\n\r\ncontract ReturnViaMemoryParameter {\r\n  struct Book { \r\n      uint id;\r\n   }\r\n   function testmem(Book memory x) public pure {\r\n       x.id += 1;\r\n   }\r\n   Book y1;\r\n   constructor () {\r\n       Book memory y2;\r\n       testmem(y1);console.log(y1.id); // 0\r\n       testmem(y2);console.log(y2.id); // 1\r\n   }\r\n}\r\n```\r\n\r\n```solidity\r\n// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.16;\r\nimport \"hardhat/console.sol\"; \r\n\r\ncontract MemoryAsPointer {\r\n   struct Book { \r\n      uint id;\r\n   }\r\n   constructor () {\r\n       Book memory y1;\r\n       Book memory y2=y1; \r\n       y2.id=7;\r\n       console.log(y1.id,y2.id); // 7,7\r\n   }\r\n}\r\n```\r\n\r\n## Suggestion\r\nHave a keyword that indicates if values are copied/passed by value or by reference\r\n",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1209397028/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1209426819",
+    "html_url": "https://github.com/ethereum/solidity/issues/13055#issuecomment-1209426819",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13055",
+    "id": 1209426819,
+    "node_id": "IC_kwDOAm_5kc5IFmOD",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-09T14:04:23Z",
+    "updated_at": "2022-08-09T14:05:20Z",
+    "author_association": "MEMBER",
+    "body": "This general complex of issues is known and we plan to change this in the future one way or another. Unfortunately, it's not entirely trivial to come up with a full schema that is both sufficiently flexible and at the same time fool-proof... especially while not inadvertently overcomplicating the language.\r\nSo yes, the current situation is definitely bad, but we don't yet have consensus about the best design forward.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1209426819/reactions",
+      "total_count": 4,
+      "+1": 3,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 1
+    },
+    "performed_via_github_app": null
+  }
 ]

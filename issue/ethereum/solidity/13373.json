@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13373",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13373/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13373/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13373/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13373",
+  "id": 1333890598,
+  "node_id": "I_kwDOAm_5kc5PgY4m",
+  "number": 13373,
+  "title": "Security: blog post, minified example",
+  "user": {
+    "login": "fulldecent",
+    "id": 382183,
+    "node_id": "MDQ6VXNlcjM4MjE4Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/382183?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fulldecent",
+    "html_url": "https://github.com/fulldecent",
+    "followers_url": "https://api.github.com/users/fulldecent/followers",
+    "following_url": "https://api.github.com/users/fulldecent/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fulldecent/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fulldecent/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fulldecent/subscriptions",
+    "organizations_url": "https://api.github.com/users/fulldecent/orgs",
+    "repos_url": "https://api.github.com/users/fulldecent/repos",
+    "events_url": "https://api.github.com/users/fulldecent/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fulldecent/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-09T23:34:39Z",
+  "updated_at": "2022-08-09T23:34:39Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "## Page\r\n\r\nhttps://blog.soliditylang.org/2022/08/08/calldata-tuple-reencoding-head-overflow-bug/\r\n\r\n## Abstract\r\n\r\nThe example in that page is not a minimal test case. We have found a minimal test case. Please consider updating to article to use this broader, minimal test case.\r\n\r\n## Pull request\r\n\r\nTest case:\r\n\r\n```solidity\r\npragma solidity 0.8.15;\r\n\r\ncontract E {\r\n    function f(bytes32[1] calldata c) external returns (bytes memory, bytes32[1] calldata) {\r\n        return (\"dan\", c);\r\n    }\r\n}\r\n```\r\n\r\nAnd here is the test runner:\r\n\r\n```solidity\r\ncontract Test {\r\n    function test() external {\r\n        bytes memory testB = \"dan\";\r\n        bytes32[1] memory testC = bytes32[1]([bytes32(uint256(16))]);\r\n\r\n        E e = new E();\r\n        (bytes memory resultB, bytes32[1] memory resultC) = e.f(testC);\r\n\r\n        require(keccak256(resultB) == keccak256(testB), \"test B fail\");\r\n        require(resultC[0] == testC[0], \"test C[0] fail\");\r\n    }\r\n}\r\n```\r\n\r\nDiscussed with @dtedesco1 during NFT/Web3 Community Service Hour https://phor.net/#hour",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13373/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 1
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13373/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

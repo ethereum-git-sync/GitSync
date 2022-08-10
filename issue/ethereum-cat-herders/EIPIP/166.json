@@ -39,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-07-26T18:25:25Z",
-  "updated_at": "2022-07-26T18:25:25Z",
+  "updated_at": "2022-08-09T15:54:37Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -64,5 +64,92 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1209440745",
+    "html_url": "https://github.com/ethereum-cat-herders/EIPIP/issues/166#issuecomment-1209440745",
+    "issue_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/166",
+    "id": 1209440745,
+    "node_id": "IC_kwDODfkRC85IFpnp",
+    "user": {
+      "login": "poojaranjan",
+      "id": 29681685,
+      "node_id": "MDQ6VXNlcjI5NjgxNjg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29681685?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/poojaranjan",
+      "html_url": "https://github.com/poojaranjan",
+      "followers_url": "https://api.github.com/users/poojaranjan/followers",
+      "following_url": "https://api.github.com/users/poojaranjan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/poojaranjan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/poojaranjan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/poojaranjan/subscriptions",
+      "organizations_url": "https://api.github.com/users/poojaranjan/orgs",
+      "repos_url": "https://api.github.com/users/poojaranjan/repos",
+      "events_url": "https://api.github.com/users/poojaranjan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/poojaranjan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-09T14:15:47Z",
+    "updated_at": "2022-08-09T15:54:37Z",
+    "author_association": "MEMBER",
+    "body": "**Pull Requests suggested for review**\r\n\r\n### To `Final`\r\n- [x] https://github.com/ethereum/EIPs/pull/5433\r\n\r\n\r\n### To `Review`\r\n- [x] https://github.com/ethereum/EIPs/pull/5411\r\n\r\n\r\n\r\n### Misc.\r\n\r\n- [x] https://github.com/ethereum/EIPs/pull/5385\r\n- [x] https://github.com/ethereum/EIPs/pull/5086\r\n- [x] https://github.com/ethereum/EIPs/pull/5434\r\n- [x] https://github.com/ethereum/EIPs/pull/5427\r\n- [x] https://github.com/ethereum/EIPs/pull/5419\r\n- [x] https://github.com/ethereum/EIPs/pull/5393\r\n- [ ] https://github.com/ethereum/EIPs/pull/5379\r\n- [ ] https://github.com/ethereum/EIPs/pull/5415\r\n\r\n\r\n### New file\r\n\r\n- [x] https://github.com/ethereum/EIPs/pull/5409\r\n- [x] https://github.com/ethereum/EIPs/pull/5380\r\n- [x] https://github.com/ethereum/EIPs/pull/5377\r\n- [x] https://github.com/ethereum/EIPs/pull/5375\r\n- [x] https://github.com/ethereum/EIPs/pull/5345\r\n\r\nFrom the last meeting\r\n- [x] https://github.com/ethereum/EIPs/pull/5289\r\n- [ ]  https://github.com/ethereum/EIPs/pull/5283\r\n- [ ]  https://github.com/ethereum/EIPs/pull/5269\r\n- [ ]  https://github.com/ethereum/EIPs/pull/5252\r\n- [ ]  https://github.com/ethereum/EIPs/pull/5216\r\n\r\n",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1209440745/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1209494365",
+    "html_url": "https://github.com/ethereum-cat-herders/EIPIP/issues/166#issuecomment-1209494365",
+    "issue_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/166",
+    "id": 1209494365,
+    "node_id": "IC_kwDODfkRC85IF2td",
+    "user": {
+      "login": "Pandapip1",
+      "id": 45835846,
+      "node_id": "MDQ6VXNlcjQ1ODM1ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45835846?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Pandapip1",
+      "html_url": "https://github.com/Pandapip1",
+      "followers_url": "https://api.github.com/users/Pandapip1/followers",
+      "following_url": "https://api.github.com/users/Pandapip1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Pandapip1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Pandapip1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Pandapip1/subscriptions",
+      "organizations_url": "https://api.github.com/users/Pandapip1/orgs",
+      "repos_url": "https://api.github.com/users/Pandapip1/repos",
+      "events_url": "https://api.github.com/users/Pandapip1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Pandapip1/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-09T14:58:07Z",
+    "updated_at": "2022-08-09T14:58:07Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "Last minute additions from EIP-Bot, since they do need editor approval:\r\nhttps://github.com/ethereum/EIP-Bot/pull/111 (Doesn't change code)\r\nhttps://github.com/ethereum/EIP-Bot/pull/109 (Fully E2E tested, confirmed working)\r\nhttps://github.com/ethereum/EIP-Bot/pull/105 (Added test cases, they pass)",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1209494365/reactions",
+      "total_count": 1,
+      "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

@@ -5,7 +5,47 @@
     },
     "number": 168,
     "title": "EIPIP Meeting 62 Agenda",
-    "updatedAt": "2022-08-08T18:59:00Z"
+    "updatedAt": "2022-08-09T22:07:36Z"
+  },
+  {
+    "author": {
+      "login": "TimDaub"
+    },
+    "number": 169,
+    "title": "make eip authorship depend on ENS",
+    "updatedAt": "2022-08-09T21:56:03Z"
+  },
+  {
+    "author": {
+      "login": "poojaranjan"
+    },
+    "number": 161,
+    "title": "EIPIP Meeting 61 Agenda ",
+    "updatedAt": "2022-08-09T21:55:24Z"
+  },
+  {
+    "author": {
+      "login": "TimDaub"
+    },
+    "number": 157,
+    "title": "Reference implementations aren't linted prior checkin or when marked as final. Different EIP's reference implementations aren't consistent with each other",
+    "updatedAt": "2022-08-09T21:55:00Z"
+  },
+  {
+    "author": {
+      "login": "poojaranjan"
+    },
+    "number": 164,
+    "title": "All Wallet Devs meeting #3",
+    "updatedAt": "2022-08-09T21:51:58Z"
+  },
+  {
+    "author": {
+      "login": "poojaranjan"
+    },
+    "number": 166,
+    "title": "EIP editor apprenticeship meeting 23",
+    "updatedAt": "2022-08-09T15:54:37Z"
   },
   {
     "author": {
@@ -13,7 +53,7 @@
     },
     "number": 165,
     "title": "URL-URI working group meeting #6",
-    "updatedAt": "2022-08-08T04:51:12Z"
+    "updatedAt": "2022-08-09T14:12:50Z"
   },
   {
     "author": {
@@ -22,22 +62,6 @@
     "number": 160,
     "title": "EIP editor apprenticeship meeting 22",
     "updatedAt": "2022-07-27T01:36:44Z"
-  },
-  {
-    "author": {
-      "login": "poojaranjan"
-    },
-    "number": 161,
-    "title": "EIPIP Meeting 61 Agenda ",
-    "updatedAt": "2022-07-26T22:44:18Z"
-  },
-  {
-    "author": {
-      "login": "poojaranjan"
-    },
-    "number": 166,
-    "title": "EIP editor apprenticeship meeting 23",
-    "updatedAt": "2022-07-26T18:25:25Z"
   },
   {
     "author": {
@@ -59,25 +83,9 @@
     "author": {
       "login": "poojaranjan"
     },
-    "number": 164,
-    "title": "All Wallet Devs meeting #3",
-    "updatedAt": "2022-07-25T14:44:54Z"
-  },
-  {
-    "author": {
-      "login": "poojaranjan"
-    },
     "number": 153,
     "title": "EIPIP Meeting 60 Agenda",
     "updatedAt": "2022-07-14T10:48:00Z"
-  },
-  {
-    "author": {
-      "login": "TimDaub"
-    },
-    "number": 157,
-    "title": "Reference implementations aren't linted prior checkin or when marked as final. Different EIP's reference implementations aren't consistent with each other",
-    "updatedAt": "2022-07-13T17:46:29Z"
   },
   {
     "author": {

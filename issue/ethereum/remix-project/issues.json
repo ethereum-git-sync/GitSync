@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "ryestew"
+    },
+    "number": 2750,
+    "title": "Ideas for new Templates",
+    "updatedAt": "2022-08-10T10:37:24Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2749,
+    "title": "Add toggle to change unit of contract balance ",
+    "updatedAt": "2022-08-10T10:06:23Z"
+  },
+  {
+    "author": {
+      "login": "Loverush"
+    },
+    "number": 2738,
+    "title": "cannot connect to injected provider-metamask now",
+    "updatedAt": "2022-08-10T09:54:11Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 173,
+    "title": "Show and update balances of deployed contracts",
+    "updatedAt": "2022-08-10T06:14:51Z"
+  },
+  {
+    "author": {
       "login": "ismaelbej"
     },
     "number": 2742,
@@ -62,14 +94,6 @@
     "number": 2674,
     "title": "Cannot validate contracts on Rinkeby",
     "updatedAt": "2022-08-09T04:45:42Z"
-  },
-  {
-    "author": {
-      "login": "Loverush"
-    },
-    "number": 2738,
-    "title": "cannot connect to injected provider-metamask now",
-    "updatedAt": "2022-08-08T15:18:20Z"
   },
   {
     "author": {
@@ -342,14 +366,6 @@
     "number": 2561,
     "title": "show colours in terminal for interaction with contracts",
     "updatedAt": "2022-07-27T11:43:54Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 173,
-    "title": "Show and update balances of deployed contracts",
-    "updatedAt": "2022-07-27T11:43:36Z"
   },
   {
     "author": {

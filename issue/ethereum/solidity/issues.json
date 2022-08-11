@@ -1,11 +1,43 @@
 [
   {
     "author": {
+      "login": "migoldfinger"
+    },
+    "number": 13377,
+    "title": "Contract size raised by a riddicilous amount with one simple line of code",
+    "updatedAt": "2022-08-10T19:26:28Z"
+  },
+  {
+    "author": {
+      "login": "mudgen"
+    },
+    "number": 9986,
+    "title": "Enable Enums to be Extended in Upgradeable Contracts",
+    "updatedAt": "2022-08-10T18:16:10Z"
+  },
+  {
+    "author": {
       "login": "fulldecent"
     },
     "number": 13373,
     "title": "Security: blog post, minified example",
-    "updatedAt": "2022-08-09T23:34:39Z"
+    "updatedAt": "2022-08-10T15:19:24Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 13308,
+    "title": "Stop the war on for loops",
+    "updatedAt": "2022-08-10T15:10:57Z"
+  },
+  {
+    "author": {
+      "login": "migoldfinger"
+    },
+    "number": 13375,
+    "title": "Different gas cost when using Libraries with using and without",
+    "updatedAt": "2022-08-10T15:01:24Z"
   },
   {
     "author": {
@@ -13,7 +45,15 @@
     },
     "number": 13372,
     "title": "UB: can't create zero length array",
-    "updatedAt": "2022-08-09T22:57:57Z"
+    "updatedAt": "2022-08-10T13:57:25Z"
+  },
+  {
+    "author": {
+      "login": "zemse"
+    },
+    "number": 11407,
+    "title": "Allow specifying parameter name in public mappings",
+    "updatedAt": "2022-08-10T13:18:10Z"
   },
   {
     "author": {
@@ -238,14 +278,6 @@
     "number": 13204,
     "title": "[TypeChecker] Bad cast of argument tuple in abi.encodeCall",
     "updatedAt": "2022-08-05T11:10:47Z"
-  },
-  {
-    "author": {
-      "login": "fulldecent"
-    },
-    "number": 13308,
-    "title": "Stop the war on for loops",
-    "updatedAt": "2022-08-05T09:20:07Z"
   },
   {
     "author": {
@@ -8681,14 +8713,6 @@
   },
   {
     "author": {
-      "login": "zemse"
-    },
-    "number": 11407,
-    "title": "Allow specifying parameter name in public mappings",
-    "updatedAt": "2021-05-21T16:56:01Z"
-  },
-  {
-    "author": {
       "login": "dileepfrog"
     },
     "number": 11418,
@@ -11150,14 +11174,6 @@
     "number": 10711,
     "title": "How can i  install Solidity 0.4.9 on my ubuntu?",
     "updatedAt": "2021-01-04T18:22:48Z"
-  },
-  {
-    "author": {
-      "login": "mudgen"
-    },
-    "number": 9986,
-    "title": "Enable Enums to be Extended in Upgradeable Contracts",
-    "updatedAt": "2021-01-03T17:54:32Z"
   },
   {
     "author": {

@@ -1,6 +1,46 @@
 [
   {
     "author": {
+      "login": "JosephK95"
+    },
+    "number": 25510,
+    "title": "Reopened from the issue #25507",
+    "updatedAt": "2022-08-10T23:48:09Z"
+  },
+  {
+    "author": {
+      "login": "DubbaThony"
+    },
+    "number": 25498,
+    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
+    "updatedAt": "2022-08-10T15:00:22Z"
+  },
+  {
+    "author": {
+      "login": "lispc"
+    },
+    "number": 24873,
+    "title": "proposal: optimize the memory usage when EnableMemory = true for StructLogger ",
+    "updatedAt": "2022-08-10T14:56:40Z"
+  },
+  {
+    "author": {
+      "login": "JosephK95"
+    },
+    "number": 25507,
+    "title": "Missing transactions field in uncle block objects",
+    "updatedAt": "2022-08-10T13:07:41Z"
+  },
+  {
+    "author": {
+      "login": "attila-lendvai"
+    },
+    "number": 25298,
+    "title": "clef: when --rules is used together with --stdio-ui then clef doesn't respond to clef_foo requests",
+    "updatedAt": "2022-08-10T07:31:16Z"
+  },
+  {
+    "author": {
       "login": "sjmini"
     },
     "number": 25505,
@@ -14,14 +54,6 @@
     "number": 25454,
     "title": "Need to prune Geth but not enough blocks",
     "updatedAt": "2022-08-09T16:07:33Z"
-  },
-  {
-    "author": {
-      "login": "DubbaThony"
-    },
-    "number": 25498,
-    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
-    "updatedAt": "2022-08-09T13:51:51Z"
   },
   {
     "author": {
@@ -390,14 +422,6 @@
     "number": 25436,
     "title": "Clique private network snap sync stops few blocks before the latest block and does not complete.",
     "updatedAt": "2022-08-01T09:42:04Z"
-  },
-  {
-    "author": {
-      "login": "attila-lendvai"
-    },
-    "number": 25298,
-    "title": "clef: when --rules is used together with --stdio-ui then clef doesn't respond to clef_foo requests",
-    "updatedAt": "2022-08-01T09:27:17Z"
   },
   {
     "author": {
@@ -1622,14 +1646,6 @@
     "number": 25145,
     "title": "Cannot enable authrpc on Sepolia",
     "updatedAt": "2022-06-23T08:59:06Z"
-  },
-  {
-    "author": {
-      "login": "lispc"
-    },
-    "number": 24873,
-    "title": "proposal: optimize the memory usage when EnableMemory = true for StructLogger ",
-    "updatedAt": "2022-06-23T08:38:50Z"
   },
   {
     "author": {

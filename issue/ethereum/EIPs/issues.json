@@ -1,6 +1,46 @@
 [
   {
     "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5438,
+    "title": "[Bug]: Sam doesn't have write permissions",
+    "updatedAt": "2022-08-10T19:20:39Z"
+  },
+  {
+    "author": {
+      "login": "mudgen"
+    },
+    "number": 2535,
+    "title": "Diamonds",
+    "updatedAt": "2022-08-10T17:40:31Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5441,
+    "title": "[Bug]: automerge still in required checks",
+    "updatedAt": "2022-08-10T17:13:24Z"
+  },
+  {
+    "author": {
+      "login": "satello"
+    },
+    "number": 1497,
+    "title": "ERC 1497: Evidence Standard",
+    "updatedAt": "2022-08-10T14:49:32Z"
+  },
+  {
+    "author": {
+      "login": "Roger-Wu"
+    },
+    "number": 1726,
+    "title": "ERC-1726: Dividend-Paying Token Standard",
+    "updatedAt": "2022-08-10T02:54:40Z"
+  },
+  {
+    "author": {
       "login": "SamWilsn"
     },
     "number": 5431,
@@ -30,14 +70,6 @@
     "number": 2613,
     "title": "ERC-2612 `permit`: 712-signed token approvals",
     "updatedAt": "2022-08-07T12:54:19Z"
-  },
-  {
-    "author": {
-      "login": "Roger-Wu"
-    },
-    "number": 1726,
-    "title": "ERC-1726: Dividend-Paying Token Standard",
-    "updatedAt": "2022-08-06T15:03:21Z"
   },
   {
     "author": {
@@ -86,14 +118,6 @@
     "number": 4335,
     "title": "EIP registries",
     "updatedAt": "2022-08-04T00:20:33Z"
-  },
-  {
-    "author": {
-      "login": "mudgen"
-    },
-    "number": 2535,
-    "title": "Diamonds",
-    "updatedAt": "2022-08-04T00:20:31Z"
   },
   {
     "author": {
@@ -1646,14 +1670,6 @@
     "number": 2787,
     "title": "Discussion for EIP-2786: Ethereum Provider Connect/Disconnect Events",
     "updatedAt": "2022-04-23T09:53:40Z"
-  },
-  {
-    "author": {
-      "login": "satello"
-    },
-    "number": 1497,
-    "title": "ERC 1497: Evidence Standard",
-    "updatedAt": "2022-04-16T13:07:15Z"
   },
   {
     "author": {

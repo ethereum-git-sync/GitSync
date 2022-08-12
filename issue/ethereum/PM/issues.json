@@ -1,11 +1,27 @@
 [
   {
     "author": {
+      "login": "timbeiko"
+    },
+    "number": 592,
+    "title": "Ethereum Core Devs Meeting 145 Agenda",
+    "updatedAt": "2022-08-11T15:39:08Z"
+  },
+  {
+    "author": {
       "login": "djrtwo"
     },
     "number": 594,
     "title": "Consensus-layer Call 93",
-    "updatedAt": "2022-08-10T23:29:33Z"
+    "updatedAt": "2022-08-11T15:26:49Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 450,
+    "title": "Shanghai Planning",
+    "updatedAt": "2022-08-11T06:06:16Z"
   },
   {
     "author": {
@@ -46,14 +62,6 @@
     "number": 583,
     "title": "Ethereum Core Devs Meeting 144 Agenda ",
     "updatedAt": "2022-08-04T17:17:58Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 592,
-    "title": "Ethereum Core Devs Meeting 145 Agenda",
-    "updatedAt": "2022-08-04T16:48:24Z"
   },
   {
     "author": {
@@ -158,14 +166,6 @@
     "number": 449,
     "title": "Ethereum Core Devs Meeting 130 Agenda",
     "updatedAt": "2022-07-16T18:16:29Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 450,
-    "title": "Shanghai Planning",
-    "updatedAt": "2022-07-16T18:14:22Z"
   },
   {
     "author": {

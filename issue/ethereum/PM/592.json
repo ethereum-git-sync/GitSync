@@ -49,11 +49,11 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-08-04T16:46:33Z",
-  "updated_at": "2022-08-04T16:48:24Z",
+  "updated_at": "2022-08-11T15:39:08Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "### Meeting Info\r\n* [August 18, 2022, 14:00 UTC](https://savvytime.com/converter/utc-to-germany-berlin-united-kingdom-london-ny-new-york-city-ca-san-francisco-china-shanghai-japan-tokyo-australia-sydney/aug-18-2022/2pm)\r\n* Duration: 90 minutes\r\n* Youtube Stream: https://youtu.be/jJaCaS0WbIw \r\n* Zoom: shared on #allcoredevs Discord server shortly before the call \r\n\r\n### Agenda\r\n\r\n* Merge Updates \r\n    * https://github.com/eth-clients/goerli/issues/98\r\n    * [Mainnet 5GB DAG size](https://minerstat.com/dag-size-calculator) & [hashrate](https://etherscan.io/chart/hashrate)\r\n",
+  "body": "### Meeting Info\r\n* [August 18, 2022, 14:00 UTC](https://savvytime.com/converter/utc-to-germany-berlin-united-kingdom-london-ny-new-york-city-ca-san-francisco-china-shanghai-japan-tokyo-australia-sydney/aug-18-2022/2pm)\r\n* Duration: 90 minutes\r\n* Youtube Stream: https://youtu.be/jJaCaS0WbIw \r\n* Zoom: shared on #allcoredevs Discord server shortly before the call \r\n\r\n### Agenda\r\n\r\n* Merge Updates \r\n    * https://github.com/eth-clients/goerli/issues/98\r\n    * [Mainnet 5GB DAG size](https://minerstat.com/dag-size-calculator) & [hashrate](https://etherscan.io/chart/hashrate)\r\n    * https://github.com/ethereum/execution-specs/pull/585\r\n",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/pm/issues/592/reactions",

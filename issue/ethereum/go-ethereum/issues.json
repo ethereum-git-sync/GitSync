@@ -1,11 +1,19 @@
 [
   {
     "author": {
-      "login": "JosephK95"
+      "login": "coltonfreeman26"
     },
-    "number": 25510,
-    "title": "Reopened from the issue #25507",
-    "updatedAt": "2022-08-10T23:48:09Z"
+    "number": 25514,
+    "title": "go-ethereum-(devel)",
+    "updatedAt": "2022-08-11T20:54:06Z"
+  },
+  {
+    "author": {
+      "login": "Lredhdx"
+    },
+    "number": 25513,
+    "title": "After goerli testnet merge, jsonRPC `eth_getFilterLogs` sometimes can't get correct results.",
+    "updatedAt": "2022-08-11T11:36:28Z"
   },
   {
     "author": {
@@ -13,7 +21,39 @@
     },
     "number": 25498,
     "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
-    "updatedAt": "2022-08-10T15:00:22Z"
+    "updatedAt": "2022-08-11T09:46:34Z"
+  },
+  {
+    "author": {
+      "login": "JosephK95"
+    },
+    "number": 25495,
+    "title": "Geth RPC service consistency against other client implementations #1",
+    "updatedAt": "2022-08-11T03:24:51Z"
+  },
+  {
+    "author": {
+      "login": "JosephK95"
+    },
+    "number": 25501,
+    "title": "Geth RPC service consistency against other client implementations #2",
+    "updatedAt": "2022-08-11T03:16:41Z"
+  },
+  {
+    "author": {
+      "login": "dzianisv"
+    },
+    "number": 25511,
+    "title": "SIGSEGV: segmentation violation code=0x1 `downloader.(*Downloader).findAncestorBinarySearch()`",
+    "updatedAt": "2022-08-11T00:29:26Z"
+  },
+  {
+    "author": {
+      "login": "JosephK95"
+    },
+    "number": 25510,
+    "title": "Reopened from the issue #25507",
+    "updatedAt": "2022-08-10T23:48:09Z"
   },
   {
     "author": {
@@ -65,27 +105,11 @@
   },
   {
     "author": {
-      "login": "JosephK95"
-    },
-    "number": 25501,
-    "title": "Geth RPC service consistency against other client implementations #2",
-    "updatedAt": "2022-08-09T12:37:02Z"
-  },
-  {
-    "author": {
       "login": "rjl493456442"
     },
     "number": 25390,
     "title": "all: PRs for Path-based state scheme",
     "updatedAt": "2022-08-09T09:44:54Z"
-  },
-  {
-    "author": {
-      "login": "JosephK95"
-    },
-    "number": 25495,
-    "title": "Geth RPC service consistency against other client implementations #1",
-    "updatedAt": "2022-08-09T08:37:36Z"
   },
   {
     "author": {
@@ -32137,7 +32161,7 @@
   },
   {
     "author": {
-      "login": "CherryMan"
+      "login": "cherryman"
     },
     "number": 14736,
     "title": "Add support for XDG Directory Specification on linux",

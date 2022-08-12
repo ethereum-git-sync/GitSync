@@ -41,11 +41,11 @@
   "milestone": null,
   "comments": 8,
   "created_at": "2022-08-02T15:11:47Z",
-  "updated_at": "2022-08-04T16:16:46Z",
+  "updated_at": "2022-08-11T17:22:29Z",
   "closed_at": null,
-  "author_association": "CONTRIBUTOR",
+  "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "I volunteer to implement the following if the labels are created/updated (the description is in the sub-item):\r\n- [x] `waiting: no recent activity`\r\n  - [x] Description: The PR or issue has had no recent activity and will be closed soon.\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5398\r\n- [x] `waiting: walidator to pass`\r\n  - [x] Description: The PR has eipw errors. Please fix them.\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5406\r\n- [x] `waiting: htmlproofer to pass`\r\n  - [x] Description: The PR has htmlproofer errors. Please fix them.\r\n  - [ ] Added in https://github.com/ethereum/EIPs/pull/5406\r\n- [x] `waiting: codespell to pass`\r\n  - [x] Description: The PR has codespell errors. Please fix them.\r\n  - [ ] Added in https://github.com/ethereum/EIPs/pull/5406\r\n- [ ] `waiting: EIP number`\r\n  - [ ] Description: The PR needs an editor to assign an EIP Number\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5412\r\n- [x] `waiting: review needs attention`\r\n  - [x] Description: The PR has a non-stale review by an editor or an author.\r\n  - [ ] Tracked in https://github.com/ethereum/EIP-Bot/issues/110\r\n- [x] `waiting: author to review`\r\n  - [x] Description: The PR requires author review.\r\n  - [ ] Tracked in: https://github.com/ethereum/EIP-Bot/issues/110\r\n- [x] `waiting: editor to review`\r\n  - [x] Description: The PR required editor review.\r\n  - [ ] Tracked in: https://github.com/ethereum/EIP-Bot/issues/110\r\n\r\nNote: add these labels but *do not remove the old ones yet*\r\n\r\n- [ ] `classification: new EIP`\r\n  - [ ] Description: This PR creates a new EIP file\r\n  - [ ] Supersedes `newEIPFile`\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5413\r\n- [ ] `classification: update EIP`\r\n  - [ ] Description: This PR updates an existing EIP file\r\n  - [ ] Supersedes `updateEIP`\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5413\r\n- [ ] `classification: EIP status change`\r\n  - [ ] Description: This PR updates the status of an existing EIP file\r\n  - [ ] Supersedes `statusChange`\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5413\r\n",
+  "body": "I volunteer to implement the following if the labels are created/updated (the description is in the sub-item):\r\n- [x] `waiting: no recent activity`\r\n  - [x] Description: The PR or issue has had no recent activity and will be closed soon.\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5398\r\n- [x] `waiting: walidator to pass`\r\n  - [x] Description: The PR has eipw errors. Please fix them.\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5406\r\n- [x] `waiting: htmlproofer to pass`\r\n  - [x] Description: The PR has htmlproofer errors. Please fix them.\r\n  - [ ] Added in https://github.com/ethereum/EIPs/pull/5406\r\n- [x] `waiting: codespell to pass`\r\n  - [x] Description: The PR has codespell errors. Please fix them.\r\n  - [ ] Added in https://github.com/ethereum/EIPs/pull/5406\r\n- [x] `waiting: EIP number`\r\n  - [ ] Description: The PR needs an editor to assign an EIP Number\r\n  - [x] Added in: https://github.com/ethereum/EIPs/pull/5412\r\n- [x] `waiting: review needs attention`\r\n  - [x] Description: The PR has a non-stale review by an editor or an author.\r\n  - [ ] Tracked in https://github.com/ethereum/EIP-Bot/issues/110\r\n- [x] `waiting: author to review`\r\n  - [x] Description: The PR requires author review.\r\n  - [ ] Tracked in: https://github.com/ethereum/EIP-Bot/issues/110\r\n- [x] `waiting: editor to review`\r\n  - [x] Description: The PR required editor review.\r\n  - [ ] Tracked in: https://github.com/ethereum/EIP-Bot/issues/110\r\n\r\nNote: add these labels but *do not remove the old ones yet*\r\n\r\n- [ ] `classification: new EIP`\r\n  - [ ] Description: This PR creates a new EIP file\r\n  - [ ] Supersedes `newEIPFile`\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5413\r\n- [ ] `classification: update EIP`\r\n  - [ ] Description: This PR updates an existing EIP file\r\n  - [ ] Supersedes `updateEIP`\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5413\r\n- [ ] `classification: EIP status change`\r\n  - [ ] Description: This PR updates the status of an existing EIP file\r\n  - [ ] Supersedes `statusChange`\r\n  - [ ] Added in: https://github.com/ethereum/EIPs/pull/5413\r\n",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/EIPs/issues/5394/reactions",
@@ -92,7 +92,7 @@
     },
     "created_at": "2022-08-02T15:14:50Z",
     "updated_at": "2022-08-02T15:14:50Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "@MicahZoltu feel free to create the labels and then tick off the boxes.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1202793782/reactions",
@@ -224,7 +224,7 @@
     },
     "created_at": "2022-08-03T13:14:31Z",
     "updated_at": "2022-08-03T13:14:31Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "Sounds good to me.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1203935186/reactions",
@@ -268,7 +268,7 @@
     },
     "created_at": "2022-08-03T13:15:46Z",
     "updated_at": "2022-08-03T13:15:46Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "> Does it just get thrown onto the PR anytime an author/editor reviews an EIP?\r\n\r\nYes.\r\n\r\n> What causes it to fall off?\r\n\r\nEither a commit to the matching branch or the review comment getting marked as resolved.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1203936641/reactions",
@@ -312,7 +312,7 @@
     },
     "created_at": "2022-08-03T15:07:36Z",
     "updated_at": "2022-08-03T15:07:36Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "A lot of the labels are missing descriptions. Could you add them?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1204074500/reactions",
@@ -400,7 +400,7 @@
     },
     "created_at": "2022-08-04T15:59:14Z",
     "updated_at": "2022-08-04T16:07:43Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "@MicahZoltu I have updated the list of labels.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1205448990/reactions",

@@ -39,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 174,
+  "comments": 176,
   "created_at": "2020-02-25T21:01:08Z",
-  "updated_at": "2022-08-10T17:40:31Z",
+  "updated_at": "2022-08-11T13:52:09Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -1108,8 +1108,8 @@
     "body": "@leonardoalt @androolloyd  @GNSPS One thing to keep in mind, which @fulldecent pointed out, is that this standard is **very** general, which also means that it is extremely flexible. It is easy to make the error of pegging this standard to a particular use case or to make assumptions about it.\r\n\r\n>As a user you should be asked to opt-in an upgrade, not be forced to trust obfuscated code.\r\n\r\n@leonardoalt This standard is probably flexible enough to accommodate that. I'm interested in more details about how that could work.\r\n\r\nI myself am very guilty of pegging this standard to a particular use case: \"upgradeable contracts\". This standard is useful for creating very useful immutable contracts that can't be upgraded. How so? Well there might be many ways (being so general and all) but I think of two really good use cases. But before I tell you the use cases let me tell you how to make useful immutable contracts with this standard.\r\n\r\nThe standard has been carefully edited to say that a diamond \"uses\" the `diamondCut` function.  It does not say that the `diamondCut` function has to be added to the diamond as one of its functions. So this means that you can delegatecall to the `diamondCut` function in the constructor of the diamond to add all the functions needed by the diamond. The example in the standard shows how to call `diamondCut` in the constructor of a diamond.  Since the `diamondCut` function is never actually added to the diamond the diamond is immutable with the same immutability and trust guarantees as a vanilla contract.  My two use cases illustrate why this is useful:\r\n\r\n1. If you have a contract that hits the max contract size limit and there is too much code or dependency upon storage variables to separate it out into regular contracts, then you can make it an immutable diamond (which has no max size).  Cool thing about making it a diamond is that you still break your big contract into smaller contracts, modularizing your code to a degree. A good description of a diamond is this:  A group of contracts that share the same storage variables and address.\r\n\r\n2. You can start with an upgradeable diamond in your development and testing and upgrade it to your heart's delight. Reap the advantages of easy upgrading and a stable address as you work out new features, bugs and kinks.  Release the upgradeable contract on a test network with your application for beta testing and upgrade it when needed. This is iterative development. When it is all solid then make it an immutable diamond and launch it on the main network. \r\n\r\nObfuscation exists when there are no tools to make something transparent and clear. This standard standardizes diamonds so that tools can be written for them so they are transparent and clear.\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/592692014/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

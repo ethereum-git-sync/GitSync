@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "MonarthS"
+    },
+    "number": 2758,
+    "title": "Etherscan contract verification plugin - service broken",
+    "updatedAt": "2022-08-12T08:03:29Z"
+  },
+  {
+    "author": {
+      "login": "MonarthS"
+    },
+    "number": 2757,
+    "title": "Add support for other explorer same as Etherscan in contract verifier plugin",
+    "updatedAt": "2022-08-12T05:24:52Z"
+  },
+  {
+    "author": {
       "login": "axic"
     },
     "number": 247,

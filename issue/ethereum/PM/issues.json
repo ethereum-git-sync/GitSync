@@ -3,9 +3,33 @@
     "author": {
       "login": "timbeiko"
     },
-    "number": 592,
-    "title": "Ethereum Core Devs Meeting 145 Agenda",
-    "updatedAt": "2022-08-11T15:39:08Z"
+    "number": 586,
+    "title": "EIP-4844 Breakout Room #3",
+    "updatedAt": "2022-08-12T21:34:10Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 598,
+    "title": "Consensus-layer Call 94",
+    "updatedAt": "2022-08-12T21:26:21Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 599,
+    "title": "Merge Community Call #7",
+    "updatedAt": "2022-08-12T16:08:25Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 580,
+    "title": "Merge Community Call #6",
+    "updatedAt": "2022-08-12T15:52:09Z"
   },
   {
     "author": {
@@ -13,7 +37,15 @@
     },
     "number": 594,
     "title": "Consensus-layer Call 93",
-    "updatedAt": "2022-08-11T15:26:49Z"
+    "updatedAt": "2022-08-12T13:14:26Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 592,
+    "title": "Ethereum Core Devs Meeting 145 Agenda",
+    "updatedAt": "2022-08-11T15:39:08Z"
   },
   {
     "author": {
@@ -22,14 +54,6 @@
     "number": 450,
     "title": "Shanghai Planning",
     "updatedAt": "2022-08-11T06:06:16Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 586,
-    "title": "EIP-4844 Breakout Room #3",
-    "updatedAt": "2022-08-05T18:01:46Z"
   },
   {
     "author": {
@@ -126,14 +150,6 @@
     "number": 572,
     "title": "Ethereum Core Devs Meeting 143 Agenda",
     "updatedAt": "2022-07-21T16:37:34Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 580,
-    "title": "Merge Community Call #6",
-    "updatedAt": "2022-07-18T16:43:36Z"
   },
   {
     "author": {

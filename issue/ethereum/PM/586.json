@@ -49,11 +49,11 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-07-29T17:35:44Z",
-  "updated_at": "2022-08-05T18:01:46Z",
+  "updated_at": "2022-08-12T21:34:10Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "### Meeting Info\r\n* [August 17, 2022, 14:00 UTC](https://savvytime.com/converter/utc-to-germany-berlin-united-kingdom-london-ny-new-york-city-ca-san-francisco-china-shanghai-japan-tokyo-australia-sydney/aug-17-2022/2pm)\r\n* Duration: 60 minutes\r\n* Youtube Recording: https://www.youtube.com/watch?v=t8B7NBRPBfg \r\n* [Call notes](https://docs.google.com/document/d/1KgKZnb5P07rdLBb_nRCaXhzG_4PBoZXtFQNzKO2mrvc/edit)\r\n\r\n### Agenda\r\n\r\n1. Implementation updates \r\n1. [KZG Ceremony](https://github.com/ethereum/kzg-ceremony-specs) updates \r\n1. [4844 Open Issues](https://notes.ethereum.org/@timbeiko/4844-open-issues)\r\n1. Next steps \r\n",
+  "body": "### Meeting Info\r\n* [August 17, 2022, 14:00 UTC](https://savvytime.com/converter/utc-to-germany-berlin-united-kingdom-london-ny-new-york-city-ca-san-francisco-china-shanghai-japan-tokyo-australia-sydney/aug-17-2022/2pm)\r\n* Duration: 60 minutes\r\n* Youtube Recording: TBA\r\n* Zoom: https://ethereumfoundation.zoom.us/j/83288945150?pwd=bVJFTUQ0T3NVVFErcUFxVEplY1dnZz09\r\n\r\n### Agenda\r\n\r\n1. Implementation updates \r\n1. [KZG Ceremony](https://github.com/ethereum/kzg-ceremony-specs) updates \r\n1. [4844 Open Issues](https://notes.ethereum.org/@timbeiko/4844-open-issues)\r\n    * Updates on things scheduled for https://github.com/ethereum/pm/issues/594\r\n1. Next steps \r\n",
   "closed_by": {
     "login": "timbeiko",
     "id": 9390255,

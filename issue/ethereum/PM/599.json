@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/pm/issues/599",
+  "repository_url": "https://api.github.com/repos/ethereum/pm",
+  "labels_url": "https://api.github.com/repos/ethereum/pm/issues/599/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/pm/issues/599/comments",
+  "events_url": "https://api.github.com/repos/ethereum/pm/issues/599/events",
+  "html_url": "https://github.com/ethereum/pm/issues/599",
+  "id": 1337388201,
+  "node_id": "I_kwDOBCfO0M5Ptuyp",
+  "number": 599,
+  "title": "Merge Community Call #7",
+  "user": {
+    "login": "tvanepps",
+    "id": 27454964,
+    "node_id": "MDQ6VXNlcjI3NDU0OTY0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/27454964?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tvanepps",
+    "html_url": "https://github.com/tvanepps",
+    "followers_url": "https://api.github.com/users/tvanepps/followers",
+    "following_url": "https://api.github.com/users/tvanepps/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tvanepps/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tvanepps/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tvanepps/subscriptions",
+    "organizations_url": "https://api.github.com/users/tvanepps/orgs",
+    "repos_url": "https://api.github.com/users/tvanepps/repos",
+    "events_url": "https://api.github.com/users/tvanepps/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tvanepps/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2866593601,
+      "node_id": "MDU6TGFiZWwyODY2NTkzNjAx",
+      "url": "https://api.github.com/repos/ethereum/pm/labels/agenda",
+      "name": "agenda",
+      "color": "0052cc",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-12T16:01:47Z",
+  "updated_at": "2022-08-12T16:08:25Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Friday, Sept 9 at 14:00 UTC (10:00 ET)\r\nDuration: 60 mins\r\n\r\n→ [Zoom Link](https://ethereumfoundation.zoom.us/j/88654262834?pwd=K1VtcElFU0hKL2szQXF4RmF4VVA4Zz09)\r\n→ [Add to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=M2wxZ284b2o3MDZyZnNoYjBmdHAwdTgwcnQgY191cGFvZm9uZzhtZ3JtcmtlZ243aWM3aGs1c0Bn&tmsrc=c_upaofong8mgrmrkegn7ic7hk5s%40group.calendar.google.com)\r\n→ [Subscribe](https://calendar.google.com/calendar/u/1?cid=Y191cGFvZm9uZzhtZ3JtcmtlZ243aWM3aGs1c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t) to the Ethereum Protocol Call calendar\r\n\r\n## Pre-call Resources\r\n- [How The Merge Impacts Ethereum’s Application Layer](https://blog.ethereum.org/2021/11/29/how-the-merge-impacts-app-layer/)\r\n- [AllCoreDevs Update 007 ⛓](https://hackmd.io/@timbeiko/acd/https%3A%2F%2Ftim.mirror.xyz%2FsR23jU02we6zXRgsF_oTUkttL83S3vyn05vJWnnp-Lc) - details about post merge Execution and Consensus client architectures\r\n- [Mega Merge Resource List 🐼](https://notes.ethereum.org/Moiv99h9QTmI-imPL8pvQg?view)\r\n\r\n## Discussion\r\n- Bellatrix update\r\n- TTD estimation\r\n- [post-Merge testnets](https://ethereum-magicians.org/t/og-council-post-merge-testnets/9034)\r\n- block times go from ~13s to exactly 12s. may impact lending protocols and how they calculate annual rates (use timestamps)\r\n- setting fee recipient: tx fees go to validator address on the Execution layer: [see here](https://github.com/ethereum/execution-apis/blob/main/src/engine/specification.md#payloadattributesv1)\r\n- Validators need to run both Execution and Consensus clients - and diversity matters for both EL and CL clients: [guides here](https://clientdiversity.org/#switch)\r\n\r\n↓ Leave a comment to add a topic ↓",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/pm/issues/599/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/pm/issues/599/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

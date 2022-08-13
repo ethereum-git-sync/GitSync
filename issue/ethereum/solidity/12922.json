@@ -40,7 +40,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "wechman",
@@ -87,12 +87,31 @@
   "milestone": null,
   "comments": 3,
   "created_at": "2022-04-11T09:18:05Z",
-  "updated_at": "2022-07-18T11:34:01Z",
-  "closed_at": null,
+  "updated_at": "2022-08-12T09:29:10Z",
+  "closed_at": "2022-08-12T09:29:10Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "We have comparably decent test coverage and fuzzing confirmation for data integrity on decoding valid calldata encodings.\r\nHowever, we have only sparse coverage for calldata validation, leading to bugs like https://github.com/ethereum/solidity/pull/12907 going unnoticed.\r\n\r\nWhile it is hard to test *everything* (this would mean checking all combinations between static and dynamic types up to three dimensions and in each verify the bounds checks for re-encoding, index accessing, copying to memory and copying to storage, resulting in an enormous test space), and we should also try to employ fuzzing for the validation part (see https://github.com/ethereum/solidity/issues/12914), at least *some* more coverage in the unit tests would be good as well.\r\n\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/12922/reactions",
     "total_count": 0,
@@ -107,7 +126,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12922/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

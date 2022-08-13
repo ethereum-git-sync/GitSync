@@ -40,21 +40,40 @@
       "description": "Any changes to the language, e.g. new features"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2021-12-15T06:51:41Z",
-  "updated_at": "2022-01-03T05:39:30Z",
-  "closed_at": null,
+  "updated_at": "2022-08-12T13:01:34Z",
+  "closed_at": "2022-08-12T13:01:34Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "## Description\r\n\r\nIf trying to look up an overloaded function, e.g. `transfer` which is defined both as `transfer(address,uint256)` (ERC20) and `transfer(address,uint256,bytes)` (ERC223), then Solidity gives a warning:\r\n\r\n```\r\n// TypeError: Member \"transfer\" not unique after argument-dependent lookup in contract\r\nthis.transfer.selector\r\n```\r\n\r\nIt would be great if it were possible to look up functions based on parameter types:\r\n\r\n```\r\nthis.transfer(address,uint256).selector\r\n```\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.10\r\n- Target EVM version (as per compiler settings): default\r\n- Framework/IDE (e.g. Truffle or Remix): Remix\r\n- EVM execution environment / backend / blockchain client:\r\n- Operating system: Linux\r\n\r\n## Steps to Reproduce\r\n\r\nAs above",
-  "closed_by": null,
+  "closed_by": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/12409/reactions",
     "total_count": 2,
@@ -69,8 +88,51 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12409/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1213086895",
+    "html_url": "https://github.com/ethereum/solidity/issues/12409#issuecomment-1213086895",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12409",
+    "id": 1213086895,
+    "node_id": "IC_kwDOAm_5kc5ITjyv",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-12T13:01:34Z",
+    "updated_at": "2022-08-12T13:01:34Z",
+    "author_association": "MEMBER",
+    "body": "Closing this as a duplicate of https://github.com/ethereum/solidity/issues/3556",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1213086895/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

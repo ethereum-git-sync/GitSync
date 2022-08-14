@@ -1,6 +1,54 @@
 [
   {
     "author": {
+      "login": "engn33r"
+    },
+    "number": 13073,
+    "title": "Cannot replicate SMTChecker example output",
+    "updatedAt": "2022-08-13T20:47:40Z"
+  },
+  {
+    "author": {
+      "login": "nishant-sachdeva"
+    },
+    "number": 13320,
+    "title": "Improve memory management/allocation",
+    "updatedAt": "2022-08-13T16:55:25Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13146,
+    "title": "CMake option to disable pedantic builds.",
+    "updatedAt": "2022-08-13T13:32:05Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13181,
+    "title": "[Legacy codegen] Incorrect logging data possibly due to memory corruption via inline assembly",
+    "updatedAt": "2022-08-13T07:07:12Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13180,
+    "title": "[Legacy codegen] Higher order bits not sign-extended in signed integer array in storage that may be accessed via inline assembly",
+    "updatedAt": "2022-08-13T07:06:52Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 13122,
+    "title": "Upgrade emscripten to 3.2.0+",
+    "updatedAt": "2022-08-13T03:11:17Z"
+  },
+  {
+    "author": {
       "login": "fulldecent"
     },
     "number": 13373,
@@ -337,14 +385,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 13146,
-    "title": "CMake option to disable pedantic builds.",
-    "updatedAt": "2022-08-05T12:18:54Z"
-  },
-  {
-    "author": {
       "login": "Marenz"
     },
     "number": 13252,
@@ -574,14 +614,6 @@
     "number": 13297,
     "title": "Chained tuple assignments fail typecheck",
     "updatedAt": "2022-07-28T15:12:48Z"
-  },
-  {
-    "author": {
-      "login": "nishant-sachdeva"
-    },
-    "number": 13320,
-    "title": "Improve memory management/allocation",
-    "updatedAt": "2022-07-28T13:41:21Z"
   },
   {
     "author": {
@@ -1441,22 +1473,6 @@
   },
   {
     "author": {
-      "login": "bshastry"
-    },
-    "number": 13181,
-    "title": "[Legacy codegen] Incorrect logging data possibly due to memory corruption via inline assembly",
-    "updatedAt": "2022-06-21T12:01:07Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 13180,
-    "title": "[Legacy codegen] Higher order bits not sign-extended in signed integer array in storage that may be accessed via inline assembly",
-    "updatedAt": "2022-06-21T08:18:10Z"
-  },
-  {
-    "author": {
       "login": "k06a"
     },
     "number": 13176,
@@ -1598,14 +1614,6 @@
     "number": 13121,
     "title": "Old Z3 is not supported (should enforce in CMake)",
     "updatedAt": "2022-06-16T13:00:48Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 13122,
-    "title": "Upgrade emscripten to 3.2.0+",
-    "updatedAt": "2022-06-16T12:36:10Z"
   },
   {
     "author": {
@@ -1806,14 +1814,6 @@
     "number": 12896,
     "title": "Custom error is described as \"function() pure\" instead of \"error\" in error messages in case of explicit conversions",
     "updatedAt": "2022-06-08T14:14:20Z"
-  },
-  {
-    "author": {
-      "login": "engn33r"
-    },
-    "number": 13073,
-    "title": "Cannot replicate SMTChecker example output",
-    "updatedAt": "2022-06-08T09:22:39Z"
   },
   {
     "author": {

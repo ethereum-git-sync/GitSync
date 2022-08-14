@@ -1,6 +1,30 @@
 [
   {
     "author": {
+      "login": "imJackWilson"
+    },
+    "number": 25522,
+    "title": "Hello, I've got to ask something, what happened if i hold eth till the merg, what will happen to my eth holdings? Will it be $0 or it will transfer to new eth2? And after the merg is there any chances of eth2 prices will plunge?",
+    "updatedAt": "2022-08-13T22:55:55Z"
+  },
+  {
+    "author": {
+      "login": "xrchz"
+    },
+    "number": 23191,
+    "title": "State heal phase is very slow (not finished after 2 weeks)",
+    "updatedAt": "2022-08-13T18:13:24Z"
+  },
+  {
+    "author": {
+      "login": "kledgold"
+    },
+    "number": 25521,
+    "title": "About eth2.0",
+    "updatedAt": "2022-08-13T17:40:24Z"
+  },
+  {
+    "author": {
       "login": "hdiass"
     },
     "number": 25517,
@@ -398,14 +422,6 @@
     "number": 23986,
     "title": "New txpool policy doesn't really fill the txpool",
     "updatedAt": "2022-08-01T23:08:07Z"
-  },
-  {
-    "author": {
-      "login": "xrchz"
-    },
-    "number": 23191,
-    "title": "State heal phase is very slow (not finished after 2 weeks)",
-    "updatedAt": "2022-08-01T18:56:22Z"
   },
   {
     "author": {

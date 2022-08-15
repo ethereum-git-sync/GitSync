@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "playsnook"
+    },
+    "number": 1843,
+    "title": "Debugger reports \"debug_traceTransaction\" does not exists when connected through Metamask with private RPC which has 'debug_traceTransaction\"",
+    "updatedAt": "2022-08-14T08:16:21Z"
+  },
+  {
+    "author": {
       "login": "MonarthS"
     },
     "number": 2758,
@@ -1182,14 +1190,6 @@
     "number": 2466,
     "title": "change name of File Explorers to File Explorer",
     "updatedAt": "2022-06-29T09:04:37Z"
-  },
-  {
-    "author": {
-      "login": "playsnook"
-    },
-    "number": 1843,
-    "title": "Debugger reports \"debug_traceTransaction\" does not exists when connected through Metamask with private RPC which has 'debug_traceTransaction\"",
-    "updatedAt": "2022-06-28T05:16:52Z"
   },
   {
     "author": {

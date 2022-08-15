@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "VexyCats"
+    },
+    "number": 2907,
+    "title": "Discussion for EIP-2981: NFT Royalty Standard",
+    "updatedAt": "2022-08-14T05:43:38Z"
+  },
+  {
+    "author": {
       "login": "Pandapip1"
     },
     "number": 5452,
@@ -206,14 +214,6 @@
     "number": 3772,
     "title": "ERC: Compressed Integers",
     "updatedAt": "2022-08-02T00:20:42Z"
-  },
-  {
-    "author": {
-      "login": "VexyCats"
-    },
-    "number": 2907,
-    "title": "Discussion for EIP-2981: NFT Royalty Standard",
-    "updatedAt": "2022-08-01T10:06:15Z"
   },
   {
     "author": {

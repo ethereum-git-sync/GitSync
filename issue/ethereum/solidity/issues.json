@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "PeterBorah"
+    },
+    "number": 683,
+    "title": "Remove tx.origin",
+    "updatedAt": "2022-08-14T11:38:20Z"
+  },
+  {
+    "author": {
+      "login": "migoldfinger"
+    },
+    "number": 13375,
+    "title": "Different gas cost when using Libraries with using and without",
+    "updatedAt": "2022-08-14T10:49:53Z"
+  },
+  {
+    "author": {
+      "login": "mojtaba-eshghie"
+    },
+    "number": 13390,
+    "title": "Not possible to define the same function signature (overload/override) in a sub-contract with \"only\" different return types",
+    "updatedAt": "2022-08-14T10:07:55Z"
+  },
+  {
+    "author": {
+      "login": "CryptoKiddies"
+    },
+    "number": 13330,
+    "title": "Inherited modifier which invokes private function should not compile",
+    "updatedAt": "2022-08-14T08:37:06Z"
+  },
+  {
+    "author": {
       "login": "engn33r"
     },
     "number": 13073,
@@ -182,14 +214,6 @@
     "number": 13308,
     "title": "Stop the war on for loops",
     "updatedAt": "2022-08-10T15:10:57Z"
-  },
-  {
-    "author": {
-      "login": "migoldfinger"
-    },
-    "number": 13375,
-    "title": "Different gas cost when using Libraries with using and without",
-    "updatedAt": "2022-08-10T15:01:24Z"
   },
   {
     "author": {
@@ -585,14 +609,6 @@
   },
   {
     "author": {
-      "login": "CryptoKiddies"
-    },
-    "number": 13330,
-    "title": "Inherited modifier which invokes private function should not compile",
-    "updatedAt": "2022-07-29T03:55:12Z"
-  },
-  {
-    "author": {
       "login": "ben-kaufman"
     },
     "number": 4630,
@@ -878,14 +894,6 @@
     "number": 13278,
     "title": "Bug: Compiler should not error on detecting multiple `// spdx` (non-natspec'd)",
     "updatedAt": "2022-07-19T10:24:09Z"
-  },
-  {
-    "author": {
-      "login": "PeterBorah"
-    },
-    "number": 683,
-    "title": "Remove tx.origin",
-    "updatedAt": "2022-07-19T07:48:42Z"
   },
   {
     "author": {

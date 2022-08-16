@@ -1,6 +1,78 @@
 [
   {
     "author": {
+      "login": "YangYang129"
+    },
+    "number": 12027,
+    "title": "Compile ASTJsonConverter.cpp failed to \"error C3861: 'iter_swap': identifier not found\" and \"error C2672: 'ranges::iter_swap': no matching overloaded function found\"",
+    "updatedAt": "2022-08-15T19:41:07Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 13226,
+    "title": "Strengthen Whiskers' matching",
+    "updatedAt": "2022-08-15T16:57:57Z"
+  },
+  {
+    "author": {
+      "login": "aarlt"
+    },
+    "number": 13395,
+    "title": "Solidity UI - Would such tool be useful?",
+    "updatedAt": "2022-08-15T16:18:29Z"
+  },
+  {
+    "author": {
+      "login": "timweri"
+    },
+    "number": 13392,
+    "title": "buildpack-deps jobs are failing due to `arrlt/comment-on-pr`",
+    "updatedAt": "2022-08-15T13:11:15Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13216,
+    "title": "[Codegen] Recursive fallback function call runs out of gas via legacy but does not via IR",
+    "updatedAt": "2022-08-15T11:51:32Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13180,
+    "title": "[Legacy codegen] Higher order bits not sign-extended in signed integer array in storage that may be accessed via inline assembly",
+    "updatedAt": "2022-08-15T11:03:32Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13368,
+    "title": "Add parser support for ``code`` data location.",
+    "updatedAt": "2022-08-15T10:17:40Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13181,
+    "title": "[Legacy codegen] Incorrect logging data possibly due to memory corruption via inline assembly",
+    "updatedAt": "2022-08-15T09:28:43Z"
+  },
+  {
+    "author": {
+      "login": "mojtaba-eshghie"
+    },
+    "number": 13390,
+    "title": "Not possible to define the same function signature (overload/override) in a sub-contract with \"only\" different return types",
+    "updatedAt": "2022-08-15T06:42:10Z"
+  },
+  {
+    "author": {
       "login": "PeterBorah"
     },
     "number": 683,
@@ -14,14 +86,6 @@
     "number": 13375,
     "title": "Different gas cost when using Libraries with using and without",
     "updatedAt": "2022-08-14T10:49:53Z"
-  },
-  {
-    "author": {
-      "login": "mojtaba-eshghie"
-    },
-    "number": 13390,
-    "title": "Not possible to define the same function signature (overload/override) in a sub-contract with \"only\" different return types",
-    "updatedAt": "2022-08-14T10:07:55Z"
   },
   {
     "author": {
@@ -57,22 +121,6 @@
   },
   {
     "author": {
-      "login": "bshastry"
-    },
-    "number": 13181,
-    "title": "[Legacy codegen] Incorrect logging data possibly due to memory corruption via inline assembly",
-    "updatedAt": "2022-08-13T07:07:12Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 13180,
-    "title": "[Legacy codegen] Higher order bits not sign-extended in signed integer array in storage that may be accessed via inline assembly",
-    "updatedAt": "2022-08-13T07:06:52Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 13122,
@@ -102,14 +150,6 @@
     "number": 13212,
     "title": "Allow declaration of multiple variables in first clause of `for` statement",
     "updatedAt": "2022-08-12T14:25:09Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 13216,
-    "title": "[Codegen] Recursive fallback function call runs out of gas via legacy but does not via IR",
-    "updatedAt": "2022-08-12T14:00:55Z"
   },
   {
     "author": {
@@ -246,14 +286,6 @@
     "number": 13224,
     "title": "ENS external test fails compilation via IR: `Could not create stack layout after 1000 iterations`",
     "updatedAt": "2022-08-09T15:55:34Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 13368,
-    "title": "Add parser support for ``code`` data location.",
-    "updatedAt": "2022-08-09T15:21:14Z"
   },
   {
     "author": {
@@ -1254,14 +1286,6 @@
     "number": 13213,
     "title": "\"for each\" iteration through arrays",
     "updatedAt": "2022-07-04T09:24:51Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 13226,
-    "title": "Strengthen Whiskers' matching",
-    "updatedAt": "2022-07-04T09:21:05Z"
   },
   {
     "author": {
@@ -6326,14 +6350,6 @@
     "number": 12077,
     "title": "Conan recipe for simplifying build and install of solidity",
     "updatedAt": "2021-10-04T09:10:02Z"
-  },
-  {
-    "author": {
-      "login": "YangYang129"
-    },
-    "number": 12027,
-    "title": "Compile ASTJsonConverter.cpp failed to \"error C3861: 'iter_swap': identifier not found\" and \"error C2672: 'ranges::iter_swap': no matching overloaded function found\"",
-    "updatedAt": "2021-10-01T20:26:43Z"
   },
   {
     "author": {

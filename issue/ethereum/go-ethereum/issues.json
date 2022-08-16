@@ -1,11 +1,35 @@
 [
   {
     "author": {
+      "login": "pokrovskyy"
+    },
+    "number": 24787,
+    "title": "Push filter updates in batch on new block",
+    "updatedAt": "2022-08-15T21:49:25Z"
+  },
+  {
+    "author": {
       "login": "sjmini"
     },
     "number": 25505,
     "title": "Missing totalDifficulty",
-    "updatedAt": "2022-08-14T06:52:55Z"
+    "updatedAt": "2022-08-15T15:02:01Z"
+  },
+  {
+    "author": {
+      "login": "rjl493456442"
+    },
+    "number": 25390,
+    "title": "all: PRs for Path-based state scheme",
+    "updatedAt": "2022-08-15T03:19:36Z"
+  },
+  {
+    "author": {
+      "login": "hdiass"
+    },
+    "number": 25517,
+    "title": "--exitwhensynced doesn't work after the goerli merge",
+    "updatedAt": "2022-08-15T01:30:50Z"
   },
   {
     "author": {
@@ -30,14 +54,6 @@
     "number": 25521,
     "title": "About eth2.0",
     "updatedAt": "2022-08-13T17:40:24Z"
-  },
-  {
-    "author": {
-      "login": "hdiass"
-    },
-    "number": 25517,
-    "title": "--exitwhensynced doesn't work after the goerli merge",
-    "updatedAt": "2022-08-12T14:17:36Z"
   },
   {
     "author": {
@@ -150,14 +166,6 @@
     "number": 25484,
     "title": "ropsten  eth.syncing is false but eth.blockNumber is not latest",
     "updatedAt": "2022-08-09T12:37:37Z"
-  },
-  {
-    "author": {
-      "login": "rjl493456442"
-    },
-    "number": 25390,
-    "title": "all: PRs for Path-based state scheme",
-    "updatedAt": "2022-08-09T09:44:54Z"
   },
   {
     "author": {
@@ -750,14 +758,6 @@
     "number": 25393,
     "title": "Geth Command failed ",
     "updatedAt": "2022-07-25T09:41:37Z"
-  },
-  {
-    "author": {
-      "login": "pokrovskyy"
-    },
-    "number": 24787,
-    "title": "Push filter updates in batch on new block",
-    "updatedAt": "2022-07-25T06:03:34Z"
   },
   {
     "author": {

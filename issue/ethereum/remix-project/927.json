@@ -77,9 +77,9 @@
     }
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2021-02-25T11:24:01Z",
-  "updated_at": "2021-03-01T09:57:37Z",
+  "updated_at": "2022-08-15T07:32:40Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -102,5 +102,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1214707541",
+    "html_url": "https://github.com/ethereum/remix-project/issues/927#issuecomment-1214707541",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/927",
+    "id": 1214707541,
+    "node_id": "IC_kwDODtLRw85IZvdV",
+    "user": {
+      "login": "Aniket-Engg",
+      "id": 30843294,
+      "node_id": "MDQ6VXNlcjMwODQzMjk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aniket-Engg",
+      "html_url": "https://github.com/Aniket-Engg",
+      "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+      "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+      "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+      "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-15T07:32:39Z",
+    "updated_at": "2022-08-15T07:32:39Z",
+    "author_association": "MEMBER",
+    "body": "@UgOrange Do you still see the issue with latest version of remixd?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1214707541/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

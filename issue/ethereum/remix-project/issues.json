@@ -1,6 +1,30 @@
 [
   {
     "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2720,
+    "title": "issues with vyper plugin",
+    "updatedAt": "2022-08-16T13:40:58Z"
+  },
+  {
+    "author": {
+      "login": "ss22219"
+    },
+    "number": 2655,
+    "title": "[remixd] Crash with no message when other program is already using port 65522",
+    "updatedAt": "2022-08-16T12:30:23Z"
+  },
+  {
+    "author": {
+      "login": "playsnook"
+    },
+    "number": 1843,
+    "title": "Debugger reports \"debug_traceTransaction\" does not exists when connected through Metamask with private RPC which has 'debug_traceTransaction\"",
+    "updatedAt": "2022-08-16T09:16:54Z"
+  },
+  {
+    "author": {
       "login": "LianaHus"
     },
     "number": 131,
@@ -137,14 +161,6 @@
   },
   {
     "author": {
-      "login": "playsnook"
-    },
-    "number": 1843,
-    "title": "Debugger reports \"debug_traceTransaction\" does not exists when connected through Metamask with private RPC which has 'debug_traceTransaction\"",
-    "updatedAt": "2022-08-14T08:16:21Z"
-  },
-  {
-    "author": {
       "login": "MonarthS"
     },
     "number": 2757,
@@ -166,14 +182,6 @@
     "number": 2721,
     "title": "add e2e for 'calls' url Param",
     "updatedAt": "2022-08-11T12:38:26Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2720,
-    "title": "issues with vyper plugin",
-    "updatedAt": "2022-08-11T10:12:27Z"
   },
   {
     "author": {
@@ -502,14 +510,6 @@
     "number": 2580,
     "title": "Explore @openzeppelin/wizard for workspace templates",
     "updatedAt": "2022-07-27T11:40:56Z"
-  },
-  {
-    "author": {
-      "login": "ss22219"
-    },
-    "number": 2655,
-    "title": "[remixd] Crash with no message when other program is already using port 65522",
-    "updatedAt": "2022-07-27T11:40:46Z"
   },
   {
     "author": {

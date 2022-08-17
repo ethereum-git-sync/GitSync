@@ -5,47 +5,23 @@
     },
     "number": 599,
     "title": "Merge Community Call #7",
-    "updatedAt": "2022-08-15T20:57:17Z"
+    "updatedAt": "2022-08-16T18:14:54Z"
   },
   {
     "author": {
-      "login": "meowsoftware"
+      "login": "timbeiko"
     },
-    "number": 605,
-    "title": "SPAM",
-    "updatedAt": "2022-08-15T20:52:56Z"
+    "number": 586,
+    "title": "EIP-4844 Breakout Room #3",
+    "updatedAt": "2022-08-16T15:28:58Z"
   },
   {
     "author": {
-      "login": "meowsoftware"
+      "login": "tvanepps"
     },
-    "number": 604,
-    "title": "SPAM",
-    "updatedAt": "2022-08-15T20:52:43Z"
-  },
-  {
-    "author": {
-      "login": "meowsoftware"
-    },
-    "number": 603,
-    "title": "SPAM",
-    "updatedAt": "2022-08-15T20:52:29Z"
-  },
-  {
-    "author": {
-      "login": "meowsoftware"
-    },
-    "number": 602,
-    "title": "Spam",
-    "updatedAt": "2022-08-15T17:31:48Z"
-  },
-  {
-    "author": {
-      "login": "meowsoftware"
-    },
-    "number": 601,
-    "title": "Spam",
-    "updatedAt": "2022-08-15T17:31:30Z"
+    "number": 593,
+    "title": "KZG-Ceremony Call #6",
+    "updatedAt": "2022-08-16T15:12:39Z"
   },
   {
     "author": {
@@ -54,14 +30,6 @@
     "number": 592,
     "title": "Ethereum Core Devs Meeting 145 Agenda",
     "updatedAt": "2022-08-15T08:52:53Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 586,
-    "title": "EIP-4844 Breakout Room #3",
-    "updatedAt": "2022-08-12T21:34:10Z"
   },
   {
     "author": {
@@ -110,14 +78,6 @@
     "number": 438,
     "title": "Proposal to include EIP-1153 in Shanghai",
     "updatedAt": "2022-08-04T21:08:23Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 593,
-    "title": "KZG-Ceremony Call #6",
-    "updatedAt": "2022-08-04T18:32:25Z"
   },
   {
     "author": {

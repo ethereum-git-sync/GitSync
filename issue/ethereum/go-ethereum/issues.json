@@ -1,27 +1,51 @@
 [
   {
     "author": {
-      "login": "pokrovskyy"
-    },
-    "number": 24787,
-    "title": "Push filter updates in batch on new block",
-    "updatedAt": "2022-08-15T21:49:25Z"
-  },
-  {
-    "author": {
       "login": "sjmini"
     },
     "number": 25505,
     "title": "Missing totalDifficulty",
-    "updatedAt": "2022-08-15T15:02:01Z"
+    "updatedAt": "2022-08-16T21:48:15Z"
   },
   {
     "author": {
-      "login": "rjl493456442"
+      "login": "GLAD-DE"
     },
-    "number": 25390,
-    "title": "all: PRs for Path-based state scheme",
-    "updatedAt": "2022-08-15T03:19:36Z"
+    "number": 24083,
+    "title": "Error \"peer connected on snap without compatible eth support\" with a private network",
+    "updatedAt": "2022-08-16T21:19:21Z"
+  },
+  {
+    "author": {
+      "login": "hostgame"
+    },
+    "number": 25536,
+    "title": "personal_signTransaction improperly requires both maxFeePerGas and maxPriorityFeePerGas",
+    "updatedAt": "2022-08-16T20:14:16Z"
+  },
+  {
+    "author": {
+      "login": "crystalgarden"
+    },
+    "number": 25534,
+    "title": "eth_syncing returns 'false' while Geth node is still syncing",
+    "updatedAt": "2022-08-16T16:02:36Z"
+  },
+  {
+    "author": {
+      "login": "DubbaThony"
+    },
+    "number": 25498,
+    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
+    "updatedAt": "2022-08-16T11:33:09Z"
+  },
+  {
+    "author": {
+      "login": "dzou"
+    },
+    "number": 24457,
+    "title": "[Question] Why does snap sync sometimes switch to full sync?",
+    "updatedAt": "2022-08-16T10:25:07Z"
   },
   {
     "author": {
@@ -29,7 +53,31 @@
     },
     "number": 25517,
     "title": "--exitwhensynced doesn't work after the goerli merge",
-    "updatedAt": "2022-08-15T01:30:50Z"
+    "updatedAt": "2022-08-16T09:14:47Z"
+  },
+  {
+    "author": {
+      "login": "bububut"
+    },
+    "number": 25347,
+    "title": "memory consumption keeps increasing and killed by OOM killer",
+    "updatedAt": "2022-08-16T08:59:12Z"
+  },
+  {
+    "author": {
+      "login": "rjl493456442"
+    },
+    "number": 25390,
+    "title": "all: PRs for Path-based state scheme",
+    "updatedAt": "2022-08-16T08:47:12Z"
+  },
+  {
+    "author": {
+      "login": "pokrovskyy"
+    },
+    "number": 24787,
+    "title": "Push filter updates in batch on new block",
+    "updatedAt": "2022-08-15T21:49:25Z"
   },
   {
     "author": {
@@ -94,14 +142,6 @@
     "number": 25513,
     "title": "After goerli testnet merge, jsonRPC `eth_getFilterLogs` sometimes can't get correct results.",
     "updatedAt": "2022-08-12T04:56:07Z"
-  },
-  {
-    "author": {
-      "login": "DubbaThony"
-    },
-    "number": 25498,
-    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
-    "updatedAt": "2022-08-11T09:46:34Z"
   },
   {
     "author": {
@@ -478,14 +518,6 @@
     "number": 25436,
     "title": "Clique private network snap sync stops few blocks before the latest block and does not complete.",
     "updatedAt": "2022-08-01T09:42:04Z"
-  },
-  {
-    "author": {
-      "login": "bububut"
-    },
-    "number": 25347,
-    "title": "memory consumption keeps increasing and killed by OOM killer",
-    "updatedAt": "2022-08-01T09:20:33Z"
   },
   {
     "author": {
@@ -1350,14 +1382,6 @@
     "number": 14831,
     "title": "how to initialize a account in genesis.json file and fund it some money before mining?thank you.",
     "updatedAt": "2022-07-06T02:00:14Z"
-  },
-  {
-    "author": {
-      "login": "GLAD-DE"
-    },
-    "number": 24083,
-    "title": "Error \"peer connected on snap without compatible eth support\" with a private network",
-    "updatedAt": "2022-07-06T00:32:47Z"
   },
   {
     "author": {
@@ -2918,14 +2942,6 @@
     "number": 24829,
     "title": "ethclient.Client should support for upcoming block definitions (safe, unsafe, finalized)",
     "updatedAt": "2022-05-12T08:43:21Z"
-  },
-  {
-    "author": {
-      "login": "dzou"
-    },
-    "number": 24457,
-    "title": "[Question] Why does snap sync sometimes switch to full sync?",
-    "updatedAt": "2022-05-12T07:43:07Z"
   },
   {
     "author": {

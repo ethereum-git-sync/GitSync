@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25534",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25534/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25534/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25534/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25534",
+  "id": 1340573567,
+  "node_id": "I_kwDOAOvK985P54d_",
+  "number": 25534,
+  "title": "eth_syncing returns 'false' while Geth node is still syncing",
+  "user": {
+    "login": "crystalgarden",
+    "id": 111375696,
+    "node_id": "U_kgDOBqN1UA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/111375696?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/crystalgarden",
+    "html_url": "https://github.com/crystalgarden",
+    "followers_url": "https://api.github.com/users/crystalgarden/followers",
+    "following_url": "https://api.github.com/users/crystalgarden/following{/other_user}",
+    "gists_url": "https://api.github.com/users/crystalgarden/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/crystalgarden/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/crystalgarden/subscriptions",
+    "organizations_url": "https://api.github.com/users/crystalgarden/orgs",
+    "repos_url": "https://api.github.com/users/crystalgarden/repos",
+    "events_url": "https://api.github.com/users/crystalgarden/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/crystalgarden/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-16T16:02:36Z",
+  "updated_at": "2022-08-16T16:02:36Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: 1.10.21-stable\r\nOS & Version: Linux\r\n\r\nGeth is paired with Prysm v2.1.4\r\n\r\n#### Expected behaviour\r\nWhile geth node is still syncing, eth_syncing API should return accurate syncing status with currentBlock and highestBlock info \r\n\r\n#### Actual behaviour\r\neth_syncing returns 'false', while eth_blockNumber is still behind the latest block. \r\n\r\n#### Steps to reproduce the behaviour\r\nStop Prysm/Geth to let the node behind the blockchain. Restart Prysm/Geth, curl eth_syncing and eth_blockNumber APIs.\r\n\r\nWe tested in both Goerli testnet and mainnet, and observed the same behavior. Is this an expected behavior post merge? If yes, what's the reliable mechanism to determine if Geth is fully in sync with the blockchain?\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25534/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25534/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

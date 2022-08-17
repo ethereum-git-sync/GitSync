@@ -1,6 +1,46 @@
 [
   {
     "author": {
+      "login": "fulldecent"
+    },
+    "number": 13371,
+    "title": "Stop recommending .transfer",
+    "updatedAt": "2022-08-16T20:03:59Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 4642,
+    "title": "Document semver syntax supported in version pragmas",
+    "updatedAt": "2022-08-16T19:18:04Z"
+  },
+  {
+    "author": {
+      "login": "timweri"
+    },
+    "number": 13392,
+    "title": "buildpack-deps jobs are failing due to `arrlt/comment-on-pr`",
+    "updatedAt": "2022-08-16T14:55:07Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 11959,
+    "title": "Clean up the helpers around errors",
+    "updatedAt": "2022-08-16T09:26:56Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 11879,
+    "title": "Array literals should be convertible to both dynamically-sized and statically-sized arrays",
+    "updatedAt": "2022-08-16T07:12:51Z"
+  },
+  {
+    "author": {
       "login": "YangYang129"
     },
     "number": 12027,
@@ -22,14 +62,6 @@
     "number": 13395,
     "title": "Solidity UI - Would such tool be useful?",
     "updatedAt": "2022-08-15T16:18:29Z"
-  },
-  {
-    "author": {
-      "login": "timweri"
-    },
-    "number": 13392,
-    "title": "buildpack-deps jobs are failing due to `arrlt/comment-on-pr`",
-    "updatedAt": "2022-08-15T13:11:15Z"
   },
   {
     "author": {
@@ -270,14 +302,6 @@
     "number": 11407,
     "title": "Allow specifying parameter name in public mappings",
     "updatedAt": "2022-08-10T13:18:10Z"
-  },
-  {
-    "author": {
-      "login": "fulldecent"
-    },
-    "number": 13371,
-    "title": "Stop recommending .transfer",
-    "updatedAt": "2022-08-09T21:11:08Z"
   },
   {
     "author": {
@@ -1950,14 +1974,6 @@
     "number": 9351,
     "title": "Support compiling GnosisSafe with the IR",
     "updatedAt": "2022-06-01T13:18:09Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 11879,
-    "title": "Array literals should be convertible to both dynamically-sized and statically-sized arrays",
-    "updatedAt": "2022-06-01T13:06:08Z"
   },
   {
     "author": {
@@ -4241,14 +4257,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 11959,
-    "title": "Clean up the helpers around errors",
-    "updatedAt": "2022-01-07T07:15:01Z"
-  },
-  {
-    "author": {
       "login": "fulldecent"
     },
     "number": 12496,
@@ -6190,14 +6198,6 @@
     "number": 11858,
     "title": "Print code snippets next to source locations in IR",
     "updatedAt": "2021-10-12T14:39:50Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 4642,
-    "title": "Document semver syntax supported in version pragmas",
-    "updatedAt": "2021-10-11T13:52:36Z"
   },
   {
     "author": {

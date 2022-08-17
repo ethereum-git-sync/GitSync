@@ -39,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-08-09T21:11:08Z",
-  "updated_at": "2022-08-09T21:11:08Z",
+  "updated_at": "2022-08-16T20:03:59Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -64,5 +64,92 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1217102565",
+    "html_url": "https://github.com/ethereum/solidity/issues/13371#issuecomment-1217102565",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13371",
+    "id": 1217102565,
+    "node_id": "IC_kwDOAm_5kc5Ii4Ll",
+    "user": {
+      "login": "hrkrshnn",
+      "id": 13174375,
+      "node_id": "MDQ6VXNlcjEzMTc0Mzc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13174375?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hrkrshnn",
+      "html_url": "https://github.com/hrkrshnn",
+      "followers_url": "https://api.github.com/users/hrkrshnn/followers",
+      "following_url": "https://api.github.com/users/hrkrshnn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hrkrshnn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hrkrshnn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hrkrshnn/subscriptions",
+      "organizations_url": "https://api.github.com/users/hrkrshnn/orgs",
+      "repos_url": "https://api.github.com/users/hrkrshnn/repos",
+      "events_url": "https://api.github.com/users/hrkrshnn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hrkrshnn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-16T20:02:23Z",
+    "updated_at": "2022-08-16T20:02:23Z",
+    "author_association": "MEMBER",
+    "body": "I think we should clearly indicate the differences.  The function`<address>.transfer` is quite convenient and I wouldn't entirely remove it from the docs or deprecate it. The notion of `callstipend` is well-defined in the Yellowpaper and the EVM. It provides enough gas to receive the ETH and emit an event, and cannot modify state. Even when storage / opcodes gets repriced, some care is made to ensure that most contracts will continue working (see how EIP-2929 introduced access lists).\r\n\r\nThe replacement`.call{value: ...}(\"\")` adds a re-entrancy risk and solving it will cost ~3000 gas assuming full refunds. The applications that `.call{value: ...}(\"\")` allow, i.e., complex smart contract wallets, forwarding patterns etc haven't really caught up. As a comparison, standards such as ERC-777, ERC-1155 and ERC-721's hooks are largely ignored by most protocols as they increase security risks. \r\n\r\nAlso, do you have an example of a smart contract wallet that breaks on `.transfer`? (Assuming access lists can be used.)",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1217102565/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1217103980",
+    "html_url": "https://github.com/ethereum/solidity/issues/13371#issuecomment-1217103980",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13371",
+    "id": 1217103980,
+    "node_id": "IC_kwDOAm_5kc5Ii4hs",
+    "user": {
+      "login": "hrkrshnn",
+      "id": 13174375,
+      "node_id": "MDQ6VXNlcjEzMTc0Mzc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13174375?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hrkrshnn",
+      "html_url": "https://github.com/hrkrshnn",
+      "followers_url": "https://api.github.com/users/hrkrshnn/followers",
+      "following_url": "https://api.github.com/users/hrkrshnn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hrkrshnn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hrkrshnn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hrkrshnn/subscriptions",
+      "organizations_url": "https://api.github.com/users/hrkrshnn/orgs",
+      "repos_url": "https://api.github.com/users/hrkrshnn/repos",
+      "events_url": "https://api.github.com/users/hrkrshnn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hrkrshnn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-16T20:03:59Z",
+    "updated_at": "2022-08-16T20:03:59Z",
+    "author_association": "MEMBER",
+    "body": "Also relevant: https://github.com/ethereum/solidity/issues/7455 We did try to get community feedback in https://forum.soliditylang.org/t/feedback-on-address-payable-transfer/164. ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1217103980/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

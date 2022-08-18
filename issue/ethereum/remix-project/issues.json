@@ -1,11 +1,83 @@
 [
   {
     "author": {
+      "login": "pokrovskyy"
+    },
+    "number": 2777,
+    "title": "Switch between Solidity <-> Yul automatically ",
+    "updatedAt": "2022-08-17T16:23:17Z"
+  },
+  {
+    "author": {
+      "login": "pokrovskyy"
+    },
+    "number": 2776,
+    "title": "Remember state on reload",
+    "updatedAt": "2022-08-17T16:20:53Z"
+  },
+  {
+    "author": {
       "login": "Aniket-Engg"
     },
     "number": 2720,
     "title": "issues with vyper plugin",
-    "updatedAt": "2022-08-16T13:40:58Z"
+    "updatedAt": "2022-08-17T15:36:10Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 1795,
+    "title": "Debugger improvements",
+    "updatedAt": "2022-08-17T13:50:52Z"
+  },
+  {
+    "author": {
+      "login": "TokenYL"
+    },
+    "number": 2772,
+    "title": "Join gihub",
+    "updatedAt": "2022-08-17T13:04:29Z"
+  },
+  {
+    "author": {
+      "login": "yann300"
+    },
+    "number": 2775,
+    "title": "Remix get in an unresponsive loop when it has nested folder with same name.",
+    "updatedAt": "2022-08-17T12:55:34Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 688,
+    "title": "Fix debugger navigation panel",
+    "updatedAt": "2022-08-17T12:00:47Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2760,
+    "title": "fix home tab Remi and twitter, medium icons",
+    "updatedAt": "2022-08-17T11:37:00Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 247,
+    "title": "Display compiler license somewhere (in an about window)",
+    "updatedAt": "2022-08-17T10:17:26Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 2573,
+    "title": "At Address should be disabled when the input is empty",
+    "updatedAt": "2022-08-17T09:46:20Z"
   },
   {
     "author": {
@@ -13,7 +85,7 @@
     },
     "number": 2655,
     "title": "[remixd] Crash with no message when other program is already using port 65522",
-    "updatedAt": "2022-08-16T12:30:23Z"
+    "updatedAt": "2022-08-17T06:53:36Z"
   },
   {
     "author": {
@@ -30,14 +102,6 @@
     "number": 131,
     "title": "Plugin Manager: Mark native plugins",
     "updatedAt": "2022-08-15T12:00:19Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2760,
-    "title": "fix home tab Remi and twitter, medium icons",
-    "updatedAt": "2022-08-15T11:51:47Z"
   },
   {
     "author": {
@@ -105,14 +169,6 @@
   },
   {
     "author": {
-      "login": "LianaHus"
-    },
-    "number": 1795,
-    "title": "Debugger improvements",
-    "updatedAt": "2022-08-15T11:19:35Z"
-  },
-  {
-    "author": {
       "login": "ryestew"
     },
     "number": 1317,
@@ -166,14 +222,6 @@
     "number": 2757,
     "title": "Add support for other explorer same as Etherscan in contract verifier plugin",
     "updatedAt": "2022-08-12T05:24:52Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 247,
-    "title": "Display compiler license somewhere (in an about window)",
-    "updatedAt": "2022-08-11T14:13:11Z"
   },
   {
     "author": {
@@ -593,14 +641,6 @@
   },
   {
     "author": {
-      "login": "LianaHus"
-    },
-    "number": 2573,
-    "title": "At Address should be disabled when the input is empty",
-    "updatedAt": "2022-07-25T12:10:07Z"
-  },
-  {
-    "author": {
       "login": "ryestew"
     },
     "number": 1593,
@@ -630,14 +670,6 @@
     "number": 1627,
     "title": "interoperability with L2",
     "updatedAt": "2022-07-25T11:27:39Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 688,
-    "title": "Fix debugger navigation panel",
-    "updatedAt": "2022-07-25T11:24:04Z"
   },
   {
     "author": {

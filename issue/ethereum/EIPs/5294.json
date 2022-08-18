@@ -41,7 +41,7 @@
   "milestone": null,
   "comments": 14,
   "created_at": "2022-07-19T17:24:34Z",
-  "updated_at": "2022-07-24T09:56:58Z",
+  "updated_at": "2022-08-17T03:51:21Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -136,7 +136,7 @@
     },
     "created_at": "2022-07-19T19:00:57Z",
     "updated_at": "2022-07-21T13:25:27Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "Would like to add the following:\r\n\r\n<!--StartFragment-->\r\n\r\nSlug | Description\r\n-- | --\r\n`eip-number-nft` | An EIP Number NFT must be burned and linked to the Pull Request. 100 un-owned EIP numbers are assigned to each EIP editor at all times, and a transaction can be submitted that randomly burns one of those and gives a new number to the editor. \r\n`eip-number-nft-on-layer2` | Identical to `eip-number-nft`, except on a Layer 2 network (since we don't need all of the security that Ethereum provides). The smart contract would support meta-transactions with OpenGSN, and the editors would be responsible for ensuring that the fees are always paid. A GitHub action could also be added that automatically assigns a random EIP number using its own pool of NFTs. Again, EIP authors get some freedom to pick their numbers.\r\n\r\n<!--EndFragment-->\r\n\r\nEDIT: Prototype done (https://github.com/Pandapip1/EIPNumberNFT)",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1189448021/reactions",
@@ -272,13 +272,13 @@
     "body": "I, unfortunately, have volunteered to write and maintain whatever bot we agree on.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1189760354/reactions",
-      "total_count": 14,
+      "total_count": 17,
       "+1": 0,
       "-1": 0,
-      "laugh": 6,
-      "hooray": 3,
+      "laugh": 7,
+      "hooray": 4,
       "confused": 0,
-      "heart": 5,
+      "heart": 6,
       "rocket": 0,
       "eyes": 0
     },
@@ -444,7 +444,7 @@
     },
     "created_at": "2022-07-20T11:20:53Z",
     "updated_at": "2022-07-20T11:20:53Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "> @Pandapip1 Was there a reason you didn't include a trustless/permissionless NFT sale option? I don't see any reason why editors should have privileged access when we could build the system to be 100% autonomous/permissionless.\r\n\r\nI thought that was implied. I'll make it explicit.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1190150904/reactions",
@@ -532,7 +532,7 @@
     },
     "created_at": "2022-07-20T17:11:06Z",
     "updated_at": "2022-07-20T17:11:06Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "Edited the EIP Number NFT option to include a better option (IMO).",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1190538823/reactions",
@@ -620,7 +620,7 @@
     },
     "created_at": "2022-07-20T17:13:38Z",
     "updated_at": "2022-07-20T17:23:38Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "> we still would need a mechanism for number selection for people who didn't buy an NFT\r\n\r\nThe previous iteration did have a method to allow this, but I've had a better idea. Edited to include this better idea.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1190541398/reactions",

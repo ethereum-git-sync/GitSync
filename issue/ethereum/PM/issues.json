@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "timbeiko"
+    },
+    "number": 586,
+    "title": "EIP-4844 Breakout Room #3",
+    "updatedAt": "2022-08-17T15:46:50Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 592,
+    "title": "Ethereum Core Devs Meeting 145 Agenda",
+    "updatedAt": "2022-08-17T14:50:05Z"
+  },
+  {
+    "author": {
       "login": "tvanepps"
     },
     "number": 599,
@@ -9,27 +25,11 @@
   },
   {
     "author": {
-      "login": "timbeiko"
-    },
-    "number": 586,
-    "title": "EIP-4844 Breakout Room #3",
-    "updatedAt": "2022-08-16T15:28:58Z"
-  },
-  {
-    "author": {
       "login": "tvanepps"
     },
     "number": 593,
     "title": "KZG-Ceremony Call #6",
     "updatedAt": "2022-08-16T15:12:39Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 592,
-    "title": "Ethereum Core Devs Meeting 145 Agenda",
-    "updatedAt": "2022-08-15T08:52:53Z"
   },
   {
     "author": {

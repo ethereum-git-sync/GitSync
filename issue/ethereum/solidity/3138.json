@@ -30,15 +30,7 @@
     "site_admin": false
   },
   "labels": [
-    {
-      "id": 692642590,
-      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
-      "name": "feature",
-      "color": "fbca04",
-      "default": false,
-      "description": null
-    }
+
   ],
   "state": "open",
   "locked": false,
@@ -49,7 +41,7 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2017-10-27T15:31:29Z",
-  "updated_at": "2019-05-21T10:48:16Z",
+  "updated_at": "2022-08-17T13:49:16Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,

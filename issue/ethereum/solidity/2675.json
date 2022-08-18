@@ -38,15 +38,6 @@
       "color": "fef2c0",
       "default": false,
       "description": "Issues waiting for more input by the reporter"
-    },
-    {
-      "id": 692642590,
-      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
-      "name": "feature",
-      "color": "fbca04",
-      "default": false,
-      "description": null
     }
   ],
   "state": "open",
@@ -58,7 +49,7 @@
   "milestone": null,
   "comments": 29,
   "created_at": "2017-08-01T04:44:53Z",
-  "updated_at": "2021-05-31T11:16:09Z",
+  "updated_at": "2022-08-17T13:49:38Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -66,8 +57,8 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/2675/reactions",
-    "total_count": 14,
-    "+1": 14,
+    "total_count": 15,
+    "+1": 15,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -1213,8 +1204,8 @@
     "body": "Every single compiler warning should be suppressible, by file, and by warning type, without changing source code, if at the discretion of the runner of said compiler, the warnings are acceptable or not necessary to review further.\r\n\r\nCase in point: OpenZeppelin 3.x contract with v0.7 of compiler, like so:\r\n```\r\n    @openzeppelin/contracts/access/Ownable.sol:26:5: Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it \"abstract\" is sufficient.\r\n    constructor () internal {\r\n    ^ (Relevant source part starts here and spans across multiple lines).\r\n```\r\n\r\nCan I grep the output before my CI tool complains? Sometimes. Depends on the toolchain, platform, etc.\r\n\r\nUsing truffle, npm, and a platform with sed installed, I do:\r\n```\r\n  \"scripts\": {\r\n    \"test\": \"truffle test | sed -e '/Warning: Visibility for constructor is ignored./,+2d'\"\r\n  }\r\n```\r\n\r\nGross huh?\r\n\r\nI am not sure what the utility function of warnings looks like over time, but I would guess y=e^(-x), x>=0.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/785294452/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

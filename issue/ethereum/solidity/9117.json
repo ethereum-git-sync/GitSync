@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 692642590,
-      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
-      "name": "feature",
-      "color": "fbca04",
-      "default": false,
-      "description": null
-    },
-    {
       "id": 785717317,
       "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
@@ -58,7 +49,7 @@
   "milestone": null,
   "comments": 28,
   "created_at": "2020-06-03T22:43:38Z",
-  "updated_at": "2022-07-28T11:12:43Z",
+  "updated_at": "2022-08-17T13:50:05Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -1301,8 +1292,8 @@
     "body": "It might be obvious but just to mention, unchecked array access can be deadly if user inputs reach the array index, basically attacker could have the contract read a value from any slot they want and contract would process it. But yeah as long as only dev gets to input the index, it'd be great if the language provides \"unsafe\" methods. This would also hint devs that they should be careful and prevent user from manipulating the array index.\r\n\r\nBut for those who are gas golfing/need this right now, they can anytime drop to assembly and do stuff. For e.g.\r\n\r\n```solidity\r\ncontract MyContract {\r\n    using Uint256Array for uint[];\r\n    using Uint256Array for uint;\r\n\r\n    uint[] public myArray;\r\n\r\n    function sum() external  view returns (uint result){\r\n        uint len = myArray.length;\r\n        uint arrayPointer = myArray.pointer();\r\n        for(uint i; i < len; i++) {\r\n            result += arrayPointer.unsafeAccess(i);\r\n        }\r\n    }\r\n}\r\n\r\nlibrary Uint256Array {\r\n    function pointer(uint[] storage arr) internal view returns (uint256 result) {\r\n        assembly {\r\n            mstore(0, arr.slot)\r\n            result := keccak256(0, 0x20)\r\n        }\r\n    }\r\n\r\n    function unsafeAccess(uint p, uint index) internal view returns (uint result) {\r\n        assembly {\r\n            result := sload(add(p, index))\r\n        }\r\n    }\r\n}\r\n```\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1198003153/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

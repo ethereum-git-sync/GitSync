@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 692642590,
-      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
-      "name": "feature",
-      "color": "fbca04",
-      "default": false,
-      "description": null
-    },
-    {
       "id": 785717317,
       "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
@@ -94,7 +85,7 @@
   },
   "comments": 1,
   "created_at": "2016-08-12T20:35:18Z",
-  "updated_at": "2018-07-30T10:37:08Z",
+  "updated_at": "2022-08-17T13:50:09Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -102,13 +93,13 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/891/reactions",
-    "total_count": 4,
-    "+1": 4,
+    "total_count": 6,
+    "+1": 5,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 0,
+    "heart": 1,
     "rocket": 0,
     "eyes": 0
   },

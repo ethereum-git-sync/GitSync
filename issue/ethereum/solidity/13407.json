@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13407",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13407/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13407/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13407/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13407",
+  "id": 1341631143,
+  "node_id": "I_kwDOAm_5kc5P96qn",
+  "number": 13407,
+  "title": "Entering a numeric short form in assembly gives ParseError",
+  "user": {
+    "login": "zemse",
+    "id": 22412996,
+    "node_id": "MDQ6VXNlcjIyNDEyOTk2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22412996?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zemse",
+    "html_url": "https://github.com/zemse",
+    "followers_url": "https://api.github.com/users/zemse/followers",
+    "following_url": "https://api.github.com/users/zemse/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zemse/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zemse/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zemse/subscriptions",
+    "organizations_url": "https://api.github.com/users/zemse/orgs",
+    "repos_url": "https://api.github.com/users/zemse/repos",
+    "events_url": "https://api.github.com/users/zemse/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zemse/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-17T11:38:23Z",
+  "updated_at": "2022-08-17T11:38:23Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nCurrently within assembly blocks, it is not allowed to write a number like `1e6` or with underscores. However, these kinds of notations make it easy to read a number.\r\n\r\n<!--Please shortly describe the bug you have found, and what you expect instead.-->\r\n\r\n```solidity\r\nuint b;\r\nb = 3_200_000_000; // works\r\nassembly {\r\n    b := 3_200_000_000 // ParserError: Invalid number literal.\r\n    b := 3200000000 // works but its difficult to read\r\n}\r\n```\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.16\r\n- Target EVM version (as per compiler settings): London\r\n- Framework/IDE (e.g. Truffle or Remix): Remix\r\n- EVM execution environment / backend / blockchain client: EthereumJS VM\r\n- Operating system: macos",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13407/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13407/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

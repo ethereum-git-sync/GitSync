@@ -38,6 +38,15 @@
       "color": "FF5E5E",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 1132689577,
+      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
+      "name": "status:triage",
+      "color": "6be514",
+      "default": false,
+      "description": ""
     }
   ],
   "state": "open",
@@ -47,9 +56,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-08-16T16:02:36Z",
-  "updated_at": "2022-08-16T16:02:36Z",
+  "updated_at": "2022-08-18T13:06:45Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -57,7 +66,7 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25534/reactions",
-    "total_count": 0,
+    "total_count": 1,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
@@ -65,12 +74,99 @@
     "confused": 0,
     "heart": 0,
     "rocket": 0,
-    "eyes": 0
+    "eyes": 1
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25534/timeline",
   "performed_via_github_app": null,
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1219191561",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25534#issuecomment-1219191561",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25534",
+    "id": 1219191561,
+    "node_id": "IC_kwDOAOvK985Iq2MJ",
+    "user": {
+      "login": "holiman",
+      "id": 142290,
+      "node_id": "MDQ6VXNlcjE0MjI5MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/holiman",
+      "html_url": "https://github.com/holiman",
+      "followers_url": "https://api.github.com/users/holiman/followers",
+      "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+      "organizations_url": "https://api.github.com/users/holiman/orgs",
+      "repos_url": "https://api.github.com/users/holiman/repos",
+      "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/holiman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-18T08:32:47Z",
+    "updated_at": "2022-08-18T08:32:47Z",
+    "author_association": "MEMBER",
+    "body": "The `eth_syncing` is set to `true` by the downloader, when it downloads the N blocks it needs from peers. If you have fallen behind, that can be a pretty quick thing. \r\nJust because \"a higher block exists somewhere\", that doesn't mean `eth_syncing` becomes set to `true`. We look only at the local behaviour: are we in a sync-cycle? ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1219191561/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1219470779",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25534#issuecomment-1219470779",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25534",
+    "id": 1219470779,
+    "node_id": "IC_kwDOAOvK985Ir6W7",
+    "user": {
+      "login": "crystalgarden",
+      "id": 111375696,
+      "node_id": "U_kgDOBqN1UA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111375696?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/crystalgarden",
+      "html_url": "https://github.com/crystalgarden",
+      "followers_url": "https://api.github.com/users/crystalgarden/followers",
+      "following_url": "https://api.github.com/users/crystalgarden/following{/other_user}",
+      "gists_url": "https://api.github.com/users/crystalgarden/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/crystalgarden/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/crystalgarden/subscriptions",
+      "organizations_url": "https://api.github.com/users/crystalgarden/orgs",
+      "repos_url": "https://api.github.com/users/crystalgarden/repos",
+      "events_url": "https://api.github.com/users/crystalgarden/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/crystalgarden/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-18T13:06:45Z",
+    "updated_at": "2022-08-18T13:06:45Z",
+    "author_association": "NONE",
+    "body": "I did one more testing this morning on Goerli. My Geth/Prysm was stopped overnight and restarted in the morning.  Etherscan block height was at 7426914 when I started the testing. Please see below output from Geth JavaScript console. The eth.blockNumber showed the geth node was in syncing, while eth_syncing constantly returned false. Did I miss anything? \r\n\r\n$ geth attach /data/goerli/geth.ipc\r\nWelcome to the Geth JavaScript console!\r\n\r\ninstance: Geth/v1.10.21-stable-67109427/linux-amd64/go1.18.4\r\nat block: 7421567 (Wed Aug 17 2022 14:31:48 GMT+0000 (UTC))\r\n datadir: /data/goerli\r\n modules: admin:1.0 clique:1.0 debug:1.0 engine:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0\r\n\r\nTo exit, press ctrl-d or type exit\r\n> eth.syncing\r\nfalse\r\n> admin.peers\r\n[{\r\n    caps: [\"eth/66\", \"eth/67\", \"snap/1\"],\r\n    enode: \"enode://0ff6abad39d72fc6bd901d29535f136ba6752466d6a8f33066f9a6e9e824460386a8f770ea1bdf746532c41b1621364a08c438ed8b8664fe3f1ec7598fbf4724@18.183.253.187:30303\",\r\n    id: \"da9fa107e2e72927045fb08c1d647a35a81cf7477fa18bafb29ff5f3a8e1a5dc\",\r\n    name: \"Geth/v1.10.21-stable/linux-amd64/go1.18.4\",\r\n    network: {\r\n      inbound: false,\r\n      localAddress: \"10.244.57.7:34532\",\r\n      remoteAddress: \"18.183.253.187:30303\",\r\n      static: false,\r\n      trusted: false\r\n    },\r\n    protocols: {\r\n      eth: {\r\n        difficulty: 10790000,\r\n        head: \"0x1802040fd27064383790ce687a46505cff4217e543629d87c36141a13aeb07a7\",\r\n        version: 67\r\n      },\r\n      snap: {\r\n        version: 1\r\n      }\r\n    }\r\n}]\r\n>\r\n> eth.blockNumber\r\n7421924\r\n> eth.blockNumber\r\n7421977\r\n> eth.blockNumber\r\n7422030\r\n> eth.syncing\r\nfalse\r\n> eth.blockNumber\r\n7422085\r\n> eth.syncing\r\nfalse\r\n> eth.blockNumber\r\n7422137\r\n> eth.syncing\r\nfalse\r\n",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1219470779/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

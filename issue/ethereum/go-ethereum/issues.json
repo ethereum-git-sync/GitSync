@@ -1,11 +1,99 @@
 [
   {
     "author": {
+      "login": "ziogaschr"
+    },
+    "number": 25550,
+    "title": "Tracing API says transaction failed when it was successful",
+    "updatedAt": "2022-08-18T20:46:55Z"
+  },
+  {
+    "author": {
+      "login": "hmijail"
+    },
+    "number": 25544,
+    "title": "Allow `evm t8n` to generate traces to stdout or to a known filename",
+    "updatedAt": "2022-08-18T19:40:20Z"
+  },
+  {
+    "author": {
+      "login": "WyseNynja"
+    },
+    "number": 21224,
+    "title": "[Feature Requests] geth --dev --fork",
+    "updatedAt": "2022-08-18T13:34:06Z"
+  },
+  {
+    "author": {
+      "login": "crystalgarden"
+    },
+    "number": 25534,
+    "title": "eth_syncing returns 'false' while Geth node is still syncing",
+    "updatedAt": "2022-08-18T13:06:45Z"
+  },
+  {
+    "author": {
+      "login": "DubbaThony"
+    },
+    "number": 25498,
+    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
+    "updatedAt": "2022-08-18T12:15:07Z"
+  },
+  {
+    "author": {
+      "login": "3nprob"
+    },
+    "number": 25543,
+    "title": "goerli / prater stopped producing blocks",
+    "updatedAt": "2022-08-18T11:05:42Z"
+  },
+  {
+    "author": {
+      "login": "Lredhdx"
+    },
+    "number": 25513,
+    "title": "After goerli testnet merge, jsonRPC `eth_getFilterLogs` sometimes can't get correct results.",
+    "updatedAt": "2022-08-18T08:44:30Z"
+  },
+  {
+    "author": {
+      "login": "dzianisv"
+    },
+    "number": 25511,
+    "title": "SIGSEGV: segmentation violation code=0x1 `downloader.(*Downloader).findAncestorBinarySearch()`",
+    "updatedAt": "2022-08-18T08:43:29Z"
+  },
+  {
+    "author": {
+      "login": "hostgame"
+    },
+    "number": 25536,
+    "title": "personal_signTransaction improperly requires both maxFeePerGas and maxPriorityFeePerGas",
+    "updatedAt": "2022-08-18T08:27:56Z"
+  },
+  {
+    "author": {
+      "login": "757566833"
+    },
+    "number": 25537,
+    "title": "cannot unmarshal  `pending` block",
+    "updatedAt": "2022-08-18T08:26:02Z"
+  },
+  {
+    "author": {
+      "login": "hdiass"
+    },
+    "number": 25517,
+    "title": "--exitwhensynced doesn't work after the goerli merge",
+    "updatedAt": "2022-08-18T07:35:57Z"
+  },
+  {
+    "author": {
       "login": "Danyalkasiri"
     },
     "number": 25540,
     "title": "Abbasagakasiri.000@gmail.com",
-    "updatedAt": "2022-08-17T21:58:48Z"
+    "updatedAt": "2022-08-18T06:27:30Z"
   },
   {
     "author": {
@@ -22,14 +110,6 @@
     "number": 24787,
     "title": "Push filter updates in batch on new block",
     "updatedAt": "2022-08-17T08:48:46Z"
-  },
-  {
-    "author": {
-      "login": "757566833"
-    },
-    "number": 25537,
-    "title": " cannot unmarshal  when i get pending block",
-    "updatedAt": "2022-08-17T04:12:14Z"
   },
   {
     "author": {
@@ -57,43 +137,11 @@
   },
   {
     "author": {
-      "login": "hostgame"
-    },
-    "number": 25536,
-    "title": "personal_signTransaction improperly requires both maxFeePerGas and maxPriorityFeePerGas",
-    "updatedAt": "2022-08-16T20:14:16Z"
-  },
-  {
-    "author": {
-      "login": "crystalgarden"
-    },
-    "number": 25534,
-    "title": "eth_syncing returns 'false' while Geth node is still syncing",
-    "updatedAt": "2022-08-16T16:02:36Z"
-  },
-  {
-    "author": {
-      "login": "DubbaThony"
-    },
-    "number": 25498,
-    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
-    "updatedAt": "2022-08-16T11:33:09Z"
-  },
-  {
-    "author": {
       "login": "dzou"
     },
     "number": 24457,
     "title": "[Question] Why does snap sync sometimes switch to full sync?",
     "updatedAt": "2022-08-16T10:25:07Z"
-  },
-  {
-    "author": {
-      "login": "hdiass"
-    },
-    "number": 25517,
-    "title": "--exitwhensynced doesn't work after the goerli merge",
-    "updatedAt": "2022-08-16T09:14:47Z"
   },
   {
     "author": {
@@ -169,14 +217,6 @@
   },
   {
     "author": {
-      "login": "Lredhdx"
-    },
-    "number": 25513,
-    "title": "After goerli testnet merge, jsonRPC `eth_getFilterLogs` sometimes can't get correct results.",
-    "updatedAt": "2022-08-12T04:56:07Z"
-  },
-  {
-    "author": {
       "login": "JosephK95"
     },
     "number": 25495,
@@ -190,14 +230,6 @@
     "number": 25501,
     "title": "Geth RPC service consistency against other client implementations #2",
     "updatedAt": "2022-08-11T03:16:41Z"
-  },
-  {
-    "author": {
-      "login": "dzianisv"
-    },
-    "number": 25511,
-    "title": "SIGSEGV: segmentation violation code=0x1 `downloader.(*Downloader).findAncestorBinarySearch()`",
-    "updatedAt": "2022-08-11T00:29:26Z"
   },
   {
     "author": {
@@ -2902,14 +2934,6 @@
     "number": 15930,
     "title": "'No contract code at given address' happens when calling the auto generated DeployToken function.",
     "updatedAt": "2022-05-13T18:13:38Z"
-  },
-  {
-    "author": {
-      "login": "WyseNynja"
-    },
-    "number": 21224,
-    "title": "[Feature Requests] geth --dev --fork",
-    "updatedAt": "2022-05-13T09:28:14Z"
   },
   {
     "author": {

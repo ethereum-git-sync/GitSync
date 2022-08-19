@@ -38,6 +38,15 @@
       "color": "FF5E5E",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 1132689577,
+      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
+      "name": "status:triage",
+      "color": "6be514",
+      "default": false,
+      "description": ""
     }
   ],
   "state": "open",
@@ -47,9 +56,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-08-11T00:25:30Z",
-  "updated_at": "2022-08-11T00:29:26Z",
+  "updated_at": "2022-08-18T08:43:29Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -72,5 +81,92 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1219200191",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25511#issuecomment-1219200191",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25511",
+    "id": 1219200191,
+    "node_id": "IC_kwDOAOvK985Iq4S_",
+    "user": {
+      "login": "holiman",
+      "id": 142290,
+      "node_id": "MDQ6VXNlcjE0MjI5MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/holiman",
+      "html_url": "https://github.com/holiman",
+      "followers_url": "https://api.github.com/users/holiman/followers",
+      "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+      "organizations_url": "https://api.github.com/users/holiman/orgs",
+      "repos_url": "https://api.github.com/users/holiman/repos",
+      "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/holiman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-18T08:41:47Z",
+    "updated_at": "2022-08-18T08:41:47Z",
+    "author_association": "MEMBER",
+    "body": "`Old unclean shutdowns found              count=205` -- it seems you often do not shut down geth properly, but just tear the process down. This may lead to data corruption. \r\nI don't have any better idea on why this specific error happens. ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1219200191/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1219201866",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25511#issuecomment-1219201866",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25511",
+    "id": 1219201866,
+    "node_id": "IC_kwDOAOvK985Iq4tK",
+    "user": {
+      "login": "dzianisv",
+      "id": 2119348,
+      "node_id": "MDQ6VXNlcjIxMTkzNDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2119348?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dzianisv",
+      "html_url": "https://github.com/dzianisv",
+      "followers_url": "https://api.github.com/users/dzianisv/followers",
+      "following_url": "https://api.github.com/users/dzianisv/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dzianisv/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dzianisv/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dzianisv/subscriptions",
+      "organizations_url": "https://api.github.com/users/dzianisv/orgs",
+      "repos_url": "https://api.github.com/users/dzianisv/repos",
+      "events_url": "https://api.github.com/users/dzianisv/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dzianisv/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-18T08:43:29Z",
+    "updated_at": "2022-08-18T08:43:29Z",
+    "author_association": "NONE",
+    "body": "Even so, do we expect a segvfault/panic because of a nil pointer? ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1219201866/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

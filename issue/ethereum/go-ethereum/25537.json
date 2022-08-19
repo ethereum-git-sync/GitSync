@@ -8,7 +8,7 @@
   "id": 1341142113,
   "node_id": "I_kwDOAOvK985P8DRh",
   "number": 25537,
-  "title": " cannot unmarshal  when i get pending block",
+  "title": "cannot unmarshal  `pending` block",
   "user": {
     "login": "757566833",
     "id": 25276557,
@@ -38,6 +38,15 @@
       "color": "FF5E5E",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 1132689577,
+      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
+      "name": "status:triage",
+      "color": "6be514",
+      "default": false,
+      "description": ""
     }
   ],
   "state": "open",
@@ -47,13 +56,13 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-08-17T04:12:14Z",
-  "updated_at": "2022-08-17T04:12:14Z",
+  "updated_at": "2022-08-18T08:26:02Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
-  "body": "#### System information\r\n\r\nGeth version: ethereum/client-go:alltools-v1.10.20\r\nOS & Version:Linux\r\n\r\ngithub.com/ethereum/go-ethereum v1.10.20\r\n\r\n#### Expected behaviour\r\nunmarshal\r\n\r\n#### Actual behaviour\r\n cannot unmarshal \r\n\r\n#### Steps to reproduce the behaviour\r\nimport (\r\n\t\"github.com/ethereum/go-ethereum/ethclient\"\r\n)\r\nclient, err := ethclient.Dial(\"rpc\")\r\nclient.BlockByNumber(context.Background(), new(big.Int).SetInt64(-1))\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n\r\nWhen submitting logs: please submit them as text and not screenshots.\r\n\r\njson: cannot unmarshal non-string into Go struct field rpcBlock.hash of type common.Hash\r\n\r\ni want to get pending tx by ethclient\r\n\r\nraw\r\n```\r\n{\r\n    \"baseFeePerGas\":\"0x7\",\r\n    \"difficulty\":\"0x747e5\",\r\n    \"extraData\":\"0xd883010a14846765746888676f312e31382e33856c696e7578\",\r\n    \"gasLimit\":\"0x1c9c380\",\r\n    \"gasUsed\":\"0xa410\",\r\n    \"hash\":null,\r\n    \"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"miner\":null,\r\n    \"mixHash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"nonce\":null,\r\n    \"number\":\"0x17af0\",\r\n    \"parentHash\":\"0x5e572fe3ce0eb8a4500e9484761d1f0ba7fe50cb8f4741c3bed7550a89e13a1e\",\r\n    \"receiptsRoot\":\"0x75308898d571eafb5cd8cde8278bf5b3d13c5f6ec074926de3bb895b519264e1\",\r\n    \"sha3Uncles\":\"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347\",\r\n    \"size\":\"0x31c\",\r\n    \"stateRoot\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"timestamp\":\"0x62fc648c\",\r\n    \"totalDifficulty\":null,\r\n    \"transactions\":[\r\n        {\r\n            \"blockHash\":\"0x653ca39fd6ab97ab1f88f0a1d6c1d38d8072ea4bd0b23d3410b548384a9d3b93\",\r\n            \"blockNumber\":\"0x17af0\",\r\n            \"from\":\"0xfe6154079ef3342e72b119636e839f1bb61cf29e\",\r\n            \"gas\":\"0x5208\",\r\n            \"gasPrice\":\"0x3b9aca00\",\r\n            \"maxFeePerGas\":\"0x3b9aca00\",\r\n            \"maxPriorityFeePerGas\":\"0x3b9aca00\",\r\n            \"hash\":\"0x3a1ca417aef3418f209feb14fc89ae97ad85a72e32d7f9e332ceea9cbd08ae5b\",\r\n            \"input\":\"0x\",\r\n            \"nonce\":\"0x9\",\r\n            \"to\":\"0x2a61b29ab416e0239e20f5bccf7319dab9cb3982\",\r\n            \"transactionIndex\":\"0x0\",\r\n            \"value\":\"0xde0b6b3a7640000\",\r\n            \"type\":\"0x2\",\r\n            \"accessList\":[\r\n\r\n            ],\r\n            \"chainId\":\"0x7c6807fe612\",\r\n            \"v\":\"0x1\",\r\n            \"r\":\"0xf3a980088d625acdf948833298cc734e1aff0a942b16bb9223cfe280b981d4c4\",\r\n            \"s\":\"0x29b0052a2a21a7ee048289aa75b6e9cc33d723c1162cdcd27a2225ac763cc579\"\r\n        },\r\n        {\r\n            \"blockHash\":\"0x653ca39fd6ab97ab1f88f0a1d6c1d38d8072ea4bd0b23d3410b548384a9d3b93\",\r\n            \"blockNumber\":\"0x17af0\",\r\n            \"from\":\"0xfe6154079ef3342e72b119636e839f1bb61cf29e\",\r\n            \"gas\":\"0x5208\",\r\n            \"gasPrice\":\"0x2540be400\",\r\n            \"maxFeePerGas\":\"0x2540be400\",\r\n            \"maxPriorityFeePerGas\":\"0x2540be400\",\r\n            \"hash\":\"0xd3c0ab01e16e88193c7af35ac9cd5635ad3841d5496f58c3386f730a25681ef2\",\r\n            \"input\":\"0x\",\r\n            \"nonce\":\"0xa\",\r\n            \"to\":\"0x2a61b29ab416e0239e20f5bccf7319dab9cb3982\",\r\n            \"transactionIndex\":\"0x1\",\r\n            \"value\":\"0x1bc16d674ec80000\",\r\n            \"type\":\"0x2\",\r\n            \"accessList\":[\r\n\r\n            ],\r\n            \"chainId\":\"0x7c6807fe612\",\r\n            \"v\":\"0x0\",\r\n            \"r\":\"0x91f640d98ef1e683c7acce05e87b44af345a83a03231ef4e9110dbbd77f8c2b3\",\r\n            \"s\":\"0x18215088ecaba584ea6c16ab5ea0cee6b8c5b97afb9b682d99b00d8e1231504c\"\r\n        }\r\n    ],\r\n    \"transactionsRoot\":\"0xa84ebbdec21a798e52af4978b9fb56b9d964b5a8ae5de7f016c633d7a7768bfe\",\r\n    \"uncles\":[\r\n\r\n    ]\r\n}\r\n```\r\n\r\nbut body (rpcblock)\r\n```\r\n// ethclient line 104\r\ntype rpcBlock struct {\r\n\tHash         common.Hash      `json:\"hash\"`\r\n\tTransactions []rpcTransaction `json:\"transactions\"`\r\n\tUncleHashes  []common.Hash    `json:\"uncles\"`\r\n}\r\n```\r\n\r\n",
+  "body": "#### System information\r\n\r\nGeth version: ethereum/client-go:alltools-v1.10.20\r\nOS & Version:Linux\r\n\r\ngithub.com/ethereum/go-ethereum v1.10.20\r\n\r\n#### Expected behaviour\r\nunmarshal\r\n\r\n#### Actual behaviour\r\n cannot unmarshal \r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n```golang\r\nimport (\r\n\t\"github.com/ethereum/go-ethereum/ethclient\"\r\n)\r\nclient, err := ethclient.Dial(\"rpc\")\r\nclient.BlockByNumber(context.Background(), new(big.Int).SetInt64(-1))\r\n```\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n\r\nWhen submitting logs: please submit them as text and not screenshots.\r\n\r\njson: cannot unmarshal non-string into Go struct field rpcBlock.hash of type common.Hash\r\n\r\ni want to get pending tx by ethclient\r\n\r\nraw\r\n```\r\n{\r\n    \"baseFeePerGas\":\"0x7\",\r\n    \"difficulty\":\"0x747e5\",\r\n    \"extraData\":\"0xd883010a14846765746888676f312e31382e33856c696e7578\",\r\n    \"gasLimit\":\"0x1c9c380\",\r\n    \"gasUsed\":\"0xa410\",\r\n    \"hash\":null,\r\n    \"logsBloom\":\"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"miner\":null,\r\n    \"mixHash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"nonce\":null,\r\n    \"number\":\"0x17af0\",\r\n    \"parentHash\":\"0x5e572fe3ce0eb8a4500e9484761d1f0ba7fe50cb8f4741c3bed7550a89e13a1e\",\r\n    \"receiptsRoot\":\"0x75308898d571eafb5cd8cde8278bf5b3d13c5f6ec074926de3bb895b519264e1\",\r\n    \"sha3Uncles\":\"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347\",\r\n    \"size\":\"0x31c\",\r\n    \"stateRoot\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"timestamp\":\"0x62fc648c\",\r\n    \"totalDifficulty\":null,\r\n    \"transactions\":[\r\n        {\r\n            \"blockHash\":\"0x653ca39fd6ab97ab1f88f0a1d6c1d38d8072ea4bd0b23d3410b548384a9d3b93\",\r\n            \"blockNumber\":\"0x17af0\",\r\n            \"from\":\"0xfe6154079ef3342e72b119636e839f1bb61cf29e\",\r\n            \"gas\":\"0x5208\",\r\n            \"gasPrice\":\"0x3b9aca00\",\r\n            \"maxFeePerGas\":\"0x3b9aca00\",\r\n            \"maxPriorityFeePerGas\":\"0x3b9aca00\",\r\n            \"hash\":\"0x3a1ca417aef3418f209feb14fc89ae97ad85a72e32d7f9e332ceea9cbd08ae5b\",\r\n            \"input\":\"0x\",\r\n            \"nonce\":\"0x9\",\r\n            \"to\":\"0x2a61b29ab416e0239e20f5bccf7319dab9cb3982\",\r\n            \"transactionIndex\":\"0x0\",\r\n            \"value\":\"0xde0b6b3a7640000\",\r\n            \"type\":\"0x2\",\r\n            \"accessList\":[\r\n\r\n            ],\r\n            \"chainId\":\"0x7c6807fe612\",\r\n            \"v\":\"0x1\",\r\n            \"r\":\"0xf3a980088d625acdf948833298cc734e1aff0a942b16bb9223cfe280b981d4c4\",\r\n            \"s\":\"0x29b0052a2a21a7ee048289aa75b6e9cc33d723c1162cdcd27a2225ac763cc579\"\r\n        },\r\n        {\r\n            \"blockHash\":\"0x653ca39fd6ab97ab1f88f0a1d6c1d38d8072ea4bd0b23d3410b548384a9d3b93\",\r\n            \"blockNumber\":\"0x17af0\",\r\n            \"from\":\"0xfe6154079ef3342e72b119636e839f1bb61cf29e\",\r\n            \"gas\":\"0x5208\",\r\n            \"gasPrice\":\"0x2540be400\",\r\n            \"maxFeePerGas\":\"0x2540be400\",\r\n            \"maxPriorityFeePerGas\":\"0x2540be400\",\r\n            \"hash\":\"0xd3c0ab01e16e88193c7af35ac9cd5635ad3841d5496f58c3386f730a25681ef2\",\r\n            \"input\":\"0x\",\r\n            \"nonce\":\"0xa\",\r\n            \"to\":\"0x2a61b29ab416e0239e20f5bccf7319dab9cb3982\",\r\n            \"transactionIndex\":\"0x1\",\r\n            \"value\":\"0x1bc16d674ec80000\",\r\n            \"type\":\"0x2\",\r\n            \"accessList\":[\r\n\r\n            ],\r\n            \"chainId\":\"0x7c6807fe612\",\r\n            \"v\":\"0x0\",\r\n            \"r\":\"0x91f640d98ef1e683c7acce05e87b44af345a83a03231ef4e9110dbbd77f8c2b3\",\r\n            \"s\":\"0x18215088ecaba584ea6c16ab5ea0cee6b8c5b97afb9b682d99b00d8e1231504c\"\r\n        }\r\n    ],\r\n    \"transactionsRoot\":\"0xa84ebbdec21a798e52af4978b9fb56b9d964b5a8ae5de7f016c633d7a7768bfe\",\r\n    \"uncles\":[\r\n\r\n    ]\r\n}\r\n```\r\n\r\nbut body (rpcblock)\r\n```\r\n// ethclient line 104\r\ntype rpcBlock struct {\r\n\tHash         common.Hash      `json:\"hash\"`\r\n\tTransactions []rpcTransaction `json:\"transactions\"`\r\n\tUncleHashes  []common.Hash    `json:\"uncles\"`\r\n}\r\n```\r\n\r\n",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25537/reactions",
@@ -72,5 +81,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1219184772",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25537#issuecomment-1219184772",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25537",
+    "id": 1219184772,
+    "node_id": "IC_kwDOAOvK985Iq0iE",
+    "user": {
+      "login": "holiman",
+      "id": 142290,
+      "node_id": "MDQ6VXNlcjE0MjI5MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/holiman",
+      "html_url": "https://github.com/holiman",
+      "followers_url": "https://api.github.com/users/holiman/followers",
+      "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+      "organizations_url": "https://api.github.com/users/holiman/orgs",
+      "repos_url": "https://api.github.com/users/holiman/repos",
+      "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/holiman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-18T08:26:02Z",
+    "updated_at": "2022-08-18T08:26:02Z",
+    "author_association": "MEMBER",
+    "body": "Yeah this is a wart in our API, it seems. cc @fjl any thoughts? ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1219184772/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

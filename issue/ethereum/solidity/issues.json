@@ -1,6 +1,118 @@
 [
   {
     "author": {
+      "login": "duncancmt"
+    },
+    "number": 13174,
+    "title": "`pure` functions can read storage",
+    "updatedAt": "2022-08-18T19:59:28Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 11254,
+    "title": "Assembly export and re-import",
+    "updatedAt": "2022-08-18T18:44:15Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 11879,
+    "title": "Array literals should be convertible to both dynamically-sized and statically-sized arrays",
+    "updatedAt": "2022-08-18T18:43:08Z"
+  },
+  {
+    "author": {
+      "login": "dariusdev"
+    },
+    "number": 9765,
+    "title": "Export used events (and errors) instead of just declared",
+    "updatedAt": "2022-08-18T18:42:32Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11700,
+    "title": "Reconsider operators on ContractType",
+    "updatedAt": "2022-08-18T18:40:39Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 4617,
+    "title": "[CLI] Solc should report if there was no contract to compile",
+    "updatedAt": "2022-08-18T18:39:36Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12230,
+    "title": "[CLI] Do not select any outputs by default in assembler mode",
+    "updatedAt": "2022-08-18T18:38:44Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11836,
+    "title": "[BREAKING] Make basfee as a reserved identifier in 0.9.0",
+    "updatedAt": "2022-08-18T18:35:58Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 13339,
+    "title": "`abi.encodeError(...)` for custom errors",
+    "updatedAt": "2022-08-18T15:44:51Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13368,
+    "title": "Add parser support for ``code`` data location.",
+    "updatedAt": "2022-08-18T15:40:41Z"
+  },
+  {
+    "author": {
+      "login": "mojtaba-eshghie"
+    },
+    "number": 13412,
+    "title": "Impossibility of getting current function selector in nested calls via `msg.sig`",
+    "updatedAt": "2022-08-18T15:13:43Z"
+  },
+  {
+    "author": {
+      "login": "k06a"
+    },
+    "number": 13258,
+    "title": "Ability to create memory array of calldata slices",
+    "updatedAt": "2022-08-18T15:08:20Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13408,
+    "title": "First batch of new labels: effort, impact, desirability, task type",
+    "updatedAt": "2022-08-18T15:01:07Z"
+  },
+  {
+    "author": {
+      "login": "nishant-sachdeva"
+    },
+    "number": 13410,
+    "title": "Remove redundant Error Types from codebase",
+    "updatedAt": "2022-08-18T13:26:36Z"
+  },
+  {
+    "author": {
       "login": "axic"
     },
     "number": 474,
@@ -1337,14 +1449,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 11254,
-    "title": "Assembly export and re-import",
-    "updatedAt": "2022-08-17T13:49:22Z"
-  },
-  {
-    "author": {
       "login": "barakman"
     },
     "number": 11269,
@@ -1669,14 +1773,6 @@
     },
     "number": 12152,
     "title": "Generalized `FlagSet` class",
-    "updatedAt": "2022-08-17T13:49:07Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 12230,
-    "title": "[CLI] Do not select any outputs by default in assembler mode",
     "updatedAt": "2022-08-17T13:49:07Z"
   },
   {
@@ -2081,14 +2177,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 11879,
-    "title": "Array literals should be convertible to both dynamically-sized and statically-sized arrays",
-    "updatedAt": "2022-08-17T13:48:58Z"
-  },
-  {
-    "author": {
       "login": "drortirosh"
     },
     "number": 11886,
@@ -2230,14 +2318,6 @@
     "number": 12857,
     "title": "Add a mypy job to CI and fix type errors in our Python code",
     "updatedAt": "2022-08-17T13:48:56Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 4617,
-    "title": "[CLI] Solc should report if there was no contract to compile",
-    "updatedAt": "2022-08-17T13:48:55Z"
   },
   {
     "author": {
@@ -2441,14 +2521,6 @@
   },
   {
     "author": {
-      "login": "dariusdev"
-    },
-    "number": 9765,
-    "title": "Export used events (and errors) instead of just declared",
-    "updatedAt": "2022-08-17T13:48:53Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 12127,
@@ -2629,14 +2701,6 @@
     },
     "number": 13143,
     "title": "Allow \"using BaseContract.virtualMethod\" syntax when there are conflicting virtual methods.",
-    "updatedAt": "2022-08-17T13:48:49Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13408,
-    "title": "First batch of new labels: effort, impact, desirability, task type",
     "updatedAt": "2022-08-17T13:48:49Z"
   },
   {
@@ -3081,14 +3145,6 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 13339,
-    "title": "`abi.encodeError(...)` for custom errors",
-    "updatedAt": "2022-08-17T13:48:36Z"
-  },
-  {
-    "author": {
       "login": "jrynkiew"
     },
     "number": 13348,
@@ -3238,14 +3294,6 @@
     "number": 13180,
     "title": "[Legacy codegen] Higher order bits not sign-extended in signed integer array in storage that may be accessed via inline assembly",
     "updatedAt": "2022-08-15T11:03:32Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 13368,
-    "title": "Add parser support for ``code`` data location.",
-    "updatedAt": "2022-08-15T10:17:40Z"
   },
   {
     "author": {
@@ -4025,14 +4073,6 @@
   },
   {
     "author": {
-      "login": "k06a"
-    },
-    "number": 13258,
-    "title": "Ability to create memory array of calldata slices",
-    "updatedAt": "2022-07-10T11:31:33Z"
-  },
-  {
-    "author": {
       "login": "sourabhxyz"
     },
     "number": 13144,
@@ -4297,27 +4337,11 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11700,
-    "title": "Reconsider operators on ContractType",
-    "updatedAt": "2022-06-21T12:33:04Z"
-  },
-  {
-    "author": {
       "login": "k06a"
     },
     "number": 13176,
     "title": "Avoiding `bytes calldata slice` type",
     "updatedAt": "2022-06-20T22:11:46Z"
-  },
-  {
-    "author": {
-      "login": "duncancmt"
-    },
-    "number": 13174,
-    "title": "`pure` functions can read storage",
-    "updatedAt": "2022-06-20T15:53:47Z"
   },
   {
     "author": {
@@ -8582,14 +8606,6 @@
     "number": 11822,
     "title": "[UBSan] CI run",
     "updatedAt": "2021-08-27T08:07:10Z"
-  },
-  {
-    "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11836,
-    "title": "[BREAKING] Make basfee as a reserved identifier in 0.9.0",
-    "updatedAt": "2021-08-25T11:29:29Z"
   },
   {
     "author": {

@@ -1,11 +1,51 @@
 [
   {
     "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2218,
+    "title": "Create template using remix default workspace",
+    "updatedAt": "2022-08-18T09:15:26Z"
+  },
+  {
+    "author": {
+      "login": "yann300"
+    },
+    "number": 2779,
+    "title": "Remove the use of setInterval for checking the current network and update the balance",
+    "updatedAt": "2022-08-18T07:54:10Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2720,
+    "title": "issues with vyper plugin",
+    "updatedAt": "2022-08-18T06:45:45Z"
+  },
+  {
+    "author": {
+      "login": "yann300"
+    },
+    "number": 2778,
+    "title": "Documentation needs to be put back in the remix-ide codebase.",
+    "updatedAt": "2022-08-18T06:45:20Z"
+  },
+  {
+    "author": {
+      "login": "PhiMarHal"
+    },
+    "number": 2733,
+    "title": "Dropdown menus bleed into the interface with the \"Cerulean\" theme",
+    "updatedAt": "2022-08-18T05:55:18Z"
+  },
+  {
+    "author": {
       "login": "pokrovskyy"
     },
     "number": 2777,
     "title": "Switch between Solidity <-> Yul automatically ",
-    "updatedAt": "2022-08-17T16:23:17Z"
+    "updatedAt": "2022-08-18T05:44:57Z"
   },
   {
     "author": {
@@ -14,14 +54,6 @@
     "number": 2776,
     "title": "Remember state on reload",
     "updatedAt": "2022-08-17T16:20:53Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2720,
-    "title": "issues with vyper plugin",
-    "updatedAt": "2022-08-17T15:36:10Z"
   },
   {
     "author": {
@@ -342,14 +374,6 @@
     "number": 2732,
     "title": "Get rid of native plugins list and use 'maintained by remix' instead",
     "updatedAt": "2022-08-05T05:52:35Z"
-  },
-  {
-    "author": {
-      "login": "PhiMarHal"
-    },
-    "number": 2733,
-    "title": "Dropdown menus bleed into the interface with the \"Cerulean\" theme",
-    "updatedAt": "2022-08-05T05:48:19Z"
   },
   {
     "author": {
@@ -2758,14 +2782,6 @@
     "number": 2217,
     "title": "Deploy & Run: angle-down/chevron is the same when it is opened and closed",
     "updatedAt": "2022-03-21T14:39:25Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2218,
-    "title": "Create template using remix default workspace",
-    "updatedAt": "2022-03-21T12:04:18Z"
   },
   {
     "author": {

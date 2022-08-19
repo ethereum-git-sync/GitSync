@@ -1,11 +1,19 @@
 [
   {
     "author": {
-      "login": "StartfundInc"
+      "login": "Pandapip1"
     },
-    "number": 5470,
-    "title": "ERC 2000: Escrow Token Standard",
-    "updatedAt": "2022-08-18T00:31:31Z"
+    "number": 5452,
+    "title": "Grant all EIP editors write permission",
+    "updatedAt": "2022-08-18T20:27:26Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5488,
+    "title": "Add finalized date to EIPs.",
+    "updatedAt": "2022-08-18T18:45:58Z"
   },
   {
     "author": {
@@ -13,7 +21,39 @@
     },
     "number": 5475,
     "title": "Proposal: Rollback EIP-712 from \"final\" to \"draft\" OR deprecate EIP-712 with a new one",
-    "updatedAt": "2022-08-17T14:33:58Z"
+    "updatedAt": "2022-08-18T17:40:35Z"
+  },
+  {
+    "author": {
+      "login": "mattlockyer"
+    },
+    "number": 998,
+    "title": "ERC-998 Composable Non-Fungible Token Standard",
+    "updatedAt": "2022-08-18T17:16:43Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5469,
+    "title": "Change EIPW to only check modified lines",
+    "updatedAt": "2022-08-18T04:28:09Z"
+  },
+  {
+    "author": {
+      "login": "alcuadrado"
+    },
+    "number": 2319,
+    "title": "Discussion: EIP-1193",
+    "updatedAt": "2022-08-18T01:16:15Z"
+  },
+  {
+    "author": {
+      "login": "StartfundInc"
+    },
+    "number": 5470,
+    "title": "ERC 2000: Escrow Token Standard",
+    "updatedAt": "2022-08-18T00:31:31Z"
   },
   {
     "author": {
@@ -41,27 +81,11 @@
   },
   {
     "author": {
-      "login": "Pandapip1"
-    },
-    "number": 5452,
-    "title": "Grant all EIP editors write permission",
-    "updatedAt": "2022-08-17T03:47:30Z"
-  },
-  {
-    "author": {
       "login": "mabioIa"
     },
     "number": 5471,
     "title": "Fix typo in requirements section of EIP-2000",
     "updatedAt": "2022-08-17T03:15:55Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5469,
-    "title": "Change EIPW to only check modified lines",
-    "updatedAt": "2022-08-16T22:43:49Z"
   },
   {
     "author": {
@@ -1169,14 +1193,6 @@
   },
   {
     "author": {
-      "login": "alcuadrado"
-    },
-    "number": 2319,
-    "title": "Discussion: EIP-1193",
-    "updatedAt": "2022-06-30T13:31:34Z"
-  },
-  {
-    "author": {
       "login": "ricmoo"
     },
     "number": 3225,
@@ -1550,14 +1566,6 @@
     "number": 861,
     "title": "EIP 858: Reduce block reward",
     "updatedAt": "2022-05-28T05:08:40Z"
-  },
-  {
-    "author": {
-      "login": "mattlockyer"
-    },
-    "number": 998,
-    "title": "ERC-998 Composable Non-Fungible Token Standard",
-    "updatedAt": "2022-05-28T05:07:08Z"
   },
   {
     "author": {

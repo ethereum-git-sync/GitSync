@@ -1,6 +1,46 @@
 [
   {
     "author": {
+      "login": "bshastry"
+    },
+    "number": 13417,
+    "title": "Legacy optimizer does not remove zero length redundant write to memory inside inline assembly block",
+    "updatedAt": "2022-08-19T18:18:11Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13418,
+    "title": "Tests for bytecode reproducibility from metadata",
+    "updatedAt": "2022-08-19T18:03:20Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 12559,
+    "title": "Investigate and improve test coverage for copying reference types between data locations.",
+    "updatedAt": "2022-08-19T11:17:24Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 13226,
+    "title": "Strengthen Whiskers' matching",
+    "updatedAt": "2022-08-19T03:13:25Z"
+  },
+  {
+    "author": {
+      "login": "frangio"
+    },
+    "number": 13416,
+    "title": "Clarify effect of memory unsafe assembly",
+    "updatedAt": "2022-08-19T02:10:17Z"
+  },
+  {
+    "author": {
       "login": "duncancmt"
     },
     "number": 13174,
@@ -3001,14 +3041,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 13226,
-    "title": "Strengthen Whiskers' matching",
-    "updatedAt": "2022-08-17T13:48:45Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 13268,
@@ -3222,14 +3254,6 @@
     "number": 13407,
     "title": "Entering a numeric short form in assembly gives ParseError",
     "updatedAt": "2022-08-17T11:38:23Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 12559,
-    "title": "Investigate and improve test coverage for copying reference types between data locations.",
-    "updatedAt": "2022-08-17T10:39:32Z"
   },
   {
     "author": {

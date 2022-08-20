@@ -1,0 +1,94 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13418",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13418/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13418/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13418/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13418",
+  "id": 1344755795,
+  "node_id": "I_kwDOAm_5kc5QJ1hT",
+  "number": 13418,
+  "title": "Tests for bytecode reproducibility from metadata",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438003076,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaNhA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20effort",
+      "name": "medium effort",
+      "color": "ff7df7",
+      "default": false,
+      "description": "Default level of effort"
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-19T18:03:20Z",
+  "updated_at": "2022-08-19T18:03:20Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "We don't seem to have tests checking that the bytecode is fully reproducible based on metadata. Given how easy it is to break that (see\r\ne.g. https://github.com/ethereum/solidity/pull/13376#discussion_r950412127) I think we need some.\r\n\r\nThe biggest difficulty in testing this will be that the compiler does not directly take serialized metadata as input so we will have convert it to CLI options or StandardJSON manually (or add such a feature).\r\n\r\nThere are two ways we can implement such tests:\r\n- As a new test case type. Each test would be a code snippets with CLI options or bits of Standard JSON input specified as soltest directives.\r\n- As a new kind of command-line test.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13418/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13418/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

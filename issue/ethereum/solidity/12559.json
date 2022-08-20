@@ -85,9 +85,9 @@
     }
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-01-19T16:12:01Z",
-  "updated_at": "2022-08-17T10:39:32Z",
+  "updated_at": "2022-08-19T11:17:24Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -110,5 +110,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1220552799",
+    "html_url": "https://github.com/ethereum/solidity/issues/12559#issuecomment-1220552799",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12559",
+    "id": 1220552799,
+    "node_id": "IC_kwDOAm_5kc5IwChf",
+    "user": {
+      "login": "wechman",
+      "id": 37188783,
+      "node_id": "MDQ6VXNlcjM3MTg4Nzgz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37188783?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wechman",
+      "html_url": "https://github.com/wechman",
+      "followers_url": "https://api.github.com/users/wechman/followers",
+      "following_url": "https://api.github.com/users/wechman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wechman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wechman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wechman/subscriptions",
+      "organizations_url": "https://api.github.com/users/wechman/orgs",
+      "repos_url": "https://api.github.com/users/wechman/repos",
+      "events_url": "https://api.github.com/users/wechman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wechman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-19T11:16:33Z",
+    "updated_at": "2022-08-19T11:17:24Z",
+    "author_association": "MEMBER",
+    "body": "I went through the tests we have for reference types and found a minimal test set we lack of and might want to provide within this ticket:\r\n\r\n1) Copy 2d static/dynamic array from calldata to memory.\r\n```\r\nfunction(uint8[][] calldata _a) {\r\n    uint8[][] memory a = _a;\r\n}\r\n```\r\n\r\n2) Copy 2d static array from storage to memory.\r\n```\r\ncontract C {\r\n    uint8[2][2] s = [[1, 2], [3,4]];\r\n    \r\n    function f() public {\r\n        uint8[2][2] memory tmp = s;\r\n    }\r\n```\r\n\r\n3) Copy element of 3d static/dynamic array from calldata/memory/storage to 2d array in memory/storage.\r\n```\r\ncontract C {\r\n    uint[1][1][1] s;\r\n    function f() public {\r\n        uint[1][1] tmp = s[0];\r\n    }\r\n}\r\n```\r\n\r\n4) Copy 2d static/dynamic array of structs from calldata/memory to storage\r\n```\r\ncontract C {\r\n    struct S {uint8 x;}\r\n    S s;\r\n    function() public {\r\n        S memory local = S({x: 7})l\r\n        s = local;\r\n    }\r\n}\r\n```\r\n\r\n5) Copy element of 3d static/dynamic array of structures from calldata/memory/storage to 2d memory/storage array.\r\n```\r\ncontract C {\r\n    struct S { uint 8x; }\r\n    S[1][1][1] s;\r\n    function f() public {\r\n        S[1][1] memory local = s[0];\r\n    }\r\n}\r\n```\r\n\r\n6) Copy 1d static/dynamic array of structures with nested array from storage to memory.\r\n```\r\ncontract C {\r\n    struct S { uint8[2] x};\r\n    S[2] s = [S(x: [1, 2]), S(x: [3, 4])];\r\n    function f() public {\r\n        S memory local =  s[0];\r\n    }\r\n}\r\n```\r\n\r\n7) Copy elements of 2d static/dynamic array of structs with nested array from calldata/memory/storage to 1d memory/storage array.\r\n```\r\ncontract C {\r\n    struct S {uint8[2] x;}\r\n    S[1][1] s = [[S({x: [1,2]})]];\r\n    function f() public {\r\n        S[1] local = s[0];\r\n    }\r\n}\r\n```\r\n\r\n8) Copy to/from `mapping (uint => struct/struct[])` to/from calldata/memory/storage array/struct.\r\n```\r\ncontract C {\r\n    struct S { uint8 x; }\r\n    mapping (uint8 => S) m;\r\n    function f() public {\r\n        S memory s = m[0];\r\n    }\r\n}\r\n```\r\nAbove code snippets are there just to illustrate what kind of test cases we need so they might not compile properly.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1220552799/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

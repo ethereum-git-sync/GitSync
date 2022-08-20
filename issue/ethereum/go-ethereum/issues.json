@@ -1,11 +1,67 @@
 [
   {
     "author": {
+      "login": "rx294"
+    },
+    "number": 25557,
+    "title": "Geth returning no data for random uncle blocks;  method `eth_getBlockByHash`",
+    "updatedAt": "2022-08-19T23:58:28Z"
+  },
+  {
+    "author": {
+      "login": "757566833"
+    },
+    "number": 25537,
+    "title": "ethclient: BlockByNumber cannot handle `pending` block",
+    "updatedAt": "2022-08-19T12:27:51Z"
+  },
+  {
+    "author": {
       "login": "ziogaschr"
     },
     "number": 25550,
     "title": "Tracing API says transaction failed when it was successful",
-    "updatedAt": "2022-08-18T20:46:55Z"
+    "updatedAt": "2022-08-19T11:46:10Z"
+  },
+  {
+    "author": {
+      "login": "rrhlrmrr"
+    },
+    "number": 25553,
+    "title": "Geth/v1.10.21 Connect Bootnode Fail",
+    "updatedAt": "2022-08-19T10:50:46Z"
+  },
+  {
+    "author": {
+      "login": "rrhlrmrr"
+    },
+    "number": 25554,
+    "title": "Geth/v1.10.21 Connect Bootnode Fail -2 ",
+    "updatedAt": "2022-08-19T10:45:05Z"
+  },
+  {
+    "author": {
+      "login": "wbt"
+    },
+    "number": 19905,
+    "title": "Could not decrypt key with given passphrase",
+    "updatedAt": "2022-08-19T10:07:02Z"
+  },
+  {
+    "author": {
+      "login": "ryanschneider"
+    },
+    "number": 25421,
+    "title": "Apparent Performance regression in `eth_getLogs`",
+    "updatedAt": "2022-08-19T09:15:00Z"
+  },
+  {
+    "author": {
+      "login": "crystalgarden"
+    },
+    "number": 25534,
+    "title": "eth_syncing returns 'false' while Geth node is still syncing",
+    "updatedAt": "2022-08-19T07:23:28Z"
   },
   {
     "author": {
@@ -22,14 +78,6 @@
     "number": 21224,
     "title": "[Feature Requests] geth --dev --fork",
     "updatedAt": "2022-08-18T13:34:06Z"
-  },
-  {
-    "author": {
-      "login": "crystalgarden"
-    },
-    "number": 25534,
-    "title": "eth_syncing returns 'false' while Geth node is still syncing",
-    "updatedAt": "2022-08-18T13:06:45Z"
   },
   {
     "author": {
@@ -70,14 +118,6 @@
     "number": 25536,
     "title": "personal_signTransaction improperly requires both maxFeePerGas and maxPriorityFeePerGas",
     "updatedAt": "2022-08-18T08:27:56Z"
-  },
-  {
-    "author": {
-      "login": "757566833"
-    },
-    "number": 25537,
-    "title": "cannot unmarshal  `pending` block",
-    "updatedAt": "2022-08-18T08:26:02Z"
   },
   {
     "author": {
@@ -350,14 +390,6 @@
     "number": 25362,
     "title": "Stuck in trouble, logging \"Block state missing, rewinding further\"",
     "updatedAt": "2022-08-07T16:21:50Z"
-  },
-  {
-    "author": {
-      "login": "ryanschneider"
-    },
-    "number": 25421,
-    "title": "Apparent Performance regression in `eth_getLogs`",
-    "updatedAt": "2022-08-07T16:21:25Z"
   },
   {
     "author": {
@@ -6886,14 +6918,6 @@
     "number": 21928,
     "title": "SIGBUS panic while the full DAG generation",
     "updatedAt": "2021-11-02T10:34:24Z"
-  },
-  {
-    "author": {
-      "login": "wbt"
-    },
-    "number": 19905,
-    "title": "Could not decrypt key with given passphrase",
-    "updatedAt": "2021-11-01T10:35:41Z"
   },
   {
     "author": {

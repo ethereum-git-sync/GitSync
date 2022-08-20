@@ -67,7 +67,7 @@
       "description": "All issues marked with this label should be closed by Dec 2022"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "bunsenstraat",
@@ -114,28 +114,28 @@
   "milestone": null,
   "comments": 20,
   "created_at": "2019-05-28T22:46:03Z",
-  "updated_at": "2022-07-28T15:10:33Z",
-  "closed_at": null,
+  "updated_at": "2022-08-19T16:10:13Z",
+  "closed_at": "2022-08-19T16:10:13Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "Msg./list of functions/",
   "closed_by": {
-    "login": "LianaHus",
-    "id": 9685356,
-    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
-    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "login": "ryestew",
+    "id": 6050001,
+    "node_id": "MDQ6VXNlcjYwNTAwMDE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6050001?v=4",
     "gravatar_id": "",
-    "url": "https://api.github.com/users/LianaHus",
-    "html_url": "https://github.com/LianaHus",
-    "followers_url": "https://api.github.com/users/LianaHus/followers",
-    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
-    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
-    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
-    "repos_url": "https://api.github.com/users/LianaHus/repos",
-    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "url": "https://api.github.com/users/ryestew",
+    "html_url": "https://github.com/ryestew",
+    "followers_url": "https://api.github.com/users/ryestew/followers",
+    "following_url": "https://api.github.com/users/ryestew/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ryestew/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ryestew/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ryestew/subscriptions",
+    "organizations_url": "https://api.github.com/users/ryestew/orgs",
+    "repos_url": "https://api.github.com/users/ryestew/repos",
+    "events_url": "https://api.github.com/users/ryestew/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ryestew/received_events",
     "type": "User",
     "site_admin": false
   },
@@ -153,7 +153,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/199/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -276,7 +276,7 @@
     "body": "can you guys tell me how can i enable autocomplete in remix? i'm new to remix and it doesnt show anything as i type.\r\nthere is an autocomplete for already used words but not for commands available.\r\nthanks",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1002011747/reactions",
-      "total_count": 3,
+      "total_count": 4,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
@@ -284,7 +284,7 @@
       "confused": 0,
       "heart": 0,
       "rocket": 0,
-      "eyes": 3
+      "eyes": 4
     },
     "performed_via_github_app": null
   },

@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "MrChico"
+    },
+    "number": 2613,
+    "title": "ERC-2612 `permit`: 712-signed token approvals",
+    "updatedAt": "2022-08-19T14:27:34Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5475,
+    "title": "Proposal: Rollback EIP-712 from \"final\" to \"draft\" OR deprecate EIP-712 with a new one",
+    "updatedAt": "2022-08-19T04:55:21Z"
+  },
+  {
+    "author": {
       "login": "Pandapip1"
     },
     "number": 5452,
@@ -14,14 +30,6 @@
     "number": 5488,
     "title": "Add finalized date to EIPs.",
     "updatedAt": "2022-08-18T18:45:58Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5475,
-    "title": "Proposal: Rollback EIP-712 from \"final\" to \"draft\" OR deprecate EIP-712 with a new one",
-    "updatedAt": "2022-08-18T17:40:35Z"
   },
   {
     "author": {
@@ -150,14 +158,6 @@
     "number": 2535,
     "title": "Diamonds",
     "updatedAt": "2022-08-11T13:52:09Z"
-  },
-  {
-    "author": {
-      "login": "MrChico"
-    },
-    "number": 2613,
-    "title": "ERC-2612 `permit`: 712-signed token approvals",
-    "updatedAt": "2022-08-11T13:39:21Z"
   },
   {
     "author": {

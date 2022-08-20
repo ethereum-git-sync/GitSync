@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2980",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2980/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2980/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2980/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2980",
+  "id": 1344357253,
+  "node_id": "I_kwDOCOoGbc5QIUOF",
+  "number": 2980,
+  "title": "EIP4844: Impove performance by avoiding merkle trees when generating KZG challenges",
+  "user": {
+    "login": "asn-d6",
+    "id": 3611450,
+    "node_id": "MDQ6VXNlcjM2MTE0NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3611450?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/asn-d6",
+    "html_url": "https://github.com/asn-d6",
+    "followers_url": "https://api.github.com/users/asn-d6/followers",
+    "following_url": "https://api.github.com/users/asn-d6/following{/other_user}",
+    "gists_url": "https://api.github.com/users/asn-d6/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/asn-d6/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/asn-d6/subscriptions",
+    "organizations_url": "https://api.github.com/users/asn-d6/orgs",
+    "repos_url": "https://api.github.com/users/asn-d6/repos",
+    "events_url": "https://api.github.com/users/asn-d6/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/asn-d6/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-19T12:10:13Z",
+  "updated_at": "2022-08-19T12:11:06Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Both in [compute_aggregated_poly_and_commitment](https://github.com/ethereum/consensus-specs/blob/dev/specs/eip4844/validator.md#compute_aggregated_poly_and_commitment) and in [validate_blobs_sidecar](https://github.com/ethereum/consensus-specs/blob/dev/specs/eip4844/validator.md#validate_blobs_sidecar) we are generating challenge scalars using [hash_to_bls_field()](https://github.com/ethereum/consensus-specs/blob/dev/specs/eip4844/validator.md#hash_to_bls_field) which calls `hash_tree_root()`.\r\n\r\nThere is actually no reason to compute merkle roots when we are generating these challenge scalars. We should instead just straight sha256 hash the values we care about.\r\n\r\nDoing this change will improve performance when we are computing and verifying KZG proofs.\r\n\r\n(/cc @hwwhww @Inphi @protolambda )",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2980/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2980/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

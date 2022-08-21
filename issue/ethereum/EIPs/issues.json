@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5488,
+    "title": "Add finalized date to EIPs.",
+    "updatedAt": "2022-08-20T13:26:13Z"
+  },
+  {
+    "author": {
       "login": "MrChico"
     },
     "number": 2613,
@@ -22,14 +30,6 @@
     "number": 5452,
     "title": "Grant all EIP editors write permission",
     "updatedAt": "2022-08-18T20:27:26Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5488,
-    "title": "Add finalized date to EIPs.",
-    "updatedAt": "2022-08-18T18:45:58Z"
   },
   {
     "author": {

@@ -1,11 +1,27 @@
 [
   {
     "author": {
+      "login": "amandaweston1306"
+    },
+    "number": 5519,
+    "title": "{",
+    "updatedAt": "2022-08-22T00:07:32Z"
+  },
+  {
+    "author": {
       "login": "MicahZoltu"
     },
     "number": 5488,
     "title": "Add finalized date to EIPs.",
-    "updatedAt": "2022-08-20T13:26:13Z"
+    "updatedAt": "2022-08-21T17:49:49Z"
+  },
+  {
+    "author": {
+      "login": "dr-orlovsky"
+    },
+    "number": 1329,
+    "title": "ERC-1329: Inalienable Reputation Token",
+    "updatedAt": "2022-08-21T13:24:27Z"
   },
   {
     "author": {
@@ -270,14 +286,6 @@
     "number": 5223,
     "title": "Include a copy of RFC 822 and RFC 2119 in EIP-1's assets folder",
     "updatedAt": "2022-08-02T15:14:21Z"
-  },
-  {
-    "author": {
-      "login": "dr-orlovsky"
-    },
-    "number": 1329,
-    "title": "ERC-1329: Inalienable Reputation Token",
-    "updatedAt": "2022-08-02T06:53:41Z"
   },
   {
     "author": {

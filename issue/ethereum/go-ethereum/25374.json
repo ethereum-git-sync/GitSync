@@ -49,7 +49,7 @@
   "milestone": null,
   "comments": 1,
   "created_at": "2022-07-22T12:19:45Z",
-  "updated_at": "2022-07-25T15:43:51Z",
+  "updated_at": "2022-08-21T22:23:21Z",
   "closed_at": "2022-07-25T15:43:51Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -123,14 +123,14 @@
     "body": "Done",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1194241508/reactions",
-      "total_count": 2,
+      "total_count": 3,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
       "heart": 0,
-      "rocket": 2,
+      "rocket": 3,
       "eyes": 0
     },
     "performed_via_github_app": null

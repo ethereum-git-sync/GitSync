@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "frangio"
+    },
+    "number": 13352,
+    "title": "Avoid copying unused returndata on .call family of functions",
+    "updatedAt": "2022-08-21T10:47:07Z"
+  },
+  {
+    "author": {
       "login": "nishant-sachdeva"
     },
     "number": 13410,
@@ -3521,7 +3529,7 @@
   },
   {
     "author": {
-      "login": "lllrdgz"
+      "login": "leandro-rodriguez"
     },
     "number": 13364,
     "title": "Solidity compiler issue on Arch Linux",
@@ -3582,14 +3590,6 @@
     "number": 13349,
     "title": "Are unused internal functions of libraries removed from bytecode?",
     "updatedAt": "2022-08-06T04:37:03Z"
-  },
-  {
-    "author": {
-      "login": "frangio"
-    },
-    "number": 13352,
-    "title": "Avoid copying unused returndata on .call family of functions",
-    "updatedAt": "2022-08-05T20:57:26Z"
   },
   {
     "author": {

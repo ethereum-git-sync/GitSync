@@ -30,7 +30,15 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 4163819084,
+      "node_id": "LA_kwDOCOoGbc74LtZM",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/eip-4844",
+      "name": "eip-4844",
+      "color": "A28C37",
+      "default": false,
+      "description": ""
+    }
   ],
   "state": "open",
   "locked": false,
@@ -39,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-08-19T12:10:13Z",
-  "updated_at": "2022-08-19T12:11:06Z",
+  "updated_at": "2022-08-22T19:30:29Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -49,8 +57,8 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2980/reactions",
-    "total_count": 0,
-    "+1": 0,
+    "total_count": 1,
+    "+1": 1,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -64,5 +72,92 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1222091241",
+    "html_url": "https://github.com/ethereum/consensus-specs/issues/2980#issuecomment-1222091241",
+    "issue_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2980",
+    "id": 1222091241,
+    "node_id": "IC_kwDOCOoGbc5I16Hp",
+    "user": {
+      "login": "asn-d6",
+      "id": 3611450,
+      "node_id": "MDQ6VXNlcjM2MTE0NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3611450?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/asn-d6",
+      "html_url": "https://github.com/asn-d6",
+      "followers_url": "https://api.github.com/users/asn-d6/followers",
+      "following_url": "https://api.github.com/users/asn-d6/following{/other_user}",
+      "gists_url": "https://api.github.com/users/asn-d6/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/asn-d6/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/asn-d6/subscriptions",
+      "organizations_url": "https://api.github.com/users/asn-d6/orgs",
+      "repos_url": "https://api.github.com/users/asn-d6/repos",
+      "events_url": "https://api.github.com/users/asn-d6/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/asn-d6/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-22T09:25:16Z",
+    "updated_at": "2022-08-22T09:25:16Z",
+    "author_association": "MEMBER",
+    "body": "@hwwhww Thanks for the patch! I think @Inphi is gonna implement the change on his side pretty soon, so let's wait for his performance results before we merge this.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1222091241/reactions",
+      "total_count": 1,
+      "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1222562583",
+    "html_url": "https://github.com/ethereum/consensus-specs/issues/2980#issuecomment-1222562583",
+    "issue_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2980",
+    "id": 1222562583,
+    "node_id": "IC_kwDOCOoGbc5I3tMX",
+    "user": {
+      "login": "Inphi",
+      "id": 3516807,
+      "node_id": "MDQ6VXNlcjM1MTY4MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3516807?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Inphi",
+      "html_url": "https://github.com/Inphi",
+      "followers_url": "https://api.github.com/users/Inphi/followers",
+      "following_url": "https://api.github.com/users/Inphi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Inphi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Inphi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Inphi/subscriptions",
+      "organizations_url": "https://api.github.com/users/Inphi/orgs",
+      "repos_url": "https://api.github.com/users/Inphi/repos",
+      "events_url": "https://api.github.com/users/Inphi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Inphi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-22T16:01:40Z",
+    "updated_at": "2022-08-22T19:30:29Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "I have an [implementation](https://github.com/mdehoog/go-ethereum/pull/15) for this change. This indeed yields a significant performance improvement when verifying multiple blob transactions:\r\n```\r\nname                 old time/op    new time/op    delta\r\nVerifyMultiple/8-6     73.9ms ± 0%    40.7ms ± 0%   ~     (p=1.000 n=1+1)\r\nVerifyMultiple/16-6     138ms ± 0%      81ms ± 0%   ~     (p=1.000 n=1+1)\r\n\r\nname                 old alloc/op   new alloc/op   delta\r\nVerifyMultiple/8-6     25.2MB ± 0%    22.1MB ± 0%   ~     (p=1.000 n=1+1)\r\nVerifyMultiple/16-6    50.4MB ± 0%    44.1MB ± 0%   ~     (p=1.000 n=1+1)\r\n\r\nname                 old allocs/op  new allocs/op  delta\r\nVerifyMultiple/8-6       400k ± 0%      301k ± 0%   ~     (p=1.000 n=1+1)\r\nVerifyMultiple/16-6      800k ± 0%      603k ± 0%   ~     (p=1.000 n=1+1)\r\n```\r\n\r\nVerifying a blob tx using merkle trees for challenges takes about 25 milliseconds on my machine (AMD Ryzen 7 3700X). With the switch to using a simple sha256 hash, it takes only 5ms to verify.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1222562583/reactions",
+      "total_count": 3,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 3,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

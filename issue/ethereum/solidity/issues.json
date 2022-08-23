@@ -1,11 +1,59 @@
 [
   {
     "author": {
+      "login": "chriseth"
+    },
+    "number": 4617,
+    "title": "[CLI] Solc should report if there was no contract to compile",
+    "updatedAt": "2022-08-22T23:17:41Z"
+  },
+  {
+    "author": {
       "login": "frangio"
     },
     "number": 13352,
     "title": "Avoid copying unused returndata on .call family of functions",
-    "updatedAt": "2022-08-21T10:47:07Z"
+    "updatedAt": "2022-08-22T14:13:06Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12961,
+    "title": "Download list is empty in the flyout menu in the docs for versions 0.8.9..0.8.13",
+    "updatedAt": "2022-08-22T11:12:35Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13421,
+    "title": "Fix warning about `DOWNLOAD_EXTRACT_TIMESTAMP` on CMake 3.24",
+    "updatedAt": "2022-08-22T11:04:44Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 10308,
+    "title": "[CLI] Rewrite solc --link to use LinkerObject",
+    "updatedAt": "2022-08-22T10:46:34Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 12559,
+    "title": "Investigate and improve test coverage for copying reference types between data locations.",
+    "updatedAt": "2022-08-22T05:29:02Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13420,
+    "title": "[Yul optimizer] Incorrectly removes partially overlapping memory writes",
+    "updatedAt": "2022-08-22T03:49:47Z"
   },
   {
     "author": {
@@ -30,14 +78,6 @@
     "number": 13418,
     "title": "Tests for bytecode reproducibility from metadata",
     "updatedAt": "2022-08-19T18:03:20Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 12559,
-    "title": "Investigate and improve test coverage for copying reference types between data locations.",
-    "updatedAt": "2022-08-19T11:17:24Z"
   },
   {
     "author": {
@@ -94,14 +134,6 @@
     "number": 11700,
     "title": "Reconsider operators on ContractType",
     "updatedAt": "2022-08-18T18:40:39Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 4617,
-    "title": "[CLI] Solc should report if there was no contract to compile",
-    "updatedAt": "2022-08-18T18:39:36Z"
   },
   {
     "author": {
@@ -3625,14 +3657,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 12961,
-    "title": "Download list is empty in the flyout menu in the docs for versions 0.8.9..0.8.13",
-    "updatedAt": "2022-08-05T12:15:55Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 10645,
@@ -5694,14 +5718,6 @@
     "number": 12776,
     "title": "Different types are not distinguished enough in error messages from `abi.encodeCall()`",
     "updatedAt": "2022-03-11T11:20:46Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 10308,
-    "title": "[CLI] Rewrite solc --link to use LinkerObject",
-    "updatedAt": "2022-03-09T20:02:39Z"
   },
   {
     "author": {

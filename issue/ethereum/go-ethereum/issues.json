@@ -1,6 +1,78 @@
 [
   {
     "author": {
+      "login": "hdiass"
+    },
+    "number": 25517,
+    "title": "--exitwhensynced doesn't work after the goerli merge",
+    "updatedAt": "2022-08-22T13:53:56Z"
+  },
+  {
+    "author": {
+      "login": "rx294"
+    },
+    "number": 25557,
+    "title": "Geth returning no data for random uncle blocks;  method `eth_getBlockByHash`",
+    "updatedAt": "2022-08-22T12:59:28Z"
+  },
+  {
+    "author": {
+      "login": "storyicon"
+    },
+    "number": 25572,
+    "title": "feat: some fields and methods are missing in the ethclient",
+    "updatedAt": "2022-08-22T10:07:43Z"
+  },
+  {
+    "author": {
+      "login": "prostack364"
+    },
+    "number": 25571,
+    "title": "Is that correct algorithm to push the given node to nodesByDistance entries?",
+    "updatedAt": "2022-08-22T10:03:27Z"
+  },
+  {
+    "author": {
+      "login": "dzianisv"
+    },
+    "number": 25511,
+    "title": "SIGSEGV: segmentation violation code=0x1 `downloader.(*Downloader).findAncestorBinarySearch()`",
+    "updatedAt": "2022-08-22T07:46:24Z"
+  },
+  {
+    "author": {
+      "login": "crystalgarden"
+    },
+    "number": 25534,
+    "title": "eth_syncing returns 'false' while Geth node is still syncing",
+    "updatedAt": "2022-08-22T06:41:23Z"
+  },
+  {
+    "author": {
+      "login": "c0deright"
+    },
+    "number": 25563,
+    "title": "massive disk usage spike in very short time frame at 2022/08/20 05:00 UTC",
+    "updatedAt": "2022-08-22T06:40:31Z"
+  },
+  {
+    "author": {
+      "login": "pandaplusplus"
+    },
+    "number": 25464,
+    "title": "the method `engine_exchangeTransitionConfigurationV1` does not exist/is not available",
+    "updatedAt": "2022-08-22T05:58:38Z"
+  },
+  {
+    "author": {
+      "login": "SipengXie"
+    },
+    "number": 25562,
+    "title": "Why set 'ret' here rather than code?",
+    "updatedAt": "2022-08-22T03:26:24Z"
+  },
+  {
+    "author": {
       "login": "MariusVanDerWijden"
     },
     "number": 25374,
@@ -33,27 +105,11 @@
   },
   {
     "author": {
-      "login": "c0deright"
-    },
-    "number": 25563,
-    "title": "massive disk usage spike in very short time frame at 2022/08/20 05:00 UTC",
-    "updatedAt": "2022-08-20T18:08:33Z"
-  },
-  {
-    "author": {
       "login": "757566833"
     },
     "number": 25537,
     "title": "ethclient: BlockByNumber cannot handle `pending` block",
     "updatedAt": "2022-08-20T09:56:22Z"
-  },
-  {
-    "author": {
-      "login": "SipengXie"
-    },
-    "number": 25562,
-    "title": "Why set 'ret' here rather than code?",
-    "updatedAt": "2022-08-20T09:34:41Z"
   },
   {
     "author": {
@@ -70,14 +126,6 @@
     "number": 25495,
     "title": "Geth RPC service consistency against other client implementations #1",
     "updatedAt": "2022-08-20T04:04:57Z"
-  },
-  {
-    "author": {
-      "login": "rx294"
-    },
-    "number": 25557,
-    "title": "Geth returning no data for random uncle blocks;  method `eth_getBlockByHash`",
-    "updatedAt": "2022-08-19T23:58:28Z"
   },
   {
     "author": {
@@ -121,14 +169,6 @@
   },
   {
     "author": {
-      "login": "crystalgarden"
-    },
-    "number": 25534,
-    "title": "eth_syncing returns 'false' while Geth node is still syncing",
-    "updatedAt": "2022-08-19T07:23:28Z"
-  },
-  {
-    "author": {
       "login": "hmijail"
     },
     "number": 25544,
@@ -169,27 +209,11 @@
   },
   {
     "author": {
-      "login": "dzianisv"
-    },
-    "number": 25511,
-    "title": "SIGSEGV: segmentation violation code=0x1 `downloader.(*Downloader).findAncestorBinarySearch()`",
-    "updatedAt": "2022-08-18T08:43:29Z"
-  },
-  {
-    "author": {
       "login": "hostgame"
     },
     "number": 25536,
     "title": "personal_signTransaction improperly requires both maxFeePerGas and maxPriorityFeePerGas",
     "updatedAt": "2022-08-18T08:27:56Z"
-  },
-  {
-    "author": {
-      "login": "hdiass"
-    },
-    "number": 25517,
-    "title": "--exitwhensynced doesn't work after the goerli merge",
-    "updatedAt": "2022-08-18T07:35:57Z"
   },
   {
     "author": {
@@ -582,14 +606,6 @@
     "number": 25227,
     "title": "Temp files generated during DAG generation won't cleanup properly.",
     "updatedAt": "2022-08-02T12:33:24Z"
-  },
-  {
-    "author": {
-      "login": "pandaplusplus"
-    },
-    "number": 25464,
-    "title": "the method `engine_exchangeTransitionConfigurationV1` does not exist/is not available",
-    "updatedAt": "2022-08-02T05:18:39Z"
   },
   {
     "author": {

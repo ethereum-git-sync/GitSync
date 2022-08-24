@@ -1,6 +1,62 @@
 [
   {
     "author": {
+      "login": "luzianscherrer"
+    },
+    "number": 25579,
+    "title": "Release 1.10.22 Regression",
+    "updatedAt": "2022-08-23T19:50:17Z"
+  },
+  {
+    "author": {
+      "login": "timcourtney"
+    },
+    "number": 14644,
+    "title": "geth: command not found after building on Ubuntu",
+    "updatedAt": "2022-08-23T19:21:49Z"
+  },
+  {
+    "author": {
+      "login": "storyicon"
+    },
+    "number": 25572,
+    "title": "feat: some fields and methods are missing in the ethclient",
+    "updatedAt": "2022-08-23T12:26:55Z"
+  },
+  {
+    "author": {
+      "login": "hmijail"
+    },
+    "number": 25544,
+    "title": "Allow `evm t8n` to generate traces to stdout or to a known filename",
+    "updatedAt": "2022-08-23T11:55:31Z"
+  },
+  {
+    "author": {
+      "login": "prostack364"
+    },
+    "number": 25571,
+    "title": "Is that correct algorithm to push the given node to nodesByDistance entries?",
+    "updatedAt": "2022-08-23T11:53:44Z"
+  },
+  {
+    "author": {
+      "login": "SharpCX"
+    },
+    "number": 25577,
+    "title": "Why my chain data so huge (15T)",
+    "updatedAt": "2022-08-23T11:31:18Z"
+  },
+  {
+    "author": {
+      "login": "dzianisv"
+    },
+    "number": 25511,
+    "title": "SIGSEGV: segmentation violation code=0x1 `downloader.(*Downloader).findAncestorBinarySearch()`",
+    "updatedAt": "2022-08-23T11:13:36Z"
+  },
+  {
+    "author": {
       "login": "hdiass"
     },
     "number": 25517,
@@ -14,30 +70,6 @@
     "number": 25557,
     "title": "Geth returning no data for random uncle blocks;  method `eth_getBlockByHash`",
     "updatedAt": "2022-08-22T12:59:28Z"
-  },
-  {
-    "author": {
-      "login": "storyicon"
-    },
-    "number": 25572,
-    "title": "feat: some fields and methods are missing in the ethclient",
-    "updatedAt": "2022-08-22T10:07:43Z"
-  },
-  {
-    "author": {
-      "login": "prostack364"
-    },
-    "number": 25571,
-    "title": "Is that correct algorithm to push the given node to nodesByDistance entries?",
-    "updatedAt": "2022-08-22T10:03:27Z"
-  },
-  {
-    "author": {
-      "login": "dzianisv"
-    },
-    "number": 25511,
-    "title": "SIGSEGV: segmentation violation code=0x1 `downloader.(*Downloader).findAncestorBinarySearch()`",
-    "updatedAt": "2022-08-22T07:46:24Z"
   },
   {
     "author": {
@@ -166,14 +198,6 @@
     "number": 25421,
     "title": "Apparent Performance regression in `eth_getLogs`",
     "updatedAt": "2022-08-19T09:15:00Z"
-  },
-  {
-    "author": {
-      "login": "hmijail"
-    },
-    "number": 25544,
-    "title": "Allow `evm t8n` to generate traces to stdout or to a known filename",
-    "updatedAt": "2022-08-18T19:40:20Z"
   },
   {
     "author": {
@@ -39302,14 +39326,6 @@
     "number": 1092,
     "title": "panic: ethash_full_new IO or memory error",
     "updatedAt": "2017-08-05T10:49:50Z"
-  },
-  {
-    "author": {
-      "login": "timcourtney"
-    },
-    "number": 14644,
-    "title": "geth: command not found after building on Ubuntu",
-    "updatedAt": "2017-08-03T17:13:14Z"
   },
   {
     "author": {

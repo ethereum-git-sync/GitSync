@@ -1,11 +1,35 @@
 [
   {
     "author": {
+      "login": "haltman-at"
+    },
+    "number": 13425,
+    "title": "Request: Contract AST nodes should include info on what internal functions the contract uses",
+    "updatedAt": "2022-08-23T22:37:23Z"
+  },
+  {
+    "author": {
       "login": "chriseth"
     },
     "number": 4617,
     "title": "[CLI] Solc should report if there was no contract to compile",
-    "updatedAt": "2022-08-22T23:17:41Z"
+    "updatedAt": "2022-08-23T18:50:56Z"
+  },
+  {
+    "author": {
+      "login": "mojtaba-eshghie"
+    },
+    "number": 13427,
+    "title": "How can the contract detect the mode of calling according to solidity docs?",
+    "updatedAt": "2022-08-23T16:37:03Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13426,
+    "title": "Rewrite `FunctionCallGraph` tests as soltest test suite",
+    "updatedAt": "2022-08-23T11:59:22Z"
   },
   {
     "author": {
@@ -13,7 +37,7 @@
     },
     "number": 13352,
     "title": "Avoid copying unused returndata on .call family of functions",
-    "updatedAt": "2022-08-22T14:13:06Z"
+    "updatedAt": "2022-08-23T06:46:30Z"
   },
   {
     "author": {

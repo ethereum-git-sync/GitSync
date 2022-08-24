@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/122",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/122/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/122/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/122/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/122",
+  "id": 1233021119,
+  "node_id": "I_kwDOGZSKs85Jfmi_",
+  "number": 122,
+  "title": "data availability & relay misbehavior",
+  "user": {
+    "login": "obadiaa",
+    "id": 19510814,
+    "node_id": "MDQ6VXNlcjE5NTEwODE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19510814?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/obadiaa",
+    "html_url": "https://github.com/obadiaa",
+    "followers_url": "https://api.github.com/users/obadiaa/followers",
+    "following_url": "https://api.github.com/users/obadiaa/following{/other_user}",
+    "gists_url": "https://api.github.com/users/obadiaa/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/obadiaa/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/obadiaa/subscriptions",
+    "organizations_url": "https://api.github.com/users/obadiaa/orgs",
+    "repos_url": "https://api.github.com/users/obadiaa/repos",
+    "events_url": "https://api.github.com/users/obadiaa/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/obadiaa/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 4082529928,
+      "node_id": "LA_kwDOGZSKs87zVnaI",
+      "url": "https://api.github.com/repos/flashbots/mev-boost/labels/research%20%F0%9F%92%A1",
+      "name": "research 💡",
+      "color": "0052cc",
+      "default": false,
+      "description": "Research topic"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-05-11T18:15:43Z",
+  "updated_at": "2022-06-03T11:05:55Z",
+  "closed_at": null,
+  "author_association": "COLLABORATOR",
+  "active_lock_reason": null,
+  "body": "**Context:**\r\nThere are discussions, as mentioned by @thegostep in [issue 109](https://github.com/flashbots/mev-boost/issues/109#issuecomment-1116027545), of relays gossiping builder payloads among each other to improve data availability and combat exclusive orderflow. Intuitively, this feels like it shouldn't be done without getting explicit approval of the builders as it otherwise subjects them to unwanted exposure of information to a larger set of parties than they expected.\r\n\r\nFor each relay that a builder sends its payload to, a builder needs to trust that the relay won't use that information adversarially, for example frontrun them. This means a builder would rather send their payload to a single trusted relay instead of multiple ones. However, as pointed out by @fradamt also in [109](https://github.com/flashbots/mev-boost/issues/109#issuecomment-1115931753), proposers would rather select headers they see from multiple relays to benefit from the 1/n assumption and lower the risks of a data availability issue (malicious or not) such as a block-body withdrawal from a relay after a header has already been signed by the proposer.\r\n\r\n**Questions:**\r\nPrimary:\r\n1. How difficult it is to monitor/detect relay misbehavior if multiple relays have the same payload?Understanding this problem better would allow us to think through the risks that builders subject themselves to by allowing relays to share payloads with one another.\r\n2. Are there other ways to improve data availability? For example with a trusted data availability committee which collects payloads from all relays and aren't running relays themselves?\r\n\r\nSecondary:\r\n\r\n4. What kind of equilibrium (in number of relays trusted by builders for any given payload, and number of relays trusted by proposers for any given payload) will be reached given these two opposing forces?\r\n5. How will it impact the market of builder's bids?",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/122/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/122/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

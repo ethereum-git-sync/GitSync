@@ -30,7 +30,15 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 4393375250,
+      "node_id": "LA_kwDOAq426M8AAAABBd2WEg",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/waiting:%20no%20recent%20activity",
+      "name": "waiting: no recent activity",
+      "color": "E99695",
+      "default": false,
+      "description": "This PR hasn't received activity in a while, and will eventually be closed if nothing happens."
+    }
   ],
   "state": "open",
   "locked": false,
@@ -39,11 +47,11 @@
 
   ],
   "milestone": null,
-  "comments": 29,
+  "comments": 30,
   "created_at": "2022-03-25T11:19:04Z",
-  "updated_at": "2022-08-04T00:20:35Z",
+  "updated_at": "2022-08-24T00:21:16Z",
   "closed_at": null,
-  "author_association": "CONTRIBUTOR",
+  "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "See: https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main\r\n\r\nIssue on EIPIP repo: https://github.com/ethereum-cat-herders/EIPIP/issues/122\r\n\r\nSo that the EIP editors can accurately gauge if the community desires this, please vote with 👍 or 👎. (I've reacted with both so that both reaction buttons appear, so subtract 1 from both counts).\r\n\r\nList of EIP-related repos with `master` as the primary branch name: https://github.com/ethereum/EIPs/issues/4945#issuecomment-1099274553",
   "closed_by": null,
@@ -136,7 +144,7 @@
     },
     "created_at": "2022-03-26T15:20:20Z",
     "updated_at": "2022-03-26T15:20:20Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "This is going to turn into a debate very quickly. \r\n\r\nI'd also like to apologize in advance if any of this offends anyone. If it does, please **do** point it out to me, because I'd like to avoid accidentally offending people where possible.\r\n\r\n> I'm strongly against renaming things due to the current political climate/pressure.\r\n\r\nI'd prefer 'current' to be defined. It's coming up on two years since Git has offered this suggestion.\r\n\r\n> What is PC changes on a near-daily basis now, and it is way too much cognitive overhead to try to keep up. \r\n\r\nHere's a proposed solution: publicize the EIPIP repo more, and have the community vote. I definitely agree with you that a four-person team of volunteer EIP editors is not sufficient.\r\n\r\n> On this specific matter, the master/slave terminology accurately represents many constructs in software engineering\r\n\r\nI agree that that terminology can be useful for e.g. VMs, but I fail to see the connection for Git repositories. A `master` branch has no connection to the `master`/`slave` terminology. I think it's more a reference to a \"master copy\" - and there is no such thing as a \"slave copy\". For this purpose, \"main copy\" works just as well.\r\n\r\nIn addition, other terminology may be far more accurate in expressing how systems work. In a system where the terms \"scheduling node\" and \"executor node\" apply, it seems a bit silly to use more ambiguous terms such as a \"master node\" and a \"slave node\" - especially when community consensus is against the usage of those terms.\r\n\r\n> Just because at some point in history someone used the terms to represent certain relationships between humans doesn't change the meaning of the terms nor degrade their usefulness in expressing relationships between things\r\n\r\nI'm afraid I have to disagree with this point about it not changing the meaning or degrading the usefulness. Look no further than the history of Pepe memes - originally having no connotation, then having a racist connotation, and now a connotation that I'm not sure anyone really knows. But the fact is, people did make racist Pepe memes and changed the meaning of Pepe memes (giving Pepe memes, including ones made before the change a slight racist connotation), and also changed the utility of them (nobody wanted to be called racist for making a Pepe meme). \r\n\r\n> Also, and this is much more abstract and philosophical, I feel like in the ethos of anti-censorship, we shouldn't try to censor speech in our repositories\r\n\r\nFirstly, does that extend to, for example, off-topic posts? I feel like there's a line at which it's okay to censor things if there is consensus.\r\n\r\nSecondly, whose speech would we be censoring?\r\n\r\n> In this case, defaults have preference barring a good reason beyond the desire to censor certain kinds of speech, and at the moment that means master.\r\n\r\nReasons have now been provided above as to why using `main` over `master` is desirable. We'll see whether they are proven to be good or not. \r\n\r\nAnyways, I always welcome feedback. These kinds of changes always work best when everyone agrees, so please provide me with any refutations you can think of.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1079714649/reactions",
@@ -356,7 +364,7 @@
     },
     "created_at": "2022-04-01T15:06:31Z",
     "updated_at": "2022-04-01T15:06:31Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "> any risks of breaking things\r\n\r\nI'll open an issue on the EIP bot repo, in case this is an issue in that case.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1086014640/reactions",
@@ -488,7 +496,7 @@
     },
     "created_at": "2022-04-04T16:28:39Z",
     "updated_at": "2022-04-04T16:28:39Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "Also, I don't think that this has any risk of breaking any tooling. Renaming to `main` will cause `master` to just redirect to the new branch.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1087766787/reactions",
@@ -532,7 +540,7 @@
     },
     "created_at": "2022-04-04T16:39:57Z",
     "updated_at": "2022-04-04T16:39:57Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "Considering the lack of progress, there definitely needs to be a protocol for these types of changes. I would say the EIPIP repo would be ideal, but I think that the purpose of EIPIP meetings is different enough from determining what is or isn't offensive that the task might warrant its own meta-EIP and corresponding protocol.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1087777128/reactions",
@@ -1328,6 +1336,50 @@
     "body": "There has been no activity on this issue for six months. It will be closed in a week if no further activity occurs. If you would like to move this EIP forward, please respond to any outstanding feedback or add a comment indicating that you have addressed all required feedback and are ready for a review.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1203344491/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1225018122",
+    "html_url": "https://github.com/ethereum/EIPs/issues/4945#issuecomment-1225018122",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/4945",
+    "id": 1225018122,
+    "node_id": "IC_kwDOAq426M5JBEsK",
+    "user": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "created_at": "2022-08-24T00:21:16Z",
+    "updated_at": "2022-08-24T00:21:16Z",
+    "author_association": "NONE",
+    "body": "There has been no activity on this issue for 1 week. It will be closed after 3 months of inactivity.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1225018122/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

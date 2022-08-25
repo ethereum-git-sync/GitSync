@@ -1,11 +1,115 @@
 [
   {
     "author": {
+      "login": "lcgogo"
+    },
+    "number": 25594,
+    "title": "How does geth communicate with prysm?",
+    "updatedAt": "2022-08-25T00:08:38Z"
+  },
+  {
+    "author": {
+      "login": "757566833"
+    },
+    "number": 25537,
+    "title": "ethclient: BlockByNumber cannot handle `pending` block",
+    "updatedAt": "2022-08-24T23:27:41Z"
+  },
+  {
+    "author": {
+      "login": "rx294"
+    },
+    "number": 25557,
+    "title": "Geth returning no data for random uncle blocks;  method `eth_getBlockByHash`",
+    "updatedAt": "2022-08-24T21:33:55Z"
+  },
+  {
+    "author": {
+      "login": "Sajjon"
+    },
+    "number": 25589,
+    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
+    "updatedAt": "2022-08-24T20:02:38Z"
+  },
+  {
+    "author": {
       "login": "luzianscherrer"
     },
     "number": 25579,
     "title": "Release 1.10.22 Regression",
-    "updatedAt": "2022-08-23T19:50:17Z"
+    "updatedAt": "2022-08-24T16:31:55Z"
+  },
+  {
+    "author": {
+      "login": "ryny24"
+    },
+    "number": 23228,
+    "title": "FYI - Sync mode SNAP does not work",
+    "updatedAt": "2022-08-24T15:48:39Z"
+  },
+  {
+    "author": {
+      "login": "SLoeuillet"
+    },
+    "number": 25593,
+    "title": "geth website docs/interface/peer-to-peer refers to outdated method to set static/trusted nodes",
+    "updatedAt": "2022-08-24T13:40:05Z"
+  },
+  {
+    "author": {
+      "login": "SharpCX"
+    },
+    "number": 25577,
+    "title": "Why my chain data so huge (15T)",
+    "updatedAt": "2022-08-24T11:15:06Z"
+  },
+  {
+    "author": {
+      "login": "Piradoxlanieve"
+    },
+    "number": 25590,
+    "title": "Not update 1.10.22 to 1.10.23",
+    "updatedAt": "2022-08-24T10:50:46Z"
+  },
+  {
+    "author": {
+      "login": "tropicar"
+    },
+    "number": 25587,
+    "title": "Multiarch is not included in the docker image of the v1.10.23 version",
+    "updatedAt": "2022-08-24T10:06:49Z"
+  },
+  {
+    "author": {
+      "login": "DubbaThony"
+    },
+    "number": 25498,
+    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
+    "updatedAt": "2022-08-24T09:13:18Z"
+  },
+  {
+    "author": {
+      "login": "SLoeuillet"
+    },
+    "number": 25583,
+    "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
+    "updatedAt": "2022-08-24T08:21:23Z"
+  },
+  {
+    "author": {
+      "login": "howjmay"
+    },
+    "number": 25586,
+    "title": "abi.Method.Sig not contains return types",
+    "updatedAt": "2022-08-24T08:09:22Z"
+  },
+  {
+    "author": {
+      "login": "tranquanghuy7198"
+    },
+    "number": 25584,
+    "title": "Invalid type cast",
+    "updatedAt": "2022-08-24T08:04:26Z"
   },
   {
     "author": {
@@ -41,14 +145,6 @@
   },
   {
     "author": {
-      "login": "SharpCX"
-    },
-    "number": 25577,
-    "title": "Why my chain data so huge (15T)",
-    "updatedAt": "2022-08-23T11:31:18Z"
-  },
-  {
-    "author": {
       "login": "dzianisv"
     },
     "number": 25511,
@@ -62,14 +158,6 @@
     "number": 25517,
     "title": "--exitwhensynced doesn't work after the goerli merge",
     "updatedAt": "2022-08-22T13:53:56Z"
-  },
-  {
-    "author": {
-      "login": "rx294"
-    },
-    "number": 25557,
-    "title": "Geth returning no data for random uncle blocks;  method `eth_getBlockByHash`",
-    "updatedAt": "2022-08-22T12:59:28Z"
   },
   {
     "author": {
@@ -137,14 +225,6 @@
   },
   {
     "author": {
-      "login": "757566833"
-    },
-    "number": 25537,
-    "title": "ethclient: BlockByNumber cannot handle `pending` block",
-    "updatedAt": "2022-08-20T09:56:22Z"
-  },
-  {
-    "author": {
       "login": "JosephK95"
     },
     "number": 25501,
@@ -206,14 +286,6 @@
     "number": 21224,
     "title": "[Feature Requests] geth --dev --fork",
     "updatedAt": "2022-08-18T13:34:06Z"
-  },
-  {
-    "author": {
-      "login": "DubbaThony"
-    },
-    "number": 25498,
-    "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
-    "updatedAt": "2022-08-18T12:15:07Z"
   },
   {
     "author": {
@@ -1038,14 +1110,6 @@
     "number": 25369,
     "title": "ethereum ",
     "updatedAt": "2022-07-22T18:20:34Z"
-  },
-  {
-    "author": {
-      "login": "ryny24"
-    },
-    "number": 23228,
-    "title": "FYI - Sync mode SNAP does not work",
-    "updatedAt": "2022-07-22T13:31:52Z"
   },
   {
     "author": {

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/77",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost-relay",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/77/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/77/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/77/events",
+  "html_url": "https://github.com/flashbots/mev-boost-relay/issues/77",
+  "id": 1348485763,
+  "node_id": "I_kwDOHXha9s5QYEKD",
+  "number": 77,
+  "title": "Audit the version of mev-boost-relay implementing the relay API v1",
+  "user": {
+    "login": "come-maiz",
+    "id": 617831,
+    "node_id": "MDQ6VXNlcjYxNzgzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/617831?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/come-maiz",
+    "html_url": "https://github.com/come-maiz",
+    "followers_url": "https://api.github.com/users/come-maiz/followers",
+    "following_url": "https://api.github.com/users/come-maiz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/come-maiz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/come-maiz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/come-maiz/subscriptions",
+    "organizations_url": "https://api.github.com/users/come-maiz/orgs",
+    "repos_url": "https://api.github.com/users/come-maiz/repos",
+    "events_url": "https://api.github.com/users/come-maiz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/come-maiz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-23T20:05:58Z",
+  "updated_at": "2022-08-23T20:05:58Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "We want to do an initial audit before the merge.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/77/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/77/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

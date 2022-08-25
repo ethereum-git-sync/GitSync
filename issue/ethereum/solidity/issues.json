@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "fulldecent"
+    },
+    "number": 13371,
+    "title": "Stop recommending .transfer",
+    "updatedAt": "2022-08-24T18:21:07Z"
+  },
+  {
+    "author": {
+      "login": "gpersoon"
+    },
+    "number": 13035,
+    "title": "LSP: `textDocument/definition` always returns \"result\":[]",
+    "updatedAt": "2022-08-24T16:01:53Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11969,
+    "title": "Operators for user defined value types.",
+    "updatedAt": "2022-08-24T11:00:18Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12961,
+    "title": "Download list is empty in the flyout menu in the docs for versions 0.8.9..0.8.13",
+    "updatedAt": "2022-08-24T04:10:21Z"
+  },
+  {
+    "author": {
       "login": "haltman-at"
     },
     "number": 13425,
@@ -38,14 +70,6 @@
     "number": 13352,
     "title": "Avoid copying unused returndata on .call family of functions",
     "updatedAt": "2022-08-23T06:46:30Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 12961,
-    "title": "Download list is empty in the flyout menu in the docs for versions 0.8.9..0.8.13",
-    "updatedAt": "2022-08-22T11:12:35Z"
   },
   {
     "author": {
@@ -2369,14 +2393,6 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11969,
-    "title": "Operators for user defined value types.",
-    "updatedAt": "2022-08-17T13:48:57Z"
-  },
-  {
-    "author": {
       "login": "recmo"
     },
     "number": 12821,
@@ -3321,14 +3337,6 @@
   },
   {
     "author": {
-      "login": "fulldecent"
-    },
-    "number": 13371,
-    "title": "Stop recommending .transfer",
-    "updatedAt": "2022-08-16T20:03:59Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 4642,
@@ -4102,14 +4110,6 @@
     "number": 13264,
     "title": "Chainlink ext test failing with `AssertionError: Expected transaction to be reverted with InvalidSubscription, but other exception was thrown`",
     "updatedAt": "2022-07-14T12:53:40Z"
-  },
-  {
-    "author": {
-      "login": "gpersoon"
-    },
-    "number": 13035,
-    "title": "LSP: `textDocument/definition` always returns \"result\":[]",
-    "updatedAt": "2022-07-13T15:02:12Z"
   },
   {
     "author": {

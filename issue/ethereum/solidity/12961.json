@@ -83,9 +83,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-04-25T17:23:40Z",
-  "updated_at": "2022-08-22T11:12:35Z",
+  "updated_at": "2022-08-24T04:10:21Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -108,5 +108,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1225166162",
+    "html_url": "https://github.com/ethereum/solidity/issues/12961#issuecomment-1225166162",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12961",
+    "id": 1225166162,
+    "node_id": "IC_kwDOAm_5kc5JBo1S",
+    "user": {
+      "login": "timweri",
+      "id": 9196362,
+      "node_id": "MDQ6VXNlcjkxOTYzNjI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9196362?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/timweri",
+      "html_url": "https://github.com/timweri",
+      "followers_url": "https://api.github.com/users/timweri/followers",
+      "following_url": "https://api.github.com/users/timweri/following{/other_user}",
+      "gists_url": "https://api.github.com/users/timweri/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/timweri/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/timweri/subscriptions",
+      "organizations_url": "https://api.github.com/users/timweri/orgs",
+      "repos_url": "https://api.github.com/users/timweri/repos",
+      "events_url": "https://api.github.com/users/timweri/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/timweri/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-24T04:10:21Z",
+    "updated_at": "2022-08-24T04:10:21Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "I can't seem to see this bug. I already tried all the versions mentioned.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1225166162/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "come-maiz"
+    },
+    "number": 145,
+    "title": "Do you want to run a builder? ",
+    "updatedAt": "2022-08-24T22:53:57Z"
+  },
+  {
+    "author": {
       "login": "metachris"
     },
     "number": 142,
@@ -14,14 +22,6 @@
     "number": 256,
     "title": "SIGILL: illegal instruction",
     "updatedAt": "2022-08-24T09:48:10Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 145,
-    "title": "Do you want to run a builder? ",
-    "updatedAt": "2022-08-23T15:49:02Z"
   },
   {
     "author": {

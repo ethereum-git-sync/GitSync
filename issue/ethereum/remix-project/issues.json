@@ -1,6 +1,94 @@
 [
   {
     "author": {
+      "login": "ryestew"
+    },
+    "number": 2806,
+    "title": "Debugger UI may not be wide enough",
+    "updatedAt": "2022-08-24T19:02:38Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2805,
+    "title": "text not vertically centered in udapp transact button",
+    "updatedAt": "2022-08-24T18:38:40Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2804,
+    "title": "vyper compilation probs",
+    "updatedAt": "2022-08-24T18:31:12Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2797,
+    "title": "etherscan-access-token is not saved properly",
+    "updatedAt": "2022-08-24T16:18:25Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2803,
+    "title": "wordwrap in errors in vyper",
+    "updatedAt": "2022-08-24T15:16:15Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2802,
+    "title": "vyper warning text",
+    "updatedAt": "2022-08-24T14:37:25Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2800,
+    "title": "move vyper README to new vyper repo",
+    "updatedAt": "2022-08-24T14:26:22Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 1830,
+    "title": "Terminal Improvements",
+    "updatedAt": "2022-08-24T13:50:24Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 450,
+    "title": "Improvements to data shown when 'listen to network' is checked",
+    "updatedAt": "2022-08-24T13:50:06Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2760,
+    "title": "fix home tab Remi and twitter, medium icons",
+    "updatedAt": "2022-08-24T06:06:18Z"
+  },
+  {
+    "author": {
+      "login": "bartleyg"
+    },
+    "number": 140,
+    "title": "Feature: Show current block number in the UI",
+    "updatedAt": "2022-08-24T05:06:06Z"
+  },
+  {
+    "author": {
       "login": "andrew3009"
     },
     "number": 2795,
@@ -169,14 +257,6 @@
   },
   {
     "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2760,
-    "title": "fix home tab Remi and twitter, medium icons",
-    "updatedAt": "2022-08-17T11:37:00Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 247,
@@ -241,14 +321,6 @@
   },
   {
     "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 450,
-    "title": "Improvements to data shown when 'listen to network' is checked",
-    "updatedAt": "2022-08-15T11:28:25Z"
-  },
-  {
-    "author": {
       "login": "ryestew"
     },
     "number": 2616,
@@ -270,14 +342,6 @@
     "number": 391,
     "title": "Terminal: Disable 'Listen on network' for VM mode",
     "updatedAt": "2022-08-15T07:35:06Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
-    "number": 1830,
-    "title": "Terminal Improvements",
-    "updatedAt": "2022-08-15T07:34:14Z"
   },
   {
     "author": {
@@ -4678,14 +4742,6 @@
     "number": 257,
     "title": "Options to enable/disable ace shortcuts",
     "updatedAt": "2021-11-24T11:10:17Z"
-  },
-  {
-    "author": {
-      "login": "bartleyg"
-    },
-    "number": 140,
-    "title": "Feature: Show current block number in the UI",
-    "updatedAt": "2021-11-24T11:07:46Z"
   },
   {
     "author": {

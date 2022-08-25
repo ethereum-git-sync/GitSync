@@ -3,9 +3,17 @@
     "author": {
       "login": "xinbenlv"
     },
-    "number": 5245,
-    "title": "Proposal for EIP Allow EIP Author to opt-in take over",
-    "updatedAt": "2022-08-24T00:21:31Z"
+    "number": 5274,
+    "title": "Proposal for EIP preamble: include separate `relates-to:` as an optional field",
+    "updatedAt": "2022-08-25T00:22:33Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5265,
+    "title": "Proposal to include `Superseded` status and `superseded-by: ` (eip number) preemble section",
+    "updatedAt": "2022-08-25T00:22:31Z"
   },
   {
     "author": {
@@ -13,7 +21,7 @@
     },
     "number": 5190,
     "title": "A recommendation to refer to an ERC category proposal (for documentation)",
-    "updatedAt": "2022-08-24T00:21:29Z"
+    "updatedAt": "2022-08-25T00:22:26Z"
   },
   {
     "author": {
@@ -21,7 +29,7 @@
     },
     "number": 5158,
     "title": "Example relative link in EIP-1 is rendered as absolute",
-    "updatedAt": "2022-08-24T00:21:26Z"
+    "updatedAt": "2022-08-25T00:22:25Z"
   },
   {
     "author": {
@@ -29,15 +37,7 @@
     },
     "number": 5082,
     "title": "One-time NFT Sale of unused EIP numbers.",
-    "updatedAt": "2022-08-24T00:21:21Z"
-  },
-  {
-    "author": {
-      "login": "Pandapip1"
-    },
-    "number": 4945,
-    "title": "Rename master branch to main branch",
-    "updatedAt": "2022-08-24T00:21:16Z"
+    "updatedAt": "2022-08-25T00:22:22Z"
   },
   {
     "author": {
@@ -45,7 +45,47 @@
     },
     "number": 4335,
     "title": "EIP registries",
-    "updatedAt": "2022-08-24T00:21:14Z"
+    "updatedAt": "2022-08-25T00:22:18Z"
+  },
+  {
+    "author": {
+      "login": "paulrberg"
+    },
+    "number": 1620,
+    "title": "ERC-1620: Money Streaming",
+    "updatedAt": "2022-08-24T18:19:39Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 4945,
+    "title": "Rename master branch to main branch",
+    "updatedAt": "2022-08-24T16:56:00Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5469,
+    "title": "Change EIPW to only check modified lines",
+    "updatedAt": "2022-08-24T14:52:00Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5245,
+    "title": "Proposal for EIP Allow EIP Author to opt-in take over",
+    "updatedAt": "2022-08-24T14:32:15Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5488,
+    "title": "Add finalized date to EIPs.",
+    "updatedAt": "2022-08-24T07:56:23Z"
   },
   {
     "author": {
@@ -54,14 +94,6 @@
     "number": 5310,
     "title": "GitHub actions don't run for first time contributors",
     "updatedAt": "2022-08-23T14:53:58Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5488,
-    "title": "Add finalized date to EIPs.",
-    "updatedAt": "2022-08-23T14:51:59Z"
   },
   {
     "author": {
@@ -174,14 +206,6 @@
     "number": 998,
     "title": "ERC-998 Composable Non-Fungible Token Standard",
     "updatedAt": "2022-08-18T17:16:43Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5469,
-    "title": "Change EIPW to only check modified lines",
-    "updatedAt": "2022-08-18T04:28:09Z"
   },
   {
     "author": {
@@ -350,14 +374,6 @@
     "number": 2309,
     "title": "ERC-2309: ERC-721 Consecutive Transfer Extension",
     "updatedAt": "2022-07-30T07:43:45Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5274,
-    "title": "Proposal for EIP preamble: include separate `relates-to:` as an optional field",
-    "updatedAt": "2022-07-28T15:43:18Z"
   },
   {
     "author": {
@@ -1118,14 +1134,6 @@
     "number": 5282,
     "title": "How is EIP pronounced?",
     "updatedAt": "2022-07-18T14:52:47Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5265,
-    "title": "Proposal to include `Superseded` status and `superseded-by: ` (eip number) preemble section",
-    "updatedAt": "2022-07-18T14:46:48Z"
   },
   {
     "author": {
@@ -3942,14 +3950,6 @@
     "number": 1616,
     "title": "ERC: Attribute Registry Standard",
     "updatedAt": "2021-12-05T05:10:48Z"
-  },
-  {
-    "author": {
-      "login": "paulrberg"
-    },
-    "number": 1620,
-    "title": "ERC-1620: Money Streaming",
-    "updatedAt": "2021-12-05T05:10:46Z"
   },
   {
     "author": {

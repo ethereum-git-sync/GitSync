@@ -40,7 +40,7 @@
       "description": "This PR hasn't received activity in a while, and will eventually be closed if nothing happens."
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -49,12 +49,31 @@
   "milestone": null,
   "comments": 8,
   "created_at": "2022-07-13T17:11:31Z",
-  "updated_at": "2022-08-24T00:21:31Z",
-  "closed_at": null,
+  "updated_at": "2022-08-24T14:32:15Z",
+  "closed_at": "2022-08-24T14:32:15Z",
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "To follow up the discussion we have today in the EIPIP Meeting July 13th\r\n\r\n*The problem*: some EIPs are stagnant and some authors are not reachable.\r\n\r\n*Constraint*: the EIP Editor group don't want to take people's number, they want them to own it.\r\n\r\n*Proposal*: create the following checkbox in the template\r\n\r\n```verbatim\r\n[ ] if checked, we, the authors of this EIP, welcome other future authors to take over authoring this EIP if it becomes stagnant AND we the authors have not been able to respond on this pull request within 12 months supervised by the EIP.\r\n```\r\n\r\nFYI: @MicahZoltu @gcolvin @Pandapip1  @timbeiko \r\n\r\n@poojaranjan : could you also help me add if anyone I missed who commented on this issue during the EIPIP meeting?\r\n\r\nOptions for discussion\r\n\r\n1. Should this signal be in the preamble section? Proposer lean towards yes\r\n2. Should this signal be in the format of checkbox? Proposal leave to the eipbot builder to comment for whichever is more convenient. I have no strong preference.",
-  "closed_by": null,
+  "closed_by": {
+    "login": "SamWilsn",
+    "id": 57262657,
+    "node_id": "MDQ6VXNlcjU3MjYyNjU3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/57262657?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamWilsn",
+    "html_url": "https://github.com/SamWilsn",
+    "followers_url": "https://api.github.com/users/SamWilsn/followers",
+    "following_url": "https://api.github.com/users/SamWilsn/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamWilsn/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamWilsn/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamWilsn/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamWilsn/orgs",
+    "repos_url": "https://api.github.com/users/SamWilsn/repos",
+    "events_url": "https://api.github.com/users/SamWilsn/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamWilsn/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/EIPs/issues/5245/reactions",
     "total_count": 2,
@@ -69,7 +88,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/5245/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

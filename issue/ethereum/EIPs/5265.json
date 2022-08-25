@@ -30,7 +30,15 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 4393375250,
+      "node_id": "LA_kwDOAq426M8AAAABBd2WEg",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/waiting:%20no%20recent%20activity",
+      "name": "waiting: no recent activity",
+      "color": "E99695",
+      "default": false,
+      "description": "This PR hasn't received activity in a while, and will eventually be closed if nothing happens."
+    }
   ],
   "state": "open",
   "locked": false,
@@ -39,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 16,
+  "comments": 17,
   "created_at": "2022-07-14T23:55:03Z",
-  "updated_at": "2022-07-18T14:46:48Z",
+  "updated_at": "2022-08-25T00:22:31Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -180,7 +188,7 @@
     },
     "created_at": "2022-07-15T19:52:17Z",
     "updated_at": "2022-07-15T19:52:17Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "How about the EIP authors decide when to use `superseded-by`? There is a good use case for it: see https://eips.ethereum.org/EIPS/eip-820 and https://eips.ethereum.org/EIPS/eip-1820.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1185859611/reactions",
@@ -444,7 +452,7 @@
     },
     "created_at": "2022-07-16T18:29:08Z",
     "updated_at": "2022-07-16T18:29:08Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "> It seems like this still has the same problem, where the person who happened to author some standard is in a privileged position that gives them power to shape how things progress in the future. Adding \"suggested\" helps a little but not much I think.\r\n\r\nI don't see why that's much of a problem. If the old standard is better, there isn't an EIP police that will come and change your contract code. If an EIP author genuinely thinks a better alternative is available, then they are probably in the best position to correctly make that call.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1186260154/reactions",
@@ -756,6 +764,50 @@
     "body": "I share the same feeling with you in opposing to simple majority voting or wealth based voting. \n\nMy personal experience outside of Ehtereum or blockchain teaches me a lot of how governance is nontrival. If we get a chance I love to share more about my views and learn about yours.\n\nSince we are also having a proposal of auctioning the EIP numbers, and many decisions of EIP process start to become increasing complecated, some governance needs to be set up.\n\nI am not calling for *any particular form*(how) of governance, but to call for the *start discussion of EIP governance*(whether). I can do some brainstorming and I do have opinion about \"how\", but that would be second step. The first step is to address the question of \"whether\"\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1187592352/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1226627063",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5265#issuecomment-1226627063",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5265",
+    "id": 1226627063,
+    "node_id": "IC_kwDOAq426M5JHNf3",
+    "user": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "created_at": "2022-08-25T00:22:30Z",
+    "updated_at": "2022-08-25T00:22:30Z",
+    "author_association": "NONE",
+    "body": "There has been no activity on this issue for 1 week. It will be closed after 3 months of inactivity.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1226627063/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

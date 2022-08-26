@@ -35,18 +35,9 @@
       "node_id": "MDU6TGFiZWwyOTA1MDcwOTI=",
       "url": "https://api.github.com/repos/ethereum/EIPs/labels/type:%20ERC",
       "name": "type: ERC",
-      "color": "d4c5f9",
+      "color": "FEF2C0",
       "default": false,
       "description": ""
-    },
-    {
-      "id": 536577610,
-      "node_id": "MDU6TGFiZWw1MzY1Nzc2MTA=",
-      "url": "https://api.github.com/repos/ethereum/EIPs/labels/editor-needs-to-review",
-      "name": "editor-needs-to-review",
-      "color": "1d76db",
-      "default": false,
-      "description": null
     }
   ],
   "state": "closed",
@@ -58,11 +49,11 @@
   "milestone": null,
   "comments": 362,
   "created_at": "2015-11-19T09:52:56Z",
-  "updated_at": "2018-01-24T03:01:44Z",
+  "updated_at": "2022-08-25T16:24:18Z",
   "closed_at": "2017-04-24T13:43:58Z",
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": "resolved",
-  "body": "**The final standard can be found here: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md**\r\n\r\n******\r\n\r\n```\r\nERC: 20\r\nTitle: Token standard\r\nStatus: Draft\r\nType: Informational\r\nCreated: 19-11.2015\r\nResolution: https://github.com/ethereum/wiki/wiki/Standardized_Contract_APIs\r\n```\r\n# Abstract\r\n\r\nThe following describes standard functions a token contract can implement.\r\n# Motivation\r\n\r\nThose will allow dapps and wallets to handle tokens across multiple interfaces/dapps.\r\n\r\nThe most important here are, `transfer`, `balanceOf` and the `Transfer` event.\r\n# Specification\r\n## Token\r\n### Methods\r\n\r\n**NOTE**: An important point is that callers should handle `false` from `returns (bool success)`.  Callers should not assume that `false` is never returned!\r\n\r\n#### totalSupply\r\n\r\n``` js\r\nfunction totalSupply() constant returns (uint256 totalSupply)\r\n```\r\n\r\nGet the total token supply\r\n#### balanceOf\r\n\r\n``` js\r\nfunction balanceOf(address _owner) constant returns (uint256 balance)\r\n```\r\n\r\nGet the account balance of another account with address `_owner`\r\n#### transfer\r\n\r\n``` js\r\nfunction transfer(address _to, uint256 _value) returns (bool success)\r\n```\r\n\r\nSend `_value` amount of tokens to address `_to`\r\n#### transferFrom\r\n\r\n``` js\r\nfunction transferFrom(address _from, address _to, uint256 _value) returns (bool success)\r\n```\r\n\r\nSend `_value` amount of tokens from address `_from` to address `_to`\r\n\r\nThe `transferFrom` method is used for a withdraw workflow, allowing contracts to send tokens on your behalf, for example to \"deposit\" to a contract address and/or to charge fees in sub-currencies; the command should fail unless the `_from` account has deliberately authorized the sender of the message via some mechanism; we propose these standardized APIs for approval:\r\n#### approve\r\n\r\n``` js\r\nfunction approve(address _spender, uint256 _value) returns (bool success)\r\n```\r\n\r\nAllow _spender to withdraw from your account, multiple times, up to the _value amount. If this function is called again it overwrites the current allowance with _value.\r\n#### allowance\r\n\r\n``` js\r\nfunction allowance(address _owner, address _spender) constant returns (uint256 remaining)\r\n```\r\n\r\nReturns the amount which `_spender` is still allowed to withdraw from `_owner`\r\n### Events\r\n#### Transfer\r\n\r\n``` js\r\nevent Transfer(address indexed _from, address indexed _to, uint256 _value)\r\n```\r\n\r\nTriggered when tokens are transferred.\r\n#### Approval\r\n\r\n``` js\r\nevent Approval(address indexed _owner, address indexed _spender, uint256 _value)\r\n```\r\n\r\nTriggered whenever `approve(address _spender, uint256 _value)` is called.",
+  "body": "**The final standard can be found here: https://eips.ethereum.org/EIPS/eip-20**\r\n\r\n******\r\n\r\n```\r\nERC: 20\r\nTitle: Token standard\r\nStatus: Draft\r\nType: Informational\r\nCreated: 19-11.2015\r\nResolution: https://github.com/ethereum/wiki/wiki/Standardized_Contract_APIs\r\n```\r\n# Abstract\r\n\r\nThe following describes standard functions a token contract can implement.\r\n# Motivation\r\n\r\nThose will allow dapps and wallets to handle tokens across multiple interfaces/dapps.\r\n\r\nThe most important here are, `transfer`, `balanceOf` and the `Transfer` event.\r\n# Specification\r\n## Token\r\n### Methods\r\n\r\n**NOTE**: An important point is that callers should handle `false` from `returns (bool success)`.  Callers should not assume that `false` is never returned!\r\n\r\n#### totalSupply\r\n\r\n``` js\r\nfunction totalSupply() constant returns (uint256 totalSupply)\r\n```\r\n\r\nGet the total token supply\r\n#### balanceOf\r\n\r\n``` js\r\nfunction balanceOf(address _owner) constant returns (uint256 balance)\r\n```\r\n\r\nGet the account balance of another account with address `_owner`\r\n#### transfer\r\n\r\n``` js\r\nfunction transfer(address _to, uint256 _value) returns (bool success)\r\n```\r\n\r\nSend `_value` amount of tokens to address `_to`\r\n#### transferFrom\r\n\r\n``` js\r\nfunction transferFrom(address _from, address _to, uint256 _value) returns (bool success)\r\n```\r\n\r\nSend `_value` amount of tokens from address `_from` to address `_to`\r\n\r\nThe `transferFrom` method is used for a withdraw workflow, allowing contracts to send tokens on your behalf, for example to \"deposit\" to a contract address and/or to charge fees in sub-currencies; the command should fail unless the `_from` account has deliberately authorized the sender of the message via some mechanism; we propose these standardized APIs for approval:\r\n#### approve\r\n\r\n``` js\r\nfunction approve(address _spender, uint256 _value) returns (bool success)\r\n```\r\n\r\nAllow _spender to withdraw from your account, multiple times, up to the _value amount. If this function is called again it overwrites the current allowance with _value.\r\n#### allowance\r\n\r\n``` js\r\nfunction allowance(address _owner, address _spender) constant returns (uint256 remaining)\r\n```\r\n\r\nReturns the amount which `_spender` is still allowed to withdraw from `_owner`\r\n### Events\r\n#### Transfer\r\n\r\n``` js\r\nevent Transfer(address indexed _from, address indexed _to, uint256 _value)\r\n```\r\n\r\nTriggered when tokens are transferred.\r\n#### Approval\r\n\r\n``` js\r\nevent Approval(address indexed _owner, address indexed _spender, uint256 _value)\r\n```\r\n\r\nTriggered whenever `approve(address _spender, uint256 _value)` is called.",
   "closed_by": {
     "login": "frozeman",
     "id": 232662,

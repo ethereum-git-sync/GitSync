@@ -30,15 +30,7 @@
     "site_admin": false
   },
   "labels": [
-    {
-      "id": 4393375250,
-      "node_id": "LA_kwDOAq426M8AAAABBd2WEg",
-      "url": "https://api.github.com/repos/ethereum/EIPs/labels/waiting:%20no%20recent%20activity",
-      "name": "waiting: no recent activity",
-      "color": "E99695",
-      "default": false,
-      "description": "This PR hasn't received activity in a while, and will eventually be closed if nothing happens."
-    }
+
   ],
   "state": "open",
   "locked": false,
@@ -47,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 17,
+  "comments": 18,
   "created_at": "2022-07-14T23:55:03Z",
-  "updated_at": "2022-08-25T00:22:31Z",
+  "updated_at": "2022-08-26T00:21:00Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -808,6 +800,50 @@
     "body": "There has been no activity on this issue for 1 week. It will be closed after 3 months of inactivity.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1226627063/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1226740181",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5265#issuecomment-1226740181",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5265",
+    "id": 1226740181,
+    "node_id": "IC_kwDOAq426M5JHpHV",
+    "user": {
+      "login": "xinbenlv",
+      "id": 640325,
+      "node_id": "MDQ6VXNlcjY0MDMyNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/640325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xinbenlv",
+      "html_url": "https://github.com/xinbenlv",
+      "followers_url": "https://api.github.com/users/xinbenlv/followers",
+      "following_url": "https://api.github.com/users/xinbenlv/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xinbenlv/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xinbenlv/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xinbenlv/subscriptions",
+      "organizations_url": "https://api.github.com/users/xinbenlv/orgs",
+      "repos_url": "https://api.github.com/users/xinbenlv/repos",
+      "events_url": "https://api.github.com/users/xinbenlv/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xinbenlv/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-25T03:50:24Z",
+    "updated_at": "2022-08-25T03:50:24Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "I plan to continue pursue this proposal.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1226740181/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

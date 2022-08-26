@@ -30,7 +30,15 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 4393375250,
+      "node_id": "LA_kwDOAq426M8AAAABBd2WEg",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/waiting:%20no%20recent%20activity",
+      "name": "waiting: no recent activity",
+      "color": "E99695",
+      "default": false,
+      "description": "This PR hasn't received activity in a while, and will eventually be closed if nothing happens."
+    }
   ],
   "state": "open",
   "locked": false,
@@ -39,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 6,
+  "comments": 7,
   "created_at": "2022-07-20T05:48:59Z",
-  "updated_at": "2022-07-27T05:46:47Z",
+  "updated_at": "2022-08-26T00:21:04Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -155,7 +163,7 @@
     },
     "created_at": "2022-07-20T17:04:57Z",
     "updated_at": "2022-07-20T17:04:57Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "I feel like the more pressing issue is the fact that any of us editors can just arbitrarily change the CI on a whim. Want to add an action that deletes EIP-1? Go ahead! Want to add and/or remove other editors for the fun of it? Nobody's stopping you (except for the two editors with manual merge permissions who can undo it).",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1190532636/reactions",
@@ -199,7 +207,7 @@
     },
     "created_at": "2022-07-20T17:06:02Z",
     "updated_at": "2022-07-20T17:06:29Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "> This protects us from supply chain attacks against this repository as only GitHub (who already has the ability to completely screw us) could sneak in a malicious change to a dependency, which has privileged access.\r\n\r\nPublished tags can't be modified, as they are locked to a specific commit. If we target a release, then this would provide the required protection without being too... hashy.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1190533690/reactions",
@@ -287,7 +295,7 @@
     },
     "created_at": "2022-07-21T12:10:20Z",
     "updated_at": "2022-07-21T12:10:20Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "> GitHub will happily let you delete a git tag and publish a new one pointing at a new commit. \r\n\r\nHuh, I didn't know this. Good to know!",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1191406955/reactions",
@@ -331,10 +339,54 @@
     },
     "created_at": "2022-07-26T18:42:53Z",
     "updated_at": "2022-07-26T18:42:53Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "Needs reopening.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1195851187/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1227879542",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5298#issuecomment-1227879542",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5298",
+    "id": 1227879542,
+    "node_id": "IC_kwDOAq426M5JL_R2",
+    "user": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "created_at": "2022-08-26T00:21:03Z",
+    "updated_at": "2022-08-26T00:21:03Z",
+    "author_association": "NONE",
+    "body": "There has been no activity on this issue for 1 week. It will be closed after 3 months of inactivity.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1227879542/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

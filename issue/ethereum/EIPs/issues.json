@@ -3,9 +3,33 @@
     "author": {
       "login": "xinbenlv"
     },
+    "number": 5408,
+    "title": "Create an EIP ExternalLinkArchiveBot (EIP ELABot)",
+    "updatedAt": "2022-08-26T00:21:06Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5298,
+    "title": "[Security] Pin all GitHub Action dependencies to hash version.",
+    "updatedAt": "2022-08-26T00:21:04Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5294,
+    "title": "How should we pick EIP numbers?",
+    "updatedAt": "2022-08-26T00:21:02Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
     "number": 5274,
     "title": "Proposal for EIP preamble: include separate `relates-to:` as an optional field",
-    "updatedAt": "2022-08-25T00:22:33Z"
+    "updatedAt": "2022-08-26T00:21:01Z"
   },
   {
     "author": {
@@ -13,7 +37,47 @@
     },
     "number": 5265,
     "title": "Proposal to include `Superseded` status and `superseded-by: ` (eip number) preemble section",
-    "updatedAt": "2022-08-25T00:22:31Z"
+    "updatedAt": "2022-08-26T00:21:00Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1559,
+    "title": "Fee market change for ETH 1.0 chain",
+    "updatedAt": "2022-08-25T16:25:27Z"
+  },
+  {
+    "author": {
+      "login": "frozeman"
+    },
+    "number": 20,
+    "title": "ERC: Token standard",
+    "updatedAt": "2022-08-25T16:24:18Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 4945,
+    "title": "Rename master branch to main branch",
+    "updatedAt": "2022-08-25T14:05:55Z"
+  },
+  {
+    "author": {
+      "login": "paulrberg"
+    },
+    "number": 1620,
+    "title": "ERC-1620: Money Streaming",
+    "updatedAt": "2022-08-25T08:25:47Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 140,
+    "title": "New opcode: REVERT (\"cheap throw\")",
+    "updatedAt": "2022-08-25T03:12:04Z"
   },
   {
     "author": {
@@ -46,22 +110,6 @@
     "number": 4335,
     "title": "EIP registries",
     "updatedAt": "2022-08-25T00:22:18Z"
-  },
-  {
-    "author": {
-      "login": "paulrberg"
-    },
-    "number": 1620,
-    "title": "ERC-1620: Money Streaming",
-    "updatedAt": "2022-08-24T18:19:39Z"
-  },
-  {
-    "author": {
-      "login": "Pandapip1"
-    },
-    "number": 4945,
-    "title": "Rename master branch to main branch",
-    "updatedAt": "2022-08-24T16:56:00Z"
   },
   {
     "author": {
@@ -233,14 +281,6 @@
   },
   {
     "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5294,
-    "title": "How should we pick EIP numbers?",
-    "updatedAt": "2022-08-17T03:51:21Z"
-  },
-  {
-    "author": {
       "login": "mabioIa"
     },
     "number": 5471,
@@ -329,14 +369,6 @@
   },
   {
     "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5408,
-    "title": "Create an EIP ExternalLinkArchiveBot (EIP ELABot)",
-    "updatedAt": "2022-08-04T17:28:37Z"
-  },
-  {
-    "author": {
       "login": "dete"
     },
     "number": 721,
@@ -374,14 +406,6 @@
     "number": 2309,
     "title": "ERC-2309: ERC-721 Consecutive Transfer Extension",
     "updatedAt": "2022-07-30T07:43:45Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5298,
-    "title": "[Security] Pin all GitHub Action dependencies to hash version.",
-    "updatedAt": "2022-07-27T05:46:47Z"
   },
   {
     "author": {
@@ -6073,14 +6097,6 @@
   },
   {
     "author": {
-      "login": "vbuterin"
-    },
-    "number": 1559,
-    "title": "Fee market change for ETH 1.0 chain",
-    "updatedAt": "2019-06-10T08:45:42Z"
-  },
-  {
-    "author": {
       "login": "Agusx1211"
     },
     "number": 1892,
@@ -6841,14 +6857,6 @@
   },
   {
     "author": {
-      "login": "nmushegian"
-    },
-    "number": 140,
-    "title": "New opcode: REVERT (\"cheap throw\")",
-    "updatedAt": "2018-02-20T12:50:03Z"
-  },
-  {
-    "author": {
       "login": "jayantbramhankar"
     },
     "number": 869,
@@ -6862,14 +6870,6 @@
     "number": 839,
     "title": "A clearer naming convention for events",
     "updatedAt": "2018-01-24T19:48:02Z"
-  },
-  {
-    "author": {
-      "login": "frozeman"
-    },
-    "number": 20,
-    "title": "ERC: Token standard",
-    "updatedAt": "2018-01-24T03:01:44Z"
   },
   {
     "author": {

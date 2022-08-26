@@ -47,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 30,
+  "comments": 32,
   "created_at": "2022-03-25T11:19:04Z",
-  "updated_at": "2022-08-24T16:56:00Z",
+  "updated_at": "2022-08-25T14:05:55Z",
   "closed_at": "2022-08-24T16:56:00Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -88,7 +88,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/4945/timeline",
   "performed_via_github_app": null,
-  "state_reason": "completed"
+  "state_reason": "not_planned"
 }
 [
   {

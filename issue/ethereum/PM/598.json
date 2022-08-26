@@ -47,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-08-12T13:12:30Z",
-  "updated_at": "2022-08-12T21:26:21Z",
+  "updated_at": "2022-08-25T14:40:05Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -72,5 +72,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/pm/issues/comments/1227351451",
+    "html_url": "https://github.com/ethereum/pm/issues/598#issuecomment-1227351451",
+    "issue_url": "https://api.github.com/repos/ethereum/pm/issues/598",
+    "id": 1227351451,
+    "node_id": "IC_kwDOBCfO0M5JJ-Wb",
+    "user": {
+      "login": "tvanepps",
+      "id": 27454964,
+      "node_id": "MDQ6VXNlcjI3NDU0OTY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27454964?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tvanepps",
+      "html_url": "https://github.com/tvanepps",
+      "followers_url": "https://api.github.com/users/tvanepps/followers",
+      "following_url": "https://api.github.com/users/tvanepps/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tvanepps/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tvanepps/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tvanepps/subscriptions",
+      "organizations_url": "https://api.github.com/users/tvanepps/orgs",
+      "repos_url": "https://api.github.com/users/tvanepps/repos",
+      "events_url": "https://api.github.com/users/tvanepps/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tvanepps/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-25T14:38:35Z",
+    "updated_at": "2022-08-25T14:40:05Z",
+    "author_association": "MEMBER",
+    "body": "Merge Community Call #7 is Sept 9\r\n\r\nhttps://github.com/ethereum/pm/issues/599 ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/pm/issues/comments/1227351451/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

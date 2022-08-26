@@ -1,6 +1,70 @@
 [
   {
     "author": {
+      "login": "christianparpart"
+    },
+    "number": 12904,
+    "title": "Improve building Solidity on Windows",
+    "updatedAt": "2022-08-25T20:23:50Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13437,
+    "title": "Switch working dir to test dir in command-line tests",
+    "updatedAt": "2022-08-25T20:07:19Z"
+  },
+  {
+    "author": {
+      "login": "Amxx"
+    },
+    "number": 13433,
+    "title": "Allow initializing immutables in parallel branches of try/catch statement",
+    "updatedAt": "2022-08-25T19:01:50Z"
+  },
+  {
+    "author": {
+      "login": "StErMi"
+    },
+    "number": 12864,
+    "title": "Compiler is not evaluating all if/elseif/else branches to check for “Immutable variables cannot be initialized inside an if statement\"",
+    "updatedAt": "2022-08-25T18:53:22Z"
+  },
+  {
+    "author": {
+      "login": "mojtaba-eshghie"
+    },
+    "number": 13435,
+    "title": " Shadowed memory variable in function body by named returns statement",
+    "updatedAt": "2022-08-25T14:34:06Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 13339,
+    "title": "`abi.encodeError(...)` for custom errors",
+    "updatedAt": "2022-08-25T12:14:09Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13431,
+    "title": "[SMTChecker] ICE because \"Trying to create an 'equal' expression with different sorts\"",
+    "updatedAt": "2022-08-25T04:39:19Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13432,
+    "title": "[SMTChecker] ICE because of unknown delete expression",
+    "updatedAt": "2022-08-25T04:28:08Z"
+  },
+  {
+    "author": {
       "login": "fulldecent"
     },
     "number": 13371,
@@ -198,14 +262,6 @@
     "number": 11836,
     "title": "[BREAKING] Make basfee as a reserved identifier in 0.9.0",
     "updatedAt": "2022-08-18T18:35:58Z"
-  },
-  {
-    "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 13339,
-    "title": "`abi.encodeError(...)` for custom errors",
-    "updatedAt": "2022-08-18T15:44:51Z"
   },
   {
     "author": {
@@ -2573,14 +2629,6 @@
     },
     "number": 12104,
     "title": "No way to reference struct members from assembly",
-    "updatedAt": "2022-08-17T13:48:54Z"
-  },
-  {
-    "author": {
-      "login": "StErMi"
-    },
-    "number": 12864,
-    "title": "Compiler is not evaluating all if/elseif/else branches to check for “Immutable variables cannot be initialized inside an if statement\"",
     "updatedAt": "2022-08-17T13:48:54Z"
   },
   {
@@ -5446,14 +5494,6 @@
     "number": 12906,
     "title": "Move `docs.sh` script to `docs/`",
     "updatedAt": "2022-04-11T11:51:06Z"
-  },
-  {
-    "author": {
-      "login": "christianparpart"
-    },
-    "number": 12904,
-    "title": "Improve building Solidity on Windows",
-    "updatedAt": "2022-04-11T10:37:48Z"
   },
   {
     "author": {

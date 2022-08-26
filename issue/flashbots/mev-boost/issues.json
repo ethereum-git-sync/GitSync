@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "jclapis"
+    },
+    "number": 245,
+    "title": "502 During Validator Registration with an Exited Validator",
+    "updatedAt": "2022-08-25T08:58:24Z"
+  },
+  {
+    "author": {
       "login": "come-maiz"
     },
     "number": 145,
@@ -46,14 +54,6 @@
     "number": 253,
     "title": "Prometheus metrics",
     "updatedAt": "2022-08-23T08:14:31Z"
-  },
-  {
-    "author": {
-      "login": "jclapis"
-    },
-    "number": 245,
-    "title": "502 During Validator Registration with an Exited Validator",
-    "updatedAt": "2022-08-23T08:10:55Z"
   },
   {
     "author": {

@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25604",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25604/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25604/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25604/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25604",
+  "id": 1351052833,
+  "node_id": "I_kwDOAOvK985Qh24h",
+  "number": 25604,
+  "title": "Abigen sol",
+  "user": {
+    "login": "emrahsariboz",
+    "id": 10096038,
+    "node_id": "MDQ6VXNlcjEwMDk2MDM4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10096038?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/emrahsariboz",
+    "html_url": "https://github.com/emrahsariboz",
+    "followers_url": "https://api.github.com/users/emrahsariboz/followers",
+    "following_url": "https://api.github.com/users/emrahsariboz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/emrahsariboz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/emrahsariboz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/emrahsariboz/subscriptions",
+    "organizations_url": "https://api.github.com/users/emrahsariboz/orgs",
+    "repos_url": "https://api.github.com/users/emrahsariboz/repos",
+    "events_url": "https://api.github.com/users/emrahsariboz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/emrahsariboz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-25T15:07:25Z",
+  "updated_at": "2022-08-25T15:07:25Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Is abigen command removed \"sol\" flag? I was able to run \r\n\r\n`abigen --sol=contract.sol  --pkg=pkg --out=pkg/solidity_wrapper/token.go\r\n`\r\nbut now I can't. I get error of **flag provided but not defined: -sol**",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25604/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25604/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

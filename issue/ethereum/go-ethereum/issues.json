@@ -1,11 +1,19 @@
 [
   {
     "author": {
-      "login": "lcgogo"
+      "login": "SLoeuillet"
     },
-    "number": 25594,
-    "title": "How does geth communicate with prysm?",
-    "updatedAt": "2022-08-25T00:08:38Z"
+    "number": 25583,
+    "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
+    "updatedAt": "2022-08-25T15:40:05Z"
+  },
+  {
+    "author": {
+      "login": "emrahsariboz"
+    },
+    "number": 25604,
+    "title": "Abigen sol",
+    "updatedAt": "2022-08-25T15:07:25Z"
   },
   {
     "author": {
@@ -13,7 +21,79 @@
     },
     "number": 25537,
     "title": "ethclient: BlockByNumber cannot handle `pending` block",
-    "updatedAt": "2022-08-24T23:27:41Z"
+    "updatedAt": "2022-08-25T14:31:53Z"
+  },
+  {
+    "author": {
+      "login": "Sajjon"
+    },
+    "number": 25589,
+    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
+    "updatedAt": "2022-08-25T14:01:36Z"
+  },
+  {
+    "author": {
+      "login": "okmrs"
+    },
+    "number": 25598,
+    "title": "Need help to solve the synchronization problem.",
+    "updatedAt": "2022-08-25T13:23:35Z"
+  },
+  {
+    "author": {
+      "login": "holiman"
+    },
+    "number": 25600,
+    "title": "Inefficient response handling in Snap",
+    "updatedAt": "2022-08-25T12:08:33Z"
+  },
+  {
+    "author": {
+      "login": "yorickdowne"
+    },
+    "number": 25596,
+    "title": "1.10.23 fresh mainnet sync stalled",
+    "updatedAt": "2022-08-25T10:42:28Z"
+  },
+  {
+    "author": {
+      "login": "laronlineworld"
+    },
+    "number": 25597,
+    "title": "Geth node accounts balances and contracts reset to 0 after 30,000 Blocks in POA private network",
+    "updatedAt": "2022-08-25T08:10:28Z"
+  },
+  {
+    "author": {
+      "login": "MariusVanDerWijden"
+    },
+    "number": 25599,
+    "title": "Async block creation post-merge",
+    "updatedAt": "2022-08-25T06:36:48Z"
+  },
+  {
+    "author": {
+      "login": "lcgogo"
+    },
+    "number": 25594,
+    "title": "How does geth communicate with prysm?",
+    "updatedAt": "2022-08-25T05:12:29Z"
+  },
+  {
+    "author": {
+      "login": "ryny24"
+    },
+    "number": 23228,
+    "title": "FYI - Sync mode SNAP does not work",
+    "updatedAt": "2022-08-25T04:17:48Z"
+  },
+  {
+    "author": {
+      "login": "t-anyu"
+    },
+    "number": 24025,
+    "title": "Override of block number in eth_call and tracing",
+    "updatedAt": "2022-08-25T02:57:28Z"
   },
   {
     "author": {
@@ -25,27 +105,11 @@
   },
   {
     "author": {
-      "login": "Sajjon"
-    },
-    "number": 25589,
-    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
-    "updatedAt": "2022-08-24T20:02:38Z"
-  },
-  {
-    "author": {
       "login": "luzianscherrer"
     },
     "number": 25579,
     "title": "Release 1.10.22 Regression",
     "updatedAt": "2022-08-24T16:31:55Z"
-  },
-  {
-    "author": {
-      "login": "ryny24"
-    },
-    "number": 23228,
-    "title": "FYI - Sync mode SNAP does not work",
-    "updatedAt": "2022-08-24T15:48:39Z"
   },
   {
     "author": {
@@ -86,14 +150,6 @@
     "number": 25498,
     "title": "[BUG][Clique] Database has receipts with a legacy format on fresh node, cannot restart node",
     "updatedAt": "2022-08-24T09:13:18Z"
-  },
-  {
-    "author": {
-      "login": "SLoeuillet"
-    },
-    "number": 25583,
-    "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
-    "updatedAt": "2022-08-24T08:21:23Z"
   },
   {
     "author": {
@@ -5902,14 +5958,6 @@
     "number": 23354,
     "title": "tests do not close all channels (rjeczalk/notify) ",
     "updatedAt": "2021-12-09T10:20:58Z"
-  },
-  {
-    "author": {
-      "login": "t-anyu"
-    },
-    "number": 24025,
-    "title": "Override of block number in eth_call and tracing",
-    "updatedAt": "2021-12-09T10:16:30Z"
   },
   {
     "author": {

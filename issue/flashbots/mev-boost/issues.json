@@ -1,6 +1,30 @@
 [
   {
     "author": {
+      "login": "wenye1024"
+    },
+    "number": 271,
+    "title": "Invalid block from relayer - gas exceeding limit",
+    "updatedAt": "2022-08-26T17:43:58Z"
+  },
+  {
+    "author": {
+      "login": "beetrootkid"
+    },
+    "number": 220,
+    "title": "Identifier for builder to proposer transaction",
+    "updatedAt": "2022-08-26T14:17:44Z"
+  },
+  {
+    "author": {
+      "login": "tbenr"
+    },
+    "number": 169,
+    "title": "Reflect relays statuses in `status` endpoint",
+    "updatedAt": "2022-08-26T09:37:30Z"
+  },
+  {
+    "author": {
       "login": "jclapis"
     },
     "number": 245,
@@ -102,14 +126,6 @@
     "number": 219,
     "title": "Relay spam protection: require a small deposit to submit blocks as a builder",
     "updatedAt": "2022-08-14T20:01:09Z"
-  },
-  {
-    "author": {
-      "login": "beetrootkid"
-    },
-    "number": 220,
-    "title": "Identifier for builder to proposer transaction",
-    "updatedAt": "2022-08-13T10:02:33Z"
   },
   {
     "author": {
@@ -382,14 +398,6 @@
     "number": 197,
     "title": "Link on mev-boost testing guide which was edited 4 hours ago directs me here to ask for kiln testnet ETH",
     "updatedAt": "2022-07-11T20:24:19Z"
-  },
-  {
-    "author": {
-      "login": "tbenr"
-    },
-    "number": 169,
-    "title": "Reflect relays statuses in `status` endpoint",
-    "updatedAt": "2022-07-07T10:10:38Z"
   },
   {
     "author": {

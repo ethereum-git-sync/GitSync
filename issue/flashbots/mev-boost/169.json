@@ -49,17 +49,17 @@
       "description": "Currently in discussion"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 8,
+  "comments": 9,
   "created_at": "2022-06-24T06:55:35Z",
-  "updated_at": "2022-07-07T10:10:38Z",
-  "closed_at": null,
+  "updated_at": "2022-08-26T09:37:30Z",
+  "closed_at": "2022-08-26T09:37:30Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "I think `mev-boost` status endpoint should call `status` endpoints for each relays and return OK if at least one returned OK. Otherwise it should return KO (503?).",
@@ -97,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/169/timeline",
   "performed_via_github_app": null,
-  "state_reason": "reopened"
+  "state_reason": "completed"
 }
 [
   {
@@ -440,6 +440,50 @@
     "body": "The default timeout used for all requests. But perhaps that's not good enough and we need to define them per request... See also #181 ",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1177354123/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1228282556",
+    "html_url": "https://github.com/flashbots/mev-boost/issues/169#issuecomment-1228282556",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost/issues/169",
+    "id": 1228282556,
+    "node_id": "IC_kwDOGZSKs85JNhq8",
+    "user": {
+      "login": "metachris",
+      "id": 116939,
+      "node_id": "MDQ6VXNlcjExNjkzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/metachris",
+      "html_url": "https://github.com/metachris",
+      "followers_url": "https://api.github.com/users/metachris/followers",
+      "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+      "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+      "organizations_url": "https://api.github.com/users/metachris/orgs",
+      "repos_url": "https://api.github.com/users/metachris/repos",
+      "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/metachris/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-26T09:37:29Z",
+    "updated_at": "2022-08-26T09:37:29Z",
+    "author_association": "COLLABORATOR",
+    "body": "finished",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1228282556/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

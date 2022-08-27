@@ -30,7 +30,15 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 4468107952,
+      "node_id": "LA_kwDOAq426M8AAAABClHqsA",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/enhancement",
+      "name": "enhancement",
+      "color": "092FA2",
+      "default": true,
+      "description": ""
+    }
   ],
   "state": "open",
   "locked": false,
@@ -41,7 +49,7 @@
   "milestone": null,
   "comments": 9,
   "created_at": "2021-09-28T20:34:07Z",
-  "updated_at": "2022-08-25T00:22:18Z",
+  "updated_at": "2022-08-26T22:32:42Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,

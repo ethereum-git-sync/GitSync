@@ -31,13 +31,13 @@
   },
   "labels": [
     {
-      "id": 4393375250,
-      "node_id": "LA_kwDOAq426M8AAAABBd2WEg",
-      "url": "https://api.github.com/repos/ethereum/EIPs/labels/waiting:%20no%20recent%20activity",
-      "name": "waiting: no recent activity",
-      "color": "E99695",
+      "id": 4468108579,
+      "node_id": "LA_kwDOAq426M8AAAABClHtIw",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/security",
+      "name": "security",
+      "color": "72354C",
       "default": false,
-      "description": "This PR hasn't received activity in a while, and will eventually be closed if nothing happens."
+      "description": ""
     }
   ],
   "state": "open",
@@ -49,7 +49,7 @@
   "milestone": null,
   "comments": 2,
   "created_at": "2022-08-04T00:23:01Z",
-  "updated_at": "2022-08-26T00:21:06Z",
+  "updated_at": "2022-08-26T22:32:22Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,

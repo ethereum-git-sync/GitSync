@@ -1,27 +1,27 @@
 [
   {
     "author": {
-      "login": "xinbenlv"
+      "login": "poojaranjan"
     },
-    "number": 5408,
-    "title": "Create an EIP ExternalLinkArchiveBot (EIP ELABot)",
-    "updatedAt": "2022-08-26T00:21:06Z"
+    "number": 5190,
+    "title": "A recommendation to refer to an ERC category proposal (for documentation)",
+    "updatedAt": "2022-08-26T22:34:14Z"
   },
   {
     "author": {
       "login": "MicahZoltu"
     },
-    "number": 5298,
-    "title": "[Security] Pin all GitHub Action dependencies to hash version.",
-    "updatedAt": "2022-08-26T00:21:04Z"
+    "number": 5488,
+    "title": "Add finalized date to EIPs.",
+    "updatedAt": "2022-08-26T22:34:04Z"
   },
   {
     "author": {
-      "login": "SamWilsn"
+      "login": "xinbenlv"
     },
-    "number": 5294,
-    "title": "How should we pick EIP numbers?",
-    "updatedAt": "2022-08-26T00:21:02Z"
+    "number": 5475,
+    "title": "Proposal: Rollback EIP-712 from \"final\" to \"draft\" OR deprecate EIP-712 with a new one",
+    "updatedAt": "2022-08-26T22:33:54Z"
   },
   {
     "author": {
@@ -29,7 +29,7 @@
     },
     "number": 5274,
     "title": "Proposal for EIP preamble: include separate `relates-to:` as an optional field",
-    "updatedAt": "2022-08-26T00:21:01Z"
+    "updatedAt": "2022-08-26T22:33:45Z"
   },
   {
     "author": {
@@ -37,7 +37,71 @@
     },
     "number": 5265,
     "title": "Proposal to include `Superseded` status and `superseded-by: ` (eip number) preemble section",
-    "updatedAt": "2022-08-26T00:21:00Z"
+    "updatedAt": "2022-08-26T22:33:41Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5294,
+    "title": "How should we pick EIP numbers?",
+    "updatedAt": "2022-08-26T22:33:31Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5158,
+    "title": "Example relative link in EIP-1 is rendered as absolute",
+    "updatedAt": "2022-08-26T22:32:58Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5082,
+    "title": "One-time NFT Sale of unused EIP numbers.",
+    "updatedAt": "2022-08-26T22:32:50Z"
+  },
+  {
+    "author": {
+      "login": "Arachnid"
+    },
+    "number": 4335,
+    "title": "EIP registries",
+    "updatedAt": "2022-08-26T22:32:42Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5352,
+    "title": "Display a \"citation\" when hovering over links to other EIPs",
+    "updatedAt": "2022-08-26T22:32:24Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5408,
+    "title": "Create an EIP ExternalLinkArchiveBot (EIP ELABot)",
+    "updatedAt": "2022-08-26T22:32:22Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5298,
+    "title": "Pin all GitHub Action dependencies to hash version.",
+    "updatedAt": "2022-08-26T22:32:04Z"
+  },
+  {
+    "author": {
+      "login": "strumswell"
+    },
+    "number": 5538,
+    "title": "Revocation List Registry",
+    "updatedAt": "2022-08-26T16:47:57Z"
   },
   {
     "author": {
@@ -81,38 +145,6 @@
   },
   {
     "author": {
-      "login": "poojaranjan"
-    },
-    "number": 5190,
-    "title": "A recommendation to refer to an ERC category proposal (for documentation)",
-    "updatedAt": "2022-08-25T00:22:26Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5158,
-    "title": "Example relative link in EIP-1 is rendered as absolute",
-    "updatedAt": "2022-08-25T00:22:25Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5082,
-    "title": "One-time NFT Sale of unused EIP numbers.",
-    "updatedAt": "2022-08-25T00:22:22Z"
-  },
-  {
-    "author": {
-      "login": "Arachnid"
-    },
-    "number": 4335,
-    "title": "EIP registries",
-    "updatedAt": "2022-08-25T00:22:18Z"
-  },
-  {
-    "author": {
       "login": "xinbenlv"
     },
     "number": 5469,
@@ -126,14 +158,6 @@
     "number": 5245,
     "title": "Proposal for EIP Allow EIP Author to opt-in take over",
     "updatedAt": "2022-08-24T14:32:15Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5488,
-    "title": "Add finalized date to EIPs.",
-    "updatedAt": "2022-08-24T07:56:23Z"
   },
   {
     "author": {
@@ -193,14 +217,6 @@
   },
   {
     "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5352,
-    "title": "Display a \"citation\" when hovering over links to other EIPs",
-    "updatedAt": "2022-08-23T14:48:24Z"
-  },
-  {
-    "author": {
       "login": "Pandapip1"
     },
     "number": 5414,
@@ -230,14 +246,6 @@
     "number": 2613,
     "title": "ERC-2612 `permit`: 712-signed token approvals",
     "updatedAt": "2022-08-19T14:27:34Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5475,
-    "title": "Proposal: Rollback EIP-712 from \"final\" to \"draft\" OR deprecate EIP-712 with a new one",
-    "updatedAt": "2022-08-19T04:55:21Z"
   },
   {
     "author": {

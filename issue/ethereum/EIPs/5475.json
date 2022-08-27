@@ -30,7 +30,15 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 4468111640,
+      "node_id": "LA_kwDOAq426M8AAAABClH5GA",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/question",
+      "name": "question",
+      "color": "4500E6",
+      "default": true,
+      "description": ""
+    }
   ],
   "state": "open",
   "locked": false,
@@ -41,7 +49,7 @@
   "milestone": null,
   "comments": 9,
   "created_at": "2022-08-17T11:58:53Z",
-  "updated_at": "2022-08-19T04:55:21Z",
+  "updated_at": "2022-08-26T22:33:54Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -49,8 +57,8 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/EIPs/issues/5475/reactions",
-    "total_count": 0,
-    "+1": 0,
+    "total_count": 1,
+    "+1": 1,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -404,8 +412,8 @@
     "body": "> 712 is \"on mainnet\" (note: it isn't a core EIP).\r\n\r\nAha.  So implementations aren't forced to be in consensus the  way clients are.\r\n\r\n> Nobody can use 712. It has two mutually exclusive specifications.\r\n\r\nFrom the discussion at https://github.com/ethereum/EIPs/pull/5457 it's clear that nobody has (or can) implement the spec as written, but that most (maybe all) implementations have implemented it in same way.  So we have that kind of consensus, and the right thing to do is fix this as an errata.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1220209545/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

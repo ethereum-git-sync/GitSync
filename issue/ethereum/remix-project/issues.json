@@ -3,9 +3,9 @@
     "author": {
       "login": "ryestew"
     },
-    "number": 2804,
-    "title": "vyper compilation probs",
-    "updatedAt": "2022-08-25T12:43:11Z"
+    "number": 2812,
+    "title": "Remixd needs a verified checkmark",
+    "updatedAt": "2022-08-26T17:07:14Z"
   },
   {
     "author": {
@@ -13,7 +13,31 @@
     },
     "number": 2806,
     "title": "Debugger UI may not be wide enough",
-    "updatedAt": "2022-08-24T19:02:38Z"
+    "updatedAt": "2022-08-26T16:57:20Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2804,
+    "title": "vyper compilation probs",
+    "updatedAt": "2022-08-26T14:38:03Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2802,
+    "title": "vyper warning text",
+    "updatedAt": "2022-08-26T14:05:28Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2800,
+    "title": "move vyper README to new vyper repo",
+    "updatedAt": "2022-08-26T14:05:27Z"
   },
   {
     "author": {
@@ -38,22 +62,6 @@
     "number": 2803,
     "title": "wordwrap in errors in vyper",
     "updatedAt": "2022-08-24T15:16:15Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
-    "number": 2802,
-    "title": "vyper warning text",
-    "updatedAt": "2022-08-24T14:37:25Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
-    "number": 2800,
-    "title": "move vyper README to new vyper repo",
-    "updatedAt": "2022-08-24T14:26:22Z"
   },
   {
     "author": {

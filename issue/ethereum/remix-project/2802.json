@@ -40,7 +40,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "ryestew",
@@ -107,12 +107,31 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-08-24T14:37:24Z",
-  "updated_at": "2022-08-24T14:37:25Z",
-  "closed_at": null,
+  "updated_at": "2022-08-26T14:05:28Z",
+  "closed_at": "2022-08-26T14:05:28Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "This text:\r\nIt is really important to not use the remote compiler for production environment.\r\n        Please only use it for testing purpose and prefer to using a local compiler for production like environment.\r\n\r\nShould be updated to:\r\nThe remote compiler should only be used for testing NOT for production environments.  For production, use a local compiler.",
-  "closed_by": null,
+  "closed_by": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/2802/reactions",
     "total_count": 0,
@@ -127,7 +146,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2802/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
 

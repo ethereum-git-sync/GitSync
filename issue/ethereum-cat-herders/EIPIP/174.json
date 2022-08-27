@@ -39,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-08-24T19:25:57Z",
-  "updated_at": "2022-08-24T19:25:57Z",
+  "updated_at": "2022-08-26T21:48:35Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -64,5 +64,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1228983152",
+    "html_url": "https://github.com/ethereum-cat-herders/EIPIP/issues/174#issuecomment-1228983152",
+    "issue_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/174",
+    "id": 1228983152,
+    "node_id": "IC_kwDODfkRC85JQMtw",
+    "user": {
+      "login": "Pandapip1",
+      "id": 45835846,
+      "node_id": "MDQ6VXNlcjQ1ODM1ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45835846?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Pandapip1",
+      "html_url": "https://github.com/Pandapip1",
+      "followers_url": "https://api.github.com/users/Pandapip1/followers",
+      "following_url": "https://api.github.com/users/Pandapip1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Pandapip1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Pandapip1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Pandapip1/subscriptions",
+      "organizations_url": "https://api.github.com/users/Pandapip1/orgs",
+      "repos_url": "https://api.github.com/users/Pandapip1/repos",
+      "events_url": "https://api.github.com/users/Pandapip1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Pandapip1/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-26T21:48:35Z",
+    "updated_at": "2022-08-26T21:48:35Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "https://github.com/ethereum/EIPs/pull/5508",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1228983152/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

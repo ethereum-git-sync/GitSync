@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "cameel"
+    },
+    "number": 12961,
+    "title": "Download list is empty in the flyout menu in the docs for versions 0.8.9..0.8.13",
+    "updatedAt": "2022-08-26T15:52:07Z"
+  },
+  {
+    "author": {
+      "login": "ethernomad"
+    },
+    "number": 2991,
+    "title": "Re-enable trailing commas in function parameters, arrays, etc.",
+    "updatedAt": "2022-08-26T11:31:46Z"
+  },
+  {
+    "author": {
       "login": "christianparpart"
     },
     "number": 12904,
@@ -86,14 +102,6 @@
     "number": 11969,
     "title": "Operators for user defined value types.",
     "updatedAt": "2022-08-24T11:00:18Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 12961,
-    "title": "Download list is empty in the flyout menu in the docs for versions 0.8.9..0.8.13",
-    "updatedAt": "2022-08-24T04:10:21Z"
   },
   {
     "author": {
@@ -4262,14 +4270,6 @@
     "number": 13179,
     "title": "solc: Stack overflow importing large AST from json file",
     "updatedAt": "2022-07-05T16:56:39Z"
-  },
-  {
-    "author": {
-      "login": "ethernomad"
-    },
-    "number": 2991,
-    "title": "Re-enable trailing commas in function parameters, arrays, etc.",
-    "updatedAt": "2022-07-05T13:51:37Z"
   },
   {
     "author": {

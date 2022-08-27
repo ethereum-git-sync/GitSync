@@ -1,11 +1,115 @@
 [
   {
     "author": {
+      "login": "ybstaked"
+    },
+    "number": 25613,
+    "title": "Geth 1.10.21 -> 1.10.23 Unhandle trie error",
+    "updatedAt": "2022-08-26T21:27:08Z"
+  },
+  {
+    "author": {
+      "login": "wjmelements"
+    },
+    "number": 25614,
+    "title": "Intent to Implement: Recovery of Missing Logs",
+    "updatedAt": "2022-08-26T21:26:02Z"
+  },
+  {
+    "author": {
+      "login": "simonovic86"
+    },
+    "number": 25615,
+    "title": "gethclient call fails if the `Code` property is not present in the state overrides",
+    "updatedAt": "2022-08-26T20:02:19Z"
+  },
+  {
+    "author": {
       "login": "SLoeuillet"
     },
     "number": 25583,
     "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
-    "updatedAt": "2022-08-25T15:40:05Z"
+    "updatedAt": "2022-08-26T19:27:24Z"
+  },
+  {
+    "author": {
+      "login": "th3outcast"
+    },
+    "number": 25065,
+    "title": "Generics instantiation error using mapset.Set[T comparable] within rpc/server.go and rpc/websocket.go",
+    "updatedAt": "2022-08-26T18:05:26Z"
+  },
+  {
+    "author": {
+      "login": "Sajjon"
+    },
+    "number": 25589,
+    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
+    "updatedAt": "2022-08-26T17:15:14Z"
+  },
+  {
+    "author": {
+      "login": "yorickdowne"
+    },
+    "number": 25596,
+    "title": "1.10.23 fresh mainnet sync stalled",
+    "updatedAt": "2022-08-26T16:12:32Z"
+  },
+  {
+    "author": {
+      "login": "barwod"
+    },
+    "number": 24148,
+    "title": "`DatabaseHandles' in ethconfig.Config cannot be set through TOML",
+    "updatedAt": "2022-08-26T16:04:20Z"
+  },
+  {
+    "author": {
+      "login": "SLoeuillet"
+    },
+    "number": 25593,
+    "title": "geth website docs/interface/peer-to-peer refers to outdated method to set static/trusted nodes",
+    "updatedAt": "2022-08-26T09:47:13Z"
+  },
+  {
+    "author": {
+      "login": "ekawibisono"
+    },
+    "number": 25608,
+    "title": "Miner Address  0x0000000000000000000000000000000000000000",
+    "updatedAt": "2022-08-26T09:12:10Z"
+  },
+  {
+    "author": {
+      "login": "okmrs"
+    },
+    "number": 25598,
+    "title": "Need help to solve the synchronization problem.",
+    "updatedAt": "2022-08-26T09:04:42Z"
+  },
+  {
+    "author": {
+      "login": "41rjordan"
+    },
+    "number": 25607,
+    "title": "ethclient - replace nil pointer on *Transaction when null address with real address",
+    "updatedAt": "2022-08-26T07:58:15Z"
+  },
+  {
+    "author": {
+      "login": "lcgogo"
+    },
+    "number": 25594,
+    "title": "How does geth communicate with prysm?",
+    "updatedAt": "2022-08-26T07:34:48Z"
+  },
+  {
+    "author": {
+      "login": "m-yukio"
+    },
+    "number": 25462,
+    "title": "Duplicate code in gomobile production",
+    "updatedAt": "2022-08-26T06:55:26Z"
   },
   {
     "author": {
@@ -13,7 +117,7 @@
     },
     "number": 25604,
     "title": "Abigen sol",
-    "updatedAt": "2022-08-25T15:07:25Z"
+    "updatedAt": "2022-08-26T02:46:02Z"
   },
   {
     "author": {
@@ -25,35 +129,11 @@
   },
   {
     "author": {
-      "login": "Sajjon"
-    },
-    "number": 25589,
-    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
-    "updatedAt": "2022-08-25T14:01:36Z"
-  },
-  {
-    "author": {
-      "login": "okmrs"
-    },
-    "number": 25598,
-    "title": "Need help to solve the synchronization problem.",
-    "updatedAt": "2022-08-25T13:23:35Z"
-  },
-  {
-    "author": {
       "login": "holiman"
     },
     "number": 25600,
     "title": "Inefficient response handling in Snap",
     "updatedAt": "2022-08-25T12:08:33Z"
-  },
-  {
-    "author": {
-      "login": "yorickdowne"
-    },
-    "number": 25596,
-    "title": "1.10.23 fresh mainnet sync stalled",
-    "updatedAt": "2022-08-25T10:42:28Z"
   },
   {
     "author": {
@@ -70,14 +150,6 @@
     "number": 25599,
     "title": "Async block creation post-merge",
     "updatedAt": "2022-08-25T06:36:48Z"
-  },
-  {
-    "author": {
-      "login": "lcgogo"
-    },
-    "number": 25594,
-    "title": "How does geth communicate with prysm?",
-    "updatedAt": "2022-08-25T05:12:29Z"
   },
   {
     "author": {
@@ -110,14 +182,6 @@
     "number": 25579,
     "title": "Release 1.10.22 Regression",
     "updatedAt": "2022-08-24T16:31:55Z"
-  },
-  {
-    "author": {
-      "login": "SLoeuillet"
-    },
-    "number": 25593,
-    "title": "geth website docs/interface/peer-to-peer refers to outdated method to set static/trusted nodes",
-    "updatedAt": "2022-08-24T13:40:05Z"
   },
   {
     "author": {
@@ -526,14 +590,6 @@
     "number": 25484,
     "title": "ropsten  eth.syncing is false but eth.blockNumber is not latest",
     "updatedAt": "2022-08-09T12:37:37Z"
-  },
-  {
-    "author": {
-      "login": "m-yukio"
-    },
-    "number": 25462,
-    "title": "Duplicate code in gomobile production",
-    "updatedAt": "2022-08-09T07:36:57Z"
   },
   {
     "author": {
@@ -1438,14 +1494,6 @@
     "number": 25295,
     "title": "Blocknative and geth local node",
     "updatedAt": "2022-07-17T01:42:29Z"
-  },
-  {
-    "author": {
-      "login": "barwod"
-    },
-    "number": 24148,
-    "title": "`DatabaseHandles' in ethconfig.Config cannot be set through TOML",
-    "updatedAt": "2022-07-15T02:29:04Z"
   },
   {
     "author": {
@@ -2366,14 +2414,6 @@
     "number": 25046,
     "title": "ropsten merge ttd (geth_block_transactions=0)",
     "updatedAt": "2022-06-15T12:23:43Z"
-  },
-  {
-    "author": {
-      "login": "th3outcast"
-    },
-    "number": 25065,
-    "title": "Generics instantiation error using mapset.Set[T comparable] within rpc/server.go and rpc/websocket.go",
-    "updatedAt": "2022-06-15T12:14:27Z"
   },
   {
     "author": {
@@ -12497,7 +12537,7 @@
   },
   {
     "author": {
-      "login": "StacyNLaabs"
+      "login": "Snlaabs"
     },
     "number": 22401,
     "title": "Rinkeby Faucet Down",

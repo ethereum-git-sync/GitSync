@@ -58,21 +58,40 @@
       "description": null
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 9,
+  "comments": 10,
   "created_at": "2021-12-22T15:10:34Z",
-  "updated_at": "2022-07-15T02:29:04Z",
-  "closed_at": null,
+  "updated_at": "2022-08-26T16:04:20Z",
+  "closed_at": "2022-08-26T16:04:20Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "#### System information\r\n\r\nGeth\r\nVersion: 1.10.13-stable\r\nGit Commit: 7a0c19f813e285516f4b525305fd73b625d2dec8\r\nArchitecture: amd64\r\nGo Version: go1.17.3\r\nOperating System: linux\r\nGOPATH=\r\nGOROOT=go\r\n\r\n#### Expected behaviour\r\n\r\nClose files that aren't in use / have a settable limit\r\n\r\n#### Actual behaviour\r\n\r\nEvery database file it opens stays open for the duration of the sync\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nSnap sync the blockchain on an AWS EFS volume\r\n\r\n#### Backtrace\r\n\r\nI use @holiman recomendation from issue https://github.com/ethereum/go-ethereum/issues/23922\r\nbut i get error:\r\n\r\n\"Fatal: /root/.ethereum/config.toml, line 13: field corresponding to `DatabaseHandles' in ethconfig.Config cannot be set through TOML\"\r\n\r\nMy config.toml:\r\n\r\n```\r\n[Eth]\r\nNetworkId = 4\r\nSyncMode = \"snap\"\r\nEthDiscoveryURLs = [\"enrtree://AKA3AM6LPBYEUDMVNU3BSVQJ5AD45Y7YPOHJLEF6W26QOE4VTUDPE@all.rinkeby.ethdisco.net\"]\r\nSnapDiscoveryURLs = [\"enrtree://AKA3AM6LPBYEUDMVNU3BSVQJ5AD45Y7YPOHJLEF6W26QOE4VTUDPE@all.rinkeby.ethdisco.net\"]\r\nNoPruning = false\r\nNoPrefetch = false\r\nTxLookupLimit = 2350000\r\nLightPeers = 100\r\nUltraLightFraction = 75\r\nDatabaseCache = 512\r\nDatabaseFreezer = \"\"\r\nDatabaseHandles = 30000\r\nTrieCleanCache = 154\r\nTrieCleanCacheJournal = \"triecache\"\r\nTrieCleanCacheRejournal = 3600000000000\r\nTrieDirtyCache = 256\r\nTrieTimeout = 3600000000000\r\nSnapshotCache = 102\r\nPreimages = false\r\nEnablePreimageRecording = false\r\nRPCGasCap = 50000000\r\nRPCEVMTimeout = 5000000000\r\nRPCTxFeeCap = 1e+00\r\n```\r\n\r\nAny idea how to fix this?",
-  "closed_by": null,
+  "closed_by": {
+    "login": "s1na",
+    "id": 1591639,
+    "node_id": "MDQ6VXNlcjE1OTE2Mzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1591639?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/s1na",
+    "html_url": "https://github.com/s1na",
+    "followers_url": "https://api.github.com/users/s1na/followers",
+    "following_url": "https://api.github.com/users/s1na/following{/other_user}",
+    "gists_url": "https://api.github.com/users/s1na/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/s1na/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/s1na/subscriptions",
+    "organizations_url": "https://api.github.com/users/s1na/orgs",
+    "repos_url": "https://api.github.com/users/s1na/repos",
+    "events_url": "https://api.github.com/users/s1na/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/s1na/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24148/reactions",
     "total_count": 26,
@@ -87,7 +106,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24148/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -474,6 +493,50 @@
     "body": "open",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1185104181/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1228674647",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/24148#issuecomment-1228674647",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24148",
+    "id": 1228674647,
+    "node_id": "IC_kwDOAOvK985JPBZX",
+    "user": {
+      "login": "s1na",
+      "id": 1591639,
+      "node_id": "MDQ6VXNlcjE1OTE2Mzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1591639?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/s1na",
+      "html_url": "https://github.com/s1na",
+      "followers_url": "https://api.github.com/users/s1na/followers",
+      "following_url": "https://api.github.com/users/s1na/following{/other_user}",
+      "gists_url": "https://api.github.com/users/s1na/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/s1na/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/s1na/subscriptions",
+      "organizations_url": "https://api.github.com/users/s1na/orgs",
+      "repos_url": "https://api.github.com/users/s1na/repos",
+      "events_url": "https://api.github.com/users/s1na/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/s1na/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-26T16:04:20Z",
+    "updated_at": "2022-08-26T16:04:20Z",
+    "author_association": "MEMBER",
+    "body": "Closed by https://github.com/ethereum/go-ethereum/pull/24477.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1228674647/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

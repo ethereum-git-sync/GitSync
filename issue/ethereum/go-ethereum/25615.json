@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25615",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25615/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25615/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25615/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25615",
+  "id": 1352684981,
+  "node_id": "I_kwDOAOvK985QoFW1",
+  "number": 25615,
+  "title": "gethclient call fails if the `Code` property is not present in the state overrides",
+  "user": {
+    "login": "simonovic86",
+    "id": 6579789,
+    "node_id": "MDQ6VXNlcjY1Nzk3ODk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6579789?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/simonovic86",
+    "html_url": "https://github.com/simonovic86",
+    "followers_url": "https://api.github.com/users/simonovic86/followers",
+    "following_url": "https://api.github.com/users/simonovic86/following{/other_user}",
+    "gists_url": "https://api.github.com/users/simonovic86/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/simonovic86/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/simonovic86/subscriptions",
+    "organizations_url": "https://api.github.com/users/simonovic86/orgs",
+    "repos_url": "https://api.github.com/users/simonovic86/repos",
+    "events_url": "https://api.github.com/users/simonovic86/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/simonovic86/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-26T20:02:19Z",
+  "updated_at": "2022-08-26T20:02:19Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\ngo-ethereum version: `v1.10.23`\r\nOS & Version: OSX\r\n\r\n#### Expected behaviour\r\n\r\nWhile using the `gethclient/gethclient.go` client to override the state with the `gethclient/OverrideAccount` properties, if the `Code` property is not present it should be omitted or set to `null` on marshal.\r\n\r\n```json\r\n[\r\n  {\r\n    \"data\": \"0xaa00000000000000000000000000000000000000\",\r\n    \"from\": \"0xbb00000000000000000000000000000000000000\",\r\n    \"to\": \"0xcc00000000000000000000000000000000000000\"\r\n  },\r\n  \"latest\",\r\n  {\r\n    \"0xdd00000000000000000000000000000000000000\": {\r\n      \"nonce\": \"0x0\",\r\n      \"code\": null,\r\n      \"balance\": null,\r\n      \"state\": null,\r\n      \"stateDiff\": null\r\n    }\r\n  }\r\n]\r\n```\r\n\r\n#### Actual behaviour\r\n\r\nIf the `Code` property is not present in the overrides, it would still be marshalled into `0x` because of the type `hexutil.Bytes`.\r\n\r\n```go\r\n// Bytes marshals/unmarshals as a JSON string with 0x prefix.\r\n// The empty slice marshals as \"0x\".\r\ntype Bytes []byte\r\n```\r\n\r\nThe marshalled json:\r\n```json\r\n[\r\n  {\r\n    \"data\": \"0xaa00000000000000000000000000000000000000\",\r\n    \"from\": \"0xbb00000000000000000000000000000000000000\",\r\n    \"to\": \"0xcc00000000000000000000000000000000000000\"\r\n  },\r\n  \"latest\",\r\n  {\r\n    \"0xdd00000000000000000000000000000000000000\": {\r\n      \"nonce\": \"0x0\",\r\n      \"code\": \"0x\",\r\n      \"balance\": null,\r\n      \"state\": null,\r\n      \"stateDiff\": null\r\n    }\r\n  }\r\n]\r\n```\r\n\r\nBecause of this behaviour, the request fails with the **execution reverted** error.\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n```go\r\n// CallContract with override\r\noverride := gethclient.OverrideAccount{}\r\n\r\nmapAcc := make(map[common.Address]gethclient.OverrideAccount)\r\nmapAcc[address] = override\r\n\r\nvar err error\r\nvar result []byte\r\n\r\nif result, err = client.CallContract(context.Background(), msg, nil, &mapAcc); err != nil {\r\n\tlog.Fatalf(\"unexpected error: %v\", err)\r\n}\r\n```\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n\r\nWhen submitting logs: please submit them as text and not screenshots.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25615/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25615/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

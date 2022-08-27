@@ -47,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 30,
+  "comments": 33,
   "created_at": "2022-08-24T10:28:55Z",
-  "updated_at": "2022-08-25T14:01:36Z",
+  "updated_at": "2022-08-26T17:15:14Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -1375,9 +1375,9 @@
       "site_admin": false
     },
     "created_at": "2022-08-25T14:01:36Z",
-    "updated_at": "2022-08-25T14:01:36Z",
+    "updated_at": "2022-08-26T01:24:38Z",
     "author_association": "NONE",
-    "body": "like this(that 24088 is increasing but it can stay the same for an hour before it changes, if there are 1M accounts, it would take how many hours but I don't know the meaning of it)\r\n\r\nAug 25 13:59:13 hqprdubeth startmainnet.sh[3945015]: INFO [08-25|13:59:13.377] State heal in progress                   accounts=24088@1.21MiB        slots=7672@612.17KiB        codes=55@509.58KiB       nodes=665,196@298.98MiB pending=128,150\r\n\r\n",
+    "body": "like this(that 24088 is increasing but it can stay the same for an hour before it changes, if there are 1M accounts, it would take how many hours but I don't know the meaning of it)\r\n\r\nAug 25 13:59:13 hqprdubeth startmainnet.sh[3945015]: INFO [08-25|13:59:13.377] State heal in progress                   accounts=24088@1.21MiB        slots=7672@612.17KiB        codes=55@509.58KiB       nodes=665,196@298.98MiB pending=128,150\r\n\r\ntwelve hours later, this is what I am seeing so it seems that it is fixing the account one at a time and no way to tell how many more remains. probably better to just scrap the whole thing and sync from fresh ! As it is still not in normal state AFAICT\r\n\r\nAug 26 01:20:40 hqprdubeth startmainnet.sh[3945015]: INFO [08-26|01:20:40.850] State heal in progress                   accounts=137,843@7.32MiB      slots=96077@7.24MiB         codes=254@2.05MiB        nodes=2,388,175@962.15MiB pending=88563\r\n\r\nsyncing: {\r\n    currentBlock: 15412385,\r\n    healedBytecodeBytes: 2150002,\r\n    healedBytecodes: 254,\r\n    healedTrienodeBytes: 1015310728,\r\n    healedTrienodes: 2400585,\r\n    healingBytecode: 0,\r\n    healingTrienodes: 4192,\r\n    highestBlock: 15412460,\r\n    startingBlock: 15312742,\r\n    syncedAccountBytes: 44692712980,\r\n    syncedAccounts: 183966641,\r\n    syncedBytecodeBytes: 4191239478,\r\n    syncedBytecodes: 646245,\r\n    syncedStorage: 763860220,\r\n    syncedStorageBytes: 163710644801\r\n  },\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1227304627/reactions",
       "total_count": 0,

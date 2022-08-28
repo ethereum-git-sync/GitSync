@@ -39,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 2,
+  "comments": 3,
   "created_at": "2022-05-24T12:20:15Z",
-  "updated_at": "2022-08-09T14:05:20Z",
+  "updated_at": "2022-08-27T14:24:31Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -149,6 +149,50 @@
       "heart": 0,
       "rocket": 0,
       "eyes": 1
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1229202195",
+    "html_url": "https://github.com/ethereum/solidity/issues/13055#issuecomment-1229202195",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13055",
+    "id": 1229202195,
+    "node_id": "IC_kwDOAm_5kc5JRCMT",
+    "user": {
+      "login": "nishant-sachdeva",
+      "id": 32475507,
+      "node_id": "MDQ6VXNlcjMyNDc1NTA3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32475507?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nishant-sachdeva",
+      "html_url": "https://github.com/nishant-sachdeva",
+      "followers_url": "https://api.github.com/users/nishant-sachdeva/followers",
+      "following_url": "https://api.github.com/users/nishant-sachdeva/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nishant-sachdeva/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nishant-sachdeva/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nishant-sachdeva/subscriptions",
+      "organizations_url": "https://api.github.com/users/nishant-sachdeva/orgs",
+      "repos_url": "https://api.github.com/users/nishant-sachdeva/repos",
+      "events_url": "https://api.github.com/users/nishant-sachdeva/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nishant-sachdeva/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-27T14:24:31Z",
+    "updated_at": "2022-08-27T14:24:31Z",
+    "author_association": "MEMBER",
+    "body": "@ekpyron Should we have a discussion in the next meet if we want to come together and make a proper roadmap on how to go about this ? ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1229202195/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
     },
     "performed_via_github_app": null
   }

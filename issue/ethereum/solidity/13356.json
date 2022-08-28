@@ -39,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-08-08T10:54:27Z",
-  "updated_at": "2022-08-08T10:55:37Z",
+  "updated_at": "2022-08-27T22:18:25Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -64,5 +64,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1229278476",
+    "html_url": "https://github.com/ethereum/solidity/issues/13356#issuecomment-1229278476",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13356",
+    "id": 1229278476,
+    "node_id": "IC_kwDOAm_5kc5JRU0M",
+    "user": {
+      "login": "hrkrshnn",
+      "id": 13174375,
+      "node_id": "MDQ6VXNlcjEzMTc0Mzc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13174375?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hrkrshnn",
+      "html_url": "https://github.com/hrkrshnn",
+      "followers_url": "https://api.github.com/users/hrkrshnn/followers",
+      "following_url": "https://api.github.com/users/hrkrshnn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hrkrshnn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hrkrshnn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hrkrshnn/subscriptions",
+      "organizations_url": "https://api.github.com/users/hrkrshnn/orgs",
+      "repos_url": "https://api.github.com/users/hrkrshnn/repos",
+      "events_url": "https://api.github.com/users/hrkrshnn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hrkrshnn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-27T22:18:25Z",
+    "updated_at": "2022-08-27T22:18:25Z",
+    "author_association": "MEMBER",
+    "body": "Yeah, this is a known issue. Unfortunately, in Solidity if you use a symbol by itself, then the lookup needs to be unique (of course, calling functions would work, but it's not smart enough in this case). \r\n\r\nAs an immediate fix, how can the error message be improved to make this understandable? Any suggestions? @antonper ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1229278476/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

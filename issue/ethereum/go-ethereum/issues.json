@@ -1,6 +1,46 @@
 [
   {
     "author": {
+      "login": "adamkoch"
+    },
+    "number": 25620,
+    "title": "Frequent unindexed transactions after fresh sync with 1.10.23",
+    "updatedAt": "2022-08-27T22:15:52Z"
+  },
+  {
+    "author": {
+      "login": "Mars7005"
+    },
+    "number": 25619,
+    "title": "Danke 🤙",
+    "updatedAt": "2022-08-27T18:31:56Z"
+  },
+  {
+    "author": {
+      "login": "altsheets"
+    },
+    "number": 2104,
+    "title": "transactions of an address - example code please",
+    "updatedAt": "2022-08-27T17:15:23Z"
+  },
+  {
+    "author": {
+      "login": "th3outcast"
+    },
+    "number": 25065,
+    "title": "Generics instantiation error using mapset.Set[T comparable] within rpc/server.go and rpc/websocket.go",
+    "updatedAt": "2022-08-27T10:06:15Z"
+  },
+  {
+    "author": {
+      "login": "ekawibisono"
+    },
+    "number": 25608,
+    "title": "Miner Address  0x0000000000000000000000000000000000000000",
+    "updatedAt": "2022-08-27T08:29:41Z"
+  },
+  {
+    "author": {
       "login": "ybstaked"
     },
     "number": 25613,
@@ -33,14 +73,6 @@
   },
   {
     "author": {
-      "login": "th3outcast"
-    },
-    "number": 25065,
-    "title": "Generics instantiation error using mapset.Set[T comparable] within rpc/server.go and rpc/websocket.go",
-    "updatedAt": "2022-08-26T18:05:26Z"
-  },
-  {
-    "author": {
       "login": "Sajjon"
     },
     "number": 25589,
@@ -70,14 +102,6 @@
     "number": 25593,
     "title": "geth website docs/interface/peer-to-peer refers to outdated method to set static/trusted nodes",
     "updatedAt": "2022-08-26T09:47:13Z"
-  },
-  {
-    "author": {
-      "login": "ekawibisono"
-    },
-    "number": 25608,
-    "title": "Miner Address  0x0000000000000000000000000000000000000000",
-    "updatedAt": "2022-08-26T09:12:10Z"
   },
   {
     "author": {
@@ -25097,7 +25121,7 @@
   },
   {
     "author": {
-      "login": "AlbertWh1te"
+      "login": "M4rkWhite"
     },
     "number": 15809,
     "title": "keep Generating ethash verification cache  never stop!!!",
@@ -32246,14 +32270,6 @@
     "number": 17454,
     "title": "Miner info is empty in block",
     "updatedAt": "2018-08-22T09:44:14Z"
-  },
-  {
-    "author": {
-      "login": "altsheets"
-    },
-    "number": 2104,
-    "title": "transactions of an address - example code please",
-    "updatedAt": "2018-08-22T02:36:13Z"
   },
   {
     "author": {

@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "emretepedev"
+    },
+    "number": 2817,
+    "title": "Scenarios do not work for tuple parameters",
+    "updatedAt": "2022-08-27T15:05:11Z"
+  },
+  {
+    "author": {
       "login": "ryestew"
     },
     "number": 2812,

@@ -3,10 +3,11 @@
 API_LIMIT_REACHED=0
 
 function create_directory() {
+	echo "/home/ubuntu/GitSync/issue/$1" 
         if [ ! -d /home/ubuntu/GitSync/issue/$1 ]
         then
                 mkdir -p /home/ubuntu/GitSync/issue/$1
-        fi
+	fi
 }
 
 function clean_up() {
@@ -73,7 +74,7 @@ function gather_issues() {
 
 if [ -d /home/ubuntu/GitSync/repo/github/${1} ]
 then
-	create_directory
+	create_directory $1
 	cd /home/ubuntu/GitSync/repo/github/${1}
 	echo ${1}
 	gather_issues ${1}

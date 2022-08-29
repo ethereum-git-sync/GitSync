@@ -1,6 +1,78 @@
 [
   {
     "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5555,
+    "title": "Claim issue #5555",
+    "updatedAt": "2022-08-28T17:04:23Z"
+  },
+  {
+    "author": {
+      "login": "nicola"
+    },
+    "number": 1238,
+    "title": "ERC1238: Non-transferrable Non-Fungible Tokens (NTT)",
+    "updatedAt": "2022-08-28T15:46:55Z"
+  },
+  {
+    "author": {
+      "login": "mudgen"
+    },
+    "number": 2535,
+    "title": "EIP-2535: Diamonds",
+    "updatedAt": "2022-08-28T02:53:26Z"
+  },
+  {
+    "author": {
+      "login": "ricmoo"
+    },
+    "number": 2439,
+    "title": "EIP-634: Storage of text records in ENS",
+    "updatedAt": "2022-08-28T02:27:31Z"
+  },
+  {
+    "author": {
+      "login": "MrChico"
+    },
+    "number": 2613,
+    "title": "EIP-2612: 712-signed token approvals",
+    "updatedAt": "2022-08-28T02:27:11Z"
+  },
+  {
+    "author": {
+      "login": "alanscarpellini"
+    },
+    "number": 2983,
+    "title": "EIP-2980: Swiss Compliant Asset Token",
+    "updatedAt": "2022-08-28T02:26:59Z"
+  },
+  {
+    "author": {
+      "login": "ricmoo"
+    },
+    "number": 3225,
+    "title": "EIP-3224: Described Data",
+    "updatedAt": "2022-08-28T02:26:42Z"
+  },
+  {
+    "author": {
+      "login": "simontianx"
+    },
+    "number": 3753,
+    "title": "EIP-3754: A vanilla non-fungible token standard",
+    "updatedAt": "2022-08-28T02:26:33Z"
+  },
+  {
+    "author": {
+      "login": "simontianx"
+    },
+    "number": 3782,
+    "title": "EIP-4341: Multi NFT Ordered Standard",
+    "updatedAt": "2022-08-28T02:26:27Z"
+  },
+  {
+    "author": {
       "login": "Bubble7777"
     },
     "number": 5546,
@@ -193,30 +265,6 @@
   },
   {
     "author": {
-      "login": "ricmoo"
-    },
-    "number": 2439,
-    "title": "Discussions-to thread for EIP-634 (Storage of text records in ENS)",
-    "updatedAt": "2022-08-23T14:50:40Z"
-  },
-  {
-    "author": {
-      "login": "simontianx"
-    },
-    "number": 3782,
-    "title": "[EIP-4341] Multi NFT Ordered Standard",
-    "updatedAt": "2022-08-23T14:50:27Z"
-  },
-  {
-    "author": {
-      "login": "mudgen"
-    },
-    "number": 2535,
-    "title": "Diamonds",
-    "updatedAt": "2022-08-23T14:50:09Z"
-  },
-  {
-    "author": {
       "login": "Pandapip1"
     },
     "number": 5394,
@@ -246,14 +294,6 @@
     "number": 1329,
     "title": "ERC-1329: Inalienable Reputation Token",
     "updatedAt": "2022-08-21T13:24:27Z"
-  },
-  {
-    "author": {
-      "login": "MrChico"
-    },
-    "number": 2613,
-    "title": "ERC-2612 `permit`: 712-signed token approvals",
-    "updatedAt": "2022-08-19T14:27:34Z"
   },
   {
     "author": {
@@ -390,14 +430,6 @@
     "number": 721,
     "title": "ERC: Non-fungible Token Standard",
     "updatedAt": "2022-08-03T16:14:00Z"
-  },
-  {
-    "author": {
-      "login": "alanscarpellini"
-    },
-    "number": 2983,
-    "title": "Discussion for EIP-2980 ",
-    "updatedAt": "2022-08-03T15:04:34Z"
   },
   {
     "author": {
@@ -1241,14 +1273,6 @@
   },
   {
     "author": {
-      "login": "ricmoo"
-    },
-    "number": 3225,
-    "title": "Discussion for EIP-3224: Described Data",
-    "updatedAt": "2022-06-30T03:12:35Z"
-  },
-  {
-    "author": {
       "login": "Terra854"
     },
     "number": 3145,
@@ -1326,14 +1350,6 @@
     "number": 1257,
     "title": "ERC 1257: Proof of Payment by smart contracts",
     "updatedAt": "2022-06-11T07:09:03Z"
-  },
-  {
-    "author": {
-      "login": "nicola"
-    },
-    "number": 1238,
-    "title": "ERC1238: Non-transferrable Non-Fungible Tokens (NTT)",
-    "updatedAt": "2022-06-11T07:08:52Z"
   },
   {
     "author": {
@@ -4830,14 +4846,6 @@
     "number": 736,
     "title": "Add definitions of SHOULD, MUST, OPTIONAL to EIP1",
     "updatedAt": "2021-11-11T13:30:24Z"
-  },
-  {
-    "author": {
-      "login": "simontianx"
-    },
-    "number": 3753,
-    "title": "[EIP-3754] A vanilla non-fungible token standard",
-    "updatedAt": "2021-11-11T13:10:10Z"
   },
   {
     "author": {

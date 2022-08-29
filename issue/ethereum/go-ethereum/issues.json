@@ -1,11 +1,67 @@
 [
   {
     "author": {
+      "login": "ianhe8x"
+    },
+    "number": 25625,
+    "title": "Can remotedb be used to serve rpcs",
+    "updatedAt": "2022-08-28T23:27:33Z"
+  },
+  {
+    "author": {
+      "login": "NostalgicGareth"
+    },
+    "number": 25624,
+    "title": "issue",
+    "updatedAt": "2022-08-28T20:39:42Z"
+  },
+  {
+    "author": {
+      "login": "Sajjon"
+    },
+    "number": 25589,
+    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
+    "updatedAt": "2022-08-28T17:57:07Z"
+  },
+  {
+    "author": {
+      "login": "ybstaked"
+    },
+    "number": 25613,
+    "title": "Geth 1.10.21 -> 1.10.23 Unhandle trie error",
+    "updatedAt": "2022-08-28T17:01:09Z"
+  },
+  {
+    "author": {
       "login": "adamkoch"
     },
     "number": 25620,
     "title": "Frequent unindexed transactions after fresh sync with 1.10.23",
-    "updatedAt": "2022-08-27T22:15:52Z"
+    "updatedAt": "2022-08-28T16:52:11Z"
+  },
+  {
+    "author": {
+      "login": "757566833"
+    },
+    "number": 25537,
+    "title": "ethclient: BlockByNumber cannot handle `pending` block",
+    "updatedAt": "2022-08-28T14:08:28Z"
+  },
+  {
+    "author": {
+      "login": "martonp"
+    },
+    "number": 25623,
+    "title": "Will --syncmode=light work post-merge?",
+    "updatedAt": "2022-08-28T11:45:15Z"
+  },
+  {
+    "author": {
+      "login": "navy665180"
+    },
+    "number": 25622,
+    "title": "err the method engine_exchangeTransitionConfigurationV1 does not exist/os not available?",
+    "updatedAt": "2022-08-28T10:40:45Z"
   },
   {
     "author": {
@@ -13,7 +69,15 @@
     },
     "number": 25619,
     "title": "Danke 🤙",
-    "updatedAt": "2022-08-27T18:31:56Z"
+    "updatedAt": "2022-08-28T01:39:28Z"
+  },
+  {
+    "author": {
+      "login": "th3outcast"
+    },
+    "number": 25065,
+    "title": "Generics instantiation error using mapset.Set[T comparable] within rpc/server.go and rpc/websocket.go",
+    "updatedAt": "2022-08-28T01:31:18Z"
   },
   {
     "author": {
@@ -25,27 +89,11 @@
   },
   {
     "author": {
-      "login": "th3outcast"
-    },
-    "number": 25065,
-    "title": "Generics instantiation error using mapset.Set[T comparable] within rpc/server.go and rpc/websocket.go",
-    "updatedAt": "2022-08-27T10:06:15Z"
-  },
-  {
-    "author": {
       "login": "ekawibisono"
     },
     "number": 25608,
     "title": "Miner Address  0x0000000000000000000000000000000000000000",
     "updatedAt": "2022-08-27T08:29:41Z"
-  },
-  {
-    "author": {
-      "login": "ybstaked"
-    },
-    "number": 25613,
-    "title": "Geth 1.10.21 -> 1.10.23 Unhandle trie error",
-    "updatedAt": "2022-08-26T21:27:08Z"
   },
   {
     "author": {
@@ -70,14 +118,6 @@
     "number": 25583,
     "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
     "updatedAt": "2022-08-26T19:27:24Z"
-  },
-  {
-    "author": {
-      "login": "Sajjon"
-    },
-    "number": 25589,
-    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
-    "updatedAt": "2022-08-26T17:15:14Z"
   },
   {
     "author": {
@@ -142,14 +182,6 @@
     "number": 25604,
     "title": "Abigen sol",
     "updatedAt": "2022-08-26T02:46:02Z"
-  },
-  {
-    "author": {
-      "login": "757566833"
-    },
-    "number": 25537,
-    "title": "ethclient: BlockByNumber cannot handle `pending` block",
-    "updatedAt": "2022-08-25T14:31:53Z"
   },
   {
     "author": {

@@ -1,11 +1,91 @@
 [
   {
     "author": {
+      "login": "wjmelements"
+    },
+    "number": 25614,
+    "title": "Intent to Implement: Recovery of Missing Logs",
+    "updatedAt": "2022-08-29T22:10:49Z"
+  },
+  {
+    "author": {
+      "login": "Sajjon"
+    },
+    "number": 25589,
+    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
+    "updatedAt": "2022-08-29T17:24:42Z"
+  },
+  {
+    "author": {
+      "login": "ybstaked"
+    },
+    "number": 25613,
+    "title": "Geth 1.10.21 -> 1.10.23 Unhandle trie error",
+    "updatedAt": "2022-08-29T16:18:03Z"
+  },
+  {
+    "author": {
+      "login": "benzsuankularb"
+    },
+    "number": 23269,
+    "title": "Provide topic signature hash for contract events using `abigen`",
+    "updatedAt": "2022-08-29T15:28:27Z"
+  },
+  {
+    "author": {
+      "login": "MattKetmo"
+    },
+    "number": 25630,
+    "title": "Provide topic signature hash for contract events using abigen",
+    "updatedAt": "2022-08-29T15:26:35Z"
+  },
+  {
+    "author": {
+      "login": "martonp"
+    },
+    "number": 25623,
+    "title": "Will --syncmode=light work post-merge?",
+    "updatedAt": "2022-08-29T14:22:23Z"
+  },
+  {
+    "author": {
+      "login": "adamkoch"
+    },
+    "number": 25620,
+    "title": "Frequent unindexed transactions after fresh sync with 1.10.23",
+    "updatedAt": "2022-08-29T12:54:21Z"
+  },
+  {
+    "author": {
       "login": "ianhe8x"
     },
     "number": 25625,
     "title": "Can remotedb be used to serve rpcs",
-    "updatedAt": "2022-08-28T23:27:33Z"
+    "updatedAt": "2022-08-29T12:40:28Z"
+  },
+  {
+    "author": {
+      "login": "nalepae"
+    },
+    "number": 25627,
+    "title": "Launching 3 `geth` instances at the same time, one is in `State heal in progress` for a few days",
+    "updatedAt": "2022-08-29T12:04:27Z"
+  },
+  {
+    "author": {
+      "login": "GLAD-DE"
+    },
+    "number": 24083,
+    "title": "Error \"peer connected on snap without compatible eth support\" with a private network",
+    "updatedAt": "2022-08-29T07:30:43Z"
+  },
+  {
+    "author": {
+      "login": "lansehuiyi6"
+    },
+    "number": 25626,
+    "title": "Geth 1.10.21 -> 1.10.23 fail to start, the follow error was got. Fatal: Failed to register the Ethereum service: ancient chain segments already extracted, please set --datadir.ancient to the correct path",
+    "updatedAt": "2022-08-29T07:25:22Z"
   },
   {
     "author": {
@@ -17,43 +97,11 @@
   },
   {
     "author": {
-      "login": "Sajjon"
-    },
-    "number": 25589,
-    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
-    "updatedAt": "2022-08-28T17:57:07Z"
-  },
-  {
-    "author": {
-      "login": "ybstaked"
-    },
-    "number": 25613,
-    "title": "Geth 1.10.21 -> 1.10.23 Unhandle trie error",
-    "updatedAt": "2022-08-28T17:01:09Z"
-  },
-  {
-    "author": {
-      "login": "adamkoch"
-    },
-    "number": 25620,
-    "title": "Frequent unindexed transactions after fresh sync with 1.10.23",
-    "updatedAt": "2022-08-28T16:52:11Z"
-  },
-  {
-    "author": {
       "login": "757566833"
     },
     "number": 25537,
     "title": "ethclient: BlockByNumber cannot handle `pending` block",
     "updatedAt": "2022-08-28T14:08:28Z"
-  },
-  {
-    "author": {
-      "login": "martonp"
-    },
-    "number": 25623,
-    "title": "Will --syncmode=light work post-merge?",
-    "updatedAt": "2022-08-28T11:45:15Z"
   },
   {
     "author": {
@@ -94,14 +142,6 @@
     "number": 25608,
     "title": "Miner Address  0x0000000000000000000000000000000000000000",
     "updatedAt": "2022-08-27T08:29:41Z"
-  },
-  {
-    "author": {
-      "login": "wjmelements"
-    },
-    "number": 25614,
-    "title": "Intent to Implement: Recovery of Missing Logs",
-    "updatedAt": "2022-08-26T21:26:02Z"
   },
   {
     "author": {
@@ -518,14 +558,6 @@
     "number": 25505,
     "title": "Missing totalDifficulty",
     "updatedAt": "2022-08-16T21:48:15Z"
-  },
-  {
-    "author": {
-      "login": "GLAD-DE"
-    },
-    "number": 24083,
-    "title": "Error \"peer connected on snap without compatible eth support\" with a private network",
-    "updatedAt": "2022-08-16T21:19:21Z"
   },
   {
     "author": {
@@ -9510,14 +9542,6 @@
     "number": 23272,
     "title": "hard fork: invalid block unknown ancestor",
     "updatedAt": "2021-07-27T06:51:05Z"
-  },
-  {
-    "author": {
-      "login": "benzsuankularb"
-    },
-    "number": 23269,
-    "title": "Provide topic signature hash for contract events using `abigen`",
-    "updatedAt": "2021-07-26T15:20:06Z"
   },
   {
     "author": {

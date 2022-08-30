@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25630",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25630/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25630/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25630/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25630",
+  "id": 1354487861,
+  "node_id": "I_kwDOAOvK985Qu9g1",
+  "number": 25630,
+  "title": "Provide topic signature hash for contract events using abigen",
+  "user": {
+    "login": "MattKetmo",
+    "id": 334996,
+    "node_id": "MDQ6VXNlcjMzNDk5Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/334996?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MattKetmo",
+    "html_url": "https://github.com/MattKetmo",
+    "followers_url": "https://api.github.com/users/MattKetmo/followers",
+    "following_url": "https://api.github.com/users/MattKetmo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MattKetmo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MattKetmo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MattKetmo/subscriptions",
+    "organizations_url": "https://api.github.com/users/MattKetmo/orgs",
+    "repos_url": "https://api.github.com/users/MattKetmo/repos",
+    "events_url": "https://api.github.com/users/MattKetmo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MattKetmo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233652,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1Mg==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:feature",
+      "name": "type:feature",
+      "color": "84b6eb",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-29T15:26:35Z",
+  "updated_at": "2022-08-29T15:26:35Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "# Rationale\r\n\r\n## Why should this feature exist?\r\n\r\nCurrently no method exist to filter several events simultaneously. \r\n\r\nFor this we have to manually call the `FilterLogs` function and then parse the log according to its hash. \r\n\r\nHowever we don't have the hash so we have to recompute it manually which is error-prone.\r\n\r\n## What are the use-cases?\r\n\r\nA working example with filtering 3 different events.\r\n\r\n```go\r\nmyEvent := crypto.Keccak256Hash([]byte(\"MyEvent(address,address,uint256)\"))\r\notherEvent := crypto.Keccak256Hash([]byte(\"OtherEvent(bytes)\"))\r\ntransfertEvent := crypto.Keccak256Hash([]byte(\"Transfer(address,address,uint256)\"))\r\n\r\nlogs, err := client.FilterLogs(ctx, ethereum.FilterQuery{\r\n  FromBlock: fromBlock,\r\n  ToBlock:   toBlock,\r\n  Addresses: []common.Address{myAddr},\r\n  Topics:    [][]common.Hash{{myEvent, otherEvent, transfertEvent}},\r\n})\r\n\r\nfor _, l := range logs {\r\n  switch l.Topics[0].Hex() {\r\n\r\n  case myEvent.Hex():\r\n    r.ParseMyEvent(l)\r\n\r\n  case otherEvent.Hex():\r\n    r.ParseOtherEvent(l)\r\n\r\n  case transfertEvent.Hex():\r\n    r.ParseTransfer(l)\r\n  }\r\n}\r\n```\r\n\r\nWhat I'd like to avoid is calling `crypto.Keccak256Hash` with the event signature myself.\r\n\r\n# Implementation\r\n\r\n## Do you have ideas regarding the implementation of this feature?\r\n\r\nA simple suggestion would be to add the signature hash to the generated code\r\n\r\n```go\r\n// FoobarMyEvent represents a MyEvent event raised by the Foobar contract.\r\ntype FoobarMyEvent struct {\r\n\tExample  common.Address\r\n\tRaw      types.Log // Blockchain specific contextual infos\r\n}\r\n\r\nconst FoobarMyEventHash = common.HexToHash(\"0x123abc4567......\") // <-- add this line to the generated code\r\n```\r\n\r\n## Are you willing to implement this feature?\r\n\r\nIf the suggestion is accepted, then yes.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25630/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25630/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

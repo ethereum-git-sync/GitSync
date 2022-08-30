@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5082,
+    "title": "One-time NFT Sale of unused EIP numbers.",
+    "updatedAt": "2022-08-29T21:50:04Z"
+  },
+  {
+    "author": {
       "login": "Pandapip1"
     },
     "number": 5555,
@@ -134,14 +142,6 @@
     "number": 5158,
     "title": "Example relative link in EIP-1 is rendered as absolute",
     "updatedAt": "2022-08-26T22:32:58Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5082,
-    "title": "One-time NFT Sale of unused EIP numbers.",
-    "updatedAt": "2022-08-26T22:32:50Z"
   },
   {
     "author": {

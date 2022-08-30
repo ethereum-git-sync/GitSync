@@ -30,23 +30,50 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 5,
+  "comments": 6,
   "created_at": "2022-08-05T20:57:26Z",
-  "updated_at": "2022-08-23T06:46:30Z",
-  "closed_at": null,
+  "updated_at": "2022-08-29T14:19:03Z",
+  "closed_at": "2022-08-29T14:19:02Z",
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "For some reason I thought this had been fixed in https://github.com/ethereum/solidity/pull/12684 but it doesn't seem to be the case...\r\n\r\nWhen the return data of a call is not stored in a variable (or more generally, when it's not used), it shouldn't be copied to memory. See https://github.com/ethereum/solidity/issues/12647 for a discussion on why this is important.\r\n\r\nThe snippet below emits `returndatacopy` for the entirety of the returndata size.\r\n```solidity\r\n(book ok, ) = target.call();\r\n```\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "Marenz",
+    "id": 424752,
+    "node_id": "MDQ6VXNlcjQyNDc1Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/424752?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Marenz",
+    "html_url": "https://github.com/Marenz",
+    "followers_url": "https://api.github.com/users/Marenz/followers",
+    "following_url": "https://api.github.com/users/Marenz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Marenz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Marenz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Marenz/subscriptions",
+    "organizations_url": "https://api.github.com/users/Marenz/orgs",
+    "repos_url": "https://api.github.com/users/Marenz/repos",
+    "events_url": "https://api.github.com/users/Marenz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Marenz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13352/reactions",
     "total_count": 11,
@@ -61,7 +88,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13352/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -272,6 +299,50 @@
     "body": "> This is not a DoS vector though.\r\n\r\nNot necessarily for every contract, sure. But in some cases where you don't want a function to use beyond a certain gas limit it can be.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1223611413/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1230377474",
+    "html_url": "https://github.com/ethereum/solidity/issues/13352#issuecomment-1230377474",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13352",
+    "id": 1230377474,
+    "node_id": "IC_kwDOAm_5kc5JVhIC",
+    "user": {
+      "login": "Marenz",
+      "id": 424752,
+      "node_id": "MDQ6VXNlcjQyNDc1Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/424752?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Marenz",
+      "html_url": "https://github.com/Marenz",
+      "followers_url": "https://api.github.com/users/Marenz/followers",
+      "following_url": "https://api.github.com/users/Marenz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Marenz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Marenz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Marenz/subscriptions",
+      "organizations_url": "https://api.github.com/users/Marenz/orgs",
+      "repos_url": "https://api.github.com/users/Marenz/repos",
+      "events_url": "https://api.github.com/users/Marenz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Marenz/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-29T14:19:02Z",
+    "updated_at": "2022-08-29T14:19:02Z",
+    "author_association": "MEMBER",
+    "body": "Closing as duplicate of #12306",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1230377474/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

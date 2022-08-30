@@ -1,6 +1,126 @@
 [
   {
     "author": {
+      "login": "cameel"
+    },
+    "number": 13421,
+    "title": "Fix warning about `DOWNLOAD_EXTRACT_TIMESTAMP` on CMake 3.24",
+    "updatedAt": "2022-08-29T22:32:44Z"
+  },
+  {
+    "author": {
+      "login": "k06a"
+    },
+    "number": 13448,
+    "title": "Introduce `codedata` keyword",
+    "updatedAt": "2022-08-29T22:29:11Z"
+  },
+  {
+    "author": {
+      "login": "k06a"
+    },
+    "number": 13451,
+    "title": "Let's allow string literals to consist of named constants, not only literals",
+    "updatedAt": "2022-08-29T22:28:46Z"
+  },
+  {
+    "author": {
+      "login": "michprev"
+    },
+    "number": 13310,
+    "title": "`YulException` missing in `Error Types` list on `Using the Compiler` page",
+    "updatedAt": "2022-08-29T22:27:26Z"
+  },
+  {
+    "author": {
+      "login": "mojtaba-eshghie"
+    },
+    "number": 13390,
+    "title": "Not possible to define the same function signature (overload/override) in a sub-contract with \"only\" different return types",
+    "updatedAt": "2022-08-29T20:01:15Z"
+  },
+  {
+    "author": {
+      "login": "frangio"
+    },
+    "number": 13416,
+    "title": "Clarify effect of memory unsafe assembly",
+    "updatedAt": "2022-08-29T15:25:25Z"
+  },
+  {
+    "author": {
+      "login": "zemse"
+    },
+    "number": 13407,
+    "title": "Entering a numeric short form in assembly gives ParseError",
+    "updatedAt": "2022-08-29T14:33:52Z"
+  },
+  {
+    "author": {
+      "login": "haltman-at"
+    },
+    "number": 13425,
+    "title": "Request: Contract AST nodes should include info on what internal functions the contract uses",
+    "updatedAt": "2022-08-29T14:32:06Z"
+  },
+  {
+    "author": {
+      "login": "mojtaba-eshghie"
+    },
+    "number": 13435,
+    "title": " Shadowed memory variable in function body by named returns statement",
+    "updatedAt": "2022-08-29T14:28:32Z"
+  },
+  {
+    "author": {
+      "login": "frangio"
+    },
+    "number": 13352,
+    "title": "Avoid copying unused returndata on .call family of functions",
+    "updatedAt": "2022-08-29T14:19:03Z"
+  },
+  {
+    "author": {
+      "login": "CryptoKiddies"
+    },
+    "number": 13330,
+    "title": "Inherited modifier which invokes private function should not compile",
+    "updatedAt": "2022-08-29T14:13:01Z"
+  },
+  {
+    "author": {
+      "login": "PigCharid"
+    },
+    "number": 13301,
+    "title": "Triggering complex events leads to transfer failure",
+    "updatedAt": "2022-08-29T14:08:30Z"
+  },
+  {
+    "author": {
+      "login": "frangio"
+    },
+    "number": 13288,
+    "title": "Eliminate array bounds check for trivial case",
+    "updatedAt": "2022-08-29T14:06:43Z"
+  },
+  {
+    "author": {
+      "login": "fvictorio"
+    },
+    "number": 13446,
+    "title": "Produce a panic code for failed `abi.decode` calls",
+    "updatedAt": "2022-08-29T11:03:10Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 4832,
+    "title": "Function overload clash during conversion to external types for arguments.",
+    "updatedAt": "2022-08-29T02:26:50Z"
+  },
+  {
+    "author": {
       "login": "lukehutch"
     },
     "number": 13132,
@@ -38,14 +158,6 @@
     "number": 13356,
     "title": "Function pointer assignment error when names are colliding",
     "updatedAt": "2022-08-27T22:18:25Z"
-  },
-  {
-    "author": {
-      "login": "frangio"
-    },
-    "number": 13416,
-    "title": "Clarify effect of memory unsafe assembly",
-    "updatedAt": "2022-08-27T22:14:00Z"
   },
   {
     "author": {
@@ -113,14 +225,6 @@
   },
   {
     "author": {
-      "login": "mojtaba-eshghie"
-    },
-    "number": 13435,
-    "title": " Shadowed memory variable in function body by named returns statement",
-    "updatedAt": "2022-08-25T14:34:06Z"
-  },
-  {
-    "author": {
       "login": "hrkrshnn"
     },
     "number": 13339,
@@ -169,14 +273,6 @@
   },
   {
     "author": {
-      "login": "haltman-at"
-    },
-    "number": 13425,
-    "title": "Request: Contract AST nodes should include info on what internal functions the contract uses",
-    "updatedAt": "2022-08-23T22:37:23Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 4617,
@@ -190,22 +286,6 @@
     "number": 13426,
     "title": "Rewrite `FunctionCallGraph` tests as soltest test suite",
     "updatedAt": "2022-08-23T11:59:22Z"
-  },
-  {
-    "author": {
-      "login": "frangio"
-    },
-    "number": 13352,
-    "title": "Avoid copying unused returndata on .call family of functions",
-    "updatedAt": "2022-08-23T06:46:30Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13421,
-    "title": "Fix warning about `DOWNLOAD_EXTRACT_TIMESTAMP` on CMake 3.24",
-    "updatedAt": "2022-08-22T11:04:44Z"
   },
   {
     "author": {
@@ -3425,14 +3505,6 @@
   },
   {
     "author": {
-      "login": "zemse"
-    },
-    "number": 13407,
-    "title": "Entering a numeric short form in assembly gives ParseError",
-    "updatedAt": "2022-08-17T11:38:23Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 4642,
@@ -3497,14 +3569,6 @@
   },
   {
     "author": {
-      "login": "mojtaba-eshghie"
-    },
-    "number": 13390,
-    "title": "Not possible to define the same function signature (overload/override) in a sub-contract with \"only\" different return types",
-    "updatedAt": "2022-08-15T06:42:10Z"
-  },
-  {
-    "author": {
       "login": "PeterBorah"
     },
     "number": 683,
@@ -3518,14 +3582,6 @@
     "number": 13375,
     "title": "Different gas cost when using Libraries with using and without",
     "updatedAt": "2022-08-14T10:49:53Z"
-  },
-  {
-    "author": {
-      "login": "CryptoKiddies"
-    },
-    "number": 13330,
-    "title": "Inherited modifier which invokes private function should not compile",
-    "updatedAt": "2022-08-14T08:37:06Z"
   },
   {
     "author": {
@@ -3849,14 +3905,6 @@
   },
   {
     "author": {
-      "login": "PigCharid"
-    },
-    "number": 13301,
-    "title": "Triggering complex events leads to transfer failure",
-    "updatedAt": "2022-07-31T15:17:37Z"
-  },
-  {
-    "author": {
       "login": "hpumengzhao"
     },
     "number": 13311,
@@ -4001,14 +4049,6 @@
   },
   {
     "author": {
-      "login": "michprev"
-    },
-    "number": 13310,
-    "title": "`YulException` missing in `Error Types` list on `Using the Compiler` page",
-    "updatedAt": "2022-07-27T20:48:29Z"
-  },
-  {
-    "author": {
       "login": "fulldecent"
     },
     "number": 12547,
@@ -4078,14 +4118,6 @@
     "number": 13290,
     "title": "Optimise memory allocation for `keccak256` hashes with 32 bytes arguments",
     "updatedAt": "2022-07-22T14:57:44Z"
-  },
-  {
-    "author": {
-      "login": "frangio"
-    },
-    "number": 13288,
-    "title": "Eliminate array bounds check for trivial case",
-    "updatedAt": "2022-07-21T20:20:36Z"
   },
   {
     "author": {
@@ -27398,14 +27430,6 @@
     "number": 5782,
     "title": "Build fail while trying to install legacy version of solidity 0.4.25: \"Unable to determine commit hash. Either compile from within git repository or supply a file called commit_hash.txt\"",
     "updatedAt": "2019-01-17T11:26:45Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 4832,
-    "title": "Function overload clash during conversion to external types for arguments.",
-    "updatedAt": "2019-01-16T19:24:45Z"
   },
   {
     "author": {

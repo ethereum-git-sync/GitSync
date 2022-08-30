@@ -85,21 +85,40 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-08-22T11:04:37Z",
-  "updated_at": "2022-08-22T11:04:44Z",
-  "closed_at": null,
+  "updated_at": "2022-08-29T22:32:44Z",
+  "closed_at": "2022-08-29T22:32:44Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "I have just updated to CMake 3.24 and now I see following warning when running `cmake` (and sometimes `make`):\r\n```\r\nCMake Warning (dev) at /usr/share/cmake/Modules/ExternalProject.cmake:3071 (message):\r\n  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is\r\n  not set.  The policy's OLD behavior will be used.  When using a URL\r\n  download, the timestamps of extracted files should preferably be that of\r\n  the time of extraction, otherwise code that depends on the extracted\r\n  contents might not be rebuilt if the URL changes.  The OLD behavior\r\n  preserves the timestamps from the archive instead, but this is usually not\r\n  what you want.  Update your project to the NEW behavior or specify the\r\n  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this\r\n  robustness issue.\r\nCall Stack (most recent call first):\r\n  /usr/share/cmake/Modules/ExternalProject.cmake:4167 (_ep_add_download_command)\r\n  cmake/jsoncpp.cmake:43 (ExternalProject_Add)\r\n  CMakeLists.txt:46 (include)\r\nThis warning is for project developers.  Use -Wno-dev to suppress it.\r\n```",
-  "closed_by": null,
+  "closed_by": {
+    "login": "Marenz",
+    "id": 424752,
+    "node_id": "MDQ6VXNlcjQyNDc1Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/424752?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Marenz",
+    "html_url": "https://github.com/Marenz",
+    "followers_url": "https://api.github.com/users/Marenz/followers",
+    "following_url": "https://api.github.com/users/Marenz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Marenz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Marenz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Marenz/subscriptions",
+    "organizations_url": "https://api.github.com/users/Marenz/orgs",
+    "repos_url": "https://api.github.com/users/Marenz/repos",
+    "events_url": "https://api.github.com/users/Marenz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Marenz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13421/reactions",
     "total_count": 0,
@@ -114,8 +133,51 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13421/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1230940285",
+    "html_url": "https://github.com/ethereum/solidity/issues/13421#issuecomment-1230940285",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13421",
+    "id": 1230940285,
+    "node_id": "IC_kwDOAm_5kc5JXqh9",
+    "user": {
+      "login": "Marenz",
+      "id": 424752,
+      "node_id": "MDQ6VXNlcjQyNDc1Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/424752?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Marenz",
+      "html_url": "https://github.com/Marenz",
+      "followers_url": "https://api.github.com/users/Marenz/followers",
+      "following_url": "https://api.github.com/users/Marenz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Marenz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Marenz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Marenz/subscriptions",
+      "organizations_url": "https://api.github.com/users/Marenz/orgs",
+      "repos_url": "https://api.github.com/users/Marenz/repos",
+      "events_url": "https://api.github.com/users/Marenz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Marenz/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-29T22:32:44Z",
+    "updated_at": "2022-08-29T22:32:44Z",
+    "author_association": "MEMBER",
+    "body": "Fixed in #13429",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1230940285/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

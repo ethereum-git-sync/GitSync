@@ -94,7 +94,7 @@
   },
   "comments": 9,
   "created_at": "2022-06-09T11:19:22Z",
-  "updated_at": "2022-08-28T00:17:06Z",
+  "updated_at": "2022-08-29T10:44:23Z",
   "closed_at": null,
   "author_association": "COLLABORATOR",
   "active_lock_reason": null,
@@ -102,7 +102,7 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/flashbots/mev-boost/issues/142/reactions",
-    "total_count": 1,
+    "total_count": 2,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
@@ -110,7 +110,7 @@
     "confused": 0,
     "heart": 0,
     "rocket": 0,
-    "eyes": 1
+    "eyes": 2
   },
   "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/142/timeline",
   "performed_via_github_app": null,
@@ -496,9 +496,9 @@
       "site_admin": false
     },
     "created_at": "2022-08-28T00:16:34Z",
-    "updated_at": "2022-08-28T00:17:06Z",
+    "updated_at": "2022-08-29T10:44:23Z",
     "author_association": "NONE",
-    "body": "For the SecureRpc Relay we are operating, here are some metrics/KPIs that are collected and some diagrams (out of date, but should be slightly helpful) \r\n\r\n## Metrics collected \r\nhttps://gist.github.com/sambacha/d613f8be00caa50befe0c7a8e1dda073\r\n\r\n## Grafana Dashboard screen shot\r\n\r\n> Grafana v9.1 allows public dashboards, so we should be able to make this publicly queryable soon \r\n\r\n>**Warning** <br />\r\n> Some data not shown\r\n\r\n\r\n![screencapture-grafana-manifoldx-d-RixFH2jnz-relay-overview-copy-2022-08-26-13_02_03](https://user-images.githubusercontent.com/32783916/187052255-64eb96ad-4452-49b8-bd13-bdbe7e74ed48.png)\r\n\r\n",
+    "body": "For the SecureRpc Relay we are operating, here are some metrics/KPIs that are collected and some diagrams (out of date, but should be slightly helpful) \r\n\r\n* Metrics collected: https://gist.github.com/sambacha/d613f8be00caa50befe0c7a8e1dda073\r\n* Grafana Dashboard screen shot: [screencapture-grafana-manifoldx-d-RixFH2jnz-relay-overview-copy-2022-08-26-13_02_03](https://user-images.githubusercontent.com/32783916/187052255-64eb96ad-4452-49b8-bd13-bdbe7e74ed48.png) (Grafana v9.1 allows public dashboards, so we should be able to make this publicly queryable soon)",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1229344304/reactions",
       "total_count": 0,

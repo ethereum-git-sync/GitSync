@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "samczsun"
+    },
+    "number": 280,
+    "title": "Validate blockhash from relay",
+    "updatedAt": "2022-08-30T18:47:34Z"
+  },
+  {
+    "author": {
+      "login": "samczsun"
+    },
+    "number": 279,
+    "title": "JSON deserialization DoS",
+    "updatedAt": "2022-08-30T18:46:49Z"
+  },
+  {
+    "author": {
+      "login": "samczsun"
+    },
+    "number": 278,
+    "title": "Validate that parameters are hex",
+    "updatedAt": "2022-08-30T18:45:03Z"
+  },
+  {
+    "author": {
+      "login": "samczsun"
+    },
+    "number": 277,
+    "title": "Truncated fork version hex results in corrupted data",
+    "updatedAt": "2022-08-30T18:44:16Z"
+  },
+  {
+    "author": {
       "login": "beetrootkid"
     },
     "number": 220,

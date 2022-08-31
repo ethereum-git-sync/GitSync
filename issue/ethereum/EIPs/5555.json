@@ -39,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-08-28T17:04:18Z",
-  "updated_at": "2022-08-28T17:04:23Z",
+  "updated_at": "2022-08-30T04:58:02Z",
   "closed_at": "2022-08-28T17:04:23Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -68,13 +68,13 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/EIPs/issues/5555/reactions",
-    "total_count": 0,
+    "total_count": 1,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 0,
+    "heart": 1,
     "rocket": 0,
     "eyes": 0
   },
@@ -83,5 +83,48 @@
   "state_reason": "completed"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1231141388",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5555#issuecomment-1231141388",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5555",
+    "id": 1231141388,
+    "node_id": "IC_kwDOAq426M5JYboM",
+    "user": {
+      "login": "abcoathup",
+      "id": 28278242,
+      "node_id": "MDQ6VXNlcjI4Mjc4MjQy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28278242?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/abcoathup",
+      "html_url": "https://github.com/abcoathup",
+      "followers_url": "https://api.github.com/users/abcoathup/followers",
+      "following_url": "https://api.github.com/users/abcoathup/following{/other_user}",
+      "gists_url": "https://api.github.com/users/abcoathup/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/abcoathup/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/abcoathup/subscriptions",
+      "organizations_url": "https://api.github.com/users/abcoathup/orgs",
+      "repos_url": "https://api.github.com/users/abcoathup/repos",
+      "events_url": "https://api.github.com/users/abcoathup/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/abcoathup/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-30T04:58:02Z",
+    "updated_at": "2022-08-30T04:58:02Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "Such a cool number, we really need #5082",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1231141388/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

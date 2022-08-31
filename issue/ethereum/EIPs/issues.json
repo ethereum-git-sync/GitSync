@@ -1,11 +1,27 @@
 [
   {
     "author": {
+      "login": "fulldecent"
+    },
+    "number": 5424,
+    "title": "Explain in text that ERC was renamed to EIP",
+    "updatedAt": "2022-08-31T00:26:27Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5310,
+    "title": "GitHub actions don't run for first time contributors",
+    "updatedAt": "2022-08-31T00:26:24Z"
+  },
+  {
+    "author": {
       "login": "MicahZoltu"
     },
     "number": 5082,
     "title": "One-time NFT Sale of unused EIP numbers.",
-    "updatedAt": "2022-08-29T21:50:04Z"
+    "updatedAt": "2022-08-30T13:57:32Z"
   },
   {
     "author": {
@@ -13,7 +29,7 @@
     },
     "number": 5555,
     "title": "Claim issue #5555",
-    "updatedAt": "2022-08-28T17:04:23Z"
+    "updatedAt": "2022-08-30T04:58:02Z"
   },
   {
     "author": {
@@ -243,25 +259,9 @@
     "author": {
       "login": "SamWilsn"
     },
-    "number": 5310,
-    "title": "GitHub actions don't run for first time contributors",
-    "updatedAt": "2022-08-23T14:53:58Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
     "number": 5431,
     "title": "Update EIP-5069 to refer to new location for editors.",
     "updatedAt": "2022-08-23T14:51:20Z"
-  },
-  {
-    "author": {
-      "login": "fulldecent"
-    },
-    "number": 5424,
-    "title": "Explain in text that ERC was renamed to EIP",
-    "updatedAt": "2022-08-23T14:51:01Z"
   },
   {
     "author": {

@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "ryestew"
+    },
+    "number": 2806,
+    "title": "Debugger UI may not be wide enough",
+    "updatedAt": "2022-08-30T13:29:13Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 2610,
+    "title": "Support Goerli contract verification",
+    "updatedAt": "2022-08-30T06:32:36Z"
+  },
+  {
+    "author": {
       "login": "ricothagod"
     },
     "number": 2486,
@@ -70,14 +86,6 @@
     "number": 2805,
     "title": "text not vertically centered in udapp transact button",
     "updatedAt": "2022-08-29T07:07:31Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
-    "number": 2806,
-    "title": "Debugger UI may not be wide enough",
-    "updatedAt": "2022-08-26T16:57:20Z"
   },
   {
     "author": {
@@ -534,14 +542,6 @@
     "number": 2732,
     "title": "Get rid of native plugins list and use 'maintained by remix' instead",
     "updatedAt": "2022-08-05T05:52:35Z"
-  },
-  {
-    "author": {
-      "login": "fulldecent"
-    },
-    "number": 2610,
-    "title": "Support Goerli contract verification",
-    "updatedAt": "2022-08-03T21:09:52Z"
   },
   {
     "author": {

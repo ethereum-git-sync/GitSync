@@ -6,15 +6,16 @@ The project is currently being hosted via Amazon EC2 instance running Ubuntu 20.
 
 Currently Synced Repos:
 ```
+ethereum/solidity
 ethereum/consensus-specs
 ethereum/go-ethereum
 ethereum/remix-project
 ethereum/EIPs
-ethereum/Solidity
 ethereum/PM
 ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM
 ethereum-git-sync/GitSync
+flashbots/mev-boost
 ```
 
 Current Hosts:

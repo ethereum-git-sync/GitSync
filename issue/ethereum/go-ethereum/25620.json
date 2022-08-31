@@ -40,21 +40,40 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 14,
+  "comments": 15,
   "created_at": "2022-08-27T22:07:05Z",
-  "updated_at": "2022-08-29T12:54:21Z",
-  "closed_at": null,
+  "updated_at": "2022-08-30T01:01:44Z",
+  "closed_at": "2022-08-30T01:01:44Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "#### System information\r\nGeth version: 1.10.23\r\nOS & Version: Ubuntu 22.04.1\r\n\r\n#### Expected behaviour\r\nNo continual, frequent, \"unindexed transactions\" logging.\r\n\r\n#### Actual behaviour\r\nContinual logging of \"unindexed transactions\":\r\n```\r\nINFO [08-27|20:21:23.819] Imported new chain segment               blocks=1   txs=131   mgas=15.098  elapsed=145.835ms   mgasps=103.527 number=15,423,650 hash=de39ba..55d1b4 dirty=1014.00MiB\r\nINFO [08-27|20:21:23.823] Unindexed transactions                   blocks=1   txs=162   tail=13,073,651 elapsed=3.336ms\r\nINFO [08-27|20:21:24.640] Imported new chain segment               blocks=1   txs=27    mgas=2.244   elapsed=431.786ms   mgasps=5.198   number=15,423,651 hash=7aabee..c1952f dirty=1012.92MiB\r\nINFO [08-27|20:21:24.663] Unindexed transactions                   blocks=1   txs=12    tail=13,073,652 elapsed=5.325ms\r\nINFO [08-27|20:22:11.547] Imported new chain segment               blocks=1   txs=360   mgas=29.996  elapsed=237.176ms   mgasps=126.471 number=15,423,652 hash=b849cc..96d10f dirty=1016.07MiB\r\nINFO [08-27|20:22:11.549] Unindexed transactions                   blocks=1   txs=108   tail=13,073,653 elapsed=1.504ms\r\nINFO [08-27|20:22:15.671] Imported new chain segment               blocks=1   txs=149   mgas=15.289  elapsed=179.028ms   mgasps=85.403  number=15,423,653 hash=6c4846..5344b2 dirty=1015.71MiB\r\nINFO [08-27|20:22:15.677] Unindexed transactions                   blocks=1   txs=397   tail=13,073,654 elapsed=4.897ms\r\nINFO [08-27|20:22:18.911] Imported new chain segment               blocks=1   txs=110   mgas=18.883  elapsed=101.967ms   mgasps=185.191 number=15,423,654 hash=8d9a06..49ddd8 dirty=1015.96MiB\r\nINFO [08-27|20:22:18.913] Unindexed transactions                   blocks=1   txs=229   tail=13,073,655 elapsed=2.120ms\r\nINFO [08-27|20:22:25.106] Imported new chain segment               blocks=1   txs=74    mgas=6.257   elapsed=50.760ms    mgasps=123.267 number=15,423,655 hash=98a708..54cff0 dirty=1016.05MiB\r\nINFO [08-27|20:22:25.107] Unindexed transactions                   blocks=1   txs=42    tail=13,073,656 elapsed=\"661.722µs\"\r\nINFO [08-27|20:22:27.042] Imported new chain segment               blocks=1   txs=19    mgas=1.446   elapsed=19.256ms    mgasps=75.108  number=15,423,656 hash=737d74..393304 dirty=1015.83MiB\r\nINFO [08-27|20:22:27.042] Unindexed transactions                   blocks=1   txs=21    tail=13,073,657 elapsed=\"350.415µs\"\r\nINFO [08-27|20:22:29.595] Imported new chain segment               blocks=1   txs=32    mgas=6.210   elapsed=38.052ms    mgasps=163.185 number=15,423,657 hash=8f3e21..dc0f6b dirty=1015.37MiB\r\n```\r\n\r\n#### Steps to reproduce the behaviour\r\nI was affected by the 1.10.22 bug, I tried to shift the head back to an earlier date but ran into similar errors to others. I decided to just do a complete resync so I removed all my data and started the resync. After about 12-14 hours it successfully caught up to the latest block and I see `Imported new chain segment` (as per above) that matches the latest block.\r\n\r\nHowever, for every `Imported new chain segment` I also see a `Unindexed transactions` log. This has been happening for ~2 days now.\r\n\r\nThere are a few others in the Geth Discord who seem to have similar issues.\r\n\r\nIt seems Geth is still running ok but before I ran into the `1.10.22` bug I never saw this behavior before.\r\n\r\nAlso what is the meaning of `tail` within the `Unindexed transactions` logs? It seems to be a very old block number and it is very slowly slowly making progress (block is incrementing) but it's such slow progress I'm not sure it will ever catch up.\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "adamkoch",
+    "id": 869261,
+    "node_id": "MDQ6VXNlcjg2OTI2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/869261?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/adamkoch",
+    "html_url": "https://github.com/adamkoch",
+    "followers_url": "https://api.github.com/users/adamkoch/followers",
+    "following_url": "https://api.github.com/users/adamkoch/following{/other_user}",
+    "gists_url": "https://api.github.com/users/adamkoch/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/adamkoch/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/adamkoch/subscriptions",
+    "organizations_url": "https://api.github.com/users/adamkoch/orgs",
+    "repos_url": "https://api.github.com/users/adamkoch/repos",
+    "events_url": "https://api.github.com/users/adamkoch/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/adamkoch/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25620/reactions",
     "total_count": 0,
@@ -69,7 +88,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25620/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -676,6 +695,50 @@
     "body": "> Just to confirm though - are we saying that having one Unindexed transactions log matched with one Imported new chain segment is 100% expected in a healthy geth node? Is this what everyone sees?\r\n\r\nyes, once we have a new block, a old block will be triggered for unindexing, by default. Unless you explicitly set to keep full indices.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1230248006/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1231024333",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25620#issuecomment-1231024333",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25620",
+    "id": 1231024333,
+    "node_id": "IC_kwDOAOvK985JX_DN",
+    "user": {
+      "login": "adamkoch",
+      "id": 869261,
+      "node_id": "MDQ6VXNlcjg2OTI2MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/869261?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/adamkoch",
+      "html_url": "https://github.com/adamkoch",
+      "followers_url": "https://api.github.com/users/adamkoch/followers",
+      "following_url": "https://api.github.com/users/adamkoch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/adamkoch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/adamkoch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/adamkoch/subscriptions",
+      "organizations_url": "https://api.github.com/users/adamkoch/orgs",
+      "repos_url": "https://api.github.com/users/adamkoch/repos",
+      "events_url": "https://api.github.com/users/adamkoch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/adamkoch/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-30T01:01:44Z",
+    "updated_at": "2022-08-30T01:01:44Z",
+    "author_association": "NONE",
+    "body": "> yes, once we have a new block, a old block will be triggered for unindexing, by default. Unless you explicitly set to keep full indices.\r\n\r\nThanks for confirming. Closing this issue as it is WAI.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1231024333/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

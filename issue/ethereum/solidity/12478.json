@@ -51,14 +51,14 @@
     {
       "id": 1012613901,
       "node_id": "MDU6TGFiZWwxMDEyNjEzOTAx",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20easy",
-      "name": "difficulty: easy",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/easy%20difficulty",
+      "name": "easy difficulty",
       "color": "0b3f89",
       "default": false,
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "matheusaaguiar",
@@ -105,12 +105,31 @@
   "milestone": null,
   "comments": 5,
   "created_at": "2022-01-03T05:54:00Z",
-  "updated_at": "2022-07-26T14:04:08Z",
-  "closed_at": null,
+  "updated_at": "2022-08-30T13:41:42Z",
+  "closed_at": "2022-08-30T13:41:42Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "## Page\r\nhttps://docs.soliditylang.org/en/latest/solidity-by-example.html#voting\r\nhttps://docs.soliditylang.org/en/latest/solidity-by-example.html#possible-improvements\r\n\r\n## Abstract\r\nHi, in the voting example (at line 135 in Remix), picking the winning proposal will not work correctly if two (or more) proposals are tied in the voteCount (see screen shots below). \r\nCould we at least mention this as a limitation of the current implementation, and, perhaps include the handling of this special case as a \"Possible Improvement\"\r\n\r\nThank you!\r\n\r\n<img width=\"553\" alt=\"image\" src=\"https://user-images.githubusercontent.com/92610128/147902210-b5762407-03db-4553-9b65-5f89d364c2e1.png\">\r\n\r\n<img width=\"642\" alt=\"image\" src=\"https://user-images.githubusercontent.com/92610128/147902325-5ee34e74-7a72-4432-8af8-958694e9bd87.png\">\r\n\r\n\r\n## Pull request\r\n\r\n<!--Please link to your pull request which resolves this issue.-->\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "matheusaaguiar",
+    "id": 95899911,
+    "node_id": "U_kgDOBbdRBw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/95899911?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/matheusaaguiar",
+    "html_url": "https://github.com/matheusaaguiar",
+    "followers_url": "https://api.github.com/users/matheusaaguiar/followers",
+    "following_url": "https://api.github.com/users/matheusaaguiar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/matheusaaguiar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/matheusaaguiar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/matheusaaguiar/subscriptions",
+    "organizations_url": "https://api.github.com/users/matheusaaguiar/orgs",
+    "repos_url": "https://api.github.com/users/matheusaaguiar/repos",
+    "events_url": "https://api.github.com/users/matheusaaguiar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/matheusaaguiar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/12478/reactions",
     "total_count": 0,
@@ -125,7 +144,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12478/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

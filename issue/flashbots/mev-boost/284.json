@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/284",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/284/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/284/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/284/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/284",
+  "id": 1357982478,
+  "node_id": "I_kwDOGZSKs85Q8SsO",
+  "number": 284,
+  "title": "mev-boost crash on startup on Windows x64 ?",
+  "user": {
+    "login": "nmoreau",
+    "id": 5418582,
+    "node_id": "MDQ6VXNlcjU0MTg1ODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5418582?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nmoreau",
+    "html_url": "https://github.com/nmoreau",
+    "followers_url": "https://api.github.com/users/nmoreau/followers",
+    "following_url": "https://api.github.com/users/nmoreau/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nmoreau/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nmoreau/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nmoreau/subscriptions",
+    "organizations_url": "https://api.github.com/users/nmoreau/orgs",
+    "repos_url": "https://api.github.com/users/nmoreau/repos",
+    "events_url": "https://api.github.com/users/nmoreau/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nmoreau/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-31T22:44:18Z",
+  "updated_at": "2022-08-31T22:44:18Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I am trying to run mev-boost on my staking machine on Win64 with go1.19 windows/amd64\r\n\r\nI was able to pull the packagein from GitHub  compile the go package using \r\n`go install github.com/flashbots/mev-boost@latest`\r\nI am using the[ TDM-GCC compiler ](https://jmeubank.github.io/tdm-gcc/articles/2021-05/10.3.0-release)\r\n\r\nWhen I try to start mev-boost I got the following error below.\r\nWhen running in docker from the latest docker image, I get a similar error.\r\n\r\nQuestion : any recommendation or setup to run mev-boost on windows?\r\n\r\n\r\nC:\\Users\\Nicolas>mev-boost -help\r\nException 0xc000001d 0x0 0x0 0x7ff7b60849ee\r\nPC=0x7ff7b60849ee\r\nsignal arrived during external code execution\r\n\r\nruntime.cgocall(0x7ff7b60661b0, 0xc0000c7ba8)\r\n        C:/Program Files/Go/src/runtime/cgocall.go:158 +0x4a fp=0xc0000c7b80 sp=0xc0000c7b48 pc=0x7ff7b5d9486a\r\ngithub.com/supranational/blst/bindings/go._Cfunc_blst_sk_to_pk2_in_g1(0x0, 0xc0000862a0, 0xc0000a4da0)\r\n        _cgo_gotypes.go:1317 +0x52 fp=0xc0000c7ba8 sp=0xc0000c7b80 pc=0x7ff7b600a0b2\r\ngithub.com/supranational/blst/bindings/go.(*_Ctype_struct___4).From(...)\r\n        C:/Users/Nicolas/go/pkg/mod/github.com/supranational/blst@v0.3.7/bindings/go/blst.go:219\r\ngithub.com/flashbots/go-boost-utils/bls.PublicKeyFromSecretKey(...)\r\n        C:/Users/Nicolas/go/pkg/mod/github.com/flashbots/go-boost-utils@v0.3.5/bls/bls.go:40\r\ngithub.com/flashbots/mev-boost/server.init()\r\n        C:/Users/Nicolas/go/pkg/mod/github.com/flashbots/mev-boost@v0.8.2/server/mock_relay.go:25 +0xec fp=0xc0000c7bf0 sp=0xc0000c7ba8 pc=0x7ff7b6063a2c\r\nruntime.doInit(0x7ff7b609c940)\r\n        C:/Program Files/Go/src/runtime/proc.go:6321 +0x12d fp=0xc0000c7d20 sp=0xc0000c7bf0 pc=0x7ff7b5dd7a4d\r\nruntime.doInit(0x7ff7b609a9a0)\r\n        C:/Program Files/Go/src/runtime/proc.go:6298 +0x71 fp=0xc0000c7e50 sp=0xc0000c7d20 pc=0x7ff7b5dd7991\r\nruntime.doInit(0x7ff7b6095e80)\r\n        C:/Program Files/Go/src/runtime/proc.go:6298 +0x71 fp=0xc0000c7f80 sp=0xc0000c7e50 pc=0x7ff7b5dd7991\r\nruntime.main()\r\n        C:/Program Files/Go/src/runtime/proc.go:233 +0x1bf fp=0xc0000c7fe0 sp=0xc0000c7f80 pc=0x7ff7b5dcae9f\r\nruntime.goexit()\r\n        C:/Program Files/Go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc0000c7fe8 sp=0xc0000c7fe0 pc=0x7ff7b5df5e01\r\n\r\ngoroutine 2 [force gc (idle)]:\r\nruntime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)\r\n        C:/Program Files/Go/src/runtime/proc.go:363 +0xd6 fp=0xc000045fb0 sp=0xc000045f90 pc=0x7ff7b5dcb276\r\nruntime.goparkunlock(...)\r\n        C:/Program Files/Go/src/runtime/proc.go:369\r\nruntime.forcegchelper()\r\n        C:/Program Files/Go/src/runtime/proc.go:302 +0xb1 fp=0xc000045fe0 sp=0xc000045fb0 pc=0x7ff7b5dcb111\r\nruntime.goexit()\r\n        C:/Program Files/Go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc000045fe8 sp=0xc000045fe0 pc=0x7ff7b5df5e01\r\ncreated by runtime.init.6\r\n        C:/Program Files/Go/src/runtime/proc.go:290 +0x25\r\n\r\ngoroutine 3 [GC sweep wait]:\r\nruntime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)\r\n        C:/Program Files/Go/src/runtime/proc.go:363 +0xd6 fp=0xc000047f90 sp=0xc000047f70 pc=0x7ff7b5dcb276\r\nruntime.goparkunlock(...)\r\n        C:/Program Files/Go/src/runtime/proc.go:369\r\nruntime.bgsweep(0x0?)\r\n        C:/Program Files/Go/src/runtime/mgcsweep.go:278 +0x8e fp=0xc000047fc8 sp=0xc000047f90 pc=0x7ff7b5db550e\r\nruntime.gcenable.func1()\r\n        C:/Program Files/Go/src/runtime/mgc.go:178 +0x26 fp=0xc000047fe0 sp=0xc000047fc8 pc=0x7ff7b5daa0a6\r\nruntime.goexit()\r\n        C:/Program Files/Go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc000047fe8 sp=0xc000047fe0 pc=0x7ff7b5df5e01\r\ncreated by runtime.gcenable\r\n        C:/Program Files/Go/src/runtime/mgc.go:178 +0x6b\r\n\r\ngoroutine 4 [GC scavenge wait]:\r\nruntime.gopark(0xc00001c070?, 0x7ff7b61f4f80?, 0x1?, 0x0?, 0x0?)\r\n        C:/Program Files/Go/src/runtime/proc.go:363 +0xd6 fp=0xc000057f70 sp=0xc000057f50 pc=0x7ff7b5dcb276\r\nruntime.goparkunlock(...)\r\n        C:/Program Files/Go/src/runtime/proc.go:369\r\nruntime.(*scavengerState).park(0x7ff7b6398ce0)\r\n        C:/Program Files/Go/src/runtime/mgcscavenge.go:389 +0x53 fp=0xc000057fa0 sp=0xc000057f70 pc=0x7ff7b5db3593\r\nruntime.bgscavenge(0x0?)\r\n        C:/Program Files/Go/src/runtime/mgcscavenge.go:617 +0x45 fp=0xc000057fc8 sp=0xc000057fa0 pc=0x7ff7b5db3b85\r\nruntime.gcenable.func2()\r\n        C:/Program Files/Go/src/runtime/mgc.go:179 +0x26 fp=0xc000057fe0 sp=0xc000057fc8 pc=0x7ff7b5daa046\r\nruntime.goexit()\r\n        C:/Program Files/Go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc000057fe8 sp=0xc000057fe0 pc=0x7ff7b5df5e01\r\ncreated by runtime.gcenable\r\n        C:/Program Files/Go/src/runtime/mgc.go:179 +0xaa\r\n\r\ngoroutine 18 [finalizer wait]:\r\nruntime.gopark(0x7ff7b6399420?, 0xc0000841a0?, 0x0?, 0x0?, 0xc000049f70?)\r\n        C:/Program Files/Go/src/runtime/proc.go:363 +0xd6 fp=0xc000049e28 sp=0xc000049e08 pc=0x7ff7b5dcb276\r\nruntime.goparkunlock(...)\r\n        C:/Program Files/Go/src/runtime/proc.go:369\r\nruntime.runfinq()\r\n        C:/Program Files/Go/src/runtime/mfinal.go:180 +0x10f fp=0xc000049fe0 sp=0xc000049e28 pc=0x7ff7b5da91af\r\nruntime.goexit()\r\n        C:/Program Files/Go/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc000049fe8 sp=0xc000049fe0 pc=0x7ff7b5df5e01\r\ncreated by runtime.createfing\r\n        C:/Program Files/Go/src/runtime/mfinal.go:157 +0x45\r\nrax     0x0\r\nrbx     0x7ff7b638de80\r\nrcx     0x7ff7b638d900\r\nrdi     0xc25f1572e1a87b0e\r\nrsi     0x7ff7b638de00\r\nrbp     0x2b7cd71362065849\r\nrsp     0xe8363fe4d8\r\nr8      0x1f36a914d1d1ca54\r\nr9      0xe3f09cc9f448ab2c\r\nr10     0x53ae4ce3194e4adf\r\nr11     0x988f6b1f351f9469\r\nr12     0xf0030d9fa553ae92\r\nr13     0x8e738258ad84f1f6\r\nr14     0x685276af035ca2f\r\nr15     0x0\r\nrip     0x7ff7b60849ee\r\nrflags  0x10246\r\ncs      0x33\r\nfs      0x53\r\ngs      0x2b",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/284/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/284/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

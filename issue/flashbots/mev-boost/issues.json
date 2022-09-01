@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "nmoreau"
+    },
+    "number": 284,
+    "title": "mev-boost crash on startup on Windows x64 ?",
+    "updatedAt": "2022-08-31T22:44:18Z"
+  },
+  {
+    "author": {
+      "login": "yorickdowne"
+    },
+    "number": 275,
+    "title": "Feature: Offer a portable build docker hub image",
+    "updatedAt": "2022-08-31T18:03:34Z"
+  },
+  {
+    "author": {
+      "login": "avalonche"
+    },
+    "number": 243,
+    "title": "Bug Bounty",
+    "updatedAt": "2022-08-31T16:05:26Z"
+  },
+  {
+    "author": {
+      "login": "danhsiu"
+    },
+    "number": 281,
+    "title": "502 - Failed to verify validator signature",
+    "updatedAt": "2022-08-31T09:20:55Z"
+  },
+  {
+    "author": {
       "login": "samczsun"
     },
     "number": 280,
@@ -38,14 +70,6 @@
     "number": 220,
     "title": "Identifier for builder to proposer transaction",
     "updatedAt": "2022-08-29T17:03:20Z"
-  },
-  {
-    "author": {
-      "login": "yorickdowne"
-    },
-    "number": 275,
-    "title": "Feature: Offer a portable build docker hub image",
-    "updatedAt": "2022-08-29T16:43:39Z"
   },
   {
     "author": {
@@ -206,14 +230,6 @@
     "number": 113,
     "title": "at what level should cancellations be allowed, if at all?",
     "updatedAt": "2022-08-09T22:13:49Z"
-  },
-  {
-    "author": {
-      "login": "avalonche"
-    },
-    "number": 243,
-    "title": "Bug Bounty",
-    "updatedAt": "2022-08-09T15:29:48Z"
   },
   {
     "author": {

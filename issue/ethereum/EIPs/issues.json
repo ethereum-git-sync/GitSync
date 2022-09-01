@@ -5,7 +5,7 @@
     },
     "number": 5424,
     "title": "Explain in text that ERC was renamed to EIP",
-    "updatedAt": "2022-08-31T00:26:27Z"
+    "updatedAt": "2022-09-01T00:19:59Z"
   },
   {
     "author": {
@@ -13,7 +13,15 @@
     },
     "number": 5310,
     "title": "GitHub actions don't run for first time contributors",
-    "updatedAt": "2022-08-31T00:26:24Z"
+    "updatedAt": "2022-09-01T00:19:58Z"
+  },
+  {
+    "author": {
+      "login": "paulrberg"
+    },
+    "number": 1620,
+    "title": "ERC-1620: Money Streaming",
+    "updatedAt": "2022-08-31T12:06:42Z"
   },
   {
     "author": {
@@ -222,14 +230,6 @@
     "number": 4945,
     "title": "Rename master branch to main branch",
     "updatedAt": "2022-08-25T14:05:55Z"
-  },
-  {
-    "author": {
-      "login": "paulrberg"
-    },
-    "number": 1620,
-    "title": "ERC-1620: Money Streaming",
-    "updatedAt": "2022-08-25T08:25:47Z"
   },
   {
     "author": {

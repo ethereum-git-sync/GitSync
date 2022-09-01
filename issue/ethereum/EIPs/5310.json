@@ -38,15 +38,6 @@
       "color": "CA3515",
       "default": true,
       "description": "If this is a PR, this PR fixes a bug. If this is an issue, this issue reports a bug."
-    },
-    {
-      "id": 4455843244,
-      "node_id": "LA_kwDOAq426M8AAAABCZbFrA",
-      "url": "https://api.github.com/repos/ethereum/EIPs/labels/w-stale",
-      "name": "w-stale",
-      "color": "000000",
-      "default": false,
-      "description": "Waiting on activity"
     }
   ],
   "state": "open",
@@ -56,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 7,
+  "comments": 8,
   "created_at": "2022-07-22T15:06:20Z",
-  "updated_at": "2022-08-31T00:26:24Z",
+  "updated_at": "2022-09-01T00:19:58Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -396,6 +387,50 @@
     "body": "There has been no activity on this issue for 1 week. It will be closed after 3 months of inactivity.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1232308066/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1233080727",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5310#issuecomment-1233080727",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5310",
+    "id": 1233080727,
+    "node_id": "IC_kwDOAq426M5Jf1GX",
+    "user": {
+      "login": "Pandapip1",
+      "id": 45835846,
+      "node_id": "MDQ6VXNlcjQ1ODM1ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45835846?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Pandapip1",
+      "html_url": "https://github.com/Pandapip1",
+      "followers_url": "https://api.github.com/users/Pandapip1/followers",
+      "following_url": "https://api.github.com/users/Pandapip1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Pandapip1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Pandapip1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Pandapip1/subscriptions",
+      "organizations_url": "https://api.github.com/users/Pandapip1/orgs",
+      "repos_url": "https://api.github.com/users/Pandapip1/repos",
+      "events_url": "https://api.github.com/users/Pandapip1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Pandapip1/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-08-31T15:20:45Z",
+    "updated_at": "2022-08-31T15:20:45Z",
+    "author_association": "MEMBER",
+    "body": "Still an issue.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1233080727/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

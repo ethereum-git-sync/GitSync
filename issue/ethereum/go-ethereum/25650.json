@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25650",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25650/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25650/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25650/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25650",
+  "id": 1357521871,
+  "node_id": "I_kwDOAOvK985Q6iPP",
+  "number": 25650,
+  "title": "Incorrect GasRefund in debug_traceCall with custom tracer",
+  "user": {
+    "login": "quickchase",
+    "id": 87909910,
+    "node_id": "MDQ6VXNlcjg3OTA5OTEw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/87909910?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/quickchase",
+    "html_url": "https://github.com/quickchase",
+    "followers_url": "https://api.github.com/users/quickchase/followers",
+    "following_url": "https://api.github.com/users/quickchase/following{/other_user}",
+    "gists_url": "https://api.github.com/users/quickchase/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/quickchase/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/quickchase/subscriptions",
+    "organizations_url": "https://api.github.com/users/quickchase/orgs",
+    "repos_url": "https://api.github.com/users/quickchase/repos",
+    "events_url": "https://api.github.com/users/quickchase/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/quickchase/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-31T15:39:04Z",
+  "updated_at": "2022-08-31T18:04:11Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `1.10.23`\r\nOS & Version: Linux\r\n\r\n#### Expected behaviour\r\nGasRefund should be greater than 0\r\n\r\n#### Actual behaviour\r\n```\r\n{\"jsonrpc\":\"2.0\",\"id\":\"1\",\"result\":{\"refund\":0,\"gasUsed\":140031}}\r\n```\r\n\r\n#### Steps to reproduce the behaviour\r\nUsing the following request:\r\n```\r\n{\r\n    \"id\": \"1\",\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"debug_traceCall\",\r\n    \"params\": [\r\n        {\r\n            \"from\": \"0xbe0eb53f46cd790cd13851d5eff43d12404d33e8\",\r\n            \"data\": \"0xe449022e0000000000000000000000000000000000000000000000000de0b6b3a7640000000000000000000000000000000000000000000000000033f473f10467f04eaa00000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000001c0000000000000000000000060594a405d53811d3bc4766596efd80fd545a270\",\r\n            \"value\": \"0xDE0B6B3A7640000\",\r\n            \"to\": \"0x1111111254fb6c44bac0bed2854e76f90643097d\"\r\n        },\r\n        \"latest\",\r\n        {\r\n            \"tracer\": \"{\\n    accumulatedGasRefund: 0,\\n\\n    fault: function (log, db, err) {\\n    },\\n\\n    step: function (log, db) {\\n        // SSTORE\\n        if (log.op.toNumber() !== 0x55) {\\n            return\\n        }\\n\\n        this.accumulatedGasRefund = log.getRefund()\\n    },\\n\\n    result: function (ctx, db) {\\n        var gasUsed = ctx.gasUsed + ctx.intrinsicGas\\n\\n        var maxGasRefund = Math.trunc(gasUsed / 5)\\n\\n        var resultGasRefund = Math.min(this.accumulatedGasRefund, maxGasRefund)\\n\\n        return {\\n  refund: resultGasRefund,gasUsed: ctx.gasUsed + ctx.intrinsicGas - resultGasRefund,\\n        };\\n    }\\n\\n}\\n\"\r\n        }\r\n    ]\r\n}\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25650/reactions",
+    "total_count": 2,
+    "+1": 2,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25650/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

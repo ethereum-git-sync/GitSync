@@ -1,6 +1,94 @@
 [
   {
     "author": {
+      "login": "GLAD-DE"
+    },
+    "number": 24083,
+    "title": "Error \"peer connected on snap without compatible eth support\" with a private network",
+    "updatedAt": "2022-08-31T19:48:37Z"
+  },
+  {
+    "author": {
+      "login": "quickchase"
+    },
+    "number": 25650,
+    "title": "Incorrect GasRefund in debug_traceCall with custom tracer",
+    "updatedAt": "2022-08-31T18:04:11Z"
+  },
+  {
+    "author": {
+      "login": "ryny24"
+    },
+    "number": 23228,
+    "title": "FYI - Sync mode SNAP does not work",
+    "updatedAt": "2022-08-31T16:06:41Z"
+  },
+  {
+    "author": {
+      "login": "mafangtao"
+    },
+    "number": 25649,
+    "title": "invalid merkle root    Skip duplicated bad block",
+    "updatedAt": "2022-08-31T15:30:13Z"
+  },
+  {
+    "author": {
+      "login": "Sajjon"
+    },
+    "number": 25589,
+    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
+    "updatedAt": "2022-08-31T14:42:29Z"
+  },
+  {
+    "author": {
+      "login": "jjhesk"
+    },
+    "number": 25647,
+    "title": "  unavailable=\"['debug']\" available=\"[admin debug web3 eth txpool personal clique miner net]",
+    "updatedAt": "2022-08-31T14:38:38Z"
+  },
+  {
+    "author": {
+      "login": "claravanstaden"
+    },
+    "number": 25633,
+    "title": "Contract creation for private network hangs",
+    "updatedAt": "2022-08-31T14:24:54Z"
+  },
+  {
+    "author": {
+      "login": "SLoeuillet"
+    },
+    "number": 25583,
+    "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
+    "updatedAt": "2022-08-31T14:14:55Z"
+  },
+  {
+    "author": {
+      "login": "nalepae"
+    },
+    "number": 25627,
+    "title": "Launching 3 `geth` instances at the same time, one is in `State heal in progress` for a few days",
+    "updatedAt": "2022-08-31T11:38:01Z"
+  },
+  {
+    "author": {
+      "login": "lansehuiyi6"
+    },
+    "number": 25626,
+    "title": "Geth 1.10.21 -> 1.10.23 fail to start, the follow error was got. Fatal: Failed to register the Ethereum service: ancient chain segments already extracted, please set --datadir.ancient to the correct path",
+    "updatedAt": "2022-08-31T10:09:14Z"
+  },
+  {
+    "author": {
+      "login": "okmrs"
+    },
+    "number": 25598,
+    "title": "Need help to solve the synchronization problem.",
+    "updatedAt": "2022-08-31T02:55:04Z"
+  },
+  {
+    "author": {
       "login": "wjmelements"
     },
     "number": 25614,
@@ -49,14 +137,6 @@
   },
   {
     "author": {
-      "login": "SLoeuillet"
-    },
-    "number": 25583,
-    "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
-    "updatedAt": "2022-08-30T10:35:37Z"
-  },
-  {
-    "author": {
       "login": "RaoFaizanAkram"
     },
     "number": 25631,
@@ -81,14 +161,6 @@
   },
   {
     "author": {
-      "login": "claravanstaden"
-    },
-    "number": 25633,
-    "title": "Contract creation for private network hangs",
-    "updatedAt": "2022-08-30T09:22:43Z"
-  },
-  {
-    "author": {
       "login": "Piradoxlanieve"
     },
     "number": 25632,
@@ -97,27 +169,11 @@
   },
   {
     "author": {
-      "login": "lansehuiyi6"
-    },
-    "number": 25626,
-    "title": "Geth 1.10.21 -> 1.10.23 fail to start, the follow error was got. Fatal: Failed to register the Ethereum service: ancient chain segments already extracted, please set --datadir.ancient to the correct path",
-    "updatedAt": "2022-08-30T09:13:41Z"
-  },
-  {
-    "author": {
       "login": "martonp"
     },
     "number": 25623,
     "title": "Will --syncmode=light work post-merge?",
     "updatedAt": "2022-08-30T08:30:32Z"
-  },
-  {
-    "author": {
-      "login": "nalepae"
-    },
-    "number": 25627,
-    "title": "Launching 3 `geth` instances at the same time, one is in `State heal in progress` for a few days",
-    "updatedAt": "2022-08-30T07:49:14Z"
   },
   {
     "author": {
@@ -134,14 +190,6 @@
     "number": 25620,
     "title": "Frequent unindexed transactions after fresh sync with 1.10.23",
     "updatedAt": "2022-08-30T01:01:44Z"
-  },
-  {
-    "author": {
-      "login": "Sajjon"
-    },
-    "number": 25589,
-    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
-    "updatedAt": "2022-08-29T17:24:42Z"
   },
   {
     "author": {
@@ -166,14 +214,6 @@
     "number": 25630,
     "title": "Provide topic signature hash for contract events using abigen",
     "updatedAt": "2022-08-29T15:26:35Z"
-  },
-  {
-    "author": {
-      "login": "GLAD-DE"
-    },
-    "number": 24083,
-    "title": "Error \"peer connected on snap without compatible eth support\" with a private network",
-    "updatedAt": "2022-08-29T07:30:43Z"
   },
   {
     "author": {
@@ -249,14 +289,6 @@
   },
   {
     "author": {
-      "login": "okmrs"
-    },
-    "number": 25598,
-    "title": "Need help to solve the synchronization problem.",
-    "updatedAt": "2022-08-26T09:04:42Z"
-  },
-  {
-    "author": {
       "login": "41rjordan"
     },
     "number": 25607,
@@ -302,14 +334,6 @@
     "number": 25599,
     "title": "Async block creation post-merge",
     "updatedAt": "2022-08-25T06:36:48Z"
-  },
-  {
-    "author": {
-      "login": "ryny24"
-    },
-    "number": 23228,
-    "title": "FYI - Sync mode SNAP does not work",
-    "updatedAt": "2022-08-25T04:17:48Z"
   },
   {
     "author": {
@@ -1465,7 +1489,7 @@
   },
   {
     "author": {
-      "login": "Apaumn"
+      "login": "mousa110045"
     },
     "number": 25332,
     "title": "Sorry, you're 51 lines overdraft",

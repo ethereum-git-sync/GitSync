@@ -1,19 +1,35 @@
 [
   {
     "author": {
+      "login": "timbeiko"
+    },
+    "number": 609,
+    "title": "Ethereum Core Devs Meeting 146 Agenda",
+    "updatedAt": "2022-08-31T23:29:51Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 593,
+    "title": "KZG-Ceremony Call #6",
+    "updatedAt": "2022-08-31T21:16:47Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 613,
+    "title": "KZG-Ceremony #7",
+    "updatedAt": "2022-08-31T20:13:18Z"
+  },
+  {
+    "author": {
       "login": "tvanepps"
     },
     "number": 599,
     "title": "Merge Community Call #7",
     "updatedAt": "2022-08-30T16:36:42Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 609,
-    "title": "Ethereum Core Devs Meeting 146 Agenda",
-    "updatedAt": "2022-08-26T12:40:02Z"
   },
   {
     "author": {
@@ -30,14 +46,6 @@
     "number": 592,
     "title": "Ethereum Core Devs Meeting 145 Agenda",
     "updatedAt": "2022-08-23T14:07:11Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 593,
-    "title": "KZG-Ceremony Call #6",
-    "updatedAt": "2022-08-20T23:11:22Z"
   },
   {
     "author": {

@@ -40,7 +40,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -68,12 +68,31 @@
   "milestone": null,
   "comments": 2,
   "created_at": "2018-09-20T08:19:12Z",
-  "updated_at": "2020-07-30T10:39:41Z",
-  "closed_at": null,
+  "updated_at": "2022-08-31T08:31:22Z",
+  "closed_at": "2022-08-31T08:31:22Z",
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "currently various remix plugins uses their own logging mechanism. So does `remix-tests`. I introduced `winston` logger for `remix-tests`. As `remix-tests` is a **terminal package** & also can be used in **browser**, I think `winston` can be very helpful as we want to use various *debugging levels*. I am trying to use the logger such that we can pass the verbosity across packages. Then from within the package we instantiate the logger with the verbosity level. That way we can use the same verbosity for all logging related to various packages.\r\n\r\n*Note*: winston logger does not support browser yet but we can expect it will be shipped soon.\r\n\r\n*Refs*:\r\n* https://github.com/winstonjs/winston/blob/master/CONTRIBUTING.md#version-320\r\n* https://github.com/winstonjs/winston/issues/287#issuecomment-342548043\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/309/reactions",
     "total_count": 0,
@@ -88,7 +107,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/309/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

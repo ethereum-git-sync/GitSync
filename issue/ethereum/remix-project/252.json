@@ -49,7 +49,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -58,12 +58,31 @@
   "milestone": null,
   "comments": 4,
   "created_at": "2019-01-21T04:23:45Z",
-  "updated_at": "2020-07-28T13:07:38Z",
-  "closed_at": null,
+  "updated_at": "2022-08-31T08:29:29Z",
+  "closed_at": "2022-08-31T08:29:29Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "## Bug Description\r\n - Deployed a contract to Rinkeby via truffle, using Infura provider\r\n - Went to remix to test it out using the Rinkeby provider injected by MetaMask\r\n - Incorrect (empty) values being returned from the contract (either it is out of sync or is working on a different chain potentially due to fork?)\r\n - Switched to custom Web3 provider using personal Rinkeby Infura key and it allows me to read the correct values from the contract\r\n\r\nNot sure who is responsible for resolving this (could be Metamask injecting an out of sync provider) - but thought I'd start here",
-  "closed_by": null,
+  "closed_by": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/252/reactions",
     "total_count": 0,
@@ -78,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/252/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

@@ -1,11 +1,35 @@
 [
   {
     "author": {
+      "login": "CodeSandwich"
+    },
+    "number": 13462,
+    "title": "Allow concatenation of string constants",
+    "updatedAt": "2022-08-31T22:08:40Z"
+  },
+  {
+    "author": {
       "login": "krasi-georgiev"
     },
     "number": 13284,
     "title": "solc --strict-assembly should have optimization disabled, but it still does some optimization for yul",
-    "updatedAt": "2022-08-30T16:06:08Z"
+    "updatedAt": "2022-08-31T19:16:30Z"
+  },
+  {
+    "author": {
+      "login": "wiasliaw"
+    },
+    "number": 13466,
+    "title": "Add a special comment for storage layout",
+    "updatedAt": "2022-08-31T18:57:42Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 10269,
+    "title": "Remove unneeded includes in files",
+    "updatedAt": "2022-08-31T12:26:02Z"
   },
   {
     "author": {
@@ -5862,14 +5886,6 @@
     "number": 12753,
     "title": "Consider exposing ``evmasm::disassemble`` in ``tools/`` as a \"poor man's disassembler\".",
     "updatedAt": "2022-03-09T11:31:46Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 10269,
-    "title": "Remove unneeded includes in files",
-    "updatedAt": "2022-03-09T11:01:10Z"
   },
   {
     "author": {

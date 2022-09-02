@@ -1,6 +1,126 @@
 [
   {
     "author": {
+      "login": "wjmelements"
+    },
+    "number": 25614,
+    "title": "Intent to Implement: Recovery of Missing Logs",
+    "updatedAt": "2022-09-01T22:03:42Z"
+  },
+  {
+    "author": {
+      "login": "757566833"
+    },
+    "number": 25537,
+    "title": "ethclient: BlockByNumber cannot handle `pending` block",
+    "updatedAt": "2022-09-01T15:19:00Z"
+  },
+  {
+    "author": {
+      "login": "tanmaster"
+    },
+    "number": 25660,
+    "title": "Native callTracer: missing CREATE2 frames where out of gas occur",
+    "updatedAt": "2022-09-01T12:16:02Z"
+  },
+  {
+    "author": {
+      "login": "masayil"
+    },
+    "number": 25659,
+    "title": "online pruning feature on ETH",
+    "updatedAt": "2022-09-01T10:25:28Z"
+  },
+  {
+    "author": {
+      "login": "quickchase"
+    },
+    "number": 25650,
+    "title": "Incorrect GasRefund in debug_traceCall with custom tracer",
+    "updatedAt": "2022-09-01T09:02:11Z"
+  },
+  {
+    "author": {
+      "login": "holiman"
+    },
+    "number": 25600,
+    "title": "Inefficient response handling in Snap",
+    "updatedAt": "2022-09-01T08:58:37Z"
+  },
+  {
+    "author": {
+      "login": "prostack364"
+    },
+    "number": 25571,
+    "title": "Is that correct algorithm to push the given node to nodesByDistance entries?",
+    "updatedAt": "2022-09-01T08:55:23Z"
+  },
+  {
+    "author": {
+      "login": "hmijail"
+    },
+    "number": 25544,
+    "title": "Allow `evm t8n` to generate traces to stdout or to a known filename",
+    "updatedAt": "2022-09-01T08:49:45Z"
+  },
+  {
+    "author": {
+      "login": "hdiass"
+    },
+    "number": 25517,
+    "title": "--exitwhensynced doesn't work after the goerli merge",
+    "updatedAt": "2022-09-01T08:28:31Z"
+  },
+  {
+    "author": {
+      "login": "mafangtao"
+    },
+    "number": 25649,
+    "title": "invalid merkle root    Skip duplicated bad block",
+    "updatedAt": "2022-09-01T07:12:18Z"
+  },
+  {
+    "author": {
+      "login": "darren"
+    },
+    "number": 25657,
+    "title": "state.(*cachingDB).CopyTrie encounter panic: unknown trie type <nil>",
+    "updatedAt": "2022-09-01T05:04:33Z"
+  },
+  {
+    "author": {
+      "login": "Sajjon"
+    },
+    "number": 25589,
+    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
+    "updatedAt": "2022-09-01T01:43:51Z"
+  },
+  {
+    "author": {
+      "login": "ybstaked"
+    },
+    "number": 25613,
+    "title": "Geth 1.10.21 -> 1.10.23 Unhandle trie error",
+    "updatedAt": "2022-09-01T01:42:43Z"
+  },
+  {
+    "author": {
+      "login": "lansehuiyi6"
+    },
+    "number": 25626,
+    "title": "Geth 1.10.21 -> 1.10.23 fail to start, the follow error was got. Fatal: Failed to register the Ethereum service: ancient chain segments already extracted, please set --datadir.ancient to the correct path",
+    "updatedAt": "2022-09-01T01:40:57Z"
+  },
+  {
+    "author": {
+      "login": "leontodd"
+    },
+    "number": 25656,
+    "title": "Pruning target state is not existent - Failed to recover state",
+    "updatedAt": "2022-09-01T00:55:48Z"
+  },
+  {
+    "author": {
       "login": "GLAD-DE"
     },
     "number": 24083,
@@ -9,35 +129,11 @@
   },
   {
     "author": {
-      "login": "quickchase"
-    },
-    "number": 25650,
-    "title": "Incorrect GasRefund in debug_traceCall with custom tracer",
-    "updatedAt": "2022-08-31T18:04:11Z"
-  },
-  {
-    "author": {
       "login": "ryny24"
     },
     "number": 23228,
     "title": "FYI - Sync mode SNAP does not work",
     "updatedAt": "2022-08-31T16:06:41Z"
-  },
-  {
-    "author": {
-      "login": "mafangtao"
-    },
-    "number": 25649,
-    "title": "invalid merkle root    Skip duplicated bad block",
-    "updatedAt": "2022-08-31T15:30:13Z"
-  },
-  {
-    "author": {
-      "login": "Sajjon"
-    },
-    "number": 25589,
-    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
-    "updatedAt": "2022-08-31T14:42:29Z"
   },
   {
     "author": {
@@ -73,27 +169,11 @@
   },
   {
     "author": {
-      "login": "lansehuiyi6"
-    },
-    "number": 25626,
-    "title": "Geth 1.10.21 -> 1.10.23 fail to start, the follow error was got. Fatal: Failed to register the Ethereum service: ancient chain segments already extracted, please set --datadir.ancient to the correct path",
-    "updatedAt": "2022-08-31T10:09:14Z"
-  },
-  {
-    "author": {
       "login": "okmrs"
     },
     "number": 25598,
     "title": "Need help to solve the synchronization problem.",
     "updatedAt": "2022-08-31T02:55:04Z"
-  },
-  {
-    "author": {
-      "login": "wjmelements"
-    },
-    "number": 25614,
-    "title": "Intent to Implement: Recovery of Missing Logs",
-    "updatedAt": "2022-08-30T22:44:31Z"
   },
   {
     "author": {
@@ -193,14 +273,6 @@
   },
   {
     "author": {
-      "login": "ybstaked"
-    },
-    "number": 25613,
-    "title": "Geth 1.10.21 -> 1.10.23 Unhandle trie error",
-    "updatedAt": "2022-08-29T16:18:03Z"
-  },
-  {
-    "author": {
       "login": "benzsuankularb"
     },
     "number": 23269,
@@ -222,14 +294,6 @@
     "number": 25624,
     "title": "issue",
     "updatedAt": "2022-08-28T20:39:42Z"
-  },
-  {
-    "author": {
-      "login": "757566833"
-    },
-    "number": 25537,
-    "title": "ethclient: BlockByNumber cannot handle `pending` block",
-    "updatedAt": "2022-08-28T14:08:28Z"
   },
   {
     "author": {
@@ -310,14 +374,6 @@
     "number": 25604,
     "title": "Abigen sol",
     "updatedAt": "2022-08-26T02:46:02Z"
-  },
-  {
-    "author": {
-      "login": "holiman"
-    },
-    "number": 25600,
-    "title": "Inefficient response handling in Snap",
-    "updatedAt": "2022-08-25T12:08:33Z"
   },
   {
     "author": {
@@ -417,35 +473,11 @@
   },
   {
     "author": {
-      "login": "hmijail"
-    },
-    "number": 25544,
-    "title": "Allow `evm t8n` to generate traces to stdout or to a known filename",
-    "updatedAt": "2022-08-23T11:55:31Z"
-  },
-  {
-    "author": {
-      "login": "prostack364"
-    },
-    "number": 25571,
-    "title": "Is that correct algorithm to push the given node to nodesByDistance entries?",
-    "updatedAt": "2022-08-23T11:53:44Z"
-  },
-  {
-    "author": {
       "login": "dzianisv"
     },
     "number": 25511,
     "title": "SIGSEGV: segmentation violation code=0x1 `downloader.(*Downloader).findAncestorBinarySearch()`",
     "updatedAt": "2022-08-23T11:13:36Z"
-  },
-  {
-    "author": {
-      "login": "hdiass"
-    },
-    "number": 25517,
-    "title": "--exitwhensynced doesn't work after the goerli merge",
-    "updatedAt": "2022-08-22T13:53:56Z"
   },
   {
     "author": {

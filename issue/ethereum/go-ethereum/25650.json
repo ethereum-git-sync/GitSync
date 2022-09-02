@@ -38,18 +38,65 @@
       "color": "FF5E5E",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 1132689577,
+      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
+      "name": "status:triage",
+      "color": "6be514",
+      "default": false,
+      "description": ""
     }
   ],
   "state": "open",
   "locked": false,
-  "assignee": null,
+  "assignee": {
+    "login": "s1na",
+    "id": 1591639,
+    "node_id": "MDQ6VXNlcjE1OTE2Mzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1591639?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/s1na",
+    "html_url": "https://github.com/s1na",
+    "followers_url": "https://api.github.com/users/s1na/followers",
+    "following_url": "https://api.github.com/users/s1na/following{/other_user}",
+    "gists_url": "https://api.github.com/users/s1na/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/s1na/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/s1na/subscriptions",
+    "organizations_url": "https://api.github.com/users/s1na/orgs",
+    "repos_url": "https://api.github.com/users/s1na/repos",
+    "events_url": "https://api.github.com/users/s1na/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/s1na/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "assignees": [
-
+    {
+      "login": "s1na",
+      "id": 1591639,
+      "node_id": "MDQ6VXNlcjE1OTE2Mzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1591639?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/s1na",
+      "html_url": "https://github.com/s1na",
+      "followers_url": "https://api.github.com/users/s1na/followers",
+      "following_url": "https://api.github.com/users/s1na/following{/other_user}",
+      "gists_url": "https://api.github.com/users/s1na/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/s1na/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/s1na/subscriptions",
+      "organizations_url": "https://api.github.com/users/s1na/orgs",
+      "repos_url": "https://api.github.com/users/s1na/repos",
+      "events_url": "https://api.github.com/users/s1na/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/s1na/received_events",
+      "type": "User",
+      "site_admin": false
+    }
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-08-31T15:39:04Z",
-  "updated_at": "2022-08-31T18:04:11Z",
+  "updated_at": "2022-09-01T09:02:11Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -72,5 +119,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1233975037",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25650#issuecomment-1233975037",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25650",
+    "id": 1233975037,
+    "node_id": "IC_kwDOAOvK985JjPb9",
+    "user": {
+      "login": "holiman",
+      "id": 142290,
+      "node_id": "MDQ6VXNlcjE0MjI5MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/holiman",
+      "html_url": "https://github.com/holiman",
+      "followers_url": "https://api.github.com/users/holiman/followers",
+      "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+      "organizations_url": "https://api.github.com/users/holiman/orgs",
+      "repos_url": "https://api.github.com/users/holiman/repos",
+      "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/holiman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-01T09:00:50Z",
+    "updated_at": "2022-09-01T09:02:11Z",
+    "author_association": "MEMBER",
+    "body": "```javascript\r\n{\r\n    accumulatedGasRefund: 0,\r\n\r\n    fault: function (log, db, err) {\r\n    },\r\n\r\n    step: function (log, db) {\r\n        // SSTORE\r\n        if (log.op.toNumber() !== 0x55) {\r\n            return\r\n        }\r\n        this.accumulatedGasRefund = log.getRefund()\r\n    },\r\n\r\n    result: function (ctx, db) {\r\n        var gasUsed = ctx.gasUsed + ctx.intrinsicGas\r\n        var maxGasRefund = Math.trunc(gasUsed / 5)\r\n        var resultGasRefund = Math.min(this.accumulatedGasRefund, maxGasRefund)\r\n        return {\r\n  \t\t\trefund: resultGasRefund,\r\n\t\t\tgasUsed: ctx.gasUsed + ctx.intrinsicGas - resultGasRefund,\r\n        };\r\n    }\r\n}\r\n```",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1233975037/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

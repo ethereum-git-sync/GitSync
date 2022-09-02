@@ -1,11 +1,91 @@
 [
   {
     "author": {
+      "login": "zemse"
+    },
+    "number": 11691,
+    "title": "Feature Request: Combine nested structs in single storage slots",
+    "updatedAt": "2022-09-01T22:38:28Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 13471,
+    "title": "Missing \"statement has no effect\" diagnostic",
+    "updatedAt": "2022-09-01T22:19:05Z"
+  },
+  {
+    "author": {
+      "login": "k06a"
+    },
+    "number": 13472,
+    "title": "Assembly libraries",
+    "updatedAt": "2022-09-01T22:18:30Z"
+  },
+  {
+    "author": {
+      "login": "nicolasguasca1"
+    },
+    "number": 13470,
+    "title": "Example on Getter functions does compile but does not include the entire set of data",
+    "updatedAt": "2022-09-01T18:06:19Z"
+  },
+  {
+    "author": {
+      "login": "lolo464644"
+    },
+    "number": 12917,
+    "title": "Importation problem on VSCODE",
+    "updatedAt": "2022-09-01T15:40:32Z"
+  },
+  {
+    "author": {
+      "login": "Gilgames000"
+    },
+    "number": 12825,
+    "title": "LSP throwing an error on each and every character I type in the editor",
+    "updatedAt": "2022-09-01T13:04:57Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 13253,
+    "title": "LSP: Allow disabling/enabling of individual features",
+    "updatedAt": "2022-09-01T12:52:03Z"
+  },
+  {
+    "author": {
+      "login": "nventuro"
+    },
+    "number": 12587,
+    "title": "Immutable dynamic arrays",
+    "updatedAt": "2022-09-01T12:42:18Z"
+  },
+  {
+    "author": {
+      "login": "nishant-sachdeva"
+    },
+    "number": 13325,
+    "title": "Release the Language Server with symbolic renaming and syntax highlighting",
+    "updatedAt": "2022-09-01T11:48:01Z"
+  },
+  {
+    "author": {
       "login": "CodeSandwich"
     },
     "number": 13462,
     "title": "Allow concatenation of string constants",
-    "updatedAt": "2022-08-31T22:08:40Z"
+    "updatedAt": "2022-09-01T11:25:42Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 13371,
+    "title": "Stop recommending .transfer",
+    "updatedAt": "2022-09-01T09:17:07Z"
   },
   {
     "author": {
@@ -13,7 +93,7 @@
     },
     "number": 13284,
     "title": "solc --strict-assembly should have optimization disabled, but it still does some optimization for yul",
-    "updatedAt": "2022-08-31T19:16:30Z"
+    "updatedAt": "2022-09-01T06:22:08Z"
   },
   {
     "author": {
@@ -30,14 +110,6 @@
     "number": 10269,
     "title": "Remove unneeded includes in files",
     "updatedAt": "2022-08-31T12:26:02Z"
-  },
-  {
-    "author": {
-      "login": "nventuro"
-    },
-    "number": 12587,
-    "title": "Immutable dynamic arrays",
-    "updatedAt": "2022-08-30T15:08:55Z"
   },
   {
     "author": {
@@ -342,14 +414,6 @@
     "number": 13432,
     "title": "[SMTChecker] ICE because of unknown delete expression",
     "updatedAt": "2022-08-25T04:28:08Z"
-  },
-  {
-    "author": {
-      "login": "fulldecent"
-    },
-    "number": 13371,
-    "title": "Stop recommending .transfer",
-    "updatedAt": "2022-08-24T18:21:07Z"
   },
   {
     "author": {
@@ -2217,14 +2281,6 @@
   },
   {
     "author": {
-      "login": "zemse"
-    },
-    "number": 11691,
-    "title": "Feature Request: Combine nested structs in single storage slots",
-    "updatedAt": "2022-08-17T13:49:06Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 11695,
@@ -3305,14 +3361,6 @@
   },
   {
     "author": {
-      "login": "Marenz"
-    },
-    "number": 13253,
-    "title": "LSP: Allow disabling/enabling of individual features",
-    "updatedAt": "2022-08-17T13:48:46Z"
-  },
-  {
-    "author": {
       "login": "haltman-at"
     },
     "number": 7089,
@@ -3817,14 +3865,6 @@
   },
   {
     "author": {
-      "login": "Gilgames000"
-    },
-    "number": 12825,
-    "title": "LSP throwing an error on each and every character I type in the editor",
-    "updatedAt": "2022-08-07T18:17:14Z"
-  },
-  {
-    "author": {
       "login": "michprev"
     },
     "number": 13353,
@@ -4006,14 +4046,6 @@
     "number": 4630,
     "title": "Proposal: Increase transfer and send gas limit",
     "updatedAt": "2022-07-28T19:09:13Z"
-  },
-  {
-    "author": {
-      "login": "nishant-sachdeva"
-    },
-    "number": 13325,
-    "title": "Release the Language Server with symbolic naming and syntax highlighting",
-    "updatedAt": "2022-07-28T15:25:45Z"
   },
   {
     "author": {
@@ -5574,14 +5606,6 @@
     "number": 12906,
     "title": "Move `docs.sh` script to `docs/`",
     "updatedAt": "2022-04-11T11:51:06Z"
-  },
-  {
-    "author": {
-      "login": "lolo464644"
-    },
-    "number": 12917,
-    "title": "Importation problem on VSCODE",
-    "updatedAt": "2022-04-09T11:18:19Z"
   },
   {
     "author": {

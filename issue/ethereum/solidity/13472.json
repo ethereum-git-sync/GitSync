@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13472",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13472/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13472/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13472/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13472",
+  "id": 1359469047,
+  "node_id": "I_kwDOAm_5kc5RB9n3",
+  "number": 13472,
+  "title": "Assembly libraries",
+  "user": {
+    "login": "k06a",
+    "id": 702124,
+    "node_id": "MDQ6VXNlcjcwMjEyNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/702124?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/k06a",
+    "html_url": "https://github.com/k06a",
+    "followers_url": "https://api.github.com/users/k06a/followers",
+    "following_url": "https://api.github.com/users/k06a/following{/other_user}",
+    "gists_url": "https://api.github.com/users/k06a/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/k06a/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/k06a/subscriptions",
+    "organizations_url": "https://api.github.com/users/k06a/orgs",
+    "repos_url": "https://api.github.com/users/k06a/repos",
+    "events_url": "https://api.github.com/users/k06a/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/k06a/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-01T22:17:11Z",
+  "updated_at": "2022-09-01T22:18:30Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nWe have assembly/yul functions but can't reuse them among assembly blocks. Let's have assembly libraries!\r\n\r\n## Motivation\r\n\r\nWould allow us to reuse assembly code\r\n\r\n## Specification\r\n\r\nLet's have it like this:\r\n```solidity\r\nassembly library AsmERC20 {\r\n    function approve(token, to, amount) {\r\n        // ...\r\n    }\r\n    function transfer(token, to, amount) {\r\n        // ...\r\n    }\r\n}\r\n```\r\n\r\nand use it like this:\r\n```solidity\r\nassembly {\r\n    AsmERC20.transfer(token, to, amount);\r\n}\r\n// ...\r\nassembly {\r\n    AsmERC20.approve(token, to, amount);\r\n}\r\n```\r\n\r\n## Backwards Compatibility\r\n\r\nNot required\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13472/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13472/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

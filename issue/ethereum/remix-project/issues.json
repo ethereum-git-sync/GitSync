@@ -1,6 +1,110 @@
 [
   {
     "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2842,
+    "title": "Error in loading chunk for chai types",
+    "updatedAt": "2022-09-01T16:17:20Z"
+  },
+  {
+    "author": {
+      "login": "yann300"
+    },
+    "number": 2848,
+    "title": "Error loading Chai resources using raw-loader.",
+    "updatedAt": "2022-09-01T13:20:20Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2846,
+    "title": "CTRL + click on imported js file hangs editor for a while",
+    "updatedAt": "2022-09-01T13:18:39Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2847,
+    "title": "terminal logs unnecessary empty object in logs",
+    "updatedAt": "2022-09-01T12:46:43Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2845,
+    "title": "Error on loading IDE from Semver",
+    "updatedAt": "2022-09-01T12:27:52Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2844,
+    "title": "Click CTRL/CMD key moves cursor to definition in Editor",
+    "updatedAt": "2022-09-01T12:25:35Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 323,
+    "title": "Incorrect error from remix-tests",
+    "updatedAt": "2022-09-01T09:01:02Z"
+  },
+  {
+    "author": {
+      "login": "Nielsbishere"
+    },
+    "number": 1900,
+    "title": "remix-tests cli broken on Windows, Remix extension works fine",
+    "updatedAt": "2022-09-01T08:52:51Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 47,
+    "title": "Solidity Unit Testing Plugin Enhancements",
+    "updatedAt": "2022-09-01T08:49:36Z"
+  },
+  {
+    "author": {
+      "login": "rougeplane"
+    },
+    "number": 2252,
+    "title": "SOLIDITY UNIT TESTING plugin crashes the webpage after running tests one after the other.",
+    "updatedAt": "2022-09-01T08:45:52Z"
+  },
+  {
+    "author": {
+      "login": "solangegueiros"
+    },
+    "number": 577,
+    "title": "Web3Deploy isn't working - no bytecode inside",
+    "updatedAt": "2022-09-01T08:41:42Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2843,
+    "title": "Errors in browser console when contract has compilation error",
+    "updatedAt": "2022-09-01T08:35:58Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2840,
+    "title": "issue in editor tab UI after theme switch",
+    "updatedAt": "2022-09-01T07:37:30Z"
+  },
+  {
+    "author": {
       "login": "joeizang"
     },
     "number": 2839,
@@ -1921,14 +2025,6 @@
   },
   {
     "author": {
-      "login": "rougeplane"
-    },
-    "number": 2252,
-    "title": "SOLIDITY UNIT TESTING plugin crashes the webpage after running tests one after the other.",
-    "updatedAt": "2022-06-13T08:22:23Z"
-  },
-  {
-    "author": {
       "login": "Aleksandyr"
     },
     "number": 2068,
@@ -3222,14 +3318,6 @@
     "number": 1882,
     "title": "Broken compiler list: Only one compiler available",
     "updatedAt": "2022-03-21T08:33:52Z"
-  },
-  {
-    "author": {
-      "login": "Nielsbishere"
-    },
-    "number": 1900,
-    "title": "remix-tests cli broken on Windows, Remix extension works fine",
-    "updatedAt": "2022-03-21T08:33:02Z"
   },
   {
     "author": {
@@ -9065,14 +9153,6 @@
   },
   {
     "author": {
-      "login": "solangegueiros"
-    },
-    "number": 577,
-    "title": "Web3Deploy isn't working - no bytecode inside",
-    "updatedAt": "2020-11-18T12:07:13Z"
-  },
-  {
-    "author": {
       "login": "yann300"
     },
     "number": 85,
@@ -10025,14 +10105,6 @@
   },
   {
     "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 323,
-    "title": "Incorrect error from remix-tests",
-    "updatedAt": "2020-07-30T11:17:54Z"
-  },
-  {
-    "author": {
       "login": "rocky"
     },
     "number": 319,
@@ -10830,14 +10902,6 @@
     "number": 51,
     "title": "Toward a standardized API",
     "updatedAt": "2020-07-24T11:38:20Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 47,
-    "title": "Solidity Unit Testing Plugin Enhancements",
-    "updatedAt": "2020-07-24T11:34:09Z"
   },
   {
     "author": {

@@ -1,14 +1,14 @@
 {
-  "url": "https://api.github.com/repos/ethereum/remix-project/issues/323",
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2847",
   "repository_url": "https://api.github.com/repos/ethereum/remix-project",
-  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/323/labels{/name}",
-  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/323/comments",
-  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/323/events",
-  "html_url": "https://github.com/ethereum/remix-project/issues/323",
-  "id": 668622071,
-  "node_id": "MDU6SXNzdWU2Njg2MjIwNzE=",
-  "number": 323,
-  "title": "Incorrect error from remix-tests",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2847/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2847/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2847/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2847",
+  "id": 1358792578,
+  "node_id": "I_kwDODtLRw85Q_YeC",
+  "number": 2847,
+  "title": "terminal logs unnecessary empty object in logs",
   "user": {
     "login": "Aniket-Engg",
     "id": 30843294,
@@ -31,30 +31,18 @@
   },
   "labels": [
     {
-      "id": 2236071643,
-      "node_id": "MDU6TGFiZWwyMjM2MDcxNjQz",
-      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-tests",
-      "name": "remix-tests",
-      "color": "d1d86e",
-      "default": false,
-      "description": ""
+      "id": 1922155226,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjI2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/bug",
+      "name": "bug",
+      "color": "d73a4a",
+      "default": true,
+      "description": "Something isn't working"
     }
   ],
-  "state": "closed",
+  "state": "open",
   "locked": false,
-  "assignee": null,
-  "assignees": [
-
-  ],
-  "milestone": null,
-  "comments": 1,
-  "created_at": "2020-04-16T12:15:37Z",
-  "updated_at": "2022-09-01T09:01:02Z",
-  "closed_at": "2022-09-01T09:01:02Z",
-  "author_association": "MEMBER",
-  "active_lock_reason": null,
-  "body": "```\r\n pragma solidity ^0.6.0;\r\n      contract failingDeploy {\r\n          constructor() public {\r\n              revert('Deploy Failed');\r\n          }\r\n      }\r\n```\r\nthrows error `contract deployment failed after trying twice: The contract code couldn't be stored, please check your gas limit.` in `Solidity Unit Testing` plugin but in `Deploy & Run` it shows `revert` error.",
-  "closed_by": {
+  "assignee": {
     "login": "Aniket-Engg",
     "id": 30843294,
     "node_id": "MDQ6VXNlcjMwODQzMjk0",
@@ -74,30 +62,8 @@
     "type": "User",
     "site_admin": false
   },
-  "reactions": {
-    "url": "https://api.github.com/repos/ethereum/remix-project/issues/323/reactions",
-    "total_count": 0,
-    "+1": 0,
-    "-1": 0,
-    "laugh": 0,
-    "hooray": 0,
-    "confused": 0,
-    "heart": 0,
-    "rocket": 0,
-    "eyes": 0
-  },
-  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/323/timeline",
-  "performed_via_github_app": null,
-  "state_reason": "completed"
-}
-[
-  {
-    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1233975304",
-    "html_url": "https://github.com/ethereum/remix-project/issues/323#issuecomment-1233975304",
-    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/323",
-    "id": 1233975304,
-    "node_id": "IC_kwDODtLRw85JjPgI",
-    "user": {
+  "assignees": [
+    {
       "login": "Aniket-Engg",
       "id": 30843294,
       "node_id": "MDQ6VXNlcjMwODQzMjk0",
@@ -116,23 +82,33 @@
       "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
       "type": "User",
       "site_admin": false
-    },
-    "created_at": "2022-09-01T09:01:02Z",
-    "updated_at": "2022-09-01T09:01:02Z",
-    "author_association": "MEMBER",
-    "body": "This seems fixed as both the plugins now show `revert` with error message.\r\n\r\n![Screenshot 2022-09-01 at 2 30 06 PM](https://user-images.githubusercontent.com/30843294/187875414-c5996270-1559-4c18-ad8c-10b2645a08b8.png)\r\n\r\n![Screenshot 2022-09-01 at 2 30 21 PM](https://user-images.githubusercontent.com/30843294/187875448-c4ead3e2-51af-4267-9a03-4ffda276f86f.png)\r\n\r\n",
-    "reactions": {
-      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1233975304/reactions",
-      "total_count": 0,
-      "+1": 0,
-      "-1": 0,
-      "laugh": 0,
-      "hooray": 0,
-      "confused": 0,
-      "heart": 0,
-      "rocket": 0,
-      "eyes": 0
-    },
-    "performed_via_github_app": null
-  }
+    }
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-01T12:46:31Z",
+  "updated_at": "2022-09-01T12:46:43Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Running deploy script shows:\r\n\r\n```\r\ndeploying Storage\r\n{} \r\n{} \r\n{} \r\n{} \r\n{} \r\naddress: 0xd9145CCE52D386f254917e481eB44e9943F39138\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2847/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2847/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
 ]

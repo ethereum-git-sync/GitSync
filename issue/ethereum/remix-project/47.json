@@ -58,11 +58,11 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2020-05-04T14:14:38Z",
-  "updated_at": "2020-07-24T11:34:09Z",
+  "updated_at": "2022-09-01T08:49:36Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "- [ ] Improve contract name of generated sample test file ethereum/remix-ide#2758 \r\n- [ ] Discuss and decide where should generated sample test file reside in file explorer ethereum/remix-ide#2765 \r\n- [ ] Add custom transaction context tests for 'Solidity Unit Testing' ethereum/remix-project#26 \r\n- [ ] When test results are: \r\n```\r\ntotalPassing: 0\r\ntotalFailing: 0\r\ntotalTime: 0\r\n```\r\nOn UI, it shows PASS without any tests summary",
+  "body": "- [ ] Improve contract name of generated sample test file ethereum/remix-ide#2758 \r\n- [x] Discuss and decide where should generated sample test file reside in file explorer ethereum/remix-ide#2765 \r\n- [x] Add custom transaction context tests for 'Solidity Unit Testing' ethereum/remix-project#26 \r\n- [ ] When test results are: \r\n```\r\ntotalPassing: 0\r\ntotalFailing: 0\r\ntotalTime: 0\r\n```\r\nOn UI, it shows PASS without any tests summary",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/47/reactions",

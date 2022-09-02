@@ -1,11 +1,51 @@
 [
   {
     "author": {
+      "login": "beetrootkid"
+    },
+    "number": 220,
+    "title": "Identifier for builder to proposer transaction",
+    "updatedAt": "2022-09-01T22:19:54Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 145,
+    "title": "Do you want to run a builder? ",
+    "updatedAt": "2022-09-01T20:54:26Z"
+  },
+  {
+    "author": {
       "login": "nmoreau"
     },
     "number": 284,
     "title": "mev-boost crash on startup on Windows x64 ?",
-    "updatedAt": "2022-08-31T22:44:18Z"
+    "updatedAt": "2022-09-01T17:16:50Z"
+  },
+  {
+    "author": {
+      "login": "remyroy"
+    },
+    "number": 286,
+    "title": "Provide binaries with each release",
+    "updatedAt": "2022-09-01T15:59:13Z"
+  },
+  {
+    "author": {
+      "login": "2019jack"
+    },
+    "number": 285,
+    "title": "The builder block fee receiving address has been changed",
+    "updatedAt": "2022-09-01T13:52:04Z"
+  },
+  {
+    "author": {
+      "login": "danhsiu"
+    },
+    "number": 281,
+    "title": "502 - Failed to verify validator signature",
+    "updatedAt": "2022-09-01T13:33:22Z"
   },
   {
     "author": {
@@ -22,14 +62,6 @@
     "number": 243,
     "title": "Bug Bounty",
     "updatedAt": "2022-08-31T16:05:26Z"
-  },
-  {
-    "author": {
-      "login": "danhsiu"
-    },
-    "number": 281,
-    "title": "502 - Failed to verify validator signature",
-    "updatedAt": "2022-08-31T09:20:55Z"
   },
   {
     "author": {
@@ -62,14 +94,6 @@
     "number": 277,
     "title": "Truncated fork version hex results in corrupted data",
     "updatedAt": "2022-08-30T18:44:16Z"
-  },
-  {
-    "author": {
-      "login": "beetrootkid"
-    },
-    "number": 220,
-    "title": "Identifier for builder to proposer transaction",
-    "updatedAt": "2022-08-29T17:03:20Z"
   },
   {
     "author": {
@@ -110,14 +134,6 @@
     "number": 245,
     "title": "502 During Validator Registration with an Exited Validator",
     "updatedAt": "2022-08-25T08:58:24Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 145,
-    "title": "Do you want to run a builder? ",
-    "updatedAt": "2022-08-24T22:53:57Z"
   },
   {
     "author": {

@@ -39,9 +39,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-08-31T22:44:18Z",
-  "updated_at": "2022-08-31T22:44:18Z",
+  "updated_at": "2022-09-01T17:16:50Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -64,5 +64,92 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1234308468",
+    "html_url": "https://github.com/flashbots/mev-boost/issues/284#issuecomment-1234308468",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost/issues/284",
+    "id": 1234308468,
+    "node_id": "IC_kwDOGZSKs85Jkg10",
+    "user": {
+      "login": "metachris",
+      "id": 116939,
+      "node_id": "MDQ6VXNlcjExNjkzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/metachris",
+      "html_url": "https://github.com/metachris",
+      "followers_url": "https://api.github.com/users/metachris/followers",
+      "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+      "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+      "organizations_url": "https://api.github.com/users/metachris/orgs",
+      "repos_url": "https://api.github.com/users/metachris/repos",
+      "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/metachris/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-01T13:48:58Z",
+    "updated_at": "2022-09-01T13:49:14Z",
+    "author_association": "COLLABORATOR",
+    "body": "What may help is using the portable build.\r\n\r\nPlease try either cloning the repo and building with `make build-portable`, or use one of the portable Docker images: https://hub.docker.com/r/flashbots/mev-boost/tags",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1234308468/reactions",
+      "total_count": 1,
+      "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1234563874",
+    "html_url": "https://github.com/flashbots/mev-boost/issues/284#issuecomment-1234563874",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost/issues/284",
+    "id": 1234563874,
+    "node_id": "IC_kwDOGZSKs85JlfMi",
+    "user": {
+      "login": "nmoreau",
+      "id": 5418582,
+      "node_id": "MDQ6VXNlcjU0MTg1ODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5418582?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nmoreau",
+      "html_url": "https://github.com/nmoreau",
+      "followers_url": "https://api.github.com/users/nmoreau/followers",
+      "following_url": "https://api.github.com/users/nmoreau/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nmoreau/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nmoreau/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nmoreau/subscriptions",
+      "organizations_url": "https://api.github.com/users/nmoreau/orgs",
+      "repos_url": "https://api.github.com/users/nmoreau/repos",
+      "events_url": "https://api.github.com/users/nmoreau/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nmoreau/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-01T17:16:50Z",
+    "updated_at": "2022-09-01T17:16:50Z",
+    "author_association": "NONE",
+    "body": "Thanks Chris, \r\nThe docker portable build worked. Yeah! I am unblocked.\r\n\r\nHowever the portable-build compilation failled.\r\nThe following commands in windows shell :\r\n```\r\nset CGO_CFLAGS=-\"O -D__BLST_PORTABLE__\"\r\ngo install github.com/flashbots/mev-boost@latest\r\n```\r\nfails on windows with the following error :\r\n\r\n```\r\n# runtime/cgo\r\ngcc: error: unrecognized command-line option '-\"O'; did you mean '-O'?\r\n```\r\nI am documenting this in case we want to get a comprehensive doc for solo stakers on Windows ;) - Diversity matters.",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1234563874/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

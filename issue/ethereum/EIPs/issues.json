@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "poojaranjan"
+    },
+    "number": 5190,
+    "title": "A recommendation to refer to an ERC category proposal (for documentation)",
+    "updatedAt": "2022-09-01T17:18:07Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5488,
+    "title": "Add finalized date to EIPs.",
+    "updatedAt": "2022-09-01T02:27:48Z"
+  },
+  {
+    "author": {
       "login": "fulldecent"
     },
     "number": 5424,
@@ -110,22 +126,6 @@
     "number": 5546,
     "title": "error in EIP3475",
     "updatedAt": "2022-08-27T20:59:55Z"
-  },
-  {
-    "author": {
-      "login": "poojaranjan"
-    },
-    "number": 5190,
-    "title": "A recommendation to refer to an ERC category proposal (for documentation)",
-    "updatedAt": "2022-08-26T22:34:14Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5488,
-    "title": "Add finalized date to EIPs.",
-    "updatedAt": "2022-08-26T22:34:04Z"
   },
   {
     "author": {

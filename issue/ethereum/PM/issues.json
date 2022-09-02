@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "tvanepps"
+    },
+    "number": 613,
+    "title": "KZG-Ceremony #7",
+    "updatedAt": "2022-09-01T18:15:24Z"
+  },
+  {
+    "author": {
       "login": "timbeiko"
     },
     "number": 609,
@@ -14,14 +22,6 @@
     "number": 593,
     "title": "KZG-Ceremony Call #6",
     "updatedAt": "2022-08-31T21:16:47Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 613,
-    "title": "KZG-Ceremony #7",
-    "updatedAt": "2022-08-31T20:13:18Z"
   },
   {
     "author": {

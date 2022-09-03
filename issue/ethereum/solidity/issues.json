@@ -1,19 +1,35 @@
 [
   {
     "author": {
-      "login": "zemse"
+      "login": "nventuro"
     },
-    "number": 11691,
-    "title": "Feature Request: Combine nested structs in single storage slots",
-    "updatedAt": "2022-09-01T22:38:28Z"
+    "number": 13475,
+    "title": "solc wastes memory when using structs",
+    "updatedAt": "2022-09-02T22:05:02Z"
   },
   {
     "author": {
-      "login": "hrkrshnn"
+      "login": "stevennevins"
     },
-    "number": 13471,
-    "title": "Missing \"statement has no effect\" diagnostic",
-    "updatedAt": "2022-09-01T22:19:05Z"
+    "number": 12649,
+    "title": "LSP Code Folding - Improper folding",
+    "updatedAt": "2022-09-02T20:07:02Z"
+  },
+  {
+    "author": {
+      "login": "gpersoon"
+    },
+    "number": 13035,
+    "title": "LSP: `textDocument/definition` always returns \"result\":[]",
+    "updatedAt": "2022-09-02T13:37:03Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 12483,
+    "title": "Disallow virtual modifiers",
+    "updatedAt": "2022-09-02T13:29:36Z"
   },
   {
     "author": {
@@ -21,7 +37,31 @@
     },
     "number": 13472,
     "title": "Assembly libraries",
-    "updatedAt": "2022-09-01T22:18:30Z"
+    "updatedAt": "2022-09-02T13:26:08Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 9282,
+    "title": "File-level inline assembly blocks",
+    "updatedAt": "2022-09-02T11:25:16Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 13471,
+    "title": "Missing \"statement has no effect\" diagnostic",
+    "updatedAt": "2022-09-02T08:54:47Z"
+  },
+  {
+    "author": {
+      "login": "zemse"
+    },
+    "number": 11691,
+    "title": "Feature Request: Combine nested structs in single storage slots",
+    "updatedAt": "2022-09-01T22:38:28Z"
   },
   {
     "author": {
@@ -414,14 +454,6 @@
     "number": 13432,
     "title": "[SMTChecker] ICE because of unknown delete expression",
     "updatedAt": "2022-08-25T04:28:08Z"
-  },
-  {
-    "author": {
-      "login": "gpersoon"
-    },
-    "number": 13035,
-    "title": "LSP: `textDocument/definition` always returns \"result\":[]",
-    "updatedAt": "2022-08-24T16:01:53Z"
   },
   {
     "author": {
@@ -1037,14 +1069,6 @@
     },
     "number": 5201,
     "title": "Investigate staticcall/delegatecall trampoline",
-    "updatedAt": "2022-08-17T13:50:04Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 9282,
-    "title": "File-level inline assembly blocks",
     "updatedAt": "2022-08-17T13:50:04Z"
   },
   {
@@ -3438,14 +3462,6 @@
     "number": 10690,
     "title": "[Optimizer] Redundant mstore remover",
     "updatedAt": "2022-08-17T13:48:44Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 12483,
-    "title": "Disallow virtual modifiers",
-    "updatedAt": "2022-08-17T13:48:37Z"
   },
   {
     "author": {
@@ -6198,14 +6214,6 @@
     "number": 11042,
     "title": "Import errors should include full path of the file that is being imported",
     "updatedAt": "2022-02-08T16:17:09Z"
-  },
-  {
-    "author": {
-      "login": "stevennevins"
-    },
-    "number": 12649,
-    "title": "LSP Code Folding - Improper folding",
-    "updatedAt": "2022-02-08T15:16:09Z"
   },
   {
     "author": {

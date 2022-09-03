@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13475",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13475/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13475/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13475/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13475",
+  "id": 1360644777,
+  "node_id": "I_kwDOAm_5kc5RGcqp",
+  "number": 13475,
+  "title": "solc wastes memory when using structs",
+  "user": {
+    "login": "nventuro",
+    "id": 2530770,
+    "node_id": "MDQ6VXNlcjI1MzA3NzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2530770?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nventuro",
+    "html_url": "https://github.com/nventuro",
+    "followers_url": "https://api.github.com/users/nventuro/followers",
+    "following_url": "https://api.github.com/users/nventuro/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nventuro/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nventuro/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nventuro/subscriptions",
+    "organizations_url": "https://api.github.com/users/nventuro/orgs",
+    "repos_url": "https://api.github.com/users/nventuro/repos",
+    "events_url": "https://api.github.com/users/nventuro/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nventuro/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-02T22:04:43Z",
+  "updated_at": "2022-09-02T22:05:02Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "There seems to be a lot of memory overallocation when dealing with `memory` structs, depending on the exact construct used to work with them. Apparently the situation improved in v0.7.6, which lists 'avoid memory allocation for default value if it is not used' on its changelog.\r\n\r\nPrior to that, the following snippet:\r\n\r\n```\r\nstruct MyNiceStruct {\r\n    uint256 a;\r\n    uint256 b;\r\n}\r\n\r\nfunction alloc() private pure returns (MyNiceStruct memory) {\r\n    MyNiceStruct memory myStruct = MyNiceStruct({ a: 3, b: 4 });\r\n    return myStruct;\r\n}\r\n```\r\n\r\nresults in 192 bytes being allocated, corresponding to 3 (!!!) instances of `MyNiceStruct`. These allocations are apparently triggered by:\r\n a) the declaration of a variable in the function\r\n b) the assignment using the special struct assignment syntax\r\n c) the fact that there's a struct return value\r\n\r\nIf the result of `alloc()` were to be assigned to a struct at the callsite, that'd result in yet another allocation.\r\n\r\n----\r\n\r\nIn current versions, all the way up to 0.8.16, the situation is still bad, though not _quite_ as bad. The assignment to the result of `alloc()` seems to no longer cause an allocation, but I still run into double allocations if I either use the `MyNiceStruct({ ... })` initialization syntax, or declare a local struct instead of using a named return value.\r\n\r\nThe following seems to be the only way to make the compiler allocate space for just one instance of the struct:\r\n\r\n```\r\nfunction alloc() private pure returns (MyNiceStruct memory myStruct) {\r\n    myStruct.a = 3;\r\n    myStruct.b = 4;\r\n}\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13475/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13475/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

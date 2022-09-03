@@ -31,13 +31,31 @@
   },
   "labels": [
     {
-      "id": 785717317,
-      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
-      "name": "language design :rage4:",
-      "color": "9d76d3",
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
       "default": false,
-      "description": "Any changes to the language, e.g. new features"
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438155599,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjhTw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20impact",
+      "name": "medium impact",
+      "color": "314aff",
+      "default": false,
+      "description": "Default level of impact"
+    },
+    {
+      "id": 4438481746,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3bUg",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have%20eventually",
+      "name": "must have eventually",
+      "color": "ffb04d",
+      "default": false,
+      "description": "Something we consider essential but not enough to prevent us from releasing Solidity 1.0 without it."
     }
   ],
   "state": "open",
@@ -47,9 +65,9 @@
 
   ],
   "milestone": null,
-  "comments": 8,
+  "comments": 9,
   "created_at": "2020-07-01T10:01:10Z",
-  "updated_at": "2022-08-17T13:50:04Z",
+  "updated_at": "2022-09-02T11:25:16Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -412,6 +430,50 @@
     "body": "Added some examples in #10282: https://github.com/ethereum/solidity/blob/stdlib/stdlib/assembly.sol",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/726395133/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1235381791",
+    "html_url": "https://github.com/ethereum/solidity/issues/9282#issuecomment-1235381791",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/9282",
+    "id": 1235381791,
+    "node_id": "IC_kwDOAm_5kc5Jom4f",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-02T11:24:21Z",
+    "updated_at": "2022-09-02T11:25:16Z",
+    "author_association": "MEMBER",
+    "body": "Not sure why we were wondering if this is useful - at the moment I'd say it rather clearly is and we just had a similar request in https://github.com/ethereum/solidity/issues/13472, so I'd say we can consider this as \"nice-to-have\" at least. And I don't see any open design questions or blockers on this.\r\n\r\nI'll actually even move it to \"must have eventually\".",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1235381791/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

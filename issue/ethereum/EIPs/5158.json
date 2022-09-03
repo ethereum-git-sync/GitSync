@@ -38,6 +38,15 @@
       "color": "CA3515",
       "default": true,
       "description": "If this is a PR, this PR fixes a bug. If this is an issue, this issue reports a bug."
+    },
+    {
+      "id": 4455843244,
+      "node_id": "LA_kwDOAq426M8AAAABCZbFrA",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/w-stale",
+      "name": "w-stale",
+      "color": "000000",
+      "default": false,
+      "description": "Waiting on activity"
     }
   ],
   "state": "open",
@@ -47,9 +56,9 @@
 
   ],
   "milestone": null,
-  "comments": 3,
+  "comments": 4,
   "created_at": "2022-06-14T15:31:57Z",
-  "updated_at": "2022-08-26T22:32:58Z",
+  "updated_at": "2022-09-03T00:19:05Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -192,6 +201,50 @@
     "body": "This is still an issue",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1225831661/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1235996718",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5158#issuecomment-1235996718",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5158",
+    "id": 1235996718,
+    "node_id": "IC_kwDOAq426M5Jq9Au",
+    "user": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "created_at": "2022-09-03T00:19:05Z",
+    "updated_at": "2022-09-03T00:19:05Z",
+    "author_association": "NONE",
+    "body": "There has been no activity on this issue for 1 week. It will be closed after 3 months of inactivity.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1235996718/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

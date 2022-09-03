@@ -1,11 +1,59 @@
 [
   {
     "author": {
-      "login": "poojaranjan"
+      "login": "SamWilsn"
     },
-    "number": 5190,
-    "title": "A recommendation to refer to an ERC category proposal (for documentation)",
-    "updatedAt": "2022-09-01T17:18:07Z"
+    "number": 5352,
+    "title": "Display a \"citation\" when hovering over links to other EIPs",
+    "updatedAt": "2022-09-03T00:19:12Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5298,
+    "title": "Pin all GitHub Action dependencies to hash version.",
+    "updatedAt": "2022-09-03T00:19:11Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5294,
+    "title": "How should we pick EIP numbers?",
+    "updatedAt": "2022-09-03T00:19:10Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5274,
+    "title": "Proposal for EIP preamble: include separate `relates-to:` as an optional field",
+    "updatedAt": "2022-09-03T00:19:08Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5265,
+    "title": "Proposal to include `Superseded` status and `superseded-by: ` (eip number) preemble section",
+    "updatedAt": "2022-09-03T00:19:07Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5158,
+    "title": "Example relative link in EIP-1 is rendered as absolute",
+    "updatedAt": "2022-09-03T00:19:05Z"
+  },
+  {
+    "author": {
+      "login": "Arachnid"
+    },
+    "number": 4335,
+    "title": "EIP registries",
+    "updatedAt": "2022-09-03T00:19:04Z"
   },
   {
     "author": {
@@ -13,7 +61,15 @@
     },
     "number": 5488,
     "title": "Add finalized date to EIPs.",
-    "updatedAt": "2022-09-01T02:27:48Z"
+    "updatedAt": "2022-09-02T21:23:36Z"
+  },
+  {
+    "author": {
+      "login": "poojaranjan"
+    },
+    "number": 5190,
+    "title": "A recommendation to refer to an ERC category proposal (for documentation)",
+    "updatedAt": "2022-09-01T17:18:07Z"
   },
   {
     "author": {
@@ -139,65 +195,9 @@
     "author": {
       "login": "xinbenlv"
     },
-    "number": 5274,
-    "title": "Proposal for EIP preamble: include separate `relates-to:` as an optional field",
-    "updatedAt": "2022-08-26T22:33:45Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5265,
-    "title": "Proposal to include `Superseded` status and `superseded-by: ` (eip number) preemble section",
-    "updatedAt": "2022-08-26T22:33:41Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5294,
-    "title": "How should we pick EIP numbers?",
-    "updatedAt": "2022-08-26T22:33:31Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5158,
-    "title": "Example relative link in EIP-1 is rendered as absolute",
-    "updatedAt": "2022-08-26T22:32:58Z"
-  },
-  {
-    "author": {
-      "login": "Arachnid"
-    },
-    "number": 4335,
-    "title": "EIP registries",
-    "updatedAt": "2022-08-26T22:32:42Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5352,
-    "title": "Display a \"citation\" when hovering over links to other EIPs",
-    "updatedAt": "2022-08-26T22:32:24Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
     "number": 5408,
     "title": "Create an EIP ExternalLinkArchiveBot (EIP ELABot)",
     "updatedAt": "2022-08-26T22:32:22Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5298,
-    "title": "Pin all GitHub Action dependencies to hash version.",
-    "updatedAt": "2022-08-26T22:32:04Z"
   },
   {
     "author": {

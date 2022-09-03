@@ -1,6 +1,70 @@
 [
   {
     "author": {
+      "login": "jdevcs"
+    },
+    "number": 25671,
+    "title": "Method handler crashed - getFeeHistory",
+    "updatedAt": "2022-09-02T21:13:17Z"
+  },
+  {
+    "author": {
+      "login": "quickchase"
+    },
+    "number": 25650,
+    "title": "Incorrect GasRefund in debug_traceCall with custom tracer",
+    "updatedAt": "2022-09-02T15:08:27Z"
+  },
+  {
+    "author": {
+      "login": "zhongdonglin"
+    },
+    "number": 25665,
+    "title": "ethminer can't find mining work in geth's rpc(8545)",
+    "updatedAt": "2022-09-02T14:53:06Z"
+  },
+  {
+    "author": {
+      "login": "rjl493456442"
+    },
+    "number": 25390,
+    "title": "all: PRs for Path-based state scheme",
+    "updatedAt": "2022-09-02T12:07:25Z"
+  },
+  {
+    "author": {
+      "login": "darren"
+    },
+    "number": 25657,
+    "title": "state.(*cachingDB).CopyTrie encounter panic: unknown trie type <nil>",
+    "updatedAt": "2022-09-02T06:41:48Z"
+  },
+  {
+    "author": {
+      "login": "abc-1211"
+    },
+    "number": 25664,
+    "title": "Geth docker full node synchronisation failed. err=\"retrieved hash chain is invalid: missing parent\"",
+    "updatedAt": "2022-09-02T04:34:58Z"
+  },
+  {
+    "author": {
+      "login": "FeurJak"
+    },
+    "number": 25663,
+    "title": "Importing types.TxData interface within another package",
+    "updatedAt": "2022-09-02T04:23:35Z"
+  },
+  {
+    "author": {
+      "login": "lcgogo"
+    },
+    "number": 25594,
+    "title": "How does geth communicate with prysm?",
+    "updatedAt": "2022-09-02T03:04:09Z"
+  },
+  {
+    "author": {
       "login": "wjmelements"
     },
     "number": 25614,
@@ -30,14 +94,6 @@
     "number": 25659,
     "title": "online pruning feature on ETH",
     "updatedAt": "2022-09-01T10:25:28Z"
-  },
-  {
-    "author": {
-      "login": "quickchase"
-    },
-    "number": 25650,
-    "title": "Incorrect GasRefund in debug_traceCall with custom tracer",
-    "updatedAt": "2022-09-01T09:02:11Z"
   },
   {
     "author": {
@@ -78,14 +134,6 @@
     "number": 25649,
     "title": "invalid merkle root    Skip duplicated bad block",
     "updatedAt": "2022-09-01T07:12:18Z"
-  },
-  {
-    "author": {
-      "login": "darren"
-    },
-    "number": 25657,
-    "title": "state.(*cachingDB).CopyTrie encounter panic: unknown trie type <nil>",
-    "updatedAt": "2022-09-01T05:04:33Z"
   },
   {
     "author": {
@@ -254,14 +302,6 @@
     "number": 25623,
     "title": "Will --syncmode=light work post-merge?",
     "updatedAt": "2022-08-30T08:30:32Z"
-  },
-  {
-    "author": {
-      "login": "lcgogo"
-    },
-    "number": 25594,
-    "title": "How does geth communicate with prysm?",
-    "updatedAt": "2022-08-30T06:49:49Z"
   },
   {
     "author": {
@@ -678,14 +718,6 @@
     "number": 25347,
     "title": "memory consumption keeps increasing and killed by OOM killer",
     "updatedAt": "2022-08-16T08:59:12Z"
-  },
-  {
-    "author": {
-      "login": "rjl493456442"
-    },
-    "number": 25390,
-    "title": "all: PRs for Path-based state scheme",
-    "updatedAt": "2022-08-16T08:47:12Z"
   },
   {
     "author": {

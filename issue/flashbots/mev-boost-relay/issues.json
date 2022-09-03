@@ -1,11 +1,19 @@
 [
   {
     "author": {
+      "login": "metachris"
+    },
+    "number": 54,
+    "title": "Allow exited validators ",
+    "updatedAt": "2022-09-02T11:51:59Z"
+  },
+  {
+    "author": {
       "login": "come-maiz"
     },
     "number": 29,
     "title": "Make the relay free software",
-    "updatedAt": "2022-08-24T16:09:19Z"
+    "updatedAt": "2022-09-02T11:51:52Z"
   },
   {
     "author": {
@@ -46,14 +54,6 @@
     "number": 28,
     "title": "Rename this repository to mev-boost-relay",
     "updatedAt": "2022-08-16T14:45:55Z"
-  },
-  {
-    "author": {
-      "login": "metachris"
-    },
-    "number": 54,
-    "title": "Allow exited validators ",
-    "updatedAt": "2022-08-14T13:08:45Z"
   },
   {
     "author": {

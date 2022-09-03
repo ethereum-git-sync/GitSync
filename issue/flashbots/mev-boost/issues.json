@@ -5,7 +5,7 @@
     },
     "number": 220,
     "title": "Identifier for builder to proposer transaction",
-    "updatedAt": "2022-09-01T22:19:54Z"
+    "updatedAt": "2022-09-02T15:41:19Z"
   },
   {
     "author": {
@@ -13,7 +13,71 @@
     },
     "number": 145,
     "title": "Do you want to run a builder? ",
-    "updatedAt": "2022-09-01T20:54:26Z"
+    "updatedAt": "2022-09-02T11:23:13Z"
+  },
+  {
+    "author": {
+      "login": "yorickdowne"
+    },
+    "number": 275,
+    "title": "Feature: Offer a portable build docker hub image",
+    "updatedAt": "2022-09-02T10:25:00Z"
+  },
+  {
+    "author": {
+      "login": "tbenr"
+    },
+    "number": 287,
+    "title": "Set default `-request-timeout` to be consistent with `BUILDER_PROPOSAL_DELAY_TOLERANCE`",
+    "updatedAt": "2022-09-02T09:14:27Z"
+  },
+  {
+    "author": {
+      "login": "2019jack"
+    },
+    "number": 285,
+    "title": "The builder block fee receiving address has been changed",
+    "updatedAt": "2022-09-02T08:08:22Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 164,
+    "title": "Create an FAQ",
+    "updatedAt": "2022-09-02T08:08:11Z"
+  },
+  {
+    "author": {
+      "login": "Ruteri"
+    },
+    "number": 180,
+    "title": "Prepare a better guide for running mev-boost with a builder in a local private devnet",
+    "updatedAt": "2022-09-02T08:07:52Z"
+  },
+  {
+    "author": {
+      "login": "adv0r"
+    },
+    "number": 255,
+    "title": "Lighthouse release 3.0.0 is now compatible, maybe update the guide ",
+    "updatedAt": "2022-09-02T08:07:29Z"
+  },
+  {
+    "author": {
+      "login": "xerosanyam"
+    },
+    "number": 251,
+    "title": "error: could not create compact unwind for _blst_sha256_block_data_order: does not use RBP or RSP based frame",
+    "updatedAt": "2022-09-02T08:06:47Z"
+  },
+  {
+    "author": {
+      "login": "Jor-Tech"
+    },
+    "number": 256,
+    "title": "SIGILL: illegal instruction",
+    "updatedAt": "2022-09-02T08:06:37Z"
   },
   {
     "author": {
@@ -21,7 +85,15 @@
     },
     "number": 284,
     "title": "mev-boost crash on startup on Windows x64 ?",
-    "updatedAt": "2022-09-01T17:16:50Z"
+    "updatedAt": "2022-09-02T08:03:31Z"
+  },
+  {
+    "author": {
+      "login": "danhsiu"
+    },
+    "number": 281,
+    "title": "502 - Failed to verify validator signature",
+    "updatedAt": "2022-09-02T07:59:12Z"
   },
   {
     "author": {
@@ -30,30 +102,6 @@
     "number": 286,
     "title": "Provide binaries with each release",
     "updatedAt": "2022-09-01T15:59:13Z"
-  },
-  {
-    "author": {
-      "login": "2019jack"
-    },
-    "number": 285,
-    "title": "The builder block fee receiving address has been changed",
-    "updatedAt": "2022-09-01T13:52:04Z"
-  },
-  {
-    "author": {
-      "login": "danhsiu"
-    },
-    "number": 281,
-    "title": "502 - Failed to verify validator signature",
-    "updatedAt": "2022-09-01T13:33:22Z"
-  },
-  {
-    "author": {
-      "login": "yorickdowne"
-    },
-    "number": 275,
-    "title": "Feature: Offer a portable build docker hub image",
-    "updatedAt": "2022-08-31T18:03:34Z"
   },
   {
     "author": {
@@ -137,27 +185,11 @@
   },
   {
     "author": {
-      "login": "Jor-Tech"
-    },
-    "number": 256,
-    "title": "SIGILL: illegal instruction",
-    "updatedAt": "2022-08-24T09:48:10Z"
-  },
-  {
-    "author": {
       "login": "moshe-blox"
     },
     "number": 262,
     "title": "Frequent \"no bid received\"",
     "updatedAt": "2022-08-23T14:21:54Z"
-  },
-  {
-    "author": {
-      "login": "xerosanyam"
-    },
-    "number": 251,
-    "title": "error: could not create compact unwind for _blst_sha256_block_data_order: does not use RBP or RSP based frame",
-    "updatedAt": "2022-08-23T13:05:56Z"
   },
   {
     "author": {
@@ -174,14 +206,6 @@
     "number": 237,
     "title": "Open-source relay - which license to use?",
     "updatedAt": "2022-08-23T07:57:03Z"
-  },
-  {
-    "author": {
-      "login": "adv0r"
-    },
-    "number": 255,
-    "title": "Lighthouse release 3.0.0 is now compatible, maybe update the guide ",
-    "updatedAt": "2022-08-23T07:56:52Z"
   },
   {
     "author": {
@@ -318,14 +342,6 @@
     "number": 203,
     "title": "getHeader and submitBlindBlock latencies",
     "updatedAt": "2022-08-01T14:51:09Z"
-  },
-  {
-    "author": {
-      "login": "Ruteri"
-    },
-    "number": 180,
-    "title": "Prepare a better guide for running mev-boost with a builder in a local private devnet",
-    "updatedAt": "2022-08-01T14:19:19Z"
   },
   {
     "author": {
@@ -566,14 +582,6 @@
     "number": 62,
     "title": "Use BLSPublicKeys for the list of relays",
     "updatedAt": "2022-06-20T08:31:47Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 164,
-    "title": "Create an FAQ",
-    "updatedAt": "2022-06-19T17:38:16Z"
   },
   {
     "author": {

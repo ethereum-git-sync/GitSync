@@ -32,21 +32,40 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 3,
+  "comments": 4,
   "created_at": "2022-09-01T02:55:56Z",
-  "updated_at": "2022-09-01T13:52:04Z",
-  "closed_at": null,
+  "updated_at": "2022-09-02T08:08:22Z",
+  "closed_at": "2022-09-02T08:08:22Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "# Lighthouse fee recipient set :\r\n\r\n![image](https://user-images.githubusercontent.com/49616005/187822003-1d5bb036-66dd-43ab-978a-afc6194d2aea.png)\r\n\r\n# mev-boost builder block:\r\n\r\ntime=\"2022-08-31T17:32:12Z\" level=info msg=\"best bid\" blockHash=0x28ee326e7f191fe840a3e27ef00149db9161b17552bf34195c13ca044edc8f81 blockNumber=7504419 method=getHeader module=service parentHash=0xc45f3b73f4cbffaf4152bed6aa19da27d30db1e91aeb03c53347cd98c11e0ce3 pubkey=0x852947a364193dcd3481013e2b31920b9ef35ecb2f5196b63da5140f586575481ec837b18fe0a551b68811e701487caa relays=\"https://0xafa4c6985aa049fb79dd37010438cfebeb0f2bd42b115b89dd678dab0670c1de38da0c4e9138c9290a398ecd9a0b3110@builder-relay-goerli.flashbots.net\" slot=3788261 txRoot=0x5b318744de05c4cd762562e4a72151d722e412715880259de31e73688f25cca1 value=27517111615818308\r\ntime=\"2022-08-31T17:32:12Z\" level=info msg=\"http: GET /eth/v1/builder/header/3788261/0xc45f3b73f4cbffaf4152bed6aa19da27d30db1e91aeb03c53347cd98c11e0ce3/0x852947a364193dcd3481013e2b31920b9ef35ecb2f5196b63da5140f586575481ec837b18fe0a551b68811e701487caa 200\" duration=0.241650665 method=GET module=service path=/eth/v1/builder/header/3788261/0xc45f3b73f4cbffaf4152bed6aa19da27d30db1e91aeb03c53347cd98c11e0ce3/0x852947a364193dcd3481013e2b31920b9ef35ecb2f5196b63da5140f586575481ec837b18fe0a551b68811e701487caa status=200\r\ntime=\"2022-08-31T17:32:15Z\" level=info msg=\"received payload from relay\" blockHash=0x28ee326e7f191fe840a3e27ef00149db9161b17552bf34195c13ca044edc8f81 method=getPayload module=service url=\"https://builder-relay-goerli.flashbots.net/eth/v1/builder/blinded_blocks\"\r\n\r\n# https://goerli.etherscan.io/block/7504419\r\n\r\n @metachris  Looking at the link above, I am running lighthous to set the receiving fee address: 0x56dc1A196Aa187D913e431A61f6E7AeB7b85E6bB, but the mev-boost package block builder fee address is: 0xb64a30399f7f6b0c154c2e7af0a3ec7b0a5b131a, I have observed-2 days, is this mev-boost bug?\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "metachris",
+    "id": 116939,
+    "node_id": "MDQ6VXNlcjExNjkzOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/metachris",
+    "html_url": "https://github.com/metachris",
+    "followers_url": "https://api.github.com/users/metachris/followers",
+    "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+    "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+    "organizations_url": "https://api.github.com/users/metachris/orgs",
+    "repos_url": "https://api.github.com/users/metachris/repos",
+    "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/metachris/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/flashbots/mev-boost/issues/285/reactions",
     "total_count": 0,
@@ -61,7 +80,7 @@
   },
   "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/285/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -193,6 +212,50 @@
       "heart": 0,
       "rocket": 0,
       "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1235192200",
+    "html_url": "https://github.com/flashbots/mev-boost/issues/285#issuecomment-1235192200",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost/issues/285",
+    "id": 1235192200,
+    "node_id": "IC_kwDOGZSKs85Jn4mI",
+    "user": {
+      "login": "metachris",
+      "id": 116939,
+      "node_id": "MDQ6VXNlcjExNjkzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/metachris",
+      "html_url": "https://github.com/metachris",
+      "followers_url": "https://api.github.com/users/metachris/followers",
+      "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+      "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+      "organizations_url": "https://api.github.com/users/metachris/orgs",
+      "repos_url": "https://api.github.com/users/metachris/repos",
+      "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/metachris/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-02T08:00:16Z",
+    "updated_at": "2022-09-02T08:00:16Z",
+    "author_association": "COLLABORATOR",
+    "body": "> Can you charge Flashbots a percentage for block builders?\r\n\r\nNot sure what you mean",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1235192200/reactions",
+      "total_count": 1,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 1
     },
     "performed_via_github_app": null
   }

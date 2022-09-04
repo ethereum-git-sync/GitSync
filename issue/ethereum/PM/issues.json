@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "djrtwo"
+    },
+    "number": 598,
+    "title": "Consensus-layer Call 94",
+    "updatedAt": "2022-09-03T09:24:37Z"
+  },
+  {
+    "author": {
       "login": "tvanepps"
     },
     "number": 613,
@@ -30,14 +38,6 @@
     "number": 599,
     "title": "Merge Community Call #7",
     "updatedAt": "2022-08-30T16:36:42Z"
-  },
-  {
-    "author": {
-      "login": "djrtwo"
-    },
-    "number": 598,
-    "title": "Consensus-layer Call 94",
-    "updatedAt": "2022-08-25T14:40:05Z"
   },
   {
     "author": {

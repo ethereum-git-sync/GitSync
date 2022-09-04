@@ -1,6 +1,30 @@
 [
   {
     "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11278,
+    "title": "Try Catch for custom errors",
+    "updatedAt": "2022-09-03T21:54:37Z"
+  },
+  {
+    "author": {
+      "login": "wiasliaw"
+    },
+    "number": 13466,
+    "title": "Add a special comment for storage layout",
+    "updatedAt": "2022-09-03T16:54:44Z"
+  },
+  {
+    "author": {
+      "login": "Gilgames000"
+    },
+    "number": 12825,
+    "title": "LSP throwing an error on each and every character I type in the editor",
+    "updatedAt": "2022-09-03T15:09:36Z"
+  },
+  {
+    "author": {
       "login": "nventuro"
     },
     "number": 13475,
@@ -81,14 +105,6 @@
   },
   {
     "author": {
-      "login": "Gilgames000"
-    },
-    "number": 12825,
-    "title": "LSP throwing an error on each and every character I type in the editor",
-    "updatedAt": "2022-09-01T13:04:57Z"
-  },
-  {
-    "author": {
       "login": "Marenz"
     },
     "number": 13253,
@@ -134,14 +150,6 @@
     "number": 13284,
     "title": "solc --strict-assembly should have optimization disabled, but it still does some optimization for yul",
     "updatedAt": "2022-09-01T06:22:08Z"
-  },
-  {
-    "author": {
-      "login": "wiasliaw"
-    },
-    "number": 13466,
-    "title": "Add a special comment for storage layout",
-    "updatedAt": "2022-08-31T18:57:42Z"
   },
   {
     "author": {
@@ -1989,14 +1997,6 @@
     },
     "number": 8243,
     "title": "[Yul Optimizer] Make use of boolean types in the conditional simplifier",
-    "updatedAt": "2022-08-17T13:49:16Z"
-  },
-  {
-    "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11278,
-    "title": "Try Catch for custom errors",
     "updatedAt": "2022-08-17T13:49:16Z"
   },
   {
@@ -3857,7 +3857,7 @@
   },
   {
     "author": {
-      "login": "leandro-rodriguez"
+      "login": "leandro-driguez"
     },
     "number": 13364,
     "title": "Solidity compiler issue on Arch Linux",

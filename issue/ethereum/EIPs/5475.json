@@ -31,6 +31,15 @@
   },
   "labels": [
     {
+      "id": 4455843244,
+      "node_id": "LA_kwDOAq426M8AAAABCZbFrA",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/w-stale",
+      "name": "w-stale",
+      "color": "000000",
+      "default": false,
+      "description": "Waiting on activity"
+    },
+    {
       "id": 4468111640,
       "node_id": "LA_kwDOAq426M8AAAABClH5GA",
       "url": "https://api.github.com/repos/ethereum/EIPs/labels/question",
@@ -47,9 +56,9 @@
 
   ],
   "milestone": null,
-  "comments": 9,
+  "comments": 10,
   "created_at": "2022-08-17T11:58:53Z",
-  "updated_at": "2022-08-26T22:33:54Z",
+  "updated_at": "2022-09-04T00:22:43Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -456,6 +465,50 @@
     "body": "> > 712 is \"on mainnet\" (note: it isn't a core EIP).\r\n> \r\n> Aha. So implementations aren't forced to be in consensus the way clients are.\r\n> \r\n> > Nobody can use 712. It has two mutually exclusive specifications.\r\n> \r\n> From the discussion at #5457 it's clear that nobody has (or can) implement the spec as written, but that most (maybe all) implementations have implemented it in same way. So we have that kind of consensus, and the right thing to do is fix this as an errata.\r\n\r\nYes, @gcolvin , it came to our consensus that at the current snapshot of 712 it's incorrect and unimplementable. It needs some form of fixing. Recognizing the unimplementability, three options I personally put on the table: \r\n- Option (1) Fix the EIP in the number of 712, *but* change status from FINAL to something else. \r\n- Option (2) Fix fix EIP, but give it a different EIP-number, e.g. EIP-5712 updates(supersedes) EIP-712. \n- Option (3) Fix EIP in the number of 712, but during the fixing time, keep status as FINAL\n\nI have no concern for option 1 or 2, but i held pretty strong objection against option 3, reason being it undermines our credibility of \"FINAL\". Reader shall not read and attempt to implement a \"FINAL\"-marked EIP only to realize it is undergone normative change - assuming the fixing will take weeks to finalize and verified. I hope I make my rationale and thinking process clear. We look forward to your guidance our OG @gcolvin ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1220236992/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1236221189",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5475#issuecomment-1236221189",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5475",
+    "id": 1236221189,
+    "node_id": "IC_kwDOAq426M5Jrz0F",
+    "user": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "site_admin": false
+    },
+    "created_at": "2022-09-04T00:22:42Z",
+    "updated_at": "2022-09-04T00:22:42Z",
+    "author_association": "NONE",
+    "body": "There has been no activity on this issue for 1 week. It will be closed after 3 months of inactivity.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1236221189/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

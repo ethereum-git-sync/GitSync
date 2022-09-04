@@ -38,15 +38,6 @@
       "color": "CA3515",
       "default": true,
       "description": "If this is a PR, this PR fixes a bug. If this is an issue, this issue reports a bug."
-    },
-    {
-      "id": 4455843244,
-      "node_id": "LA_kwDOAq426M8AAAABCZbFrA",
-      "url": "https://api.github.com/repos/ethereum/EIPs/labels/w-stale",
-      "name": "w-stale",
-      "color": "000000",
-      "default": false,
-      "description": "Waiting on activity"
     }
   ],
   "state": "open",
@@ -56,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 4,
+  "comments": 5,
   "created_at": "2022-06-14T15:31:57Z",
-  "updated_at": "2022-09-03T00:19:05Z",
+  "updated_at": "2022-09-03T01:21:53Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -245,6 +236,50 @@
     "body": "There has been no activity on this issue for 1 week. It will be closed after 3 months of inactivity.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1235996718/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1236018115",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5158#issuecomment-1236018115",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5158",
+    "id": 1236018115,
+    "node_id": "IC_kwDOAq426M5JrCPD",
+    "user": {
+      "login": "SamWilsn",
+      "id": 57262657,
+      "node_id": "MDQ6VXNlcjU3MjYyNjU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57262657?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SamWilsn",
+      "html_url": "https://github.com/SamWilsn",
+      "followers_url": "https://api.github.com/users/SamWilsn/followers",
+      "following_url": "https://api.github.com/users/SamWilsn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SamWilsn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SamWilsn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SamWilsn/subscriptions",
+      "organizations_url": "https://api.github.com/users/SamWilsn/orgs",
+      "repos_url": "https://api.github.com/users/SamWilsn/repos",
+      "events_url": "https://api.github.com/users/SamWilsn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SamWilsn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-03T01:21:42Z",
+    "updated_at": "2022-09-03T01:21:42Z",
+    "author_association": "MEMBER",
+    "body": "Still broken.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1236018115/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

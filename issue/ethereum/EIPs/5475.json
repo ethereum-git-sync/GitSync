@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 4455843244,
-      "node_id": "LA_kwDOAq426M8AAAABCZbFrA",
-      "url": "https://api.github.com/repos/ethereum/EIPs/labels/w-stale",
-      "name": "w-stale",
-      "color": "000000",
-      "default": false,
-      "description": "Waiting on activity"
-    },
-    {
       "id": 4468111640,
       "node_id": "LA_kwDOAq426M8AAAABClH5GA",
       "url": "https://api.github.com/repos/ethereum/EIPs/labels/question",
@@ -56,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 10,
+  "comments": 11,
   "created_at": "2022-08-17T11:58:53Z",
-  "updated_at": "2022-09-04T00:22:43Z",
+  "updated_at": "2022-09-05T00:24:26Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -509,6 +500,50 @@
     "body": "There has been no activity on this issue for 1 week. It will be closed after 3 months of inactivity.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1236221189/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1236227995",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5475#issuecomment-1236227995",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5475",
+    "id": 1236227995,
+    "node_id": "IC_kwDOAq426M5Jr1eb",
+    "user": {
+      "login": "gcolvin",
+      "id": 16827129,
+      "node_id": "MDQ6VXNlcjE2ODI3MTI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16827129?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gcolvin",
+      "html_url": "https://github.com/gcolvin",
+      "followers_url": "https://api.github.com/users/gcolvin/followers",
+      "following_url": "https://api.github.com/users/gcolvin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gcolvin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gcolvin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gcolvin/subscriptions",
+      "organizations_url": "https://api.github.com/users/gcolvin/orgs",
+      "repos_url": "https://api.github.com/users/gcolvin/repos",
+      "events_url": "https://api.github.com/users/gcolvin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gcolvin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-04T01:20:17Z",
+    "updated_at": "2022-09-04T01:41:44Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "We need to specify an Errata section for EIPs and a process for creating them, @xinbenlv ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1236227995/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

@@ -32,21 +32,40 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 6,
+  "comments": 7,
   "created_at": "2022-08-23T10:52:13Z",
-  "updated_at": "2022-08-23T14:21:54Z",
-  "closed_at": null,
+  "updated_at": "2022-09-04T10:56:53Z",
+  "closed_at": "2022-09-04T10:55:43Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "#### Environment\r\n\r\nWe're rocking 2500 validators with..\r\n\r\n```\r\nLighthouse: v2.5.1\r\nmev-boost: v0.7.10\r\nNetwork: prater\r\nRelay: https://0xafa4c6985aa049fb79dd37010438cfebeb0f2bd42b115b89dd678dab0670c1de38da0c4e9138c9290a398ecd9a0b3110@builder-relay-goerli.flashbots.net\r\n```\r\n\r\n#### Issue\r\nAbout 60% of the proposals fallback to local EE (the other 40% are successfully built via mev-boost).\r\n\r\nWhen it happens, we see these errors in Lighthouse:\r\n\r\n```\r\nAug 21 14:02:25.958 INFO Requesting blinded header from connected builder, parent_hash: ..., pubkey: ..., slot: Slot(...), service: exec\r\nAug 21 14:02:26.258 INFO No payload provided by connected builder. Attempting to propose through local execution engine, service: exec\r\n```\r\n\r\nAnd these errors in mev-boost:\r\n\r\n```\r\ntime=\"2022-08-21T14:02:26Z\" level=info msg=\"no bid received\" method=getHeader module=service parentHash=0xdffccc7de563f586e027d563c7e5df860155d2c0aecc87f392aac8aece7e9fc4 pubkey=0x884fcee670d202053d48e64561d3f53f8478fa682f6f2a9676db082c8aa409e3b9fc6f132665d1f968758346a612c8cd slot=3715212\r\ntime=\"2022-08-21T14:02:26Z\" level=info msg=\"http: GET /eth/v1/builder/header/3715212/0xdffccc7de563f586e027d563c7e5df860155d2c0aecc87f392aac8aece7e9fc4/0x884fcee670d202053d48e64561d3f53f8478fa682f6f2a9676db082c8aa409e3b9fc6f132665d1f968758346a612c8cd 204\" duration=0.096443931 method=GET module=service path=/eth/v1/builder/header/3715212/0xdffccc7de563f586e027d563c7e5df860155d2c0aecc87f392aac8aece7e9fc4/0x884fcee670d202053d48e64561d3f53f8478fa682f6f2a9676db082c8aa409e3b9fc6f132665d1f968758346a612c8cd\r\n```\r\n\r\n#### Notes\r\n- Reproduced on Sepolia with Flashbots' relay (2 weeks ago)\r\n- We run a custom-built VC (instead of Lighthouse's), but correct me if I'm wrong, since VC isn't involved in the bidding flow, it's unlikely to be the culprit?\r\n\r\n---\r\n\r\nDoes anyone else have this issue as frequently or at all? Thanks 🙏",
-  "closed_by": null,
+  "closed_by": {
+    "login": "moshe-blox",
+    "id": 89339422,
+    "node_id": "MDQ6VXNlcjg5MzM5NDIy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/89339422?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/moshe-blox",
+    "html_url": "https://github.com/moshe-blox",
+    "followers_url": "https://api.github.com/users/moshe-blox/followers",
+    "following_url": "https://api.github.com/users/moshe-blox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/moshe-blox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/moshe-blox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/moshe-blox/subscriptions",
+    "organizations_url": "https://api.github.com/users/moshe-blox/orgs",
+    "repos_url": "https://api.github.com/users/moshe-blox/repos",
+    "events_url": "https://api.github.com/users/moshe-blox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/moshe-blox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/flashbots/mev-boost/issues/262/reactions",
     "total_count": 0,
@@ -61,7 +80,7 @@
   },
   "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/262/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -316,6 +335,50 @@
     "body": "> If the validator registration has been accepted by the relay at least once in the past, then this wouldn't be the issue.\r\n> \r\n> I wonder though why do you do this way of validator registration? The standard way is to keep resending the last registration once per epoch, and only create a new registration once one of the preferences changes thinking\r\n\r\nWe blindly re-send `prepare_beacon_proposer` and `register_validator` every slot because Beacon nodes forget preparations after restarts (which we do often), but since registrations are kept in relays/builders, I realize now that this isn't necessary for `register_validator` 😅\r\n\r\nThanks for the tip 🙏",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1224147511/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1236311159",
+    "html_url": "https://github.com/flashbots/mev-boost/issues/262#issuecomment-1236311159",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost/issues/262",
+    "id": 1236311159,
+    "node_id": "IC_kwDOGZSKs85JsJx3",
+    "user": {
+      "login": "moshe-blox",
+      "id": 89339422,
+      "node_id": "MDQ6VXNlcjg5MzM5NDIy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89339422?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/moshe-blox",
+      "html_url": "https://github.com/moshe-blox",
+      "followers_url": "https://api.github.com/users/moshe-blox/followers",
+      "following_url": "https://api.github.com/users/moshe-blox/following{/other_user}",
+      "gists_url": "https://api.github.com/users/moshe-blox/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/moshe-blox/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/moshe-blox/subscriptions",
+      "organizations_url": "https://api.github.com/users/moshe-blox/orgs",
+      "repos_url": "https://api.github.com/users/moshe-blox/repos",
+      "events_url": "https://api.github.com/users/moshe-blox/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/moshe-blox/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-04T10:55:43Z",
+    "updated_at": "2022-09-04T10:56:53Z",
+    "author_association": "NONE",
+    "body": "Update: We've reduced the frequency of `register_validator` (so we don't spam our Beacon nodes anymore) and the problem seems to have gone away since. Now we see this error very rarely.\r\n\r\nUnfortunately, we didn't test this on Prater yet, but Sepolia is doing much better, so I'm closing this issue for now.\r\n\r\nIf anyone sees this error, just comment and I'll re-open.",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1236311159/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

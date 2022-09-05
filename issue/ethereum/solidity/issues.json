@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "bshastry"
+    },
+    "number": 13477,
+    "title": "[SMTChecker] CHC engine throws std::out_of_range",
+    "updatedAt": "2022-09-04T18:54:49Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 13121,
+    "title": "Old Z3 is not supported (should enforce in CMake)",
+    "updatedAt": "2022-09-04T17:53:49Z"
+  },
+  {
+    "author": {
+      "login": "NeverFearTomorrow"
+    },
+    "number": 13476,
+    "title": "Hardhat compile w/ SMTChecker crashes with out-of-memory related issues on Ubuntu",
+    "updatedAt": "2022-09-04T11:52:20Z"
+  },
+  {
+    "author": {
+      "login": "k06a"
+    },
+    "number": 13258,
+    "title": "Ability to create memory array of calldata slices",
+    "updatedAt": "2022-09-04T07:05:57Z"
+  },
+  {
+    "author": {
       "login": "hrkrshnn"
     },
     "number": 11278,
@@ -598,14 +630,6 @@
     "number": 13412,
     "title": "Impossibility of getting current function selector in nested calls via `msg.sig`",
     "updatedAt": "2022-08-18T15:13:43Z"
-  },
-  {
-    "author": {
-      "login": "k06a"
-    },
-    "number": 13258,
-    "title": "Ability to create memory array of calldata slices",
-    "updatedAt": "2022-08-18T15:08:20Z"
   },
   {
     "author": {
@@ -4686,14 +4710,6 @@
     "number": 9616,
     "title": "Replace \"returns\" with \"->\" in function definitions (and other use cases)",
     "updatedAt": "2022-06-16T13:35:04Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 13121,
-    "title": "Old Z3 is not supported (should enforce in CMake)",
-    "updatedAt": "2022-06-16T13:00:48Z"
   },
   {
     "author": {

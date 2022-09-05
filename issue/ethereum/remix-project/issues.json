@@ -3,6 +3,22 @@
     "author": {
       "login": "bunsenstraat"
     },
+    "number": 2870,
+    "title": "Autocomplete on large files",
+    "updatedAt": "2022-09-04T17:13:37Z"
+  },
+  {
+    "author": {
+      "login": "zaryab2000"
+    },
+    "number": 2869,
+    "title": "Etherscan contract verification extension Activation fails",
+    "updatedAt": "2022-09-04T09:05:19Z"
+  },
+  {
+    "author": {
+      "login": "bunsenstraat"
+    },
     "number": 2867,
     "title": "jump to definition on localhost imports",
     "updatedAt": "2022-09-02T16:10:28Z"

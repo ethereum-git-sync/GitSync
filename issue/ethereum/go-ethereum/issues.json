@@ -1,11 +1,19 @@
 [
   {
     "author": {
-      "login": "bububut"
+      "login": "miguelmota"
     },
-    "number": 25347,
-    "title": "memory consumption keeps increasing and killed by OOM killer",
-    "updatedAt": "2022-09-03T15:17:43Z"
+    "number": 25679,
+    "title": "Failed to update chain markers",
+    "updatedAt": "2022-09-05T00:04:57Z"
+  },
+  {
+    "author": {
+      "login": "miguelmota"
+    },
+    "number": 25676,
+    "title": "\"no space left on device\" when running as full node but no error when running as light node",
+    "updatedAt": "2022-09-04T14:37:16Z"
   },
   {
     "author": {
@@ -13,7 +21,39 @@
     },
     "number": 25665,
     "title": "ethminer can't find mining work in geth's rpc(8545)",
-    "updatedAt": "2022-09-03T14:52:38Z"
+    "updatedAt": "2022-09-04T13:41:33Z"
+  },
+  {
+    "author": {
+      "login": "ryny24"
+    },
+    "number": 23228,
+    "title": "FYI - Sync mode SNAP does not work",
+    "updatedAt": "2022-09-04T12:18:17Z"
+  },
+  {
+    "author": {
+      "login": "uaimedna"
+    },
+    "number": 16216,
+    "title": "Pending transactions filter in \"light\" mode",
+    "updatedAt": "2022-09-04T07:27:45Z"
+  },
+  {
+    "author": {
+      "login": "Zachinquarantine"
+    },
+    "number": 23337,
+    "title": "Fatal: Unable to attach to remote geth: no known transport for URL scheme \"c\"",
+    "updatedAt": "2022-09-04T04:37:37Z"
+  },
+  {
+    "author": {
+      "login": "bububut"
+    },
+    "number": 25347,
+    "title": "memory consumption keeps increasing and killed by OOM killer",
+    "updatedAt": "2022-09-03T15:17:43Z"
   },
   {
     "author": {
@@ -190,14 +230,6 @@
     "number": 24083,
     "title": "Error \"peer connected on snap without compatible eth support\" with a private network",
     "updatedAt": "2022-08-31T19:48:37Z"
-  },
-  {
-    "author": {
-      "login": "ryny24"
-    },
-    "number": 23228,
-    "title": "FYI - Sync mode SNAP does not work",
-    "updatedAt": "2022-08-31T16:06:41Z"
   },
   {
     "author": {
@@ -3321,14 +3353,6 @@
   },
   {
     "author": {
-      "login": "Zachinquarantine"
-    },
-    "number": 23337,
-    "title": "Fatal: Unable to attach to remote geth: no known transport for URL scheme \"c\"",
-    "updatedAt": "2022-05-19T05:43:45Z"
-  },
-  {
-    "author": {
       "login": "vogelito"
     },
     "number": 22224,
@@ -3630,14 +3654,6 @@
     "number": 24819,
     "title": "مشکل بلاک چین",
     "updatedAt": "2022-05-05T07:07:19Z"
-  },
-  {
-    "author": {
-      "login": "uaimedna"
-    },
-    "number": 16216,
-    "title": "Pending transactions filter in \"light\" mode",
-    "updatedAt": "2022-05-04T22:53:30Z"
   },
   {
     "author": {

@@ -49,21 +49,40 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-07-20T09:50:58Z",
-  "updated_at": "2022-07-21T12:18:14Z",
-  "closed_at": null,
+  "updated_at": "2022-09-05T18:55:28Z",
+  "closed_at": "2022-09-05T12:27:55Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "Actions on files such as rename, delete, copy etc cannot be undone with Ctrl+Z",
-  "closed_by": null,
+  "closed_by": {
+    "login": "bunsenstraat",
+    "id": 2787300,
+    "node_id": "MDQ6VXNlcjI3ODczMDA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2787300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bunsenstraat",
+    "html_url": "https://github.com/bunsenstraat",
+    "followers_url": "https://api.github.com/users/bunsenstraat/followers",
+    "following_url": "https://api.github.com/users/bunsenstraat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bunsenstraat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bunsenstraat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bunsenstraat/subscriptions",
+    "organizations_url": "https://api.github.com/users/bunsenstraat/orgs",
+    "repos_url": "https://api.github.com/users/bunsenstraat/repos",
+    "events_url": "https://api.github.com/users/bunsenstraat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bunsenstraat/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/2658/reactions",
     "total_count": 0,
@@ -78,8 +97,95 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2658/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1237191326",
+    "html_url": "https://github.com/ethereum/remix-project/issues/2658#issuecomment-1237191326",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/2658",
+    "id": 1237191326,
+    "node_id": "IC_kwDODtLRw85Jvgqe",
+    "user": {
+      "login": "iamsethsamuel",
+      "id": 22817492,
+      "node_id": "MDQ6VXNlcjIyODE3NDky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22817492?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/iamsethsamuel",
+      "html_url": "https://github.com/iamsethsamuel",
+      "followers_url": "https://api.github.com/users/iamsethsamuel/followers",
+      "following_url": "https://api.github.com/users/iamsethsamuel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/iamsethsamuel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/iamsethsamuel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/iamsethsamuel/subscriptions",
+      "organizations_url": "https://api.github.com/users/iamsethsamuel/orgs",
+      "repos_url": "https://api.github.com/users/iamsethsamuel/repos",
+      "events_url": "https://api.github.com/users/iamsethsamuel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/iamsethsamuel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-05T15:14:45Z",
+    "updated_at": "2022-09-05T15:14:45Z",
+    "author_association": "NONE",
+    "body": "This is still not working. This issue is, that I should be able to undo actions on the performed on files like moving, renaming and deleting a file",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1237191326/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1237192719",
+    "html_url": "https://github.com/ethereum/remix-project/issues/2658#issuecomment-1237192719",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/2658",
+    "id": 1237192719,
+    "node_id": "IC_kwDODtLRw85JvhAP",
+    "user": {
+      "login": "iamsethsamuel",
+      "id": 22817492,
+      "node_id": "MDQ6VXNlcjIyODE3NDky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22817492?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/iamsethsamuel",
+      "html_url": "https://github.com/iamsethsamuel",
+      "followers_url": "https://api.github.com/users/iamsethsamuel/followers",
+      "following_url": "https://api.github.com/users/iamsethsamuel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/iamsethsamuel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/iamsethsamuel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/iamsethsamuel/subscriptions",
+      "organizations_url": "https://api.github.com/users/iamsethsamuel/orgs",
+      "repos_url": "https://api.github.com/users/iamsethsamuel/repos",
+      "events_url": "https://api.github.com/users/iamsethsamuel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/iamsethsamuel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-05T15:15:47Z",
+    "updated_at": "2022-09-05T15:15:47Z",
+    "author_association": "NONE",
+    "body": "Or can I just work on it?\r\n",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1237192719/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

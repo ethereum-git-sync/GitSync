@@ -1,11 +1,51 @@
 [
   {
     "author": {
+      "login": "iamsethsamuel"
+    },
+    "number": 2658,
+    "title": "Undo and Redo not working",
+    "updatedAt": "2022-09-05T18:55:28Z"
+  },
+  {
+    "author": {
+      "login": "iamsethsamuel"
+    },
+    "number": 2873,
+    "title": "There should be a shortcut to switch between tabs",
+    "updatedAt": "2022-09-05T15:04:02Z"
+  },
+  {
+    "author": {
       "login": "bunsenstraat"
     },
     "number": 2870,
-    "title": "Autocomplete on large files",
-    "updatedAt": "2022-09-04T17:13:37Z"
+    "title": "editor freezes on large files",
+    "updatedAt": "2022-09-05T13:28:21Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 1800,
+    "title": "replace all toasters for copy update to tooltips",
+    "updatedAt": "2022-09-05T12:32:09Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2432,
+    "title": "Make all tooltips custom",
+    "updatedAt": "2022-09-05T12:31:59Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2616,
+    "title": "Upgrade with Proxy error reporting",
+    "updatedAt": "2022-09-05T12:25:18Z"
   },
   {
     "author": {
@@ -13,7 +53,7 @@
     },
     "number": 2869,
     "title": "Etherscan contract verification extension Activation fails",
-    "updatedAt": "2022-09-04T09:05:19Z"
+    "updatedAt": "2022-09-05T06:40:49Z"
   },
   {
     "author": {
@@ -763,14 +803,6 @@
     "author": {
       "login": "ryestew"
     },
-    "number": 2616,
-    "title": "Upgrade with Proxy error reporting",
-    "updatedAt": "2022-08-15T11:23:59Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
     "number": 1317,
     "title": "File Explorers Workspaces - copying and pasting between workspaces is not possible ",
     "updatedAt": "2022-08-15T11:19:23Z"
@@ -1193,14 +1225,6 @@
   },
   {
     "author": {
-      "login": "LianaHus"
-    },
-    "number": 1800,
-    "title": "replace all toasters for copy update to tooltips",
-    "updatedAt": "2022-07-25T11:57:17Z"
-  },
-  {
-    "author": {
       "login": "Aniket-Engg"
     },
     "number": 2643,
@@ -1214,14 +1238,6 @@
     "number": 1627,
     "title": "interoperability with L2",
     "updatedAt": "2022-07-25T11:27:39Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
-    "number": 2432,
-    "title": "Make all tooltips custom",
-    "updatedAt": "2022-07-25T10:08:40Z"
   },
   {
     "author": {
@@ -1254,14 +1270,6 @@
     "number": 2675,
     "title": "The update seemed to break injected web3 connection.",
     "updatedAt": "2022-07-21T23:42:41Z"
-  },
-  {
-    "author": {
-      "login": "iamsethsamuel"
-    },
-    "number": 2658,
-    "title": "Undo and Redo not working",
-    "updatedAt": "2022-07-21T12:18:14Z"
   },
   {
     "author": {

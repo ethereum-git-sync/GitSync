@@ -49,7 +49,7 @@
       "description": "Error is reported even though it shouldn't. Source is fine."
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "wechman",
@@ -96,12 +96,31 @@
   "milestone": null,
   "comments": 1,
   "created_at": "2022-07-10T22:00:27Z",
-  "updated_at": "2022-07-25T05:21:24Z",
-  "closed_at": null,
+  "updated_at": "2022-09-05T12:00:20Z",
+  "closed_at": "2022-09-05T12:00:20Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "<!--## Prerequisites\r\n\r\n- First, many thanks for taking part in the community. We really appreciate that.\r\n- We realize there is a lot of information requested here. We ask only that you do your best to provide as much information as possible so we can better help you.\r\n- Support questions are better asked in one of the following locations:\r\n    - [Solidity chat](https://gitter.im/ethereum/solidity)\r\n    - [Stack Overflow](https://ethereum.stackexchange.com/)\r\n- Ensure the issue isn't already reported.\r\n- The issue should be reproducible with the latest solidity version; however, this isn't a hard requirement and being reproducible with an older version is sufficient.\r\n\r\n*Delete the above section and the instructions in the sections below before submitting*\r\n-->\r\n\r\n## Description\r\n\r\n<!--Please shortly describe the bug you have found, and what you expect instead.-->\r\n\r\nSometimes compiling via IR results in the following error (with Foundry):\r\n```\r\n❯ forge build\r\n[⠆] Compiling...\r\n[⠆] Compiling 69 files with 0.8.15\r\n[⠔] Solc 0.8.15 finished in 3.00s\r\nError: \r\nCompiler run failed\r\nInternalCompilerError: Invalid stack item name: slot\r\n```\r\n\r\nAs the error implies, it seems to be related to storing variables that point to storage slots.\r\n\r\n## Environment\r\n\r\n- Compiler version: reproduced with 0.8.15,0.8.14,0.8.13\r\n- Framework/IDE (e.g. Truffle or Remix): Foundry\r\n- EVM execution environment / backend / blockchain client: Foundry\r\n- Operating system: macOS\r\n\r\n## Steps to Reproduce\r\n\r\n<!--\r\nPlease provide a *minimal* source code example to trigger the bug you have found.\r\nPlease also mention any command line flags that are necessary for triggering the bug.\r\nProvide as much information as necessary to reproduce the bug.\r\n\r\n```solidity\r\n// Some *minimal* Solidity source code to reproduce the bug.\r\n// ...\r\n```\r\n-->\r\n\r\nIn my case, I was able to resolve this by changing the following code from this:\r\n\r\n```solidity\r\n        mapping(uint256 => address) storage tokenApprovalsPtr = _tokenApprovals;\r\n        // The following is equivalent to `approvedAddress = _tokenApprovals[tokenId]`.\r\n        assembly {\r\n            // Compute the slot.\r\n            mstore(0x00, tokenId)\r\n            mstore(0x20, tokenApprovalsPtr.slot)\r\n            approvedAddressSlot := keccak256(0x00, 0x40)\r\n            // Load the slot's value from storage.\r\n            approvedAddress := sload(approvedAddressSlot)\r\n        }\r\n```\r\n\r\nto this:\r\n\r\n\r\n```solidity\r\n        // The following is equivalent to `approvedAddress = _tokenApprovals[tokenId]`.\r\n        assembly {\r\n            // Compute the slot.\r\n            mstore(0x00, tokenId)\r\n            mstore(0x20, _tokenApprovals.slot)\r\n            approvedAddressSlot := keccak256(0x00, 0x40)\r\n            // Load the slot's value from storage.\r\n            approvedAddress := sload(approvedAddressSlot)\r\n        }\r\n```\r\n\r\nLink to commit with issue present: https://github.com/jameswenzel/bound-layerable/blob/91b7096cfedd20bb422f5ed1f83c7e50261c2bcc/src/token/ERC721A.sol#L694\r\nLink to commit with issue fixed: https://github.com/jameswenzel/bound-layerable/blob/770ded9df31d624f38e1db6c32d0d5c6f7e64132/src/token/ERC721A.sol#L694\r\n\r\nWhile the code I changed is [copied from the ERC721A repo](https://github.com/chiru-labs/ERC721A/blob/7819fc341da2fece936688239c66b702f7c8add8/contracts/ERC721A.sol#L585), I'm able to build the code at that commit as-is without issues, with the IR pipeline enabled.\r\n\r\n\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "wechman",
+    "id": 37188783,
+    "node_id": "MDQ6VXNlcjM3MTg4Nzgz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/37188783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wechman",
+    "html_url": "https://github.com/wechman",
+    "followers_url": "https://api.github.com/users/wechman/followers",
+    "following_url": "https://api.github.com/users/wechman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wechman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wechman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wechman/subscriptions",
+    "organizations_url": "https://api.github.com/users/wechman/orgs",
+    "repos_url": "https://api.github.com/users/wechman/repos",
+    "events_url": "https://api.github.com/users/wechman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wechman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13259/reactions",
     "total_count": 2,
@@ -116,7 +135,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13259/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

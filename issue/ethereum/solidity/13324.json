@@ -35,12 +35,12 @@
       "node_id": "LA_kwDOAm_5kc8AAAABBJxySA",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/roadmap",
       "name": "roadmap",
-      "color": "5319e7",
+      "color": "ff8e00",
       "default": false,
-      "description": "Only to be applied to parent issues created for design and implementation tracking of roadmap issues"
+      "description": "It's on our short-term roadmap"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "chriseth",
@@ -85,14 +85,33 @@
     }
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-07-28T13:12:54Z",
-  "updated_at": "2022-07-29T11:20:38Z",
-  "closed_at": null,
+  "updated_at": "2022-09-05T10:57:05Z",
+  "closed_at": "2022-09-05T10:57:05Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": null,
-  "closed_by": null,
+  "closed_by": {
+    "login": "christianparpart",
+    "id": 56763,
+    "node_id": "MDQ6VXNlcjU2NzYz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/56763?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/christianparpart",
+    "html_url": "https://github.com/christianparpart",
+    "followers_url": "https://api.github.com/users/christianparpart/followers",
+    "following_url": "https://api.github.com/users/christianparpart/following{/other_user}",
+    "gists_url": "https://api.github.com/users/christianparpart/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/christianparpart/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/christianparpart/subscriptions",
+    "organizations_url": "https://api.github.com/users/christianparpart/orgs",
+    "repos_url": "https://api.github.com/users/christianparpart/repos",
+    "events_url": "https://api.github.com/users/christianparpart/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/christianparpart/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13324/reactions",
     "total_count": 0,
@@ -107,8 +126,51 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13324/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1236847186",
+    "html_url": "https://github.com/ethereum/solidity/issues/13324#issuecomment-1236847186",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13324",
+    "id": 1236847186,
+    "node_id": "IC_kwDOAm_5kc5JuMpS",
+    "user": {
+      "login": "christianparpart",
+      "id": 56763,
+      "node_id": "MDQ6VXNlcjU2NzYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56763?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/christianparpart",
+      "html_url": "https://github.com/christianparpart",
+      "followers_url": "https://api.github.com/users/christianparpart/followers",
+      "following_url": "https://api.github.com/users/christianparpart/following{/other_user}",
+      "gists_url": "https://api.github.com/users/christianparpart/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/christianparpart/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/christianparpart/subscriptions",
+      "organizations_url": "https://api.github.com/users/christianparpart/orgs",
+      "repos_url": "https://api.github.com/users/christianparpart/repos",
+      "events_url": "https://api.github.com/users/christianparpart/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/christianparpart/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-05T10:57:05Z",
+    "updated_at": "2022-09-05T10:57:05Z",
+    "author_association": "MEMBER",
+    "body": "@nishant-sachdeva I think we can close this. We have an LSP with some functionality already. :-)",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1236847186/reactions",
+      "total_count": 1,
+      "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

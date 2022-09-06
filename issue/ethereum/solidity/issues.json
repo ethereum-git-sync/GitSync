@@ -1,6 +1,166 @@
 [
   {
     "author": {
+      "login": "dexterchan"
+    },
+    "number": 6149,
+    "title": "Global variable msg.sender incorrect during inter-transaction function call",
+    "updatedAt": "2022-09-05T22:18:07Z"
+  },
+  {
+    "author": {
+      "login": "nicolasguasca1"
+    },
+    "number": 13470,
+    "title": "Example on Getter functions does compile but does not include the entire set of data",
+    "updatedAt": "2022-09-05T17:48:32Z"
+  },
+  {
+    "author": {
+      "login": "christianparpart"
+    },
+    "number": 13484,
+    "title": "LSP symbolic rename to make use of ReferenceCollector",
+    "updatedAt": "2022-09-05T16:40:55Z"
+  },
+  {
+    "author": {
+      "login": "k06a"
+    },
+    "number": 13472,
+    "title": "Assembly libraries",
+    "updatedAt": "2022-09-05T16:09:50Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 13483,
+    "title": "Add a matrix bot that expands github issue/pr numbers to links",
+    "updatedAt": "2022-09-05T15:11:07Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 13482,
+    "title": "Periodically post issues and PRs that require attention ",
+    "updatedAt": "2022-09-05T15:10:53Z"
+  },
+  {
+    "author": {
+      "login": "fvictorio"
+    },
+    "number": 13446,
+    "title": "Produce a panic code for failed `abi.decode` calls",
+    "updatedAt": "2022-09-05T13:41:49Z"
+  },
+  {
+    "author": {
+      "login": "antonper"
+    },
+    "number": 13480,
+    "title": "Function pointer SSTORE behavior difference",
+    "updatedAt": "2022-09-05T13:35:58Z"
+  },
+  {
+    "author": {
+      "login": "nventuro"
+    },
+    "number": 13475,
+    "title": "solc wastes memory when using structs",
+    "updatedAt": "2022-09-05T13:19:55Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 10687,
+    "title": "Convert certain and(mul(a, b), mask) and and(add(a, b), mask) into mulmod(a, b, x) and addmod(a, b, y)",
+    "updatedAt": "2022-09-05T13:04:25Z"
+  },
+  {
+    "author": {
+      "login": "jameswenzel"
+    },
+    "number": 13259,
+    "title": "ICE in the codegen when using `.slot` on a mapping reference in assembly: `InternalCompilerError: Invalid stack item name: slot`",
+    "updatedAt": "2022-09-05T12:00:20Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 13253,
+    "title": "LSP: Allow disabling/enabling of individual features",
+    "updatedAt": "2022-09-05T11:06:04Z"
+  },
+  {
+    "author": {
+      "login": "christianparpart"
+    },
+    "number": 12603,
+    "title": "Support remappings.txt in LSP",
+    "updatedAt": "2022-09-05T11:05:32Z"
+  },
+  {
+    "author": {
+      "login": "nishant-sachdeva"
+    },
+    "number": 13322,
+    "title": "Implement textDocument/hover",
+    "updatedAt": "2022-09-05T11:04:54Z"
+  },
+  {
+    "author": {
+      "login": "nishant-sachdeva"
+    },
+    "number": 13324,
+    "title": "Language Server",
+    "updatedAt": "2022-09-05T10:57:05Z"
+  },
+  {
+    "author": {
+      "login": "Gilgames000"
+    },
+    "number": 12825,
+    "title": "LSP throwing an error on each and every character I type in the editor",
+    "updatedAt": "2022-09-05T10:12:30Z"
+  },
+  {
+    "author": {
+      "login": "antonper"
+    },
+    "number": 13356,
+    "title": "Function pointer assignment error when names are colliding",
+    "updatedAt": "2022-09-05T10:08:22Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13478,
+    "title": "[Yul optimizer] RSE incorrectly removes sstore",
+    "updatedAt": "2022-09-05T08:57:15Z"
+  },
+  {
+    "author": {
+      "login": "NeverFearTomorrow"
+    },
+    "number": 13476,
+    "title": "Hardhat compile w/ SMTChecker crashes with out-of-memory related issues on Ubuntu",
+    "updatedAt": "2022-09-05T08:43:35Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13086,
+    "title": "Include all emitted events in the contract ABI and userdoc in a non-breaking way by ignoring conflicting Natspec",
+    "updatedAt": "2022-09-05T07:06:07Z"
+  },
+  {
+    "author": {
       "login": "bshastry"
     },
     "number": 13477,
@@ -14,14 +174,6 @@
     "number": 13121,
     "title": "Old Z3 is not supported (should enforce in CMake)",
     "updatedAt": "2022-09-04T17:53:49Z"
-  },
-  {
-    "author": {
-      "login": "NeverFearTomorrow"
-    },
-    "number": 13476,
-    "title": "Hardhat compile w/ SMTChecker crashes with out-of-memory related issues on Ubuntu",
-    "updatedAt": "2022-09-04T11:52:20Z"
   },
   {
     "author": {
@@ -49,22 +201,6 @@
   },
   {
     "author": {
-      "login": "Gilgames000"
-    },
-    "number": 12825,
-    "title": "LSP throwing an error on each and every character I type in the editor",
-    "updatedAt": "2022-09-03T15:09:36Z"
-  },
-  {
-    "author": {
-      "login": "nventuro"
-    },
-    "number": 13475,
-    "title": "solc wastes memory when using structs",
-    "updatedAt": "2022-09-02T22:05:02Z"
-  },
-  {
-    "author": {
       "login": "stevennevins"
     },
     "number": 12649,
@@ -86,14 +222,6 @@
     "number": 12483,
     "title": "Disallow virtual modifiers",
     "updatedAt": "2022-09-02T13:29:36Z"
-  },
-  {
-    "author": {
-      "login": "k06a"
-    },
-    "number": 13472,
-    "title": "Assembly libraries",
-    "updatedAt": "2022-09-02T13:26:08Z"
   },
   {
     "author": {
@@ -121,27 +249,11 @@
   },
   {
     "author": {
-      "login": "nicolasguasca1"
-    },
-    "number": 13470,
-    "title": "Example on Getter functions does compile but does not include the entire set of data",
-    "updatedAt": "2022-09-01T18:06:19Z"
-  },
-  {
-    "author": {
       "login": "lolo464644"
     },
     "number": 12917,
     "title": "Importation problem on VSCODE",
     "updatedAt": "2022-09-01T15:40:32Z"
-  },
-  {
-    "author": {
-      "login": "Marenz"
-    },
-    "number": 13253,
-    "title": "LSP: Allow disabling/enabling of individual features",
-    "updatedAt": "2022-09-01T12:52:03Z"
   },
   {
     "author": {
@@ -369,14 +481,6 @@
   },
   {
     "author": {
-      "login": "fvictorio"
-    },
-    "number": 13446,
-    "title": "Produce a panic code for failed `abi.decode` calls",
-    "updatedAt": "2022-08-29T11:03:10Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 4832,
@@ -414,14 +518,6 @@
     "number": 13427,
     "title": "How can the contract detect the mode of calling according to solidity docs?",
     "updatedAt": "2022-08-27T22:24:35Z"
-  },
-  {
-    "author": {
-      "login": "antonper"
-    },
-    "number": 13356,
-    "title": "Function pointer assignment error when names are colliding",
-    "updatedAt": "2022-08-27T22:18:25Z"
   },
   {
     "author": {
@@ -2353,14 +2449,6 @@
   },
   {
     "author": {
-      "login": "christianparpart"
-    },
-    "number": 12603,
-    "title": "Support remappings.txt in LSP",
-    "updatedAt": "2022-08-17T13:49:06Z"
-  },
-  {
-    "author": {
       "login": "beerefine"
     },
     "number": 12610,
@@ -3129,14 +3217,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 13086,
-    "title": "Include all emitted events in the contract ABI and userdoc in a non-breaking way by ignoring conflicting Natspec",
-    "updatedAt": "2022-08-17T13:48:52Z"
-  },
-  {
-    "author": {
       "login": "brockelmore"
     },
     "number": 13089,
@@ -3470,14 +3550,6 @@
     "number": 13275,
     "title": "LSP: Add Quick-Fixes feature",
     "updatedAt": "2022-08-17T13:48:45Z"
-  },
-  {
-    "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 10687,
-    "title": "Convert certain and(mul(a, b), mask) and and(add(a, b), mask) into mulmod(a, b, x) and addmod(a, b, y)",
-    "updatedAt": "2022-08-17T13:48:44Z"
   },
   {
     "author": {
@@ -4059,14 +4131,6 @@
     "author": {
       "login": "nishant-sachdeva"
     },
-    "number": 13324,
-    "title": "Language Server",
-    "updatedAt": "2022-07-29T11:20:38Z"
-  },
-  {
-    "author": {
-      "login": "nishant-sachdeva"
-    },
     "number": 13326,
     "title": "SMT + LP solver used in optimizer",
     "updatedAt": "2022-07-29T11:20:15Z"
@@ -4126,14 +4190,6 @@
     "number": 13321,
     "title": "First Experimental Implementation of Generics",
     "updatedAt": "2022-07-28T13:18:45Z"
-  },
-  {
-    "author": {
-      "login": "nishant-sachdeva"
-    },
-    "number": 13322,
-    "title": "Further LSP features",
-    "updatedAt": "2022-07-28T13:18:28Z"
   },
   {
     "author": {
@@ -4206,14 +4262,6 @@
     "number": 10695,
     "title": "Remove Builtin Default Over/Underflow Reverts",
     "updatedAt": "2022-07-25T12:52:39Z"
-  },
-  {
-    "author": {
-      "login": "jameswenzel"
-    },
-    "number": 13259,
-    "title": "ICE in the codegen when using `.slot` on a mapping reference in assembly: `InternalCompilerError: Invalid stack item name: slot`",
-    "updatedAt": "2022-07-25T05:21:24Z"
   },
   {
     "author": {
@@ -26574,14 +26622,6 @@
     "number": 6177,
     "title": "Uninitialized storage pointer",
     "updatedAt": "2019-03-05T08:37:52Z"
-  },
-  {
-    "author": {
-      "login": "dexterchan"
-    },
-    "number": 6149,
-    "title": "Global variable msg.sender incorrect during inter-transaction function call",
-    "updatedAt": "2019-03-05T05:29:47Z"
   },
   {
     "author": {

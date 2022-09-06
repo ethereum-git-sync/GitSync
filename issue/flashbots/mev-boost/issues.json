@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "jmcruz1983"
+    },
+    "number": 253,
+    "title": "Prometheus metrics",
+    "updatedAt": "2022-09-05T19:23:39Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 145,
+    "title": "Do you want to run a builder? ",
+    "updatedAt": "2022-09-05T18:57:56Z"
+  },
+  {
+    "author": {
       "login": "Floristico"
     },
     "number": 292,
@@ -22,14 +38,6 @@
     "number": 220,
     "title": "Identifier for builder to proposer transaction",
     "updatedAt": "2022-09-03T12:21:18Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 145,
-    "title": "Do you want to run a builder? ",
-    "updatedAt": "2022-09-02T11:23:13Z"
   },
   {
     "author": {
@@ -198,14 +206,6 @@
     "number": 245,
     "title": "502 During Validator Registration with an Exited Validator",
     "updatedAt": "2022-08-25T08:58:24Z"
-  },
-  {
-    "author": {
-      "login": "jmcruz1983"
-    },
-    "number": 253,
-    "title": "Prometheus metrics",
-    "updatedAt": "2022-08-23T08:14:31Z"
   },
   {
     "author": {

@@ -1,19 +1,19 @@
 [
   {
     "author": {
+      "login": "tvanepps"
+    },
+    "number": 613,
+    "title": "KZG-Ceremony #7",
+    "updatedAt": "2022-09-06T00:26:54Z"
+  },
+  {
+    "author": {
       "login": "djrtwo"
     },
     "number": 598,
     "title": "Consensus-layer Call 94",
     "updatedAt": "2022-09-03T09:24:37Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 613,
-    "title": "KZG-Ceremony #7",
-    "updatedAt": "2022-09-01T18:15:24Z"
   },
   {
     "author": {

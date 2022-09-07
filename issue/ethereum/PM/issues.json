@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "timbeiko"
+    },
+    "number": 616,
+    "title": "Ethereum Core Devs Meeting 147 Agenda",
+    "updatedAt": "2022-09-06T18:15:49Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 609,
+    "title": "Ethereum Core Devs Meeting 146 Agenda",
+    "updatedAt": "2022-09-06T18:14:03Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 599,
+    "title": "Merge Community Call #7",
+    "updatedAt": "2022-09-06T18:04:34Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 450,
+    "title": "Shanghai Planning",
+    "updatedAt": "2022-09-06T11:11:37Z"
+  },
+  {
+    "author": {
       "login": "tvanepps"
     },
     "number": 613,
@@ -17,27 +49,11 @@
   },
   {
     "author": {
-      "login": "timbeiko"
-    },
-    "number": 609,
-    "title": "Ethereum Core Devs Meeting 146 Agenda",
-    "updatedAt": "2022-08-31T23:29:51Z"
-  },
-  {
-    "author": {
       "login": "tvanepps"
     },
     "number": 593,
     "title": "KZG-Ceremony Call #6",
     "updatedAt": "2022-08-31T21:16:47Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 599,
-    "title": "Merge Community Call #7",
-    "updatedAt": "2022-08-30T16:36:42Z"
   },
   {
     "author": {
@@ -70,14 +86,6 @@
     "number": 594,
     "title": "Consensus-layer Call 93",
     "updatedAt": "2022-08-12T13:14:26Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 450,
-    "title": "Shanghai Planning",
-    "updatedAt": "2022-08-11T06:06:16Z"
   },
   {
     "author": {

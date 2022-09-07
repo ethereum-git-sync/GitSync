@@ -1,6 +1,46 @@
 [
   {
     "author": {
+      "login": "metachris"
+    },
+    "number": 142,
+    "title": "Relay monitoring & preventing continued relay errors",
+    "updatedAt": "2022-09-06T19:46:31Z"
+  },
+  {
+    "author": {
+      "login": "chimera-defi"
+    },
+    "number": 295,
+    "title": "Request for inclusion in Node Operator Readiness list",
+    "updatedAt": "2022-09-06T19:31:33Z"
+  },
+  {
+    "author": {
+      "login": "beetrootkid"
+    },
+    "number": 220,
+    "title": "Identifier for builder to proposer transaction",
+    "updatedAt": "2022-09-06T13:36:39Z"
+  },
+  {
+    "author": {
+      "login": "metachris"
+    },
+    "number": 181,
+    "title": "Add separate http request timeout flags for registerValidator, getHeader and getPayload?",
+    "updatedAt": "2022-09-06T08:57:58Z"
+  },
+  {
+    "author": {
+      "login": "tbenr"
+    },
+    "number": 287,
+    "title": "Set default `-request-timeout` to be consistent with `BUILDER_PROPOSAL_DELAY_TOLERANCE`",
+    "updatedAt": "2022-09-06T08:57:58Z"
+  },
+  {
+    "author": {
       "login": "jmcruz1983"
     },
     "number": 253,
@@ -33,27 +73,11 @@
   },
   {
     "author": {
-      "login": "beetrootkid"
-    },
-    "number": 220,
-    "title": "Identifier for builder to proposer transaction",
-    "updatedAt": "2022-09-03T12:21:18Z"
-  },
-  {
-    "author": {
       "login": "yorickdowne"
     },
     "number": 275,
     "title": "Feature: Offer a portable build docker hub image",
     "updatedAt": "2022-09-02T10:25:00Z"
-  },
-  {
-    "author": {
-      "login": "tbenr"
-    },
-    "number": 287,
-    "title": "Set default `-request-timeout` to be consistent with `BUILDER_PROPOSAL_DELAY_TOLERANCE`",
-    "updatedAt": "2022-09-02T09:14:27Z"
   },
   {
     "author": {
@@ -166,14 +190,6 @@
     "number": 277,
     "title": "Truncated fork version hex results in corrupted data",
     "updatedAt": "2022-08-30T18:44:16Z"
-  },
-  {
-    "author": {
-      "login": "metachris"
-    },
-    "number": 142,
-    "title": "Relay monitoring & preventing continued relay errors",
-    "updatedAt": "2022-08-29T10:44:23Z"
   },
   {
     "author": {
@@ -526,14 +542,6 @@
     "number": 174,
     "title": "Verify parentHash on getHeader response ",
     "updatedAt": "2022-07-04T10:30:16Z"
-  },
-  {
-    "author": {
-      "login": "metachris"
-    },
-    "number": 181,
-    "title": "Add separate http request timeout flags for registerValidator, getHeader and getPayload?",
-    "updatedAt": "2022-06-30T07:59:09Z"
   },
   {
     "author": {

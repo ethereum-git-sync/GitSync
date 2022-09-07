@@ -1,11 +1,35 @@
 [
   {
     "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5082,
+    "title": "One-time NFT Sale of unused EIP numbers.",
+    "updatedAt": "2022-09-07T00:21:20Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5608,
+    "title": "Make EIPs Website a PWA",
+    "updatedAt": "2022-09-06T21:45:21Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5488,
+    "title": "Add finalized date to EIPs.",
+    "updatedAt": "2022-09-06T18:14:53Z"
+  },
+  {
+    "author": {
       "login": "xinbenlv"
     },
     "number": 5597,
     "title": "Advocate for EIP editors to clearly explain the **current** external link policy to new authors.",
-    "updatedAt": "2022-09-06T00:05:26Z"
+    "updatedAt": "2022-09-06T15:06:53Z"
   },
   {
     "author": {
@@ -89,14 +113,6 @@
   },
   {
     "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5488,
-    "title": "Add finalized date to EIPs.",
-    "updatedAt": "2022-09-02T21:23:36Z"
-  },
-  {
-    "author": {
       "login": "poojaranjan"
     },
     "number": 5190,
@@ -126,14 +142,6 @@
     "number": 1620,
     "title": "ERC-1620: Money Streaming",
     "updatedAt": "2022-08-31T12:06:42Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5082,
-    "title": "One-time NFT Sale of unused EIP numbers.",
-    "updatedAt": "2022-08-30T13:57:32Z"
   },
   {
     "author": {

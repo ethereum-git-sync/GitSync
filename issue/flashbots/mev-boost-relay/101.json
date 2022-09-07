@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/101",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost-relay",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/101/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/101/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/101/events",
+  "html_url": "https://github.com/flashbots/mev-boost-relay/issues/101",
+  "id": 1363659742,
+  "node_id": "I_kwDOHXha9s5RR8ve",
+  "number": 101,
+  "title": "Q: Where is the censor list implemented? ",
+  "user": {
+    "login": "chimera-defi",
+    "id": 81845287,
+    "node_id": "MDQ6VXNlcjgxODQ1Mjg3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/81845287?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chimera-defi",
+    "html_url": "https://github.com/chimera-defi",
+    "followers_url": "https://api.github.com/users/chimera-defi/followers",
+    "following_url": "https://api.github.com/users/chimera-defi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chimera-defi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chimera-defi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chimera-defi/subscriptions",
+    "organizations_url": "https://api.github.com/users/chimera-defi/orgs",
+    "repos_url": "https://api.github.com/users/chimera-defi/repos",
+    "events_url": "https://api.github.com/users/chimera-defi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chimera-defi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-06T18:24:40Z",
+  "updated_at": "2022-09-06T18:24:40Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi,\r\n\r\n1. I was curious where the  censorship is implemented? Is it here or the flashbots rpc? \r\n\r\nII think i heard the relay publish was rushed due to censorship concerns? \r\nBut at the same time, afaik, the actual centralization and tx blocking occured at the rpc layer here:\r\nhttps://github.com/chimera-defi/flashbots-rpc-endpoint\r\ncode ptr: https://github.com/MicahZoltu/rpc-endpoint/commit/f1f1b23682b6470f7ae3b50e351c2e03c14114c1\r\n\r\nSo does one actually need to spin up the relay? Or is a modified flashbots rpc all thats needed? ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/101/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/101/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -38,6 +38,15 @@
       "color": "FF5E5E",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 1132754722,
+      "node_id": "MDU6TGFiZWwxMTMyNzU0NzIy",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/need:more-information",
+      "name": "need:more-information",
+      "color": "db6fa3",
+      "default": false,
+      "description": ""
     }
   ],
   "state": "open",
@@ -47,13 +56,13 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-09-02T04:34:02Z",
-  "updated_at": "2022-09-02T04:34:58Z",
+  "updated_at": "2022-09-06T13:17:09Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
-  "body": "#### System information\r\n\r\nGeth version: `1.10.23-stable`\r\nOS & Version: `Ubuntu 22.04.1 LTS`\r\n\r\n#### Docker compose file\r\n```\r\nversion: \"3.8\"\r\n\r\nnetworks:\r\n  mynet:\r\n\r\n# Docker\r\nservices:\r\n  # Geth Docker\r\n  ethereum-geth:\r\n    container_name: erc20\r\n    image: ethereum/client-go:stable\r\n    volumes: [/mydata/blockchain/erc20:/root]\r\n    ports:\r\n      # HTTP server / GraphQL API\r\n      - 8545:8545\r\n      # WebSocket\r\n      - 8546:8546\r\n      # Network listening port (P2P networking)\r\n      - 30303:30303\r\n    command: [\"--syncmode=full\", \"--http\", \"--http.addr=0.0.0.0\", \"--ws\", \"--ws.addr=0.0.0.0\"]\r\n    restart: always\r\n    logging:\r\n      options:\r\n        max-size: \"25k\"\r\n        max-file: \"5\"\r\n```\r\n\r\n#### Expected behaviour\r\nConnect to peers keep syncing\r\n\r\n#### Actual behaviour\r\nerc20  | WARN [09-02|04:31:12.766] Synchronisation failed, dropping peer    peer=98eff4d8cac4349efb2a5a76c3f516390059bbcc93c6220c0fe37716fa7a6dd7 err=\"retrieved hash chain is invalid: missing parent\"\r\nerc20  | INFO [09-02|04:31:15.255] Looking for peers                        peercount=2 tried=37 static=8\r\nerc20  | WARN [09-02|04:31:30.042] Synchronisation failed, dropping peer    peer=c90982186c0cc076633cf78b02fe26cd967f8c0926453ef22da804b54909b92f err=\"retrieved hash chain is invalid: missing parent\"\r\nerc20  | INFO [09-02|04:31:35.281] Looking for peers                        peercount=1 tried=42 static=8\r\nerc20  | INFO [09-02|04:31:45.618] Looking for peers                        peercount=1 tried=40 static=8\r\nerc20  | WARN [09-02|04:31:50.773] Synchronisation failed, dropping peer    peer=d2f47c21d108711c8baec703601e2d2f31811c60c7e659866319b0121294d564 err=\"retrieved hash chain is invalid: missing parent\"\r\nerc20  | INFO [09-02|04:31:55.649] Looking for peers                        peercount=0 tried=44 static=8\r\nerc20  | INFO [09-02|04:32:05.694] Looking for peers                        peercount=1 tried=43 static=8\r\nerc20  | INFO [09-02|04:32:16.008] Looking for peers                        peercount=0 tried=26 static=8\r\nerc20  | WARN [09-02|04:32:21.743] Merge is configured, but no beacon client seen. Please ensure you have one available before the transition arrives! eta=9y1mo3w\r\nerc20  | INFO [09-02|04:32:26.278] Looking for peers                        peercount=0 tried=51 static=8\r\nerc20  | INFO [09-02|04:32:36.291] Looking for peers                        peercount=1 tried=40 static=8\r\nerc20  | WARN [09-02|04:32:36.717] Synchronisation failed, dropping peer    peer=8d1da4c5bc682f8f8ad141f60d2889fa4232144c7d2b29b88f81ca33e586ef9d err=timeout\r\nerc20  | INFO [09-02|04:32:46.967] Looking for peers                        peercount=1 tried=49 static=8\r\nerc20  | INFO [09-02|04:32:53.486] Downloader queue stats                   receiptTasks=0 blockTasks=379  itemSize=25.98KiB throttle=8192\r\nerc20  | WARN [09-02|04:32:55.935] Synchronisation failed, dropping peer    peer=3fb2bb7152a1ff54c0ff9e5a49ab9325c9030fb23627fd8da4eef53d9a937232 err=\"retrieved hash chain is invalid: missing parent\"\r\n",
+  "body": "#### System information\r\n\r\nGeth version: `1.10.23-stable`\r\nOS & Version: `Ubuntu 22.04.1 LTS`\r\n\r\n#### Docker compose file\r\n```\r\nversion: \"3.8\"\r\n\r\nnetworks:\r\n  mynet:\r\n\r\n# Docker\r\nservices:\r\n  # Geth Docker\r\n  ethereum-geth:\r\n    container_name: erc20\r\n    image: ethereum/client-go:stable\r\n    volumes: [/mydata/blockchain/erc20:/root]\r\n    ports:\r\n      # HTTP server / GraphQL API\r\n      - 8545:8545\r\n      # WebSocket\r\n      - 8546:8546\r\n      # Network listening port (P2P networking)\r\n      - 30303:30303\r\n    command: [\"--syncmode=full\", \"--http\", \"--http.addr=0.0.0.0\", \"--ws\", \"--ws.addr=0.0.0.0\"]\r\n    restart: always\r\n    logging:\r\n      options:\r\n        max-size: \"25k\"\r\n        max-file: \"5\"\r\n```\r\n\r\n#### Expected behaviour\r\nConnect to peers keep syncing\r\n\r\n#### Actual behaviour\r\n```\r\nerc20  | WARN [09-02|04:31:12.766] Synchronisation failed, dropping peer    peer=98eff4d8cac4349efb2a5a76c3f516390059bbcc93c6220c0fe37716fa7a6dd7 err=\"retrieved hash chain is invalid: missing parent\"\r\nerc20  | INFO [09-02|04:31:15.255] Looking for peers                        peercount=2 tried=37 static=8\r\nerc20  | WARN [09-02|04:31:30.042] Synchronisation failed, dropping peer    peer=c90982186c0cc076633cf78b02fe26cd967f8c0926453ef22da804b54909b92f err=\"retrieved hash chain is invalid: missing parent\"\r\nerc20  | INFO [09-02|04:31:35.281] Looking for peers                        peercount=1 tried=42 static=8\r\nerc20  | INFO [09-02|04:31:45.618] Looking for peers                        peercount=1 tried=40 static=8\r\nerc20  | WARN [09-02|04:31:50.773] Synchronisation failed, dropping peer    peer=d2f47c21d108711c8baec703601e2d2f31811c60c7e659866319b0121294d564 err=\"retrieved hash chain is invalid: missing parent\"\r\nerc20  | INFO [09-02|04:31:55.649] Looking for peers                        peercount=0 tried=44 static=8\r\nerc20  | INFO [09-02|04:32:05.694] Looking for peers                        peercount=1 tried=43 static=8\r\nerc20  | INFO [09-02|04:32:16.008] Looking for peers                        peercount=0 tried=26 static=8\r\nerc20  | WARN [09-02|04:32:21.743] Merge is configured, but no beacon client seen. Please ensure you have one available before the transition arrives! eta=9y1mo3w\r\nerc20  | INFO [09-02|04:32:26.278] Looking for peers                        peercount=0 tried=51 static=8\r\nerc20  | INFO [09-02|04:32:36.291] Looking for peers                        peercount=1 tried=40 static=8\r\nerc20  | WARN [09-02|04:32:36.717] Synchronisation failed, dropping peer    peer=8d1da4c5bc682f8f8ad141f60d2889fa4232144c7d2b29b88f81ca33e586ef9d err=timeout\r\nerc20  | INFO [09-02|04:32:46.967] Looking for peers                        peercount=1 tried=49 static=8\r\nerc20  | INFO [09-02|04:32:53.486] Downloader queue stats                   receiptTasks=0 blockTasks=379  itemSize=25.98KiB throttle=8192\r\nerc20  | WARN [09-02|04:32:55.935] Synchronisation failed, dropping peer    peer=3fb2bb7152a1ff54c0ff9e5a49ab9325c9030fb23627fd8da4eef53d9a937232 err=\"retrieved hash chain is invalid: missing parent\"\r\n```",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25664/reactions",
@@ -72,5 +81,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1238090781",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25664#issuecomment-1238090781",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25664",
+    "id": 1238090781,
+    "node_id": "IC_kwDOAOvK985Jy8Qd",
+    "user": {
+      "login": "ligi",
+      "id": 111600,
+      "node_id": "MDQ6VXNlcjExMTYwMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ligi",
+      "html_url": "https://github.com/ligi",
+      "followers_url": "https://api.github.com/users/ligi/followers",
+      "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+      "organizations_url": "https://api.github.com/users/ligi/orgs",
+      "repos_url": "https://api.github.com/users/ligi/repos",
+      "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ligi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-06T12:35:10Z",
+    "updated_at": "2022-09-06T12:35:10Z",
+    "author_association": "MEMBER",
+    "body": "can you provide some more logs and context?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1238090781/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

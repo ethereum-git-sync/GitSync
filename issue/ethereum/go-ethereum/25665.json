@@ -49,7 +49,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -58,12 +58,31 @@
   "milestone": null,
   "comments": 11,
   "created_at": "2022-09-02T09:27:13Z",
-  "updated_at": "2022-09-05T13:10:57Z",
-  "closed_at": null,
+  "updated_at": "2022-09-06T13:17:46Z",
+  "closed_at": "2022-09-06T13:17:46Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "state:\r\n     start geth： nohup geth --datadir data --http --http.addr 0.0.0.0 --http.api eth --miner.etherbase  ****** & > nohup.out\r\n     start ethminer:    nohup ./ethminer -v 9 -U -P http://127.0.0.1:8545 & > nohup.out\r\n\r\nquestion:\r\n     ethminer log print:\r\n          `ethminer 0.18.0\r\nBuild: linux/release/gnu\r\n\r\n i 09:26:21 ethminer Configured pool 127.0.0.1:8545\r\n i 09:26:21 ethminer Selected pool 127.0.0.1:8545\r\n i 09:26:21 ethminer Established connection to 127.0.0.1:8545\r\n i 09:26:21 ethminer Spinning up miners...\r\n i 09:26:21 ethminer  >> {\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"eth_getWork\",\"params\":[]}\r\ncu 09:26:21 cuda-0   Using Pci Id : 01:00.0 NVIDIA GeForce RTX 3090 (Compute 8.6) Memory : 23.70 GB\r\n i 09:26:21 ethminer  << {\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32000,\"message\":\"no mining work available yet\"}}\r\n X 09:26:21 ethminer Got code:-32000 message:no mining work available yet  from 127.0.0.1:8545\r\n`\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25665/reactions",
     "total_count": 0,
@@ -78,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25665/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

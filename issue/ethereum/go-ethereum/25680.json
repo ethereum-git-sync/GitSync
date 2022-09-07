@@ -47,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-09-05T02:40:23Z",
-  "updated_at": "2022-09-05T02:40:23Z",
+  "updated_at": "2022-09-06T13:17:55Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -72,5 +72,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1238089435",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25680#issuecomment-1238089435",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25680",
+    "id": 1238089435,
+    "node_id": "IC_kwDOAOvK985Jy77b",
+    "user": {
+      "login": "rjl493456442",
+      "id": 5959481,
+      "node_id": "MDQ6VXNlcjU5NTk0ODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5959481?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rjl493456442",
+      "html_url": "https://github.com/rjl493456442",
+      "followers_url": "https://api.github.com/users/rjl493456442/followers",
+      "following_url": "https://api.github.com/users/rjl493456442/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rjl493456442/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rjl493456442/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rjl493456442/subscriptions",
+      "organizations_url": "https://api.github.com/users/rjl493456442/orgs",
+      "repos_url": "https://api.github.com/users/rjl493456442/repos",
+      "events_url": "https://api.github.com/users/rjl493456442/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rjl493456442/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-06T12:33:56Z",
+    "updated_at": "2022-09-06T12:33:56Z",
+    "author_association": "MEMBER",
+    "body": "The chain progressing is actually still going on. Another background thread for moving blocks from live database(leveldb) to ancient database(flat files) is blocked because of this missing receipts.\r\n\r\nAlso there is not enough information for us to know why it can happen. You can just ignore the error if you don't mind and the data freezing function will be disabled(so all the data will be put in the leveldb), but will recommend to resync if you can allow a few offline time.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1238089435/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

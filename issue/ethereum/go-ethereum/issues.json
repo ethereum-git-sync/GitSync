@@ -1,11 +1,163 @@
 [
   {
     "author": {
+      "login": "wjmelements"
+    },
+    "number": 25614,
+    "title": "Intent to Implement: Recovery of Missing Logs",
+    "updatedAt": "2022-09-06T22:12:20Z"
+  },
+  {
+    "author": {
+      "login": "brunokelo"
+    },
+    "number": 25697,
+    "title": "stop sync",
+    "updatedAt": "2022-09-06T21:20:42Z"
+  },
+  {
+    "author": {
+      "login": "jdevcs"
+    },
+    "number": 25671,
+    "title": "eth_feeHistory crashes with \"finalized\" block specifier",
+    "updatedAt": "2022-09-06T19:59:21Z"
+  },
+  {
+    "author": {
+      "login": "aters"
+    },
+    "number": 25699,
+    "title": "GraphQL wrong Event Logs on querying Transactions",
+    "updatedAt": "2022-09-06T18:27:41Z"
+  },
+  {
+    "author": {
+      "login": "miguelmota"
+    },
+    "number": 25679,
+    "title": "Failed to update chain markers",
+    "updatedAt": "2022-09-06T17:34:16Z"
+  },
+  {
+    "author": {
+      "login": "korjavin"
+    },
+    "number": 25682,
+    "title": "what will RPC eth_getWork method return after merge",
+    "updatedAt": "2022-09-06T14:35:55Z"
+  },
+  {
+    "author": {
+      "login": "lcgogo"
+    },
+    "number": 25594,
+    "title": "How does geth communicate with prysm?",
+    "updatedAt": "2022-09-06T13:23:27Z"
+  },
+  {
+    "author": {
+      "login": "tranquanghuy7198"
+    },
+    "number": 25584,
+    "title": "Invalid type cast",
+    "updatedAt": "2022-09-06T13:18:58Z"
+  },
+  {
+    "author": {
+      "login": "martonp"
+    },
+    "number": 25623,
+    "title": "Will --syncmode=light work post-merge?",
+    "updatedAt": "2022-09-06T13:18:46Z"
+  },
+  {
+    "author": {
+      "login": "ulope"
+    },
+    "number": 25693,
+    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
+    "updatedAt": "2022-09-06T13:18:17Z"
+  },
+  {
+    "author": {
+      "login": "mone-d"
+    },
+    "number": 25680,
+    "title": "Synchronization stopped with `Error in block freeze operation`",
+    "updatedAt": "2022-09-06T13:17:55Z"
+  },
+  {
+    "author": {
+      "login": "zhongdonglin"
+    },
+    "number": 25665,
+    "title": "ethminer can't find mining work in geth's rpc(8545)",
+    "updatedAt": "2022-09-06T13:17:46Z"
+  },
+  {
+    "author": {
+      "login": "abc-1211"
+    },
+    "number": 25664,
+    "title": "Geth docker full node synchronisation failed. err=\"retrieved hash chain is invalid: missing parent\"",
+    "updatedAt": "2022-09-06T13:17:09Z"
+  },
+  {
+    "author": {
+      "login": "emrahsariboz"
+    },
+    "number": 25604,
+    "title": "Abigen sol",
+    "updatedAt": "2022-09-06T13:16:32Z"
+  },
+  {
+    "author": {
+      "login": "nalepae"
+    },
+    "number": 25627,
+    "title": "Launching 3 `geth` instances at the same time, one is in `State heal in progress` for a few days",
+    "updatedAt": "2022-09-06T12:46:31Z"
+  },
+  {
+    "author": {
+      "login": "jasoncsli"
+    },
+    "number": 25695,
+    "title": "eth_blockNumber returns 0 after merge on Goerli",
+    "updatedAt": "2022-09-06T12:20:55Z"
+  },
+  {
+    "author": {
+      "login": "dasudiy"
+    },
+    "number": 25696,
+    "title": "BAD BLOCK error, cannot sync",
+    "updatedAt": "2022-09-06T11:43:28Z"
+  },
+  {
+    "author": {
+      "login": "jiebanghan"
+    },
+    "number": 14831,
+    "title": "how to initialize a account in genesis.json file and fund it some money before mining?thank you.",
+    "updatedAt": "2022-09-06T08:16:29Z"
+  },
+  {
+    "author": {
+      "login": "osizadmin"
+    },
+    "number": 22374,
+    "title": "Fatal: Failed to register the Ethereum service: gap (#492149) in the chain between ancients and leveldb",
+    "updatedAt": "2022-09-06T05:18:33Z"
+  },
+  {
+    "author": {
       "login": "rezaeghbal01"
     },
     "number": 25688,
     "title": "R",
-    "updatedAt": "2022-09-05T22:31:31Z"
+    "updatedAt": "2022-09-06T03:39:17Z"
   },
   {
     "author": {
@@ -33,43 +185,11 @@
   },
   {
     "author": {
-      "login": "zhongdonglin"
-    },
-    "number": 25665,
-    "title": "ethminer can't find mining work in geth's rpc(8545)",
-    "updatedAt": "2022-09-05T13:10:57Z"
-  },
-  {
-    "author": {
       "login": "wangtsiao"
     },
     "number": 25673,
     "title": "difference between TransactionsPacket and PooledTransactionsPacket",
     "updatedAt": "2022-09-05T12:16:32Z"
-  },
-  {
-    "author": {
-      "login": "korjavin"
-    },
-    "number": 25682,
-    "title": "what will RPC eth_getWork method return after merge",
-    "updatedAt": "2022-09-05T11:07:44Z"
-  },
-  {
-    "author": {
-      "login": "miguelmota"
-    },
-    "number": 25679,
-    "title": "Failed to update chain markers",
-    "updatedAt": "2022-09-05T09:12:18Z"
-  },
-  {
-    "author": {
-      "login": "mone-d"
-    },
-    "number": 25680,
-    "title": "Synchronization stopped with `Error in block freeze operation`",
-    "updatedAt": "2022-09-05T02:40:23Z"
   },
   {
     "author": {
@@ -105,14 +225,6 @@
   },
   {
     "author": {
-      "login": "jdevcs"
-    },
-    "number": 25671,
-    "title": "Method handler crashed - getFeeHistory",
-    "updatedAt": "2022-09-02T21:13:17Z"
-  },
-  {
-    "author": {
       "login": "quickchase"
     },
     "number": 25650,
@@ -137,35 +249,11 @@
   },
   {
     "author": {
-      "login": "abc-1211"
-    },
-    "number": 25664,
-    "title": "Geth docker full node synchronisation failed. err=\"retrieved hash chain is invalid: missing parent\"",
-    "updatedAt": "2022-09-02T04:34:58Z"
-  },
-  {
-    "author": {
       "login": "FeurJak"
     },
     "number": 25663,
     "title": "Importing types.TxData interface within another package",
     "updatedAt": "2022-09-02T04:23:35Z"
-  },
-  {
-    "author": {
-      "login": "lcgogo"
-    },
-    "number": 25594,
-    "title": "How does geth communicate with prysm?",
-    "updatedAt": "2022-09-02T03:04:09Z"
-  },
-  {
-    "author": {
-      "login": "wjmelements"
-    },
-    "number": 25614,
-    "title": "Intent to Implement: Recovery of Missing Logs",
-    "updatedAt": "2022-09-01T22:03:42Z"
   },
   {
     "author": {
@@ -297,14 +385,6 @@
   },
   {
     "author": {
-      "login": "nalepae"
-    },
-    "number": 25627,
-    "title": "Launching 3 `geth` instances at the same time, one is in `State heal in progress` for a few days",
-    "updatedAt": "2022-08-31T11:38:01Z"
-  },
-  {
-    "author": {
       "login": "okmrs"
     },
     "number": 25598,
@@ -382,14 +462,6 @@
     "number": 25632,
     "title": "[GOERLI] No sync geth or prysm?",
     "updatedAt": "2022-08-30T09:21:23Z"
-  },
-  {
-    "author": {
-      "login": "martonp"
-    },
-    "number": 25623,
-    "title": "Will --syncmode=light work post-merge?",
-    "updatedAt": "2022-08-30T08:30:32Z"
   },
   {
     "author": {
@@ -497,14 +569,6 @@
   },
   {
     "author": {
-      "login": "emrahsariboz"
-    },
-    "number": 25604,
-    "title": "Abigen sol",
-    "updatedAt": "2022-08-26T02:46:02Z"
-  },
-  {
-    "author": {
       "login": "laronlineworld"
     },
     "number": 25597,
@@ -574,14 +638,6 @@
     "number": 25586,
     "title": "abi.Method.Sig not contains return types",
     "updatedAt": "2022-08-24T08:09:22Z"
-  },
-  {
-    "author": {
-      "login": "tranquanghuy7198"
-    },
-    "number": 25584,
-    "title": "Invalid type cast",
-    "updatedAt": "2022-08-24T08:04:26Z"
   },
   {
     "author": {
@@ -2009,14 +2065,6 @@
   },
   {
     "author": {
-      "login": "jiebanghan"
-    },
-    "number": 14831,
-    "title": "how to initialize a account in genesis.json file and fund it some money before mining?thank you.",
-    "updatedAt": "2022-07-06T02:00:14Z"
-  },
-  {
-    "author": {
       "login": "SomeGuyCalledBru"
     },
     "number": 25224,
@@ -2366,14 +2414,6 @@
     "number": 25140,
     "title": "abiv2---abi: cannot unmarshal *big.Int in to *big.Int",
     "updatedAt": "2022-06-23T03:35:27Z"
-  },
-  {
-    "author": {
-      "login": "osizadmin"
-    },
-    "number": 22374,
-    "title": "Fatal: Failed to register the Ethereum service: gap (#492149) in the chain between ancients and leveldb",
-    "updatedAt": "2022-06-21T20:08:04Z"
   },
   {
     "author": {

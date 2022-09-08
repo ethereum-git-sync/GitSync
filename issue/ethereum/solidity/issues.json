@@ -1,11 +1,91 @@
 [
   {
     "author": {
+      "login": "nventuro"
+    },
+    "number": 13475,
+    "title": "solc wastes memory when using structs",
+    "updatedAt": "2022-09-07T23:03:57Z"
+  },
+  {
+    "author": {
+      "login": "r0qs"
+    },
+    "number": 13496,
+    "title": "Segmentation fault compiling a contract with huge data and via-IR enabled",
+    "updatedAt": "2022-09-07T19:50:38Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13497,
+    "title": "Document UnusedStoreEliminator",
+    "updatedAt": "2022-09-07T19:12:15Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 9297,
+    "title": "Investigate node-js performance and delays on exiting",
+    "updatedAt": "2022-09-07T18:03:14Z"
+  },
+  {
+    "author": {
+      "login": "wighawag"
+    },
+    "number": 13494,
+    "title": "Assembly clearing local variable",
+    "updatedAt": "2022-09-07T17:42:57Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 13253,
+    "title": "LSP: Allow disabling/enabling of individual features",
+    "updatedAt": "2022-09-07T16:03:04Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11278,
+    "title": "Try Catch for custom errors",
+    "updatedAt": "2022-09-07T15:49:34Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13368,
+    "title": "Add parser support for ``code`` data location.",
+    "updatedAt": "2022-09-07T14:13:28Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12778,
+    "title": "Functions taking `calldata` arguments are not assignable to function pointers of the same type",
+    "updatedAt": "2022-09-07T12:59:25Z"
+  },
+  {
+    "author": {
+      "login": "christianparpart"
+    },
+    "number": 13495,
+    "title": "LSP 3.17: Advertise position encoding",
+    "updatedAt": "2022-09-07T12:26:39Z"
+  },
+  {
+    "author": {
       "login": "reubenr0d"
     },
     "number": 13492,
     "title": "Stylecheck script fails on MacOS",
-    "updatedAt": "2022-09-06T18:20:08Z"
+    "updatedAt": "2022-09-07T12:17:15Z"
   },
   {
     "author": {
@@ -105,14 +185,6 @@
   },
   {
     "author": {
-      "login": "nventuro"
-    },
-    "number": 13475,
-    "title": "solc wastes memory when using structs",
-    "updatedAt": "2022-09-05T13:19:55Z"
-  },
-  {
-    "author": {
       "login": "hrkrshnn"
     },
     "number": 10687,
@@ -126,14 +198,6 @@
     "number": 13259,
     "title": "ICE in the codegen when using `.slot` on a mapping reference in assembly: `InternalCompilerError: Invalid stack item name: slot`",
     "updatedAt": "2022-09-05T12:00:20Z"
-  },
-  {
-    "author": {
-      "login": "Marenz"
-    },
-    "number": 13253,
-    "title": "LSP: Allow disabling/enabling of individual features",
-    "updatedAt": "2022-09-05T11:06:04Z"
   },
   {
     "author": {
@@ -214,14 +278,6 @@
     "number": 13258,
     "title": "Ability to create memory array of calldata slices",
     "updatedAt": "2022-09-04T07:05:57Z"
-  },
-  {
-    "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11278,
-    "title": "Try Catch for custom errors",
-    "updatedAt": "2022-09-03T21:54:37Z"
   },
   {
     "author": {
@@ -350,14 +406,6 @@
     "number": 3168,
     "title": "Provide binary macOS releases",
     "updatedAt": "2022-08-30T13:01:44Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 13368,
-    "title": "Add parser support for ``code`` data location.",
-    "updatedAt": "2022-08-30T12:53:04Z"
   },
   {
     "author": {
@@ -3745,14 +3793,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 12778,
-    "title": "Functions taking `calldata` arguments are not assignable to function pointers of the same type",
-    "updatedAt": "2022-08-17T11:47:31Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 4642,
@@ -6606,14 +6646,6 @@
     "number": 12505,
     "title": "[TypeChecker] Failed assertion for forward declared struct constant",
     "updatedAt": "2022-01-17T13:06:05Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 9297,
-    "title": "Investigate node-js performance and delays on exiting",
-    "updatedAt": "2022-01-17T11:04:30Z"
   },
   {
     "author": {

@@ -1,0 +1,112 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13497",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13497/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13497/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13497/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13497",
+  "id": 1365078538,
+  "node_id": "I_kwDOAm_5kc5RXXIK",
+  "number": 13497,
+  "title": "Document UnusedStoreEliminator",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 275027668,
+      "node_id": "MDU6TGFiZWwyNzUwMjc2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/documentation%20:book:",
+      "name": "documentation :book:",
+      "color": "006b75",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438481746,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3bUg",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have%20eventually",
+      "name": "must have eventually",
+      "color": "ffb04d",
+      "default": false,
+      "description": "Something we consider essential but not enough to prevent us from releasing Solidity 1.0 without it."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-07T19:09:28Z",
+  "updated_at": "2022-09-07T19:12:15Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Page\r\n\r\nhttps://docs.soliditylang.org/en/latest/internals/optimizer.html#optimizer-steps\r\nhttps://docs.soliditylang.org/en/latest/yul.html#optimization-step-sequence.\r\n\r\n## Abstract\r\n\r\nThe `UnusedStoreEliminator` optimizer step is not listed in the documentation. Neither #12672 nor #12311 provided any docs for it.\r\n\r\nWhen fixing, please also check if all the other [steps listed in `Suite.cpp`](https://github.com/ethereum/solidity/blob/develop/libyul/optimiser/Suite.cpp#L241-L287) are present in the docs.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13497/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13497/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

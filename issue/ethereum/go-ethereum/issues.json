@@ -1,6 +1,78 @@
 [
   {
     "author": {
+      "login": "ulope"
+    },
+    "number": 25693,
+    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
+    "updatedAt": "2022-09-07T23:02:28Z"
+  },
+  {
+    "author": {
+      "login": "1b1og-com"
+    },
+    "number": 25027,
+    "title": "Eip-1559 Transaction can't broadcast   rlp: expected input list for types.LegacyTx",
+    "updatedAt": "2022-09-07T21:24:53Z"
+  },
+  {
+    "author": {
+      "login": "litcc"
+    },
+    "number": 25703,
+    "title": "How can I check the latest healedTrienodes height of the main network?",
+    "updatedAt": "2022-09-07T18:08:34Z"
+  },
+  {
+    "author": {
+      "login": "aters"
+    },
+    "number": 25699,
+    "title": "GraphQL wrong Event Logs on querying Transactions",
+    "updatedAt": "2022-09-07T17:15:51Z"
+  },
+  {
+    "author": {
+      "login": "kash1988"
+    },
+    "number": 25712,
+    "title": "debug_dumpBlock for specific addresses",
+    "updatedAt": "2022-09-07T15:47:42Z"
+  },
+  {
+    "author": {
+      "login": "SLoeuillet"
+    },
+    "number": 25583,
+    "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
+    "updatedAt": "2022-09-07T15:45:44Z"
+  },
+  {
+    "author": {
+      "login": "Fishh40"
+    },
+    "number": 25709,
+    "title": "Runtime: out of memory: cannot allocate 4194304-byte block (1491501056 in use) fatal error: out of memory",
+    "updatedAt": "2022-09-07T12:09:58Z"
+  },
+  {
+    "author": {
+      "login": "i11m20n"
+    },
+    "number": 25704,
+    "title": "Failed to commit trie from trie database err=\"read /ethereum/.ethereum/geth/chaindata/102907544.ldb: input/output error\"",
+    "updatedAt": "2022-09-07T06:46:10Z"
+  },
+  {
+    "author": {
+      "login": "masayil"
+    },
+    "number": 25659,
+    "title": "online pruning feature on ETH",
+    "updatedAt": "2022-09-07T06:39:55Z"
+  },
+  {
+    "author": {
       "login": "wjmelements"
     },
     "number": 25614,
@@ -22,14 +94,6 @@
     "number": 25671,
     "title": "eth_feeHistory crashes with \"finalized\" block specifier",
     "updatedAt": "2022-09-06T19:59:21Z"
-  },
-  {
-    "author": {
-      "login": "aters"
-    },
-    "number": 25699,
-    "title": "GraphQL wrong Event Logs on querying Transactions",
-    "updatedAt": "2022-09-06T18:27:41Z"
   },
   {
     "author": {
@@ -70,14 +134,6 @@
     "number": 25623,
     "title": "Will --syncmode=light work post-merge?",
     "updatedAt": "2022-09-06T13:18:46Z"
-  },
-  {
-    "author": {
-      "login": "ulope"
-    },
-    "number": 25693,
-    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
-    "updatedAt": "2022-09-06T13:18:17Z"
   },
   {
     "author": {
@@ -273,14 +329,6 @@
   },
   {
     "author": {
-      "login": "masayil"
-    },
-    "number": 25659,
-    "title": "online pruning feature on ETH",
-    "updatedAt": "2022-09-01T10:25:28Z"
-  },
-  {
-    "author": {
       "login": "holiman"
     },
     "number": 25600,
@@ -374,14 +422,6 @@
     "number": 25633,
     "title": "Contract creation for private network hangs",
     "updatedAt": "2022-08-31T14:24:54Z"
-  },
-  {
-    "author": {
-      "login": "SLoeuillet"
-    },
-    "number": 25583,
-    "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
-    "updatedAt": "2022-08-31T14:14:55Z"
   },
   {
     "author": {
@@ -2470,14 +2510,6 @@
     "number": 24834,
     "title": "Geth 1.10.16 stable crashes with OOM error",
     "updatedAt": "2022-06-18T22:03:36Z"
-  },
-  {
-    "author": {
-      "login": "1b1og-com"
-    },
-    "number": 25027,
-    "title": "Eip-1559 Transaction can't broadcast   rlp: expected input list for types.LegacyTx",
-    "updatedAt": "2022-06-18T22:01:07Z"
   },
   {
     "author": {
@@ -19681,7 +19713,7 @@
   },
   {
     "author": {
-      "login": "hdongZ"
+      "login": "fortyfourZ"
     },
     "number": 20497,
     "title": "chain_indexer_test failed",

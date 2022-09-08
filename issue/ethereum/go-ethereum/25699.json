@@ -40,25 +40,44 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-09-06T18:27:41Z",
-  "updated_at": "2022-09-06T18:27:41Z",
-  "closed_at": null,
+  "updated_at": "2022-09-07T17:15:51Z",
+  "closed_at": "2022-09-07T17:15:51Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "#### System information\r\n\r\nGeth version: 1.10.23\r\nOS & Version: Linux\r\nCommit hash : -\r\n\r\nQuerying block->transactions->logs return event logs for whole block but should return for each transaction. It could be critical for someone who fetching transactions using graphQL and could lead to double-spends. On 1.10.21 node version it is working as expected.\r\n\r\n#### Expected behaviour\r\nWhen querying for the transactions in block using graphQL we should receive event logs only for the corresponding transactions. \r\n\r\n#### Actual behaviour\r\nWe are receiving event logs for ALL transactions in block for EACH transaction.\r\n\r\n#### Steps to reproduce the behaviour\r\nMake a graphQL query to the node: \r\n`{ \r\n    block(number:15484104) \r\n    { \r\n        transactions \r\n        { \r\n            hash \r\n            logs { account { address } topics data } \r\n        }\r\n    }\r\n}`\r\n\r\n#### Backtrace\r\n\r\n````\r\n-\r\n````",
-  "closed_by": null,
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25699/reactions",
-    "total_count": 0,
-    "+1": 0,
+    "total_count": 4,
+    "+1": 4,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -69,8 +88,51 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25699/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1239666863",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25699#issuecomment-1239666863",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25699",
+    "id": 1239666863,
+    "node_id": "IC_kwDOAOvK985J49Cv",
+    "user": {
+      "login": "fjl",
+      "id": 6915,
+      "node_id": "MDQ6VXNlcjY5MTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fjl",
+      "html_url": "https://github.com/fjl",
+      "followers_url": "https://api.github.com/users/fjl/followers",
+      "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+      "organizations_url": "https://api.github.com/users/fjl/orgs",
+      "repos_url": "https://api.github.com/users/fjl/repos",
+      "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fjl/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-07T17:15:50Z",
+    "updated_at": "2022-09-07T17:15:50Z",
+    "author_association": "MEMBER",
+    "body": "This issue is fixed in #25612, which is already merged to the master branch.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1239666863/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

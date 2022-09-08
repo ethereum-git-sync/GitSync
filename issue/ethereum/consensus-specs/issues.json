@@ -1,19 +1,19 @@
 [
   {
     "author": {
+      "login": "potuz"
+    },
+    "number": 2984,
+    "title": "Should we require that validators do not submit blocks after the slot has finished?",
+    "updatedAt": "2022-09-07T11:22:14Z"
+  },
+  {
+    "author": {
       "login": "Zagal435"
     },
     "number": 2985,
     "title": "ALZAGHAL",
     "updatedAt": "2022-09-06T14:02:39Z"
-  },
-  {
-    "author": {
-      "login": "potuz"
-    },
-    "number": 2984,
-    "title": "Should we require that validators do not submit blocks after the slot has finished?",
-    "updatedAt": "2022-09-01T12:41:13Z"
   },
   {
     "author": {

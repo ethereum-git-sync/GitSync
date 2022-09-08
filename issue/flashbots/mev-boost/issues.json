@@ -1,6 +1,30 @@
 [
   {
     "author": {
+      "login": "come-maiz"
+    },
+    "number": 156,
+    "title": "Support mev-boost in teku",
+    "updatedAt": "2022-09-08T00:42:11Z"
+  },
+  {
+    "author": {
+      "login": "Floristico"
+    },
+    "number": 292,
+    "title": "How does the validator choose the relay?",
+    "updatedAt": "2022-09-07T17:39:15Z"
+  },
+  {
+    "author": {
+      "login": "nmoreau"
+    },
+    "number": 284,
+    "title": "mev-boost crash on startup on Windows x64 ?",
+    "updatedAt": "2022-09-07T17:14:02Z"
+  },
+  {
+    "author": {
       "login": "metachris"
     },
     "number": 142,
@@ -54,14 +78,6 @@
     "number": 145,
     "title": "Do you want to run a builder? ",
     "updatedAt": "2022-09-05T18:57:56Z"
-  },
-  {
-    "author": {
-      "login": "Floristico"
-    },
-    "number": 292,
-    "title": "How does the validator choose the relay?",
-    "updatedAt": "2022-09-04T19:43:18Z"
   },
   {
     "author": {
@@ -126,14 +142,6 @@
     "number": 256,
     "title": "SIGILL: illegal instruction",
     "updatedAt": "2022-09-02T08:06:37Z"
-  },
-  {
-    "author": {
-      "login": "nmoreau"
-    },
-    "number": 284,
-    "title": "mev-boost crash on startup on Windows x64 ?",
-    "updatedAt": "2022-09-02T08:03:31Z"
   },
   {
     "author": {
@@ -414,14 +422,6 @@
     "number": 154,
     "title": "Support validator account level relay choice",
     "updatedAt": "2022-07-22T08:53:29Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 156,
-    "title": "Support mev-boost in teku",
-    "updatedAt": "2022-07-20T16:01:47Z"
   },
   {
     "author": {

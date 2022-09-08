@@ -41,7 +41,7 @@
   "milestone": null,
   "comments": 11,
   "created_at": "2022-01-07T15:48:07Z",
-  "updated_at": "2022-09-06T11:11:37Z",
+  "updated_at": "2022-09-07T18:15:08Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -91,7 +91,7 @@
       "site_admin": false
     },
     "created_at": "2022-01-07T16:47:14Z",
-    "updated_at": "2022-01-07T16:47:59Z",
+    "updated_at": "2022-09-07T18:15:08Z",
     "author_association": "MEMBER",
     "body": "Also [EIP-3074](https://eips.ethereum.org/EIPS/eip-3074)",
     "reactions": {

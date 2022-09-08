@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "solomontan88"
+    },
+    "number": 618,
+    "title": "Consensus-layer Call 95",
+    "updatedAt": "2022-09-07T19:41:18Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 450,
+    "title": "Shanghai Planning",
+    "updatedAt": "2022-09-07T18:15:08Z"
+  },
+  {
+    "author": {
+      "login": "solomontan88"
+    },
+    "number": 617,
+    "title": "EIP-3675 Status",
+    "updatedAt": "2022-09-07T18:07:44Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 598,
+    "title": "Consensus-layer Call 94",
+    "updatedAt": "2022-09-07T05:18:42Z"
+  },
+  {
+    "author": {
       "login": "timbeiko"
     },
     "number": 616,
@@ -25,27 +57,11 @@
   },
   {
     "author": {
-      "login": "timbeiko"
-    },
-    "number": 450,
-    "title": "Shanghai Planning",
-    "updatedAt": "2022-09-06T11:11:37Z"
-  },
-  {
-    "author": {
       "login": "tvanepps"
     },
     "number": 613,
     "title": "KZG-Ceremony #7",
     "updatedAt": "2022-09-06T00:26:54Z"
-  },
-  {
-    "author": {
-      "login": "djrtwo"
-    },
-    "number": 598,
-    "title": "Consensus-layer Call 94",
-    "updatedAt": "2022-09-03T09:24:37Z"
   },
   {
     "author": {

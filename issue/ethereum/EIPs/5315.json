@@ -41,11 +41,11 @@
   "milestone": null,
   "comments": 15,
   "created_at": "2022-07-22T20:33:25Z",
-  "updated_at": "2022-08-08T15:12:47Z",
+  "updated_at": "2022-09-07T23:24:56Z",
   "closed_at": "2022-08-08T15:12:47Z",
-  "author_association": "CONTRIBUTOR",
+  "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "I know this is a random time to post about this but... can we please have April 1st EIPs? April 1st RFCs are a well-known thing: https://en.wikipedia.org/wiki/April_Fools%27_Day_Request_for_Comments\r\n\r\nI suggest we do the same thing as IETF and merge April 1st EIPs based on cleverness and humor.\r\n\r\nThe following PRs would also be re-opened and merged on April 1, 2023:\r\nhttps://github.com/ethereum/EIPs/pull/4963\r\nhttps://github.com/ethereum/EIPs/pull/4962\r\nhttps://github.com/ethereum/EIPs/pull/4961\r\nhttps://github.com/ethereum/EIPs/pull/4959\r\nhttps://github.com/ethereum/EIPs/pull/3455",
+  "body": "I know this is a random time to post about this but... can we please have April 1st EIPs? April 1st RFCs are a well-known thing: https://en.wikipedia.org/wiki/April_Fools%27_Day_Request_for_Comments\r\n\r\nI suggest we do the same thing as IETF and merge April 1st EIPs based on cleverness and humor.\r\n\r\nThe following PRs would also be re-opened and merged on April 1, 2023:\r\nhttps://github.com/ethereum/EIPs/pull/4963\r\nhttps://github.com/ethereum/EIPs/pull/4962\r\nhttps://github.com/ethereum/EIPs/pull/4961\r\nhttps://github.com/ethereum/EIPs/pull/4959\r\nhttps://github.com/ethereum/EIPs/pull/3455\r\nhttps://github.com/ethereum/EIPs/pull/1893",
   "closed_by": {
     "login": "Pandapip1",
     "id": 45835846,
@@ -199,7 +199,7 @@
     },
     "created_at": "2022-07-23T12:01:20Z",
     "updated_at": "2022-07-23T12:01:20Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "> I like a good joke as much as the next guy, but I don't like it when a joke creates work for someone. Jokes should ideally (IMO) be setup in a way that they don't interfere with anyone's ability to be productive and don't force themselves on anyone's workflow or life who isn't interested in participating in the joke.\r\n\r\nIf I didn't like the work, I wouldn't be volunteering :)",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1193114097/reactions",
@@ -375,7 +375,7 @@
     },
     "created_at": "2022-07-25T11:50:37Z",
     "updated_at": "2022-07-25T11:51:00Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "How about requiring this as a prefix in the PR description for any new PRs that are submitted as an April fools?\r\n\r\n```md\r\n<details>\r\n  <summary>Click to reveal spoiler</summary>\r\n  This PR was created as an April fools joke.\r\n</details>\r\n```\r\n\r\nPreview:\r\n\r\n<details>\r\n  <summary>Click to reveal spoiler</summary>\r\n  This PR was created as an April fools joke.\r\n</details>\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1193950007/reactions",
@@ -463,7 +463,7 @@
     },
     "created_at": "2022-07-25T11:53:06Z",
     "updated_at": "2022-07-25T11:53:06Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "(Hence I suggest putting it in spoilers)",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1193952110/reactions",
@@ -507,7 +507,7 @@
     },
     "created_at": "2022-07-25T14:31:53Z",
     "updated_at": "2022-07-25T14:31:53Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "Alternatively, require beginning the PR title with the clown emoji, such as the following:\r\n\r\n```\r\n🤡 New Opcode: SUDO\r\n```\r\n\r\nObvious at a glance, yet not explicitly stating it's a joke.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1194128843/reactions",
@@ -595,7 +595,7 @@
     },
     "created_at": "2022-07-30T00:09:13Z",
     "updated_at": "2022-07-30T00:09:13Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "> I think the easiest solution is what Micah did this year: close every PR that was opened from March 31st to April 2nd.\r\n\r\nI think the easiest solution is to merge any newEIPFile PR that comes in on April 1 so long as the `status` is `Withdrawn`.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1200043315/reactions",
@@ -683,7 +683,7 @@
     },
     "created_at": "2022-07-30T12:04:58Z",
     "updated_at": "2022-07-30T12:04:58Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "Well, it still has to go through eipw and the spell checker :)",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1200145796/reactions",
@@ -727,7 +727,7 @@
     },
     "created_at": "2022-08-08T15:12:47Z",
     "updated_at": "2022-08-08T15:12:47Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "MEMBER",
     "body": "Seems like we have a resolution here.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1208258424/reactions",

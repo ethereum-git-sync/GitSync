@@ -1,11 +1,19 @@
 [
   {
     "author": {
+      "login": "jtraglia"
+    },
+    "number": 110,
+    "title": "Show build version on website",
+    "updatedAt": "2022-09-08T14:45:53Z"
+  },
+  {
+    "author": {
       "login": "chimera-defi"
     },
     "number": 101,
     "title": "Q: Where is the censor list implemented? ",
-    "updatedAt": "2022-09-06T18:24:40Z"
+    "updatedAt": "2022-09-08T09:12:10Z"
   },
   {
     "author": {
@@ -13,7 +21,7 @@
     },
     "number": 100,
     "title": "Publish the block to the network",
-    "updatedAt": "2022-09-06T15:28:53Z"
+    "updatedAt": "2022-09-08T08:34:46Z"
   },
   {
     "author": {

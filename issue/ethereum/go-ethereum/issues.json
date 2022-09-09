@@ -1,11 +1,83 @@
 [
   {
     "author": {
+      "login": "Mars7005"
+    },
+    "number": 25722,
+    "title": "🤙",
+    "updatedAt": "2022-09-08T23:29:27Z"
+  },
+  {
+    "author": {
+      "login": "Sajjon"
+    },
+    "number": 25589,
+    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
+    "updatedAt": "2022-09-08T20:10:12Z"
+  },
+  {
+    "author": {
+      "login": "ktjooho"
+    },
+    "number": 25720,
+    "title": "Will log subscribe events API disabled in Geth after merge? ",
+    "updatedAt": "2022-09-08T19:30:28Z"
+  },
+  {
+    "author": {
+      "login": "MariusVanDerWijden"
+    },
+    "number": 25599,
+    "title": "Async block creation post-merge",
+    "updatedAt": "2022-09-08T15:22:14Z"
+  },
+  {
+    "author": {
       "login": "ulope"
     },
     "number": 25693,
     "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
-    "updatedAt": "2022-09-07T23:02:28Z"
+    "updatedAt": "2022-09-08T09:27:28Z"
+  },
+  {
+    "author": {
+      "login": "litcc"
+    },
+    "number": 25703,
+    "title": "How can I check the latest healedTrienodes height of the main network?",
+    "updatedAt": "2022-09-08T08:44:01Z"
+  },
+  {
+    "author": {
+      "login": "AnthonyAkentiev"
+    },
+    "number": 25719,
+    "title": "abigen: Fatal: Failed to generate ABI binding: json: cannot unmarshal object into Go value of type...",
+    "updatedAt": "2022-09-08T08:19:20Z"
+  },
+  {
+    "author": {
+      "login": "lurais"
+    },
+    "number": 25717,
+    "title": "The plans of the data storage ",
+    "updatedAt": "2022-09-08T08:18:02Z"
+  },
+  {
+    "author": {
+      "login": "coderbradlee"
+    },
+    "number": 25716,
+    "title": "Failed to delete bloom bits              err=\"leveldb: closed\"",
+    "updatedAt": "2022-09-08T03:07:54Z"
+  },
+  {
+    "author": {
+      "login": "rjl493456442"
+    },
+    "number": 25390,
+    "title": "all: PRs for Path-based state scheme",
+    "updatedAt": "2022-09-08T02:12:08Z"
   },
   {
     "author": {
@@ -14,14 +86,6 @@
     "number": 25027,
     "title": "Eip-1559 Transaction can't broadcast   rlp: expected input list for types.LegacyTx",
     "updatedAt": "2022-09-07T21:24:53Z"
-  },
-  {
-    "author": {
-      "login": "litcc"
-    },
-    "number": 25703,
-    "title": "How can I check the latest healedTrienodes height of the main network?",
-    "updatedAt": "2022-09-07T18:08:34Z"
   },
   {
     "author": {
@@ -289,14 +353,6 @@
   },
   {
     "author": {
-      "login": "rjl493456442"
-    },
-    "number": 25390,
-    "title": "all: PRs for Path-based state scheme",
-    "updatedAt": "2022-09-02T12:07:25Z"
-  },
-  {
-    "author": {
       "login": "darren"
     },
     "number": 25657,
@@ -366,14 +422,6 @@
     "number": 25649,
     "title": "invalid merkle root    Skip duplicated bad block",
     "updatedAt": "2022-09-01T07:12:18Z"
-  },
-  {
-    "author": {
-      "login": "Sajjon"
-    },
-    "number": 25589,
-    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
-    "updatedAt": "2022-09-01T01:43:51Z"
   },
   {
     "author": {
@@ -614,14 +662,6 @@
     "number": 25597,
     "title": "Geth node accounts balances and contracts reset to 0 after 30,000 Blocks in POA private network",
     "updatedAt": "2022-08-25T08:10:28Z"
-  },
-  {
-    "author": {
-      "login": "MariusVanDerWijden"
-    },
-    "number": 25599,
-    "title": "Async block creation post-merge",
-    "updatedAt": "2022-08-25T06:36:48Z"
   },
   {
     "author": {

@@ -49,7 +49,7 @@
   "milestone": null,
   "comments": 8,
   "created_at": "2022-09-05T17:52:16Z",
-  "updated_at": "2022-09-06T15:06:53Z",
+  "updated_at": "2022-09-08T17:46:57Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -294,9 +294,9 @@
       "site_admin": false
     },
     "created_at": "2022-09-06T00:03:56Z",
-    "updated_at": "2022-09-06T00:05:26Z",
+    "updated_at": "2022-09-08T17:46:57Z",
     "author_association": "MEMBER",
-    "body": "Let me summarize the points as I understand them from both sides.\r\n\r\nMore restrictive:\r\n- Links might rot or change contents\r\n  - Pretty bad case: An expired domain is bought by a scammer, and we send users directly into a phishing scam\r\n- Links can just be ommited\r\n  - If need be, they can be placed in the assets folder\r\n    - Could even be done by a bot automagically\r\n- EIPs should only ever depend on information in the EIPs repository\r\n  - Imagine if EIP-20 required you to read Adam Smith's The Invisible Hand\r\n- Links would have to be `nofollow` to comply with Google search policies and other standards\r\n  - Requires a custom Jekyll renderer\r\n\r\nLess restrictive:\r\n- Easier to write an EIP\r\n- Adds context that might otherwise be missing",
+    "body": "Superseded by https://hackmd.io/ddolKJF9TpGbO5MktrtT5A\r\n~~Let me summarize the points as I understand them from both sides.~~\r\n\r\n~~More restrictive:~~\r\n- ~~Links might rot or change contents~~\r\n  - ~~Pretty bad case: An expired domain is bought by a scammer, and we send users directly into a phishing scam~~\r\n- ~~Links can just be omitted~~\r\n  - ~~If need be, they can be placed in the assets folder~~\r\n    - ~~Could even be done by a bot automagically~~\r\n- ~~EIPs should only ever depend on information in the EIPs repository~~\r\n  - ~~Imagine if EIP-20 required you to read Adam Smith's The Invisible Hand~~\r\n- ~~Links would have to be `nofollow` to comply with Google search policies and other standards~~\r\n  - ~~Requires a custom Jekyll renderer~~\r\n\r\n~~Less restrictive:~~\r\n- ~~Easier to write an EIP~~\r\n- ~~Adds context that might otherwise be missing~~",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1237535407/reactions",
       "total_count": 0,

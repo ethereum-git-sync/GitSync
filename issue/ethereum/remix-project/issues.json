@@ -1,6 +1,46 @@
 [
   {
     "author": {
+      "login": "yann300"
+    },
+    "number": 2778,
+    "title": "Documentation needs to be put back in the remix-ide codebase.",
+    "updatedAt": "2022-09-08T12:34:16Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 1462,
+    "title": "Deploy & run: add a link to docs to explain faucet usage for all testnets",
+    "updatedAt": "2022-09-08T12:30:21Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2690,
+    "title": "In permissions modal, reset should be underlined on hover.",
+    "updatedAt": "2022-09-08T12:25:44Z"
+  },
+  {
+    "author": {
+      "login": "D-One0914"
+    },
+    "number": 1786,
+    "title": "A global install issue with new version of remixd on window 10",
+    "updatedAt": "2022-09-08T11:45:26Z"
+  },
+  {
+    "author": {
+      "login": "andrew3009"
+    },
+    "number": 2795,
+    "title": "Copy Bytecode button does nothing.",
+    "updatedAt": "2022-09-08T08:30:01Z"
+  },
+  {
+    "author": {
       "login": "zuketo"
     },
     "number": 2885,
@@ -721,14 +761,6 @@
   },
   {
     "author": {
-      "login": "andrew3009"
-    },
-    "number": 2795,
-    "title": "Copy Bytecode button does nothing.",
-    "updatedAt": "2022-08-23T12:47:25Z"
-  },
-  {
-    "author": {
       "login": "Aniket-Engg"
     },
     "number": 2692,
@@ -814,14 +846,6 @@
     "number": 2720,
     "title": "issues with vyper plugin",
     "updatedAt": "2022-08-18T06:45:45Z"
-  },
-  {
-    "author": {
-      "login": "yann300"
-    },
-    "number": 2778,
-    "title": "Documentation needs to be put back in the remix-ide codebase.",
-    "updatedAt": "2022-08-18T06:45:20Z"
   },
   {
     "author": {
@@ -1294,14 +1318,6 @@
     "number": 2687,
     "title": "Remove Environment plugins from the plugin manager",
     "updatedAt": "2022-07-26T11:00:55Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
-    "number": 2690,
-    "title": "In permissions modal, reset should be underlined on hover.",
-    "updatedAt": "2022-07-26T07:59:23Z"
   },
   {
     "author": {
@@ -1854,14 +1870,6 @@
     "number": 1853,
     "title": "View code in remix",
     "updatedAt": "2022-07-04T08:08:58Z"
-  },
-  {
-    "author": {
-      "login": "D-One0914"
-    },
-    "number": 1786,
-    "title": "A global install issue with new version of remixd on window 10",
-    "updatedAt": "2022-07-04T07:40:56Z"
   },
   {
     "author": {
@@ -4862,14 +4870,6 @@
     "number": 1472,
     "title": "Generate Solidity input json",
     "updatedAt": "2021-12-06T09:17:25Z"
-  },
-  {
-    "author": {
-      "login": "LianaHus"
-    },
-    "number": 1462,
-    "title": "Deploy & run: add a link to docs to explain faucet usage for all testnets",
-    "updatedAt": "2021-12-06T09:16:33Z"
   },
   {
     "author": {

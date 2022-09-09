@@ -58,11 +58,11 @@
   "milestone": null,
   "comments": 25,
   "created_at": "2022-07-20T07:56:00Z",
-  "updated_at": "2022-09-06T13:36:39Z",
+  "updated_at": "2022-09-08T14:08:29Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
-  "body": "**Current Understanding**\r\n- The Builder will set their own feeRecipient for a block\r\n- They will then send a share of their earnings to the proposer (to their specified \"feeRecipient\" account in a transaction\r\n\r\n**The Problem**\r\nFor a staking provider with multiple customers, it is difficult to:\r\na) Prove to customers they have received the agreed upon earning.\r\nb) Know how much to charge customers (if fees are based on a percentage of rewards)\r\n\r\nSome kind of indicator or marker on the transaction would be great 🙏 ",
+  "body": "**Current Understanding**\r\n- The Builder will set their own feeRecipient for a block\r\n- They will then send a share of their earnings to the proposer (to their specified \"feeRecipient\" account in a transaction\r\n\r\n**The Problem**\r\nFor a staking provider with multiple customers, it is difficult to:\r\na) Prove to customers they have received the agreed upon earning.\r\nb) Know how much to charge customers (if fees are based on a percentage of rewards)\r\n\r\nSome kind of indicator or marker on the transaction would be great 🙏 \r\n\r\n# Update\r\n\r\nContinuation of the discussion here: https://collective.flashbots.net/t/block-scoring-for-mev-boost-relays/202",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/flashbots/mev-boost/issues/220/reactions",

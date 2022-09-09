@@ -3,9 +3,49 @@
     "author": {
       "login": "come-maiz"
     },
+    "number": 201,
+    "title": "Document the hardware requirements for running mev-boost",
+    "updatedAt": "2022-09-08T19:06:40Z"
+  },
+  {
+    "author": {
+      "login": "chimera-defi"
+    },
+    "number": 295,
+    "title": "Request for inclusion in Node Operator Readiness list",
+    "updatedAt": "2022-09-08T17:33:08Z"
+  },
+  {
+    "author": {
+      "login": "beetrootkid"
+    },
+    "number": 220,
+    "title": "Identifier for builder to proposer transaction",
+    "updatedAt": "2022-09-08T14:08:29Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 160,
+    "title": "Support mev-boost in lighthouse",
+    "updatedAt": "2022-09-08T02:27:13Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 158,
+    "title": "Support mev-boost in prysm",
+    "updatedAt": "2022-09-08T02:02:40Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
     "number": 156,
     "title": "Support mev-boost in teku",
-    "updatedAt": "2022-09-08T00:42:11Z"
+    "updatedAt": "2022-09-08T01:08:58Z"
   },
   {
     "author": {
@@ -30,22 +70,6 @@
     "number": 142,
     "title": "Relay monitoring & preventing continued relay errors",
     "updatedAt": "2022-09-06T19:46:31Z"
-  },
-  {
-    "author": {
-      "login": "chimera-defi"
-    },
-    "number": 295,
-    "title": "Request for inclusion in Node Operator Readiness list",
-    "updatedAt": "2022-09-06T19:31:33Z"
-  },
-  {
-    "author": {
-      "login": "beetrootkid"
-    },
-    "number": 220,
-    "title": "Identifier for builder to proposer transaction",
-    "updatedAt": "2022-09-06T13:36:39Z"
   },
   {
     "author": {
@@ -377,14 +401,6 @@
   },
   {
     "author": {
-      "login": "come-maiz"
-    },
-    "number": 160,
-    "title": "Support mev-boost in lighthouse",
-    "updatedAt": "2022-08-01T07:22:46Z"
-  },
-  {
-    "author": {
       "login": "quintuskilbourn"
     },
     "number": 144,
@@ -475,14 +491,6 @@
     "author": {
       "login": "come-maiz"
     },
-    "number": 158,
-    "title": "Support mev-boost in prysm",
-    "updatedAt": "2022-07-11T22:09:35Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
     "number": 163,
     "title": "Publish the mev-boost call for testing",
     "updatedAt": "2022-07-11T20:41:09Z"
@@ -502,14 +510,6 @@
     "number": 196,
     "title": "Faucet doesn't seem to be working even with my ENS name",
     "updatedAt": "2022-07-11T20:34:57Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 201,
-    "title": "Document the hardware requirements for running mev-boost",
-    "updatedAt": "2022-07-11T20:34:35Z"
   },
   {
     "author": {

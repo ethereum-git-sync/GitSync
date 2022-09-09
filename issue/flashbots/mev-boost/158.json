@@ -123,11 +123,11 @@
   },
   "comments": 6,
   "created_at": "2022-06-19T01:41:56Z",
-  "updated_at": "2022-07-11T22:09:35Z",
+  "updated_at": "2022-09-08T02:02:40Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
-  "body": "Here we track the support of mev-boost in [Prysm](https://github.com/prysmaticlabs/prysm/).\r\n\r\n✅  Builder-specs is implemented and merged in the develop branch.\r\n\r\n@terencechain prepared this guide: https://hackmd.io/@prysmaticlabs/BJeinxFsq",
+  "body": "Here we track the support of mev-boost in [Prysm](https://github.com/prysmaticlabs/prysm/).\r\n\r\n:heavy_check_mark: Builder API\r\n:question: local fallback when builder not available \r\n:question: local profit comparison\r\n:heavy_check_mark: [circuit breaker](https://github.com/prysmaticlabs/prysm/pull/11215)\r\n\r\n@terencechain prepared this guide: https://hackmd.io/@prysmaticlabs/BJeinxFsq",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/flashbots/mev-boost/issues/158/reactions",
@@ -173,9 +173,9 @@
       "site_admin": false
     },
     "created_at": "2022-06-19T03:04:41Z",
-    "updated_at": "2022-07-08T05:33:51Z",
+    "updated_at": "2022-09-08T02:02:40Z",
     "author_association": "CONTRIBUTOR",
-    "body": "@terencechain, @james-prysm, and @kasey are the humans writing the code for mev-boost in prysm.\r\n\r\n# Issues in the prysm repository\r\n\r\n- https://github.com/prysmaticlabs/prysm/issues/10593\r\n\r\n# Merged work\r\n\r\n- https://github.com/prysmaticlabs/prysm/pull/10703\r\n- https://github.com/prysmaticlabs/prysm/pull/10749\r\n- https://github.com/prysmaticlabs/prysm/pull/10883\r\n- https://github.com/prysmaticlabs/prysm/pull/10992\r\n- https://github.com/prysmaticlabs/prysm/pull/11005",
+    "body": "@terencechain, @james-prysm, and @kasey are the humans writing the code for mev-boost in prysm.\r\n\r\n# Issues in the prysm repository\r\n\r\n- https://github.com/prysmaticlabs/prysm/issues/10593\r\n\r\n# Merged work\r\n\r\n- https://github.com/prysmaticlabs/prysm/pull/10703\r\n- https://github.com/prysmaticlabs/prysm/pull/10749\r\n- https://github.com/prysmaticlabs/prysm/pull/10883\r\n- https://github.com/prysmaticlabs/prysm/pull/10992\r\n- https://github.com/prysmaticlabs/prysm/pull/11002\r\n- https://github.com/prysmaticlabs/prysm/pull/11004\r\n- https://github.com/prysmaticlabs/prysm/pull/11005\r\n- https://github.com/prysmaticlabs/prysm/pull/11014\r\n- https://github.com/prysmaticlabs/prysm/pull/11021\r\n- https://github.com/prysmaticlabs/prysm/pull/11022\r\n- https://github.com/prysmaticlabs/prysm/pull/11023\r\n- https://github.com/prysmaticlabs/prysm/pull/11052\r\n- https://github.com/prysmaticlabs/prysm/pull/11124\r\n- https://github.com/prysmaticlabs/prysm/pull/11195\r\n- https://github.com/prysmaticlabs/prysm/pull/11199\r\n- https://github.com/prysmaticlabs/prysm/pull/11203\r\n- https://github.com/prysmaticlabs/prysm/pull/11222\r\n- https://github.com/prysmaticlabs/prysm/pull/11215\r\n- https://github.com/prysmaticlabs/prysm/pull/11223\r\n- https://github.com/prysmaticlabs/prysm/pull/11228\r\n- https://github.com/prysmaticlabs/prysm/pull/11304\r\n- https://github.com/prysmaticlabs/prysm/pull/11313\r\n- https://github.com/prysmaticlabs/prysm/pull/11346\r\n- https://github.com/prysmaticlabs/prysm/pull/11214\r\n- https://github.com/prysmaticlabs/prysm/pull/11380\r\n- https://github.com/prysmaticlabs/prysm/pull/11395",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1159606438/reactions",
       "total_count": 0,

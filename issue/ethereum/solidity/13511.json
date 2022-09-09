@@ -1,0 +1,94 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13511",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13511/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13511/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13511/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13511",
+  "id": 1367038965,
+  "node_id": "I_kwDOAm_5kc5Re1v1",
+  "number": 13511,
+  "title": "`UnusedStoreEliminator` step missing in documentation",
+  "user": {
+    "login": "pcaversaccio",
+    "id": 25297591,
+    "node_id": "MDQ6VXNlcjI1Mjk3NTkx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25297591?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/pcaversaccio",
+    "html_url": "https://github.com/pcaversaccio",
+    "followers_url": "https://api.github.com/users/pcaversaccio/followers",
+    "following_url": "https://api.github.com/users/pcaversaccio/following{/other_user}",
+    "gists_url": "https://api.github.com/users/pcaversaccio/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/pcaversaccio/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/pcaversaccio/subscriptions",
+    "organizations_url": "https://api.github.com/users/pcaversaccio/orgs",
+    "repos_url": "https://api.github.com/users/pcaversaccio/repos",
+    "events_url": "https://api.github.com/users/pcaversaccio/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/pcaversaccio/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 275027668,
+      "node_id": "MDU6TGFiZWwyNzUwMjc2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/documentation%20:book:",
+      "name": "documentation :book:",
+      "color": "006b75",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 838064207,
+      "node_id": "MDU6TGFiZWw4MzgwNjQyMDc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/annoys%20users%20:cry:",
+      "name": "annoys users :cry:",
+      "color": "ea2cab",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1012613901,
+      "node_id": "MDU6TGFiZWwxMDEyNjEzOTAx",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/easy%20difficulty",
+      "name": "easy difficulty",
+      "color": "0b3f89",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-08T22:06:08Z",
+  "updated_at": "2022-09-08T22:16:08Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Summary\r\n\r\nIn the current documentation on the [Yul-based optimizer steps](https://docs.soliditylang.org/en/latest/internals/optimizer.html#optimizer-steps), the step `UnusedStoreEliminator` is missing.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13511/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13511/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

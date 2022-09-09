@@ -1,11 +1,83 @@
 [
   {
     "author": {
+      "login": "madvas"
+    },
+    "number": 2675,
+    "title": "Be able to disable all warnings for certain files",
+    "updatedAt": "2022-09-08T22:17:10Z"
+  },
+  {
+    "author": {
+      "login": "pcaversaccio"
+    },
+    "number": 13511,
+    "title": "`UnusedStoreEliminator` step missing in documentation",
+    "updatedAt": "2022-09-08T22:16:08Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13508,
+    "title": "Replace `bin/soljson-latest.js` in solc-bin with a symlink",
+    "updatedAt": "2022-09-08T18:14:33Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13507,
+    "title": "Gitter notifications for failing solc-bin nightly build",
+    "updatedAt": "2022-09-08T18:07:25Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13506,
+    "title": "Nightly builds in solc-bin broken due to git's `safe.directory` check",
+    "updatedAt": "2022-09-08T18:00:12Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13362,
+    "title": "Fix builds for Ubuntu 22.10",
+    "updatedAt": "2022-09-08T17:02:11Z"
+  },
+  {
+    "author": {
       "login": "nventuro"
     },
     "number": 13475,
     "title": "solc wastes memory when using structs",
-    "updatedAt": "2022-09-07T23:03:57Z"
+    "updatedAt": "2022-09-08T14:45:24Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 13504,
+    "title": "Add examples of using memory structs in documentation",
+    "updatedAt": "2022-09-08T14:33:15Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13478,
+    "title": "[Yul optimizer] RSE incorrectly removes sstore",
+    "updatedAt": "2022-09-08T12:04:05Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13497,
+    "title": "Document UnusedStoreEliminator",
+    "updatedAt": "2022-09-08T09:45:35Z"
   },
   {
     "author": {
@@ -14,14 +86,6 @@
     "number": 13496,
     "title": "Segmentation fault compiling a contract with huge data and via-IR enabled",
     "updatedAt": "2022-09-07T19:50:38Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13497,
-    "title": "Document UnusedStoreEliminator",
-    "updatedAt": "2022-09-07T19:12:15Z"
   },
   {
     "author": {
@@ -238,14 +302,6 @@
     "number": 13356,
     "title": "Function pointer assignment error when names are colliding",
     "updatedAt": "2022-09-05T10:08:22Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 13478,
-    "title": "[Yul optimizer] RSE incorrectly removes sstore",
-    "updatedAt": "2022-09-05T08:57:15Z"
   },
   {
     "author": {
@@ -1909,14 +1965,6 @@
     },
     "number": 2648,
     "title": "Custom getters for user-defined structs",
-    "updatedAt": "2022-08-17T13:49:38Z"
-  },
-  {
-    "author": {
-      "login": "madvas"
-    },
-    "number": 2675,
-    "title": "Be able to disable all warnings for certain files",
     "updatedAt": "2022-08-17T13:49:38Z"
   },
   {
@@ -3782,14 +3830,6 @@
     "number": 13372,
     "title": "UB: can't create zero length array",
     "updatedAt": "2022-08-17T13:48:35Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 13362,
-    "title": "Fix builds for Ubuntu 22.10",
-    "updatedAt": "2022-08-17T11:57:17Z"
   },
   {
     "author": {

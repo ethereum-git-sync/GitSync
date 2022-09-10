@@ -1,19 +1,19 @@
 [
   {
     "author": {
-      "login": "Mars7005"
+      "login": "elsampsa"
     },
-    "number": 25722,
-    "title": "🤙",
-    "updatedAt": "2022-09-08T23:29:27Z"
+    "number": 25730,
+    "title": "Geth refuses to sync after being a few months offline",
+    "updatedAt": "2022-09-09T18:57:27Z"
   },
   {
     "author": {
-      "login": "Sajjon"
+      "login": "rezaeghbal01"
     },
-    "number": 25589,
-    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
-    "updatedAt": "2022-09-08T20:10:12Z"
+    "number": 25728,
+    "title": "Matic\n",
+    "updatedAt": "2022-09-09T15:02:40Z"
   },
   {
     "author": {
@@ -21,7 +21,95 @@
     },
     "number": 25720,
     "title": "Will log subscribe events API disabled in Geth after merge? ",
-    "updatedAt": "2022-09-08T19:30:28Z"
+    "updatedAt": "2022-09-09T14:19:59Z"
+  },
+  {
+    "author": {
+      "login": "4441114417342316"
+    },
+    "number": 25727,
+    "title": "Something like this perhaps:",
+    "updatedAt": "2022-09-09T14:04:09Z"
+  },
+  {
+    "author": {
+      "login": "ulope"
+    },
+    "number": 25693,
+    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
+    "updatedAt": "2022-09-09T12:36:07Z"
+  },
+  {
+    "author": {
+      "login": "litcc"
+    },
+    "number": 25703,
+    "title": "How can I check the latest healedTrienodes height of the main network?",
+    "updatedAt": "2022-09-09T11:25:08Z"
+  },
+  {
+    "author": {
+      "login": "begetan"
+    },
+    "number": 22301,
+    "title": "Geth is losing pending transactions with the error: Demoting invalidated transaction",
+    "updatedAt": "2022-09-09T10:07:09Z"
+  },
+  {
+    "author": {
+      "login": "ybstaked"
+    },
+    "number": 25613,
+    "title": "Geth 1.10.21 -> 1.10.23 Unhandle trie error",
+    "updatedAt": "2022-09-09T09:20:31Z"
+  },
+  {
+    "author": {
+      "login": "kash1988"
+    },
+    "number": 25712,
+    "title": "debug_dumpBlock for specific addresses",
+    "updatedAt": "2022-09-09T09:15:14Z"
+  },
+  {
+    "author": {
+      "login": "brunokelo"
+    },
+    "number": 25697,
+    "title": "stop sync",
+    "updatedAt": "2022-09-09T09:14:19Z"
+  },
+  {
+    "author": {
+      "login": "i11m20n"
+    },
+    "number": 25704,
+    "title": "Failed to commit trie from trie database err=\"read /ethereum/.ethereum/geth/chaindata/102907544.ldb: input/output error\"",
+    "updatedAt": "2022-09-09T09:13:07Z"
+  },
+  {
+    "author": {
+      "login": "lcgogo"
+    },
+    "number": 25594,
+    "title": "How does geth communicate with prysm?",
+    "updatedAt": "2022-09-09T04:31:42Z"
+  },
+  {
+    "author": {
+      "login": "Sajjon"
+    },
+    "number": 25589,
+    "title": "Need help with 1.10.22 regression, in 1.10.23 I get `Unhandled trie error: missing trie node`",
+    "updatedAt": "2022-09-09T02:04:47Z"
+  },
+  {
+    "author": {
+      "login": "Mars7005"
+    },
+    "number": 25722,
+    "title": "🤙",
+    "updatedAt": "2022-09-09T00:54:39Z"
   },
   {
     "author": {
@@ -30,22 +118,6 @@
     "number": 25599,
     "title": "Async block creation post-merge",
     "updatedAt": "2022-09-08T15:22:14Z"
-  },
-  {
-    "author": {
-      "login": "ulope"
-    },
-    "number": 25693,
-    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
-    "updatedAt": "2022-09-08T09:27:28Z"
-  },
-  {
-    "author": {
-      "login": "litcc"
-    },
-    "number": 25703,
-    "title": "How can I check the latest healedTrienodes height of the main network?",
-    "updatedAt": "2022-09-08T08:44:01Z"
   },
   {
     "author": {
@@ -97,14 +169,6 @@
   },
   {
     "author": {
-      "login": "kash1988"
-    },
-    "number": 25712,
-    "title": "debug_dumpBlock for specific addresses",
-    "updatedAt": "2022-09-07T15:47:42Z"
-  },
-  {
-    "author": {
       "login": "SLoeuillet"
     },
     "number": 25583,
@@ -121,14 +185,6 @@
   },
   {
     "author": {
-      "login": "i11m20n"
-    },
-    "number": 25704,
-    "title": "Failed to commit trie from trie database err=\"read /ethereum/.ethereum/geth/chaindata/102907544.ldb: input/output error\"",
-    "updatedAt": "2022-09-07T06:46:10Z"
-  },
-  {
-    "author": {
       "login": "masayil"
     },
     "number": 25659,
@@ -142,14 +198,6 @@
     "number": 25614,
     "title": "Intent to Implement: Recovery of Missing Logs",
     "updatedAt": "2022-09-06T22:12:20Z"
-  },
-  {
-    "author": {
-      "login": "brunokelo"
-    },
-    "number": 25697,
-    "title": "stop sync",
-    "updatedAt": "2022-09-06T21:20:42Z"
   },
   {
     "author": {
@@ -174,14 +222,6 @@
     "number": 25682,
     "title": "what will RPC eth_getWork method return after merge",
     "updatedAt": "2022-09-06T14:35:55Z"
-  },
-  {
-    "author": {
-      "login": "lcgogo"
-    },
-    "number": 25594,
-    "title": "How does geth communicate with prysm?",
-    "updatedAt": "2022-09-06T13:23:27Z"
   },
   {
     "author": {
@@ -422,14 +462,6 @@
     "number": 25649,
     "title": "invalid merkle root    Skip duplicated bad block",
     "updatedAt": "2022-09-01T07:12:18Z"
-  },
-  {
-    "author": {
-      "login": "ybstaked"
-    },
-    "number": 25613,
-    "title": "Geth 1.10.21 -> 1.10.23 Unhandle trie error",
-    "updatedAt": "2022-09-01T01:42:43Z"
   },
   {
     "author": {
@@ -10734,14 +10766,6 @@
     "number": 23011,
     "title": "Many BAD BLOCK invalid bloom at fast sync last stages",
     "updatedAt": "2021-06-09T14:30:10Z"
-  },
-  {
-    "author": {
-      "login": "begetan"
-    },
-    "number": 22301,
-    "title": "Geth is losing pending transactions with the error: Demoting invalidated transaction",
-    "updatedAt": "2021-06-09T06:40:10Z"
   },
   {
     "author": {

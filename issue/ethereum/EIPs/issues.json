@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "poojaranjan"
+    },
+    "number": 5190,
+    "title": "A recommendation to refer to an ERC category proposal (for documentation)",
+    "updatedAt": "2022-09-10T00:23:28Z"
+  },
+  {
+    "author": {
+      "login": "4441114417342316"
+    },
+    "number": 5631,
+    "title": "EIPS/eip-5605.md",
+    "updatedAt": "2022-09-09T11:50:57Z"
+  },
+  {
+    "author": {
       "login": "fulldecent"
     },
     "number": 5424,
@@ -14,22 +30,6 @@
     "number": 5310,
     "title": "GitHub actions don't run for first time contributors",
     "updatedAt": "2022-09-09T00:22:56Z"
-  },
-  {
-    "author": {
-      "login": "poojaranjan"
-    },
-    "number": 5190,
-    "title": "A recommendation to refer to an ERC category proposal (for documentation)",
-    "updatedAt": "2022-09-09T00:22:55Z"
-  },
-  {
-    "author": {
-      "login": "4441114417342316"
-    },
-    "number": 5631,
-    "title": "EIPS/eip-5605.md",
-    "updatedAt": "2022-09-08T23:44:57Z"
   },
   {
     "author": {

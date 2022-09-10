@@ -5,7 +5,7 @@
     },
     "number": 2988,
     "title": "`consensus-spec-tests`'s `diagnostics.json` file path",
-    "updatedAt": "2022-09-08T15:25:53Z"
+    "updatedAt": "2022-09-09T18:28:09Z"
   },
   {
     "author": {
@@ -13,7 +13,7 @@
     },
     "number": 2986,
     "title": "Add reference test for invalid deposit with unparsable public key",
-    "updatedAt": "2022-09-08T02:17:13Z"
+    "updatedAt": "2022-09-09T10:35:22Z"
   },
   {
     "author": {

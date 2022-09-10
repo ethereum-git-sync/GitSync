@@ -1,11 +1,11 @@
 [
   {
     "author": {
-      "login": "timbeiko"
+      "login": "tvanepps"
     },
-    "number": 616,
-    "title": "Ethereum Core Devs Meeting 147 Agenda",
-    "updatedAt": "2022-09-08T17:28:13Z"
+    "number": 599,
+    "title": "Merge Community Call #7",
+    "updatedAt": "2022-09-09T21:45:10Z"
   },
   {
     "author": {
@@ -13,7 +13,15 @@
     },
     "number": 450,
     "title": "Shanghai Planning",
-    "updatedAt": "2022-09-08T16:00:03Z"
+    "updatedAt": "2022-09-09T20:53:53Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 616,
+    "title": "Ethereum Core Devs Meeting 147 Agenda",
+    "updatedAt": "2022-09-09T15:11:16Z"
   },
   {
     "author": {
@@ -46,14 +54,6 @@
     "number": 609,
     "title": "Ethereum Core Devs Meeting 146 Agenda",
     "updatedAt": "2022-09-06T18:14:03Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 599,
-    "title": "Merge Community Call #7",
-    "updatedAt": "2022-09-06T18:04:34Z"
   },
   {
     "author": {

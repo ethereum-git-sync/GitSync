@@ -41,7 +41,7 @@
   "milestone": null,
   "comments": 3,
   "created_at": "2020-05-18T12:49:49Z",
-  "updated_at": "2022-08-05T15:16:04Z",
+  "updated_at": "2022-09-09T19:29:14Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -135,9 +135,9 @@
       "site_admin": false
     },
     "created_at": "2022-07-04T16:37:43Z",
-    "updated_at": "2022-07-04T16:41:23Z",
+    "updated_at": "2022-09-09T19:29:14Z",
     "author_association": "MEMBER",
-    "body": "Looks like github docs have some ready to use examples for these:\r\n- [Moving assigned issues on project boards](https://docs.github.com/en/actions/managing-issues-and-pull-requests/moving-assigned-issues-on-project-boards) + [Adding labels to issues](https://docs.github.com/en/actions/managing-issues-and-pull-requests/adding-labels-to-issues)\r\n- [Closing inactive issues](https://docs.github.com/en/actions/managing-issues-and-pull-requests/closing-inactive-issues) + [Commenting on an issue when a label is added](https://docs.github.com/en/actions/managing-issues-and-pull-requests/commenting-on-an-issue-when-a-label-is-added)\r\n\r\nLooks like they actually rely on third-party github actions.\r\n\r\nAlso one more idea for what we could do: assigning triage issues (and maybe PRs to review) to random team members. The assigned person has either deal with it or give it to someone else, but has to do *something*.",
+    "body": "Looks like github docs have some ready to use examples for these:\r\n- [Moving assigned issues on project boards](https://docs.github.com/en/actions/managing-issues-and-pull-requests/moving-assigned-issues-on-project-boards) + [Adding labels to issues](https://docs.github.com/en/actions/managing-issues-and-pull-requests/adding-labels-to-issues)\r\n- [Closing inactive issues](https://docs.github.com/en/actions/managing-issues-and-pull-requests/closing-inactive-issues) + [Commenting on an issue when a label is added](https://docs.github.com/en/actions/managing-issues-and-pull-requests/commenting-on-an-issue-when-a-label-is-added)\r\n\r\nLooks like they actually rely on third-party github actions.\r\n\r\nAlso one more idea for what we could do: assigning triage issues (and maybe PRs to review) to random team members. The assigned person has to either deal with it or give it to someone else, but has to do *something*.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1173993838/reactions",
       "total_count": 0,

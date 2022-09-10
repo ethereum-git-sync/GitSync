@@ -1,11 +1,75 @@
 [
   {
     "author": {
-      "login": "madvas"
+      "login": "xx014939"
     },
-    "number": 2675,
-    "title": "Be able to disable all warnings for certain files",
-    "updatedAt": "2022-09-08T22:17:10Z"
+    "number": 13515,
+    "title": "wrapper.js:10 Uncaught TypeError: Cannot use 'in' operator to search for '_solidity_version' in undefined",
+    "updatedAt": "2022-09-09T20:12:40Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8969,
+    "title": "Implement project board automation",
+    "updatedAt": "2022-09-09T19:29:14Z"
+  },
+  {
+    "author": {
+      "login": "dessaya"
+    },
+    "number": 12067,
+    "title": "Allow `verbatim` in Solidity `assembly` blocks",
+    "updatedAt": "2022-09-09T18:01:12Z"
+  },
+  {
+    "author": {
+      "login": "pcaversaccio"
+    },
+    "number": 13512,
+    "title": "feat: introduce `block.prevrandao` as alias for `block.difficulty`",
+    "updatedAt": "2022-09-09T17:54:08Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 13504,
+    "title": "Add examples of using memory structs in documentation",
+    "updatedAt": "2022-09-09T16:03:25Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13497,
+    "title": "Document UnusedStoreEliminator",
+    "updatedAt": "2022-09-09T15:41:15Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 11959,
+    "title": "Clean up the helpers around errors",
+    "updatedAt": "2022-09-09T15:07:18Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13506,
+    "title": "Nightly builds in solc-bin broken due to git's `safe.directory` check",
+    "updatedAt": "2022-09-09T11:59:41Z"
+  },
+  {
+    "author": {
+      "login": "wighawag"
+    },
+    "number": 13494,
+    "title": "Assembly clearing local variable",
+    "updatedAt": "2022-09-09T10:20:39Z"
   },
   {
     "author": {
@@ -13,7 +77,15 @@
     },
     "number": 13511,
     "title": "`UnusedStoreEliminator` step missing in documentation",
-    "updatedAt": "2022-09-08T22:16:08Z"
+    "updatedAt": "2022-09-09T00:18:41Z"
+  },
+  {
+    "author": {
+      "login": "madvas"
+    },
+    "number": 2675,
+    "title": "Be able to disable all warnings for certain files",
+    "updatedAt": "2022-09-08T22:17:10Z"
   },
   {
     "author": {
@@ -33,14 +105,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 13506,
-    "title": "Nightly builds in solc-bin broken due to git's `safe.directory` check",
-    "updatedAt": "2022-09-08T18:00:12Z"
-  },
-  {
-    "author": {
       "login": "ekpyron"
     },
     "number": 13362,
@@ -57,27 +121,11 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 13504,
-    "title": "Add examples of using memory structs in documentation",
-    "updatedAt": "2022-09-08T14:33:15Z"
-  },
-  {
-    "author": {
       "login": "bshastry"
     },
     "number": 13478,
     "title": "[Yul optimizer] RSE incorrectly removes sstore",
     "updatedAt": "2022-09-08T12:04:05Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13497,
-    "title": "Document UnusedStoreEliminator",
-    "updatedAt": "2022-09-08T09:45:35Z"
   },
   {
     "author": {
@@ -94,14 +142,6 @@
     "number": 9297,
     "title": "Investigate node-js performance and delays on exiting",
     "updatedAt": "2022-09-07T18:03:14Z"
-  },
-  {
-    "author": {
-      "login": "wighawag"
-    },
-    "number": 13494,
-    "title": "Assembly clearing local variable",
-    "updatedAt": "2022-09-07T17:42:57Z"
   },
   {
     "author": {
@@ -3041,14 +3081,6 @@
   },
   {
     "author": {
-      "login": "dessaya"
-    },
-    "number": 12067,
-    "title": "Allow `verbatim` in Solidity `assembly` blocks",
-    "updatedAt": "2022-08-17T13:48:55Z"
-  },
-  {
-    "author": {
       "login": "drortirosh"
     },
     "number": 12725,
@@ -3849,14 +3881,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 11959,
-    "title": "Clean up the helpers around errors",
-    "updatedAt": "2022-08-16T09:26:56Z"
-  },
-  {
-    "author": {
       "login": "YangYang129"
     },
     "number": 12027,
@@ -4110,14 +4134,6 @@
     "number": 13312,
     "title": "Require Statements Revert Custom Errors",
     "updatedAt": "2022-08-05T19:42:24Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 8969,
-    "title": "Implement project board automation",
-    "updatedAt": "2022-08-05T15:16:04Z"
   },
   {
     "author": {

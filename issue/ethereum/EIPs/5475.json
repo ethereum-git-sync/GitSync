@@ -8,7 +8,7 @@
   "id": 1341654806,
   "node_id": "I_kwDOAq426M5P-AcW",
   "number": 5475,
-  "title": "Proposal: Rollback EIP-712 from \"final\" to \"draft\" OR deprecate EIP-712 with a new one",
+  "title": "Rollback EIP-712 from \"final\" to \"draft\" OR deprecate EIP-712 with a new one",
   "user": {
     "login": "xinbenlv",
     "id": 640325,
@@ -38,6 +38,15 @@
       "color": "4500E6",
       "default": true,
       "description": ""
+    },
+    {
+      "id": 4519337642,
+      "node_id": "LA_kwDOAq426M8AAAABDV-eqg",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/r-process",
+      "name": "r-process",
+      "color": "512264",
+      "default": false,
+      "description": "Relates to an EIP Process"
     }
   ],
   "state": "open",
@@ -49,7 +58,7 @@
   "milestone": null,
   "comments": 11,
   "created_at": "2022-08-17T11:58:53Z",
-  "updated_at": "2022-09-05T00:24:26Z",
+  "updated_at": "2022-09-10T17:46:35Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,

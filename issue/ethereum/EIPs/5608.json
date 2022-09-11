@@ -38,6 +38,15 @@
       "color": "092FA2",
       "default": true,
       "description": ""
+    },
+    {
+      "id": 4519336758,
+      "node_id": "LA_kwDOAq426M8AAAABDV-bNg",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/r-website",
+      "name": "r-website",
+      "color": "512264",
+      "default": false,
+      "description": "Relates to the Website"
     }
   ],
   "state": "open",
@@ -49,7 +58,7 @@
   "milestone": null,
   "comments": 9,
   "created_at": "2022-09-06T21:45:21Z",
-  "updated_at": "2022-09-08T00:28:18Z",
+  "updated_at": "2022-09-10T17:45:59Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,

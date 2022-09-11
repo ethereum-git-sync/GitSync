@@ -8,7 +8,7 @@
   "id": 1362341159,
   "node_id": "I_kwDOAq426M5RM60n",
   "number": 5597,
-  "title": "Advocate for EIP editors to clearly explain the **current** external link policy to new authors.",
+  "title": "EIP editors should explain the external link policy to new authors",
   "user": {
     "login": "xinbenlv",
     "id": 640325,
@@ -31,13 +31,22 @@
   },
   "labels": [
     {
-      "id": 4468107952,
-      "node_id": "LA_kwDOAq426M8AAAABClHqsA",
-      "url": "https://api.github.com/repos/ethereum/EIPs/labels/enhancement",
-      "name": "enhancement",
-      "color": "092FA2",
+      "id": 4468111640,
+      "node_id": "LA_kwDOAq426M8AAAABClH5GA",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/question",
+      "name": "question",
+      "color": "4500E6",
       "default": true,
       "description": ""
+    },
+    {
+      "id": 4519337642,
+      "node_id": "LA_kwDOAq426M8AAAABDV-eqg",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/r-process",
+      "name": "r-process",
+      "color": "512264",
+      "default": false,
+      "description": "Relates to an EIP Process"
     }
   ],
   "state": "open",
@@ -49,7 +58,7 @@
   "milestone": null,
   "comments": 8,
   "created_at": "2022-09-05T17:52:16Z",
-  "updated_at": "2022-09-08T17:46:57Z",
+  "updated_at": "2022-09-10T17:58:29Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,

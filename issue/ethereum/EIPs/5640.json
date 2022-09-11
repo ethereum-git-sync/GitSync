@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/5640",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/5640/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/5640/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/5640/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/5640",
+  "id": 1368684024,
+  "node_id": "I_kwDOAq426M5RlHX4",
+  "number": 5640,
+  "title": "Updated PR Merge Queue",
+  "user": {
+    "login": "Pandapip1",
+    "id": 45835846,
+    "node_id": "MDQ6VXNlcjQ1ODM1ODQ2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/45835846?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Pandapip1",
+    "html_url": "https://github.com/Pandapip1",
+    "followers_url": "https://api.github.com/users/Pandapip1/followers",
+    "following_url": "https://api.github.com/users/Pandapip1/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Pandapip1/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Pandapip1/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Pandapip1/subscriptions",
+    "organizations_url": "https://api.github.com/users/Pandapip1/orgs",
+    "repos_url": "https://api.github.com/users/Pandapip1/repos",
+    "events_url": "https://api.github.com/users/Pandapip1/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Pandapip1/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 4468107952,
+      "node_id": "LA_kwDOAq426M8AAAABClHqsA",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/enhancement",
+      "name": "enhancement",
+      "color": "092FA2",
+      "default": true,
+      "description": ""
+    },
+    {
+      "id": 4519337642,
+      "node_id": "LA_kwDOAq426M8AAAABDV-eqg",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/r-process",
+      "name": "r-process",
+      "color": "512264",
+      "default": false,
+      "description": "Relates to an EIP Process"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-10T17:29:38Z",
+  "updated_at": "2022-09-10T17:45:44Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "### Proposed Change\n\nI suggest that instead of the current \"EIP Editors review whichever PRs they want\", I suggest the following:\r\n\r\n- If there are one or more PRs that have contentious issues (changes to CI, the website, and living and final EIPs would count as contentious until proven otherwise by the PR being merged) and have new activity, review them first, in ascending order of least recent unread message. GitHub will give you that list for you (if we make a contentious issue label): TODO\r\n- If there are one or more PRs that would need manual merging and have new activity, review them in top-to-down milestone order (new PRs must appear at the bottom). Again, GitHub gives you that list for you: https://github.com/ethereum/EIPs/milestone/1\r\n- Review all PRs that add a new EIP as Withdrawn, Living, or Final and have new activity in *least* recently updated order. (All these items have lists that could work. I could even probably make a small app that aggregates these lists).\r\n- Review all PRs that change the status of an *existing* EIP to final, living, or withdrawn and have new activity in *most* recently updated order\r\n- Review all PRs that change the status of an *existing* EIP to last call and have new activity in *most* recently updated order\r\n- Review all PRs that change the status of an *existing* EIP to review and have new activity in *most* recently updated order\r\n- Review all PRs that add a new EIP and have new activity in order of ascending number of changed lines\r\n- Review all other PRs that have new activity at random :] (I think I covered all the cases, but this works as a catch-all)",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/5640/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/5640/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

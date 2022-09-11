@@ -1,11 +1,147 @@
 [
   {
     "author": {
+      "login": "Arachnid"
+    },
+    "number": 4335,
+    "title": "EIP registries",
+    "updatedAt": "2022-09-10T17:59:19Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5082,
+    "title": "One-time NFT Sale of unused EIP numbers.",
+    "updatedAt": "2022-09-10T17:59:09Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5158,
+    "title": "Example relative link in EIP-1 is rendered as absolute",
+    "updatedAt": "2022-09-10T17:58:56Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5597,
+    "title": "EIP editors should explain the external link policy to new authors",
+    "updatedAt": "2022-09-10T17:58:29Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5408,
+    "title": "Create an EIP External Link Archive",
+    "updatedAt": "2022-09-10T17:58:19Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5274,
+    "title": "Add an optional `relates-to` preamble key",
+    "updatedAt": "2022-09-10T17:58:01Z"
+  },
+  {
+    "author": {
       "login": "poojaranjan"
     },
     "number": 5190,
-    "title": "A recommendation to refer to an ERC category proposal (for documentation)",
-    "updatedAt": "2022-09-10T00:23:28Z"
+    "title": "How should EIPs should be referenced?",
+    "updatedAt": "2022-09-10T17:57:36Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5294,
+    "title": "How should we pick EIP numbers?",
+    "updatedAt": "2022-09-10T17:57:22Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5265,
+    "title": "Add a `Superseded` status",
+    "updatedAt": "2022-09-10T17:54:54Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5310,
+    "title": "GitHub actions don't run for first time contributors",
+    "updatedAt": "2022-09-10T17:51:16Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5352,
+    "title": "Display a \"citation\" when hovering over links to other EIPs",
+    "updatedAt": "2022-09-10T17:50:58Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5298,
+    "title": "Pin all GitHub Action dependencies to hash version.",
+    "updatedAt": "2022-09-10T17:50:24Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 5424,
+    "title": "EIP editors should explain that ERC was renamed to EIP",
+    "updatedAt": "2022-09-10T17:49:10Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5488,
+    "title": "Add finalized date to EIPs.",
+    "updatedAt": "2022-09-10T17:48:21Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5475,
+    "title": "Rollback EIP-712 from \"final\" to \"draft\" OR deprecate EIP-712 with a new one",
+    "updatedAt": "2022-09-10T17:46:35Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5608,
+    "title": "Make EIPs Website a PWA",
+    "updatedAt": "2022-09-10T17:45:59Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5640,
+    "title": "Updated PR Merge Queue",
+    "updatedAt": "2022-09-10T17:45:44Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5641,
+    "title": "Automatically merge all new EIP drafts",
+    "updatedAt": "2022-09-10T17:44:36Z"
   },
   {
     "author": {
@@ -14,30 +150,6 @@
     "number": 5631,
     "title": "EIPS/eip-5605.md",
     "updatedAt": "2022-09-09T11:50:57Z"
-  },
-  {
-    "author": {
-      "login": "fulldecent"
-    },
-    "number": 5424,
-    "title": "Explain in text that ERC was renamed to EIP",
-    "updatedAt": "2022-09-09T00:22:57Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5310,
-    "title": "GitHub actions don't run for first time contributors",
-    "updatedAt": "2022-09-09T00:22:56Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5597,
-    "title": "Advocate for EIP editors to clearly explain the **current** external link policy to new authors.",
-    "updatedAt": "2022-09-08T17:46:57Z"
   },
   {
     "author": {
@@ -51,33 +163,9 @@
     "author": {
       "login": "Pandapip1"
     },
-    "number": 5608,
-    "title": "Make EIPs Website a PWA",
-    "updatedAt": "2022-09-08T00:28:18Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5082,
-    "title": "One-time NFT Sale of unused EIP numbers.",
-    "updatedAt": "2022-09-08T00:22:27Z"
-  },
-  {
-    "author": {
-      "login": "Pandapip1"
-    },
     "number": 5315,
     "title": "Standardize April 1 EIPs",
     "updatedAt": "2022-09-07T23:24:56Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5488,
-    "title": "Add finalized date to EIPs.",
-    "updatedAt": "2022-09-07T03:47:22Z"
   },
   {
     "author": {
@@ -86,78 +174,6 @@
     "number": 5600,
     "title": "Set clearer time-boxed stages for the EIP process to prevent stale or stalled submissions",
     "updatedAt": "2022-09-05T22:36:53Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5408,
-    "title": "Create an EIP ExternalLinkArchiveBot (EIP ELABot)",
-    "updatedAt": "2022-09-05T00:24:26Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5475,
-    "title": "Proposal: Rollback EIP-712 from \"final\" to \"draft\" OR deprecate EIP-712 with a new one",
-    "updatedAt": "2022-09-05T00:24:26Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5298,
-    "title": "Pin all GitHub Action dependencies to hash version.",
-    "updatedAt": "2022-09-04T00:22:40Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5294,
-    "title": "How should we pick EIP numbers?",
-    "updatedAt": "2022-09-04T00:22:39Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5274,
-    "title": "Proposal for EIP preamble: include separate `relates-to:` as an optional field",
-    "updatedAt": "2022-09-04T00:22:38Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5265,
-    "title": "Proposal to include `Superseded` status and `superseded-by: ` (eip number) preemble section",
-    "updatedAt": "2022-09-04T00:22:37Z"
-  },
-  {
-    "author": {
-      "login": "Arachnid"
-    },
-    "number": 4335,
-    "title": "EIP registries",
-    "updatedAt": "2022-09-04T00:22:36Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5352,
-    "title": "Display a \"citation\" when hovering over links to other EIPs",
-    "updatedAt": "2022-09-03T01:22:27Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5158,
-    "title": "Example relative link in EIP-1 is rendered as absolute",
-    "updatedAt": "2022-09-03T01:21:53Z"
   },
   {
     "author": {

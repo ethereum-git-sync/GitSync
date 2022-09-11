@@ -8,7 +8,7 @@
   "id": 1327918192,
   "node_id": "I_kwDOAq426M5PJmxw",
   "number": 5408,
-  "title": "Create an EIP ExternalLinkArchiveBot (EIP ELABot)",
+  "title": "Create an EIP External Link Archive",
   "user": {
     "login": "xinbenlv",
     "id": 640325,
@@ -31,13 +31,49 @@
   },
   "labels": [
     {
+      "id": 4468107952,
+      "node_id": "LA_kwDOAq426M8AAAABClHqsA",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/enhancement",
+      "name": "enhancement",
+      "color": "092FA2",
+      "default": true,
+      "description": ""
+    },
+    {
       "id": 4468108579,
       "node_id": "LA_kwDOAq426M8AAAABClHtIw",
-      "url": "https://api.github.com/repos/ethereum/EIPs/labels/security",
-      "name": "security",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/t-security",
+      "name": "t-security",
       "color": "72354C",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 4519336379,
+      "node_id": "LA_kwDOAq426M8AAAABDV-Zuw",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/r-ci",
+      "name": "r-ci",
+      "color": "512264",
+      "default": false,
+      "description": "Relates to the CI"
+    },
+    {
+      "id": 4519336758,
+      "node_id": "LA_kwDOAq426M8AAAABDV-bNg",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/r-website",
+      "name": "r-website",
+      "color": "512264",
+      "default": false,
+      "description": "Relates to the Website"
+    },
+    {
+      "id": 4519348125,
+      "node_id": "LA_kwDOAq426M8AAAABDV_HnQ",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/r-eips",
+      "name": "r-eips",
+      "color": "512264",
+      "default": false,
+      "description": "Relates to the formatting or another aspect of EIPs"
     }
   ],
   "state": "open",
@@ -49,7 +85,7 @@
   "milestone": null,
   "comments": 4,
   "created_at": "2022-08-04T00:23:01Z",
-  "updated_at": "2022-09-05T00:24:26Z",
+  "updated_at": "2022-09-10T17:58:19Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -104,8 +140,8 @@
     "body": "I'd prefer something like arweave + IPFS.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1205471141/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

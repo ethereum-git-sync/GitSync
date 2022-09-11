@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "estensen"
+    },
+    "number": 304,
+    "title": "Add more linters",
+    "updatedAt": "2022-09-10T13:58:20Z"
+  },
+  {
+    "author": {
       "login": "come-maiz"
     },
     "number": 201,

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/304",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/304/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/304/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/304/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/304",
+  "id": 1368630459,
+  "node_id": "I_kwDOGZSKs85Rk6S7",
+  "number": 304,
+  "title": "Add more linters",
+  "user": {
+    "login": "estensen",
+    "id": 9142800,
+    "node_id": "MDQ6VXNlcjkxNDI4MDA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9142800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/estensen",
+    "html_url": "https://github.com/estensen",
+    "followers_url": "https://api.github.com/users/estensen/followers",
+    "following_url": "https://api.github.com/users/estensen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/estensen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/estensen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/estensen/subscriptions",
+    "organizations_url": "https://api.github.com/users/estensen/orgs",
+    "repos_url": "https://api.github.com/users/estensen/repos",
+    "events_url": "https://api.github.com/users/estensen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/estensen/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-10T13:58:20Z",
+  "updated_at": "2022-09-10T13:58:20Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "Hi, I've worked quite a bit with linters. Is it interesting if I add golangci-lint as an Action and add linters one-by-one?\r\nIt's been very useful in some projects I've been working on.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/304/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/304/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

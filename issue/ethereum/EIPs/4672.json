@@ -1,8 +1,130 @@
 {
-  "message": "Not Found",
-  "documentation_url": "https://docs.github.com/rest"
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/4672",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/4672/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/4672/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/4672/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/4672",
+  "id": 1101383106,
+  "node_id": "I_kwDOAq426M5BpcXC",
+  "number": 4672,
+  "title": "Discussion: EIP-4671",
+  "user": {
+    "login": "OmarAflak",
+    "id": 6695348,
+    "node_id": "MDQ6VXNlcjY2OTUzNDg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6695348?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/OmarAflak",
+    "html_url": "https://github.com/OmarAflak",
+    "followers_url": "https://api.github.com/users/OmarAflak/followers",
+    "following_url": "https://api.github.com/users/OmarAflak/following{/other_user}",
+    "gists_url": "https://api.github.com/users/OmarAflak/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/OmarAflak/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/OmarAflak/subscriptions",
+    "organizations_url": "https://api.github.com/users/OmarAflak/orgs",
+    "repos_url": "https://api.github.com/users/OmarAflak/repos",
+    "events_url": "https://api.github.com/users/OmarAflak/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/OmarAflak/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-01-13T08:44:35Z",
+  "updated_at": "2022-01-13T10:47:48Z",
+  "closed_at": "2022-01-13T10:47:47Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "A place to discuss PR: https://github.com/ethereum/EIPs/pull/4671",
+  "closed_by": {
+    "login": "MicahZoltu",
+    "id": 886059,
+    "node_id": "MDQ6VXNlcjg4NjA1OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/886059?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MicahZoltu",
+    "html_url": "https://github.com/MicahZoltu",
+    "followers_url": "https://api.github.com/users/MicahZoltu/followers",
+    "following_url": "https://api.github.com/users/MicahZoltu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MicahZoltu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MicahZoltu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MicahZoltu/subscriptions",
+    "organizations_url": "https://api.github.com/users/MicahZoltu/orgs",
+    "repos_url": "https://api.github.com/users/MicahZoltu/repos",
+    "events_url": "https://api.github.com/users/MicahZoltu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MicahZoltu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/4672/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/4672/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
 }
-{
-  "message": "Not Found",
-  "documentation_url": "https://docs.github.com/rest"
-}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1012016884",
+    "html_url": "https://github.com/ethereum/EIPs/issues/4672#issuecomment-1012016884",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/4672",
+    "id": 1012016884,
+    "node_id": "IC_kwDOAq426M48Uib0",
+    "user": {
+      "login": "MicahZoltu",
+      "id": 886059,
+      "node_id": "MDQ6VXNlcjg4NjA1OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/886059?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MicahZoltu",
+      "html_url": "https://github.com/MicahZoltu",
+      "followers_url": "https://api.github.com/users/MicahZoltu/followers",
+      "following_url": "https://api.github.com/users/MicahZoltu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MicahZoltu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MicahZoltu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MicahZoltu/subscriptions",
+      "organizations_url": "https://api.github.com/users/MicahZoltu/orgs",
+      "repos_url": "https://api.github.com/users/MicahZoltu/repos",
+      "events_url": "https://api.github.com/users/MicahZoltu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MicahZoltu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-01-13T10:47:47Z",
+    "updated_at": "2022-01-13T10:47:47Z",
+    "author_association": "MEMBER",
+    "body": "Discussions should all be on Ethereum Magicians forum (https://ethereum-magicians.org/).  We used to allow GitHub issue discussions, but we have changed the policy on this so GitHub issues can be used for other things.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1012016884/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

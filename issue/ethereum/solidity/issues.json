@@ -1,19 +1,67 @@
 [
   {
     "author": {
+      "login": "madvas"
+    },
+    "number": 2675,
+    "title": "Be able to disable all warnings for certain files",
+    "updatedAt": "2022-09-11T18:57:27Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13267,
+    "title": "No summary for our documentation pages in Google search results",
+    "updatedAt": "2022-09-11T17:03:55Z"
+  },
+  {
+    "author": {
+      "login": "pcaversaccio"
+    },
+    "number": 13512,
+    "title": "feat: introduce `block.prevrandao` as alias for `block.difficulty`",
+    "updatedAt": "2022-09-11T16:59:33Z"
+  },
+  {
+    "author": {
+      "login": "NeverFearTomorrow"
+    },
+    "number": 13476,
+    "title": "Hardhat compile w/ SMTChecker crashes with out-of-memory related issues on Ubuntu",
+    "updatedAt": "2022-09-11T10:44:26Z"
+  },
+  {
+    "author": {
+      "login": "nmushegian"
+    },
+    "number": 72,
+    "title": "modifier overloading",
+    "updatedAt": "2022-09-11T09:03:50Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 1686,
+    "title": "Support reason string in assert",
+    "updatedAt": "2022-09-11T08:40:00Z"
+  },
+  {
+    "author": {
+      "login": "barakman"
+    },
+    "number": 12526,
+    "title": "Allowing the usage of `type` on non-primitive types",
+    "updatedAt": "2022-09-11T07:40:57Z"
+  },
+  {
+    "author": {
       "login": "nishant-sachdeva"
     },
     "number": 13317,
     "title": "Code Completion for LSP",
     "updatedAt": "2022-09-10T11:01:46Z"
-  },
-  {
-    "author": {
-      "login": "xx014939"
-    },
-    "number": 13515,
-    "title": "wrapper.js:10 Uncaught TypeError: Cannot use 'in' operator to search for '_solidity_version' in undefined",
-    "updatedAt": "2022-09-09T20:12:40Z"
   },
   {
     "author": {
@@ -30,14 +78,6 @@
     "number": 12067,
     "title": "Allow `verbatim` in Solidity `assembly` blocks",
     "updatedAt": "2022-09-09T18:01:12Z"
-  },
-  {
-    "author": {
-      "login": "pcaversaccio"
-    },
-    "number": 13512,
-    "title": "feat: introduce `block.prevrandao` as alias for `block.difficulty`",
-    "updatedAt": "2022-09-09T17:54:08Z"
   },
   {
     "author": {
@@ -86,14 +126,6 @@
     "number": 13511,
     "title": "`UnusedStoreEliminator` step missing in documentation",
     "updatedAt": "2022-09-09T00:18:41Z"
-  },
-  {
-    "author": {
-      "login": "madvas"
-    },
-    "number": 2675,
-    "title": "Be able to disable all warnings for certain files",
-    "updatedAt": "2022-09-08T22:17:10Z"
   },
   {
     "author": {
@@ -230,14 +262,6 @@
     "number": 13471,
     "title": "Missing \"statement has no effect\" diagnostic",
     "updatedAt": "2022-09-06T10:55:32Z"
-  },
-  {
-    "author": {
-      "login": "NeverFearTomorrow"
-    },
-    "number": 13476,
-    "title": "Hardhat compile w/ SMTChecker crashes with out-of-memory related issues on Ubuntu",
-    "updatedAt": "2022-09-06T02:28:14Z"
   },
   {
     "author": {
@@ -949,14 +973,6 @@
     },
     "number": 49,
     "title": "modifier return values",
-    "updatedAt": "2022-08-17T13:50:50Z"
-  },
-  {
-    "author": {
-      "login": "nmushegian"
-    },
-    "number": 72,
-    "title": "modifier overloading",
     "updatedAt": "2022-08-17T13:50:50Z"
   },
   {
@@ -1725,14 +1741,6 @@
     },
     "number": 1650,
     "title": "Support outside configuration values during compilation time",
-    "updatedAt": "2022-08-17T13:49:48Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 1686,
-    "title": "Support reason string in assert",
     "updatedAt": "2022-08-17T13:49:48Z"
   },
   {
@@ -3785,14 +3793,6 @@
   },
   {
     "author": {
-      "login": "barakman"
-    },
-    "number": 12526,
-    "title": "Allowing the usage of `type` on non-primitive types",
-    "updatedAt": "2022-08-17T13:48:36Z"
-  },
-  {
-    "author": {
       "login": "sambacha"
     },
     "number": 13278,
@@ -4454,14 +4454,6 @@
     "number": 13281,
     "title": "Incorrect byte location (src) of the `FunctionTypeName` AST node",
     "updatedAt": "2022-07-18T12:43:31Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13267,
-    "title": "No summary for our documentation pages in Google search results",
-    "updatedAt": "2022-07-18T09:12:53Z"
   },
   {
     "author": {

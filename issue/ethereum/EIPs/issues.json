@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "paulrberg"
+    },
+    "number": 1620,
+    "title": "ERC-1620: Money Streaming",
+    "updatedAt": "2022-09-11T14:43:05Z"
+  },
+  {
+    "author": {
       "login": "Arachnid"
     },
     "number": 4335,
@@ -174,14 +182,6 @@
     "number": 5600,
     "title": "Set clearer time-boxed stages for the EIP process to prevent stale or stalled submissions",
     "updatedAt": "2022-09-05T22:36:53Z"
-  },
-  {
-    "author": {
-      "login": "paulrberg"
-    },
-    "number": 1620,
-    "title": "ERC-1620: Money Streaming",
-    "updatedAt": "2022-08-31T12:06:42Z"
   },
   {
     "author": {

@@ -5,7 +5,15 @@
     },
     "number": 304,
     "title": "Add more linters",
-    "updatedAt": "2022-09-10T13:58:20Z"
+    "updatedAt": "2022-09-11T19:06:32Z"
+  },
+  {
+    "author": {
+      "login": "moshe-blox"
+    },
+    "number": 262,
+    "title": "Frequent \"no bid received\"",
+    "updatedAt": "2022-09-11T15:38:09Z"
   },
   {
     "author": {
@@ -110,14 +118,6 @@
     "number": 145,
     "title": "Do you want to run a builder? ",
     "updatedAt": "2022-09-05T18:57:56Z"
-  },
-  {
-    "author": {
-      "login": "moshe-blox"
-    },
-    "number": 262,
-    "title": "Frequent \"no bid received\"",
-    "updatedAt": "2022-09-04T10:56:53Z"
   },
   {
     "author": {

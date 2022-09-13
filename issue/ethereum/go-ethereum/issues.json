@@ -1,11 +1,19 @@
 [
   {
     "author": {
-      "login": "mohammadfarari1360"
+      "login": "ulope"
     },
-    "number": 25739,
-    "title": "https://github.com/ethereum/go-ethereum/issues/19905",
-    "updatedAt": "2022-09-11T19:31:23Z"
+    "number": 25693,
+    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
+    "updatedAt": "2022-09-12T21:02:14Z"
+  },
+  {
+    "author": {
+      "login": "lcgogo"
+    },
+    "number": 25594,
+    "title": "How does geth communicate with prysm?",
+    "updatedAt": "2022-09-12T20:16:09Z"
   },
   {
     "author": {
@@ -13,7 +21,79 @@
     },
     "number": 25730,
     "title": "Geth refuses to sync after being a few months offline",
-    "updatedAt": "2022-09-11T18:23:20Z"
+    "updatedAt": "2022-09-12T19:23:52Z"
+  },
+  {
+    "author": {
+      "login": "aathan"
+    },
+    "number": 25747,
+    "title": "Calls such as eth_getStorageAt are very lenient on input format",
+    "updatedAt": "2022-09-12T18:45:05Z"
+  },
+  {
+    "author": {
+      "login": "Aheyachy"
+    },
+    "number": 25746,
+    "title": "Class of streamer",
+    "updatedAt": "2022-09-12T17:30:00Z"
+  },
+  {
+    "author": {
+      "login": "SLoeuillet"
+    },
+    "number": 25583,
+    "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
+    "updatedAt": "2022-09-12T15:40:29Z"
+  },
+  {
+    "author": {
+      "login": "rezaeghbal01"
+    },
+    "number": 25744,
+    "title": "E",
+    "updatedAt": "2022-09-12T15:15:30Z"
+  },
+  {
+    "author": {
+      "login": "0xManuel"
+    },
+    "number": 25084,
+    "title": "*",
+    "updatedAt": "2022-09-12T14:47:44Z"
+  },
+  {
+    "author": {
+      "login": "SLoeuillet"
+    },
+    "number": 25741,
+    "title": "geth CI/CD is broken : no more Linux/MacOS/Android dev builds created since 2022-09-07 (d30e39b2)",
+    "updatedAt": "2022-09-12T11:53:23Z"
+  },
+  {
+    "author": {
+      "login": "dasudiy"
+    },
+    "number": 25696,
+    "title": "BAD BLOCK error, cannot sync",
+    "updatedAt": "2022-09-12T09:33:00Z"
+  },
+  {
+    "author": {
+      "login": "SyedMuhamadYasir"
+    },
+    "number": 25732,
+    "title": "geth is returning wrong values in web3.py",
+    "updatedAt": "2022-09-12T07:34:10Z"
+  },
+  {
+    "author": {
+      "login": "mohammadfarari1360"
+    },
+    "number": 25739,
+    "title": "https://github.com/ethereum/go-ethereum/issues/19905",
+    "updatedAt": "2022-09-12T05:31:55Z"
   },
   {
     "author": {
@@ -30,14 +110,6 @@
     "number": 25734,
     "title": "Aheya.chy007@gmail.com",
     "updatedAt": "2022-09-11T07:17:22Z"
-  },
-  {
-    "author": {
-      "login": "SyedMuhamadYasir"
-    },
-    "number": 25732,
-    "title": "geth is returning wrong values in web3.py",
-    "updatedAt": "2022-09-10T23:36:40Z"
   },
   {
     "author": {
@@ -105,14 +177,6 @@
   },
   {
     "author": {
-      "login": "ulope"
-    },
-    "number": 25693,
-    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
-    "updatedAt": "2022-09-09T12:36:07Z"
-  },
-  {
-    "author": {
       "login": "begetan"
     },
     "number": 22301,
@@ -150,14 +214,6 @@
     "number": 25704,
     "title": "Failed to commit trie from trie database err=\"read /ethereum/.ethereum/geth/chaindata/102907544.ldb: input/output error\"",
     "updatedAt": "2022-09-09T09:13:07Z"
-  },
-  {
-    "author": {
-      "login": "lcgogo"
-    },
-    "number": 25594,
-    "title": "How does geth communicate with prysm?",
-    "updatedAt": "2022-09-09T04:31:42Z"
   },
   {
     "author": {
@@ -230,14 +286,6 @@
     "number": 25699,
     "title": "GraphQL wrong Event Logs on querying Transactions",
     "updatedAt": "2022-09-07T17:15:51Z"
-  },
-  {
-    "author": {
-      "login": "SLoeuillet"
-    },
-    "number": 25583,
-    "title": "GraphQL/JSON-RPC logs regression between 1.10.21 & 1.10.22",
-    "updatedAt": "2022-09-07T15:45:44Z"
   },
   {
     "author": {
@@ -350,14 +398,6 @@
     "number": 25695,
     "title": "eth_blockNumber returns 0 after merge on Goerli",
     "updatedAt": "2022-09-06T12:20:55Z"
-  },
-  {
-    "author": {
-      "login": "dasudiy"
-    },
-    "number": 25696,
-    "title": "BAD BLOCK error, cannot sync",
-    "updatedAt": "2022-09-06T11:43:28Z"
   },
   {
     "author": {
@@ -2678,14 +2718,6 @@
     "number": 25066,
     "title": "Help Lost my Private key but ı have keystore",
     "updatedAt": "2022-06-16T09:02:18Z"
-  },
-  {
-    "author": {
-      "login": "JamesTurkey"
-    },
-    "number": 25084,
-    "title": "Full-Sync slows heavily down after 2.3 million and does not speedup after",
-    "updatedAt": "2022-06-16T08:39:40Z"
   },
   {
     "author": {

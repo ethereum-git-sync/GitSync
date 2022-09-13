@@ -67,13 +67,13 @@
       "description": "Default level of impact"
     },
     {
-      "id": 4438490842,
-      "node_id": "LA_kwDOAm_5kc8AAAABCI3-2g",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20have",
-      "name": "should have",
-      "color": "ffbe6c",
+      "id": 4525128519,
+      "node_id": "LA_kwDOAm_5kc8AAAABDbf7Rw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/needs%20design",
+      "name": "needs design",
+      "color": "18F737",
       "default": false,
-      "description": "We like the idea but it’s not important enough to be a part of the roadmap."
+      "description": "The proposal is too vague to be implemented right away"
     }
   ],
   "state": "open",
@@ -83,9 +83,9 @@
 
   ],
   "milestone": null,
-  "comments": 8,
+  "comments": 9,
   "created_at": "2021-07-27T08:29:46Z",
-  "updated_at": "2022-08-18T18:40:39Z",
+  "updated_at": "2022-09-12T15:19:29Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -448,6 +448,50 @@
     "body": "On our side, everything is implemented in #12568 but we need to update our external tests, that would be the next step for this task",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1161687676/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1243899065",
+    "html_url": "https://github.com/ethereum/solidity/issues/11700#issuecomment-1243899065",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/11700",
+    "id": 1243899065,
+    "node_id": "IC_kwDOAm_5kc5KJGS5",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-12T15:19:29Z",
+    "updated_at": "2022-09-12T15:19:29Z",
+    "author_association": "MEMBER",
+    "body": "We should reevaluate this since so many ext tests are failing. Isn't it just too common?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1243899065/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

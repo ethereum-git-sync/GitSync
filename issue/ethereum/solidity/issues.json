@@ -1,6 +1,222 @@
 [
   {
     "author": {
+      "login": "chriseth"
+    },
+    "number": 12127,
+    "title": "Re-check if the identity precompile should be used for memcopy",
+    "updatedAt": "2022-09-12T21:57:25Z"
+  },
+  {
+    "author": {
+      "login": "nventuro"
+    },
+    "number": 13475,
+    "title": "solc wastes memory when using structs",
+    "updatedAt": "2022-09-12T21:20:58Z"
+  },
+  {
+    "author": {
+      "login": "k06a"
+    },
+    "number": 13518,
+    "title": "Add support for `calldata` input and output in `abi.decode()`",
+    "updatedAt": "2022-09-12T17:22:32Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11700,
+    "title": "Reconsider operators on ContractType",
+    "updatedAt": "2022-09-12T15:19:29Z"
+  },
+  {
+    "author": {
+      "login": "Amxx"
+    },
+    "number": 13433,
+    "title": "Allow initializing immutables in parallel branches of try/catch statement",
+    "updatedAt": "2022-09-12T15:12:14Z"
+  },
+  {
+    "author": {
+      "login": "StErMi"
+    },
+    "number": 12864,
+    "title": "Compiler is not evaluating all if/elseif/else branches to check for “Immutable variables cannot be initialized inside an if statement\"",
+    "updatedAt": "2022-09-12T15:12:00Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12778,
+    "title": "Functions taking `calldata` arguments are not assignable to function pointers of the same type",
+    "updatedAt": "2022-09-12T15:09:13Z"
+  },
+  {
+    "author": {
+      "login": "christianparpart"
+    },
+    "number": 12295,
+    "title": "[AST] Consider expanding the use of NatSpec documentation to all declarations.",
+    "updatedAt": "2022-09-12T15:06:08Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 12665,
+    "title": "Overhaul Inheritance and Override Logic",
+    "updatedAt": "2022-09-12T15:04:32Z"
+  },
+  {
+    "author": {
+      "login": "agroce"
+    },
+    "number": 8382,
+    "title": "ICE in ArrayType::calldataEncodedSize(bool) [Array size does not fit unsigned]",
+    "updatedAt": "2022-09-12T15:02:24Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13153,
+    "title": "Homebrew formula broken since 0.8.10",
+    "updatedAt": "2022-09-12T14:59:03Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 12260,
+    "title": "Disallow ``codecopy`` in pure functions (and check for other cases)",
+    "updatedAt": "2022-09-12T14:55:59Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 12211,
+    "title": "Why is struct_copy.sol so badly optimized?",
+    "updatedAt": "2022-09-12T14:51:57Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11278,
+    "title": "Try Catch for custom errors",
+    "updatedAt": "2022-09-12T14:45:11Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11792,
+    "title": "Allow reverting with signature `error Panic(uint)`",
+    "updatedAt": "2022-09-12T14:37:08Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 11156,
+    "title": "NatSpec v2",
+    "updatedAt": "2022-09-12T14:34:25Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 10254,
+    "title": "Re-evaluate unicode tricks in comments",
+    "updatedAt": "2022-09-12T14:31:22Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 9583,
+    "title": "[CLI] Rewrite the command line interface (solc) and consider using StandardCompiler as backend.",
+    "updatedAt": "2022-09-12T14:28:51Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 9934,
+    "title": "Static page listing binaries available at solc-bin.ethereum.org",
+    "updatedAt": "2022-09-12T14:27:34Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 11513,
+    "title": "Extend the constant optimizer to optimizer sub-expressions",
+    "updatedAt": "2022-09-12T14:24:49Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13086,
+    "title": "Include all emitted events in the contract ABI and userdoc in a non-breaking way by ignoring conflicting Natspec",
+    "updatedAt": "2022-09-12T14:23:11Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13437,
+    "title": "Switch working dir to test dir in command-line tests",
+    "updatedAt": "2022-09-12T14:11:16Z"
+  },
+  {
+    "author": {
+      "login": "pcaversaccio"
+    },
+    "number": 13512,
+    "title": "feat: introduce `block.prevrandao` as alias for `block.difficulty`",
+    "updatedAt": "2022-09-12T13:38:16Z"
+  },
+  {
+    "author": {
+      "login": "kuzdogan"
+    },
+    "number": 12932,
+    "title": "Error: `Definition of base has to precede definition of derived contract` when specific file in standard-json-input `outputSelection` but works when `outputSelection` file is specific",
+    "updatedAt": "2022-09-12T13:10:00Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13517,
+    "title": "Add Paris as EVM version",
+    "updatedAt": "2022-09-12T11:13:50Z"
+  },
+  {
+    "author": {
+      "login": "sillytuna"
+    },
+    "number": 49,
+    "title": "modifier return values",
+    "updatedAt": "2022-09-12T09:09:58Z"
+  },
+  {
+    "author": {
+      "login": "aakilfernandes"
+    },
+    "number": 1543,
+    "title": "Request: expose address.codehash",
+    "updatedAt": "2022-09-12T07:31:04Z"
+  },
+  {
+    "author": {
       "login": "madvas"
     },
     "number": 2675,
@@ -14,14 +230,6 @@
     "number": 13267,
     "title": "No summary for our documentation pages in Google search results",
     "updatedAt": "2022-09-11T17:03:55Z"
-  },
-  {
-    "author": {
-      "login": "pcaversaccio"
-    },
-    "number": 13512,
-    "title": "feat: introduce `block.prevrandao` as alias for `block.difficulty`",
-    "updatedAt": "2022-09-11T16:59:33Z"
   },
   {
     "author": {
@@ -153,14 +361,6 @@
   },
   {
     "author": {
-      "login": "nventuro"
-    },
-    "number": 13475,
-    "title": "solc wastes memory when using structs",
-    "updatedAt": "2022-09-08T14:45:24Z"
-  },
-  {
-    "author": {
       "login": "bshastry"
     },
     "number": 13478,
@@ -193,27 +393,11 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11278,
-    "title": "Try Catch for custom errors",
-    "updatedAt": "2022-09-07T15:49:34Z"
-  },
-  {
-    "author": {
       "login": "ekpyron"
     },
     "number": 13368,
     "title": "Add parser support for ``code`` data location.",
     "updatedAt": "2022-09-07T14:13:28Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 12778,
-    "title": "Functions taking `calldata` arguments are not assignable to function pointers of the same type",
-    "updatedAt": "2022-09-07T12:59:25Z"
   },
   {
     "author": {
@@ -374,14 +558,6 @@
     "number": 13356,
     "title": "Function pointer assignment error when names are colliding",
     "updatedAt": "2022-09-05T10:08:22Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13086,
-    "title": "Include all emitted events in the contract ABI and userdoc in a non-breaking way by ignoring conflicting Natspec",
-    "updatedAt": "2022-09-05T07:06:07Z"
   },
   {
     "author": {
@@ -745,30 +921,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 13437,
-    "title": "Switch working dir to test dir in command-line tests",
-    "updatedAt": "2022-08-25T20:07:19Z"
-  },
-  {
-    "author": {
-      "login": "Amxx"
-    },
-    "number": 13433,
-    "title": "Allow initializing immutables in parallel branches of try/catch statement",
-    "updatedAt": "2022-08-25T19:01:50Z"
-  },
-  {
-    "author": {
-      "login": "StErMi"
-    },
-    "number": 12864,
-    "title": "Compiler is not evaluating all if/elseif/else branches to check for “Immutable variables cannot be initialized inside an if statement\"",
-    "updatedAt": "2022-08-25T18:53:22Z"
-  },
-  {
-    "author": {
       "login": "hrkrshnn"
     },
     "number": 13339,
@@ -897,14 +1049,6 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11700,
-    "title": "Reconsider operators on ContractType",
-    "updatedAt": "2022-08-18T18:40:39Z"
-  },
-  {
-    "author": {
       "login": "cameel"
     },
     "number": 12230,
@@ -966,14 +1110,6 @@
     "number": 10,
     "title": "Feature request: macros",
     "updatedAt": "2022-08-17T13:50:51Z"
-  },
-  {
-    "author": {
-      "login": "sillytuna"
-    },
-    "number": 49,
-    "title": "modifier return values",
-    "updatedAt": "2022-08-17T13:50:50Z"
   },
   {
     "author": {
@@ -2297,14 +2433,6 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11792,
-    "title": "Allow reverting with signature `error Panic(uint)`",
-    "updatedAt": "2022-08-17T13:49:16Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 3157,
@@ -2521,14 +2649,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 11513,
-    "title": "Extend the constant optimizer to optimizer sub-expressions",
-    "updatedAt": "2022-08-17T13:49:07Z"
-  },
-  {
-    "author": {
       "login": "jO-Osko"
     },
     "number": 11624,
@@ -2613,14 +2733,6 @@
     },
     "number": 12253,
     "title": "Move test cases from SolidityEndToEnd to semanticTests",
-    "updatedAt": "2022-08-17T13:49:06Z"
-  },
-  {
-    "author": {
-      "login": "christianparpart"
-    },
-    "number": 12295,
-    "title": "[AST] Consider expanding the use of NatSpec documentation to all declarations.",
     "updatedAt": "2022-08-17T13:49:06Z"
   },
   {
@@ -2945,14 +3057,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 12665,
-    "title": "Overhaul Inheritance and Override Logic",
-    "updatedAt": "2022-08-17T13:48:58Z"
-  },
-  {
-    "author": {
       "login": "donutcrypto"
     },
     "number": 12677,
@@ -3153,14 +3257,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 9583,
-    "title": "[CLI] Rewrite the command line interface (solc) and consider using StandardCompiler as backend.",
-    "updatedAt": "2022-08-17T13:48:54Z"
-  },
-  {
-    "author": {
       "login": "leonardoalt"
     },
     "number": 9601,
@@ -3245,14 +3341,6 @@
     },
     "number": 9627,
     "title": "Make the hard-coded parts of the optimiser sequence configurable",
-    "updatedAt": "2022-08-17T13:48:53Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 12127,
-    "title": "Re-check if the identity precompile should be used for memcopy",
     "updatedAt": "2022-08-17T13:48:53Z"
   },
   {
@@ -3493,14 +3581,6 @@
     },
     "number": 6723,
     "title": "[ewasm] Support bignum host functions and use it in EVMToEwasmTranslator",
-    "updatedAt": "2022-08-17T13:48:47Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 9934,
-    "title": "Static page listing binaries available at solc-bin.ethereum.org",
     "updatedAt": "2022-08-17T13:48:47Z"
   },
   {
@@ -4889,14 +4969,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 13153,
-    "title": "Homebrew formula broken since 0.8.10",
-    "updatedAt": "2022-06-16T10:05:35Z"
-  },
-  {
-    "author": {
       "login": "lukehutch"
     },
     "number": 13142,
@@ -5649,14 +5721,6 @@
   },
   {
     "author": {
-      "login": "kuzdogan"
-    },
-    "number": 12932,
-    "title": "Error: `Definition of base has to precede definition of derived contract` when specific file in standard-json-input `outputSelection` but works when `outputSelection` file is specific",
-    "updatedAt": "2022-04-27T19:05:22Z"
-  },
-  {
-    "author": {
       "login": "thekevinbrown"
     },
     "number": 4652,
@@ -5910,14 +5974,6 @@
     "number": 12737,
     "title": "Wrong address computed for CREATE2 in semantic tests",
     "updatedAt": "2022-03-29T08:31:11Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 12260,
-    "title": "Disallow ``codecopy`` in pure functions (and check for other cases)",
-    "updatedAt": "2022-03-25T19:39:35Z"
   },
   {
     "author": {
@@ -7721,14 +7777,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 12211,
-    "title": "Why is struct_copy.sol so badly optimized?",
-    "updatedAt": "2021-11-11T15:18:18Z"
-  },
-  {
-    "author": {
       "login": "cameel"
     },
     "number": 12065,
@@ -7918,14 +7966,6 @@
     "number": 12217,
     "title": "call(encodeWithSelector) is too expensive",
     "updatedAt": "2021-11-02T11:07:03Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 10254,
-    "title": "Re-evaluate unicode tricks in comments",
-    "updatedAt": "2021-11-01T14:52:30Z"
   },
   {
     "author": {
@@ -8753,14 +8793,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 11156,
-    "title": "NatSpec v2",
-    "updatedAt": "2021-09-08T10:07:29Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 11884,
@@ -9526,14 +9558,6 @@
     "number": 6928,
     "title": "[yul] code generator throws \"Stack too deep when compiling inline assembly: Variable value0 is 1 slot(s) too deep inside the stack.\"",
     "updatedAt": "2021-07-12T05:00:09Z"
-  },
-  {
-    "author": {
-      "login": "agroce"
-    },
-    "number": 8382,
-    "title": "ICE in ArrayType::calldataEncodedSize(bool) [Array size does not fit unsigned]",
-    "updatedAt": "2021-07-12T02:16:30Z"
   },
   {
     "author": {
@@ -37558,14 +37582,6 @@
     "number": 1520,
     "title": "Problem with current remappings and suggestions for better model",
     "updatedAt": "2017-03-08T10:43:57Z"
-  },
-  {
-    "author": {
-      "login": "aakilfernandes"
-    },
-    "number": 1543,
-    "title": "Request: expose address.codehash",
-    "updatedAt": "2017-03-08T10:42:31Z"
   },
   {
     "author": {

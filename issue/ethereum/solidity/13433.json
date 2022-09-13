@@ -56,15 +56,6 @@
       "color": "5d71ff",
       "default": false,
       "description": "Changes are not very noticeable or potential benefits are limited."
-    },
-    {
-      "id": 4438490842,
-      "node_id": "LA_kwDOAm_5kc8AAAABCI3-2g",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20have",
-      "name": "should have",
-      "color": "ffbe6c",
-      "default": false,
-      "description": "We like the idea but it’s not important enough to be a part of the roadmap."
     }
   ],
   "state": "open",
@@ -76,7 +67,7 @@
   "milestone": null,
   "comments": 3,
   "created_at": "2022-08-25T12:00:46Z",
-  "updated_at": "2022-08-25T19:01:50Z",
+  "updated_at": "2022-09-12T15:12:14Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -175,8 +166,8 @@
     "body": "Previous issue about conditionals: #12864.\r\n\r\nIf we're fine with doing it for `if`s, I don't see any reason not to for `try`/`catch` as well.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1227639425/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

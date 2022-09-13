@@ -83,9 +83,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-08-25T20:07:19Z",
-  "updated_at": "2022-08-25T20:07:19Z",
+  "updated_at": "2022-09-12T14:11:16Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -108,5 +108,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1243801972",
+    "html_url": "https://github.com/ethereum/solidity/issues/13437#issuecomment-1243801972",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13437",
+    "id": 1243801972,
+    "node_id": "IC_kwDOAm_5kc5KIul0",
+    "user": {
+      "login": "kevin-allen-uf",
+      "id": 64329665,
+      "node_id": "MDQ6VXNlcjY0MzI5NjY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64329665?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kevin-allen-uf",
+      "html_url": "https://github.com/kevin-allen-uf",
+      "followers_url": "https://api.github.com/users/kevin-allen-uf/followers",
+      "following_url": "https://api.github.com/users/kevin-allen-uf/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kevin-allen-uf/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kevin-allen-uf/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kevin-allen-uf/subscriptions",
+      "organizations_url": "https://api.github.com/users/kevin-allen-uf/orgs",
+      "repos_url": "https://api.github.com/users/kevin-allen-uf/repos",
+      "events_url": "https://api.github.com/users/kevin-allen-uf/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kevin-allen-uf/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-12T14:11:16Z",
+    "updated_at": "2022-09-12T14:11:16Z",
+    "author_association": "NONE",
+    "body": "Hi! I'm trying to find a suitable good first contribution and I'd like to help with this issue. Is is claimed by anyone else or can I take it on?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1243801972/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

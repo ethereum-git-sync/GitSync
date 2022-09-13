@@ -1,11 +1,27 @@
 [
   {
     "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5640,
+    "title": "Updated PR Merge Queue",
+    "updatedAt": "2022-09-12T16:59:27Z"
+  },
+  {
+    "author": {
       "login": "paulrberg"
     },
     "number": 1620,
     "title": "ERC-1620: Money Streaming",
-    "updatedAt": "2022-09-11T14:43:05Z"
+    "updatedAt": "2022-09-12T12:39:18Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5641,
+    "title": "Automatically merge all new EIP drafts",
+    "updatedAt": "2022-09-12T12:25:20Z"
   },
   {
     "author": {
@@ -134,22 +150,6 @@
     "number": 5608,
     "title": "Make EIPs Website a PWA",
     "updatedAt": "2022-09-10T17:45:59Z"
-  },
-  {
-    "author": {
-      "login": "Pandapip1"
-    },
-    "number": 5640,
-    "title": "Updated PR Merge Queue",
-    "updatedAt": "2022-09-10T17:45:44Z"
-  },
-  {
-    "author": {
-      "login": "Pandapip1"
-    },
-    "number": 5641,
-    "title": "Automatically merge all new EIP drafts",
-    "updatedAt": "2022-09-10T17:44:36Z"
   },
   {
     "author": {

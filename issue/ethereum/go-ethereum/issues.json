@@ -1,19 +1,11 @@
 [
   {
     "author": {
-      "login": "ulope"
+      "login": "SLoeuillet"
     },
-    "number": 25693,
-    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
-    "updatedAt": "2022-09-12T21:02:14Z"
-  },
-  {
-    "author": {
-      "login": "lcgogo"
-    },
-    "number": 25594,
-    "title": "How does geth communicate with prysm?",
-    "updatedAt": "2022-09-12T20:16:09Z"
+    "number": 25741,
+    "title": "geth CI/CD is broken : no more Linux/MacOS/Android dev builds created since 2022-09-07 (d30e39b2)",
+    "updatedAt": "2022-09-13T21:16:37Z"
   },
   {
     "author": {
@@ -21,7 +13,103 @@
     },
     "number": 25730,
     "title": "Geth refuses to sync after being a few months offline",
-    "updatedAt": "2022-09-12T19:23:52Z"
+    "updatedAt": "2022-09-13T17:39:17Z"
+  },
+  {
+    "author": {
+      "login": "ulope"
+    },
+    "number": 25693,
+    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
+    "updatedAt": "2022-09-13T15:09:23Z"
+  },
+  {
+    "author": {
+      "login": "PanosChtz"
+    },
+    "number": 25754,
+    "title": "eth.accounts in geth console returns empty array",
+    "updatedAt": "2022-09-13T14:37:42Z"
+  },
+  {
+    "author": {
+      "login": "begetan"
+    },
+    "number": 25753,
+    "title": "Geth 1.10.23 fresh sync is broken for Post-Merge networks with error: Beacon client online, but never received consensus updates.",
+    "updatedAt": "2022-09-13T13:33:39Z"
+  },
+  {
+    "author": {
+      "login": "lcgogo"
+    },
+    "number": 25594,
+    "title": "How does geth communicate with prysm?",
+    "updatedAt": "2022-09-13T12:56:57Z"
+  },
+  {
+    "author": {
+      "login": "clearest555"
+    },
+    "number": 25751,
+    "title": "Beacon backfilling failed err=\"missing beacon header xxx\"",
+    "updatedAt": "2022-09-13T10:50:23Z"
+  },
+  {
+    "author": {
+      "login": "yasyzb"
+    },
+    "number": 25750,
+    "title": "What should we do to support PoS?",
+    "updatedAt": "2022-09-13T09:53:37Z"
+  },
+  {
+    "author": {
+      "login": "Aheyachy"
+    },
+    "number": 25746,
+    "title": "Class of streamer",
+    "updatedAt": "2022-09-13T08:50:29Z"
+  },
+  {
+    "author": {
+      "login": "rezaeghbal01"
+    },
+    "number": 25744,
+    "title": "E",
+    "updatedAt": "2022-09-13T08:50:14Z"
+  },
+  {
+    "author": {
+      "login": "dasudiy"
+    },
+    "number": 25696,
+    "title": "BAD BLOCK error, cannot sync",
+    "updatedAt": "2022-09-13T08:40:22Z"
+  },
+  {
+    "author": {
+      "login": "mi2zha"
+    },
+    "number": 15088,
+    "title": "Error: missing trie node",
+    "updatedAt": "2022-09-13T06:42:01Z"
+  },
+  {
+    "author": {
+      "login": "i11m20n"
+    },
+    "number": 25704,
+    "title": "Failed to commit trie from trie database err=\"read /ethereum/.ethereum/geth/chaindata/102907544.ldb: input/output error\"",
+    "updatedAt": "2022-09-13T04:06:28Z"
+  },
+  {
+    "author": {
+      "login": "litcc"
+    },
+    "number": 25703,
+    "title": "How can I check the latest healedTrienodes height of the main network?",
+    "updatedAt": "2022-09-13T00:30:34Z"
   },
   {
     "author": {
@@ -33,14 +121,6 @@
   },
   {
     "author": {
-      "login": "Aheyachy"
-    },
-    "number": 25746,
-    "title": "Class of streamer",
-    "updatedAt": "2022-09-12T17:30:00Z"
-  },
-  {
-    "author": {
       "login": "SLoeuillet"
     },
     "number": 25583,
@@ -49,35 +129,11 @@
   },
   {
     "author": {
-      "login": "rezaeghbal01"
-    },
-    "number": 25744,
-    "title": "E",
-    "updatedAt": "2022-09-12T15:15:30Z"
-  },
-  {
-    "author": {
       "login": "0xManuel"
     },
     "number": 25084,
     "title": "*",
     "updatedAt": "2022-09-12T14:47:44Z"
-  },
-  {
-    "author": {
-      "login": "SLoeuillet"
-    },
-    "number": 25741,
-    "title": "geth CI/CD is broken : no more Linux/MacOS/Android dev builds created since 2022-09-07 (d30e39b2)",
-    "updatedAt": "2022-09-12T11:53:23Z"
-  },
-  {
-    "author": {
-      "login": "dasudiy"
-    },
-    "number": 25696,
-    "title": "BAD BLOCK error, cannot sync",
-    "updatedAt": "2022-09-12T09:33:00Z"
   },
   {
     "author": {
@@ -153,14 +209,6 @@
   },
   {
     "author": {
-      "login": "litcc"
-    },
-    "number": 25703,
-    "title": "How can I check the latest healedTrienodes height of the main network?",
-    "updatedAt": "2022-09-10T09:55:45Z"
-  },
-  {
-    "author": {
       "login": "multivars"
     },
     "number": 22835,
@@ -206,14 +254,6 @@
     "number": 25697,
     "title": "stop sync",
     "updatedAt": "2022-09-09T09:14:19Z"
-  },
-  {
-    "author": {
-      "login": "i11m20n"
-    },
-    "number": 25704,
-    "title": "Failed to commit trie from trie database err=\"read /ethereum/.ethereum/geth/chaindata/102907544.ldb: input/output error\"",
-    "updatedAt": "2022-09-09T09:13:07Z"
   },
   {
     "author": {
@@ -28710,14 +28750,6 @@
     "number": 15487,
     "title": "Document dashboard API message format",
     "updatedAt": "2018-12-29T10:11:44Z"
-  },
-  {
-    "author": {
-      "login": "mi2zha"
-    },
-    "number": 15088,
-    "title": "Error: missing trie node",
-    "updatedAt": "2018-12-28T12:36:46Z"
   },
   {
     "author": {

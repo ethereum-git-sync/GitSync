@@ -1,0 +1,137 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13521",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13521/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13521/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13521/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13521",
+  "id": 1371614643,
+  "node_id": "I_kwDOAm_5kc5RwS2z",
+  "number": 13521,
+  "title": "Calculate \"CREATE2\" address",
+  "user": {
+    "login": "drortirosh",
+    "id": 40341007,
+    "node_id": "MDQ6VXNlcjQwMzQxMDA3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/40341007?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drortirosh",
+    "html_url": "https://github.com/drortirosh",
+    "followers_url": "https://api.github.com/users/drortirosh/followers",
+    "following_url": "https://api.github.com/users/drortirosh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drortirosh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drortirosh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drortirosh/subscriptions",
+    "organizations_url": "https://api.github.com/users/drortirosh/orgs",
+    "repos_url": "https://api.github.com/users/drortirosh/repos",
+    "events_url": "https://api.github.com/users/drortirosh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drortirosh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-09-13T15:11:54Z",
+  "updated_at": "2022-09-13T17:06:04Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "The `new` operator now supports the \"CREATE2\" opcode, by using the syntax `new MyContract{salt:xx}(<constructor params>)`\r\nCalling this method in a view context prior deployment let us get the \"counterfactual\" address.\r\nBut once the contract is deployed, there is no easy way to get its address: \r\nWe have to use the \"messy\" format of\r\n```\r\n        return keccak256(abi.encodePacked(bytes1(0xff), address(this), salt, keccak256(abi.encodePacked(\r\n                type(MyContract).creationCode,\r\n                abi.encode(<constructor params>)\r\n            ))));\r\n```\r\n\r\nThis method would work, but has several drawbacks:\r\n- an ugly boilerplace, easy to mis-type\r\n- no type-checking on constructor parames\r\n\r\n### Suggestion:\r\nadd a new `action` parameter to the \"new\" operation, in addition to the \"salt\", with the following values:\r\n- `action: create`. This is the default, which will attempt to create the contract, and fail if CREATE2 fails (it is already exists)\r\n- `action: address`. Just calculate the address, but don't attempt to create it\r\n   e.g. `addr = new MyContract{salt: 0, action: address}(...)`\r\n- `action: auto`. Calculate the address (using **action:address**). If it is already deployed, return this address, otherwise,  perform **\"action: create\"**\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13521/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13521/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1245697596",
+    "html_url": "https://github.com/ethereum/solidity/issues/13521#issuecomment-1245697596",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13521",
+    "id": 1245697596,
+    "node_id": "IC_kwDOAm_5kc5KP9Y8",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-13T17:05:28Z",
+    "updated_at": "2022-09-13T17:05:28Z",
+    "author_association": "MEMBER",
+    "body": "Is extending `new` this way really a good idea? `new` implies that something gets created. I think a new `abi.` function for that might be move intutitive and more consistent with that we already have in the language.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1245697596/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

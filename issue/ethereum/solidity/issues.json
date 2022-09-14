@@ -1,11 +1,107 @@
 [
   {
     "author": {
+      "login": "ekpyron"
+    },
+    "number": 9627,
+    "title": "Make the hard-coded parts of the optimiser sequence configurable",
+    "updatedAt": "2022-09-13T18:01:57Z"
+  },
+  {
+    "author": {
+      "login": "drortirosh"
+    },
+    "number": 13521,
+    "title": "Calculate \"CREATE2\" address",
+    "updatedAt": "2022-09-13T17:06:04Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8969,
+    "title": "Implement project board automation",
+    "updatedAt": "2022-09-13T16:50:10Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13506,
+    "title": "Nightly builds in solc-bin broken due to git's `safe.directory` check",
+    "updatedAt": "2022-09-13T16:38:29Z"
+  },
+  {
+    "author": {
+      "login": "r0qs"
+    },
+    "number": 13496,
+    "title": "Segmentation fault compiling a contract with huge data and via-IR enabled",
+    "updatedAt": "2022-09-13T16:26:20Z"
+  },
+  {
+    "author": {
+      "login": "pcaversaccio"
+    },
+    "number": 13512,
+    "title": "feat: introduce `block.prevrandao` as alias for `block.difficulty`",
+    "updatedAt": "2022-09-13T16:14:17Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 9171,
+    "title": "Meta-Issue: management in Backlogs via Timeouts",
+    "updatedAt": "2022-09-13T15:52:33Z"
+  },
+  {
+    "author": {
+      "login": "frangio"
+    },
+    "number": 12328,
+    "title": "Implicit conversion from contract to address",
+    "updatedAt": "2022-09-13T15:40:31Z"
+  },
+  {
+    "author": {
+      "login": "jaa2"
+    },
+    "number": 13179,
+    "title": "solc: Stack overflow importing large AST from json file",
+    "updatedAt": "2022-09-13T15:00:41Z"
+  },
+  {
+    "author": {
+      "login": "agroce"
+    },
+    "number": 12208,
+    "title": "Extremely long SPDX comment results in a segfault",
+    "updatedAt": "2022-09-13T15:00:10Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13520,
+    "title": "Document oddities in validation behaviour of calldata-to-memory copies.",
+    "updatedAt": "2022-09-13T14:54:14Z"
+  },
+  {
+    "author": {
+      "login": "k06a"
+    },
+    "number": 13518,
+    "title": "Add support for `calldata` input and output in `abi.decode()`",
+    "updatedAt": "2022-09-13T14:07:58Z"
+  },
+  {
+    "author": {
       "login": "chriseth"
     },
     "number": 12127,
     "title": "Re-check if the identity precompile should be used for memcopy",
-    "updatedAt": "2022-09-12T21:57:25Z"
+    "updatedAt": "2022-09-13T13:51:30Z"
   },
   {
     "author": {
@@ -14,14 +110,6 @@
     "number": 13475,
     "title": "solc wastes memory when using structs",
     "updatedAt": "2022-09-12T21:20:58Z"
-  },
-  {
-    "author": {
-      "login": "k06a"
-    },
-    "number": 13518,
-    "title": "Add support for `calldata` input and output in `abi.decode()`",
-    "updatedAt": "2022-09-12T17:22:32Z"
   },
   {
     "author": {
@@ -177,14 +265,6 @@
   },
   {
     "author": {
-      "login": "pcaversaccio"
-    },
-    "number": 13512,
-    "title": "feat: introduce `block.prevrandao` as alias for `block.difficulty`",
-    "updatedAt": "2022-09-12T13:38:16Z"
-  },
-  {
-    "author": {
       "login": "kuzdogan"
     },
     "number": 12932,
@@ -273,14 +353,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 8969,
-    "title": "Implement project board automation",
-    "updatedAt": "2022-09-09T19:29:14Z"
-  },
-  {
-    "author": {
       "login": "dessaya"
     },
     "number": 12067,
@@ -310,14 +382,6 @@
     "number": 11959,
     "title": "Clean up the helpers around errors",
     "updatedAt": "2022-09-09T15:07:18Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13506,
-    "title": "Nightly builds in solc-bin broken due to git's `safe.directory` check",
-    "updatedAt": "2022-09-09T11:59:41Z"
   },
   {
     "author": {
@@ -366,14 +430,6 @@
     "number": 13478,
     "title": "[Yul optimizer] RSE incorrectly removes sstore",
     "updatedAt": "2022-09-08T12:04:05Z"
-  },
-  {
-    "author": {
-      "login": "r0qs"
-    },
-    "number": 13496,
-    "title": "Segmentation fault compiling a contract with huge data and via-IR enabled",
-    "updatedAt": "2022-09-07T19:50:38Z"
   },
   {
     "author": {
@@ -3337,14 +3393,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 9627,
-    "title": "Make the hard-coded parts of the optimiser sequence configurable",
-    "updatedAt": "2022-08-17T13:48:53Z"
-  },
-  {
-    "author": {
       "login": "cameel"
     },
     "number": 12154,
@@ -4662,14 +4710,6 @@
     "number": 13242,
     "title": "Update ranges-v3 to 0.12.0",
     "updatedAt": "2022-07-06T10:38:55Z"
-  },
-  {
-    "author": {
-      "login": "jaa2"
-    },
-    "number": 13179,
-    "title": "solc: Stack overflow importing large AST from json file",
-    "updatedAt": "2022-07-05T16:56:39Z"
   },
   {
     "author": {
@@ -6409,14 +6449,6 @@
   },
   {
     "author": {
-      "login": "frangio"
-    },
-    "number": 12328,
-    "title": "Implicit conversion from contract to address",
-    "updatedAt": "2022-02-12T20:19:04Z"
-  },
-  {
-    "author": {
       "login": "alcueca"
     },
     "number": 10195,
@@ -7374,14 +7406,6 @@
     "number": 5252,
     "title": "Add performance tests",
     "updatedAt": "2021-12-11T00:07:16Z"
-  },
-  {
-    "author": {
-      "login": "agroce"
-    },
-    "number": 12208,
-    "title": "Extremely long SPDX comment results in a segfault",
-    "updatedAt": "2021-12-10T23:29:08Z"
   },
   {
     "author": {
@@ -13086,14 +13110,6 @@
     "number": 9660,
     "title": "[SMTChecker] Report struct in cex",
     "updatedAt": "2020-12-14T15:23:54Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 9171,
-    "title": "Meta-Issue: management in Backlogs via Timeouts",
-    "updatedAt": "2020-12-14T14:16:29Z"
   },
   {
     "author": {

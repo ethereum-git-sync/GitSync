@@ -3,6 +3,30 @@
     "author": {
       "login": "jtraglia"
     },
+    "number": 123,
+    "title": "Restrict bids received data API to past slots",
+    "updatedAt": "2022-09-13T18:04:38Z"
+  },
+  {
+    "author": {
+      "login": "taarushv"
+    },
+    "number": 122,
+    "title": "Storing historical validator registrations",
+    "updatedAt": "2022-09-13T16:40:14Z"
+  },
+  {
+    "author": {
+      "login": "jtraglia"
+    },
+    "number": 119,
+    "title": "Is the internal API publicly accessible?",
+    "updatedAt": "2022-09-13T16:17:56Z"
+  },
+  {
+    "author": {
+      "login": "jtraglia"
+    },
     "number": 110,
     "title": "Show build version on website",
     "updatedAt": "2022-09-12T09:37:13Z"

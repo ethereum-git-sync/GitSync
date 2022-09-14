@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/311",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/311/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/311/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/311/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/311",
+  "id": 1371599755,
+  "node_id": "I_kwDOGZSKs85RwPOL",
+  "number": 311,
+  "title": "Allow more verbose logging of received payloads",
+  "user": {
+    "login": "tersec",
+    "id": 11422416,
+    "node_id": "MDQ6VXNlcjExNDIyNDE2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11422416?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tersec",
+    "html_url": "https://github.com/tersec",
+    "followers_url": "https://api.github.com/users/tersec/followers",
+    "following_url": "https://api.github.com/users/tersec/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tersec/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tersec/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tersec/subscriptions",
+    "organizations_url": "https://api.github.com/users/tersec/orgs",
+    "repos_url": "https://api.github.com/users/tersec/repos",
+    "events_url": "https://api.github.com/users/tersec/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tersec/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-13T15:01:28Z",
+  "updated_at": "2022-09-13T15:01:48Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Even with https://github.com/flashbots/mev-boost/pull/309 it can be useful it can be useful to have a record of exactly what payload was not properly decoded, to determine whether it's a hitherto unspecified interoperability edge case between different assumptions of different JSON libraries or REST encoding/decodings.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/311/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/311/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

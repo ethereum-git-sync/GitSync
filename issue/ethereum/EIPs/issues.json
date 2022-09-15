@@ -3,6 +3,14 @@
     "author": {
       "login": "Pandapip1"
     },
+    "number": 5652,
+    "title": "Errata'd EIPs",
+    "updatedAt": "2022-09-14T12:19:40Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
     "number": 5651,
     "title": "Dynamic Required Approvals",
     "updatedAt": "2022-09-13T12:58:00Z"

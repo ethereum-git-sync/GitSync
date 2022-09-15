@@ -1,6 +1,30 @@
 [
   {
     "author": {
+      "login": "itsdeka"
+    },
+    "number": 131,
+    "title": "From where to take the field 'prev_randao'",
+    "updatedAt": "2022-09-14T20:34:57Z"
+  },
+  {
+    "author": {
+      "login": "itsdeka"
+    },
+    "number": 130,
+    "title": "Blank response with status 200",
+    "updatedAt": "2022-09-14T20:33:03Z"
+  },
+  {
+    "author": {
+      "login": "aratz-lasa"
+    },
+    "number": 128,
+    "title": "Data API ProposerPayloadsDelivered implementation",
+    "updatedAt": "2022-09-14T14:22:29Z"
+  },
+  {
+    "author": {
       "login": "jtraglia"
     },
     "number": 123,

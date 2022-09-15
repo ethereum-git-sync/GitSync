@@ -47,6 +47,33 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438155599,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjhTw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20impact",
+      "name": "medium impact",
+      "color": "314aff",
+      "default": false,
+      "description": "Default level of impact"
+    },
+    {
+      "id": 4438488423,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI31Zw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have",
+      "name": "must have",
+      "color": "ffa12a",
+      "default": false,
+      "description": "Something we consider an essential part of Solidity 1.0."
     }
   ],
   "state": "open",
@@ -55,10 +82,46 @@
   "assignees": [
 
   ],
-  "milestone": null,
+  "milestone": {
+    "url": "https://api.github.com/repos/ethereum/solidity/milestones/52",
+    "html_url": "https://github.com/ethereum/solidity/milestone/52",
+    "labels_url": "https://api.github.com/repos/ethereum/solidity/milestones/52/labels",
+    "id": 8084058,
+    "node_id": "MI_kwDOAm_5kc4Ae1pa",
+    "number": 52,
+    "title": "0.9.0",
+    "description": "",
+    "creator": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "open_issues": 5,
+    "closed_issues": 2,
+    "state": "open",
+    "created_at": "2022-06-15T13:38:10Z",
+    "updated_at": "2022-09-14T16:23:17Z",
+    "due_on": null,
+    "closed_at": null
+  },
   "comments": 1,
   "created_at": "2022-01-03T16:21:51Z",
-  "updated_at": "2022-09-02T13:29:36Z",
+  "updated_at": "2022-09-14T16:23:17Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,

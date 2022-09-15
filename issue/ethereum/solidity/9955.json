@@ -40,21 +40,40 @@
       "description": "Any changes to the language, e.g. new features"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 4,
+  "comments": 5,
   "created_at": "2020-10-05T13:38:12Z",
-  "updated_at": "2020-10-08T12:09:26Z",
-  "closed_at": null,
+  "updated_at": "2022-09-14T14:22:28Z",
+  "closed_at": "2022-09-14T14:22:27Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "Motivation\r\n--------------\r\n\r\nInspired by the whole fuzz about https://github.com/ethereum/solidity/pull/9746.\r\n\r\nA problem with the \"oversized objects\" warnings is that the choice of sizes at which to start warning about likely collisions is rather arbitrary. Ideally, we would generally avoid any collision from being possible, so maybe it's worth thinking about how costly that would be.\r\n\r\nAn easy way to get rid of the problem of collisions and the problem of us not being able to clear mappings in storage would be the following:\r\n\r\nProposal\r\n------------\r\n\r\nPartition storage into its lower 2^128 bytes and its higher 2^128 bytes, reserving the lower half for \"regular\" state variables and the higher half for mappings. That way we could specify that the lower half of storage (used for \"regular\" state variables) will always need to be cleared on deletion, whereas the upper half of storage (used for mappings) would always need cleaning on creation.\r\n\r\nIf I'm not missing anything, this should be feasible, but, of course, it won't be free.\r\n\r\nEvaluation\r\n--------------\r\n\r\nAdditional costs:\r\n  - Any hash-based calculation of a regular storage slot needs an ``slot := and(slot, shr(sub(0, 1), 1))``.\r\n  - Any storage slot calculation for mappings needs an ``slot := or(slot, shl(1, 255))``.\r\n  - Various bounds checks may need adjustment.\r\n\r\nSo I'd say this is comparably cheap.\r\n\r\nCollision-safety should not be overly affected by reducing the hash from 256 bits to 255 bits.\r\n\r\nMain drawback: This will break the existing storage layout of contracts.\r\nMaybe that drawback is sufficient for not doing this on its own, but it may be worth thinking about it again, in case we want to change the storage layout in some other way as well.\r\n\r\nThis would, of course, also affect a lot of existing attempts at upgradable contracts, resp. any manual construction of storage slots using inline assembly (i.e. when manually constructing slots, it'd be wise to apply the same masking).",
-  "closed_by": null,
+  "closed_by": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/9955/reactions",
     "total_count": 0,
@@ -69,7 +88,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/9955/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -238,6 +257,50 @@
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/705525305/reactions",
       "total_count": 1,
       "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1246841663",
+    "html_url": "https://github.com/ethereum/solidity/issues/9955#issuecomment-1246841663",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/9955",
+    "id": 1246841663,
+    "node_id": "IC_kwDOAm_5kc5KUUs_",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-14T14:22:27Z",
+    "updated_at": "2022-09-14T14:22:27Z",
+    "author_association": "MEMBER",
+    "body": "I don't see us doing this without a larger storage redesign which may happen due to the verkle business, but I don't think this issue is helping, so I'm closing.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1246841663/reactions",
+      "total_count": 0,
+      "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

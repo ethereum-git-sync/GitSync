@@ -38,6 +38,24 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
     }
   ],
   "state": "open",
@@ -49,7 +67,7 @@
   "milestone": null,
   "comments": 7,
   "created_at": "2021-11-25T03:45:14Z",
-  "updated_at": "2022-09-13T15:40:31Z",
+  "updated_at": "2022-09-14T15:51:27Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -368,8 +386,8 @@
     "body": "It looks like losing contract->address implicit conversion was a side-effect of disallowing sideways contract casting. Sadly that represents quite a loss in quality of life. I don't see any good reason for it, you can have both.\r\n\r\nSince [0.8.0](https://blog.soliditylang.org/2020/12/16/solidity-v0.8.0-release-announcement/) explicit conversions \"are only possible when there is at most one change in sign, width, payability or type-category\". You could add \"or in contract hierarchy branch\" to the previous sentence. Then, just like with `x : uint24`, `f1(uint)`, `g1(bytes3)` you can write `f1(x)` but can't write `g1(x)`, you could also have the following: with `c : Contract`, `f2(address)`, `g2(OtherContract)`[1], you could write `f2(c)` but you couldn't write `g2(c)`. That would increase quality of life quite a bit.\r\n\r\n[1] `OtherContract` neither an ancestor nor a descendant of `Contract`.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1245594942/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

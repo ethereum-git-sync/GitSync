@@ -38,6 +38,33 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4372329032,
+      "node_id": "LA_kwDOAm_5kc8AAAABBJxySA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/roadmap",
+      "name": "roadmap",
+      "color": "ff8e00",
+      "default": false,
+      "description": "It's on our short-term roadmap"
+    },
+    {
+      "id": 4437989273,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIZXmQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/epic",
+      "name": "epic",
+      "color": "ff00ef",
+      "default": false,
+      "description": "Multi-stage task that may require coordination between team members across multiple PRs."
+    },
+    {
+      "id": 4438153180,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjX3A",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20impact",
+      "name": "high impact",
+      "color": "001dff",
+      "default": false,
+      "description": "Changes are very prominent and affect users or the project in a major way."
     }
   ],
   "state": "open",
@@ -85,7 +112,7 @@
   },
   "comments": 78,
   "created_at": "2016-03-03T12:42:20Z",
-  "updated_at": "2022-08-17T13:50:48Z",
+  "updated_at": "2022-09-14T16:37:01Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,

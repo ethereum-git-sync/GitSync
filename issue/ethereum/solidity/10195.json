@@ -47,6 +47,33 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4438003076,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaNhA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20effort",
+      "name": "medium effort",
+      "color": "ff7df7",
+      "default": false,
+      "description": "Default level of effort"
+    },
+    {
+      "id": 4438153180,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjX3A",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20impact",
+      "name": "high impact",
+      "color": "001dff",
+      "default": false,
+      "description": "Changes are very prominent and affect users or the project in a major way."
+    },
+    {
+      "id": 4525128519,
+      "node_id": "LA_kwDOAm_5kc8AAAABDbf7Rw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/needs%20design",
+      "name": "needs design",
+      "color": "18F737",
+      "default": false,
+      "description": "The proposal is too vague to be implemented right away"
     }
   ],
   "state": "open",
@@ -56,9 +83,9 @@
 
   ],
   "milestone": null,
-  "comments": 4,
+  "comments": 5,
   "created_at": "2020-11-04T09:24:06Z",
-  "updated_at": "2022-02-09T22:22:14Z",
+  "updated_at": "2022-09-14T16:49:38Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -245,6 +272,50 @@
     "body": "I support for this proposal",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1028942359/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1247043297",
+    "html_url": "https://github.com/ethereum/solidity/issues/10195#issuecomment-1247043297",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/10195",
+    "id": 1247043297,
+    "node_id": "IC_kwDOAm_5kc5KVF7h",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-14T16:49:38Z",
+    "updated_at": "2022-09-14T16:49:38Z",
+    "author_association": "MEMBER",
+    "body": "Related: https://github.com/ethereum/solidity/issues/11284",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1247043297/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

@@ -40,21 +40,40 @@
       "description": "Any changes to the language, e.g. new features"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 9,
+  "comments": 10,
   "created_at": "2021-08-20T09:34:57Z",
-  "updated_at": "2022-08-17T13:48:59Z",
-  "closed_at": null,
+  "updated_at": "2022-09-14T15:14:37Z",
+  "closed_at": "2022-09-14T15:14:37Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "We could consider an extension of https://github.com/ethereum/solidity/issues/11531 as means to implement a specific kind of templates/generics.\r\n\r\nThe idea is to allow defining abstract types that initially have no operations, members or properties of any kind. Then those abstract types can be enriched explicitly with operations of fixed signatures (potentially depending on further abstract argument types) that do not have an implementation (but can be fully specified - we could even have dedicated syntax for specifying pre- and post-conditions for them to be used by e.g. SMTChecker).\r\n\r\nRelative to those abstract types, generic routines can be written that act on those types. Those generic routines can be fully type-checked relative to the operations defined to the abstract types.\r\n\r\nThen this generic routine can be invoked for any type that implements the requirements of the involved abstract types.\r\n\r\nIn this construction there can never be unexpected or weird behaviour. If the generic routine type-checks on the abstract type, then it will *always* work for *all* suitable concrete types. It will *always* call the exact routines matched during \"type unification\".\r\nIt can thereby also be *audited* once and be assured to work for any type that satisfies the specification of an abstract type.\r\n\r\nThis concept is commonly present in (often functional) languages with strong ties to e.g. Church's Simple Type Theory or Category Theory, e.g. ML or Haskell and has extensive (and complex) theoretical background - but none of it is required for using it and, if we implement it correctly, it would pretty much \"just work\" everywhere safely.\r\n\r\nSyntactically, there are several options. Usually, the concept involves \"type variables\" that use specially marked identifiers. We could reproduce that, or we could introduce e.g. ``abstract type`` declarations. (EDIT: maybe we do need proper type variables and maybe even a full system of type classes/sorts to allow more advanced constructions)\r\n\r\nThe basic version without being able to enrich abstract types is straightforward, but rather useless.\r\n```\r\nabstract type genericType;\r\nfunction f(genericType a, genericType b)\r\n{\r\n  // can do nothing with a and b, since they are not even comparable or have any other means of acting upon\r\n}\r\n```\r\n\r\nEnriching the abstract type with members and operations immediately makes them useful, though (syntactic details subject to extensive refinement):\r\n\r\n```\r\nabstract type addableType with { function(addableType, addableType) pure returns(addableType) as + };\r\n\r\nfunction f(addableType a, addableType b) pure returns (addableType)\r\n{\r\n  return a + b;\r\n}\r\nfunction g()\r\n{\r\n  uint256 x = 1; uint256 y = 2;\r\n  assert(f(x,y) == 3); // will match ``addableType`` as ``uint`` and check that ``+`` on uint has signature ``function(uint, uint) pure returns(uint)`` and replace ``+`` in ``f`` with ``uint``'s ``+``.\r\n}\r\n```\r\n\r\nSimilarly to operators, members or any other properties of types can be specified for the abstract type.\r\nThis will already cover a large amount of use cases.\r\nBut it can be extended further to allow abstract types to depend on further abstract types:\r\n```\r\nabstract type combinableType(combineResultType) with { function(combinableType, combinableType) pure returns(combineResultType) as combine };\r\n\r\nfunction combineImpl(uint8 a, uint8 b) pure returns (uint16) {\r\n  return (uint16(a) << 8 | uint16(b));\r\n}\r\n\r\nusing { combineImpl as combine } for uint8;\r\n\r\nfunction combineArray(combinableType(combineResultType)[] memory a, combinableType(combineResultType)[] memory b)\r\nreturns (combineResultType[] memory r)\r\n{\r\n   require(a.length == b.length);\r\n   r = new combineResultType[](a.length);\r\n   for (uint256 i = 0; i < r.length; i++)\r\n     r[i] = a[i].combine(b[i]);\r\n}\r\n\r\n```\r\nBased on which this can even be taken higher order in theory:\r\n```\r\nusing { combineArray(combinableType) as combine } for combinableType[];\r\n```\r\n\r\nTo allow generics to depend on literals, literals are usually be lifted to the type system, which sounds weird, but in its application is rather natural. The main thing to do is to allow literals as types with some means to retrieve their literal value. (Details here will need more care, though, so don't take this at face-value)\r\n\r\n```\r\nabstract type literal(type) with { function() pure returns(type) as value }; // could be internal/std library\r\n\r\nfunction addmod(type x, type y, literal(type) m) returns (type)\r\n{\r\n  return (x + y) % m.value();\r\n}\r\n\r\nfunction f()\r\n{\r\n  assert(addmod(3, 4, 2) == 1); // The type of the literal is rational(2) which we would give a .value function returning 2.\r\n}\r\n```\r\nAlthough that's only one way to do this and there's multiple options for that. (Type return type of the rational .value function here would arguably either be sth like ``uint256`` or an abstract rational type...).\r\n\r\nImplementation-wise the main thing required is a type unification mechanism, but that's always just first-order matching, so it's easy to do. The ability of the type-system to handle all of this could probably pretty much be inherited from concrete user-defined types.",
-  "closed_by": null,
+  "closed_by": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/11827/reactions",
     "total_count": 0,
@@ -69,7 +88,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11827/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -456,6 +475,50 @@
     "body": "How about a `wrap`/`unwrap` function as follows (this is based on ideas by @ekpyron and me):\r\n```\r\nfunction wrap<T>(T.underlying a) returns (T b)\r\n{\r\n    assembly { b := a }\r\n}\r\n\r\nfunction unwrap<T>(T a) returns (T.underlying b)\r\n{\r\n    assembly { b := a }\r\n}\r\n```",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/910389649/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1246921037",
+    "html_url": "https://github.com/ethereum/solidity/issues/11827#issuecomment-1246921037",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/11827",
+    "id": 1246921037,
+    "node_id": "IC_kwDOAm_5kc5KUoFN",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-14T15:14:37Z",
+    "updated_at": "2022-09-14T15:14:37Z",
+    "author_association": "MEMBER",
+    "body": "I'm linking this to https://github.com/ethereum/solidity/issues/13321, but there's not too much gain in keeping it open as a separate issue.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1246921037/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

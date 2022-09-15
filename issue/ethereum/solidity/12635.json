@@ -38,6 +38,42 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4438003076,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaNhA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20effort",
+      "name": "medium effort",
+      "color": "ff7df7",
+      "default": false,
+      "description": "Default level of effort"
+    },
+    {
+      "id": 4438155599,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjhTw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20impact",
+      "name": "medium impact",
+      "color": "314aff",
+      "default": false,
+      "description": "Default level of impact"
+    },
+    {
+      "id": 4438488423,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI31Zw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have",
+      "name": "must have",
+      "color": "ffa12a",
+      "default": false,
+      "description": "Something we consider an essential part of Solidity 1.0."
+    },
+    {
+      "id": 4525128519,
+      "node_id": "LA_kwDOAm_5kc8AAAABDbf7Rw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/needs%20design",
+      "name": "needs design",
+      "color": "18F737",
+      "default": false,
+      "description": "The proposal is too vague to be implemented right away"
     }
   ],
   "state": "open",
@@ -49,7 +85,7 @@
   "milestone": null,
   "comments": 8,
   "created_at": "2022-02-05T14:41:29Z",
-  "updated_at": "2022-08-17T13:49:01Z",
+  "updated_at": "2022-09-14T14:39:51Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -57,8 +93,8 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/12635/reactions",
-    "total_count": 2,
-    "+1": 2,
+    "total_count": 3,
+    "+1": 3,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,

@@ -83,9 +83,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-08-23T11:44:25Z",
-  "updated_at": "2022-08-23T11:59:22Z",
+  "updated_at": "2022-09-14T15:04:53Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -108,5 +108,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1246907357",
+    "html_url": "https://github.com/ethereum/solidity/issues/13426#issuecomment-1246907357",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13426",
+    "id": 1246907357,
+    "node_id": "IC_kwDOAm_5kc5KUkvd",
+    "user": {
+      "login": "GeorgePlotnikov",
+      "id": 22812032,
+      "node_id": "MDQ6VXNlcjIyODEyMDMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22812032?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GeorgePlotnikov",
+      "html_url": "https://github.com/GeorgePlotnikov",
+      "followers_url": "https://api.github.com/users/GeorgePlotnikov/followers",
+      "following_url": "https://api.github.com/users/GeorgePlotnikov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GeorgePlotnikov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GeorgePlotnikov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GeorgePlotnikov/subscriptions",
+      "organizations_url": "https://api.github.com/users/GeorgePlotnikov/orgs",
+      "repos_url": "https://api.github.com/users/GeorgePlotnikov/repos",
+      "events_url": "https://api.github.com/users/GeorgePlotnikov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GeorgePlotnikov/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-14T15:04:53Z",
+    "updated_at": "2022-09-14T15:04:53Z",
+    "author_association": "NONE",
+    "body": "Hi @cameel I'm new to Solidity but want to dig deeper into it. May I elaborate on this issue and provide an improvement? It takes some time and I will ask questions. Hope it won't be too bothering.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1246907357/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

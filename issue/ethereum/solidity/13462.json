@@ -49,21 +49,40 @@
       "description": "We don’t see a good reason not to have it but won’t go out of our way to implement it."
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 2,
+  "comments": 3,
   "created_at": "2022-08-31T09:56:21Z",
-  "updated_at": "2022-09-01T11:25:42Z",
-  "closed_at": null,
+  "updated_at": "2022-09-14T14:52:49Z",
+  "closed_at": "2022-09-14T14:52:48Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "## Abstract\r\n\r\nIt would be great to be able to concatenate string constants:\r\n```solidity\r\nstring public constant FOO = \"foo\";\r\nstring public constant BAR = \"bar\";\r\nstring public constant FOOBAR = FOO BAR; // Illegal, but would be great\r\n```\r\n\r\nAs of now one needs to explicitly write `FOOBAR = \"foobar\"`, which can be a source of bugs.\r\n\r\n## Motivation\r\n\r\nMy use case for this feature is building an ERC-712 typehash of data containing structures. According to the standard if the type name of of the structures is this: `MyStruct(uint256 field1, uint256 field2)`, then the type name of the entire data needs to have the structure type name concatenated to itself: `MyData(MyStruct[] data)MyStruct(uint256 field1, uint256 field2)`. Hashes of both of these strings are needed when verifying the signature of the data. As of now it can be implemented only as\r\n```solidity\r\nstring internal constant STRUCT_NAME = \"MyStruct(uint256 field1, uint256 field2)\";\r\nbytes32 internal immutable structTypeHash = keccak256(STRUCT_NAME);\r\nstring internal constant DATA_NAME = \"MyData(MyStruct[] data)MyStruct(uint256 field1, uint256 field2)\";\r\nbytes32 internal immutable dataTypeHash = keccak256(DATA_NAME);\r\n```\r\n\r\nIt'd be very elegant and less bug prone if the type name of the data didn't need to repeat the type name of the structure and could simply concatenate it:\r\n\r\n```solidity\r\nstring internal constant STRUCT_NAME = \"MyStruct(uint256 field1, uint256 field2)\";\r\nbytes32 internal immutable structTypeHash = keccak256(STRUCT_NAME);\r\nstring internal constant DATA_NAME = \"MyData(MyStruct[] data)\" STRUCT_NAME; // would be great\r\nbytes32 internal immutable dataTypeHash = keccak256(DATA_NAME);\r\n```\r\n\r\nThere are probably other use cases which I'm not aware of.\r\n\r\n## Specification\r\n\r\nCurrently Solidity allows concatenating string literals by writing one after another, e.g. `\"foo\" \"bar\"`. It'd be great if this syntax supported also constant names, e.g. `\"foo\" BAR`.\r\n\r\n## Backwards Compatibility\r\n\r\nThere's no backwards compatibility issue.\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13462/reactions",
     "total_count": 0,
@@ -78,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13462/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -159,6 +178,50 @@
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1233877396/reactions",
       "total_count": 0,
       "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1246889915",
+    "html_url": "https://github.com/ethereum/solidity/issues/13462#issuecomment-1246889915",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13462",
+    "id": 1246889915,
+    "node_id": "IC_kwDOAm_5kc5KUge7",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-14T14:52:48Z",
+    "updated_at": "2022-09-14T14:52:48Z",
+    "author_association": "MEMBER",
+    "body": "Closing this as a duplicate of https://github.com/ethereum/solidity/issues/13451, which I'm in turn closing as a special case of https://github.com/ethereum/solidity/issues/13318, as explained there.\r\nHere, this would involve the use of ``string.concat`` together with compile-time constant expression evaluation.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1246889915/reactions",
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

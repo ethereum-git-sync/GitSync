@@ -8,7 +8,7 @@
   "id": 711829448,
   "node_id": "MDU6SXNzdWU3MTE4Mjk0NDg=",
   "number": 9930,
-  "title": "PR check for release binaries added to solc-bin",
+  "title": "PR check for comparing release binaries added to solc-bin with those in github releases",
   "user": {
     "login": "cameel",
     "id": 137030,
@@ -31,6 +31,15 @@
   },
   "labels": [
     {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    },
+    {
       "id": 2685863294,
       "node_id": "MDU6TGFiZWwyNjg1ODYzMjk0",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/solc-bin",
@@ -38,6 +47,24 @@
       "color": "3B8CF5",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
     }
   ],
   "state": "open",
@@ -85,9 +112,9 @@
     }
   ],
   "milestone": null,
-  "comments": 1,
+  "comments": 2,
   "created_at": "2020-09-30T10:30:17Z",
-  "updated_at": "2022-08-17T13:48:48Z",
+  "updated_at": "2022-09-14T18:02:18Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -142,6 +169,50 @@
     "body": "We discussed it on the call today. We decided that the check itself does not make much sense since the binaries on github release page can actually be changed at any time. We might still want to go back to the idea of the script for getting the binaries though. \r\n\r\nWe're going to wait until @ekpyron is back to discuss it.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/701406913/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1247123703",
+    "html_url": "https://github.com/ethereum/solidity/issues/9930#issuecomment-1247123703",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/9930",
+    "id": 1247123703,
+    "node_id": "IC_kwDOAm_5kc5KVZj3",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-14T18:02:18Z",
+    "updated_at": "2022-09-14T18:02:18Z",
+    "author_association": "MEMBER",
+    "body": "We should discuss if we still want it. The process is still manual but with #12929 the binaries are unlikely to go out of sync, unless someone changes them intentionally. We're also considering automating the process of submitting binaries to solc-bin so a discrepancy would be even less likely (though not impossible).",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1247123703/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

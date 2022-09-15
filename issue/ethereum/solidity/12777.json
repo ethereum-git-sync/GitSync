@@ -47,6 +47,33 @@
       "color": "91B44D",
       "default": false,
       "description": "Could be a \"good first issue\" but something is blocking it or it has open questions."
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438490842,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3-2g",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20have",
+      "name": "should have",
+      "color": "ffbe6c",
+      "default": false,
+      "description": "We like the idea but it’s not important enough to be a part of the roadmap."
     }
   ],
   "state": "open",
@@ -58,11 +85,11 @@
   "milestone": null,
   "comments": 4,
   "created_at": "2022-03-10T19:19:00Z",
-  "updated_at": "2022-08-17T13:48:55Z",
+  "updated_at": "2022-09-14T16:04:07Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "## Abstract\r\n`solc --link` is the only input mode that modifies input files in place. In all the other modes the compiler prints to stdout by default and only writes to files when the `--output-dir` option is used. I think that the `--link` option should be changed to behave like the other input modes.\r\n\r\n## Motivation\r\nThe way it works currently, apart from just being inconsistent, is one of the reasons why do not have any tests covering it - our command-line test framework is not suited for testing the output written to a file. Especially when the output overwrites the input file.\r\n\r\n## Specification\r\n- By default `--link` should print to stdout.\r\n- When `--output-dir` is used, the output should go to a file in the output directory. The name of the file should match the input file. The expected file extension is `.bin` but we don't enforce or change that, even if the input file has a different extension.\r\n- Add some command-line tests covering this input mode\r\n- Add a test for this input mode in [`test/solc/CommandLineParser.cpp`](https://github.com/ethereum/solidity/blob/develop/test/solc/CommandLineParser.cpp), similarly to how other modes are covered. The test should simply use as many command-line flags as possible and make sure the resulting `CommandLineOptions` object looks like it should.\r\n\r\n## Backwards Compatibility\r\nThe change is not backwards compatible.",
+  "body": "## Abstract\r\n`solc --link` is the only input mode that modifies input files in place. In all the other modes the compiler prints to stdout by default and only writes to files when the `--output-dir` option is used. I think that the `--link` option should be changed to behave like the other input modes.\r\n\r\n## Motivation\r\nThe way it works currently, apart from just being inconsistent, is one of the reasons why we do not have any tests covering it - our command-line test framework is not suited for testing the output written to a file. Especially when the output overwrites the input file.\r\n\r\n## Specification\r\n- By default `--link` should print to stdout.\r\n- When `--output-dir` is used, the output should go to a file in the output directory. The name of the file should match the input file. The expected file extension is `.bin` but we don't enforce or change that, even if the input file has a different extension.\r\n- Add some command-line tests covering this input mode\r\n- Add a test for this input mode in [`test/solc/CommandLineParser.cpp`](https://github.com/ethereum/solidity/blob/develop/test/solc/CommandLineParser.cpp), similarly to how other modes are covered. The test should simply use as many command-line flags as possible and make sure the resulting `CommandLineOptions` object looks like it should.\r\n\r\n## Backwards Compatibility\r\nThe change is not backwards compatible.",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/12777/reactions",

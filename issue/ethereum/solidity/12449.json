@@ -30,7 +30,33 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 4438003076,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaNhA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20effort",
+      "name": "medium effort",
+      "color": "ff7df7",
+      "default": false,
+      "description": "Default level of effort"
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438481746,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3bUg",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have%20eventually",
+      "name": "must have eventually",
+      "color": "ffb04d",
+      "default": false,
+      "description": "Something we consider essential but not enough to prevent us from releasing Solidity 1.0 without it."
+    }
   ],
   "state": "open",
   "locked": false,
@@ -41,7 +67,7 @@
   "milestone": null,
   "comments": 5,
   "created_at": "2021-12-22T10:38:26Z",
-  "updated_at": "2022-08-17T13:48:46Z",
+  "updated_at": "2022-09-14T16:09:41Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,

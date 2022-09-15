@@ -47,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-09-13T13:33:39Z",
-  "updated_at": "2022-09-13T13:33:39Z",
+  "updated_at": "2022-09-14T16:37:26Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -72,5 +72,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1247029051",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25753#issuecomment-1247029051",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25753",
+    "id": 1247029051,
+    "node_id": "IC_kwDOAOvK985KVCc7",
+    "user": {
+      "login": "fjl",
+      "id": 6915,
+      "node_id": "MDQ6VXNlcjY5MTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fjl",
+      "html_url": "https://github.com/fjl",
+      "followers_url": "https://api.github.com/users/fjl/followers",
+      "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+      "organizations_url": "https://api.github.com/users/fjl/orgs",
+      "repos_url": "https://api.github.com/users/fjl/repos",
+      "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fjl/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-14T16:37:26Z",
+    "updated_at": "2022-09-14T16:37:26Z",
+    "author_association": "MEMBER",
+    "body": "I have spoken to the Prysm developers about this, and they say: in your logs, Prysm is still syncing from genesis and it will take time to finish that. Once Prysm has finished syncing, it will deliver the ForkchoiceUpdated message to geth, and geth will start syncing then. It is recommended to use a checkpoint to speed up the beacon chain sync.\r\n\r\nThey are thinking about adding something in Prysm so that it will deliver the FcU request earlier in this scenario.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1247029051/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

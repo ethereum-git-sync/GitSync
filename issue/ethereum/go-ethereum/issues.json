@@ -1,11 +1,83 @@
 [
   {
     "author": {
+      "login": "brg8"
+    },
+    "number": 23875,
+    "title": "eth_getLogs request returns an error `failed to get logs for block`.",
+    "updatedAt": "2022-09-14T20:18:58Z"
+  },
+  {
+    "author": {
+      "login": "MicaiahReid"
+    },
+    "number": 24661,
+    "title": "Transactions with `maxFeePerGas` or `gasPrice` less than `baseFeePerGas` rejected only when `gas` is missing",
+    "updatedAt": "2022-09-14T19:04:03Z"
+  },
+  {
+    "author": {
+      "login": "begetan"
+    },
+    "number": 25753,
+    "title": "Geth 1.10.23 fresh sync is broken for Post-Merge networks with error: Beacon client online, but never received consensus updates.",
+    "updatedAt": "2022-09-14T16:37:26Z"
+  },
+  {
+    "author": {
+      "login": "ryny24"
+    },
+    "number": 25759,
+    "title": "panic: runtime error: slice bounds out of range [:4611686018476719459] with capacity 322961408",
+    "updatedAt": "2022-09-14T13:57:12Z"
+  },
+  {
+    "author": {
       "login": "SLoeuillet"
     },
     "number": 25741,
     "title": "geth CI/CD is broken : no more Linux/MacOS/Android dev builds created since 2022-09-07 (d30e39b2)",
-    "updatedAt": "2022-09-13T21:16:37Z"
+    "updatedAt": "2022-09-14T08:35:17Z"
+  },
+  {
+    "author": {
+      "login": "Ericalvin"
+    },
+    "number": 25756,
+    "title": "About The Merge",
+    "updatedAt": "2022-09-14T06:45:30Z"
+  },
+  {
+    "author": {
+      "login": "clearest555"
+    },
+    "number": 25751,
+    "title": "Beacon backfilling failed err=\"missing beacon header xxx\"",
+    "updatedAt": "2022-09-14T05:37:46Z"
+  },
+  {
+    "author": {
+      "login": "litcc"
+    },
+    "number": 25703,
+    "title": "How can I check the latest healedTrienodes height of the main network?",
+    "updatedAt": "2022-09-14T03:27:09Z"
+  },
+  {
+    "author": {
+      "login": "xrchz"
+    },
+    "number": 23191,
+    "title": "State heal phase is very slow (not finished after 2 weeks)",
+    "updatedAt": "2022-09-14T02:26:45Z"
+  },
+  {
+    "author": {
+      "login": "ryny24"
+    },
+    "number": 23228,
+    "title": "FYI - Sync mode SNAP does not work",
+    "updatedAt": "2022-09-14T02:25:46Z"
   },
   {
     "author": {
@@ -33,27 +105,11 @@
   },
   {
     "author": {
-      "login": "begetan"
-    },
-    "number": 25753,
-    "title": "Geth 1.10.23 fresh sync is broken for Post-Merge networks with error: Beacon client online, but never received consensus updates.",
-    "updatedAt": "2022-09-13T13:33:39Z"
-  },
-  {
-    "author": {
       "login": "lcgogo"
     },
     "number": 25594,
     "title": "How does geth communicate with prysm?",
     "updatedAt": "2022-09-13T12:56:57Z"
-  },
-  {
-    "author": {
-      "login": "clearest555"
-    },
-    "number": 25751,
-    "title": "Beacon backfilling failed err=\"missing beacon header xxx\"",
-    "updatedAt": "2022-09-13T10:50:23Z"
   },
   {
     "author": {
@@ -102,14 +158,6 @@
     "number": 25704,
     "title": "Failed to commit trie from trie database err=\"read /ethereum/.ethereum/geth/chaindata/102907544.ldb: input/output error\"",
     "updatedAt": "2022-09-13T04:06:28Z"
-  },
-  {
-    "author": {
-      "login": "litcc"
-    },
-    "number": 25703,
-    "title": "How can I check the latest healedTrienodes height of the main network?",
-    "updatedAt": "2022-09-13T00:30:34Z"
   },
   {
     "author": {
@@ -494,14 +542,6 @@
     "number": 25673,
     "title": "difference between TransactionsPacket and PooledTransactionsPacket",
     "updatedAt": "2022-09-05T12:16:32Z"
-  },
-  {
-    "author": {
-      "login": "ryny24"
-    },
-    "number": 23228,
-    "title": "FYI - Sync mode SNAP does not work",
-    "updatedAt": "2022-09-04T12:18:17Z"
   },
   {
     "author": {
@@ -1113,14 +1153,6 @@
   },
   {
     "author": {
-      "login": "xrchz"
-    },
-    "number": 23191,
-    "title": "State heal phase is very slow (not finished after 2 weeks)",
-    "updatedAt": "2022-08-13T18:13:24Z"
-  },
-  {
-    "author": {
       "login": "kledgold"
     },
     "number": 25521,
@@ -1398,14 +1430,6 @@
     "number": 25402,
     "title": "i have a problem with  \"go get github.com/ethereum/go-ethereum/ethclient\"",
     "updatedAt": "2022-08-03T21:48:36Z"
-  },
-  {
-    "author": {
-      "login": "brg8"
-    },
-    "number": 23875,
-    "title": "eth_getLogs request returns an error `failed to get logs for block`.",
-    "updatedAt": "2022-08-03T18:52:51Z"
   },
   {
     "author": {
@@ -2406,14 +2430,6 @@
     "number": 20076,
     "title": "Regenerated local transaction journal    transactions=0 accounts=0",
     "updatedAt": "2022-07-02T04:23:12Z"
-  },
-  {
-    "author": {
-      "login": "MicaiahReid"
-    },
-    "number": 24661,
-    "title": "Transactions with `maxFeePerGas` or `gasPrice` less than `baseFeePerGas` rejected only when `gas` is missing",
-    "updatedAt": "2022-07-01T14:26:15Z"
   },
   {
     "author": {

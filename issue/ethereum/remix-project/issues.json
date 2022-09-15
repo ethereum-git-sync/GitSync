@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "ryestew"
+    },
+    "number": 2690,
+    "title": "In permissions modal, reset should be underlined on hover.",
+    "updatedAt": "2022-09-14T16:02:45Z"
+  },
+  {
+    "author": {
+      "login": "bunsenstraat"
+    },
+    "number": 2913,
+    "title": "play button CSS bug",
+    "updatedAt": "2022-09-14T16:00:50Z"
+  },
+  {
+    "author": {
+      "login": "LianaHus"
+    },
+    "number": 2900,
+    "title": "Refactoring: Remove the 'workspace' prefix from tabs",
+    "updatedAt": "2022-09-14T15:59:09Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2432,
+    "title": "Make all tooltips custom",
+    "updatedAt": "2022-09-14T04:05:55Z"
+  },
+  {
+    "author": {
       "login": "yann300"
     },
     "number": 2911,
@@ -41,14 +73,6 @@
   },
   {
     "author": {
-      "login": "LianaHus"
-    },
-    "number": 2900,
-    "title": "Refactoring: Remove the 'workspace' prefix from tabs",
-    "updatedAt": "2022-09-12T10:44:08Z"
-  },
-  {
-    "author": {
       "login": "yann300"
     },
     "number": 2778,
@@ -62,14 +86,6 @@
     "number": 1462,
     "title": "Deploy & run: add a link to docs to explain faucet usage for all testnets",
     "updatedAt": "2022-09-08T12:30:21Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
-    "number": 2690,
-    "title": "In permissions modal, reset should be underlined on hover.",
-    "updatedAt": "2022-09-08T12:25:44Z"
   },
   {
     "author": {
@@ -294,14 +310,6 @@
     "number": 1800,
     "title": "replace all toasters for copy update to tooltips",
     "updatedAt": "2022-09-05T12:32:09Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
-    "number": 2432,
-    "title": "Make all tooltips custom",
-    "updatedAt": "2022-09-05T12:31:59Z"
   },
   {
     "author": {

@@ -1,11 +1,59 @@
 [
   {
     "author": {
+      "login": "gcolvin"
+    },
+    "number": 469,
+    "title": "Proposal to add EIP-2315 (Simple Subroutines) and EIP-4200 (Static Relative Jumps) into Shanghai.",
+    "updatedAt": "2022-09-14T21:56:38Z"
+  },
+  {
+    "author": {
       "login": "parithosh"
     },
     "number": 520,
     "title": "Ideas for debug tools",
-    "updatedAt": "2022-09-13T21:16:28Z"
+    "updatedAt": "2022-09-14T20:33:52Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 623,
+    "title": "KZG-Ceremony Call #8",
+    "updatedAt": "2022-09-14T18:07:58Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 613,
+    "title": "KZG-Ceremony Call #7",
+    "updatedAt": "2022-09-14T18:07:53Z"
+  },
+  {
+    "author": {
+      "login": "tvanepps"
+    },
+    "number": 593,
+    "title": "KZG-Ceremony Call #6",
+    "updatedAt": "2022-09-14T17:14:33Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 616,
+    "title": "Ethereum Core Devs Meeting 147 Agenda",
+    "updatedAt": "2022-09-14T16:59:18Z"
+  },
+  {
+    "author": {
+      "login": "wippourius"
+    },
+    "number": 619,
+    "title": "Hi ",
+    "updatedAt": "2022-09-14T02:09:56Z"
   },
   {
     "author": {
@@ -41,27 +89,11 @@
   },
   {
     "author": {
-      "login": "wippourius"
-    },
-    "number": 619,
-    "title": "Hi ",
-    "updatedAt": "2022-09-13T18:07:00Z"
-  },
-  {
-    "author": {
       "login": "timbeiko"
     },
     "number": 450,
     "title": "Shanghai Planning",
     "updatedAt": "2022-09-10T03:32:41Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 616,
-    "title": "Ethereum Core Devs Meeting 147 Agenda",
-    "updatedAt": "2022-09-09T15:11:16Z"
   },
   {
     "author": {
@@ -78,22 +110,6 @@
     "number": 609,
     "title": "Ethereum Core Devs Meeting 146 Agenda",
     "updatedAt": "2022-09-06T18:14:03Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 613,
-    "title": "KZG-Ceremony #7",
-    "updatedAt": "2022-09-06T00:26:54Z"
-  },
-  {
-    "author": {
-      "login": "tvanepps"
-    },
-    "number": 593,
-    "title": "KZG-Ceremony Call #6",
-    "updatedAt": "2022-08-31T21:16:47Z"
   },
   {
     "author": {
@@ -686,14 +702,6 @@
     "number": 462,
     "title": "Proposal to add EIP-4200 to Shanghai",
     "updatedAt": "2022-02-04T01:57:12Z"
-  },
-  {
-    "author": {
-      "login": "gcolvin"
-    },
-    "number": 469,
-    "title": "Proposal to add EIP-2315 (Simple Subroutines) and EIP-3779 (Safer Control Flow) into Shanghai.",
-    "updatedAt": "2022-02-02T21:18:03Z"
   },
   {
     "author": {

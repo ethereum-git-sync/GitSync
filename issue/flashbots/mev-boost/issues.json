@@ -1,11 +1,11 @@
 [
   {
     "author": {
-      "login": "analogue"
+      "login": "chimera-defi"
     },
-    "number": 314,
-    "title": "Port forwarding broken in `docker run` docs @ https://hub.docker.com/r/flashbots/mev-boost",
-    "updatedAt": "2022-09-13T20:41:06Z"
+    "number": 295,
+    "title": "Request for inclusion in Node Operator Readiness list",
+    "updatedAt": "2022-09-14T16:14:47Z"
   },
   {
     "author": {
@@ -13,7 +13,31 @@
     },
     "number": 312,
     "title": "Potentially allow mev-boost run even when check relays fails for one",
-    "updatedAt": "2022-09-13T18:58:45Z"
+    "updatedAt": "2022-09-14T10:00:33Z"
+  },
+  {
+    "author": {
+      "login": "KomplexMojo"
+    },
+    "number": 308,
+    "title": "Warning - \"Beacon node does not utilize a custom builder\"",
+    "updatedAt": "2022-09-14T09:53:19Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 145,
+    "title": "Do you want to run a builder? ",
+    "updatedAt": "2022-09-14T09:27:04Z"
+  },
+  {
+    "author": {
+      "login": "analogue"
+    },
+    "number": 314,
+    "title": "Port forwarding broken in `docker run` docs @ https://hub.docker.com/r/flashbots/mev-boost",
+    "updatedAt": "2022-09-14T07:48:35Z"
   },
   {
     "author": {
@@ -30,30 +54,6 @@
     "number": 286,
     "title": "Provide binaries with each release",
     "updatedAt": "2022-09-13T12:41:51Z"
-  },
-  {
-    "author": {
-      "login": "KomplexMojo"
-    },
-    "number": 308,
-    "title": "Warning - \"Beacon node does not utilize a custom builder\"",
-    "updatedAt": "2022-09-13T10:20:19Z"
-  },
-  {
-    "author": {
-      "login": "chimera-defi"
-    },
-    "number": 295,
-    "title": "Request for inclusion in Node Operator Readiness list",
-    "updatedAt": "2022-09-13T09:55:18Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 145,
-    "title": "Do you want to run a builder? ",
-    "updatedAt": "2022-09-13T08:40:34Z"
   },
   {
     "author": {

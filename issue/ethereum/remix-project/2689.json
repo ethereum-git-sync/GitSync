@@ -40,7 +40,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "ryestew",
@@ -87,12 +87,31 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-07-26T07:57:46Z",
-  "updated_at": "2022-07-26T07:57:46Z",
-  "closed_at": null,
+  "updated_at": "2022-09-15T12:59:16Z",
+  "closed_at": "2022-09-15T12:59:16Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "The word sensitive is not the correct word.  Find a new one and replace it.\r\n\"You are going to process a sensitive call. Please make sure you trust this plugin.\"",
-  "closed_by": null,
+  "closed_by": {
+    "login": "bunsenstraat",
+    "id": 2787300,
+    "node_id": "MDQ6VXNlcjI3ODczMDA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2787300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bunsenstraat",
+    "html_url": "https://github.com/bunsenstraat",
+    "followers_url": "https://api.github.com/users/bunsenstraat/followers",
+    "following_url": "https://api.github.com/users/bunsenstraat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bunsenstraat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bunsenstraat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bunsenstraat/subscriptions",
+    "organizations_url": "https://api.github.com/users/bunsenstraat/orgs",
+    "repos_url": "https://api.github.com/users/bunsenstraat/repos",
+    "events_url": "https://api.github.com/users/bunsenstraat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bunsenstraat/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/2689/reactions",
     "total_count": 0,
@@ -107,7 +126,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2689/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
 

@@ -1,6 +1,22 @@
 [
   {
     "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2843,
+    "title": "Errors in browser console when contract has compilation error",
+    "updatedAt": "2022-09-15T12:59:17Z"
+  },
+  {
+    "author": {
+      "login": "ryestew"
+    },
+    "number": 2689,
+    "title": "update text in permissions modal ",
+    "updatedAt": "2022-09-15T12:59:16Z"
+  },
+  {
+    "author": {
       "login": "ryestew"
     },
     "number": 2690,
@@ -206,14 +222,6 @@
     "number": 188,
     "title": "Improve contract name of generated sample test file",
     "updatedAt": "2022-09-06T13:37:23Z"
-  },
-  {
-    "author": {
-      "login": "Aniket-Engg"
-    },
-    "number": 2843,
-    "title": "Errors in browser console when contract has compilation error",
-    "updatedAt": "2022-09-06T13:36:47Z"
   },
   {
     "author": {
@@ -1358,14 +1366,6 @@
     "number": 2687,
     "title": "Remove Environment plugins from the plugin manager",
     "updatedAt": "2022-07-26T11:00:55Z"
-  },
-  {
-    "author": {
-      "login": "ryestew"
-    },
-    "number": 2689,
-    "title": "update text in permissions modal ",
-    "updatedAt": "2022-07-26T07:57:46Z"
   },
   {
     "author": {

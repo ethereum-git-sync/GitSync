@@ -56,6 +56,15 @@
       "color": "512264",
       "default": false,
       "description": "Relates to an EIP Process"
+    },
+    {
+      "id": 4536939089,
+      "node_id": "LA_kwDOAq426M8AAAABDmwyUQ",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/e-consensus",
+      "name": "e-consensus",
+      "color": "D4C5F9",
+      "default": false,
+      "description": "Waiting on editor consensus"
     }
   ],
   "state": "open",
@@ -67,7 +76,7 @@
   "milestone": null,
   "comments": 2,
   "created_at": "2022-09-10T17:38:22Z",
-  "updated_at": "2022-09-12T12:25:20Z",
+  "updated_at": "2022-09-15T12:48:18Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -75,13 +84,13 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/EIPs/issues/5641/reactions",
-    "total_count": 0,
+    "total_count": 1,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 0,
+    "heart": 1,
     "rocket": 0,
     "eyes": 0
   },
@@ -122,13 +131,13 @@
     "body": "This seems reasonable. I'd like to have a bit of discussion on it before we make a decision though.\r\n\r\nI think we need a few more checks in `eipw` before I'm comfortable enabling this:\r\n\r\n - ethereum/eipw#11\r\n - ethereum/eipw#27",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1243221173/reactions",
-      "total_count": 0,
+      "total_count": 1,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 0,
+      "heart": 1,
       "rocket": 0,
       "eyes": 0
     },

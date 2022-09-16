@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/5662",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/5662/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/5662/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/5662/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/5662",
+  "id": 1375220521,
+  "node_id": "I_kwDOAq426M5R-DMp",
+  "number": 5662,
+  "title": "EIPs should adopt some form of intellectual property rights (IPR) rules preemptively",
+  "user": {
+    "login": "kdenhartog",
+    "id": 23125059,
+    "node_id": "MDQ6VXNlcjIzMTI1MDU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/23125059?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kdenhartog",
+    "html_url": "https://github.com/kdenhartog",
+    "followers_url": "https://api.github.com/users/kdenhartog/followers",
+    "following_url": "https://api.github.com/users/kdenhartog/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kdenhartog/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kdenhartog/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kdenhartog/subscriptions",
+    "organizations_url": "https://api.github.com/users/kdenhartog/orgs",
+    "repos_url": "https://api.github.com/users/kdenhartog/repos",
+    "events_url": "https://api.github.com/users/kdenhartog/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kdenhartog/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 4468107952,
+      "node_id": "LA_kwDOAq426M8AAAABClHqsA",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/enhancement",
+      "name": "enhancement",
+      "color": "092FA2",
+      "default": true,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-15T23:53:06Z",
+  "updated_at": "2022-09-15T23:53:06Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "### Proposed Change\n\nI've seen these types of issues arise when trying to build out technical specifications in the DID and VC space. Generally speaking, most people here seem to be operating in good faith, but there's always some point where IPR is brought up because companies have to appease their lawyers as they grow.\r\n\r\nI'd suggest that this repo adopt some sort of basic IPR rules preemptively to avoid the mess that arises in the case that patents and royalties come into play.\r\n\r\nThey're a few different methods on how to approach this which will directly affect the ability of contributors to assist in the process of developing an EIP and the governance necessary to maintain and enforce the rules. This is the unfortunate reality of how these things go. Here's some places to look at and consider modeling after:\r\n\r\n1. IETF IPR as defined by [RFC8179](https://www.rfc-editor.org/rfc/rfc8179)\r\n2. W3C approach to IPR which is outlined here in their [patent policy document](https://www.w3.org/Consortium/Patent-Policy-20040205/). Note this typically requires that legal agreements need to be signed by members/participants/orgs etc\r\n3. OASIS IPR - I don't have a link to this one, but I know this one sparked some controversy in the past because they allowed for royalties from my understanding (it's before my time).\r\n4. GSM IPR - again don't have links to this here, but I've heard that there's some sort of IPR rules that lead to setting specific royalty amounts per patent or relevance of patent. Let's not go this way, but I'm highlighting it to further define the landscape of IPR.\r\n\r\nIn any case, I think it's useful for us to start this topic now so that we've got something sorted before people start getting dragged into court or depositions to settle patent cases based on EIPs. My personal preference would be go the IETF or W3C route. I'm curious where others fall on this.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/5662/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/5662/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

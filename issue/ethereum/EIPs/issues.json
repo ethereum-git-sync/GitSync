@@ -1,19 +1,35 @@
 [
   {
     "author": {
-      "login": "Pandapip1"
+      "login": "kdenhartog"
     },
-    "number": 5652,
-    "title": "Errata'd EIPs",
-    "updatedAt": "2022-09-14T12:19:40Z"
+    "number": 5662,
+    "title": "EIPs should adopt some form of intellectual property rights (IPR) rules preemptively",
+    "updatedAt": "2022-09-15T23:53:06Z"
   },
   {
     "author": {
-      "login": "Pandapip1"
+      "login": "xinbenlv"
     },
-    "number": 5651,
-    "title": "Dynamic Required Approvals",
-    "updatedAt": "2022-09-13T12:58:00Z"
+    "number": 5597,
+    "title": "EIP editors should explain the external link policy to new authors",
+    "updatedAt": "2022-09-15T23:30:00Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5265,
+    "title": "Add a `Superseded` status",
+    "updatedAt": "2022-09-15T12:49:35Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5488,
+    "title": "Add finalized date to EIPs.",
+    "updatedAt": "2022-09-15T12:49:30Z"
   },
   {
     "author": {
@@ -21,7 +37,31 @@
     },
     "number": 5640,
     "title": "Updated PR Merge Queue",
-    "updatedAt": "2022-09-13T12:51:01Z"
+    "updatedAt": "2022-09-15T12:48:32Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5641,
+    "title": "Automatically merge all new EIP drafts",
+    "updatedAt": "2022-09-15T12:48:18Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5651,
+    "title": "Dynamic Required Approvals",
+    "updatedAt": "2022-09-15T12:48:11Z"
+  },
+  {
+    "author": {
+      "login": "Pandapip1"
+    },
+    "number": 5652,
+    "title": "Errata'd EIPs",
+    "updatedAt": "2022-09-15T12:48:05Z"
   },
   {
     "author": {
@@ -30,14 +70,6 @@
     "number": 1620,
     "title": "ERC-1620: Money Streaming",
     "updatedAt": "2022-09-12T12:39:18Z"
-  },
-  {
-    "author": {
-      "login": "Pandapip1"
-    },
-    "number": 5641,
-    "title": "Automatically merge all new EIP drafts",
-    "updatedAt": "2022-09-12T12:25:20Z"
   },
   {
     "author": {
@@ -62,14 +94,6 @@
     "number": 5158,
     "title": "Example relative link in EIP-1 is rendered as absolute",
     "updatedAt": "2022-09-10T17:58:56Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5597,
-    "title": "EIP editors should explain the external link policy to new authors",
-    "updatedAt": "2022-09-10T17:58:29Z"
   },
   {
     "author": {
@@ -105,14 +129,6 @@
   },
   {
     "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5265,
-    "title": "Add a `Superseded` status",
-    "updatedAt": "2022-09-10T17:54:54Z"
-  },
-  {
-    "author": {
       "login": "SamWilsn"
     },
     "number": 5310,
@@ -142,14 +158,6 @@
     "number": 5424,
     "title": "EIP editors should explain that ERC was renamed to EIP",
     "updatedAt": "2022-09-10T17:49:10Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5488,
-    "title": "Add finalized date to EIPs.",
-    "updatedAt": "2022-09-10T17:48:21Z"
   },
   {
     "author": {

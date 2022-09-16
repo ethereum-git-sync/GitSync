@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25778",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25778/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25778/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25778/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25778",
+  "id": 1375179943,
+  "node_id": "I_kwDOAOvK985R95Sn",
+  "number": 25778,
+  "title": "Running geth with beacon chain",
+  "user": {
+    "login": "sealbox",
+    "id": 97301135,
+    "node_id": "U_kgDOBcyyjw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/97301135?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sealbox",
+    "html_url": "https://github.com/sealbox",
+    "followers_url": "https://api.github.com/users/sealbox/followers",
+    "following_url": "https://api.github.com/users/sealbox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sealbox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sealbox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sealbox/subscriptions",
+    "organizations_url": "https://api.github.com/users/sealbox/orgs",
+    "repos_url": "https://api.github.com/users/sealbox/repos",
+    "events_url": "https://api.github.com/users/sealbox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sealbox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-15T22:53:59Z",
+  "updated_at": "2022-09-15T22:53:59Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hello,\r\nI would like to get a clarification what is the relation between geth and so-called beacon node after merge? If I understood it correctly, geth is exchanging information with beacon chain in now and it requires beacon chain for syncing?\r\n\r\nSo I picked the prysm beacon chain implementation as it looked the easiest to run, but I cannot make it work.\r\n\r\nMy folder structure is as follows:\r\n\r\n```\r\n/home/eth\r\n    /.ethereum # data\r\n    /node # geth (1.10.24)\r\n    /node_beacon # prysm (3.1.1)\r\n```\r\n\r\nI whitelisted all TCP, UDP ports required for running both and checked with  MX Toolbox that ports are discoverable (RPC and P2P for both geth and prysm).\r\n\r\nI am running geth with following options:\r\n\r\n```\r\n/home/eth/node/build/bin/geth --cache=4096 --http --http.api eth,web3,net,engine,debug,personal --http.addr 0.0.0.0 --http.port 12001 --port 30303 --datadir=/home/eth/.ethereum --allow-insecure-unlock --rpc.allow-unprotected-txs --authrpc.addr 0.0.0.0 --authrpc.port 8551 --authrpc.vhosts 0.0.0.0 --authrpc.jwtsecret /home/eth/node_beacon/jwt.hex\r\n```\r\n\r\nI am running prysm with following options:\r\n\r\n```\r\n/home/eth/node_beacon/prysm.sh beacon-chain --datadir=/home/eth/.ethereum --http-web3provider=http://127.0.0.1:12001 --rpc-host=0.0.0.0 --monitoring-host=0.0.0.0 --execution-endpoint=http://127.0.0.1:8551 --accept-terms-of-use --jwt-secret=/home/eth/node_beacon/jwt.hex\r\n```\r\n\r\nAnd both services seem to start up and run fine, I do not get any errors. However, after they are setup it seems the geth waits for prysm while prysm waits for geth:\r\n\r\nThose are the logs:\r\n\r\nGeth:\r\n```\r\nWARN [09-15|22:52:53.139] Local chain is post-merge, waiting for beacon client sync switch-over...\r\nINFO [09-15|22:50:49.891] Legacy sync reached merge threshold      number=15,537,419 hash=78c1c2..58cd79 td=58,750,256,312,486,924,353,244 ttd=58,750,000,000,000,000,000,000\r\n```\r\n\r\nPrysm:\r\n```\r\ntime=\"2022-09-15 22:51:18\" level=warning msg=\"Execution client is not syncing\" prefix=powchain\r\ntime=\"2022-09-15 22:51:22\" level=info msg=\"Waiting for enough suitable peers before syncing\" prefix=initial-sync required=3 suitable=0\r\n```\r\n\r\nFrom the logs it seems to me that geth waits for prysm to start doing something, while prysm complaining the geth is not syncing anything? What am I doing wrong? It's really unclear to me how to setup both properly.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25778/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25778/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

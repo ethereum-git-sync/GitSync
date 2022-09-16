@@ -1,11 +1,27 @@
 [
   {
     "author": {
-      "login": "brg8"
+      "login": "sealbox"
     },
-    "number": 23875,
-    "title": "eth_getLogs request returns an error `failed to get logs for block`.",
-    "updatedAt": "2022-09-14T20:18:58Z"
+    "number": 25778,
+    "title": "Running geth with beacon chain",
+    "updatedAt": "2022-09-15T22:53:59Z"
+  },
+  {
+    "author": {
+      "login": "MareG76"
+    },
+    "number": 25775,
+    "title": "Already shutting down, interrupt more to panic",
+    "updatedAt": "2022-09-15T19:11:54Z"
+  },
+  {
+    "author": {
+      "login": "lansehuiyi6"
+    },
+    "number": 25626,
+    "title": "Geth 1.10.21 -> 1.10.23 fail to start, the follow error was got. Fatal: Failed to register the Ethereum service: ancient chain segments already extracted, please set --datadir.ancient to the correct path",
+    "updatedAt": "2022-09-15T17:08:24Z"
   },
   {
     "author": {
@@ -13,7 +29,7 @@
     },
     "number": 24661,
     "title": "Transactions with `maxFeePerGas` or `gasPrice` less than `baseFeePerGas` rejected only when `gas` is missing",
-    "updatedAt": "2022-09-14T19:04:03Z"
+    "updatedAt": "2022-09-15T16:56:04Z"
   },
   {
     "author": {
@@ -21,7 +37,103 @@
     },
     "number": 25753,
     "title": "Geth 1.10.23 fresh sync is broken for Post-Merge networks with error: Beacon client online, but never received consensus updates.",
-    "updatedAt": "2022-09-14T16:37:26Z"
+    "updatedAt": "2022-09-15T16:22:26Z"
+  },
+  {
+    "author": {
+      "login": "willianpaixao"
+    },
+    "number": 25043,
+    "title": "Add difficulty and possibly totalDifficulty as metrics",
+    "updatedAt": "2022-09-15T16:21:59Z"
+  },
+  {
+    "author": {
+      "login": "hdiass"
+    },
+    "number": 25517,
+    "title": "--exitwhensynced doesn't work after the goerli merge",
+    "updatedAt": "2022-09-15T14:48:44Z"
+  },
+  {
+    "author": {
+      "login": "laronlineworld"
+    },
+    "number": 25597,
+    "title": "Geth node accounts balances and contracts reset to 0 after 30,000 Blocks in POA private network",
+    "updatedAt": "2022-09-15T14:37:34Z"
+  },
+  {
+    "author": {
+      "login": "NakedKoala"
+    },
+    "number": 25763,
+    "title": " metrics.Meter documentation is unclear",
+    "updatedAt": "2022-09-15T14:29:37Z"
+  },
+  {
+    "author": {
+      "login": "Ericalvin"
+    },
+    "number": 25764,
+    "title": "after merge",
+    "updatedAt": "2022-09-15T14:28:07Z"
+  },
+  {
+    "author": {
+      "login": "kledgold"
+    },
+    "number": 25772,
+    "title": "About eth2.0 ",
+    "updatedAt": "2022-09-15T14:27:29Z"
+  },
+  {
+    "author": {
+      "login": "biganashvili"
+    },
+    "number": 25773,
+    "title": "Why method  'eth_blockNumber' doesn't have a parameter for commitment level (last, safe, finalized)?",
+    "updatedAt": "2022-09-15T14:26:11Z"
+  },
+  {
+    "author": {
+      "login": "kartikswarnkar"
+    },
+    "number": 25771,
+    "title": "Ethereum mainnet syncing stuck at blocknumber 15537415 & showing syncing false",
+    "updatedAt": "2022-09-15T14:18:22Z"
+  },
+  {
+    "author": {
+      "login": "moonape1226"
+    },
+    "number": 25770,
+    "title": "Node stop to sync with ",
+    "updatedAt": "2022-09-15T14:14:43Z"
+  },
+  {
+    "author": {
+      "login": "lijie9703"
+    },
+    "number": 25765,
+    "title": "Problems with the use of nodes after merging",
+    "updatedAt": "2022-09-15T14:13:37Z"
+  },
+  {
+    "author": {
+      "login": "ulope"
+    },
+    "number": 25693,
+    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
+    "updatedAt": "2022-09-15T11:28:36Z"
+  },
+  {
+    "author": {
+      "login": "xux1217"
+    },
+    "number": 25766,
+    "title": "Safe Head & Finalized Blocks Problem When Post-Merge",
+    "updatedAt": "2022-09-15T10:44:42Z"
   },
   {
     "author": {
@@ -29,7 +141,15 @@
     },
     "number": 25759,
     "title": "panic: runtime error: slice bounds out of range [:4611686018476719459] with capacity 322961408",
-    "updatedAt": "2022-09-14T13:57:12Z"
+    "updatedAt": "2022-09-15T01:58:11Z"
+  },
+  {
+    "author": {
+      "login": "brg8"
+    },
+    "number": 23875,
+    "title": "eth_getLogs request returns an error `failed to get logs for block`.",
+    "updatedAt": "2022-09-14T20:18:58Z"
   },
   {
     "author": {
@@ -86,14 +206,6 @@
     "number": 25730,
     "title": "Geth refuses to sync after being a few months offline",
     "updatedAt": "2022-09-13T17:39:17Z"
-  },
-  {
-    "author": {
-      "login": "ulope"
-    },
-    "number": 25693,
-    "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
-    "updatedAt": "2022-09-13T15:09:23Z"
   },
   {
     "author": {
@@ -633,27 +745,11 @@
   },
   {
     "author": {
-      "login": "hdiass"
-    },
-    "number": 25517,
-    "title": "--exitwhensynced doesn't work after the goerli merge",
-    "updatedAt": "2022-09-01T08:28:31Z"
-  },
-  {
-    "author": {
       "login": "mafangtao"
     },
     "number": 25649,
     "title": "invalid merkle root    Skip duplicated bad block",
     "updatedAt": "2022-09-01T07:12:18Z"
-  },
-  {
-    "author": {
-      "login": "lansehuiyi6"
-    },
-    "number": 25626,
-    "title": "Geth 1.10.21 -> 1.10.23 fail to start, the follow error was got. Fatal: Failed to register the Ethereum service: ancient chain segments already extracted, please set --datadir.ancient to the correct path",
-    "updatedAt": "2022-09-01T01:40:57Z"
   },
   {
     "author": {
@@ -862,14 +958,6 @@
     "number": 25462,
     "title": "Duplicate code in gomobile production",
     "updatedAt": "2022-08-26T06:55:26Z"
-  },
-  {
-    "author": {
-      "login": "laronlineworld"
-    },
-    "number": 25597,
-    "title": "Geth node accounts balances and contracts reset to 0 after 30,000 Blocks in POA private network",
-    "updatedAt": "2022-08-25T08:10:28Z"
   },
   {
     "author": {
@@ -2374,14 +2462,6 @@
     "number": 25209,
     "title": "geth account import flags no longer work",
     "updatedAt": "2022-07-04T17:52:20Z"
-  },
-  {
-    "author": {
-      "login": "willianpaixao"
-    },
-    "number": 25043,
-    "title": "Add difficulty and possibly totalDifficulty as metrics",
-    "updatedAt": "2022-07-04T16:53:18Z"
   },
   {
     "author": {

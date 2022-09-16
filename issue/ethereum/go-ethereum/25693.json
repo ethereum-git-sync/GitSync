@@ -49,37 +49,37 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 35,
+  "comments": 36,
   "created_at": "2022-09-06T09:37:58Z",
-  "updated_at": "2022-09-13T15:09:23Z",
-  "closed_at": null,
+  "updated_at": "2022-09-15T11:28:36Z",
+  "closed_at": "2022-09-15T11:28:35Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "#### System information\r\n\r\nGeth version: `v1.10.21` / `v1.10.23`\r\nOS & Version: Linux\r\n\r\n#### Expected behaviour\r\n\r\nA fresh sync from scratch of Goerli to work\r\n\r\n#### Actual behaviour\r\n\r\nDoes not work.\r\n- Geth `1.10.21`: \r\n  - Snap sync completes, afterwards State heal seems to continue indefinitely (aborted after 4 days)\r\n  - Last state heal log before abort:\r\n    `INFO [09-05|14:37:35.138] State heal in progress                   accounts=9@647.00B            slots=0@0.00B              codes=0@0.00B            nodes=16,319,436@8.09GiB   pending=4369`\r\n  - Many, many `Unexpected trienode heal packet` messages (~70% of all log lines)\r\n  - Pivot is only changed 12 times. Last one:\r\n    `WARN [09-02|16:42:58.589] Pivot seemingly stale, moving            old=7,516,913 new=7,516,977`\r\n  - Suspiciously new blocks are no longer imported: \r\n    `INFO [09-05|14:37:34.872] Imported new block headers               count=0    elapsed=15.422ms    number=7,382,818 hash=aa32c4..48c7cc age=3w4d12h    ignored=178` \r\n    - Probably because of:\r\n      `Local chain is post-merge, waiting for beacon client sync switch-over...`\r\n    - However Prsym claims geth is not synced:\r\n      `level=error msg=\"Unable to process past deposit contract logs, perhaps your execution client is not fully synced\" error=\"no contract code at given address\" prefix=powchain`\r\n- Geth `1.10.23`:\r\n  - Syncing never even starts\r\n    No sync progress is reported, apparently every peer is dropped because of:\r\n    `WARN [09-06|09:25:04.945] Snapshot extension registration failed   peer=6de3885d err=\"peer connected on snap without compatible eth support\"`\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nCompose file used:\r\n```yaml\r\nversion: \"3\"\r\n\r\nservices:\r\n  geth:\r\n    image: ethereum/client-go:v1.10.23\r\n    restart: always\r\n    network_mode: host\r\n    stop_grace_period: 1m\r\n    volumes:\r\n      - /data/geth:/data\r\n      - jwt:/jwt\r\n    command: >\r\n      --goerli\r\n      --datadir=/data\r\n      --http\r\n      --http.api eth,net,web3,txpool\r\n      --http.addr 0.0.0.0\r\n      --http.corsdomain '*'\r\n      --ws\r\n      --ws.api eth,web3,net\r\n      --authrpc.jwtsecret /jwt/jwtsecret\r\n      --authrpc.vhosts '*'\r\n      --metrics\r\n      --metrics.addr=0.0.0.0\r\n      --metrics.port=9191\r\n\r\n  prysm:\r\n    image: gcr.io/prysmaticlabs/prysm/beacon-chain:stable\r\n    restart: always\r\n    network_mode: host\r\n    volumes:\r\n      - /data/prysm:/data\r\n      - jwt:/jwt\r\n    command: >\r\n      --goerli\r\n      --datadir=/data\r\n      --rpc-host=0.0.0.0\r\n      --http-web3provider=http://localhost:8551\r\n      --jwt-secret=/jwt/jwtsecret\r\n      --accept-terms-of-use\r\n\r\nvolumes:\r\n  jwt:\r\n```\r\n",
   "closed_by": {
-    "login": "MariusVanDerWijden",
-    "id": 16664698,
-    "node_id": "MDQ6VXNlcjE2NjY0Njk4",
-    "avatar_url": "https://avatars.githubusercontent.com/u/16664698?v=4",
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
     "gravatar_id": "",
-    "url": "https://api.github.com/users/MariusVanDerWijden",
-    "html_url": "https://github.com/MariusVanDerWijden",
-    "followers_url": "https://api.github.com/users/MariusVanDerWijden/followers",
-    "following_url": "https://api.github.com/users/MariusVanDerWijden/following{/other_user}",
-    "gists_url": "https://api.github.com/users/MariusVanDerWijden/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/MariusVanDerWijden/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/MariusVanDerWijden/subscriptions",
-    "organizations_url": "https://api.github.com/users/MariusVanDerWijden/orgs",
-    "repos_url": "https://api.github.com/users/MariusVanDerWijden/repos",
-    "events_url": "https://api.github.com/users/MariusVanDerWijden/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/MariusVanDerWijden/received_events",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
     "type": "User",
     "site_admin": false
   },
@@ -97,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25693/timeline",
   "performed_via_github_app": null,
-  "state_reason": "reopened"
+  "state_reason": "completed"
 }
 [
   {

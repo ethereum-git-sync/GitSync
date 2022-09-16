@@ -30,7 +30,51 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 4372329032,
+      "node_id": "LA_kwDOAm_5kc8AAAABBJxySA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/roadmap",
+      "name": "roadmap",
+      "color": "ff8e00",
+      "default": false,
+      "description": "It's on our short-term roadmap"
+    },
+    {
+      "id": 4437989273,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIZXmQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/epic",
+      "name": "epic",
+      "color": "ff00ef",
+      "default": false,
+      "description": "Multi-stage task that may require coordination between team members across multiple PRs."
+    },
+    {
+      "id": 4438153180,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjX3A",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20impact",
+      "name": "high impact",
+      "color": "001dff",
+      "default": false,
+      "description": "Changes are very prominent and affect users or the project in a major way."
+    },
+    {
+      "id": 4438780109,
+      "node_id": "LA_kwDOAm_5kc8AAAABCJJozQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/refactor",
+      "name": "refactor",
+      "color": "fcff07",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4525128519,
+      "node_id": "LA_kwDOAm_5kc8AAAABDbf7Rw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/needs%20design",
+      "name": "needs design",
+      "color": "18F737",
+      "default": false,
+      "description": "The proposal is too vague to be implemented right away"
+    }
   ],
   "state": "open",
   "locked": false,
@@ -39,9 +83,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-08-09T09:40:21Z",
-  "updated_at": "2022-08-09T12:32:59Z",
+  "updated_at": "2022-09-15T12:31:13Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -64,5 +108,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1248037782",
+    "html_url": "https://github.com/ethereum/solidity/issues/13365#issuecomment-1248037782",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13365",
+    "id": 1248037782,
+    "node_id": "IC_kwDOAm_5kc5KY4uW",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-15T12:31:12Z",
+    "updated_at": "2022-09-15T12:31:12Z",
+    "author_association": "MEMBER",
+    "body": "Given https://github.com/ethereum/solidity/issues/12932 there may be cause to do something similar even as early as the ``NameAndTypeResolver`` - this does not necessarily have to be done in one go, but it's something to keep in mind here.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1248037782/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

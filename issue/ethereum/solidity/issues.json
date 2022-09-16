@@ -1,11 +1,115 @@
 [
   {
     "author": {
+      "login": "kargakis"
+    },
+    "number": 12863,
+    "title": "Nested arrays inside structs are not included in generated ABI",
+    "updatedAt": "2022-09-15T22:39:07Z"
+  },
+  {
+    "author": {
+      "login": "Qambar"
+    },
+    "number": 13523,
+    "title": "assertion failed [block != nullptr]: BasicBlock requested for unrecognized address (BuilderBase.h:550 block_for_offset)",
+    "updatedAt": "2022-09-15T18:01:34Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 7665,
+    "title": "Pretty print expected json output of command line tests.",
+    "updatedAt": "2022-09-15T16:37:38Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13426,
+    "title": "Rewrite `FunctionCallGraph` tests as soltest test suite",
+    "updatedAt": "2022-09-15T16:20:00Z"
+  },
+  {
+    "author": {
+      "login": "thedavidmeister"
+    },
+    "number": 13530,
+    "title": "memory writes in yul don't happen unless alongside a hardhat console log",
+    "updatedAt": "2022-09-15T15:50:17Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 12559,
+    "title": "Investigate and improve test coverage for copying reference types between data locations.",
+    "updatedAt": "2022-09-15T13:44:39Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13365,
+    "title": "Refactored Type Checking and Analysis Annotations",
+    "updatedAt": "2022-09-15T12:31:13Z"
+  },
+  {
+    "author": {
+      "login": "maxsam4"
+    },
+    "number": 11102,
+    "title": "A smart contract hub that routes calls to various child smart contracts to bypass the 24KB bytecode limit ",
+    "updatedAt": "2022-09-15T12:29:15Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 869,
+    "title": "templates / generics",
+    "updatedAt": "2022-09-15T12:28:41Z"
+  },
+  {
+    "author": {
+      "login": "kuzdogan"
+    },
+    "number": 12932,
+    "title": "Error: `Definition of base has to precede definition of derived contract` when specific file in standard-json-input `outputSelection` but works when `outputSelection` file is specific",
+    "updatedAt": "2022-09-15T12:26:21Z"
+  },
+  {
+    "author": {
+      "login": "nishant-sachdeva"
+    },
+    "number": 13318,
+    "title": "Compile-Time-Constant expression evaluation",
+    "updatedAt": "2022-09-15T12:23:04Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8969,
+    "title": "Implement project board automation",
+    "updatedAt": "2022-09-15T11:44:46Z"
+  },
+  {
+    "author": {
       "login": "Gilgames000"
     },
     "number": 12825,
     "title": "LSP throwing an error on each and every character I type in the editor",
-    "updatedAt": "2022-09-14T20:37:42Z"
+    "updatedAt": "2022-09-15T11:25:40Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 9119,
+    "title": "Optimize AND/SHL",
+    "updatedAt": "2022-09-15T10:23:33Z"
   },
   {
     "author": {
@@ -13,7 +117,7 @@
     },
     "number": 11593,
     "title": "Remove abi.encodePacked",
-    "updatedAt": "2022-09-14T20:10:40Z"
+    "updatedAt": "2022-09-15T08:31:43Z"
   },
   {
     "author": {
@@ -25,27 +129,11 @@
   },
   {
     "author": {
-      "login": "kargakis"
-    },
-    "number": 12863,
-    "title": "Nested arrays inside structs are not included in generated ABI",
-    "updatedAt": "2022-09-14T20:04:53Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 909,
     "title": "Enums with data / sum datatype / algebraic datatypes",
     "updatedAt": "2022-09-14T18:04:44Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 869,
-    "title": "templates / generics",
-    "updatedAt": "2022-09-14T18:04:34Z"
   },
   {
     "author": {
@@ -174,14 +262,6 @@
     "number": 9332,
     "title": "Expose sub-structure of bytecode",
     "updatedAt": "2022-09-14T17:06:29Z"
-  },
-  {
-    "author": {
-      "login": "maxsam4"
-    },
-    "number": 11102,
-    "title": "A smart contract hub that routes calls to various child smart contracts to bypass the 24KB bytecode limit ",
-    "updatedAt": "2022-09-14T17:04:59Z"
   },
   {
     "author": {
@@ -350,14 +430,6 @@
     "number": 11695,
     "title": "immutable for libraries / dynamic libraries / high-level delegatecall",
     "updatedAt": "2022-09-14T16:35:41Z"
-  },
-  {
-    "author": {
-      "login": "Qambar"
-    },
-    "number": 13523,
-    "title": "assertion failed [block != nullptr]: BasicBlock requested for unrecognized address (BuilderBase.h:550 block_for_offset)",
-    "updatedAt": "2022-09-14T16:34:50Z"
   },
   {
     "author": {
@@ -606,14 +678,6 @@
     "number": 11827,
     "title": "User-Defined Value Types as means for Generics",
     "updatedAt": "2022-09-14T15:14:37Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13426,
-    "title": "Rewrite `FunctionCallGraph` tests as soltest test suite",
-    "updatedAt": "2022-09-14T15:04:53Z"
   },
   {
     "author": {
@@ -873,27 +937,11 @@
   },
   {
     "author": {
-      "login": "kuzdogan"
-    },
-    "number": 12932,
-    "title": "Error: `Definition of base has to precede definition of derived contract` when specific file in standard-json-input `outputSelection` but works when `outputSelection` file is specific",
-    "updatedAt": "2022-09-14T07:17:29Z"
-  },
-  {
-    "author": {
       "login": "ekpyron"
     },
     "number": 9627,
     "title": "Make the hard-coded parts of the optimiser sequence configurable",
     "updatedAt": "2022-09-13T18:01:57Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 8969,
-    "title": "Implement project board automation",
-    "updatedAt": "2022-09-13T16:50:10Z"
   },
   {
     "author": {
@@ -1798,14 +1846,6 @@
     "number": 10308,
     "title": "[CLI] Rewrite solc --link to use LinkerObject",
     "updatedAt": "2022-08-22T10:46:34Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 12559,
-    "title": "Investigate and improve test coverage for copying reference types between data locations.",
-    "updatedAt": "2022-08-22T05:29:02Z"
   },
   {
     "author": {
@@ -4625,14 +4665,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 13365,
-    "title": "Refactored Type Checking and Analysis Annotations",
-    "updatedAt": "2022-08-09T12:32:59Z"
-  },
-  {
-    "author": {
       "login": "leandro-driguez"
     },
     "number": 13364,
@@ -4742,14 +4774,6 @@
     "number": 13101,
     "title": "`bad_cast` when passing a tuple returned from a function to `abi.encodeCall()`",
     "updatedAt": "2022-08-04T14:00:48Z"
-  },
-  {
-    "author": {
-      "login": "nishant-sachdeva"
-    },
-    "number": 13318,
-    "title": "Compile-Time-Constant expression evaluation",
-    "updatedAt": "2022-08-04T00:07:55Z"
   },
   {
     "author": {
@@ -6934,14 +6958,6 @@
     "number": 4588,
     "title": "Error reason strings in `require()` and `revert()` are expensive. Is that expected behavior?",
     "updatedAt": "2022-02-03T12:45:46Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 9119,
-    "title": "Optimize AND/SHL",
-    "updatedAt": "2022-02-02T17:57:14Z"
   },
   {
     "author": {
@@ -9574,14 +9590,6 @@
     "number": 4730,
     "title": "Overhaul boost test setup/initialization.",
     "updatedAt": "2021-08-03T21:47:52Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 7665,
-    "title": "Pretty print expected json output of command line tests.",
-    "updatedAt": "2021-08-03T21:43:29Z"
   },
   {
     "author": {

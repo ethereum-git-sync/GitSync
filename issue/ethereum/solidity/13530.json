@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13530",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13530/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13530/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13530/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13530",
+  "id": 1374749295,
+  "node_id": "I_kwDOAm_5kc5R8QJv",
+  "number": 13530,
+  "title": "memory writes in yul don't happen unless alongside a hardhat console log",
+  "user": {
+    "login": "thedavidmeister",
+    "id": 629710,
+    "node_id": "MDQ6VXNlcjYyOTcxMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/629710?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/thedavidmeister",
+    "html_url": "https://github.com/thedavidmeister",
+    "followers_url": "https://api.github.com/users/thedavidmeister/followers",
+    "following_url": "https://api.github.com/users/thedavidmeister/following{/other_user}",
+    "gists_url": "https://api.github.com/users/thedavidmeister/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/thedavidmeister/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/thedavidmeister/subscriptions",
+    "organizations_url": "https://api.github.com/users/thedavidmeister/orgs",
+    "repos_url": "https://api.github.com/users/thedavidmeister/repos",
+    "events_url": "https://api.github.com/users/thedavidmeister/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/thedavidmeister/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-15T15:50:17Z",
+  "updated_at": "2022-09-15T15:50:17Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nI'm really not sure why this is happening but it seems memory writes do not happen in one of my functions.\r\n\r\nAs soon as I include console logs from hardhat the writes start to take effect.\r\n\r\nThis happens with or without compiler optimisations enabled.\r\n\r\nhttps://github.com/beehive-innovation/rain-protocol/pull/452/commits/022adea41d0c891bf8d92c117bcc4a18fb98278f\r\n\r\nremoving this\r\n\r\nhttps://github.com/beehive-innovation/rain-protocol/actions/runs/3061601203/jobs/4941572318#step:4:400\r\n\r\ncauses this test to fail, which means that it is not writing a value to memory that it is looking for when it tries to read it back\r\n\r\nhttps://github.com/beehive-innovation/rain-protocol/pull/452/commits/c967e0d3d64eca79777f2040ce6482b1487cb402\r\n\r\ndisabling optimiser doesn't help\r\n\r\nhttps://github.com/beehive-innovation/rain-protocol/actions/runs/3061791728/jobs/4941999523\r\n\r\ntest still fails\r\n\r\nhttps://github.com/beehive-innovation/rain-protocol/pull/452/commits/c0c20e92df01a139436d5a19309aab75376cf254\r\n\r\nadding console log fixes the test\r\n\r\nhttps://github.com/beehive-innovation/rain-protocol/actions/runs/3061817876/jobs/4942058769\r\n\r\nthis passes now\r\n\r\n\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.15 and 0.8.17 tested\r\n- Target EVM version (as per compiler settings):\r\n- Framework/IDE (e.g. Truffle or Remix): hardhat\r\n- EVM execution environment / backend / blockchain client:\r\n- Operating system: mac/linux\r\n\r\n## Steps to Reproduce\r\n\r\nI don't have a minimum reproduction because it seems like some low level yul issue that i have never seen before, i've been calling this `eval` function many times in many different places and never noticed this before.\r\n\r\nvery open to debugging ideas, it's difficult to debug given the console log makes the bug disappear\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13530/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13530/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

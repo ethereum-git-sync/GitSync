@@ -31,13 +31,31 @@
   },
   "labels": [
     {
+      "id": 3630434425,
+      "node_id": "LA_kwDOAm_5kc7YZAh5",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/has%20dependencies",
+      "name": "has dependencies",
+      "color": "Ffff00",
+      "default": false,
+      "description": "The PR depends on other PRs that must be merged first"
+    },
+    {
       "id": 4372329032,
       "node_id": "LA_kwDOAm_5kc8AAAABBJxySA",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/roadmap",
       "name": "roadmap",
-      "color": "5319e7",
+      "color": "ff8e00",
       "default": false,
-      "description": "Only to be applied to parent issues created for design and implementation tracking of roadmap issues"
+      "description": "It's on our short-term roadmap"
+    },
+    {
+      "id": 4525128519,
+      "node_id": "LA_kwDOAm_5kc8AAAABDbf7Rw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/needs%20design",
+      "name": "needs design",
+      "color": "18F737",
+      "default": false,
+      "description": "The proposal is too vague to be implemented right away"
     }
   ],
   "state": "open",
@@ -87,7 +105,7 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-07-28T13:10:48Z",
-  "updated_at": "2022-08-04T00:07:55Z",
+  "updated_at": "2022-09-15T12:23:04Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -95,8 +113,8 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13318/reactions",
-    "total_count": 0,
-    "+1": 0,
+    "total_count": 1,
+    "+1": 1,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,

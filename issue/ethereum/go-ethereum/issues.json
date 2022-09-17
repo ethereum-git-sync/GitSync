@@ -1,11 +1,75 @@
 [
   {
     "author": {
+      "login": "jcbm123143"
+    },
+    "number": 25800,
+    "title": "Dark/Night Mode - Add other theme",
+    "updatedAt": "2022-09-16T23:42:33Z"
+  },
+  {
+    "author": {
+      "login": "jcbm123143"
+    },
+    "number": 25799,
+    "title": "Add Slide Show Ads Features",
+    "updatedAt": "2022-09-16T23:35:07Z"
+  },
+  {
+    "author": {
       "login": "sealbox"
     },
-    "number": 25778,
-    "title": "Running geth with beacon chain",
-    "updatedAt": "2022-09-15T22:53:59Z"
+    "number": 25792,
+    "title": "Missing trie-nodes",
+    "updatedAt": "2022-09-16T21:19:12Z"
+  },
+  {
+    "author": {
+      "login": "rezaeghbal01"
+    },
+    "number": 25782,
+    "title": "Phrase",
+    "updatedAt": "2022-09-16T19:00:21Z"
+  },
+  {
+    "author": {
+      "login": "brg8"
+    },
+    "number": 23875,
+    "title": "eth_getLogs request returns an error `failed to get logs for block`.",
+    "updatedAt": "2022-09-16T17:45:49Z"
+  },
+  {
+    "author": {
+      "login": "dbadoy"
+    },
+    "number": 25789,
+    "title": "TODO comments to be resolved after the merge",
+    "updatedAt": "2022-09-16T16:37:10Z"
+  },
+  {
+    "author": {
+      "login": "DUya98"
+    },
+    "number": 25791,
+    "title": "Problems with syncing after merging.Please launch one to follow the chain!",
+    "updatedAt": "2022-09-16T16:19:40Z"
+  },
+  {
+    "author": {
+      "login": "aathan"
+    },
+    "number": 25747,
+    "title": "Calls such as eth_getStorageAt are very lenient on input format",
+    "updatedAt": "2022-09-16T16:16:33Z"
+  },
+  {
+    "author": {
+      "login": "zoltan-fedor"
+    },
+    "number": 22281,
+    "title": "SIGSEGV with $ geth --syncmode \"fast\"",
+    "updatedAt": "2022-09-16T15:59:12Z"
   },
   {
     "author": {
@@ -13,7 +77,135 @@
     },
     "number": 25775,
     "title": "Already shutting down, interrupt more to panic",
-    "updatedAt": "2022-09-15T19:11:54Z"
+    "updatedAt": "2022-09-16T12:35:33Z"
+  },
+  {
+    "author": {
+      "login": "sealbox"
+    },
+    "number": 25786,
+    "title": " Running geth with beacon chain ",
+    "updatedAt": "2022-09-16T11:57:19Z"
+  },
+  {
+    "author": {
+      "login": "kumavis"
+    },
+    "number": 25731,
+    "title": "panic: runtime error: invalid memory address or nil pointer dereference",
+    "updatedAt": "2022-09-16T10:54:24Z"
+  },
+  {
+    "author": {
+      "login": "Along-WG"
+    },
+    "number": 25790,
+    "title": "the method parity_netPeers does not exist/is not available",
+    "updatedAt": "2022-09-16T10:51:56Z"
+  },
+  {
+    "author": {
+      "login": "holiman"
+    },
+    "number": 25788,
+    "title": "Same block imported multiple times per second",
+    "updatedAt": "2022-09-16T10:38:29Z"
+  },
+  {
+    "author": {
+      "login": "PPianAIC"
+    },
+    "number": 25779,
+    "title": "The node stop syncing",
+    "updatedAt": "2022-09-16T10:04:22Z"
+  },
+  {
+    "author": {
+      "login": "holiman"
+    },
+    "number": 25787,
+    "title": "`panic` in `findBeaconAncestor`",
+    "updatedAt": "2022-09-16T09:53:12Z"
+  },
+  {
+    "author": {
+      "login": "sealbox"
+    },
+    "number": 25778,
+    "title": "Running geth with beacon chain",
+    "updatedAt": "2022-09-16T09:28:05Z"
+  },
+  {
+    "author": {
+      "login": "Nevknight"
+    },
+    "number": 25781,
+    "title": "Does Geth light node still available for RPC call after the merge?",
+    "updatedAt": "2022-09-16T09:19:36Z"
+  },
+  {
+    "author": {
+      "login": "fanhai"
+    },
+    "number": 25783,
+    "title": "以太坊分片发展——自动伸缩网状区块链",
+    "updatedAt": "2022-09-16T09:09:20Z"
+  },
+  {
+    "author": {
+      "login": "tongxurt"
+    },
+    "number": 25784,
+    "title": "cannot sync blocks",
+    "updatedAt": "2022-09-16T09:09:08Z"
+  },
+  {
+    "author": {
+      "login": "axing1991"
+    },
+    "number": 25785,
+    "title": "Beacon client online, but never received consensus updates. Please ensure your beacon client is operational to follow the chain",
+    "updatedAt": "2022-09-16T09:07:25Z"
+  },
+  {
+    "author": {
+      "login": "begetan"
+    },
+    "number": 25753,
+    "title": "Geth 1.10.23 fresh sync is broken for Post-Merge networks with error: Beacon client online, but never received consensus updates.",
+    "updatedAt": "2022-09-16T08:31:50Z"
+  },
+  {
+    "author": {
+      "login": "xrchz"
+    },
+    "number": 23191,
+    "title": "State heal phase is very slow (not finished after 2 weeks)",
+    "updatedAt": "2022-09-16T07:57:14Z"
+  },
+  {
+    "author": {
+      "login": "rjl493456442"
+    },
+    "number": 25390,
+    "title": "all: PRs for Path-based state scheme",
+    "updatedAt": "2022-09-16T04:31:01Z"
+  },
+  {
+    "author": {
+      "login": "NakedKoala"
+    },
+    "number": 25763,
+    "title": " metrics.Meter documentation is unclear",
+    "updatedAt": "2022-09-16T04:07:42Z"
+  },
+  {
+    "author": {
+      "login": "qzmer1104"
+    },
+    "number": 25780,
+    "title": "make: *** [Makefile:17: all] Error 1",
+    "updatedAt": "2022-09-16T03:36:58Z"
   },
   {
     "author": {
@@ -30,14 +222,6 @@
     "number": 24661,
     "title": "Transactions with `maxFeePerGas` or `gasPrice` less than `baseFeePerGas` rejected only when `gas` is missing",
     "updatedAt": "2022-09-15T16:56:04Z"
-  },
-  {
-    "author": {
-      "login": "begetan"
-    },
-    "number": 25753,
-    "title": "Geth 1.10.23 fresh sync is broken for Post-Merge networks with error: Beacon client online, but never received consensus updates.",
-    "updatedAt": "2022-09-15T16:22:26Z"
   },
   {
     "author": {
@@ -62,14 +246,6 @@
     "number": 25597,
     "title": "Geth node accounts balances and contracts reset to 0 after 30,000 Blocks in POA private network",
     "updatedAt": "2022-09-15T14:37:34Z"
-  },
-  {
-    "author": {
-      "login": "NakedKoala"
-    },
-    "number": 25763,
-    "title": " metrics.Meter documentation is unclear",
-    "updatedAt": "2022-09-15T14:29:37Z"
   },
   {
     "author": {
@@ -145,14 +321,6 @@
   },
   {
     "author": {
-      "login": "brg8"
-    },
-    "number": 23875,
-    "title": "eth_getLogs request returns an error `failed to get logs for block`.",
-    "updatedAt": "2022-09-14T20:18:58Z"
-  },
-  {
-    "author": {
       "login": "SLoeuillet"
     },
     "number": 25741,
@@ -182,14 +350,6 @@
     "number": 25703,
     "title": "How can I check the latest healedTrienodes height of the main network?",
     "updatedAt": "2022-09-14T03:27:09Z"
-  },
-  {
-    "author": {
-      "login": "xrchz"
-    },
-    "number": 23191,
-    "title": "State heal phase is very slow (not finished after 2 weeks)",
-    "updatedAt": "2022-09-14T02:26:45Z"
   },
   {
     "author": {
@@ -273,14 +433,6 @@
   },
   {
     "author": {
-      "login": "aathan"
-    },
-    "number": 25747,
-    "title": "Calls such as eth_getStorageAt are very lenient on input format",
-    "updatedAt": "2022-09-12T18:45:05Z"
-  },
-  {
-    "author": {
       "login": "SLoeuillet"
     },
     "number": 25583,
@@ -345,27 +497,11 @@
   },
   {
     "author": {
-      "login": "4441114417342316"
-    },
-    "number": 25727,
-    "title": "Something like this perhaps:",
-    "updatedAt": "2022-09-10T14:05:08Z"
-  },
-  {
-    "author": {
       "login": "rezaeghbal01"
     },
     "number": 25728,
     "title": "Matic\n",
     "updatedAt": "2022-09-10T14:03:25Z"
-  },
-  {
-    "author": {
-      "login": "kumavis"
-    },
-    "number": 25731,
-    "title": "panic: runtime error: invalid memory address or nil pointer dereference",
-    "updatedAt": "2022-09-10T13:22:04Z"
   },
   {
     "author": {
@@ -462,14 +598,6 @@
     "number": 25716,
     "title": "Failed to delete bloom bits              err=\"leveldb: closed\"",
     "updatedAt": "2022-09-08T03:07:54Z"
-  },
-  {
-    "author": {
-      "login": "rjl493456442"
-    },
-    "number": 25390,
-    "title": "all: PRs for Path-based state scheme",
-    "updatedAt": "2022-09-08T02:12:08Z"
   },
   {
     "author": {
@@ -12054,14 +12182,6 @@
     "number": 22434,
     "title": "Build fails on OpenBSD arm64 ",
     "updatedAt": "2021-04-20T10:12:30Z"
-  },
-  {
-    "author": {
-      "login": "zoltan-fedor"
-    },
-    "number": 22281,
-    "title": "SIGSEGV with $ geth --syncmode \"fast\"",
-    "updatedAt": "2021-04-20T09:27:24Z"
   },
   {
     "author": {

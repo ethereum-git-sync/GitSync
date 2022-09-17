@@ -32,21 +32,40 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-09-13T16:40:14Z",
-  "updated_at": "2022-09-13T16:40:14Z",
-  "closed_at": null,
+  "updated_at": "2022-09-16T07:40:26Z",
+  "closed_at": "2022-09-16T07:40:26Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "Currently we overwrite validator registrations but to create historic metrics (such as \"how many blocks on mainnet were validated by validators registered with the relay?\") that can also be backfilled, we need to add the history of all known fee_recipients instead of overwriting the entries in the validator registrations table",
-  "closed_by": null,
+  "closed_by": {
+    "login": "metachris",
+    "id": 116939,
+    "node_id": "MDQ6VXNlcjExNjkzOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/metachris",
+    "html_url": "https://github.com/metachris",
+    "followers_url": "https://api.github.com/users/metachris/followers",
+    "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+    "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+    "organizations_url": "https://api.github.com/users/metachris/orgs",
+    "repos_url": "https://api.github.com/users/metachris/repos",
+    "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/metachris/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/122/reactions",
     "total_count": 0,
@@ -61,8 +80,51 @@
   },
   "timeline_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/122/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1249028149",
+    "html_url": "https://github.com/flashbots/mev-boost-relay/issues/122#issuecomment-1249028149",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/122",
+    "id": 1249028149,
+    "node_id": "IC_kwDOHXha9s5Kcqg1",
+    "user": {
+      "login": "metachris",
+      "id": 116939,
+      "node_id": "MDQ6VXNlcjExNjkzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/metachris",
+      "html_url": "https://github.com/metachris",
+      "followers_url": "https://api.github.com/users/metachris/followers",
+      "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+      "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+      "organizations_url": "https://api.github.com/users/metachris/orgs",
+      "repos_url": "https://api.github.com/users/metachris/repos",
+      "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/metachris/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-16T07:40:22Z",
+    "updated_at": "2022-09-16T07:40:22Z",
+    "author_association": "COLLABORATOR",
+    "body": "done in #134 ",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1249028149/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

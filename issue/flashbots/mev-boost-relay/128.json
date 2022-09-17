@@ -30,7 +30,24 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 4150750269,
+      "node_id": "LA_kwDOHXha9s73Z2w9",
+      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/labels/documentation",
+      "name": "documentation",
+      "color": "0075ca",
+      "default": true,
+      "description": "Improvements or additions to documentation"
+    },
+    {
+      "id": 4150750288,
+      "node_id": "LA_kwDOHXha9s73Z2xQ",
+      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/labels/question",
+      "name": "question",
+      "color": "d876e3",
+      "default": true,
+      "description": "Further information is requested"
+    }
   ],
   "state": "open",
   "locked": false,
@@ -39,9 +56,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 3,
   "created_at": "2022-09-14T14:22:29Z",
-  "updated_at": "2022-09-14T14:22:29Z",
+  "updated_at": "2022-09-16T09:25:30Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -64,5 +81,136 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1249027796",
+    "html_url": "https://github.com/flashbots/mev-boost-relay/issues/128#issuecomment-1249027796",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/128",
+    "id": 1249027796,
+    "node_id": "IC_kwDOHXha9s5KcqbU",
+    "user": {
+      "login": "metachris",
+      "id": 116939,
+      "node_id": "MDQ6VXNlcjExNjkzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/metachris",
+      "html_url": "https://github.com/metachris",
+      "followers_url": "https://api.github.com/users/metachris/followers",
+      "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+      "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+      "organizations_url": "https://api.github.com/users/metachris/orgs",
+      "repos_url": "https://api.github.com/users/metachris/repos",
+      "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/metachris/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-16T07:39:58Z",
+    "updated_at": "2022-09-16T07:39:58Z",
+    "author_association": "COLLABORATOR",
+    "body": "Thanks for the report! What do you think makes the most sense? Maybe we should change `cursor` to `before_slot` 🤔 ",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1249027796/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1249029992",
+    "html_url": "https://github.com/flashbots/mev-boost-relay/issues/128#issuecomment-1249029992",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/128",
+    "id": 1249029992,
+    "node_id": "IC_kwDOHXha9s5Kcq9o",
+    "user": {
+      "login": "metachris",
+      "id": 116939,
+      "node_id": "MDQ6VXNlcjExNjkzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/metachris",
+      "html_url": "https://github.com/metachris",
+      "followers_url": "https://api.github.com/users/metachris/followers",
+      "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+      "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+      "organizations_url": "https://api.github.com/users/metachris/orgs",
+      "repos_url": "https://api.github.com/users/metachris/repos",
+      "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/metachris/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-16T07:42:33Z",
+    "updated_at": "2022-09-16T07:42:33Z",
+    "author_association": "COLLABORATOR",
+    "body": "Updated the spec to make it clearer, based on your wording. thanks",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1249029992/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1249138800",
+    "html_url": "https://github.com/flashbots/mev-boost-relay/issues/128#issuecomment-1249138800",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/128",
+    "id": 1249138800,
+    "node_id": "IC_kwDOHXha9s5KdFhw",
+    "user": {
+      "login": "aratz-lasa",
+      "id": 28734408,
+      "node_id": "MDQ6VXNlcjI4NzM0NDA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28734408?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aratz-lasa",
+      "html_url": "https://github.com/aratz-lasa",
+      "followers_url": "https://api.github.com/users/aratz-lasa/followers",
+      "following_url": "https://api.github.com/users/aratz-lasa/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aratz-lasa/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aratz-lasa/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aratz-lasa/subscriptions",
+      "organizations_url": "https://api.github.com/users/aratz-lasa/orgs",
+      "repos_url": "https://api.github.com/users/aratz-lasa/repos",
+      "events_url": "https://api.github.com/users/aratz-lasa/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aratz-lasa/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-16T09:25:09Z",
+    "updated_at": "2022-09-16T09:25:30Z",
+    "author_association": "NONE",
+    "body": "Thanks for the fast response @metachris ! I think `cursor` it's a nice name, however, I would use the word _decreasing_ instead of _backwards_ to avoid confusion. Maybe something like _\"goes decreasing the slot number until...\"_. What do you think?",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1249138800/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

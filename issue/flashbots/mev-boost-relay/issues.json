@@ -1,11 +1,11 @@
 [
   {
     "author": {
-      "login": "itsdeka"
+      "login": "aratz-lasa"
     },
-    "number": 131,
-    "title": "From where to take the field 'prev_randao'",
-    "updatedAt": "2022-09-14T20:34:57Z"
+    "number": 128,
+    "title": "Data API ProposerPayloadsDelivered implementation",
+    "updatedAt": "2022-09-16T09:25:30Z"
   },
   {
     "author": {
@@ -13,15 +13,39 @@
     },
     "number": 130,
     "title": "Blank response with status 200",
-    "updatedAt": "2022-09-14T20:33:03Z"
+    "updatedAt": "2022-09-16T08:49:35Z"
   },
   {
     "author": {
-      "login": "aratz-lasa"
+      "login": "metachris"
     },
-    "number": 128,
-    "title": "Data API ProposerPayloadsDelivered implementation",
-    "updatedAt": "2022-09-14T14:22:29Z"
+    "number": 51,
+    "title": "Should builder block submissions override previous one by same builder even if less profitable?",
+    "updatedAt": "2022-09-16T07:57:27Z"
+  },
+  {
+    "author": {
+      "login": "metachris"
+    },
+    "number": 135,
+    "title": "Write validator registrations from DB to Redis",
+    "updatedAt": "2022-09-16T07:56:46Z"
+  },
+  {
+    "author": {
+      "login": "taarushv"
+    },
+    "number": 122,
+    "title": "Storing historical validator registrations",
+    "updatedAt": "2022-09-16T07:40:26Z"
+  },
+  {
+    "author": {
+      "login": "itsdeka"
+    },
+    "number": 131,
+    "title": "From where to take the field 'prev_randao'",
+    "updatedAt": "2022-09-16T07:38:48Z"
   },
   {
     "author": {
@@ -30,14 +54,6 @@
     "number": 123,
     "title": "Restrict bids received data API to past slots",
     "updatedAt": "2022-09-13T18:04:38Z"
-  },
-  {
-    "author": {
-      "login": "taarushv"
-    },
-    "number": 122,
-    "title": "Storing historical validator registrations",
-    "updatedAt": "2022-09-13T16:40:14Z"
   },
   {
     "author": {
@@ -134,14 +150,6 @@
     "number": 53,
     "title": "Potential SQL injection in Data API endpoint",
     "updatedAt": "2022-08-12T18:48:12Z"
-  },
-  {
-    "author": {
-      "login": "metachris"
-    },
-    "number": 51,
-    "title": "Should builder block submissions override previous one by same builder even if less profitable?",
-    "updatedAt": "2022-08-11T12:40:07Z"
   },
   {
     "author": {

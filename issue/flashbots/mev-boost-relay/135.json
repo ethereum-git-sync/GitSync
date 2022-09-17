@@ -1,14 +1,14 @@
 {
-  "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51",
+  "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/135",
   "repository_url": "https://api.github.com/repos/flashbots/mev-boost-relay",
-  "labels_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51/labels{/name}",
-  "comments_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51/comments",
-  "events_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51/events",
-  "html_url": "https://github.com/flashbots/mev-boost-relay/issues/51",
-  "id": 1335903958,
-  "node_id": "I_kwDOHXha9s5PoEbW",
-  "number": 51,
-  "title": "Should builder block submissions override previous one by same builder even if less profitable?",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/135/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/135/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/135/events",
+  "html_url": "https://github.com/flashbots/mev-boost-relay/issues/135",
+  "id": 1375569917,
+  "node_id": "I_kwDOHXha9s5R_Yf9",
+  "number": 135,
+  "title": "Write validator registrations from DB to Redis",
   "user": {
     "login": "metachris",
     "id": 116939,
@@ -31,13 +31,13 @@
   },
   "labels": [
     {
-      "id": 4426109452,
-      "node_id": "LA_kwDOHXha9s8AAAABB9ESDA",
-      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/labels/brainstorming",
-      "name": "brainstorming",
-      "color": "FF69B4",
-      "default": false,
-      "description": "Currently in discussion"
+      "id": 4150750275,
+      "node_id": "LA_kwDOHXha9s73Z2xD",
+      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/labels/enhancement",
+      "name": "enhancement",
+      "color": "a2eeef",
+      "default": true,
+      "description": "New feature or request"
     }
   ],
   "state": "open",
@@ -48,15 +48,15 @@
   ],
   "milestone": null,
   "comments": 0,
-  "created_at": "2022-08-11T12:40:07Z",
-  "updated_at": "2022-09-16T07:57:27Z",
+  "created_at": "2022-09-16T07:56:33Z",
+  "updated_at": "2022-09-16T07:56:46Z",
   "closed_at": null,
   "author_association": "COLLABORATOR",
   "active_lock_reason": null,
-  "body": "From https://github.com/flashbots/mev-boost/issues/113#issuecomment-1209944942\r\n\r\nWould require keeping track of all submissions to fall back to next highest bid.",
+  "body": "Currently redis is used as source of truth, and validator registrations are only saved to the database, but not read.\r\n\r\nHousekeeper should probably periodically write these from DB to Redis.",
   "closed_by": null,
   "reactions": {
-    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51/reactions",
+    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/135/reactions",
     "total_count": 0,
     "+1": 0,
     "-1": 0,
@@ -67,7 +67,7 @@
     "rocket": 0,
     "eyes": 0
   },
-  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51/timeline",
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/135/timeline",
   "performed_via_github_app": null,
   "state_reason": null
 }

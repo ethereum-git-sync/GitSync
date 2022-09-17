@@ -1,6 +1,30 @@
 [
   {
     "author": {
+      "login": "Gilgames000"
+    },
+    "number": 12825,
+    "title": "LSP throwing an error on each and every character I type in the editor",
+    "updatedAt": "2022-09-16T16:57:57Z"
+  },
+  {
+    "author": {
+      "login": "wighawag"
+    },
+    "number": 13494,
+    "title": "Assembly clearing local variable",
+    "updatedAt": "2022-09-16T13:43:18Z"
+  },
+  {
+    "author": {
+      "login": "lukehutch"
+    },
+    "number": 13159,
+    "title": "Error: cannot estimate gas; transaction may fail or may require manual gas limit",
+    "updatedAt": "2022-09-16T07:09:53Z"
+  },
+  {
+    "author": {
       "login": "kargakis"
     },
     "number": 12863,
@@ -94,14 +118,6 @@
     "number": 8969,
     "title": "Implement project board automation",
     "updatedAt": "2022-09-15T11:44:46Z"
-  },
-  {
-    "author": {
-      "login": "Gilgames000"
-    },
-    "number": 12825,
-    "title": "LSP throwing an error on each and every character I type in the editor",
-    "updatedAt": "2022-09-15T11:25:40Z"
   },
   {
     "author": {
@@ -1254,14 +1270,6 @@
     "number": 11959,
     "title": "Clean up the helpers around errors",
     "updatedAt": "2022-09-09T15:07:18Z"
-  },
-  {
-    "author": {
-      "login": "wighawag"
-    },
-    "number": 13494,
-    "title": "Assembly clearing local variable",
-    "updatedAt": "2022-09-09T10:20:39Z"
   },
   {
     "author": {
@@ -5046,14 +5054,6 @@
     "number": 13264,
     "title": "Chainlink ext test failing with `AssertionError: Expected transaction to be reverted with InvalidSubscription, but other exception was thrown`",
     "updatedAt": "2022-07-14T12:53:40Z"
-  },
-  {
-    "author": {
-      "login": "lukehutch"
-    },
-    "number": 13159,
-    "title": "Error: cannot estimate gas; transaction may fail or may require manual gas limit",
-    "updatedAt": "2022-07-12T14:05:34Z"
   },
   {
     "author": {

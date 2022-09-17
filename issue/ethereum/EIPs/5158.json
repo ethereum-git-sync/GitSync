@@ -49,7 +49,7 @@
       "description": "Relates to the Website"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -58,12 +58,31 @@
   "milestone": null,
   "comments": 5,
   "created_at": "2022-06-14T15:31:57Z",
-  "updated_at": "2022-09-10T17:58:56Z",
-  "closed_at": null,
+  "updated_at": "2022-09-16T16:35:24Z",
+  "closed_at": "2022-09-16T16:35:24Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "In the [markdown source](https://github.com/ethereum/EIPs/blob/78bc7a8ecc0bea3c73e21a43258e4de5748afbfc/EIPS/eip-1.md?plain=1#L194), this link is relative, but in the rendered version of [EIP-1](https://eips.ethereum.org/EIPS/eip-1), it is absolute:\r\n\r\n![image](https://user-images.githubusercontent.com/57262657/173617031-7ce3d9a5-2d01-4ebf-b738-1917c9c61a97.png)\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "SamWilsn",
+    "id": 57262657,
+    "node_id": "MDQ6VXNlcjU3MjYyNjU3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/57262657?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SamWilsn",
+    "html_url": "https://github.com/SamWilsn",
+    "followers_url": "https://api.github.com/users/SamWilsn/followers",
+    "following_url": "https://api.github.com/users/SamWilsn/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SamWilsn/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SamWilsn/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SamWilsn/subscriptions",
+    "organizations_url": "https://api.github.com/users/SamWilsn/orgs",
+    "repos_url": "https://api.github.com/users/SamWilsn/repos",
+    "events_url": "https://api.github.com/users/SamWilsn/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SamWilsn/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/EIPs/issues/5158/reactions",
     "total_count": 1,
@@ -78,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/5158/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

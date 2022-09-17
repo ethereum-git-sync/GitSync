@@ -4,8 +4,16 @@
       "login": "kdenhartog"
     },
     "number": 5662,
-    "title": "EIPs should adopt some form of intellectual property rights (IPR) rules preemptively",
-    "updatedAt": "2022-09-15T23:53:06Z"
+    "title": "EIPs should preemptively add a CLA",
+    "updatedAt": "2022-09-16T22:37:18Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5158,
+    "title": "Example relative link in EIP-1 is rendered as absolute",
+    "updatedAt": "2022-09-16T16:35:24Z"
   },
   {
     "author": {
@@ -13,7 +21,7 @@
     },
     "number": 5597,
     "title": "EIP editors should explain the external link policy to new authors",
-    "updatedAt": "2022-09-15T23:30:00Z"
+    "updatedAt": "2022-09-16T00:55:15Z"
   },
   {
     "author": {
@@ -86,14 +94,6 @@
     "number": 5082,
     "title": "One-time NFT Sale of unused EIP numbers.",
     "updatedAt": "2022-09-10T17:59:09Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5158,
-    "title": "Example relative link in EIP-1 is rendered as absolute",
-    "updatedAt": "2022-09-10T17:58:56Z"
   },
   {
     "author": {
@@ -174,14 +174,6 @@
     "number": 5608,
     "title": "Make EIPs Website a PWA",
     "updatedAt": "2022-09-10T17:45:59Z"
-  },
-  {
-    "author": {
-      "login": "4441114417342316"
-    },
-    "number": 5631,
-    "title": "EIPS/eip-5605.md",
-    "updatedAt": "2022-09-09T11:50:57Z"
   },
   {
     "author": {

@@ -8,7 +8,7 @@
   "id": 1375220521,
   "node_id": "I_kwDOAq426M5R-DMp",
   "number": 5662,
-  "title": "EIPs should adopt some form of intellectual property rights (IPR) rules preemptively",
+  "title": "EIPs should preemptively add a CLA",
   "user": {
     "login": "kdenhartog",
     "id": 23125059,
@@ -47,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-09-15T23:53:06Z",
-  "updated_at": "2022-09-15T23:53:06Z",
+  "updated_at": "2022-09-16T22:37:18Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -72,5 +72,92 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1248958913",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5662#issuecomment-1248958913",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5662",
+    "id": 1248958913,
+    "node_id": "IC_kwDOAq426M5KcZnB",
+    "user": {
+      "login": "erkinalp",
+      "id": 5833034,
+      "node_id": "MDQ6VXNlcjU4MzMwMzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5833034?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erkinalp",
+      "html_url": "https://github.com/erkinalp",
+      "followers_url": "https://api.github.com/users/erkinalp/followers",
+      "following_url": "https://api.github.com/users/erkinalp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erkinalp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erkinalp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erkinalp/subscriptions",
+      "organizations_url": "https://api.github.com/users/erkinalp/orgs",
+      "repos_url": "https://api.github.com/users/erkinalp/repos",
+      "events_url": "https://api.github.com/users/erkinalp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erkinalp/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-16T06:14:33Z",
+    "updated_at": "2022-09-16T06:14:33Z",
+    "author_association": "NONE",
+    "body": "Royalties per implementation cannot work in this case as there are many implementations distributed as-is and royalty-free.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1248958913/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1249289751",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5662#issuecomment-1249289751",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5662",
+    "id": 1249289751,
+    "node_id": "IC_kwDOAq426M5KdqYX",
+    "user": {
+      "login": "Pandapip1",
+      "id": 45835846,
+      "node_id": "MDQ6VXNlcjQ1ODM1ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45835846?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Pandapip1",
+      "html_url": "https://github.com/Pandapip1",
+      "followers_url": "https://api.github.com/users/Pandapip1/followers",
+      "following_url": "https://api.github.com/users/Pandapip1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Pandapip1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Pandapip1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Pandapip1/subscriptions",
+      "organizations_url": "https://api.github.com/users/Pandapip1/orgs",
+      "repos_url": "https://api.github.com/users/Pandapip1/repos",
+      "events_url": "https://api.github.com/users/Pandapip1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Pandapip1/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-16T12:13:23Z",
+    "updated_at": "2022-09-16T12:14:24Z",
+    "author_association": "MEMBER",
+    "body": "All EIP reference implementations, test cases, and specifications must be CC0. There was a discussion about having a CLA (contributor license agreement, which can also waive patent rights), which I am in favor of, but it was eventually abandoned.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1249289751/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

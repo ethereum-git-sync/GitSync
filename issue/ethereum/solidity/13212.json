@@ -38,6 +38,15 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4438481746,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3bUg",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have%20eventually",
+      "name": "must have eventually",
+      "color": "ffb04d",
+      "default": false,
+      "description": "Something we consider essential but not enough to prevent us from releasing Solidity 1.0 without it."
     }
   ],
   "state": "open",
@@ -47,9 +56,9 @@
 
   ],
   "milestone": null,
-  "comments": 1,
+  "comments": 2,
   "created_at": "2022-06-25T18:10:10Z",
-  "updated_at": "2022-09-14T09:01:11Z",
+  "updated_at": "2022-09-17T20:38:35Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -104,6 +113,50 @@
     "body": "This is worth a thought, but I'd not assign it high priority (unfortunately, we have a rather large backlog of non-critical design decisions).",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1213169211/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1250135854",
+    "html_url": "https://github.com/ethereum/solidity/issues/13212#issuecomment-1250135854",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13212",
+    "id": 1250135854,
+    "node_id": "IC_kwDOAm_5kc5Kg48u",
+    "user": {
+      "login": "emretepedev",
+      "id": 70508617,
+      "node_id": "MDQ6VXNlcjcwNTA4NjE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70508617?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emretepedev",
+      "html_url": "https://github.com/emretepedev",
+      "followers_url": "https://api.github.com/users/emretepedev/followers",
+      "following_url": "https://api.github.com/users/emretepedev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emretepedev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emretepedev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emretepedev/subscriptions",
+      "organizations_url": "https://api.github.com/users/emretepedev/orgs",
+      "repos_url": "https://api.github.com/users/emretepedev/repos",
+      "events_url": "https://api.github.com/users/emretepedev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emretepedev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-17T20:27:59Z",
+    "updated_at": "2022-09-17T20:27:59Z",
+    "author_association": "NONE",
+    "body": "Yes, this is exactly what I need.\r\n\r\nThis feature is so important. Especially with this error: \"CompilerError: Stack too deep, try removing local variables.\"\r\n\r\n@ekpyron @nikola-matic ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1250135854/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

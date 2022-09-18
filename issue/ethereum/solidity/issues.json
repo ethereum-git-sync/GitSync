@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "lukehutch"
+    },
+    "number": 13212,
+    "title": "Allow declaration of multiple variables in first clause of `for` statement",
+    "updatedAt": "2022-09-17T20:38:35Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 6765,
+    "title": "[Yul] Re-introduce ``sub`` opcode",
+    "updatedAt": "2022-09-17T18:47:48Z"
+  },
+  {
+    "author": {
+      "login": "lukehutch"
+    },
+    "number": 13159,
+    "title": "Error: cannot estimate gas; transaction may fail or may require manual gas limit",
+    "updatedAt": "2022-09-17T07:05:09Z"
+  },
+  {
+    "author": {
+      "login": "dessaya"
+    },
+    "number": 12067,
+    "title": "Allow `verbatim` in Solidity `assembly` blocks",
+    "updatedAt": "2022-09-17T01:08:21Z"
+  },
+  {
+    "author": {
       "login": "Gilgames000"
     },
     "number": 12825,
@@ -14,14 +46,6 @@
     "number": 13494,
     "title": "Assembly clearing local variable",
     "updatedAt": "2022-09-16T13:43:18Z"
-  },
-  {
-    "author": {
-      "login": "lukehutch"
-    },
-    "number": 13159,
-    "title": "Error: cannot estimate gas; transaction may fail or may require manual gas limit",
-    "updatedAt": "2022-09-16T07:09:53Z"
   },
   {
     "author": {
@@ -913,14 +937,6 @@
   },
   {
     "author": {
-      "login": "lukehutch"
-    },
-    "number": 13212,
-    "title": "Allow declaration of multiple variables in first clause of `for` statement",
-    "updatedAt": "2022-09-14T09:01:11Z"
-  },
-  {
-    "author": {
       "login": "jrynkiew"
     },
     "number": 13348,
@@ -1238,14 +1254,6 @@
     "number": 13317,
     "title": "Code Completion for LSP",
     "updatedAt": "2022-09-10T11:01:46Z"
-  },
-  {
-    "author": {
-      "login": "dessaya"
-    },
-    "number": 12067,
-    "title": "Allow `verbatim` in Solidity `assembly` blocks",
-    "updatedAt": "2022-09-09T18:01:12Z"
   },
   {
     "author": {
@@ -2725,14 +2733,6 @@
     },
     "number": 6727,
     "title": "[YulOpt] Memory and Storage awareness",
-    "updatedAt": "2022-08-17T13:49:47Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 6765,
-    "title": "[Yul] Re-introduce ``sub`` opcode",
     "updatedAt": "2022-08-17T13:49:47Z"
   },
   {

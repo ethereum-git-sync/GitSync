@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "moshe-blox"
+    },
+    "number": 262,
+    "title": "Frequent \"no bid received\"",
+    "updatedAt": "2022-09-17T05:59:17Z"
+  },
+  {
+    "author": {
       "login": "besu-p2p-host"
     },
     "number": 318,
@@ -86,14 +94,6 @@
     "number": 304,
     "title": "Add more linters",
     "updatedAt": "2022-09-11T19:06:32Z"
-  },
-  {
-    "author": {
-      "login": "moshe-blox"
-    },
-    "number": 262,
-    "title": "Frequent \"no bid received\"",
-    "updatedAt": "2022-09-11T15:38:09Z"
   },
   {
     "author": {

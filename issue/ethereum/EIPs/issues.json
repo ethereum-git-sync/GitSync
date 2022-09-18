@@ -1,6 +1,54 @@
 [
   {
     "author": {
+      "login": "karalabe"
+    },
+    "number": 225,
+    "title": "Clique PoA protocol & Rinkeby PoA testnet",
+    "updatedAt": "2022-09-18T00:36:20Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5294,
+    "title": "How should we pick EIP numbers?",
+    "updatedAt": "2022-09-18T00:23:26Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 5274,
+    "title": "Add an optional `relates-to` preamble key",
+    "updatedAt": "2022-09-18T00:23:25Z"
+  },
+  {
+    "author": {
+      "login": "poojaranjan"
+    },
+    "number": 5190,
+    "title": "How should EIPs should be referenced?",
+    "updatedAt": "2022-09-18T00:23:23Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5082,
+    "title": "One-time NFT Sale of unused EIP numbers.",
+    "updatedAt": "2022-09-18T00:23:19Z"
+  },
+  {
+    "author": {
+      "login": "Arachnid"
+    },
+    "number": 4335,
+    "title": "EIP registries",
+    "updatedAt": "2022-09-18T00:23:17Z"
+  },
+  {
+    "author": {
       "login": "kdenhartog"
     },
     "number": 5662,
@@ -81,51 +129,11 @@
   },
   {
     "author": {
-      "login": "Arachnid"
-    },
-    "number": 4335,
-    "title": "EIP registries",
-    "updatedAt": "2022-09-10T17:59:19Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5082,
-    "title": "One-time NFT Sale of unused EIP numbers.",
-    "updatedAt": "2022-09-10T17:59:09Z"
-  },
-  {
-    "author": {
       "login": "xinbenlv"
     },
     "number": 5408,
     "title": "Create an EIP External Link Archive",
     "updatedAt": "2022-09-10T17:58:19Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5274,
-    "title": "Add an optional `relates-to` preamble key",
-    "updatedAt": "2022-09-10T17:58:01Z"
-  },
-  {
-    "author": {
-      "login": "poojaranjan"
-    },
-    "number": 5190,
-    "title": "How should EIPs should be referenced?",
-    "updatedAt": "2022-09-10T17:57:36Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5294,
-    "title": "How should we pick EIP numbers?",
-    "updatedAt": "2022-09-10T17:57:22Z"
   },
   {
     "author": {
@@ -1318,14 +1326,6 @@
     "number": 777,
     "title": "ERC777 Token Standard",
     "updatedAt": "2022-07-06T19:09:05Z"
-  },
-  {
-    "author": {
-      "login": "karalabe"
-    },
-    "number": 225,
-    "title": "Clique PoA protocol & Rinkeby PoA testnet",
-    "updatedAt": "2022-07-04T02:02:51Z"
   },
   {
     "author": {

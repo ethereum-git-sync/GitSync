@@ -1,6 +1,62 @@
 [
   {
     "author": {
+      "login": "kdenhartog"
+    },
+    "number": 5682,
+    "title": "New contract interface and  EIPs should be required to include a privacy considerations section",
+    "updatedAt": "2022-09-19T00:35:20Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5298,
+    "title": "Pin all GitHub Action dependencies to hash version.",
+    "updatedAt": "2022-09-19T00:28:31Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5310,
+    "title": "GitHub actions don't run for first time contributors",
+    "updatedAt": "2022-09-19T00:24:23Z"
+  },
+  {
+    "author": {
+      "login": "SamWilsn"
+    },
+    "number": 5294,
+    "title": "How should we pick EIP numbers?",
+    "updatedAt": "2022-09-19T00:21:57Z"
+  },
+  {
+    "author": {
+      "login": "poojaranjan"
+    },
+    "number": 5190,
+    "title": "How should EIPs should be referenced?",
+    "updatedAt": "2022-09-19T00:21:56Z"
+  },
+  {
+    "author": {
+      "login": "paulrberg"
+    },
+    "number": 1620,
+    "title": "ERC-1620: Money Streaming",
+    "updatedAt": "2022-09-18T17:06:25Z"
+  },
+  {
+    "author": {
+      "login": "apiscerena"
+    },
+    "number": 5677,
+    "title": "EIP-4399: return the RANDAO value @specific block in evm",
+    "updatedAt": "2022-09-18T16:13:42Z"
+  },
+  {
+    "author": {
       "login": "karalabe"
     },
     "number": 225,
@@ -9,27 +65,11 @@
   },
   {
     "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5294,
-    "title": "How should we pick EIP numbers?",
-    "updatedAt": "2022-09-18T00:23:26Z"
-  },
-  {
-    "author": {
       "login": "xinbenlv"
     },
     "number": 5274,
     "title": "Add an optional `relates-to` preamble key",
     "updatedAt": "2022-09-18T00:23:25Z"
-  },
-  {
-    "author": {
-      "login": "poojaranjan"
-    },
-    "number": 5190,
-    "title": "How should EIPs should be referenced?",
-    "updatedAt": "2022-09-18T00:23:23Z"
   },
   {
     "author": {
@@ -121,14 +161,6 @@
   },
   {
     "author": {
-      "login": "paulrberg"
-    },
-    "number": 1620,
-    "title": "ERC-1620: Money Streaming",
-    "updatedAt": "2022-09-12T12:39:18Z"
-  },
-  {
-    "author": {
       "login": "xinbenlv"
     },
     "number": 5408,
@@ -139,25 +171,9 @@
     "author": {
       "login": "SamWilsn"
     },
-    "number": 5310,
-    "title": "GitHub actions don't run for first time contributors",
-    "updatedAt": "2022-09-10T17:51:16Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
     "number": 5352,
     "title": "Display a \"citation\" when hovering over links to other EIPs",
     "updatedAt": "2022-09-10T17:50:58Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 5298,
-    "title": "Pin all GitHub Action dependencies to hash version.",
-    "updatedAt": "2022-09-10T17:50:24Z"
   },
   {
     "author": {

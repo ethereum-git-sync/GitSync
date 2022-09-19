@@ -5,7 +5,31 @@
     },
     "number": 13212,
     "title": "Allow declaration of multiple variables in first clause of `for` statement",
-    "updatedAt": "2022-09-17T20:38:35Z"
+    "updatedAt": "2022-09-18T19:23:33Z"
+  },
+  {
+    "author": {
+      "login": "thedavidmeister"
+    },
+    "number": 13530,
+    "title": "memory writes in yul don't happen unless alongside a hardhat console log",
+    "updatedAt": "2022-09-18T12:39:44Z"
+  },
+  {
+    "author": {
+      "login": "hiroshi-yamamoto-dublr"
+    },
+    "number": 13536,
+    "title": "`bytes1` constants must be specified with two hex digits (providing just one hex digit fails)",
+    "updatedAt": "2022-09-18T06:29:49Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 7665,
+    "title": "Pretty print expected json output of command line tests.",
+    "updatedAt": "2022-09-18T06:25:07Z"
   },
   {
     "author": {
@@ -65,27 +89,11 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 7665,
-    "title": "Pretty print expected json output of command line tests.",
-    "updatedAt": "2022-09-15T16:37:38Z"
-  },
-  {
-    "author": {
       "login": "cameel"
     },
     "number": 13426,
     "title": "Rewrite `FunctionCallGraph` tests as soltest test suite",
     "updatedAt": "2022-09-15T16:20:00Z"
-  },
-  {
-    "author": {
-      "login": "thedavidmeister"
-    },
-    "number": 13530,
-    "title": "memory writes in yul don't happen unless alongside a hardhat console log",
-    "updatedAt": "2022-09-15T15:50:17Z"
   },
   {
     "author": {

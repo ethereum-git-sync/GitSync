@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/330",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/330/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/330/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/330/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/330",
+  "id": 1377132357,
+  "node_id": "I_kwDOGZSKs85SFV9F",
+  "number": 330,
+  "title": "Requests to other relays are canceled as soon as one relay returns",
+  "user": {
+    "login": "kwood",
+    "id": 804271,
+    "node_id": "MDQ6VXNlcjgwNDI3MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/804271?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kwood",
+    "html_url": "https://github.com/kwood",
+    "followers_url": "https://api.github.com/users/kwood/followers",
+    "following_url": "https://api.github.com/users/kwood/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kwood/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kwood/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kwood/subscriptions",
+    "organizations_url": "https://api.github.com/users/kwood/orgs",
+    "repos_url": "https://api.github.com/users/kwood/repos",
+    "events_url": "https://api.github.com/users/kwood/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kwood/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-18T17:55:58Z",
+  "updated_at": "2022-09-18T17:56:21Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "After proposing a block today, I saw the following messages:\r\n```\r\nlevel=info msg=\"best bid\" blockHash=<REDACTED> blockNumber=<REDACTED> method=getHeader module=service parentHash=<REDACTED> pubkey=<REDACTED> relays=\"https://<REDACTED>@bloxroute.max-profit.blxrbdn.com\" slot=<REDACTED>  txRoot=<REDACTED> value=<REDACTED> \r\nlevel=info msg=\"http: GET /eth/v1/builder/header/<REDACTED> /<REDACTED>/<REDACTED> 200\" duration=0.180380465 method=GET module=service path=/eth/v1/builder/header/<REDACTED> /<REDACTED>/<REDACTED> status=200\r\nlevel=info msg=\"received payload from relay\" blockHash=<REDACTED> method=getPayload module=service url=\"https://bloxroute.max-profit.blxrbdn.com/eth/v1/builder/blinded_blocks\"\r\nlevel=error msg=\"error making request to relay\" blockHash=<REDACTED> error=\"Post \\\"https://boost-relay.flashbots.net/eth/v1/builder/blinded_blocks\\\": context canceled\" method=getPayload module=service url=\"https://boost-relay.flashbots.net/eth/v1/builder/blinded_blocks\"\r\nlevel=info msg=\"http: POST /eth/v1/builder/blinded_blocks 200\" duration=0.185630197 method=POST module=service path=/eth/v1/builder/blinded_blocks status=200\r\n```\r\n\r\nNotably, the call to the flashbots relay was canceled, which would have returned a block with a larger reward than the bloxroute relay did.\r\n\r\nGlancing at the code, it seems that the requests to the rest of the relays might be cancelled upon the first relay returning:\r\nhttps://github.com/flashbots/mev-boost/blob/97207c6118778725f1703226f774e91e5395909d/server/service.go#L459",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/330/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/330/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

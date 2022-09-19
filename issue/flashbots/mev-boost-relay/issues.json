@@ -4,8 +4,16 @@
       "login": "itsdeka"
     },
     "number": 130,
-    "title": "Blank response with status 200",
-    "updatedAt": "2022-09-17T20:18:43Z"
+    "title": "Block builder submissions - response status 200, but what happened?",
+    "updatedAt": "2022-09-18T10:02:58Z"
+  },
+  {
+    "author": {
+      "login": "aratz-lasa"
+    },
+    "number": 128,
+    "title": "Data API ProposerPayloadsDelivered implementation",
+    "updatedAt": "2022-09-18T07:34:15Z"
   },
   {
     "author": {
@@ -22,14 +30,6 @@
     "number": 140,
     "title": "Requiring CLA of contributions is a violation of the AGPL ",
     "updatedAt": "2022-09-17T11:35:53Z"
-  },
-  {
-    "author": {
-      "login": "aratz-lasa"
-    },
-    "number": 128,
-    "title": "Data API ProposerPayloadsDelivered implementation",
-    "updatedAt": "2022-09-16T09:25:30Z"
   },
   {
     "author": {

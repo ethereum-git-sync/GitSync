@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "djrtwo"
+    },
+    "number": 2758,
+    "title": "Withdrawals tracking issue",
+    "updatedAt": "2022-09-19T18:12:43Z"
+  },
+  {
+    "author": {
       "login": "Jiggnubs"
     },
     "number": 2996,
@@ -190,14 +198,6 @@
     "number": 1548,
     "title": "Expose a constant that defines the genesis Fork",
     "updatedAt": "2022-06-14T17:25:41Z"
-  },
-  {
-    "author": {
-      "login": "djrtwo"
-    },
-    "number": 2758,
-    "title": "Withdrawals tracking issue",
-    "updatedAt": "2022-06-08T19:17:02Z"
   },
   {
     "author": {

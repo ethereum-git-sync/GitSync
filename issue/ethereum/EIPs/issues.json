@@ -1,19 +1,19 @@
 [
   {
     "author": {
-      "login": "kdenhartog"
+      "login": "xinbenlv"
     },
-    "number": 5682,
-    "title": "New contract interface and  EIPs should be required to include a privacy considerations section",
-    "updatedAt": "2022-09-19T00:35:20Z"
+    "number": 5408,
+    "title": "Create an EIP External Link Archive",
+    "updatedAt": "2022-09-20T00:25:10Z"
   },
   {
     "author": {
-      "login": "MicahZoltu"
+      "login": "SamWilsn"
     },
-    "number": 5298,
-    "title": "Pin all GitHub Action dependencies to hash version.",
-    "updatedAt": "2022-09-19T00:28:31Z"
+    "number": 5352,
+    "title": "Display a \"citation\" when hovering over links to other EIPs",
+    "updatedAt": "2022-09-20T00:25:08Z"
   },
   {
     "author": {
@@ -21,7 +21,47 @@
     },
     "number": 5310,
     "title": "GitHub actions don't run for first time contributors",
-    "updatedAt": "2022-09-19T00:24:23Z"
+    "updatedAt": "2022-09-20T00:25:07Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 5298,
+    "title": "Pin all GitHub Action dependencies to hash version.",
+    "updatedAt": "2022-09-20T00:25:06Z"
+  },
+  {
+    "author": {
+      "login": "kdenhartog"
+    },
+    "number": 5682,
+    "title": "New contract interface and  EIPs should be required to include a privacy considerations section",
+    "updatedAt": "2022-09-20T00:19:48Z"
+  },
+  {
+    "author": {
+      "login": "kdenhartog"
+    },
+    "number": 5662,
+    "title": "EIPs should preemptively add a CLA",
+    "updatedAt": "2022-09-19T14:33:49Z"
+  },
+  {
+    "author": {
+      "login": "ronit9586"
+    },
+    "number": 5687,
+    "title": "This function tokenByIndex(index)  is not needed in ERC4671 implementation.",
+    "updatedAt": "2022-09-19T12:24:03Z"
+  },
+  {
+    "author": {
+      "login": "paulrberg"
+    },
+    "number": 1620,
+    "title": "ERC-1620: Money Streaming",
+    "updatedAt": "2022-09-19T05:08:32Z"
   },
   {
     "author": {
@@ -38,14 +78,6 @@
     "number": 5190,
     "title": "How should EIPs should be referenced?",
     "updatedAt": "2022-09-19T00:21:56Z"
-  },
-  {
-    "author": {
-      "login": "paulrberg"
-    },
-    "number": 1620,
-    "title": "ERC-1620: Money Streaming",
-    "updatedAt": "2022-09-18T17:06:25Z"
   },
   {
     "author": {
@@ -86,14 +118,6 @@
     "number": 4335,
     "title": "EIP registries",
     "updatedAt": "2022-09-18T00:23:17Z"
-  },
-  {
-    "author": {
-      "login": "kdenhartog"
-    },
-    "number": 5662,
-    "title": "EIPs should preemptively add a CLA",
-    "updatedAt": "2022-09-16T22:37:18Z"
   },
   {
     "author": {
@@ -158,22 +182,6 @@
     "number": 5652,
     "title": "Errata'd EIPs",
     "updatedAt": "2022-09-15T12:48:05Z"
-  },
-  {
-    "author": {
-      "login": "xinbenlv"
-    },
-    "number": 5408,
-    "title": "Create an EIP External Link Archive",
-    "updatedAt": "2022-09-10T17:58:19Z"
-  },
-  {
-    "author": {
-      "login": "SamWilsn"
-    },
-    "number": 5352,
-    "title": "Display a \"citation\" when hovering over links to other EIPs",
-    "updatedAt": "2022-09-10T17:50:58Z"
   },
   {
     "author": {

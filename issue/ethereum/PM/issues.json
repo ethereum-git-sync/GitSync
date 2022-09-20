@@ -1,11 +1,67 @@
 [
   {
     "author": {
+      "login": "lightclient"
+    },
+    "number": 389,
+    "title": "Proposal to include EIP-3756: Gas Limit Cap",
+    "updatedAt": "2022-09-19T17:21:53Z"
+  },
+  {
+    "author": {
+      "login": "tkstanczak"
+    },
+    "number": 279,
+    "title": "Proposal to add EIP-2935 to Shanghai fork",
+    "updatedAt": "2022-09-19T17:10:37Z"
+  },
+  {
+    "author": {
+      "login": "ineffectualproperty"
+    },
+    "number": 343,
+    "title": "Proposal to add EIP-2537 (BLS Precompile) to Shanghai",
+    "updatedAt": "2022-09-19T17:10:28Z"
+  },
+  {
+    "author": {
+      "login": "adietrichs"
+    },
+    "number": 406,
+    "title": "Proposal to Include EIP-4396 in the Shanghai Hard Fork",
+    "updatedAt": "2022-09-19T17:10:02Z"
+  },
+  {
+    "author": {
+      "login": "adietrichs"
+    },
+    "number": 437,
+    "title": "Proposal to Include EIP-4488 in the Shanghai Hard Fork",
+    "updatedAt": "2022-09-19T17:09:48Z"
+  },
+  {
+    "author": {
+      "login": "greenlucid"
+    },
+    "number": 519,
+    "title": "Proposal to add EIP-5022 to Shanghai",
+    "updatedAt": "2022-09-19T17:08:43Z"
+  },
+  {
+    "author": {
+      "login": "timbeiko"
+    },
+    "number": 450,
+    "title": "Shanghai Planning",
+    "updatedAt": "2022-09-19T15:41:04Z"
+  },
+  {
+    "author": {
       "login": "lokeshratnam09"
     },
     "number": 625,
     "title": "After completed initial stage of syncing goes to stale process ",
-    "updatedAt": "2022-09-18T09:31:50Z"
+    "updatedAt": "2022-09-19T15:13:02Z"
   },
   {
     "author": {
@@ -30,14 +86,6 @@
     "number": 616,
     "title": "Ethereum Core Devs Meeting 147 Agenda",
     "updatedAt": "2022-09-16T15:45:22Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 450,
-    "title": "Shanghai Planning",
-    "updatedAt": "2022-09-16T11:34:56Z"
   },
   {
     "author": {
@@ -433,14 +481,6 @@
   },
   {
     "author": {
-      "login": "ineffectualproperty"
-    },
-    "number": 343,
-    "title": "Proposal to add EIP-2537 (BLS Precompile) to Shanghai",
-    "updatedAt": "2022-05-25T16:52:30Z"
-  },
-  {
-    "author": {
       "login": "timbeiko"
     },
     "number": 518,
@@ -470,14 +510,6 @@
     "number": 510,
     "title": "Consensus-layer Call 85",
     "updatedAt": "2022-05-03T17:41:22Z"
-  },
-  {
-    "author": {
-      "login": "greenlucid"
-    },
-    "number": 519,
-    "title": "Proposal to add EIP-5022 to Shanghai",
-    "updatedAt": "2022-05-01T12:10:59Z"
   },
   {
     "author": {
@@ -705,14 +737,6 @@
   },
   {
     "author": {
-      "login": "tkstanczak"
-    },
-    "number": 279,
-    "title": "Proposal to add EIP-2935 to Shanghai fork",
-    "updatedAt": "2022-02-04T02:03:30Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 462,
@@ -809,14 +833,6 @@
   },
   {
     "author": {
-      "login": "adietrichs"
-    },
-    "number": 437,
-    "title": "Proposal to Include EIP-4488 in the Shanghai Hard Fork",
-    "updatedAt": "2021-12-10T20:12:03Z"
-  },
-  {
-    "author": {
       "login": "timbeiko"
     },
     "number": 428,
@@ -862,14 +878,6 @@
     "number": 422,
     "title": "Merge Testing Call ",
     "updatedAt": "2021-11-28T23:15:15Z"
-  },
-  {
-    "author": {
-      "login": "adietrichs"
-    },
-    "number": 406,
-    "title": "Proposal to Include EIP-4396 in the Shanghai Hard Fork",
-    "updatedAt": "2021-11-12T19:18:01Z"
   },
   {
     "author": {
@@ -982,14 +990,6 @@
     "number": 384,
     "title": "Ethereum Core Devs Meeting 122 Agenda",
     "updatedAt": "2021-09-17T16:48:55Z"
-  },
-  {
-    "author": {
-      "login": "lightclient"
-    },
-    "number": 389,
-    "title": "Proposal to include EIP-3756: Gas Limit Cap",
-    "updatedAt": "2021-09-16T17:42:11Z"
   },
   {
     "author": {

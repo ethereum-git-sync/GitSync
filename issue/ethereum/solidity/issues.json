@@ -1,6 +1,38 @@
 [
   {
     "author": {
+      "login": "ekpyron"
+    },
+    "number": 7665,
+    "title": "Pretty print expected json output of command line tests.",
+    "updatedAt": "2022-09-19T15:21:14Z"
+  },
+  {
+    "author": {
+      "login": "christianparpart"
+    },
+    "number": 13539,
+    "title": "Rename LSP's lspAssert() function into something more meaningful.",
+    "updatedAt": "2022-09-19T12:43:08Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13538,
+    "title": "[Yul optimizer] Name simplifier generates invalid yul code",
+    "updatedAt": "2022-09-19T11:43:41Z"
+  },
+  {
+    "author": {
+      "login": "wighawag"
+    },
+    "number": 13494,
+    "title": "Assembly clearing local variable",
+    "updatedAt": "2022-09-19T11:34:44Z"
+  },
+  {
+    "author": {
       "login": "lukehutch"
     },
     "number": 13212,
@@ -22,14 +54,6 @@
     "number": 13536,
     "title": "`bytes1` constants must be specified with two hex digits (providing just one hex digit fails)",
     "updatedAt": "2022-09-18T06:29:49Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 7665,
-    "title": "Pretty print expected json output of command line tests.",
-    "updatedAt": "2022-09-18T06:25:07Z"
   },
   {
     "author": {
@@ -62,14 +86,6 @@
     "number": 12825,
     "title": "LSP throwing an error on each and every character I type in the editor",
     "updatedAt": "2022-09-16T16:57:57Z"
-  },
-  {
-    "author": {
-      "login": "wighawag"
-    },
-    "number": 13494,
-    "title": "Assembly clearing local variable",
-    "updatedAt": "2022-09-16T13:43:18Z"
   },
   {
     "author": {

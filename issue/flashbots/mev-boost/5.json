@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/5",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/5/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/5/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/5/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/5",
+  "id": 1081335526,
+  "node_id": "I_kwDOGZSKs85Ac97m",
+  "number": 5,
+  "title": "Make sure ExecutionPayload is being returned correctly from proposeBlindedBlock",
+  "user": {
+    "login": "jparyani",
+    "id": 1595880,
+    "node_id": "MDQ6VXNlcjE1OTU4ODA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1595880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jparyani",
+    "html_url": "https://github.com/jparyani",
+    "followers_url": "https://api.github.com/users/jparyani/followers",
+    "following_url": "https://api.github.com/users/jparyani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jparyani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jparyani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jparyani/subscriptions",
+    "organizations_url": "https://api.github.com/users/jparyani/orgs",
+    "repos_url": "https://api.github.com/users/jparyani/repos",
+    "events_url": "https://api.github.com/users/jparyani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jparyani/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-12-15T18:09:02Z",
+  "updated_at": "2021-12-16T04:14:21Z",
+  "closed_at": "2021-12-16T04:14:21Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Reported from Sean in discord:\r\n\r\nThe big outstanding issue I'm having is that the initial payload header response from MEV-boost is something like this:\r\n```\r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"result\": {\r\n    \"parentHash\": \"0x29c12a5f851fa137cc967b8e7084605a9b2b0f3b92d7bc4ae05ac3158f5fd38d\",\r\n    \"feeRecipient\": \"0x0000000000000000000000000000000000000001\",\r\n    \"stateRoot\": \"0x1014a93b39908122be4202db72ba66cf287be6c6820473f5ad62cc67d1692407\",\r\n    \"receiptsRoot\": \"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421\",\r\n    \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"random\": \"0x29c12a5f851fa137cc967b8e7084605a9b2b0f3b92d7bc4ae05ac3158f5fd38d\",\r\n    \"blockNumber\": \"0x1\",\r\n    \"gasLimit\": \"0x1c9c380\",\r\n    \"gasUsed\": \"0x0\",\r\n    \"timestamp\": \"0x61ba2559\",\r\n    \"extraData\": \"0x\",\r\n    \"baseFeePerGas\": \"0x7\",\r\n    \"blockHash\": \"0x4fe17cc83472a6887c9216b04c4cc7fb2c8a1f99f94fdc239fe7e0007e62f6db\",\r\n    \"transactionsRoot\": \"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421\"\r\n  },\r\n  \"error\": null,\r\n  \"id\": 1\r\n}\r\n```\r\n\r\nBut the ExecutionPayload that's returned by proposeBlindedBlock looks like this:\r\n\r\n```\r\n{\r\n  \"jsonrpc\": \"2.0\",\r\n  \"result\": {\r\n    \"parentHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"feeRecipient\": \"0x0000000000000000000000000000000000000000\",\r\n    \"stateRoot\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"receiptsRoot\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"logsBloom\": \"0x\",\r\n    \"random\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"blockNumber\": \"0x0\",\r\n    \"gasLimit\": \"0x0\",\r\n    \"gasUsed\": \"0x0\",\r\n    \"timestamp\": \"0x0\",\r\n    \"extraData\": \"0x\",\r\n    \"baseFeePerGas\": null,\r\n    \"blockHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"transactionsRoot\": \"0x0000000000000000000000000000000000000000000000000000000000000000\"\r\n  },\r\n  \"error\": null,\r\n  \"id\": 1\r\n}\r\n```\r\n\r\n\r\nLooks like everything is zeroed out, baseFeePerGas is null, which we can't parse, and there's a transactionsRoot as opposed to a transactions array",
+  "closed_by": {
+    "login": "jparyani",
+    "id": 1595880,
+    "node_id": "MDQ6VXNlcjE1OTU4ODA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1595880?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jparyani",
+    "html_url": "https://github.com/jparyani",
+    "followers_url": "https://api.github.com/users/jparyani/followers",
+    "following_url": "https://api.github.com/users/jparyani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jparyani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jparyani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jparyani/subscriptions",
+    "organizations_url": "https://api.github.com/users/jparyani/orgs",
+    "repos_url": "https://api.github.com/users/jparyani/repos",
+    "events_url": "https://api.github.com/users/jparyani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jparyani/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/5/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/5/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

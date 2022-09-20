@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25126",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25126/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25126/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25126/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25126",
+  "id": 1276073674,
+  "node_id": "I_kwDOAOvK985MD1bK",
+  "number": 25126,
+  "title": "Geth overrides 0x0 genesis gas limit",
+  "user": {
+    "login": "lightclient",
+    "id": 14004106,
+    "node_id": "MDQ6VXNlcjE0MDA0MTA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/14004106?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lightclient",
+    "html_url": "https://github.com/lightclient",
+    "followers_url": "https://api.github.com/users/lightclient/followers",
+    "following_url": "https://api.github.com/users/lightclient/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lightclient/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lightclient/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lightclient/subscriptions",
+    "organizations_url": "https://api.github.com/users/lightclient/orgs",
+    "repos_url": "https://api.github.com/users/lightclient/repos",
+    "events_url": "https://api.github.com/users/lightclient/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lightclient/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-06-19T14:11:12Z",
+  "updated_at": "2022-07-18T22:07:48Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Seems to be due to this code: https://github.com/ethereum/go-ethereum/blob/01e5e9c2c3fa1cf7a9747148dca22d59ff9839b6/core/genesis.go#L370-L372\r\n\r\nUnfortunately, other clients don't have this behavior. I think if an invalid gas limit is explicitly specified in the genesis we should fail to initialize.\r\n\r\n```console\r\n$ cat genesis.json | jq\r\n{\r\n  \"config\": {\r\n    \"chainId\": 1,\r\n    \"homesteadBlock\": 0,\r\n    \"eip150Block\": 0,\r\n    \"eip150Hash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n    \"eip155Block\": 0,\r\n    \"eip158Block\": 0,\r\n    \"byzantiumBlock\": 0,\r\n    \"constantinopleBlock\": 0,\r\n    \"petersburgBlock\": 0,\r\n    \"istanbulBlock\": 0,\r\n    \"muirGlacierBlock\": 0,\r\n    \"berlinBlock\": 0,\r\n    \"londonBlock\": 0,\r\n    \"arrowGlacierBlock\": 0,\r\n    \"grayGlacierBlock\": 0,\r\n    \"ethash\": {}\r\n  },\r\n  \"nonce\": \"0x0\",\r\n  \"timestamp\": \"0x0\",\r\n  \"extraData\": \"0x\",\r\n  \"gasLimit\": \"0x0\",\r\n  \"difficulty\": \"0x1\",\r\n  \"mixHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n  \"coinbase\": \"0x0000000000000000000000000000000000000000\",\r\n  \"alloc\": {\r\n    \"658bdf435d810c91414ec09147daa6db62406379\": {\r\n      \"balance\": \"0x487a9a304539440000\"\r\n    }\r\n  },\r\n  \"number\": \"0x0\",\r\n  \"gasUsed\": \"0x0\",\r\n  \"parentHash\": \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n  \"baseFeePerGas\": \"0x3b9aca00\"\r\n}\r\n\r\n$ geth --datadir=data init genesis.json\r\nINFO [06-19|16:01:41.250] Maximum peer count                       ETH=50 LES=0 total=50\r\nINFO [06-19|16:01:41.250] Smartcard socket not found, disabling    err=\"stat /run/pcscd/pcscd.comm: no such file or directory\"\r\nINFO [06-19|16:01:41.252] Set global gas cap                       cap=50,000,000\r\nINFO [06-19|16:01:41.252] Allocated cache and file handles         database=/home/lc/dev/rpctests/tests/data/geth/chaindata cache=16.00MiB handles=16\r\nINFO [06-19|16:01:41.281] Writing custom genesis block\r\nINFO [06-19|16:01:41.281] Persisted trie from memory database      nodes=1 size=148.00B time=\"94.299µs\" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B\r\nINFO [06-19|16:01:41.282] Successfully wrote genesis state         database=chaindata hash=7ead2c..68bad8\r\nINFO [06-19|16:01:41.282] Allocated cache and file handles         database=/home/lc/dev/rpctests/tests/data/geth/lightchaindata cache=16.00MiB handles=16\r\nINFO [06-19|16:01:41.312] Writing custom genesis block\r\nINFO [06-19|16:01:41.313] Persisted trie from memory database      nodes=1 size=148.00B time=\"66.308µs\" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B\r\nINFO [06-19|16:01:41.313] Successfully wrote genesis state         database=lightchaindata hash=7ead2c..68bad8\r\n\r\n$ geth --datadir=data init genesis.json\r\nINFO [06-19|16:05:25.288] Maximum peer count                       ETH=50 LES=0 total=50\r\nINFO [06-19|16:05:25.288] Smartcard socket not found, disabling    err=\"stat /run/pcscd/pcscd.comm: no such file or directory\"\r\nINFO [06-19|16:05:25.289] Set global gas cap                       cap=50,000,000\r\nINFO [06-19|16:05:25.289] Allocated cache and file handles         database=/home/lc/dev/rpctests/tests/data/geth/chaindata cache=16.00MiB handles=16\r\nINFO [06-19|16:05:25.374] Opened ancient database                  database=/home/lc/dev/rpctests/tests/data/geth/chaindata/ancient readonly=false\r\nINFO [06-19|16:05:25.375] Writing custom genesis block\r\nINFO [06-19|16:05:25.375] Persisted trie from memory database      nodes=1 size=148.00B time=\"91.823µs\" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B\r\nINFO [06-19|16:05:25.376] Successfully wrote genesis state         database=chaindata hash=7ead2c..68bad8\r\nINFO [06-19|16:05:25.376] Allocated cache and file handles         database=/home/lc/dev/rpctests/tests/data/geth/lightchaindata cache=16.00MiB handles=16\r\nINFO [06-19|16:05:25.461] Opened ancient database                  database=/home/lc/dev/rpctests/tests/data/geth/lightchaindata/ancient readonly=false\r\nINFO [06-19|16:05:25.461] Writing custom genesis block\r\nINFO [06-19|16:05:25.462] Persisted trie from memory database      nodes=1 size=148.00B time=\"85.112µs\" gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B\r\nINFO [06-19|16:05:25.463] Successfully wrote genesis state         database=lightchaindata hash=7ead2c..68bad8\r\n\r\n$ geth --datadir=data --nodiscover console --port 30333 2>/dev/null\r\nWelcome to the Geth JavaScript console!\r\n\r\ninstance: Geth/v1.10.19-stable-23bee162/linux-amd64/go1.17.7\r\nat block: 0 (Thu Jan 01 1970 01:00:00 GMT+0100 (CET))\r\n datadir: /home/lc/dev/rpctests/tests/data\r\n modules: admin:1.0 debug:1.0 eth:1.0 ethash:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0\r\n\r\nTo exit, press ctrl-d or type exit\r\n> eth.getBlockByNumber(0)\r\n{\r\n  baseFeePerGas: \"0x3b9aca00\",\r\n  difficulty: \"0x1\",\r\n  extraData: \"0x\",\r\n  gasLimit: \"0x47e7c4\",\r\n  gasUsed: \"0x0\",\r\n  hash: \"0x7ead2ce6067d325b8e27e55377db7e9acaa63b1de9cc880c174cee690b68bad8\",\r\n  logsBloom: \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\r\n  miner: \"0x0000000000000000000000000000000000000000\",\r\n  mixHash: \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n  nonce: \"0x0000000000000000\",\r\n  number: \"0x0\",\r\n  parentHash: \"0x0000000000000000000000000000000000000000000000000000000000000000\",\r\n  receiptsRoot: \"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421\",\r\n  sha3Uncles: \"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347\",\r\n  size: \"0x1fd\",\r\n  stateRoot: \"0x21b036e39374a278109134aa04d153e16999e838316561a114a563d6ff9e6707\",\r\n  timestamp: \"0x0\",\r\n  totalDifficulty: \"0x1\",\r\n  transactions: [],\r\n  transactionsRoot: \"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421\",\r\n  uncles: []\r\n}\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25126/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25126/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

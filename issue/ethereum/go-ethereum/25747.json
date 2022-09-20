@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25747",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25747/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25747/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25747/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25747",
+  "id": 1370280478,
+  "node_id": "I_kwDOAOvK985RrNIe",
+  "number": 25747,
+  "title": "Calls such as eth_getStorageAt are very lenient on input format",
+  "user": {
+    "login": "aathan",
+    "id": 24279435,
+    "node_id": "MDQ6VXNlcjI0Mjc5NDM1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/24279435?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aathan",
+    "html_url": "https://github.com/aathan",
+    "followers_url": "https://api.github.com/users/aathan/followers",
+    "following_url": "https://api.github.com/users/aathan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aathan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aathan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aathan/subscriptions",
+    "organizations_url": "https://api.github.com/users/aathan/orgs",
+    "repos_url": "https://api.github.com/users/aathan/repos",
+    "events_url": "https://api.github.com/users/aathan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aathan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-12T17:31:50Z",
+  "updated_at": "2022-09-16T16:16:33Z",
+  "closed_at": "2022-09-16T16:16:33Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: latest/all\r\nOS & Version: all\r\n\r\n#### Expected behaviour\r\n\r\nValidity checks on input parameter formats\r\n\r\n#### Actual behaviour\r\n\r\nFew or no checks. See:\r\n\r\nhttps://github.com/NomicFoundation/hardhat/pull/2581#issuecomment-1243106520\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nMake calls to eth_getStorageAt that \r\n\r\n#### Backtrace\r\n\r\nn/a\r\n\r\n---------------------\r\nI'm opening this bug mostly to raise awareness in this project regarding the following issues at hardhat and foundry projects:\r\n\r\nhttps://github.com/NomicFoundation/hardhat/issues/3164\r\nhttps://github.com/gakonst/ethers-rs/pull/1687\r\n\r\nIn summary there is some confusion as to whether 0x000000002 vs 0x2 vs 0x0....2 (64 digits, 66 length total) should/must be provided, etc.\r\n\r\nThose projects seem to use the geth implementation as a reference implementation when the open rpc spec is either erroneous or ambiguous. In this case, that spec, for the second parameter in eth_getStorageAt says:\r\n\r\n```\r\ntitle\r\nhex encoded unsigned integer\r\n\r\npattern\r\n^0x[0-9a-f]{0,64}$\r\n```\r\n\r\n(1) I've already opened https://github.com/ethereum/execution-apis/issues/303 over there, because it seems to me that {0,64} should be {1,64}, otherwise `0x` would be valid.\r\n\r\n(2) It's unclear to me how geth does or does not, in general, validate input formats for the RPC calls, and what the project's opinion is regarding strictness on these issues. There also seems to be some folding of the \"Hash\" vs \"Uint256\" input types for RPC calls in the source code. There may be some cleanups warranted relative to \"quantity\" (uint) vs true \"uint256\" values vs \"uint 256 that's a slot reference\" (frequently keccak hashes), etc.\r\n\r\nI just wanted to raise awareness here because it's probably best for the community as a whole if there was consensus on how to handle strictness of input formats for JSON RPC; and/or that all projects adopt a possible configuration flag to allow operation in \"not strict\" mode. Otherwise, interoperability issues may arise (and in fact, already have).",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25747/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25747/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

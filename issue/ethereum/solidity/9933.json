@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/9933",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/9933/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/9933/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/9933/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/9933",
+  "id": 711882692,
+  "node_id": "MDU6SXNzdWU3MTE4ODI2OTI=",
+  "number": 9933,
+  "title": "Automate publishing of release binaries",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074437,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
+      "name": "enhancement",
+      "color": "84b6eb",
+      "default": true,
+      "description": null
+    },
+    {
+      "id": 2685863294,
+      "node_id": "MDU6TGFiZWwyNjg1ODYzMjk0",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/solc-bin",
+      "name": "solc-bin",
+      "color": "3B8CF5",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-09-30T11:56:27Z",
+  "updated_at": "2022-05-19T16:17:53Z",
+  "closed_at": "2022-05-19T16:17:53Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Extracted from #9258. Best implemented after we're done with #9932.\r\n\r\nCurrently release binaries are built on Travis and CircleCI and then manually uploaded to github release page and `solc-bin`. We probably don't want to automate it all the way through - we need a human in the loop to be able to verify that everything is ok and possibly intervene - but parts of this process could still be streamlined. For example the creation of a draft release and submission of a PR with binaries to `solc-bin`.\r\n\r\nIt will be much easier if we decide to move the builds to Github actions in #9932. The downside of doing this way is that it would not be exactly the same build that is extensively tested on CircleCI.\r\n\r\nThis was extensively discussed with @ekpyron and @chriseth in #9258 and on Gitter but we did not come to a firm decision yet. We only decided that it's not a priority and can wait until we're done with more important tasks related to the binary release process overhaul.",
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/9933/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/9933/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,113 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1378",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1378/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1378/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1378/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1378",
+  "id": 943834768,
+  "node_id": "MDU6SXNzdWU5NDM4MzQ3Njg=",
+  "number": 1378,
+  "title": "Comments have the same grey color as variable names and functions actions (would be white). it's confusing",
+  "user": {
+    "login": "rich1n",
+    "id": 66102911,
+    "node_id": "MDQ6VXNlcjY2MTAyOTEx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/66102911?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rich1n",
+    "html_url": "https://github.com/rich1n",
+    "followers_url": "https://api.github.com/users/rich1n/followers",
+    "following_url": "https://api.github.com/users/rich1n/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rich1n/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rich1n/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rich1n/subscriptions",
+    "organizations_url": "https://api.github.com/users/rich1n/orgs",
+    "repos_url": "https://api.github.com/users/rich1n/repos",
+    "events_url": "https://api.github.com/users/rich1n/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rich1n/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2227556002,
+      "node_id": "MDU6TGFiZWwyMjI3NTU2MDAy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UI",
+      "name": "UI",
+      "color": "6ff7e5",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2233501827,
+      "node_id": "MDU6TGFiZWwyMjMzNTAxODI3",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UX",
+      "name": "UX",
+      "color": "c5ebf9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-13T21:16:49Z",
+  "updated_at": "2021-08-06T09:07:15Z",
+  "closed_at": "2021-08-06T09:07:15Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "![remix](https://user-images.githubusercontent.com/66102911/125526201-c8688886-7776-4e94-be5c-3b2cdee19b53.png)\r\n",
+  "closed_by": {
+    "login": "LianaHus",
+    "id": 9685356,
+    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LianaHus",
+    "html_url": "https://github.com/LianaHus",
+    "followers_url": "https://api.github.com/users/LianaHus/followers",
+    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+    "repos_url": "https://api.github.com/users/LianaHus/repos",
+    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1378/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1378/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/8597",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/8597/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/8597/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/8597/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/8597",
+  "id": 594115136,
+  "node_id": "MDU6SXNzdWU1OTQxMTUxMzY=",
+  "number": 8597,
+  "title": "[solc] ICE: solidity/libsolidity/codegen/YulUtilFunctions.cpp(1607): Throw in function auto solidity::frontend::YulUtilFunctions::conversionFunction(const solidity::frontend::Type &, const solidity::frontend::Type &)::(anonymous class)::operator()() const",
+  "user": {
+    "login": "aarlt",
+    "id": 5008794,
+    "node_id": "MDQ6VXNlcjUwMDg3OTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5008794?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aarlt",
+    "html_url": "https://github.com/aarlt",
+    "followers_url": "https://api.github.com/users/aarlt/followers",
+    "following_url": "https://api.github.com/users/aarlt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aarlt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aarlt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aarlt/subscriptions",
+    "organizations_url": "https://api.github.com/users/aarlt/orgs",
+    "repos_url": "https://api.github.com/users/aarlt/repos",
+    "events_url": "https://api.github.com/users/aarlt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aarlt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-04-04T21:42:38Z",
+  "updated_at": "2020-04-22T12:16:39Z",
+  "closed_at": "2020-04-22T12:16:39Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "solidity/libsolidity/codegen/YulUtilFunctions.cpp(1607): Throw in function auto solidity::frontend::YulUtilFunctions::conversionFunction(const solidity::frontend::Type &, const solidity::frontend::Type &)::(anonymous class)::operator()() const\r\n\r\n## Description\r\n\r\ntriggered by:\r\n- test/libsolidity/semanticTests/variables/mapping_local_tuple_assignment.sol\r\n\r\n\r\n## Environment\r\n\r\n- current develop\r\n\r\n## Steps to Reproduce\r\n\r\n```sh\r\n./solc --ir <file>\r\n```",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/8597/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/8597/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13245",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13245/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13245/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13245/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13245",
+  "id": 1294026246,
+  "node_id": "I_kwDOAm_5kc5NIUYG",
+  "number": 13245,
+  "title": "Yul optimizer does not respect `--optimizer-runs` when inlining",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-07-05T09:19:53Z",
+  "updated_at": "2022-08-17T13:48:37Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The legacy optimizer takes the `runs` parameter into account when deciding whether to inline a function while Yul optimizer apparently does not.\r\n\r\nOne case where it matters is inlining of public functions. Such functions are a combination of an external and internal function that share the same body. External functions cannot really be inlined so inlining the internal part effectively means duplicating the body. This makes the execution of the internal variant slightly cheaper (there's no jump) but also increases the size of the bytecode. This is a trade-off and the decision whether to inline or not should really depend on the `runs` parameter.\r\n\r\n### Steps to reproduce\r\nLet's consider the following `test.sol`:\r\n```solidity\r\ncontract C {\r\n    address a;\r\n\r\n    function g() public {\r\n        a = address(0);\r\n    }\r\n\r\n    function f() external {\r\n        g();\r\n    }\r\n}\r\n```\r\n\r\n#### Legacy optimizer\r\n```bash\r\ndiff --unified \\\r\n    <(solc test.sol --optimize --asm --optimize-runs 10000) \\\r\n    <(solc test.sol --optimize --asm --optimize-runs 0)\r\n```\r\n\r\nHere you can see that there's an extra copy of `g()` if you set `--optimize-runs 10000` to indicate that runtime gas usage matters the most:\r\n```diff\r\n         /* \"test.sol\":33:84  function g() public {... */\r\n     tag_4:\r\n       tag_5\r\n-        /* \"test.sol\":75:76  0 */\r\n-      0x00\r\n-        /* \"test.sol\":63:77  a = address(0) */\r\n-      dup1\r\n-      sload\r\n-      0xffffffffffffffffffffffff0000000000000000000000000000000000000000\r\n-      and\r\n-      swap1\r\n-      sstore\r\n-        /* \"test.sol\":33:84  function g() public {... */\r\n-      jump\r\n+      tag_8\r\n+      jump     // in\r\n         /* \"test.sol\":90:132  function f() external {... */\r\n     tag_6:\r\n         /* \"test.sol\":122:125  g() */\r\n       tag_10\r\n+        /* \"test.sol\":122:123  g */\r\n+      tag_8\r\n+        /* \"test.sol\":122:125  g() */\r\n+      jump     // in\r\n+    tag_10:\r\n+        /* \"test.sol\":90:132  function f() external {... */\r\n+      jump     // out\r\n+        /* \"test.sol\":33:84  function g() public {... */\r\n+    tag_8:\r\n         /* \"test.sol\":75:76  0 */\r\n       0x00\r\n         /* \"test.sol\":63:77  a = address(0) */\r\n       dup1\r\n       sload\r\n-      0xffffffffffffffffffffffff0000000000000000000000000000000000000000\r\n+      not(sub(shl(0xa0, 0x01), 0x01))\r\n       and\r\n       swap1\r\n       sstore\r\n         /* \"test.sol\":33:84  function g() public {... */\r\n-      jump\r\n-        /* \"test.sol\":122:125  g() */\r\n-    tag_10:\r\n-        /* \"test.sol\":90:132  function f() external {... */\r\n       jump     // out\r\n\r\n-    auxdata: 0xa2646970667358221220324366ca1157a59ca8aadee3676b9775c5a4fdb2ec04392e4906a8707fa1620864736f6c634300080f0033\r\n+    auxdata: 0xa2646970667358221220db382721a17566d55ae97f173cf7c89b7e0dd06a08bbebb4be94339e247a2ded64736f6c634300080f0033\r\n }\r\n```\r\n#### Yul optimizer\r\n```bash\r\ndiff --unified \\\r\n    <(solc test.sol --optimize --ir-optimized --optimize-runs 10000) \\\r\n    <(solc test.sol --optimize --ir-optimized --optimize-runs 0)\r\n```\r\n\r\nAnd here the only impact from `--optimize-runs` is a change in the way constants are encoded. There are no differences caused by inlining:\r\n```diff\r\n                     switch shr(224, calldataload(_2))\r\n                     case 0x26121ff0 {\r\n                         if callvalue() { revert(_2, _2) }\r\n-                        if slt(add(calldatasize(), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc), _2) { revert(_2, _2) }\r\n-                        sstore(_2, and(sload(_2), 0xffffffffffffffffffffffff0000000000000000000000000000000000000000))\r\n+                        if slt(add(calldatasize(), not(3)), _2) { revert(_2, _2) }\r\n+                        sstore(_2, and(sload(_2), not(sub(shl(160, 1), 1))))\r\n                         return(_1, _2)\r\n                     }\r\n                     case 0xe2179b8e {\r\n                         if callvalue() { revert(_2, _2) }\r\n-                        if slt(add(calldatasize(), 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc), _2) { revert(_2, _2) }\r\n-                        sstore(_2, and(sload(_2), 0xffffffffffffffffffffffff0000000000000000000000000000000000000000))\r\n+                        if slt(add(calldatasize(), not(3)), _2) { revert(_2, _2) }\r\n+                        sstore(_2, and(sload(_2), not(sub(shl(160, 1), 1))))\r\n                         return(_1, _2)\r\n                     }\r\n                 }\r\n                 revert(0, 0)\r\n             }\r\n         }\r\n-        data \".metadata\" hex\"a2646970667358221220414cf4c7e8848ef0d4d1b5428ece4203b2c7b9bac77d905598e30bce3ae8b83b64736f6c634300080f0033\"\r\n+        data \".metadata\" hex\"a26469706673582212204110cac794ffd5710634d27d782fc848b455dc68f896883fd0a965b2b14a053164736f6c634300080f0033\"\r\n     }\r\n }\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13245/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13245/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

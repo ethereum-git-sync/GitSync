@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/7661",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/7661/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/7661/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/7661/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/7661",
+  "id": 519966494,
+  "node_id": "MDU6SXNzdWU1MTk5NjY0OTQ=",
+  "number": 7661,
+  "title": "Improve language security ",
+  "user": {
+    "login": "javabeanz",
+    "id": 3225772,
+    "node_id": "MDQ6VXNlcjMyMjU3NzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3225772?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/javabeanz",
+    "html_url": "https://github.com/javabeanz",
+    "followers_url": "https://api.github.com/users/javabeanz/followers",
+    "following_url": "https://api.github.com/users/javabeanz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/javabeanz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/javabeanz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/javabeanz/subscriptions",
+    "organizations_url": "https://api.github.com/users/javabeanz/orgs",
+    "repos_url": "https://api.github.com/users/javabeanz/repos",
+    "events_url": "https://api.github.com/users/javabeanz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/javabeanz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-11-08T11:34:18Z",
+  "updated_at": "2020-01-27T10:55:42Z",
+  "closed_at": "2020-01-27T10:55:42Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Description\r\nMy impression is that many security vulns now are inherent to the use of solidity; i.e. the language wasn't design with enough Security by Design and by Default in mind. This happens to a lot of new technologies : the rush to get it out there often outweighs security concerns.\r\n\r\nTo change this could be hard, but at least here are some pointers : http://langsec.org/papers/langsec-cwes-secdev2016.pdf and http://www.cs.ru.nl/~erikpoll/papers/language_based_security.pdf Please let me know if i can help here or that this was useful.",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/7661/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/7661/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

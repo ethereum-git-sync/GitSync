@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13446",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13446/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13446/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13446/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13446",
+  "id": 1354103692,
+  "node_id": "I_kwDOAm_5kc5QtfuM",
+  "number": 13446,
+  "title": "Produce a panic code for failed `abi.decode` calls",
+  "user": {
+    "login": "fvictorio",
+    "id": 417134,
+    "node_id": "MDQ6VXNlcjQxNzEzNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/417134?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fvictorio",
+    "html_url": "https://github.com/fvictorio",
+    "followers_url": "https://api.github.com/users/fvictorio/followers",
+    "following_url": "https://api.github.com/users/fvictorio/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fvictorio/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fvictorio/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fvictorio/subscriptions",
+    "organizations_url": "https://api.github.com/users/fvictorio/orgs",
+    "repos_url": "https://api.github.com/users/fvictorio/repos",
+    "events_url": "https://api.github.com/users/fvictorio/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fvictorio/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-29T11:03:10Z",
+  "updated_at": "2022-09-05T13:41:49Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nFailed `abi.decode` calls produce a revert without a reason. Instead, it would be better to produce a new panic code that indicates a failure during decoding. It could be just a generic `ABI_DECODE_ERROR` thing, and it could be split into more specific codes in the future if possible/necessary.\r\n\r\n## Motivation\r\n\r\nDevelopment nodes like Hardhat try to give as much information as possible about failed transactions. We have a bunch of heuristics for different scenarios, and (maybe) we could add a new one for failed `abi.decode` calls, but it would be easier if this would be just a new panic code.\r\n\r\n## Specification\r\n\r\nA new panic code that is returned when an `abi.decode` call reverts. I guess it could be `0x23`, since this seems to be closer to `EnumConversionError` and `StorageEncodingError` than to the other panic codes.\r\n\r\n## Backwards Compatibility\r\n\r\nI guess this is backwards compatible, unless the change in the amount of revert data for failed decodings is considered a breaking change.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13446/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13446/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

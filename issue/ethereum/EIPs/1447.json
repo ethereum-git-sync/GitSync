@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/1447",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/1447/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/1447/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/1447/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/1447",
+  "id": 363510410,
+  "node_id": "MDU6SXNzdWUzNjM1MTA0MTA=",
+  "number": 1447,
+  "title": "ERC - A Capability Based Exokernel Protocol",
+  "user": {
+    "login": "Latrasis",
+    "id": 4656227,
+    "node_id": "MDQ6VXNlcjQ2NTYyMjc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4656227?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Latrasis",
+    "html_url": "https://github.com/Latrasis",
+    "followers_url": "https://api.github.com/users/Latrasis/followers",
+    "following_url": "https://api.github.com/users/Latrasis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Latrasis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Latrasis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Latrasis/subscriptions",
+    "organizations_url": "https://api.github.com/users/Latrasis/orgs",
+    "repos_url": "https://api.github.com/users/Latrasis/repos",
+    "events_url": "https://api.github.com/users/Latrasis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Latrasis/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-09-25T10:29:27Z",
+  "updated_at": "2018-09-25T13:49:43Z",
+  "closed_at": "2018-09-25T13:49:43Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Summary\r\nWe propose an operating system protocol for establishing policies and restrictions in Ethereum smart contracts within a machine-readable format .This allows users to independently verify whether the policies of a governance system or an ICO are enforced without relying on manual code checking or 3rd party developers to trust.\r\n\r\n## Proposal\r\nPlease see our whitepaper for more details, which is included in our [repo](https://github.com/daolab/beaker-whitepaper). Available here as well: [https://beakeros.org/docs/Whitepaper.pdf](https://beakeros.org/docs/Whitepaper.pdf)\r\n\r\n## Proof of Concept\r\nOur current work on the alpha evm implementation is available here: https://github.com/daolab/beakeros\r\n\r\n## Goals\r\n* Get validation for an ERC Proposal from the community\r\n* Convert whitepaper to an community supported ERC\r\n* Develop a BeakerOS Kernel Implementation\r\n* Develop a BeakerOS-CLI for developing, deploying and verifying smart contracts \r\n* Develop a Formal Specification and Yellowpaper\r\n",
+  "closed_by": {
+    "login": "Latrasis",
+    "id": 4656227,
+    "node_id": "MDQ6VXNlcjQ2NTYyMjc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4656227?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Latrasis",
+    "html_url": "https://github.com/Latrasis",
+    "followers_url": "https://api.github.com/users/Latrasis/followers",
+    "following_url": "https://api.github.com/users/Latrasis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Latrasis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Latrasis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Latrasis/subscriptions",
+    "organizations_url": "https://api.github.com/users/Latrasis/orgs",
+    "repos_url": "https://api.github.com/users/Latrasis/repos",
+    "events_url": "https://api.github.com/users/Latrasis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Latrasis/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/1447/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/1447/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

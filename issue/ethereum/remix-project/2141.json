@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2141",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2141/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2141/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2141/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2141",
+  "id": 1160379927,
+  "node_id": "I_kwDODtLRw85FKf4X",
+  "number": 2141,
+  "title": "Uncaught JavaScript exception: RuntimeError: memory access out of bounds",
+  "user": {
+    "login": "gpersoon",
+    "id": 5469459,
+    "node_id": "MDQ6VXNlcjU0Njk0NTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5469459?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gpersoon",
+    "html_url": "https://github.com/gpersoon",
+    "followers_url": "https://api.github.com/users/gpersoon/followers",
+    "following_url": "https://api.github.com/users/gpersoon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gpersoon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gpersoon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gpersoon/subscriptions",
+    "organizations_url": "https://api.github.com/users/gpersoon/orgs",
+    "repos_url": "https://api.github.com/users/gpersoon/repos",
+    "events_url": "https://api.github.com/users/gpersoon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gpersoon/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-05T15:31:42Z",
+  "updated_at": "2022-03-05T15:31:42Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "When testing https://remix-beta.ethereum.org / 0.22.0-dev  I noticed the issue below.\r\nAlso present in Remix 0.21.4\r\n\r\nHow to reproduce:\r\nCreate test.sol\r\nFill the file with 70000 lines of `// this is a test`\r\nNow you get an error `Uncaught JavaScript exception: RuntimeError: memory access out of bounds` in the compiler tab.\r\n\r\nThe critical number of lines is about 60500 (difficult to pin down exactly)\r\nNote: no errors in the console.log\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2141/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2141/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

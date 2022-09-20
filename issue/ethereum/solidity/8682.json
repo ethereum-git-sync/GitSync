@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/8682",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/8682/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/8682/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/8682/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/8682",
+  "id": 600837795,
+  "node_id": "MDU6SXNzdWU2MDA4Mzc3OTU=",
+  "number": 8682,
+  "title": "[evmone] Consistent versions across platforms",
+  "user": {
+    "login": "bshastry",
+    "id": 2388185,
+    "node_id": "MDQ6VXNlcjIzODgxODU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2388185?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bshastry",
+    "html_url": "https://github.com/bshastry",
+    "followers_url": "https://api.github.com/users/bshastry/followers",
+    "following_url": "https://api.github.com/users/bshastry/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bshastry/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bshastry/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bshastry/subscriptions",
+    "organizations_url": "https://api.github.com/users/bshastry/orgs",
+    "repos_url": "https://api.github.com/users/bshastry/repos",
+    "events_url": "https://api.github.com/users/bshastry/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bshastry/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 437863668,
+      "node_id": "MDU6TGFiZWw0Mzc4NjM2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/build%20system%20:building_construction:",
+      "name": "build system :building_construction:",
+      "color": "1d76db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-04-16T08:14:08Z",
+  "updated_at": "2022-08-17T13:49:07Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nMotivated by https://github.com/ethereum/solidity/pull/8651 that upgrades evmone selectively for Windows only. \r\n\r\nIn the past, there were multiple PRs for upgrading evmone. Example\r\n  - https://github.com/ethereum/solidity/pull/7655 upgraded evmone to 0.3.0 in all Linux based CIs but not Windows, OSx and Linux test suite\r\n  - https://github.com/ethereum/solidity/pull/7748 upgraded evmone to 0.3.0 for Windows, OSx, and the Linux test suite (but not docker CIs based on Linux)\r\n\r\nThis situation presents maintenance difficulties because one needs to keep track of which platform uses which version of evmone and in case of Linux which version is used by the test suite (soltest) and upstream Linux test CIs.\r\n\r\n@Marenz proposed writing a script that applies version changes in a single PR across all platforms. Perhaps this is better solution than refactoring docker files because the latter only concern CIs but we need a solution that upgrades Windows and OSx dependencies as well.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/8682/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/8682/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

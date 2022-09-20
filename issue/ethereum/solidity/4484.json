@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/4484",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/4484/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/4484/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/4484/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/4484",
+  "id": 340299630,
+  "node_id": "MDU6SXNzdWUzNDAyOTk2MzA=",
+  "number": 4484,
+  "title": "Lazy ABI decoding",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-07-11T15:42:37Z",
+  "updated_at": "2022-08-17T13:48:57Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Follow-up from https://github.com/ethereum/solidity/issues/3876 :\r\n\r\nIf possible, ABI-decoding should be done in a lazy way, especially in functions marked `external`: Function arguments should be immutable (even value types) and should only be decoded when requested. This is especially useful for deeply nested array and struct data.\r\n\r\nSimilarly, `abi.decode` could return a special virtual data type where decoding is only done when the data is converted to a mutable or memory data type.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/4484/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/4484/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

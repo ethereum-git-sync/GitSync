@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1127",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1127/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1127/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1127/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1127",
+  "id": 863128395,
+  "node_id": "MDU6SXNzdWU4NjMxMjgzOTU=",
+  "number": 1127,
+  "title": "Support Solidity 0.3.6",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-04-20T18:51:19Z",
+  "updated_at": "2021-04-21T14:59:44Z",
+  "closed_at": "2021-04-21T14:59:44Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "I tried to compile some legacy contracts in Remix and noticed that compiler versions >=0.4.0 worked, but 0.3.6 did not. The loader just kept spinning.\r\n\r\nThe logs reveal the following:\r\n![Screenshot](https://user-images.githubusercontent.com/20340/115448488-ab7a6100-a211-11eb-9947-734a770fd5e6.png)\r\n\r\nI think the problem is that since 0.3.6 loads the wasm version it should also use the worker. Probably remix uses the worker for >=0.4.0 compilers, and not for older ones. I suggest to change that rule to >=0.3.6.",
+  "closed_by": {
+    "login": "LianaHus",
+    "id": 9685356,
+    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LianaHus",
+    "html_url": "https://github.com/LianaHus",
+    "followers_url": "https://api.github.com/users/LianaHus/followers",
+    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+    "repos_url": "https://api.github.com/users/LianaHus/repos",
+    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1127/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1127/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

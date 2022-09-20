@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/3021",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/3021/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/3021/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/3021/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/3021",
+  "id": 262761421,
+  "node_id": "MDU6SXNzdWUyNjI3NjE0MjE=",
+  "number": 3021,
+  "title": "SMT checker with division",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-10-04T12:00:35Z",
+  "updated_at": "2017-12-05T12:59:02Z",
+  "closed_at": "2017-12-05T12:59:02Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The code from #238 will have a lot of overflow warnings given division is not supported by SMT:\r\n\r\n```\r\n_238.sol:5:12: Warning: Assertion checker does not yet implement this operator.\r\nint128 t = x / 256;\r\n           ^-----^\r\n_238.sol:8:5: Warning: Underflow (resulting value less than -0x80000000000000000000000000000000) happens here for:\r\n  value = (- 170141183460469231731687303715884105744)\r\n  x = (- 10633823966279326983230456482242756609)\r\n  t = (- 10633823966279326983230456482242756609)\r\n  y = 5545177\r\n\r\nt = x * 16; if (t <= 1000000) { x = t; y = y - 2772588; }\r\n    ^----^\r\n_238.sol:8:5: Warning: Overflow (resulting value larger than 0x7fffffffffffffffffffffffffffffff) happens here for:\r\n  value = 0x80000000000000000000000000000000\r\n  x = 0x08000000000000000000000000000000\r\n  t = 0x08000000000000000000000000000000\r\n  y = 5545177\r\n\r\nt = x * 16; if (t <= 1000000) { x = t; y = y - 2772588; }\r\n    ^----^\r\n...\r\n```\r\n\r\nCould we implement support for integer division via floating point division and rounding?",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/3021/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/3021/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

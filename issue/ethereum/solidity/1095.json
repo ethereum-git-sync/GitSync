@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/1095",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/1095/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/1095/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/1095/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/1095",
+  "id": 176982316,
+  "node_id": "MDU6SXNzdWUxNzY5ODIzMTY=",
+  "number": 1095,
+  "title": "Devdoc / userdoc: Implement @copydoc",
+  "user": {
+    "login": "ethernomad",
+    "id": 161566,
+    "node_id": "MDQ6VXNlcjE2MTU2Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/161566?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ethernomad",
+    "html_url": "https://github.com/ethernomad",
+    "followers_url": "https://api.github.com/users/ethernomad/followers",
+    "following_url": "https://api.github.com/users/ethernomad/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ethernomad/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ethernomad/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ethernomad/subscriptions",
+    "organizations_url": "https://api.github.com/users/ethernomad/orgs",
+    "repos_url": "https://api.github.com/users/ethernomad/repos",
+    "events_url": "https://api.github.com/users/ethernomad/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ethernomad/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-09-14T18:22:21Z",
+  "updated_at": "2022-08-17T13:50:03Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "http://www.stack.nl/~dimitri/doxygen/manual/commands.html#cmdcopydoc\n\nWhen implementing a method from an abstract contract, it should not be necessary to duplicate the doxygen.\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/1095/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/1095/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

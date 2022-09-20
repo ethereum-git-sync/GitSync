@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10086",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10086/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10086/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10086/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10086",
+  "id": 726452622,
+  "node_id": "MDU6SXNzdWU3MjY0NTI2MjI=",
+  "number": 10086,
+  "title": "SMTChecker chokes on constant bytes32 conversion",
+  "user": {
+    "login": "MrChico",
+    "id": 8930559,
+    "node_id": "MDQ6VXNlcjg5MzA1NTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8930559?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MrChico",
+    "html_url": "https://github.com/MrChico",
+    "followers_url": "https://api.github.com/users/MrChico/followers",
+    "following_url": "https://api.github.com/users/MrChico/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MrChico/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MrChico/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MrChico/subscriptions",
+    "organizations_url": "https://api.github.com/users/MrChico/orgs",
+    "repos_url": "https://api.github.com/users/MrChico/repos",
+    "events_url": "https://api.github.com/users/MrChico/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MrChico/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-10-21T12:53:11Z",
+  "updated_at": "2020-10-22T09:20:23Z",
+  "closed_at": "2020-10-22T09:20:23Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Minimal example:\r\n```\r\npragma experimental SMTChecker;\r\ncontract SMT {\r\n    bytes32 constant internal NULL_BYTES32 = bytes32('');\r\n}\r\n```\r\n\r\nRunning with `solc Version: 0.7.4+commit.3f05b770.Darwin.appleclang` yields:\r\n\r\n```\r\nInternal compiler error during compilation:\r\n/Users/distiller/project/libsolidity/formal/SMTEncoder.cpp(884): Throw in function void solidity::frontend::SMTEncoder::visitTypeConversion(const solidity::frontend::FunctionCall &)\r\nDynamic exception type: boost::wrapexcept<solidity::langutil::InternalCompilerError>\r\nstd::exception::what:\r\n[solidity::util::tag_comment*] =\r\n```",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10086/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10086/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

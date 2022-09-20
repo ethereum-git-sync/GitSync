@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22041",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22041/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22041/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22041/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22041",
+  "id": 771556134,
+  "node_id": "MDU6SXNzdWU3NzE1NTYxMzQ=",
+  "number": 22041,
+  "title": "Current code is not compatible with solidity version 0.8.0",
+  "user": {
+    "login": "Chengru-Song",
+    "id": 16899105,
+    "node_id": "MDQ6VXNlcjE2ODk5MTA1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16899105?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Chengru-Song",
+    "html_url": "https://github.com/Chengru-Song",
+    "followers_url": "https://api.github.com/users/Chengru-Song/followers",
+    "following_url": "https://api.github.com/users/Chengru-Song/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Chengru-Song/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Chengru-Song/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Chengru-Song/subscriptions",
+    "organizations_url": "https://api.github.com/users/Chengru-Song/orgs",
+    "repos_url": "https://api.github.com/users/Chengru-Song/repos",
+    "events_url": "https://api.github.com/users/Chengru-Song/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Chengru-Song/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1132689577,
+      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
+      "name": "status:triage",
+      "color": "6be514",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-12-20T10:11:58Z",
+  "updated_at": "2021-01-05T13:48:23Z",
+  "closed_at": "2021-01-05T13:48:23Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `geth version`\r\nSolidity version: 0.8.0\r\nOS & Version: Windows/Linux/OSX\r\nCommit hash : (if `develop`)\r\n\r\n#### Expected behaviour\r\n[https://github.com/ethereum/go-ethereum/blob/3c46f5570bd674cf49c0113352ff79a4e026a5b8/common/compiler/solidity.go#L143](url)\r\nWhen executing this line, the json string is expected to marshal in the output struct where abi is of type string. The abi string will be further marshalled into another struct and the process should report no error if compiled with `solc` command(which is solidity compiler).\r\n\r\n#### Actual behaviour\r\nWhen compiled with solidity v0.8.0, it will produce the following unmarshal error:\r\n`json: cannot unmarshal array into Go struct field .Contracts.Abi of type string`\r\n\r\n#### Steps to reproduce the behaviour\r\nTry deploy the smart contracts with compiler, execute this line of code:\r\n`contracts, err := compiler.CompileSolidity(\"./solc-macos\", path...)`\r\nThe following is a deploy example:\r\n```golang\r\n    t.Log(\"test deploy contract\")\r\n    // Configure and generate a sample block chain\r\n    var (\r\n        memDb   = memorydb.New()\r\n        db      = rawdb.NewDatabase(memDb)\r\n        key, _  = crypto.HexToECDSA(\"b71c71a67e1177ad4e901695e1b4b9ee17ae16c6668d313eac2f96dbcda3f291\")\r\n        address = crypto.PubkeyToAddress(key.PublicKey)\r\n        gspec   = &core.Genesis{\r\n            GasLimit: 800000000,\r\n            Config: &params.ChainConfig{\r\n                HomesteadBlock:      big.NewInt(0),\r\n                EIP150Block:         big.NewInt(0),\r\n                EIP155Block:         big.NewInt(0),\r\n                EIP158Block:         big.NewInt(0),\r\n                ByzantiumBlock:      big.NewInt(0),\r\n                ConstantinopleBlock: big.NewInt(0),\r\n                PetersburgBlock:     big.NewInt(0),\r\n                IstanbulBlock:       big.NewInt(0),\r\n            },\r\n            Alloc: core.GenesisAlloc{\r\n                address: {Balance: big.NewInt(9000000000000000000)},\r\n            },\r\n        }\r\n    )\r\n    engine := ethash.NewFaker()\r\n    chainConfig, _, err := core.SetupGenesisBlock(db, gspec)\r\n    if err != nil {\r\n        t.Fatal(err)\r\n    }\r\n    blockchain, err := core.NewBlockChain(db, &core.CacheConfig{\r\n        TrieDirtyDisabled: true,\r\n    }, chainConfig, engine, vm.Config{}, nil)\r\n    if err != nil {\r\n        t.Fatal(err)\r\n    }\r\n    _ = blockchain.StateCache().TrieDB()\r\n    // construct the first diff\r\n\r\n    contractBackend := backends.NewSimulatedBackend(gspec.Alloc, gspec.GasLimit)\r\n    transactOpts := bind.NewKeyedTransactor(key)\r\n    transactOpts.GasPrice = big.NewInt(1)\r\n    _ = transactOpts\r\n    _ = contractBackend\r\n    source := []string{\"/Users/bytedance/Documents/codes/bsol/WeatherStorage.sol\"}\r\n    contracts, err := compiler.CompileSolidity(\"./solc-macos\", path...)\r\n    if err != nil {\r\n        return nil, err\r\n    }\r\n    var data []ContractData\r\n    for contractName, contract := range contracts {\r\n        fmt.Println(contractName)\r\n        if strings.Index(strings.Split(contractName, \":\")[1], \"Benchmark\") != 0 {\r\n            continue\r\n        }\r\n        var names []string\r\n        abiData, err := json.Marshal(contract.Info.AbiDefinition.([]interface{}))\r\n        if err != nil {\r\n            return nil, err\r\n        }\r\n        abi, err := abi.JSON(bytes.NewBuffer(abiData))\r\n        if err != nil {\r\n            return nil, err\r\n        }\r\n        // fmt.Printf(\"abi: %+v\\nabiData:%+v\\n\", abi, abiData)\r\n        for _, method := range contract.Info.AbiDefinition.([]interface{}) {\r\n            mapped := method.(map[string]interface{})\r\n            if mapped[\"name\"] == nil {\r\n                if len(mapped[\"inputs\"].([]interface{})) != 0 {\r\n                    return nil, errors.New(\"Invalid Benchmark: constructor should require 0 arguments\")\r\n                }\r\n                continue\r\n            }\r\n            name := mapped[\"name\"].(string)\r\n            if strings.Index(name, \"Benchmark\") != 0 {\r\n                continue\r\n            }\r\n            if len(mapped[\"inputs\"].([]interface{})) != 0 {\r\n                return nil, errors.New(\"Invalid Benchmark: %s: function should require 0 arguments, but it requires %d\")\r\n            }\r\n            names = append(names, name)\r\n        }\r\n        if err != nil {\r\n            return nil, err\r\n        }\r\n        data = append(data, ContractData{abi, contract.Code, names, strings.Split(contractName, \":\")[1]})\r\n    }\r\n    contractBackend.Commit()\r\n    return data, nil\r\n```\r\n\r\n#### Suggestion\r\n\r\nFor developers, please try to modify the output behavior of solidity 0.8.0 compiler from outputing array to string, or try to modify the [https://github.com/ethereum/go-ethereum/blob/3c46f5570bd674cf49c0113352ff79a4e026a5b8/common/compiler/solidity.go#L141](url) function to make it compatible with the new solidity compiler version. \r\n\r\n",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22041/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22041/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

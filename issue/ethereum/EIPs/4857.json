@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/4857",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/4857/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/4857/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/4857/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/4857",
+  "id": 1154254338,
+  "node_id": "I_kwDOAq426M5EzIYC",
+  "number": 4857,
+  "title": "CLOSE",
+  "user": {
+    "login": "drikssy",
+    "id": 42724313,
+    "node_id": "MDQ6VXNlcjQyNzI0MzEz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42724313?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drikssy",
+    "html_url": "https://github.com/drikssy",
+    "followers_url": "https://api.github.com/users/drikssy/followers",
+    "following_url": "https://api.github.com/users/drikssy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drikssy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drikssy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drikssy/subscriptions",
+    "organizations_url": "https://api.github.com/users/drikssy/orgs",
+    "repos_url": "https://api.github.com/users/drikssy/repos",
+    "events_url": "https://api.github.com/users/drikssy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drikssy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-02-28T15:51:15Z",
+  "updated_at": "2022-07-18T18:08:42Z",
+  "closed_at": "2022-02-28T16:10:30Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "CLOSE",
+  "closed_by": {
+    "login": "drikssy",
+    "id": 42724313,
+    "node_id": "MDQ6VXNlcjQyNzI0MzEz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42724313?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drikssy",
+    "html_url": "https://github.com/drikssy",
+    "followers_url": "https://api.github.com/users/drikssy/followers",
+    "following_url": "https://api.github.com/users/drikssy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drikssy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drikssy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drikssy/subscriptions",
+    "organizations_url": "https://api.github.com/users/drikssy/orgs",
+    "repos_url": "https://api.github.com/users/drikssy/repos",
+    "events_url": "https://api.github.com/users/drikssy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drikssy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/4857/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/4857/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

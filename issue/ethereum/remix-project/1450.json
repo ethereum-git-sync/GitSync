@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1450",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1450/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1450/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1450/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1450",
+  "id": 963643750,
+  "node_id": "MDU6SXNzdWU5NjM2NDM3NTA=",
+  "number": 1450,
+  "title": "I cannot write anything in Remix IDE. It gets stuck even if I hit space or any character. Please help me. Thanks.",
+  "user": {
+    "login": "srk517",
+    "id": 88472902,
+    "node_id": "MDQ6VXNlcjg4NDcyOTAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/88472902?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/srk517",
+    "html_url": "https://github.com/srk517",
+    "followers_url": "https://api.github.com/users/srk517/followers",
+    "following_url": "https://api.github.com/users/srk517/following{/other_user}",
+    "gists_url": "https://api.github.com/users/srk517/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/srk517/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/srk517/subscriptions",
+    "organizations_url": "https://api.github.com/users/srk517/orgs",
+    "repos_url": "https://api.github.com/users/srk517/repos",
+    "events_url": "https://api.github.com/users/srk517/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/srk517/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-08-09T04:47:45Z",
+  "updated_at": "2021-08-09T04:47:45Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": null,
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1450/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1450/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

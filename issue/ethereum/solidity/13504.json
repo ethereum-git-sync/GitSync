@@ -1,0 +1,112 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13504",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13504/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13504/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13504/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13504",
+  "id": 1366463184,
+  "node_id": "I_kwDOAm_5kc5RcpLQ",
+  "number": 13504,
+  "title": "Add examples of using memory structs in documentation",
+  "user": {
+    "login": "hrkrshnn",
+    "id": 13174375,
+    "node_id": "MDQ6VXNlcjEzMTc0Mzc1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13174375?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hrkrshnn",
+    "html_url": "https://github.com/hrkrshnn",
+    "followers_url": "https://api.github.com/users/hrkrshnn/followers",
+    "following_url": "https://api.github.com/users/hrkrshnn/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hrkrshnn/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hrkrshnn/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hrkrshnn/subscriptions",
+    "organizations_url": "https://api.github.com/users/hrkrshnn/orgs",
+    "repos_url": "https://api.github.com/users/hrkrshnn/repos",
+    "events_url": "https://api.github.com/users/hrkrshnn/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hrkrshnn/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 275027668,
+      "node_id": "MDU6TGFiZWwyNzUwMjc2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/documentation%20:book:",
+      "name": "documentation :book:",
+      "color": "006b75",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 838064207,
+      "node_id": "MDU6TGFiZWw4MzgwNjQyMDc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/annoys%20users%20:cry:",
+      "name": "annoys users :cry:",
+      "color": "ea2cab",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438492402,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI4E8g",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/nice%20to%20have",
+      "name": "nice to have",
+      "color": "ffdeb3",
+      "default": false,
+      "description": "We don’t see a good reason not to have it but won’t go out of our way to implement it."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-08T14:33:15Z",
+  "updated_at": "2022-09-09T16:03:25Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "> The [documentation doesn't even show memory structs at all](https://docs.soliditylang.org/en/v0.8.13/types.html#structs): it looks as if they're just a hack to get packed storage variables\r\n\r\nSee: https://github.com/ethereum/solidity/issues/13475#issuecomment-1239993739\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13504/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13504/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

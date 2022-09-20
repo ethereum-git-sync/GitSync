@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22285",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22285/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22285/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22285/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22285",
+  "id": 803188364,
+  "node_id": "MDU6SXNzdWU4MDMxODgzNjQ=",
+  "number": 22285,
+  "title": "invalid command: \"geth\"",
+  "user": {
+    "login": "wenqinchao",
+    "id": 29195771,
+    "node_id": "MDQ6VXNlcjI5MTk1Nzcx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29195771?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wenqinchao",
+    "html_url": "https://github.com/wenqinchao",
+    "followers_url": "https://api.github.com/users/wenqinchao/followers",
+    "following_url": "https://api.github.com/users/wenqinchao/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wenqinchao/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wenqinchao/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wenqinchao/subscriptions",
+    "organizations_url": "https://api.github.com/users/wenqinchao/orgs",
+    "repos_url": "https://api.github.com/users/wenqinchao/repos",
+    "events_url": "https://api.github.com/users/wenqinchao/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wenqinchao/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-02-08T05:05:56Z",
+  "updated_at": "2021-02-08T05:56:05Z",
+  "closed_at": "2021-02-08T05:56:05Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I reran geth by the same command after rebooting my PC, the command is\r\n![image](https://user-images.githubusercontent.com/29195771/107178079-5bf80780-6a0e-11eb-9e81-4809ba88fadf.png)\r\n\r\ngot error invalid command: \"geth\", should i delete some files before rerun?",
+  "closed_by": {
+    "login": "wenqinchao",
+    "id": 29195771,
+    "node_id": "MDQ6VXNlcjI5MTk1Nzcx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29195771?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wenqinchao",
+    "html_url": "https://github.com/wenqinchao",
+    "followers_url": "https://api.github.com/users/wenqinchao/followers",
+    "following_url": "https://api.github.com/users/wenqinchao/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wenqinchao/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wenqinchao/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wenqinchao/subscriptions",
+    "organizations_url": "https://api.github.com/users/wenqinchao/orgs",
+    "repos_url": "https://api.github.com/users/wenqinchao/repos",
+    "events_url": "https://api.github.com/users/wenqinchao/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wenqinchao/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22285/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22285/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

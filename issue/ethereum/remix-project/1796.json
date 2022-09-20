@@ -1,0 +1,113 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1796",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1796/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1796/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1796/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1796",
+  "id": 1063335649,
+  "node_id": "I_kwDODtLRw84_YTbh",
+  "number": 1796,
+  "title": "File Explorer improvements",
+  "user": {
+    "login": "LianaHus",
+    "id": 9685356,
+    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LianaHus",
+    "html_url": "https://github.com/LianaHus",
+    "followers_url": "https://api.github.com/users/LianaHus/followers",
+    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+    "repos_url": "https://api.github.com/users/LianaHus/repos",
+    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2227543966,
+      "node_id": "MDU6TGFiZWwyMjI3NTQzOTY2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/STORY",
+      "name": "STORY",
+      "color": "f4aea6",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2691470839,
+      "node_id": "MDU6TGFiZWwyNjkxNDcwODM5",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/file-explorer",
+      "name": "file-explorer",
+      "color": "9EA10A",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 3576183210,
+      "node_id": "LA_kwDODtLRw87VKDmq",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/Roadmap2022",
+      "name": "Roadmap2022",
+      "color": "FF1678",
+      "default": false,
+      "description": "All issues marked with this label should be closed by Dec 2022"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-11-25T09:20:02Z",
+  "updated_at": "2021-11-25T13:52:37Z",
+  "closed_at": "2021-11-25T13:52:37Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "- [ ] Open combined-json files from the File Explorer (https://github.com/ethereum/remix-project/issues/148)\r\n- [ ] Add delete and rename files with \"delete\" and F2 keys (https://github.com/ethereum/remix-project/issues/258)\r\n- [ ] Sort items in folder (https://github.com/ethereum/remix-project/issues/123)\r\n- [ ] add \"copy file name\" to readonly(ipfs/swarm) files context menu (https://github.com/ethereum/remix-project/issues/333)\r\n- [ ] add a display name option for ipfs/swarm file (https://github.com/ethereum/remix-project/issues/226)",
+  "closed_by": {
+    "login": "LianaHus",
+    "id": 9685356,
+    "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LianaHus",
+    "html_url": "https://github.com/LianaHus",
+    "followers_url": "https://api.github.com/users/LianaHus/followers",
+    "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+    "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+    "repos_url": "https://api.github.com/users/LianaHus/repos",
+    "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1796/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1796/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

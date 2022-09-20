@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22417",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22417/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22417/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22417/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22417",
+  "id": 820535578,
+  "node_id": "MDU6SXNzdWU4MjA1MzU1Nzg=",
+  "number": 22417,
+  "title": "getting-started tutorial not clear about GETH_LOCATION",
+  "user": {
+    "login": "xoffey",
+    "id": 22627691,
+    "node_id": "MDQ6VXNlcjIyNjI3Njkx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22627691?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xoffey",
+    "html_url": "https://github.com/xoffey",
+    "followers_url": "https://api.github.com/users/xoffey/followers",
+    "following_url": "https://api.github.com/users/xoffey/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xoffey/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xoffey/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xoffey/subscriptions",
+    "organizations_url": "https://api.github.com/users/xoffey/orgs",
+    "repos_url": "https://api.github.com/users/xoffey/repos",
+    "events_url": "https://api.github.com/users/xoffey/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xoffey/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-03-03T01:26:50Z",
+  "updated_at": "2021-04-21T08:35:11Z",
+  "closed_at": "2021-04-21T08:35:11Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `1.9.25`\r\nOS & Version: Windows/Linux/OSX\r\nCommit hash : (if `develop`)\r\n\r\n#### Expected behaviour\r\nshould explain how to set GETH_LOCATION and CLEF_LOCATION\r\n\r\n#### Actual behaviour\r\nallowed me to mistakenly use ~/, which led to \"unknown account\" errors\r\n\r\n#### Steps to reproduce the behaviour\r\nfollow instructions at https://geth.ethereum.org/docs/getting-started\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n\r\nThe instructions mention GETH_LOCATION and CLEF_LOCATION, but never say what they mean. I initially tried ~/.ethereum and  ~/.clef, but those do not work!  For a beginner, this took a long time to figure out what was wrong.\r\n\r\nBTW, geth says \"unknown account\" which is not a correct diagnostic.\r\n",
+  "closed_by": {
+    "login": "MariusVanDerWijden",
+    "id": 16664698,
+    "node_id": "MDQ6VXNlcjE2NjY0Njk4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16664698?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MariusVanDerWijden",
+    "html_url": "https://github.com/MariusVanDerWijden",
+    "followers_url": "https://api.github.com/users/MariusVanDerWijden/followers",
+    "following_url": "https://api.github.com/users/MariusVanDerWijden/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MariusVanDerWijden/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MariusVanDerWijden/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MariusVanDerWijden/subscriptions",
+    "organizations_url": "https://api.github.com/users/MariusVanDerWijden/orgs",
+    "repos_url": "https://api.github.com/users/MariusVanDerWijden/repos",
+    "events_url": "https://api.github.com/users/MariusVanDerWijden/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MariusVanDerWijden/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22417/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22417/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

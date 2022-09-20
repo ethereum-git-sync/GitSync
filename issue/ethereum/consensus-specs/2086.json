@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2086",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2086/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2086/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2086/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2086",
+  "id": 712809470,
+  "node_id": "MDU6SXNzdWU3MTI4MDk0NzA=",
+  "number": 2086,
+  "title": "Simplify spec by adding safe math functions",
+  "user": {
+    "login": "vbuterin",
+    "id": 2230894,
+    "node_id": "MDQ6VXNlcjIyMzA4OTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2230894?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vbuterin",
+    "html_url": "https://github.com/vbuterin",
+    "followers_url": "https://api.github.com/users/vbuterin/followers",
+    "following_url": "https://api.github.com/users/vbuterin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vbuterin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vbuterin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vbuterin/subscriptions",
+    "organizations_url": "https://api.github.com/users/vbuterin/orgs",
+    "repos_url": "https://api.github.com/users/vbuterin/repos",
+    "events_url": "https://api.github.com/users/vbuterin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vbuterin/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1322581625,
+      "node_id": "MDU6TGFiZWwxMzIyNTgxNjI1",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:simplification",
+      "name": "general:simplification",
+      "color": "A8497A",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-10-01T12:45:48Z",
+  "updated_at": "2020-10-01T12:45:48Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The two that immediately come to mind, with multiple use cases already in the spec, are:\r\n\r\n```python\r\ndef safe_modulo_subtract(a, b, modulus):\r\n    return (a + modulus - b) % modulus\r\n\r\ndef safe_a_mul_b_div_c(a, b, c, increment):\r\n    return (a // increment) * b // (c // increment)\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2086/reactions",
+    "total_count": 4,
+    "+1": 4,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2086/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

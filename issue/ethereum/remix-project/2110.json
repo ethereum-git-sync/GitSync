@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2110",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2110/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2110/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2110/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2110",
+  "id": 1153111178,
+  "node_id": "I_kwDODtLRw85EuxSK",
+  "number": 2110,
+  "title": "Feature Request: drag-and-drop feature for valid Solidity project files into an existing Remix workspace",
+  "user": {
+    "login": "naftalimurgor",
+    "id": 37052032,
+    "node_id": "MDQ6VXNlcjM3MDUyMDMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/37052032?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/naftalimurgor",
+    "html_url": "https://github.com/naftalimurgor",
+    "followers_url": "https://api.github.com/users/naftalimurgor/followers",
+    "following_url": "https://api.github.com/users/naftalimurgor/following{/other_user}",
+    "gists_url": "https://api.github.com/users/naftalimurgor/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/naftalimurgor/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/naftalimurgor/subscriptions",
+    "organizations_url": "https://api.github.com/users/naftalimurgor/orgs",
+    "repos_url": "https://api.github.com/users/naftalimurgor/repos",
+    "events_url": "https://api.github.com/users/naftalimurgor/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/naftalimurgor/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-02-27T09:32:31Z",
+  "updated_at": "2022-02-27T09:33:54Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Is there a way(like in standard editors) where I can drag and drop files into an existing Remix workspace? What I'm doing currently:\r\n1.  create a Smart Contract > by going to file icon, Rightclick click > New file\r\n2. Paste in code from Vscode that I'm using locally into the created file.\r\n\r\nAlternative:\r\n1. Flatten the Smart Contract using Hardhat and follow the above steps\r\n\r\nDesirable feature:\r\n- Drag and drop valid Solidity files in an existing workspace",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2110/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2110/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

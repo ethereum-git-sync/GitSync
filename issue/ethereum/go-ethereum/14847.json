@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14847",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14847/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14847/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14847/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/14847",
+  "id": 244817480,
+  "node_id": "MDU6SXNzdWUyNDQ4MTc0ODA=",
+  "number": 14847,
+  "title": "Stuck on cycling. Impossible reorg, please file an issue.",
+  "user": {
+    "login": "21harrisont",
+    "id": 26798275,
+    "node_id": "MDQ6VXNlcjI2Nzk4Mjc1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/26798275?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/21harrisont",
+    "html_url": "https://github.com/21harrisont",
+    "followers_url": "https://api.github.com/users/21harrisont/followers",
+    "following_url": "https://api.github.com/users/21harrisont/following{/other_user}",
+    "gists_url": "https://api.github.com/users/21harrisont/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/21harrisont/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/21harrisont/subscriptions",
+    "organizations_url": "https://api.github.com/users/21harrisont/orgs",
+    "repos_url": "https://api.github.com/users/21harrisont/repos",
+    "events_url": "https://api.github.com/users/21harrisont/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/21harrisont/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-07-22T02:15:45Z",
+  "updated_at": "2018-02-12T10:54:16Z",
+  "closed_at": "2018-02-12T10:54:16Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: The latest version\r\nOS & Version: Windows\r\nCommit hash : None\r\n#### Expected behaviour\r\n\r\nThe blocks would finish downloading, and I can start mining.\r\n\r\n#### Actual behaviour\r\n\r\nAfter reaching block 15835690, it cycles back to 4055654. It keeps looping and it never gives me the completion signal.\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nI just used geth --fast --cache=2048 console like normal. It told me to file an issue.\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14847/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14847/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

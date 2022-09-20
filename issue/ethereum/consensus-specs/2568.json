@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2568",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2568/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2568/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2568/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2568",
+  "id": 979476610,
+  "node_id": "MDU6SXNzdWU5Nzk0NzY2MTA=",
+  "number": 2568,
+  "title": "Extend broad-spectrum block tests",
+  "user": {
+    "login": "ralexstokes",
+    "id": 3113781,
+    "node_id": "MDQ6VXNlcjMxMTM3ODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3113781?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ralexstokes",
+    "html_url": "https://github.com/ralexstokes",
+    "followers_url": "https://api.github.com/users/ralexstokes/followers",
+    "following_url": "https://api.github.com/users/ralexstokes/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ralexstokes/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ralexstokes/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ralexstokes/subscriptions",
+    "organizations_url": "https://api.github.com/users/ralexstokes/orgs",
+    "repos_url": "https://api.github.com/users/ralexstokes/repos",
+    "events_url": "https://api.github.com/users/ralexstokes/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ralexstokes/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1295439957,
+      "node_id": "MDU6TGFiZWwxMjk1NDM5OTU3",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:CI/tests/pyspec",
+      "name": "scope:CI/tests/pyspec",
+      "color": "BDC0BA",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-08-25T17:45:43Z",
+  "updated_at": "2021-09-08T13:37:03Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "# Ideas to extend the test type added in #2560\r\n\r\n- Attester slashings for both types of slashing conditions (right now it only duplicates the target)\r\n- Ensure all possible validator states are covered (refer: https://github.com/ethereum/consensus-specs/pull/2560#discussion_r695249781)\r\n- Ensure coverage of random operations (e.g. `random.randrange(1, spec.MAX_OP)` instead of `random.randrange(1, spec.MAX_OP + 1)`)\r\n- Scenario: test regular (randomized) block transition to leaking\r\n- Scenario: test regular (randomzied) block transition to leaking and back to recovery\r\n- The (current, next) sync committees are the same in all Altair tests -- have a few tests that rotate into new committees\r\n- Adversarial (or almost) eth1-data voting\r\n\r\n# Ideas to extend the testing infra itself\r\n- Use stronger typing for underlying test gen/harness (right now, just plain python data with weak typing) refer: https://github.com/ethereum/consensus-specs/pull/2560#discussion_r695967907\r\n- Mainnet altair tests take a notable amount of time. Investigate and optimize where feasible.\r\n- More flexible `deposit` testing -- right now, the format of the test doesn't allow for an eth1 data voting process to take place, which limits the type of deposit testing we can fit into the skeleton of `(pre_state, [blocks], post_state)` format",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2568/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2568/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

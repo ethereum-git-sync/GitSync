@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2418",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2418/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2418/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2418/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2418",
+  "id": 1243855907,
+  "node_id": "I_kwDODtLRw85KI7wj",
+  "number": 2418,
+  "title": "Contract Deploy fails with TypeError reading 'length' of undefined",
+  "user": {
+    "login": "kevzettler",
+    "id": 126209,
+    "node_id": "MDQ6VXNlcjEyNjIwOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/126209?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kevzettler",
+    "html_url": "https://github.com/kevzettler",
+    "followers_url": "https://api.github.com/users/kevzettler/followers",
+    "following_url": "https://api.github.com/users/kevzettler/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kevzettler/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kevzettler/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kevzettler/subscriptions",
+    "organizations_url": "https://api.github.com/users/kevzettler/orgs",
+    "repos_url": "https://api.github.com/users/kevzettler/repos",
+    "events_url": "https://api.github.com/users/kevzettler/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kevzettler/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-05-21T03:41:41Z",
+  "updated_at": "2022-06-09T14:32:42Z",
+  "closed_at": "2022-06-09T14:32:42Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Trying to deploy a contract with remix IDE with solidity version `0.1.2+commit.d0d36e3` I'm hitting the `transact` button\r\n\r\n<img width=\"159\" alt=\"image\" src=\"https://user-images.githubusercontent.com/126209/169634064-21cb611b-7863-4a87-a82a-fbd1023c55d8.png\">\r\n\r\nand it throws an error in the browser console\r\n\r\n```\r\nUncaught (in promise) TypeError: Cannot read properties of undefined (reading 'length')\r\n    at Object.isOverSizeLimit (app.0.23.3.1651745990030.js:1011:1156)\r\n    at Object.createInstance (app.0.23.3.1651745990030.js:1014:122)\r\n    ```",
+  "closed_by": {
+    "login": "bunsenstraat",
+    "id": 2787300,
+    "node_id": "MDQ6VXNlcjI3ODczMDA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2787300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bunsenstraat",
+    "html_url": "https://github.com/bunsenstraat",
+    "followers_url": "https://api.github.com/users/bunsenstraat/followers",
+    "following_url": "https://api.github.com/users/bunsenstraat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bunsenstraat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bunsenstraat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bunsenstraat/subscriptions",
+    "organizations_url": "https://api.github.com/users/bunsenstraat/orgs",
+    "repos_url": "https://api.github.com/users/bunsenstraat/repos",
+    "events_url": "https://api.github.com/users/bunsenstraat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bunsenstraat/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2418/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2418/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

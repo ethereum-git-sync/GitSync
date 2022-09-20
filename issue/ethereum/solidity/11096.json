@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11096",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11096/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11096/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11096/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11096",
+  "id": 830048039,
+  "node_id": "MDU6SXNzdWU4MzAwNDgwMzk=",
+  "number": 11096,
+  "title": "Testing docker images and CI runs for Debian stable",
+  "user": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 437863668,
+      "node_id": "MDU6TGFiZWw0Mzc4NjM2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/build%20system%20:building_construction:",
+      "name": "build system :building_construction:",
+      "color": "1d76db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-03-12T11:56:59Z",
+  "updated_at": "2021-03-12T12:14:49Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Motivation: Our docs claim that we are compatible with gcc 8, but since ubuntu 20.04 already ships gcc 9 this was actually untested and we broke things (see https://github.com/ethereum/solidity/pull/11095).\r\n\r\nThe main reason we kept the requirement at GCC 8, I think, was that it's what Debian stable (buster) ships.\r\n\r\nI'd say generally supporting the latest stable Debian release is a reasonable compromise between always being cutting edge and being backwards-compatible.\r\n\r\nBut if we put up such claims, we should of course have them verified in CI.\r\n\r\nSo I propose we add a testing docker image for debian buster and at least a CI build run for it, maybe also a test run (doesn't hurt).\r\n\r\nNote that while the default versions of GCC and CMake work on buster, the default boost version 1.67 is not sufficient, but there are explicit libboost*1.74*dev packages, so the docker image will have to pull in those explicitly.\r\n\r\nDebian buster only has Z3 4.4, so I'd suggest to just skip it and use a no-smt build.\r\n\r\nQuote @cameel from gitter:\r\n> Well, I could try it next week then. Unless maybe @aarlt (Alexander Arlt) wants to take it? He's been working on these images not so long ago so he'd probably make a quicker job of it.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11096/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11096/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24819",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24819/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24819/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24819/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24819",
+  "id": 1226156999,
+  "node_id": "I_kwDOAOvK985JFavH",
+  "number": 24819,
+  "title": "مشکل بلاک چین",
+  "user": {
+    "login": "shakibaei65",
+    "id": 98966966,
+    "node_id": "U_kgDOBeYdtg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/98966966?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shakibaei65",
+    "html_url": "https://github.com/shakibaei65",
+    "followers_url": "https://api.github.com/users/shakibaei65/followers",
+    "following_url": "https://api.github.com/users/shakibaei65/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shakibaei65/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shakibaei65/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shakibaei65/subscriptions",
+    "organizations_url": "https://api.github.com/users/shakibaei65/orgs",
+    "repos_url": "https://api.github.com/users/shakibaei65/repos",
+    "events_url": "https://api.github.com/users/shakibaei65/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shakibaei65/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-05-05T03:16:00Z",
+  "updated_at": "2022-05-05T07:07:19Z",
+  "closed_at": "2022-05-05T07:07:18Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `geth version`\r\nOS & Version: Windows/Linux/OSX\r\nCommit hash : (if `develop`)\r\n\r\n#### Expected behaviour\r\n\r\n\r\n#### Actual behaviour\r\n\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n\r\nWhen submitting logs: please submit them as text and not screenshots.",
+  "closed_by": {
+    "login": "ligi",
+    "id": 111600,
+    "node_id": "MDQ6VXNlcjExMTYwMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ligi",
+    "html_url": "https://github.com/ligi",
+    "followers_url": "https://api.github.com/users/ligi/followers",
+    "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ligi/orgs",
+    "repos_url": "https://api.github.com/users/ligi/repos",
+    "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ligi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24819/reactions",
+    "total_count": 2,
+    "+1": 0,
+    "-1": 2,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24819/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

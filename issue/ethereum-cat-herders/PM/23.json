@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/23",
+  "repository_url": "https://api.github.com/repos/ethereum-cat-herders/PM",
+  "labels_url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/23/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/23/comments",
+  "events_url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/23/events",
+  "html_url": "https://github.com/ethereum-cat-herders/PM/issues/23",
+  "id": 425509835,
+  "node_id": "MDU6SXNzdWU0MjU1MDk4MzU=",
+  "number": 23,
+  "title": "Ethereum Cat Herders Meeting #9 - Agenda",
+  "user": {
+    "login": "DBrettRobertson",
+    "id": 44635923,
+    "node_id": "MDQ6VXNlcjQ0NjM1OTIz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/44635923?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DBrettRobertson",
+    "html_url": "https://github.com/DBrettRobertson",
+    "followers_url": "https://api.github.com/users/DBrettRobertson/followers",
+    "following_url": "https://api.github.com/users/DBrettRobertson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DBrettRobertson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DBrettRobertson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DBrettRobertson/subscriptions",
+    "organizations_url": "https://api.github.com/users/DBrettRobertson/orgs",
+    "repos_url": "https://api.github.com/users/DBrettRobertson/repos",
+    "events_url": "https://api.github.com/users/DBrettRobertson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DBrettRobertson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1340943396,
+      "node_id": "MDU6TGFiZWwxMzQwOTQzMzk2",
+      "url": "https://api.github.com/repos/ethereum-cat-herders/PM/labels/Agenda",
+      "name": "Agenda",
+      "color": "3b47d3",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-03-26T16:05:11Z",
+  "updated_at": "2019-04-29T18:05:25Z",
+  "closed_at": "2019-04-15T20:29:18Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "## Date and Time\r\n\r\nProposed time is 14:00 UTC on Tuesday, April 2nd, 2019.\r\n\r\n## Location \r\n\r\nZoom: The link will be posted in the Gitter channel and sent to attendees.\r\nYouTube Livestream Link: TBA\r\n\r\n## Agenda \r\n\r\n1. Update on ProgPow Audit \r\n1. Hard Fork Coordination Update\r\n1. Moloch DAO & Aragon Review\r\n1. Updates on the action items from Constantinople post-mortem\r\n1. Update on the Ethereum Development Portal designs/structure\r\n1. [Eth2 coordination help](#issuecomment-474158350)\r\n1. Any Other Business\r\n1. Review of Actions from Meeting 8\r\n- ACTION 6.4: Joseph to post the updated communications checklist to the ECH internal gitter channel. \r\n- ACTION 6.7: Hugo & Joseph to work together to write up a general overview of how Moloch DAO might benefit the Ethereum Community.\r\n- ACTION 7.3: Hudson to provide feedback on Hard Fork Coordinator/s. \r\n- ACTION 7.5: Cat Herders to look the Handbook proposed by Luke Schoen and discuss over the next couple weeks - [here](https://github.com/ethereum-cat-herders/PM/blob/7cc3a8568f7eddb3744b182f1b560984ce3a3f86/projects/eth1.x/project-admin/project-management/MANAGEMENT_PLAN.md).\r\n- ACTION 8.1: Need to give warning to community that the ProgPoW carbonvote is shutting down. Two week warning - 9 April 2019 (block/time to be confirmed)\r\n- ACTION 8.2: Pooja to present EIP tracker idea to Core Devs on Friday call.\r\n- ACTION 8.3: Review Pooja's ECH task list and merge it.\r\n- ACTION 8.4: Lane to add Charles to multisig. \r\n- ACTION 8.5: Mikerah to bring the idea of getting the Ethereum Cat Herders to assist coordinating tasks to establish a multiclient Beacon Chain testnet at the Ethereum 2.0 call and will provide feedback at the next meeting.\r\n- ACTION 8.6: Pooja to engage with Charles and Hugo regarding the website.\r\n- ACTION 8.7: Brett to setup gitter channel for those interested in managing the notes and summaries of the Ethereum Core Devs.\r\n1. Next Meeting",
+  "closed_by": {
+    "login": "DBrettRobertson",
+    "id": 44635923,
+    "node_id": "MDQ6VXNlcjQ0NjM1OTIz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/44635923?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DBrettRobertson",
+    "html_url": "https://github.com/DBrettRobertson",
+    "followers_url": "https://api.github.com/users/DBrettRobertson/followers",
+    "following_url": "https://api.github.com/users/DBrettRobertson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DBrettRobertson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DBrettRobertson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DBrettRobertson/subscriptions",
+    "organizations_url": "https://api.github.com/users/DBrettRobertson/orgs",
+    "repos_url": "https://api.github.com/users/DBrettRobertson/repos",
+    "events_url": "https://api.github.com/users/DBrettRobertson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DBrettRobertson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/23/reactions",
+    "total_count": 3,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 3,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/23/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

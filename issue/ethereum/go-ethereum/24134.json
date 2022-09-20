@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24134",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24134/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24134/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24134/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24134",
+  "id": 1084549844,
+  "node_id": "I_kwDOAOvK985ApOrU",
+  "number": 24134,
+  "title": "Imported new chain segment",
+  "user": {
+    "login": "culnaen",
+    "id": 54394508,
+    "node_id": "MDQ6VXNlcjU0Mzk0NTA4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/54394508?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/culnaen",
+    "html_url": "https://github.com/culnaen",
+    "followers_url": "https://api.github.com/users/culnaen/followers",
+    "following_url": "https://api.github.com/users/culnaen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/culnaen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/culnaen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/culnaen/subscriptions",
+    "organizations_url": "https://api.github.com/users/culnaen/orgs",
+    "repos_url": "https://api.github.com/users/culnaen/repos",
+    "events_url": "https://api.github.com/users/culnaen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/culnaen/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-12-20T09:20:59Z",
+  "updated_at": "2021-12-20T20:54:04Z",
+  "closed_at": "2021-12-20T20:54:04Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "In my opinion my node is synchronized, I get \"Imported new chain segment\" entries in the logs. Can I be sure that my node is synchronized? In addition, when I run \"eth.syncing\" I get false\r\n\r\n```\r\nt=2021-12-20T10:25:03+0100 lvl=info msg=\"Imported new chain segment\"             blocks=1  txs=514  mgas=39.708  elapsed=73.374ms    mgasps=541.168  number=13,636,467 hash=0x47a71a72630736261d7e6eb30ed3d7b45d2dac218e5058cc6cccab63135daab4 dirty=\"1.09 GiB\"    ignored=1\r\nt=2021-12-20T10:25:03+0100 lvl=info msg=\"do light process success at block\"      num=13,636,468\r\nt=2021-12-20T10:25:03+0100 lvl=info msg=\"Imported new chain segment\"             blocks=2  txs=389  mgas=51.399  elapsed=205.481ms   mgasps=250.140  number=13,636,469 hash=0xb43a3d066ef8b968d65c2bb7430a4256e89318432f61c866d8f30927ec53c084 dirty=\"1.09 GiB\"\r\nt=2021-12-20T10:25:05+0100 lvl=info msg=\"Imported new chain segment\"             blocks=1  txs=233  mgas=25.553  elapsed=170.356ms   mgasps=149.995  number=13,636,470 hash=0x5cfd4f720762cd084236961632ea9a39265a929688db679d4ddc5446b7dfdb75 dirty=\"1.09 GiB\"\r\nt=2021-12-20T10:25:09+0100 lvl=info msg=\"do light process success at block\"      num=13,636,471\r\nt=2021-12-20T10:25:09+0100 lvl=info msg=\"Imported new chain segment\"             blocks=1  txs=264  mgas=34.446  elapsed=107.259ms   mgasps=321.143  number=13,636,471 hash=0xfd923d5d5646170e9803fe45b5b1683d8a25cfeaccd3a12d82ceee27aa3ac555 dirty=\"1.09 GiB\"\r\nt=2021-12-20T10:25:11+0100 lvl=info msg=\"Imported new chain segment\"             blocks=1  txs=269  mgas=34.007  elapsed=203.631ms   mgasps=167.002  number=13,636,472 hash=0x65fb039343c691445b13567c3cf69d5a5b48e845b2f1973b1269bf4b4be3d333 dirty=\"1.09 GiB\"\r\n```",
+  "closed_by": {
+    "login": "culnaen",
+    "id": 54394508,
+    "node_id": "MDQ6VXNlcjU0Mzk0NTA4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/54394508?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/culnaen",
+    "html_url": "https://github.com/culnaen",
+    "followers_url": "https://api.github.com/users/culnaen/followers",
+    "following_url": "https://api.github.com/users/culnaen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/culnaen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/culnaen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/culnaen/subscriptions",
+    "organizations_url": "https://api.github.com/users/culnaen/orgs",
+    "repos_url": "https://api.github.com/users/culnaen/repos",
+    "events_url": "https://api.github.com/users/culnaen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/culnaen/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24134/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24134/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

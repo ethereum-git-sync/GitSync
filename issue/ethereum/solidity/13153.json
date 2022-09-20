@@ -1,0 +1,155 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13153",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13153/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13153/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13153/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13153",
+  "id": 1272275738,
+  "node_id": "I_kwDOAm_5kc5L1WMa",
+  "number": 13153,
+  "title": "Homebrew formula broken since 0.8.10",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438003076,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaNhA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20effort",
+      "name": "medium effort",
+      "color": "ff7df7",
+      "default": false,
+      "description": "Default level of effort"
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438488423,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI31Zw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have",
+      "name": "must have",
+      "color": "ffa12a",
+      "default": false,
+      "description": "Something we consider an essential part of Solidity 1.0."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-06-15T13:54:19Z",
+  "updated_at": "2022-09-12T14:59:03Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nWe maintain a custom Homebrew formula to build Solidity on macOS: [`solidity.rb`](https://github.com/ethereum/homebrew-ethereum/blob/master/solidity.rb). Since at least 0.8.10 we've been having various build issues in CI so the formula does not pass tests. It may or may not be broken on real systems. Solving these requires some debugging, preferably by someone with a mac.\r\n\r\nFixing this is not urgent since this affects only 0.8.x and for that version there's [an official Homebrew formula](https://github.com/Homebrew/homebrew-core/blob/master/Formula/solidity.rb). It will become an issue once we release 0.9.0 and Homebrew updates to that.\r\n\r\n## Steps to Reproduce\r\nI recommend looking at CI output of [job 238](https://app.circleci.com/pipelines/github/ethereum/homebrew-ethereum/221/workflows/bac6bf81-3d1c-4df5-a4de-e5b4efb77392/jobs/238) from [the PR for 0.8.14](https://github.com/ethereum/homebrew-ethereum/pull/312).\r\n\r\nFor reference, older PR with failed runs (though they're no longer relevan):\r\n- [0.8.10](https://github.com/ethereum/homebrew-ethereum/pull/307) - especially this one has some earlier discussion about the issues.\r\n- [0.8.12](https://github.com/ethereum/homebrew-ethereum/pull/309)\r\n- [0.8.13](https://github.com/ethereum/homebrew-ethereum/pull/311)",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13153/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13153/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1157478061",
+    "html_url": "https://github.com/ethereum/solidity/issues/13153#issuecomment-1157478061",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13153",
+    "id": 1157478061,
+    "node_id": "IC_kwDOAm_5kc5E_bat",
+    "user": {
+      "login": "ekpyron",
+      "id": 1347491,
+      "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ekpyron",
+      "html_url": "https://github.com/ekpyron",
+      "followers_url": "https://api.github.com/users/ekpyron/followers",
+      "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+      "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+      "repos_url": "https://api.github.com/users/ekpyron/repos",
+      "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-06-16T10:05:35Z",
+    "updated_at": "2022-06-16T10:05:35Z",
+    "author_association": "MEMBER",
+    "body": "https://github.com/ethereum/homebrew-ethereum/pull/313, our most recent attempt, has fixed most issues, but the 0.4 series build still fails (see https://app.circleci.com/pipelines/github/ethereum/homebrew-ethereum/225/workflows/4358a1b1-2d43-4f32-92b7-be474226bbcb/jobs/242).\r\n\r\nI'm pretty sure this will end up requiring a non-trivial source patch to build properly. That would be easiest to determine by someone with an actual osx system at hand.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1157478061/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

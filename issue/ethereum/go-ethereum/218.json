@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/218",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/218/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/218/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/218/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/218",
+  "id": 52733916,
+  "node_id": "MDU6SXNzdWU1MjczMzkxNg==",
+  "number": 218,
+  "title": "Mist doesn't support websockets",
+  "user": {
+    "login": "jorisbontje",
+    "id": 620959,
+    "node_id": "MDQ6VXNlcjYyMDk1OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/620959?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jorisbontje",
+    "html_url": "https://github.com/jorisbontje",
+    "followers_url": "https://api.github.com/users/jorisbontje/followers",
+    "following_url": "https://api.github.com/users/jorisbontje/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jorisbontje/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jorisbontje/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jorisbontje/subscriptions",
+    "organizations_url": "https://api.github.com/users/jorisbontje/orgs",
+    "repos_url": "https://api.github.com/users/jorisbontje/repos",
+    "events_url": "https://api.github.com/users/jorisbontje/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jorisbontje/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-12-23T11:40:18Z",
+  "updated_at": "2014-12-23T14:47:11Z",
+  "closed_at": "2014-12-23T14:47:11Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "```\n$ mist -h\ninvalid boolean value \"on\" for -ws: strconv.ParseBool: parsing \"on\": invalid syntax\nmist [options] [filename]:\noptions precedence: default < config file < environment variables < command line\n  -asset_path=\"/usr/local/Cellar/go-ethereum/0.7.10-49/Resources\": absolute path to GUI assets directory\n  -conf=\"/Users/mids/.mist/conf.ini\": config file\n  -datadir=\"/Users/mids/.mist\": specifies the datadir to use\n  -debug=\"\": debug file (no debugging if not set)\n  -export=\"\": exports the session keyring to files in the directory given\n  -genaddr=false: create a new priv/pub key\n  -id=\"\": Custom client identifier\n  -import=\"\": imports the file given (hex or mnemonic formats)\n  -keyring=\"\": identifier for keyring to use\n  -keystore=\"db\": system to store keyrings: db|file (db)\n  -logfile=\"\": log file (defaults to standard output)\n  -loglevel=3: loglevel: 0-5: silent,error,warn,info,debug,debug detail)\n  -maxpeer=30: maximum desired peers\n  -port=\"30303\": listening port\n  -rpc=false: start rpc server\n  -rpcport=8080: port to start json-rpc server on\n  -seed=true: seed peers\n  -upnp=true: enable UPnP support\n  -vm=0: Virtual Machine type: 0-1: standard, debug\n  -ws=false: start websocket server\n  -y=false: non-interactive mode (say yes to confirmations)\n```\n\nEven tough the `mist` command line help suggests that the websocket server can be enabled, providing `-ws=true` doesn't actually start a server.\n\nI would suggest to either remove it from the help output, or add WS support to the `mist` client.\n",
+  "closed_by": {
+    "login": "obscuren",
+    "id": 6264126,
+    "node_id": "MDQ6VXNlcjYyNjQxMjY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6264126?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/obscuren",
+    "html_url": "https://github.com/obscuren",
+    "followers_url": "https://api.github.com/users/obscuren/followers",
+    "following_url": "https://api.github.com/users/obscuren/following{/other_user}",
+    "gists_url": "https://api.github.com/users/obscuren/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/obscuren/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/obscuren/subscriptions",
+    "organizations_url": "https://api.github.com/users/obscuren/orgs",
+    "repos_url": "https://api.github.com/users/obscuren/repos",
+    "events_url": "https://api.github.com/users/obscuren/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/obscuren/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/218/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/218/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

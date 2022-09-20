@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/3815",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/3815/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/3815/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/3815/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/3815",
+  "id": 311096747,
+  "node_id": "MDU6SXNzdWUzMTEwOTY3NDc=",
+  "number": 3815,
+  "title": "hash256 -> bytes32 fix in misleading note",
+  "user": {
+    "login": "romfrolov",
+    "id": 23285565,
+    "node_id": "MDQ6VXNlcjIzMjg1NTY1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/23285565?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/romfrolov",
+    "html_url": "https://github.com/romfrolov",
+    "followers_url": "https://api.github.com/users/romfrolov/followers",
+    "following_url": "https://api.github.com/users/romfrolov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/romfrolov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/romfrolov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/romfrolov/subscriptions",
+    "organizations_url": "https://api.github.com/users/romfrolov/orgs",
+    "repos_url": "https://api.github.com/users/romfrolov/repos",
+    "events_url": "https://api.github.com/users/romfrolov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/romfrolov/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-04-04T06:06:04Z",
+  "updated_at": "2018-04-04T06:16:39Z",
+  "closed_at": "2018-04-04T06:16:39Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "This issue is described here: [EthereumSE](https://ethereum.stackexchange.com/questions/44628/understanding-low-level-interface-to-logs)\r\n\r\n> This question is about[ Low-Level Interface to Logs](http://solidity.readthedocs.io/en/v0.4.21/contracts.html#low-level-interface-to-logs), Solidity Documentation.\r\n\r\nProposed to change: \r\n\r\n> where the long hexadecimal number is equal to keccak256(\"Deposit(address,hash256,uint256)\"), the signature of the event.\r\n\r\nto\r\n\r\n> where the long hexadecimal number is equal to keccak256(\"Deposit(address,bytes32,uint256)\"), the signature of the event.\r\n\r\nOpen pull request: #3814 ",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/3815/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/3815/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

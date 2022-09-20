@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1696",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1696/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1696/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1696/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1696",
+  "id": 1033516654,
+  "node_id": "I_kwDODtLRw849mjZu",
+  "number": 1696,
+  "title": "Feature request: Be able to backup workspace e.g. through secret Github gist",
+  "user": {
+    "login": "hacker-DOM",
+    "id": 18601956,
+    "node_id": "MDQ6VXNlcjE4NjAxOTU2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18601956?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hacker-DOM",
+    "html_url": "https://github.com/hacker-DOM",
+    "followers_url": "https://api.github.com/users/hacker-DOM/followers",
+    "following_url": "https://api.github.com/users/hacker-DOM/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hacker-DOM/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hacker-DOM/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hacker-DOM/subscriptions",
+    "organizations_url": "https://api.github.com/users/hacker-DOM/orgs",
+    "repos_url": "https://api.github.com/users/hacker-DOM/repos",
+    "events_url": "https://api.github.com/users/hacker-DOM/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hacker-DOM/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-22T12:13:58Z",
+  "updated_at": "2021-10-22T12:13:58Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Correct me if I'm wrong, currently there is no way to download in bulk all files in a Remix workspace. The only workaround is to create a public gist, but that may expose code that is not intended to be shared.\r\n\r\nThis issue requests that either a 'download workspace as zip' be added, or that the Github gist creation has an option Secret flag.\r\n\r\n🙏",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1696/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1696/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

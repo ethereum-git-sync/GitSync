@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2728",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2728/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2728/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2728/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2728",
+  "id": 1327543851,
+  "node_id": "I_kwDODtLRw85PILYr",
+  "number": 2728,
+  "title": "CVE-2021-44906",
+  "user": {
+    "login": "imhunterand",
+    "id": 109766416,
+    "node_id": "U_kgDOBornEA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/109766416?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/imhunterand",
+    "html_url": "https://github.com/imhunterand",
+    "followers_url": "https://api.github.com/users/imhunterand/followers",
+    "following_url": "https://api.github.com/users/imhunterand/following{/other_user}",
+    "gists_url": "https://api.github.com/users/imhunterand/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/imhunterand/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/imhunterand/subscriptions",
+    "organizations_url": "https://api.github.com/users/imhunterand/orgs",
+    "repos_url": "https://api.github.com/users/imhunterand/repos",
+    "events_url": "https://api.github.com/users/imhunterand/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/imhunterand/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-03T17:02:28Z",
+  "updated_at": "2022-08-03T17:02:28Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Minimist <=1.2.5 is vulnerable to Prototype Pollution via file index.js, function setKey() (lines 69-95).\r\n\r\nupgrade minimist to version 1.2.6 or later. example:\r\n```\r\nminimist@^1.2.6:\r\n  version \"1.2.6\"\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2728/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2728/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

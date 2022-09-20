@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2129",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2129/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2129/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2129/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2129",
+  "id": 741190387,
+  "node_id": "MDU6SXNzdWU3NDExOTAzODc=",
+  "number": 2129,
+  "title": "Security vulnerabilities (possible overflows) in helper functions of Beacon Chain",
+  "user": {
+    "login": "franck44",
+    "id": 14901362,
+    "node_id": "MDQ6VXNlcjE0OTAxMzYy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/14901362?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/franck44",
+    "html_url": "https://github.com/franck44",
+    "followers_url": "https://api.github.com/users/franck44/followers",
+    "following_url": "https://api.github.com/users/franck44/following{/other_user}",
+    "gists_url": "https://api.github.com/users/franck44/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/franck44/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/franck44/subscriptions",
+    "organizations_url": "https://api.github.com/users/franck44/orgs",
+    "repos_url": "https://api.github.com/users/franck44/repos",
+    "events_url": "https://api.github.com/users/franck44/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/franck44/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2020-11-12T01:13:45Z",
+  "updated_at": "2021-07-05T14:59:10Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Some overflows may happen in several helper functions of the Beacon Chain.\r\nThis results in security vulnerabilities [CWE-190, integer overflow](https://cwe.mitre.org/data/definitions/190.html).\r\n\r\n### How the problem was discovered?\r\nAs part of the [formal verification of the Eth2.0 specification in Dafny](https://github.com/ConsenSys/eth2.0-dafny) project.\r\n\r\n### Detailed analysis, fixes and correctness proofs of the fixes.\r\nDetailed analysis and fixes reported as [issue 45](https://github.com/ConsenSys/eth2.0-dafny/issues/45\r\n) of the [eth2.0-dafny](https://github.com/ConsenSys/eth2.0-dafny) project.\r\nCorrectness formal proofs of the fixes have been established using Dafny 2.3.0. \r\n\r\n### Possible overflow in assert statement in `get_block_root_at_slot`\r\nThe following code snippet contains a `assert` statement that may result in an overflow:\r\n```python\r\ndef get_block_root_at_slot(state: BeaconState, slot: Slot) -> Root:\r\n    \"\"\"\r\n    Return the block root at a recent ``slot``.\r\n    \"\"\"\r\n    assert slot < state.slot <= slot + SLOTS_PER_HISTORICAL_ROOT  \r\n    return state.block_roots[slot % SLOTS_PER_HISTORICAL_ROOT]\r\n```\r\n**note**: the above `assert` is not a pre-condition to guarantee the absence of `array-out-of-bounds` error when dereferencing `state.block_roots`  (this never happens because `block_roots` has size `SLOTS_PER_HISTORICAL_ROOT`)  but a **functional property** of the system (requesting the block root for a slot that is too far in the past should not be permitted).\r\n\r\nThe pre-condition of the previous function should be strengthened to prevent ` slot + SLOTS_PER_HISTORICAL_ROOT` from overflowing i.e. `assert(slot as int + SLOTS_PER_HISTORICAL_ROOT as int < 0x10000000000000000)` where\r\n`0x10000000000000000` is max(unit64) + 1.\r\n\r\n```\r\n### Possible overflow in `compute_start_slot_at_epoch`\r\nBecause `Epoch` ranges over `uint64`, the multiplication can overflow in the following code snippet:\r\n```python\r\ndef compute_start_slot_at_epoch(epoch: Epoch) -> Slot:\r\n    \"\"\"\r\n    Return the start slot of ``epoch``.\r\n    \"\"\"\r\n    return Slot(epoch * SLOTS_PER_EPOCH)\r\n```\r\nThe pre-condition should be strengthened to `epoch as int * SLOTS_PER_EPOCH as int < 0x10000000000000000`\r\n\r\n### Other functions impacted by the previous strengthening of pre-conditions\r\nAs a result functions calling `compute_start_slot_at_epoch` or `get_block_root_at_slot` should have their pre-conditions strengthened.\r\nThis includes `get_block_root`\r\n```python\r\ndef get_block_root(state: BeaconState, epoch: Epoch) -> Root:\r\n    \"\"\"\r\n    Return the block root at the start of a recent ``epoch``.\r\n    \"\"\"\r\n    return get_block_root_at_slot(state, compute_start_slot_at_epoch(epoch))\r\n```\r\nthe pre-conditions of should be:\r\n```dafny\r\nfunction method get_block_root(state: BeaconState, epoch: Epoch) : Root    \r\n     requires state.slot as int + SLOTS_PER_HISTORICAL_ROOT as int < 0x10000000000000000 // Max(uint64) + 1\r\n     requires epoch as int * SLOTS_PER_EPOCH as int < 0x10000000000000000   \r\n     requires compute_start_slot_at_epoch(epoch) < state.slot <= compute_start_slot_at_epoch(epoch) + SLOTS_PER_HISTORICAL_ROOT  \r\n{ \r\n        var e := compute_start_slot_at_epoch(epoch);\r\n        get_block_root_at_slot(state, e)\r\n}\r\n```\r\n\r\n### Conclusion\r\nThe proposed strengthening of pre-conditions in the previous functions guarantee the absence of overflows in all of them.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2129/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2129/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

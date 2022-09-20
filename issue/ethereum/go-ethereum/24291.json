@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24291",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24291/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24291/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24291/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24291",
+  "id": 1113802253,
+  "node_id": "I_kwDOAOvK985CY0YN",
+  "number": 24291,
+  "title": "Support for HTTP2 GOAWAY in RPC client",
+  "user": {
+    "login": "ValentinTrinque",
+    "id": 4662842,
+    "node_id": "MDQ6VXNlcjQ2NjI4NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4662842?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ValentinTrinque",
+    "html_url": "https://github.com/ValentinTrinque",
+    "followers_url": "https://api.github.com/users/ValentinTrinque/followers",
+    "following_url": "https://api.github.com/users/ValentinTrinque/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ValentinTrinque/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ValentinTrinque/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ValentinTrinque/subscriptions",
+    "organizations_url": "https://api.github.com/users/ValentinTrinque/orgs",
+    "repos_url": "https://api.github.com/users/ValentinTrinque/repos",
+    "events_url": "https://api.github.com/users/ValentinTrinque/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ValentinTrinque/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-01-25T12:00:58Z",
+  "updated_at": "2022-01-27T09:59:05Z",
+  "closed_at": "2022-01-27T09:59:05Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: None, I was working against Infura API\r\nOS & Version: OSX 12.1 (21C52)\r\nGo: go1.17.6 darwin/arm64\r\nGo-eth: github.com/ethereum/go-ethereum v1.10.15\r\n \r\n#### Expected behaviour\r\n\r\nI am requesting a lot from the Infura API. The exchange is apparently going through HTTP2. At some point, I think the Infura API is not very happy about what I do so it's closing gracefully the connection. \r\n\r\n\r\n#### Actual behaviour\r\n\r\nHowever, instead of getting my connection closed gracefully, I get this error which tells us the request object we send is not HTTP2 retries friendly.\r\n\r\n```\r\nPost \\\"https://mainnet.infura.io/v3/XXX\": http2: Transport: cannot retry err [http2: Transport received Server's graceful shutdown GOAWAY] after Request.Body was written; define Request.GetBody to avoid this error\r\n```\r\n\r\nMore details:\r\n* https://sourcegraph.com/github.com/golang/net/-/commit/cffdcf672aee934982473246bc7e9a8ba446aa9b?visible=2\r\n\r\nThe fix is easy to implement, we just have to provide a way for HTTP2 request to be \"rewind\" as mention in the link above.\r\n\r\n```diff\r\nfunc (hc *httpConn) doRequest(ctx context.Context, msg interface{}) (io.ReadCloser, error) {\r\n        body, err := json.Marshal(msg)\r\n        if err != nil {\r\n                return nil, err\r\n        }\r\n        req, err := http.NewRequestWithContext(ctx, \"POST\", hc.url, ioutil.NopCloser(bytes.NewReader(body)))\r\n        if err != nil {\r\n                return nil, err\r\n        }\r\n        req.ContentLength = int64(len(body))\r\n+      req.GetBody = func() (io.ReadCloser, error) { return ioutil.NopCloser(bytes.NewReader(body)), nil }\r\n\r\n        // set headers\r\n        hc.mu.Lock()\r\n        req.Header = hc.headers.Clone()\r\n        hc.mu.Unlock()\r\n\r\n        // do request\r\n        resp, err := hc.client.Do(req)\r\n        if err != nil {\r\n                return nil, err\r\n        }\r\n        if resp.StatusCode < 200 || resp.StatusCode >= 300 {\r\n                var buf bytes.Buffer\r\n                var body []byte\r\n                if _, err := buf.ReadFrom(resp.Body); err == nil {\r\n                        body = buf.Bytes()\r\n                }\r\n\r\n                return nil, HTTPError{\r\n                        Status:     resp.Status,\r\n                        StatusCode: resp.StatusCode,\r\n                        Body:       body,\r\n                }\r\n        }\r\n        return resp.Body, nil\r\n}\r\n```\r\n\r\nWith this I am able to get the error back from Infura.\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nSorry I don't have much except \"spam a HTTP2 server until it kicks you out\".\r\n\r\n#### Backtrace\r\n\r\n````\r\nPost \\\"https://mainnet.infura.io/v3/XXX\": http2: Transport: cannot retry err [http2: Transport received Server's graceful shutdown GOAWAY] after Request.Body was written; define Request.GetBody to avoid this error\r\n````",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24291/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24291/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

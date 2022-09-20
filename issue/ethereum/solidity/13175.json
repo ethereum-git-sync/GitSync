@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13175",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13175/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13175/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13175/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13175",
+  "id": 1277140383,
+  "node_id": "I_kwDOAm_5kc5MH52f",
+  "number": 13175,
+  "title": "Feature Request: Consider adding packed keyword to pack struct fields",
+  "user": {
+    "login": "Pzixel",
+    "id": 11201122,
+    "node_id": "MDQ6VXNlcjExMjAxMTIy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11201122?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Pzixel",
+    "html_url": "https://github.com/Pzixel",
+    "followers_url": "https://api.github.com/users/Pzixel/followers",
+    "following_url": "https://api.github.com/users/Pzixel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Pzixel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Pzixel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Pzixel/subscriptions",
+    "organizations_url": "https://api.github.com/users/Pzixel/orgs",
+    "repos_url": "https://api.github.com/users/Pzixel/repos",
+    "events_url": "https://api.github.com/users/Pzixel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Pzixel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-20T16:09:57Z",
+  "updated_at": "2022-06-24T17:13:34Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nConsider following struct:\r\n\r\n```sol\r\nstruct Foo {\r\n    bool val1;\r\n    bool val2;\r\n    bool val3;\r\n    bool val4;\r\n}\r\n```\r\n\r\nWhen abiencoded value Foo(true, true, false, true) translates into `0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001`, while it could be just `1101`.\r\n\r\n## Motivation\r\n\r\nSince gas usage is a big topic almost all big ethereum projects use tight structs packing to save caller funds. You can see it in the wild everywhere, e.g. [1Inch limit orders](https://github.com/1inch/limit-order-protocol/blob/179b4fef24bec0a043b45e5d7a4412de6cc7864c/contracts/OrderRFQMixin.sol#L23) encodes order Id and timestamp into `Order.info` or [Uniswap V3 swaps](https://github.com/Uniswap/v3-core/blob/main/contracts/UniswapV3Pool.sol#L547) encodes zeroForOne and oneForZero fees into `feeProtocol` field. There are other examples in the wild. Since it's a repeatable pattern which is kinda error-prone and dull I think it just might be worthwhile to move this to compiler and code generation.\r\n\r\n## Specification\r\n\r\nIntroduce new keyword `packed` that changes ABI representation and field access. It might look like:\r\n\r\n```sol\r\nstruct packed Foo {\r\n    bool val1;\r\n    bool val2;\r\n    bool val3;\r\n    bool val4;\r\n}\r\n```\r\n\r\nThis struct should be only 4 bytes long. When abiencoded it might look like `00000000000000000000000000000000000000000000000000000000000001101` or `11010000000000000000000000000000000000000000000000000000000000000` depending on if we want `bytes` or `uint` zeroing pattern. Compiler is responsible for generating appropriate bit shifts and masks when reading and writing fields:\r\n\r\n```sol\r\nfoo.val2 = true; // foo = foo & (1 << 1)\r\n```\r\n\r\nNote that unlike current behavior this should affect calldata representation as well as inner storage.\r\n\r\n## Backwards Compatibility\r\n\r\nSince this proposal introduces a new keyword it doesn't change meaning for any existing code.\r\n\r\nRelated: #11691\r\n\r\n\r\n## Additional considerations\r\n\r\nIt may be also worthwhile to consider packed arrays like:\r\n\r\n```sol\r\nfunction bar(uint8[] packed calldata foo) external {\r\n}\r\n```\r\n\r\nso it doesn't put padding zeroes between elements, but unaligned access from those might be tricky and come with surprise costs.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13175/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13175/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

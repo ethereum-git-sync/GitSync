@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13478",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13478/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13478/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13478/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13478",
+  "id": 1361615358,
+  "node_id": "I_kwDOAm_5kc5RKJn-",
+  "number": 13478,
+  "title": "[Yul optimizer] RSE incorrectly removes sstore",
+  "user": {
+    "login": "bshastry",
+    "id": 2388185,
+    "node_id": "MDQ6VXNlcjIzODgxODU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2388185?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bshastry",
+    "html_url": "https://github.com/bshastry",
+    "followers_url": "https://api.github.com/users/bshastry/followers",
+    "following_url": "https://api.github.com/users/bshastry/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bshastry/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bshastry/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bshastry/subscriptions",
+    "organizations_url": "https://api.github.com/users/bshastry/orgs",
+    "repos_url": "https://api.github.com/users/bshastry/repos",
+    "events_url": "https://api.github.com/users/bshastry/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bshastry/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2376132438,
+      "node_id": "MDU6TGFiZWwyMzc2MTMyNDM4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/codegen%20error",
+      "name": "codegen error",
+      "color": "000000",
+      "default": false,
+      "description": "Compiler generates invalid code. Critical."
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-05T08:53:16Z",
+  "updated_at": "2022-09-08T12:04:05Z",
+  "closed_at": "2022-09-08T12:04:05Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The following Yul program\r\n\r\n```\r\n{\r\n  function f(){\r\n    sstore(0, 1)\r\n    g()\r\n  }\r\n  function g() {\r\n    switch mload(0)\r\n    case 2 { leave }\r\n    return(0, 0)\r\n  }\r\n  f()\r\n  f()\r\n}\r\n```\r\n\r\non optimization, produces\r\n\r\n```\r\n{\r\n        {                                                                      \r\n            g()                                                                \r\n            sstore(0, 1)                                                       \r\n            g()\r\n        }                              \r\n        function g()      \r\n        {                              \r\n            if eq(2, mload(0)) { leave }\r\n            return(0, 0)               \r\n        }\r\n}\r\n```\r\n\r\nIt can happen that `mload(0)` not equal to `2` in which case, the optimized program will not write `1` to storage slot `0` but the unoptimized program will. The unoptimized program semantics is correct.\r\n\r\nI think the bug is that the RSE removes the first sstore under the assumption that the second sstore will always happen. But it may not if `g()` returns.\r\n\r\nNote that the bug affects only IR pipeline since legacy would not invoke RSE due to not having global scope i.e., in the following semantic test, all combinations except `optimize + ir` pass.\r\n\r\n```\r\ncontract C {\r\n  uint public s;\r\n  function f() external {\r\n    assembly {\r\n      function g() {\r\n        sstore(s.slot, 1)\r\n        h()\r\n      }\r\n      function h() {\r\n        switch mload(0)\r\n        case 2 { leave }\r\n        return(0, 0)\r\n      }\r\n      g()\r\n      g()\r\n    }\r\n  }\r\n}\r\n// ====\r\n// compileViaYul: also\r\n// ----\r\n// f() ->\r\n// s() -> 1\r\n```",
+  "closed_by": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13478/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 1,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13478/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

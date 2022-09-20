@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22959",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22959/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22959/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22959/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22959",
+  "id": 904402732,
+  "node_id": "MDU6SXNzdWU5MDQ0MDI3MzI=",
+  "number": 22959,
+  "title": "Apology to the Geth team",
+  "user": {
+    "login": "jon-chuang",
+    "id": 9093549,
+    "node_id": "MDQ6VXNlcjkwOTM1NDk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9093549?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jon-chuang",
+    "html_url": "https://github.com/jon-chuang",
+    "followers_url": "https://api.github.com/users/jon-chuang/followers",
+    "following_url": "https://api.github.com/users/jon-chuang/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jon-chuang/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jon-chuang/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jon-chuang/subscriptions",
+    "organizations_url": "https://api.github.com/users/jon-chuang/orgs",
+    "repos_url": "https://api.github.com/users/jon-chuang/repos",
+    "events_url": "https://api.github.com/users/jon-chuang/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jon-chuang/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-05-27T23:54:15Z",
+  "updated_at": "2021-05-29T00:14:24Z",
+  "closed_at": "2021-05-27T23:54:19Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I’d like to apologise for my behaviour. \r\n\r\nIt’s true that I’m not owed anything. The team is busy and I certainly appreciate the work they do. I said many unkind and exaggerated things in anger. Although I may have had reason to be frustrated at the lack of support, I was also quick to rush to judgement. There were many ways to ask for help I needed, or I could have simply accepted the team was busy, or expressed my frustration politely.\r\n\r\nI’d just like to respond to peter’s latest comment in https://github.com/ethereum/go-ethereum/issues/22945, not stir up any more drama. I really dislike drama. \r\n\r\nI certainly didn’t think my code was up to standard, neither for a review nor a benchmark, and expressed the need for some help for running more benchmarks/testing to diagnose any remaining issues. \r\n\r\nI appreciate that running from a synced node turned up the OMM issue which I have diagnosed. I had run all of the tests locally and did not think to run a synced node as a testing procedure, as this is not really described anywhere - so I think it’s unfair to say I didn’t bother. I would have certainly done so if I had been told that’s the standard procedure and was what I needed to do as the next step. \r\n\r\nThat being said, there are many things I could have improved about the way I communicated in prior correspondence. I’ll certainly try in the future to be more deliberate about communicating clearly and respecting others’ bandwidth and time. I should be cognizant of this as a form of professional competence. \r\n\r\nAll in all, I’d like to apologise for stirring up unkind feelings for no good reason. That being said, I would have felt less ignored if the team had at least said some encouraging words or responded with a “will check out later, here’s what you could do in the meantime”. I understand that the team didn’t see it as a productive direction, but I think I had shown at least something non trivial worth following up upon. Up till that point I didn’t expect or think I deserved any response. It’s just that I had felt I had been given the cold shoulder for weeks, and the frustration had been building up. But I guess I could have expressed my frustration more politely or just bumped the issue, knowing that it’s par for the course.\r\n\r\nUp till that point, I had not established any amicable working relationship with the team, or any reason for the team to trust me or take any work I did seriously. I ought to humble myself and think kindly of others in such situations where it’s easy to misunderstand and to think the worst. I ought to have more faith that if you give a good effort and act professionally and pertinently, others will respond in kind. If not, it's beyond your control and there's no gain in making worse a bad situation.\r\n\r\nI’m sorry that my rashness has caused unhappiness. I’ll strive to improve moving forward. I wish the geth team best of luck and I hope they will meet their upcoming challenges with London hard fork and Eth2 with success.\r\n\r\nBest,\r\nJon\r\n",
+  "closed_by": {
+    "login": "jon-chuang",
+    "id": 9093549,
+    "node_id": "MDQ6VXNlcjkwOTM1NDk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9093549?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jon-chuang",
+    "html_url": "https://github.com/jon-chuang",
+    "followers_url": "https://api.github.com/users/jon-chuang/followers",
+    "following_url": "https://api.github.com/users/jon-chuang/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jon-chuang/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jon-chuang/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jon-chuang/subscriptions",
+    "organizations_url": "https://api.github.com/users/jon-chuang/orgs",
+    "repos_url": "https://api.github.com/users/jon-chuang/repos",
+    "events_url": "https://api.github.com/users/jon-chuang/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jon-chuang/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22959/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22959/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

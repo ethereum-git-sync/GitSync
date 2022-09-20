@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/4567",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/4567/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/4567/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/4567/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/4567",
+  "id": 344217145,
+  "node_id": "MDU6SXNzdWUzNDQyMTcxNDU=",
+  "number": 4567,
+  "title": "SMT crashes on MilestoneTracker",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-07-24T21:51:31Z",
+  "updated_at": "2018-08-07T20:30:15Z",
+  "closed_at": "2018-08-07T20:30:15Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The file `test/compilationTests/milestonetracker/MilestoneTracker.sol` crashes with:\r\n```\r\n* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGABRT\r\n  * frame #0: 0x00007fff5dd5cb6e libsystem_kernel.dylib`__pthread_kill + 10\r\n    frame #1: 0x00007fff5df27080 libsystem_pthread.dylib`pthread_kill + 333\r\n    frame #2: 0x00007fff5dcb81ae libsystem_c.dylib`abort + 127\r\n    frame #3: 0x00007fff5bbb3f8f libc++abi.dylib`abort_message + 245\r\n    frame #4: 0x00007fff5bbb4113 libc++abi.dylib`default_terminate_handler() + 241\r\n    frame #5: 0x00007fff5cff4eab libobjc.A.dylib`_objc_terminate() + 105\r\n    frame #6: 0x00007fff5bbcf7c9 libc++abi.dylib`std::__terminate(void (*)()) + 8\r\n    frame #7: 0x00007fff5bbcf26f libc++abi.dylib`__cxa_throw + 121\r\n    frame #8: 0x00007fff5bbb3fc0 libc++abi.dylib`__cxa_bad_cast + 49\r\n    frame #9: 0x00000001004919af solc`dev::solidity::SMTChecker::endVisit(dev::solidity::Identifier const&) + 239\r\n    frame #10: 0x00000001001fbab4 solc`dev::solidity::Identifier::accept(dev::solidity::ASTConstVisitor&) const + 68\r\n    frame #11: 0x00000001001fb538 solc`dev::solidity::BinaryOperation::accept(dev::solidity::ASTConstVisitor&) const + 88\r\n    frame #12: 0x000000010047fc85 solc`dev::solidity::SMTChecker::visit(dev::solidity::IfStatement const&) + 101\r\n    frame #13: 0x00000001001f9b55 solc`dev::solidity::IfStatement::accept(dev::solidity::ASTConstVisitor&) const + 37\r\n    frame #14: 0x00000001001f9958 solc`void dev::solidity::ASTNode::listAccept<std::__1::shared_ptr<dev::solidity::Statement> >(std::__1::vector<std::__1::shared_ptr<dev::solidity::Statement>, std::__1::allocator<std::__1::shared_ptr<dev::solidity::Statement> > > const&, dev::solidity::ASTConstVisitor&) + 440\r\n    frame #15: 0x00000001001f9786 solc`dev::solidity::Block::accept(dev::solidity::ASTConstVisitor&) const + 70\r\n    frame #16: 0x00000001001f875a solc`dev::solidity::FunctionDefinition::accept(dev::solidity::ASTConstVisitor&) const + 250\r\n    frame #17: 0x00000001001f6eb5 solc`void dev::solidity::ASTNode::listAccept<std::__1::shared_ptr<dev::solidity::ASTNode> >(std::__1::vector<std::__1::shared_ptr<dev::solidity::ASTNode>, std::__1::allocator<std::__1::shared_ptr<dev::solidity::ASTNode> > > const&, dev::solidity::ASTConstVisitor&) + 437\r\n    frame #18: 0x00000001001f7319 solc`dev::solidity::ContractDefinition::accept(dev::solidity::ASTConstVisitor&) const + 89\r\n    frame #19: 0x00000001001f6eb5 solc`void dev::solidity::ASTNode::listAccept<std::__1::shared_ptr<dev::solidity::ASTNode> >(std::__1::vector<std::__1::shared_ptr<dev::solidity::ASTNode>, std::__1::allocator<std::__1::shared_ptr<dev::solidity::ASTNode> > > const&, dev::solidity::ASTConstVisitor&) + 437\r\n    frame #20: 0x00000001001f6ce3 solc`dev::solidity::SourceUnit::accept(dev::solidity::ASTConstVisitor&) const + 67\r\n    frame #21: 0x000000010047d90e solc`dev::solidity::SMTChecker::analyze(dev::solidity::SourceUnit const&) + 590\r\n    frame #22: 0x00000001005701fc solc`dev::solidity::CompilerStack::analyze() + 13276\r\n    frame #23: 0x0000000100571d46 solc`dev::solidity::CompilerStack::parseAndAnalyze() + 54\r\n    frame #24: 0x0000000100571f77 solc`dev::solidity::CompilerStack::compile() + 71\r\n    frame #25: 0x0000000100014ab0 solc`dev::solidity::CommandLineInterface::processInput() + 11360\r\n    frame #26: 0x000000010009292b solc`main + 187\r\n    frame #27: 0x00007fff5dc0c015 libdyld.dylib`start + 1\r\n```",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/4567/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/4567/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

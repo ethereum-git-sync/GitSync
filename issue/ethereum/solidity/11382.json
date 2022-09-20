@@ -1,0 +1,103 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11382",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11382/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11382/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11382/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11382",
+  "id": 889855465,
+  "node_id": "MDU6SXNzdWU4ODk4NTU0NjU=",
+  "number": 11382,
+  "title": "Consider marking potentially non-deterministic tests as \"experimental\".",
+  "user": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 838064207,
+      "node_id": "MDU6TGFiZWw4MzgwNjQyMDc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/annoys%20users%20:cry:",
+      "name": "annoys users :cry:",
+      "color": "ea2cab",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438155599,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjhTw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20impact",
+      "name": "medium impact",
+      "color": "314aff",
+      "default": false,
+      "description": "Default level of impact"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-05-12T09:07:01Z",
+  "updated_at": "2022-09-14T17:03:45Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "There are known non-determinism problems with ``yulOptimizerTests/reasoningBasedSimplifier/addmod``, even with a matching version of Z3.\r\nWhile they are \"mostly harmless\" to us, this is causing issues for package maintainers, see https://github.com/NixOS/nixpkgs/issues/122568.\r\n\r\nIf we can't solve the non-determinism, we should probably either remove the test or introduce a new boost test label like \"experimental\" that allows to disable tests with issues like that in bulk, the idea being that not having those tests pass is ok for a production build of solidity.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11382/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11382/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2315",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2315/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2315/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2315/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2315",
+  "id": 852362442,
+  "node_id": "MDU6SXNzdWU4NTIzNjI0NDI=",
+  "number": 2315,
+  "title": "Light client specs checklist",
+  "user": {
+    "login": "hwwhww",
+    "id": 9263930,
+    "node_id": "MDQ6VXNlcjkyNjM5MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9263930?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hwwhww",
+    "html_url": "https://github.com/hwwhww",
+    "followers_url": "https://api.github.com/users/hwwhww/followers",
+    "following_url": "https://api.github.com/users/hwwhww/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hwwhww/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hwwhww/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hwwhww/subscriptions",
+    "organizations_url": "https://api.github.com/users/hwwhww/orgs",
+    "repos_url": "https://api.github.com/users/hwwhww/repos",
+    "events_url": "https://api.github.com/users/hwwhww/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hwwhww/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1244766996,
+      "node_id": "MDU6TGFiZWwxMjQ0NzY2OTk2",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:light-clients",
+      "name": "scope:light-clients",
+      "color": "211E55",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2001926658,
+      "node_id": "MDU6TGFiZWwyMDAxOTI2NjU4",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/general:checklist",
+      "name": "general:checklist",
+      "color": "000000",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-04-07T12:34:11Z",
+  "updated_at": "2021-05-18T14:05:55Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "- [ ] 1. **Server discovery**: How can light clients find servers efficiently?\r\n- [ ] 2. **Find `LightClientSnapshot` initially**: as @djrtwo mentioned, Req/Resp may not be good snapshot resource.\r\n    - **[Proposal]** Can we say, we expect 3rd party to provide LightClientSnapshot + Merkle proofs or multi-proof of each field, where the proof can be verified against WS source?\r\n- [ ] 3. **Block tree verification in current time-out procedure and reorg**: In the current spec, a timeout-triggered (8192 slots, ~27 hours ) update logic exists:\r\n    - Step 1, `on_light_client_update`, light client appends the valid update\r\n    - Step 2, when timeout, call `apply_light_client_update` to update the store snapshot with *the most voted* update from `store.valid_updates`.\r\n    - **[Proposal]**: In step 1, for the non-finality update (`update.finality_header == BeaconBlockHeader()`), should we add assert of checking if the `update.header` is descendant of `snapshot.header`. (<-- as @vbuterin suggested, make the light client updates always rooted in a finalized block.)\r\n        - This procedure assumes that the light client already has `store.valid_updates` before timeout. That is, at the timeout slot, either (i) the server has to send a chain of updates to the light clients, or (ii) the light client has to request for the updates.\r\n    - Or apply other reorgable light client solutions? (https://github.com/ethereum/eth2.0-specs/issues/2182)\r\n- [x] 4. Use **gossip as default sync resource** and then servers just as backup?\r\n     - Note: the size of `LightClientUpdate` object:\r\n         - header: `200`\r\n         - next_sync_committee: about `48*1024 + 48*16 = 49920`\r\n         - next_sync_committee_branch: about `32*5 = 160`\r\n         - finality_header: `200`\r\n         - finality_branch: about `32*6 = 192`\r\n         - sync_aggregate: about `1024 + 96 = 1120`\r\n         - fork_version: `4`\r\n         - **Total: ~51,796 bytes**\r\n     - *Edited:* @vbuterin suggested [making light client only download 256 members from sync committee instead of 1024](https://github.com/ethereum/eth2.0-specs/pull/2130#issuecomment-727561160)\r\n     - **Updated**: `SYNC_COMMITTEE_SIZE` has been updated to 512 via #2371\r\n- [ ] 5. More comprehensive/production **client-server model**\r\n    - @protolambda: If this is a push-update, and there is no explicit subscription kind of approach for a light client, then we should spec out when and how often the server pushes the update.\r\n\r\n\r\n### Other questions:\r\n\r\n- [x] `EPOCHS_PER_SYNC_COMMITTEE_PERIOD` is `2**8` epochs = `2**13` slots ~= 27 hours. `LIGHT_CLIENT_UPDATE_TIMEOUT` is also `2**13` slots ~= 27 hours.\r\n    1. Should we just keep one constant?\r\n    2. If not, is `EPOCHS_PER_SYNC_COMMITTEE_PERIOD >= LIGHT_CLIENT_UPDATE_TIMEOUT` an invariant?\r\n    - **Updated**: `LIGHT_CLIENT_UPDATE_TIMEOUT` has been removed via #2378 \r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2315/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2315/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2873",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2873/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2873/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2873/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2873",
+  "id": 1362142938,
+  "node_id": "I_kwDODtLRw85RMKba",
+  "number": 2873,
+  "title": "There should be a shortcut to switch between tabs",
+  "user": {
+    "login": "iamsethsamuel",
+    "id": 22817492,
+    "node_id": "MDQ6VXNlcjIyODE3NDky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22817492?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/iamsethsamuel",
+    "html_url": "https://github.com/iamsethsamuel",
+    "followers_url": "https://api.github.com/users/iamsethsamuel/followers",
+    "following_url": "https://api.github.com/users/iamsethsamuel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/iamsethsamuel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/iamsethsamuel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/iamsethsamuel/subscriptions",
+    "organizations_url": "https://api.github.com/users/iamsethsamuel/orgs",
+    "repos_url": "https://api.github.com/users/iamsethsamuel/repos",
+    "events_url": "https://api.github.com/users/iamsethsamuel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/iamsethsamuel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-05T15:04:02Z",
+  "updated_at": "2022-09-05T15:04:02Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Pressing Ctrl+Shift+Tab should switch between tabs",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2873/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2873/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

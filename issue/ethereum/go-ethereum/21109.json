@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21109",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21109/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21109/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21109/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21109",
+  "id": 622225879,
+  "node_id": "MDU6SXNzdWU2MjIyMjU4Nzk=",
+  "number": 21109,
+  "title": "How to remain all trace data for fast or full node without archive mode?",
+  "user": {
+    "login": "islishude",
+    "id": 24730006,
+    "node_id": "MDQ6VXNlcjI0NzMwMDA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/24730006?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/islishude",
+    "html_url": "https://github.com/islishude",
+    "followers_url": "https://api.github.com/users/islishude/followers",
+    "following_url": "https://api.github.com/users/islishude/following{/other_user}",
+    "gists_url": "https://api.github.com/users/islishude/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/islishude/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/islishude/subscriptions",
+    "organizations_url": "https://api.github.com/users/islishude/orgs",
+    "repos_url": "https://api.github.com/users/islishude/repos",
+    "events_url": "https://api.github.com/users/islishude/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/islishude/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-05-21T03:46:19Z",
+  "updated_at": "2020-05-21T03:50:51Z",
+  "closed_at": "2020-05-21T03:50:51Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "",
+  "closed_by": {
+    "login": "islishude",
+    "id": 24730006,
+    "node_id": "MDQ6VXNlcjI0NzMwMDA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/24730006?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/islishude",
+    "html_url": "https://github.com/islishude",
+    "followers_url": "https://api.github.com/users/islishude/followers",
+    "following_url": "https://api.github.com/users/islishude/following{/other_user}",
+    "gists_url": "https://api.github.com/users/islishude/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/islishude/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/islishude/subscriptions",
+    "organizations_url": "https://api.github.com/users/islishude/orgs",
+    "repos_url": "https://api.github.com/users/islishude/repos",
+    "events_url": "https://api.github.com/users/islishude/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/islishude/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21109/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21109/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

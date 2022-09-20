@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25421",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25421/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25421/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25421/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25421",
+  "id": 1319874107,
+  "node_id": "I_kwDOAOvK985Oq647",
+  "number": 25421,
+  "title": "Apparent Performance regression in `eth_getLogs`",
+  "user": {
+    "login": "ryanschneider",
+    "id": 53520,
+    "node_id": "MDQ6VXNlcjUzNTIw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/53520?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ryanschneider",
+    "html_url": "https://github.com/ryanschneider",
+    "followers_url": "https://api.github.com/users/ryanschneider/followers",
+    "following_url": "https://api.github.com/users/ryanschneider/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ryanschneider/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ryanschneider/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ryanschneider/subscriptions",
+    "organizations_url": "https://api.github.com/users/ryanschneider/orgs",
+    "repos_url": "https://api.github.com/users/ryanschneider/repos",
+    "events_url": "https://api.github.com/users/ryanschneider/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ryanschneider/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-07-27T17:31:26Z",
+  "updated_at": "2022-08-19T09:15:00Z",
+  "closed_at": "2022-08-19T09:15:00Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: 1.10.19 (but behavior appears unchanged in .21)\r\nOS & Version: Linux\r\n\r\n#### Expected behaviour\r\n\r\nA node that is only asked about \"recent\" logs/receipts via `eth_getLogs` should be able to handle a high volume of that RPC without duplicate trips to the raw level DB.\r\n\r\n#### Actual behaviour\r\n\r\nIn https://github.com/ethereum/go-ethereum/pull/17610 we added a `receiptsCache` LRU to `BlockChain` to prevent redundant db lookups and RLP decodes of receipts and logs from the DB.  However, it appears that changes introduced in https://github.com/ethereum/go-ethereum/pull/23147 circumvent that LRU cache completely, leading to what appears to me to be a performance regression in `eth_getLogs` RPC performance.\r\n\r\nWith a recent version of geth, under only moderate `eth_getLogs` load that only accesses logs from the last 128 blocks, we quickly see that a significant portion of the nodes flamegraph is spent in the new `ReadLogs` method:\r\n\r\n![image](https://user-images.githubusercontent.com/53520/181306703-2f6f9973-2362-4b64-9c6a-651c6df4b455.png)\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nIt's pretty easy to reproduce:\r\n\r\n- sync a node to head, preferably mainnet since it has the most logs in a given block.\r\n- generate some load on the geth node, for example using `hey` (https://github.com/rakyll/hey): `hey -c 5 -z 30s -t 0 -m POST -T application/json -d '{\"jsonrpc\":\"2.0\", \"id\": 1123123, \"method\": \"eth_getLogs\", \"params\": [{}]}' http://0.0.0.0:8545/`\r\n- even with only 5 concurrent `eth_getLogs` requests for the latest logs like the above, note that a non-trivial amount of time is spent in `ReadLogs`:\r\n\r\n![image](https://user-images.githubusercontent.com/53520/181310632-135d13ef-9f7f-497a-97fe-af109dd2c0d5.png)\r\n\r\n- raise the number of concurrent requests to 50 (`-c 50`) and note that the amount of time spent in `ReadLogs` increases as well:\r\n\r\n![image](https://user-images.githubusercontent.com/53520/181311227-12ad0632-f182-4b9a-be93-9ad3a1ccc873.png)\r\n\r\nOne would expect that the recent block's receipts/logs is only read from the raw DB once per block, and thus that the relative amount of time spent in `ReadLogs` would go down rather than up under increased load.\r\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25421/reactions",
+    "total_count": 5,
+    "+1": 5,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25421/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

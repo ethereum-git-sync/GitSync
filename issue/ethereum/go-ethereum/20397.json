@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20397",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20397/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20397/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20397/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/20397",
+  "id": 528709460,
+  "node_id": "MDU6SXNzdWU1Mjg3MDk0NjA=",
+  "number": 20397,
+  "title": "Redo dev mode tutorial to reflect more realistic steps",
+  "user": {
+    "login": "ChrisChinchilla",
+    "id": 42080,
+    "node_id": "MDQ6VXNlcjQyMDgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42080?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ChrisChinchilla",
+    "html_url": "https://github.com/ChrisChinchilla",
+    "followers_url": "https://api.github.com/users/ChrisChinchilla/followers",
+    "following_url": "https://api.github.com/users/ChrisChinchilla/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ChrisChinchilla/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ChrisChinchilla/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ChrisChinchilla/subscriptions",
+    "organizations_url": "https://api.github.com/users/ChrisChinchilla/orgs",
+    "repos_url": "https://api.github.com/users/ChrisChinchilla/repos",
+    "events_url": "https://api.github.com/users/ChrisChinchilla/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ChrisChinchilla/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1141538240,
+      "node_id": "MDU6TGFiZWwxMTQxNTM4MjQw",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/need:documentation",
+      "name": "need:documentation",
+      "color": "b4fcae",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-11-26T13:00:26Z",
+  "updated_at": "2020-05-15T08:17:00Z",
+  "closed_at": "2020-05-15T08:16:56Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "@fjl suggested we redo the dev mode getting started guide to show people how to connect to Remix and then deploy a contract from Remix to the locally running geth node, which seems like a really nice idea.",
+  "closed_by": {
+    "login": "ChrisChinchilla",
+    "id": 42080,
+    "node_id": "MDQ6VXNlcjQyMDgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42080?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ChrisChinchilla",
+    "html_url": "https://github.com/ChrisChinchilla",
+    "followers_url": "https://api.github.com/users/ChrisChinchilla/followers",
+    "following_url": "https://api.github.com/users/ChrisChinchilla/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ChrisChinchilla/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ChrisChinchilla/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ChrisChinchilla/subscriptions",
+    "organizations_url": "https://api.github.com/users/ChrisChinchilla/orgs",
+    "repos_url": "https://api.github.com/users/ChrisChinchilla/repos",
+    "events_url": "https://api.github.com/users/ChrisChinchilla/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ChrisChinchilla/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20397/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20397/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3762",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3762/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3762/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3762/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/3762",
+  "id": 212905820,
+  "node_id": "MDU6SXNzdWUyMTI5MDU4MjA=",
+  "number": 3762,
+  "title": "CORS headers not applied to preflight requests with extended headers.",
+  "user": {
+    "login": "MicahZoltu",
+    "id": 886059,
+    "node_id": "MDQ6VXNlcjg4NjA1OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/886059?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MicahZoltu",
+    "html_url": "https://github.com/MicahZoltu",
+    "followers_url": "https://api.github.com/users/MicahZoltu/followers",
+    "following_url": "https://api.github.com/users/MicahZoltu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MicahZoltu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MicahZoltu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MicahZoltu/subscriptions",
+    "organizations_url": "https://api.github.com/users/MicahZoltu/orgs",
+    "repos_url": "https://api.github.com/users/MicahZoltu/repos",
+    "events_url": "https://api.github.com/users/MicahZoltu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MicahZoltu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-03-09T01:07:31Z",
+  "updated_at": "2017-03-16T03:34:09Z",
+  "closed_at": "2017-03-16T03:34:09Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "#### Expected behaviour\r\n\r\nHTTP response from geth to contain `Access-Control-Allow-Origin` header.\r\n\r\n#### Actual behaviour\r\n\r\nHttp response does not contain `Access-Control-Allow-Origin` header.\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\nRun geth with `--rpccorsdomain \"*\"`.  Send a preflight request like:\r\n```\r\nOPTIONS / HTTP/1.1\r\nHost: 127.0.0.1:8546\r\nConnection: keep-alive\r\nAccess-Control-Request-Method: POST\r\nOrigin: http://localhost:8080\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36\r\nAccess-Control-Request-Headers: content-type, x-requested-with\r\nAccept: */*\r\nReferer: http://localhost:8080/?page=transactions\r\nAccept-Encoding: gzip, deflate, sdch, br\r\nAccept-Language: en-US,en;q=0.8\r\n```\r\n\r\n---\r\n\r\nWhen configuring https://github.com/rs/cors (the library being used to deal with CORS in geth), you can provide a list of `AllowedHeaders`.  If the preflight request asks for headers that are not in this list then the preflight request is not responded to with the appropriate CORS headers (like `Access-Control-Allow-Origin`).  The easiest solution to this problem is to allow for any headers by setting `AllowedHeaders = [\"*\"]` (or whatever the Go syntax for that is).  Alternatively, geth could allow the user to supply a list of allowed headers.\r\n\r\nYou can see the comment here about the magic `*` header: https://github.com/rs/cors/blob/master/cors.go#L50-L54\r\n\r\nThe motivation for this is that I am using a JavaScript library that adds an `x-requested-with` header to outbound requests.  This is a common practice in the browser world (jquery, for example, does it).  At the moment, my requests made through this library are being rejected because geth isn't responding with the appropriate CORS headers.",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3762/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3762/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

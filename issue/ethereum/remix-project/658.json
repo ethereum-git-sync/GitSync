@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/658",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/658/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/658/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/658/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/658",
+  "id": 757055171,
+  "node_id": "MDU6SXNzdWU3NTcwNTUxNzE=",
+  "number": 658,
+  "title": "Create file using file template",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2335546845,
+      "node_id": "MDU6TGFiZWwyMzM1NTQ2ODQ1",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/discussion",
+      "name": "discussion",
+      "color": "fffdaa",
+      "default": false,
+      "description": "Require discussion"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2020-12-04T12:12:11Z",
+  "updated_at": "2020-12-10T10:04:59Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "when user go to create a file, show `filename` textbox and a dropdown with options as `blank file, contract, library, interface, abstract contract, js file and remix test file` and on certain selection, there will be some lines prewritten in the file to start quickly.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/658/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/658/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/742418216",
+    "html_url": "https://github.com/ethereum/remix-project/issues/658#issuecomment-742418216",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/658",
+    "id": 742418216,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDc0MjQxODIxNg==",
+    "user": {
+      "login": "LianaHus",
+      "id": 9685356,
+      "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LianaHus",
+      "html_url": "https://github.com/LianaHus",
+      "followers_url": "https://api.github.com/users/LianaHus/followers",
+      "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+      "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+      "repos_url": "https://api.github.com/users/LianaHus/repos",
+      "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2020-12-10T10:04:32Z",
+    "updated_at": "2020-12-10T10:04:59Z",
+    "author_association": "MEMBER",
+    "body": "- New file (default) // create a file in edit mode and do not force extension.\r\n- New js file // create a fie in edit mode and force .json extension. Create with script execution template\r\n- New sol file -> /// create a fie in edit mode and force .sol extension. Add templates according to choice from the list below\r\n  - library\r\n  - ERC20 Token\r\n  - interface\r\n  - remix test\r\n  - ...\r\n- New Folder\r\n- Delete\r\n- Rename\r\n",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/742418216/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

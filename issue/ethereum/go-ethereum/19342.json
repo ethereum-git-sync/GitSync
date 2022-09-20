@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19342",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19342/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19342/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19342/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/19342",
+  "id": 425892232,
+  "node_id": "MDU6SXNzdWU0MjU4OTIyMzI=",
+  "number": 19342,
+  "title": "Missing and wrong links on the website",
+  "user": {
+    "login": "adamschmideg",
+    "id": 208822,
+    "node_id": "MDQ6VXNlcjIwODgyMg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/208822?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/adamschmideg",
+    "html_url": "https://github.com/adamschmideg",
+    "followers_url": "https://api.github.com/users/adamschmideg/followers",
+    "following_url": "https://api.github.com/users/adamschmideg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/adamschmideg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/adamschmideg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/adamschmideg/subscriptions",
+    "organizations_url": "https://api.github.com/users/adamschmideg/orgs",
+    "repos_url": "https://api.github.com/users/adamschmideg/repos",
+    "events_url": "https://api.github.com/users/adamschmideg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/adamschmideg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-03-27T10:59:01Z",
+  "updated_at": "2019-03-28T14:24:32Z",
+  "closed_at": "2019-03-28T14:09:02Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "- [x] https://geth.ethereum.org/install/ and https://geth.ethereum.org/downloads/ are missing the Documentation menu item.\r\n- [x] the Go Ethereum href looks wrong as well - it keeps adding / to the URL when you click it",
+  "closed_by": {
+    "login": "adamschmideg",
+    "id": 208822,
+    "node_id": "MDQ6VXNlcjIwODgyMg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/208822?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/adamschmideg",
+    "html_url": "https://github.com/adamschmideg",
+    "followers_url": "https://api.github.com/users/adamschmideg/followers",
+    "following_url": "https://api.github.com/users/adamschmideg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/adamschmideg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/adamschmideg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/adamschmideg/subscriptions",
+    "organizations_url": "https://api.github.com/users/adamschmideg/orgs",
+    "repos_url": "https://api.github.com/users/adamschmideg/repos",
+    "events_url": "https://api.github.com/users/adamschmideg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/adamschmideg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19342/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19342/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

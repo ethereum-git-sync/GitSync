@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19878",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19878/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19878/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19878/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/19878",
+  "id": 471648849,
+  "node_id": "MDU6SXNzdWU0NzE2NDg4NDk=",
+  "number": 19878,
+  "title": "Timeout not honored during preparation phase for transaction tracing",
+  "user": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1269313112,
+      "node_id": "MDU6TGFiZWwxMjY5MzEzMTEy",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:backlog",
+      "name": "status:backlog",
+      "color": "29ceb3",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-07-23T11:44:16Z",
+  "updated_at": "2020-05-21T08:47:21Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Transaction tracing by default has a 5 second timeout I believe. The user can manually specify an alternative value. Before transaction tracing can occur, old state must be reexecuted to the point of tracing. The timeout is not measured during this phase, so if the user asks to reexecute the entire chain with a timeout of 1s, Geth will gladly lock up \"indefinitely\".",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19878/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19878/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

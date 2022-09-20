@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/6615",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/6615/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/6615/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/6615/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/6615",
+  "id": 438304504,
+  "node_id": "MDU6SXNzdWU0MzgzMDQ1MDQ=",
+  "number": 6615,
+  "title": "[ossfuzz] Timeout values for fuzzer regression tests",
+  "user": {
+    "login": "bshastry",
+    "id": 2388185,
+    "node_id": "MDQ6VXNlcjIzODgxODU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2388185?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bshastry",
+    "html_url": "https://github.com/bshastry",
+    "followers_url": "https://api.github.com/users/bshastry/followers",
+    "following_url": "https://api.github.com/users/bshastry/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bshastry/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bshastry/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bshastry/subscriptions",
+    "organizations_url": "https://api.github.com/users/bshastry/orgs",
+    "repos_url": "https://api.github.com/users/bshastry/repos",
+    "events_url": "https://api.github.com/users/bshastry/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bshastry/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-04-29T13:02:46Z",
+  "updated_at": "2019-04-29T13:03:14Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nDo we want to know when some test input takes too long to process, where too long may be defined as taking time `t` longer than `MAX_TIME`? I understand that `MAX_TIME` is subjective to each fuzzer, so I created the following table with an initial draft of `MAX_TIME` to kick off the discussion\r\n\r\nFuzzer | Description | MAX_TIME (in seconds)\r\n------------ | ------------- | -----------------\r\nconst_opt_ossfuzz | Fuzzes the constant optimizer | 1\r\nsolc_opt_ossfuzz | Fuzzes the solidity parser-optimizer | 10\r\nsolc_noopt_ossfuzz | Fuzzes the solidity parser | 5\r\nstrictasm_opt_ossfuzz | Fuzzes the strict assembly parser-optimizer | 10\r\nstrictasm_assembly_ossfuzz | Fuzzes the strict assembly parser-assembler | 10\r\nstrictasm_diff_ossfuzz | Differentially fuzzes the strict assembly parser-optimizer | 20\r\nyul_proto_ossfuzz | Fuzzes the strict assembly parser-optimizer using protobuf | 10\r\nyul_diff_proto_ossfuzz | Differentially fuzzes the strict assembly parser-optimizer using protobuf | 20",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/6615/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/6615/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

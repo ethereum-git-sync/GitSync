@@ -1,0 +1,137 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12459",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12459/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12459/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12459/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12459",
+  "id": 1089339851,
+  "node_id": "I_kwDOAm_5kc5A7gHL",
+  "number": 12459,
+  "title": "Optimizer bytecode size limit",
+  "user": {
+    "login": "k06a",
+    "id": 702124,
+    "node_id": "MDQ6VXNlcjcwMjEyNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/702124?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/k06a",
+    "html_url": "https://github.com/k06a",
+    "followers_url": "https://api.github.com/users/k06a/followers",
+    "following_url": "https://api.github.com/users/k06a/following{/other_user}",
+    "gists_url": "https://api.github.com/users/k06a/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/k06a/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/k06a/subscriptions",
+    "organizations_url": "https://api.github.com/users/k06a/orgs",
+    "repos_url": "https://api.github.com/users/k06a/repos",
+    "events_url": "https://api.github.com/users/k06a/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/k06a/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438003076,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaNhA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20effort",
+      "name": "medium effort",
+      "color": "ff7df7",
+      "default": false,
+      "description": "Default level of effort"
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-12-27T16:17:42Z",
+  "updated_at": "2022-09-14T15:45:04Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nUsing compiler option \"runs\" allows for bytecode optimization, but sometimes optimization expands smart contract bytecode that much it will not fit into EIP-171 (24KB). As far as I understand setting \"runs=1\" allows bytecode size optimization for deployment. Is there any way to have an additional argument for making optimizer aware of deployment limitation?\r\n\r\n## Motivation\r\n\r\nWant to optimize smart contract for execution and still be able to fit in 24KB.\r\n\r\n## Specification\r\n\r\nLet's introduce new parameter \"smartContractBytecodeDeploymentLimit\" or something like this. The optimizer could somehow reduce inlinings when the limit is exceeded.\r\n\r\n## Backwards Compatibility\r\n\r\nCan use 1 billion of gas as a default value to have almost unreachable backward compatibility.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12459/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12459/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1003753088",
+    "html_url": "https://github.com/ethereum/solidity/issues/12459#issuecomment-1003753088",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12459",
+    "id": 1003753088,
+    "node_id": "IC_kwDOAm_5kc471A6A",
+    "user": {
+      "login": "hrkrshnn",
+      "id": 13174375,
+      "node_id": "MDQ6VXNlcjEzMTc0Mzc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13174375?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hrkrshnn",
+      "html_url": "https://github.com/hrkrshnn",
+      "followers_url": "https://api.github.com/users/hrkrshnn/followers",
+      "following_url": "https://api.github.com/users/hrkrshnn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hrkrshnn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hrkrshnn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hrkrshnn/subscriptions",
+      "organizations_url": "https://api.github.com/users/hrkrshnn/orgs",
+      "repos_url": "https://api.github.com/users/hrkrshnn/repos",
+      "events_url": "https://api.github.com/users/hrkrshnn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hrkrshnn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-01-02T18:00:47Z",
+    "updated_at": "2022-01-02T18:00:47Z",
+    "author_association": "MEMBER",
+    "body": "A similar idea came up when discussing https://github.com/ethereum/solidity/issues/11084. \r\n\r\nBTW, we probably won't be able to compute this easily without a trail and error / binary search. So this can also be achieved by external tools without any additional compiler support. Regardless, this is a valid suggestion.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1003753088/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

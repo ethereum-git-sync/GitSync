@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/244",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/244/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/244/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/244/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/244",
+  "id": 667044073,
+  "node_id": "MDU6SXNzdWU2NjcwNDQwNzM=",
+  "number": 244,
+  "title": "Deploy ABI to reverse record in ENS",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-05-19T10:58:27Z",
+  "updated_at": "2020-07-28T12:46:22Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "@arachnid just made me aware of \"reverse ens records\" and the fact that you can store contract ABI there. The deployed contract has to register its reverse record as part of its constructor (or at any time, but the registrar has to be called from that contract).\r\nSince this process is similar to the \"publish to swarm\" process, we could add a button next to that button \"publish ABI to ENS\" or something like that.\r\n\r\nClicking the button would check that\r\n1) we are connected to a node,\r\n2) some contract we deployed in the past has a reverse record (and some of the accounts we control is registered as the controller),\r\n3) we still know the ABI to that contract\r\n\r\nWe can iterate over all contracts we deployed in the past, potentially offer a drop-down selector and also display error messages if none matched.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/244/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/244/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

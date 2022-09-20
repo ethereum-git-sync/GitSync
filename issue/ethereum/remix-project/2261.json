@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2261",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2261/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2261/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2261/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2261",
+  "id": 1192491251,
+  "node_id": "I_kwDODtLRw85HE_jz",
+  "number": 2261,
+  "title": "Remix IDE (Desktop) Crashes When Interacting with Contract on Polygon Mumbai",
+  "user": {
+    "login": "Innovoeb",
+    "id": 47301902,
+    "node_id": "MDQ6VXNlcjQ3MzAxOTAy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47301902?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Innovoeb",
+    "html_url": "https://github.com/Innovoeb",
+    "followers_url": "https://api.github.com/users/Innovoeb/followers",
+    "following_url": "https://api.github.com/users/Innovoeb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Innovoeb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Innovoeb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Innovoeb/subscriptions",
+    "organizations_url": "https://api.github.com/users/Innovoeb/orgs",
+    "repos_url": "https://api.github.com/users/Innovoeb/repos",
+    "events_url": "https://api.github.com/users/Innovoeb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Innovoeb/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-04-05T01:22:39Z",
+  "updated_at": "2022-04-05T01:22:39Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Unable to read a variable within a smart contract on the Polygon Mumbai network when using the desktop version of Remix IDE. I created a simple contract and deployed it to the Polygon testnet (Mumbai). Within the contract is a method that creates an array of structs and I was able to make this transaction via the desktop IDE: \r\n\r\nPolygon Mumbai transaction hash: `0xb86afbbe8613ac1d8ead6dcfbba519a6ad17fa1f9c9fce098a961eeea04b2ebb`. \r\n\r\nWhen attempting to retrieve a variable within this contract, the IDE does not return the correct data within the \"Deploy and Run Transactions\" panel. Also, when I attempt to expand the transaction within the IDE's console the app will crash. I have enclosed a screen recording of the behavior described above. I have deployed this same contract on the Rinkeby network and the desktop IDE performs as expected. Also, I am getting the expected behavior when interacting with the contract via the web IDE. Can someone attempt to recreate this behavior by either using the provided contract address and/or by deploying a different contract on Polygon Mumbai and reading a variable within the desktop application please.\r\n\r\nPolygon Mumbai Contract Address: `0x7E372a6e80e8B418951E48dF0f9f125d0B1f0456`\r\nRinkeby Testnet Contract Address: `0x1e5Ccd235B7CC18279D5Cae0967f78d4Ad7282fB`\r\nscreen recording: https://drive.google.com/file/d/1j9VLfu825cPmTtpi0QjqF1-t_wwKJjLH/view?usp=sharing\r\n\r\n\r\nContract:\r\n\r\n```\r\npragma solidity ^0.8.10;\r\n\r\ncontract ForLoop\r\n{\r\n    mapping(address => string) public dwarfsWallets;\r\n    \r\n    struct sevenDwarfs\r\n    {\r\n        string name;\r\n        address walletAddress;\r\n        uint256 contributions;\r\n    }\r\n    sevenDwarfs[] public dwarfs; // declare an array of structs\r\n    //uint256 public dwarfsCount;\r\n\r\n    function addDwarf(string memory _name) public payable\r\n    {\r\n        // push name and wallet address to the dwarfs array\r\n        dwarfs.push(sevenDwarfs(\r\n            _name,\r\n            msg.sender,\r\n            0 // will enable contributions in seperate method\r\n        ));\r\n        \r\n        // Mapping: array input = key (should always be unique ex: address) || value = value\r\n        dwarfsWallets[msg.sender] = _name; \r\n    }\r\n\r\n    // loop thru dwarfs[] and return all structs\r\n    \r\n\r\n    // loop through an array and run a conditional\r\n    function dwarfTest() public view returns (bool)\r\n    {\r\n        for (uint256 i = 0; i < dwarfs.length; i++)\r\n        {\r\n            // efficient way to compare string literals\r\n            if (keccak256(bytes(dwarfs[i].name)) == keccak256(\"Doc\") )\r\n            {\r\n                return true;\r\n            }\r\n        }\r\n\r\n        return false;\r\n    }\r\n\r\n    function deleteDwarf(string memory _name) public \r\n    {\r\n        for (uint256 i = 0; i < dwarfs.length; i++)\r\n        {\r\n            if ( keccak256(bytes(_name) ) == keccak256(bytes(dwarfs[i].name)) )\r\n            {\r\n                delete dwarfs[i];\r\n            }\r\n        }\r\n    }\r\n    \r\n}\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2261/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2261/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

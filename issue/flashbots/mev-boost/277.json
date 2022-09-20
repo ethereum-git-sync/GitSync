@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/277",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/277/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/277/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/277/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/277",
+  "id": 1356162763,
+  "node_id": "I_kwDOGZSKs85Q1WbL",
+  "number": 277,
+  "title": "Truncated fork version hex results in corrupted data",
+  "user": {
+    "login": "samczsun",
+    "id": 10292550,
+    "node_id": "MDQ6VXNlcjEwMjkyNTUw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10292550?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/samczsun",
+    "html_url": "https://github.com/samczsun",
+    "followers_url": "https://api.github.com/users/samczsun/followers",
+    "following_url": "https://api.github.com/users/samczsun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/samczsun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/samczsun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/samczsun/subscriptions",
+    "organizations_url": "https://api.github.com/users/samczsun/orgs",
+    "repos_url": "https://api.github.com/users/samczsun/repos",
+    "events_url": "https://api.github.com/users/samczsun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/samczsun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-30T18:44:16Z",
+  "updated_at": "2022-08-30T18:44:16Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "```\r\n$ git --no-pager diff\r\ndiff --git a/server/utils.go b/server/utils.go\r\nindex 020b64d..43c2c5d 100644\r\n--- a/server/utils.go\r\n+++ b/server/utils.go\r\n@@ -86,6 +86,7 @@ func ComputeDomain(domainType types.DomainType, forkVersionHex string, genesisVa\r\n        }\r\n        var forkVersion [4]byte\r\n        copy(forkVersion[:], forkVersionBytes[:4])\r\n+       fmt.Println(hexutil.Encode(forkVersion[:]))\r\n        return types.ComputeDomain(domainType, forkVersion, genesisValidatorsRoot), nil\r\n }\r\n\r\n$ go run main.go -relays https://0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000@example.com -genesis-fork-version 0xabcd\r\nINFO[2022-08-30T01:24:39-07:00] mev-boost v0.7.11-dev                         module=cli\r\nINFO[2022-08-30T01:24:39-07:00] Using genesis fork version: 0xabcd            module=cli\r\nINFO[2022-08-30T01:24:39-07:00] using 1 relays                                module=cli relays=\"[{0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 https://0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000@example.com}]\"\r\n0xabcd6364\r\nINFO[2022-08-30T01:24:39-07:00] listening on localhost:18550                  module=cli\r\n^Csignal: interrupt\r\n```\r\n\r\nhexutil.Decode uses hex.DecodeString internally which reuses the input buffer:\r\n\r\nhttps://cs.opensource.google/go/go/+/refs/tags/go1.19:src/encoding/hex/hex.go;l=118-124;drc=7f92ccea5ca5832a1dc63c02fc71db2d698f7915",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/277/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/277/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

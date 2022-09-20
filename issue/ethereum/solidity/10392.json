@@ -1,0 +1,94 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10392",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10392/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10392/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10392/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10392",
+  "id": 750082902,
+  "node_id": "MDU6SXNzdWU3NTAwODI5MDI=",
+  "number": 10392,
+  "title": "Documentation of \"data location\" does not have `calldata` in the example",
+  "user": {
+    "login": "jzaki",
+    "id": 939603,
+    "node_id": "MDQ6VXNlcjkzOTYwMw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/939603?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jzaki",
+    "html_url": "https://github.com/jzaki",
+    "followers_url": "https://api.github.com/users/jzaki/followers",
+    "following_url": "https://api.github.com/users/jzaki/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jzaki/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jzaki/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jzaki/subscriptions",
+    "organizations_url": "https://api.github.com/users/jzaki/orgs",
+    "repos_url": "https://api.github.com/users/jzaki/repos",
+    "events_url": "https://api.github.com/users/jzaki/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jzaki/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 275027668,
+      "node_id": "MDU6TGFiZWwyNzUwMjc2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/documentation%20:book:",
+      "name": "documentation :book:",
+      "color": "006b75",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-11-24T21:31:04Z",
+  "updated_at": "2022-09-14T16:43:51Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "https://github.com/ethereum/solidity/blob/develop/docs/types/reference-types.rst#data-location-and-assignment-behaviour\r\n\r\nAdding an example (or two) with meaningful use of `calldata` would be helpful.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10392/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10392/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

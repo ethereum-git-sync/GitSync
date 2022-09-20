@@ -1,0 +1,137 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/201",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/201/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/201/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/201/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/201",
+  "id": 666956078,
+  "node_id": "MDU6SXNzdWU2NjY5NTYwNzg=",
+  "number": 201,
+  "title": "[UI] Customized swap panel width need to be remembered",
+  "user": {
+    "login": "nxqbao",
+    "id": 17340327,
+    "node_id": "MDQ6VXNlcjE3MzQwMzI3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17340327?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nxqbao",
+    "html_url": "https://github.com/nxqbao",
+    "followers_url": "https://api.github.com/users/nxqbao/followers",
+    "following_url": "https://api.github.com/users/nxqbao/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nxqbao/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nxqbao/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nxqbao/subscriptions",
+    "organizations_url": "https://api.github.com/users/nxqbao/orgs",
+    "repos_url": "https://api.github.com/users/nxqbao/repos",
+    "events_url": "https://api.github.com/users/nxqbao/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nxqbao/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2227556002,
+      "node_id": "MDU6TGFiZWwyMjI3NTU2MDAy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UI",
+      "name": "UI",
+      "color": "6ff7e5",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2233501827,
+      "node_id": "MDU6TGFiZWwyMjMzNTAxODI3",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/UX",
+      "name": "UX",
+      "color": "c5ebf9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2019-05-27T18:22:35Z",
+  "updated_at": "2020-07-28T10:17:03Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Since swap panel size is too small for me to see anything, I always need to expand it.\r\nThe problem is every time I close the panel and reopen it, its size always changes to the default size (not my customization), and I need to resize it again. \r\n\r\nMy customized panel\r\n![image](https://user-images.githubusercontent.com/17340327/58434635-edaecc80-80e6-11e9-9595-325a9246dd0a.png)\r\n\r\nAnd this panel when reopened\r\n![image](https://user-images.githubusercontent.com/17340327/58434655-03bc8d00-80e7-11e9-956c-6aa7677ddf1a.png)\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/201/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/201/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/496326741",
+    "html_url": "https://github.com/ethereum/remix-project/issues/201#issuecomment-496326741",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/201",
+    "id": 496326741,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDQ5NjMyNjc0MQ==",
+    "user": {
+      "login": "LianaHus",
+      "id": 9685356,
+      "node_id": "MDQ6VXNlcjk2ODUzNTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9685356?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LianaHus",
+      "html_url": "https://github.com/LianaHus",
+      "followers_url": "https://api.github.com/users/LianaHus/followers",
+      "following_url": "https://api.github.com/users/LianaHus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LianaHus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LianaHus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LianaHus/subscriptions",
+      "organizations_url": "https://api.github.com/users/LianaHus/orgs",
+      "repos_url": "https://api.github.com/users/LianaHus/repos",
+      "events_url": "https://api.github.com/users/LianaHus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LianaHus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2019-05-28T00:37:14Z",
+    "updated_at": "2019-05-28T00:37:14Z",
+    "author_association": "MEMBER",
+    "body": "todo: move to remix-ide repo",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/496326741/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

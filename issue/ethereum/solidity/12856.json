@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12856",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12856/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12856/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12856/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12856",
+  "id": 1180075201,
+  "node_id": "I_kwDOAm_5kc5GVoTB",
+  "number": 12856,
+  "title": "Support Yul objects in yulopti",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 717596767,
+      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-03-24T21:29:03Z",
+  "updated_at": "2022-08-17T13:48:56Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n[yulopti](https://github.com/ethereum/solidity/blob/develop/test/tools/yulopti.cpp) is a simple tool for executing [optimizer step](https://docs.soliditylang.org/en/latest/internals/optimizer.html#optimizer-steps) sequences step by step.\r\n\r\nCurrently it only supports raw Yul input (example: [`medium.yul`](https://github.com/ethereum/solidity/blob/develop/test/libyul/yulOptimizerTests/fullSuite/medium.yul)). It would be convenient if it supported Yul objects as well (example: [`subObjectAccess.yul`](https://github.com/ethereum/solidity/blob/adc58c67b432ada0d7a4fc68f3de610ba78358c0/test/libyul/objectCompiler/subObjectAccess.yul)).\r\n\r\n## Motivation\r\nThe compiler never produces raw Yul as output. When invoked with `--ir` or `--ir-optimized`, the Yul code is always wrapped in an object. The object part needs to be stripped for it to be usable with yulopti.\r\n\r\n## Specification\r\n- Use `ObjectParser` for parsing Yul objects (see how it was done in yul-phaser: #8513).\r\n- yulopti should optimize all objects present in the file, including nested ones.\r\n- (optional) add a command-line flag for selecting a specific object via a dotted path (e.g. `--object x.y.z`)\r\n\r\n## Backwards Compatibility\r\nThis is an internal tool. We don't guarantee backwards-compatibility.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12856/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12856/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1100194240",
+    "html_url": "https://github.com/ethereum/solidity/issues/12856#issuecomment-1100194240",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12856",
+    "id": 1100194240,
+    "node_id": "IC_kwDOAm_5kc5Bk6HA",
+    "user": {
+      "login": "dflupu",
+      "id": 12127173,
+      "node_id": "MDQ6VXNlcjEyMTI3MTcz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12127173?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dflupu",
+      "html_url": "https://github.com/dflupu",
+      "followers_url": "https://api.github.com/users/dflupu/followers",
+      "following_url": "https://api.github.com/users/dflupu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dflupu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dflupu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dflupu/subscriptions",
+      "organizations_url": "https://api.github.com/users/dflupu/orgs",
+      "repos_url": "https://api.github.com/users/dflupu/repos",
+      "events_url": "https://api.github.com/users/dflupu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dflupu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-04-15T15:56:33Z",
+    "updated_at": "2022-04-15T15:56:33Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "@cameel I'd like to try my hand at implementing this. Could I be assigned to it?\r\n\r\nAlso, are there any tests at the moment for this particular tool? Should any tests be added?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1100194240/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

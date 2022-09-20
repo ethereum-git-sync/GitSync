@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/42",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/42/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/42/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/42/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/42",
+  "id": 1154258275,
+  "node_id": "I_kwDOGZSKs85EzJVj",
+  "number": 42,
+  "title": "Add the code of conduct",
+  "user": {
+    "login": "come-maiz",
+    "id": 617831,
+    "node_id": "MDQ6VXNlcjYxNzgzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/617831?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/come-maiz",
+    "html_url": "https://github.com/come-maiz",
+    "followers_url": "https://api.github.com/users/come-maiz/followers",
+    "following_url": "https://api.github.com/users/come-maiz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/come-maiz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/come-maiz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/come-maiz/subscriptions",
+    "organizations_url": "https://api.github.com/users/come-maiz/orgs",
+    "repos_url": "https://api.github.com/users/come-maiz/repos",
+    "events_url": "https://api.github.com/users/come-maiz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/come-maiz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-02-28T15:55:04Z",
+  "updated_at": "2022-03-10T14:47:45Z",
+  "closed_at": "2022-03-10T14:47:45Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "https://github.com/flashbots/flashbots-repository-template/blob/main/CODE_OF_CONDUCT.md",
+  "closed_by": {
+    "login": "come-maiz",
+    "id": 617831,
+    "node_id": "MDQ6VXNlcjYxNzgzMQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/617831?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/come-maiz",
+    "html_url": "https://github.com/come-maiz",
+    "followers_url": "https://api.github.com/users/come-maiz/followers",
+    "following_url": "https://api.github.com/users/come-maiz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/come-maiz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/come-maiz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/come-maiz/subscriptions",
+    "organizations_url": "https://api.github.com/users/come-maiz/orgs",
+    "repos_url": "https://api.github.com/users/come-maiz/repos",
+    "events_url": "https://api.github.com/users/come-maiz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/come-maiz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/42/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/42/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

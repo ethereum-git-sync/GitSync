@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12377",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12377/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12377/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12377/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12377",
+  "id": 1072622194,
+  "node_id": "I_kwDOAm_5kc4_7upy",
+  "number": 12377,
+  "title": "fn returns incorrect value of 0 when variable has correct value directly before return",
+  "user": {
+    "login": "realisation",
+    "id": 13490713,
+    "node_id": "MDQ6VXNlcjEzNDkwNzEz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13490713?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/realisation",
+    "html_url": "https://github.com/realisation",
+    "followers_url": "https://api.github.com/users/realisation/followers",
+    "following_url": "https://api.github.com/users/realisation/following{/other_user}",
+    "gists_url": "https://api.github.com/users/realisation/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/realisation/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/realisation/subscriptions",
+    "organizations_url": "https://api.github.com/users/realisation/orgs",
+    "repos_url": "https://api.github.com/users/realisation/repos",
+    "events_url": "https://api.github.com/users/realisation/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/realisation/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-12-06T21:14:25Z",
+  "updated_at": "2021-12-06T22:24:32Z",
+  "closed_at": "2021-12-06T22:24:32Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nI have a function with a signature like\r\n\r\n```\r\n    function update (\r\n        uint32 _updated,\r\n        uint32 _compounded,\r\n        uint8 _brrrrdCycloid\r\n    ) public virtual returns (\r\n        uint cap_,\r\n        uint32 updated_,\r\n        uint32 compounded_\r\n    )\r\n```\r\n    \r\nAnd I've verified that the value `compounded_` is written to with the correct value directly before the function ends. The function has no explicit return but relies on the variable being specified in return parameters.\r\n\r\nAfter this function returns, the value for `compounded_` is 0 when it should be what I expected.\r\n\r\nHere is the code in question: \r\n\r\nhttps://github.com/overlay-market/overlay-v1-core/blob/market-revamp/contracts/market/OverlayV1Market.sol#L77\r\n\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.10 (also happened in 0.8.7)\r\n- Target EVM version (as per compiler settings): london\r\n- Framework/IDE (e.g. Truffle or Remix): brownie\r\n- EVM execution environment / backend / blockchain client: Ganache CLI v6.12.2 (ganache-core: 2.13.2)\r\n- Operating system: macos\r\n\r\n## Steps to Reproduce\r\n\r\nI tried reproducing this but it did not yield the error. This is my attempted reproduction:\r\n\r\nhttps://github.com/overlay-market/overlay-v1-core/blob/market-revamp/contracts/Scratchpad.sol#L49\r\n\r\nYou can run it with `brownie run scripts/scratchpad.sol`\r\n\r\nAnd to reproduce the failing you can run one of the tests that is outputting a few logs by running:\r\n\r\n`brownie test tests/markets/collateral/ovl/test_build.py::test_build_success_zero_impact -s -v`\r\n\r\nI would try to reproduce it more minimally, but I have no idea what to actually do to achieve that. \r\n\r\n",
+  "closed_by": {
+    "login": "realisation",
+    "id": 13490713,
+    "node_id": "MDQ6VXNlcjEzNDkwNzEz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13490713?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/realisation",
+    "html_url": "https://github.com/realisation",
+    "followers_url": "https://api.github.com/users/realisation/followers",
+    "following_url": "https://api.github.com/users/realisation/following{/other_user}",
+    "gists_url": "https://api.github.com/users/realisation/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/realisation/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/realisation/subscriptions",
+    "organizations_url": "https://api.github.com/users/realisation/orgs",
+    "repos_url": "https://api.github.com/users/realisation/repos",
+    "events_url": "https://api.github.com/users/realisation/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/realisation/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12377/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12377/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

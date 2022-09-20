@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2842",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2842/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2842/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2842/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2842",
+  "id": 1358457995,
+  "node_id": "I_kwDODtLRw85Q-GyL",
+  "number": 2842,
+  "title": "Error in loading chunk for chai types",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-01T08:28:07Z",
+  "updated_at": "2022-09-01T16:17:20Z",
+  "closed_at": "2022-09-01T16:17:20Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "On IDE load, Browser console shows:\r\n```\r\nUncaught (in promise) ChunkLoadError: Loading chunk 123 failed.\r\n(error: http://remix.ethereum.org/vendors~raw-loader!-types-chai-index-d-ts.0.26.0.1661928812627.js)\r\n    at Function.requireEnsure [as e] (main.0.26.0.1661928812627.js:8:46)\r\n    at loadTypes (app.0.26.0.1661928812627.js:3321:122)\r\n```",
+  "closed_by": {
+    "login": "bunsenstraat",
+    "id": 2787300,
+    "node_id": "MDQ6VXNlcjI3ODczMDA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2787300?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bunsenstraat",
+    "html_url": "https://github.com/bunsenstraat",
+    "followers_url": "https://api.github.com/users/bunsenstraat/followers",
+    "following_url": "https://api.github.com/users/bunsenstraat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bunsenstraat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bunsenstraat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bunsenstraat/subscriptions",
+    "organizations_url": "https://api.github.com/users/bunsenstraat/orgs",
+    "repos_url": "https://api.github.com/users/bunsenstraat/repos",
+    "events_url": "https://api.github.com/users/bunsenstraat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bunsenstraat/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2842/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2842/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

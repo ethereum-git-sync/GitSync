@@ -1,0 +1,122 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13144",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13144/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13144/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13144/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13144",
+  "id": 1271665799,
+  "node_id": "I_kwDOAm_5kc5LzBSH",
+  "number": 13144,
+  "title": "[Docs] Incorrect example in Operators section of Types",
+  "user": {
+    "login": "sourabhxyz",
+    "id": 29835247,
+    "node_id": "MDQ6VXNlcjI5ODM1MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29835247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sourabhxyz",
+    "html_url": "https://github.com/sourabhxyz",
+    "followers_url": "https://api.github.com/users/sourabhxyz/followers",
+    "following_url": "https://api.github.com/users/sourabhxyz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sourabhxyz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sourabhxyz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sourabhxyz/subscriptions",
+    "organizations_url": "https://api.github.com/users/sourabhxyz/orgs",
+    "repos_url": "https://api.github.com/users/sourabhxyz/repos",
+    "events_url": "https://api.github.com/users/sourabhxyz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sourabhxyz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 275027668,
+      "node_id": "MDU6TGFiZWwyNzUwMjc2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/documentation%20:book:",
+      "name": "documentation :book:",
+      "color": "006b75",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 717596767,
+      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": ""
+    },
+    {
+      "id": 1012613901,
+      "node_id": "MDU6TGFiZWwxMDEyNjEzOTAx",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20easy",
+      "name": "difficulty: easy",
+      "color": "0b3f89",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-15T04:48:29Z",
+  "updated_at": "2022-07-08T11:55:50Z",
+  "closed_at": "2022-07-08T11:55:50Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "## Page\r\n\r\nhttps://docs.soliditylang.org/en/v0.8.14/types.html#operators\r\n<!--Please link directly to the page which you think has a problem.-->\r\n\r\n## Abstract\r\n\r\nGiven example is incorrect as it doesn't compile. `uint8` doesn't implicitly convert to `int32`.\r\n<!--Please describe in detail what is wrong.-->\r\n\r\n## Pull request\r\n\r\nCan make type of `z` to be `uint32`.\r\n<!--Please link to your pull request which resolves this issue.-->\r\n",
+  "closed_by": {
+    "login": "wechman",
+    "id": 37188783,
+    "node_id": "MDQ6VXNlcjM3MTg4Nzgz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/37188783?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wechman",
+    "html_url": "https://github.com/wechman",
+    "followers_url": "https://api.github.com/users/wechman/followers",
+    "following_url": "https://api.github.com/users/wechman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wechman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wechman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wechman/subscriptions",
+    "organizations_url": "https://api.github.com/users/wechman/orgs",
+    "repos_url": "https://api.github.com/users/wechman/repos",
+    "events_url": "https://api.github.com/users/wechman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wechman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13144/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13144/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

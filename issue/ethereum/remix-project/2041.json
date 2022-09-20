@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2041",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2041/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2041/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2041/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2041",
+  "id": 1123998139,
+  "node_id": "I_kwDODtLRw85C_tm7",
+  "number": 2041,
+  "title": "Metamask signing error",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155226,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjI2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/bug",
+      "name": "bug",
+      "color": "d73a4a",
+      "default": true,
+      "description": "Something isn't working"
+    },
+    {
+      "id": 3797599600,
+      "node_id": "LA_kwDODtLRw87iWsVw",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/injected%20web3",
+      "name": "injected web3",
+      "color": "8F3E71",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-02-04T09:40:16Z",
+  "updated_at": "2022-02-07T13:31:14Z",
+  "closed_at": "2022-02-07T13:31:14Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "on Metamask `Signature Request` dialog, it shows message during previous attempt. For example:\r\n\r\nIn first attempt: message entered in remix textarea is `hi`, metamask dialog shows `0x`\r\nIn second attempt: message entered in remix textarea is `hello`, metamask dialog shows `hi`",
+  "closed_by": {
+    "login": "ryestew",
+    "id": 6050001,
+    "node_id": "MDQ6VXNlcjYwNTAwMDE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6050001?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ryestew",
+    "html_url": "https://github.com/ryestew",
+    "followers_url": "https://api.github.com/users/ryestew/followers",
+    "following_url": "https://api.github.com/users/ryestew/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ryestew/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ryestew/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ryestew/subscriptions",
+    "organizations_url": "https://api.github.com/users/ryestew/orgs",
+    "repos_url": "https://api.github.com/users/ryestew/repos",
+    "events_url": "https://api.github.com/users/ryestew/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ryestew/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2041/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2041/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

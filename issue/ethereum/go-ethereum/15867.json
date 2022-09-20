@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15867",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15867/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15867/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15867/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/15867",
+  "id": 288190135,
+  "node_id": "MDU6SXNzdWUyODgxOTAxMzU=",
+  "number": 15867,
+  "title": "Geth panic when reporting to ethstats while syncing",
+  "user": {
+    "login": "Magicking",
+    "id": 284088,
+    "node_id": "MDQ6VXNlcjI4NDA4OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/284088?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Magicking",
+    "html_url": "https://github.com/Magicking",
+    "followers_url": "https://api.github.com/users/Magicking/followers",
+    "following_url": "https://api.github.com/users/Magicking/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Magicking/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Magicking/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Magicking/subscriptions",
+    "organizations_url": "https://api.github.com/users/Magicking/orgs",
+    "repos_url": "https://api.github.com/users/Magicking/repos",
+    "events_url": "https://api.github.com/users/Magicking/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Magicking/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-01-12T17:22:39Z",
+  "updated_at": "2018-01-15T08:36:44Z",
+  "closed_at": "2018-01-15T08:36:44Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `1.8.0-unstable`\r\nOS & Version: Linux\r\nCommit hash : c786f75389121c29d4380c53a013759254457776\r\n\r\n#### Expected behaviour\r\n\r\nGeth sync and report no history to ethstats\r\n\r\n#### Actual behaviour\r\n\r\nGeth fail to report and panic\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n# Start with a fresh blockchain\r\n$> rm -rf ~/.ethereum/testnet/geth/chaindata\r\n# Start geth with ethstats option\r\n$> ./build/bin/geth --testnet --fast --ethstats GETH:PASSWORD@127.0.0.1:3000\r\n# Wait for ethstats to do an [history request]\r\n\r\nPanic\r\n\r\n#### Backtrace\r\n\r\n````\r\nINFO [01-12|17:12:42] Starting peer-to-peer node               instance=Geth/v1.8.0-unstable-72e70bce/linux-amd64/go1.9.2\r\nINFO [01-12|17:12:43] Loaded most recent local header          number=45797 hash=7cac75…272854 td=4187812833084\r\nINFO [01-12|17:12:43] Loaded most recent local full block      number=0     hash=419410…ca4a2d td=1048576\r\nINFO [01-12|17:12:43] Loaded most recent local fast block      number=45018 hash=2b3801…76d6e2 td=4112261950300\r\nINFO [01-12|17:12:43] Loaded local transaction journal         transactions=0 dropped=0\r\nINFO [01-12|17:12:43] Upgrading chain index                    type=bloombits percentage=81\r\nINFO [01-12|17:13:35] Block synchronisation started \r\nINFO [01-12|17:13:52] Imported new block headers               count=0 elapsed=15.515ms number=45210 hash=282df7…4ce337 ignored=192\r\nINFO [01-12|17:13:52] Imported new block headers               count=0 elapsed=16.696ms number=45402 hash=f4f7c9…6b7627 ignored=192\r\nINFO [01-12|17:13:53] Imported new block receipts              count=2 elapsed=1.115ms  bytes=6031 number=45020 hash=28f858…be5628 ignored=0\r\n[...]\r\nINFO [01-12|17:13:59] Imported new block receipts              count=205 elapsed=37.285ms bytes=305126 number=46330 hash=ad4c74…89c92a ignored=0\r\nINFO [01-12|17:13:59] Imported new block headers               count=192 elapsed=83.064ms number=47130 hash=17bd27…82c9b2 ignored=0\r\nWARN [01-12|17:14:00] Invalid stats history request            msg=false\r\npanic: runtime error: slice bounds out of range\r\n\r\ngoroutine 145 [running]:\r\ngithub.com/ethereum/go-ethereum/ethstats.(*Service).reportHistory(0xc420310b60, 0xc4203425a0, 0x0, 0x0, 0x0, 0x0, 0x0)\r\n\t/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/ethstats/ethstats.go:615 +0x8a0\r\ngithub.com/ethereum/go-ethereum/ethstats.(*Service).loop(0xc420310b60)\r\n\t/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/ethstats/ethstats.go:255 +0xc89\r\ncreated by github.com/ethereum/go-ethereum/ethstats.(*Service).Start\r\n\t/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/ethstats/ethstats.go:123 +0x57\r\n````\r\n",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15867/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15867/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

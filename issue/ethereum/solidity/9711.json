@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/9711",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/9711/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/9711/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/9711/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/9711",
+  "id": 689282489,
+  "node_id": "MDU6SXNzdWU2ODkyODI0ODk=",
+  "number": 9711,
+  "title": "ASTImportTest.sh silently ignores errors",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-08-31T15:10:50Z",
+  "updated_at": "2020-09-01T10:26:02Z",
+  "closed_at": "2020-09-01T10:26:02Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Description\r\n`ASTImportTest.sh` (which runs as a part of command line tests) uses the return value from `splitSources.py` to determine if a file is a multi-source one or not. In effect, other errors can go unnoticed (example: #9710).\r\n\r\nIt also does not use the `set -e` which means that failing commands do not interrupt the script (example: #9712).\r\n\r\nThe script needs to be adjusted so that we can discern errors from other situations.\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.7.1-develop.2020.8.31+commit.8c8eca3e.Linux.g++\r\n\r\n## Steps to Reproduce\r\n```bash\r\nFILETMP=$(mktemp -d)\r\ncd $FILETMP\r\n\r\n/path/to/solidity/scripts/ASTImportTest.sh\r\n```\r\n```\r\nLooking at 2140 .sol files...\r\n..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................Traceback (most recent call last):\r\n  File \"/projects/solidity/scripts/splitSources.py\", line 51, in <module>\r\n    lines = open(filePath, mode='r', encoding='utf8').read().splitlines()\r\n  File \"/usr/lib/python3.8/codecs.py\", line 322, in decode\r\n    (result, consumed) = self._buffer_decode(data, self.errors, final)\r\nUnicodeDecodeError: 'utf-8' codec can't decode byte 0xc0 in position 36: invalid start byte\r\n.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................\r\nSUCCESS: 0 syntaxTests passed, 0 failed, 2243 could not be compiled (2200 sources total).\r\n```",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/9711/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/9711/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

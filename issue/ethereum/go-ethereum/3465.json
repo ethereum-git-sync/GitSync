@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3465",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3465/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3465/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3465/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/3465",
+  "id": 196386473,
+  "node_id": "MDU6SXNzdWUxOTYzODY0NzM=",
+  "number": 3465,
+  "title": "no clear error when geth has run out of space to sync (at least in .ethash but maybe also in --datadir)",
+  "user": {
+    "login": "sathishvj",
+    "id": 415647,
+    "node_id": "MDQ6VXNlcjQxNTY0Nw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/415647?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sathishvj",
+    "html_url": "https://github.com/sathishvj",
+    "followers_url": "https://api.github.com/users/sathishvj/followers",
+    "following_url": "https://api.github.com/users/sathishvj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sathishvj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sathishvj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sathishvj/subscriptions",
+    "organizations_url": "https://api.github.com/users/sathishvj/orgs",
+    "repos_url": "https://api.github.com/users/sathishvj/repos",
+    "events_url": "https://api.github.com/users/sathishvj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sathishvj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-12-19T11:03:03Z",
+  "updated_at": "2017-03-09T14:50:16Z",
+  "closed_at": "2017-03-09T14:50:16Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `geth version`\r\nGeth\r\nVersion: 1.5.5-stable\r\nGit Commit: ff07d54843ea7ed9997c420d216b4c007f9c80c3\r\nProtocol Versions: [63 62]\r\nNetwork Id: 1\r\nGo Version: go1.7.4\r\nOS: linux\r\n\r\n#### Expected behaviour\r\ngeth could check for available disk space before attempting to start activity.  Also, while it is running it could check for available disk space; in case there is an error, it could at least specifically check for lack of disk space and provide a clear error.\r\n\r\n#### Actual behaviour\r\ngeth output a huge error (1379 lines long?) but no indication that it had run out of disk space where .ethash was.\r\n\r\n#### Steps to reproduce the behaviour\r\nCreate a drive with only a little space.  Start syncing a geth node on it.\r\n\r\nIn case it is useful, this is what I went through:\r\n* I had a Google Compute Engine server where i was doing some code\r\n* For a talk/demo that I had to do, I was creating a new node.  So i attached a new disk.\r\n* I set the --datadir to be on the new disk.  \r\n* After the unclear errors in the logs, I did some trial and error to understand that even .ethash takes up quite some space.\r\n\r\n[nohup.txt](https://github.com/ethereum/go-ethereum/files/660818/nohup.txt)\r\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3465/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3465/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

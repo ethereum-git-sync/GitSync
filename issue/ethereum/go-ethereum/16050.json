@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16050",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16050/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16050/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16050/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/16050",
+  "id": 295899650,
+  "node_id": "MDU6SXNzdWUyOTU4OTk2NTA=",
+  "number": 16050,
+  "title": "can't find some flags in go-ethereum/cmd/utils",
+  "user": {
+    "login": "zaq1tomo",
+    "id": 24784257,
+    "node_id": "MDQ6VXNlcjI0Nzg0MjU3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/24784257?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zaq1tomo",
+    "html_url": "https://github.com/zaq1tomo",
+    "followers_url": "https://api.github.com/users/zaq1tomo/followers",
+    "following_url": "https://api.github.com/users/zaq1tomo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zaq1tomo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zaq1tomo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zaq1tomo/subscriptions",
+    "organizations_url": "https://api.github.com/users/zaq1tomo/orgs",
+    "repos_url": "https://api.github.com/users/zaq1tomo/repos",
+    "events_url": "https://api.github.com/users/zaq1tomo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zaq1tomo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-02-09T15:02:38Z",
+  "updated_at": "2018-02-09T15:06:10Z",
+  "closed_at": "2018-02-09T15:06:10Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\n\r\nI could't found the main.go's some flags in ethereum/cmd/utils\r\n\r\n- utils.GCModeFlag\r\n  - https://github.com/ethereum/go-ethereum/blob/master/cmd/geth/main.go#L88\r\n- utils.CacheDatabaseFlag\r\n  - https://github.com/ethereum/go-ethereum/blob/master/cmd/geth/main.go#L93\r\n- utils.CacheGCFlag\r\n  - https://github.com/ethereum/go-ethereum/blob/master/cmd/geth/main.go#L94\r\n\r\nIs this correct?",
+  "closed_by": {
+    "login": "zaq1tomo",
+    "id": 24784257,
+    "node_id": "MDQ6VXNlcjI0Nzg0MjU3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/24784257?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zaq1tomo",
+    "html_url": "https://github.com/zaq1tomo",
+    "followers_url": "https://api.github.com/users/zaq1tomo/followers",
+    "following_url": "https://api.github.com/users/zaq1tomo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zaq1tomo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zaq1tomo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zaq1tomo/subscriptions",
+    "organizations_url": "https://api.github.com/users/zaq1tomo/orgs",
+    "repos_url": "https://api.github.com/users/zaq1tomo/repos",
+    "events_url": "https://api.github.com/users/zaq1tomo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zaq1tomo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16050/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16050/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

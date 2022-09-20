@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11101",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11101/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11101/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11101/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11101",
+  "id": 830952926,
+  "node_id": "MDU6SXNzdWU4MzA5NTI5MjY=",
+  "number": 11101,
+  "title": "Add more details around what it means to use Ether units",
+  "user": {
+    "login": "logankilpatrick",
+    "id": 35577566,
+    "node_id": "MDQ6VXNlcjM1NTc3NTY2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35577566?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/logankilpatrick",
+    "html_url": "https://github.com/logankilpatrick",
+    "followers_url": "https://api.github.com/users/logankilpatrick/followers",
+    "following_url": "https://api.github.com/users/logankilpatrick/following{/other_user}",
+    "gists_url": "https://api.github.com/users/logankilpatrick/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/logankilpatrick/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/logankilpatrick/subscriptions",
+    "organizations_url": "https://api.github.com/users/logankilpatrick/orgs",
+    "repos_url": "https://api.github.com/users/logankilpatrick/repos",
+    "events_url": "https://api.github.com/users/logankilpatrick/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/logankilpatrick/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 275027668,
+      "node_id": "MDU6TGFiZWwyNzUwMjc2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/documentation%20:book:",
+      "name": "documentation :book:",
+      "color": "006b75",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 455256446,
+      "node_id": "MDU6TGFiZWw0NTUyNTY0NDY=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/waiting%20for%20more%20input",
+      "name": "waiting for more input",
+      "color": "fef2c0",
+      "default": false,
+      "description": "Issues waiting for more input by the reporter"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-03-13T18:01:01Z",
+  "updated_at": "2021-04-06T02:32:23Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nRight now, it is rather unclear based on reading the docs here: https://github.com/ethereum/solidity/blob/v0.8.2/docs/units-and-global-variables.rst what we can actually use ether units for. \r\n\r\n## Motivation\r\n\r\nAdding in more examples of how it can be used. I was specifically interested in how to solve the division/floating point problem in Solidity and was pointed to this section but it is not clear how I can actually use those ether units. \r\n\r\n\r\n## Backwards Compatibility\r\n\r\nAfter updating the docs for 8.2, it should be propagated to older versions. ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11101/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11101/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/798772260",
+    "html_url": "https://github.com/ethereum/solidity/issues/11101#issuecomment-798772260",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/11101",
+    "id": 798772260,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDc5ODc3MjI2MA==",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2021-03-13T19:28:16Z",
+    "updated_at": "2021-03-13T19:28:16Z",
+    "author_association": "MEMBER",
+    "body": "Thanks for your input! We definitely want the docs to be clear so if there's something we can do to improve them, we'll work on that. That being said, I think that the example shows pretty clearly that numbers with these units are just integers:\r\n\r\n> assert(1 wei == 1);\r\n> assert(1 gwei == 1e9);\r\n> assert(1 ether == 1e18);\r\n> \r\n> The only effect of the subdenomination suffix is a multiplication by a power of ten.\r\n\r\nI.e. `1 wei` is exactly the same as `1` and `wei` is there just for clarity. `1 gwei` is a shorthand for `1000000000`, etc. There's nothing more to it and it has nothing to do with fixed-point arithmetic (there are no floating-point numbers in Solidity). Even something like `0.000001 ether` is in fact just an integer (equivalent to `1000 gwei` or `1000000000000`).\r\n\r\nCould you give some examples of operations where the result you got was counterintuitive? Did you for example assume that `1 ether` means something like `1.0` and lower denominations are fractions? Or maybe that these units are typed and not just equivalent to integers? I think that most of the confusion regarding using these units in calculations results from the assumptions people come with. We could expand on it a bit (and maybe rephrase it if the current phrasing makes things less clear than they could be) but we have to know first which situations are problematic.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/798772260/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

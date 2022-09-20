@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23263",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23263/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23263/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23263/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/23263",
+  "id": 951906720,
+  "node_id": "MDU6SXNzdWU5NTE5MDY3MjA=",
+  "number": 23263,
+  "title": "Support IPv6 mainnet P2P discovery bootstrap",
+  "user": {
+    "login": "balboah",
+    "id": 294690,
+    "node_id": "MDQ6VXNlcjI5NDY5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/294690?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/balboah",
+    "html_url": "https://github.com/balboah",
+    "followers_url": "https://api.github.com/users/balboah/followers",
+    "following_url": "https://api.github.com/users/balboah/following{/other_user}",
+    "gists_url": "https://api.github.com/users/balboah/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/balboah/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/balboah/subscriptions",
+    "organizations_url": "https://api.github.com/users/balboah/orgs",
+    "repos_url": "https://api.github.com/users/balboah/repos",
+    "events_url": "https://api.github.com/users/balboah/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/balboah/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233652,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1Mg==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:feature",
+      "name": "type:feature",
+      "color": "84b6eb",
+      "default": false,
+      "description": null
+    },
+    {
+      "id": 1380070748,
+      "node_id": "MDU6TGFiZWwxMzgwMDcwNzQ4",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/area:p2p",
+      "name": "area:p2p",
+      "color": "ea9adb",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-07-23T21:27:28Z",
+  "updated_at": "2021-12-02T15:20:51Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "# Rationale\r\n\r\nIt seems to me it's not possible to discover nodes on IPv6 while synchronizing with mainnet.\r\nHaving IPv6 available would improve connectivity as NAT is unnecessary.\r\n\r\nAll [mainnet bootnodes](https://github.com/ethereum/go-ethereum/blob/08ea52e77a522540161d051b2777b34ee64cec88/params/bootnodes.go#L23-L33) seems to specify IPv4 only, which may be the reason why no IPv6 peers can be found.\r\n\r\nI also noticed there are no IPv6 address anywhere in \"admin.nodeInfo\", even when deleting the IPv4 address leaving no default IPv4 route (it would find 127.0.0.1 instead).\r\n\r\n# Implementation\r\n\r\nAssuming there is actual IPv6 support in the geth P2P mechanism, perhaps providing IPv6 addresses on the bootnode instances would be enough?\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23263/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 1
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23263/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/984726573",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/23263#issuecomment-984726573",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23263",
+    "id": 984726573,
+    "node_id": "IC_kwDOAOvK9846sbwt",
+    "user": {
+      "login": "fjl",
+      "id": 6915,
+      "node_id": "MDQ6VXNlcjY5MTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fjl",
+      "html_url": "https://github.com/fjl",
+      "followers_url": "https://api.github.com/users/fjl/followers",
+      "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+      "organizations_url": "https://api.github.com/users/fjl/orgs",
+      "repos_url": "https://api.github.com/users/fjl/repos",
+      "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fjl/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2021-12-02T15:20:38Z",
+    "updated_at": "2021-12-02T15:20:38Z",
+    "author_association": "MEMBER",
+    "body": "This issue came up in our triage discussion today. At this time, providing IPv6-enabled bootstrap nodes is a bit tricky. Let me explain:\r\n\r\nDiscovery Protocol v4, which is currently used by Ethereum, only allows advertising a single IP address for each node. The announced address can be IPv4 *or* IPv6. In order to provide bootstrapping for IPv6, we would need to run a dedicated v6 node. Even if we had such nodes, connectivity between the two networks would be limited by the fact that not everyone is able to communicate with IPv6 nodes. \r\n\r\nFor these reasons, I believe that trying to make IPv6 work with Discovery v4 is a lost cause. An IPv6-only deployment of the protocol would work, but the world is not ready for it.\r\n\r\nDiscovery Protocol v5, which is used by eth2, handles this much better. In the newer discovery protocol version, nodes can announce both IPv4 and IPv6 addresses (and ports) simultaneously. We will eventually upgrade the eth1 peer-to-peer network to Discovery v5 and when we do that, we can think about proper IPv6 deployment again.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/984726573/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

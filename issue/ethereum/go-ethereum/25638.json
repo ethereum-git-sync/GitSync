@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25638",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25638/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25638/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25638/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25638",
+  "id": 1356037603,
+  "node_id": "I_kwDOAOvK985Q033j",
+  "number": 25638,
+  "title": "v1.10.23 dev chain: \"missing trie node\" on debug_getModifiedAccountsByNumber",
+  "user": {
+    "login": "mohoff",
+    "id": 6060612,
+    "node_id": "MDQ6VXNlcjYwNjA2MTI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6060612?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mohoff",
+    "html_url": "https://github.com/mohoff",
+    "followers_url": "https://api.github.com/users/mohoff/followers",
+    "following_url": "https://api.github.com/users/mohoff/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mohoff/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mohoff/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mohoff/subscriptions",
+    "organizations_url": "https://api.github.com/users/mohoff/orgs",
+    "repos_url": "https://api.github.com/users/mohoff/repos",
+    "events_url": "https://api.github.com/users/mohoff/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mohoff/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-30T16:40:22Z",
+  "updated_at": "2022-08-30T16:40:22Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `1.10.24-unstable` (but it's 1.10.23)\r\nOS & Version: Linux\r\n\r\n#### Expected behaviour\r\n\r\nReturn `null` or list of addresses for any existing block range when calling `debug_getModifiedAccountsByNumber`\r\n\r\n#### Actual behaviour\r\n\r\nIn a local merge test setup, the call works for empty blocks in [0,12]. Then on block 13, two deposit stake tx get successfully mined (using https://github.com/protolambda/merge-genesis-tools as part of the genesis allocs), followed by more txs in blocks 14+. The deposit tx are confirmed working and valid, the merge kicks in with a beacon node and validator. Also txs in blocks 14+ get mined successfully. Only when `debug_getModifiedAccountsByNumber` runs on a block range including or after block 13, things break.\r\n\r\nSymptoms of `debug_getModifiedAccountsByNumber`:\r\n\r\n```\r\ncurl -X POST --data '{\"jsonrpc\":\"2.0\",\"method\":\"debug_getModifiedAccountsByNumber\",\"params\":[1,12],\"id\":1}' localhost:8545 -H 'Content-Type: application/json'\r\n{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":null}.   --> expected\r\n\r\n curl -X POST --data '{\"jsonrpc\":\"2.0\",\"method\":\"debug_getModifiedAccountsByNumber\",\"params\":[1,13],\"id\":1}' localhost:8545 -H 'Content-Type: application/json'\r\n{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32000,\"message\":\"missing trie node 9c8844fac2b8b2bcb75bf3861312f13b00593e7727945948b5cc44be6962ec06 (path ) \\u003cnil\\u003e\"}}\r\n\r\ncurl -X POST --data '{\"jsonrpc\":\"2.0\",\"method\":\"debug_getModifiedAccountsByNumber\",\"params\":[1,100],\"id\":1}' localhost:8545 -H 'Content-Type: application/json'\r\n{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32000,\"message\":\"no preimage found for hash 1143df8268b94bd6292fdd7c9b8af39a79f764cfc03ae006844446bc91203927\"}}\r\n```\r\n\r\nGeth logs around block 13:\r\n\r\n```\r\nINFO [08-30|16:01:32.001] Commit new sealing work                  number=12 sealhash=f74805..ab47c7 uncles=0 txs=0 gas=0 fees=0 elapsed=\"398.641µs\"\r\nINFO [08-30|16:01:32.229] Setting new local account                address=0x8104A480F40cD0BF439e50711D8d7704108f41d9\r\nINFO [08-30|16:01:32.230] Submitted transaction                    hash=0xee11294f6fdd179c2259afdd55c440ed00b5a995b3182a08a50a61117a40e880 from=0x8104A480F40cD0BF439e50711D8d7704108f41d9 nonce=0 recipient=0x4242424242424242424242424242424242424242 value=32,000,000,000,000,000,000\r\nINFO [08-30|16:01:32.255] Submitted transaction                    hash=0x39c14ea137ef5e87615f7b844062b6f851dd8401d0a976a30d1d0e5a4b3f8cc8 from=0x8104A480F40cD0BF439e50711D8d7704108f41d9 nonce=1 recipient=0x4242424242424242424242424242424242424242 value=32,000,000,000,000,000,000\r\nINFO [08-30|16:01:34.002] Successfully sealed new block            number=12 sealhash=f74805..ab47c7 hash=b6afce..a4824a elapsed=2.001s\r\nINFO [08-30|16:01:34.002] 🔗 block reached canonical chain          number=5  hash=6bd6b6..b72031\r\nINFO [08-30|16:01:34.002] 🔨 mined potential block                  number=12 hash=b6afce..a4824a\r\nINFO [08-30|16:01:34.003] Commit new sealing work                  number=13 sealhash=73f8a2..60ae14 uncles=0 txs=0 gas=0 fees=0 elapsed=\"338.612µs\"\r\nINFO [08-30|16:01:34.004] Commit new sealing work                  number=13 sealhash=4bafed..a790f7 uncles=0 txs=2 gas=155,556 fees=0.00038889 elapsed=1.542ms\r\nINFO [08-30|16:01:36.001] Successfully sealed new block            number=13 sealhash=4bafed..a790f7 hash=f3009b..9d205a elapsed=1.996s\r\nINFO [08-30|16:01:36.001] 🔗 block reached canonical chain          number=6  hash=6f061e..ffd41e\r\n\r\n// snip\r\n\r\nWARN [08-30|16:34:11.338] Served debug_getModifiedAccountsByNumber conn=172.26.0.6:51492 reqid=1661877251336 duration=\"149.72µs\"  err=\"no preimage found for hash 1143df8268b94bd6292fdd7c9b8af39a79f764cfc03ae006844446bc91203927\"\r\n```\r\n\r\nSounds similar to https://github.com/ethereum/go-ethereum/issues/25613 ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25638/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25638/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

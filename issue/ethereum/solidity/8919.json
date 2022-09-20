@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/8919",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/8919/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/8919/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/8919/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/8919",
+  "id": 616892929,
+  "node_id": "MDU6SXNzdWU2MTY4OTI5Mjk=",
+  "number": 8919,
+  "title": "Equality comparison for tuples.",
+  "user": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-05-12T19:11:39Z",
+  "updated_at": "2022-08-17T13:50:10Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "I'm not sure if we actually urgently need this as a language feature, but I found it rather annoying in writing tests that I can't do:\r\n\r\n```\r\nfunction f() public returns (uint256 a, uint256 b) { ... }\r\nfunction g() public { assert(f() == (1, 2)); }\r\n```\r\n\r\nSo I think allowing equality comparisons, i.e. ``==`` and ``!=``, for tuple expressions would be a nice convenience feature. For other operators like ``<`` there's no clear unique definition, so if we want this at all, we should stick to ``==`` and ``!=`` only.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/8919/reactions",
+    "total_count": 3,
+    "+1": 3,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/8919/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

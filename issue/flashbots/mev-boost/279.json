@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/279",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/279/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/279/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/279/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/279",
+  "id": 1356165223,
+  "node_id": "I_kwDOGZSKs85Q1XBn",
+  "number": 279,
+  "title": "JSON deserialization DoS",
+  "user": {
+    "login": "samczsun",
+    "id": 10292550,
+    "node_id": "MDQ6VXNlcjEwMjkyNTUw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10292550?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/samczsun",
+    "html_url": "https://github.com/samczsun",
+    "followers_url": "https://api.github.com/users/samczsun/followers",
+    "following_url": "https://api.github.com/users/samczsun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/samczsun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/samczsun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/samczsun/subscriptions",
+    "organizations_url": "https://api.github.com/users/samczsun/orgs",
+    "repos_url": "https://api.github.com/users/samczsun/repos",
+    "events_url": "https://api.github.com/users/samczsun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/samczsun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-30T18:46:49Z",
+  "updated_at": "2022-08-30T18:46:49Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "If this is a concern, this needs to switch to using a decoder too\r\n\r\nhttps://github.com/flashbots/mev-boost/blob/c03c1674a19346ff6ff27c6c562f15b6d8d33f8a/server/utils.go#L71\r\n\r\nAlso, a lot of types will deserialize a raw `[]bytes` which has limitless potential to DoS (although it will then result in an invalid message, so hey).",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/279/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/279/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

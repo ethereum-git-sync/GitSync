@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/568",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/568/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/568/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/568/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/568",
+  "id": 154747053,
+  "node_id": "MDU6SXNzdWUxNTQ3NDcwNTM=",
+  "number": 568,
+  "title": "Non-global remappings",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-05-13T16:05:04Z",
+  "updated_at": "2016-06-14T12:40:06Z",
+  "closed_at": "2016-06-14T12:39:58Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Import path remappings currently cannot be used in a setting where inside the import tree, modules of the same name but different versions are required.\n\nTo solve this, it has to be possible to configure remappings on a local basis, i.e. depending on where an import is performed.\n\nAt the same time, the \"load file\" callback should be be supplied with the file the import is called from.\n\nSuggested syntax on the commandline:\n\n`solc <context>:<path prefix>=<remap target> ...`\n\nwhere:\n\ncontext is an absolute path in the filesystem. If the current source file is in that path (or a subdirectory), the remapping is active, otherwise it is ignored.\n\nIf the import statement looks like `import \"a/b/c.sol\"` and `path prefix` matches a prefix of `a/b/c.sol`, that prefix is replaced by `remap_target`, which should be an absolute path in the filesystem.\n\nSince two versions of a module should also be treated differently inside the compiler, the \"load file\" callback has to supply the result of the remapping to the compiler (and not only the contents of the file, as is currently the case). This is also needed so that the compiler can tell the absolute filesystem path of the current file and not only the \"virtual path\" inside the module hierarchy.\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/568/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/568/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

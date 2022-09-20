@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/540",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/540/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/540/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/540/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/540",
+  "id": 153297683,
+  "node_id": "MDU6SXNzdWUxNTMyOTc2ODM=",
+  "number": 540,
+  "title": "Style Guide on Single-Line Functions?",
+  "user": {
+    "login": "Denton-L",
+    "id": 9620836,
+    "node_id": "MDQ6VXNlcjk2MjA4MzY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9620836?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Denton-L",
+    "html_url": "https://github.com/Denton-L",
+    "followers_url": "https://api.github.com/users/Denton-L/followers",
+    "following_url": "https://api.github.com/users/Denton-L/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Denton-L/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Denton-L/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Denton-L/subscriptions",
+    "organizations_url": "https://api.github.com/users/Denton-L/orgs",
+    "repos_url": "https://api.github.com/users/Denton-L/repos",
+    "events_url": "https://api.github.com/users/Denton-L/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Denton-L/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-05-05T18:50:04Z",
+  "updated_at": "2016-05-11T19:37:28Z",
+  "closed_at": "2016-05-11T19:37:28Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "Is there any agreement on whether or not declaring short functions (one statement) on a single line is fine? If there is an agreement, I can add it into the style guide.\n",
+  "closed_by": {
+    "login": "Denton-L",
+    "id": 9620836,
+    "node_id": "MDQ6VXNlcjk2MjA4MzY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9620836?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Denton-L",
+    "html_url": "https://github.com/Denton-L",
+    "followers_url": "https://api.github.com/users/Denton-L/followers",
+    "following_url": "https://api.github.com/users/Denton-L/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Denton-L/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Denton-L/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Denton-L/subscriptions",
+    "organizations_url": "https://api.github.com/users/Denton-L/orgs",
+    "repos_url": "https://api.github.com/users/Denton-L/repos",
+    "events_url": "https://api.github.com/users/Denton-L/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Denton-L/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/540/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/540/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2824",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2824/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2824/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2824/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2824",
+  "id": 1123792457,
+  "node_id": "I_kwDOCOoGbc5C-7ZJ",
+  "number": 2824,
+  "title": "Remove PendingAttestation ssz_static tests from Altair and Bellatrix",
+  "user": {
+    "login": "ajsutton",
+    "id": 72675,
+    "node_id": "MDQ6VXNlcjcyNjc1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72675?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ajsutton",
+    "html_url": "https://github.com/ajsutton",
+    "followers_url": "https://api.github.com/users/ajsutton/followers",
+    "following_url": "https://api.github.com/users/ajsutton/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ajsutton/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ajsutton/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ajsutton/subscriptions",
+    "organizations_url": "https://api.github.com/users/ajsutton/orgs",
+    "repos_url": "https://api.github.com/users/ajsutton/repos",
+    "events_url": "https://api.github.com/users/ajsutton/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ajsutton/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-02-04T04:18:51Z",
+  "updated_at": "2022-02-04T04:18:51Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "The `PendingAttestation` data structure is only used in phase0, but the ssz_static tests for Altair and Bellatrix are included tests for it which means we're running additional tests for no benefit.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2824/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2824/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

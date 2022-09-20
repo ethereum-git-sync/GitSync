@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/100",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/100/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/100/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/100/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/100",
+  "id": 666117771,
+  "node_id": "MDU6SXNzdWU2NjYxMTc3NzE=",
+  "number": 100,
+  "title": "\"Content Security Policy\"  violation",
+  "user": {
+    "login": "3rdstage",
+    "id": 2508220,
+    "node_id": "MDQ6VXNlcjI1MDgyMjA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2508220?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/3rdstage",
+    "html_url": "https://github.com/3rdstage",
+    "followers_url": "https://api.github.com/users/3rdstage/followers",
+    "following_url": "https://api.github.com/users/3rdstage/following{/other_user}",
+    "gists_url": "https://api.github.com/users/3rdstage/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/3rdstage/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/3rdstage/subscriptions",
+    "organizations_url": "https://api.github.com/users/3rdstage/orgs",
+    "repos_url": "https://api.github.com/users/3rdstage/repos",
+    "events_url": "https://api.github.com/users/3rdstage/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/3rdstage/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2233116932,
+      "node_id": "MDU6TGFiZWwyMjMzMTE2OTMy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/installation",
+      "name": "installation",
+      "color": "6fbaed",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-01-17T04:29:40Z",
+  "updated_at": "2020-07-27T09:06:36Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "To use the latest Remix-ide, I downloaded the zipped binary(remix-f25a380.zip\r\n) of v0.9.2 from 'https://github.com/ethereum/remix-ide/releases/tag/v0.9.2' and tried it as an chrome extension using the instruction in README page.\r\nBut, I met the error saying the following.\r\n\r\n> Refused to execute inline script because it violates the following Content Security Policy directive: \"script-src 'self' https://solc-bin.ethereum.org/\". Either the 'unsafe-inline' keyword, a hash ('sha256-pgsJPcGlKBQT9Hh4VxrLz8ULRtMuxa4owlK9JWk8sTA='), or a nonce ('nonce-...') is required to enable inline execution.\r\n\r\nThe problem was solved after I changed the <tt>manifest.json</tt> file located at the base directory of unzipped binary.  The last item of <tt>manifest.json</tt> file in the zipped binary was like this.\r\n\r\n`\"content_security_policy\": \"script-src 'self' https://solc-bin.ethereum.org/; object-src 'self'\"` \r\n\r\nI added 'usafe-eval' and 'sha256...' to the line.  And the chrome extension started to work correctly.\r\n\r\n`\"content_security_policy\": \"script-src 'self' 'unsafe-eval' 'sha256-pgsJPcGlKBQT9Hh4VxrLz8ULRtMuxa4owlK9JWk8sTA=' https://solc-bin.ethereum.org/; object-src 'self'\"`\r\n\r\nI am using Windows 10 and Chrome v79.0.3945.117 which is latest version currently, and I think it is not the problem of OS.  \r\nAnyway I hope the fix would be reflected to the source of the Remix project.\r\n\r\n\r\n\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/100/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/100/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

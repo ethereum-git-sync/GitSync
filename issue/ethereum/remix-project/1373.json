@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1373",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1373/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1373/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1373/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1373",
+  "id": 942636498,
+  "node_id": "MDU6SXNzdWU5NDI2MzY0OTg=",
+  "number": 1373,
+  "title": "remixd 安装无效 windows10环境",
+  "user": {
+    "login": "zz517141035",
+    "id": 38564691,
+    "node_id": "MDQ6VXNlcjM4NTY0Njkx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/38564691?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zz517141035",
+    "html_url": "https://github.com/zz517141035",
+    "followers_url": "https://api.github.com/users/zz517141035/followers",
+    "following_url": "https://api.github.com/users/zz517141035/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zz517141035/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zz517141035/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zz517141035/subscriptions",
+    "organizations_url": "https://api.github.com/users/zz517141035/orgs",
+    "repos_url": "https://api.github.com/users/zz517141035/repos",
+    "events_url": "https://api.github.com/users/zz517141035/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zz517141035/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-13T02:54:52Z",
+  "updated_at": "2021-07-13T02:54:52Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "我正确的安装了remixd 0.4.2版本 但是在cmd命令窗口时  就是提示remixd不是正确命令 无法使用  我换了一台电脑 都是windows10环境操作一遍 remixd可以使用 我想知道 remixd还与什么环境相互影响吗?",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1373/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1373/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

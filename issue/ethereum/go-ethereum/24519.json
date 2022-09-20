@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24519",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24519/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24519/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24519/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24519",
+  "id": 1163332949,
+  "node_id": "I_kwDOAOvK985FVw1V",
+  "number": 24519,
+  "title": "ethereum/go-ethereum",
+  "user": {
+    "login": "Karldodz29",
+    "id": 89880890,
+    "node_id": "MDQ6VXNlcjg5ODgwODkw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/89880890?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Karldodz29",
+    "html_url": "https://github.com/Karldodz29",
+    "followers_url": "https://api.github.com/users/Karldodz29/followers",
+    "following_url": "https://api.github.com/users/Karldodz29/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Karldodz29/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Karldodz29/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Karldodz29/subscriptions",
+    "organizations_url": "https://api.github.com/users/Karldodz29/orgs",
+    "repos_url": "https://api.github.com/users/Karldodz29/repos",
+    "events_url": "https://api.github.com/users/Karldodz29/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Karldodz29/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233652,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1Mg==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:feature",
+      "name": "type:feature",
+      "color": "84b6eb",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-08T23:52:44Z",
+  "updated_at": "2022-03-08T23:53:13Z",
+  "closed_at": "2022-03-08T23:53:13Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "# Rationale\n\nWhy should this feature exist?\nWhat are the use-cases?\n\n# Implementation\n\nDo you have ideas regarding the implementation of this feature?\nAre you willing to implement this feature?",
+  "closed_by": {
+    "login": "Karldodz29",
+    "id": 89880890,
+    "node_id": "MDQ6VXNlcjg5ODgwODkw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/89880890?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Karldodz29",
+    "html_url": "https://github.com/Karldodz29",
+    "followers_url": "https://api.github.com/users/Karldodz29/followers",
+    "following_url": "https://api.github.com/users/Karldodz29/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Karldodz29/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Karldodz29/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Karldodz29/subscriptions",
+    "organizations_url": "https://api.github.com/users/Karldodz29/orgs",
+    "repos_url": "https://api.github.com/users/Karldodz29/repos",
+    "events_url": "https://api.github.com/users/Karldodz29/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Karldodz29/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24519/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24519/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

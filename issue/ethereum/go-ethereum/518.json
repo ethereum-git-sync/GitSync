@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/518",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/518/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/518/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/518/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/518",
+  "id": 62570142,
+  "node_id": "MDU6SXNzdWU2MjU3MDE0Mg==",
+  "number": 518,
+  "title": "suggestion: miner hash rate logging flexibility",
+  "user": {
+    "login": "ethers",
+    "id": 6937903,
+    "node_id": "MDQ6VXNlcjY5Mzc5MDM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6937903?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ethers",
+    "html_url": "https://github.com/ethers",
+    "followers_url": "https://api.github.com/users/ethers/followers",
+    "following_url": "https://api.github.com/users/ethers/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ethers/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ethers/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ethers/subscriptions",
+    "organizations_url": "https://api.github.com/users/ethers/orgs",
+    "repos_url": "https://api.github.com/users/ethers/repos",
+    "events_url": "https://api.github.com/users/ethers/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ethers/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-03-18T02:42:10Z",
+  "updated_at": "2015-03-18T02:45:32Z",
+  "closed_at": "2015-03-18T02:45:31Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Can miner hash rate logging be disabled or made configurable in some way?  It clutters the logs, making other important logs more difficult to see in development, such as\n2015/03/17 19:19:00 [MINER] TX (3bc4be4f) failed. Transaction will be removed\n2015/03/17 18:26:45 [BLOCK] TX err: stack underflow (1 <=> 4)\n\n2015/03/17 19:36:38 [MINER] Hash rate: 71 Khash\n2015/03/17 19:36:40 [MINER] Hash rate: 71 Khash\n2015/03/17 19:36:42 [MINER] Hash rate: 71 Khash\n2015/03/17 19:36:44 [MINER] Hash rate: 68 Khash\n2015/03/17 19:36:46 [MINER] Hash rate: 61 Khash\n2015/03/17 19:36:48 [MINER] Hash rate: 57 Khash\n2015/03/17 19:36:50 [MINER] Hash rate: 56 Khash\n2015/03/17 19:36:52 [MINER] Hash rate: 56 Khash\n2015/03/17 19:36:54 [MINER] Hash rate: 54 Khash\n2015/03/17 19:36:56 [MINER] Hash rate: 52 Khash\n2015/03/17 19:36:58 [MINER] Hash rate: 53 Khash\n2015/03/17 19:37:00 [MINER] Hash rate: 54 Khash\n2015/03/17 19:37:02 [MINER] Hash rate: 53 Khash\n2015/03/17 19:37:04 [MINER] Hash rate: 54 Khash\n",
+  "closed_by": {
+    "login": "ethers",
+    "id": 6937903,
+    "node_id": "MDQ6VXNlcjY5Mzc5MDM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6937903?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ethers",
+    "html_url": "https://github.com/ethers",
+    "followers_url": "https://api.github.com/users/ethers/followers",
+    "following_url": "https://api.github.com/users/ethers/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ethers/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ethers/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ethers/subscriptions",
+    "organizations_url": "https://api.github.com/users/ethers/orgs",
+    "repos_url": "https://api.github.com/users/ethers/repos",
+    "events_url": "https://api.github.com/users/ethers/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ethers/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/518/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/518/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

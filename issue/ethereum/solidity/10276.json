@@ -1,0 +1,113 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10276",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10276/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10276/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10276/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10276",
+  "id": 741725643,
+  "node_id": "MDU6SXNzdWU3NDE3MjU2NDM=",
+  "number": 10276,
+  "title": "[CLI] Do not generate serialised JSON fields in --combined-json output where unneccesary",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 467898404,
+      "node_id": "MDU6TGFiZWw0Njc4OTg0MDQ=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/breaking%20change%20:warning:",
+      "name": "breaking change :warning:",
+      "color": "b60205",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 717596767,
+      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": ""
+    },
+    {
+      "id": 1012613901,
+      "node_id": "MDU6TGFiZWwxMDEyNjEzOTAx",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20easy",
+      "name": "difficulty: easy",
+      "color": "0b3f89",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-11-12T16:06:30Z",
+  "updated_at": "2020-12-01T16:57:31Z",
+  "closed_at": "2020-12-01T16:57:31Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "(This issue is splitting up #8847.)\r\n\r\n@MrChico:\r\n> When constructing a --combined-json output, some options generate a quoted json string value (metadata, storage-layout, abi), while others (ast), generate a normal, non-quoted json subobject. See screenshot:\r\n\r\n@axic:\r\n> Some, like metadata, should be quoted, because the encoding order matters for reproducibility.\r\n>The others I am not sure why are quoted, probably they were introduced at different times, but we could change it with 0.7.0.\r\n\r\n---\r\n\r\nProposal: change some of the below to not be quoted. `abi`, `devdoc`, `userdoc`, `storage-layout` could be changed, but `metadata` has a secondary objective to be the exact match of what is encoded.\r\n\r\n---\r\n\r\n```json\r\n{\r\n  \"contracts\": {\r\n    \"hello.sol:HelloWorld\": {\r\n      \"abi\": \"[{\\\"inputs\\\":[],\\\"name\\\":\\\"helloworld\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"string\\\"}],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"}]\",\r\n      \"asm\": {\r\n        \".code\": [\r\n          {\r\n            \"begin\": 0,\r\n            \"end\": 110,\r\n            \"name\": \"PUSH\",\r\n            \"source\": 0,\r\n            \"value\": \"80\"\r\n          },\r\n          {\r\n            \"begin\": 0,\r\n            \"end\": 110,\r\n            \"name\": \"PUSH\",\r\n            \"source\": 0,\r\n            \"value\": \"40\"\r\n          },\r\n          ...\r\n        ],\r\n        \".data\": {\r\n          \"0\": {\r\n            \".auxdata\": \"a2646970667358221220d242324fb90eea9d9714fb31f83af78198211b746c468fe5e9c3af2dfdea1f4564736f6c637828302e372e352d646576656c6f702e323032302e31312e31322b636f6d6d69742e63343333303461650059\",\r\n            \".code\": [\r\n              {\r\n                \"begin\": 0,\r\n                \"end\": 110,\r\n                \"name\": \"PUSH\",\r\n                \"source\": 0,\r\n                \"value\": \"80\"\r\n              },\r\n              {\r\n                \"begin\": 0,\r\n                \"end\": 110,\r\n                \"name\": \"PUSH\",\r\n                \"source\": 0,\r\n                \"value\": \"40\"\r\n              },\r\n              ...\r\n            ]\r\n          }\r\n        }\r\n      },\r\n      \"bin\": \"608060405234801561001057600080fd5b50610144806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80632f2f485914602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280600b81526020017f48656c6c6f20576f726c6400000000000000000000000000000000000000000081525090509056fea2646970667358221220d242324fb90eea9d9714fb31f83af78198211b746c468fe5e9c3af2dfdea1f4564736f6c637828302e372e352d646576656c6f702e323032302e31312e31322b636f6d6d69742e63343333303461650059\",\r\n      \"bin-runtime\": \"6080604052348015600f57600080fd5b506004361060285760003560e01c80632f2f485914602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280600b81526020017f48656c6c6f20576f726c6400000000000000000000000000000000000000000081525090509056fea2646970667358221220d242324fb90eea9d9714fb31f83af78198211b746c468fe5e9c3af2dfdea1f4564736f6c637828302e372e352d646576656c6f702e323032302e31312e31322b636f6d6d69742e63343333303461650059\",\r\n      \"devdoc\": \"{\\\"kind\\\":\\\"dev\\\",\\\"methods\\\":{},\\\"version\\\":1}\",\r\n      \"generated-sources\": [],\r\n      \"generated-sources-runtime\": [],\r\n      \"hashes\": {\r\n        \"helloworld()\": \"2f2f4859\"\r\n      },\r\n      \"metadata\": \"{\\\"compiler\\\":{\\\"version\\\":\\\"0.7.5-develop.2020.11.12+commit.c43304ae\\\"},\\\"language\\\":\\\"Solidity\\\",\\\"output\\\":{\\\"abi\\\":[{\\\"inputs\\\":[],\\\"name\\\":\\\"helloworld\\\",\\\"outputs\\\":[{\\\"internalType\\\":\\\"string\\\",\\\"name\\\":\\\"\\\",\\\"type\\\":\\\"string\\\"}],\\\"stateMutability\\\":\\\"nonpayable\\\",\\\"type\\\":\\\"function\\\"}],\\\"devdoc\\\":{\\\"kind\\\":\\\"dev\\\",\\\"methods\\\":{},\\\"version\\\":1},\\\"userdoc\\\":{\\\"kind\\\":\\\"user\\\",\\\"methods\\\":{},\\\"version\\\":1}},\\\"settings\\\":{\\\"compilationTarget\\\":{\\\"hello.sol\\\":\\\"HelloWorld\\\"},\\\"evmVersion\\\":\\\"istanbul\\\",\\\"libraries\\\":{},\\\"metadata\\\":{\\\"bytecodeHash\\\":\\\"ipfs\\\"},\\\"optimizer\\\":{\\\"enabled\\\":false,\\\"runs\\\":200},\\\"remappings\\\":[]},\\\"sources\\\":{\\\"hello.sol\\\":{\\\"keccak256\\\":\\\"0xfd373b4fe805c0f1b4e4f6b18f5450c959eaec9c975ba62a4553a06719a7353f\\\",\\\"urls\\\":[\\\"bzz-raw://5e3558f9b17262beaacae8a285523c17400ffbf7086d4ae261fa30befb4bf547\\\",\\\"dweb:/ipfs/QmZsWXiGWu8snp9UaMiCRFbRKNoZHvHY1AGVmWuvrGLTaD\\\"]}},\\\"version\\\":1}\",\r\n      \"opcodes\": \"PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x144 DUP1 PUSH2 0x20 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x2F2F4859 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0xAB JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE DUP4 DUP2 DUP2 MLOAD DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP DUP1 MLOAD SWAP1 PUSH1 0x20 ADD SWAP1 DUP1 DUP4 DUP4 PUSH1 0x0 JUMPDEST DUP4 DUP2 LT ISZERO PUSH1 0x71 JUMPI DUP1 DUP3 ADD MLOAD DUP2 DUP5 ADD MSTORE PUSH1 0x20 DUP2 ADD SWAP1 POP PUSH1 0x58 JUMP JUMPDEST POP POP POP POP SWAP1 POP SWAP1 DUP2 ADD SWAP1 PUSH1 0x1F AND DUP1 ISZERO PUSH1 0x9D JUMPI DUP1 DUP3 SUB DUP1 MLOAD PUSH1 0x1 DUP4 PUSH1 0x20 SUB PUSH2 0x100 EXP SUB NOT AND DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP JUMPDEST POP SWAP3 POP POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x60 PUSH1 0x40 MLOAD DUP1 PUSH1 0x40 ADD PUSH1 0x40 MSTORE DUP1 PUSH1 0xB DUP2 MSTORE PUSH1 0x20 ADD PUSH32 0x48656C6C6F20576F726C64000000000000000000000000000000000000000000 DUP2 MSTORE POP SWAP1 POP SWAP1 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD2 TIMESTAMP ORIGIN 0x4F 0xB9 0xE 0xEA SWAP14 SWAP8 EQ 0xFB BALANCE 0xF8 GASPRICE 0xF7 DUP2 SWAP9 0x21 SHL PUSH21 0x6C468FE5E9C3AF2DFDEA1F4564736F6C637828302E CALLDATACOPY 0x2E CALLDATALOAD 0x2D PUSH5 0x6576656C6F PUSH17 0x2E323032302E31312E31322B636F6D6D69 PUSH21 0x2E6334333330346165005900000000000000000000 \",\r\n      \"srcmap\": \"0:110:0:-:0;;;;;;;;;;;;;;;;;;;\",\r\n      \"srcmap-runtime\": \"0:110:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;24:84;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;62:13;83:20;;;;;;;;;;;;;;;;;;;24:84;:::o\",\r\n      \"storage-layout\": \"{\\\"storage\\\":[],\\\"types\\\":null}\",\r\n      \"userdoc\": \"{\\\"kind\\\":\\\"user\\\",\\\"methods\\\":{},\\\"version\\\":1}\"\r\n    }\r\n  },\r\n  \"sourceList\": [\r\n    \"hello.sol\"\r\n  ],\r\n  \"sources\": {\r\n    \"hello.sol\": {\r\n      \"AST\": {\r\n        \"absolutePath\": \"hello.sol\",\r\n        \"exportedSymbols\": {\r\n          \"HelloWorld\": [\r\n            9\r\n          ]\r\n        },\r\n        \"id\": 10,\r\n        \"nodeType\": \"SourceUnit\",\r\n        \"nodes\": [\r\n          {\r\n            \"abstract\": false,\r\n            \"baseContracts\": [],\r\n            \"contractDependencies\": [],\r\n            \"contractKind\": \"contract\",\r\n            \"fullyImplemented\": true,\r\n            \"id\": 9,\r\n            \"linearizedBaseContracts\": [\r\n              9\r\n            ],\r\n            ...\r\n            \"scope\": 10,\r\n            \"src\": \"0:110:0\"\r\n          }\r\n        ],\r\n        \"src\": \"0:111:0\"\r\n      }\r\n    }\r\n  },\r\n  \"version\": \"0.7.5-develop.2020.11.12+commit.c43304ae.Darwin.appleclang\"\r\n}\r\n```",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10276/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10276/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

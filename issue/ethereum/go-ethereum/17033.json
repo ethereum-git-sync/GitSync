@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17033",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17033/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17033/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17033/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/17033",
+  "id": 333903189,
+  "node_id": "MDU6SXNzdWUzMzM5MDMxODk=",
+  "number": 17033,
+  "title": "Geth stop syncing new chain temporarily for 5 hours, with no error log",
+  "user": {
+    "login": "locdinh209",
+    "id": 11703629,
+    "node_id": "MDQ6VXNlcjExNzAzNjI5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11703629?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/locdinh209",
+    "html_url": "https://github.com/locdinh209",
+    "followers_url": "https://api.github.com/users/locdinh209/followers",
+    "following_url": "https://api.github.com/users/locdinh209/following{/other_user}",
+    "gists_url": "https://api.github.com/users/locdinh209/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/locdinh209/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/locdinh209/subscriptions",
+    "organizations_url": "https://api.github.com/users/locdinh209/orgs",
+    "repos_url": "https://api.github.com/users/locdinh209/repos",
+    "events_url": "https://api.github.com/users/locdinh209/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/locdinh209/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-06-20T02:33:43Z",
+  "updated_at": "2018-06-20T02:46:11Z",
+  "closed_at": "2018-06-20T02:46:11Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: v1.8.10\r\nOS & Version: Linux Ubuntu 16.04.4 LTS\r\nCommit hash : \r\n\r\n#### Expected behaviour\r\nGeth should keep in sync up-to-date with network\r\n\r\n#### Actual behaviour\r\nGeth is still running but stop syncing with network for 5 hours\r\n\r\n- JSONRPC still working\r\n- Block number is not increasing in 5 hours\r\n\r\n After 5 hours, geth start syncing back and everything work again.\r\n Do not see anything about error in log file,\r\n\r\n#### Backtrace\r\n\r\n````\r\nNFO [06-18|20:58:30] Imported new chain segment               blocks=9  txs=767  mgas=66.663  elapsed=8.839s    mgasps=7.542   number=5812791 hash=f4ef11…0cbd96 cache=130.03mB\r\nINFO [06-18|20:58:39] Imported new chain segment               blocks=11 txs=1122 mgas=80.292  elapsed=8.234s    mgasps=9.751   number=5812802 hash=62ace1…1ac6cd cache=131.66mB\r\nINFO [06-18|20:58:47] Imported new chain segment               blocks=11 txs=819  mgas=84.771  elapsed=8.169s    mgasps=10.377  number=5812813 hash=b9e8b5…523678 cache=130.72mB\r\nINFO [06-18|20:58:55] Imported new chain segment               blocks=15 txs=1001 mgas=94.764  elapsed=8.747s    mgasps=10.833  number=5812828 hash=0022fe…e80ae3 cache=129.35mB\r\nINFO [06-18|20:59:04] Imported new chain segment               blocks=9  txs=876  mgas=68.146  elapsed=8.411s    mgasps=8.101   number=5812837 hash=bbbb1a…3b2bc1 cache=131.34mB\r\nINFO [06-18|20:59:07] Persisted trie from memory database      nodes=185463 size=57.27mB  time=1.45818849s  gcnodes=255285  gcsize=109.50mB gctime=997.668659ms livenodes=205091 livesize=74.81mB\r\nINFO [06-18|20:59:12] Imported new chain segment               blocks=8  txs=811  mgas=59.356  elapsed=8.004s    mgasps=7.416   number=5812845 hash=38c6e8…febde8 cache=77.94mB\r\nINFO [06-18|20:59:22] Imported new chain segment               blocks=8  txs=663  mgas=53.350  elapsed=10.525s   mgasps=5.069   number=5812853 hash=91485d…6fc3e3 cache=80.20mB\r\nINFO [06-18|20:59:32] Imported new chain segment               blocks=10 txs=790  mgas=62.763  elapsed=9.269s    mgasps=6.771   number=5812863 hash=f3b757…694ea1 cache=82.50mB\r\nINFO [06-18|20:59:40] Imported new chain segment               blocks=9  txs=640  mgas=62.929  elapsed=8.175s    mgasps=7.698   number=5812872 hash=993f20…800ae1 cache=84.07mB\r\nINFO [06-18|20:59:48] Imported new chain segment               blocks=13 txs=755  mgas=85.550  elapsed=8.462s    mgasps=10.109  number=5812885 hash=91139e…a2a9ee cache=84.76mB\r\nINFO [06-18|20:59:54] Imported new chain segment               blocks=5  txs=609  mgas=36.649  elapsed=5.906s    mgasps=6.205   number=5812890 hash=8ebc8b…3c070a cache=86.49mB\r\nINFO [06-19|01:17:30] Maximum peer count                       ETH=25 LES=0 total=25\r\nINFO [06-19|01:17:30] Starting peer-to-peer node               instance=Geth/v1.8.10-stable-eae63c51/linux-amd64/go1.10\r\nINFO [06-19|01:17:30] Allocated cache and file handles         database=/root/.ethereum/geth/chaindata cache=768 handles=1024\r\nINFO [06-19|01:17:30] Writing default main-net genesis block \r\nINFO [06-19|01:17:30] Persisted trie from memory database      nodes=12356 size=2.34mB time=44.826431ms gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B\r\nINFO [06-19|01:17:30] Initialised chain configuration          config=\"{ChainID: 1 Homestead: 1150000 DAO: 1920000 DAOSupport: true EIP150: 2463000 EIP155: 2675000 EIP158: 2675000 Byzantium: 4370000 Constantinople: <nil> Engine: ethash}\"\r\nINFO [06-19|01:17:30] Disk storage enabled for ethash caches   dir=/root/.ethereum/geth/ethash count=3\r\nINFO [06-19|01:17:30] Disk storage enabled for ethash DAGs     dir=/root/.ethash               count=2\r\nINFO [06-19|01:17:30] Initialising Ethereum protocol           versions=\"[63 62]\" network=1\r\nINFO [06-19|01:17:30] Loaded most recent local header          number=0 hash=d4e567…cb8fa3 td=17179869184\r\nINFO [06-19|01:17:30] Loaded most recent local full block      number=0 hash=d4e567…cb8fa3 td=17179869184\r\nINFO [06-19|01:17:30] Loaded most recent local fast block      number=0 hash=d4e567…cb8fa3 td=17179869184\r\nINFO [06-19|01:17:30] Regenerated local transaction journal    transactions=0 accounts=0\r\nINFO [06-19|01:17:30] Starting P2P networking \r\nINFO [06-19|01:17:33] UDP listener up                          self=enode://ebb190473e866feeb80240e3181b140509e145e6f804c7bfa0caefb02353262b4aa674da67a3c95d1afd9ec5b5cb667808dcad435d6452ffdda80d1bdc2a4165@[::]:30303\r\nINFO [06-19|01:17:33] RLPx listener up                         self=enode://ebb190473e866feeb80240e3181b140509e145e6f804c7bfa0caefb02353262b4aa674da67a3c95d1afd9ec5b5cb667808dcad435d6452ffdda80d1bdc2a4165@[::]:30303\r\nINFO [06-19|01:17:33] IPC endpoint opened                      url=/root/.ethereum/geth.ipc\r\nINFO [06-19|01:17:33] HTTP endpoint opened                     url=http://0.0.0.0:8545      cors=* vhosts=localhost\r\nINFO [06-19|01:17:33] WebSocket endpoint opened                url=ws://[::]:8546\r\nINFO [06-19|01:18:33] Block synchronisation started \r\nINFO [06-19|01:18:35] Imported new block headers               count=192 elapsed=1.098s number=192 hash=723899…123390 ignored=0\r\nINFO [06-19|01:18:35] Imported new block receipts              count=2   elapsed=143.448µs number=2   hash=b495a1…4698c9 size=8.00B  ignored=0\r\nINFO [06-19|01:18:35] Imported new block headers               count=192 elapsed=20.495ms  number=384 hash=d3d5d5…c79cf3 ignored=0\r\nINFO [06-19|01:18:35] Imported new block headers               count=960 elapsed=86.630ms  number=1344 hash=84b787…0e2783 ignored=0\r\nINFO [06-19|01:18:35] Imported new block receipts              count=4   elapsed=198.436µs number=6    hash=1f1aed…6b326e size=1.10kB ignored=0\r\nINFO [06-19|01:18:35] Imported new state entries               count=1646 elapsed=289.891µs processed=1646 pending=20336 retry=0 duplicate=0 unexpected=0\r\nINFO [06-19|01:18:35] Imported new block headers               count=192  elapsed=19.377ms  number=1536 hash=b787b8…7d0da3 ignored=0\r\nINFO [06-19|01:18:36] Imported new state entries               count=768  elapsed=2.467ms   processed=2414 pending=19690 retry=0 duplicate=0 unexpected=0\r\nINFO [06-19|01:18:37] Imported new state entries               count=1152 elapsed=3.189ms   processed=3566 pending=19445 retry=0 duplicate=0 unexpected=0\r\n````\r\n",
+  "closed_by": {
+    "login": "locdinh209",
+    "id": 11703629,
+    "node_id": "MDQ6VXNlcjExNzAzNjI5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/11703629?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/locdinh209",
+    "html_url": "https://github.com/locdinh209",
+    "followers_url": "https://api.github.com/users/locdinh209/followers",
+    "following_url": "https://api.github.com/users/locdinh209/following{/other_user}",
+    "gists_url": "https://api.github.com/users/locdinh209/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/locdinh209/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/locdinh209/subscriptions",
+    "organizations_url": "https://api.github.com/users/locdinh209/orgs",
+    "repos_url": "https://api.github.com/users/locdinh209/repos",
+    "events_url": "https://api.github.com/users/locdinh209/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/locdinh209/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17033/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/17033/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

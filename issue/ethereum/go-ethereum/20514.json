@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20514",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20514/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20514/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20514/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/20514",
+  "id": 545735823,
+  "node_id": "MDU6SXNzdWU1NDU3MzU4MjM=",
+  "number": 20514,
+  "title": "Question about implementation",
+  "user": {
+    "login": "Wsine",
+    "id": 8842278,
+    "node_id": "MDQ6VXNlcjg4NDIyNzg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8842278?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Wsine",
+    "html_url": "https://github.com/Wsine",
+    "followers_url": "https://api.github.com/users/Wsine/followers",
+    "following_url": "https://api.github.com/users/Wsine/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Wsine/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Wsine/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Wsine/subscriptions",
+    "organizations_url": "https://api.github.com/users/Wsine/orgs",
+    "repos_url": "https://api.github.com/users/Wsine/repos",
+    "events_url": "https://api.github.com/users/Wsine/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Wsine/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-01-06T13:48:10Z",
+  "updated_at": "2020-01-07T03:50:30Z",
+  "closed_at": "2020-01-07T03:50:30Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hi there,\r\n\r\nI am doing some research about `Gasless Send` oracle in smart contract. It is said that the implicit gas stipend of `send()` is 2300 and input length is 0. However, I have tried many time that i could not capture any EVM call with these values. Is there any one who familar with ethereum implementation can give me a favor?\r\n\r\nTest contract:\r\n```\r\ncontract GaslessSend {\r\n    event get_result(bool result);\r\n    function pay(uint n, address payable addr) public {\r\n        bool result = addr.send(n);\r\n        emit get_result(result);\r\n    }\r\n}\r\n\r\ncontract ExpensiveFallback {\r\n    uint public count = 0;\r\n    fallback() external {\r\n        count++;\r\n    }\r\n}\r\n```\r\n\r\nCalling it with `GaslessSend.pay(1000000, ExpensiveFallback)`.\r\n\r\n#### System information\r\n\r\nGeth version: 1.9.5\r\nOS & Version: Linux - Docker golang alpine 1.13\r\nSolidity compiler version: 0.6.0\r\n\r\n#### Expected behaviour\r\n\r\nI modify the implementation of go-ethereum as below.\r\n\r\n```go\r\nfunc (evm *EVM) Call(caller ContractRef, addr common.Address, input []byte, gas uint64, value *big.Int) (ret []byte, leftOverGas uint64, err error) {\r\n  log.Warn(\"GaslessSend ============================= Call\")\r\n  log.Warn(\"GaslessSend\", \"input_length\", len(input), \"gaslimit\", evm.Context.GasLimit)\r\n  log.Warn(\"GaslessSend\", \"input\", input)\r\n  log.Warn(\"GaslessSend\", \"gas\", gas)\r\n  log.Warn(\"GaslessSend\", \"value\", value)\r\n  if len(input) == 0 && evm.Context.GasLimit == 2300 {\r\n    log.Warn(\"GaslessSend\", \"txHash\", evm.StateDB.TxHash())\r\n  }\r\n}\r\n```\r\n\r\nlen(input) == 0 and gaslimit/gas == 2300\r\n\r\n#### Actual behaviour\r\n\r\n```\r\nWARN [01-06|12:44:37.966] GaslessSend ============================= Call\r\nWARN [01-06|12:44:37.966] GaslessSend                              input_length=68 gaslimit=5543355\r\nWARN [01-06|12:44:37.966] GaslessSend                              input=\"[49 203 245 227 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 233 0 0 0 0 0 0 0 0 0 0 0 0 140 41 42 157 63 119 78 13 133 34 18 89 82 89 16 113 159 58 186 144]\"\r\nWARN [01-06|12:44:37.966] GaslessSend                              gas=343274\r\nWARN [01-06|12:44:37.966] GaslessSend                              value=0\r\nWARN [01-06|12:44:37.967] GaslessSend ============================= Call\r\nWARN [01-06|12:44:37.967] GaslessSend                              input_length=68 gaslimit=5543355\r\nWARN [01-06|12:44:37.967] GaslessSend                              input=\"[49 203 245 227 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 233 0 0 0 0 0 0 0 0 0 0 0 0 140 41 42 157 63 119 78 13 133 34 18 89 82 89 16 113 159 58 186 144]\"\r\nWARN [01-06|12:44:37.967] GaslessSend                              gas=170700\r\nWARN [01-06|12:44:37.967] GaslessSend                              value=0\r\nWARN [01-06|12:44:37.967] GaslessSend ============================= Call\r\nWARN [01-06|12:44:37.967] GaslessSend                              input_length=68 gaslimit=5543355\r\nWARN [01-06|12:44:37.967] GaslessSend                              input=\"[49 203 245 227 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 233 0 0 0 0 0 0 0 0 0 0 0 0 140 41 42 157 63 119 78 13 133 34 18 89 82 89 16 113 159 58 186 144]\"\r\nWARN [01-06|12:44:37.967] GaslessSend                              gas=84413\r\nWARN [01-06|12:44:37.967] GaslessSend                              value=0\r\nWARN [01-06|12:44:37.967] GaslessSend ============================= Call\r\nWARN [01-06|12:44:37.967] GaslessSend                              input_length=68 gaslimit=5543355\r\nWARN [01-06|12:44:37.967] GaslessSend                              input=\"[49 203 245 227 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 233 0 0 0 0 0 0 0 0 0 0 0 0 140 41 42 157 63 119 78 13 133 34 18 89 82 89 16 113 159 58 186 144]\"\r\nWARN [01-06|12:44:37.967] GaslessSend                              gas=41270\r\nWARN [01-06|12:44:37.967] GaslessSend                              value=0\r\n```\r\n\r\nDoes any one know that what wrong did i make?\r\n",
+  "closed_by": {
+    "login": "Wsine",
+    "id": 8842278,
+    "node_id": "MDQ6VXNlcjg4NDIyNzg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8842278?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Wsine",
+    "html_url": "https://github.com/Wsine",
+    "followers_url": "https://api.github.com/users/Wsine/followers",
+    "following_url": "https://api.github.com/users/Wsine/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Wsine/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Wsine/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Wsine/subscriptions",
+    "organizations_url": "https://api.github.com/users/Wsine/orgs",
+    "repos_url": "https://api.github.com/users/Wsine/repos",
+    "events_url": "https://api.github.com/users/Wsine/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Wsine/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20514/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20514/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

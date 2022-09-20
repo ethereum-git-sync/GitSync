@@ -1,0 +1,103 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10810",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10810/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10810/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10810/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10810",
+  "id": 788854966,
+  "node_id": "MDU6SXNzdWU3ODg4NTQ5NjY=",
+  "number": 10810,
+  "title": "Optimizer Component: ReasoningAnalyzer",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4437989273,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIZXmQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/epic",
+      "name": "epic",
+      "color": "ff00ef",
+      "default": false,
+      "description": "Multi-stage task that may require coordination between team members across multiple PRs."
+    },
+    {
+      "id": 4438153180,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjX3A",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20impact",
+      "name": "high impact",
+      "color": "001dff",
+      "default": false,
+      "description": "Changes are very prominent and affect users or the project in a major way."
+    },
+    {
+      "id": 4438488423,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI31Zw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have",
+      "name": "must have",
+      "color": "ffa12a",
+      "default": false,
+      "description": "Something we consider an essential part of Solidity 1.0."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-01-19T09:27:00Z",
+  "updated_at": "2022-09-14T14:59:31Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The ReasoningAnalazer is an optimizer component to be used as a base class. It traverses the AST and records relations between SSA variables (it ignores everything that is not an SSA variable) and the state of storage and memory using a reasoning engine. The reasoning engine is exchangeable: It can use both an LP solver and an SMT solver.\r\n\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10810/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10810/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

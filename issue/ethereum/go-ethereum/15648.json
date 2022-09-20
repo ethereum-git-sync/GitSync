@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15648",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15648/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15648/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15648/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/15648",
+  "id": 281043085,
+  "node_id": "MDU6SXNzdWUyODEwNDMwODU=",
+  "number": 15648,
+  "title": "Multi-dimensional fixed-size array return is converted to an incomplete (?) binding",
+  "user": {
+    "login": "protolambda",
+    "id": 19571989,
+    "node_id": "MDQ6VXNlcjE5NTcxOTg5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19571989?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/protolambda",
+    "html_url": "https://github.com/protolambda",
+    "followers_url": "https://api.github.com/users/protolambda/followers",
+    "following_url": "https://api.github.com/users/protolambda/following{/other_user}",
+    "gists_url": "https://api.github.com/users/protolambda/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/protolambda/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/protolambda/subscriptions",
+    "organizations_url": "https://api.github.com/users/protolambda/orgs",
+    "repos_url": "https://api.github.com/users/protolambda/repos",
+    "events_url": "https://api.github.com/users/protolambda/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/protolambda/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-12-11T14:49:29Z",
+  "updated_at": "2018-03-04T22:24:31Z",
+  "closed_at": "2018-03-04T22:24:31Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Title says it all; the solidity code (and its conversion to abi) state that a `uint32[2][3]` is returned, but the generated go-binding only returns the inner array: `[2]uint32`.\r\n\r\n#### System information\r\n\r\n```\r\n$ geth version\r\nVersion: 1.7.3-stable\r\nGit Commit: 4bb3c89d44e372e6a9ab85a8be0c9345265c763a\r\nArchitecture: amd64\r\nProtocol Versions: [63 62]\r\nNetwork Id: 1\r\nGo Version: go1.9.2\r\nOperating System: linux\r\n```\r\n\r\n#### Expected behaviour\r\n`GetTarget` binding should return `([3][2]uint32, error)`, i.e. a nested array, like the ABI and the solidity code declare.\r\n\r\n#### Actual behaviour\r\nIt generates the go-bindings, but with this snippet, which seems incorrect to me:\r\n```go\r\n// GetTarget is a free data retrieval call binding the contract method 0x89d6d989.\r\n//\r\n// Solidity: function GetTarget() constant returns(uint32[2][3])\r\nfunc (_BugTest *BugTestCaller) GetTarget(opts *bind.CallOpts) ([2]uint32, error) {\r\n\tvar (\r\n\t\tret0 = new([2]uint32)\r\n\t)\r\n\tout := ret0\r\n\terr := _BugTest.contract.Call(opts, out, \"GetTarget\")\r\n\treturn *ret0, err\r\n}\r\n```\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n\r\n1) Create file `BugTest.sol`:\r\n```soldity\r\npragma solidity ^0.4.19;\r\npragma experimental ABIEncoderV2;\r\n\r\ncontract BugTest {\r\n\r\n    uint constant InnerSize = 2;\r\n    uint constant OuterSize = 3;\r\n\r\n    function GetTarget() public pure returns (uint32[InnerSize][OuterSize]) {\r\n        uint32[InnerSize][OuterSize] memory result;\r\n        // Imagine more advanced usage of the nested array ...\r\n        result[0][0] = 1;\r\n        result[0][1] = 2;\r\n        result[1][0] = 3;\r\n        result[1][1] = 4;\r\n        result[2][0] = 5;\r\n        result[2][1] = 6;\r\n        return result;\r\n    }\r\n}\r\n```\r\n2.1) Create abi: run `solc -o build --abi --overwrite BugTest.sol`\r\n2.2) Or use the abi it generated for me:\r\n```json\r\n[{\"constant\":true,\"inputs\":[],\"name\":\"GetTarget\",\"outputs\":[{\"name\":\"\",\"type\":\"uint32[2][3]\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}]\r\n```\r\n\r\n3) Create the go-binding, using the generated abi: `abigen --abi build/BugTest.abi --pkg abi --type BugTest --out \"bug_test_binding.go\"`\r\n4) Check generated go bindings.\r\n",
+  "closed_by": {
+    "login": "gballet",
+    "id": 3272758,
+    "node_id": "MDQ6VXNlcjMyNzI3NTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3272758?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gballet",
+    "html_url": "https://github.com/gballet",
+    "followers_url": "https://api.github.com/users/gballet/followers",
+    "following_url": "https://api.github.com/users/gballet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gballet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gballet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gballet/subscriptions",
+    "organizations_url": "https://api.github.com/users/gballet/orgs",
+    "repos_url": "https://api.github.com/users/gballet/repos",
+    "events_url": "https://api.github.com/users/gballet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gballet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15648/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15648/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

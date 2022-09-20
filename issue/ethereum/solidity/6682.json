@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/6682",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/6682/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/6682/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/6682/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/6682",
+  "id": 440988515,
+  "node_id": "MDU6SXNzdWU0NDA5ODg1MTU=",
+  "number": 6682,
+  "title": "Raise warning when reading from storage with no effect",
+  "user": {
+    "login": "scucchiero",
+    "id": 19697277,
+    "node_id": "MDQ6VXNlcjE5Njk3Mjc3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19697277?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/scucchiero",
+    "html_url": "https://github.com/scucchiero",
+    "followers_url": "https://api.github.com/users/scucchiero/followers",
+    "following_url": "https://api.github.com/users/scucchiero/following{/other_user}",
+    "gists_url": "https://api.github.com/users/scucchiero/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/scucchiero/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/scucchiero/subscriptions",
+    "organizations_url": "https://api.github.com/users/scucchiero/orgs",
+    "repos_url": "https://api.github.com/users/scucchiero/repos",
+    "events_url": "https://api.github.com/users/scucchiero/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/scucchiero/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-05-07T01:51:29Z",
+  "updated_at": "2022-08-17T13:49:48Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\nReading from storage with no effect should raise a warning as well as the statement `2==2` does.\r\n\r\n## Demonstration\r\nCompile this contract.\r\n```\r\npragma solidity >=0.5.8;\r\n\r\ncontract Test {\r\n \r\n mapping(uint256 => uint256) map;\r\n uint256 variable = 2;\r\n \r\n function getMsg() public view returns(string memory) {\r\n     map[1]==3;  // This does NOT raise any warning\r\n     variable==3;  // This does NOT raise any warning\r\n     2==2; // This raises a warning\r\n     return \"Hello\";\r\n    }\r\n \r\n}\r\n\r\n```\r\n![image](https://user-images.githubusercontent.com/19697277/57266172-48598900-7051-11e9-9a55-53727596156d.png)\r\n\r\n**Warning** should say : Statement has no effect.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/6682/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 1,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/6682/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

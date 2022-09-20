@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12285",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12285/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12285/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12285/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12285",
+  "id": 1054490600,
+  "node_id": "I_kwDOAm_5kc4-2j_o",
+  "number": 12285,
+  "title": "The idea was to make it combersome to prevent people from using it.",
+  "user": {
+    "login": "swornov",
+    "id": 68159968,
+    "node_id": "MDQ6VXNlcjY4MTU5OTY4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/68159968?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/swornov",
+    "html_url": "https://github.com/swornov",
+    "followers_url": "https://api.github.com/users/swornov/followers",
+    "following_url": "https://api.github.com/users/swornov/following{/other_user}",
+    "gists_url": "https://api.github.com/users/swornov/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/swornov/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/swornov/subscriptions",
+    "organizations_url": "https://api.github.com/users/swornov/orgs",
+    "repos_url": "https://api.github.com/users/swornov/repos",
+    "events_url": "https://api.github.com/users/swornov/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/swornov/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-11-16T06:17:39Z",
+  "updated_at": "2021-11-16T10:05:06Z",
+  "closed_at": "2021-11-16T10:05:06Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "The idea was to make it combersome to prevent people from using it.\r\n\r\nI would prefer a solution that just switches the whole pipeline to yul-ir-mode right away.\r\n\r\n_Originally posted by @chriseth in https://github.com/ethereum/solidity/issues/8722#issuecomment-617064751_",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12285/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12285/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

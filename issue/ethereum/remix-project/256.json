@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/256",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/256/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/256/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/256/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/256",
+  "id": 667071366,
+  "node_id": "MDU6SXNzdWU2NjcwNzEzNjY=",
+  "number": 256,
+  "title": "Remix IDE with Ganache: VM Exception while processing transaction: out of gas",
+  "user": {
+    "login": "simibac",
+    "id": 15369592,
+    "node_id": "MDQ6VXNlcjE1MzY5NTky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15369592?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/simibac",
+    "html_url": "https://github.com/simibac",
+    "followers_url": "https://api.github.com/users/simibac/followers",
+    "following_url": "https://api.github.com/users/simibac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/simibac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/simibac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/simibac/subscriptions",
+    "organizations_url": "https://api.github.com/users/simibac/orgs",
+    "repos_url": "https://api.github.com/users/simibac/repos",
+    "events_url": "https://api.github.com/users/simibac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/simibac/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-04-02T10:38:16Z",
+  "updated_at": "2020-07-28T13:26:06Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "<!--- Provide a general summary of the issue in the Title above -->\r\nRunning the following simple contract in the Remix IDE on Ropsten works fine. But when Remix is connected to Ganache it results in a VM Exception that states that it ran out of gas. I played around with setting to gas price manually but it still ended up in the same exception. I know that this issue has been submitted before but I could not find a solution that worked for me. I also tried it with another local blockchain (testrpc) and it resulted in the same error. It seems to be a problem of the Remix IDE in combination with local testnets. \r\n\r\n````\r\npragma solidity >=0.4.25 <0.6.0;\r\n\r\ncontract EtherContract{\r\n    function send() payable public {}\r\n    \r\n    function getBack() public{\r\n        msg.sender.transfer(address(this).balance);\r\n    }\r\n    \r\n    function getContractBalance() public view returns(uint){\r\n        return address(this).balance;\r\n    }\r\n}\r\n````\r\n<!--- DO NOT PASTE ONLY IMAGES OF TERMINAL OUTPUT AS AN ISSUE --->\r\n\r\n<!--- WINDOWS USERS: Please READ all of the error / debug output and make sure that the issue \r\n      isn't due to you missing something before creating an issue. A large portion of Windows \r\n      issues turn out to be easily self-fixable if you actually read the output before dumping\r\n      it in an issue here. Thanks! ---> \r\n\r\n## Expected Behavior\r\n<!--- If you're describing a bug, tell us what should happen -->\r\nThe amount of ether stored in the contract should be refunded.\r\n<!--- If you're suggesting a change/improvement, tell us how it should work -->\r\n\r\n## Current Behavior\r\n<!--- If describing a bug, tell us what happens instead of the expected behavior -->\r\nResults in a VM Exception.\r\n> transact to EtherContract.getBack errored: VM Exception while processing transaction: out of gas \r\n<!--- If suggesting a change/improvement, explain the difference from current behavior -->\r\n\r\n## Steps to Reproduce (for bugs)\r\n<!--- Provide a link to a live example, or an unambiguous set of steps to -->\r\n<!--- reproduce this bug. Include code to reproduce, if relevant -->\r\n1. copy and past the smart contract into Remix\r\n2. connect it to Ganache\r\n3. compile\r\n4. use the send function to send some ether to the contract (set value)\r\n5. send the Ethers back to your account using the getBack function\r\n\r\n## Context\r\n<!--- How has this issue affected you? What are you trying to accomplish? -->\r\nA smart contract that can send Ethers to an address.\r\n<!--- Providing context helps us come up with a solution that is most useful in the real world -->\r\n\r\n## Your Environment\r\n<!--- Include as many relevant details about the environment you experienced the bug in -->\r\n* Version used: Compiler 5.3\r\n* Environment name and version (e.g. PHP 5.4 on nginx 1.9.1): Remix IDE on Brave\r\n* Server type and version: Ganache 1.3\r\n* Operating System and version: MacOS 10.14.3\r\n\r\ntrufflesuite/ganache#1171",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/256/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/256/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

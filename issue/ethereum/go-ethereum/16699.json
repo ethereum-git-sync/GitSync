@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16699",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16699/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16699/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16699/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/16699",
+  "id": 320890683,
+  "node_id": "MDU6SXNzdWUzMjA4OTA2ODM=",
+  "number": 16699,
+  "title": "Trying to use web3.eth.sendRawTransaction from a remote machine.",
+  "user": {
+    "login": "jawknee530",
+    "id": 8932614,
+    "node_id": "MDQ6VXNlcjg5MzI2MTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8932614?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jawknee530",
+    "html_url": "https://github.com/jawknee530",
+    "followers_url": "https://api.github.com/users/jawknee530/followers",
+    "following_url": "https://api.github.com/users/jawknee530/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jawknee530/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jawknee530/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jawknee530/subscriptions",
+    "organizations_url": "https://api.github.com/users/jawknee530/orgs",
+    "repos_url": "https://api.github.com/users/jawknee530/repos",
+    "events_url": "https://api.github.com/users/jawknee530/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jawknee530/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-05-07T17:38:49Z",
+  "updated_at": "2018-05-07T17:44:11Z",
+  "closed_at": "2018-05-07T17:43:50Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I had been running a javascript applet on the same machine as I was running my instance of geth and sending the transaction was working fine. I've moved the applet to another machine and am running geth with the following command:\r\n\r\n`geth --fast --cache=2048 --maxpeers 40 --unlock 0xB036... --rpc --rpcapi=\"db,eth,net,web3,personal,web3,admin,txpool\" --rpcaddr 0.0.0.0`\r\n\r\nI have my web3 provider set to <geth'sMachineIP>:8545. When I attempt to send a raw transaction I get the error:\r\n\r\n`Error: Invalid JSON RPC response: \"\"`\r\n\r\nNot a real issue, mistake on my part.",
+  "closed_by": {
+    "login": "jawknee530",
+    "id": 8932614,
+    "node_id": "MDQ6VXNlcjg5MzI2MTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8932614?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jawknee530",
+    "html_url": "https://github.com/jawknee530",
+    "followers_url": "https://api.github.com/users/jawknee530/followers",
+    "following_url": "https://api.github.com/users/jawknee530/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jawknee530/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jawknee530/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jawknee530/subscriptions",
+    "organizations_url": "https://api.github.com/users/jawknee530/orgs",
+    "repos_url": "https://api.github.com/users/jawknee530/repos",
+    "events_url": "https://api.github.com/users/jawknee530/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jawknee530/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16699/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16699/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

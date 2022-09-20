@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1197",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1197/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1197/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1197/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1197",
+  "id": 894086878,
+  "node_id": "MDU6SXNzdWU4OTQwODY4Nzg=",
+  "number": 1197,
+  "title": "Refactor remix-ui for switching workspace ",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2823463696,
+      "node_id": "MDU6TGFiZWwyODIzNDYzNjk2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/workspace",
+      "name": "workspace",
+      "color": "58B027",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-05-18T07:51:10Z",
+  "updated_at": "2021-05-18T07:57:39Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "- [ ] Ensure when user switches from localhost to a workspace, provider, file manager mode and current workspace properties are properly updated \r\n- [ ] Check if `- none -` workspace is required anymore\r\n- [ ] Check switching to localhost is working fine from both places: workspace dropdown and home tab link",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1197/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1197/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

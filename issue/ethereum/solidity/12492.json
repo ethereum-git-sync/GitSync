@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12492",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12492/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12492/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12492/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12492",
+  "id": 1094177030,
+  "node_id": "I_kwDOAm_5kc5BN9EG",
+  "number": 12492,
+  "title": "Typo in documentation",
+  "user": {
+    "login": "ne2030",
+    "id": 16914062,
+    "node_id": "MDQ6VXNlcjE2OTE0MDYy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16914062?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ne2030",
+    "html_url": "https://github.com/ne2030",
+    "followers_url": "https://api.github.com/users/ne2030/followers",
+    "following_url": "https://api.github.com/users/ne2030/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ne2030/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ne2030/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ne2030/subscriptions",
+    "organizations_url": "https://api.github.com/users/ne2030/orgs",
+    "repos_url": "https://api.github.com/users/ne2030/repos",
+    "events_url": "https://api.github.com/users/ne2030/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ne2030/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-01-05T10:00:57Z",
+  "updated_at": "2022-01-06T09:36:22Z",
+  "closed_at": "2022-01-06T09:36:22Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Page\r\n\r\nhttps://docs.soliditylang.org/en/v0.8.11/solidity-by-example.html#creating-the-signature\r\n\r\n## Abstract\r\n\r\nEIP712 is written incorrectly as EIP762.\r\n\r\n## Pull request\r\n\r\n\r\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12492/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12492/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

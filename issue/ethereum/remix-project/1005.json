@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1005",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1005/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1005/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1005/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1005",
+  "id": 838397787,
+  "node_id": "MDU6SXNzdWU4MzgzOTc3ODc=",
+  "number": 1005,
+  "title": "After update Ide does not compile source code",
+  "user": {
+    "login": "vt-btf",
+    "id": 67731937,
+    "node_id": "MDQ6VXNlcjY3NzMxOTM3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/67731937?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vt-btf",
+    "html_url": "https://github.com/vt-btf",
+    "followers_url": "https://api.github.com/users/vt-btf/followers",
+    "following_url": "https://api.github.com/users/vt-btf/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vt-btf/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vt-btf/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vt-btf/subscriptions",
+    "organizations_url": "https://api.github.com/users/vt-btf/orgs",
+    "repos_url": "https://api.github.com/users/vt-btf/repos",
+    "events_url": "https://api.github.com/users/vt-btf/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vt-btf/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-03-23T06:31:21Z",
+  "updated_at": "2021-03-24T10:33:58Z",
+  "closed_at": "2021-03-24T10:33:58Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "After workspace update on main site https://remix.ethereum.org/ - my projects does not compiles with comments sections. Ide just doesn't recognize, that source code exist in file. There is no additional plugins.\r\n![Screenshot 2021-03-23 082956](https://user-images.githubusercontent.com/67731937/112103205-181e2380-8bb2-11eb-9aa7-8b637c9444bf.png)\r\n![Screenshot 2021-03-23 083049](https://user-images.githubusercontent.com/67731937/112103207-18b6ba00-8bb2-11eb-8c44-633f58260056.png)\r\n\r\nIn experimental way i just found out that comments should not be greater then 372 symbols\r\n\r\n",
+  "closed_by": {
+    "login": "vt-btf",
+    "id": 67731937,
+    "node_id": "MDQ6VXNlcjY3NzMxOTM3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/67731937?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vt-btf",
+    "html_url": "https://github.com/vt-btf",
+    "followers_url": "https://api.github.com/users/vt-btf/followers",
+    "following_url": "https://api.github.com/users/vt-btf/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vt-btf/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vt-btf/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vt-btf/subscriptions",
+    "organizations_url": "https://api.github.com/users/vt-btf/orgs",
+    "repos_url": "https://api.github.com/users/vt-btf/repos",
+    "events_url": "https://api.github.com/users/vt-btf/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vt-btf/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1005/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1005/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

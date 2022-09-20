@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13495",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13495/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13495/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13495/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13495",
+  "id": 1364587837,
+  "node_id": "I_kwDOAm_5kc5RVfU9",
+  "number": 13495,
+  "title": "LSP 3.17: Advertise position encoding",
+  "user": {
+    "login": "christianparpart",
+    "id": 56763,
+    "node_id": "MDQ6VXNlcjU2NzYz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/56763?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/christianparpart",
+    "html_url": "https://github.com/christianparpart",
+    "followers_url": "https://api.github.com/users/christianparpart/followers",
+    "following_url": "https://api.github.com/users/christianparpart/following{/other_user}",
+    "gists_url": "https://api.github.com/users/christianparpart/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/christianparpart/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/christianparpart/subscriptions",
+    "organizations_url": "https://api.github.com/users/christianparpart/orgs",
+    "repos_url": "https://api.github.com/users/christianparpart/repos",
+    "events_url": "https://api.github.com/users/christianparpart/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/christianparpart/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 3784569283,
+      "node_id": "LA_kwDOAm_5kc7hk_HD",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20server",
+      "name": "language server",
+      "color": "FEF2C0",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-07T12:26:39Z",
+  "updated_at": "2022-09-07T12:26:39Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "As of LSP 3.17, the client and server can agree on a position encoding to use. We internally don't do anything special (yet), and certainly not UTF-16, so it should make sense for solc to simply advertise UTF-8 for position-encoding in the capabilities.\r\n\r\nSee: https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#clientCapabilities",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13495/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13495/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

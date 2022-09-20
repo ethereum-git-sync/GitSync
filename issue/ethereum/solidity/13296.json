@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13296",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13296/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13296/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13296/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13296",
+  "id": 1316003658,
+  "node_id": "I_kwDOAm_5kc5OcJ9K",
+  "number": 13296,
+  "title": "Clarify the difference between `--yul`, `--assemble` and `--strict-assembly` in the CLI help",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 275027668,
+      "node_id": "MDU6TGFiZWwyNzUwMjc2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/documentation%20:book:",
+      "name": "documentation :book:",
+      "color": "006b75",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-07-24T20:40:15Z",
+  "updated_at": "2022-08-17T13:48:36Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "On the CLI we have 3 options for compiling Yul, and they're different but their descriptions do not explain how. To users `--yul` seems like the natural choice and the result is confusion (e.g. [How to compile IR into bin?](https://forum.soliditylang.org/t/how-to-compile-ir-into-bin/1146)).\r\n\r\nThe options will likely change after #7830 but we should clarify the CLI help even before then.\r\n\r\n### Current descriptions\r\n```\r\n  --assemble           Switch to assembly mode, ignoring all options except \r\n                       --machine, --yul-dialect, --optimize and \r\n                       --yul-optimizations and assumes input is assembly.\r\n  --yul                Switch to Yul mode, ignoring all options except \r\n                       --machine, --yul-dialect, --optimize and \r\n                       --yul-optimizations and assumes input is Yul.\r\n  --strict-assembly    Switch to strict assembly mode, ignoring all options \r\n                       except --machine, --yul-dialect, --optimize and \r\n                       --yul-optimizations and assumes input is strict \r\n                       assembly.\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13296/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13296/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

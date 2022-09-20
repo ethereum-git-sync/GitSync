@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15810",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15810/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15810/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15810/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/15810",
+  "id": 286117912,
+  "node_id": "MDU6SXNzdWUyODYxMTc5MTI=",
+  "number": 15810,
+  "title": "Empty topic created via whisper public api",
+  "user": {
+    "login": "b00ris",
+    "id": 4943570,
+    "node_id": "MDQ6VXNlcjQ5NDM1NzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4943570?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/b00ris",
+    "html_url": "https://github.com/b00ris",
+    "followers_url": "https://api.github.com/users/b00ris/followers",
+    "following_url": "https://api.github.com/users/b00ris/following{/other_user}",
+    "gists_url": "https://api.github.com/users/b00ris/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/b00ris/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/b00ris/subscriptions",
+    "organizations_url": "https://api.github.com/users/b00ris/orgs",
+    "repos_url": "https://api.github.com/users/b00ris/repos",
+    "events_url": "https://api.github.com/users/b00ris/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/b00ris/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-01-04T21:25:31Z",
+  "updated_at": "2018-01-26T11:41:53Z",
+  "closed_at": "2018-01-26T11:41:53Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "#### System information\r\nGeth version: master\r\n\r\n#### Problem\r\nCall whisperv5(6).PublicWhisperAPI.NewMessageFilter with one topic\r\nAt:\r\n``` go\r\n\tif len(req.Topics) > 0 {\r\n\t\ttopics = make([][]byte, 1)\r\n\t\tfor _, topic := range req.Topics {\r\n\t\t\ttopics = append(topics, topic[:])\r\n\t\t}\r\n\t}\r\n```\r\nallocates slice with one element. Then using append it was adding next elemens(so, we got empty topic at topics slice).\r\n\r\nThen NotifyWatchers try to match envelop using function:\r\n``` go\r\nfunc matchSingleTopic(topic TopicType, bt []byte) bool {\r\n\tif len(bt) > 4 {\r\n\t\tbt = bt[:4]\r\n\t}\r\n\r\n\tfor j, b := range bt {\r\n\t\tif topic[j] != b {\r\n\t\t\treturn false\r\n\t\t}\r\n\t}\r\n\treturn true\r\n}\r\n```\r\nbut bt is empty. And range over bt is not working. So, **matchSingleTopic for empty topic is always true**\r\n\r\nLooks like, all whisper nodes(which message filters was created over PublicWhisperAPI try to decrypt every whisper message(with same key type).\r\n\r\n\r\n#### Expected behaviour\r\nCreated message filter with one topic\r\n\r\n#### Actual behaviour\r\nCreated message filter with two topics\r\n\r\n\r\n\r\n\r\n",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15810/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15810/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

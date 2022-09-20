@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10602",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10602/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10602/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10602/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10602",
+  "id": 767380818,
+  "node_id": "MDU6SXNzdWU3NjczODA4MTg=",
+  "number": 10602,
+  "title": "[SMTChecker] Analyse overridden modifiers correctly",
+  "user": {
+    "login": "blishko",
+    "id": 16404346,
+    "node_id": "MDQ6VXNlcjE2NDA0MzQ2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16404346?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/blishko",
+    "html_url": "https://github.com/blishko",
+    "followers_url": "https://api.github.com/users/blishko/followers",
+    "following_url": "https://api.github.com/users/blishko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/blishko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/blishko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/blishko/subscriptions",
+    "organizations_url": "https://api.github.com/users/blishko/orgs",
+    "repos_url": "https://api.github.com/users/blishko/repos",
+    "events_url": "https://api.github.com/users/blishko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/blishko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-12-15T09:34:45Z",
+  "updated_at": "2020-12-18T08:26:35Z",
+  "closed_at": "2020-12-18T08:26:35Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "In the following example\r\n```\r\npragma experimental SMTChecker;\r\n\r\nabstract contract A {\r\n    uint s;\r\n\r\n    function f() public mod(s) {}\r\n    modifier mod(uint x) virtual;\r\n}\r\n\r\ncontract B is A {\r\n    modifier mod(uint x) override {\r\n        require(x == 42);\r\n        _;\r\n        assert(x == 42); // should hold\r\n        assert(x == 0); // should fail\r\n    }\r\n\r\n    function set(uint x) public {\r\n        s = x;\r\n    }\r\n}\r\n```\r\nSMTChecker currently fails to report the assertion violation.\r\nThe problem is that when analysing `B.f` it fails to resolve properly which version of the modifier will be used and analyses it with the modifier `A.mod` instead of `B.mod`.",
+  "closed_by": {
+    "login": "leonardoalt",
+    "id": 504195,
+    "node_id": "MDQ6VXNlcjUwNDE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonardoalt",
+    "html_url": "https://github.com/leonardoalt",
+    "followers_url": "https://api.github.com/users/leonardoalt/followers",
+    "following_url": "https://api.github.com/users/leonardoalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonardoalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonardoalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonardoalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonardoalt/orgs",
+    "repos_url": "https://api.github.com/users/leonardoalt/repos",
+    "events_url": "https://api.github.com/users/leonardoalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonardoalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10602/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10602/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

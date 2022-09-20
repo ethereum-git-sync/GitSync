@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1246",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1246/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1246/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1246/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/1246",
+  "id": 87442445,
+  "node_id": "MDU6SXNzdWU4NzQ0MjQ0NQ==",
+  "number": 1246,
+  "title": "Hard coded path used",
+  "user": {
+    "login": "larspensjo",
+    "id": 2412342,
+    "node_id": "MDQ6VXNlcjI0MTIzNDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2412342?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/larspensjo",
+    "html_url": "https://github.com/larspensjo",
+    "followers_url": "https://api.github.com/users/larspensjo/followers",
+    "following_url": "https://api.github.com/users/larspensjo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/larspensjo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/larspensjo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/larspensjo/subscriptions",
+    "organizations_url": "https://api.github.com/users/larspensjo/orgs",
+    "repos_url": "https://api.github.com/users/larspensjo/repos",
+    "events_url": "https://api.github.com/users/larspensjo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/larspensjo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-06-11T18:38:03Z",
+  "updated_at": "2015-06-11T19:01:09Z",
+  "closed_at": "2015-06-11T19:01:07Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "It seems --data-dir isn't used always. I get the following error:\n\n```\n$ build/bin/geth --datadir /home/lars/.go-ethereum --rpc console 2>> /tmp/geth.log\nFatal: Error string IPC: listen unix /home/lars/.ethereum/geth.ipc: bind: not a directory\n```\n",
+  "closed_by": {
+    "login": "obscuren",
+    "id": 6264126,
+    "node_id": "MDQ6VXNlcjYyNjQxMjY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6264126?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/obscuren",
+    "html_url": "https://github.com/obscuren",
+    "followers_url": "https://api.github.com/users/obscuren/followers",
+    "following_url": "https://api.github.com/users/obscuren/following{/other_user}",
+    "gists_url": "https://api.github.com/users/obscuren/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/obscuren/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/obscuren/subscriptions",
+    "organizations_url": "https://api.github.com/users/obscuren/orgs",
+    "repos_url": "https://api.github.com/users/obscuren/repos",
+    "events_url": "https://api.github.com/users/obscuren/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/obscuren/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1246/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1246/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

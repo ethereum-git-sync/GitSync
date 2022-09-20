@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/2869",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/2869/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/2869/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/2869/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/2869",
+  "id": 254863936,
+  "node_id": "MDU6SXNzdWUyNTQ4NjM5MzY=",
+  "number": 2869,
+  "title": "Calling contract should have ether to call payable function",
+  "user": {
+    "login": "aaroncolaco",
+    "id": 8667095,
+    "node_id": "MDQ6VXNlcjg2NjcwOTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8667095?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aaroncolaco",
+    "html_url": "https://github.com/aaroncolaco",
+    "followers_url": "https://api.github.com/users/aaroncolaco/followers",
+    "following_url": "https://api.github.com/users/aaroncolaco/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aaroncolaco/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aaroncolaco/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aaroncolaco/subscriptions",
+    "organizations_url": "https://api.github.com/users/aaroncolaco/orgs",
+    "repos_url": "https://api.github.com/users/aaroncolaco/repos",
+    "events_url": "https://api.github.com/users/aaroncolaco/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aaroncolaco/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-09-03T09:35:27Z",
+  "updated_at": "2017-09-12T09:32:47Z",
+  "closed_at": "2017-09-12T09:32:47Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "When trying the example [here](http://solidity.readthedocs.io/en/latest/control-structures.html#creating-contracts-via-new):\r\n```javascript\r\npragma solidity ^0.4.0;\r\n\r\ncontract D {\r\n    uint x;\r\n    function D(uint a) payable {\r\n        x = a;\r\n    }\r\n}\r\n\r\ncontract C {\r\n    D d = new D(4); // will be executed as part of C's constructor\r\n\r\n    function createD(uint arg) {\r\n        D newD = new D(arg);\r\n    }\r\n\r\n    function createAndEndowD(uint arg, uint amount) {\r\n        // Send ether along with the creation\r\n        D newD = (new D).value(amount)(arg);\r\n    }\r\n}\r\n```\r\n\r\n\r\nThe contract `C` creates a new instance of the contract `D` via 2 different functions:\r\n- createD(uint arg)\r\n- createAndEndowD(uint arg, uint amount) \r\n\r\nIn the latter, it uses `.value(amount)` to send Ether to the payable constructor of `D`, but `C` was created without any Ether. \r\n\r\nI think the constructor for `C` should be made payable so that the example works. Otherwise it throws an exception when `createAndEndowD` is called, since C does not have any Ether itself.\r\n\r\nI'd like to modify the docs and make the constructor for `C` payable.\r\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/2869/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/2869/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

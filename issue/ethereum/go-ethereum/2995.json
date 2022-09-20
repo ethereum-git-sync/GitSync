@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2995",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2995/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2995/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2995/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/2995",
+  "id": 176341952,
+  "node_id": "MDU6SXNzdWUxNzYzNDE5NTI=",
+  "number": 2995,
+  "title": "Star topology block propagation issues",
+  "user": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-09-12T10:23:51Z",
+  "updated_at": "2017-04-10T06:03:00Z",
+  "closed_at": "2017-04-10T06:03:00Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "During the hackethon the network was configured in a star topology: two central (and external) cloud bootnodes, to which two miners connected and all the rest of the participants. After about 2 days of continuous operation, an interesting phenomenon appeared: one of the miners forked off (and fell behind) and the rest of the network stopped syncing properly, sometimes lagging behind miners for 60 blocks even.\n\nAfter some quick analysis it turned out that while fixing the many \"ignored sync\" errors, we (may or may not) have also introduced a side effect that only happens in star networks, but which cause some grievance. Currently Geth starts a sync cycle only in two scenarios: a new peer is connected with a higher TD, or a block is propagated with a high TD. Since the private network was stable, the first never occurred, and the second for some reason didn't fire properly or often enough, not exactly sure why.\n\nSome things to investigate:\n- Was the sync simply not triggering, or were block propagation (logarithmic) not happening?\n- The fetcher currently seems to never trigger syncs, which I seem to remember it did at some point. This resulted in block announcements arriving, but not acting on them (only queuing them up).\n- There's an interesting corner case if a miner in a star topology mines many blocks extremely fast (low diff priv net), the central node might enter a sync cycle and pull in blocks that way. This however results in the node never propagating those blocks (as it assumes it was behind the network). If new blocks are minted afterwards then edge nodes should figure out they're behind, but on demand mining may not actually mine anything for a while, causing edge nodes to remain out of sync.\n\nThese scenarios will probably happen often in private networks, so would be nice to not only fix thme but also add some `hive` tests to ensure they remain fixed.\n",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2995/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/2995/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

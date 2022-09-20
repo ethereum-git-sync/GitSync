@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20398",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20398/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20398/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20398/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/20398",
+  "id": 528712530,
+  "node_id": "MDU6SXNzdWU1Mjg3MTI1MzA=",
+  "number": 20398,
+  "title": "Write documentation for puppeth",
+  "user": {
+    "login": "ChrisChinchilla",
+    "id": 42080,
+    "node_id": "MDQ6VXNlcjQyMDgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42080?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ChrisChinchilla",
+    "html_url": "https://github.com/ChrisChinchilla",
+    "followers_url": "https://api.github.com/users/ChrisChinchilla/followers",
+    "following_url": "https://api.github.com/users/ChrisChinchilla/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ChrisChinchilla/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ChrisChinchilla/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ChrisChinchilla/subscriptions",
+    "organizations_url": "https://api.github.com/users/ChrisChinchilla/orgs",
+    "repos_url": "https://api.github.com/users/ChrisChinchilla/repos",
+    "events_url": "https://api.github.com/users/ChrisChinchilla/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ChrisChinchilla/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1141538240,
+      "node_id": "MDU6TGFiZWwxMTQxNTM4MjQw",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/need:documentation",
+      "name": "need:documentation",
+      "color": "b4fcae",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-11-26T13:06:31Z",
+  "updated_at": "2021-03-10T12:16:34Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "To tidy up the various private mode guides we currently have, @fjl and I discussed keeping the content submitted by @fjl as the \"advanced\" / full details steps, and creating a new getting started guide that instead uses pupeth to make an easier to follow tutorial. Thus probably closing #20256 ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20398/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/20398/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

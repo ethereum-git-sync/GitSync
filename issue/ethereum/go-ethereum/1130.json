@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1130",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1130/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1130/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1130/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/1130",
+  "id": 81512800,
+  "node_id": "MDU6SXNzdWU4MTUxMjgwMA==",
+  "number": 1130,
+  "title": "Blocktest won't run",
+  "user": {
+    "login": "frozeman",
+    "id": 232662,
+    "node_id": "MDQ6VXNlcjIzMjY2Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/232662?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frozeman",
+    "html_url": "https://github.com/frozeman",
+    "followers_url": "https://api.github.com/users/frozeman/followers",
+    "following_url": "https://api.github.com/users/frozeman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frozeman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frozeman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frozeman/subscriptions",
+    "organizations_url": "https://api.github.com/users/frozeman/orgs",
+    "repos_url": "https://api.github.com/users/frozeman/repos",
+    "events_url": "https://api.github.com/users/frozeman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frozeman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-05-27T16:05:21Z",
+  "updated_at": "2015-08-10T10:40:38Z",
+  "closed_at": "2015-08-10T10:40:37Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "When i start the with:\n\n```\ngeth --rpccorsdomain \"http://localhost:3000\" blocktest ~/Developer/tests/BlockTests/bcRPC_API_Test.json RPC_API_Test rpc\n```\n\nIt crashes the node with the following error:\n\n```\nI0527 17:44:53.507971     664 backend.go:256] Protocol Version: 60, Network Id: 0\nI0527 17:44:53.508087     664 backend.go:266] Blockchain DB Version: 3\nI0527 17:44:53.511169     664 chain_manager.go:257] Last block (#0) fd4af92a79c7fc2fd8bf0d342f2e832e1d4f485c85b9152d2039e03bc604fdca TD=131072\nI0527 17:44:53.518719     664 server.go:293] Starting Server\nI0527 17:44:53.564461     664 udp.go:189] Listening, enode://4fd744b070ce4267fa5d86dd4a86df2958bd22ccd891a69bbc64a40c48f8d83b38f7be711c64c5f6c5e5f477e37d8e598f3c4d6aae58a235d57625e058e82afd@[::]:30303\nI0527 17:44:53.565054     664 backend.go:477] Server started\nI0527 17:44:53.565064     664 server.go:530] Listening on [::]:30303\nI0527 17:44:57.103363     664 chain_manager.go:655] imported 1 block(s) (0 queued 0 ignored) in 1.044412297s. #1 [d6b7b691 / d6b7b691]\n\n...\n\nBlock Test post state validated, starting RPC interface.\nI0527 17:44:57.266551     664 cmd.go:137] Starting Geth/v0.9.25/darwin/go1.4.1\nFatal: Error starting Ethereum: server already running\nFatal: Error starting Ethereum: server already running\n```\n\nI restarted my computer and have nothing else running. Starting `geth` without the blocktest runs fine, though!\n\nCan anybody reproduce that?\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1130/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1130/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

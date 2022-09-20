@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/7412",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/7412/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/7412/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/7412/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/7412",
+  "id": 492702768,
+  "node_id": "MDU6SXNzdWU0OTI3MDI3Njg=",
+  "number": 7412,
+  "title": "[ossfuzz] Use `-fsanitize=fuzzer` linker flag instead of linking to a custom built libFuzzingEngine.a",
+  "user": {
+    "login": "bshastry",
+    "id": 2388185,
+    "node_id": "MDQ6VXNlcjIzODgxODU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2388185?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bshastry",
+    "html_url": "https://github.com/bshastry",
+    "followers_url": "https://api.github.com/users/bshastry/followers",
+    "following_url": "https://api.github.com/users/bshastry/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bshastry/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bshastry/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bshastry/subscriptions",
+    "organizations_url": "https://api.github.com/users/bshastry/orgs",
+    "repos_url": "https://api.github.com/users/bshastry/repos",
+    "events_url": "https://api.github.com/users/bshastry/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bshastry/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-09-12T09:52:13Z",
+  "updated_at": "2019-09-12T18:22:54Z",
+  "closed_at": "2019-09-12T18:22:54Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nCurrently, the fuzzing binaries link against a custom built `libFuzzingEngine.a` that is built in the ubuntu 19.04 docker image\r\n\r\nSee https://github.com/ethereum/solidity/blob/324cc71b13a2e1ebf1fe34397d085832b89076a4/.circleci/docker/Dockerfile.ubuntu1904#L67-L75\r\n\r\nossfuzz guide suggests not doing this (see https://github.com/google/oss-fuzz/issues/832#issue-255774655)\r\n\r\nThe main motivation seems to be that coverage instrumentation flags for building libFuzzingEngine.a keep changing, so it's best to transparently use `-fsanitize=fuzzer` to use whatever instrumentation flags clang deems fit.\r\n\r\n## Motivation\r\n\r\nEssentially\r\n  - remove `libFuzzingEngine.a` from the list of linked libraries from all fuzz targets\r\n  - add a link flag `-fsanitize=fuzzer` for each of them\r\n\r\n\r\n## Backwards Compatibility\r\n\r\nNA. Once this is implemented, `libFuzzingEngine.a` may be removed from ubuntu19.04 docker image since it will no longer be used.\r\n\r\nFrom [libfuzzer docs](https://llvm.org/docs/LibFuzzer.html)\r\n\r\n> Recent versions of Clang (starting from 6.0) include libFuzzer, and no extra installation is necessary.\r\n\r\n> If modifying CFLAGS of a large project, which also compiles executables requiring their own main symbol, it may be desirable to request just the instrumentation without linking:\r\n\r\n> clang -fsanitize=fuzzer-no-link mytarget.c\r\n\r\n> Then libFuzzer can be linked to the desired driver by passing in -fsanitize=fuzzer during the linking stage.",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/7412/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/7412/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

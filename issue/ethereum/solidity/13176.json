@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13176",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13176/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13176/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13176/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13176",
+  "id": 1277430014,
+  "node_id": "I_kwDOAm_5kc5MJAj-",
+  "number": 13176,
+  "title": "Avoiding `bytes calldata slice` type",
+  "user": {
+    "login": "k06a",
+    "id": 702124,
+    "node_id": "MDQ6VXNlcjcwMjEyNA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/702124?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/k06a",
+    "html_url": "https://github.com/k06a",
+    "followers_url": "https://api.github.com/users/k06a/followers",
+    "following_url": "https://api.github.com/users/k06a/following{/other_user}",
+    "gists_url": "https://api.github.com/users/k06a/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/k06a/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/k06a/subscriptions",
+    "organizations_url": "https://api.github.com/users/k06a/orgs",
+    "repos_url": "https://api.github.com/users/k06a/repos",
+    "events_url": "https://api.github.com/users/k06a/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/k06a/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-20T22:11:46Z",
+  "updated_at": "2022-06-20T22:11:46Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nSlice of `bytes calldata` should have the same type `bytes calldata`, but it is unexpectedly `bytes calldata slice`.\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.15\r\n\r\n## Steps to Reproduce\r\n\r\n```solidity\r\nlibrary Calldata {\r\n    function parseAddress(bytes calldata data) internal pure returns(address ret) {\r\n        assembly {\r\n            ret := shr(96, calldataload(data.offset))\r\n        }\r\n    }\r\n}\r\n\r\ncontract CalldataMagic {\r\n    using Calldata for bytes;\r\n    \r\n    function f(bytes calldata data, uint256 offset) external pure returns(address) {\r\n        return data[offset:offset+20].parseAddress();\r\n    }\r\n}\r\n```\r\n-->\r\n```\r\nTypeError: Member \"parseAddress\" not found or not visible after argument-dependent lookup in bytes calldata slice.\r\n--> contracts/1_Storage.sol:20:16:\r\n|\r\n20 | return data[offset:offset+20].parseAddress();\r\n| ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n```\r\n\r\nFound way to handle this, but I would prefer to have this working without tricks:\r\n```solidity\r\nreturn data[offset:offset+20].parseAddress();\r\n```\r\n=>\r\n```solidity\r\nbytes calldata subdata = data[offset:offset+20];\r\nreturn subdata.parseAddress();\r\n```\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13176/reactions",
+    "total_count": 5,
+    "+1": 5,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13176/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

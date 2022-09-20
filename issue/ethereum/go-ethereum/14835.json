@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14835",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14835/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14835/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14835/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/14835",
+  "id": 244236261,
+  "node_id": "MDU6SXNzdWUyNDQyMzYyNjE=",
+  "number": 14835,
+  "title": "deploy contract question or bug?",
+  "user": {
+    "login": "witterlee",
+    "id": 4479969,
+    "node_id": "MDQ6VXNlcjQ0Nzk5Njk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4479969?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/witterlee",
+    "html_url": "https://github.com/witterlee",
+    "followers_url": "https://api.github.com/users/witterlee/followers",
+    "following_url": "https://api.github.com/users/witterlee/following{/other_user}",
+    "gists_url": "https://api.github.com/users/witterlee/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/witterlee/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/witterlee/subscriptions",
+    "organizations_url": "https://api.github.com/users/witterlee/orgs",
+    "repos_url": "https://api.github.com/users/witterlee/repos",
+    "events_url": "https://api.github.com/users/witterlee/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/witterlee/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-07-20T03:35:01Z",
+  "updated_at": "2017-08-03T13:21:37Z",
+  "closed_at": "2017-08-03T13:21:37Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System details\r\n\r\nVersion:  Geth/v1.6.6-stable-10a45cb5/windows-amd64\r\nGo Version: go1.8.3\r\nOS: Windows\r\nuname -sr: Windows 10 \r\nDistributor ID:\tWindows\r\n\r\n\r\n#### Expected behaviour\r\nI want deploy solidity contract steady \r\n\r\n#### Actual behaviour\r\ncontract creation should success,but sometime success ,sometime not \r\n\r\n#### Steps to reproduce the behaviour\r\nI use the same contract byte code and the same sendtransaction execute code to submit it.\r\nbut yesterday 2 contract creation sucess\r\n\r\n1.https://etherscan.io/tx/0x654ea592d856153467828f1d732d6428c8d33da55530f3eaded2d9497d3d9810\r\n2.https://etherscan.io/tx/0xf7a6095e50583e08679e4e4ef6f584d96b4ae92a1b5b351d969ee26b945fb838\r\n\r\n\r\nbut today can not sucess, what happened about it? \r\nthis is my test address:https://etherscan.io/address/0xc45d3dcb56165c457e0e8ff5dad56765e0dd6d74\r\n\r\n#### this  is the request:\r\n\r\n ` {\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"eth_sendTransaction\",\"params\":[{\"from\":\"0xc45d3dcb56165c457e0e8ff5dad56765e0dd6d74\",\"gas\":\"0x2dc6c0\",\"gasPrice\":\"0x4a817c800\",\"value\":\"0x0\",\"data\":\"0x6060604052341561000c57fe5b5b60008054600160a060020a03191633600160a060020a03161790555b5b6101ef806100396000396000f300606060405236156100305763ffffffff60e060020a6000350416631698755f811461008457806341c0e1b5146100b5575b6100825b66038d7ea4c67fff193401600081111561007d5760008054604051600160a060020a03909116913480156108fc02929091818181858888f19350505050151561007d5760006000fd5b5b5b50565b005b341561008c57fe5b6100a3600160a060020a03600435166024356100c7565b60408051918252519081900360200190f35b34156100bd57fe5b610082610196565b005b600066038d7ea4c6800083600160a060020a031631101580156100ea5750600082115b1561018a5782600160a060020a031660405180807f7472616e7366657228616464726573732c75696e7432353629000000000000008152506019019050604051809103902060e060020a90046000604051602001526040518163ffffffff1660e060020a0281526004018090506020604051808303818660325a03f4151561016e57fe5b505060405151151590506101825760006000fd5b50600161018f565b506000195b5b92915050565b60005433600160a060020a039081169116146101b25760006000fd5b600054600160a060020a0316ff5b5b5600a165627a7a72305820dd666736e3dfec44cb439fd6f1e6628a7d3f97b74279b39fda0320b14940f1bf0029\"}]}`\r\n####  this is what I see on geth console\r\n![image](https://user-images.githubusercontent.com/4479969/28399469-c33d350c-6d3f-11e7-9e58-9d1380863f34.png)\r\n\r\nINFO [07-20|11:33:03] Submitted contract creation              fullhash=0x8beb84116614b2599d12b479f04abb6943a6225d22bc9d09743dd52517e4aa68 contract=0xa8d47b81dbb4c99b6c50f09d931d0b4ffcc4c1ef\r\n \r\n\r\nanybody can help ?",
+  "closed_by": {
+    "login": "witterlee",
+    "id": 4479969,
+    "node_id": "MDQ6VXNlcjQ0Nzk5Njk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4479969?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/witterlee",
+    "html_url": "https://github.com/witterlee",
+    "followers_url": "https://api.github.com/users/witterlee/followers",
+    "following_url": "https://api.github.com/users/witterlee/following{/other_user}",
+    "gists_url": "https://api.github.com/users/witterlee/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/witterlee/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/witterlee/subscriptions",
+    "organizations_url": "https://api.github.com/users/witterlee/orgs",
+    "repos_url": "https://api.github.com/users/witterlee/repos",
+    "events_url": "https://api.github.com/users/witterlee/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/witterlee/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14835/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/14835/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

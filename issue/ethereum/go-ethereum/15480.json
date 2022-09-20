@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15480",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15480/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15480/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15480/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/15480",
+  "id": 273798206,
+  "node_id": "MDU6SXNzdWUyNzM3OTgyMDY=",
+  "number": 15480,
+  "title": "Omit `null` error fields from transaction traces",
+  "user": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 717742232,
+      "node_id": "MDU6TGFiZWw3MTc3NDIyMzI=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/help%20wanted",
+      "name": "help wanted",
+      "color": "0e8a16",
+      "default": true,
+      "description": null
+    },
+    {
+      "id": 717743019,
+      "node_id": "MDU6TGFiZWw3MTc3NDMwMTk=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-11-14T13:47:48Z",
+  "updated_at": "2017-11-16T16:53:19Z",
+  "closed_at": "2017-11-16T16:53:19Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "An example log entry for a single transaction trace opcode looks like:\r\n\r\n```json\r\n{\r\n\t\"pc\":      48,\r\n\t\"op\":      \"DIV\",\r\n\t\"gasCost\": 5,\r\n\t\"gas\":     64532,\r\n\t\"depth\":   1,\r\n\t\"error\":   null,\r\n\t\"stack\": [\r\n\t\t\"00000000000000000000000000000000000000000000000000000000ffffffff\",\r\n\t\t\"0000000100000000000000000000000000000000000000000000000000000000\",\r\n\t\t\"2df07fbaabbe40e3244445af30759352e348ec8bebd4dd75467a9f29ec55d98d\"\r\n\t],\r\n\t\"memory\": [\r\n\t\t\"0000000000000000000000000000000000000000000000000000000000000000\",\r\n\t\t\"0000000000000000000000000000000000000000000000000000000000000000\",\r\n\t\t\"0000000000000000000000000000000000000000000000000000000000000060\"\r\n\t],\r\n\t\"storage\": {\r\n\t}\r\n}\r\n```\r\n\r\nThese traces tend to get huge very fast. As such, there's really no reason to repeat `\"error\": null` thousands of times for every execute opcode. We should omit `nil` entries altogether instead.\r\n\r\nYou can reproduce the above snippet on Rinkeby with\r\n\r\n```\r\ndebug.traceTransaction(\"0xfc9359e49278b7ba99f59edac0e3de49956e46e530a53c15aa71226b7aa92c6f\")\r\n```",
+  "closed_by": {
+    "login": "karalabe",
+    "id": 129561,
+    "node_id": "MDQ6VXNlcjEyOTU2MQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/karalabe",
+    "html_url": "https://github.com/karalabe",
+    "followers_url": "https://api.github.com/users/karalabe/followers",
+    "following_url": "https://api.github.com/users/karalabe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/karalabe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/karalabe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/karalabe/subscriptions",
+    "organizations_url": "https://api.github.com/users/karalabe/orgs",
+    "repos_url": "https://api.github.com/users/karalabe/repos",
+    "events_url": "https://api.github.com/users/karalabe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/karalabe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15480/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/15480/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

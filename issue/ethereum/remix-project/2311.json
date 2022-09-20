@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2311",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2311/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2311/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2311/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2311",
+  "id": 1205793207,
+  "node_id": "I_kwDODtLRw85H3vG3",
+  "number": 2311,
+  "title": "Error when assigning zero to contract variables",
+  "user": {
+    "login": "rm98",
+    "id": 32525368,
+    "node_id": "MDQ6VXNlcjMyNTI1MzY4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32525368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rm98",
+    "html_url": "https://github.com/rm98",
+    "followers_url": "https://api.github.com/users/rm98/followers",
+    "following_url": "https://api.github.com/users/rm98/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rm98/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rm98/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rm98/subscriptions",
+    "organizations_url": "https://api.github.com/users/rm98/orgs",
+    "repos_url": "https://api.github.com/users/rm98/repos",
+    "events_url": "https://api.github.com/users/rm98/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rm98/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-04-15T18:48:58Z",
+  "updated_at": "2022-04-18T16:24:21Z",
+  "closed_at": "2022-04-18T16:24:21Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Here is an example contract that triggers the bug when one of the public functions is called with `0` as the argument.\r\nAny other value will work.\r\n\r\n* Remix Version: `0.23.0` (latest), bug was not triggered by earlier versions.\r\n* Solidity Compiler Version: `0.8.13` (latest)\r\n* Deployed on JavaScript VM\r\n\r\n```solidity\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract AssignZeroBug {\r\n    address private addr = 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2;\r\n    uint private number = 1;\r\n\r\n    function assignAddress(address _addr) public {\r\n        addr = _addr;\r\n    }\r\n\r\n    function assignNumber(uint _number) public {\r\n        number = _number;\r\n    }\r\n}\r\n```\r\n\r\nExample error message:\r\n```\r\ntransact to AssignZeroBug.assignNumber errored: base fee exceeds gas limit (vm hf=berlin -> block number=6 hash=0xd5a3bf59ba95d1f81b8b302e662b4bdc46063883fe79bdeb124da677e858f838 hf=berlin baseFeePerGas=none txs=1 uncles=0 -> tx type=0 hash=0x53b8a5c103d242f0911fbf51beba7c9ecf532b8129317d3f38fe617521e25541 nonce=4 value=0 signed=true hf=berlin gasPrice=1)\r\n```\r\nGas limit was set to `3000000` in Remix.",
+  "closed_by": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2311/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2311/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

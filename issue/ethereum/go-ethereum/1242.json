@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1242",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1242/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1242/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1242/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/1242",
+  "id": 87358938,
+  "node_id": "MDU6SXNzdWU4NzM1ODkzOA==",
+  "number": 1242,
+  "title": "CLI Feature: Unlock Account w/ Account Number \"--unlock 1\"",
+  "user": {
+    "login": "SilentCicero",
+    "id": 9806174,
+    "node_id": "MDQ6VXNlcjk4MDYxNzQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9806174?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SilentCicero",
+    "html_url": "https://github.com/SilentCicero",
+    "followers_url": "https://api.github.com/users/SilentCicero/followers",
+    "following_url": "https://api.github.com/users/SilentCicero/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SilentCicero/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SilentCicero/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SilentCicero/subscriptions",
+    "organizations_url": "https://api.github.com/users/SilentCicero/orgs",
+    "repos_url": "https://api.github.com/users/SilentCicero/repos",
+    "events_url": "https://api.github.com/users/SilentCicero/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SilentCicero/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-06-11T14:05:52Z",
+  "updated_at": "2015-07-04T10:40:24Z",
+  "closed_at": "2015-07-04T10:40:23Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "For those using VM's where copy and paste features suck, a CLI feature that allows me to unlock accounts with their account number would be great, example:\n\ngeth --unlock 1\n\nWhere '1' is the account number to be unlocked. Does this CLI feature already exist? Is it in the works? Is it a possibility pre-frontier?\n\nCheers!\n",
+  "closed_by": {
+    "login": "obscuren",
+    "id": 6264126,
+    "node_id": "MDQ6VXNlcjYyNjQxMjY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6264126?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/obscuren",
+    "html_url": "https://github.com/obscuren",
+    "followers_url": "https://api.github.com/users/obscuren/followers",
+    "following_url": "https://api.github.com/users/obscuren/following{/other_user}",
+    "gists_url": "https://api.github.com/users/obscuren/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/obscuren/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/obscuren/subscriptions",
+    "organizations_url": "https://api.github.com/users/obscuren/orgs",
+    "repos_url": "https://api.github.com/users/obscuren/repos",
+    "events_url": "https://api.github.com/users/obscuren/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/obscuren/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1242/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1242/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

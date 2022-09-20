@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/231",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/231/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/231/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/231/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/231",
+  "id": 1327519717,
+  "node_id": "I_kwDOGZSKs85PIFfl",
+  "number": 231,
+  "title": "incompatibility of public bids and permissionless relaying",
+  "user": {
+    "login": "thegostep",
+    "id": 15959632,
+    "node_id": "MDQ6VXNlcjE1OTU5NjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15959632?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/thegostep",
+    "html_url": "https://github.com/thegostep",
+    "followers_url": "https://api.github.com/users/thegostep/followers",
+    "following_url": "https://api.github.com/users/thegostep/following{/other_user}",
+    "gists_url": "https://api.github.com/users/thegostep/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/thegostep/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/thegostep/subscriptions",
+    "organizations_url": "https://api.github.com/users/thegostep/orgs",
+    "repos_url": "https://api.github.com/users/thegostep/repos",
+    "events_url": "https://api.github.com/users/thegostep/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/thegostep/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-03T16:38:34Z",
+  "updated_at": "2022-08-03T16:38:34Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "I've been reflecting some more on the following two issues:\r\nhttps://github.com/flashbots/mev-boost/issues/112\r\nhttps://github.com/flashbots/mev-boost/issues/219\r\n\r\nI am starting to believe it is not possible to build a permissionless relay if it has public bid values.\r\n\r\nThe dominant builder strategy under these conditions will be a latency race.  A builder will want to submit a block as late as possible in the proposal window in order to give the least amount of time possible for competing builders to update their bids. This means there is an incentive to bypass relays in order to minimize network hops and to make initial bids as low as possible to then increment using PGA style strategies. The end result is higher barriers to entry for new builders due to complex bidding strategies and investment into low latency systems or co-location.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/231/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/231/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

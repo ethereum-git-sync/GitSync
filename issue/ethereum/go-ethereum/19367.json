@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19367",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19367/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19367/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19367/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/19367",
+  "id": 428083869,
+  "node_id": "MDU6SXNzdWU0MjgwODM4Njk=",
+  "number": 19367,
+  "title": "rlp: annotation need to update for the support of booleans",
+  "user": {
+    "login": "Focinfi",
+    "id": 3842671,
+    "node_id": "MDQ6VXNlcjM4NDI2NzE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3842671?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Focinfi",
+    "html_url": "https://github.com/Focinfi",
+    "followers_url": "https://api.github.com/users/Focinfi/followers",
+    "following_url": "https://api.github.com/users/Focinfi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Focinfi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Focinfi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Focinfi/subscriptions",
+    "organizations_url": "https://api.github.com/users/Focinfi/orgs",
+    "repos_url": "https://api.github.com/users/Focinfi/repos",
+    "events_url": "https://api.github.com/users/Focinfi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Focinfi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-04-02T08:14:29Z",
+  "updated_at": "2019-05-14T13:09:58Z",
+  "closed_at": "2019-05-14T13:09:58Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I am reading the rlp package source code, the annotations for `Decode` and `Encode` tell me the booleans are not supported, but the codes tells me the booleans are already supported.\r\n\r\nhttps://github.com/ethereum/go-ethereum/blob/master/rlp/decode.go#L124\r\n```\r\n// Non-empty interface types are not supported, nor are booleans,\r\n// signed integers, floating point numbers, maps, channels and\r\n// functions.\r\n```\r\n\r\nhttps://github.com/ethereum/go-ethereum/blob/master/rlp/encode.go#L78\r\n```\r\n// Boolean values are not supported, nor are signed integers, floating\r\n// point numbers, maps, channels and functions.\r\n```",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19367/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/19367/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

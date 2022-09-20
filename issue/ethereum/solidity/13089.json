@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13089",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13089/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13089/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13089/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13089",
+  "id": 1257440954,
+  "node_id": "I_kwDOAm_5kc5K8wa6",
+  "number": 13089,
+  "title": "Optimize static memory inputs via `codecopy`",
+  "user": {
+    "login": "brockelmore",
+    "id": 31553173,
+    "node_id": "MDQ6VXNlcjMxNTUzMTcz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31553173?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/brockelmore",
+    "html_url": "https://github.com/brockelmore",
+    "followers_url": "https://api.github.com/users/brockelmore/followers",
+    "following_url": "https://api.github.com/users/brockelmore/following{/other_user}",
+    "gists_url": "https://api.github.com/users/brockelmore/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/brockelmore/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/brockelmore/subscriptions",
+    "organizations_url": "https://api.github.com/users/brockelmore/orgs",
+    "repos_url": "https://api.github.com/users/brockelmore/repos",
+    "events_url": "https://api.github.com/users/brockelmore/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/brockelmore/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-02T01:15:07Z",
+  "updated_at": "2022-08-17T13:48:52Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nUtilize `codecopy` to optimize struct initialization, calldata generation, and other memory based steps\r\n\r\n## Motivation\r\n\r\nStruct initialization requires a memory word to be left as 0s, and when creating a new struct (or array), it is repeatedly copied to zero out memory (as the compiler may have written temporary data to it). Additionally, when performing a call to another smart contract with some constants, `pushN` opcodes are used to load the words on the stack followed by `mstore`. Both of these are relatively inefficient and each get more expensive the larger the struct/more static inputs to the call there are (the calldata optimization explicitly applies to static inputs).\r\n\r\nBoth of these can be improved at the cost of bytecode size.\r\n\r\n## Specification\r\n\r\nFor struct initialization:\r\n1. Keep a running maximum of word size for all structs instantiated in a contract\r\n2. Assign a data section in a contract that would put 0 bytes equal to the size of the largest struct\r\n3. Instead of `mload(zero_word) dup push(mem_loc) mstore, ... push(mem_loc) mstore`, for a given struct of a particular size, perform a `push(struct_size) push(zero_byte_codechunk) push(mem_loc) codecopy`\r\n\r\nFor calldata:\r\n1. Analyze static inputs of calling a contract\r\n2. Assign a data section in a contract that would hold the partially formed calldata, put 0 bytes in of dynamic input\r\n3. Codecopy to the expected location in memory, mstore dynamic inputs\r\n4. If there are dynamic length inputs at beginning/middle, delay the codecopy in the code until we know where to place the static data \r\n\r\nThis kind of optimization likely applies to other things as well, like `keccak256`, `log`, etc.\r\n\r\n## Backwards Compatibility\r\n\r\nShould be compatible?\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13089/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13089/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25255",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25255/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25255/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25255/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25255",
+  "id": 1295810706,
+  "node_id": "I_kwDOAOvK985NPICS",
+  "number": 25255,
+  "title": "How about that early return if unnecessary fields are filled in struct jsonrpcMessage.",
+  "user": {
+    "login": "dbadoy",
+    "id": 72970043,
+    "node_id": "MDQ6VXNlcjcyOTcwMDQz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72970043?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dbadoy",
+    "html_url": "https://github.com/dbadoy",
+    "followers_url": "https://api.github.com/users/dbadoy/followers",
+    "following_url": "https://api.github.com/users/dbadoy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dbadoy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dbadoy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dbadoy/subscriptions",
+    "organizations_url": "https://api.github.com/users/dbadoy/orgs",
+    "repos_url": "https://api.github.com/users/dbadoy/repos",
+    "events_url": "https://api.github.com/users/dbadoy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dbadoy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-07-06T13:02:04Z",
+  "updated_at": "2022-07-07T11:52:01Z",
+  "closed_at": "2022-07-07T11:52:01Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "```go\r\nmaxRequestContentLength = 1024 * 1024 * 5\r\n```\r\n```go\r\ntype jsonrpcMessage struct {\r\n\tVersion string          `json:\"jsonrpc,omitempty\"`\r\n\tID      json.RawMessage `json:\"id,omitempty\"`\r\n\tMethod  string          `json:\"method,omitempty\"`\r\n\tParams  json.RawMessage `json:\"params,omitempty\"`\r\n\tError   *jsonError      `json:\"error,omitempty\"`\r\n\tResult  json.RawMessage `json:\"result,omitempty\"`\r\n}\r\n```\r\nI guess, most of the content exists in jsonrpcMessage.Params in normal.\r\nBut, i concern the case that filled dummy data to jsonrpcMessage.Version or jsonrpcMessage.Method.\r\n\r\nThe request normal,\r\n```\r\n{\"jsonrpc\" : \"2.0\",\"method\":\"eth_getBlockNumber\",\"params\":[],\"id\":1}\r\n```\r\n\r\nAnd bad requests,\r\n```\r\nmethodDummy := \"aaaaaaaaa ... aaaa\" // len(methodDummy): 5242000\r\n{\"jsonrpc\" : \"2.0\",\"method\":methodDummy,\"params\":[],\"id\":1}\r\n```\r\n```\r\njsonrpcDummy := \"aaaaaaaaa ... aaaa\" // len(jsonrpcDummy): 5242000\r\n{\"jsonrpc\" : jsonrpcDummy,\"method\":\"eth_getBlockNumber\",\"params\":[],\"id\":1}\r\n```\r\nThese requests will fail, but return error after unmarshalling.\r\nIt doesn't matter if it's necessary work, but wouldn't it be better to reduce it if not necessary.\r\n\r\ni'll open a PR that relate to the idea.\r\nRefer that PR.\r\n\r\nThanks.\r\n",
+  "closed_by": {
+    "login": "dbadoy",
+    "id": 72970043,
+    "node_id": "MDQ6VXNlcjcyOTcwMDQz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72970043?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dbadoy",
+    "html_url": "https://github.com/dbadoy",
+    "followers_url": "https://api.github.com/users/dbadoy/followers",
+    "following_url": "https://api.github.com/users/dbadoy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dbadoy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dbadoy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dbadoy/subscriptions",
+    "organizations_url": "https://api.github.com/users/dbadoy/orgs",
+    "repos_url": "https://api.github.com/users/dbadoy/repos",
+    "events_url": "https://api.github.com/users/dbadoy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dbadoy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25255/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25255/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "not_planned"
+}
+[
+
+]

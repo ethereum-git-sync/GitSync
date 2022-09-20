@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/2270",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/2270/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/2270/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/2270/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/2270",
+  "id": 228672690,
+  "node_id": "MDU6SXNzdWUyMjg2NzI2OTA=",
+  "number": 2270,
+  "title": "NatSpec poorly documented in solidity.readthedocs.",
+  "user": {
+    "login": "3esmit",
+    "id": 224810,
+    "node_id": "MDQ6VXNlcjIyNDgxMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/224810?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/3esmit",
+    "html_url": "https://github.com/3esmit",
+    "followers_url": "https://api.github.com/users/3esmit/followers",
+    "following_url": "https://api.github.com/users/3esmit/following{/other_user}",
+    "gists_url": "https://api.github.com/users/3esmit/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/3esmit/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/3esmit/subscriptions",
+    "organizations_url": "https://api.github.com/users/3esmit/orgs",
+    "repos_url": "https://api.github.com/users/3esmit/repos",
+    "events_url": "https://api.github.com/users/3esmit/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/3esmit/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 275027668,
+      "node_id": "MDU6TGFiZWwyNzUwMjc2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/documentation%20:book:",
+      "name": "documentation :book:",
+      "color": "006b75",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-05-15T10:34:28Z",
+  "updated_at": "2018-12-19T14:32:18Z",
+  "closed_at": "2018-12-19T14:32:18Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "This information is missing from readthedocs: https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format\r\nI think this should belong here: http://solidity.readthedocs.io/en/latest/style-guide.html that was where I was looking for it as instructed in https://github.com/ethereum/wiki/wiki/Solidity,-Docs-and-ABI/ , so I looked in history and found the 'ethereum natural specification format' ",
+  "closed_by": {
+    "login": "ChrisChinchilla",
+    "id": 42080,
+    "node_id": "MDQ6VXNlcjQyMDgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42080?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ChrisChinchilla",
+    "html_url": "https://github.com/ChrisChinchilla",
+    "followers_url": "https://api.github.com/users/ChrisChinchilla/followers",
+    "following_url": "https://api.github.com/users/ChrisChinchilla/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ChrisChinchilla/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ChrisChinchilla/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ChrisChinchilla/subscriptions",
+    "organizations_url": "https://api.github.com/users/ChrisChinchilla/orgs",
+    "repos_url": "https://api.github.com/users/ChrisChinchilla/repos",
+    "events_url": "https://api.github.com/users/ChrisChinchilla/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ChrisChinchilla/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/2270/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/2270/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1125",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1125/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1125/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1125/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1125",
+  "id": 859879695,
+  "node_id": "MDU6SXNzdWU4NTk4Nzk2OTU=",
+  "number": 1125,
+  "title": "Themes loaded over http instead of https",
+  "user": {
+    "login": "niccolopetti",
+    "id": 22686876,
+    "node_id": "MDQ6VXNlcjIyNjg2ODc2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22686876?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/niccolopetti",
+    "html_url": "https://github.com/niccolopetti",
+    "followers_url": "https://api.github.com/users/niccolopetti/followers",
+    "following_url": "https://api.github.com/users/niccolopetti/following{/other_user}",
+    "gists_url": "https://api.github.com/users/niccolopetti/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/niccolopetti/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/niccolopetti/subscriptions",
+    "organizations_url": "https://api.github.com/users/niccolopetti/orgs",
+    "repos_url": "https://api.github.com/users/niccolopetti/repos",
+    "events_url": "https://api.github.com/users/niccolopetti/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/niccolopetti/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-04-16T14:43:20Z",
+  "updated_at": "2021-04-16T14:43:58Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Remix produces\r\n```\r\nmain.0c9d6b64bfa764d9f8a7.js:72 Mixed Content:\r\n The page at 'https://remix.ethereum.org/' was loaded over HTTPS, but requested an insecure stylesheet 'http://remix.ethereum.org/assets/css/themes/remix-dark_tvx1s2.css'. \r\n This request has been blocked; the content must be served over HTTPS.\r\n```\r\nin the Console tab of the browser for whatever theme you select",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1125/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1125/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

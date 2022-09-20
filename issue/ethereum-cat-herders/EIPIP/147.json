@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/147",
+  "repository_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP",
+  "labels_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/147/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/147/comments",
+  "events_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/147/events",
+  "html_url": "https://github.com/ethereum-cat-herders/EIPIP/issues/147",
+  "id": 1272512360,
+  "node_id": "I_kwDODfkRC85L2P9o",
+  "number": 147,
+  "title": "All Wallet Devs meeting #2",
+  "user": {
+    "login": "poojaranjan",
+    "id": 29681685,
+    "node_id": "MDQ6VXNlcjI5NjgxNjg1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29681685?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/poojaranjan",
+    "html_url": "https://github.com/poojaranjan",
+    "followers_url": "https://api.github.com/users/poojaranjan/followers",
+    "following_url": "https://api.github.com/users/poojaranjan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/poojaranjan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/poojaranjan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/poojaranjan/subscriptions",
+    "organizations_url": "https://api.github.com/users/poojaranjan/orgs",
+    "repos_url": "https://api.github.com/users/poojaranjan/repos",
+    "events_url": "https://api.github.com/users/poojaranjan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/poojaranjan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-06-15T17:06:43Z",
+  "updated_at": "2022-06-28T11:21:11Z",
+  "closed_at": "2022-06-28T11:21:11Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Date and Time\r\n\r\n#### Thursday, June 16, 2022, at 2:30 am UTC \r\n(Wednesday, June 15, 2022, at 10:30 pm EST) \r\n\r\n## Location\r\n\r\nDiscord: Ethereum Wallets server, General\r\n\r\nRecording: https://www.youtube.com/playlist?list=PL4cwHXAawZxqn-kIc5VoOZv-esk9OiNSZ\r\n\r\n## Agenda\r\n\r\n### 1. Continuing extension-registry discussion.\r\n### 2. [EIP-5139: Remote Procedure Call Provider Lists](https://eips.ethereum.org/EIPS/eip-5139)\r\n### 3. Wallet Plugfest / Interoperability Test Event\r\n\r\n**Next meeting** - TBD\r\n\r\n(Anything else, please add a comment)\r\n\r\n#### Add to calendar\r\n\r\n- Google calendar link: https://calendar.google.com/calendar/u/0?cid=Y190cnZoaHBkOGhnbmN0YTFqazNvNWsxZnVlNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t\r\n- iCal link: https://calendar.google.com/calendar/ical/c_trvhhpd8hgncta1jk3o5k1fue4%40group.calendar.google.com/public/basic.ics \r\n",
+  "closed_by": {
+    "login": "poojaranjan",
+    "id": 29681685,
+    "node_id": "MDQ6VXNlcjI5NjgxNjg1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29681685?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/poojaranjan",
+    "html_url": "https://github.com/poojaranjan",
+    "followers_url": "https://api.github.com/users/poojaranjan/followers",
+    "following_url": "https://api.github.com/users/poojaranjan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/poojaranjan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/poojaranjan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/poojaranjan/subscriptions",
+    "organizations_url": "https://api.github.com/users/poojaranjan/orgs",
+    "repos_url": "https://api.github.com/users/poojaranjan/repos",
+    "events_url": "https://api.github.com/users/poojaranjan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/poojaranjan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/147/reactions",
+    "total_count": 2,
+    "+1": 2,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/147/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

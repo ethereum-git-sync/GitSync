@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1207",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1207/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1207/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1207/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1207",
+  "id": 895820665,
+  "node_id": "MDU6SXNzdWU4OTU4MjA2NjU=",
+  "number": 1207,
+  "title": "Javascript Error on Contract Deployment",
+  "user": {
+    "login": "mbeylin",
+    "id": 6082639,
+    "node_id": "MDQ6VXNlcjYwODI2Mzk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6082639?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mbeylin",
+    "html_url": "https://github.com/mbeylin",
+    "followers_url": "https://api.github.com/users/mbeylin/followers",
+    "following_url": "https://api.github.com/users/mbeylin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mbeylin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mbeylin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mbeylin/subscriptions",
+    "organizations_url": "https://api.github.com/users/mbeylin/orgs",
+    "repos_url": "https://api.github.com/users/mbeylin/repos",
+    "events_url": "https://api.github.com/users/mbeylin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mbeylin/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-05-19T19:49:13Z",
+  "updated_at": "2021-05-19T19:49:13Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I'm seeing an error when trying to deploy a smart contract using Remix:\r\n`creation of <contract name> errored: Cannot convert undefined or null to object`\r\n\r\nsteps to reproduce:\r\n\r\n1. create an empty solidity file\r\n2. go back to an existing solidity file with your contract in it, and compile\r\n3. try to deploy a contract within the existing solidity file (this throws the error)\r\n\r\nIt seems like it has something to do with the empty file, since I was able to overcome the issue by removing the empty file and refreshing the page, and only opening up the file which had my desired contract in it.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1207/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1207/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

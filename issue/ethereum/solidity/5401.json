@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/5401",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/5401/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/5401/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/5401/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/5401",
+  "id": 379984194,
+  "node_id": "MDU6SXNzdWUzNzk5ODQxOTQ=",
+  "number": 5401,
+  "title": "[Yul] Evaluate performance of YulStringRepository.",
+  "user": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-11-12T22:51:38Z",
+  "updated_at": "2020-05-15T13:08:57Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Since we will probably merge #5392 for now to ensure determinism, we should evaluate whether it actually still brings any performance (and memory usage?) gains over the direct use of ``std::string``s. We may want to consider using (a) a better hash function than FNV (which - although very simple - performs poorly and has bad avalanche properties compared to modern non-cryptographic hash functions) and (b) maybe even using some kind of short string optimization (I suspect identifiers in yul are likely to be less than, say 15 characters long? These could be encoded directly into the string handle...).",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/5401/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/5401/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

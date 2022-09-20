@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1305",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1305/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1305/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1305/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1305",
+  "id": 926833190,
+  "node_id": "MDU6SXNzdWU5MjY4MzMxOTA=",
+  "number": 1305,
+  "title": "Passing arguments to functions in the sidebar in expanded view converts everything passed to strings",
+  "user": {
+    "login": "bru53001",
+    "id": 79501858,
+    "node_id": "MDQ6VXNlcjc5NTAxODU4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/79501858?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bru53001",
+    "html_url": "https://github.com/bru53001",
+    "followers_url": "https://api.github.com/users/bru53001/followers",
+    "following_url": "https://api.github.com/users/bru53001/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bru53001/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bru53001/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bru53001/subscriptions",
+    "organizations_url": "https://api.github.com/users/bru53001/orgs",
+    "repos_url": "https://api.github.com/users/bru53001/repos",
+    "events_url": "https://api.github.com/users/bru53001/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bru53001/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-06-22T05:04:34Z",
+  "updated_at": "2021-06-22T05:04:34Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "When trying to pass arguments to Solidity functions in Remix's sidebar in expanded view, everything gets converted to strings which result in occasional ABI-encoder errors when passing arguments, which then requires you to switch to single-line view and \"de-stringify\" everything.\r\n\r\n![image](https://user-images.githubusercontent.com/79501858/122865707-7c768d80-d32f-11eb-9b53-b3af881997cc.png)\r\n![image](https://user-images.githubusercontent.com/79501858/122866151-2a823780-d330-11eb-9c61-88cb07648b57.png)\r\n\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1305/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1305/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

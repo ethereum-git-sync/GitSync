@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/171",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/171/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/171/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/171/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/171",
+  "id": 666851728,
+  "node_id": "MDU6SXNzdWU2NjY4NTE3Mjg=",
+  "number": 171,
+  "title": "Add toolbar for creating Solidity packed hashes",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155232,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjMy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/enhancement",
+      "name": "enhancement",
+      "color": "a2eeef",
+      "default": true,
+      "description": "New feature or request"
+    },
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-07-31T10:35:22Z",
+  "updated_at": "2020-07-28T07:58:06Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Perhaps use the `solidityPack` from ethereumjs-abi:\n\n``` js\nvar abi = require('ethereumjs-abi')\nvar BN = require('bn.js')\n\nabi.soliditySHA3(\n    [ \"address\", \"address\", \"uint\", \"uint\" ],\n    [ new BN(\"43989fb883ba8111221e89123897538475893837\", 16), 0, 10000, 1448075779 ]\n).toString('hex')\n```\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/171/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/171/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

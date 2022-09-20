@@ -1,3 +1,5 @@
+ethereum/DevOps
+ethereum/solidity
 ethereum/consensus-specs
 ethereum/go-ethereum
 ethereum/remix-project
@@ -5,3 +7,6 @@ ethereum/EIPs
 ethereum/PM
 ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM
+ethereum-git-sync/GitSync
+flashbots/mev-boost
+flashbots/mev-boost-relay

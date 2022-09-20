@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/5835",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/5835/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/5835/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/5835/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/5835",
+  "id": 401670474,
+  "node_id": "MDU6SXNzdWU0MDE2NzA0NzQ=",
+  "number": 5835,
+  "title": "[Yul] optimize funtion-by-function and check for compilability",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-01-22T09:26:21Z",
+  "updated_at": "2020-08-05T23:53:32Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "For some code, the compiler cannot generate code after the optimizer has run due to \"out of stack\". This could be mitigated to some degree by optimizing each function individually until nothing changes anymore (this might also speed up the optimizer) and check each function individually if it compiles after the optimization has been applied. If it does not compile anymore, we revert to the previous version.\r\n\r\nThe order might be:\r\n\r\n - disambiguate, group, hoist.\r\n - remove equivalent functions\r\n - for each function `f`:\r\n    - optimize `f` until nothing changes, but do not do any inlining.\r\n    - check for compilability, if it is not compilable, revert changes to `f`\r\n - remove equivalent functions again\r\n - for each function `f` (perhaps sorted from small to large):\r\n   - perform inlining and simplify\r\n   - check for compilability, if it is not compilable, revert changes to `f`\r\n\r\n\r\nWe cannot check for compilability at each step on the way, because certain optimization steps can introduce new variables that are removed in later steps.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/5835/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/5835/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

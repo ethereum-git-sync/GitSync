@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12862",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12862/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12862/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12862/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12862",
+  "id": 1181228437,
+  "node_id": "I_kwDOAm_5kc5GaB2V",
+  "number": 12862,
+  "title": "soltest CI jobs no longer properly report errors",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-25T20:12:45Z",
+  "updated_at": "2022-04-14T13:02:43Z",
+  "closed_at": "2022-04-14T13:02:43Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Description\r\nFor a while now I've been seeing cases where a failed soltest run in CI does not indicate which specific test failed. The only thing that indicates that something went wrong is this message in the log:\r\n\r\n```\r\n*** 1 failure is detected in the test module \"SolidityTests\"\r\n```\r\n\r\nI've seen cases where errors were properly reported so this does not always happen. I'm not sure what is the trigger.\r\n\r\nAlso, CircleCI used to parse the XMLs file we create and show failed tests in a separate tab. It no longer does that. I see that the files now have a `_N.xml` suffix (where `N` is 0, 1, 2, ...). Not sure if it was there before but I suspect it was added in  #12436 when we heavily parallelized soltest runs. This could be throwing it off.\r\n\r\n## Example\r\nFrom the failed [`t_ubu_soltest_all`](https://app.circleci.com/pipelines/github/ethereum/solidity/23329/workflows/44d3c4be-ce2e-4f4c-80bb-c7cb3bfdcd93/jobs/1024486) and [`t_ubu_release_soltest_all`](https://app.circleci.com/pipelines/github/ethereum/solidity/23329/workflows/44d3c4be-ce2e-4f4c-80bb-c7cb3bfdcd93/jobs/1024480) runs in #12861:\r\n\r\n```\r\n*** No errors detected\r\nRunning /root/project/build/test/soltest --color_output=no --show_progress=yes --logger=JUNIT,error,test_results/byzantium_opt_0.xml -t !@nooptions -t !smtCheckerTests -- --evm-version=byzantium --optimize\r\nRunning /root/project/build/test/soltest --color_output=no --show_progress=yes --logger=JUNIT,error,test_results/byzantium_opt_1.xml -t !@nooptions -t !smtCheckerTests -- --evm-version=byzantium --optimize\r\nRunning /root/project/build/test/soltest --color_output=no --show_progress=yes --logger=JUNIT,error,test_results/byzantium_opt_2.xml -t !@nooptions -t !smtCheckerTests -- --evm-version=byzantium --optimize\r\n\r\nWARNING :: Gas Cost Expectations are not being enforced\r\n\r\nBatch 108 out of 150\r\n\r\nWARNING :: Gas Cost Expectations are not being enforced\r\n\r\nBatch 109 out of 150\r\n\r\nWARNING :: Gas Cost Expectations are not being enforced\r\n\r\nBatch 110 out of 150\r\n\r\n0%   10   20   30   40   50   60   70   80   90   100%\r\n|----|----|----|----|----|----|----|----|----|----|\r\n*\r\n0%   10   20   30   40   50   60   70   80   90   100%\r\n|----|----|----|----|----|----|----|----|----|----|\r\n*\r\n0%   10   20   30   40   50   60   70   80   90   100%\r\n|----|----|----|----|----|----|----|----|----|----|\r\n**************************************************************************************************************************************\r\n\r\n*** 1 failure is detected in the test module \"SolidityTests\"\r\n************\r\n\r\n*** 1 failure is detected in the test module \"SolidityTests\"\r\n*\r\n\r\nExited with code exit status 201\r\n\r\nCircleCI received exit code 201\r\n```",
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12862/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12862/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

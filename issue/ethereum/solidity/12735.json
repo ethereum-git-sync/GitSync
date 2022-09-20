@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12735",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12735/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12735/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12735/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12735",
+  "id": 1158220650,
+  "node_id": "I_kwDOAm_5kc5FCQtq",
+  "number": 12735,
+  "title": "Improvements to the unused store eliminator",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-03T10:15:46Z",
+  "updated_at": "2022-08-17T13:49:00Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "In the following code, the mstore8 can be removed because if the addition wraps, the mstore will revert. If it does not wrap, it is covered.\r\n```\r\nmstore8(add(free_mem_ptr, 31), 200)\r\nmstore(free_mem_ptr, 300)\r\n```\r\nThe same is true about the extcodecopy in this example:\r\n```\r\nextcodecopy(value, add(memPtr, 32), 0, length)\r\nsstore(0, mload(memPtr))\r\nreturn(0, 0)\r\n```\r\n\r\nTODO: generalize",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12735/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12735/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

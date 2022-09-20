@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12857",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12857/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12857/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12857/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12857",
+  "id": 1180090121,
+  "node_id": "I_kwDOAm_5kc5GVr8J",
+  "number": 12857,
+  "title": "Add a mypy job to CI and fix type errors in our Python code",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 717596767,
+      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-03-24T21:50:02Z",
+  "updated_at": "2022-08-17T13:48:56Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\nWe need a CI job that runs [mypy](https://github.com/python/mypy) on every PR and reports type errors in Python code.\r\n\r\n## Motivation\r\nCurrently type annotations in our Python scripts are not checked at all. This is because the interpreter does not enforce them and an external tool is needed. mypy is currently the most popular one (though there are some others and we could use one of them if there are good arguments for doing so, see [ethanhs/python-typecheckers](https://github.com/ethanhs/python-typecheckers)). \r\n\r\nWe already have CI jobs for [running Python unit tests](https://github.com/ethereum/solidity/blob/develop/.circleci/config.yml#L724-L741) and [pylint](https://github.com/ethereum/solidity/blob/develop/.circleci/config.yml#L661-L675) on Python code so there's no reason not to have mypy there as well.\r\n\r\n## Specification\r\n- Add a mypy config next to our [`pylintrc`](https://github.com/ethereum/solidity/blob/develop/scripts/pylintrc).\r\n- Add a wrapper script in `scripts/` for easily running mypy with our config locally on all Python scripts in the repo..\r\n- Run mypy on all existing Python scripts and fix any errors it finds. If there are any false-positives, you can disable them. For ease of review, the fixes should be a separate PR.\r\n- Add a CI job that runs our wrapper script.\r\n\r\n## Backwards Compatibility\r\nNo backwards-compatibility concerns here.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12857/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12857/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1105063465",
+    "html_url": "https://github.com/ethereum/solidity/issues/12857#issuecomment-1105063465",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12857",
+    "id": 1105063465,
+    "node_id": "IC_kwDOAm_5kc5B3e4p",
+    "user": {
+      "login": "gurukamath",
+      "id": 48196632,
+      "node_id": "MDQ6VXNlcjQ4MTk2NjMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48196632?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gurukamath",
+      "html_url": "https://github.com/gurukamath",
+      "followers_url": "https://api.github.com/users/gurukamath/followers",
+      "following_url": "https://api.github.com/users/gurukamath/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gurukamath/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gurukamath/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gurukamath/subscriptions",
+      "organizations_url": "https://api.github.com/users/gurukamath/orgs",
+      "repos_url": "https://api.github.com/users/gurukamath/repos",
+      "events_url": "https://api.github.com/users/gurukamath/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gurukamath/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-04-21T11:04:48Z",
+    "updated_at": "2022-04-21T11:04:48Z",
+    "author_association": "NONE",
+    "body": "Unless someone else has already started working on this, I'd like to take a look.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1105063465/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

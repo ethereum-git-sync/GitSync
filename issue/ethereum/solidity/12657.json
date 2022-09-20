@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12657",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12657/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12657/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12657/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12657",
+  "id": 1134491758,
+  "node_id": "I_kwDOAm_5kc5Dnvhu",
+  "number": 12657,
+  "title": "distinct `call` behavior on non-payable `address` type",
+  "user": {
+    "login": "theNvN",
+    "id": 42338831,
+    "node_id": "MDQ6VXNlcjQyMzM4ODMx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42338831?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/theNvN",
+    "html_url": "https://github.com/theNvN",
+    "followers_url": "https://api.github.com/users/theNvN/followers",
+    "following_url": "https://api.github.com/users/theNvN/following{/other_user}",
+    "gists_url": "https://api.github.com/users/theNvN/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/theNvN/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/theNvN/subscriptions",
+    "organizations_url": "https://api.github.com/users/theNvN/orgs",
+    "repos_url": "https://api.github.com/users/theNvN/repos",
+    "events_url": "https://api.github.com/users/theNvN/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/theNvN/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 467898404,
+      "node_id": "MDU6TGFiZWw0Njc4OTg0MDQ=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/breaking%20change%20:warning:",
+      "name": "breaking change :warning:",
+      "color": "b60205",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-02-12T19:32:24Z",
+  "updated_at": "2022-08-17T13:48:59Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nThe methods `send` and `transfer` were introduced only for `address payable` with the intention to explicitly differentiate the addresses that can be sent Ether. But these two methods are now being [discouraged](https://consensys.net/diligence/blog/2019/09/stop-using-soliditys-transfer-now/) in the Solidity community, in favor of `call`.\r\n\r\nBut, currently, the `call` can be invoked successfully on both non-payable `address` and payable `address payable` types with some value set. For example, it is perfectly valid to send `someone` (`address` type) some Ether by invoking `sendSomeone()` method in the following `Dummy` contract:\r\n```solidity\r\npragma solidity ^0.8.0;\r\n\r\ncontract Dummy {\r\n    address someone = 0xAb8...cb2;\r\n\r\n    function balanceOf(address addr) public view returns (uint) {\r\n        return addr.balance;\r\n    }\r\n\r\n    function sendToSomeone() public payable returns (bool) {\r\n        (bool sent, ) = someone.call{value: msg.value}(\"\");\r\n        return sent;\r\n    }\r\n}\r\n```\r\n\r\n## Motivation\r\n\r\nApart from defeating the original intention of differentiating `address` and `address payable`, the current behavior of `call` might introduce potential bugs or even security flaws by mistaken invocation of `call` on an address that wasn't even supposed to be payable. Changing the behavior of `call` in different contexts will further enforce the security in the contract.\r\n\r\n## Specification\r\n\r\nA possible solution is the different behavior of `call` for `address` and `address payable` types.\r\n\r\nFor `address payable` it should work as it works now. No changes.\r\n\r\nBut for a plain `address` type it should not compile if it is invoked with `value` param set. So, if `call` is invoked on `someAddr` of `address` type it won't compile:\r\n```solidity\r\nsomeAddr.call{value: 10000000}(\"\");  // Error: Invalid!\r\n```\r\n\r\nHowever, it should be good if there is no value param:\r\n```solidity\r\nsomeAddr.call{gas: 1000000}(\"\");  // This is fine!\r\n```\r\n\r\n## Backwards Compatibility\r\n\r\nThis change will not be fully backward compatible as currently `call` is allowed with `value` set and the proposed solution asks to prohibit it. \r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12657/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12657/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1042760925",
+    "html_url": "https://github.com/ethereum/solidity/issues/12657#issuecomment-1042760925",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12657",
+    "id": 1042760925,
+    "node_id": "IC_kwDOAm_5kc4-J0Td",
+    "user": {
+      "login": "chriseth",
+      "id": 9073706,
+      "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chriseth",
+      "html_url": "https://github.com/chriseth",
+      "followers_url": "https://api.github.com/users/chriseth/followers",
+      "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+      "organizations_url": "https://api.github.com/users/chriseth/orgs",
+      "repos_url": "https://api.github.com/users/chriseth/repos",
+      "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chriseth/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-02-17T09:49:13Z",
+    "updated_at": "2022-02-17T09:49:13Z",
+    "author_association": "MEMBER",
+    "body": "Related: https://github.com/ethereum/solidity/issues/11017",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1042760925/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

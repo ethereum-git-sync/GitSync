@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2307",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2307/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2307/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2307/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2307",
+  "id": 1204786187,
+  "node_id": "I_kwDODtLRw85Hz5QL",
+  "number": 2307,
+  "title": "Resetting address storage variables errors with \"Transaction ran out of gas\"",
+  "user": {
+    "login": "razzorsec",
+    "id": 54918791,
+    "node_id": "MDQ6VXNlcjU0OTE4Nzkx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/54918791?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/razzorsec",
+    "html_url": "https://github.com/razzorsec",
+    "followers_url": "https://api.github.com/users/razzorsec/followers",
+    "following_url": "https://api.github.com/users/razzorsec/following{/other_user}",
+    "gists_url": "https://api.github.com/users/razzorsec/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/razzorsec/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/razzorsec/subscriptions",
+    "organizations_url": "https://api.github.com/users/razzorsec/orgs",
+    "repos_url": "https://api.github.com/users/razzorsec/repos",
+    "events_url": "https://api.github.com/users/razzorsec/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/razzorsec/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-04-14T17:17:24Z",
+  "updated_at": "2022-04-18T16:24:21Z",
+  "closed_at": "2022-04-18T16:24:21Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Resetting address storage variables are reporting errors as \"Transaction ran out of gas\"  \r\n\r\n## Steps to Reproduce:   \r\n+ store any address in an address storage variable  \r\n+ try assigning zero address to it. It will revert with \"Transaction ran out of gas\"\r\n\r\n\r\n",
+  "closed_by": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2307/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2307/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24703",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24703/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24703/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24703/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24703",
+  "id": 1205769602,
+  "node_id": "I_kwDOAOvK985H3pWC",
+  "number": 24703,
+  "title": "How to make \"pending\" block empty?",
+  "user": {
+    "login": "Anti83",
+    "id": 55349215,
+    "node_id": "MDQ6VXNlcjU1MzQ5MjE1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/55349215?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Anti83",
+    "html_url": "https://github.com/Anti83",
+    "followers_url": "https://api.github.com/users/Anti83/followers",
+    "following_url": "https://api.github.com/users/Anti83/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Anti83/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Anti83/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Anti83/subscriptions",
+    "organizations_url": "https://api.github.com/users/Anti83/orgs",
+    "repos_url": "https://api.github.com/users/Anti83/repos",
+    "events_url": "https://api.github.com/users/Anti83/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Anti83/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-04-15T18:06:55Z",
+  "updated_at": "2022-04-19T14:22:46Z",
+  "closed_at": "2022-04-19T14:22:46Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hello, I need help)\r\nI need to start geth, so that 1) my node receives all transactions in txpool, 2) my \"pending\" block would be empty(no transactions). \r\nI am using Version: 1.10.17-stable syncmode full, node is fully synced. \r\nI have tried all combinations of --txpool.pricelimit,--miner.gasprice, --mine.\r\nIf I start without \"--mine\"(--miner.gasprice is ignored) and do web3.eth.getBlock(\"pending\"). My pending block becomes filled with transactions. \r\nIf I start with --mine and --miner.gasprice 10000000000000(so no tx get in pending block) , my node stops receiving all transactions at all(I think there is a bug here, because in case --mine + --miner.gasprice, --miner.gasprice  start to act like --txpool.pricelimit and none tx gets in txpool)\r\nSo, there are 2 outcomes now, node receives all txs but pending block becomes filled with txs, or node does not receive txs at all. \r\nIs there a way to make node receive txs but not to include them in pending block?",
+  "closed_by": {
+    "login": "Anti83",
+    "id": 55349215,
+    "node_id": "MDQ6VXNlcjU1MzQ5MjE1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/55349215?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Anti83",
+    "html_url": "https://github.com/Anti83",
+    "followers_url": "https://api.github.com/users/Anti83/followers",
+    "following_url": "https://api.github.com/users/Anti83/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Anti83/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Anti83/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Anti83/subscriptions",
+    "organizations_url": "https://api.github.com/users/Anti83/orgs",
+    "repos_url": "https://api.github.com/users/Anti83/repos",
+    "events_url": "https://api.github.com/users/Anti83/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Anti83/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24703/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24703/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

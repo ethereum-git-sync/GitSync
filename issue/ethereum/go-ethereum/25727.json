@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25727",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25727/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25727/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25727/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25727",
+  "id": 1367877908,
+  "node_id": "I_kwDOAOvK985RiCkU",
+  "number": 25727,
+  "title": "Something like this perhaps:",
+  "user": {
+    "login": "4441114417342316",
+    "id": 100972312,
+    "node_id": "U_kgDOBgS3GA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100972312?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/4441114417342316",
+    "html_url": "https://github.com/4441114417342316",
+    "followers_url": "https://api.github.com/users/4441114417342316/followers",
+    "following_url": "https://api.github.com/users/4441114417342316/following{/other_user}",
+    "gists_url": "https://api.github.com/users/4441114417342316/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/4441114417342316/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/4441114417342316/subscriptions",
+    "organizations_url": "https://api.github.com/users/4441114417342316/orgs",
+    "repos_url": "https://api.github.com/users/4441114417342316/repos",
+    "events_url": "https://api.github.com/users/4441114417342316/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/4441114417342316/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-09T14:04:09Z",
+  "updated_at": "2022-09-10T14:05:08Z",
+  "closed_at": "2022-09-10T14:05:08Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "+\t\tlog.Info(\"Rebuilding the tree\", \"root\", rootC)\r\n+\t} else {\r\n+\t\trootC = headBlock.Root()\r\n+\t\tlog.Info(\"Rebuilding the tree\", \"root\", rootC, \"number\", headBlock.NumberU64())\r\n+\t}\r\n+\r\n+\tserializedRoot, err := chaindb.Get(rootC[:])\r\n+\tif err != nil {\r\n+\t\treturn err\r\n+\t}\r\n+\troot, err := verkle.ParseNode(serializedRoot, 0, rootC[:])\r\n+\tif err != nil {\r\n+\t\treturn err\r\n+\t}\r\n+\r\n+\tif err := checkChildren(root, chaindb.Get); err != nil {\r\nI\r\n_Originally posted by @holiman in https://github.com/ethereum/go-ethereum/pull/25718#discussion_r966978529_",
+  "closed_by": {
+    "login": "rjl493456442",
+    "id": 5959481,
+    "node_id": "MDQ6VXNlcjU5NTk0ODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5959481?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rjl493456442",
+    "html_url": "https://github.com/rjl493456442",
+    "followers_url": "https://api.github.com/users/rjl493456442/followers",
+    "following_url": "https://api.github.com/users/rjl493456442/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rjl493456442/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rjl493456442/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rjl493456442/subscriptions",
+    "organizations_url": "https://api.github.com/users/rjl493456442/orgs",
+    "repos_url": "https://api.github.com/users/rjl493456442/repos",
+    "events_url": "https://api.github.com/users/rjl493456442/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rjl493456442/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25727/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25727/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

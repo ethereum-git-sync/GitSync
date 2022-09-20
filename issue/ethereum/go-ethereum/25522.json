@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25522",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25522/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25522/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25522/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25522",
+  "id": 1338044225,
+  "node_id": "I_kwDOAOvK985PwO9B",
+  "number": 25522,
+  "title": "Hello, I've got to ask something, what happened if i hold eth till the merg, what will happen to my eth holdings? Will it be $0 or it will transfer to new eth2? And after the merg is there any chances of eth2 prices will plunge?",
+  "user": {
+    "login": "imJackWilson",
+    "id": 108631037,
+    "node_id": "U_kgDOBnmT_Q",
+    "avatar_url": "https://avatars.githubusercontent.com/u/108631037?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/imJackWilson",
+    "html_url": "https://github.com/imJackWilson",
+    "followers_url": "https://api.github.com/users/imJackWilson/followers",
+    "following_url": "https://api.github.com/users/imJackWilson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/imJackWilson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/imJackWilson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/imJackWilson/subscriptions",
+    "organizations_url": "https://api.github.com/users/imJackWilson/orgs",
+    "repos_url": "https://api.github.com/users/imJackWilson/repos",
+    "events_url": "https://api.github.com/users/imJackWilson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/imJackWilson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-13T19:58:46Z",
+  "updated_at": "2022-08-13T22:55:55Z",
+  "closed_at": "2022-08-13T22:55:55Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "This should only be used in very rare cases e.g. if you are not 100% sure if something is a bug or asking a question that leads to improving the documentation. For general questions please use [discord](https://discord.gg/nthXNEv) or the Ethereum stack exchange at https://ethereum.stackexchange.com.\n",
+  "closed_by": {
+    "login": "lightclient",
+    "id": 14004106,
+    "node_id": "MDQ6VXNlcjE0MDA0MTA2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/14004106?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lightclient",
+    "html_url": "https://github.com/lightclient",
+    "followers_url": "https://api.github.com/users/lightclient/followers",
+    "following_url": "https://api.github.com/users/lightclient/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lightclient/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lightclient/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lightclient/subscriptions",
+    "organizations_url": "https://api.github.com/users/lightclient/orgs",
+    "repos_url": "https://api.github.com/users/lightclient/repos",
+    "events_url": "https://api.github.com/users/lightclient/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lightclient/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25522/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25522/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16756",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16756/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16756/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16756/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/16756",
+  "id": 324566777,
+  "node_id": "MDU6SXNzdWUzMjQ1NjY3Nzc=",
+  "number": 16756,
+  "title": "whisperv6: shhClient.Post returns an error on success",
+  "user": {
+    "login": "thanasik",
+    "id": 6022002,
+    "node_id": "MDQ6VXNlcjYwMjIwMDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6022002?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/thanasik",
+    "html_url": "https://github.com/thanasik",
+    "followers_url": "https://api.github.com/users/thanasik/followers",
+    "following_url": "https://api.github.com/users/thanasik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/thanasik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/thanasik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/thanasik/subscriptions",
+    "organizations_url": "https://api.github.com/users/thanasik/orgs",
+    "repos_url": "https://api.github.com/users/thanasik/repos",
+    "events_url": "https://api.github.com/users/thanasik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/thanasik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-05-18T22:13:28Z",
+  "updated_at": "2018-05-29T08:36:50Z",
+  "closed_at": "2018-05-29T08:36:50Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "It seems that [this commit](https://github.com/ethereum/go-ethereum/commit/a16f12ba8695c15b5dac7a7fbb30c9177672bf8f) changed the `Post` function to return a hash instead of an error, but not in the `shhclient` library, and so the `shhclient` sends messages correctly (other peers receive them), but `shhclient.Post` still returns an error.\r\n\r\n#### System information\r\n\r\nGeth version: 1.8.8\r\nOS & Version: Ubuntu 16.04\r\n\r\n#### Expected behaviour\r\nI expected the whisper message to be sent without error.\r\n\r\n#### Actual behaviour\r\nThe whisper message is sent, and received by the peer waiting on the target topic, but still returns an error object saying `cannot unmarshal string into Go value of type bool`. \n\nMy thought is that during [this commit](https://github.com/ethereum/go-ethereum/commit/a16f12ba8695c15b5dac7a7fbb30c9177672bf8f) when the return type was changed from an `error` to a hash because it wasn't updated for the `whisper/shhclient` package, the type returns an error. \r\n\r\nI tested the above scenario using Geth 1.8.2 (the last release before v6 was integrated into Geth), and messages are still able to be created using v5 messages instead of v6. \n\nIt seems that the underlying whisperv6's `shh_post` function still uses the `&ignored` bool as the return type, and because of that it is trying to marshal a hash type into the bool. The fix seems to be to [update the underlying `CallContext` function here](https://github.com/ethereum/go-ethereum/blob/master/whisper/shhclient/client.go#L162) to return a hash and not an ignored bool, and to update the `shhclient` Post` method to return a hash instead of an error as well.\n\nI believe this is a breaking change for clients that rely on the `Post()` method returning no error on success... could we get someone looking at this ASAP?\r\n\r\n#### Steps to reproduce the behaviour\r\nCreate a `whisperv6.NewMessage` and attempt to send it using the `whisper/shhclient.Post(myV6message)` function.\r\n\r\n#### Backtrace\r\n\r\n````\r\ncannot unmarshal string into Go value of type bool\r\n```` ",
+  "closed_by": {
+    "login": "gballet",
+    "id": 3272758,
+    "node_id": "MDQ6VXNlcjMyNzI3NTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3272758?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gballet",
+    "html_url": "https://github.com/gballet",
+    "followers_url": "https://api.github.com/users/gballet/followers",
+    "following_url": "https://api.github.com/users/gballet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gballet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gballet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gballet/subscriptions",
+    "organizations_url": "https://api.github.com/users/gballet/orgs",
+    "repos_url": "https://api.github.com/users/gballet/repos",
+    "events_url": "https://api.github.com/users/gballet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gballet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16756/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16756/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

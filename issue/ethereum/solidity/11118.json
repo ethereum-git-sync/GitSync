@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11118",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11118/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11118/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11118/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11118",
+  "id": 833729882,
+  "node_id": "MDU6SXNzdWU4MzM3Mjk4ODI=",
+  "number": 11118,
+  "title": "Understanding creation context when optimizing Yul subobjects",
+  "user": {
+    "login": "hrkrshnn",
+    "id": 13174375,
+    "node_id": "MDQ6VXNlcjEzMTc0Mzc1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13174375?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hrkrshnn",
+    "html_url": "https://github.com/hrkrshnn",
+    "followers_url": "https://api.github.com/users/hrkrshnn/followers",
+    "following_url": "https://api.github.com/users/hrkrshnn/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hrkrshnn/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hrkrshnn/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hrkrshnn/subscriptions",
+    "organizations_url": "https://api.github.com/users/hrkrshnn/orgs",
+    "repos_url": "https://api.github.com/users/hrkrshnn/repos",
+    "events_url": "https://api.github.com/users/hrkrshnn/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hrkrshnn/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-03-17T12:43:12Z",
+  "updated_at": "2022-03-09T17:30:32Z",
+  "closed_at": "2022-03-09T17:30:32Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Currently, we assume that all Yul subobjects are in runtime context: https://github.com/ethereum/solidity/blob/develop/libyul/AssemblyStack.cpp#L177 (the second parameter `false`.)\r\n\r\nHowever, this is not true in general.\r\n\r\nTake for example, \r\n\r\n```\r\n  contract C {\r\n\t  constructor () {\r\n\t\t  assembly {\r\n\t\t\t  sstore(0, shl(180, 1))\r\n\t\t  }\r\n\t\t  new D();\r\n\t  }\r\n  }\r\n  contract D {\r\n\t  constructor() {\r\n\t\t  assembly {\r\n\t\t\t  sstore(1, shl(180, 1))\r\n\t\t  }\r\n\t  }\r\n\t  fallback() external {\r\n\t\tassembly {\r\n\t\t\tsstore(2, shl(180, 1))\r\n\t\t}\r\n\t  }\r\n  }\r\n```\r\n\r\n\r\nFrom the context of `C`, both `D`'s constructor and `fallback` will have `shl(180, 1)` expanded. In this case, this would lead to more expensive construction code.\r\n\r\n-----\r\n\r\nOne solution is that the context of each sub-object should be stored in the C++ data structure. But this runs into another problem for the following code:\r\n\r\n```\r\n  contract C {\r\n\t  D d;\r\n\t  constructor () {\r\n\t\t  d = new D();\r\n\t\t  d.f();\r\n\t  }\r\n\t  fallback() external {\r\n\t\t  d.f();\r\n\t  }\r\n  }\r\n  contract D {\r\n\t  constructor() {\r\n\t\t  assembly {\r\n\t\t\t  sstore(1, shl(180, 1))\r\n\t\t  }\r\n\t  }\r\n\t  function f() public {\r\n\t\t  assembly {\r\n\t\t\t  sstore(2, shl(180, 1))\r\n\t\t  }\r\n\t  }\r\n  }\r\n```\r\n\r\nIn this example, optimizing the sub-object `D.f` with creation context would mean that the calling C's constructor is cheaper, but making the call to fallback more expensive at runtime.  Somehow we have to understand which among the two options would be cheaper overall and optimize according to that. We might require a gas estimator for Yul to properly do this.\r\n\r\n",
+  "closed_by": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11118/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11118/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13425",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13425/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13425/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13425/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13425",
+  "id": 1347251313,
+  "node_id": "I_kwDOAm_5kc5QTWxx",
+  "number": 13425,
+  "title": "Request: Contract AST nodes should include info on what internal functions the contract uses",
+  "user": {
+    "login": "haltman-at",
+    "id": 35589221,
+    "node_id": "MDQ6VXNlcjM1NTg5MjIx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/35589221?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/haltman-at",
+    "html_url": "https://github.com/haltman-at",
+    "followers_url": "https://api.github.com/users/haltman-at/followers",
+    "following_url": "https://api.github.com/users/haltman-at/following{/other_user}",
+    "gists_url": "https://api.github.com/users/haltman-at/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/haltman-at/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/haltman-at/subscriptions",
+    "organizations_url": "https://api.github.com/users/haltman-at/orgs",
+    "repos_url": "https://api.github.com/users/haltman-at/repos",
+    "events_url": "https://api.github.com/users/haltman-at/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/haltman-at/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1017612679,
+      "node_id": "MDU6TGFiZWwxMDE3NjEyNjc5",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/protocol%20design%20:crystal_ball:",
+      "name": "protocol design :crystal_ball:",
+      "color": "8af77e",
+      "default": false,
+      "description": "Potential changes to ABI, meta data, standard JSON"
+    },
+    {
+      "id": 3515010024,
+      "node_id": "LA_kwDOAm_5kc7Rgsvo",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue%20candidate",
+      "name": "good first issue candidate",
+      "color": "91B44D",
+      "default": false,
+      "description": "Could be a \"good first issue\" but something is blocking it or it has open questions."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-08-23T02:48:13Z",
+  "updated_at": "2022-08-29T14:32:06Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "## Abstract & Motivation\r\n\r\nContracts compiled with `viaIR` turned on use a new representation for internal function pointers, one that uses an internal index instead of a pair of PCs.  We'd like to be able to decode such new-style pointers.  (Yes, Truffle Debugger doesn't work well with `viaIR` contracts at the moment, but remember we also want to be able to decode such pointers in storage with Truffle Decoder!)  While we haven't implemented this yet (our open issue for it is [here](https://github.com/trufflesuite/truffle/issues/5466)), for the most part, it seems like it should be doable.  Unfortunately, free functions and internalized library functions pose a problem.\r\n\r\nIf the contract does not make use of either of these, then mapping an index to its corresponding function is straightforward enough; functions are listed in the order they're defined, and if there's inheritance, base contracts come before derived contracts.  However, free functions and internalized library functions pose more of a problem.  They come after functions defined within the contract or its ancestors, but beyond that, it's not clear that there's any reasonable way to predict the order.  More to the point, even if the order is predictable, the problem is then to determine which ones are actually used, since unused functions do not get indices.\r\n\r\nI don't see any good way to detect this information from the AST at present.  Or, I have some ideas, but I am skeptical that they would work in full generality.  (Possibly I should do some more experiments to see, but I figured I should really just go ahead and file this issue first.)  So, it would be nice if this information would be provided, with a list of used internal functions, in order, attached to the `ContractDefinition` node.  Of course, this is assuming that I am correct and there is no other good way to determine this information; if you know of one, then perhaps this feature request is unnecessary!\r\n\r\n## Specification\r\n\r\nEach `ContractDefinition` node of the AST should include a field -- I'll call it `usedInternalFunctions` to parallel `usedErrors` but obviously the name is immaterial -- which consists of an array of AST IDs.  The AST IDs would be the IDs of the `FunctionDefinition` node for every internal function which is included in the function's bytecode.  This means both functions in the contract itself declared `public`, `internal`, or `private`; functions from base contracts declared `public` or `internal`; and any used free functions and any internalized `public` or `internal` library functions.  The order of these IDs should be the same order that would be used by the internal function dispatcher if compilation were performed with `viaIR` turned on, but ideally the field should be present regardless of compilation settings.  Every function that would get an index should be included, and every function that would not get an index should not be included.  (Note: If other things I've said conflict with this, this should obviously take precedence, as it's the point!)  Depending on how you want to do it, you could also include some sort of dummy/internal ID as the first element of the array, before the IDs fo the actual functions, similar to how references to builtins use internal IDs.  If you do it that way then the indices will match with no shift necessary.\r\n\r\n## Backwards Compatibility\r\n\r\nThere should be no backwards compatibility issues.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13425/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13425/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

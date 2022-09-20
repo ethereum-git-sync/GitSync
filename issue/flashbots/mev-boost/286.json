@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/flashbots/mev-boost/issues/286",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost/issues/286/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost/issues/286/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost/issues/286/events",
+  "html_url": "https://github.com/flashbots/mev-boost/issues/286",
+  "id": 1359076225,
+  "node_id": "I_kwDOGZSKs85RAduB",
+  "number": 286,
+  "title": "Provide binaries with each release",
+  "user": {
+    "login": "remyroy",
+    "id": 303593,
+    "node_id": "MDQ6VXNlcjMwMzU5Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/303593?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/remyroy",
+    "html_url": "https://github.com/remyroy",
+    "followers_url": "https://api.github.com/users/remyroy/followers",
+    "following_url": "https://api.github.com/users/remyroy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/remyroy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/remyroy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/remyroy/subscriptions",
+    "organizations_url": "https://api.github.com/users/remyroy/orgs",
+    "repos_url": "https://api.github.com/users/remyroy/repos",
+    "events_url": "https://api.github.com/users/remyroy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/remyroy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-01T15:59:13Z",
+  "updated_at": "2022-09-13T12:41:51Z",
+  "closed_at": "2022-09-13T12:41:51Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "If you would nice if you could provide binaries for various architectures and OSes when doing a release. It would simplify installation and setup for users.",
+  "closed_by": {
+    "login": "metachris",
+    "id": 116939,
+    "node_id": "MDQ6VXNlcjExNjkzOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/metachris",
+    "html_url": "https://github.com/metachris",
+    "followers_url": "https://api.github.com/users/metachris/followers",
+    "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+    "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+    "organizations_url": "https://api.github.com/users/metachris/orgs",
+    "repos_url": "https://api.github.com/users/metachris/repos",
+    "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/metachris/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/286/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/286/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

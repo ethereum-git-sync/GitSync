@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3387",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3387/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3387/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3387/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/3387",
+  "id": 192576302,
+  "node_id": "MDU6SXNzdWUxOTI1NzYzMDI=",
+  "number": 3387,
+  "title": "function addBannedGlobalName does not run in transaction via JSON-RPC",
+  "user": {
+    "login": "mawenpeng",
+    "id": 6083011,
+    "node_id": "MDQ6VXNlcjYwODMwMTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6083011?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mawenpeng",
+    "html_url": "https://github.com/mawenpeng",
+    "followers_url": "https://api.github.com/users/mawenpeng/followers",
+    "following_url": "https://api.github.com/users/mawenpeng/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mawenpeng/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mawenpeng/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mawenpeng/subscriptions",
+    "organizations_url": "https://api.github.com/users/mawenpeng/orgs",
+    "repos_url": "https://api.github.com/users/mawenpeng/repos",
+    "events_url": "https://api.github.com/users/mawenpeng/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mawenpeng/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-11-30T14:16:20Z",
+  "updated_at": "2017-12-08T03:04:12Z",
+  "closed_at": "2017-12-08T03:04:12Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: \r\nGeth\r\nVersion: 1.5.0-unstable\r\nProtocol Versions: [63 62]\r\nNetwork Id: 1\r\nGo Version: go1.6.2\r\nOS: linux\r\nGOPATH=\r\nGOROOT=/usr/lib/go-1.6\r\n\r\nOS & Version: Linux\r\nCommit hash : (if `develop`)\r\n\r\n#### Expected behaviour\r\n\"function addBannedGlobalName(string globalName)\" can run with a transaction via JSON-RPC.\r\nPayload:\r\n{\"jsonrpc\":\"2.0\",\"method\":\"eth_sendTransaction\",\"params\":[{\"from\": \"0x2bd8337bcbdc4d05c4213d5fc812dce03d425901\", \"to\": \"0xc4f8e7457247905da8c5ebcc107755dce806a582\",\"gas\":\"0x55db\", \"data\": \"0x764ed21a000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000036162630000000000000000000000000000000000000000000000000000000000\"}],\"id\":1}\r\n\r\n#### Actual behaviour\r\nIt does not run at all, except I changed the function name, say \"myfunc\".\r\nDid not try with other ways (like geth console) to run it.\r\n\r\n#### Steps to reproduce the behaviour\r\nDeploy the contract Register.sol attached and then run function addBannedGlobalName with argument \"abc\" via JSON-RPC.\r\nRun eth_call with function getBannedGlobalNameNum(0) to see if the number increased.\r\nExpecting 3, but returns 2. \r\n\r\n[Register.zip](https://github.com/ethereum/go-ethereum/files/621993/Register.zip)\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n",
+  "closed_by": {
+    "login": "mawenpeng",
+    "id": 6083011,
+    "node_id": "MDQ6VXNlcjYwODMwMTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6083011?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mawenpeng",
+    "html_url": "https://github.com/mawenpeng",
+    "followers_url": "https://api.github.com/users/mawenpeng/followers",
+    "following_url": "https://api.github.com/users/mawenpeng/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mawenpeng/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mawenpeng/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mawenpeng/subscriptions",
+    "organizations_url": "https://api.github.com/users/mawenpeng/orgs",
+    "repos_url": "https://api.github.com/users/mawenpeng/repos",
+    "events_url": "https://api.github.com/users/mawenpeng/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mawenpeng/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3387/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/3387/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/10002",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10002/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10002/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10002/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/10002",
+  "id": 718149875,
+  "node_id": "MDU6SXNzdWU3MTgxNDk4NzU=",
+  "number": 10002,
+  "title": "Should have compiler error for assigning to an item in an uninitialized memory array",
+  "user": {
+    "login": "mudgen",
+    "id": 49092,
+    "node_id": "MDQ6VXNlcjQ5MDky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/49092?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mudgen",
+    "html_url": "https://github.com/mudgen",
+    "followers_url": "https://api.github.com/users/mudgen/followers",
+    "following_url": "https://api.github.com/users/mudgen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mudgen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mudgen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mudgen/subscriptions",
+    "organizations_url": "https://api.github.com/users/mudgen/orgs",
+    "repos_url": "https://api.github.com/users/mudgen/repos",
+    "events_url": "https://api.github.com/users/mudgen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mudgen/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-10-09T13:32:56Z",
+  "updated_at": "2022-08-17T13:48:47Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "The following code compiles without error but it seems to me that the compiler should throw an error because the generated runtime code does not work:\r\n```Solidity\r\n   function test() external pure returns (uint256[] memory _myArray) {\r\n        _myArray[0] = 10;\r\n        _myArray[1] = 12;\r\n    }\r\n````\r\n\r\nIt seems to me that it should be a compile error to assign a value to an item in an uninitialized memory array, because it doesn't work at runtime.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/10002/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10002/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

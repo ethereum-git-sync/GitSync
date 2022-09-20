@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/486",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/486/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/486/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/486/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/486",
+  "id": 724451006,
+  "node_id": "MDU6SXNzdWU3MjQ0NTEwMDY=",
+  "number": 486,
+  "title": "should --read-only mode allow changes to file outside of remix IDE?",
+  "user": {
+    "login": "LucasMoskun",
+    "id": 25760403,
+    "node_id": "MDQ6VXNlcjI1NzYwNDAz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25760403?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/LucasMoskun",
+    "html_url": "https://github.com/LucasMoskun",
+    "followers_url": "https://api.github.com/users/LucasMoskun/followers",
+    "following_url": "https://api.github.com/users/LucasMoskun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/LucasMoskun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/LucasMoskun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/LucasMoskun/subscriptions",
+    "organizations_url": "https://api.github.com/users/LucasMoskun/orgs",
+    "repos_url": "https://api.github.com/users/LucasMoskun/repos",
+    "events_url": "https://api.github.com/users/LucasMoskun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/LucasMoskun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2233648248,
+      "node_id": "MDU6TGFiZWwyMjMzNjQ4MjQ4",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remixD",
+      "name": "remixD",
+      "color": "203cc9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-08-26T18:26:32Z",
+  "updated_at": "2020-10-19T09:42:11Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I would find it very useful/comforting if read only mode still allowed me to make changes outside of the IDE. \r\n\r\nI prefer using vs code to work on the contract, but compile, test deploy, etc, using remix. I was having issues with remix and vs code clobbering each other so I decided to try out running the shared folder with the --read-only flag.\r\n\r\nNow it appears that all instances of the file on my system become read only, as any change I make in vs code gets replaced with whatever the current state was when launching remixd. \r\n\r\nIs this expected behavior? If so, would any one else find it useful if the read-only flag only locked writes from inside the IDE? But still pulled in new changes from outside?",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/486/reactions",
+    "total_count": 3,
+    "+1": 3,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/486/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

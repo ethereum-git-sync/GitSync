@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/603",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/603/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/603/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/603/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/603",
+  "id": 157029929,
+  "node_id": "MDU6SXNzdWUxNTcwMjk5Mjk=",
+  "number": 603,
+  "title": "Broken escape code handling in ASTJsonConverter",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-05-26T16:54:31Z",
+  "updated_at": "2016-08-10T14:31:27Z",
+  "closed_at": "2016-08-10T14:31:27Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "We have a problem with escape codes in strings and the resulting compiler JSON output.\n\nAny escape code used in a string literal, such as\n\n```\nstring memory x = \"Hello World\\x12\";\n```\n\nwill be present in the output in the form of:\n\n```\n{\"attributes\":{\"string\":\"null\",\"type\":\"literal_string \\\"Hello World\\u0012\\\"\",\"value\":\"Hello World\\u0012\"},\"name\":\"Literal\"}\n```\n\nFor JSON encoding, Solidity uses jsoncpp. [json.org](https://json.org) and [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) state that every string is _Unicode_ (doesn't state whether UTF-8, UTF-16, etc, but [Wikipedia](https://en.wikipedia.org/wiki/JSON) clarifies that a bit) and also offers escaping (for every unicode codepoint in the form of `\\uXXXX`).\n\nTake the example \n\n```\nstring memory x = \"Hello World\\x80\";\n```\n\nThe 0x80 will be present in the output jSON as is. No escaping, nothing.\n\nBased on my understanding of UTF-8, `>= 0x80` is not encoded as a single byte.  Whether Solidity or jsoncpp is at fault, I'm not sure. \n\nBut the encoding is wrong and it confuses [Emscripten](https://github.com/kripken/emscripten/blob/07b87426f898d6e9c677db291d9088c839197291/src/preamble.js#L518), resulting in an invalid, unparseable JSON for Javascript.\n\nPrevious tickets about the same issue: https://github.com/ethereum/solidity/issues/480 and https://github.com/chriseth/browser-solidity/issues/132.\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/603/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/603/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

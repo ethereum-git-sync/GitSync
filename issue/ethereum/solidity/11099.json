@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11099",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11099/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11099/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11099/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11099",
+  "id": 830819961,
+  "node_id": "MDU6SXNzdWU4MzA4MTk5NjE=",
+  "number": 11099,
+  "title": "Ethereum",
+  "user": {
+    "login": "flashv2",
+    "id": 42782059,
+    "node_id": "MDQ6VXNlcjQyNzgyMDU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/42782059?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/flashv2",
+    "html_url": "https://github.com/flashv2",
+    "followers_url": "https://api.github.com/users/flashv2/followers",
+    "following_url": "https://api.github.com/users/flashv2/following{/other_user}",
+    "gists_url": "https://api.github.com/users/flashv2/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/flashv2/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/flashv2/subscriptions",
+    "organizations_url": "https://api.github.com/users/flashv2/orgs",
+    "repos_url": "https://api.github.com/users/flashv2/repos",
+    "events_url": "https://api.github.com/users/flashv2/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/flashv2/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-03-13T06:00:13Z",
+  "updated_at": "2021-03-13T16:51:39Z",
+  "closed_at": "2021-03-13T16:51:39Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "<!--## Prerequisites\n\n- First, many thanks for taking part in the community. We really appreciate that.\n- We realize there is a lot of data requested here. We ask only that you do your best to provide as much information as possible so we can better help you.\n- Support questions are better asked in one of the following locations:\n\t- [Solidity chat](https://gitter.im/ethereum/solidity)\n\t- [Stack Overflow](https://ethereum.stackexchange.com/)\n- Ensure the issue isn't already reported (check `feature` and `language design` labels).\n\n*Delete the above section and the instructions in the sections below before submitting*\n\n-->\n\n## Abstract\n\n<!--\nPlease describe by example what problem you see in the current Solidity language\nand reason about it.\n-->\n\n## Motivation\n\n<!--\nIn this section you describe how you propose to address the problem you described earlier,\nincluding by giving one or more exemplary source code snippets for demonstration.\n-->\n\n## Specification\n\n<!--\nThe technical specification should describe the syntax and semantics of any new feature. The\nspecification should be detailed enough to allow any developer to implement the functionality.\n-->\n\n## Backwards Compatibility\n\n<!--\nAll language changes that introduce backwards incompatibilities must include a section describing\nthese incompatibilities and their severity.\n\nPlease describe how you propose to deal with these incompatibilities.\n-->",
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11099/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11099/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

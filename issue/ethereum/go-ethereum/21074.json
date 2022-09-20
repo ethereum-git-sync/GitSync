@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21074",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21074/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21074/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21074/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21074",
+  "id": 617405965,
+  "node_id": "MDU6SXNzdWU2MTc0MDU5NjU=",
+  "number": 21074,
+  "title": "[metrics]: break loop as soon as flags have been set",
+  "user": {
+    "login": "duanhao0814",
+    "id": 38761526,
+    "node_id": "MDQ6VXNlcjM4NzYxNTI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/38761526?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/duanhao0814",
+    "html_url": "https://github.com/duanhao0814",
+    "followers_url": "https://api.github.com/users/duanhao0814/followers",
+    "following_url": "https://api.github.com/users/duanhao0814/following{/other_user}",
+    "gists_url": "https://api.github.com/users/duanhao0814/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/duanhao0814/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/duanhao0814/subscriptions",
+    "organizations_url": "https://api.github.com/users/duanhao0814/orgs",
+    "repos_url": "https://api.github.com/users/duanhao0814/repos",
+    "events_url": "https://api.github.com/users/duanhao0814/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/duanhao0814/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-05-13T12:27:45Z",
+  "updated_at": "2020-05-14T10:17:32Z",
+  "closed_at": "2020-05-14T10:17:32Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "I think we can break the following init loop more quickly when all flags have been set.\r\n\r\nhttps://github.com/ethereum/go-ethereum/blob/46698d79310ab1c12089f4bc2c13ac2f136128da/metrics/metrics.go#L38-L55\r\n\r\nWhat's more. If we need only one element in enablerFlags and expensiveEnablerFlags for now, why not just use a string flag such like `enablerFlags  = \"metrics\"` ?\r\n",
+  "closed_by": {
+    "login": "duanhao0814",
+    "id": 38761526,
+    "node_id": "MDQ6VXNlcjM4NzYxNTI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/38761526?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/duanhao0814",
+    "html_url": "https://github.com/duanhao0814",
+    "followers_url": "https://api.github.com/users/duanhao0814/followers",
+    "following_url": "https://api.github.com/users/duanhao0814/following{/other_user}",
+    "gists_url": "https://api.github.com/users/duanhao0814/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/duanhao0814/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/duanhao0814/subscriptions",
+    "organizations_url": "https://api.github.com/users/duanhao0814/orgs",
+    "repos_url": "https://api.github.com/users/duanhao0814/repos",
+    "events_url": "https://api.github.com/users/duanhao0814/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/duanhao0814/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21074/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21074/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

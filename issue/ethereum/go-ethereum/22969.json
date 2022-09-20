@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22969",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22969/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22969/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22969/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/22969",
+  "id": 906588750,
+  "node_id": "MDU6SXNzdWU5MDY1ODg3NTA=",
+  "number": 22969,
+  "title": "Test failed: TestFacebook ",
+  "user": {
+    "login": "timmyyuan",
+    "id": 16911109,
+    "node_id": "MDQ6VXNlcjE2OTExMTA5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16911109?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/timmyyuan",
+    "html_url": "https://github.com/timmyyuan",
+    "followers_url": "https://api.github.com/users/timmyyuan/followers",
+    "following_url": "https://api.github.com/users/timmyyuan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/timmyyuan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/timmyyuan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/timmyyuan/subscriptions",
+    "organizations_url": "https://api.github.com/users/timmyyuan/orgs",
+    "repos_url": "https://api.github.com/users/timmyyuan/repos",
+    "events_url": "https://api.github.com/users/timmyyuan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/timmyyuan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-05-30T00:23:18Z",
+  "updated_at": "2021-06-03T12:35:40Z",
+  "closed_at": "2021-06-03T12:35:40Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `master`\r\nOS & Version: Linux\r\nCommit hash : `480c3f503fcd0012eab316aafb53b8118afebb86`\r\n\r\n#### Expected behaviour\r\n\r\nTests pass\r\n\r\n#### Actual behaviour\r\n\r\n```\r\n--- FAIL: TestFacebook (0.33s)\r\n    faucet_test.go:37: No Ethereum address found to fund\r\nFAIL\r\nFAIL\tgithub.com/ethereum/go-ethereum/cmd/faucet\t0.367s\r\n```\r\n\r\n#### Steps to reproduce the behaviour\r\n\r\ncheckout the `master` branch and run `make test`\r\n\r\n#### Backtrace\r\n\r\n````\r\n[backtrace]\r\n````\r\n\r\nWhen submitting logs: please submit them as text and not screenshots.",
+  "closed_by": {
+    "login": "gballet",
+    "id": 3272758,
+    "node_id": "MDQ6VXNlcjMyNzI3NTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3272758?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gballet",
+    "html_url": "https://github.com/gballet",
+    "followers_url": "https://api.github.com/users/gballet/followers",
+    "following_url": "https://api.github.com/users/gballet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gballet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gballet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gballet/subscriptions",
+    "organizations_url": "https://api.github.com/users/gballet/orgs",
+    "repos_url": "https://api.github.com/users/gballet/repos",
+    "events_url": "https://api.github.com/users/gballet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gballet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22969/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/22969/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

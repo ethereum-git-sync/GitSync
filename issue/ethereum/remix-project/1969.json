@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/1969",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/1969/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/1969/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/1969/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/1969",
+  "id": 1107948305,
+  "node_id": "I_kwDODtLRw85CCfMR",
+  "number": 1969,
+  "title": "AST node highlight in editor issues",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155226,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjI2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/bug",
+      "name": "bug",
+      "color": "d73a4a",
+      "default": true,
+      "description": "Something isn't working"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-01-19T10:51:23Z",
+  "updated_at": "2022-01-25T15:08:46Z",
+  "closed_at": "2022-01-25T15:08:46Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "- [x] Moving to node definition reference using up-down carrots is not appropriate\r\n<img width=\"612\" alt=\"Screenshot 2022-01-19 at 4 11 45 PM\" src=\"https://user-images.githubusercontent.com/30843294/150115752-8ae2021c-cc19-4904-b3f1-c653d3c65e7d.png\">\r\n \r\n\r\n- [x] Even on file change it shows old node type references\r\n<img width=\"535\" alt=\"Screenshot 2022-01-19 at 4 12 50 PM\" src=\"https://user-images.githubusercontent.com/30843294/150115878-bc4abac2-bc21-482c-a3c0-a6f0204afbf4.png\">\r\n ",
+  "closed_by": {
+    "login": "ioedeveloper",
+    "id": 23282059,
+    "node_id": "MDQ6VXNlcjIzMjgyMDU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/23282059?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ioedeveloper",
+    "html_url": "https://github.com/ioedeveloper",
+    "followers_url": "https://api.github.com/users/ioedeveloper/followers",
+    "following_url": "https://api.github.com/users/ioedeveloper/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ioedeveloper/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ioedeveloper/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ioedeveloper/subscriptions",
+    "organizations_url": "https://api.github.com/users/ioedeveloper/orgs",
+    "repos_url": "https://api.github.com/users/ioedeveloper/repos",
+    "events_url": "https://api.github.com/users/ioedeveloper/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ioedeveloper/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/1969/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/1969/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,121 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12145",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12145/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12145/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12145/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12145",
+  "id": 1026736482,
+  "node_id": "I_kwDOAm_5kc49MsFi",
+  "number": 12145,
+  "title": "Cannot link unqualified library names via Standard JSON",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 467898404,
+      "node_id": "MDU6TGFiZWw0Njc4OTg0MDQ=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/breaking%20change%20:warning:",
+      "name": "breaking change :warning:",
+      "color": "b60205",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438492402,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI4E8g",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/nice%20to%20have",
+      "name": "nice to have",
+      "color": "ffdeb3",
+      "default": false,
+      "description": "We don’t see a good reason not to have it but won’t go out of our way to implement it."
+    },
+    {
+      "id": 4525128519,
+      "node_id": "LA_kwDOAm_5kc8AAAABDbf7Rw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/needs%20design",
+      "name": "needs design",
+      "color": "18F737",
+      "default": false,
+      "description": "The proposal is too vague to be implemented right away"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-14T19:18:18Z",
+  "updated_at": "2022-09-14T15:48:28Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Description\r\nIn Standard JSON library addresses for linking require providing a source unit name and a library name as two separate components. For linking, these two parts are joined with a colon so even if the source unit name is empty, the colon is there.\r\n\r\nThis is different from the CLI where you can provide both `L` and `:L` in the `--libraries` option and for the former will let you match a reference without a colon.\r\n\r\nI don't see a good way to support unqualified library names in the current Standard JSON structure so maybe we should just disallow unqualified library names in `linkersymbol()`. This would be a breaking change though.\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.9 (`develop`)\r\n\r\n## Steps to Reproduce\r\n`input.json`:\r\n```json\r\n{\r\n    \"language\": \"Yul\",\r\n    \"sources\": {\r\n        \"contract.sol\": {\"content\": \"{ sstore(0, linkersymbol(\\\"L\\\")) }\"}\r\n    },\r\n    \"settings\": {\r\n        \"outputSelection\": {\"*\": {\"*\": [\"evm.bytecode\"]}},\r\n        \"libraries\": {\r\n            \"\": {\r\n                \"L\": \"0x1234567890123456789012345678901234567890\"\r\n            }\r\n        }\r\n    }\r\n}\r\n```\r\n```bash\r\nsolc --json-indent 4 --standard-json input.json\r\n```\r\nOutput:\r\n```json\r\n{\r\n    \"contracts\":\r\n    {\r\n        \"contract.sol\":\r\n        {\r\n            \"object\":\r\n            {\r\n                \"evm\":\r\n                {\r\n                    \"bytecode\":\r\n                    {\r\n                        \"functionDebugData\": {},\r\n                        \"generatedSources\": [],\r\n                        \"linkReferences\":\r\n                        {\r\n                            \"\":\r\n                            {\r\n                                \"L\":\r\n                                [\r\n                                    {\r\n                                        \"length\": 20,\r\n                                        \"start\": 1\r\n                                    }\r\n                                ]\r\n                            }\r\n                        },\r\n                        \"object\": \"73__$8aa64f937099b65a4febc243a5ae0f2d64$__600055\",\r\n                        \"opcodes\": \"PUSH20 0x0 PUSH1 0x0 SSTORE \",\r\n                        \"sourceMap\": \"12:17:0:-:0;9:1;2:28\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n```\r\n\r\nIf you change `linkersymbol(\"L\"))` in the input to `linkersymbol(\":L\"))`, the unlinked reference disappears.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12145/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12145/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

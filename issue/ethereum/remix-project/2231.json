@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2231",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2231/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2231/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2231/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2231",
+  "id": 1177662877,
+  "node_id": "I_kwDODtLRw85GMbWd",
+  "number": 2231,
+  "title": "UI to create custom Remix IDE link with URL params",
+  "user": {
+    "login": "Aniket-Engg",
+    "id": 30843294,
+    "node_id": "MDQ6VXNlcjMwODQzMjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Aniket-Engg",
+    "html_url": "https://github.com/Aniket-Engg",
+    "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+    "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+    "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+    "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+    "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 3953202659,
+      "node_id": "LA_kwDODtLRw87roRXj",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/feature%20request",
+      "name": "feature request",
+      "color": "C54591",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-23T06:34:43Z",
+  "updated_at": "2022-03-23T06:35:39Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "There can a plugin with UI to generate a link to load Remix IDE with custom URL params.\r\n\r\nSee for possible customization: https://remix-ide.readthedocs.io/en/latest/locations.html#customize-remix-with-url-parameters\r\n\r\ncc: @ryestew \r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2231/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2231/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

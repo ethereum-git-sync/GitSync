@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/5723",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/5723/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/5723/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/5723/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/5723",
+  "id": 394087308,
+  "node_id": "MDU6SXNzdWUzOTQwODczMDg=",
+  "number": 5723,
+  "title": "Issue in comparing token contract address and address(0)",
+  "user": {
+    "login": "trainingmaterialscollection",
+    "id": 43944294,
+    "node_id": "MDQ6VXNlcjQzOTQ0Mjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/43944294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/trainingmaterialscollection",
+    "html_url": "https://github.com/trainingmaterialscollection",
+    "followers_url": "https://api.github.com/users/trainingmaterialscollection/followers",
+    "following_url": "https://api.github.com/users/trainingmaterialscollection/following{/other_user}",
+    "gists_url": "https://api.github.com/users/trainingmaterialscollection/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/trainingmaterialscollection/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/trainingmaterialscollection/subscriptions",
+    "organizations_url": "https://api.github.com/users/trainingmaterialscollection/orgs",
+    "repos_url": "https://api.github.com/users/trainingmaterialscollection/repos",
+    "events_url": "https://api.github.com/users/trainingmaterialscollection/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/trainingmaterialscollection/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-12-26T05:44:19Z",
+  "updated_at": "2018-12-26T07:00:13Z",
+  "closed_at": "2018-12-26T07:00:13Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Description\r\nI am trying to compare the token contract address with the address(0). This was working fine in older version of truffle and solidity compiler (0.4.24). When I upgraded truffle and started using the latest truffle and compiler version (0.5.0) I am unable to compare the token contract address and address(0).\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.5.0\r\n- Target EVM version (as per compiler settings):0.5.0\r\n- Framework/IDE (e.g. Truffle or Remix):Truffle\r\n- EVM execution environment / backend / blockchain client: Issue in compiling\r\n- Operating system:Windows\r\n\r\n## Steps to Reproduce\r\n\r\nnpm install OpenZeppelin/openzeppelin-solidity#release-v2.1.0-solc-0.5\r\n \r\n![capture](https://user-images.githubusercontent.com/43944294/50433619-55c27200-08ff-11e9-93e4-466d3ed0bd05.PNG)\r\n\r\n",
+  "closed_by": {
+    "login": "trainingmaterialscollection",
+    "id": 43944294,
+    "node_id": "MDQ6VXNlcjQzOTQ0Mjk0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/43944294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/trainingmaterialscollection",
+    "html_url": "https://github.com/trainingmaterialscollection",
+    "followers_url": "https://api.github.com/users/trainingmaterialscollection/followers",
+    "following_url": "https://api.github.com/users/trainingmaterialscollection/following{/other_user}",
+    "gists_url": "https://api.github.com/users/trainingmaterialscollection/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/trainingmaterialscollection/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/trainingmaterialscollection/subscriptions",
+    "organizations_url": "https://api.github.com/users/trainingmaterialscollection/orgs",
+    "repos_url": "https://api.github.com/users/trainingmaterialscollection/repos",
+    "events_url": "https://api.github.com/users/trainingmaterialscollection/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/trainingmaterialscollection/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/5723/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/5723/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

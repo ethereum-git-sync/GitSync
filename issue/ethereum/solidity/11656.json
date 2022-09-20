@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11656",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11656/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11656/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11656/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11656",
+  "id": 943542281,
+  "node_id": "MDU6SXNzdWU5NDM1NDIyODE=",
+  "number": 11656,
+  "title": "Yul Optimizer: Improve redundant assign elimination in the presence of (nested?) loops.",
+  "user": {
+    "login": "ekpyron",
+    "id": 1347491,
+    "node_id": "MDQ6VXNlcjEzNDc0OTE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1347491?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ekpyron",
+    "html_url": "https://github.com/ekpyron",
+    "followers_url": "https://api.github.com/users/ekpyron/followers",
+    "following_url": "https://api.github.com/users/ekpyron/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ekpyron/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ekpyron/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ekpyron/subscriptions",
+    "organizations_url": "https://api.github.com/users/ekpyron/orgs",
+    "repos_url": "https://api.github.com/users/ekpyron/repos",
+    "events_url": "https://api.github.com/users/ekpyron/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ekpyron/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1282209978,
+      "node_id": "MDU6TGFiZWwxMjgyMjA5OTc4",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/optimizer",
+      "name": "optimizer",
+      "color": "d4c5f9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-07-13T15:20:56Z",
+  "updated_at": "2022-08-17T13:49:22Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Came up while looking at `test/libsolidity/semanticTests/abiEncoderV2/calldata_array_dynamic_static_short_reencode.sol` (since that's a test with high stack pressure).\r\n\r\nAt the time of writing, the following passes as \"full optimizer suite\" test:\r\n```\r\n{\r\n    let tail := 42\r\n    for { let i := 0 } lt(i,5) { i := add(i, 1) }\r\n    {\r\n\tlet pos := tail\r\n        pos := tail\r\n\tlet tail_1 := tail\r\n\tfor { let j := 0 } lt(j,6) { j := add(j, i) } {\r\n\t\tpos := add(pos, 2)\r\n\t}\r\n\ttail := tail_1\r\n    }\r\n}\r\n// ----\r\n// step: fullSuite\r\n//\r\n// {\r\n//     {\r\n//         let tail := 42\r\n//         let i := 0\r\n//         let i_1 := i\r\n//         for { } lt(i_1, 5) { i_1 := add(i_1, 1) }\r\n//         {\r\n//             let pos := tail\r\n//             pos := tail\r\n//             let j := i\r\n//             for { } lt(j, 6) { j := add(j, i_1) }\r\n//             { pos := add(pos, 2) }\r\n//             tail := tail\r\n//         }\r\n//     }\r\n// }\r\n```\r\n(Note that both ``i`` and ``j`` can be removed and the loop conditions replaced by e.g. ``1`` or ``callvalue()`` for similar results, I just put them in to have the test case not be too artificial)\r\n\r\nBoth ``pos := tail`` and ``tail := tail`` are redundant.\r\nActually, even more so, ``pos`` and ``tail`` are even entirely redundant and could be eliminated altogether :-).\r\n\r\nMy guess is that due to the loops, this will never end up in a nice SSA form and thus the redundant assign eliminator cannot work properly, but I haven't investigated in full.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11656/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11656/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

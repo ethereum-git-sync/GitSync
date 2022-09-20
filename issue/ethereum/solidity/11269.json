@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11269",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11269/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11269/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11269/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11269",
+  "id": 861369121,
+  "node_id": "MDU6SXNzdWU4NjEzNjkxMjE=",
+  "number": 11269,
+  "title": "Support 'unchecked' at the function-declaration level",
+  "user": {
+    "login": "barakman",
+    "id": 7003246,
+    "node_id": "MDQ6VXNlcjcwMDMyNDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7003246?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/barakman",
+    "html_url": "https://github.com/barakman",
+    "followers_url": "https://api.github.com/users/barakman/followers",
+    "following_url": "https://api.github.com/users/barakman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/barakman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/barakman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/barakman/subscriptions",
+    "organizations_url": "https://api.github.com/users/barakman/orgs",
+    "repos_url": "https://api.github.com/users/barakman/repos",
+    "events_url": "https://api.github.com/users/barakman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/barakman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-04-19T14:27:14Z",
+  "updated_at": "2022-08-17T13:49:22Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nIt is a typical scenario for an entire function to be implemented with native (unsafe until solc 0.8.0) arithmetic operations, in order to optimize its performance, and under the author's knowledge of the function being robust for arithmetic overflows.\r\n\r\n## Motivation\r\n\r\nAccording to [the official documentation](https://docs.soliditylang.org/en/v0.8.0/control-structures.html#checked-or-unchecked-arithmetic):\r\n\r\n> To avoid ambiguity, you cannot use `_;` inside an `unchecked` block.\r\n\r\nSubsequently, one cannot implement a `modifier` which would allow \"declaring\" an entire function `unchecked`.\r\n\r\n## Specification\r\n\r\nPlease consider supporting `unchecked` at the function-declaration level, in order to allow for cleaner code.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11269/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11269/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

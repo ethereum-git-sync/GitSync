@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24644",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24644/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24644/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24644/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/24644",
+  "id": 1192797244,
+  "node_id": "I_kwDOAOvK985HGKQ8",
+  "number": 24644,
+  "title": "Use non-privileged user in Dockerfile",
+  "user": {
+    "login": "antonydenyer",
+    "id": 469160,
+    "node_id": "MDQ6VXNlcjQ2OTE2MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/469160?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/antonydenyer",
+    "html_url": "https://github.com/antonydenyer",
+    "followers_url": "https://api.github.com/users/antonydenyer/followers",
+    "following_url": "https://api.github.com/users/antonydenyer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/antonydenyer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/antonydenyer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/antonydenyer/subscriptions",
+    "organizations_url": "https://api.github.com/users/antonydenyer/orgs",
+    "repos_url": "https://api.github.com/users/antonydenyer/repos",
+    "events_url": "https://api.github.com/users/antonydenyer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/antonydenyer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233652,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1Mg==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:feature",
+      "name": "type:feature",
+      "color": "84b6eb",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-04-05T08:22:29Z",
+  "updated_at": "2022-04-05T08:22:35Z",
+  "closed_at": "2022-04-05T08:22:35Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "This is a placeholder to try and pull together multiple discussions about default the docker container to be run as a non-root user. \r\n\r\nThe primary reason it will not be implemented is it breaks backward compatibility.\r\n\r\nhttps://github.com/ethereum/go-ethereum/pull/16052\r\nhttps://github.com/ethereum/go-ethereum/pull/22861\r\nhttps://github.com/ethereum/go-ethereum/pull/24635\r\n\r\n",
+  "closed_by": {
+    "login": "antonydenyer",
+    "id": 469160,
+    "node_id": "MDQ6VXNlcjQ2OTE2MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/469160?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/antonydenyer",
+    "html_url": "https://github.com/antonydenyer",
+    "followers_url": "https://api.github.com/users/antonydenyer/followers",
+    "following_url": "https://api.github.com/users/antonydenyer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/antonydenyer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/antonydenyer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/antonydenyer/subscriptions",
+    "organizations_url": "https://api.github.com/users/antonydenyer/orgs",
+    "repos_url": "https://api.github.com/users/antonydenyer/repos",
+    "events_url": "https://api.github.com/users/antonydenyer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/antonydenyer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24644/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/24644/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

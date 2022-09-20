@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/713",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/713/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/713/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/713/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/713",
+  "id": 164865947,
+  "node_id": "MDU6SXNzdWUxNjQ4NjU5NDc=",
+  "number": 713,
+  "title": "Source location as part of json output",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2016-07-11T15:30:08Z",
+  "updated_at": "2016-07-27T10:14:23Z",
+  "closed_at": "2016-07-27T10:14:23Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "This is a story needed by remix and other tools.\n- [x] source location as part of the json-ast output\n- [x] source location mapping for the bytecode, including other metadata like \"jump in\" or \"jump out\".\n\nThe source location should be formatted as `\"s:l:f\"` where all of them are integers, f is an index into a list of source files, s is the source byte offset into the source file where the source location starts and l is the byte length of the location.\n\nAll of them can be `-1` indicating that the information is unknown / unavailable.\n\nThe bytecode source mappings are formatted as follows:\n\nA single string of elements separated by `;`, where each element corresponds to an **instruction** (not single byte) in the bytecode. Each element is formatted as follows: `s:l:f:j`, where s, l and f are as above. j can be `i` or `o` or `-` signifying whether a jump jumps into a function, returns from a function or is a regular jump as part of e.g. a loop. If a field is empty, the value of the previous element is used. If nothing follows an empty field, the preceding colon can be omitted.\n\nThis means the following source mappings represent the same information:\n\n`1:2:1;1:9:1;2:1:2;2:1:2;2:1:2`\n\n`1:2:1;:9;2::2;;`\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/713/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/713/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

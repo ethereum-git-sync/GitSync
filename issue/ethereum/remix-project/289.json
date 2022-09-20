@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/289",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/289/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/289/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/289/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/289",
+  "id": 668558006,
+  "node_id": "MDU6SXNzdWU2Njg1NTgwMDY=",
+  "number": 289,
+  "title": "Multidimensional array freezes debugger",
+  "user": {
+    "login": "loriopatrick",
+    "id": 1400322,
+    "node_id": "MDQ6VXNlcjE0MDAzMjI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1400322?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/loriopatrick",
+    "html_url": "https://github.com/loriopatrick",
+    "followers_url": "https://api.github.com/users/loriopatrick/followers",
+    "following_url": "https://api.github.com/users/loriopatrick/following{/other_user}",
+    "gists_url": "https://api.github.com/users/loriopatrick/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/loriopatrick/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/loriopatrick/subscriptions",
+    "organizations_url": "https://api.github.com/users/loriopatrick/orgs",
+    "repos_url": "https://api.github.com/users/loriopatrick/repos",
+    "events_url": "https://api.github.com/users/loriopatrick/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/loriopatrick/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2235994228,
+      "node_id": "MDU6TGFiZWwyMjM1OTk0MjI4",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-debug",
+      "name": "remix-debug",
+      "color": "ebfc8a",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2241434975,
+      "node_id": "MDU6TGFiZWwyMjQxNDM0OTc1",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/performance",
+      "name": "performance",
+      "color": "d4c5f9",
+      "default": false,
+      "description": "Related to performance improvement"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2018-07-26T16:44:26Z",
+  "updated_at": "2020-07-30T09:51:14Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Example code\r\n\r\n```\r\npragma solidity ^0.4.23;\r\n\r\ncontract TestContract {\r\n  uint256[2**32][2**16][2**3] data;\r\n  \r\n  function set(uint32 a, uint16 b, uint8 c, uint256 value) public {\r\n      data[a][b][c] = value;\r\n  }\r\n}\r\n```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/289/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/289/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/666267591",
+    "html_url": "https://github.com/ethereum/remix-project/issues/289#issuecomment-666267591",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/289",
+    "id": 666267591,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDY2NjI2NzU5MQ==",
+    "user": {
+      "login": "Aniket-Engg",
+      "id": 30843294,
+      "node_id": "MDQ6VXNlcjMwODQzMjk0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30843294?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aniket-Engg",
+      "html_url": "https://github.com/Aniket-Engg",
+      "followers_url": "https://api.github.com/users/Aniket-Engg/followers",
+      "following_url": "https://api.github.com/users/Aniket-Engg/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aniket-Engg/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aniket-Engg/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aniket-Engg/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aniket-Engg/orgs",
+      "repos_url": "https://api.github.com/users/Aniket-Engg/repos",
+      "events_url": "https://api.github.com/users/Aniket-Engg/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aniket-Engg/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2020-07-30T09:50:15Z",
+    "updated_at": "2020-07-30T09:50:15Z",
+    "author_association": "MEMBER",
+    "body": "Issue can be reproduced.\r\n\r\nAlthough low number on indexes works fine e.g; `uint256[2][3][5] data;`",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/666267591/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

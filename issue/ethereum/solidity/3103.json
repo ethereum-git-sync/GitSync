@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/3103",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/3103/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/3103/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/3103/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/3103",
+  "id": 266650999,
+  "node_id": "MDU6SXNzdWUyNjY2NTA5OTk=",
+  "number": 3103,
+  "title": "Unused variable in Z3Interface.cpp causes error-as-warning error when compiling with MSVC",
+  "user": {
+    "login": "androlo",
+    "id": 2809499,
+    "node_id": "MDQ6VXNlcjI4MDk0OTk=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2809499?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/androlo",
+    "html_url": "https://github.com/androlo",
+    "followers_url": "https://api.github.com/users/androlo/followers",
+    "following_url": "https://api.github.com/users/androlo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/androlo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/androlo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/androlo/subscriptions",
+    "organizations_url": "https://api.github.com/users/androlo/orgs",
+    "repos_url": "https://api.github.com/users/androlo/repos",
+    "events_url": "https://api.github.com/users/androlo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/androlo/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-10-18T21:39:26Z",
+  "updated_at": "2017-10-19T09:09:10Z",
+  "closed_at": "2017-10-19T09:09:10Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "On @axic 's request.\r\n\r\nSolidity: `Version: 0.4.18-develop.2017.10.18+commit.fda8499c.Windows.msvc` (after fixing)\r\n\r\n```\r\nC:\\Users\\andreas\\solidity\\libsolidity\\formal\\Z3Interface.cpp(101): error C2220: warning treated as error - no 'object' fil e generated [C:\\Users\\andreas\\solidity\\build\\libsolidity\\solidity.vcxproj]\r\nC:\\Users\\andreas\\solidity\\libsolidity\\formal\\Z3Interface.cpp(101): warning C4101: '_e': unreferenced local variable [C:\\Us ers\\andreas\\solidity\\build\\libsolidity\\solidity.vcxproj]\r\n```\r\n\r\nThe cause is an unused error in a catch clause. This only happens because I manually linked with Z3, so it should not affect other users or CI, unless it is if left as-is when Z3 is included in windows builds by default (maybe it already is).\r\n\r\nMy suggestion was to just disable the warning in the cmake script (`/wd4101`).",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/3103/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/3103/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

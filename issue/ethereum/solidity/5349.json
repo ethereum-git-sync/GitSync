@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/5349",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/5349/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/5349/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/5349/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/5349",
+  "id": 377687011,
+  "node_id": "MDU6SXNzdWUzNzc2ODcwMTE=",
+  "number": 5349,
+  "title": "The solidity source file can not be compiled.",
+  "user": {
+    "login": "AhnSungHyeon",
+    "id": 31264787,
+    "node_id": "MDQ6VXNlcjMxMjY0Nzg3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31264787?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AhnSungHyeon",
+    "html_url": "https://github.com/AhnSungHyeon",
+    "followers_url": "https://api.github.com/users/AhnSungHyeon/followers",
+    "following_url": "https://api.github.com/users/AhnSungHyeon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AhnSungHyeon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AhnSungHyeon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AhnSungHyeon/subscriptions",
+    "organizations_url": "https://api.github.com/users/AhnSungHyeon/orgs",
+    "repos_url": "https://api.github.com/users/AhnSungHyeon/repos",
+    "events_url": "https://api.github.com/users/AhnSungHyeon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AhnSungHyeon/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-11-06T04:22:03Z",
+  "updated_at": "2018-11-06T05:47:41Z",
+  "closed_at": "2018-11-06T05:47:41Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "The solidity source file can not be compiled.\r\n\r\nInstall Solidity on Linux Ubuntu 16.04 and write the sample source code for https://solidity.readthedocs.io/en/v0.4.21/solidity-by-example.html\r\n\r\nI am trying to compile and save the following warning\r\n\r\nWarning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^ 0.4.25;\"\r\n\r\nFor reference, the solidity version I installed was 0.4.25, so I changed the pragma solidity ^ 0.4.25 at the top of the sample source code.\r\n\r\nCould you tell me why this is happening?\r\n\r\n\r\nFor the first time, I installed it as apt when I installed it for the first time. I installed it with the latest version 0.5.0 and tried to compile it.\r\n\r\nWarning: This is a pre-release compiler version, please do not use it in production.\r\nError: Source file requires different compiler version (current compiler is 0.5.0-develop.2018.10.30 + commit.0b4f6ab7.Linux.g ++ -e that nightly builds are considered to be strictly less than the released version",
+  "closed_by": {
+    "login": "AhnSungHyeon",
+    "id": 31264787,
+    "node_id": "MDQ6VXNlcjMxMjY0Nzg3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/31264787?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AhnSungHyeon",
+    "html_url": "https://github.com/AhnSungHyeon",
+    "followers_url": "https://api.github.com/users/AhnSungHyeon/followers",
+    "following_url": "https://api.github.com/users/AhnSungHyeon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AhnSungHyeon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AhnSungHyeon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AhnSungHyeon/subscriptions",
+    "organizations_url": "https://api.github.com/users/AhnSungHyeon/orgs",
+    "repos_url": "https://api.github.com/users/AhnSungHyeon/repos",
+    "events_url": "https://api.github.com/users/AhnSungHyeon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AhnSungHyeon/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/5349/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/5349/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

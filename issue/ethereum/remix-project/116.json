@@ -1,0 +1,94 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/116",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/116/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/116/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/116/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/116",
+  "id": 666199976,
+  "node_id": "MDU6SXNzdWU2NjYxOTk5NzY=",
+  "number": 116,
+  "title": "Error in Vyper plugin when using decimals",
+  "user": {
+    "login": "robinsierra",
+    "id": 48950322,
+    "node_id": "MDQ6VXNlcjQ4OTUwMzIy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/48950322?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/robinsierra",
+    "html_url": "https://github.com/robinsierra",
+    "followers_url": "https://api.github.com/users/robinsierra/followers",
+    "following_url": "https://api.github.com/users/robinsierra/following{/other_user}",
+    "gists_url": "https://api.github.com/users/robinsierra/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/robinsierra/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/robinsierra/subscriptions",
+    "organizations_url": "https://api.github.com/users/robinsierra/orgs",
+    "repos_url": "https://api.github.com/users/robinsierra/repos",
+    "events_url": "https://api.github.com/users/robinsierra/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/robinsierra/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155226,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjI2",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/bug",
+      "name": "bug",
+      "color": "d73a4a",
+      "default": true,
+      "description": "Something isn't working"
+    },
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2233124974,
+      "node_id": "MDU6TGFiZWwyMjMzMTI0OTc0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/plugins",
+      "name": "plugins",
+      "color": "ddb87c",
+      "default": false,
+      "description": "internal & external plugins' issues"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-08-05T11:24:58Z",
+  "updated_at": "2020-07-27T10:58:07Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "When compiling a Vyper contract with decimals in it, e.g.\r\n```\r\n@public\r\ndef test_dec(d: decimal) -> bytes32:\r\n    return []\r\n```\r\nthe plugin shows an error without an error message and the contract is not deployable.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/116/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/116/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

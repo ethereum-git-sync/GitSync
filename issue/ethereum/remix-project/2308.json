@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2308",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2308/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2308/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2308/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2308",
+  "id": 1205481075,
+  "node_id": "I_kwDODtLRw85H2i5z",
+  "number": 2308,
+  "title": "The keyword delete is not working in Remix",
+  "user": {
+    "login": "hsjo12",
+    "id": 25118210,
+    "node_id": "MDQ6VXNlcjI1MTE4MjEw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25118210?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hsjo12",
+    "html_url": "https://github.com/hsjo12",
+    "followers_url": "https://api.github.com/users/hsjo12/followers",
+    "following_url": "https://api.github.com/users/hsjo12/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hsjo12/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hsjo12/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hsjo12/subscriptions",
+    "organizations_url": "https://api.github.com/users/hsjo12/orgs",
+    "repos_url": "https://api.github.com/users/hsjo12/repos",
+    "events_url": "https://api.github.com/users/hsjo12/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hsjo12/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-04-15T10:42:33Z",
+  "updated_at": "2022-04-18T16:24:21Z",
+  "closed_at": "2022-04-18T16:24:21Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hello, \r\nI have came across the issue that the keyword delete is not working for mapping and array in remix, so I have tried to find why it is. \r\n\r\nIn fact, if you put 0 into the mapping or array that has already values, it will get an error. \r\n\r\nFor example, \r\n// array has 3 values\r\nuint[] public array = [97,98,99];\r\n// if I put 0 into the first index of the array, it will return an error\r\narray[1] = 0; // error. \r\n\r\n// mapping \r\nmapping(string => uint) public map;   \r\n//Not Error since it does not have any value yet other than default value 0\r\nmap[\"a\"] = 0 \r\n\r\n// Once the key set up the specific value \r\nmap[\"a\"] = 3;\r\n//it wiill get an error from map[\"a\"] = 0 \r\nmap[\"a\"] = 0 \r\n\r\n\r\nplease try this code in remix, ( this code is totally working in truffle)\r\n\r\n\r\n```\r\n// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.7.0 <0.9.0;\r\n\r\ncontract SimpleEx {\r\n\r\n    uint[] public array = [97,98,99];\r\n     \r\n    function updateArrayZero(uint _index) public {\r\n        array[_index] = 0;\r\n    }\r\n\r\n    function deleteArray(uint _index) public {\r\n       delete array[_index];\r\n    }\r\n\r\n    mapping(string => uint) public map;   \r\n    function Key_A_get_0() public {\r\n        map[\"a\"] = 0;\r\n    }\r\n    function Key_A_get_3() public {\r\n        map[\"a\"] = 3;\r\n    }\r\n    function delete_Key_A() public {\r\n        delete map[\"a\"];\r\n    }\r\n}\r\n```\r\n\r\n\r\n\r\n\r\n\r\n ",
+  "closed_by": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2308/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2308/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

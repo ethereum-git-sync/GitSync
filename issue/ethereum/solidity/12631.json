@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12631",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12631/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12631/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12631/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12631",
+  "id": 1124339371,
+  "node_id": "I_kwDOAm_5kc5DBA6r",
+  "number": 12631,
+  "title": "Fix post previews on the Solidity blog",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074438,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/help%20wanted",
+      "name": "help wanted",
+      "color": "159818",
+      "default": true,
+      "description": null
+    },
+    {
+      "id": 3798596394,
+      "node_id": "LA_kwDOAm_5kc7iafsq",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/blog",
+      "name": "blog",
+      "color": "EAF5DB",
+      "default": false,
+      "description": "Issues related to solidity-blog"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-02-04T15:40:07Z",
+  "updated_at": "2022-02-04T15:43:29Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "We'd like to have an easy way to preview posts in [solidity-blog](https://github.com/ethereum/solidity-blog) PRs. We used to do this via Netlify but support for that has been dropped.\r\n\r\nThe blog is just a static Jekyll site and our CI jobs attach it as an artifact so just visiting `index.html` could work. Unfortunately looks like the image links are relative to domain root and don't lead to the right locations. CSS and JS have the same issue.\r\n\r\nFor example in https://github.com/ethereum/solidity-blog/pull/161 you can find the post among [artifacts of job 892](https://app.circleci.com/pipelines/github/ethereum/solidity-blog/893/workflows/9c429223-6e80-49cb-a747-6974e4c28023/jobs/892/artifacts), specifically [`2022/02/03/solidity-developer-survey-2021-results/index.html`](https://892-232799436-gh.circle-artifacts.com/0/2022/02/03/solidity-developer-survey-2021-results/index.html), which is served from circle-artifacts.com.\r\n\r\nThe goal here is to find a workaround that would let us preview the post rendered in CI. Some ideas:\r\n- We could have a second CI job that renders a version with adjusted links (changed either via Jekyll config or via simple replacement).\r\n- We could find a way for CI to serve the artifact directly at domain root. It seems to me that it's simply the `/0/` part after `circle-artifacts.com` that breaks things.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12631/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12631/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

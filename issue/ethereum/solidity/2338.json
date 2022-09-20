@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/2338",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/2338/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/2338/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/2338/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/2338",
+  "id": 232867416,
+  "node_id": "MDU6SXNzdWUyMzI4Njc0MTY=",
+  "number": 2338,
+  "title": "Change CompilerContext to use AbstractAssembly",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 3515010024,
+      "node_id": "LA_kwDOAm_5kc7Rgsvo",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue%20candidate",
+      "name": "good first issue candidate",
+      "color": "91B44D",
+      "default": false,
+      "description": "Could be a \"good first issue\" but something is blocking it or it has open questions."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-06-01T12:46:41Z",
+  "updated_at": "2022-08-17T13:50:49Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/2338/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/2338/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

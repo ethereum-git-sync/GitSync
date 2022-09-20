@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/503",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/503/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/503/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/503/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/503",
+  "id": 724509645,
+  "node_id": "MDU6SXNzdWU3MjQ1MDk2NDU=",
+  "number": 503,
+  "title": "Windows 10 installation issue",
+  "user": {
+    "login": "amahfuda",
+    "id": 32996065,
+    "node_id": "MDQ6VXNlcjMyOTk2MDY1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32996065?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/amahfuda",
+    "html_url": "https://github.com/amahfuda",
+    "followers_url": "https://api.github.com/users/amahfuda/followers",
+    "following_url": "https://api.github.com/users/amahfuda/following{/other_user}",
+    "gists_url": "https://api.github.com/users/amahfuda/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/amahfuda/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/amahfuda/subscriptions",
+    "organizations_url": "https://api.github.com/users/amahfuda/orgs",
+    "repos_url": "https://api.github.com/users/amahfuda/repos",
+    "events_url": "https://api.github.com/users/amahfuda/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/amahfuda/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2233648248,
+      "node_id": "MDU6TGFiZWwyMjMzNjQ4MjQ4",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remixD",
+      "name": "remixD",
+      "color": "203cc9",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-03-26T10:03:33Z",
+  "updated_at": "2020-10-19T11:08:21Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Hello.\r\nCan't install this on Windows 10 x64bit from some reason.\r\nThe error i get is - lerna ERR! npm ERR! Can't install C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\web3\\packages\\web3-eth-iban: Missing package name\r\n\r\nDetails:\r\nC:\\Windows\\System32>npm install -g remixd\r\nC:\\Users\\amahfuda\\AppData\\Roaming\\npm\\remixd -> C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\bin\\remixd\r\n\r\n> websocket@1.0.25 install C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\websocket\r\n> (node-gyp rebuild 2> builderror.log) || (exit 0)\r\n\r\n\r\nC:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\websocket>if not defined npm_config_node_gyp (node \"C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin\\\\..\\..\\node_modules\\node-gyp\\bin\\node-gyp.js\" rebuild )  else (node \"C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js\" rebuild )\r\nBuilding the projects in this solution one at a time. To enable parallel build, please add the \"/m\" switch.\r\n  bufferutil.cc\r\n  win_delay_load_hook.cc\r\n     Creating library C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\websocket\\build\\Release\\bu\r\n  fferutil.lib and object C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\websocket\\build\\Releas\r\n  e\\bufferutil.exp\r\n  Generating code\r\n  Finished generating code\r\n  bufferutil.vcxproj -> C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\websocket\\build\\Release\\\r\n  \\bufferutil.node\r\n  bufferutil.vcxproj -> C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\websocket\\build\\Release\\\r\n  bufferutil.pdb (Full PDB)\r\n  validation.cc\r\n  win_delay_load_hook.cc\r\n     Creating library C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\websocket\\build\\Release\\va\r\n  lidation.lib and object C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\websocket\\build\\Releas\r\n  e\\validation.exp\r\n  Generating code\r\n  Finished generating code\r\n  validation.vcxproj -> C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\websocket\\build\\Release\\\r\n  \\validation.node\r\n  validation.vcxproj -> C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\websocket\\build\\Release\\\r\n  validation.pdb (Full PDB)\r\n\r\n> web3@1.0.0-beta.33 postinstall C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\web3\r\n> lerna bootstrap\r\n\r\nlerna info version 2.9.0\r\nlerna info Bootstrapping 20 packages\r\nlerna info lifecycle preinstall\r\nlerna info Installing external dependencies\r\nlerna ERR! execute callback with error\r\nlerna ERR! Error: Command failed: npm install\r\nlerna ERR! npm ERR! Can't install C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\web3\\packages\\web3-eth-iban: Missing package name\r\nlerna ERR!\r\nlerna ERR! npm ERR! A complete log of this run can be found in:\r\nlerna ERR! npm ERR!     C:\\Users\\amahfuda\\AppData\\Roaming\\npm-cache\\_logs\\2018-03-26T09_53_58_666Z-debug.log\r\nlerna ERR!\r\nlerna ERR!     at Promise.all.then.arr (C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\execa\\index.js:236:11)\r\nlerna ERR!     at <anonymous>\r\nlerna WARN complete Waiting for 3 child processes to exit. CTRL-C to exit immediately.\r\n{ Error: Command failed: npm installdencies: WARN complete Waiting for 3 child processes to exit. CTRL-C to exit immedi\r\nnpm ERR! Can't install C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\web3\\packages\\web3-eth-iban: Missing package name\r\n\r\nnpm ERR! A complete log of this run can be found in:\r\nnpm ERR!     C:\\Users\\amahfuda\\AppData\\Roaming\\npm-cache\\_logs\\2018-03-26T09_53_58_666Z-debug.log\r\n\r\n    at Promise.all.then.arr (C:\\Users\\amahfuda\\AppData\\Roaming\\npm\\node_modules\\remixd\\node_modules\\execa\\index.js:236:11)\r\n    at <anonymous>\r\n    at process._tickCallback (internal/process/next_tick.js:188:7)\r\n  code: 1,\r\n  killed: false,\r\n  stdout: '',\r\n  stderr: 'npm ERR! Can\\'t install C:\\\\Users\\\\amahfuda\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\remixd\\\\node_modules\\\\web3\\\\packages\\\\web3-eth-iban: Missing package name\\n\\nnpm ERR! A complete log of this run can be found in:\\nnpm ERR!     C:\\\\Users\\\\amahfuda\\\\AppData\\\\Roaming\\\\npm-cache\\\\_logs\\\\2018-03-26T09_53_58_666Z-debug.log\\n',\r\n  failed: true,\r\n  signal: null,\r\n  cmd: 'npm install',\r\n  timedOut: false,\r\n  exitCode: 1 }\r\nnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.3 (node_modules\\remixd\\node_modules\\fsevents):\r\nnpm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted {\"os\":\"darwin\",\"arch\":\"any\"} (current: {\"os\":\"win32\",\"arch\":\"x64\"})\r\n\r\nnpm ERR! code ELIFECYCLE\r\nnpm ERR! errno 1\r\nnpm ERR! web3@1.0.0-beta.33 postinstall: `lerna bootstrap`\r\nnpm ERR! Exit status 1\r\nnpm ERR!\r\nnpm ERR! Failed at the web3@1.0.0-beta.33 postinstall script.\r\nnpm ERR! This is probably not a problem with npm. There is likely additional logging output above.\r\n\r\nnpm ERR! A complete log of this run can be found in:\r\nnpm ERR!     C:\\Users\\amahfuda\\AppData\\Roaming\\npm-cache\\_logs\\2018-03-26T09_54_02_657Z-debug.log\r\n[2018-03-26T09_53_58_666Z-debug.log](https://github.com/ethereum/remixd/files/1847307/2018-03-26T09_53_58_666Z-debug.log)\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/503/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/503/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

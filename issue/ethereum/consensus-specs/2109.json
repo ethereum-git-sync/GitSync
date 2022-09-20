@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2109",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2109/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2109/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2109/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/2109",
+  "id": 725889093,
+  "node_id": "MDU6SXNzdWU3MjU4ODkwOTM=",
+  "number": 2109,
+  "title": "Fix time server attack vectors",
+  "user": {
+    "login": "dankrad",
+    "id": 6130607,
+    "node_id": "MDQ6VXNlcjYxMzA2MDc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6130607?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dankrad",
+    "html_url": "https://github.com/dankrad",
+    "followers_url": "https://api.github.com/users/dankrad/followers",
+    "following_url": "https://api.github.com/users/dankrad/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dankrad/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dankrad/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dankrad/subscriptions",
+    "organizations_url": "https://api.github.com/users/dankrad/orgs",
+    "repos_url": "https://api.github.com/users/dankrad/repos",
+    "events_url": "https://api.github.com/users/dankrad/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dankrad/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1234124284,
+      "node_id": "MDU6TGFiZWwxMjM0MTI0Mjg0",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:v-guide",
+      "name": "scope:v-guide",
+      "color": "113285",
+      "default": false,
+      "description": "Validator guide"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2020-10-20T19:40:27Z",
+  "updated_at": "2021-07-05T14:59:46Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "This is based on the thread here: https://ethresear.ch/t/eth2-attack-via-time-servers/8049/8\r\n\r\nThis does not require any protocol changes, but some small changes in validator guidance and client default behaviour should largely mitigate this:\r\n1. We should have technical guidance on how to set up a validator. This should include a best-practice NTP setup. The best practice NTP setup should include a rule that the local time can never be changed by more than a very small number of seconds due to an NTP update. In practice, RTCs are quite good at keeping time over hours or days, so it may well be a good idea to make this threshold less than block time, say 3 seconds.\r\n2. Some hardware may not be able to keep RTC over restarts/power cycles. Also some users might run on an incorrect setup. Add a rule to the validator guide (?) that specifies that by default, a VC node should refuse to run if the latest database entry is older than 6h, indicating a long offline time *or* an attack via a time jump. To override this, the user has to give a command line parameter indicating the current time (so that overriding will not become the default). ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2109/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2109/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

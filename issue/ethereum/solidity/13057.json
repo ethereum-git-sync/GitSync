@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13057",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13057/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13057/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13057/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13057",
+  "id": 1246808772,
+  "node_id": "I_kwDOAm_5kc5KUMrE",
+  "number": 13057,
+  "title": "Switch from deprecated `circleci/buildpack-deps` to another Ubuntu image for our Dockerfiles",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 437863668,
+      "node_id": "MDU6TGFiZWw0Mzc4NjM2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/build%20system%20:building_construction:",
+      "name": "build system :building_construction:",
+      "color": "1d76db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-05-24T16:26:54Z",
+  "updated_at": "2022-05-24T16:26:54Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "CircleCI has deprecated a bunch of docker images, including `circleci/buildpack-deps` (see [Legacy Convenience Image Deprecation](https://discuss.circleci.com/t/legacy-convenience-image-deprecation)). As of 2022 these images are still available but are not receiving any updates:\r\n> Dec 31, 2021 - Legacy Convenience Images are no longer supported. This will be the last publishing day of these images. Existing tags will still exist on Docker Hub but will remain unchanged. There will be no support for bug or security fixes for existing tags. No new tags will be published after this day.\r\n\r\nWe rely on this image in [Dockerfile.ubuntu2004](https://github.com/ethereum/solidity/blob/develop/scripts/docker/buildpack-deps/Dockerfile.ubuntu2004) and [Dockerfile.ubuntu2004.clang](https://github.com/ethereum/solidity/blob/develop/scripts/docker/buildpack-deps/Dockerfile.ubuntu2004.clang). We also [use it directly as a base image](https://github.com/ethereum/solidity/blob/v0.8.14/.circleci/config.yml#L327-L341) for some CI jobs.\r\n\r\nThe CI jobs are easy to deal with and I'm already working on it as a part of a general CI update to apply feedback we received from CircleCI. I managed to replace the image there with `cimg/base:current`.\r\n\r\nDocker images are a bigger problem because there we want a specific Ubuntu version and `cimg/base` does not have tags for that. It's based on latest LTS instead so by using it we'd no longer be in control of when to update. We should find another image that's suitable as a base, maybe just a plain `ubuntu` image. This will require some adjustments in the dockerfile though.\r\n\r\nI'm creating an issue instead of doing it right away because it's best to do this together with the update to Ubuntu 22.04. While we're still on focal, we can keep using the old image.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13057/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13057/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

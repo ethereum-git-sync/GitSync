@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13056",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13056/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13056/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13056/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13056",
+  "id": 1246714073,
+  "node_id": "I_kwDOAm_5kc5KT1jZ",
+  "number": 13056,
+  "title": "Parallelize bytecode report generation in CI",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-05-24T15:13:56Z",
+  "updated_at": "2022-08-17T13:48:52Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "The scripts we use for bytecode report generation in CI are single-threaded and do not take advantage of multiple cores we have available there. They could finish much faster if parallelized. This is suboptimal especially on macOS and Windows where the compiler build takes almost 20 minutes and these jobs cannot start before then.\r\n\r\nThis is the timing from [one of the recent CI runs on `develop`](https://app.circleci.com/pipelines/github/ethereum/solidity/23305/workflows/ea43cc31-b20f-4a9f-aafa-f639ef7688aa):\r\n\r\n| job              | duration | cores |\r\n|------------------|----------|-------|\r\n| `b_bytecode_ubu` |  8m 47s  | 1     |\r\n| `b_bytecode_ems` |  6m 11s  | 1     |\r\n| `b_bytecode_win` | 11m 01s  | 4     |\r\n| `b_bytecode_osx` | 13m 14s  | 4     |\r\n\r\nThere are two ways to address this:\r\n1) Use multiple threads or processes in [`prepare_report.py`](https://github.com/ethereum/solidity/blob/develop/scripts/bytecodecompare/prepare_report.py) and [`prepare_report.js`](https://github.com/ethereum/solidity/blob/develop/scripts/bytecodecompare/prepare_report.js).\r\n2) Split the set of input files into smaller batches, run separately on each batch and then merge the reports.\r\n\r\nI think that option (2) is better given that with (1) we'd have to implement the same mechanism twice, once in JS and once in Python.\r\n\r\nOnce the scripts are parallelized, first run enough threads/processes in parallel to saturate the available cores. Then try switching to bigger machines with more cores and see if that gives us an even bigger boost relative to the cost. Finally, also try the `parallelism` option.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13056/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13056/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

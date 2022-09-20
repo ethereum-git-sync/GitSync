@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/7366",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/7366/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/7366/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/7366/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/7366",
+  "id": 490105988,
+  "node_id": "MDU6SXNzdWU0OTAxMDU5ODg=",
+  "number": 7366,
+  "title": "Add support for macOS Catalina",
+  "user": {
+    "login": "ghost",
+    "id": 10137,
+    "node_id": "MDQ6VXNlcjEwMTM3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10137?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ghost",
+    "html_url": "https://github.com/ghost",
+    "followers_url": "https://api.github.com/users/ghost/followers",
+    "following_url": "https://api.github.com/users/ghost/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ghost/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ghost/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ghost/subscriptions",
+    "organizations_url": "https://api.github.com/users/ghost/orgs",
+    "repos_url": "https://api.github.com/users/ghost/repos",
+    "events_url": "https://api.github.com/users/ghost/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ghost/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-09-06T03:16:30Z",
+  "updated_at": "2019-09-09T10:49:59Z",
+  "closed_at": "2019-09-09T10:49:59Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\nCurrently, the [install_deps.sh](https://github.com/ethereum/solidity/blob/develop/scripts/install_deps.sh) script does not support macOS Catalina. Although Catalina is still in beta, I made the mistake of installing my mac a few days ago. Thus, I cannot utilize the `install_deps.sh` script in projects like py-solc-x.\r\n\r\n## Motivation\r\n\r\nReverting back to Mojave is a pain and lots of people will soon be upgrading to Catalina when it comes out of beta.\r\n\r\n## Specification\r\n\r\nIt seems to be just a matter of adding a line to support Catalina here:\r\nhttps://github.com/ethereum/solidity/blob/7dcc47ed57f5a6ea3761e54da5a4d7bbe055b5a7/scripts/install_deps.sh#L73-L98\r\n\r\nI'd appreciate any feedback if you think there are other locations where this update needs to be applied.\r\n\r\n## Backwards Compatibility\r\n\r\nI don't think this will impact any previous versions.",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/7366/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/7366/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

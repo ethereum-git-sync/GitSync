@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/6676",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/6676/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/6676/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/6676/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/6676",
+  "id": 440796726,
+  "node_id": "MDU6SXNzdWU0NDA3OTY3MjY=",
+  "number": 6676,
+  "title": "Conditionals for Whiskers",
+  "user": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-05-06T17:09:13Z",
+  "updated_at": "2019-05-07T15:12:54Z",
+  "closed_at": "2019-05-07T15:12:54Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Using whiskers, we often face the problem that we have to generate slightly different code depending on settings, properties of certain types or features of the machine we generate code for. This is manageable to some degree just with parameters. The problem is that template substitution is not performed for the parameter values. Furthermore, it is not directly visible which two alternatives will be generated later.\r\n\r\nOne example is `ABIFunctions::abiDecodingFunctionArray`, where `staticBoundsCheck` is replaced by the empty string in one case, and by something else in the other.\r\n\r\nIt would be much better if the template itself could already be used to specify the two alternatives.\r\n\r\nProposal:\r\n\r\nIntroduce `<?condition>` as a tag where \"condition\" is a boolean (as opposed to string) template value. The full pattern is `<?conditon>...<!condition>...</condition>`, where the `<!condition>` is optional.\r\n\r\nIf the parameter is set to true, then the template `<?conditon>A<!condition>B</condition>` is essential identical to `A` (where `A` can itself contain parameters and even conditions). If it is false, it is identical to `B`.\r\n\r\nThe choice of symbols is justified by the analogy that `?` corresponds to a question, `!` to a negation and `/` is already used to terminate list structures.\r\n\r\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/6676/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/6676/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13281",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13281/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13281/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13281/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13281",
+  "id": 1307903693,
+  "node_id": "I_kwDOAm_5kc5N9QbN",
+  "number": 13281,
+  "title": "Incorrect byte location (src) of the `FunctionTypeName` AST node",
+  "user": {
+    "login": "michprev",
+    "id": 7281754,
+    "node_id": "MDQ6VXNlcjcyODE3NTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7281754?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/michprev",
+    "html_url": "https://github.com/michprev",
+    "followers_url": "https://api.github.com/users/michprev/followers",
+    "following_url": "https://api.github.com/users/michprev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/michprev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/michprev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/michprev/subscriptions",
+    "organizations_url": "https://api.github.com/users/michprev/orgs",
+    "repos_url": "https://api.github.com/users/michprev/repos",
+    "events_url": "https://api.github.com/users/michprev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/michprev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-07-18T12:43:31Z",
+  "updated_at": "2022-07-18T12:43:31Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Description\r\n\r\nByte location (src) of the `FunctionTypeName` AST node is incorrect when combined with the `VariableDeclaration` parent node.\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.15+commit.e14f2714.Linux.g++\r\n- Target EVM version (as per compiler settings): default\r\n- Framework/IDE (e.g. Truffle or Remix): not relevant\r\n- EVM execution environment / backend / blockchain client: not relevant\r\n- Operating system: Linux OS\r\n\r\n## Steps to Reproduce\r\n\r\nPlease consider the following example (taken from https://docs.soliditylang.org/en/v0.8.15/assembly.html#access-to-external-variables-functions-and-libraries):\r\n\r\n```solidity\r\n// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.10 <0.9.0;\r\n\r\ncontract C {\r\n    // Assigns a new selector and address to the return variable @fun                           The problem is here: ▼▼▼\r\n    function combineToFunctionPointer(address newAddress, uint newSelector) public pure returns (function() external fun) {\r\n        assembly {\r\n            fun.selector := newSelector\r\n            fun.address  := newAddress\r\n        }\r\n    }\r\n}\r\n```\r\n\r\nAnd the relevant part of the generated AST (return parameters of the `combineToFunctionPointer` function):\r\n```\r\n\"returnParameters\":{\r\n   \"id\":11,\r\n   \"nodeType\":\"ParameterList\",\r\n   \"parameters\":[\r\n      {\r\n         \"constant\":false,\r\n         \"id\":10,\r\n         \"mutability\":\"mutable\",\r\n         \"name\":\"fun\",\r\n         \"nameLocation\":\"270:3:0\",\r\n         \"nodeType\":\"VariableDeclaration\",\r\n         \"scope\":14,\r\n         \"src\":\"250:23:0\",\r\n         \"stateVariable\":false,\r\n         \"storageLocation\":\"default\",\r\n         \"typeDescriptions\":{\r\n            \"typeIdentifier\":\"t_function_external_nonpayable$__$returns$__$\",\r\n            \"typeString\":\"function () external\"\r\n         },\r\n         \"typeName\":{\r\n            \"id\":9,\r\n            \"nodeType\":\"FunctionTypeName\",\r\n            \"parameterTypes\":{\r\n               \"id\":7,\r\n               \"nodeType\":\"ParameterList\",\r\n               \"parameters\":[\r\n                  \r\n               ],\r\n               \"src\":\"258:2:0\"\r\n            },\r\n            \"returnParameterTypes\":{\r\n               \"id\":8,\r\n               \"nodeType\":\"ParameterList\",\r\n               \"parameters\":[\r\n                  \r\n               ],\r\n               \"src\":\"270:0:0\"\r\n            },\r\n            \"src\":\"250:23:0\",\r\n            \"stateMutability\":\"nonpayable\",\r\n            \"typeDescriptions\":{\r\n               \"typeIdentifier\":\"t_function_external_nonpayable$__$returns$__$\",\r\n               \"typeString\":\"function () external\"\r\n            },\r\n            \"visibility\":\"external\"\r\n         },\r\n         \"visibility\":\"internal\"\r\n      }\r\n   ],\r\n```\r\n\r\n### Current behavior:\r\n`src` of the `FunctionTypeName` node (AST ID 9) is `250:23:0`.\r\n\r\n### Expected behavior:\r\n`src` of the `FunctionTypeName` node (AST ID 9) should be `250:19:0`.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13281/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13281/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

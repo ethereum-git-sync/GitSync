@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/74",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/74/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/74/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/74/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/74",
+  "id": 666032350,
+  "node_id": "MDU6SXNzdWU2NjYwMzIzNTA=",
+  "number": 74,
+  "title": "setCompilerConfig should return a promise which resolve when the compiler is actually loaded.",
+  "user": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 2233124974,
+      "node_id": "MDU6TGFiZWwyMjMzMTI0OTc0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/plugins",
+      "name": "plugins",
+      "color": "ddb87c",
+      "default": false,
+      "description": "internal & external plugins' issues"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2020-06-02T14:41:04Z",
+  "updated_at": "2020-07-27T06:58:24Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/74/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/74/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/638058185",
+    "html_url": "https://github.com/ethereum/remix-project/issues/74#issuecomment-638058185",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/74",
+    "id": 638058185,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDYzODA1ODE4NQ==",
+    "user": {
+      "login": "yann300",
+      "id": 6940742,
+      "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/yann300",
+      "html_url": "https://github.com/yann300",
+      "followers_url": "https://api.github.com/users/yann300/followers",
+      "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+      "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+      "organizations_url": "https://api.github.com/users/yann300/orgs",
+      "repos_url": "https://api.github.com/users/yann300/repos",
+      "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/yann300/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2020-06-03T08:52:07Z",
+    "updated_at": "2020-06-03T08:52:07Z",
+    "author_association": "MEMBER",
+    "body": "The function from the compiler which load a new version should return a promise which resolve when the compiled is loaded, instead of having to \"setInterval\"..",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/638058185/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11509",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11509/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11509/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11509/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11509",
+  "id": 916152358,
+  "node_id": "MDU6SXNzdWU5MTYxNTIzNTg=",
+  "number": 11509,
+  "title": "Create an up-to-date \"Tour of Solidity\"",
+  "user": {
+    "login": "franzihei",
+    "id": 41991517,
+    "node_id": "MDQ6VXNlcjQxOTkxNTE3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/41991517?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/franzihei",
+    "html_url": "https://github.com/franzihei",
+    "followers_url": "https://api.github.com/users/franzihei/followers",
+    "following_url": "https://api.github.com/users/franzihei/following{/other_user}",
+    "gists_url": "https://api.github.com/users/franzihei/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/franzihei/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/franzihei/subscriptions",
+    "organizations_url": "https://api.github.com/users/franzihei/orgs",
+    "repos_url": "https://api.github.com/users/franzihei/repos",
+    "events_url": "https://api.github.com/users/franzihei/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/franzihei/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 275027668,
+      "node_id": "MDU6TGFiZWwyNzUwMjc2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/documentation%20:book:",
+      "name": "documentation :book:",
+      "color": "006b75",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1701358792,
+      "node_id": "MDU6TGFiZWwxNzAxMzU4Nzky",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/outsourceable",
+      "name": "outsourceable",
+      "color": "0052cc",
+      "default": false,
+      "description": "Needs little knowledge about the code base and can be done by externals."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-06-09T12:36:21Z",
+  "updated_at": "2021-06-09T12:37:06Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "As mentioned some time ago in #9175 it would be amazing to have a \"Tour of Solidity\" to run developers learning Solidity through the most important concepts and features in a quick click-through explanatory \"course\". \r\n\r\nThe only two tours that I could find are:\r\n- Erik's Tour of Solidity: https://github.com/erak/solidity-tour\r\n- Certik's Tour of Solidity (using Sol 0.5.x): https://solidity-tour.certik.org/Basics/1\r\n\r\nBoth are quite outdated and incomplete. \r\n\r\nIt would make sense to have such a tour since we know that the main resource people use to learn are actually our docs and learning games such as CryptoZombies.\r\n\r\nThis task could be outsourced or bountied possibly.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11509/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11509/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

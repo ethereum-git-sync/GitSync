@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/2371",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/2371/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/2371/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/2371/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/2371",
+  "id": 1228691566,
+  "node_id": "I_kwDODtLRw85JPFhu",
+  "number": 2371,
+  "title": "Contract interaction: nonsensical conversion of input to boolean. Defaults to true",
+  "user": {
+    "login": "php4fan",
+    "id": 13969584,
+    "node_id": "MDQ6VXNlcjEzOTY5NTg0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13969584?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/php4fan",
+    "html_url": "https://github.com/php4fan",
+    "followers_url": "https://api.github.com/users/php4fan/followers",
+    "following_url": "https://api.github.com/users/php4fan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/php4fan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/php4fan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/php4fan/subscriptions",
+    "organizations_url": "https://api.github.com/users/php4fan/orgs",
+    "repos_url": "https://api.github.com/users/php4fan/repos",
+    "events_url": "https://api.github.com/users/php4fan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/php4fan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-05-07T18:21:44Z",
+  "updated_at": "2022-05-07T18:21:44Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "### Steps to Reproduce\r\n\r\n1. Deploy a contract that has a function that accepts a boolean parameter\r\n2. Try to interact with that function. Enter anything for the parameter value\r\n\r\n### Expected Behavior\r\n\r\nThe value that I type into the boolean field should be converted to boolean according to the following rules:\r\n\r\n- \"true\" and \"TRUE\" should translate to boolean value true\r\n- \"false\" and \"FALSE\" should translate to boolean value false\r\n- Any valid representation of the numbers 1 and 0 (e.g. \"1\", \"0\", \"0x1\", \"0x0\" and I don't know if I'm forgetting any) should translate to 1 and 0 respectively\r\n\r\nFor anything else, the correct behavior should be to show an error at the client-most javascript level, and **not allow** me to send anything. The second-best acceptable behavior is to interpret **anything else as false**.\r\n\r\n### Actual Behavior\r\n\r\nThe string \"false\" is converted to boolean value false; **EVERYTHING ELSE** is **SILENTLY** converted to boolean **true**.\r\n\r\nIf I enter \"kljbsdkljvs\", it is interpreted as true!\r\nIf I enter \"0\" it is interpreted as true!",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/2371/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2371/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/12136",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/12136/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/12136/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/12136/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/12136",
+  "id": 1026201400,
+  "node_id": "I_kwDOAm_5kc49Kpc4",
+  "number": 12136,
+  "title": "[SMTChecker] Try Spacer's BMC engine for SAT cases",
+  "user": {
+    "login": "leonardoalt",
+    "id": 504195,
+    "node_id": "MDQ6VXNlcjUwNDE5NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/504195?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leonardoalt",
+    "html_url": "https://github.com/leonardoalt",
+    "followers_url": "https://api.github.com/users/leonardoalt/followers",
+    "following_url": "https://api.github.com/users/leonardoalt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leonardoalt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leonardoalt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leonardoalt/subscriptions",
+    "organizations_url": "https://api.github.com/users/leonardoalt/orgs",
+    "repos_url": "https://api.github.com/users/leonardoalt/repos",
+    "events_url": "https://api.github.com/users/leonardoalt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leonardoalt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-14T09:58:24Z",
+  "updated_at": "2021-10-14T09:58:24Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Currently we first run Spacer with preprocessing enabled (which doesn't give us counterexamples), and if it answers SAT, we run it again without preprocessing to get counterexamples. If the second answer is also SAT, great, we get counterexamples. In case the problem without preprocessing is too hard, we use the first answer (SAT) without counterexamples. In the latter case, we can also try Spacer's BMC engine which could be better when handling SAT cases.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/12136/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12136/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

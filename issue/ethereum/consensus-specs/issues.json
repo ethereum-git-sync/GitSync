@@ -1,0 +1,6466 @@
+[
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2758,
+    "title": "Withdrawals tracking issue",
+    "updatedAt": "2022-09-19T18:12:43Z"
+  },
+  {
+    "author": {
+      "login": "Jiggnubs"
+    },
+    "number": 2996,
+    "title": "Join",
+    "updatedAt": "2022-09-18T06:02:25Z"
+  },
+  {
+    "author": {
+      "login": "Zagal435"
+    },
+    "number": 2994,
+    "title": "ALZAGHAL",
+    "updatedAt": "2022-09-16T11:02:50Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2986,
+    "title": "Add reference test for invalid deposit with unparsable public key",
+    "updatedAt": "2022-09-15T11:33:49Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2992,
+    "title": "Clarify `Fork` to use in gossip validation rules",
+    "updatedAt": "2022-09-15T03:27:18Z"
+  },
+  {
+    "author": {
+      "login": "Jacobtarango1996"
+    },
+    "number": 2991,
+    "title": "Main issue",
+    "updatedAt": "2022-09-14T13:09:47Z"
+  },
+  {
+    "author": {
+      "login": "Jiggnubs"
+    },
+    "number": 2990,
+    "title": "Withdraw ",
+    "updatedAt": "2022-09-14T13:09:38Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2988,
+    "title": "`consensus-spec-tests`'s `diagnostics.json` file path",
+    "updatedAt": "2022-09-12T11:17:49Z"
+  },
+  {
+    "author": {
+      "login": "potuz"
+    },
+    "number": 2984,
+    "title": "Should we require that validators do not submit blocks after the slot has finished?",
+    "updatedAt": "2022-09-07T11:22:14Z"
+  },
+  {
+    "author": {
+      "login": "Zagal435"
+    },
+    "number": 2985,
+    "title": "ALZAGHAL",
+    "updatedAt": "2022-09-06T14:02:39Z"
+  },
+  {
+    "author": {
+      "login": "asn-d6"
+    },
+    "number": 2980,
+    "title": "EIP4844: Impove performance by avoiding merkle trees when generating KZG challenges",
+    "updatedAt": "2022-08-25T18:54:35Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2922,
+    "title": "More FC test cases",
+    "updatedAt": "2022-08-03T15:26:22Z"
+  },
+  {
+    "author": {
+      "login": "Nk185"
+    },
+    "number": 2963,
+    "title": "[Question] Finaliser can change his opinion after vote casted?",
+    "updatedAt": "2022-08-03T11:10:31Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2957,
+    "title": "[Suggestion] Use bold font format for the indicating requirement keywords",
+    "updatedAt": "2022-07-27T17:07:22Z"
+  },
+  {
+    "author": {
+      "login": "JurbinM"
+    },
+    "number": 2946,
+    "title": "NoProblem",
+    "updatedAt": "2022-07-21T13:54:07Z"
+  },
+  {
+    "author": {
+      "login": "zsharifian"
+    },
+    "number": 2936,
+    "title": "Need help for beacon simulation",
+    "updatedAt": "2022-07-18T06:31:20Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 2919,
+    "title": "Add diagnostics to spec test output",
+    "updatedAt": "2022-07-15T15:01:32Z"
+  },
+  {
+    "author": {
+      "login": "dapplion"
+    },
+    "number": 2934,
+    "title": "partial withdrawals if not excess balance",
+    "updatedAt": "2022-07-07T08:19:44Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2923,
+    "title": "Set genesis checkpoint roots to `Root()` in `get_forkchoice_store`",
+    "updatedAt": "2022-06-25T00:08:29Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 2566,
+    "title": "Issues with fork choice and non-genesis anchors",
+    "updatedAt": "2022-06-24T22:41:36Z"
+  },
+  {
+    "author": {
+      "login": "marioevz"
+    },
+    "number": 2920,
+    "title": "Name discrepancy between spec and presets for WITHDRAWAL_QUEUE_LIMIT",
+    "updatedAt": "2022-06-23T22:38:55Z"
+  },
+  {
+    "author": {
+      "login": "creaider"
+    },
+    "number": 2917,
+    "title": "Ethspec",
+    "updatedAt": "2022-06-21T13:19:07Z"
+  },
+  {
+    "author": {
+      "login": "nisdas"
+    },
+    "number": 2163,
+    "title": "Use only Eth1 ChainID  ",
+    "updatedAt": "2022-06-20T15:30:30Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 2842,
+    "title": "Light client sync spec tests",
+    "updatedAt": "2022-06-16T12:15:32Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1548,
+    "title": "Expose a constant that defines the genesis Fork",
+    "updatedAt": "2022-06-14T17:25:41Z"
+  },
+  {
+    "author": {
+      "login": "hartonosugi792"
+    },
+    "number": 2910,
+    "title": "Acceptable Certification",
+    "updatedAt": "2022-06-08T15:12:31Z"
+  },
+  {
+    "author": {
+      "login": "hartonosugi792"
+    },
+    "number": 2908,
+    "title": "ADOPTED ETH2 DEPOSIT CONTRACT; ETHERIUM ECOSYSTEM ADOPTED AS GLOBAL FINANCIAL SYSTEM FOR KEEP TREATIES INTERNATIONAL AGREEMENTS AND TREATIES INTERNATIONAL TRANSACTIONS OF THE WORLD CENTRAL BANK BY LEGAL STANDING OF THE WORLD KINGDOM EMPIRE (UN~SWISSINDO MERGER AS REPRESENT ALL OF YOU) GENERAL MANAGEMENT MERGER AUTHORITY WITH OVER BOOKING OF THE HSBC-INVESTMENT USAGE, INSTRUMENT OF CASH FUND WITH AMOUNT OF USD. 9900 TRILLION IS FINAL ON OCTOBER  20, 2021. BLOCKCHAIN CRYPTOCURRENCY ACCEPTED AND RATIFIED.",
+    "updatedAt": "2022-06-07T21:03:12Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 2909,
+    "title": "Need to update `get_validator_from_deposit` for `capella` fork",
+    "updatedAt": "2022-06-07T20:43:17Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2905,
+    "title": "Partial withdrawals for all or just active (& not slashed) validators",
+    "updatedAt": "2022-06-07T14:47:13Z"
+  },
+  {
+    "author": {
+      "login": "tersec"
+    },
+    "number": 2902,
+    "title": "Multiple fork transitions on same slot/epoch discard old `fork_version`s",
+    "updatedAt": "2022-05-27T08:27:56Z"
+  },
+  {
+    "author": {
+      "login": "jtraglia"
+    },
+    "number": 2886,
+    "title": "`milagro_bls_binding` fails to install on arm64",
+    "updatedAt": "2022-05-15T00:26:47Z"
+  },
+  {
+    "author": {
+      "login": "jiivii252"
+    },
+    "number": 2885,
+    "title": "How about referal, airdrop,baunty i am..help informasion.",
+    "updatedAt": "2022-05-04T16:22:30Z"
+  },
+  {
+    "author": {
+      "login": "darrenlangley"
+    },
+    "number": 2883,
+    "title": "EJECTION_BALANCE review: improving UX, risk, and decentralisation",
+    "updatedAt": "2022-05-04T02:04:58Z"
+  },
+  {
+    "author": {
+      "login": "jonathanpwang"
+    },
+    "number": 2874,
+    "title": "Beacon chain spec: compute_domain is using big Endian format",
+    "updatedAt": "2022-04-29T20:05:39Z"
+  },
+  {
+    "author": {
+      "login": "Limpisey168"
+    },
+    "number": 2867,
+    "title": " ​#​ ​Phase 0 -- The Beacon Chain ",
+    "updatedAt": "2022-04-29T11:41:54Z"
+  },
+  {
+    "author": {
+      "login": "nathan-at-least"
+    },
+    "number": 2871,
+    "title": "Request: describe where to contribute to design discussions & issues.",
+    "updatedAt": "2022-04-12T23:53:27Z"
+  },
+  {
+    "author": {
+      "login": "nathan-at-least"
+    },
+    "number": 2866,
+    "title": "Request: Add rationales section.",
+    "updatedAt": "2022-04-12T23:50:35Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 943,
+    "title": "Make rewards transparent",
+    "updatedAt": "2022-04-01T07:20:15Z"
+  },
+  {
+    "author": {
+      "login": "lightuponlight"
+    },
+    "number": 1784,
+    "title": "Change on maximum ETH issuance starting with phase 1",
+    "updatedAt": "2022-03-31T22:26:08Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2865,
+    "title": "Add minimal unit tests for safe block functions",
+    "updatedAt": "2022-03-30T18:05:44Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2749,
+    "title": "Proposed attnets revamp",
+    "updatedAt": "2022-03-27T22:21:40Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2852,
+    "title": "EIP-4844 tracking",
+    "updatedAt": "2022-03-14T20:45:22Z"
+  },
+  {
+    "author": {
+      "login": "uink45"
+    },
+    "number": 2819,
+    "title": "Rename repository name to \"Consensus Layer Specification\"",
+    "updatedAt": "2022-02-24T19:35:25Z"
+  },
+  {
+    "author": {
+      "login": "dapplion"
+    },
+    "number": 2825,
+    "title": "phase0/epoch_processing updated_participation_record spec test has wrong bits len",
+    "updatedAt": "2022-02-05T12:11:40Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2824,
+    "title": "Remove PendingAttestation ssz_static tests from Altair and Bellatrix",
+    "updatedAt": "2022-02-04T04:18:51Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2813,
+    "title": "Missing bellatrix random test-gen",
+    "updatedAt": "2022-01-28T13:30:05Z"
+  },
+  {
+    "author": {
+      "login": "dangerousfood"
+    },
+    "number": 221,
+    "title": "PoW chain contract does not compile in the latest version of Vyper",
+    "updatedAt": "2022-01-21T23:58:14Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 2809,
+    "title": "Additional SSZ test case",
+    "updatedAt": "2022-01-18T21:38:35Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 2761,
+    "title": "Double check linting settings",
+    "updatedAt": "2022-01-18T15:29:54Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2780,
+    "title": "CI updates: add Python 3.10 and drop Python 3.8 support",
+    "updatedAt": "2022-01-11T20:42:43Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 1852,
+    "title": "Keystore finalization",
+    "updatedAt": "2021-12-31T12:25:56Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2775,
+    "title": "Generate Bellatrix (Merge) fork test vectors",
+    "updatedAt": "2021-12-27T10:37:15Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 2732,
+    "title": "Nodes may get stuck due to parent availability issue with transition block",
+    "updatedAt": "2021-12-22T18:22:15Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 2735,
+    "title": "CL reaction to SYNCING response status post-Merge",
+    "updatedAt": "2021-12-22T17:57:16Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2138,
+    "title": "SSZ implementations list",
+    "updatedAt": "2021-12-11T14:12:14Z"
+  },
+  {
+    "author": {
+      "login": "mcdee"
+    },
+    "number": 1543,
+    "title": "\"Exit and Transfer\" operation",
+    "updatedAt": "2021-12-08T18:00:01Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 2636,
+    "title": "Clarification on `get_pow_block`",
+    "updatedAt": "2021-12-08T10:29:55Z"
+  },
+  {
+    "author": {
+      "login": "realbigsean"
+    },
+    "number": 2757,
+    "title": "Applying proposer boost to ancestors",
+    "updatedAt": "2021-12-07T09:55:30Z"
+  },
+  {
+    "author": {
+      "login": "AgeManning"
+    },
+    "number": 2183,
+    "title": "Propagate seen aggregate attestations",
+    "updatedAt": "2021-11-30T00:45:34Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 2724,
+    "title": "EL clients require TTD to be known in advance",
+    "updatedAt": "2021-11-19T16:42:34Z"
+  },
+  {
+    "author": {
+      "login": "adiasg"
+    },
+    "number": 2725,
+    "title": "Debugger capability in tests",
+    "updatedAt": "2021-11-17T16:50:07Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2722,
+    "title": "Untested Merge spec code from coverage report",
+    "updatedAt": "2021-11-17T10:05:14Z"
+  },
+  {
+    "author": {
+      "login": "AgeManning"
+    },
+    "number": 2692,
+    "title": "Gossipsub parameter tuning",
+    "updatedAt": "2021-11-09T04:51:40Z"
+  },
+  {
+    "author": {
+      "login": "dapplion"
+    },
+    "number": 2643,
+    "title": "Add getter to ExecutionEngine to get TTD",
+    "updatedAt": "2021-11-03T10:02:07Z"
+  },
+  {
+    "author": {
+      "login": "dapplion"
+    },
+    "number": 2644,
+    "title": "Build block with empty transactions if prepare_payload fails",
+    "updatedAt": "2021-11-01T15:08:51Z"
+  },
+  {
+    "author": {
+      "login": "Cokebottlebody999"
+    },
+    "number": 2697,
+    "title": "Implementation",
+    "updatedAt": "2021-10-28T18:38:23Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 2098,
+    "title": "Better recovery from inactivity leaks",
+    "updatedAt": "2021-10-27T01:25:22Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2226,
+    "title": "Consider reducing `TARGET_AGGREGATORS_PER_COMMITTEE`",
+    "updatedAt": "2021-10-26T20:47:15Z"
+  },
+  {
+    "author": {
+      "login": "rolfyone"
+    },
+    "number": 2589,
+    "title": "Attestation ignore rule might be redundant",
+    "updatedAt": "2021-10-26T16:12:14Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2608,
+    "title": "Transaction Type representation in the Merge",
+    "updatedAt": "2021-10-21T12:55:37Z"
+  },
+  {
+    "author": {
+      "login": "zah"
+    },
+    "number": 2666,
+    "title": "Proposed mitigation against a malicious staking pool refusing to exit a validator",
+    "updatedAt": "2021-10-18T04:02:44Z"
+  },
+  {
+    "author": {
+      "login": "IcannotThinkOfAnymoreNames"
+    },
+    "number": 2675,
+    "title": "A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER",
+    "updatedAt": "2021-10-18T04:01:57Z"
+  },
+  {
+    "author": {
+      "login": "potuz"
+    },
+    "number": 2662,
+    "title": "Altair test-vectors at fork transition",
+    "updatedAt": "2021-10-15T15:38:24Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 626,
+    "title": "The integer debate",
+    "updatedAt": "2021-10-13T12:02:25Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 593,
+    "title": "Minimal Phase 0 Wire API",
+    "updatedAt": "2021-10-13T11:55:39Z"
+  },
+  {
+    "author": {
+      "login": "realbigsean"
+    },
+    "number": 2650,
+    "title": "No execution payload header in merge spec tests",
+    "updatedAt": "2021-10-07T08:22:55Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 2618,
+    "title": "Merge: beacon block gossip verification restricts forking",
+    "updatedAt": "2021-09-27T22:12:54Z"
+  },
+  {
+    "author": {
+      "login": "lsankar4033"
+    },
+    "number": 2547,
+    "title": "client setting for overriding `TOTAL_TRANSITION_DIFFICULTY`",
+    "updatedAt": "2021-09-23T13:20:25Z"
+  },
+  {
+    "author": {
+      "login": "sammiee5311"
+    },
+    "number": 2614,
+    "title": "suggestion: use custom exceptions rather than `Exception`",
+    "updatedAt": "2021-09-22T08:36:41Z"
+  },
+  {
+    "author": {
+      "login": "xanoni"
+    },
+    "number": 2549,
+    "title": "P2P: Nodes operating behind a NAT, or otherwise undialable by default [...] MUST have their infrastructure configured to enable inbound traffic ",
+    "updatedAt": "2021-09-22T07:26:27Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2603,
+    "title": "Terminal Total Difficulty calculation may differ between nodes",
+    "updatedAt": "2021-09-21T14:28:21Z"
+  },
+  {
+    "author": {
+      "login": "Besiktas19033"
+    },
+    "number": 2495,
+    "title": "## Unit Test Results",
+    "updatedAt": "2021-09-17T21:57:04Z"
+  },
+  {
+    "author": {
+      "login": "dapplion"
+    },
+    "number": 2543,
+    "title": "Optimize hashing cost in altair block processing",
+    "updatedAt": "2021-09-17T09:42:08Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2538,
+    "title": "Determine `eth2_aggregate_pubkeys([G1_POINT_AT_INFINITY])` result",
+    "updatedAt": "2021-09-16T07:12:44Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 2568,
+    "title": "Extend broad-spectrum block tests",
+    "updatedAt": "2021-09-08T13:37:03Z"
+  },
+  {
+    "author": {
+      "login": "pawanjay176"
+    },
+    "number": 2569,
+    "title": "Set disabled fork epoch values as null in yaml config",
+    "updatedAt": "2021-08-31T15:36:55Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 2553,
+    "title": "Redundancy in Altair `TIMELY_TARGET` accounting",
+    "updatedAt": "2021-08-25T22:04:13Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1578,
+    "title": "Dual-key voluntary exits",
+    "updatedAt": "2021-08-23T18:33:20Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2515,
+    "title": "Fork Choice Store Justified-Finalized Inconsistency",
+    "updatedAt": "2021-08-23T15:41:12Z"
+  },
+  {
+    "author": {
+      "login": "puffanddmx"
+    },
+    "number": 2551,
+    "title": "about eth2.0 staking",
+    "updatedAt": "2021-08-17T12:50:40Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2280,
+    "title": "Merge discussion and todos from #2257",
+    "updatedAt": "2021-08-12T13:48:14Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2546,
+    "title": "Sharding spec tracker",
+    "updatedAt": "2021-08-10T19:00:41Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2545,
+    "title": "Consider base_fee in relation to empty slots",
+    "updatedAt": "2021-08-10T14:33:54Z"
+  },
+  {
+    "author": {
+      "login": "IvanskyDev"
+    },
+    "number": 2544,
+    "title": "2.0",
+    "updatedAt": "2021-08-09T14:25:27Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 2541,
+    "title": "validator life cycle spec tests through epoch processing",
+    "updatedAt": "2021-08-06T08:57:55Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 2379,
+    "title": "Expand BLS test coverage with new functions defined in `altair`",
+    "updatedAt": "2021-07-29T13:58:47Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2527,
+    "title": "Clarify SyncCommittee aggregation behaviour when no participants are found",
+    "updatedAt": "2021-07-21T22:07:20Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2521,
+    "title": "Test util slashed-validators and proposer index collision at random",
+    "updatedAt": "2021-07-19T23:13:50Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 2512,
+    "title": "Explicitly specify state advancement in p2p spec",
+    "updatedAt": "2021-07-14T20:51:50Z"
+  },
+  {
+    "author": {
+      "login": "torfbolt"
+    },
+    "number": 2481,
+    "title": "Beacon Chain Ice Age",
+    "updatedAt": "2021-07-13T12:57:01Z"
+  },
+  {
+    "author": {
+      "login": "petertdavies"
+    },
+    "number": 2490,
+    "title": "Setup.py contains lots of hardcoded information",
+    "updatedAt": "2021-07-13T12:51:51Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 2489,
+    "title": "Bug in `is_within_weak_subjectivity_period`",
+    "updatedAt": "2021-07-13T12:51:38Z"
+  },
+  {
+    "author": {
+      "login": "booleanfunction"
+    },
+    "number": 2500,
+    "title": "Potential array-out-of-bound runtime error in get_attesting_indices",
+    "updatedAt": "2021-07-13T12:51:21Z"
+  },
+  {
+    "author": {
+      "login": "dapplion"
+    },
+    "number": 2040,
+    "title": "Allow withdrawal_credentials to point to an eth1 address",
+    "updatedAt": "2021-07-11T15:06:24Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2389,
+    "title": "Merge side-effect: duplicate execution state-root concern",
+    "updatedAt": "2021-07-07T08:34:54Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 702,
+    "title": "Things to decide for phase 2",
+    "updatedAt": "2021-07-05T15:07:41Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1135,
+    "title": "parametrize justified epoch stickiness parameter",
+    "updatedAt": "2021-07-05T15:07:28Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1340,
+    "title": "Simplifying empty epoch transitions",
+    "updatedAt": "2021-07-05T15:07:17Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1348,
+    "title": "Prevent validators from exiting when there are open bit or chunk challenges or when not all custody keys were revealed",
+    "updatedAt": "2021-07-05T15:07:03Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1376,
+    "title": "Anti-correlation slashing penalties should ideally work on a per-committee basis",
+    "updatedAt": "2021-07-05T15:06:53Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1409,
+    "title": "Unclear atomicity semantics of the beacon chain spec",
+    "updatedAt": "2021-07-05T15:06:37Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1520,
+    "title": "Fork choice maximum reversions",
+    "updatedAt": "2021-07-05T15:06:23Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1521,
+    "title": "Exit fee",
+    "updatedAt": "2021-07-05T15:06:08Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 1523,
+    "title": "Shuffling lookahead is affected by fork choice",
+    "updatedAt": "2021-07-05T15:05:54Z"
+  },
+  {
+    "author": {
+      "login": "moles1"
+    },
+    "number": 1741,
+    "title": "Trustless validator pools during phases 0 & 1",
+    "updatedAt": "2021-07-05T15:05:17Z"
+  },
+  {
+    "author": {
+      "login": "saltiniroberto"
+    },
+    "number": 1863,
+    "title": "[SSZ]  Are Lists limited to 0 values legal SSZ types?",
+    "updatedAt": "2021-07-05T15:05:02Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1897,
+    "title": "Move last chunk challenge to cleared chunk challenge to get rid of replace_empty_or_append",
+    "updatedAt": "2021-07-05T15:04:44Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1899,
+    "title": "Gold coin approach to encourage policing of custody",
+    "updatedAt": "2021-07-05T15:04:35Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1903,
+    "title": "Phase 1 Validator guide todo",
+    "updatedAt": "2021-07-05T15:04:22Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1905,
+    "title": "`custody_bits_blocks` in `Attestation`",
+    "updatedAt": "2021-07-05T15:04:12Z"
+  },
+  {
+    "author": {
+      "login": "zah"
+    },
+    "number": 1916,
+    "title": "Consider possible improvements to the SSZ spec before phase0 is launched",
+    "updatedAt": "2021-07-05T15:03:54Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 1930,
+    "title": "Consistency in key membership tests",
+    "updatedAt": "2021-07-05T15:03:39Z"
+  },
+  {
+    "author": {
+      "login": "jrhea"
+    },
+    "number": 1936,
+    "title": "Validating MAXIMUM_GOSSIP_CLOCK_DISPARITY",
+    "updatedAt": "2021-07-05T15:03:26Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1945,
+    "title": "Describe the function preconditions in comments/docstrings",
+    "updatedAt": "2021-07-05T15:03:08Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1969,
+    "title": "Consider the future of the VC/BN architecture",
+    "updatedAt": "2021-07-05T15:02:49Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2015,
+    "title": "Add `reveal_deadline_setting` for test generation",
+    "updatedAt": "2021-07-05T15:02:25Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2059,
+    "title": "Bump version to discv5.1",
+    "updatedAt": "2021-07-05T15:01:56Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 2062,
+    "title": "Add general `bls_signed_wrapper` function",
+    "updatedAt": "2021-07-05T15:01:42Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2116,
+    "title": "BlocksByRange under WS sync",
+    "updatedAt": "2021-07-05T15:01:32Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 2137,
+    "title": "Cap validator count at 1m with sortition",
+    "updatedAt": "2021-07-05T15:01:04Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 2151,
+    "title": "Predicate-based eth1 withdrawal",
+    "updatedAt": "2021-07-05T15:00:53Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 2153,
+    "title": "Stability subnets expressed in terms of validator leaves ambiguity",
+    "updatedAt": "2021-07-05T15:00:40Z"
+  },
+  {
+    "author": {
+      "login": "3esmit"
+    },
+    "number": 2100,
+    "title": "Prevent validators from being penalized when the chain is not finalizing",
+    "updatedAt": "2021-07-05T15:00:15Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 2109,
+    "title": "Fix time server attack vectors",
+    "updatedAt": "2021-07-05T14:59:46Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 2125,
+    "title": "Make inactivity leak quadratic per validator",
+    "updatedAt": "2021-07-05T14:59:35Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 2129,
+    "title": "Security vulnerabilities (possible overflows) in helper functions of Beacon Chain",
+    "updatedAt": "2021-07-05T14:59:10Z"
+  },
+  {
+    "author": {
+      "login": "pietjepuk2"
+    },
+    "number": 2161,
+    "title": "Midpoint slashing amount calculation truncates < 1 ETH penalties",
+    "updatedAt": "2021-07-05T14:58:42Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 2274,
+    "title": "Duck typing in pyspecs (upgrade_to_* functions)",
+    "updatedAt": "2021-07-05T14:58:24Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2480,
+    "title": "Improve Altair pytest coverage",
+    "updatedAt": "2021-07-02T21:32:25Z"
+  },
+  {
+    "author": {
+      "login": "zilm13"
+    },
+    "number": 2213,
+    "title": "Add operation for withdrawal_credentials change operation",
+    "updatedAt": "2021-06-27T15:12:21Z"
+  },
+  {
+    "author": {
+      "login": "nisdas"
+    },
+    "number": 2227,
+    "title": "Disallow Voting For The Current Eth1Data in State",
+    "updatedAt": "2021-06-19T07:18:39Z"
+  },
+  {
+    "author": {
+      "login": "dapplion"
+    },
+    "number": 2429,
+    "title": "Light-client feedback",
+    "updatedAt": "2021-06-13T10:07:17Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2433,
+    "title": "`sync_aggregate` vs `sync_committee` name",
+    "updatedAt": "2021-06-08T20:01:02Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2471,
+    "title": "Can't publish SyncCommitteeSignature to multiple subnets",
+    "updatedAt": "2021-06-08T19:47:06Z"
+  },
+  {
+    "author": {
+      "login": "potuz"
+    },
+    "number": 2460,
+    "title": "test_process_sync_committee.py does not have the right logic",
+    "updatedAt": "2021-06-07T22:42:09Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2414,
+    "title": "`ResourceUnavailable` details",
+    "updatedAt": "2021-06-07T22:40:09Z"
+  },
+  {
+    "author": {
+      "login": "nisdas"
+    },
+    "number": 2401,
+    "title": "Same Sync Committees Can Span Multiple Periods",
+    "updatedAt": "2021-06-07T22:39:38Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2440,
+    "title": "`epoch_processing/participation_flag_updates` test type not defined",
+    "updatedAt": "2021-06-07T21:58:59Z"
+  },
+  {
+    "author": {
+      "login": "potuz"
+    },
+    "number": 2448,
+    "title": "Sync committee rewards occur with very low frequency. ",
+    "updatedAt": "2021-06-07T21:58:42Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 407,
+    "title": "add config validity conditions",
+    "updatedAt": "2021-06-07T15:09:56Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 2369,
+    "title": "`bls.AggregatePKs` is undefined in Altair spec",
+    "updatedAt": "2021-06-07T13:18:31Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2439,
+    "title": "Incorrect state root in transition test block",
+    "updatedAt": "2021-06-02T17:13:18Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2270,
+    "title": "SSZ Union improvement proposal",
+    "updatedAt": "2021-05-28T18:20:52Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 2425,
+    "title": "Unused parameter in pyspec test code",
+    "updatedAt": "2021-05-25T16:18:56Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2315,
+    "title": "Light client specs checklist",
+    "updatedAt": "2021-05-18T14:05:55Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2397,
+    "title": "`process_sync_committee` uses incorrect sync committee for first slot of new committee period",
+    "updatedAt": "2021-05-14T16:00:21Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 2314,
+    "title": "Participation rewards are skipped for epoch prior to Altair upgrade",
+    "updatedAt": "2021-05-13T19:36:32Z"
+  },
+  {
+    "author": {
+      "login": "nisdas"
+    },
+    "number": 2403,
+    "title": "Attestations With Different Target Roots Can Be Dropped",
+    "updatedAt": "2021-05-13T16:43:48Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2318,
+    "title": "Set sync committees as part of Altair genesis",
+    "updatedAt": "2021-05-11T12:57:30Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 2392,
+    "title": "Advice in validator guide about lookahead is contradictory",
+    "updatedAt": "2021-05-10T12:59:53Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2186,
+    "title": "Spec-tests format changes [discussion]",
+    "updatedAt": "2021-05-08T10:54:45Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 2357,
+    "title": "DOMAIN_SHARD_HEADER is missing in sharding phase spec",
+    "updatedAt": "2021-05-04T19:13:29Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2375,
+    "title": "Altair rewards/penalties precision",
+    "updatedAt": "2021-05-04T15:24:08Z"
+  },
+  {
+    "author": {
+      "login": "pawanjay176"
+    },
+    "number": 2347,
+    "title": "Altair p2p MetaData should contain syncnets field",
+    "updatedAt": "2021-04-27T18:20:03Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2333,
+    "title": "Fork choice `Store` contains objects cross the spec versions",
+    "updatedAt": "2021-04-27T14:15:50Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 2360,
+    "title": "Typing problems when a container is re-defined in a superseding phase",
+    "updatedAt": "2021-04-27T14:15:18Z"
+  },
+  {
+    "author": {
+      "login": "adiasg"
+    },
+    "number": 2298,
+    "title": "Some block processing unit tests force processing of inconsistent blocks",
+    "updatedAt": "2021-04-27T13:51:47Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2324,
+    "title": "SignedContributionAndProof gossip validation does not check validator is in subcommittee",
+    "updatedAt": "2021-04-22T18:39:40Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 2335,
+    "title": "Altair sanity blocks test missing BLS setting",
+    "updatedAt": "2021-04-21T14:57:29Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2290,
+    "title": "Remove duplicate `CONFIG_NAME` from configs",
+    "updatedAt": "2021-04-20T19:14:50Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2326,
+    "title": "Use `ALTAIR_FORK_EPOCH` instead of `ALTAIR_FORK_SLOT`",
+    "updatedAt": "2021-04-20T18:58:03Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 2330,
+    "title": "Multi-period tests for `process_sync_committee_updates`",
+    "updatedAt": "2021-04-20T13:39:46Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 1932,
+    "title": "Side effects in functions",
+    "updatedAt": "2021-04-16T05:40:10Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 2004,
+    "title": "Move up slot range check in beacon attestation propagation",
+    "updatedAt": "2021-04-16T05:31:52Z"
+  },
+  {
+    "author": {
+      "login": "grasponcrypto"
+    },
+    "number": 2283,
+    "title": "Waiving inactivity penalty when network is otherwise in a very healthy state",
+    "updatedAt": "2021-04-16T05:22:33Z"
+  },
+  {
+    "author": {
+      "login": "29988122"
+    },
+    "number": 2285,
+    "title": "Linkability between client tx and client IP in ETH 2.0",
+    "updatedAt": "2021-04-15T17:25:01Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2317,
+    "title": "Should TARGET_AGGREGATORS_PER_SYNC_SUBCOMMITTEE be in config?",
+    "updatedAt": "2021-04-13T10:59:35Z"
+  },
+  {
+    "author": {
+      "login": "barnabemonnot"
+    },
+    "number": 2300,
+    "title": "Changes and errors in `process_sync_committee_contributions`",
+    "updatedAt": "2021-04-07T05:46:46Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1526,
+    "title": "Phase 1 <> testing",
+    "updatedAt": "2021-04-06T15:42:06Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1981,
+    "title": "GossipSub: disabling unused From/Seqno/Signature",
+    "updatedAt": "2021-04-06T15:38:33Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2297,
+    "title": "sync_committee_contribution_and_proof validators selection_proof signature incorrectly",
+    "updatedAt": "2021-04-05T18:05:23Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 2286,
+    "title": "Optimize Altair p2p validation order",
+    "updatedAt": "2021-04-01T17:27:32Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 2273,
+    "title": "get_sync_committee_signature is ill-defined",
+    "updatedAt": "2021-03-29T23:23:42Z"
+  },
+  {
+    "author": {
+      "login": "ajsutton"
+    },
+    "number": 2269,
+    "title": "filtered_block_tree fork choice test expected justified checkpoint to change without any new input",
+    "updatedAt": "2021-03-25T08:18:43Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 2260,
+    "title": "Beacon chain changes missing from altair/beacon-chain.md",
+    "updatedAt": "2021-03-23T22:39:22Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 2264,
+    "title": "Domains 0x08 and 0x09 missing from altair config",
+    "updatedAt": "2021-03-23T21:19:03Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 2200,
+    "title": "Correctness & Mechanised proof of the incremental tree algorithm",
+    "updatedAt": "2021-03-16T21:52:21Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2218,
+    "title": "Rename the stub protocol version \"HF1\"/\"LIGHTCLIENT_PATCH\" name to Altair",
+    "updatedAt": "2021-03-15T18:24:16Z"
+  },
+  {
+    "author": {
+      "login": "mcdee"
+    },
+    "number": 2231,
+    "title": "Consider renaming ALTAIR_* constants",
+    "updatedAt": "2021-03-15T18:17:10Z"
+  },
+  {
+    "author": {
+      "login": "kevin-chau"
+    },
+    "number": 2204,
+    "title": "Makefile warning",
+    "updatedAt": "2021-03-15T10:50:31Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2182,
+    "title": "Light client reorg mechanism",
+    "updatedAt": "2021-03-15T10:49:54Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 2174,
+    "title": "Rethink FFG target block",
+    "updatedAt": "2021-03-15T00:55:01Z"
+  },
+  {
+    "author": {
+      "login": "kevin-chau"
+    },
+    "number": 2205,
+    "title": "Deposit contract dapp test fatal error",
+    "updatedAt": "2021-03-13T04:19:42Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2191,
+    "title": "[testgen] enable HF1 testgen and temporarily disable phase 1 testgen ",
+    "updatedAt": "2021-03-10T20:13:22Z"
+  },
+  {
+    "author": {
+      "login": "ga24xoc"
+    },
+    "number": 2203,
+    "title": "Rollup-centric roadmap and 64 shards",
+    "updatedAt": "2021-03-10T20:13:13Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 2207,
+    "title": "cytoolz warnings when running `make test`",
+    "updatedAt": "2021-02-21T11:11:56Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2179,
+    "title": "merkle-proofs.md presentation",
+    "updatedAt": "2021-01-13T08:58:34Z"
+  },
+  {
+    "author": {
+      "login": "benjaminion"
+    },
+    "number": 2152,
+    "title": "Is it even worth running an Eth1 node for solo stakers in Phase 0?",
+    "updatedAt": "2021-01-05T14:51:48Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 1631,
+    "title": "whistleblower rewards",
+    "updatedAt": "2021-01-05T13:35:02Z"
+  },
+  {
+    "author": {
+      "login": "Faraj1"
+    },
+    "number": 2168,
+    "title": "ه",
+    "updatedAt": "2020-12-30T13:22:46Z"
+  },
+  {
+    "author": {
+      "login": "Faraj1"
+    },
+    "number": 2170,
+    "title": "Sleen",
+    "updatedAt": "2020-12-30T13:22:37Z"
+  },
+  {
+    "author": {
+      "login": "bvanderdrift"
+    },
+    "number": 2166,
+    "title": "README Sharding doc destroyed",
+    "updatedAt": "2020-12-27T12:53:53Z"
+  },
+  {
+    "author": {
+      "login": "benjaminion"
+    },
+    "number": 1840,
+    "title": "Is the BLS test `aggregate_na_pubkeys` correct?",
+    "updatedAt": "2020-12-22T10:20:40Z"
+  },
+  {
+    "author": {
+      "login": "blacktemplar"
+    },
+    "number": 2155,
+    "title": "Proposal: Same gossipsub ids for duplicate attestation aggregates",
+    "updatedAt": "2020-12-17T09:52:00Z"
+  },
+  {
+    "author": {
+      "login": "paulmillr"
+    },
+    "number": 2148,
+    "title": "Decide on address format",
+    "updatedAt": "2020-12-16T03:20:25Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 2065,
+    "title": "Proposal—limit the number of active validators to 2**20",
+    "updatedAt": "2020-11-30T16:20:33Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 2136,
+    "title": "Avoid creating \"computation\" overflows when not necessary",
+    "updatedAt": "2020-11-24T22:05:11Z"
+  },
+  {
+    "author": {
+      "login": "econoar"
+    },
+    "number": 2134,
+    "title": "Add a maximum date for Genesis",
+    "updatedAt": "2020-11-24T09:26:43Z"
+  },
+  {
+    "author": {
+      "login": "nisdas"
+    },
+    "number": 2132,
+    "title": "Mainnet Value of ETH1 Blocktime is Incorrect",
+    "updatedAt": "2020-11-16T17:26:15Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 2112,
+    "title": "The criterion of screening `voluntary_exit` might not be clear enough",
+    "updatedAt": "2020-11-16T02:44:40Z"
+  },
+  {
+    "author": {
+      "login": "wojiaopaidaxing"
+    },
+    "number": 2128,
+    "title": "Can pubkey and withdrawal_credentials be generated with different mnemonics?",
+    "updatedAt": "2020-11-12T01:54:23Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1894,
+    "title": "configurable genesis delay and time",
+    "updatedAt": "2020-11-08T20:40:03Z"
+  },
+  {
+    "author": {
+      "login": "SatoshiNakamotogmx"
+    },
+    "number": 2127,
+    "title": "Specks",
+    "updatedAt": "2020-11-08T03:39:52Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2123,
+    "title": "Bump pypi version to v1.0.0",
+    "updatedAt": "2020-11-06T18:06:45Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 2009,
+    "title": "Gossipsub v1.1 new parameters",
+    "updatedAt": "2020-11-04T17:43:30Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2072,
+    "title": "Bump to IETF BLS standard draft -04",
+    "updatedAt": "2020-11-04T17:41:55Z"
+  },
+  {
+    "author": {
+      "login": "alonmuroch"
+    },
+    "number": 2085,
+    "title": "Prevent validator signing far into the future attestations",
+    "updatedAt": "2020-11-04T13:36:41Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 2106,
+    "title": "Deal with non-finalization that spans more than one weak subjectivity period",
+    "updatedAt": "2020-10-30T11:31:22Z"
+  },
+  {
+    "author": {
+      "login": "dmitry-brizhinev"
+    },
+    "number": 2108,
+    "title": "Raise EJECTION_BALANCE from 16ETH to something higher",
+    "updatedAt": "2020-10-28T11:42:43Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 2111,
+    "title": "Maybe we should verify the FFG vote target in p2p beacon_aggregate_and_proof screening ",
+    "updatedAt": "2020-10-23T03:19:11Z"
+  },
+  {
+    "author": {
+      "login": "alonmuroch"
+    },
+    "number": 2105,
+    "title": "BeaconBlockBody eth1Data could be nil?",
+    "updatedAt": "2020-10-20T15:55:55Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 2084,
+    "title": "A validator may be included both in a slashing and a voluntary exit in the same block, which causes the block invalid ",
+    "updatedAt": "2020-10-16T14:40:45Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 1632,
+    "title": "Safety leak through Eth1 voting",
+    "updatedAt": "2020-10-09T08:03:46Z"
+  },
+  {
+    "author": {
+      "login": "q9f"
+    },
+    "number": 2081,
+    "title": "Deposit contract should reject invalid signatures",
+    "updatedAt": "2020-10-08T23:57:17Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 2086,
+    "title": "Simplify spec by adding safe math functions",
+    "updatedAt": "2020-10-01T12:45:48Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 2007,
+    "title": "Will something be wrong if a proposer doesn't verify the attestation's target root or beacon_block_root?",
+    "updatedAt": "2020-09-23T06:34:57Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2076,
+    "title": "Re-introduce missing SSZ tests (v0.12.3 test release)",
+    "updatedAt": "2020-09-21T21:24:50Z"
+  },
+  {
+    "author": {
+      "login": "benjaminion"
+    },
+    "number": 2018,
+    "title": "Analysis of Eth1 data votes on Medalla",
+    "updatedAt": "2020-09-21T15:41:55Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1887,
+    "title": "Store.checkpoint_states should be updated when justified_checkpoint updated",
+    "updatedAt": "2020-09-17T21:31:00Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 2055,
+    "title": "Preset/Config standard - formatting, contents, etc.",
+    "updatedAt": "2020-09-17T20:24:46Z"
+  },
+  {
+    "author": {
+      "login": "kristieguo"
+    },
+    "number": 2071,
+    "title": "Invalid deposit on ETH2",
+    "updatedAt": "2020-09-17T13:29:50Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 1977,
+    "title": "`get_forkchoice_store` needs cleanup",
+    "updatedAt": "2020-09-15T17:13:35Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2066,
+    "title": "eth2spec 0.12.2 release on pypi",
+    "updatedAt": "2020-09-15T15:53:17Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 2008,
+    "title": "Remove libp2p identify protocol",
+    "updatedAt": "2020-09-15T05:05:15Z"
+  },
+  {
+    "author": {
+      "login": "jrhea"
+    },
+    "number": 2048,
+    "title": "ENR Client Identifier",
+    "updatedAt": "2020-09-15T03:32:52Z"
+  },
+  {
+    "author": {
+      "login": "blacktemplar"
+    },
+    "number": 2039,
+    "title": "Refactor gossipsub message-id",
+    "updatedAt": "2020-09-14T17:25:35Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1978,
+    "title": "Point to the next IETF BLS signature spec release",
+    "updatedAt": "2020-09-14T17:00:19Z"
+  },
+  {
+    "author": {
+      "login": "q9f"
+    },
+    "number": 2052,
+    "title": "Clarify Deposit Contract Bytecode Generation",
+    "updatedAt": "2020-09-14T13:24:35Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 2011,
+    "title": "Standardizing default p2p ports",
+    "updatedAt": "2020-09-12T03:30:31Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1984,
+    "title": "Privacy",
+    "updatedAt": "2020-09-12T03:30:30Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 2026,
+    "title": "In fork choice, maybe we forget to obsolete the attestations with target epoch < previous epoch (which were updated into the latest message)when calculate the latest balances",
+    "updatedAt": "2020-09-10T01:11:52Z"
+  },
+  {
+    "author": {
+      "login": "imnisen"
+    },
+    "number": 1963,
+    "title": "SSZ definition serialize number unclear?",
+    "updatedAt": "2020-09-09T20:58:07Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 2028,
+    "title": "Missing trivial attestation checks for gossip propagation",
+    "updatedAt": "2020-09-09T17:08:41Z"
+  },
+  {
+    "author": {
+      "login": "montyly"
+    },
+    "number": 2025,
+    "title": "Suggestion: Limit deposit_count to be less than MAX_DEPOSIT_COUNT",
+    "updatedAt": "2020-09-09T17:04:14Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2033,
+    "title": "Shard count recap and discussion",
+    "updatedAt": "2020-09-08T07:26:54Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1768,
+    "title": "Phase 1 known issues checklist",
+    "updatedAt": "2020-09-01T15:42:39Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 2021,
+    "title": "should we distinguish the exceptions caused by invalid block or program internal errors?",
+    "updatedAt": "2020-08-25T00:52:55Z"
+  },
+  {
+    "author": {
+      "login": "rkapka"
+    },
+    "number": 2012,
+    "title": "Won't honest validators update ETH1 data every two voting periods?",
+    "updatedAt": "2020-08-24T14:45:52Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 1998,
+    "title": "Missing data.slot/target.epoch validity check in attestation propagation",
+    "updatedAt": "2020-08-21T17:09:22Z"
+  },
+  {
+    "author": {
+      "login": "lsankar4033"
+    },
+    "number": 2002,
+    "title": "Add gossip validation for attestation LMD vote + FFG vote consistency",
+    "updatedAt": "2020-08-21T17:07:55Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1592,
+    "title": "Sybil-like NTP-level attack",
+    "updatedAt": "2020-08-21T16:32:47Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1901,
+    "title": "Transition SSZ out of Eth2 specs repo, introduce new SSZ specs repo.",
+    "updatedAt": "2020-08-21T16:26:52Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1968,
+    "title": "Port Solidity deposit contract to this repo",
+    "updatedAt": "2020-08-20T13:13:00Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 1805,
+    "title": "DepositContract: get_deposit_root and get_deposit_count",
+    "updatedAt": "2020-08-13T19:27:27Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1974,
+    "title": "Phase 1 configuration invariant and minimal config",
+    "updatedAt": "2020-08-06T17:40:21Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1950,
+    "title": "Beacon chain fraud proofs",
+    "updatedAt": "2020-08-04T11:22:34Z"
+  },
+  {
+    "author": {
+      "login": "mcdee"
+    },
+    "number": 1531,
+    "title": "[Networking] Add `hello` message",
+    "updatedAt": "2020-08-03T12:50:03Z"
+  },
+  {
+    "author": {
+      "login": "jrhea"
+    },
+    "number": 1770,
+    "title": "adverse effect of sharing peers between testnets/mainnet ",
+    "updatedAt": "2020-08-03T12:44:16Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1939,
+    "title": "Deposit chain ID",
+    "updatedAt": "2020-08-03T12:42:13Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 1726,
+    "title": "DepositContract: to_little_endian_64 and its inputs",
+    "updatedAt": "2020-08-03T12:31:33Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 1728,
+    "title": "DepositContract: support EIP-165",
+    "updatedAt": "2020-08-03T12:30:50Z"
+  },
+  {
+    "author": {
+      "login": "JuliusBrain"
+    },
+    "number": 1771,
+    "title": "DepositContract: add support for reason strings in asserts.",
+    "updatedAt": "2020-08-03T12:30:32Z"
+  },
+  {
+    "author": {
+      "login": "JuliusBrain"
+    },
+    "number": 1772,
+    "title": "DepositContract:deposit function requires withdrawal_credentials to be dynamic bytes instead of bytes32.",
+    "updatedAt": "2020-08-03T12:29:48Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1973,
+    "title": "`ShardBlockHeader.body_root` is generated without the length mix-in",
+    "updatedAt": "2020-07-29T17:24:12Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 2000,
+    "title": "suggestion: How about move the effective_balance out from struct Validator?",
+    "updatedAt": "2020-07-29T07:14:19Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1877,
+    "title": "Initial shard slot number",
+    "updatedAt": "2020-07-28T16:12:02Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 1954,
+    "title": "Prysm phase 1 feedback (cont)",
+    "updatedAt": "2020-07-24T17:38:34Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 1995,
+    "title": "It seems that slashed validators may be selected to propose?",
+    "updatedAt": "2020-07-24T14:04:13Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 1959,
+    "title": "Gossip block validation allows unviable blocks to propagate",
+    "updatedAt": "2020-07-23T17:21:20Z"
+  },
+  {
+    "author": {
+      "login": "booleanfunction"
+    },
+    "number": 1893,
+    "title": "the Merkleization section of simple-serialize.md",
+    "updatedAt": "2020-07-23T17:10:18Z"
+  },
+  {
+    "author": {
+      "login": "rauljordan"
+    },
+    "number": 1931,
+    "title": "Allow Only Snappy-Compressed Encoding",
+    "updatedAt": "2020-07-23T16:24:37Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1983,
+    "title": "placeholder",
+    "updatedAt": "2020-07-23T16:11:22Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1972,
+    "title": "Switch to 64 bit field elements for data availability checks",
+    "updatedAt": "2020-07-21T22:08:09Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1344,
+    "title": "Economic calculator for Eth2.0",
+    "updatedAt": "2020-07-21T13:15:05Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1713,
+    "title": "Invalid empty attestation signatures consensus split",
+    "updatedAt": "2020-07-20T15:04:09Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 1964,
+    "title": "Add finalized descendant check to `beacon_block` pubsub ",
+    "updatedAt": "2020-07-14T14:24:53Z"
+  },
+  {
+    "author": {
+      "login": "saarshah"
+    },
+    "number": 1965,
+    "title": "How to deploy smart contract",
+    "updatedAt": "2020-07-13T10:59:32Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1923,
+    "title": "get_custody_atoms: avoid application of modulo operation (%) to a negative value",
+    "updatedAt": "2020-07-02T15:37:17Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1890,
+    "title": "Proposed conventions for talking about multiples of epochs",
+    "updatedAt": "2020-07-01T16:13:44Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 1941,
+    "title": "Eliminate `get_beacon_proposer_index` call in `process_randao`",
+    "updatedAt": "2020-06-29T16:38:11Z"
+  },
+  {
+    "author": {
+      "login": "Nashatyrev"
+    },
+    "number": 1819,
+    "title": "Snappy frames delimiter wanted",
+    "updatedAt": "2020-06-25T12:07:13Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 1881,
+    "title": "Incorrect usage of `shard_transition.shard_data_roots` in `process_crosslink_for_shard`",
+    "updatedAt": "2020-06-24T03:21:24Z"
+  },
+  {
+    "author": {
+      "login": "booleanfunction"
+    },
+    "number": 1892,
+    "title": "SSZ spec: Merkleization - Typo in wording",
+    "updatedAt": "2020-06-23T18:51:40Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1883,
+    "title": "AssertionError during on_attestation if an attestation references a new target checkpoint",
+    "updatedAt": "2020-06-22T17:38:41Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 1850,
+    "title": "Prysm phase 1 feedback",
+    "updatedAt": "2020-06-21T22:31:44Z"
+  },
+  {
+    "author": {
+      "login": "kelbel1894"
+    },
+    "number": 1918,
+    "title": "Mastertakeover ",
+    "updatedAt": "2020-06-18T12:07:38Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1908,
+    "title": "Type error in `process_custody_game_operations` when invoking `process_chuck_challenge`",
+    "updatedAt": "2020-06-18T04:29:32Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 1891,
+    "title": "on_block(b) and (store) progress",
+    "updatedAt": "2020-06-18T00:12:22Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 1541,
+    "title": "Update of state missing in process_deposit?",
+    "updatedAt": "2020-06-17T23:04:05Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 1797,
+    "title": "Use of `assert` to validate method arguments",
+    "updatedAt": "2020-06-17T23:02:47Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 1695,
+    "title": "Bug in get_next_power_of_2",
+    "updatedAt": "2020-06-17T20:47:21Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1846,
+    "title": "Balance eligibility previous+1 vs current epoch",
+    "updatedAt": "2020-06-17T19:15:57Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1825,
+    "title": "Possible beacon chain changes for phase 1",
+    "updatedAt": "2020-06-17T17:31:44Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1865,
+    "title": "Add tests for `compute_fork_digest` and `compute_subnet_for_attestation`",
+    "updatedAt": "2020-06-17T12:52:20Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 864,
+    "title": "Custody game checklist",
+    "updatedAt": "2020-06-17T12:19:18Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1888,
+    "title": "Change to 2^14 epoch custody periods",
+    "updatedAt": "2020-06-16T16:41:00Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1898,
+    "title": "Incentive for the whisteblower of valid `CustodySlashing`",
+    "updatedAt": "2020-06-16T15:45:27Z"
+  },
+  {
+    "author": {
+      "login": "kladkogex"
+    },
+    "number": 1873,
+    "title": "Security:  A malicious proposer can successfully avoid slashing (?)",
+    "updatedAt": "2020-06-11T08:39:30Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 1874,
+    "title": "Slashings across multiple fork versions",
+    "updatedAt": "2020-06-08T23:56:48Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1849,
+    "title": "Tunable genesis time",
+    "updatedAt": "2020-06-02T20:19:14Z"
+  },
+  {
+    "author": {
+      "login": "nisdas"
+    },
+    "number": 1848,
+    "title": "Finalized Root In Genesis Is Not Clarified",
+    "updatedAt": "2020-06-02T20:13:03Z"
+  },
+  {
+    "author": {
+      "login": "kladkogex"
+    },
+    "number": 1860,
+    "title": "Slashing  penalty needs to depend on multiplicity of offending messages",
+    "updatedAt": "2020-06-02T16:23:15Z"
+  },
+  {
+    "author": {
+      "login": "nisdas"
+    },
+    "number": 1841,
+    "title": "Attester Slashing Spec Test Has Bad Signatures",
+    "updatedAt": "2020-05-23T14:10:11Z"
+  },
+  {
+    "author": {
+      "login": "q9f"
+    },
+    "number": 1839,
+    "title": "eth1 follow distance is greater than default pruning history",
+    "updatedAt": "2020-05-22T12:50:50Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1761,
+    "title": "Gossipsub v1.1 peerscoring of \"Invalid Messages\" might be problematic",
+    "updatedAt": "2020-05-20T18:49:12Z"
+  },
+  {
+    "author": {
+      "login": "q9f"
+    },
+    "number": 1832,
+    "title": "Clarify whether ETH1_FOLLOW_DISTANCE applies to all ETH1 related events",
+    "updatedAt": "2020-05-20T18:45:48Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1370,
+    "title": "Inactivity penalty for participating validators might be too high",
+    "updatedAt": "2020-05-20T17:15:57Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1760,
+    "title": "Double (invalid) slashing tests",
+    "updatedAt": "2020-05-19T21:43:43Z"
+  },
+  {
+    "author": {
+      "login": "booleanfunction"
+    },
+    "number": 1787,
+    "title": "bitfield_bytes(bits) should return chunks",
+    "updatedAt": "2020-05-19T17:39:48Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1408,
+    "title": "Attestation validation differences between fork choice and process_attestation",
+    "updatedAt": "2020-05-19T17:27:03Z"
+  },
+  {
+    "author": {
+      "login": "prestonvanloon"
+    },
+    "number": 1798,
+    "title": "BLS link points to expired draft",
+    "updatedAt": "2020-05-18T13:39:45Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1472,
+    "title": "Sparse Merkle Trees (SMTs) designs",
+    "updatedAt": "2020-05-17T15:39:09Z"
+  },
+  {
+    "author": {
+      "login": "kladkogex"
+    },
+    "number": 1786,
+    "title": "[BUG_BOUNTY] Recovery mechanisms from multiple-proposal-flood-attack need to be specified in the spec",
+    "updatedAt": "2020-05-15T10:48:19Z"
+  },
+  {
+    "author": {
+      "login": "jrhea"
+    },
+    "number": 1777,
+    "title": "ATTESTATION_SUBNET_COUNT should be dynamic",
+    "updatedAt": "2020-05-14T20:29:21Z"
+  },
+  {
+    "author": {
+      "login": "fred-wang"
+    },
+    "number": 1808,
+    "title": "Consider IANA registration of URI Scheme for ethereum? ",
+    "updatedAt": "2020-05-14T09:55:53Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1765,
+    "title": "Clarifying `BlocksByRange`",
+    "updatedAt": "2020-05-11T18:03:25Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1792,
+    "title": "gossipsub v1.1 and extended validators",
+    "updatedAt": "2020-05-11T18:03:11Z"
+  },
+  {
+    "author": {
+      "login": "kladkogex"
+    },
+    "number": 1776,
+    "title": "[Bug Bounty] Committee selection can fork leading to multiple concurrent committees",
+    "updatedAt": "2020-05-10T21:56:15Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 1789,
+    "title": "Missing assert in state_transition?",
+    "updatedAt": "2020-05-08T21:53:43Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1456,
+    "title": "Problems with attestations from incompatible forks",
+    "updatedAt": "2020-05-07T15:41:25Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1636,
+    "title": "Fork choice: checking FFG source/target",
+    "updatedAt": "2020-05-07T15:41:14Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 1788,
+    "title": "Conflicting definitions of BeaconBlock",
+    "updatedAt": "2020-05-07T01:45:07Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1791,
+    "title": "Bump eth2spec to v0.11.2",
+    "updatedAt": "2020-05-06T22:33:47Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 1779,
+    "title": "Replace PERSISTENT_COMMITTEE_PERIOD with SHARD_COMMITTEE_PERIOD",
+    "updatedAt": "2020-05-06T04:34:08Z"
+  },
+  {
+    "author": {
+      "login": "sgryphon"
+    },
+    "number": 1643,
+    "title": "Remove recursive use of BeaconBlockHeader.StateRoot inside state",
+    "updatedAt": "2020-05-04T16:45:41Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1280,
+    "title": "Rewards on shards",
+    "updatedAt": "2020-05-04T12:28:28Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 1778,
+    "title": "is the get_total_active_balance() at current epoch designed even handling previous justification? ",
+    "updatedAt": "2020-05-02T01:12:41Z"
+  },
+  {
+    "author": {
+      "login": "jrhea"
+    },
+    "number": 1774,
+    "title": "Spec clarification: attnet ENR field updates",
+    "updatedAt": "2020-05-01T04:29:20Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 1759,
+    "title": "Robustness of eth2 clients to the eth1 node",
+    "updatedAt": "2020-05-01T02:48:28Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1194,
+    "title": "Inefficiencies in data availability proofs",
+    "updatedAt": "2020-04-29T06:43:03Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1474,
+    "title": "minimal testnet config",
+    "updatedAt": "2020-04-28T16:28:15Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1352,
+    "title": "Add tests for executable validator guide",
+    "updatedAt": "2020-04-28T12:07:54Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1429,
+    "title": "New shard proposal issues",
+    "updatedAt": "2020-04-28T12:07:19Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1211,
+    "title": "Phase 1 shard blocks checklist",
+    "updatedAt": "2020-04-28T12:06:39Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1764,
+    "title": "Eth1 follow distance not respected",
+    "updatedAt": "2020-04-28T08:31:14Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1387,
+    "title": "Unified slashing condition for equivocations",
+    "updatedAt": "2020-04-27T16:12:03Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 1750,
+    "title": "It would be great if we could clarify the types of the constants in the beacon chain \"Misc\" and other parts",
+    "updatedAt": "2020-04-24T06:41:58Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1129,
+    "title": "Deposit contract checklist",
+    "updatedAt": "2020-04-22T15:56:39Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1183,
+    "title": "Validator address checksums",
+    "updatedAt": "2020-04-21T21:23:09Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1342,
+    "title": "Quantum-secure backup infrastructure for BLS signatures",
+    "updatedAt": "2020-04-21T16:06:43Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1080,
+    "title": "Use Legendre as a PRF for the proof of custody",
+    "updatedAt": "2020-04-21T15:15:13Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1356,
+    "title": "Deposit-related standardisation checklist",
+    "updatedAt": "2020-04-21T15:13:41Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 1735,
+    "title": "is verifying max number of indices necessary",
+    "updatedAt": "2020-04-21T14:17:04Z"
+  },
+  {
+    "author": {
+      "login": "raulk"
+    },
+    "number": 1335,
+    "title": "Networking: protocol advertisement in discv5",
+    "updatedAt": "2020-04-21T13:21:55Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 701,
+    "title": "CBCification",
+    "updatedAt": "2020-04-21T12:56:58Z"
+  },
+  {
+    "author": {
+      "login": "prestonvanloon"
+    },
+    "number": 1195,
+    "title": "Missing BLS verification spec tests",
+    "updatedAt": "2020-04-21T12:41:30Z"
+  },
+  {
+    "author": {
+      "login": "sgryphon"
+    },
+    "number": 1644,
+    "title": "Inconsistency in BeaconBlockHeader.StateRoot for skipped slots vs block slots",
+    "updatedAt": "2020-04-21T08:16:20Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1701,
+    "title": "Clarity on `uint` overflow",
+    "updatedAt": "2020-04-21T08:03:06Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 1733,
+    "title": "missing check on one case of surrounding votes?",
+    "updatedAt": "2020-04-20T22:33:50Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1378,
+    "title": "Update the proof of custody construction using inputs from the Khovratovich audit",
+    "updatedAt": "2020-04-20T16:41:33Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1700,
+    "title": "Finding peers of correct chain before genesis",
+    "updatedAt": "2020-04-20T16:38:14Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 1734,
+    "title": "when verifying attestation slashing, should check two slashings are not identical?",
+    "updatedAt": "2020-04-20T08:50:09Z"
+  },
+  {
+    "author": {
+      "login": "jrhea"
+    },
+    "number": 1688,
+    "title": "Networking Spec Review for Light Clients",
+    "updatedAt": "2020-04-17T08:34:29Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1727,
+    "title": "Gossip snappy format",
+    "updatedAt": "2020-04-16T20:45:13Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1723,
+    "title": "[0.11.1] Add Ping, MetaData, and GetMetaData to the protocol",
+    "updatedAt": "2020-04-10T01:17:38Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1722,
+    "title": "[0.11.1] Remove unnecessary clock disparity check",
+    "updatedAt": "2020-04-10T01:17:32Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1721,
+    "title": "[0.11.1] Shift IP-related ENR fields to optional",
+    "updatedAt": "2020-04-10T01:17:24Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1720,
+    "title": "[0.11.1] Remove IK Handshake and XXFallback from p2p spec",
+    "updatedAt": "2020-04-10T01:17:17Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1719,
+    "title": "[0.11.1] Clarify proposer_index in block gossip",
+    "updatedAt": "2020-04-10T01:16:50Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1718,
+    "title": "[0.11.1] Attestation reward summation bug",
+    "updatedAt": "2020-04-10T01:16:43Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1717,
+    "title": "[0.11.1] Do not require non-aggregators to subscribe to attestation subnets",
+    "updatedAt": "2020-04-10T01:16:35Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1716,
+    "title": "[0.11.1] Avoid divide by zero in extreme balance case",
+    "updatedAt": "2020-04-10T01:16:27Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1715,
+    "title": "Update to v0.11.1 spec",
+    "updatedAt": "2020-04-10T01:16:12Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1345,
+    "title": "5 ETH phase 0 bounties",
+    "updatedAt": "2020-04-02T18:15:04Z"
+  },
+  {
+    "author": {
+      "login": "franck44"
+    },
+    "number": 1630,
+    "title": "SSZ encoding/decoding for bit lists, bit vectors, recursive types.",
+    "updatedAt": "2020-03-30T11:16:29Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1690,
+    "title": "Tests for attester-slashing bitfield intersection variations",
+    "updatedAt": "2020-03-27T16:47:41Z"
+  },
+  {
+    "author": {
+      "login": "AgeManning"
+    },
+    "number": 1637,
+    "title": "Obtain ENR subnet bitfield or ENR from connected peers",
+    "updatedAt": "2020-03-27T16:32:34Z"
+  },
+  {
+    "author": {
+      "login": "MrChico"
+    },
+    "number": 1663,
+    "title": "Division by zero in `get_attestation_deltas` or wrong min value of `get_total_balance`",
+    "updatedAt": "2020-03-26T18:11:13Z"
+  },
+  {
+    "author": {
+      "login": "gnattishness"
+    },
+    "number": 1596,
+    "title": "Version information unavailable for pyspec package at runtime and in package metadata.",
+    "updatedAt": "2020-03-20T15:30:35Z"
+  },
+  {
+    "author": {
+      "login": "ksheni56"
+    },
+    "number": 1669,
+    "title": "hell0",
+    "updatedAt": "2020-03-18T14:20:00Z"
+  },
+  {
+    "author": {
+      "login": "q9f"
+    },
+    "number": 1662,
+    "title": "Adding further network configurations to config.yaml",
+    "updatedAt": "2020-03-17T17:52:35Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1101,
+    "title": "handling altered constants at forks",
+    "updatedAt": "2020-03-17T16:38:05Z"
+  },
+  {
+    "author": {
+      "login": "kevinho"
+    },
+    "number": 1572,
+    "title": "Can \"Inactivity Leaks\" handle 1/3 validators offline in the same time?",
+    "updatedAt": "2020-03-17T14:05:42Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1609,
+    "title": "Unexpected multi-deposit incentive",
+    "updatedAt": "2020-03-17T14:01:59Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1659,
+    "title": "v0.11.0 Gossip verification questions",
+    "updatedAt": "2020-03-17T14:00:27Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1570,
+    "title": "Forge aggregate attack",
+    "updatedAt": "2020-03-16T13:27:43Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1601,
+    "title": "Add `proposer_id` to BeaconBlock",
+    "updatedAt": "2020-03-11T16:04:35Z"
+  },
+  {
+    "author": {
+      "login": "sgryphon"
+    },
+    "number": 1641,
+    "title": "Storage of SignedBeaconBlock",
+    "updatedAt": "2020-03-11T14:56:35Z"
+  },
+  {
+    "author": {
+      "login": "sgryphon"
+    },
+    "number": 1642,
+    "title": "Latest Dev branch - partial change of Store to BeaconBlockHeader",
+    "updatedAt": "2020-03-11T14:55:17Z"
+  },
+  {
+    "author": {
+      "login": ""
+    },
+    "number": 1633,
+    "title": "Inactivity Penalty Quotient rationale and computation",
+    "updatedAt": "2020-02-29T15:38:17Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 1618,
+    "title": "Bug in BLS fast_aggregate_verify test vector",
+    "updatedAt": "2020-02-13T12:33:04Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1595,
+    "title": "additional attestation subnet validations for dos resistance",
+    "updatedAt": "2020-02-12T21:53:08Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1439,
+    "title": "Honest validator eth1 timestamp",
+    "updatedAt": "2020-02-08T20:17:27Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1431,
+    "title": "Eth1 voting when block_hash is junk",
+    "updatedAt": "2020-02-08T20:17:14Z"
+  },
+  {
+    "author": {
+      "login": "benjaminion"
+    },
+    "number": 1597,
+    "title": "Some of the BLS fast_aggregate_verify tests are incorrect in v0.10.1",
+    "updatedAt": "2020-01-28T01:03:48Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1574,
+    "title": "Fork choice: justified_epoch <= finalized_epoch",
+    "updatedAt": "2020-01-23T19:59:13Z"
+  },
+  {
+    "author": {
+      "login": "benjaminion"
+    },
+    "number": 1582,
+    "title": "v0.10.0 test generators use incorrect domain for deposits",
+    "updatedAt": "2020-01-23T17:03:36Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1239,
+    "title": "Make SSZ code accessible",
+    "updatedAt": "2020-01-22T18:25:45Z"
+  },
+  {
+    "author": {
+      "login": "fubuloubu"
+    },
+    "number": 1565,
+    "title": "Inconsistent merkle root algorithm in deposit contract",
+    "updatedAt": "2020-01-22T14:31:48Z"
+  },
+  {
+    "author": {
+      "login": "lucianyao"
+    },
+    "number": 1571,
+    "title": "a redundant assertion in process_attestation()",
+    "updatedAt": "2020-01-20T07:53:06Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 1576,
+    "title": "[BLS - hash_to_curve] Implicit null-byte terminated strings should be explicitly spec-ed",
+    "updatedAt": "2020-01-17T13:19:33Z"
+  },
+  {
+    "author": {
+      "login": "mslipper"
+    },
+    "number": 692,
+    "title": "Phase 0 Wire Protocol",
+    "updatedAt": "2020-01-13T09:12:52Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1445,
+    "title": "Missing test case: deposit domain != fork domain",
+    "updatedAt": "2020-01-06T17:53:12Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1537,
+    "title": "Concerns about eth1 voting in the context of caching",
+    "updatedAt": "2020-01-06T13:21:24Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1547,
+    "title": "Rename SECONDS_PER_DAY",
+    "updatedAt": "2020-01-06T13:13:21Z"
+  },
+  {
+    "author": {
+      "login": "AgeManning"
+    },
+    "number": 1528,
+    "title": "[Networking] Gossipsub content-addressed messages",
+    "updatedAt": "2020-01-03T23:55:19Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 1542,
+    "title": "is_aggregator could be false for all committee members",
+    "updatedAt": "2019-12-24T09:18:20Z"
+  },
+  {
+    "author": {
+      "login": "ChihChengLiang"
+    },
+    "number": 1533,
+    "title": "[Networking] Specify how often to request peer status",
+    "updatedAt": "2019-12-20T04:01:15Z"
+  },
+  {
+    "author": {
+      "login": "cclauss"
+    },
+    "number": 1529,
+    "title": "96 undefined names in ./deposit_contract/contracts/validator_registration.v.py",
+    "updatedAt": "2019-12-17T08:42:33Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1369,
+    "title": "CI spellcheck and toc check",
+    "updatedAt": "2019-12-16T19:19:53Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1106,
+    "title": "Expose xxHash-based state transition function for fuzzing",
+    "updatedAt": "2019-12-16T15:44:01Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1309,
+    "title": "ETH2 fee market challenges",
+    "updatedAt": "2019-12-15T22:55:32Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1231,
+    "title": "Test epoch processing rewards/penalties",
+    "updatedAt": "2019-12-15T21:44:10Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1339,
+    "title": "Cheaper signature verifcation for incoming blocks",
+    "updatedAt": "2019-12-15T21:28:05Z"
+  },
+  {
+    "author": {
+      "login": "nisdas"
+    },
+    "number": 1450,
+    "title": "Alternative G2 Co-Factor",
+    "updatedAt": "2019-12-15T20:48:53Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 1486,
+    "title": "Test coverage: attester slashings with duplicated attesting indices",
+    "updatedAt": "2019-12-12T16:43:21Z"
+  },
+  {
+    "author": {
+      "login": "sorpaas"
+    },
+    "number": 1091,
+    "title": "Explicit unhandled exceptions",
+    "updatedAt": "2019-12-12T16:17:27Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 1070,
+    "title": "Edge case issue in crosslink processing ",
+    "updatedAt": "2019-12-12T16:15:03Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1054,
+    "title": "Phase 0 state transition checklist—take 5",
+    "updatedAt": "2019-12-12T16:12:23Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1053,
+    "title": "Fork choice spec checklist",
+    "updatedAt": "2019-12-12T16:05:58Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 954,
+    "title": "Avoid invalid BeaconState in tests",
+    "updatedAt": "2019-12-12T16:00:41Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1511,
+    "title": "The dequeue process of activation queue is inefficient",
+    "updatedAt": "2019-12-12T15:56:49Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1515,
+    "title": "Proposer index edge cases to test",
+    "updatedAt": "2019-12-12T15:55:57Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1274,
+    "title": "Improved transfer replay protection, and removal of transfers in phase 0",
+    "updatedAt": "2019-12-12T15:46:27Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1277,
+    "title": "Edge case: crosslinks de-finalizing",
+    "updatedAt": "2019-12-12T15:45:56Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 1322,
+    "title": "Low amounts of collective penalties during slashing are ignored.",
+    "updatedAt": "2019-12-12T15:44:56Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 1331,
+    "title": "Choose signature aggregation dissemination strategy for mainnet",
+    "updatedAt": "2019-12-12T15:43:41Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 1332,
+    "title": "Investigate attestation validation",
+    "updatedAt": "2019-12-12T15:42:48Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1343,
+    "title": "Transfers checklist",
+    "updatedAt": "2019-12-12T15:41:18Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 1396,
+    "title": "Introduce a ZeroSig constant for the zero_signature",
+    "updatedAt": "2019-12-12T15:31:04Z"
+  },
+  {
+    "author": {
+      "login": "chenlocus"
+    },
+    "number": 1425,
+    "title": "a suggestion allowing suspension of validator waive of penalty.",
+    "updatedAt": "2019-12-12T15:29:34Z"
+  },
+  {
+    "author": {
+      "login": "mcdee"
+    },
+    "number": 1422,
+    "title": "Signature of validator `deposit` inconsistent",
+    "updatedAt": "2019-12-12T15:26:23Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1394,
+    "title": "Use attestation epoch in beacon fork choice rule",
+    "updatedAt": "2019-12-12T15:21:32Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1496,
+    "title": "Store.best_justified_checkpoint can be updated with an older checkpoint",
+    "updatedAt": "2019-12-11T17:15:33Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1501,
+    "title": "ensure epochOf(attestation.data.slot) == attestation.target.epoch",
+    "updatedAt": "2019-12-11T17:15:20Z"
+  },
+  {
+    "author": {
+      "login": "ericsson49"
+    },
+    "number": 1502,
+    "title": "genesis_time in relation to GENESIS_EPOCH and GENESIS_SLOT",
+    "updatedAt": "2019-12-10T20:47:46Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1487,
+    "title": "Signing root problems",
+    "updatedAt": "2019-12-05T21:15:50Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1436,
+    "title": "SSZ summary/expansion definition should reference signing_root",
+    "updatedAt": "2019-12-05T15:01:08Z"
+  },
+  {
+    "author": {
+      "login": "yeeacksonideo"
+    },
+    "number": 1503,
+    "title": "【Please click in and help me!!!!】How to run eth2.0???",
+    "updatedAt": "2019-12-05T13:52:36Z"
+  },
+  {
+    "author": {
+      "login": "CarlBeek"
+    },
+    "number": 1498,
+    "title": "Proofs of Possession as per IETF spec",
+    "updatedAt": "2019-12-02T08:40:18Z"
+  },
+  {
+    "author": {
+      "login": "jrhea"
+    },
+    "number": 1493,
+    "title": "possible get_validator_churn_limit() issue",
+    "updatedAt": "2019-11-26T17:42:38Z"
+  },
+  {
+    "author": {
+      "login": "rauljordan"
+    },
+    "number": 1479,
+    "title": "BytesN SSZ Alias is Misleading",
+    "updatedAt": "2019-11-18T20:28:33Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1406,
+    "title": "Attestations for blocks from incorrect slots",
+    "updatedAt": "2019-11-18T18:15:41Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1475,
+    "title": "Phase 0 to 1 upgradability: fork/version boundary deserialization issue",
+    "updatedAt": "2019-11-13T07:37:16Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1464,
+    "title": "Eth1 data voting exception",
+    "updatedAt": "2019-11-08T18:16:33Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1448,
+    "title": "Attestations and custody bits proposal for phase 1",
+    "updatedAt": "2019-11-03T17:24:09Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1449,
+    "title": "Slowing down shard activity if crosslinking fails",
+    "updatedAt": "2019-11-03T17:23:17Z"
+  },
+  {
+    "author": {
+      "login": "mcdee"
+    },
+    "number": 1430,
+    "title": "`Version()` undefined",
+    "updatedAt": "2019-10-28T22:16:01Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1435,
+    "title": "Phase 0 Simplification checklist",
+    "updatedAt": "2019-10-28T09:56:53Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 1395,
+    "title": "Specify \"to_bytes\" and \"from_bytes\"",
+    "updatedAt": "2019-10-28T09:53:36Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1446,
+    "title": "Manipulating deposit contract to gain an early majority",
+    "updatedAt": "2019-10-28T06:11:07Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 1359,
+    "title": "Add clarity on SSZ deserialization",
+    "updatedAt": "2019-10-25T10:09:37Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1438,
+    "title": "Generating data availability roots from shard block roots",
+    "updatedAt": "2019-10-20T09:21:39Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1303,
+    "title": "Proposed structure for SSZ partials",
+    "updatedAt": "2019-10-17T15:48:43Z"
+  },
+  {
+    "author": {
+      "login": "GregTheGreek"
+    },
+    "number": 1433,
+    "title": "Eth1 backwards compatibility",
+    "updatedAt": "2019-10-16T13:46:01Z"
+  },
+  {
+    "author": {
+      "login": "mhchia"
+    },
+    "number": 1351,
+    "title": "Clarification on the initiating client of `Hello`",
+    "updatedAt": "2019-09-17T17:00:29Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1388,
+    "title": "Flat containers",
+    "updatedAt": "2019-09-07T20:16:14Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1386,
+    "title": "Refine beacon fork choice rule to take into account skip slots",
+    "updatedAt": "2019-09-03T18:08:41Z"
+  },
+  {
+    "author": {
+      "login": "daejunpark"
+    },
+    "number": 1357,
+    "title": "Ill-formed calldata to deposit contract can add invalid deposit data",
+    "updatedAt": "2019-09-03T11:38:33Z"
+  },
+  {
+    "author": {
+      "login": "daejunpark"
+    },
+    "number": 1341,
+    "title": "Non ABI-standard return value of `get_deposit_count` of `deposit_contract`",
+    "updatedAt": "2019-09-03T11:37:55Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 1290,
+    "title": "Clear store upon new finalized check point",
+    "updatedAt": "2019-08-22T09:32:27Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 1079,
+    "title": "ssz_generic tests without ssz field",
+    "updatedAt": "2019-08-20T17:36:54Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 1288,
+    "title": "Blocks added to the store before some verifications",
+    "updatedAt": "2019-08-20T16:02:58Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 1008,
+    "title": "Generalized Merkle Tree Index: use 0-based indexing",
+    "updatedAt": "2019-08-20T14:44:07Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 1084,
+    "title": "Discussion on BeaconNode <--> ValidatorClient alternatives",
+    "updatedAt": "2019-08-20T13:54:44Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1311,
+    "title": "Test orientation & distribution format issues",
+    "updatedAt": "2019-08-20T13:54:02Z"
+  },
+  {
+    "author": {
+      "login": "sorpaas"
+    },
+    "number": 1272,
+    "title": "Clarify in docs on what is frozen",
+    "updatedAt": "2019-08-20T13:47:00Z"
+  },
+  {
+    "author": {
+      "login": "CarlBeek"
+    },
+    "number": 1240,
+    "title": "MyPy missed type error",
+    "updatedAt": "2019-08-20T13:40:30Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1273,
+    "title": "Ineffective \"Fiat-Shamir\" protection with active_index_roots mix-in",
+    "updatedAt": "2019-08-20T13:36:42Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 803,
+    "title": "Clean up untriggerable asserts",
+    "updatedAt": "2019-08-20T13:35:57Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 1324,
+    "title": "Terminology: \"Beacon Chain\", \"beacon chain\", Ethereum Beacon Chain (EBC) ?",
+    "updatedAt": "2019-08-20T13:23:42Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 533,
+    "title": "Add network topology notes to validator doc",
+    "updatedAt": "2019-08-20T13:12:54Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 932,
+    "title": "Do we want to avoid NP hard problems for implementers",
+    "updatedAt": "2019-08-20T13:10:36Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1043,
+    "title": "Improve epoch processing within state transition",
+    "updatedAt": "2019-08-20T13:06:41Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1330,
+    "title": "Run linter with `make test`",
+    "updatedAt": "2019-08-20T11:36:33Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1040,
+    "title": "Regression test for #1037",
+    "updatedAt": "2019-08-20T11:35:26Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1367,
+    "title": "Minimum number of validators to progress the chain",
+    "updatedAt": "2019-08-20T11:33:54Z"
+  },
+  {
+    "author": {
+      "login": "shayzluf"
+    },
+    "number": 1336,
+    "title": "Policing storage requirements",
+    "updatedAt": "2019-08-14T17:44:42Z"
+  },
+  {
+    "author": {
+      "login": "mslipper"
+    },
+    "number": 1063,
+    "title": "Discv5 Open Questions",
+    "updatedAt": "2019-08-10T07:38:11Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1227,
+    "title": "Executable validator spec",
+    "updatedAt": "2019-08-09T06:02:15Z"
+  },
+  {
+    "author": {
+      "login": "jannikluhn"
+    },
+    "number": 871,
+    "title": "Network message SSZ schema",
+    "updatedAt": "2019-08-09T05:39:41Z"
+  },
+  {
+    "author": {
+      "login": "daejunpark"
+    },
+    "number": 1349,
+    "title": "Validators are able to censor new validators",
+    "updatedAt": "2019-08-09T02:24:21Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1046,
+    "title": "Little-endian vs big-endian (take 2)",
+    "updatedAt": "2019-07-30T14:48:51Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1304,
+    "title": "Options for crosslink data",
+    "updatedAt": "2019-07-29T20:44:36Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1262,
+    "title": "Check attestation bit list length against committee size",
+    "updatedAt": "2019-07-25T19:42:56Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 1315,
+    "title": "Compact committees root uses incorrect start shard",
+    "updatedAt": "2019-07-25T19:40:27Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1293,
+    "title": "Shard persistent committee selection",
+    "updatedAt": "2019-07-18T09:11:30Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 1269,
+    "title": "Inconsistency between MIN_SEED_LOOKAHEAD and validator spec",
+    "updatedAt": "2019-07-15T00:11:39Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1282,
+    "title": "Cosmetic presentation of hash types and values.",
+    "updatedAt": "2019-07-15T00:11:25Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 1284,
+    "title": "Slashing penalty overflows",
+    "updatedAt": "2019-07-11T08:54:31Z"
+  },
+  {
+    "author": {
+      "login": "prestonvanloon"
+    },
+    "number": 1266,
+    "title": "Remove bitlist length bit from SSZ",
+    "updatedAt": "2019-07-04T20:04:54Z"
+  },
+  {
+    "author": {
+      "login": "zhangdilu"
+    },
+    "number": 1254,
+    "title": "Can you tell me the progress of VDF，Now I'm interested to know how do you generate two large prime Numbers",
+    "updatedAt": "2019-07-01T06:48:03Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 918,
+    "title": "Group helper functions by type",
+    "updatedAt": "2019-06-30T18:24:01Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 670,
+    "title": "Clarification on block roots inclusion  ",
+    "updatedAt": "2019-06-30T17:19:19Z"
+  },
+  {
+    "author": {
+      "login": "NIC619"
+    },
+    "number": 1150,
+    "title": "Gas consumption of different part of the `deposit` function call",
+    "updatedAt": "2019-06-30T14:57:47Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1059,
+    "title": "Avoid side effect in state transition with mutable object",
+    "updatedAt": "2019-06-30T14:55:05Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1000,
+    "title": "1000—Phase 0 spec freeze",
+    "updatedAt": "2019-06-30T01:49:23Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1200,
+    "title": "The spec-test coverage hunt",
+    "updatedAt": "2019-06-29T21:15:01Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 1199,
+    "title": "is_genesis_trigger fails to verify deposit merkle branch",
+    "updatedAt": "2019-06-29T19:24:53Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 722,
+    "title": "Eth1 voting DoS",
+    "updatedAt": "2019-06-28T18:28:21Z"
+  },
+  {
+    "author": {
+      "login": "Nashatyrev"
+    },
+    "number": 1087,
+    "title": "SSZ SOS: use endOffset instead of offset",
+    "updatedAt": "2019-06-28T13:41:52Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 768,
+    "title": "Justifed state in LMD GHOST",
+    "updatedAt": "2019-06-28T11:49:57Z"
+  },
+  {
+    "author": {
+      "login": "spble"
+    },
+    "number": 1012,
+    "title": "BeaconNode <--> ValidatorClient API - Protocol",
+    "updatedAt": "2019-06-28T08:55:00Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 842,
+    "title": "Bigint support for SSZ",
+    "updatedAt": "2019-06-27T17:23:00Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1160,
+    "title": "Reforming dynamic lists in SSZ",
+    "updatedAt": "2019-06-26T12:08:25Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1029,
+    "title": "Monkeypatch the minus operator",
+    "updatedAt": "2019-06-25T13:38:55Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1205,
+    "title": "Somehow `make lint` doesn't work correctly in CircleCI",
+    "updatedAt": "2019-06-22T15:07:01Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1064,
+    "title": "SSZ rework - static type hinting, minimal impl. - with POC",
+    "updatedAt": "2019-06-21T00:38:31Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1128,
+    "title": "Where SSZ and merkle partials meet.",
+    "updatedAt": "2019-06-21T00:17:44Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 459,
+    "title": "Light client proposal",
+    "updatedAt": "2019-06-19T00:35:14Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 338,
+    "title": "Phase 1: block headers inside or outside of data committed to in the shard data root?",
+    "updatedAt": "2019-06-19T00:34:49Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1002,
+    "title": "Type hint linting",
+    "updatedAt": "2019-06-18T20:34:08Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1187,
+    "title": "Distinguish true constants from network-configurable parameters",
+    "updatedAt": "2019-06-17T22:18:56Z"
+  },
+  {
+    "author": {
+      "login": "adlerjohn"
+    },
+    "number": 833,
+    "title": "Issuance rate parameterization under adversarial conditions",
+    "updatedAt": "2019-06-15T20:52:51Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 1115,
+    "title": "Another possibility for hash_tree_root of dynamic lists",
+    "updatedAt": "2019-06-15T19:44:37Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1153,
+    "title": "Use custom types for container definitions",
+    "updatedAt": "2019-06-15T19:40:28Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 942,
+    "title": "Make spec more declarative",
+    "updatedAt": "2019-06-15T14:53:36Z"
+  },
+  {
+    "author": {
+      "login": "sorpaas"
+    },
+    "number": 1146,
+    "title": "Invalid sanity test block state root",
+    "updatedAt": "2019-06-14T16:41:05Z"
+  },
+  {
+    "author": {
+      "login": "sorpaas"
+    },
+    "number": 1169,
+    "title": "RANDAO is not procssed in block sanity test",
+    "updatedAt": "2019-06-14T16:40:41Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1173,
+    "title": "Attestation bitfield length checks ",
+    "updatedAt": "2019-06-14T09:09:53Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 928,
+    "title": "CI: yaml-test-generation trigger",
+    "updatedAt": "2019-06-14T02:14:26Z"
+  },
+  {
+    "author": {
+      "login": "sorpaas"
+    },
+    "number": 1147,
+    "title": "Invalid transfer sanity test",
+    "updatedAt": "2019-06-13T21:50:33Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 1151,
+    "title": "Reduce accessibility modifiers as much as possible",
+    "updatedAt": "2019-06-12T17:56:23Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 927,
+    "title": "Test-generator: operations from blocks",
+    "updatedAt": "2019-06-09T23:21:11Z"
+  },
+  {
+    "author": {
+      "login": "Nashatyrev"
+    },
+    "number": 667,
+    "title": "Use custom types in data structures",
+    "updatedAt": "2019-06-09T20:33:37Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1048,
+    "title": "CHAIN_START_FULL_DEPOSIT_THRESHOLD  bypass",
+    "updatedAt": "2019-06-09T20:24:09Z"
+  },
+  {
+    "author": {
+      "login": "Nashatyrev"
+    },
+    "number": 1148,
+    "title": "[Feature] Some constants as constructor parameters",
+    "updatedAt": "2019-06-09T20:21:17Z"
+  },
+  {
+    "author": {
+      "login": "dangerousfood"
+    },
+    "number": 1149,
+    "title": "Handle endianess in client implementation",
+    "updatedAt": "2019-06-09T20:17:24Z"
+  },
+  {
+    "author": {
+      "login": "pipermerriam"
+    },
+    "number": 412,
+    "title": "Idea: Convert to RST/Sphinx and use doctest.",
+    "updatedAt": "2019-06-08T19:09:10Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 980,
+    "title": "Move deposit contract back to this repo",
+    "updatedAt": "2019-06-08T11:35:41Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1143,
+    "title": "Use libp2p ed25519, not RSA",
+    "updatedAt": "2019-06-07T07:07:56Z"
+  },
+  {
+    "author": {
+      "login": "CarlBeek"
+    },
+    "number": 1110,
+    "title": "exposed_derived_secrets dramatically increases hash_tree_root time",
+    "updatedAt": "2019-05-28T09:04:10Z"
+  },
+  {
+    "author": {
+      "login": "michaelsproul"
+    },
+    "number": 1125,
+    "title": "Attester slashings are done in an arbitrary order and do not commute",
+    "updatedAt": "2019-05-27T15:14:14Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 804,
+    "title": "Add explicit guidance on when to run fork choice?",
+    "updatedAt": "2019-05-27T13:40:36Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1124,
+    "title": "SSZ vector wrap-around",
+    "updatedAt": "2019-05-26T20:43:30Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 1074,
+    "title": "BLS and testing",
+    "updatedAt": "2019-05-24T21:28:34Z"
+  },
+  {
+    "author": {
+      "login": "prestonvanloon"
+    },
+    "number": 1095,
+    "title": "process_transfer balance checks",
+    "updatedAt": "2019-05-22T01:16:12Z"
+  },
+  {
+    "author": {
+      "login": "kirk-baird"
+    },
+    "number": 898,
+    "title": "BLS Hash to G2",
+    "updatedAt": "2019-05-21T12:59:19Z"
+  },
+  {
+    "author": {
+      "login": "jannikluhn"
+    },
+    "number": 854,
+    "title": "Disallow empty containers or vectors",
+    "updatedAt": "2019-05-21T01:38:26Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 1034,
+    "title": "[Phase 1] `get_custody_chunk_count` is broken",
+    "updatedAt": "2019-05-20T13:53:50Z"
+  },
+  {
+    "author": {
+      "login": "sorpaas"
+    },
+    "number": 1089,
+    "title": "Set genesis block body root to ssz hash of the empty struct rather than empty hash",
+    "updatedAt": "2019-05-20T09:16:21Z"
+  },
+  {
+    "author": {
+      "login": "sorpaas"
+    },
+    "number": 1094,
+    "title": "Document the minimal number of validators required to run the chain",
+    "updatedAt": "2019-05-19T19:26:22Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 937,
+    "title": "Do not store withdrawal_credentials",
+    "updatedAt": "2019-05-19T19:19:22Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 710,
+    "title": "Deposit contract needs to check length of deposit data",
+    "updatedAt": "2019-05-18T02:55:58Z"
+  },
+  {
+    "author": {
+      "login": "sorpaas"
+    },
+    "number": 1090,
+    "title": "Document all intermediate values that are signed integers",
+    "updatedAt": "2019-05-17T21:32:54Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 1082,
+    "title": "get_crosslink_committees_at_slot is no longer valid",
+    "updatedAt": "2019-05-17T15:05:47Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1047,
+    "title": "Validator spec includes removed function",
+    "updatedAt": "2019-05-14T22:31:14Z"
+  },
+  {
+    "author": {
+      "login": "spble"
+    },
+    "number": 1011,
+    "title": "BeaconNode <--> ValidatorClient API - Messages",
+    "updatedAt": "2019-05-13T13:04:28Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 1062,
+    "title": "add linter to CI",
+    "updatedAt": "2019-05-11T14:31:46Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 859,
+    "title": "Merkle root of a single element",
+    "updatedAt": "2019-05-07T17:53:08Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 946,
+    "title": "Clarify \"per-epoch processing\"",
+    "updatedAt": "2019-05-07T07:12:18Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 860,
+    "title": "get_block_root(state.justified_epoch) != current_justified_epoch",
+    "updatedAt": "2019-05-07T00:23:16Z"
+  },
+  {
+    "author": {
+      "login": "NIC619"
+    },
+    "number": 857,
+    "title": "Question about eligible validators in rewards/penalties processing",
+    "updatedAt": "2019-05-06T17:06:33Z"
+  },
+  {
+    "author": {
+      "login": "sorpaas"
+    },
+    "number": 1050,
+    "title": "Wrong type definition for get_attestation_slot",
+    "updatedAt": "2019-05-06T16:12:16Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 675,
+    "title": "Miscellaneous beacon chain changes—take 4",
+    "updatedAt": "2019-05-06T16:00:25Z"
+  },
+  {
+    "author": {
+      "login": "wemeetagain"
+    },
+    "number": 1030,
+    "title": "Spec tests can't be easily parsed in javascript",
+    "updatedAt": "2019-05-04T18:42:17Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 1017,
+    "title": "Underflow in generate_seed for GENESIS_EPOCH",
+    "updatedAt": "2019-05-04T16:05:17Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 1041,
+    "title": "Epoch processing is too eager",
+    "updatedAt": "2019-05-03T21:13:11Z"
+  },
+  {
+    "author": {
+      "login": "GregTheGreek"
+    },
+    "number": 976,
+    "title": "API between the BeaconChain and Validators",
+    "updatedAt": "2019-04-30T12:36:20Z"
+  },
+  {
+    "author": {
+      "login": "nivida"
+    },
+    "number": 983,
+    "title": "Access Client Interface",
+    "updatedAt": "2019-04-27T17:18:06Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 941,
+    "title": "get_base_reward in GENESIS_EPOCH is 0, so all rewards are zero",
+    "updatedAt": "2019-04-24T18:42:12Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 944,
+    "title": "Figure 5 in get_base_reward",
+    "updatedAt": "2019-04-22T12:24:24Z"
+  },
+  {
+    "author": {
+      "login": "ChihChengLiang"
+    },
+    "number": 611,
+    "title": "Finalization rule 3 is unreachable",
+    "updatedAt": "2019-04-20T19:18:49Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 956,
+    "title": "Remove inclusion_slot",
+    "updatedAt": "2019-04-19T23:13:53Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 846,
+    "title": "Make Eth2Genesis log produce a serialized object",
+    "updatedAt": "2019-04-19T10:30:42Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 926,
+    "title": "Randao message_hash is not a hash",
+    "updatedAt": "2019-04-19T03:44:24Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 845,
+    "title": "Previous crosslink becomes outdated after epoch transition",
+    "updatedAt": "2019-04-19T01:18:30Z"
+  },
+  {
+    "author": {
+      "login": "AgeManning"
+    },
+    "number": 861,
+    "title": "RPC-Libp2p Determining Request/Response data",
+    "updatedAt": "2019-04-18T14:50:36Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 882,
+    "title": "Questions about get_justification_and_finalization_deltas",
+    "updatedAt": "2019-04-18T07:59:36Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 849,
+    "title": "Negative justified epoch on first epoch transition",
+    "updatedAt": "2019-04-18T02:39:01Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 883,
+    "title": "What happens when attester assigned to genesis slot?",
+    "updatedAt": "2019-04-17T23:46:03Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 836,
+    "title": "Proposal for restructure to support CI tests, pyspec, and better test generation flow.",
+    "updatedAt": "2019-04-17T23:25:33Z"
+  },
+  {
+    "author": {
+      "login": "Mikerah"
+    },
+    "number": 832,
+    "title": "Potential attack on the beacon chain by rational validators: The Gatekeeping Attack",
+    "updatedAt": "2019-04-17T23:24:52Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 811,
+    "title": "issues when disparity between actual epoch and shuffling epoch",
+    "updatedAt": "2019-04-17T23:23:10Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 793,
+    "title": "Bridging the spec to the tests generation",
+    "updatedAt": "2019-04-17T23:22:20Z"
+  },
+  {
+    "author": {
+      "login": "CarlBeek"
+    },
+    "number": 730,
+    "title": "Enabling compounding growth for validators' stakes",
+    "updatedAt": "2019-04-17T23:19:02Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 690,
+    "title": "Slashing condition slot issue",
+    "updatedAt": "2019-04-17T23:07:01Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 660,
+    "title": "Add the description of deposit Merkle proof in validator guide",
+    "updatedAt": "2019-04-17T23:04:53Z"
+  },
+  {
+    "author": {
+      "login": "Nashatyrev"
+    },
+    "number": 652,
+    "title": "AttestationData.epoch_boundary_root for epoch starting block",
+    "updatedAt": "2019-04-17T23:02:37Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 644,
+    "title": "Challenges in standardizing light client Merkle proofs",
+    "updatedAt": "2019-04-17T23:01:30Z"
+  },
+  {
+    "author": {
+      "login": "rauljordan"
+    },
+    "number": 628,
+    "title": "Issue in validator spec attester responsibility",
+    "updatedAt": "2019-04-17T22:58:49Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 541,
+    "title": "Handle when committee has no attestations included",
+    "updatedAt": "2019-04-17T22:58:35Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 529,
+    "title": "Concrete proposals for what data gets committed to in a crosslink",
+    "updatedAt": "2019-04-17T22:56:47Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 436,
+    "title": "committee shufflings take at least 2 epochs to change",
+    "updatedAt": "2019-04-17T22:44:13Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 375,
+    "title": "Proposal for persistent committees",
+    "updatedAt": "2019-04-17T22:43:27Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 335,
+    "title": "Attestation inclusion rewards",
+    "updatedAt": "2019-04-17T22:41:05Z"
+  },
+  {
+    "author": {
+      "login": "dankrad"
+    },
+    "number": 945,
+    "title": "generate_seed mixes in get_active_index_root",
+    "updatedAt": "2019-04-17T03:31:56Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 906,
+    "title": "Bug in proposer reward",
+    "updatedAt": "2019-04-17T02:33:05Z"
+  },
+  {
+    "author": {
+      "login": "jamesray1"
+    },
+    "number": 931,
+    "title": "Specs for sharding manager contract",
+    "updatedAt": "2019-04-16T03:59:02Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 905,
+    "title": "Reasoning for explicitly creating `Vector` types?",
+    "updatedAt": "2019-04-12T23:43:25Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 901,
+    "title": "Unnecessary materialization of intermediate data in `verify_indexed_attestation`",
+    "updatedAt": "2019-04-12T09:07:01Z"
+  },
+  {
+    "author": {
+      "login": "jannikluhn"
+    },
+    "number": 844,
+    "title": "Define vector as an alias",
+    "updatedAt": "2019-04-09T09:44:51Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 813,
+    "title": "Explicitly pass state to `eligible` function",
+    "updatedAt": "2019-04-06T23:04:48Z"
+  },
+  {
+    "author": {
+      "login": "NAKsir-melody"
+    },
+    "number": 876,
+    "title": "[Question][SSZ]To get item count from SSZ data",
+    "updatedAt": "2019-04-06T23:02:06Z"
+  },
+  {
+    "author": {
+      "login": "decanus"
+    },
+    "number": 822,
+    "title": "Rename `Transactions` back to `Operations`",
+    "updatedAt": "2019-04-02T11:06:30Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 686,
+    "title": "Phase 1 checklist",
+    "updatedAt": "2019-03-31T05:28:18Z"
+  },
+  {
+    "author": {
+      "login": "jannikluhn"
+    },
+    "number": 778,
+    "title": "SSZ: Allow partial deserialization of containers",
+    "updatedAt": "2019-03-29T11:40:25Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 659,
+    "title": "Fix `verify_merkle_branch`",
+    "updatedAt": "2019-03-28T23:06:34Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 797,
+    "title": "Block header signature issue",
+    "updatedAt": "2019-03-28T23:04:46Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 729,
+    "title": "Harmonize description of crosslink and persistent committee selection",
+    "updatedAt": "2019-03-28T23:03:10Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 802,
+    "title": "Churn queue bypass",
+    "updatedAt": "2019-03-28T23:02:35Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 527,
+    "title": "Include ejections and penalties when calculating validator churn",
+    "updatedAt": "2019-03-28T23:01:24Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 774,
+    "title": "Correct swap direction when permuting a list",
+    "updatedAt": "2019-03-28T23:00:25Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 727,
+    "title": "Prevent balance underflow ",
+    "updatedAt": "2019-03-28T22:59:20Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 612,
+    "title": "(Heads up) Switch to SHA256",
+    "updatedAt": "2019-03-28T22:57:51Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 568,
+    "title": "Proof of custody game design",
+    "updatedAt": "2019-03-28T22:57:32Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 685,
+    "title": "A possible change to how validator balances are stored",
+    "updatedAt": "2019-03-26T14:15:29Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 760,
+    "title": "Remove DepositData",
+    "updatedAt": "2019-03-26T13:40:21Z"
+  },
+  {
+    "author": {
+      "login": "kirk-baird"
+    },
+    "number": 837,
+    "title": "SSZ length for Hash256, Signatures, Public Keys and Booleanbitfields?",
+    "updatedAt": "2019-03-25T23:42:58Z"
+  },
+  {
+    "author": {
+      "login": "NAKsir-melody"
+    },
+    "number": 824,
+    "title": "[SSZ] ordered(sorted) container type? ",
+    "updatedAt": "2019-03-22T05:11:06Z"
+  },
+  {
+    "author": {
+      "login": "NAKsir-melody"
+    },
+    "number": 823,
+    "title": "[SSZ] Understanding about composite type ",
+    "updatedAt": "2019-03-22T01:37:32Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 753,
+    "title": "Simplify per-block attestation processing",
+    "updatedAt": "2019-03-19T18:19:07Z"
+  },
+  {
+    "author": {
+      "login": "pipermerriam"
+    },
+    "number": 754,
+    "title": "Brain dump and proposed way forward on Serialization formats",
+    "updatedAt": "2019-03-18T16:21:16Z"
+  },
+  {
+    "author": {
+      "login": "cemozerr"
+    },
+    "number": 775,
+    "title": "Aggregate signature verification (on an Attestation) fails due to custody_bitfield",
+    "updatedAt": "2019-03-15T18:10:38Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 747,
+    "title": "Change shuffling to facilitate more optimizations [experimental idea]",
+    "updatedAt": "2019-03-15T16:21:58Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 765,
+    "title": "Light client protocol standardization",
+    "updatedAt": "2019-03-13T07:56:16Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 742,
+    "title": "Store prev/current justified root",
+    "updatedAt": "2019-03-12T22:19:01Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 698,
+    "title": "Minor `AttestationData` cleanup",
+    "updatedAt": "2019-03-12T20:53:19Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 706,
+    "title": "Use all 64 bits in fork_version",
+    "updatedAt": "2019-03-12T17:45:42Z"
+  },
+  {
+    "author": {
+      "login": "atoulme"
+    },
+    "number": 748,
+    "title": "This repository has no license.",
+    "updatedAt": "2019-03-12T16:55:17Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 610,
+    "title": "Confusion surrounding `winning_root`",
+    "updatedAt": "2019-03-12T12:04:08Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 712,
+    "title": "MIN_VALIDATOR_WITHDRAWABILITY_DELAY applied twice",
+    "updatedAt": "2019-03-12T12:03:18Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 749,
+    "title": "Inclusion slots and attestations [bug]",
+    "updatedAt": "2019-03-10T14:26:09Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 677,
+    "title": "The timing of apply rewards/penalties",
+    "updatedAt": "2019-03-09T00:08:09Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 679,
+    "title": "SSZ TLDR",
+    "updatedAt": "2019-03-06T13:59:43Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 665,
+    "title": "Full support for tuples",
+    "updatedAt": "2019-03-06T13:58:24Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 700,
+    "title": "Commutative rewards processing",
+    "updatedAt": "2019-03-02T08:03:25Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 668,
+    "title": "Get genesis epoch committee assignment",
+    "updatedAt": "2019-02-26T23:08:11Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 657,
+    "title": "Gracefully handle bad proofs of possession",
+    "updatedAt": "2019-02-25T17:56:43Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 542,
+    "title": "Remove implicit big-int requirement",
+    "updatedAt": "2019-02-25T01:43:27Z"
+  },
+  {
+    "author": {
+      "login": "kirk-baird"
+    },
+    "number": 651,
+    "title": "verify_slashable_attestation with custody bits all 0 OR all 1",
+    "updatedAt": "2019-02-25T01:30:15Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 563,
+    "title": "Swap-or-not shuffle",
+    "updatedAt": "2019-02-23T12:14:04Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 639,
+    "title": "get_crosslink_committees reads previous_seed during genesis_epoch",
+    "updatedAt": "2019-02-22T19:51:10Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 609,
+    "title": "`crosslink_committee` type confusion",
+    "updatedAt": "2019-02-22T19:45:20Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 539,
+    "title": "Deposit Inclusion Reward?",
+    "updatedAt": "2019-02-22T19:34:06Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 577,
+    "title": "Specify maximum revert period",
+    "updatedAt": "2019-02-22T19:28:10Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 433,
+    "title": "What CBCifying the beacon chain might look like",
+    "updatedAt": "2019-02-22T19:21:26Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 504,
+    "title": "initial epoch options",
+    "updatedAt": "2019-02-22T19:20:03Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 380,
+    "title": "The great function cleanup/rework",
+    "updatedAt": "2019-02-22T19:18:25Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 540,
+    "title": "Refactor signature handling",
+    "updatedAt": "2019-02-22T19:15:34Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 605,
+    "title": "Cross-blockchain BLS12-381 standardisation",
+    "updatedAt": "2019-02-22T19:14:22Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 621,
+    "title": "Proposer penalties",
+    "updatedAt": "2019-02-22T19:10:37Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 618,
+    "title": "off-by-one validating justified_epoch for attestations",
+    "updatedAt": "2019-02-21T19:18:02Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 623,
+    "title": "Initial state finalizes not yet finished epoch",
+    "updatedAt": "2019-02-19T09:26:29Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 322,
+    "title": "Miscellaneous beacon chain changes—take 3",
+    "updatedAt": "2019-02-17T14:43:09Z"
+  },
+  {
+    "author": {
+      "login": "akhila-raju"
+    },
+    "number": 632,
+    "title": "What is vote_data in verify_slashable_attestation?",
+    "updatedAt": "2019-02-15T14:48:10Z"
+  },
+  {
+    "author": {
+      "login": "NIC619"
+    },
+    "number": 616,
+    "title": "When to update validator balance during processing rewards and penalties",
+    "updatedAt": "2019-02-14T06:57:27Z"
+  },
+  {
+    "author": {
+      "login": "jrhea"
+    },
+    "number": 620,
+    "title": "previous_total_balance reflects the balance from the current_epoch",
+    "updatedAt": "2019-02-13T18:54:42Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 570,
+    "title": "Research on optimal LMD-GHOST implementation: need help with network topology/expectations",
+    "updatedAt": "2019-02-13T18:11:28Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 357,
+    "title": "Reduce justification/finalization threshold from 2/3 to 5/8",
+    "updatedAt": "2019-02-13T01:24:58Z"
+  },
+  {
+    "author": {
+      "login": "jamesray1"
+    },
+    "number": 506,
+    "title": "Expected system requirements for Eth 2",
+    "updatedAt": "2019-02-13T01:19:46Z"
+  },
+  {
+    "author": {
+      "login": "jamesray1"
+    },
+    "number": 557,
+    "title": "GRANDPA consensus",
+    "updatedAt": "2019-02-13T01:07:38Z"
+  },
+  {
+    "author": {
+      "login": "decanus"
+    },
+    "number": 503,
+    "title": "Could SSZ be replaced through protocol buffers?",
+    "updatedAt": "2019-02-13T01:04:03Z"
+  },
+  {
+    "author": {
+      "login": "lastmjs"
+    },
+    "number": 581,
+    "title": "Abstract sharding to smart contract developers",
+    "updatedAt": "2019-02-13T01:02:44Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 497,
+    "title": "When to run fork choice rule?",
+    "updatedAt": "2019-02-13T01:01:20Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 224,
+    "title": "Integer overflow considerations",
+    "updatedAt": "2019-02-13T00:58:24Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 192,
+    "title": "Introduce reasonable boundaries on field values",
+    "updatedAt": "2019-02-13T00:56:39Z"
+  },
+  {
+    "author": {
+      "login": "jannikluhn"
+    },
+    "number": 556,
+    "title": "Little vs big endian",
+    "updatedAt": "2019-02-12T22:09:51Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 358,
+    "title": "Misc renamings",
+    "updatedAt": "2019-02-12T12:39:50Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 323,
+    "title": "Possible alternative numer-theoretic shuffling algorithm",
+    "updatedAt": "2019-02-12T02:50:33Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 389,
+    "title": "TODO: Process deposits in order",
+    "updatedAt": "2019-02-12T02:47:16Z"
+  },
+  {
+    "author": {
+      "login": "decanus"
+    },
+    "number": 559,
+    "title": "Clarification on assertations",
+    "updatedAt": "2019-02-11T21:30:52Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 276,
+    "title": "SSZ: when to do padding",
+    "updatedAt": "2019-02-11T20:19:37Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 588,
+    "title": "Rationale for max slashings per block ",
+    "updatedAt": "2019-02-09T07:47:30Z"
+  },
+  {
+    "author": {
+      "login": "protolambda"
+    },
+    "number": 582,
+    "title": "Doubts about the monolithic BeaconState",
+    "updatedAt": "2019-02-09T01:02:01Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 572,
+    "title": "hash_to_G2 input message size: Why bytes32?",
+    "updatedAt": "2019-02-07T21:04:45Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 550,
+    "title": "remove/change xor(seed, epoch) in shuffling",
+    "updatedAt": "2019-02-03T01:29:43Z"
+  },
+  {
+    "author": {
+      "login": "jannikluhn"
+    },
+    "number": 555,
+    "title": "Eth1 data processing is \"locally\" ambiguous",
+    "updatedAt": "2019-02-03T00:36:53Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 554,
+    "title": "potential bug in update_validator_registry?",
+    "updatedAt": "2019-02-03T00:09:19Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 293,
+    "title": "Document error conditions",
+    "updatedAt": "2019-01-31T01:47:05Z"
+  },
+  {
+    "author": {
+      "login": "burnburn"
+    },
+    "number": 199,
+    "title": "Add links to defined terms",
+    "updatedAt": "2019-01-31T01:44:45Z"
+  },
+  {
+    "author": {
+      "login": "Swader"
+    },
+    "number": 157,
+    "title": "Incentive for running beacon nodes",
+    "updatedAt": "2019-01-31T01:44:17Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 251,
+    "title": "Engage community on interest rate",
+    "updatedAt": "2019-01-31T01:43:25Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 92,
+    "title": "`get_shards_and_committees_for_slot` for future slots",
+    "updatedAt": "2019-01-31T01:24:46Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 515,
+    "title": "assertion in `get_active_index_root` too strong",
+    "updatedAt": "2019-01-31T01:24:46Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 494,
+    "title": "Contradictions with block.slot processing requirements",
+    "updatedAt": "2019-01-31T00:09:21Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 517,
+    "title": "ChainStart in Vyper Contract",
+    "updatedAt": "2019-01-31T00:07:33Z"
+  },
+  {
+    "author": {
+      "login": "benjaminion"
+    },
+    "number": 189,
+    "title": "get_ancestor() can fail to terminate",
+    "updatedAt": "2019-01-29T14:37:39Z"
+  },
+  {
+    "author": {
+      "login": "decanus"
+    },
+    "number": 507,
+    "title": "Proposer & Casper Slashing",
+    "updatedAt": "2019-01-29T14:22:08Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 271,
+    "title": "Dynamic limit on aggregate signature indices",
+    "updatedAt": "2019-01-29T14:10:22Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 461,
+    "title": "`MAX_CASPER_VOTES` clarification",
+    "updatedAt": "2019-01-28T20:44:28Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 421,
+    "title": "Specify the honest behaviour for deposit_root voting",
+    "updatedAt": "2019-01-28T20:43:25Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 329,
+    "title": "Be stricter with `get_attestation_participants`",
+    "updatedAt": "2019-01-28T20:41:28Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 508,
+    "title": "[BLS] Modular square root issue",
+    "updatedAt": "2019-01-28T18:09:07Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 267,
+    "title": "Put per-slot processing after per-epoch processing",
+    "updatedAt": "2019-01-28T15:49:06Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 409,
+    "title": "get_shard_committees_at_slot out of range",
+    "updatedAt": "2019-01-28T15:48:32Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 352,
+    "title": "`shard_committees_at_slots` missing when processing previous epoch attestations",
+    "updatedAt": "2019-01-28T15:28:26Z"
+  },
+  {
+    "author": {
+      "login": "ChihChengLiang"
+    },
+    "number": 410,
+    "title": "Finalization rule 3 would return True in no case",
+    "updatedAt": "2019-01-28T15:28:26Z"
+  },
+  {
+    "author": {
+      "login": "holiman"
+    },
+    "number": 491,
+    "title": "SSZ spec ambiguity regarding Lists",
+    "updatedAt": "2019-01-28T12:13:26Z"
+  },
+  {
+    "author": {
+      "login": "cleishm"
+    },
+    "number": 232,
+    "title": "SSZ question: clarification on the homogeneity of list elements",
+    "updatedAt": "2019-01-28T09:57:28Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 440,
+    "title": "Proposer attestation inclusion reward underspecified",
+    "updatedAt": "2019-01-28T05:59:59Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 370,
+    "title": "Add missing type hints",
+    "updatedAt": "2019-01-26T08:09:23Z"
+  },
+  {
+    "author": {
+      "login": "holiman"
+    },
+    "number": 479,
+    "title": "SSZ spec missing explicit checks container decoding",
+    "updatedAt": "2019-01-24T10:46:15Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 485,
+    "title": "Potential bug on updating previous_epoch_randao_mix",
+    "updatedAt": "2019-01-23T19:16:00Z"
+  },
+  {
+    "author": {
+      "login": "jrhea"
+    },
+    "number": 472,
+    "title": "BLS Signature Verification: quadratic field param issue",
+    "updatedAt": "2019-01-18T22:04:07Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 445,
+    "title": "Beacon chain operations could be verified with wrong fork_data",
+    "updatedAt": "2019-01-18T10:41:27Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 385,
+    "title": "`Exit` processing is not strict enough",
+    "updatedAt": "2019-01-18T10:10:24Z"
+  },
+  {
+    "author": {
+      "login": "ChihChengLiang"
+    },
+    "number": 371,
+    "title": "Is justification_bitfield an integer or a `bytes` type?",
+    "updatedAt": "2019-01-17T18:29:09Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 446,
+    "title": "Lack of range checks in chain operations processing",
+    "updatedAt": "2019-01-17T16:25:46Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 403,
+    "title": "Mitigating attacks on light clients",
+    "updatedAt": "2019-01-17T16:09:48Z"
+  },
+  {
+    "author": {
+      "login": "0xKiwi"
+    },
+    "number": 431,
+    "title": "What are the disincentives to exploit protocol level flaws?",
+    "updatedAt": "2019-01-17T16:08:25Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 451,
+    "title": "Use of undefined value for ValidatorRecord.status_flags",
+    "updatedAt": "2019-01-17T16:04:47Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 284,
+    "title": "discussion on latest_hash and state_transition function signature",
+    "updatedAt": "2019-01-17T15:54:11Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 308,
+    "title": "Lightclient, BeaconState and aggregation",
+    "updatedAt": "2019-01-17T15:52:39Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 353,
+    "title": "Only allow EXITED states to be overwritten",
+    "updatedAt": "2019-01-17T15:51:04Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 348,
+    "title": "In-place replacement for `shard_committees_at_slots`",
+    "updatedAt": "2019-01-17T15:49:42Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 222,
+    "title": "`get_changed_validators` processes validators out-of-order",
+    "updatedAt": "2019-01-17T15:48:22Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 264,
+    "title": "Yet another possible alternative to current header/body separation",
+    "updatedAt": "2019-01-17T15:46:33Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 256,
+    "title": "Proposal of adding fork version to beacon block",
+    "updatedAt": "2019-01-17T15:46:04Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 399,
+    "title": "Max Deposit and Max Deposits",
+    "updatedAt": "2019-01-17T15:44:46Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 191,
+    "title": "RFC: drop shard_and_committee_for_slots from state",
+    "updatedAt": "2019-01-17T15:42:12Z"
+  },
+  {
+    "author": {
+      "login": "rawfalafel"
+    },
+    "number": 129,
+    "title": "Proposal to use SSZ for consensus only",
+    "updatedAt": "2019-01-17T15:40:34Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 432,
+    "title": "SSZ: Add `bytesNN` and remove `Address`",
+    "updatedAt": "2019-01-17T11:02:57Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 418,
+    "title": "Normalize ETH units to Gwei.",
+    "updatedAt": "2019-01-17T10:55:06Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 447,
+    "title": "Alternative hash_to_G2",
+    "updatedAt": "2019-01-16T16:06:54Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 423,
+    "title": "What is MAX_WITHDRAWALS_PER_EPOCH?",
+    "updatedAt": "2019-01-13T22:03:43Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 387,
+    "title": "`ceil_div8` is undefined.",
+    "updatedAt": "2019-01-11T14:37:38Z"
+  },
+  {
+    "author": {
+      "login": "jrhea"
+    },
+    "number": 425,
+    "title": "integer_squareroot(n) prevent possible division by zero",
+    "updatedAt": "2019-01-11T01:20:59Z"
+  },
+  {
+    "author": {
+      "login": "cheatfate"
+    },
+    "number": 320,
+    "title": "BLS signature verification requires double hashing message.",
+    "updatedAt": "2019-01-10T18:27:55Z"
+  },
+  {
+    "author": {
+      "login": "rauljordan"
+    },
+    "number": 415,
+    "title": "Conditional in Casper / Proposer Processing Never Triggered",
+    "updatedAt": "2019-01-10T10:07:54Z"
+  },
+  {
+    "author": {
+      "login": "dangerousfood"
+    },
+    "number": 416,
+    "title": "Value for `slot - earliest_slot_in_array` can be below zero",
+    "updatedAt": "2019-01-09T17:48:39Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 196,
+    "title": "Validator penalty issues",
+    "updatedAt": "2019-01-08T19:53:33Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 360,
+    "title": "latest_penalized_exit_balances not updated correctly",
+    "updatedAt": "2019-01-08T18:42:25Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 396,
+    "title": "Inclusion Functions inside Shard Committee Code Block",
+    "updatedAt": "2019-01-08T17:48:41Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 405,
+    "title": "non-determinism in shuffling from `SEED_LOOKAHEAD` ",
+    "updatedAt": "2019-01-08T15:38:15Z"
+  },
+  {
+    "author": {
+      "login": "akhila-raju"
+    },
+    "number": 386,
+    "title": "Why are validator balances no longer part of ValidatorRecord?",
+    "updatedAt": "2019-01-03T14:16:30Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 378,
+    "title": "`ShardReassignmenRecord` is unused",
+    "updatedAt": "2019-01-02T15:48:05Z"
+  },
+  {
+    "author": {
+      "login": "josojo"
+    },
+    "number": 362,
+    "title": "Current slashing conditions are not sufficient",
+    "updatedAt": "2019-01-01T15:13:56Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 361,
+    "title": " `poc_commitment` parameter should be passed through `validate_proof_of_possession` for `DepositInput`",
+    "updatedAt": "2018-12-27T18:11:38Z"
+  },
+  {
+    "author": {
+      "login": "dangerousfood"
+    },
+    "number": 368,
+    "title": "get_block_root handling of exception case",
+    "updatedAt": "2018-12-27T16:09:59Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 260,
+    "title": "Do we *need* MIN_VALIDATOR_REGISTRY_CHANGE_INTERVAL?",
+    "updatedAt": "2018-12-23T18:01:01Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 286,
+    "title": "Use objects/tree-hashing where possible",
+    "updatedAt": "2018-12-23T14:04:04Z"
+  },
+  {
+    "author": {
+      "login": "benjaminion"
+    },
+    "number": 321,
+    "title": "Target Committee Size inconsistency",
+    "updatedAt": "2018-12-22T13:12:29Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 181,
+    "title": "`CHUNK_SIZE` setting",
+    "updatedAt": "2018-12-21T03:05:22Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 275,
+    "title": "SSZ: explicit ordering vs sorted-by-field",
+    "updatedAt": "2018-12-19T22:06:09Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 336,
+    "title": "`Block.parent_root` redundant?",
+    "updatedAt": "2018-12-19T21:12:08Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 295,
+    "title": "Keep latest 2^n RANDAO mixes in the state",
+    "updatedAt": "2018-12-19T18:58:29Z"
+  },
+  {
+    "author": {
+      "login": "atoulme"
+    },
+    "number": 208,
+    "title": "Container values tightly packed",
+    "updatedAt": "2018-12-19T18:38:47Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 243,
+    "title": "Problem with previous epoch balance",
+    "updatedAt": "2018-12-19T07:26:32Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 300,
+    "title": "Add aggregation description to BLS document",
+    "updatedAt": "2018-12-17T19:51:45Z"
+  },
+  {
+    "author": {
+      "login": "nisdas"
+    },
+    "number": 319,
+    "title": "RandaoLayers Should Not Be Incremented Every Slot",
+    "updatedAt": "2018-12-14T21:27:52Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 304,
+    "title": "Improve readability of surround slashing condition",
+    "updatedAt": "2018-12-14T14:58:06Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 305,
+    "title": "move `process_ejections` to per-epoch",
+    "updatedAt": "2018-12-14T04:07:36Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 184,
+    "title": "BLS12-381: Clarification between G1/G2 and serialisation",
+    "updatedAt": "2018-12-12T17:16:28Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 205,
+    "title": "More granular rewards",
+    "updatedAt": "2018-12-12T15:51:49Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 218,
+    "title": "Miscellaneous beacon chain changes—take 2",
+    "updatedAt": "2018-12-12T15:51:17Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 285,
+    "title": "Rename hash tree roots as \"root\"",
+    "updatedAt": "2018-12-11T20:56:40Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 268,
+    "title": "Include initial validator registry in validator_registry_delta_chain_tip",
+    "updatedAt": "2018-12-11T16:39:08Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 248,
+    "title": "Better definition of winning_hash",
+    "updatedAt": "2018-12-11T16:25:43Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 246,
+    "title": "New beacon block format",
+    "updatedAt": "2018-12-11T16:21:15Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 225,
+    "title": "Validator status transition issues",
+    "updatedAt": "2018-12-11T16:18:26Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 274,
+    "title": "Fix and cleanup validator status updates",
+    "updatedAt": "2018-12-11T16:16:45Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 273,
+    "title": "Perform tree hashing of state",
+    "updatedAt": "2018-12-11T15:18:14Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 197,
+    "title": "Reference SSZ spec the first time `SSZTreeHash` is used",
+    "updatedAt": "2018-12-11T15:18:07Z"
+  },
+  {
+    "author": {
+      "login": "zscole"
+    },
+    "number": 233,
+    "title": "Testnet Requirements Call",
+    "updatedAt": "2018-12-11T01:33:00Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 239,
+    "title": "initial assignment of `state.persistent_committees`",
+    "updatedAt": "2018-12-11T01:29:31Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 110,
+    "title": "ancestor_hashes - description in comment",
+    "updatedAt": "2018-12-10T22:50:07Z"
+  },
+  {
+    "author": {
+      "login": "burnburn"
+    },
+    "number": 203,
+    "title": "Add references section",
+    "updatedAt": "2018-12-10T22:47:49Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 247,
+    "title": "Forced exit bugs",
+    "updatedAt": "2018-12-10T22:45:14Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 277,
+    "title": "SSZ: update hash function",
+    "updatedAt": "2018-12-10T22:23:28Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 272,
+    "title": "Remove validators from persistent committees after exit",
+    "updatedAt": "2018-12-10T15:20:43Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 249,
+    "title": "Calculation details regarding inactivity penalty",
+    "updatedAt": "2018-12-09T15:01:26Z"
+  },
+  {
+    "author": {
+      "login": "cleishm"
+    },
+    "number": 231,
+    "title": "SSZ question: maximum length of serialized integer",
+    "updatedAt": "2018-12-08T17:16:12Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 211,
+    "title": "Specify withdrawal_credentials",
+    "updatedAt": "2018-12-07T12:46:13Z"
+  },
+  {
+    "author": {
+      "login": "jannikluhn"
+    },
+    "number": 237,
+    "title": "`candidate_pow_receipt_root(s)` typo in genesis block",
+    "updatedAt": "2018-12-05T17:17:19Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 151,
+    "title": "sha3/blake mismatch in deposit merkle tree",
+    "updatedAt": "2018-12-04T18:00:52Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 198,
+    "title": "Deposit issues",
+    "updatedAt": "2018-12-04T17:57:22Z"
+  },
+  {
+    "author": {
+      "login": "arnetheduck"
+    },
+    "number": 223,
+    "title": "`next_start_shard` missing from `BeaconState`",
+    "updatedAt": "2018-12-04T13:08:03Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 212,
+    "title": "Add slot number to `state` and make state transition function per slot",
+    "updatedAt": "2018-12-04T12:43:42Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 210,
+    "title": "Prevent deposit double-spend",
+    "updatedAt": "2018-12-04T12:43:15Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 195,
+    "title": "missing constant `PENDING_EXIT`",
+    "updatedAt": "2018-12-04T10:48:21Z"
+  },
+  {
+    "author": {
+      "login": "schroedingerscode"
+    },
+    "number": 219,
+    "title": "DepositParameterRecord Primitive Ambiguity",
+    "updatedAt": "2018-12-04T02:05:12Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 216,
+    "title": "Validator status codes cleanup",
+    "updatedAt": "2018-12-03T18:31:13Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 194,
+    "title": "initial `ForkData.fork_slot`",
+    "updatedAt": "2018-12-03T15:54:33Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 193,
+    "title": "missing `attestation.beacon_block_hash` validation",
+    "updatedAt": "2018-11-30T18:53:26Z"
+  },
+  {
+    "author": {
+      "login": "burnburn"
+    },
+    "number": 187,
+    "title": "Add a Notation section",
+    "updatedAt": "2018-11-29T13:29:04Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 128,
+    "title": "Miscellaneous beacon chain changes",
+    "updatedAt": "2018-11-28T21:45:31Z"
+  },
+  {
+    "author": {
+      "login": "kclick91"
+    },
+    "number": 168,
+    "title": "Forgotten Password or Private Key Partial Solution",
+    "updatedAt": "2018-11-28T16:54:29Z"
+  },
+  {
+    "author": {
+      "login": "benjaminion"
+    },
+    "number": 152,
+    "title": "The amount of checking performed by the PoW chain contract",
+    "updatedAt": "2018-11-27T19:52:56Z"
+  },
+  {
+    "author": {
+      "login": "Swader"
+    },
+    "number": 153,
+    "title": "Incentive for running beacon nodes",
+    "updatedAt": "2018-11-21T15:07:01Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 91,
+    "title": "Alternate withdrawal mechanism (specified proposal)",
+    "updatedAt": "2018-11-19T04:34:47Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 71,
+    "title": "A proposal for chain initialization, main chain block inclusion, and deposit processing",
+    "updatedAt": "2018-11-19T04:33:57Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 43,
+    "title": "Max length of specials",
+    "updatedAt": "2018-11-19T04:32:32Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 59,
+    "title": "Per-block processing: min AttestationRecord count",
+    "updatedAt": "2018-11-19T04:31:37Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 58,
+    "title": "Describe genesis",
+    "updatedAt": "2018-11-19T04:31:02Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 146,
+    "title": "timestamp type inconsistencies",
+    "updatedAt": "2018-11-19T02:02:41Z"
+  },
+  {
+    "author": {
+      "login": "tersec"
+    },
+    "number": 135,
+    "title": "`get_shards_and_committees_for_slot` uses nonextant `last_state_recalculation` field",
+    "updatedAt": "2018-11-15T23:23:34Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 54,
+    "title": "Tree hash functions for SSZ",
+    "updatedAt": "2018-11-15T22:54:03Z"
+  },
+  {
+    "author": {
+      "login": "ralexstokes"
+    },
+    "number": 105,
+    "title": "Add \"design goals\" to the README?",
+    "updatedAt": "2018-11-15T22:52:19Z"
+  },
+  {
+    "author": {
+      "login": "RmbRT"
+    },
+    "number": 133,
+    "title": "Messy documents",
+    "updatedAt": "2018-11-15T18:00:37Z"
+  },
+  {
+    "author": {
+      "login": "vbuterin"
+    },
+    "number": 90,
+    "title": "A proposal for shard blocks (rough draft / outline)",
+    "updatedAt": "2018-11-15T10:12:38Z"
+  },
+  {
+    "author": {
+      "login": "Mikerah"
+    },
+    "number": 127,
+    "title": "Understanding the `get_new_shuffling()` function",
+    "updatedAt": "2018-11-15T02:20:46Z"
+  },
+  {
+    "author": {
+      "login": "zincoshine"
+    },
+    "number": 130,
+    "title": "ValidatorRecord doesn't define proof_of_possession",
+    "updatedAt": "2018-11-14T22:21:20Z"
+  },
+  {
+    "author": {
+      "login": "benjaminion"
+    },
+    "number": 95,
+    "title": "`validator.randao_last_change` is never updated",
+    "updatedAt": "2018-11-14T22:09:31Z"
+  },
+  {
+    "author": {
+      "login": "Mikerah"
+    },
+    "number": 101,
+    "title": "`bytes1()`, `bytes3()`, and `bytes32()` in `add_validator_set_change_record()`",
+    "updatedAt": "2018-11-14T22:08:45Z"
+  },
+  {
+    "author": {
+      "login": "mkalinin"
+    },
+    "number": 50,
+    "title": "Extend SSZ hash type",
+    "updatedAt": "2018-11-14T21:58:18Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 34,
+    "title": "Misc questions",
+    "updatedAt": "2018-11-14T21:44:10Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 56,
+    "title": "Weaken and reformulate no-surround slashing condition",
+    "updatedAt": "2018-11-14T21:42:52Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 106,
+    "title": "validator rotation halting ",
+    "updatedAt": "2018-11-13T20:09:20Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 6,
+    "title": "Separate Single Attestation into its Own Wire Format ",
+    "updatedAt": "2018-11-05T13:36:25Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 2,
+    "title": "TODO: SimpleSerialize (SSZ) spec",
+    "updatedAt": "2018-11-05T13:35:38Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 97,
+    "title": "Should all initial validators be set to ACTIVE?",
+    "updatedAt": "2018-10-24T20:23:08Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 66,
+    "title": "Shard block vs. beacon block",
+    "updatedAt": "2018-10-17T16:35:17Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 67,
+    "title": "justified_block_hash.slot != justified_slot",
+    "updatedAt": "2018-10-17T16:34:34Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 23,
+    "title": "BLS Proof of Possession Explanations ",
+    "updatedAt": "2018-10-15T23:36:24Z"
+  },
+  {
+    "author": {
+      "login": "mratsim"
+    },
+    "number": 22,
+    "title": "Proof of Possession and BLSVerify clarification",
+    "updatedAt": "2018-10-15T23:33:50Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 76,
+    "title": "When to add new validators via `add_validator`",
+    "updatedAt": "2018-10-15T23:15:18Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 40,
+    "title": "Merkleise beacon chain blocks",
+    "updatedAt": "2018-10-15T18:58:45Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 21,
+    "title": "Miscellaneous comments",
+    "updatedAt": "2018-10-15T18:57:52Z"
+  },
+  {
+    "author": {
+      "login": "jamesray1"
+    },
+    "number": 80,
+    "title": "Is MAX_VALIDATOR_CHURN_QUOTIENT wrong?",
+    "updatedAt": "2018-10-15T07:42:59Z"
+  },
+  {
+    "author": {
+      "login": "redsquirrel"
+    },
+    "number": 74,
+    "title": "When pow_chain_reference is orphaned",
+    "updatedAt": "2018-10-14T13:58:57Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 57,
+    "title": "LOGOUT message versioning for replay protection",
+    "updatedAt": "2018-10-13T17:12:43Z"
+  },
+  {
+    "author": {
+      "login": "terencechain"
+    },
+    "number": 60,
+    "title": "Randao_update object for active state",
+    "updatedAt": "2018-10-12T04:36:02Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 47,
+    "title": "get_active_validator_indices is sometimes called with two arguments",
+    "updatedAt": "2018-10-11T03:31:59Z"
+  },
+  {
+    "author": {
+      "login": "JustinDrake"
+    },
+    "number": 52,
+    "title": "Handle registrations with bad proofs of possession",
+    "updatedAt": "2018-10-08T22:04:21Z"
+  },
+  {
+    "author": {
+      "login": "djrtwo"
+    },
+    "number": 45,
+    "title": "Add constants for SpecialRecord kinds",
+    "updatedAt": "2018-10-05T10:18:56Z"
+  },
+  {
+    "author": {
+      "login": "paulhauner"
+    },
+    "number": 5,
+    "title": "AttestationRecord aggregate sig message serialization",
+    "updatedAt": "2018-10-05T00:03:08Z"
+  },
+  {
+    "author": {
+      "login": "benjaminion"
+    },
+    "number": 20,
+    "title": "Wonky calculation in WITHDRAWAL_PERIOD",
+    "updatedAt": "2018-10-02T18:53:02Z"
+  }
+]

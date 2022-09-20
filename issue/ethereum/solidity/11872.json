@@ -1,0 +1,137 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/11872",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/11872/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/11872/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/11872/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/11872",
+  "id": 984168259,
+  "node_id": "MDU6SXNzdWU5ODQxNjgyNTk=",
+  "number": 11872,
+  "title": "Include enums in the ABI",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1017612679,
+      "node_id": "MDU6TGFiZWwxMDE3NjEyNjc5",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/protocol%20design%20:crystal_ball:",
+      "name": "protocol design :crystal_ball:",
+      "color": "8af77e",
+      "default": false,
+      "description": "Potential changes to ABI, meta data, standard JSON"
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438153180,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjX3A",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20impact",
+      "name": "high impact",
+      "color": "001dff",
+      "default": false,
+      "description": "Changes are very prominent and affect users or the project in a major way."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2021-08-31T18:31:24Z",
+  "updated_at": "2022-09-14T16:39:14Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "For a while internal types are exposed in the ABI, which can be used to do type checking stricter than the encoding allows. \r\n\r\nSuch an example when enums are used in an interface (see #595):\r\n```json\r\n      {\r\n        \"indexed\": false,\r\n        \"internalType\": \"enum I.MyEnum\",\r\n        \"name\": \"b\",\r\n        \"type\": \"uint8\"\r\n      }\r\n```\r\n\r\nThe proposal is to include a new entry in the ABI for enums:\r\n```json\r\n{\r\n  \"type\": \"enum\",\r\n  \"name\": \"MyEnum\",\r\n  \"min\": 0,\r\n  \"max\": max\r\n}\r\n```\r\n\r\nThe `min` is hardcoded at 0 as enums are encoded as `uint8` currently, but leaving the field for future compatibility.\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/11872/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11872/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/915118313",
+    "html_url": "https://github.com/ethereum/solidity/issues/11872#issuecomment-915118313",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/11872",
+    "id": 915118313,
+    "node_id": "IC_kwDOAm_5kc42i5jp",
+    "user": {
+      "login": "chriseth",
+      "id": 9073706,
+      "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chriseth",
+      "html_url": "https://github.com/chriseth",
+      "followers_url": "https://api.github.com/users/chriseth/followers",
+      "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+      "organizations_url": "https://api.github.com/users/chriseth/orgs",
+      "repos_url": "https://api.github.com/users/chriseth/repos",
+      "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chriseth/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2021-09-08T10:31:31Z",
+    "updated_at": "2021-09-08T10:31:31Z",
+    "author_association": "MEMBER",
+    "body": "I think we should use the `type` field only for things that also appear in the signature. If you want to look up additional information for the type, I think you should use the AST instead.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/915118313/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

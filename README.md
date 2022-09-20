@@ -6,6 +6,7 @@ The project is currently being hosted via Amazon EC2 instance running Ubuntu 20.
 
 Currently Synced Repos:
 ```
+ethereum/solidity
 ethereum/consensus-specs
 ethereum/go-ethereum
 ethereum/remix-project
@@ -13,6 +14,8 @@ ethereum/EIPs
 ethereum/PM
 ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM
+ethereum-git-sync/GitSync
+flashbots/mev-boost
 ```
 
 Current Hosts:
@@ -45,6 +48,8 @@ Host gitea.com
         IdentitiesOnly yes
 	IdentityFile ~/.ssh/SSH_KEY
 ```
+If multiple users for the same host are needed, a Host block can be copied, with only the Host name and IdentityFile needing updated to represent an additional user and their SSH key. Scripts should be updated to reflect this change as well (`git@gitea.com, git@gitea.com-2, etc.`).
+
 SSH_KEY is to be replaced with your own private keys that corrispond to public keys attached to the GitHub/Gitea/etc accounts being used in the syncing scripts. A public key can be added at...
 
 GitHub: https://github.com/settings/keys
@@ -81,7 +86,7 @@ The user is then prompted for a personal access token. The token is necessary fo
 Script usage is automated via a cronjob. To edit currently running cronjobs, use the command ```crontab -e``` From there, the following job must be added:
 
 ```
-0 * * * * /usr/bin/bash /home/ubuntu/bin/init.sh >> /home/ubuntu/log/gitsync.log 2>&1
+0 * * * * /usr/bin/bash /home/ubuntu/GitSync/bin/init.sh >> /home/ubuntu/GitSync/log/gitsync.log 2>&1
 ```
 
 This job will run the main script ```init.sh```, which handles the rest of the scripts. Both standard and error output from the scripts are posted to a log file ```gitsync.log```. This job is set to run hourly; it can and should be edited to match a desired frequency.
@@ -91,3 +96,8 @@ This job will run the main script ```init.sh```, which handles the rest of the s
 ```init.sh``` - The main script responsible for executing the other scripts. It is the only one that should be interacted with by the user, either manually or through automation. It is responsible for reading input from a file containing the names of repos that must be maintained, and delegating other scripts to handle repo mirroring and extraction of issue/PR data. 
 
 ```sync.sh``` - The script responsible for mirroring repos across multiple git hosting services. It reads in the name of a GitHub repo and distributes the repo to other hosts.
+
+```issue.sh``` - The script responsible for pulling issue data from GitHub for a given synced repo and archiving it. 
+
+## Repository List
+```repolist.txt``` contains the list of repos currently being synced. Repos can be submitted for syncing via a pull request containing an edit of this file.

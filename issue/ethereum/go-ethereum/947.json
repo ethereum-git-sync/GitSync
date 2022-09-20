@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/947",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/947/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/947/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/947/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/947",
+  "id": 75929802,
+  "node_id": "MDU6SXNzdWU3NTkyOTgwMg==",
+  "number": 947,
+  "title": "Contract creation silently fails",
+  "user": {
+    "login": "debris",
+    "id": 2613714,
+    "node_id": "MDQ6VXNlcjI2MTM3MTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2613714?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/debris",
+    "html_url": "https://github.com/debris",
+    "followers_url": "https://api.github.com/users/debris/followers",
+    "following_url": "https://api.github.com/users/debris/following{/other_user}",
+    "gists_url": "https://api.github.com/users/debris/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/debris/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/debris/subscriptions",
+    "organizations_url": "https://api.github.com/users/debris/orgs",
+    "repos_url": "https://api.github.com/users/debris/repos",
+    "events_url": "https://api.github.com/users/debris/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/debris/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-05-13T10:10:08Z",
+  "updated_at": "2015-05-13T10:18:39Z",
+  "closed_at": "2015-05-13T10:18:38Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "Steps to reproduce issue:\n- compile solidity contract:\n\n``` solidity\ncontract test {\n  function multiply(uint a) constant returns(uint d) {\n    return a * 7;\n  }\n};\n```\n\nthe output is:\n\n```\n605180600c6000396000f3007c0100000000000000000000000000000000000000000000000000000000600035048063c6888fa114602d57005b60366004356040565b8060005260206000f35b6000600782029050604c565b91905056\n```\n-  then make a transaction;\n- everything looks fine I get address\n\n```\n0x6cafb2c9a07564e0f869e37cc1fe64ec940f65ff\n```\n\nand in the logs i can see\n\n```\nI0513 11:28:48.301941   14290 xeth.go:929] Tx(3c7dbb011c2f09b31d1cef93411afdfc39dade87b307adf8f97b1e0625fbd75d) created: 6cafb2c9a07564e0f869e37cc1fe64ec940f65ff\n\n> I0513 11:28:55.857397   14290 chain_manager.go:580] Split detected. New head #320247 (0d6d976a) TD=26109574175091, was #320246 (10eb3767) TD=26109142154882\nI0513 11:28:55.858046   14290 chain_manager.go:628] imported 1 block(s) (0 queued 0 ignored) in 5.646801ms. #320247 [0d6d976a / 0d6d976a]\n\n> I0513 11:28:58.289306   14290 chain_manager.go:628] imported 0 block(s) (0 queued 1 ignored) in 10.688978ms. #320248 [53221bf8 / 53221bf8]\nI0513 11:28:58.289472   14290 chain_manager.go:628] imported 1 block(s) (0 queued 0 ignored) in 12.818581ms. #320248 [53221bf8 / 53221bf8]\n> I0513 11:29:09.535899   14290 chain_manager.go:628]\n```\n-  But contract methods do not work. Also after calling\n\n```\n> web3.eth.getCode('0x6cafb2c9a07564e0f869e37cc1fe64ec940f65ff')\n```\n\nthe result is `0x`\n\nLast time I've checked this (~3 weeks ago) everything was working perfectly. Today I couldn't make it work.\n",
+  "closed_by": {
+    "login": "debris",
+    "id": 2613714,
+    "node_id": "MDQ6VXNlcjI2MTM3MTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2613714?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/debris",
+    "html_url": "https://github.com/debris",
+    "followers_url": "https://api.github.com/users/debris/followers",
+    "following_url": "https://api.github.com/users/debris/following{/other_user}",
+    "gists_url": "https://api.github.com/users/debris/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/debris/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/debris/subscriptions",
+    "organizations_url": "https://api.github.com/users/debris/orgs",
+    "repos_url": "https://api.github.com/users/debris/repos",
+    "events_url": "https://api.github.com/users/debris/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/debris/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/947/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/947/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

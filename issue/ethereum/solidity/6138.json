@@ -1,0 +1,85 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/6138",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/6138/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/6138/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/6138/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/6138",
+  "id": 415593940,
+  "node_id": "MDU6SXNzdWU0MTU1OTM5NDA=",
+  "number": 6138,
+  "title": "Revisit release scripts",
+  "user": {
+    "login": "erak",
+    "id": 20012009,
+    "node_id": "MDQ6VXNlcjIwMDEyMDA5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20012009?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erak",
+    "html_url": "https://github.com/erak",
+    "followers_url": "https://api.github.com/users/erak/followers",
+    "following_url": "https://api.github.com/users/erak/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erak/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erak/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erak/subscriptions",
+    "organizations_url": "https://api.github.com/users/erak/orgs",
+    "repos_url": "https://api.github.com/users/erak/repos",
+    "events_url": "https://api.github.com/users/erak/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erak/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 437863668,
+      "node_id": "MDU6TGFiZWw0Mzc4NjM2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/build%20system%20:building_construction:",
+      "name": "build system :building_construction:",
+      "color": "1d76db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 3515010024,
+      "node_id": "LA_kwDOAm_5kc7Rgsvo",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue%20candidate",
+      "name": "good first issue candidate",
+      "color": "91B44D",
+      "default": false,
+      "description": "Could be a \"good first issue\" but something is blocking it or it has open questions."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-02-28T12:12:52Z",
+  "updated_at": "2021-12-11T00:53:22Z",
+  "closed_at": null,
+  "author_association": "COLLABORATOR",
+  "active_lock_reason": null,
+  "body": "Some of the scripts could be updated, such that they\r\n- support multiple signatures for the team: `scripts/release_ppa.sh`\r\n- are less error-prone: `scripts/docker_deploy_manual.sh release`",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/6138/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/6138/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

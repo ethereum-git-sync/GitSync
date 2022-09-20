@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/9286",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/9286/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/9286/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/9286/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/9286",
+  "id": 649350216,
+  "node_id": "MDU6SXNzdWU2NDkzNTAyMTY=",
+  "number": 9286,
+  "title": "Provide example workaround in documentation for assigning array literal to dynamic sized array ",
+  "user": {
+    "login": "thegostep",
+    "id": 15959632,
+    "node_id": "MDQ6VXNlcjE1OTU5NjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15959632?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/thegostep",
+    "html_url": "https://github.com/thegostep",
+    "followers_url": "https://api.github.com/users/thegostep/followers",
+    "following_url": "https://api.github.com/users/thegostep/following{/other_user}",
+    "gists_url": "https://api.github.com/users/thegostep/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/thegostep/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/thegostep/subscriptions",
+    "organizations_url": "https://api.github.com/users/thegostep/orgs",
+    "repos_url": "https://api.github.com/users/thegostep/repos",
+    "events_url": "https://api.github.com/users/thegostep/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/thegostep/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-07-01T22:00:53Z",
+  "updated_at": "2020-07-21T11:21:02Z",
+  "closed_at": "2020-07-21T11:21:02Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "![image](https://user-images.githubusercontent.com/15959632/86295482-b9002500-bbc4-11ea-8623-68b646d4b9f1.png)\r\n",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/9286/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/9286/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

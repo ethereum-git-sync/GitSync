@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21621",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21621/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21621/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21621/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/21621",
+  "id": 708679818,
+  "node_id": "MDU6SXNzdWU3MDg2Nzk4MTg=",
+  "number": 21621,
+  "title": "admin.sleepBlocks(1) returns immediately",
+  "user": {
+    "login": "gqqnbig",
+    "id": 614159,
+    "node_id": "MDQ6VXNlcjYxNDE1OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/614159?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gqqnbig",
+    "html_url": "https://github.com/gqqnbig",
+    "followers_url": "https://api.github.com/users/gqqnbig/followers",
+    "following_url": "https://api.github.com/users/gqqnbig/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gqqnbig/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gqqnbig/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gqqnbig/subscriptions",
+    "organizations_url": "https://api.github.com/users/gqqnbig/orgs",
+    "repos_url": "https://api.github.com/users/gqqnbig/repos",
+    "events_url": "https://api.github.com/users/gqqnbig/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gqqnbig/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1132689577,
+      "node_id": "MDU6TGFiZWwxMTMyNjg5NTc3",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/status:triage",
+      "name": "status:triage",
+      "color": "6be514",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 1912320685,
+      "node_id": "MDU6TGFiZWwxOTEyMzIwNjg1",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/area:console",
+      "name": "area:console",
+      "color": "5edb9c",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-09-25T06:29:45Z",
+  "updated_at": "2020-10-13T08:55:58Z",
+  "closed_at": "2020-10-13T08:55:58Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\n Geth/v1.9.21-stable-0287d548/windows-amd64/go1.15\r\n\r\n#### Expected behaviour\r\n\r\nI open geth console and run the following command \r\n\r\n```\r\n> eth.blockNumber\r\n329\r\n> admin.sleepBlocks(1)\r\ntrue\r\n> eth.blockNumber\r\n```\r\n\r\nSince I run this on a private chain, I expect admin.sleepBlocks to block the console until I have mined 1 block. Further,  I expect eth.blockNumber to be 330 because admin.sleepBlocks waits 1 block then return.\r\n\r\n#### Actual behaviour\r\nadmin.sleepBlocks(1) returns immediately on my private chain without any miner working. \r\n\r\nFurther, eth.blockNumber is still 329.\r\n\r\n",
+  "closed_by": {
+    "login": "fjl",
+    "id": 6915,
+    "node_id": "MDQ6VXNlcjY5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fjl",
+    "html_url": "https://github.com/fjl",
+    "followers_url": "https://api.github.com/users/fjl/followers",
+    "following_url": "https://api.github.com/users/fjl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fjl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fjl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fjl/subscriptions",
+    "organizations_url": "https://api.github.com/users/fjl/orgs",
+    "repos_url": "https://api.github.com/users/fjl/repos",
+    "events_url": "https://api.github.com/users/fjl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fjl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21621/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/21621/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

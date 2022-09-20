@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/109",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/109/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/109/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/109/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/109",
+  "id": 666161799,
+  "node_id": "MDU6SXNzdWU2NjYxNjE3OTk=",
+  "number": 109,
+  "title": "Infinite gas vs. undefined gas",
+  "user": {
+    "login": "MariusVanDerWijden",
+    "id": 16664698,
+    "node_id": "MDQ6VXNlcjE2NjY0Njk4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16664698?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MariusVanDerWijden",
+    "html_url": "https://github.com/MariusVanDerWijden",
+    "followers_url": "https://api.github.com/users/MariusVanDerWijden/followers",
+    "following_url": "https://api.github.com/users/MariusVanDerWijden/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MariusVanDerWijden/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MariusVanDerWijden/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MariusVanDerWijden/subscriptions",
+    "organizations_url": "https://api.github.com/users/MariusVanDerWijden/orgs",
+    "repos_url": "https://api.github.com/users/MariusVanDerWijden/repos",
+    "events_url": "https://api.github.com/users/MariusVanDerWijden/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MariusVanDerWijden/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2050414594,
+      "node_id": "MDU6TGFiZWwyMDUwNDE0NTk0",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/remix-ide",
+      "name": "remix-ide",
+      "color": "79299e",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-08-29T16:25:24Z",
+  "updated_at": "2020-07-27T10:06:18Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Hey guys, I have the following contract which does not correctly estimate the gas.\r\nThe functions `unpacked` and `packed2` estimate the gas cost as infinite (which is okayish for packed2 but really strange for unpacked since we know all input args). My bigger issue is, that remix/solc estimates the gas costs for `packed` as 'undefined'. \r\n\r\nSo my questions are: \r\n- Is this the right place to talk about such issues, or is it a problem of solc\r\n- Whats the difference between undefined and infinite gas?\r\n- Why can't solc compute the gas consumption for `unpacked`?\r\n\r\ncheers!\r\n\r\n```pragma solidity ^0.5.11;\r\npragma experimental ABIEncoderV2;\r\n\r\ncontract Ballot {\r\n    \r\n    function unpacked(uint32 a, uint32 b, uint32 c, uint32 d) public pure returns (bytes32) {\r\n        return keccak256(abi.encode(a, b, c, d));\r\n    }\r\n    \r\n    struct pack{\r\n        uint32 a;\r\n        uint32 b; \r\n        uint32 c;\r\n        uint32 d;\r\n    }\r\n    \r\n    function packed(pack memory x) public pure returns (bytes32) {\r\n        return keccak256(abi.encode(x.a, x.b, x.c, x.d));\r\n    }\r\n\r\n    function packed2(uint32[] memory x) public pure returns (bytes32) {\r\n        return keccak256(abi.encode(x[0], x[1], x[2], x[3]));\r\n    }\r\n    \r\n}```",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/109/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/109/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/3558",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/3558/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/3558/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/3558/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/3558",
+  "id": 298772234,
+  "node_id": "MDU6SXNzdWUyOTg3NzIyMzQ=",
+  "number": 3558,
+  "title": "Abort if Emscripten linking results in undefined symbols",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 437863668,
+      "node_id": "MDU6TGFiZWw0Mzc4NjM2Njg=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/build%20system%20:building_construction:",
+      "name": "build system :building_construction:",
+      "color": "1d76db",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-02-20T22:25:49Z",
+  "updated_at": "2018-02-21T05:27:12Z",
+  "closed_at": "2018-02-21T05:27:12Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "From https://github.com/ethereum/solidity/pull/3491#issuecomment-365437236:\r\n\r\n```\r\n[100%] Linking CXX executable soljson.js\r\nWARNING:root:not all asm.js optimizations are possible with ALLOW_MEMORY_GROWTH, disabling those. [-Walmost-asm]\r\nwarning: unresolved symbol: _ZNSt3__115basic_streambufIcNS_11char_traitsIcEEE5uflowEv\r\nwarning: unresolved symbol: _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_jjRKS4_\r\nwarning: unresolved symbol: _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_\r\n...\r\n```\r\n\r\nshould be a build error.\r\n\r\nUse the flag:\r\n```\r\n-s ERROR_ON_UNDEFINED_SYMBOLS=1\r\n```\r\n\r\nThis is on by default in the CMake Emscripten module which we aren't using.\r\n\r\nRef:\r\n- https://github.com/kripken/emscripten/blob/01fc56a092f8bf83528d6ee8d39db1cd49830f80/src/settings.js#L505-L511\r\n- https://github.com/kripken/emscripten/blob/7f89560101843198787530731f40a65288f6f15f/cmake/Modules/Platform/Emscripten.cmake#L47-L49",
+  "closed_by": {
+    "login": "chriseth",
+    "id": 9073706,
+    "node_id": "MDQ6VXNlcjkwNzM3MDY=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9073706?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chriseth",
+    "html_url": "https://github.com/chriseth",
+    "followers_url": "https://api.github.com/users/chriseth/followers",
+    "following_url": "https://api.github.com/users/chriseth/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chriseth/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chriseth/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chriseth/subscriptions",
+    "organizations_url": "https://api.github.com/users/chriseth/orgs",
+    "repos_url": "https://api.github.com/users/chriseth/repos",
+    "events_url": "https://api.github.com/users/chriseth/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chriseth/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/3558/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/3558/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

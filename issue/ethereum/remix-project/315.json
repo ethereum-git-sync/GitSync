@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/remix-project/issues/315",
+  "repository_url": "https://api.github.com/repos/ethereum/remix-project",
+  "labels_url": "https://api.github.com/repos/ethereum/remix-project/issues/315/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/remix-project/issues/315/comments",
+  "events_url": "https://api.github.com/repos/ethereum/remix-project/issues/315/events",
+  "html_url": "https://github.com/ethereum/remix-project/issues/315",
+  "id": 668600441,
+  "node_id": "MDU6SXNzdWU2Njg2MDA0NDE=",
+  "number": 315,
+  "title": "Move contextListener to a new remix lib module",
+  "user": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1922155232,
+      "node_id": "MDU6TGFiZWwxOTIyMTU1MjMy",
+      "url": "https://api.github.com/repos/ethereum/remix-project/labels/enhancement",
+      "name": "enhancement",
+      "color": "a2eeef",
+      "default": true,
+      "description": "New feature or request"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-04-03T06:46:51Z",
+  "updated_at": "2020-07-30T10:46:38Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "This class https://github.com/ethereum/remix-ide/blob/master/src/app/editor/contextualListener.js\r\nlisten on new AST from the compiler and provide API for:\r\n - computing gas estimation of function/constructor.\r\n - retrieving a specific node and all its references.\r\n\r\nThat is currently use in remix IDE for getting information about the node the user is currently looking at (cursor position) and allow to loop over all the reference in the code of a specific node.\r\n\r\nThis is a good candidate for a new remix lib ;)",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/315/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/315/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

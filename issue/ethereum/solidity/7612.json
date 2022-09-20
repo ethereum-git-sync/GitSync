@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/7612",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/7612/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/7612/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/7612/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/7612",
+  "id": 516354464,
+  "node_id": "MDU6SXNzdWU1MTYzNTQ0NjQ=",
+  "number": 7612,
+  "title": "Extensibility in Yul",
+  "user": {
+    "login": "SilentCaesar",
+    "id": 54080803,
+    "node_id": "MDQ6VXNlcjU0MDgwODAz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/54080803?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SilentCaesar",
+    "html_url": "https://github.com/SilentCaesar",
+    "followers_url": "https://api.github.com/users/SilentCaesar/followers",
+    "following_url": "https://api.github.com/users/SilentCaesar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SilentCaesar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SilentCaesar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SilentCaesar/subscriptions",
+    "organizations_url": "https://api.github.com/users/SilentCaesar/orgs",
+    "repos_url": "https://api.github.com/users/SilentCaesar/repos",
+    "events_url": "https://api.github.com/users/SilentCaesar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SilentCaesar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-11-01T21:24:33Z",
+  "updated_at": "2022-08-17T13:50:39Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Abstract\r\n\r\nYul currently has no way to produce extensible objects. We propose a simple extension to the language which would make Yul objects extensible.\r\n\r\n## Motivation\r\n\r\n1) Language Design: most modern languages have extensibility\r\n2) Ecosystem: would allow for a Yul ecosystem of extensible and reusable code\r\n3) Code Organization: extensible code is easier to read, test and organize\r\n\r\n## Specification\r\n\r\nAn object may extend or inherit any outside object using the `is` phrase followed by one or many object names that are not in its parent object. When an object is inherited it is appended at the beginning of the other code block. Inheritance would append code in order of the list provided. Any duplicate or already inherited objects will be negated during compilation.\r\n\r\n```\r\nobject \"ObjectA\" {\r\n  code {\r\n      function helloworld() -> result {\r\n          result := 1\r\n      }\r\n  }\r\n}\r\n\r\nobject \"ObjectB\" is \"ObjectA\" {\r\n  code {\r\n      log1(0, 0, helloworld())  // would log 1\r\n  }\r\n}\r\n\r\nobject \"ObjectC\" is \"ObjectA\", \"ObjectB\" {\r\n  code {\r\n      // would log 1\r\n      log1(0, 0, 0xaa)  // would log 0xaa\r\n  }\r\n}\r\n```\r\n\r\nHere, \"ObjectC\" would compile to:\r\n\r\n```\r\nobject \"ObjectC\" {\r\n  code {\r\n      function helloworld() -> result {\r\n          result := 1\r\n      }\r\n      log1(0, 0, helloworld())  // would log 1\r\n      log1(0, 0, 0xaa)  // would log 0xaa\r\n  }\r\n}\r\n```\r\n\r\nThis would not be valid:\r\n\r\n```\r\nobject \"ObjectA\" {\r\n  code {\r\n      function helloworld() -> result {\r\n          result := 1\r\n      }\r\n  }\r\n  object \"ObjectB\" is \"ObjectA\" {\r\n      // would log 0xaa\r\n      log1(0, 0, helloworld()) // would log 1\r\n  }\r\n}\r\n```\r\n\r\nThis would be valid:\r\n\r\n```\r\nobject \"ObjectA\" {\r\n    log1(0, 0, 0xaa)\r\n}\r\n\r\nobject \"ObjectB\" {\r\n  code {\r\n      function helloworld() -> result {\r\n          result := 1\r\n      }\r\n  }\r\n  object \"ObjectC\" is \"ObjectA\" {\r\n      // would log 0xaa\r\n      log1(0, 0, helloworld()) // would log 1\r\n  }\r\n}\r\n```\r\n\r\n## Backwards Compatibility\r\n\r\nThis would not be backward compatible with previous Yul versions.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/7612/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/7612/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

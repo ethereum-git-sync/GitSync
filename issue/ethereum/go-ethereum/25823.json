@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25823",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25823/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25823/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25823/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25823",
+  "id": 1378643643,
+  "node_id": "I_kwDOAOvK985SLG67",
+  "number": 25823,
+  "title": "problem `connect: connection refused` in prysm and geth ethereum 2",
+  "user": {
+    "login": "kasrakhamesi",
+    "id": 80700084,
+    "node_id": "MDQ6VXNlcjgwNzAwMDg0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/80700084?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kasrakhamesi",
+    "html_url": "https://github.com/kasrakhamesi",
+    "followers_url": "https://api.github.com/users/kasrakhamesi/followers",
+    "following_url": "https://api.github.com/users/kasrakhamesi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kasrakhamesi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kasrakhamesi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kasrakhamesi/subscriptions",
+    "organizations_url": "https://api.github.com/users/kasrakhamesi/orgs",
+    "repos_url": "https://api.github.com/users/kasrakhamesi/repos",
+    "events_url": "https://api.github.com/users/kasrakhamesi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kasrakhamesi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 268304226,
+      "node_id": "MDU6TGFiZWwyNjgzMDQyMjY=",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:docs",
+      "name": "type:docs",
+      "color": "fef2c0",
+      "default": false,
+      "description": null
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-19T23:40:08Z",
+  "updated_at": "2022-09-19T23:50:37Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "hi , i have error when i want run prysm and geth\r\n\r\nthis is my error : \r\n[2022-09-19 23:30:20] ERROR powchain: Could not connect to execution endpoint error=Post \"http://127.0.0.1:8551\": dial tcp 195.248.241.207:8551: connect: connection refused: Post \"http://127.0.0.1:8551\": dial tcp 127.0.0.1:8551: connect: connection refused\r\n\r\ni use docker to run prysm and geth together\r\ni pull last geth & prysm in dockerhub\r\n\r\nprysm docker document : https://docs.prylabs.network/docs/install/install-with-docker\r\n\r\nprysm docker run command  =>  docker run -d -it  --network ethereum -p 4000:4000 -p 13000:13000 -p 12000:12000/udp --name beacon-node gcr.io/prysmaticlabs/prysm/beacon-chain:stable --datadir=/data --jwt-secret=\"MY JWT PATH\" --rpc-host=0.0.0.0 --grpc-gateway-host=0.0.0.0 --monitoring-host=0.0.0.0 --suggested-fee-recipient=\"MY ETHER ADDRESS\"--execution-endpoint=http://127.0.0.1:8551 --accept-terms-of-use\r\n\r\ngeth docker run command => docker run --name ethereum-node -d -p 8545:8545 -p 8551:8551 -p 8550:8550  -network ethereum -p 30303:30303 -p 8546:8546 -it ethereum/client-go --syncmode snap --http --http.api eth,net,engine,admin --http.rpcprefix=/ --http.corsdomain=\"*\" --http.addr 0.0.0.0 --ws --ipcdisable --ws.addr 0.0.0.0 --ws.origins=\"*\" --datadir /diskb/ethereum/chaindata --authrpc.jwtsecret \"MY JWT TOKEN\" --authrpc.port 8551 --authrpc.vhosts \"*\"\r\n\r\nhow can fix it ?\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25823/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25823/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

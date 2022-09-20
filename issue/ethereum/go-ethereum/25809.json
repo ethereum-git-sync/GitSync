@@ -47,9 +47,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-09-18T20:46:35Z",
-  "updated_at": "2022-09-18T20:50:25Z",
+  "updated_at": "2022-09-19T14:11:38Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -72,5 +72,92 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1250445453",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25809#issuecomment-1250445453",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25809",
+    "id": 1250445453,
+    "node_id": "IC_kwDOAOvK985KiEiN",
+    "user": {
+      "login": "rjl493456442",
+      "id": 5959481,
+      "node_id": "MDQ6VXNlcjU5NTk0ODE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5959481?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rjl493456442",
+      "html_url": "https://github.com/rjl493456442",
+      "followers_url": "https://api.github.com/users/rjl493456442/followers",
+      "following_url": "https://api.github.com/users/rjl493456442/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rjl493456442/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rjl493456442/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rjl493456442/subscriptions",
+      "organizations_url": "https://api.github.com/users/rjl493456442/orgs",
+      "repos_url": "https://api.github.com/users/rjl493456442/repos",
+      "events_url": "https://api.github.com/users/rjl493456442/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rjl493456442/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-19T01:20:54Z",
+    "updated_at": "2022-09-19T01:20:54Z",
+    "author_association": "MEMBER",
+    "body": "I am not sure what's the time allowance for prysm. Maybe better to ask prysm how to handle timeout and if there is any retry mechanism in case?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1250445453/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1251077320",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25809#issuecomment-1251077320",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25809",
+    "id": 1251077320,
+    "node_id": "IC_kwDOAOvK985KkezI",
+    "user": {
+      "login": "schonex",
+      "id": 93842032,
+      "node_id": "U_kgDOBZfqcA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93842032?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/schonex",
+      "html_url": "https://github.com/schonex",
+      "followers_url": "https://api.github.com/users/schonex/followers",
+      "following_url": "https://api.github.com/users/schonex/following{/other_user}",
+      "gists_url": "https://api.github.com/users/schonex/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/schonex/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/schonex/subscriptions",
+      "organizations_url": "https://api.github.com/users/schonex/orgs",
+      "repos_url": "https://api.github.com/users/schonex/repos",
+      "events_url": "https://api.github.com/users/schonex/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/schonex/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-19T14:10:43Z",
+    "updated_at": "2022-09-19T14:11:38Z",
+    "author_association": "NONE",
+    "body": "The point of this bug isn't about Prysm incurring the timeout, its the fact those timeout started occuring with a slight change of environment so the question is where are the bottlenecks.  As an aside, these exact same timeouts are experienced to a much much higher degree by Besu.  So question #2 would be, is there a connection here between the two.  \r\n\r\nReference https://github.com/hyperledger/besu/issues/4400",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1251077320/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

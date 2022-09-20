@@ -1,11 +1,19 @@
 [
   {
     "author": {
-      "login": "schonex"
+      "login": "kasrakhamesi"
     },
-    "number": 25809,
-    "title": "Timeout from geth",
-    "updatedAt": "2022-09-18T20:50:25Z"
+    "number": 25823,
+    "title": "problem `connect: connection refused` in prysm and geth ethereum 2",
+    "updatedAt": "2022-09-19T23:50:37Z"
+  },
+  {
+    "author": {
+      "login": "lansehuiyi6"
+    },
+    "number": 25813,
+    "title": "Geth docker restart and resync from pow block. re sync from 15,537,172, while last synced number is 15,564,944.",
+    "updatedAt": "2022-09-19T20:58:15Z"
   },
   {
     "author": {
@@ -13,7 +21,95 @@
     },
     "number": 25808,
     "title": "Ipc debug",
-    "updatedAt": "2022-09-18T19:18:22Z"
+    "updatedAt": "2022-09-19T20:09:37Z"
+  },
+  {
+    "author": {
+      "login": "wjmelements"
+    },
+    "number": 25614,
+    "title": "Intent to Implement: Recovery of Missing Logs",
+    "updatedAt": "2022-09-19T17:39:43Z"
+  },
+  {
+    "author": {
+      "login": "MariusVanDerWijden"
+    },
+    "number": 25820,
+    "title": "Shanghai tracking issue",
+    "updatedAt": "2022-09-19T16:05:02Z"
+  },
+  {
+    "author": {
+      "login": "schonex"
+    },
+    "number": 25809,
+    "title": "Timeout from geth",
+    "updatedAt": "2022-09-19T14:11:38Z"
+  },
+  {
+    "author": {
+      "login": "eu09"
+    },
+    "number": 25815,
+    "title": "We encounter missing trie node on block no : 15549596",
+    "updatedAt": "2022-09-19T10:39:17Z"
+  },
+  {
+    "author": {
+      "login": "lcgogo"
+    },
+    "number": 25594,
+    "title": "How does geth communicate with prysm?",
+    "updatedAt": "2022-09-19T10:05:28Z"
+  },
+  {
+    "author": {
+      "login": "Ericalvin"
+    },
+    "number": 25810,
+    "title": "geth time ",
+    "updatedAt": "2022-09-19T09:09:04Z"
+  },
+  {
+    "author": {
+      "login": "sealbox"
+    },
+    "number": 25778,
+    "title": "Running geth with beacon chain",
+    "updatedAt": "2022-09-19T08:38:22Z"
+  },
+  {
+    "author": {
+      "login": "begetan"
+    },
+    "number": 25753,
+    "title": "Geth 1.10.23 fresh sync is broken for Post-Merge networks with error: Beacon client online, but never received consensus updates.",
+    "updatedAt": "2022-09-19T07:05:30Z"
+  },
+  {
+    "author": {
+      "login": "Ericalvin"
+    },
+    "number": 25811,
+    "title": "Head state missing",
+    "updatedAt": "2022-09-19T07:00:39Z"
+  },
+  {
+    "author": {
+      "login": "rjl493456442"
+    },
+    "number": 25390,
+    "title": "all: PRs for Path-based state scheme",
+    "updatedAt": "2022-09-19T05:33:58Z"
+  },
+  {
+    "author": {
+      "login": "Aheyachy"
+    },
+    "number": 25807,
+    "title": "Bismillah Traders- ",
+    "updatedAt": "2022-09-19T01:21:17Z"
   },
   {
     "author": {
@@ -22,14 +118,6 @@
     "number": 25693,
     "title": "Clean sync Goerli broken(?) post merge on 1.10.21 and 1.10.23",
     "updatedAt": "2022-09-18T19:15:16Z"
-  },
-  {
-    "author": {
-      "login": "Aheyachy"
-    },
-    "number": 25807,
-    "title": "Bismillah Traders- ",
-    "updatedAt": "2022-09-18T16:23:08Z"
   },
   {
     "author": {
@@ -193,14 +281,6 @@
   },
   {
     "author": {
-      "login": "sealbox"
-    },
-    "number": 25778,
-    "title": "Running geth with beacon chain",
-    "updatedAt": "2022-09-16T09:28:05Z"
-  },
-  {
-    "author": {
       "login": "Nevknight"
     },
     "number": 25781,
@@ -230,22 +310,6 @@
     "number": 25785,
     "title": "Beacon client online, but never received consensus updates. Please ensure your beacon client is operational to follow the chain",
     "updatedAt": "2022-09-16T09:07:25Z"
-  },
-  {
-    "author": {
-      "login": "begetan"
-    },
-    "number": 25753,
-    "title": "Geth 1.10.23 fresh sync is broken for Post-Merge networks with error: Beacon client online, but never received consensus updates.",
-    "updatedAt": "2022-09-16T08:31:50Z"
-  },
-  {
-    "author": {
-      "login": "rjl493456442"
-    },
-    "number": 25390,
-    "title": "all: PRs for Path-based state scheme",
-    "updatedAt": "2022-09-16T04:31:01Z"
   },
   {
     "author": {
@@ -422,14 +486,6 @@
     "number": 25754,
     "title": "eth.accounts in geth console returns empty array",
     "updatedAt": "2022-09-13T14:37:42Z"
-  },
-  {
-    "author": {
-      "login": "lcgogo"
-    },
-    "number": 25594,
-    "title": "How does geth communicate with prysm?",
-    "updatedAt": "2022-09-13T12:56:57Z"
   },
   {
     "author": {
@@ -678,14 +734,6 @@
     "number": 25659,
     "title": "online pruning feature on ETH",
     "updatedAt": "2022-09-07T06:39:55Z"
-  },
-  {
-    "author": {
-      "login": "wjmelements"
-    },
-    "number": 25614,
-    "title": "Intent to Implement: Recovery of Missing Logs",
-    "updatedAt": "2022-09-06T22:12:20Z"
   },
   {
     "author": {

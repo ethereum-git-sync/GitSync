@@ -49,21 +49,40 @@
       "description": "Further information is requested"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 4,
+  "comments": 5,
   "created_at": "2022-09-14T14:22:29Z",
-  "updated_at": "2022-09-18T07:34:15Z",
-  "closed_at": null,
+  "updated_at": "2022-09-19T09:42:37Z",
+  "closed_at": "2022-09-19T09:42:37Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "Hello,\r\n\r\nI'm opening this issue because of how `ProposerPayloadsDelivered` data API is implemented. Currently, in the [Data API specs of notion](https://flashbots.notion.site/Relay-API-Spec-5fb0819366954962bc02e81cb33840f5#417abe417dde45caaff3dc15aaae65dd) this is how the cursor parameter is described: \r\n\r\n> `cursor`: a slot cursor, where limit number of entries up until the cursor slot is returned (note only slot or cursor can be used)\r\n\r\nSo, this means that delivered payloads are returned up until the `cursor`, meaning that the `cursor` is the upper limit. Therefore, the returned entries should start at the bottom and go up until the `cursor` is hit or we reach `limit` amount of entries. But, in the current implementation the entries start at `cursor`, and go downwards until limit amount of `entries` are found.\r\n\r\nSo, is this a bug in the relay code or a change in the spec? Thank you!",
-  "closed_by": null,
+  "closed_by": {
+    "login": "aratz-lasa",
+    "id": 28734408,
+    "node_id": "MDQ6VXNlcjI4NzM0NDA4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/28734408?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aratz-lasa",
+    "html_url": "https://github.com/aratz-lasa",
+    "followers_url": "https://api.github.com/users/aratz-lasa/followers",
+    "following_url": "https://api.github.com/users/aratz-lasa/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aratz-lasa/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aratz-lasa/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aratz-lasa/subscriptions",
+    "organizations_url": "https://api.github.com/users/aratz-lasa/orgs",
+    "repos_url": "https://api.github.com/users/aratz-lasa/repos",
+    "events_url": "https://api.github.com/users/aratz-lasa/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aratz-lasa/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/128/reactions",
     "total_count": 0,
@@ -78,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/128/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -245,6 +264,50 @@
     "body": "sounds great, updated",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1250211200/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1250798000",
+    "html_url": "https://github.com/flashbots/mev-boost-relay/issues/128#issuecomment-1250798000",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/128",
+    "id": 1250798000,
+    "node_id": "IC_kwDOHXha9s5Kjamw",
+    "user": {
+      "login": "aratz-lasa",
+      "id": 28734408,
+      "node_id": "MDQ6VXNlcjI4NzM0NDA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28734408?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aratz-lasa",
+      "html_url": "https://github.com/aratz-lasa",
+      "followers_url": "https://api.github.com/users/aratz-lasa/followers",
+      "following_url": "https://api.github.com/users/aratz-lasa/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aratz-lasa/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aratz-lasa/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aratz-lasa/subscriptions",
+      "organizations_url": "https://api.github.com/users/aratz-lasa/orgs",
+      "repos_url": "https://api.github.com/users/aratz-lasa/repos",
+      "events_url": "https://api.github.com/users/aratz-lasa/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aratz-lasa/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-19T09:42:37Z",
+    "updated_at": "2022-09-19T09:42:37Z",
+    "author_association": "NONE",
+    "body": "Thanks, then I'm closing it",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1250798000/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

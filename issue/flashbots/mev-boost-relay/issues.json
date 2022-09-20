@@ -1,19 +1,19 @@
 [
   {
     "author": {
+      "login": "aratz-lasa"
+    },
+    "number": 128,
+    "title": "Data API ProposerPayloadsDelivered implementation",
+    "updatedAt": "2022-09-19T09:42:37Z"
+  },
+  {
+    "author": {
       "login": "itsdeka"
     },
     "number": 130,
     "title": "Block builder submissions - response status 200, but what happened?",
     "updatedAt": "2022-09-18T10:02:58Z"
-  },
-  {
-    "author": {
-      "login": "aratz-lasa"
-    },
-    "number": 128,
-    "title": "Data API ProposerPayloadsDelivered implementation",
-    "updatedAt": "2022-09-18T07:34:15Z"
   },
   {
     "author": {

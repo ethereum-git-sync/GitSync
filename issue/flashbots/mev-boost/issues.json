@@ -5,7 +5,15 @@
     },
     "number": 330,
     "title": "Requests to other relays are canceled as soon as one relay returns",
-    "updatedAt": "2022-09-18T17:56:21Z"
+    "updatedAt": "2022-09-19T14:19:56Z"
+  },
+  {
+    "author": {
+      "login": "lucy-sha512"
+    },
+    "number": 320,
+    "title": "Cannot connect to Builder",
+    "updatedAt": "2022-09-19T12:04:53Z"
   },
   {
     "author": {
@@ -30,14 +38,6 @@
     "number": 323,
     "title": "feature-request: retry getPayload on error (until configured timeout)",
     "updatedAt": "2022-09-16T14:59:37Z"
-  },
-  {
-    "author": {
-      "login": "lucy-sha512"
-    },
-    "number": 320,
-    "title": "Cannot connect to Builder",
-    "updatedAt": "2022-09-16T10:58:27Z"
   },
   {
     "author": {

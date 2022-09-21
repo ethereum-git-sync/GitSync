@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/pm/issues/286",
+  "repository_url": "https://api.github.com/repos/ethereum/pm",
+  "labels_url": "https://api.github.com/repos/ethereum/pm/issues/286/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/pm/issues/286/comments",
+  "events_url": "https://api.github.com/repos/ethereum/pm/issues/286/events",
+  "html_url": "https://github.com/ethereum/pm/issues/286",
+  "id": 843500718,
+  "node_id": "MDU6SXNzdWU4NDM1MDA3MTg=",
+  "number": 286,
+  "title": "Ethereum Core Devs Meeting 106 Agenda",
+  "user": {
+    "login": "timbeiko",
+    "id": 9390255,
+    "node_id": "MDQ6VXNlcjkzOTAyNTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9390255?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/timbeiko",
+    "html_url": "https://github.com/timbeiko",
+    "followers_url": "https://api.github.com/users/timbeiko/followers",
+    "following_url": "https://api.github.com/users/timbeiko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/timbeiko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/timbeiko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/timbeiko/subscriptions",
+    "organizations_url": "https://api.github.com/users/timbeiko/orgs",
+    "repos_url": "https://api.github.com/users/timbeiko/repos",
+    "events_url": "https://api.github.com/users/timbeiko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/timbeiko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2866593601,
+      "node_id": "MDU6TGFiZWwyODY2NTkzNjAx",
+      "url": "https://api.github.com/repos/ethereum/pm/labels/agenda",
+      "name": "agenda",
+      "color": "0052cc",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-03-29T15:43:54Z",
+  "updated_at": "2021-03-29T15:43:58Z",
+  "closed_at": "2021-03-29T15:43:58Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "  #### ACD 106 Meeting Info\r\n  * [February 19, 2021, 14:00 UTC](https://savvytime.com/converter/utc-to-germany-berlin-united-kingdom-london-ny-new-york-city-ca-san-francisco-china-shanghai-japan-tokyo-australia-sydney/feb-19-2021/2pm)\r\n  * Duration: 90 minutes\r\n  * Youtube Stream: https://youtu.be/anrbnroO3dc\r\n\r\n  #### Agenda\r\n  1. [YOLOv3](https://github.com/ethereum/eth1.0-specs/blob/master/client-integration-testnets/YOLOv3.md) status\r\n  1. [Berlin](https://github.com/ethereum/eth1.0-specs/blob/master/network-upgrades/berlin.md) Timing [#248](https://github.com/ethereum/pm/issues/248)\r\n  1. London Timing [#245](https://github.com/ethereum/pm/issues/245)\r\n  1. Eth1 -> Eth2 Merge Requirements Overview [#247](https://github.com/ethereum/pm/issues/247)\r\n  1. Removing EVM Features [#250](https://github.com/ethereum/pm/issues/250)\r\n  1. (Announcement) 1559 Community Call [#251](https://github.com/ethereum/pm/issues/251) ",
+  "closed_by": {
+    "login": "timbeiko",
+    "id": 9390255,
+    "node_id": "MDQ6VXNlcjkzOTAyNTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9390255?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/timbeiko",
+    "html_url": "https://github.com/timbeiko",
+    "followers_url": "https://api.github.com/users/timbeiko/followers",
+    "following_url": "https://api.github.com/users/timbeiko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/timbeiko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/timbeiko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/timbeiko/subscriptions",
+    "organizations_url": "https://api.github.com/users/timbeiko/orgs",
+    "repos_url": "https://api.github.com/users/timbeiko/repos",
+    "events_url": "https://api.github.com/users/timbeiko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/timbeiko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/pm/issues/286/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/pm/issues/286/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

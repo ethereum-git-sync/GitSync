@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/4343",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/4343/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/4343/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/4343/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/4343",
+  "id": 1014473369,
+  "node_id": "I_kwDOAq426M48d6KZ",
+  "number": 4343,
+  "title": "ERC: Discussion around Creditable NFT",
+  "user": {
+    "login": "yfeng997",
+    "id": 22562758,
+    "node_id": "MDQ6VXNlcjIyNTYyNzU4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22562758?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yfeng997",
+    "html_url": "https://github.com/yfeng997",
+    "followers_url": "https://api.github.com/users/yfeng997/followers",
+    "following_url": "https://api.github.com/users/yfeng997/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yfeng997/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yfeng997/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yfeng997/subscriptions",
+    "organizations_url": "https://api.github.com/users/yfeng997/orgs",
+    "repos_url": "https://api.github.com/users/yfeng997/repos",
+    "events_url": "https://api.github.com/users/yfeng997/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yfeng997/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 2328627851,
+      "node_id": "MDU6TGFiZWwyMzI4NjI3ODUx",
+      "url": "https://api.github.com/repos/ethereum/EIPs/labels/stale",
+      "name": "stale",
+      "color": "000000",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-10-03T17:46:03Z",
+  "updated_at": "2022-07-19T00:43:30Z",
+  "closed_at": "2022-04-15T21:02:35Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## TL;DR\r\n\r\nThe proposal introduces an interface for new ERC 721 contracts to register reference to and inspiration from other works. This recognizes influential NFT collections and safeguards originality. \r\n\r\n## Motivation\r\n\r\nCitation is a well-established mechanism for recognizing the originality of a piece of work and quantifying the impact of the creator. In academia, Google Scholar assigns [citation index](https://scholar.google.com/citations?user=DLP9gTAAAAAJ&hl=fr) to researchers and publications to evaluate the popularity and impact. On Github, developers recognize others’ work by [starring and forking](https://github.com/ethereum/go-ethereum) useful repositories.\r\nBoth systems not only provide a time stamp to reserve and verify the creation of the work/idea but also rewards authors/developers based on their influence and marginal value committed to the community.\r\n\r\nThe same effort is applied to the digital assets world, albeit with much less efficiency and recognition. Two main issues brought to our attention: i) on social media, people can re-publish anyone’s digital work without crediting to the original authors; ii) even with “credit to” or “inspired by” statement tagged in the publication, it is hard to overall keep track of the credibility of the work or its original creators. \r\n\r\nTherefore, we propose to adapt digital asset tracking like ERC-721 to register credibility among art works and creators. The goal of this proposed feature is to firstly, count the number of use/mention/credit to a specific artwork; secondly, record the total impact of the original creator and/or the current owner. In this way, the originality and ownership of digital assets can be protected to the maximum extent and artists/collectors can grow their recognition among the community.\r\n\r\n## Example\r\n\r\nIn the ideal scenario, we would like to allow querying for all collections that give credits to a certain work. However, storing this lengthy list costs a formidable amount of gas. Thus, we only keep track of the number of credits as a state variable, and leave specific referenced collections to event logs. \r\n\r\n```\r\npragma solidity ^0.6.0;\r\n\r\n/**\r\n * @dev Interface for creditable ERC-721\r\n */\r\ninterface IERC721Creditable {\r\n    \r\n    /**\r\n     * @notice This event is emitted when another ERC-721 contract credits to this contract\r\n     * \r\n     * @dev When a new contract is minted, the minter would call credit() function\r\n     * and this event would be emitted. \r\n     * \r\n     * @param creditFrom Address of contract that gives credit to this contract \r\n     * @param creditTo Address of current contract \r\n  */\r\n    event RegisteredCredit(address indexed creditFrom, address indexed creditTo);\r\n    \r\n    /**\r\n     * @dev This function is called when an ERC-721 compatible contract is minted and wants to give credit/reference to this contract. Throws if creditFrom address is not ERC-721 compatible. \r\n     * Emits RegisteredCredit event. \r\n     * \r\n     * @param creditFrom Address of contract that gives credit to this contract \r\n     */\r\n    function credit(address creditFrom) external view;\r\n    \r\n}\r\n```\r\nThe function name ‘credit’ is open for suggestions. Some alternatives include ‘inspire’, ‘reference’, ‘cite’. \r\n\r\n\r\nWhat do we think?\r\n\r\n",
+  "closed_by": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/4343/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/4343/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

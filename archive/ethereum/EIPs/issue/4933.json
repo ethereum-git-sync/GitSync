@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/4933",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/4933/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/4933/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/4933/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/4933",
+  "id": 1175603815,
+  "node_id": "I_kwDOAq426M5GEkpn",
+  "number": 4933,
+  "title": "Who would implement this EIP? Developers using several protocols or the protocols themselves?",
+  "user": {
+    "login": "Madeindreams",
+    "id": 17243647,
+    "node_id": "MDQ6VXNlcjE3MjQzNjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17243647?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Madeindreams",
+    "html_url": "https://github.com/Madeindreams",
+    "followers_url": "https://api.github.com/users/Madeindreams/followers",
+    "following_url": "https://api.github.com/users/Madeindreams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Madeindreams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Madeindreams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Madeindreams/subscriptions",
+    "organizations_url": "https://api.github.com/users/Madeindreams/orgs",
+    "repos_url": "https://api.github.com/users/Madeindreams/repos",
+    "events_url": "https://api.github.com/users/Madeindreams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Madeindreams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-03-21T16:04:42Z",
+  "updated_at": "2022-07-18T18:08:18Z",
+  "closed_at": "2022-03-21T22:18:27Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Greetings.\r\n\r\nI have been working on this specific issue (one interface for multiple DEFI protocols).\r\nI have a good template and already implemented it on multiple protocols like Compound, Aave, Yearn and more and on multiple chain as well. Now when I look at this proposal I am wondering where do we deal with protocols specs. For instance dealing with Compound require specific procedure that are not the same on different protocols. So the question is; Is it the developer of a new project that deals with each specific or we are looking at having the EIP implemented by each protocols so future devs can easily withdraw and deposit without worrying about specifics?\r\n\r\nThank you.",
+  "closed_by": {
+    "login": "Madeindreams",
+    "id": 17243647,
+    "node_id": "MDQ6VXNlcjE3MjQzNjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17243647?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Madeindreams",
+    "html_url": "https://github.com/Madeindreams",
+    "followers_url": "https://api.github.com/users/Madeindreams/followers",
+    "following_url": "https://api.github.com/users/Madeindreams/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Madeindreams/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Madeindreams/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Madeindreams/subscriptions",
+    "organizations_url": "https://api.github.com/users/Madeindreams/orgs",
+    "repos_url": "https://api.github.com/users/Madeindreams/repos",
+    "events_url": "https://api.github.com/users/Madeindreams/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Madeindreams/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/4933/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/4933/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

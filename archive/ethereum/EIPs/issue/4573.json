@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/4573",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/4573/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/4573/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/4573/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/4573",
+  "id": 1082548484,
+  "node_id": "I_kwDOAq426M5AhmEE",
+  "number": 4573,
+  "title": "Procedures for the EVM",
+  "user": {
+    "login": "gcolvin",
+    "id": 16827129,
+    "node_id": "MDQ6VXNlcjE2ODI3MTI5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16827129?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gcolvin",
+    "html_url": "https://github.com/gcolvin",
+    "followers_url": "https://api.github.com/users/gcolvin/followers",
+    "following_url": "https://api.github.com/users/gcolvin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gcolvin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gcolvin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gcolvin/subscriptions",
+    "organizations_url": "https://api.github.com/users/gcolvin/orgs",
+    "repos_url": "https://api.github.com/users/gcolvin/repos",
+    "events_url": "https://api.github.com/users/gcolvin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gcolvin/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-12-16T19:01:26Z",
+  "updated_at": "2022-07-18T18:10:03Z",
+  "closed_at": "2022-04-29T21:26:08Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "---\r\neip: 4573\r\ntitle: Named Procedures for the EVM\r\ndescription: Introduces support for named EVM procedures.\r\nstatus: Draft\r\ntype: Standards Track\r\ncategory: Core\r\nauthor: Greg Colvin (@gcolvin), Greg Colvin <greg@colvin.org>\r\ndiscussions-to: https://ethereum-magicians.org/t/eip-4573-named-procedures-for-evm-code-sections/7776\r\ncreated: 2021-12-16\r\nrequires: 2315, 3540, 3670, 3779, 4200\r\n---\r\n\r\n## Abstract\r\n\r\nFive EVM instructions are introduced to define, call, and return from named EVM procedures and access their call frames in memory - `ENTERPROC`, `LEAVEPROC`, `CALLPROC`, `RETURNPROC`, and `ADRESSLOCAL`.\r\n\r\n## Motivation\r\n\r\nCurrently, Ethereum bytecode has no syntactic structure.  We propose to add named procedures -- delimited blocks of code that can be entered only by calling into them via defined interfaces.  Syntactic constraints on the use of procedures must be validated at contract initialization time to maintain the safety properties of [EIP-3779](./eip-3779.md): Valid programs will not halt with an exception unless they run out of gas or recursively overflow stack.\r\n\r\nAlso, the EVM currently provides no automatic management of memory for procedures.   So also propose stack allocation and deallocation of call frames in memory.\r\n\r\n## Specification\r\n\r\n### Instructions\r\n\r\n#### ENTERPROC (0x??) name: []char, n_inputs: uint16, n_outputs: uint16, n_locals: uint16\r\n```\r\nframe_stack.push(FP)\r\nFP -= n_locals * 32\r\nPC +- <length of immediates>\r\n```\r\nMarks the entry point to a procedure\r\n* with a null-terminated name,\r\n* taking `n_inputs` arguments from the data stack, \r\n* returning `n_outputs` values on the `data stack`, and\r\n* reserving `n_locals` words of data in memory on the `frame stack`.\r\n \r\nProcedures can only be entered via a `CALLPROC` to their entry point.\r\n\r\n#### LEAVEPROC (0x??)\r\n\r\n```\r\n   FP = frame_stack.pop()\r\n   asm RETURNSUB\r\n```\r\n> Pop the `frame stack` and return to the calling procedure using `RETURNSUB`.\r\n\r\nMarks the end of a procedure.  Each `ENTERPROC` requires a closing `LEAVEPROC`.\r\n\r\n*Note: Attempts to jump into a procedure (including its  `LEAVEPROC`) from outside of the procedure or to jump or step to `ENTERPROC` at all must be prevented at validation time.  `CALLPROC` is the only valid way to enter a procedure.*\r\n\r\n#### CALLPROC (0x??) name: []char\r\n ```\r\n   asm JUMPSUB <offset of named procedure>\r\n```\r\n> Transfer control to the entry point of the named procedure using `JUMPSUB`.\r\n\r\n*Note: That the named procedure is defined and the required `n_inputs` words are available on the `data stack` must be shown at validation time.* \r\n\r\n#### RETURNPROC (0x??)\r\n```\r\n   FP = frame_stack.pop()\r\n   asm RETURNSUB\r\n```\r\n> Pop the `frame stack` and return control to the calling procedure using `RETURNSUB`.\r\n\r\n*Note: That the promised `n_outputs` words are available on the `data stack` must be shown at validation time.*\r\n\r\n#### ADDRESSFRAME (0x??) offset: int16\r\n```\r\n*SP++ = FP + offset\r\n```\r\n> Push the address `FP + offset` onto the data stack.\r\n\r\nCall frame data is addressed at an immediate `offset` relative to `FP`.\r\n\r\nTypical usage includes storing data on a call frame\r\n```\r\nPUSH 0xdada\r\nADDRESSFRAME 32\r\nMSTORE\r\n```\r\nand loading data from a call frame\r\n```\r\nADDRESSFRAME 32\r\nMLOAD\r\n```\r\n\r\n### Memory Costs\r\n\r\nPresently,`MSTORE` is defined as\r\n```\r\n   memory[stack[0]...stack[0]+31] = stack[1]\r\n   memory_size = max(memory_size,floor((stack[0]+32)÷32)\r\n```\r\n* where `memory_size` is the number of active words of memory above 0.\r\n\r\nWe propose to treat memory addresses as signed, so the formula needs to be\r\n```\r\n   memory[stack[0]...stack[0]+31] = stack[1]\r\n   if (stack[0])+32)÷32) < 0\r\n      negative_memory_size = max(negative_memory_size,floor((stack[0]+32)÷32))\r\n   else\r\n      positive_memory_size = max(positive_memory_size,floor((stack[0]+32)÷32))\r\n   memory_size = positive_memory_size + negative_memory_size\r\n```\r\n* where `negative_memory_size` is the number of active words of memory below 0 and\r\n* where `positive_memory_size` is the number of active words of memory at or above 0.\r\n\r\n### Call Frame Stack\r\n\r\nThese instructions make use of a `frame stack` to allocate and free frames of local data for procedures in memory.  Frame memory begins at address 0 in memory and grows downwards, towards more negative addresses.  A frame is allocated for each procedure when it is called, and freed when it returns. \r\n\r\nMemory can be addressed relative to the frame pointer `FP` or by absolute address.  `FP` starts at 0, and moves downward towards more negative addresses to point to the frame for each `CALLPROC` and moving upward towards less negative addresses to point to the previous frame for the corresponding `RETURNPROC`.\r\n\r\nEquivalently, in the EVM's twos-complement arithmetic, `FP` moves from the highest address down, as is common in many calling conventions.\r\n\r\nFor example, after an initial `CALLPROC` to a procedure needing two words of data the `frame stack` might look like this\r\n\r\n```\r\n     0-> ........\r\n         ........\r\n    FP->\r\n```\r\nThen, after a further `CALLPROC` to a procedure needing three words of data the `frame stack` would like this\r\n\r\n```\r\n     0-> ........\r\n         ........\r\n   -64-> ........\r\n         ........\r\n         ........\r\n    FP->\r\n```\r\nAfter a `RETURNPROC` from that procedure the `frame stack` would look like this\r\n```\r\n     0-> ........\r\n         ........\r\n    FP-> ........\r\n         ........\r\n         ........\r\n```\r\nand after a final `RETURNPROC`, like this\r\n```\r\n    FP-> ........\r\n         ........\r\n         ........\r\n         ........\r\n         ........\r\n```\r\n\r\n## Rationale\r\n\r\nThere is actually not much new here.  It amounts to [EIP-615](./eip-615), refined and refactored into bite-sized pieces, along lines common to other machines.\r\n\r\nThis proposal uses the [EIP-2315](./eip-2315) return stack to manage calls and returns, and steals ideas from [EIP-615](./eip-615), [EIP-3336](./eip-3336), and  [EIP-4200](./eip-4200). `ENTERPROC` corresponds to `BEGINSUB` from EIP-615.  Per EIP-615 it uses a frame stack to track call-frame addresses with `FP` as procedures are entered and left, but per EIP-3336 and EIP-3337 it moves call frames from the data stack to memory. \r\n\r\nAliasing call frames with ordinary memory supports  addressing call-frame data with ordinary stores and loads.  This is generally useful, especially for languages like C that provide pointers to variables on the stack.\r\n\r\nThe design model here is the subroutines and procedures of the Intel x86 architecture.\r\n* `JUMPSUB` and `RETURNSUB` (from [EIP-2315](./eip-2315)) -- like `CALL` and `RET` -- jump to and return from subroutines.\r\n* `ENTERPROC`  -- like `ENTER` -- sets up the stack frame for a procedure.\r\n* `CALLPROC` amounts to a `JUMPSUB` to an `ENTERPROC`.\r\n* `RETURNPROC` amounts to an early `LEAVEPROC`.\r\n* `LEAVEPROC` -- like `LEAVE` -- takes down the stack frame for a procedure.  It also returns.\r\n* `ADDRESSFRAME` -- like `EBP-relative` addressing -- is offset relative to the current procedure's call frame.\r\n\r\n## Backwards Compatibility\r\n\r\nThis proposal adds new EVM opcodes.  It doesn't remove or change the semantics of any existing opcodes, so there should be no backwards compatibility issues.\r\n\r\n## Security\r\n\r\nSafe use of these constructs must be checked completely at validation time -- per EIP-3779 -- so there should be no security issues at runtime.\r\n\r\nIn addition to the constraints on `JUMPSUB` and `RETURNSUB`, the following constraints must be validated:\r\n* Every`ENTERPROC` must be followed by a `LEAVEPROC` to delimit the bodies of procedures.\r\n* There can be no nested procedures.\r\n* There can be no jump into the body of a procedure (including its `LEAVEPROC`) from outside of that body.\r\n* There can be no jump or step to `BEGINPROC` at all -- only `CALLPROC`.\r\n* The available stack for `CALLPROC`, `RETURNPROC`, and `LEAVEPROC` must match the corresponding `ENTERPROC`.\r\n\r\n## Copyright\r\nCopyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).\r\n",
+  "closed_by": {
+    "login": "gcolvin",
+    "id": 16827129,
+    "node_id": "MDQ6VXNlcjE2ODI3MTI5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16827129?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gcolvin",
+    "html_url": "https://github.com/gcolvin",
+    "followers_url": "https://api.github.com/users/gcolvin/followers",
+    "following_url": "https://api.github.com/users/gcolvin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gcolvin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gcolvin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gcolvin/subscriptions",
+    "organizations_url": "https://api.github.com/users/gcolvin/orgs",
+    "repos_url": "https://api.github.com/users/gcolvin/repos",
+    "events_url": "https://api.github.com/users/gcolvin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gcolvin/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/4573/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/4573/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

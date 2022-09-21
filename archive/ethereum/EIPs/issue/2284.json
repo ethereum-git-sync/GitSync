@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/2284",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/2284/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/2284/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/2284/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/2284",
+  "id": 494287706,
+  "node_id": "MDU6SXNzdWU0OTQyODc3MDY=",
+  "number": 2284,
+  "title": "Arbitrary File Write via Archive Extraction (Zip Slip)",
+  "user": {
+    "login": "larrycameron80",
+    "id": 15793452,
+    "node_id": "MDQ6VXNlcjE1NzkzNDUy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15793452?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/larrycameron80",
+    "html_url": "https://github.com/larrycameron80",
+    "followers_url": "https://api.github.com/users/larrycameron80/followers",
+    "following_url": "https://api.github.com/users/larrycameron80/following{/other_user}",
+    "gists_url": "https://api.github.com/users/larrycameron80/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/larrycameron80/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/larrycameron80/subscriptions",
+    "organizations_url": "https://api.github.com/users/larrycameron80/orgs",
+    "repos_url": "https://api.github.com/users/larrycameron80/repos",
+    "events_url": "https://api.github.com/users/larrycameron80/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/larrycameron80/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-09-16T21:32:26Z",
+  "updated_at": "2019-09-17T01:09:24Z",
+  "closed_at": "2019-09-17T01:09:24Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Arbitrary File Write via Archive Extraction (Zip Slip)\r\nVulnerable module: rubyzip\r\nIntroduced through: github-pages@179\r\nDetailed paths\r\nIntroduced through: enjin/EIPs-1@enjin/EIPs-1#da0ed3069ba055fd0899d8848e7dcb7cb55b490c › github-pages@179 › jekyll-remote-theme@0.2.3 › rubyzip@1.2.1\r\nRemediation: Upgrade to github-pages@179.\r\nOverview\r\nrubyzip is a ruby module for reading and writing zip files.\r\n\r\nAffected versions of the package are vulnerable to Arbitrary File Write via Archive Extraction (AKA \"Zip Slip\").\r\n\r\nIt is exploited using a specially crafted zip archive, that holds path traversal filenames. When exploited, a filename in a malicious archive is concatenated to the target extraction directory, which results in the final path ending up outside of the target folder. For instance, a zip may hold a file with a \"../../file.exe\" location and thus break out of the target folder. If an executable or a configuration file is overwritten with a file containing malicious code, the problem can turn into an arbitrary code execution issue quite easily.\r\n\r\nThe following is an example of a zip archive with one benign file and one malicious file. Extracting the malicous file will result in traversing out of the target folder, ending up in /root/.ssh/ overwriting the authorized_keys file:\r\n\r\n\r\n+2018-04-15 22:04:29 ..... 19 19 good.txt\r\n\r\n+2018-04-15 22:04:42 ..... 20 20 ../../../../../../root/.ssh/authorized_keys\r\nNOTE This vulnerability is due to a partial fix in CVE-2017-5946",
+  "closed_by": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/2284/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/2284/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

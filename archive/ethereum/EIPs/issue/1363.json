@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/1363",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/1363/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/1363/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/1363/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/1363",
+  "id": 355352640,
+  "node_id": "MDU6SXNzdWUzNTUzNTI2NDA=",
+  "number": 1363,
+  "title": "ERC-1363 Payable Token",
+  "user": {
+    "login": "vittominacori",
+    "id": 8151143,
+    "node_id": "MDQ6VXNlcjgxNTExNDM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8151143?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vittominacori",
+    "html_url": "https://github.com/vittominacori",
+    "followers_url": "https://api.github.com/users/vittominacori/followers",
+    "following_url": "https://api.github.com/users/vittominacori/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vittominacori/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vittominacori/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vittominacori/subscriptions",
+    "organizations_url": "https://api.github.com/users/vittominacori/orgs",
+    "repos_url": "https://api.github.com/users/vittominacori/repos",
+    "events_url": "https://api.github.com/users/vittominacori/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vittominacori/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-08-29T22:12:11Z",
+  "updated_at": "2022-07-01T15:24:01Z",
+  "closed_at": "2020-04-26T02:41:27Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "# ERC-1363 Payable Token\r\n\r\n## Simple Summary\r\nDefines a token interface for [EIP-20](https://eips.ethereum.org/EIPS/eip-20.md) tokens that supports executing recipient contract code after `transfer` or `transferFrom`, or spender contract code after `approve` in a single transaction.\r\n\r\n## Abstract\r\nThe following are the transfer, transferFrom, approve and callback functions standardized in this EIP:\r\n\r\n`transferAndCall` and `transferFromAndCall` will call an `onTransferReceived` on a `ERC1363Receiver` contract.  \r\n\r\n`approveAndCall` will call an `onApprovalReceived` on a `ERC1363Spender` contract.\r\n\r\n## Motivation\r\nThere is no way to execute any code on a receiver or spender contract after an [EIP-20](https://eips.ethereum.org/EIPS/eip-20.md) `transfer`, `transferFrom` or `approve` so, to make an action, it is required to send another transaction.\r\nThis introduces complexity on UI development and friction on adoption because users must wait for the first transaction to be executed and then send the second one. They must also pay GAS twice. \r\n\r\nThis proposal aims to make tokens capable of performing actions more easily and working without the use of any other listener. \r\nIt allows to make a callback on a receiver or spender contract, after a transfer or an approval, in a single transaction.\r\n\r\nThere are many proposed uses of Ethereum smart contracts that can accept [EIP-20](https://eips.ethereum.org/EIPS/eip-20.md) callbacks. \r\n\r\nExamples could be \r\n* to create a token payable crowdsale\r\n* selling services for tokens \r\n* paying invoices\r\n* making subscriptions\r\n\r\nFor these reasons it was originally named **\"Payable Token\"**.\r\n\r\nAnyway you can use it for specific utilities or for any other purposes who require the execution of a callback after a transfer or approval received.\r\n\r\nThis proposal has been inspired by the [EIP-721](https://eips.ethereum.org/EIPS/eip-721.md) `onERC721Received` and `ERC721TokenReceiver` behaviours. \r\n\r\n## Specification\r\nImplementing contracts **MUST** implement the [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363.md) interface as well as the [EIP-20](https://eips.ethereum.org/EIPS/eip-20.md) and [EIP-165](https://eips.ethereum.org/EIPS/eip-165.md) interfaces.\r\n\r\n```solidity\r\npragma solidity ^0.8.0;\r\n\r\ninterface ERC1363 is ERC20, ERC165 {\r\n  /*\r\n   * Note: the ERC-165 identifier for this interface is 0xb0202a11.\r\n   * 0xb0202a11 ===\r\n   *   bytes4(keccak256('transferAndCall(address,uint256)')) ^\r\n   *   bytes4(keccak256('transferAndCall(address,uint256,bytes)')) ^\r\n   *   bytes4(keccak256('transferFromAndCall(address,address,uint256)')) ^\r\n   *   bytes4(keccak256('transferFromAndCall(address,address,uint256,bytes)')) ^\r\n   *   bytes4(keccak256('approveAndCall(address,uint256)')) ^\r\n   *   bytes4(keccak256('approveAndCall(address,uint256,bytes)'))\r\n   */\r\n\r\n  /**\r\n   * @notice Transfer tokens from `msg.sender` to another address and then call `onTransferReceived` on receiver\r\n   * @param to address The address which you want to transfer to\r\n   * @param amount uint256 The amount of tokens to be transferred\r\n   * @return true unless throwing\r\n   */\r\n  function transferAndCall(address to, uint256 amount) external returns (bool);\r\n\r\n  /**\r\n   * @notice Transfer tokens from `msg.sender` to another address and then call `onTransferReceived` on receiver\r\n   * @param to address The address which you want to transfer to\r\n   * @param amount uint256 The amount of tokens to be transferred\r\n   * @param data bytes Additional data with no specified format, sent in call to `to`\r\n   * @return true unless throwing\r\n   */\r\n  function transferAndCall(address to, uint256 amount, bytes memory data) external returns (bool);\r\n\r\n  /**\r\n   * @notice Transfer tokens from one address to another and then call `onTransferReceived` on receiver\r\n   * @param sender address The address which you want to send tokens from\r\n   * @param to address The address which you want to transfer to\r\n   * @param amount uint256 The amount of tokens to be transferred\r\n   * @return true unless throwing\r\n   */\r\n  function transferFromAndCall(address sender, address to, uint256 amount) external returns (bool);\r\n\r\n\r\n  /**\r\n   * @notice Transfer tokens from one address to another and then call `onTransferReceived` on receiver\r\n   * @param sender address The address which you want to send tokens from\r\n   * @param to address The address which you want to transfer to\r\n   * @param amount uint256 The amount of tokens to be transferred\r\n   * @param data bytes Additional data with no specified format, sent in call to `to`\r\n   * @return true unless throwing\r\n   */\r\n  function transferFromAndCall(address sender, address to, uint256 amount, bytes memory data) external returns (bool);\r\n\r\n  /**\r\n   * @notice Approve the passed address to spend the specified amount of tokens on behalf of msg.sender\r\n   * and then call `onApprovalReceived` on spender.\r\n   * @param spender address The address which will spend the funds\r\n   * @param amount uint256 The amount of tokens to be spent\r\n   */\r\n  function approveAndCall(address spender, uint256 amount) external returns (bool);\r\n\r\n  /**\r\n   * @notice Approve the passed address to spend the specified amount of tokens on behalf of msg.sender\r\n   * and then call `onApprovalReceived` on spender.\r\n   * @param spender address The address which will spend the funds\r\n   * @param amount uint256 The amount of tokens to be spent\r\n   * @param data bytes Additional data with no specified format, sent in call to `spender`\r\n   */\r\n  function approveAndCall(address spender, uint256 amount, bytes memory data) external returns (bool);\r\n}\r\n\r\ninterface ERC20 {\r\n  function totalSupply() external view returns (uint256);\r\n  function balanceOf(address account) external view returns (uint256);\r\n  function transfer(address recipient, uint256 amount) external returns (bool);\r\n  function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);\r\n  function allowance(address owner, address spender) external view returns (uint256);\r\n  function approve(address spender, uint256 amount) external returns (bool);\r\n  event Transfer(address indexed from, address indexed to, uint256 value);\r\n  event Approval(address indexed owner, address indexed spender, uint256 value);\r\n}\r\n\r\ninterface ERC165 {\r\n  function supportsInterface(bytes4 interfaceId) external view returns (bool);\r\n}\r\n```\r\n\r\nA contract that wants to accept ERC1363 tokens via `transferAndCall` or `transferFromAndCall` **MUST** implement the following interface:\r\n\r\n```solidity\r\n/**\r\n * @title ERC1363Receiver interface\r\n * @dev Interface for any contract that wants to support `transferAndCall` or `transferFromAndCall`\r\n *  from ERC1363 token contracts.\r\n */\r\ninterface ERC1363Receiver {\r\n  /*\r\n   * Note: the ERC-165 identifier for this interface is 0x88a7ca5c.\r\n   * 0x88a7ca5c === bytes4(keccak256(\"onTransferReceived(address,address,uint256,bytes)\"))\r\n   */\r\n\r\n  /**\r\n   * @notice Handle the receipt of ERC1363 tokens\r\n   * @dev Any ERC1363 smart contract calls this function on the recipient\r\n   * after a `transfer` or a `transferFrom`. This function MAY throw to revert and reject the\r\n   * transfer. Return of other than the magic value MUST result in the\r\n   * transaction being reverted.\r\n   * Note: the token contract address is always the message sender.\r\n   * @param spender address The address which called `transferAndCall` or `transferFromAndCall` function\r\n   * @param sender address The address which are token transferred from\r\n   * @param amount uint256 The amount of tokens transferred\r\n   * @param data bytes Additional data with no specified format\r\n   * @return `bytes4(keccak256(\"onTransferReceived(address,address,uint256,bytes)\"))`\r\n   *  unless throwing\r\n   */\r\n  function onTransferReceived(address spender, address sender, uint256 amount, bytes memory data) external returns (bytes4);\r\n}\r\n``` \r\n\r\nA contract that wants to accept ERC1363 tokens via `approveAndCall` **MUST** implement the following interface:\r\n\r\n```solidity\r\n/**\r\n * @title ERC1363Spender interface\r\n * @dev Interface for any contract that wants to support `approveAndCall`\r\n *  from ERC1363 token contracts.\r\n */\r\ninterface ERC1363Spender {\r\n  /*\r\n   * Note: the ERC-165 identifier for this interface is 0x7b04a2d0.\r\n   * 0x7b04a2d0 === bytes4(keccak256(\"onApprovalReceived(address,uint256,bytes)\"))\r\n   */\r\n\r\n  /**\r\n   * @notice Handle the approval of ERC1363 tokens\r\n   * @dev Any ERC1363 smart contract calls this function on the recipient\r\n   * after an `approve`. This function MAY throw to revert and reject the\r\n   * approval. Return of other than the magic value MUST result in the\r\n   * transaction being reverted.\r\n   * Note: the token contract address is always the message sender.\r\n   * @param sender address The address which called `approveAndCall` function\r\n   * @param amount uint256 The amount of tokens to be spent\r\n   * @param data bytes Additional data with no specified format\r\n   * @return `bytes4(keccak256(\"onApprovalReceived(address,uint256,bytes)\"))`\r\n   *  unless throwing\r\n   */\r\n  function onApprovalReceived(address sender, uint256 amount, bytes memory data) external returns (bytes4);\r\n}\r\n``` \r\n\r\nNote that `transferAndCall` and `transferFromAndCall` MUST revert if the recipient is an EOA address, because EOA recipients do not implement the required ERC1363Receiver interface.\r\n\r\nNote that `approveAndCall` MUST revert if the spender is an EOA address, because EOA spenders do not implement the required ERC1363Spender interface.\r\n\r\n## Rationale\r\nThe choice to use `transferAndCall`, `transferFromAndCall` and `approveAndCall` derives from the [EIP-20](https://eips.ethereum.org/EIPS/eip-20.md) naming. They want to highlight that they have the same behaviours of `transfer`, `transferFrom` and `approve` with the addition of a callback on receiver or spender contracts.\r\n\r\n## Backwards Compatibility\r\nThis proposal has been inspired also by many previous informal standards.\r\nUnlike these proposals, [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363.md) doesn't override the [EIP-20](https://eips.ethereum.org/EIPS/eip-20.md) `transfer` and `transferFrom` methods and defines the interfaces IDs to be implemented maintaining backward compatibility with [EIP-20](https://eips.ethereum.org/EIPS/eip-20.md).  \r\n\r\n## Security Considerations\r\nThe `approveAndCall` and `transferFromAndCall` methods can be affected by the same issue of the standard [EIP-20](https://eips.ethereum.org/EIPS/eip-20.md) `approve` and `transferFrom` method.\r\n  \r\nChanging an allowance with the `approveAndCall` methods brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering.\r\n\r\nOne possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards ([EIP-20#issuecomment-263524729](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729)).\r\n\r\n## Test Cases\r\nThe [repository with the reference implementation](https://github.com/vittominacori/erc1363-payable-token) contains all the [tests](https://github.com/vittominacori/erc1363-payable-token/tree/master/test).\r\n\r\n## Implementation\r\nThe GitHub repository [vittominacori/erc1363-payable-token](https://github.com/vittominacori/erc1363-payable-token) contains the reference implementation.  \r\nThe reference implementation is also available via [npm](https://www.npmjs.com/package/erc-payable-token) and can be installed with `npm install erc-payable-token`.\r\n",
+  "closed_by": {
+    "login": "gcolvin",
+    "id": 16827129,
+    "node_id": "MDQ6VXNlcjE2ODI3MTI5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16827129?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gcolvin",
+    "html_url": "https://github.com/gcolvin",
+    "followers_url": "https://api.github.com/users/gcolvin/followers",
+    "following_url": "https://api.github.com/users/gcolvin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gcolvin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gcolvin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gcolvin/subscriptions",
+    "organizations_url": "https://api.github.com/users/gcolvin/orgs",
+    "repos_url": "https://api.github.com/users/gcolvin/repos",
+    "events_url": "https://api.github.com/users/gcolvin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gcolvin/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/1363/reactions",
+    "total_count": 9,
+    "+1": 8,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 1,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/1363/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

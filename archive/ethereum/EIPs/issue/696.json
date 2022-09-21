@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/696",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/696/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/696/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/696/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/696",
+  "id": 252575500,
+  "node_id": "MDU6SXNzdWUyNTI1NzU1MDA=",
+  "number": 696,
+  "title": "Invalid receipt array RLP",
+  "user": {
+    "login": "mi2zha",
+    "id": 2949197,
+    "node_id": "MDQ6VXNlcjI5NDkxOTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2949197?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mi2zha",
+    "html_url": "https://github.com/mi2zha",
+    "followers_url": "https://api.github.com/users/mi2zha/followers",
+    "following_url": "https://api.github.com/users/mi2zha/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mi2zha/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mi2zha/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mi2zha/subscriptions",
+    "organizations_url": "https://api.github.com/users/mi2zha/orgs",
+    "repos_url": "https://api.github.com/users/mi2zha/repos",
+    "events_url": "https://api.github.com/users/mi2zha/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mi2zha/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-08-24T11:45:42Z",
+  "updated_at": "2017-08-24T12:15:29Z",
+  "closed_at": "2017-08-24T12:15:29Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "**Version**: Version: 1.7.0-unstable\r\n\r\n**execution:** curl http://localhost:8545 -X POST --data '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionReceipt\",\"params\":[\"0x9e09e1b8ed525feff415d5ad80a5fa5c2bcf35561f4b1a084c4534a29e8626ad\"],\"id\":1}'\r\n\r\nError is as follows\r\n\r\nERROR[08-24|19:42:41] Invalid receipt array RLP                hash=0eddaf…a8a375 err=\"rlp: input string too long for bool, decoding into ([]*types.ReceiptForStorage)[0](struct { PostState []uint8; Failed bool; CumulativeGasUsed *big.Int; Bloom types.Bloom; TxHash common.Hash; ContractAddress common.Address; Logs []*types.LogForStorage; GasUsed *big.Int }).Failed\"\r\nERROR[08-24|19:42:41] Receipt refereced missing                number=4194205 hash=0eddaf…a8a375 index=71\r\nERROR[08-24|19:42:41] goroutine 18309 [running]:\r\ngithub.com/ethereum/go-ethereum/rpc.(*Server).serveRequest.func1(0xc421537760, 0x5199520, 0xc429409180)\r\n\t/Users/guowenbin/work/Go/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/rpc/server.go:135 +0x11e\r\npanic(0x4a0ef80, 0x5269f10)\r\n\t/usr/local/go/src/runtime/panic.go:489 +0x2cf\r\ngithub.com/ethereum/go-ethereum/internal/ethapi.(*PublicTransactionPoolAPI).GetTransactionReceipt(0xc42154a0e0, 0xef5f52edb8e1099e, 0x5cfaa580add515f4, 0x81a4b1f5635cf2b, 0xad26869ea234454c, 0x0, 0x0, 0x0)\r\n\t/Users/guowenbin/work/Go/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/internal/ethapi/api.go:994 +0x1d5\r\nreflect.Value.call(0xc42162e300, 0xc42000f3f8, 0x13, 0x4b3c5ed, 0x4, 0xc4226f57d0, 0x2, 0x2, 0x0, 0x0, ...)\r\n\t/usr/local/go/src/reflect/value.go:434 +0x91f\r\nreflect.Value.Call(0xc42162e300, 0xc42000f3f8, 0x13, 0xc4226f57d0, 0x2, 0x2, 0x1, 0x1, 0x1)\r\n\t/usr/local/go/src/reflect/value.go:302 +0xa4\r\ngithub.com/ethereum/go-ethereum/rpc.(*Server).handle(0xc421537760, 0x5194960, 0xc420580c80, 0x5199520, 0xc429409180, 0xc420187d40, 0xc4294091f0, 0x0, 0x49fb540)\r\n\t/Users/guowenbin/work/Go/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/rpc/server.go:311 +0x758\r\ngithub.com/ethereum/go-ethereum/rpc.(*Server).exec(0xc421537760, 0x5194960, 0xc420580c80, 0x5199520, 0xc429409180, 0xc420187d40)\r\n\t/Users/guowenbin/work/Go/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/rpc/server.go:333 +0x1ba\r\ngithub.com/ethereum/go-ethereum/rpc.(*Server).serveRequest(0xc421537760, 0x5199520, 0xc429409180, 0x442de01, 0x1, 0x0, 0x0)\r\n\t/Users/guowenbin/work/Go/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/rpc/server.go:194 +0x3e1\r\ngithub.com/ethereum/go-ethereum/rpc.(*Server).ServeSingleRequest(0xc421537760, 0x5199520, 0xc429409180, 0x1)\r\n\t/Users/guowenbin/work/Go/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/rpc/server.go:225 +0x4e\r\ngithub.com/ethereum/go-ethereum/rpc.(*Server).ServeHTTP(0xc421537760, 0x51936e0, 0xc42d39e620, 0xc423004e00)\r\n\t/Users/guowenbin/work/Go/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/rpc/http.go:161 +0x36c\r\ngithub.com/ethereum/go-ethereum/vendor/github.com/rs/cors.(*Cors).Handler.func1(0x51936e0, 0xc42d39e620, 0xc423004e00)\r\n\t/Users/guowenbin/work/Go/go-ethereum/build/_workspace/src/github.com/ethereum/go-ethereum/vendor/github.com/rs/cors/cors.go:190 +0xe9\r\nnet/http.HandlerFunc.ServeHTTP(0xc42059c4a0, 0x51936e0, 0xc42d39e620, 0xc423004e00)\r\n\t/usr/local/go/src/net/http/server.go:1942 +0x44\r\nnet/http.serverHandler.ServeHTTP(0xc4200a3130, 0x51936e0, 0xc42d39e620, 0xc423004e00)\r\n\t/usr/local/go/src/net/http/server.go:2568 +0x92\r\nnet/http.(*conn).serve(0xc42207edc0, 0x5194960, 0xc420580ac0)\r\n\t/usr/local/go/src/net/http/server.go:1825 +0x612\r\ncreated by net/http.(*Server).Serve\r\n\t/usr/local/go/src/net/http/server.go:2668 +0x2ce",
+  "closed_by": {
+    "login": "mi2zha",
+    "id": 2949197,
+    "node_id": "MDQ6VXNlcjI5NDkxOTc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2949197?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mi2zha",
+    "html_url": "https://github.com/mi2zha",
+    "followers_url": "https://api.github.com/users/mi2zha/followers",
+    "following_url": "https://api.github.com/users/mi2zha/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mi2zha/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mi2zha/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mi2zha/subscriptions",
+    "organizations_url": "https://api.github.com/users/mi2zha/orgs",
+    "repos_url": "https://api.github.com/users/mi2zha/repos",
+    "events_url": "https://api.github.com/users/mi2zha/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mi2zha/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/696/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/696/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

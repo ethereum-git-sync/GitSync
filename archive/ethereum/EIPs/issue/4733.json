@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/4733",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/4733/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/4733/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/4733/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/4733",
+  "id": 1118854331,
+  "node_id": "I_kwDOAq426M5CsFy7",
+  "number": 4733,
+  "title": "Idea RFC - delegating proof of ERC-721 token ownership to another wallet",
+  "user": {
+    "login": "eeethanj",
+    "id": 98721008,
+    "node_id": "U_kgDOBeJc8A",
+    "avatar_url": "https://avatars.githubusercontent.com/u/98721008?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eeethanj",
+    "html_url": "https://github.com/eeethanj",
+    "followers_url": "https://api.github.com/users/eeethanj/followers",
+    "following_url": "https://api.github.com/users/eeethanj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eeethanj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eeethanj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eeethanj/subscriptions",
+    "organizations_url": "https://api.github.com/users/eeethanj/orgs",
+    "repos_url": "https://api.github.com/users/eeethanj/repos",
+    "events_url": "https://api.github.com/users/eeethanj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eeethanj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-01-31T01:54:52Z",
+  "updated_at": "2022-07-18T18:09:12Z",
+  "closed_at": "2022-01-31T01:55:40Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "### Motivation\r\nPeople use hot wallets and cold wallets. Especially in the case of NFT, the expensive NFTs will be stored in a cold wallet. However, in order to verify you hold a certain NFT, you have to log in with your cold wallet as well. This creates a lot of mental burden for the actual owner of the wallets.\r\n\r\nFor example, someone may use their hardware/cold wallet to store an expensive Artblocks NFT, and another project may need to verify the ownership of the expensive NFT, the owner will have to connect to their hardware wallet, which conflicts with the purpose of making the wallet cold. \r\n\r\n### Idea\r\nThe idea will be creating an interface for delegating the ownership of NFTs from one wallet to another, thus applications can just verify the delegation, instead of the actual ownership. \r\n\r\nThis is my first opened issue, would love to hear feedbacks!",
+  "closed_by": {
+    "login": "eeethanj",
+    "id": 98721008,
+    "node_id": "U_kgDOBeJc8A",
+    "avatar_url": "https://avatars.githubusercontent.com/u/98721008?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eeethanj",
+    "html_url": "https://github.com/eeethanj",
+    "followers_url": "https://api.github.com/users/eeethanj/followers",
+    "following_url": "https://api.github.com/users/eeethanj/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eeethanj/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eeethanj/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eeethanj/subscriptions",
+    "organizations_url": "https://api.github.com/users/eeethanj/orgs",
+    "repos_url": "https://api.github.com/users/eeethanj/repos",
+    "events_url": "https://api.github.com/users/eeethanj/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eeethanj/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/4733/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/4733/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

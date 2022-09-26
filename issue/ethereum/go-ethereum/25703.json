@@ -40,21 +40,40 @@
       "description": null
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 16,
+  "comments": 17,
   "created_at": "2022-09-07T02:24:58Z",
-  "updated_at": "2022-09-14T03:27:09Z",
-  "closed_at": null,
+  "updated_at": "2022-09-26T00:34:53Z",
+  "closed_at": "2022-09-26T00:34:52Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "This should only be used in very rare cases e.g. if you are not 100% sure if something is a bug or asking a question that leads to improving the documentation. For general questions please use [discord](https://discord.gg/nthXNEv) or the Ethereum stack exchange at https://ethereum.stackexchange.com.\r\n\r\nHow can I check the latest healedTrienodes height of the main network?\r\n\r\n> eth.syncing\r\n{\r\n  currentBlock: 15487937,\r\n  healedBytecodeBytes: 380132516,\r\n  healedBytecodes: 51962,\r\n  healedTrienodeBytes: 111404821735,\r\n  healedTrienodes: 318328110,\r\n  healingBytecode: 0,\r\n  healingTrienodes: 3197,\r\n  highestBlock: 15488031,\r\n  startingBlock: 15470245,\r\n  syncedAccountBytes: 38722876923,\r\n  syncedAccounts: 158033944,\r\n  syncedBytecodeBytes: 2816834450,\r\n  syncedBytecodes: 476103,\r\n  syncedStorage: 569302144,\r\n  syncedStorageBytes: 122028748654\r\n}\r\n\r\nHas been synchronized for nearly a few months, data synchronization speed has been very slow, do not know where the problem, healedTrienodes height can rise a 50 million per day, do not know when to synchronize the end\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "litcc",
+    "id": 13202561,
+    "node_id": "MDQ6VXNlcjEzMjAyNTYx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13202561?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/litcc",
+    "html_url": "https://github.com/litcc",
+    "followers_url": "https://api.github.com/users/litcc/followers",
+    "following_url": "https://api.github.com/users/litcc/following{/other_user}",
+    "gists_url": "https://api.github.com/users/litcc/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/litcc/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/litcc/subscriptions",
+    "organizations_url": "https://api.github.com/users/litcc/orgs",
+    "repos_url": "https://api.github.com/users/litcc/repos",
+    "events_url": "https://api.github.com/users/litcc/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/litcc/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25703/reactions",
     "total_count": 0,
@@ -69,7 +88,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25703/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -764,6 +783,50 @@
     "body": "Your IOPS is quite low.. you need to increase the IOPS and the BW. It is critical for healing.\r\nUpgrading it alone will not solve the problem until you do `geth removedb y n` first.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1246185114/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1257326426",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25703#issuecomment-1257326426",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25703",
+    "id": 1257326426,
+    "node_id": "IC_kwDOAOvK985K8Uda",
+    "user": {
+      "login": "litcc",
+      "id": 13202561,
+      "node_id": "MDQ6VXNlcjEzMjAyNTYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13202561?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/litcc",
+      "html_url": "https://github.com/litcc",
+      "followers_url": "https://api.github.com/users/litcc/followers",
+      "following_url": "https://api.github.com/users/litcc/following{/other_user}",
+      "gists_url": "https://api.github.com/users/litcc/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/litcc/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/litcc/subscriptions",
+      "organizations_url": "https://api.github.com/users/litcc/orgs",
+      "repos_url": "https://api.github.com/users/litcc/repos",
+      "events_url": "https://api.github.com/users/litcc/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/litcc/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-26T00:34:52Z",
+    "updated_at": "2022-09-26T00:34:52Z",
+    "author_association": "NONE",
+    "body": "ok, before the hard disk using the software way of disk array, resulting in read and write speed under, the subsequent switch to the hardware way disk array, read and write speed is fully sufficient, the current node has been synchronized to complete! Thank you for your replies!",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1257326426/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

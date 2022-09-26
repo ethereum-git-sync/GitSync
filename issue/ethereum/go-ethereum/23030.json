@@ -56,9 +56,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2021-06-10T09:31:08Z",
-  "updated_at": "2021-06-10T09:32:15Z",
+  "updated_at": "2022-09-20T01:11:30Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -81,5 +81,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1251723502",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/23030#issuecomment-1251723502",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23030",
+    "id": 1251723502,
+    "node_id": "IC_kwDOAOvK985Km8ju",
+    "user": {
+      "login": "padrone1225",
+      "id": 93643291,
+      "node_id": "U_kgDOBZTiGw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93643291?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/padrone1225",
+      "html_url": "https://github.com/padrone1225",
+      "followers_url": "https://api.github.com/users/padrone1225/followers",
+      "following_url": "https://api.github.com/users/padrone1225/following{/other_user}",
+      "gists_url": "https://api.github.com/users/padrone1225/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/padrone1225/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/padrone1225/subscriptions",
+      "organizations_url": "https://api.github.com/users/padrone1225/orgs",
+      "repos_url": "https://api.github.com/users/padrone1225/repos",
+      "events_url": "https://api.github.com/users/padrone1225/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/padrone1225/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-20T01:11:30Z",
+    "updated_at": "2022-09-20T01:11:30Z",
+    "author_association": "NONE",
+    "body": "What techniques are used to expel nodes?",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1251723502/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

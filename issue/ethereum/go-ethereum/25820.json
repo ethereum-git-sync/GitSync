@@ -39,30 +39,73 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-09-19T16:01:47Z",
-  "updated_at": "2022-09-19T16:05:02Z",
+  "updated_at": "2022-09-26T08:59:35Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "Shanghai is not fully specified yet, but it is good to track all ongoing efforts for shanghai:\r\n\r\n| EIP | PR |\r\n| -- | -- |\r\n[EIP-3540: EVM Object Format (EOF) v1](https://eips.ethereum.org/EIPS/eip-3540) | https://github.com/ethereum/go-ethereum/pull/22958\r\n[EIP-3651: Warm COINBASE](https://eips.ethereum.org/EIPS/eip-3651) | https://github.com/ethereum/go-ethereum/pull/25819\r\n[EIP-3670: EOF - Code Validation](https://eips.ethereum.org/EIPS/eip-3670) | https://github.com/ethereum/go-ethereum/pull/24090\r\n[EIP-3855: PUSH0 instruction](https://eips.ethereum.org/EIPS/eip-3855)|  https://github.com/ethereum/go-ethereum/pull/24039\r\n[EIP-3860: Limit and meter initcode](https://eips.ethereum.org/EIPS/eip-3860) | https://github.com/ethereum/go-ethereum/pull/23847\r\n[EIP-4895: Beacon chain push withdrawals as operations](https://eips.ethereum.org/EIPS/eip-4895)",
+  "body": "Shanghai is not fully specified yet, but it is good to track all ongoing efforts for shanghai:\r\n\r\n| EIP | PR | Merged | \r\n| -- | -- | -- |\r\n[EIP-3540: EVM Object Format (EOF) v1](https://eips.ethereum.org/EIPS/eip-3540) | https://github.com/ethereum/go-ethereum/pull/22958 |   |\r\n[EIP-3651: Warm COINBASE](https://eips.ethereum.org/EIPS/eip-3651) | https://github.com/ethereum/go-ethereum/pull/25819|   |\r\n[EIP-3670: EOF - Code Validation](https://eips.ethereum.org/EIPS/eip-3670) | https://github.com/ethereum/go-ethereum/pull/24090|   |\r\n[EIP-3855: PUSH0 instruction](https://eips.ethereum.org/EIPS/eip-3855)|  https://github.com/ethereum/go-ethereum/pull/24039|  y  |\r\n[EIP-3860: Limit and meter initcode](https://eips.ethereum.org/EIPS/eip-3860) | https://github.com/ethereum/go-ethereum/pull/23847|   |\r\n[EIP-4895: Beacon chain push withdrawals as operations](https://eips.ethereum.org/EIPS/eip-4895)|   |\r\n[EIP-4758: Deactivate SELFDESTRUCT](https://eips.ethereum.org/EIPS/eip-4758)| https://github.com/ethereum/go-ethereum/pull/25871 https://github.com/ethereum/go-ethereum/pull/24389 | ",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25820/reactions",
-    "total_count": 14,
+    "total_count": 17,
     "+1": 8,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 0,
+    "heart": 1,
     "rocket": 0,
-    "eyes": 6
+    "eyes": 8
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25820/timeline",
   "performed_via_github_app": null,
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1254637702",
+    "html_url": "https://github.com/ethereum/go-ethereum/issues/25820#issuecomment-1254637702",
+    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25820",
+    "id": 1254637702,
+    "node_id": "IC_kwDOAOvK985KyECG",
+    "user": {
+      "login": "ruozia",
+      "id": 110667906,
+      "node_id": "U_kgDOBpiogg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110667906?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ruozia",
+      "html_url": "https://github.com/ruozia",
+      "followers_url": "https://api.github.com/users/ruozia/followers",
+      "following_url": "https://api.github.com/users/ruozia/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ruozia/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ruozia/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ruozia/subscriptions",
+      "organizations_url": "https://api.github.com/users/ruozia/orgs",
+      "repos_url": "https://api.github.com/users/ruozia/repos",
+      "events_url": "https://api.github.com/users/ruozia/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ruozia/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-22T07:30:29Z",
+    "updated_at": "2022-09-22T07:30:29Z",
+    "author_association": "NONE",
+    "body": "The first time I knew",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1254637702/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25852",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25852/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25852/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25852/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25852",
+  "id": 1382931669,
+  "node_id": "I_kwDOAOvK985SbdzV",
+  "number": 25852,
+  "title": "Keystore does not load with large amount of keys (using remote folder)",
+  "user": {
+    "login": "mesteve",
+    "id": 13318901,
+    "node_id": "MDQ6VXNlcjEzMzE4OTAx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13318901?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mesteve",
+    "html_url": "https://github.com/mesteve",
+    "followers_url": "https://api.github.com/users/mesteve/followers",
+    "following_url": "https://api.github.com/users/mesteve/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mesteve/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mesteve/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mesteve/subscriptions",
+    "organizations_url": "https://api.github.com/users/mesteve/orgs",
+    "repos_url": "https://api.github.com/users/mesteve/repos",
+    "events_url": "https://api.github.com/users/mesteve/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mesteve/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-22T19:44:09Z",
+  "updated_at": "2022-09-23T09:15:42Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version: `1.10.25`\r\nOS & Version: Linux\r\n\r\n#### Expected behaviour\r\nLoad the entire remote keystore folder that we mounted on the machine using gcsfuse.\r\n\r\n#### Actual behaviour\r\nWe just decided to upgrade geth from our old version (1.8.16) to the latest version (1.10.25). Everything runs fine except the fact that when we start our blockchain using the mounted storage hosting the keystore, it only starts loading 5 to 10 files then crashes.\r\nIt works perfectly with our old version (1.8.16) but does not load properly with the new one (1.10.25)\r\nThe error we get when we try to run the command (see command below) is -> No given key or address (but I don't think this error is actually reflective of the real problem)\r\nThe folder does contain the wallet we want to unlock but the problem is that prior unlocking the wallet, it does not load the entire remote folder.\r\nAdditional infos : with 2000 wallets in our remote keystore it works with 1.10.25, but with 6000+ it does not (but does with 1.8.16)\r\n\r\n\r\n#### Steps to reproduce the behaviour\r\ncmd : geth --datadir ./data --keystore ~/bucket-keystore/keystore --syncmode 'full' --miner.gastarget '9000000000000' --port 30310 --http --http.addr \"10.132.0.3\" --http.port 8501 --http.api 'personal,eth,net,web3,txpool,miner' --networkid 4242 --miner.gasprice '0' --miner.etherbase \"XXXXXXXXX\" --unlock \"XXXXXXXXX\" --allow-insecure-unlock  --mine console 2>>/tmp/node1.log \r\n\r\nThe keystore is a mounted folder with gcsfuse using google cloud storage\r\n\r\n\r\n#### Backtrace\r\n\r\nSee below the log of gcsfuse\r\n\r\n````\r\ngcs: 2022/09/22 19:29:27.964314 Req          0x1723e: <- StatObject(\"keystore/\")\r\ngcs: 2022/09/22 19:29:27.964575 Req          0x1723f: <- StatObject(\"keystore\")\r\ngcs: 2022/09/22 19:29:27.989783 Req          0x1723f: -> StatObject(\"keystore\") (25.203681ms): not retrying StatObject(\"keystore\"): gcs.NotFoundError: googleapi: Error 404: No such object: test-dev-private/keystore, notFound\r\ngcs: 2022/09/22 19:29:27.991644 Req          0x1723e: -> StatObject(\"keystore/\") (27.363649ms): OK\r\ngcs: 2022/09/22 19:29:27.993212 Req          0x17240: <- ListObjects(\"keystore/\")\r\ngcs: 2022/09/22 19:29:28.291674 Req          0x17240: -> ListObjects(\"keystore/\") (298.457259ms): OK\r\ngcs: 2022/09/22 19:29:28.332148 Req          0x17241: <- ListObjects(\"keystore/\")\r\ngcs: 2022/09/22 19:29:28.402949 Req          0x17241: -> ListObjects(\"keystore/\") (70.804791ms): OK\r\ngcs: 2022/09/22 19:29:28.430886 Req          0x17242: <- StatObject(\"keystore/\")\r\ngcs: 2022/09/22 19:29:28.453508 Req          0x17242: -> StatObject(\"keystore/\") (22.619107ms): OK\r\ngcs: 2022/09/22 19:29:28.453801 Req          0x17243: <- StatObject(\"keystore/UTC--2018-11-13T21-13-59.453457226Z--0f921a41e37fb106598b8afa2dc8a21709463832\")\r\ngcs: 2022/09/22 19:29:28.475422 Req          0x17243: -> StatObject(\"keystore/UTC--2018-11-13T21-13-59.453457226Z--0f921a41e37fb106598b8afa2dc8a21709463832\") (21.616633ms): OK\r\ngcs: 2022/09/22 19:29:28.475914 Req          0x17244: <- StatObject(\"keystore/UTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483\")\r\ngcs: 2022/09/22 19:29:28.476031 Req          0x17244: -> StatObject(\"keystore/UTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483\") (103.736µs): not retrying StatObject(\"keystore/UTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483\"): Get \"[https://storage.googleapis.com:443/storage/v1/b/test-dev-private/o/keystore%2FUTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483?projection=full](https://storage.googleapis.com/storage/v1/b/test-dev-private/o/keystore%2FUTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483?projection=full)\": net/http: request canceled\r\n2022/09/22 19:29:28.476060 LookUpInode: operation canceled, StatObject: not retrying StatObject(\"keystore/UTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483\"): Get \"[https://storage.googleapis.com:443/storage/v1/b/test-dev-private/o/keystore%2FUTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483?projection=full](https://storage.googleapis.com/storage/v1/b/test-dev-private/o/keystore%2FUTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483?projection=full)\": net/http: request canceled\r\nfuse: 2022/09/22 19:29:28.476104 *fuseops.LookUpInodeOp error: operation canceled\r\ngcs: 2022/09/22 19:29:28.476438 Req          0x17245: <- StatObject(\"keystore/UTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483\")\r\ngcs: 2022/09/22 19:29:28.476520 Req          0x17245: -> StatObject(\"keystore/UTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483\") (82.425µs): not retrying StatObject(\"keystore/UTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483\"): Get \"[https://storage.googleapis.com:443/storage/v1/b/test-dev-private/o/keystore%2FUTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483?projection=full](https://storage.googleapis.com/storage/v1/b/test-dev-private/o/keystore%2FUTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483?projection=full)\": net/http: request canceled\r\n2022/09/22 19:29:28.476553 LookUpInode: operation canceled, StatObject: not retrying StatObject(\"keystore/UTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483\"): Get \"[https://storage.googleapis.com:443/storage/v1/b/test-dev-private/o/keystore%2FUTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483?projection=full](https://storage.googleapis.com/storage/v1/b/test-dev-private/o/keystore%2FUTC--2018-11-13T21-14-10.562417446Z--98527ca208904af1116cac4437b62d1da0978483?projection=full)\": net/http: request canceled\r\nfuse: 2022/09/22 19:29:28.476579 *fuseops.LookUpInodeOp error: operation canceled\r\n````",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25852/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 1
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25852/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

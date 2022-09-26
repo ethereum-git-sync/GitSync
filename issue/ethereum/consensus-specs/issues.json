@@ -1,11 +1,27 @@
 [
   {
     "author": {
+      "login": "hwwhww"
+    },
+    "number": 2988,
+    "title": "`consensus-spec-tests`'s `diagnostics.json` file path",
+    "updatedAt": "2022-09-23T17:43:23Z"
+  },
+  {
+    "author": {
+      "login": "hwwhww"
+    },
+    "number": 3012,
+    "title": "Remove duplicate BLS tests from this repo",
+    "updatedAt": "2022-09-23T17:38:41Z"
+  },
+  {
+    "author": {
       "login": "djrtwo"
     },
     "number": 2758,
     "title": "Withdrawals tracking issue",
-    "updatedAt": "2022-09-19T18:12:43Z"
+    "updatedAt": "2022-09-20T08:50:42Z"
   },
   {
     "author": {
@@ -54,14 +70,6 @@
     "number": 2990,
     "title": "Withdraw ",
     "updatedAt": "2022-09-14T13:09:38Z"
-  },
-  {
-    "author": {
-      "login": "hwwhww"
-    },
-    "number": 2988,
-    "title": "`consensus-spec-tests`'s `diagnostics.json` file path",
-    "updatedAt": "2022-09-12T11:17:49Z"
   },
   {
     "author": {
@@ -1681,7 +1689,7 @@
   },
   {
     "author": {
-      "login": "wojiaopaidaxing"
+      "login": "seancheen"
     },
     "number": 2128,
     "title": "Can pubkey and withdrawal_credentials be generated with different mnemonics?",

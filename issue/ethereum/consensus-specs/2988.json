@@ -40,21 +40,40 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 1,
+  "comments": 2,
   "created_at": "2022-09-08T15:25:53Z",
-  "updated_at": "2022-09-12T11:17:49Z",
-  "closed_at": null,
+  "updated_at": "2022-09-23T17:43:23Z",
+  "closed_at": "2022-09-23T17:43:23Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "###  Issue\r\nCurrently, after running test generator, we will get the summary files:\r\n```\r\nconsensus-spec-tests/tests/diagnostics.json\r\nconsensus-spec-tests/tests/diagnostics.json.lock\r\n```\r\n\r\nThese files are good for analyzing the test cases. (Thank @ralexstokes!) \r\n\r\nBut we may not want to upload these files to `consensus-spec-tests` and the tarballs. Especially when the test vectors are not generated with only one command.\r\n\r\n### Solution ideas\r\n1. Generate these files to `consensus-spec-tests/` folder rather than `consensus-spec-tests/tests/` folder\r\n    - Pros: we can have clear files\r\n    - Cons: `\"--output-dir` is `consensus-spec-tests/tests/`, it feels wrong to jump out of the given scope.\r\n2. Ignore these files in the `consensus-spec-tests` repo and allow including these files in tarballs.\r\n    - Pros: easy\r\n    - Cons: no...? just client teams have to ignore it.\r\n3. No change. Just include the diagnostics to the `consensus-spec-tests` repo and tarballs.\r\n    - Pros: easy\r\n    - Cons:\r\n        - it creates extra git diff\r\n        - `diagnostics.json` may be confusing when we generate the test vectors in separate runs. However, it may not be a problem anymore once we have the generator CI/CD soon.\r\n\r\nI usually manually delete these files when I want to generate the tarball of a specific runner. But sometimes I forget. 😅 I'm inclined to solution 2.\r\n\r\n/cc @ralexstokes  @djrtwo",
-  "closed_by": null,
+  "closed_by": {
+    "login": "hwwhww",
+    "id": 9263930,
+    "node_id": "MDQ6VXNlcjkyNjM5MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9263930?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hwwhww",
+    "html_url": "https://github.com/hwwhww",
+    "followers_url": "https://api.github.com/users/hwwhww/followers",
+    "following_url": "https://api.github.com/users/hwwhww/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hwwhww/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hwwhww/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hwwhww/subscriptions",
+    "organizations_url": "https://api.github.com/users/hwwhww/orgs",
+    "repos_url": "https://api.github.com/users/hwwhww/repos",
+    "events_url": "https://api.github.com/users/hwwhww/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hwwhww/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2988/reactions",
     "total_count": 0,
@@ -69,7 +88,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2988/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -104,6 +123,50 @@
     "body": "yeah, is there a concrete problem with including them in the test artifacts? otherwise (2) sounds good",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1242327888/reactions",
+      "total_count": 1,
+      "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1256501440",
+    "html_url": "https://github.com/ethereum/consensus-specs/issues/2988#issuecomment-1256501440",
+    "issue_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/2988",
+    "id": 1256501440,
+    "node_id": "IC_kwDOCOoGbc5K5LDA",
+    "user": {
+      "login": "hwwhww",
+      "id": 9263930,
+      "node_id": "MDQ6VXNlcjkyNjM5MzA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9263930?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hwwhww",
+      "html_url": "https://github.com/hwwhww",
+      "followers_url": "https://api.github.com/users/hwwhww/followers",
+      "following_url": "https://api.github.com/users/hwwhww/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hwwhww/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hwwhww/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hwwhww/subscriptions",
+      "organizations_url": "https://api.github.com/users/hwwhww/orgs",
+      "repos_url": "https://api.github.com/users/hwwhww/repos",
+      "events_url": "https://api.github.com/users/hwwhww/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hwwhww/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-23T17:43:23Z",
+    "updated_at": "2022-09-23T17:43:23Z",
+    "author_association": "MEMBER",
+    "body": "Done. Added file paths to .gitignore in https://github.com/ethereum/consensus-spec-tests\r\n\r\nI realized that since we normally compress artifacts (`mainnet`, `minimal`, and `general`) separately, the `diagnostics.json` files should not be included in the tarballs. 😆",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/1256501440/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

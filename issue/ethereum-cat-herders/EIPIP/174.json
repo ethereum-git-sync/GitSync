@@ -32,21 +32,40 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 1,
+  "comments": 2,
   "created_at": "2022-08-24T19:25:57Z",
-  "updated_at": "2022-09-07T13:39:10Z",
-  "closed_at": null,
+  "updated_at": "2022-09-20T13:39:26Z",
+  "closed_at": "2022-09-20T13:39:26Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "## Date and Time\r\n\r\nWednesday, Sep 07, 2022, at 14:00 UTC \r\n\r\n## Location\r\n\r\nZoom: TBA in the Discord #eip-editing channel\r\n\r\nYouTube Live Stream/Recording: https://www.youtube.com/playlist?list=PL4cwHXAawZxpLrRIkDlBjDUUrGgF91pQw\r\n\r\n## Agenda\r\n\r\n### 1.  Discuss \r\n- [ ] guidelines for \"Requires\"\r\n- [ ] change in EIP process & EIP-1 \r\n\r\n\r\n\r\n### 2.  EIP bots related discussion, updates, agreement on merging PRs & closing Issues.\r\n- https://github.com/ethereum/EIPs/pull/5508\r\n- eip-bot [Issues](https://github.com/ethereum/EIP-Bot/issues) and [Pull Request](https://github.com/ethereum/EIP-Bot/pulls)\r\n\r\n### 3. From GitHub Issue or Pull Request\r\nIssues\r\n- [ ] [Make EIPs Website a PWA](https://github.com/ethereum/EIPs/issues/5608)\r\n- [ ] [Advocate for EIP editors to clearly explain the **current** external link policy to new authors.](https://github.com/ethereum/EIPs/issues/5597)\r\n\r\nPull Requests\r\n- [ ] https://github.com/ethereum/EIPs/pull/5572\r\n- [ ] https://github.com/ethereum/EIPs/pull/5586\r\n- [ ] https://github.com/ethereum/EIPs/pull/5596\r\n\r\n### 4. Past meeting discussion continued\r\n  - https://github.com/ethereum/EIPs/pull/5533\r\n\r\n### 5. [EIPs Insight](https://hackmd.io/@poojaranjan/EthereumImprovementProposalsInsight/) - Monthly EIPs status reporting.\r\n\r\n### 6. [EIP Editing Office Hour](https://hackmd.io/@poojaranjan/EIPEditingOfficeHour)\r\n- Meeting 1 [Recording](https://www.youtube.com/watch?v=UbR1lvPviOQ)\r\n\r\n### 7. Review action items from the previous meeting\r\n- EIP number bot\r\n- what license to use for EIP assets\r\n\r\n\r\n**Next meeting** - Sep 21, 2022\r\n\r\n(Anything else, please add a comment)",
-  "closed_by": null,
+  "closed_by": {
+    "login": "poojaranjan",
+    "id": 29681685,
+    "node_id": "MDQ6VXNlcjI5NjgxNjg1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29681685?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/poojaranjan",
+    "html_url": "https://github.com/poojaranjan",
+    "followers_url": "https://api.github.com/users/poojaranjan/followers",
+    "following_url": "https://api.github.com/users/poojaranjan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/poojaranjan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/poojaranjan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/poojaranjan/subscriptions",
+    "organizations_url": "https://api.github.com/users/poojaranjan/orgs",
+    "repos_url": "https://api.github.com/users/poojaranjan/repos",
+    "events_url": "https://api.github.com/users/poojaranjan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/poojaranjan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/174/reactions",
     "total_count": 0,
@@ -61,7 +80,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/174/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -98,6 +117,50 @@
       "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1228983152/reactions",
       "total_count": 1,
       "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1252370462",
+    "html_url": "https://github.com/ethereum-cat-herders/EIPIP/issues/174#issuecomment-1252370462",
+    "issue_url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/174",
+    "id": 1252370462,
+    "node_id": "IC_kwDODfkRC85Kpage",
+    "user": {
+      "login": "poojaranjan",
+      "id": 29681685,
+      "node_id": "MDQ6VXNlcjI5NjgxNjg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29681685?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/poojaranjan",
+      "html_url": "https://github.com/poojaranjan",
+      "followers_url": "https://api.github.com/users/poojaranjan/followers",
+      "following_url": "https://api.github.com/users/poojaranjan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/poojaranjan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/poojaranjan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/poojaranjan/subscriptions",
+      "organizations_url": "https://api.github.com/users/poojaranjan/orgs",
+      "repos_url": "https://api.github.com/users/poojaranjan/repos",
+      "events_url": "https://api.github.com/users/poojaranjan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/poojaranjan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-20T13:39:26Z",
+    "updated_at": "2022-09-20T13:39:26Z",
+    "author_association": "MEMBER",
+    "body": "Closing in favor of #176 ",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum-cat-herders/EIPIP/issues/comments/1252370462/reactions",
+      "total_count": 0,
+      "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

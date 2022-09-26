@@ -32,7 +32,7 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": {
     "login": "yann300",
@@ -97,14 +97,33 @@
     }
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2022-09-07T09:14:51Z",
-  "updated_at": "2022-09-07T09:14:52Z",
-  "closed_at": null,
+  "updated_at": "2022-09-23T00:00:09Z",
+  "closed_at": "2022-09-22T10:42:41Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": null,
-  "closed_by": null,
+  "closed_by": {
+    "login": "yann300",
+    "id": 6940742,
+    "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yann300",
+    "html_url": "https://github.com/yann300",
+    "followers_url": "https://api.github.com/users/yann300/followers",
+    "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+    "organizations_url": "https://api.github.com/users/yann300/orgs",
+    "repos_url": "https://api.github.com/users/yann300/repos",
+    "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yann300/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/2888/reactions",
     "total_count": 0,
@@ -119,8 +138,51 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/2888/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1254848060",
+    "html_url": "https://github.com/ethereum/remix-project/issues/2888#issuecomment-1254848060",
+    "issue_url": "https://api.github.com/repos/ethereum/remix-project/issues/2888",
+    "id": 1254848060,
+    "node_id": "IC_kwDODtLRw85Ky3Y8",
+    "user": {
+      "login": "yann300",
+      "id": 6940742,
+      "node_id": "MDQ6VXNlcjY5NDA3NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6940742?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/yann300",
+      "html_url": "https://github.com/yann300",
+      "followers_url": "https://api.github.com/users/yann300/followers",
+      "following_url": "https://api.github.com/users/yann300/following{/other_user}",
+      "gists_url": "https://api.github.com/users/yann300/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/yann300/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/yann300/subscriptions",
+      "organizations_url": "https://api.github.com/users/yann300/orgs",
+      "repos_url": "https://api.github.com/users/yann300/repos",
+      "events_url": "https://api.github.com/users/yann300/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/yann300/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-22T10:42:41Z",
+    "updated_at": "2022-09-22T10:42:41Z",
+    "author_association": "MEMBER",
+    "body": "closde by https://github.com/ethereum/remix-project/pull/2894 and https://github.com/ethereum/remix-project/pull/2837",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/remix-project/issues/comments/1254848060/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

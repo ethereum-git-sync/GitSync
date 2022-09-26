@@ -1,14 +1,14 @@
 {
-  "url": "https://api.github.com/repos/ethereum/solidity/issues/13508",
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13552",
   "repository_url": "https://api.github.com/repos/ethereum/solidity",
-  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13508/labels{/name}",
-  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13508/comments",
-  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13508/events",
-  "html_url": "https://github.com/ethereum/solidity/issues/13508",
-  "id": 1366787657,
-  "node_id": "I_kwDOAm_5kc5Rd4ZJ",
-  "number": 13508,
-  "title": "Replace `bin/soljson-latest.js` in solc-bin with a symlink",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13552/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13552/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13552/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13552",
+  "id": 1382251759,
+  "node_id": "I_kwDOAm_5kc5SY3zv",
+  "number": 13552,
+  "title": "Ignore JSON formatting in command-line tests",
   "user": {
     "login": "cameel",
     "id": 137030,
@@ -31,11 +31,20 @@
   },
   "labels": [
     {
-      "id": 2685863294,
-      "node_id": "MDU6TGFiZWwyNjg1ODYzMjk0",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/solc-bin",
-      "name": "solc-bin",
-      "color": "3B8CF5",
+      "id": 717596767,
+      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
       "default": false,
       "description": ""
     },
@@ -58,15 +67,6 @@
       "description": "Changes are not very noticeable or potential benefits are limited."
     },
     {
-      "id": 4438490842,
-      "node_id": "LA_kwDOAm_5kc8AAAABCI3-2g",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20have",
-      "name": "should have",
-      "color": "ffbe6c",
-      "default": false,
-      "description": "We like the idea but it’s not important enough to be a part of the roadmap."
-    },
-    {
       "id": 4438492402,
       "node_id": "LA_kwDOAm_5kc8AAAABCI4E8g",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/nice%20to%20have",
@@ -74,15 +74,6 @@
       "color": "ffdeb3",
       "default": false,
       "description": "We don’t see a good reason not to have it but won’t go out of our way to implement it."
-    },
-    {
-      "id": 4438780109,
-      "node_id": "LA_kwDOAm_5kc8AAAABCJJozQ",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/refactor",
-      "name": "refactor",
-      "color": "fcff07",
-      "default": false,
-      "description": ""
     }
   ],
   "state": "open",
@@ -93,15 +84,15 @@
   ],
   "milestone": null,
   "comments": 0,
-  "created_at": "2022-09-08T18:14:33Z",
-  "updated_at": "2022-09-20T14:35:24Z",
+  "created_at": "2022-09-22T10:58:24Z",
+  "updated_at": "2022-09-22T10:58:24Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "We tried to make it a symlink in https://github.com/ethereum/solc-bin/pull/33 but back then we still served binaries via Github Pages and that does not support symlinks so we reverted the change in https://github.com/ethereum/solc-bin/pull/44. Now that we switched to AWS for hosting, we can revisit the idea.",
+  "body": "Related to #13544 and #7665.\r\n\r\nCurrently command-line tests in StandardJSON mode expect output exactly matching the expectations. This is not a problem until we try to post-process the output and run into problems like #13544.\r\n\r\nSince the formatting is irrelevant most of the time, I think `cmdlineTests.sh` should be using `jq` on the output and expectations to reformat them before diffing.\r\n\r\nWe'll also need a way to disable this to keep tests for the `--pretty-print` CLI option functional. I'd go with that I suggested in #7665, i.e. disable this mode when a file called `no-pretty-print` exists in the test directory.",
   "closed_by": null,
   "reactions": {
-    "url": "https://api.github.com/repos/ethereum/solidity/issues/13508/reactions",
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13552/reactions",
     "total_count": 0,
     "+1": 0,
     "-1": 0,
@@ -112,7 +103,7 @@
     "rocket": 0,
     "eyes": 0
   },
-  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13508/timeline",
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13552/timeline",
   "performed_via_github_app": null,
   "state_reason": null
 }

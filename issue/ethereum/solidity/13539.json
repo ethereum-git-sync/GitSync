@@ -40,6 +40,33 @@
       "description": ""
     },
     {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438481746,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3bUg",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have%20eventually",
+      "name": "must have eventually",
+      "color": "ffb04d",
+      "default": false,
+      "description": "Something we consider essential but not enough to prevent us from releasing Solidity 1.0 without it."
+    },
+    {
       "id": 4438780109,
       "node_id": "LA_kwDOAm_5kc8AAAABCJJozQ",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/refactor",
@@ -49,21 +76,78 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
-  "assignee": null,
+  "assignee": {
+    "login": "christianparpart",
+    "id": 56763,
+    "node_id": "MDQ6VXNlcjU2NzYz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/56763?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/christianparpart",
+    "html_url": "https://github.com/christianparpart",
+    "followers_url": "https://api.github.com/users/christianparpart/followers",
+    "following_url": "https://api.github.com/users/christianparpart/following{/other_user}",
+    "gists_url": "https://api.github.com/users/christianparpart/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/christianparpart/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/christianparpart/subscriptions",
+    "organizations_url": "https://api.github.com/users/christianparpart/orgs",
+    "repos_url": "https://api.github.com/users/christianparpart/repos",
+    "events_url": "https://api.github.com/users/christianparpart/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/christianparpart/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "assignees": [
-
+    {
+      "login": "christianparpart",
+      "id": 56763,
+      "node_id": "MDQ6VXNlcjU2NzYz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56763?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/christianparpart",
+      "html_url": "https://github.com/christianparpart",
+      "followers_url": "https://api.github.com/users/christianparpart/followers",
+      "following_url": "https://api.github.com/users/christianparpart/following{/other_user}",
+      "gists_url": "https://api.github.com/users/christianparpart/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/christianparpart/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/christianparpart/subscriptions",
+      "organizations_url": "https://api.github.com/users/christianparpart/orgs",
+      "repos_url": "https://api.github.com/users/christianparpart/repos",
+      "events_url": "https://api.github.com/users/christianparpart/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/christianparpart/received_events",
+      "type": "User",
+      "site_admin": false
+    }
   ],
   "milestone": null,
   "comments": 0,
   "created_at": "2022-09-19T12:36:40Z",
-  "updated_at": "2022-09-19T12:43:08Z",
-  "closed_at": null,
+  "updated_at": "2022-09-26T13:06:25Z",
+  "closed_at": "2022-09-26T13:06:25Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "\"\"\"\r\nYes, please rename it. And yeah, not in this PR, I'd create a separate one - though it very likely will go into `develop` before this one anyway.\r\n\r\nAs for recoverability - I think that asserts are fatal enough that they should not be recoverable. And the other way around - if you want to recover from it, then is it really a solid assumption that is guaranteed to be always true in a bug-free program? There are other kinds of errors the LSP will not be able to recover from, like memory violations or out of memory. I consider it this kind of problem. If another, unexpected kind of node appears out of nowhere, the program is just coded wrong, best to shut down ASAP to limit potential damage and just fix the bug.\r\n\"\"\"\r\n\r\n_Originally posted by @cameel in https://github.com/ethereum/solidity/pull/12790#discussion_r968270187_\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "christianparpart",
+    "id": 56763,
+    "node_id": "MDQ6VXNlcjU2NzYz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/56763?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/christianparpart",
+    "html_url": "https://github.com/christianparpart",
+    "followers_url": "https://api.github.com/users/christianparpart/followers",
+    "following_url": "https://api.github.com/users/christianparpart/following{/other_user}",
+    "gists_url": "https://api.github.com/users/christianparpart/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/christianparpart/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/christianparpart/subscriptions",
+    "organizations_url": "https://api.github.com/users/christianparpart/orgs",
+    "repos_url": "https://api.github.com/users/christianparpart/repos",
+    "events_url": "https://api.github.com/users/christianparpart/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/christianparpart/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13539/reactions",
     "total_count": 0,
@@ -78,7 +162,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13539/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
 

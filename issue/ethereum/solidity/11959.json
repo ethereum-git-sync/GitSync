@@ -85,7 +85,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -94,12 +94,31 @@
   "milestone": null,
   "comments": 2,
   "created_at": "2021-09-14T16:00:37Z",
-  "updated_at": "2022-09-09T15:07:18Z",
-  "closed_at": null,
+  "updated_at": "2022-09-20T15:19:47Z",
+  "closed_at": "2022-09-20T15:19:47Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "For severity some places use strings, while others the enum.\r\n\r\nApparently it's also indirectly used by other places in the compiler, like CommandLineInterface.cpp, that do not adhere to the severity standard:\r\n```\r\nsolc/CommandLineInterface.cpp:\t\tformatter.printExceptionInformation(_exception, \"Compiler error\");\r\nprintExceptionInformation(SourceReferenceExtractor::extract(m_charStreamProvider, _exception, _severity));\r\n```\r\n\r\n_Originally posted by @leonardoalt in https://github.com/ethereum/solidity/pull/11606#discussion_r704815675_",
-  "closed_by": null,
+  "closed_by": {
+    "login": "nishant-sachdeva",
+    "id": 32475507,
+    "node_id": "MDQ6VXNlcjMyNDc1NTA3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32475507?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nishant-sachdeva",
+    "html_url": "https://github.com/nishant-sachdeva",
+    "followers_url": "https://api.github.com/users/nishant-sachdeva/followers",
+    "following_url": "https://api.github.com/users/nishant-sachdeva/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nishant-sachdeva/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nishant-sachdeva/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nishant-sachdeva/subscriptions",
+    "organizations_url": "https://api.github.com/users/nishant-sachdeva/orgs",
+    "repos_url": "https://api.github.com/users/nishant-sachdeva/repos",
+    "events_url": "https://api.github.com/users/nishant-sachdeva/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nishant-sachdeva/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/11959/reactions",
     "total_count": 0,
@@ -114,7 +133,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/11959/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

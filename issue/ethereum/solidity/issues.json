@@ -1,19 +1,267 @@
 [
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 7665,
-    "title": "Pretty print expected json output of command line tests.",
-    "updatedAt": "2022-09-19T15:21:14Z"
-  },
-  {
-    "author": {
       "login": "christianparpart"
     },
     "number": 13539,
     "title": "Rename LSP's lspAssert() function into something more meaningful.",
-    "updatedAt": "2022-09-19T12:43:08Z"
+    "updatedAt": "2022-09-26T13:06:25Z"
+  },
+  {
+    "author": {
+      "login": "cyber-storm-200712"
+    },
+    "number": 13558,
+    "title": " 👋 Big Issue: Can't pass any require statement. (All require statement return false always.)",
+    "updatedAt": "2022-09-26T12:34:43Z"
+  },
+  {
+    "author": {
+      "login": "infiloop2"
+    },
+    "number": 13564,
+    "title": "Unable to explicitly import aliased interfaces",
+    "updatedAt": "2022-09-26T10:01:04Z"
+  },
+  {
+    "author": {
+      "login": "yyx1111"
+    },
+    "number": 13563,
+    "title": "Data location question?",
+    "updatedAt": "2022-09-26T03:54:25Z"
+  },
+  {
+    "author": {
+      "login": "Lims1703"
+    },
+    "number": 13561,
+    "title": "ETH on contract created by me",
+    "updatedAt": "2022-09-25T23:36:04Z"
+  },
+  {
+    "author": {
+      "login": "Gilgames000"
+    },
+    "number": 12825,
+    "title": "LSP throwing an error on each and every character I type in the editor",
+    "updatedAt": "2022-09-25T13:42:47Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 10443,
+    "title": "Specialized checked exponentation when exponent is a literal",
+    "updatedAt": "2022-09-25T03:03:40Z"
+  },
+  {
+    "author": {
+      "login": "HareemSaad"
+    },
+    "number": 13559,
+    "title": "Create2 deploys itself instead of deploying the intended contract.",
+    "updatedAt": "2022-09-24T16:58:38Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 7665,
+    "title": "Pretty print expected json output of command line tests.",
+    "updatedAt": "2022-09-24T14:33:00Z"
+  },
+  {
+    "author": {
+      "login": "r0qs"
+    },
+    "number": 13557,
+    "title": "issue 8",
+    "updatedAt": "2022-09-23T19:58:42Z"
+  },
+  {
+    "author": {
+      "login": "gnattishness"
+    },
+    "number": 13547,
+    "title": "v0.6.0 Breaking Changes is missing opcode syntax changes",
+    "updatedAt": "2022-09-23T15:32:35Z"
+  },
+  {
+    "author": {
+      "login": "LiRiu"
+    },
+    "number": 13555,
+    "title": "[SMTChecker] Compile panic in 0.8.17: memory access out of bounds",
+    "updatedAt": "2022-09-23T12:55:11Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13544,
+    "title": "Pre-release warning stripping in CLI tests does not always produce correct JSON formatting when combined with `--pretty-print`",
+    "updatedAt": "2022-09-23T11:42:25Z"
+  },
+  {
+    "author": {
+      "login": "SvenMeyer"
+    },
+    "number": 11638,
+    "title": "Compiling 16 files with 0.7.6 CompilerError: Stack too deep when compiling inline assembly: Variable headStart is 2 slot(s) too deep inside the stack.  Error HH600: Compilation failed",
+    "updatedAt": "2022-09-23T07:19:12Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13551,
+    "title": "[isoltest] Executing semantic tests at arbitrary paths",
+    "updatedAt": "2022-09-22T15:45:18Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 12570,
+    "title": "[OptimizedEVMCodeTransform] ICE due to \"Could not create stack layout after 1000 iterations\"",
+    "updatedAt": "2022-09-22T11:04:09Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13552,
+    "title": "Ignore JSON formatting in command-line tests",
+    "updatedAt": "2022-09-22T10:58:24Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13550,
+    "title": "Yul formatter",
+    "updatedAt": "2022-09-22T10:23:21Z"
+  },
+  {
+    "author": {
+      "login": "thedavidmeister"
+    },
+    "number": 13530,
+    "title": "memory writes in yul don't happen unless alongside a hardhat console log",
+    "updatedAt": "2022-09-21T11:06:01Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 13122,
+    "title": "Upgrade emscripten to 3.2.0+",
+    "updatedAt": "2022-09-21T11:05:47Z"
+  },
+  {
+    "author": {
+      "login": "Amxx"
+    },
+    "number": 13433,
+    "title": "Allow initializing immutables in parallel branches of try/catch statement",
+    "updatedAt": "2022-09-20T22:16:16Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 11959,
+    "title": "Clean up the helpers around errors",
+    "updatedAt": "2022-09-20T15:19:47Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13508,
+    "title": "Replace `bin/soljson-latest.js` in solc-bin with a symlink",
+    "updatedAt": "2022-09-20T14:35:24Z"
+  },
+  {
+    "author": {
+      "login": "matheusaaguiar"
+    },
+    "number": 13543,
+    "title": "Semantic test for copying calldata structs placed in the wrong subdirectory",
+    "updatedAt": "2022-09-20T14:30:19Z"
+  },
+  {
+    "author": {
+      "login": "frangio"
+    },
+    "number": 13545,
+    "title": "Check for reuse of old error/warning codes",
+    "updatedAt": "2022-09-20T14:29:08Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11792,
+    "title": "Allow reverting with signature `error Panic(uint)`",
+    "updatedAt": "2022-09-20T14:21:40Z"
+  },
+  {
+    "author": {
+      "login": "leonardoalt"
+    },
+    "number": 8146,
+    "title": "static_assert and static_require",
+    "updatedAt": "2022-09-20T14:19:04Z"
+  },
+  {
+    "author": {
+      "login": "kuzdogan"
+    },
+    "number": 12932,
+    "title": "Error: `Definition of base has to precede definition of derived contract` when specific file in standard-json-input `outputSelection` but works when `outputSelection` file is specific",
+    "updatedAt": "2022-09-20T14:15:56Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 13252,
+    "title": "solfuzzer crashes in nightly",
+    "updatedAt": "2022-09-20T14:14:24Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13517,
+    "title": "Add Paris as EVM version",
+    "updatedAt": "2022-09-20T13:49:22Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13137,
+    "title": "Event and error selectors are not constants",
+    "updatedAt": "2022-09-20T13:45:59Z"
+  },
+  {
+    "author": {
+      "login": "dessaya"
+    },
+    "number": 12067,
+    "title": "Allow `verbatim` in Solidity `assembly` blocks",
+    "updatedAt": "2022-09-20T13:34:16Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 11260,
+    "title": "Investigate InvalidDeposit error during code transform (instead of StackTooDeep).",
+    "updatedAt": "2022-09-20T09:24:25Z"
   },
   {
     "author": {
@@ -41,14 +289,6 @@
   },
   {
     "author": {
-      "login": "thedavidmeister"
-    },
-    "number": 13530,
-    "title": "memory writes in yul don't happen unless alongside a hardhat console log",
-    "updatedAt": "2022-09-18T12:39:44Z"
-  },
-  {
-    "author": {
       "login": "hiroshi-yamamoto-dublr"
     },
     "number": 13536,
@@ -70,22 +310,6 @@
     "number": 13159,
     "title": "Error: cannot estimate gas; transaction may fail or may require manual gas limit",
     "updatedAt": "2022-09-17T07:05:09Z"
-  },
-  {
-    "author": {
-      "login": "dessaya"
-    },
-    "number": 12067,
-    "title": "Allow `verbatim` in Solidity `assembly` blocks",
-    "updatedAt": "2022-09-17T01:08:21Z"
-  },
-  {
-    "author": {
-      "login": "Gilgames000"
-    },
-    "number": 12825,
-    "title": "LSP throwing an error on each and every character I type in the editor",
-    "updatedAt": "2022-09-16T16:57:57Z"
   },
   {
     "author": {
@@ -145,14 +369,6 @@
   },
   {
     "author": {
-      "login": "kuzdogan"
-    },
-    "number": 12932,
-    "title": "Error: `Definition of base has to precede definition of derived contract` when specific file in standard-json-input `outputSelection` but works when `outputSelection` file is specific",
-    "updatedAt": "2022-09-15T12:26:21Z"
-  },
-  {
-    "author": {
       "login": "nishant-sachdeva"
     },
     "number": 13318,
@@ -198,14 +414,6 @@
     "number": 909,
     "title": "Enums with data / sum datatype / algebraic datatypes",
     "updatedAt": "2022-09-14T18:04:44Z"
-  },
-  {
-    "author": {
-      "login": "leonardoalt"
-    },
-    "number": 8146,
-    "title": "static_assert and static_require",
-    "updatedAt": "2022-09-14T18:03:10Z"
   },
   {
     "author": {
@@ -1065,14 +1273,6 @@
   },
   {
     "author": {
-      "login": "Amxx"
-    },
-    "number": 13433,
-    "title": "Allow initializing immutables in parallel branches of try/catch statement",
-    "updatedAt": "2022-09-12T15:12:14Z"
-  },
-  {
-    "author": {
       "login": "StErMi"
     },
     "number": 12864,
@@ -1145,14 +1345,6 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11792,
-    "title": "Allow reverting with signature `error Panic(uint)`",
-    "updatedAt": "2022-09-12T14:37:08Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 11156,
@@ -1198,14 +1390,6 @@
     "number": 13086,
     "title": "Include all emitted events in the contract ABI and userdoc in a non-breaking way by ignoring conflicting Natspec",
     "updatedAt": "2022-09-12T14:23:11Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 13517,
-    "title": "Add Paris as EVM version",
-    "updatedAt": "2022-09-12T11:13:50Z"
   },
   {
     "author": {
@@ -1297,27 +1481,11 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 11959,
-    "title": "Clean up the helpers around errors",
-    "updatedAt": "2022-09-09T15:07:18Z"
-  },
-  {
-    "author": {
       "login": "pcaversaccio"
     },
     "number": 13511,
     "title": "`UnusedStoreEliminator` step missing in documentation",
     "updatedAt": "2022-09-09T00:18:41Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13508,
-    "title": "Replace `bin/soljson-latest.js` in solc-bin with a symlink",
-    "updatedAt": "2022-09-08T18:14:33Z"
   },
   {
     "author": {
@@ -4329,14 +4497,6 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 10443,
-    "title": "Specialized checked exponentation when exponent is a literal",
-    "updatedAt": "2022-08-17T13:48:45Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 10627,
@@ -4593,14 +4753,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 13122,
-    "title": "Upgrade emscripten to 3.2.0+",
-    "updatedAt": "2022-08-13T03:11:17Z"
-  },
-  {
-    "author": {
       "login": "fulldecent"
     },
     "number": 13373,
@@ -4729,14 +4881,6 @@
   },
   {
     "author": {
-      "login": "SvenMeyer"
-    },
-    "number": 11638,
-    "title": "Compiling 16 files with 0.7.6 CompilerError: Stack too deep when compiling inline assembly: Variable headStart is 2 slot(s) too deep inside the stack.  Error HH600: Compilation failed",
-    "updatedAt": "2022-08-07T11:13:06Z"
-  },
-  {
-    "author": {
       "login": "migoldfinger"
     },
     "number": 13349,
@@ -4758,14 +4902,6 @@
     "number": 13350,
     "title": "[abi coder] Storage to calldata copy fails?",
     "updatedAt": "2022-08-05T13:16:53Z"
-  },
-  {
-    "author": {
-      "login": "Marenz"
-    },
-    "number": 13252,
-    "title": "solfuzzer crashes in nightly",
-    "updatedAt": "2022-08-05T12:16:12Z"
   },
   {
     "author": {
@@ -5142,14 +5278,6 @@
     "number": 13106,
     "title": "Most error messages describe objects representing errors and events as function types",
     "updatedAt": "2022-07-06T15:31:53Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 13137,
-    "title": "Event and error selectors are not constants",
-    "updatedAt": "2022-07-06T14:05:04Z"
   },
   {
     "author": {
@@ -5870,14 +5998,6 @@
     "number": 11074,
     "title": "[SMTChecker] Remove tx data automatically if possible",
     "updatedAt": "2022-05-17T11:18:02Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 11260,
-    "title": "Investigate InvalidDeposit error during code transform (instead of StackTooDeep).",
-    "updatedAt": "2022-05-17T09:40:50Z"
   },
   {
     "author": {
@@ -6854,14 +6974,6 @@
     "number": 12664,
     "title": "Investigate asan/ubsan memory leak reports in Z3/spacer or selectively disable reports.",
     "updatedAt": "2022-02-14T13:02:24Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 12570,
-    "title": "[OptimizedEVMCodeTransform] ICE due to \"Could not create stack layout after 1000 iterations\"",
-    "updatedAt": "2022-02-14T12:09:28Z"
   },
   {
     "author": {
@@ -8190,14 +8302,6 @@
     "number": 2238,
     "title": "Create a release notes JSON",
     "updatedAt": "2021-11-10T00:33:18Z"
-  },
-  {
-    "author": {
-      "login": "sirhill"
-    },
-    "number": 11002,
-    "title": "msg.data cannot be used inside a receive() function",
-    "updatedAt": "2021-11-09T13:27:27Z"
   },
   {
     "author": {
@@ -9742,14 +9846,6 @@
     "number": 11687,
     "title": "The second example from `libraries.rst` crashes Remix IDE",
     "updatedAt": "2021-07-27T00:45:18Z"
-  },
-  {
-    "author": {
-      "login": "MyTDT-Mysoft"
-    },
-    "number": 11681,
-    "title": "Provide 32-bit Windows binaries",
-    "updatedAt": "2021-07-26T19:37:27Z"
   },
   {
     "author": {
@@ -16622,14 +16718,6 @@
     "number": 8612,
     "title": "Ability to import into inline assembly",
     "updatedAt": "2020-08-12T22:16:50Z"
-  },
-  {
-    "author": {
-      "login": "sirhill"
-    },
-    "number": 9139,
-    "title": "Comments starting with multiple stars wrongly recognized as natspec docstring",
-    "updatedAt": "2020-08-12T15:09:49Z"
   },
   {
     "author": {
@@ -35001,6 +35089,14 @@
   },
   {
     "author": {
+      "login": "rstormsf"
+    },
+    "number": 2753,
+    "title": "Request: contract functions check",
+    "updatedAt": "2017-12-02T01:21:02Z"
+  },
+  {
+    "author": {
       "login": "zjsunzone"
     },
     "number": 2767,
@@ -36798,6 +36894,14 @@
     "number": 2388,
     "title": "Calling assemble twice on AssemblyStack fails",
     "updatedAt": "2017-06-14T12:12:37Z"
+  },
+  {
+    "author": {
+      "login": "rstormsf"
+    },
+    "number": 2379,
+    "title": "delete array[index] doesn't change length and leave \"0\"",
+    "updatedAt": "2017-06-13T20:00:14Z"
   },
   {
     "author": {

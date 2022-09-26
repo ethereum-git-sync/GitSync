@@ -38,6 +38,42 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4438003076,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaNhA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20effort",
+      "name": "medium effort",
+      "color": "ff7df7",
+      "default": false,
+      "description": "Default level of effort"
+    },
+    {
+      "id": 4438155599,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjhTw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20impact",
+      "name": "medium impact",
+      "color": "314aff",
+      "default": false,
+      "description": "Default level of impact"
+    },
+    {
+      "id": 4438490842,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3-2g",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20have",
+      "name": "should have",
+      "color": "ffbe6c",
+      "default": false,
+      "description": "We like the idea but it’s not important enough to be a part of the roadmap."
+    },
+    {
+      "id": 4525128519,
+      "node_id": "LA_kwDOAm_5kc8AAAABDbf7Rw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/needs%20design",
+      "name": "needs design",
+      "color": "18F737",
+      "default": false,
+      "description": "The proposal is too vague to be implemented right away"
     }
   ],
   "state": "open",
@@ -47,9 +83,9 @@
 
   ],
   "milestone": null,
-  "comments": 10,
+  "comments": 11,
   "created_at": "2021-09-30T19:02:38Z",
-  "updated_at": "2022-09-17T01:08:21Z",
+  "updated_at": "2022-09-20T13:34:16Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -500,6 +536,50 @@
     "body": "looking forward to this! so why not just do analysis on the ops to ensure no stack manipulation deeper than the \"inputs\" in the verbatim name & ensures that only 1 element is added to the stack at the end? if you have that guarantee + memory safety, while you dont get \"full\" mutability of the execution context, you do get a decent ways safely\r\n\r\nif you want to enable this sort of check maybe something like: `assembly (\"memory-safe stack-safe\") { verbatim_1i_1o(<pop, push(1) ops>, a}`\r\n\r\nAnd if you don't have stack-safe all bets are off on optimizations? Here it would be trivial to look op by op and ensure its stack safe, and if you break the safety contract there is a compiler error. And you can also easily run an analysis to check that storage purity in solidity matches verbatim opcodes. I think at this low level its fine to force users to enumerate the safety they are guaranteeing the compiler, i.e. one could imagine:\r\n\r\n`assembly (\"memory-safe stack-safe jumpless storage-pure\")` etc. \r\n\r\nTo be clear I am not as knowledgeable on the compiler as y'all obviously, just my 2 cents\r\n\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1249966504/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1252229846",
+    "html_url": "https://github.com/ethereum/solidity/issues/12067#issuecomment-1252229846",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12067",
+    "id": 1252229846,
+    "node_id": "IC_kwDOAm_5kc5Ko4LW",
+    "user": {
+      "login": "hrkrshnn",
+      "id": 13174375,
+      "node_id": "MDQ6VXNlcjEzMTc0Mzc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13174375?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hrkrshnn",
+      "html_url": "https://github.com/hrkrshnn",
+      "followers_url": "https://api.github.com/users/hrkrshnn/followers",
+      "following_url": "https://api.github.com/users/hrkrshnn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hrkrshnn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hrkrshnn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hrkrshnn/subscriptions",
+      "organizations_url": "https://api.github.com/users/hrkrshnn/orgs",
+      "repos_url": "https://api.github.com/users/hrkrshnn/repos",
+      "events_url": "https://api.github.com/users/hrkrshnn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hrkrshnn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-20T11:39:24Z",
+    "updated_at": "2022-09-20T11:39:24Z",
+    "author_association": "MEMBER",
+    "body": ">  so why not just do analysis on the ops to ensure no stack manipulation deeper than the \"inputs\" in the verbatim name & ensures that only 1 element is added to the stack at the end?\r\n\r\nOne early goal for verbatim was to support opcodes that are not yet in the EVM. Other machines like OVM1, new proposed EIPs, other EVM like chains are example use cases. So we cannot really analyze the raw bytecode in general. \r\n\r\nUser annotation is a good idea. However, we have to check what optimizations we can enable with that. The Optimizer wasn't designed with Verbatim in mind, so we'll have to really look at what steps can be broken by `verbatim` even with the correct user-annotations.\r\n\r\n",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1252229846/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13561",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13561/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13561/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13561/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13561",
+  "id": 1385202262,
+  "node_id": "I_kwDOAm_5kc5SkIJW",
+  "number": 13561,
+  "title": "ETH on contract created by me",
+  "user": {
+    "login": "Lims1703",
+    "id": 114368229,
+    "node_id": "U_kgDOBtEe5Q",
+    "avatar_url": "https://avatars.githubusercontent.com/u/114368229?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Lims1703",
+    "html_url": "https://github.com/Lims1703",
+    "followers_url": "https://api.github.com/users/Lims1703/followers",
+    "following_url": "https://api.github.com/users/Lims1703/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Lims1703/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Lims1703/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Lims1703/subscriptions",
+    "organizations_url": "https://api.github.com/users/Lims1703/orgs",
+    "repos_url": "https://api.github.com/users/Lims1703/repos",
+    "events_url": "https://api.github.com/users/Lims1703/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Lims1703/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-25T23:36:04Z",
+  "updated_at": "2022-09-25T23:36:04Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "Dear all,\r\n\r\nFirst of all, I really thank you for your time.\r\nI have an issue, I was so stupid and I followed a contract creation and connected my Wallet to send 1ETH on it but it looks like the contract does not allow the created to withdraw the funds. \r\nIs is possible to connect me on the contract to request the funds to be transfered back to my wallet ?\r\nhttps://etherscan.io/address/0x36c72af71222AF49016caD945DAFD624699595Cf?fbclid=IwAR1UObohP9AayrvoNweF1YW8vbHpx-O997fn3CgJMRq0wW55mVYwud_qbNw#comments\r\n\r\nHere is my contract, I have no strong knowledge in crypto, so any help would be really appreciated.\r\n\r\nThank you,\r\n\r\nLims",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13561/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13561/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

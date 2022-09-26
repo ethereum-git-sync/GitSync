@@ -1,0 +1,103 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13545",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13545/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13545/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13545/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13545",
+  "id": 1379515509,
+  "node_id": "I_kwDOAm_5kc5SObx1",
+  "number": 13545,
+  "title": "Check for reuse of old error/warning codes",
+  "user": {
+    "login": "frangio",
+    "id": 481465,
+    "node_id": "MDQ6VXNlcjQ4MTQ2NQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/481465?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frangio",
+    "html_url": "https://github.com/frangio",
+    "followers_url": "https://api.github.com/users/frangio/followers",
+    "following_url": "https://api.github.com/users/frangio/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frangio/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frangio/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frangio/subscriptions",
+    "organizations_url": "https://api.github.com/users/frangio/orgs",
+    "repos_url": "https://api.github.com/users/frangio/repos",
+    "events_url": "https://api.github.com/users/frangio/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frangio/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438155599,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjhTw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20impact",
+      "name": "medium impact",
+      "color": "314aff",
+      "default": false,
+      "description": "Default level of impact"
+    },
+    {
+      "id": 4438481746,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3bUg",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have%20eventually",
+      "name": "must have eventually",
+      "color": "ffb04d",
+      "default": false,
+      "description": "Something we consider essential but not enough to prevent us from releasing Solidity 1.0 without it."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-20T14:25:50Z",
+  "updated_at": "2022-09-20T14:29:08Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "Some error codes have been removed and are no longer emitted (for example, 8760 for shadowing of opcodes). There is currently a risk that those codes are reintroduced with a different meaning.\r\n\r\n[`scripts/error_codes.py`](https://github.com/ethereum/solidity/blob/db571add54bb55f008bff1b51f3dafad7112b8d6/scripts/error_codes.py) should be amended to include a list of removed error codes and verify that they are not in use in the codebase.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13545/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13545/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

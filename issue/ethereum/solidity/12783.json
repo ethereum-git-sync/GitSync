@@ -51,8 +51,8 @@
     {
       "id": 1012614086,
       "node_id": "MDU6TGFiZWwxMDEyNjE0MDg2",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20medium",
-      "name": "difficulty: medium",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20difficulty",
+      "name": "medium difficulty",
       "color": "7dcddb",
       "default": false,
       "description": ""
@@ -65,6 +65,33 @@
       "color": "53e0b5",
       "default": false,
       "description": "Error is just badly reported. Should be a proper type error - source is not fine."
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438155599,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjhTw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20impact",
+      "name": "medium impact",
+      "color": "314aff",
+      "default": false,
+      "description": "Default level of impact"
+    },
+    {
+      "id": 4438490842,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3-2g",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20have",
+      "name": "should have",
+      "color": "ffbe6c",
+      "default": false,
+      "description": "We like the idea but it’s not important enough to be a part of the roadmap."
     }
   ],
   "state": "open",
@@ -76,7 +103,7 @@
   "milestone": null,
   "comments": 5,
   "created_at": "2022-03-12T07:52:12Z",
-  "updated_at": "2022-07-20T20:44:08Z",
+  "updated_at": "2022-09-27T00:35:16Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -127,7 +154,7 @@
     },
     "created_at": "2022-07-14T13:07:40Z",
     "updated_at": "2022-07-14T13:07:40Z",
-    "author_association": "COLLABORATOR",
+    "author_association": "MEMBER",
     "body": "@barakman  Thank you for your ticket! Could you share the code we can use to reproduce the issue? Hope you have managed to find it. Otherwise, even if we made adjustments you suggest, we wouldn't be sure the problem is fixed.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1184427025/reactions",

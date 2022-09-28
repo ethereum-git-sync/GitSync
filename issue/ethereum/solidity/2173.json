@@ -40,21 +40,40 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 2,
+  "comments": 3,
   "created_at": "2017-04-26T15:49:48Z",
-  "updated_at": "2020-04-11T14:10:17Z",
-  "closed_at": null,
+  "updated_at": "2022-09-27T00:59:09Z",
+  "closed_at": "2022-09-27T00:59:09Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "[Solidity features wiki page](https://github.com/ethereum/wiki/wiki/Solidity-Features) contained some description about gas estimation. However, I find nothing similar in the `doc` directory here. Perhaps gas estimation should be explained in the documentation.\r\n\r\nHere are the paragraphs removed from the wiki page:\r\n\r\n> PT Solidity provides two ways to compute an upper bound on the gas usage of code: A structural one, which can be used to identify expensive statements and a functional one which tries to give an exact gas estimation for each function. Some gas costs depend on the state of the virtual machine, e.g. on the cost of sha3 depends on the length of the argument and writing to storage has different costs depending on whether the storage slot had the value zero or not.\r\n> \r\n> For the structural gas estimation, the gas cost of each opcode is computed assuming the intersection of all states in which the VM could reach this opcode. These costs are accumulated for each opcode that results from a specific statement (in some situations also other AST nodes) in the AST. So in this mode, opcodes are not counted multiple times even if they occur in loops.\r\n> \r\n> The functional gas estimation takes a different approach: For each function in a contract, the execution of this function is \"simulated\". As we want to provide an upper bound on the gas costs independent of the actual arguments, this is sometimes not accurate and may even result in \"infinite\" gas costs. Note that the gas costs of message-called functions are not included in the gas costs of a function.\r\n>",
-  "closed_by": null,
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/2173/reactions",
     "total_count": 0,
@@ -69,7 +88,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/2173/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "not_planned"
 }
 [
   {
@@ -148,6 +167,50 @@
     "body": "Also mention that gas estimation excludes the cost of the transaction itself. Explain the various fields that are output when using `solc --gas`.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/413544407/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258835584",
+    "html_url": "https://github.com/ethereum/solidity/issues/2173#issuecomment-1258835584",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/2173",
+    "id": 1258835584,
+    "node_id": "IC_kwDOAm_5kc5LCE6A",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-27T00:59:09Z",
+    "updated_at": "2022-09-27T00:59:09Z",
+    "author_association": "MEMBER",
+    "body": "Closing because we decided to remove the gas estimator from the compiler: #13566.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258835584/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

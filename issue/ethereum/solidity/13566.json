@@ -1,14 +1,14 @@
 {
-  "url": "https://api.github.com/repos/ethereum/solidity/issues/10629",
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13566",
   "repository_url": "https://api.github.com/repos/ethereum/solidity",
-  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/10629/labels{/name}",
-  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/10629/comments",
-  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/10629/events",
-  "html_url": "https://github.com/ethereum/solidity/issues/10629",
-  "id": 768905195,
-  "node_id": "MDU6SXNzdWU3Njg5MDUxOTU=",
-  "number": 10629,
-  "title": "[CI] PR check to enforce Linux line endings",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13566/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13566/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13566/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13566",
+  "id": 1386919465,
+  "node_id": "I_kwDOAm_5kc5SqrYp",
+  "number": 13566,
+  "title": "Remove gas estimator from the compiler",
   "user": {
     "login": "cameel",
     "id": 137030,
@@ -31,31 +31,22 @@
   },
   "labels": [
     {
-      "id": 717596767,
-      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
-      "name": "good first issue",
-      "color": "006b75",
-      "default": true,
-      "description": ""
-    },
-    {
-      "id": 1012613901,
-      "node_id": "MDU6TGFiZWwxMDEyNjEzOTAx",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/easy%20difficulty",
-      "name": "easy difficulty",
-      "color": "0b3f89",
+      "id": 467898404,
+      "node_id": "MDU6TGFiZWw0Njc4OTg0MDQ=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/breaking%20change%20:warning:",
+      "name": "breaking change :warning:",
+      "color": "b60205",
       "default": false,
       "description": ""
     },
     {
-      "id": 1018738457,
-      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
-      "name": "testing :hammer:",
-      "color": "ffc6db",
+      "id": 4372329032,
+      "node_id": "LA_kwDOAm_5kc8AAAABBJxySA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/roadmap",
+      "name": "roadmap",
+      "color": "ff8e00",
       "default": false,
-      "description": ""
+      "description": "It's on our short-term roadmap"
     },
     {
       "id": 4438006499,
@@ -74,15 +65,6 @@
       "color": "5d71ff",
       "default": false,
       "description": "Changes are not very noticeable or potential benefits are limited."
-    },
-    {
-      "id": 4438492402,
-      "node_id": "LA_kwDOAm_5kc8AAAABCI4E8g",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/nice%20to%20have",
-      "name": "nice to have",
-      "color": "ffdeb3",
-      "default": false,
-      "description": "We don’t see a good reason not to have it but won’t go out of our way to implement it."
     }
   ],
   "state": "open",
@@ -93,15 +75,15 @@
   ],
   "milestone": null,
   "comments": 0,
-  "created_at": "2020-12-16T14:01:52Z",
-  "updated_at": "2022-09-26T23:49:48Z",
+  "created_at": "2022-09-27T00:48:29Z",
+  "updated_at": "2022-09-27T00:48:29Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "We should have an extra check to detect problems like #10628 early.\r\n\r\nWe might have some files where the CRLF line endings are needed. If that's the case, it should be possible to disable the check on specific files or file types.",
+  "body": "Gas estimator built into the compiler (`solc --gas`) has not been actively maintained for some time now and has multiple bugs and missing features.\r\n\r\nWe don't think it makes sense to put more effort into it so we'll be removing it in the next breaking version. There will be no deprecation warnings because as far as we can tell the estimator is rarely used in practice and there are no major tools that depend on it.",
   "closed_by": null,
   "reactions": {
-    "url": "https://api.github.com/repos/ethereum/solidity/issues/10629/reactions",
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13566/reactions",
     "total_count": 0,
     "+1": 0,
     "-1": 0,
@@ -112,7 +94,7 @@
     "rocket": 0,
     "eyes": 0
   },
-  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10629/timeline",
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13566/timeline",
   "performed_via_github_app": null,
   "state_reason": null
 }

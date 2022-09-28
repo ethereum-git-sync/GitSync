@@ -30,7 +30,33 @@
     "site_admin": false
   },
   "labels": [
-
+    {
+      "id": 4438003076,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaNhA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20effort",
+      "name": "medium effort",
+      "color": "ff7df7",
+      "default": false,
+      "description": "Default level of effort"
+    },
+    {
+      "id": 4438153180,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjX3A",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20impact",
+      "name": "high impact",
+      "color": "001dff",
+      "default": false,
+      "description": "Changes are very prominent and affect users or the project in a major way."
+    },
+    {
+      "id": 4525128519,
+      "node_id": "LA_kwDOAm_5kc8AAAABDbf7Rw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/needs%20design",
+      "name": "needs design",
+      "color": "18F737",
+      "default": false,
+      "description": "The proposal is too vague to be implemented right away"
+    }
   ],
   "state": "open",
   "locked": false,
@@ -41,7 +67,7 @@
   "milestone": null,
   "comments": 16,
   "created_at": "2020-01-15T21:04:27Z",
-  "updated_at": "2022-05-14T09:20:06Z",
+  "updated_at": "2022-09-26T19:41:36Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -624,8 +650,8 @@
     "body": "As someone who is heavy user (and proponent) of pure functions (and functional programming in general), I prefer option 1.\r\n\r\nIt seems reasonable to strive for objective technical accuracy, rather than striving for some subjective semantic accuracy.\r\n\r\nImmutables end up as in-line litterals. The on-chain byte code for a function that returns a `constant`, `immutable`, or literal, is identical.\r\n\r\nWith a perfect decompiler that could translate any on-chain bytecode into human-readable Solidity (as one would write it), the following 4 smart contracts would have identically decompiled `foo` functions, all marked at `pure`:\r\n\r\n```\r\ncontract ImmutableTest1 {\r\n    function foo() external pure returns (uint256) { return uint256(4); }\r\n}\r\n\r\ncontract ImmutableTest2 {\r\n    uint256 internal constant _foo = uint256(4);\r\n    function foo() external pure returns (uint256) { return _foo; }\r\n}\r\n\r\ncontract ImmutableTest3 {\r\n    uint256 internal immutable _foo;\r\n    constructor() { _foo = uint256(4); }\r\n    function foo() external view returns (uint256) { return _foo; }\r\n}\r\n\r\ncontract ImmutableTest4 {\r\n    uint256 internal immutable _foo;\r\n    constructor(uint256 foo_) { _foo = foo_; }\r\n    function foo() external view returns (uint256) { return _foo; }\r\n}\r\n```\r\n\r\nIn my opinion, `pure` should define what happens (and can't happen) on-chain, not what humans expect to happen before the contract is even created.\r\n\r\nWhen you deploy a contract to the chain, you already need to wait for the receipt to be sure of its address (i.e. consider a factory that deploys children using the blockhash as a `create2` salt), so to interact with it, you need at least _some_ data/event from the chain. If you really needed to know what the resulting immutables were, if any, of a contract, just get more data from the chain (i.e. emit them in events, or expose externally).",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/991852649/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

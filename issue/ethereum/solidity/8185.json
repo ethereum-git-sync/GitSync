@@ -38,18 +38,83 @@
       "color": "ffc6db",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438490842,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3-2g",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20have",
+      "name": "should have",
+      "color": "ffbe6c",
+      "default": false,
+      "description": "We like the idea but it’s not important enough to be a part of the roadmap."
     }
   ],
   "state": "open",
   "locked": false,
-  "assignee": null,
+  "assignee": {
+    "login": "aarlt",
+    "id": 5008794,
+    "node_id": "MDQ6VXNlcjUwMDg3OTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5008794?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aarlt",
+    "html_url": "https://github.com/aarlt",
+    "followers_url": "https://api.github.com/users/aarlt/followers",
+    "following_url": "https://api.github.com/users/aarlt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aarlt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aarlt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aarlt/subscriptions",
+    "organizations_url": "https://api.github.com/users/aarlt/orgs",
+    "repos_url": "https://api.github.com/users/aarlt/repos",
+    "events_url": "https://api.github.com/users/aarlt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aarlt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "assignees": [
-
+    {
+      "login": "aarlt",
+      "id": 5008794,
+      "node_id": "MDQ6VXNlcjUwMDg3OTQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5008794?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aarlt",
+      "html_url": "https://github.com/aarlt",
+      "followers_url": "https://api.github.com/users/aarlt/followers",
+      "following_url": "https://api.github.com/users/aarlt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aarlt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aarlt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aarlt/subscriptions",
+      "organizations_url": "https://api.github.com/users/aarlt/orgs",
+      "repos_url": "https://api.github.com/users/aarlt/repos",
+      "events_url": "https://api.github.com/users/aarlt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aarlt/received_events",
+      "type": "User",
+      "site_admin": false
+    }
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2020-01-23T13:09:40Z",
-  "updated_at": "2021-03-26T00:48:04Z",
+  "updated_at": "2022-09-26T23:15:04Z",
   "closed_at": null,
   "author_association": "COLLABORATOR",
   "active_lock_reason": null,
@@ -72,5 +137,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258752718",
+    "html_url": "https://github.com/ethereum/solidity/issues/8185#issuecomment-1258752718",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/8185",
+    "id": 1258752718,
+    "node_id": "IC_kwDOAm_5kc5LBwrO",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-26T23:14:39Z",
+    "updated_at": "2022-09-26T23:14:39Z",
+    "author_association": "MEMBER",
+    "body": "@aarlt Since you're refactoring this script, you could take care of this while doing it.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258752718/reactions",
+      "total_count": 1,
+      "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

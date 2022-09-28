@@ -49,15 +49,6 @@
       "description": "Any changes to the language, e.g. new features"
     },
     {
-      "id": 1012613901,
-      "node_id": "MDU6TGFiZWwxMDEyNjEzOTAx",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20easy",
-      "name": "difficulty: easy",
-      "color": "0b3f89",
-      "default": false,
-      "description": ""
-    },
-    {
       "id": 3515010024,
       "node_id": "LA_kwDOAm_5kc7Rgsvo",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue%20candidate",
@@ -65,6 +56,24 @@
       "color": "91B44D",
       "default": false,
       "description": "Could be a \"good first issue\" but something is blocking it or it has open questions."
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438155599,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjhTw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20impact",
+      "name": "medium impact",
+      "color": "314aff",
+      "default": false,
+      "description": "Default level of impact"
     }
   ],
   "state": "open",
@@ -76,7 +85,7 @@
   "milestone": null,
   "comments": 5,
   "created_at": "2022-01-13T11:40:33Z",
-  "updated_at": "2022-01-14T12:47:49Z",
+  "updated_at": "2022-09-26T21:36:45Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,

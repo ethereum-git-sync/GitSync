@@ -32,21 +32,40 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 7,
+  "comments": 8,
   "created_at": "2019-12-09T05:43:12Z",
-  "updated_at": "2020-04-08T11:29:45Z",
-  "closed_at": null,
+  "updated_at": "2022-09-26T19:35:17Z",
+  "closed_at": "2022-09-26T19:35:02Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "## Abstract \r\n\r\nFor example [ERC721 contains](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.4.0/contracts/token/ERC721/ERC721.sol#L36-L50):\r\n```Solidity\r\n/*\r\n *     bytes4(keccak256('balanceOf(address)')) == 0x70a08231\r\n *     bytes4(keccak256('ownerOf(uint256)')) == 0x6352211e\r\n *     bytes4(keccak256('approve(address,uint256)')) == 0x095ea7b3\r\n *     bytes4(keccak256('getApproved(uint256)')) == 0x081812fc\r\n *     bytes4(keccak256('setApprovalForAll(address,bool)')) == 0xa22cb465\r\n *     bytes4(keccak256('isApprovedForAll(address,address)')) == 0xe985e9c5\r\n *     bytes4(keccak256('transferFrom(address,address,uint256)')) == 0x23b872dd\r\n *     bytes4(keccak256('safeTransferFrom(address,address,uint256)')) == 0x42842e0e\r\n *     bytes4(keccak256('safeTransferFrom(address,address,uint256,bytes)')) == 0xb88d4fde\r\n *\r\n *     => 0x70a08231 ^ 0x6352211e ^ 0x095ea7b3 ^ 0x081812fc ^\r\n *        0xa22cb465 ^ 0xe985e9c ^ 0x23b872dd ^ 0x42842e0e ^ 0xb88d4fde == 0x80ac58cd\r\n */\r\nbytes4 private constant _INTERFACE_ID_ERC721 = 0x80ac58cd;\r\n```\r\nBut could contain:\r\n```Solidity\r\nbytes4 private constant _INTERFACE_ID_ERC721 = 0\r\n    ^ balanceOf(address).selector\r\n    ^ ownerOf(uint256).selector\r\n    ^ approve(address,uint256).selector\r\n    ^ getApproved(uint256).selector\r\n    ^ setApprovalForAll(address,bool).selector\r\n    ^ isApprovedForAll(address,address).selector\r\n    ^ transferFrom(address,address,uint256).selector\r\n    ^ safeTransferFrom(address,address,uint256).selector\r\n    ^ safeTransferFrom(address,address,uint256,bytes).selector;\r\n```\r\n\r\n## Motivation\r\n\r\nAvoiding off-code computations.",
-  "closed_by": null,
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/7922/reactions",
     "total_count": 3,
@@ -61,7 +80,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/7922/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -360,6 +379,50 @@
     "body": "``function(uint256)external(this.f)``... like casting to the required function type as in C++ - but in solidity it's indeed extremely horrible...\r\n``this.f[\"(uint256)\"]`` or maybe better ``this.f[(uint256)]``, i.e. ``this.f`` could be a compile-time-only mapping from TypeType to FunctionType... that'd make sense, but it doesn't look nice either...\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/573661266/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258523841",
+    "html_url": "https://github.com/ethereum/solidity/issues/7922#issuecomment-1258523841",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/7922",
+    "id": 1258523841,
+    "node_id": "IC_kwDOAm_5kc5LA4zB",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-26T19:35:02Z",
+    "updated_at": "2022-09-26T19:35:17Z",
+    "author_association": "MEMBER",
+    "body": "Closing this since selectors are usable in constant assignments since 0.6.3 and we already have an issue covering selectors of overloaded functions: #3556.\r\n\r\nAlso, I think that the introduction of `interfaceId` in #7856 fulfilled the original motivation behind this issue.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258523841/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

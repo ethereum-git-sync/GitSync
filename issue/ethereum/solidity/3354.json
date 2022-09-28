@@ -32,21 +32,40 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 10,
+  "comments": 11,
   "created_at": "2017-12-22T12:36:42Z",
-  "updated_at": "2018-06-13T14:14:47Z",
-  "closed_at": null,
+  "updated_at": "2022-09-27T00:51:08Z",
+  "closed_at": "2022-09-27T00:51:08Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "```\r\ncontract C {\r\n  string public constant name = \"Hello World\";\r\n  uint public constant num = 4;\r\n}\r\n```\r\n\r\n```\r\nGas estimation:\r\nconstruction:\r\n   118 + 74000 = 74118\r\nexternal:\r\n   name():\tinfinite\r\n   num():\t208\r\n```\r\n\r\n(from https://github.com/ethereum/browser-solidity/issues/964)",
-  "closed_by": null,
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/3354/reactions",
     "total_count": 6,
@@ -61,7 +80,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/3354/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "not_planned"
 }
 [
   {
@@ -494,6 +513,50 @@
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/396952844/reactions",
       "total_count": 2,
       "+1": 2,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258831810",
+    "html_url": "https://github.com/ethereum/solidity/issues/3354#issuecomment-1258831810",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/3354",
+    "id": 1258831810,
+    "node_id": "IC_kwDOAm_5kc5LCD_C",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-27T00:51:08Z",
+    "updated_at": "2022-09-27T00:51:08Z",
+    "author_association": "MEMBER",
+    "body": "Closing because we decided to remove the gas estimator from the compiler: #13566.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258831810/reactions",
+      "total_count": 0,
+      "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

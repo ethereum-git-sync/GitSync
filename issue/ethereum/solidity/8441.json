@@ -38,6 +38,33 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438492402,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI4E8g",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/nice%20to%20have",
+      "name": "nice to have",
+      "color": "ffdeb3",
+      "default": false,
+      "description": "We don’t see a good reason not to have it but won’t go out of our way to implement it."
     }
   ],
   "state": "open",
@@ -49,7 +76,7 @@
   "milestone": null,
   "comments": 4,
   "created_at": "2020-03-06T19:38:30Z",
-  "updated_at": "2022-02-17T10:17:34Z",
+  "updated_at": "2022-09-26T19:09:20Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -192,8 +219,8 @@
     "body": "I've found a workaround for this but It requires the [BytesLib.sol](https://github.com/GNSPS/solidity-bytes-utils/blob/master/contracts/BytesLib.sol). Since `encodePacked` does not use any padding you can just append to each other. (There might be a better approach for this and I don't know If it's gas efficient or not.)\r\n\r\n```solidity\r\npragma solidity ^0.8.0;\r\n\r\nimport \"https://github.com/GNSPS/solidity-bytes-utils/blob/master/contracts/BytesLib.sol\";\r\n\r\ncontract Test {\r\n    using BytesLib for bytes;\r\n\r\n    /**\r\n     * Workaround for the `https://github.com/ethereum/solidity/issues/8441`.\r\n     * @notice Requires `BytesLib.sol` at `https://github.com/GNSPS/solidity-bytes-utils/blob/master/contracts/BytesLib.sol`\r\n     */ \r\n    function encodeTightlyPacked(address[] memory path) internal pure returns(bytes memory encoded) {\r\n        for (uint i = 0; i < path.length; i++) {\r\n            encoded = encoded.concat(\r\n                abi.encodePacked(path[i])\r\n            );\r\n        }\r\n    }\r\n\r\n    function test() public view returns (bytes memory t1, bytes memory t2) {\r\n        address[] memory path = new address[](3);\r\n        path[0] = 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;\r\n        path[1] = 0xE592427A0AEce92De3Edee1F18E0157C05861564;\r\n        path[2] = 0xaD6D458402F60fD3Bd25163575031ACDce07538D;\r\n\r\n        t1 = abi.encodePacked(path[0], path[1], path[2]);\r\n        t2 = encodeTightlyPacked(path);\r\n    }\r\n}\r\n```\r\n\r\nThe result;\r\n\r\n```\r\nt1 = 0x7a250d5630b4cf539739df2c5dacb4c659f2488de592427a0aece92de3edee1f18e0157c05861564ad6d458402f60fd3bd25163575031acdce07538d\r\nt2 = 0x7a250d5630b4cf539739df2c5dacb4c659f2488de592427a0aece92de3edee1f18e0157c05861564ad6d458402f60fd3bd25163575031acdce07538d\r\n```\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1040478746/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -236,8 +263,8 @@
     "body": "@tarik0 the language supports `bytes.concat()` since a while, which I believe would allow you to write:\r\n```solidity\r\n        uint len = arr.length;\r\n        for (uint i = 0; i < len; i++) {\r\n            encoded = bytes.concat(\r\n                encoded,\r\n                abi.encodePacked(path[i])\r\n            );\r\n        }\r\n```\r\n\r\nIt is not super optimal as it will waste memory quite a bit.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1042788212/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

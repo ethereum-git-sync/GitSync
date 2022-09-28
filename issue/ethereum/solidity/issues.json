@@ -1,19 +1,75 @@
 [
   {
     "author": {
-      "login": "christianparpart"
+      "login": "alcuadrado"
     },
-    "number": 13539,
-    "title": "Rename LSP's lspAssert() function into something more meaningful.",
-    "updatedAt": "2022-09-26T13:06:25Z"
+    "number": 11351,
+    "title": "ARM builds for Linux",
+    "updatedAt": "2022-09-28T16:35:50Z"
   },
   {
     "author": {
-      "login": "cyber-storm-200712"
+      "login": "cameel"
     },
-    "number": 13558,
-    "title": " 👋 Big Issue: Can't pass any require statement. (All require statement return false always.)",
-    "updatedAt": "2022-09-26T12:34:43Z"
+    "number": 13582,
+    "title": "`pathDeclarations` annotation on `IdentifierPath` AST node is not exported",
+    "updatedAt": "2022-09-28T15:44:25Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 13575,
+    "title": "Replace `boost::filesystem` with `std::filesystem`",
+    "updatedAt": "2022-09-28T10:15:55Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 13574,
+    "title": "Replace `boost::program_options` with `CLI11`",
+    "updatedAt": "2022-09-28T10:15:42Z"
+  },
+  {
+    "author": {
+      "login": "ethernomad"
+    },
+    "number": 1290,
+    "title": "Access to constants through contract names",
+    "updatedAt": "2022-09-28T10:08:50Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12737,
+    "title": "Wrong address computed for CREATE2 in semantic tests",
+    "updatedAt": "2022-09-28T00:14:19Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 7259,
+    "title": "Replace boost constructs with their C++17 STL equivalents.",
+    "updatedAt": "2022-09-27T23:43:14Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 11846,
+    "title": "Simplify and deduplicate CircleCI config",
+    "updatedAt": "2022-09-27T23:01:17Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 11593,
+    "title": "Remove abi.encodePacked",
+    "updatedAt": "2022-09-27T22:12:40Z"
   },
   {
     "author": {
@@ -21,7 +77,87 @@
     },
     "number": 13564,
     "title": "Unable to explicitly import aliased interfaces",
-    "updatedAt": "2022-09-26T10:01:04Z"
+    "updatedAt": "2022-09-27T20:12:26Z"
+  },
+  {
+    "author": {
+      "login": "madvas"
+    },
+    "number": 2675,
+    "title": "Be able to disable all warnings for certain files",
+    "updatedAt": "2022-09-27T18:50:37Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 11412,
+    "title": "Detect platform-dependent paths in default file loader (path spec v3)",
+    "updatedAt": "2022-09-27T18:48:52Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 11411,
+    "title": "Import path normalization (path spec v3)",
+    "updatedAt": "2022-09-27T18:48:49Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 10981,
+    "title": "Compiler flag to set bytecode size limit",
+    "updatedAt": "2022-09-27T18:48:05Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 11008,
+    "title": "[CLI] Add a way to filter error codes",
+    "updatedAt": "2022-09-27T18:47:29Z"
+  },
+  {
+    "author": {
+      "login": "frangio"
+    },
+    "number": 11253,
+    "title": "Allow nonpayable functions to override payable functions",
+    "updatedAt": "2022-09-27T18:45:16Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12008,
+    "title": "Reporting unused library references",
+    "updatedAt": "2022-09-27T18:44:24Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12153,
+    "title": "Output selection is not validated in Standard JSON",
+    "updatedAt": "2022-09-27T18:42:23Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 12897,
+    "title": "Rewrite command line test script cleanly in python.",
+    "updatedAt": "2022-09-27T18:41:20Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13369,
+    "title": "Type-Checking for ``code`` data location.",
+    "updatedAt": "2022-09-27T18:40:20Z"
   },
   {
     "author": {
@@ -29,7 +165,167 @@
     },
     "number": 13563,
     "title": "Data location question?",
-    "updatedAt": "2022-09-26T03:54:25Z"
+    "updatedAt": "2022-09-27T18:06:52Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 10738,
+    "title": "Replace loops by range-v3 loops where applicable.",
+    "updatedAt": "2022-09-27T15:34:20Z"
+  },
+  {
+    "author": {
+      "login": "cyber-storm-200712"
+    },
+    "number": 13558,
+    "title": " 👋 Big Issue: Can't pass any require statement. (All require statement return false always.)",
+    "updatedAt": "2022-09-27T15:22:00Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 10152,
+    "title": "IR-based CompilerStack ",
+    "updatedAt": "2022-09-27T14:43:50Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 10390,
+    "title": "IR progress tracker (example contracts)",
+    "updatedAt": "2022-09-27T14:42:56Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13570,
+    "title": "[Assembler] ICE due to invalid deposit",
+    "updatedAt": "2022-09-27T12:30:20Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 11642,
+    "title": "[solc] Unassigned immutables cryptic error",
+    "updatedAt": "2022-09-27T10:54:01Z"
+  },
+  {
+    "author": {
+      "login": "gpersoon"
+    },
+    "number": 13035,
+    "title": "LSP: `textDocument/definition` always returns \"result\":[]",
+    "updatedAt": "2022-09-27T09:36:20Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 13122,
+    "title": "Upgrade emscripten to 3.2.0+",
+    "updatedAt": "2022-09-27T02:06:26Z"
+  },
+  {
+    "author": {
+      "login": "drortirosh"
+    },
+    "number": 13521,
+    "title": "Calculate \"CREATE2\" address",
+    "updatedAt": "2022-09-27T01:56:56Z"
+  },
+  {
+    "author": {
+      "login": "VoR0220"
+    },
+    "number": 232,
+    "title": "Optional function parameters",
+    "updatedAt": "2022-09-27T01:03:25Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 228,
+    "title": "Call For Action: standard library for Solidity",
+    "updatedAt": "2022-09-27T01:02:33Z"
+  },
+  {
+    "author": {
+      "login": "pirapira"
+    },
+    "number": 2173,
+    "title": "doc: add description about gas estimate",
+    "updatedAt": "2022-09-27T00:59:09Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 7585,
+    "title": "[RFC] modeling gas cost in yul interpreter",
+    "updatedAt": "2022-09-27T00:57:14Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 6044,
+    "title": "[Yul] Remove gas meter test workaround when we can enable the yul optimizer",
+    "updatedAt": "2022-09-27T00:51:58Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 3354,
+    "title": "Infinite gas reported for constant string getter",
+    "updatedAt": "2022-09-27T00:51:08Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 4030,
+    "title": "Improve loop detection in the gas estimator",
+    "updatedAt": "2022-09-27T00:50:52Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 5606,
+    "title": "Data stored via codecopy breaks the gas estimator",
+    "updatedAt": "2022-09-27T00:50:22Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 5877,
+    "title": "Gas estimator takes a long time on large arrays",
+    "updatedAt": "2022-09-27T00:50:06Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8920,
+    "title": "Gas estimator: Report transaction cost at least for constructor.",
+    "updatedAt": "2022-09-27T00:49:48Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13566,
+    "title": "Remove gas estimator from the compiler",
+    "updatedAt": "2022-09-27T00:48:29Z"
   },
   {
     "author": {
@@ -37,7 +333,1239 @@
     },
     "number": 13561,
     "title": "ETH on contract created by me",
-    "updatedAt": "2022-09-25T23:36:04Z"
+    "updatedAt": "2022-09-27T00:35:23Z"
+  },
+  {
+    "author": {
+      "login": "barakman"
+    },
+    "number": 12783,
+    "title": "`UnimplementedFeatureError` with no line indication when copying an array of structs to storage",
+    "updatedAt": "2022-09-27T00:35:16Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13160,
+    "title": "[soltest] Distinguish code size-induced cost from runtime gas cost in tests.",
+    "updatedAt": "2022-09-27T00:34:03Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 13121,
+    "title": "Old Z3 is not supported (should enforce in CMake)",
+    "updatedAt": "2022-09-27T00:32:57Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13099,
+    "title": "[Yul Optimizer] Extend LoadResolver to assume zeroed storage during creation code. (And zeroed memory at transaction start.)",
+    "updatedAt": "2022-09-27T00:30:59Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 12590,
+    "title": "[Assembler] Yul code compiled for EVM <= byzantium returns invalid instruction status code on EVMC call",
+    "updatedAt": "2022-09-27T00:29:39Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 12931,
+    "title": "Yul Optimizer: Switch elimination for cheap switch cases.",
+    "updatedAt": "2022-09-27T00:28:49Z"
+  },
+  {
+    "author": {
+      "login": "nventuro"
+    },
+    "number": 12587,
+    "title": "Immutable dynamic arrays",
+    "updatedAt": "2022-09-27T00:27:18Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 12732,
+    "title": "Natspec parsing of custom tags always expects a value potentially swallowing other tags.",
+    "updatedAt": "2022-09-27T00:24:35Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 12527,
+    "title": "Refine enforce gas cost min value threshold behaviour in ``isoltest``",
+    "updatedAt": "2022-09-27T00:23:05Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12384,
+    "title": "Nested dynamic arrays are not omitted from getters",
+    "updatedAt": "2022-09-27T00:22:04Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 5956,
+    "title": "Add new external tests",
+    "updatedAt": "2022-09-27T00:21:31Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 12305,
+    "title": "[TypeChecker] ICE in spurious dragon due to unset return parameter decoding type in recursive library function call with a return function type",
+    "updatedAt": "2022-09-27T00:20:56Z"
+  },
+  {
+    "author": {
+      "login": "xanderdunn"
+    },
+    "number": 12291,
+    "title": "Support Apple Silicon in Release Builds",
+    "updatedAt": "2022-09-27T00:20:12Z"
+  },
+  {
+    "author": {
+      "login": "agroce"
+    },
+    "number": 12208,
+    "title": "Extremely long SPDX comment results in a segfault",
+    "updatedAt": "2022-09-27T00:18:57Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 12169,
+    "title": "[Yul Optimizer] Do not move loop invariants that consume a lot of gas",
+    "updatedAt": "2022-09-27T00:18:03Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 12137,
+    "title": "Change the dispatch routine to help the optimizer",
+    "updatedAt": "2022-09-27T00:14:21Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12119,
+    "title": "[CLI] Warn when a relative path specified on the CLI ends up being absolute in metadata",
+    "updatedAt": "2022-09-27T00:11:48Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 4383,
+    "title": "CI: Check that every error/warning message in the code also appears in at least one test",
+    "updatedAt": "2022-09-27T00:10:51Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 11845,
+    "title": "Require latest Z3 in soltest",
+    "updatedAt": "2022-09-27T00:09:22Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 12028,
+    "title": "ICE due to internal function pointer in a calldata struct parameter of a public function",
+    "updatedAt": "2022-09-27T00:08:46Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11740,
+    "title": "[Yul-Opti] Replace `keccak(k, 0)` with hash if it's cheaper",
+    "updatedAt": "2022-09-27T00:06:34Z"
+  },
+  {
+    "author": {
+      "login": "StErMi"
+    },
+    "number": 12864,
+    "title": "Compiler is not evaluating all if/elseif/else branches to check for “Immutable variables cannot be initialized inside an if statement\"",
+    "updatedAt": "2022-09-27T00:05:24Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 11582,
+    "title": "Disallow implicit conversion from weird zero literals to fixed bytes",
+    "updatedAt": "2022-09-27T00:02:39Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 11614,
+    "title": "soltest should look for VM shared libraries in a location relative to the test directory",
+    "updatedAt": "2022-09-27T00:01:55Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 11573,
+    "title": "View-pure checker misses reads from storage pointer variable",
+    "updatedAt": "2022-09-27T00:00:51Z"
+  },
+  {
+    "author": {
+      "login": "duncancmt"
+    },
+    "number": 13174,
+    "title": "`pure` functions can read storage",
+    "updatedAt": "2022-09-27T00:00:26Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 11413,
+    "title": "Better path-related error messages (path spec v3)",
+    "updatedAt": "2022-09-26T23:57:01Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11369,
+    "title": "Missing error about recursive type in public state variable",
+    "updatedAt": "2022-09-26T23:56:31Z"
+  },
+  {
+    "author": {
+      "login": "leonardoalt"
+    },
+    "number": 11030,
+    "title": "[SMTChecker] Use natspec annotation to abstract function",
+    "updatedAt": "2022-09-26T23:55:23Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 10857,
+    "title": "Documentation section on source code verification issues and bytecode reproducibility",
+    "updatedAt": "2022-09-26T23:54:03Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 10846,
+    "title": "Emscripten binaries for version 0.3.6 in solc-bin were not built from the commit tagged as v0.3.6",
+    "updatedAt": "2022-09-26T23:53:24Z"
+  },
+  {
+    "author": {
+      "login": "thegostep"
+    },
+    "number": 10692,
+    "title": "block.coinbase should not be payable",
+    "updatedAt": "2022-09-26T23:50:37Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 10629,
+    "title": "[CI] PR check to enforce Linux line endings",
+    "updatedAt": "2022-09-26T23:49:48Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 10519,
+    "title": "Run SMT (or all) tests in absence of solvers to check the smtlib interface.",
+    "updatedAt": "2022-09-26T23:48:37Z"
+  },
+  {
+    "author": {
+      "login": "leonardoalt"
+    },
+    "number": 9601,
+    "title": "solidity::util::formatNumberReadable signed integer support",
+    "updatedAt": "2022-09-26T23:46:53Z"
+  },
+  {
+    "author": {
+      "login": "miohtama"
+    },
+    "number": 10312,
+    "title": "payable function modifier documentation not found",
+    "updatedAt": "2022-09-26T23:45:53Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 10299,
+    "title": "Inconsistent library address validations between CLI and Standard JSON",
+    "updatedAt": "2022-09-26T23:44:49Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 10201,
+    "title": "Document JSON output describing library ABI",
+    "updatedAt": "2022-09-26T23:44:25Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8143,
+    "title": "Support nested objects for Yul tests.",
+    "updatedAt": "2022-09-26T23:43:37Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8969,
+    "title": "Implement project board automation",
+    "updatedAt": "2022-09-26T23:42:39Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 5244,
+    "title": "[Yul] Improve expression joiner",
+    "updatedAt": "2022-09-26T23:41:54Z"
+  },
+  {
+    "author": {
+      "login": "leonardoalt"
+    },
+    "number": 5808,
+    "title": "[SMTChecker] Check for overflow/truncation in smaller type conversion",
+    "updatedAt": "2022-09-26T23:41:00Z"
+  },
+  {
+    "author": {
+      "login": "sifmelcara"
+    },
+    "number": 6978,
+    "title": "Specification of ABI decoding (especially padding in bytes)",
+    "updatedAt": "2022-09-26T23:40:21Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 7999,
+    "title": "Include z3 in solc docker image",
+    "updatedAt": "2022-09-26T23:38:45Z"
+  },
+  {
+    "author": {
+      "login": "adridadou"
+    },
+    "number": 9592,
+    "title": "try / catch does not work with custom call to external addresses and passing the calldata",
+    "updatedAt": "2022-09-26T23:36:43Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 9553,
+    "title": "NatSpec on contracts is not inherited",
+    "updatedAt": "2022-09-26T23:35:58Z"
+  },
+  {
+    "author": {
+      "login": "dessaya"
+    },
+    "number": 12067,
+    "title": "Allow `verbatim` in Solidity `assembly` blocks",
+    "updatedAt": "2022-09-26T23:35:07Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 6162,
+    "title": "Improve unused local variable error message in tuple declaration.",
+    "updatedAt": "2022-09-26T23:33:06Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 5173,
+    "title": "Shadowing warning between local variables or function depend on declaration order",
+    "updatedAt": "2022-09-26T23:32:22Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 9607,
+    "title": "Overload resolution failure should explain for each candidate why it does not match.",
+    "updatedAt": "2022-09-26T23:31:08Z"
+  },
+  {
+    "author": {
+      "login": "iamdefinitelyahuman"
+    },
+    "number": 9545,
+    "title": "Windows release for v0.4.15 is a nightly build",
+    "updatedAt": "2022-09-26T23:29:49Z"
+  },
+  {
+    "author": {
+      "login": "mudgen"
+    },
+    "number": 9570,
+    "title": "Support all Solidity Constants in Inline Assembly",
+    "updatedAt": "2022-09-26T23:29:02Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 2435,
+    "title": "Make copy / reference semantics more explicit",
+    "updatedAt": "2022-09-26T23:25:16Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 8437,
+    "title": "Verify and potentially increase test coverage for inheritance and function calls.",
+    "updatedAt": "2022-09-26T23:24:13Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 9119,
+    "title": "Optimize AND/SHL",
+    "updatedAt": "2022-09-26T23:22:46Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 9015,
+    "title": "Document the wasm releases",
+    "updatedAt": "2022-09-26T23:21:52Z"
+  },
+  {
+    "author": {
+      "login": "haltman-at"
+    },
+    "number": 8876,
+    "title": "Documentation issue: Cleaning up some other types",
+    "updatedAt": "2022-09-26T23:20:47Z"
+  },
+  {
+    "author": {
+      "login": "MrChico"
+    },
+    "number": 8812,
+    "title": "compiler metadata: location of function arguments",
+    "updatedAt": "2022-09-26T23:19:58Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 8636,
+    "title": "[Fuzzing] Write a semantic fuzzer for testing Solidity inheritance rules ",
+    "updatedAt": "2022-09-26T23:18:21Z"
+  },
+  {
+    "author": {
+      "login": "3esmit"
+    },
+    "number": 8160,
+    "title": "[Doc] Mention various signature formats",
+    "updatedAt": "2022-09-26T23:16:42Z"
+  },
+  {
+    "author": {
+      "login": "erak"
+    },
+    "number": 8185,
+    "title": "Display errors when ASTImportTest.sh is not run by CI",
+    "updatedAt": "2022-09-26T23:15:04Z"
+  },
+  {
+    "author": {
+      "login": "leonardoalt"
+    },
+    "number": 8145,
+    "title": "[SMTChecker] Rerun tests from Solc-Verify",
+    "updatedAt": "2022-09-26T23:12:54Z"
+  },
+  {
+    "author": {
+      "login": "kadenzipfel"
+    },
+    "number": 8129,
+    "title": "[DOCS] Possible DoS with block gas limit on blind auction example contract",
+    "updatedAt": "2022-09-26T23:11:56Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 8117,
+    "title": "[DOCS] Clarify documentation of array elements in packed encoding.",
+    "updatedAt": "2022-09-26T23:11:21Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 8319,
+    "title": "Generalized way to sort sets and vectors of AST nodes for guaranteeing deterministic order.",
+    "updatedAt": "2022-09-26T23:10:40Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8317,
+    "title": "[Yul Optimizer] For readability purposes, replace function return variables by the literal 0 until they are assigned for the first time.",
+    "updatedAt": "2022-09-26T23:09:56Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 8315,
+    "title": "Better ASTVisitors",
+    "updatedAt": "2022-09-26T23:08:56Z"
+  },
+  {
+    "author": {
+      "login": "leonardoalt"
+    },
+    "number": 8253,
+    "title": "Write codegen tests that trigger currently unreachable reverts",
+    "updatedAt": "2022-09-26T23:07:01Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 7742,
+    "title": "See if the error message about builtin functions in specific EVM versions can be improved",
+    "updatedAt": "2022-09-26T23:06:20Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 12506,
+    "title": "Refine inheritance documentation about super.",
+    "updatedAt": "2022-09-26T23:03:30Z"
+  },
+  {
+    "author": {
+      "login": "PhABC"
+    },
+    "number": 8186,
+    "title": "Allow Dev to sort Function Lookups Manually instead of by Ascending Order",
+    "updatedAt": "2022-09-26T23:02:32Z"
+  },
+  {
+    "author": {
+      "login": "guylando"
+    },
+    "number": 6784,
+    "title": "Some documentation problems",
+    "updatedAt": "2022-09-26T23:00:04Z"
+  },
+  {
+    "author": {
+      "login": "digulla"
+    },
+    "number": 7931,
+    "title": "Extend ABI documentation of function types",
+    "updatedAt": "2022-09-26T22:58:54Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 7703,
+    "title": "The test t_ubu_asan_constantinople is taking too long",
+    "updatedAt": "2022-09-26T22:58:15Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 11513,
+    "title": "Extend the constant optimizer to optimizer sub-expressions",
+    "updatedAt": "2022-09-26T22:55:38Z"
+  },
+  {
+    "author": {
+      "login": "leonardoalt"
+    },
+    "number": 10534,
+    "title": "Split primary error message into `message` and `details`",
+    "updatedAt": "2022-09-26T22:44:32Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 9470,
+    "title": "[yul] ICE when accessing a Yul data subobject: `Assembly object not found or does not contain code`",
+    "updatedAt": "2022-09-26T22:30:15Z"
+  },
+  {
+    "author": {
+      "login": "agroce"
+    },
+    "number": 11175,
+    "title": "[yul] ICE in `Object::pathToSubObject()` when accessing data of a subobject",
+    "updatedAt": "2022-09-26T22:29:42Z"
+  },
+  {
+    "author": {
+      "login": "lukehutch"
+    },
+    "number": 13212,
+    "title": "Allow declaration of multiple variables in first clause of `for` statement",
+    "updatedAt": "2022-09-26T22:03:52Z"
+  },
+  {
+    "author": {
+      "login": "frangio"
+    },
+    "number": 13207,
+    "title": "Functions that are generic in the data location of pointer arguments",
+    "updatedAt": "2022-09-26T22:02:12Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 6765,
+    "title": "[Yul] Re-introduce ``sub`` opcode",
+    "updatedAt": "2022-09-26T22:01:17Z"
+  },
+  {
+    "author": {
+      "login": "cyraxred"
+    },
+    "number": 13332,
+    "title": "Unexpected storage layout caused by interfaces",
+    "updatedAt": "2022-09-26T21:59:49Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 13223,
+    "title": "Turn on the optimizer by default",
+    "updatedAt": "2022-09-26T21:58:27Z"
+  },
+  {
+    "author": {
+      "login": "lukehutch"
+    },
+    "number": 13125,
+    "title": "Add `array.popAndGet()` that returns the last value in array after `pop()`",
+    "updatedAt": "2022-09-26T21:47:03Z"
+  },
+  {
+    "author": {
+      "login": "leonwilly"
+    },
+    "number": 13143,
+    "title": "Allow \"using BaseContract.virtualMethod\" syntax when there are conflicting virtual methods.",
+    "updatedAt": "2022-09-26T21:43:56Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13157,
+    "title": "Better Debugging Data (in particular for via-IR codegen)",
+    "updatedAt": "2022-09-26T21:42:20Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 13147,
+    "title": "Warnings about complex expressions on left-hand-sides of assignments.",
+    "updatedAt": "2022-09-26T21:41:11Z"
+  },
+  {
+    "author": {
+      "login": "beerefine"
+    },
+    "number": 12920,
+    "title": "Allow storage layout overrides",
+    "updatedAt": "2022-09-26T21:39:38Z"
+  },
+  {
+    "author": {
+      "login": "134dd3v"
+    },
+    "number": 12816,
+    "title": "Internal getters for mappings",
+    "updatedAt": "2022-09-26T21:38:38Z"
+  },
+  {
+    "author": {
+      "login": "artdgn"
+    },
+    "number": 12525,
+    "title": "Shadowing named return variable declaration should be an error",
+    "updatedAt": "2022-09-26T21:36:45Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 6713,
+    "title": "[Yul Optimizer] Function outliner",
+    "updatedAt": "2022-09-26T21:34:00Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11953,
+    "title": "Allowing regular constructor syntax for user defined value types",
+    "updatedAt": "2022-09-26T21:31:33Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 11538,
+    "title": "[Yul] Disallow unknown objects whose names start with `.`",
+    "updatedAt": "2022-09-26T21:30:00Z"
+  },
+  {
+    "author": {
+      "login": "zemse"
+    },
+    "number": 11407,
+    "title": "Allow specifying parameter name in public mappings",
+    "updatedAt": "2022-09-26T21:29:10Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 628,
+    "title": "Authenticated Binaries",
+    "updatedAt": "2022-09-26T21:28:38Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 2238,
+    "title": "Create a release notes JSON",
+    "updatedAt": "2022-09-26T21:26:47Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 11120,
+    "title": "Natspec: change parameters and return values to be an array",
+    "updatedAt": "2022-09-26T21:25:13Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 10281,
+    "title": "Natspec: text before the @notice tag gets included as part of it",
+    "updatedAt": "2022-09-26T21:21:48Z"
+  },
+  {
+    "author": {
+      "login": "daejunpark"
+    },
+    "number": 9046,
+    "title": "Optimization possibility of memory usage for loops",
+    "updatedAt": "2022-09-26T21:16:50Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 10809,
+    "title": "Optimizer: Function Constraint Summarizer",
+    "updatedAt": "2022-09-26T21:15:39Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 10708,
+    "title": "[Optimizer] Function parameter grouper",
+    "updatedAt": "2022-09-26T21:13:08Z"
+  },
+  {
+    "author": {
+      "login": "frangio"
+    },
+    "number": 10480,
+    "title": "Wrong evaluation order of arguments to parent constructors",
+    "updatedAt": "2022-09-26T21:10:22Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12934,
+    "title": "More concise \"Cheatsheet\" page",
+    "updatedAt": "2022-09-26T21:05:26Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 11278,
+    "title": "Try Catch for custom errors",
+    "updatedAt": "2022-09-26T20:56:22Z"
+  },
+  {
+    "author": {
+      "login": "gitpusha"
+    },
+    "number": 10381,
+    "title": "feature request: try catch for abi.decode",
+    "updatedAt": "2022-09-26T20:55:24Z"
+  },
+  {
+    "author": {
+      "login": "hellwolf"
+    },
+    "number": 10933,
+    "title": "Error handling of abi.decode",
+    "updatedAt": "2022-09-26T20:54:49Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 2595,
+    "title": "Replace public with getter on state variables",
+    "updatedAt": "2022-09-26T20:50:46Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 9358,
+    "title": "Remove the ripemd160 builtin",
+    "updatedAt": "2022-09-26T20:43:34Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 9735,
+    "title": "Restrict free functions",
+    "updatedAt": "2022-09-26T20:40:48Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 5462,
+    "title": "Address payable to address conversion fails for memory arrays.",
+    "updatedAt": "2022-09-26T20:39:56Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 9668,
+    "title": "EquivalentFunctionCombiner should be run multiple times",
+    "updatedAt": "2022-09-26T20:37:34Z"
+  },
+  {
+    "author": {
+      "login": "leonardoalt"
+    },
+    "number": 9590,
+    "title": "Output Yul ASTs",
+    "updatedAt": "2022-09-26T20:35:48Z"
+  },
+  {
+    "author": {
+      "login": "apguerrera"
+    },
+    "number": 8354,
+    "title": "Arbitrary order of contracts in override specifier is confusing.",
+    "updatedAt": "2022-09-26T20:34:16Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 9617,
+    "title": "[Yul] Require parentheses around return variables in function definitions",
+    "updatedAt": "2022-09-26T20:33:37Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 9599,
+    "title": "Allow assignment of tuple to struct and vice versa",
+    "updatedAt": "2022-09-26T20:31:23Z"
+  },
+  {
+    "author": {
+      "login": "NatalieTop"
+    },
+    "number": 12767,
+    "title": "Private function names should not be checked for uniqueness when inherited by other contracts",
+    "updatedAt": "2022-09-26T20:29:53Z"
+  },
+  {
+    "author": {
+      "login": "Amxx"
+    },
+    "number": 11889,
+    "title": "Should private functions really clash ?",
+    "updatedAt": "2022-09-26T20:29:23Z"
+  },
+  {
+    "author": {
+      "login": "frangio"
+    },
+    "number": 4869,
+    "title": "Private state variable + external getter with same name should be possible",
+    "updatedAt": "2022-09-26T20:29:00Z"
+  },
+  {
+    "author": {
+      "login": "hrkrshnn"
+    },
+    "number": 9487,
+    "title": "Refactoring SideEffects",
+    "updatedAt": "2022-09-26T20:26:38Z"
+  },
+  {
+    "author": {
+      "login": "Marenz"
+    },
+    "number": 9598,
+    "title": "Allow comparing of value-only struct/tuple types",
+    "updatedAt": "2022-09-26T20:25:07Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 8919,
+    "title": "Equality comparison for tuples.",
+    "updatedAt": "2022-09-26T20:24:47Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 8772,
+    "title": "ABI: fixed-length bytes larger than 32 bytes",
+    "updatedAt": "2022-09-26T20:22:17Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 8303,
+    "title": "[Yul] Allow tuple assignments.",
+    "updatedAt": "2022-09-26T20:18:54Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 9063,
+    "title": "modules / namespaces / template areas",
+    "updatedAt": "2022-09-26T20:17:02Z"
+  },
+  {
+    "author": {
+      "login": "fulldecent"
+    },
+    "number": 13371,
+    "title": "Stop recommending .transfer",
+    "updatedAt": "2022-09-26T20:15:23Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 7455,
+    "title": "Remove .send and .transfer.",
+    "updatedAt": "2022-09-26T20:13:43Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8798,
+    "title": "Provide a way to calculate the salted address of a contract",
+    "updatedAt": "2022-09-26T20:13:03Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 8775,
+    "title": "Allow constants in interfaces",
+    "updatedAt": "2022-09-26T20:11:38Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 8773,
+    "title": "In-language testing syntax / support",
+    "updatedAt": "2022-09-26T20:10:00Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 1015,
+    "title": "Replace _ with body in modifiers",
+    "updatedAt": "2022-09-26T20:08:49Z"
+  },
+  {
+    "author": {
+      "login": "3esmit"
+    },
+    "number": 8751,
+    "title": "`abi` function for extracting a selector from calldata stored in memory",
+    "updatedAt": "2022-09-26T20:07:36Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8612,
+    "title": "Ability to import into inline assembly",
+    "updatedAt": "2022-09-26T20:04:02Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 1272,
+    "title": "Compile external code snippets",
+    "updatedAt": "2022-09-26T20:01:44Z"
+  },
+  {
+    "author": {
+      "login": "Nielsbishere"
+    },
+    "number": 12303,
+    "title": "Support for immutable in function parameters",
+    "updatedAt": "2022-09-26T19:58:06Z"
+  },
+  {
+    "author": {
+      "login": "ethers"
+    },
+    "number": 715,
+    "title": "mutable variables (immutable as default)",
+    "updatedAt": "2022-09-26T19:52:01Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8559,
+    "title": "[SolYul] Consider allowing access to internal functions from inline assembly when compiling to yul.",
+    "updatedAt": "2022-09-26T19:50:03Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 6220,
+    "title": "Change regular calldata arrays to only use a single stack slot",
+    "updatedAt": "2022-09-26T19:45:21Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 7622,
+    "title": "Allow access to enum values from inline assembly",
+    "updatedAt": "2022-09-26T19:42:31Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 8153,
+    "title": "Strengthen the definition of ``pure`` potentially disallowing e.g. ``codecopy`` - or \"the future of ``pure``\".",
+    "updatedAt": "2022-09-26T19:41:36Z"
+  },
+  {
+    "author": {
+      "login": "Amxx"
+    },
+    "number": 8499,
+    "title": "Better syntax for declaring nested mappings.",
+    "updatedAt": "2022-09-26T19:40:28Z"
+  },
+  {
+    "author": {
+      "login": "chriseth"
+    },
+    "number": 8490,
+    "title": "Discussion: Delegate contracts / dynamic libraries / upgradable contracts",
+    "updatedAt": "2022-09-26T19:38:28Z"
+  },
+  {
+    "author": {
+      "login": "adhusson"
+    },
+    "number": 13107,
+    "title": "`using for` with explicit function names does not support overloaded functions",
+    "updatedAt": "2022-09-26T19:37:04Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 3556,
+    "title": "Support retrieving selector of an overloaded function",
+    "updatedAt": "2022-09-26T19:35:47Z"
+  },
+  {
+    "author": {
+      "login": "k06a"
+    },
+    "number": 7922,
+    "title": "Allow selectors to be used in constants assignment and support overloading",
+    "updatedAt": "2022-09-26T19:35:17Z"
+  },
+  {
+    "author": {
+      "login": "ekpyron"
+    },
+    "number": 7261,
+    "title": "Rethink (or maybe even remove?) ``super``",
+    "updatedAt": "2022-09-26T19:18:46Z"
+  },
+  {
+    "author": {
+      "login": "nicholashc"
+    },
+    "number": 8081,
+    "title": "Introduce error instead of warning for functions called \"fallback\" or \"receive\"",
+    "updatedAt": "2022-09-26T19:17:59Z"
+  },
+  {
+    "author": {
+      "login": "leonardoalt"
+    },
+    "number": 4991,
+    "title": "SMTChecker: Contract invariants support",
+    "updatedAt": "2022-09-26T19:13:30Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 8433,
+    "title": "Invariants",
+    "updatedAt": "2022-09-26T19:13:04Z"
+  },
+  {
+    "author": {
+      "login": "mudgen"
+    },
+    "number": 8441,
+    "title": "abi.encodePacked for tightly-packed arrays",
+    "updatedAt": "2022-09-26T19:09:20Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 3157,
+    "title": "Constant expression evaluation at compile time",
+    "updatedAt": "2022-09-26T19:05:30Z"
+  },
+  {
+    "author": {
+      "login": "axic"
+    },
+    "number": 3525,
+    "title": "User defined types in Yul",
+    "updatedAt": "2022-09-26T19:04:35Z"
+  },
+  {
+    "author": {
+      "login": "MicahZoltu"
+    },
+    "number": 9086,
+    "title": "Add option to automatically add revert reason strings when omitted from require.",
+    "updatedAt": "2022-09-26T19:02:35Z"
+  },
+  {
+    "author": {
+      "login": "kargakis"
+    },
+    "number": 12863,
+    "title": "Nested arrays inside structs are not included in generated ABI",
+    "updatedAt": "2022-09-26T18:13:51Z"
+  },
+  {
+    "author": {
+      "login": "christianparpart"
+    },
+    "number": 13539,
+    "title": "Rename LSP's lspAssert() function into something more meaningful.",
+    "updatedAt": "2022-09-26T13:06:25Z"
   },
   {
     "author": {
@@ -153,14 +1681,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 13122,
-    "title": "Upgrade emscripten to 3.2.0+",
-    "updatedAt": "2022-09-21T11:05:47Z"
-  },
-  {
-    "author": {
       "login": "Amxx"
     },
     "number": 13433,
@@ -249,14 +1769,6 @@
   },
   {
     "author": {
-      "login": "dessaya"
-    },
-    "number": 12067,
-    "title": "Allow `verbatim` in Solidity `assembly` blocks",
-    "updatedAt": "2022-09-20T13:34:16Z"
-  },
-  {
-    "author": {
       "login": "ekpyron"
     },
     "number": 11260,
@@ -281,14 +1793,6 @@
   },
   {
     "author": {
-      "login": "lukehutch"
-    },
-    "number": 13212,
-    "title": "Allow declaration of multiple variables in first clause of `for` statement",
-    "updatedAt": "2022-09-18T19:23:33Z"
-  },
-  {
-    "author": {
       "login": "hiroshi-yamamoto-dublr"
     },
     "number": 13536,
@@ -297,27 +1801,11 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 6765,
-    "title": "[Yul] Re-introduce ``sub`` opcode",
-    "updatedAt": "2022-09-17T18:47:48Z"
-  },
-  {
-    "author": {
       "login": "lukehutch"
     },
     "number": 13159,
     "title": "Error: cannot estimate gas; transaction may fail or may require manual gas limit",
     "updatedAt": "2022-09-17T07:05:09Z"
-  },
-  {
-    "author": {
-      "login": "kargakis"
-    },
-    "number": 12863,
-    "title": "Nested arrays inside structs are not included in generated ABI",
-    "updatedAt": "2022-09-15T22:39:07Z"
   },
   {
     "author": {
@@ -374,30 +1862,6 @@
     "number": 13318,
     "title": "Compile-Time-Constant expression evaluation",
     "updatedAt": "2022-09-15T12:23:04Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 8969,
-    "title": "Implement project board automation",
-    "updatedAt": "2022-09-15T11:44:46Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 9119,
-    "title": "Optimize AND/SHL",
-    "updatedAt": "2022-09-15T10:23:33Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 11593,
-    "title": "Remove abi.encodePacked",
-    "updatedAt": "2022-09-15T08:31:43Z"
   },
   {
     "author": {
@@ -665,14 +2129,6 @@
   },
   {
     "author": {
-      "login": "leonardoalt"
-    },
-    "number": 10534,
-    "title": "Split primary error message into `message` and `details`",
-    "updatedAt": "2022-09-14T16:40:16Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 11872,
@@ -841,14 +2297,6 @@
   },
   {
     "author": {
-      "login": "drortirosh"
-    },
-    "number": 13521,
-    "title": "Calculate \"CREATE2\" address",
-    "updatedAt": "2022-09-14T16:03:13Z"
-  },
-  {
-    "author": {
       "login": "cameel"
     },
     "number": 11540,
@@ -918,14 +2366,6 @@
     "number": 12930,
     "title": "Optimize ternary expressions to branchless code when cheaper.",
     "updatedAt": "2022-09-14T15:35:34Z"
-  },
-  {
-    "author": {
-      "login": "agroce"
-    },
-    "number": 11175,
-    "title": "[yul] Exception while assembling: /solidity/libyul/Object.cpp(110): Throw in function vector<size_t> solidity::yul::Object::pathToSubObject(solidity::yul::YulString) const",
-    "updatedAt": "2022-09-14T15:26:13Z"
   },
   {
     "author": {
@@ -1233,14 +2673,6 @@
   },
   {
     "author": {
-      "login": "agroce"
-    },
-    "number": 12208,
-    "title": "Extremely long SPDX comment results in a segfault",
-    "updatedAt": "2022-09-13T15:00:10Z"
-  },
-  {
-    "author": {
       "login": "ekpyron"
     },
     "number": 13520,
@@ -1270,14 +2702,6 @@
     "number": 11700,
     "title": "Reconsider operators on ContractType",
     "updatedAt": "2022-09-12T15:19:29Z"
-  },
-  {
-    "author": {
-      "login": "StErMi"
-    },
-    "number": 12864,
-    "title": "Compiler is not evaluating all if/elseif/else branches to check for “Immutable variables cannot be initialized inside an if statement\"",
-    "updatedAt": "2022-09-12T15:12:00Z"
   },
   {
     "author": {
@@ -1337,14 +2761,6 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11278,
-    "title": "Try Catch for custom errors",
-    "updatedAt": "2022-09-12T14:45:11Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 11156,
@@ -1377,14 +2793,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 11513,
-    "title": "Extend the constant optimizer to optimizer sub-expressions",
-    "updatedAt": "2022-09-12T14:24:49Z"
-  },
-  {
-    "author": {
       "login": "cameel"
     },
     "number": 13086,
@@ -1406,14 +2814,6 @@
     "number": 1543,
     "title": "Request: expose address.codehash",
     "updatedAt": "2022-09-12T07:31:04Z"
-  },
-  {
-    "author": {
-      "login": "madvas"
-    },
-    "number": 2675,
-    "title": "Be able to disable all warnings for certain files",
-    "updatedAt": "2022-09-11T18:57:27Z"
   },
   {
     "author": {
@@ -1561,14 +2961,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 5956,
-    "title": "Add new external tests",
-    "updatedAt": "2022-09-06T14:48:08Z"
-  },
-  {
-    "author": {
       "login": "antonper"
     },
     "number": 13480,
@@ -1697,14 +3089,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 13121,
-    "title": "Old Z3 is not supported (should enforce in CMake)",
-    "updatedAt": "2022-09-04T17:53:49Z"
-  },
-  {
-    "author": {
       "login": "k06a"
     },
     "number": 13258,
@@ -1726,14 +3110,6 @@
     "number": 12649,
     "title": "LSP Code Folding - Improper folding",
     "updatedAt": "2022-09-02T20:07:02Z"
-  },
-  {
-    "author": {
-      "login": "gpersoon"
-    },
-    "number": 13035,
-    "title": "LSP: `textDocument/definition` always returns \"result\":[]",
-    "updatedAt": "2022-09-02T13:37:03Z"
   },
   {
     "author": {
@@ -1761,27 +3137,11 @@
   },
   {
     "author": {
-      "login": "nventuro"
-    },
-    "number": 12587,
-    "title": "Immutable dynamic arrays",
-    "updatedAt": "2022-09-01T12:42:18Z"
-  },
-  {
-    "author": {
       "login": "nishant-sachdeva"
     },
     "number": 13325,
     "title": "Release the Language Server with symbolic renaming and syntax highlighting",
     "updatedAt": "2022-09-01T11:48:01Z"
-  },
-  {
-    "author": {
-      "login": "fulldecent"
-    },
-    "number": 13371,
-    "title": "Stop recommending .transfer",
-    "updatedAt": "2022-09-01T09:17:07Z"
   },
   {
     "author": {
@@ -2089,14 +3449,6 @@
   },
   {
     "author": {
-      "login": "duncancmt"
-    },
-    "number": 13174,
-    "title": "`pure` functions can read storage",
-    "updatedAt": "2022-08-18T19:59:28Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 11254,
@@ -2169,14 +3521,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 628,
-    "title": "Authenticated Binaries",
-    "updatedAt": "2022-08-17T13:50:55Z"
-  },
-  {
-    "author": {
       "login": "LianaHus"
     },
     "number": 10,
@@ -2198,22 +3542,6 @@
     "number": 1617,
     "title": "Check for parser error messages in natspec tests",
     "updatedAt": "2022-08-17T13:50:50Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 228,
-    "title": "Call For Action: standard library for Solidity",
-    "updatedAt": "2022-08-17T13:50:49Z"
-  },
-  {
-    "author": {
-      "login": "VoR0220"
-    },
-    "number": 232,
-    "title": "Optional function parameters",
-    "updatedAt": "2022-08-17T13:50:49Z"
   },
   {
     "author": {
@@ -2299,14 +3627,6 @@
     "author": {
       "login": "chriseth"
     },
-    "number": 7622,
-    "title": "Allow access to enum values from inline assembly",
-    "updatedAt": "2022-08-17T13:50:38Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
     "number": 7877,
     "title": "Typed errors / exceptions",
     "updatedAt": "2022-08-17T13:50:38Z"
@@ -2345,22 +3665,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 4030,
-    "title": "Improve loop detection in the gas estimator",
-    "updatedAt": "2022-08-17T13:50:20Z"
-  },
-  {
-    "author": {
-      "login": "PhABC"
-    },
-    "number": 8186,
-    "title": "Allow Dev to sort Function Lookups Manually instead of by Ascending Order",
-    "updatedAt": "2022-08-17T13:50:20Z"
-  },
-  {
-    "author": {
       "login": "ilanolkies"
     },
     "number": 8498,
@@ -2377,14 +3681,6 @@
   },
   {
     "author": {
-      "login": "ethers"
-    },
-    "number": 715,
-    "title": "mutable variables (immutable as default)",
-    "updatedAt": "2022-08-17T13:50:10Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 4033,
@@ -2397,30 +3693,6 @@
     },
     "number": 4035,
     "title": "Improve Token class",
-    "updatedAt": "2022-08-17T13:50:10Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 8773,
-    "title": "In-language testing syntax / support",
-    "updatedAt": "2022-08-17T13:50:10Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 8775,
-    "title": "Allow constants in interfaces",
-    "updatedAt": "2022-08-17T13:50:10Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 8919,
-    "title": "Equality comparison for tuples.",
     "updatedAt": "2022-08-17T13:50:10Z"
   },
   {
@@ -2445,22 +3717,6 @@
     },
     "number": 4128,
     "title": "Improve error messages for implicit type conversions",
-    "updatedAt": "2022-08-17T13:50:09Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 4383,
-    "title": "CI: Check that every error/warning message in the code also appears in at least one test",
-    "updatedAt": "2022-08-17T13:50:09Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 8920,
-    "title": "Gas estimator: Report transaction cost at least for constructor.",
     "updatedAt": "2022-08-17T13:50:09Z"
   },
   {
@@ -2505,14 +3761,6 @@
   },
   {
     "author": {
-      "login": "daejunpark"
-    },
-    "number": 9046,
-    "title": "Optimization possibility of memory usage for loops",
-    "updatedAt": "2022-08-17T13:50:05Z"
-  },
-  {
-    "author": {
       "login": "nventuro"
     },
     "number": 9117,
@@ -2533,14 +3781,6 @@
     },
     "number": 1010,
     "title": "Storage references in memory structs",
-    "updatedAt": "2022-08-17T13:50:04Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 1015,
-    "title": "Replace _ with body in modifiers",
     "updatedAt": "2022-08-17T13:50:04Z"
   },
   {
@@ -2569,14 +3809,6 @@
   },
   {
     "author": {
-      "login": "leonardoalt"
-    },
-    "number": 9590,
-    "title": "Output Yul ASTs",
-    "updatedAt": "2022-08-17T13:50:04Z"
-  },
-  {
-    "author": {
       "login": "ethernomad"
     },
     "number": 1095,
@@ -2593,30 +3825,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 5244,
-    "title": "[Yul] Improve expression joiner",
-    "updatedAt": "2022-08-17T13:50:03Z"
-  },
-  {
-    "author": {
-      "login": "Marenz"
-    },
-    "number": 9598,
-    "title": "Allow comparing of value-only struct/tuple types",
-    "updatedAt": "2022-08-17T13:49:57Z"
-  },
-  {
-    "author": {
-      "login": "Marenz"
-    },
-    "number": 9599,
-    "title": "Allow assignment of tuple to struct and vice versa",
-    "updatedAt": "2022-08-17T13:49:57Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 5306,
@@ -2629,14 +3837,6 @@
     },
     "number": 9600,
     "title": "Allow tuples to fill the function parameters when passed as parameter",
-    "updatedAt": "2022-08-17T13:49:56Z"
-  },
-  {
-    "author": {
-      "login": "Marenz"
-    },
-    "number": 9607,
-    "title": "Overload resolution failure should explain for each candidate why it does not match.",
     "updatedAt": "2022-08-17T13:49:56Z"
   },
   {
@@ -2659,32 +3859,8 @@
     "author": {
       "login": "chriseth"
     },
-    "number": 1272,
-    "title": "Compile external code snippets",
-    "updatedAt": "2022-08-17T13:49:55Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
     "number": 5409,
     "title": "[Yul] EVM codegen: Do not copy topmost stack element if this is the last use",
-    "updatedAt": "2022-08-17T13:49:55Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 5462,
-    "title": "Address payable to address conversion fails for memory arrays.",
-    "updatedAt": "2022-08-17T13:49:55Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 9735,
-    "title": "Restrict free functions",
     "updatedAt": "2022-08-17T13:49:55Z"
   },
   {
@@ -2694,14 +3870,6 @@
     "number": 9813,
     "title": "[feature-request] Error code system, based on Yulish style `error\"...\"`",
     "updatedAt": "2022-08-17T13:49:55Z"
-  },
-  {
-    "author": {
-      "login": "ethernomad"
-    },
-    "number": 1290,
-    "title": "Access to constants through contract names",
-    "updatedAt": "2022-08-17T13:49:54Z"
   },
   {
     "author": {
@@ -2833,14 +4001,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 6162,
-    "title": "Improve unused local variable error message in tuple declaration.",
-    "updatedAt": "2022-08-17T13:49:49Z"
-  },
-  {
-    "author": {
       "login": "ekpyron"
     },
     "number": 6301,
@@ -2853,14 +4013,6 @@
     },
     "number": 10283,
     "title": "Introduce solidity.evmVersion() to query the target EVM",
-    "updatedAt": "2022-08-17T13:49:49Z"
-  },
-  {
-    "author": {
-      "login": "gitpusha"
-    },
-    "number": 10381,
-    "title": "feature request: try catch for abi.decode",
     "updatedAt": "2022-08-17T13:49:49Z"
   },
   {
@@ -3001,14 +4153,6 @@
   },
   {
     "author": {
-      "login": "hellwolf"
-    },
-    "number": 10933,
-    "title": "Error handling of abi.decode",
-    "updatedAt": "2022-08-17T13:49:46Z"
-  },
-  {
-    "author": {
       "login": "SCBuergel"
     },
     "number": 2284,
@@ -3045,14 +4189,6 @@
     },
     "number": 7167,
     "title": "[Abiv2 proto fuzzer] Fuzz abi coding at contract creation time",
-    "updatedAt": "2022-08-17T13:49:45Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 10981,
-    "title": "Compiler flag to set bytecode size limit",
     "updatedAt": "2022-08-17T13:49:45Z"
   },
   {
@@ -3209,14 +4345,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 7742,
-    "title": "See if the error message about builtin functions in specific EVM versions can be improved",
-    "updatedAt": "2022-08-17T13:49:24Z"
-  },
-  {
-    "author": {
       "login": "haltman-at"
     },
     "number": 10935,
@@ -3265,22 +4393,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 7999,
-    "title": "Include z3 in solc docker image",
-    "updatedAt": "2022-08-17T13:49:23Z"
-  },
-  {
-    "author": {
-      "login": "frangio"
-    },
-    "number": 11253,
-    "title": "Allow nonpayable functions to override payable functions",
-    "updatedAt": "2022-08-17T13:49:23Z"
-  },
-  {
-    "author": {
       "login": "hrkrshnn"
     },
     "number": 11586,
@@ -3309,14 +4421,6 @@
     },
     "number": 3097,
     "title": "Allow natspec documentation for non-public functions.",
-    "updatedAt": "2022-08-17T13:49:22Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 8143,
-    "title": "Support nested objects for Yul tests.",
     "updatedAt": "2022-08-17T13:49:22Z"
   },
   {
@@ -3385,66 +4489,10 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 3157,
-    "title": "Constant expression evaluation at compile time",
-    "updatedAt": "2022-08-17T13:49:15Z"
-  },
-  {
-    "author": {
       "login": "federicobond"
     },
     "number": 3185,
     "title": "Better tools for implementing proxies via delegatecall",
-    "updatedAt": "2022-08-17T13:49:15Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 8315,
-    "title": "Better ASTVisitors",
-    "updatedAt": "2022-08-17T13:49:15Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 8317,
-    "title": "[Yul Optimizer] For readability purposes, replace function return variables by the literal 0 until they are assigned for the first time.",
-    "updatedAt": "2022-08-17T13:49:15Z"
-  },
-  {
-    "author": {
-      "login": "alcuadrado"
-    },
-    "number": 11351,
-    "title": "ARM builds for Linux",
-    "updatedAt": "2022-08-17T13:49:15Z"
-  },
-  {
-    "author": {
-      "login": "zemse"
-    },
-    "number": 11407,
-    "title": "Allow specifying parameter name in public mappings",
-    "updatedAt": "2022-08-17T13:49:15Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 11845,
-    "title": "Require latest Z3 in soltest",
-    "updatedAt": "2022-08-17T13:49:15Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 11846,
-    "title": "Simplify and deduplicate CircleCI config",
     "updatedAt": "2022-08-17T13:49:15Z"
   },
   {
@@ -3553,14 +4601,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 12119,
-    "title": "[CLI] Warn when a relative path specified on the CLI ends up being absolute in metadata",
-    "updatedAt": "2022-08-17T13:49:08Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 3262,
@@ -3589,14 +4629,6 @@
     },
     "number": 8682,
     "title": "[evmone] Consistent versions across platforms",
-    "updatedAt": "2022-08-17T13:49:07Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 12137,
-    "title": "Change the dispatch routine to help the optimizer",
     "updatedAt": "2022-08-17T13:49:07Z"
   },
   {
@@ -3709,22 +4741,6 @@
     },
     "number": 3449,
     "title": "Dynamic / Runtime Inheritance",
-    "updatedAt": "2022-08-17T13:49:00Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 3525,
-    "title": "User defined types in Yul",
-    "updatedAt": "2022-08-17T13:49:00Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 3556,
-    "title": "Support retrieving selector of an overloaded function",
     "updatedAt": "2022-08-17T13:49:00Z"
   },
   {
@@ -3905,26 +4921,10 @@
   },
   {
     "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11953,
-    "title": "Allowing regular constructor syntax for user defined value types",
-    "updatedAt": "2022-08-17T13:48:58Z"
-  },
-  {
-    "author": {
       "login": "mudgen"
     },
     "number": 12807,
     "title": "Requesting ability to define modifiers in Solidity libraries and use them in contracts",
-    "updatedAt": "2022-08-17T13:48:58Z"
-  },
-  {
-    "author": {
-      "login": "134dd3v"
-    },
-    "number": 12816,
-    "title": "Internal getters for mappings",
     "updatedAt": "2022-08-17T13:48:58Z"
   },
   {
@@ -3941,14 +4941,6 @@
     },
     "number": 4559,
     "title": "Discussion: Accessing Comments",
-    "updatedAt": "2022-08-17T13:48:57Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 9553,
-    "title": "NatSpec on contracts is not inherited",
     "updatedAt": "2022-08-17T13:48:57Z"
   },
   {
@@ -3981,14 +4973,6 @@
     },
     "number": 11972,
     "title": "Builtin for UTS46 / IDNA normalisation",
-    "updatedAt": "2022-08-17T13:48:56Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 12008,
-    "title": "Reporting unused library references",
     "updatedAt": "2022-08-17T13:48:56Z"
   },
   {
@@ -4073,14 +5057,6 @@
   },
   {
     "author": {
-      "login": "leonardoalt"
-    },
-    "number": 9601,
-    "title": "solidity::util::formatNumberReadable signed integer support",
-    "updatedAt": "2022-08-17T13:48:54Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 9620,
@@ -4109,14 +5085,6 @@
     },
     "number": 12869,
     "title": "Benchmark differ extensions",
-    "updatedAt": "2022-08-17T13:48:54Z"
-  },
-  {
-    "author": {
-      "login": "beerefine"
-    },
-    "number": 12920,
-    "title": "Allow storage layout overrides",
     "updatedAt": "2022-08-17T13:48:54Z"
   },
   {
@@ -4193,14 +5161,6 @@
   },
   {
     "author": {
-      "login": "leonardoalt"
-    },
-    "number": 4991,
-    "title": "SMTChecker: Contract invariants support",
-    "updatedAt": "2022-08-17T13:48:52Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 5000,
@@ -4233,14 +5193,6 @@
   },
   {
     "author": {
-      "login": "xanderdunn"
-    },
-    "number": 12291,
-    "title": "Support Apple Silicon in Release Builds",
-    "updatedAt": "2022-08-17T13:48:52Z"
-  },
-  {
-    "author": {
       "login": "wolflo"
     },
     "number": 12296,
@@ -4265,14 +5217,6 @@
   },
   {
     "author": {
-      "login": "adhusson"
-    },
-    "number": 13107,
-    "title": "`using for` with explicit function names does not support overloaded functions",
-    "updatedAt": "2022-08-17T13:48:49Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 13108,
@@ -4281,26 +5225,10 @@
   },
   {
     "author": {
-      "login": "leonwilly"
-    },
-    "number": 13143,
-    "title": "Allow \"using BaseContract.virtualMethod\" syntax when there are conflicting virtual methods.",
-    "updatedAt": "2022-08-17T13:48:49Z"
-  },
-  {
-    "author": {
       "login": "maxsam4"
     },
     "number": 5690,
     "title": "[Feature Request] Compile Abstract Functions",
-    "updatedAt": "2022-08-17T13:48:48Z"
-  },
-  {
-    "author": {
-      "login": "leonardoalt"
-    },
-    "number": 5808,
-    "title": "[SMTChecker] Check for overflow/truncation in smaller type conversion",
     "updatedAt": "2022-08-17T13:48:48Z"
   },
   {
@@ -4318,30 +5246,6 @@
     "number": 9926,
     "title": "ICE's formattedMessage field is truncated",
     "updatedAt": "2022-08-17T13:48:48Z"
-  },
-  {
-    "author": {
-      "login": "Nielsbishere"
-    },
-    "number": 12303,
-    "title": "Support for immutable in function parameters",
-    "updatedAt": "2022-08-17T13:48:48Z"
-  },
-  {
-    "author": {
-      "login": "frangio"
-    },
-    "number": 13207,
-    "title": "Functions that are generic in the data location of pointer arguments",
-    "updatedAt": "2022-08-17T13:48:48Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 6713,
-    "title": "[Yul Optimizer] Function outliner",
-    "updatedAt": "2022-08-17T13:48:47Z"
   },
   {
     "author": {
@@ -4459,14 +5363,6 @@
     "author": {
       "login": "axic"
     },
-    "number": 13223,
-    "title": "Turn on the optimizer by default",
-    "updatedAt": "2022-08-17T13:48:46Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
     "number": 13233,
     "title": "Option to disable metadata",
     "updatedAt": "2022-08-17T13:48:46Z"
@@ -4573,22 +5469,6 @@
     },
     "number": 10720,
     "title": "[Optimizer] Loop Invariant Code Motion for storage and memory writes that are invariant",
-    "updatedAt": "2022-08-17T13:48:36Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 10738,
-    "title": "Replace loops by range-v3 loops where applicable.",
-    "updatedAt": "2022-08-17T13:48:36Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 10809,
-    "title": "Optimizer: Function Constraint Summarizer",
     "updatedAt": "2022-08-17T13:48:36Z"
   },
   {
@@ -4833,14 +5713,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 13369,
-    "title": "Type-Checking for ``code`` data location.",
-    "updatedAt": "2022-08-09T15:11:48Z"
-  },
-  {
-    "author": {
       "login": "bshastry"
     },
     "number": 13366,
@@ -4854,14 +5726,6 @@
     "number": 13364,
     "title": "Solidity compiler issue on Arch Linux",
     "updatedAt": "2022-08-09T09:47:31Z"
-  },
-  {
-    "author": {
-      "login": "cyraxred"
-    },
-    "number": 13332,
-    "title": "Unexpected storage layout caused by interfaces",
-    "updatedAt": "2022-08-09T08:32:32Z"
   },
   {
     "author": {
@@ -5137,14 +6001,6 @@
   },
   {
     "author": {
-      "login": "barakman"
-    },
-    "number": 12783,
-    "title": "`UnimplementedFeatureError` with no line indication when copying an array of structs to storage",
-    "updatedAt": "2022-07-20T20:44:08Z"
-  },
-  {
-    "author": {
       "login": "cameel"
     },
     "number": 12244,
@@ -5345,14 +6201,6 @@
   },
   {
     "author": {
-      "login": "lukehutch"
-    },
-    "number": 13125,
-    "title": "array.pop() should return last value in array",
-    "updatedAt": "2022-07-03T17:59:01Z"
-  },
-  {
-    "author": {
       "login": "dev-tom-0108"
     },
     "number": 13231,
@@ -5481,14 +6329,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 13099,
-    "title": "[Yul Optimizer] Extend LoadResolver to assume zeroed storage during creation code. (And zeroed memory at transaction start.)",
-    "updatedAt": "2022-06-20T10:34:26Z"
-  },
-  {
-    "author": {
       "login": "ldcc"
     },
     "number": 4529,
@@ -5553,27 +6393,11 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 13160,
-    "title": "[soltest] Distinguish code size-induced cost from runtime gas cost in tests.",
-    "updatedAt": "2022-06-16T14:41:21Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 12927,
     "title": "Should support referring to foreign-constants as compile-time constants",
     "updatedAt": "2022-06-16T12:23:49Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 13157,
-    "title": "Better Debugging Data (in particular for via-IR codegen)",
-    "updatedAt": "2022-06-16T10:50:26Z"
   },
   {
     "author": {
@@ -5609,14 +6433,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 13147,
-    "title": "Warnings about complex expressions on left-hand-sides of assignments.",
-    "updatedAt": "2022-06-15T09:39:19Z"
-  },
-  {
-    "author": {
       "login": "benediamond"
     },
     "number": 12248,
@@ -5638,14 +6454,6 @@
     "number": 12935,
     "title": "Add more useful information to the \"Cheatsheet\" page",
     "updatedAt": "2022-06-14T13:03:08Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 12934,
-    "title": "More concise \"Cheatsheet\" page",
-    "updatedAt": "2022-06-14T13:00:06Z"
   },
   {
     "author": {
@@ -5726,14 +6534,6 @@
     "number": 13085,
     "title": "String literal should be validated to be UTF-8 sequence also when used with arrays.",
     "updatedAt": "2022-06-06T11:49:34Z"
-  },
-  {
-    "author": {
-      "login": "Amxx"
-    },
-    "number": 11889,
-    "title": "Should private functions really clash ?",
-    "updatedAt": "2022-06-06T08:47:02Z"
   },
   {
     "author": {
@@ -5822,14 +6622,6 @@
     "number": 13051,
     "title": "Remove workarounds for ethers 5.6.2+ and `getStorageAt()` from external tests",
     "updatedAt": "2022-05-25T23:52:13Z"
-  },
-  {
-    "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11740,
-    "title": "[Yul-Opti] Replace `keccak(k, 0)` with hash if it's cheaper",
-    "updatedAt": "2022-05-25T13:53:22Z"
   },
   {
     "author": {
@@ -6009,14 +6801,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 8153,
-    "title": "Strengthen the definition of ``pure`` potentially disallowing e.g. ``codecopy`` - or \"the future of ``pure``\".",
-    "updatedAt": "2022-05-14T09:20:06Z"
-  },
-  {
-    "author": {
       "login": "0xalpharush"
     },
     "number": 13017,
@@ -6161,14 +6945,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 10281,
-    "title": "Natspec: text before the @notice tag gets included as part of it",
-    "updatedAt": "2022-05-05T20:05:48Z"
-  },
-  {
-    "author": {
       "login": "wuestholz"
     },
     "number": 12980,
@@ -6289,14 +7065,6 @@
   },
   {
     "author": {
-      "login": "bshastry"
-    },
-    "number": 12590,
-    "title": "[Assembler] Yul code compiled for EVM <= byzantium returns invalid instruction status code on EVMC call",
-    "updatedAt": "2022-04-27T19:56:14Z"
-  },
-  {
-    "author": {
       "login": "fulldecent"
     },
     "number": 5293,
@@ -6401,14 +7169,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 12931,
-    "title": "Yul Optimizer: Switch elimination for cheap switch cases.",
-    "updatedAt": "2022-04-13T19:52:08Z"
-  },
-  {
-    "author": {
       "login": "hedgar2017"
     },
     "number": 12911,
@@ -6470,14 +7230,6 @@
     "number": 11362,
     "title": "Unused parameter warning is unnecessary when the parameter is used in a virtual function's NatSpec",
     "updatedAt": "2022-04-07T23:02:22Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 12897,
-    "title": "Rewrite command line test script cleanly in python.",
-    "updatedAt": "2022-04-07T13:23:30Z"
   },
   {
     "author": {
@@ -6545,14 +7297,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 12737,
-    "title": "Wrong address computed for CREATE2 in semantic tests",
-    "updatedAt": "2022-03-29T08:31:11Z"
-  },
-  {
-    "author": {
       "login": "barakman"
     },
     "number": 12819,
@@ -6606,14 +7350,6 @@
     "number": 12501,
     "title": "Couldn't find a debug adapter descriptor for the debug type 'solidity' (extension might have failed to to activate)",
     "updatedAt": "2022-03-19T22:56:59Z"
-  },
-  {
-    "author": {
-      "login": "NatalieTop"
-    },
-    "number": 12767,
-    "title": "Private function names should not be checked for uniqueness when inherited by other contracts",
-    "updatedAt": "2022-03-18T17:16:41Z"
   },
   {
     "author": {
@@ -6777,27 +7513,11 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 12732,
-    "title": "Natspec parsing of custom tags always expects a value potentially swallowing other tags.",
-    "updatedAt": "2022-03-02T15:38:51Z"
-  },
-  {
-    "author": {
       "login": "aarlt"
     },
     "number": 12712,
     "title": "Confusing behaviour of running solc without selecting output.",
     "updatedAt": "2022-03-01T22:07:46Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 8319,
-    "title": "Generalized way to sort sets and vectors of AST nodes for guaranteeing deterministic order.",
-    "updatedAt": "2022-03-01T10:59:38Z"
   },
   {
     "author": {
@@ -6894,14 +7614,6 @@
     "number": 12251,
     "title": "\"UNLICENSED\" (recommended for closed source in docs) is not a valid SPDX identifier, and the closest valid license (UNLICENSE) is the exact opposite. ",
     "updatedAt": "2022-02-18T01:49:15Z"
-  },
-  {
-    "author": {
-      "login": "mudgen"
-    },
-    "number": 8441,
-    "title": "abi.encodePacked for tightly-packed arrays",
-    "updatedAt": "2022-02-17T10:17:34Z"
   },
   {
     "author": {
@@ -7171,14 +7883,6 @@
     "author": {
       "login": "ekpyron"
     },
-    "number": 7261,
-    "title": "Rethink (or maybe even remove?) ``super``",
-    "updatedAt": "2022-01-27T18:00:41Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
     "number": 12550,
     "title": "Better documentation for storage pointers",
     "updatedAt": "2022-01-25T13:03:08Z"
@@ -7329,22 +8033,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 12527,
-    "title": "Refine enforce gas cost min value threshold behaviour in ``isoltest``",
-    "updatedAt": "2022-01-14T22:48:37Z"
-  },
-  {
-    "author": {
-      "login": "artdgn"
-    },
-    "number": 12525,
-    "title": "Shadowing named return variable declaration should be an error",
-    "updatedAt": "2022-01-14T12:47:49Z"
-  },
-  {
-    "author": {
       "login": "dsapaev"
     },
     "number": 12534,
@@ -7406,14 +8094,6 @@
     "number": 12514,
     "title": "IR optimized code makes one fewer call than legacy optimized code",
     "updatedAt": "2022-01-11T13:07:23Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 12506,
-    "title": "Refine inheritance documentation about super.",
-    "updatedAt": "2022-01-11T11:35:26Z"
   },
   {
     "author": {
@@ -7713,14 +8393,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 12384,
-    "title": "Nested dynamic arrays are not omitted from getters",
-    "updatedAt": "2021-12-13T11:57:00Z"
-  },
-  {
-    "author": {
       "login": "dinahjohnson"
     },
     "number": 12365,
@@ -7769,14 +8441,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 8437,
-    "title": "Verify and potentially increase test coverage for inheritance and function calls.",
-    "updatedAt": "2021-12-11T01:20:50Z"
-  },
-  {
-    "author": {
       "login": "leonardoalt"
     },
     "number": 10478,
@@ -7790,14 +8454,6 @@
     "number": 9626,
     "title": "Yul Optimiser: Consider to take stack height into account in CSE",
     "updatedAt": "2021-12-11T01:12:06Z"
-  },
-  {
-    "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 9487,
-    "title": "Refactoring SideEffects",
-    "updatedAt": "2021-12-11T01:11:42Z"
   },
   {
     "author": {
@@ -7854,14 +8510,6 @@
     "number": 6299,
     "title": "Still misleading error messages for external function calls.",
     "updatedAt": "2021-12-11T00:36:27Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 6044,
-    "title": "[Yul] Remove gas meter test workaround when we can enable the yul optimizer",
-    "updatedAt": "2021-12-11T00:35:35Z"
   },
   {
     "author": {
@@ -8105,14 +8753,6 @@
   },
   {
     "author": {
-      "login": "bshastry"
-    },
-    "number": 12305,
-    "title": "[TypeChecker] ICE in spurious dragon due to unset return parameter decoding type in recursive library function call with a return function type",
-    "updatedAt": "2021-11-23T09:06:30Z"
-  },
-  {
-    "author": {
       "login": "dallonasnes"
     },
     "number": 12309,
@@ -8217,22 +8857,6 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 11582,
-    "title": "Disallow implicit conversion from weird zero literals to fixed bytes",
-    "updatedAt": "2021-11-15T02:33:08Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 12153,
-    "title": "Output selection is not validated in Standard JSON",
-    "updatedAt": "2021-11-15T00:56:56Z"
-  },
-  {
-    "author": {
       "login": ""
     },
     "number": 12278,
@@ -8294,14 +8918,6 @@
     "number": 11347,
     "title": "published binaries should be signed and have published checksums available",
     "updatedAt": "2021-11-10T00:36:40Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 2238,
-    "title": "Create a release notes JSON",
-    "updatedAt": "2021-11-10T00:33:18Z"
   },
   {
     "author": {
@@ -8478,14 +9094,6 @@
     "number": 12014,
     "title": "Do not whitelist remapping targets",
     "updatedAt": "2021-10-31T13:55:05Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 12169,
-    "title": "[Yul Optimizer] Do not move loop invariants that consume a lot of gas",
-    "updatedAt": "2021-10-30T08:33:51Z"
   },
   {
     "author": {
@@ -8878,14 +9486,6 @@
     "number": 12039,
     "title": "UserDefinedValueTypeDefinition nodes don't include `canonicalName` field",
     "updatedAt": "2021-09-29T08:11:30Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 12028,
-    "title": "ICE due to internal function pointer in a calldata struct parameter of a public function",
-    "updatedAt": "2021-09-27T21:08:05Z"
   },
   {
     "author": {
@@ -9625,27 +10225,11 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 10299,
-    "title": "Inconsistent library address validations between CLI and Standard JSON",
-    "updatedAt": "2021-08-04T19:19:13Z"
-  },
-  {
-    "author": {
       "login": "benbaley"
     },
     "number": 11676,
     "title": "[SMTChecker] Crash in `Z3CHCInterface::query()` when running isoltest on Ubuntu",
     "updatedAt": "2021-08-04T13:44:12Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 10152,
-    "title": "IR-based CompilerStack ",
-    "updatedAt": "2021-08-04T11:00:00Z"
   },
   {
     "author": {
@@ -9686,14 +10270,6 @@
     "number": 6091,
     "title": "Returning large segments of memory slows the yul interpreter down",
     "updatedAt": "2021-08-03T22:19:58Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 5877,
-    "title": "Gas estimator takes a long time on large arrays",
-    "updatedAt": "2021-08-03T22:19:46Z"
   },
   {
     "author": {
@@ -9873,14 +10449,6 @@
   },
   {
     "author": {
-      "login": "bshastry"
-    },
-    "number": 11642,
-    "title": "[solc] Unassigned immutables cryptic error",
-    "updatedAt": "2021-07-26T13:47:02Z"
-  },
-  {
-    "author": {
       "login": "ToweringTopaz"
     },
     "number": 11674,
@@ -9910,14 +10478,6 @@
     "number": 11671,
     "title": "Broken 0.4.25 asm.js binary",
     "updatedAt": "2021-07-15T23:09:49Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 11614,
-    "title": "soltest should look for VM shared libraries in a location relative to the test directory",
-    "updatedAt": "2021-07-14T21:04:58Z"
   },
   {
     "author": {
@@ -10193,14 +10753,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 11573,
-    "title": "View-pure checker misses reads from storage pointer variable",
-    "updatedAt": "2021-06-23T20:17:18Z"
-  },
-  {
-    "author": {
       "login": "jamesdawsonWD"
     },
     "number": 9874,
@@ -10326,14 +10878,6 @@
     "number": 11427,
     "title": "[isoltest] Support comments between expectations",
     "updatedAt": "2021-06-16T20:53:58Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 11538,
-    "title": "[Yul] Disallow unknown objects whose names start with `.`",
-    "updatedAt": "2021-06-15T18:21:55Z"
   },
   {
     "author": {
@@ -10561,38 +11105,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 8772,
-    "title": "ABI: fixed-length bytes larger than 32 bytes",
-    "updatedAt": "2021-06-02T21:08:55Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 9470,
-    "title": "[yul] ICE because assembly object not found or does not contain code",
-    "updatedAt": "2021-06-02T17:37:03Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 5173,
-    "title": "Shadowing warning between local variables or function depend on declaration order",
-    "updatedAt": "2021-06-02T17:06:28Z"
-  },
-  {
-    "author": {
-      "login": "hrkrshnn"
-    },
-    "number": 11369,
-    "title": "Missing error about recursive type in public state variable",
-    "updatedAt": "2021-06-02T16:05:10Z"
-  },
-  {
-    "author": {
       "login": "bshastry"
     },
     "number": 6624,
@@ -10614,14 +11126,6 @@
     "number": 10591,
     "title": "[isoltest] Allow empty input (even when expected) in TestFileParser",
     "updatedAt": "2021-06-01T23:07:29Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 10629,
-    "title": "[CI] PR check to enforce Linux line endings",
-    "updatedAt": "2021-06-01T23:03:21Z"
   },
   {
     "author": {
@@ -10662,14 +11166,6 @@
     "number": 11341,
     "title": "[SMTChecker] ICE in void solidity::frontend::CHC::externalFunctionCall(const solidity::frontend::FunctionCall &)",
     "updatedAt": "2021-06-01T16:48:48Z"
-  },
-  {
-    "author": {
-      "login": "iamdefinitelyahuman"
-    },
-    "number": 9545,
-    "title": "Windows release for v0.4.15 is a nightly build",
-    "updatedAt": "2021-06-01T16:23:13Z"
   },
   {
     "author": {
@@ -10798,30 +11294,6 @@
     "number": 11447,
     "title": "Support safe shift-left in solc 0.8.x",
     "updatedAt": "2021-05-28T15:20:37Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 11413,
-    "title": "Better path-related error messages (path spec v3)",
-    "updatedAt": "2021-05-27T15:47:02Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 11412,
-    "title": "Detect platform-dependent paths in default file loader (path spec v3)",
-    "updatedAt": "2021-05-27T15:43:01Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 11411,
-    "title": "Import path normalization (path spec v3)",
-    "updatedAt": "2021-05-27T15:42:56Z"
   },
   {
     "author": {
@@ -11001,14 +11473,6 @@
   },
   {
     "author": {
-      "login": "leonardoalt"
-    },
-    "number": 11030,
-    "title": "[SMTChecker] Use natspec annotation to abstract function",
-    "updatedAt": "2021-04-30T14:31:16Z"
-  },
-  {
-    "author": {
       "login": "franzihei"
     },
     "number": 10119,
@@ -11110,14 +11574,6 @@
     "number": 9170,
     "title": "Allow conversion from bytes to bytesNN",
     "updatedAt": "2021-04-26T09:51:42Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 7259,
-    "title": "Replace boost constructs with their C++17 STL equivalents.",
-    "updatedAt": "2021-04-23T20:42:24Z"
   },
   {
     "author": {
@@ -11521,14 +11977,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 11120,
-    "title": "Natspec: change parameters and return values to be an array",
-    "updatedAt": "2021-03-30T17:21:11Z"
-  },
-  {
-    "author": {
       "login": "leonardoalt"
     },
     "number": 10786,
@@ -11553,27 +12001,11 @@
   },
   {
     "author": {
-      "login": "haltman-at"
-    },
-    "number": 8876,
-    "title": "Documentation issue: Cleaning up some other types",
-    "updatedAt": "2021-03-29T10:28:49Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 11171,
     "title": "Add new natspec tags to pygments-lexer-solidity",
     "updatedAt": "2021-03-26T15:34:03Z"
-  },
-  {
-    "author": {
-      "login": "erak"
-    },
-    "number": 8185,
-    "title": "Display errors when ASTImportTest.sh is not run by CI",
-    "updatedAt": "2021-03-26T00:48:04Z"
   },
   {
     "author": {
@@ -11614,14 +12046,6 @@
     "number": 8802,
     "title": "Support custom natspec / doc tags.",
     "updatedAt": "2021-03-25T13:05:39Z"
-  },
-  {
-    "author": {
-      "login": "Amxx"
-    },
-    "number": 8499,
-    "title": "Better syntax for declaring nested mappings.",
-    "updatedAt": "2021-03-25T12:41:53Z"
   },
   {
     "author": {
@@ -12097,14 +12521,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 11008,
-    "title": "[CLI] Add a way to filter error codes",
-    "updatedAt": "2021-02-24T15:33:17Z"
-  },
-  {
-    "author": {
       "login": "bshastry"
     },
     "number": 11001,
@@ -12377,14 +12793,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 10519,
-    "title": "Run SMT (or all) tests in absence of solvers to check the smtlib interface.",
-    "updatedAt": "2021-02-04T14:03:16Z"
-  },
-  {
-    "author": {
       "login": "bshastry"
     },
     "number": 10874,
@@ -12414,14 +12822,6 @@
     "number": 10871,
     "title": "Mapping data structure",
     "updatedAt": "2021-02-01T16:37:13Z"
-  },
-  {
-    "author": {
-      "login": "frangio"
-    },
-    "number": 10480,
-    "title": "Wrong evaluation order of arguments to parent constructors",
-    "updatedAt": "2021-02-01T14:09:03Z"
   },
   {
     "author": {
@@ -12481,27 +12881,11 @@
   },
   {
     "author": {
-      "login": "cameel"
-    },
-    "number": 10857,
-    "title": "Documentation section on source code verification issues and bytecode reproducibility",
-    "updatedAt": "2021-01-27T14:12:12Z"
-  },
-  {
-    "author": {
       "login": "leonardoalt"
     },
     "number": 10619,
     "title": "[SMTChecker] False negatives and positives because of assembly",
     "updatedAt": "2021-01-26T21:35:55Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 10846,
-    "title": "Emscripten binaries for version 0.3.6 in solc-bin were not built from the commit tagged as v0.3.6",
-    "updatedAt": "2021-01-26T19:51:40Z"
   },
   {
     "author": {
@@ -12534,14 +12918,6 @@
     "number": 10821,
     "title": "Uninitialized storage pointer not detected ",
     "updatedAt": "2021-01-26T08:16:14Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 10390,
-    "title": "IR progress tracker (example contracts)",
-    "updatedAt": "2021-01-25T19:54:14Z"
   },
   {
     "author": {
@@ -12777,14 +13153,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 9668,
-    "title": "EquivalentFunctionCombiner should be run multiple times",
-    "updatedAt": "2021-01-15T15:33:49Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 10288,
@@ -13009,14 +13377,6 @@
   },
   {
     "author": {
-      "login": "thegostep"
-    },
-    "number": 10692,
-    "title": "block.coinbase should not be payable",
-    "updatedAt": "2021-01-08T16:34:11Z"
-  },
-  {
-    "author": {
       "login": "blishko"
     },
     "number": 10646,
@@ -13030,14 +13390,6 @@
     "number": 10715,
     "title": "Investigate source mappings for reverts after optimization. Resp. how to deal with the optimizer collapsing source locations.",
     "updatedAt": "2021-01-07T03:01:47Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 10708,
-    "title": "[Optimizer] Function parameter grouper",
-    "updatedAt": "2021-01-07T02:55:49Z"
   },
   {
     "author": {
@@ -13385,14 +13737,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 2595,
-    "title": "Replace public with getter on state variables",
-    "updatedAt": "2020-12-14T13:14:48Z"
-  },
-  {
-    "author": {
       "login": "bshastry"
     },
     "number": 10257,
@@ -13689,14 +14033,6 @@
   },
   {
     "author": {
-      "login": "mudgen"
-    },
-    "number": 9570,
-    "title": "Support all Solidity Constants in Inline Assembly",
-    "updatedAt": "2020-12-07T15:04:00Z"
-  },
-  {
-    "author": {
       "login": "bshastry"
     },
     "number": 10485,
@@ -13859,14 +14195,6 @@
     "author": {
       "login": "chriseth"
     },
-    "number": 7703,
-    "title": "The test t_ubu_asan_constantinople is taking too long",
-    "updatedAt": "2020-12-01T09:11:03Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
     "number": 6266,
     "title": "Test ABIEncoderV2 with optimizations against real-world projects that use ABIEncoderV2",
     "updatedAt": "2020-12-01T09:09:40Z"
@@ -13942,14 +14270,6 @@
     "number": 6734,
     "title": "[Yul] optimizer's AST copier leaks memory",
     "updatedAt": "2020-11-30T10:00:31Z"
-  },
-  {
-    "author": {
-      "login": "leonardoalt"
-    },
-    "number": 8253,
-    "title": "Write codegen tests that trigger currently unreachable reverts",
-    "updatedAt": "2020-11-27T00:24:57Z"
   },
   {
     "author": {
@@ -14033,14 +14353,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 9015,
-    "title": "Document the wasm releases",
-    "updatedAt": "2020-11-25T12:17:55Z"
-  },
-  {
-    "author": {
       "login": "ekpyron"
     },
     "number": 9604,
@@ -14121,27 +14433,11 @@
   },
   {
     "author": {
-      "login": "3esmit"
-    },
-    "number": 8160,
-    "title": "[Doc] Mention various signature formats",
-    "updatedAt": "2020-11-22T21:03:43Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 7495,
     "title": "[Yul] Represent numbers that look like ascii strings as ascii strings",
     "updatedAt": "2020-11-22T09:17:35Z"
-  },
-  {
-    "author": {
-      "login": "miohtama"
-    },
-    "number": 10312,
-    "title": "payable function modifier documentation not found",
-    "updatedAt": "2020-11-21T23:38:15Z"
   },
   {
     "author": {
@@ -14441,14 +14737,6 @@
   },
   {
     "author": {
-      "login": "leonardoalt"
-    },
-    "number": 8145,
-    "title": "[SMTChecker] Rerun tests from Solc-Verify",
-    "updatedAt": "2020-11-09T15:28:54Z"
-  },
-  {
-    "author": {
       "login": "axic"
     },
     "number": 10236,
@@ -14566,14 +14854,6 @@
     "number": 10088,
     "title": "Support pragma abicoder",
     "updatedAt": "2020-11-05T02:07:32Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 10201,
-    "title": "Document JSON output describing library ABI",
-    "updatedAt": "2020-11-04T19:32:10Z"
   },
   {
     "author": {
@@ -15137,14 +15417,6 @@
   },
   {
     "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 7455,
-    "title": "Remove .send and .transfer.",
-    "updatedAt": "2020-10-21T16:39:48Z"
-  },
-  {
-    "author": {
       "login": "decanus"
     },
     "number": 5018,
@@ -15609,14 +15881,6 @@
   },
   {
     "author": {
-      "login": "ekpyron"
-    },
-    "number": 8117,
-    "title": "[DOCS] Clarify documentation of array elements in packed encoding.",
-    "updatedAt": "2020-10-01T11:48:35Z"
-  },
-  {
-    "author": {
       "login": "nebojsa94"
     },
     "number": 9940,
@@ -15945,14 +16209,6 @@
   },
   {
     "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 9086,
-    "title": "Add option to automatically add revert reason strings when omitted from require.",
-    "updatedAt": "2020-09-15T19:36:14Z"
-  },
-  {
-    "author": {
       "login": "gongbell"
     },
     "number": 9775,
@@ -16171,14 +16427,6 @@
     "author": {
       "login": "chriseth"
     },
-    "number": 8798,
-    "title": "Provide a way to calculate the salted address of a contract",
-    "updatedAt": "2020-09-02T18:48:44Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
     "number": 7799,
     "title": "[Yul] Extend LoopInvariantCodeMotion so that it can deal with sload and external calls",
     "updatedAt": "2020-09-02T14:58:33Z"
@@ -16273,14 +16521,6 @@
   },
   {
     "author": {
-      "login": "adridadou"
-    },
-    "number": 9592,
-    "title": "try / catch does not work with custom call to external addresses and passing the calldata",
-    "updatedAt": "2020-08-31T16:11:03Z"
-  },
-  {
-    "author": {
       "login": "Jiachi-Chen"
     },
     "number": 7889,
@@ -16294,14 +16534,6 @@
     "number": 9679,
     "title": "[antlr4] Change \"boolean\" -> \"bool\" because it causes problems during c++ code generation",
     "updatedAt": "2020-08-31T15:10:35Z"
-  },
-  {
-    "author": {
-      "login": "frangio"
-    },
-    "number": 4869,
-    "title": "Private state variable + external getter with same name should be possible",
-    "updatedAt": "2020-08-31T14:54:36Z"
   },
   {
     "author": {
@@ -16625,22 +16857,6 @@
   },
   {
     "author": {
-      "login": "axic"
-    },
-    "number": 9617,
-    "title": "[Yul] Require parentheses around return variables in function definitions",
-    "updatedAt": "2020-08-17T13:58:33Z"
-  },
-  {
-    "author": {
-      "login": "ekpyron"
-    },
-    "number": 8303,
-    "title": "[Yul] Allow tuple assignments.",
-    "updatedAt": "2020-08-17T13:50:27Z"
-  },
-  {
-    "author": {
       "login": "AnonymousMonkey2021"
     },
     "number": 8815,
@@ -16710,14 +16926,6 @@
     "number": 8142,
     "title": "[Yul] Allow or require curly braces surrounding switch cases.",
     "updatedAt": "2020-08-12T22:17:00Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 8612,
-    "title": "Ability to import into inline assembly",
-    "updatedAt": "2020-08-12T22:16:50Z"
   },
   {
     "author": {
@@ -17225,14 +17433,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 9063,
-    "title": "modules / namespaces / template areas",
-    "updatedAt": "2020-07-16T13:49:36Z"
-  },
-  {
-    "author": {
       "login": "agroce"
     },
     "number": 9101,
@@ -17414,14 +17614,6 @@
     "number": 526,
     "title": "Overload resolution for .value()-modified functions",
     "updatedAt": "2020-07-08T17:22:44Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 9358,
-    "title": "Remove the ripemd160 builtin",
-    "updatedAt": "2020-07-08T16:32:22Z"
   },
   {
     "author": {
@@ -17654,14 +17846,6 @@
     "number": 9262,
     "title": "Incomplete documentation about compiler metadata",
     "updatedAt": "2020-06-29T16:40:23Z"
-  },
-  {
-    "author": {
-      "login": "apguerrera"
-    },
-    "number": 8354,
-    "title": "Arbitrary order of contracts in override specifier is confusing.",
-    "updatedAt": "2020-06-25T14:59:02Z"
   },
   {
     "author": {
@@ -18785,14 +18969,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 5606,
-    "title": "Data stored via codecopy breaks the gas estimator",
-    "updatedAt": "2020-05-07T22:57:34Z"
-  },
-  {
-    "author": {
       "login": "agroce"
     },
     "number": 8365,
@@ -18934,14 +19110,6 @@
     "number": 8299,
     "title": "[PR] Article about the new inheritance system",
     "updatedAt": "2020-05-06T13:22:25Z"
-  },
-  {
-    "author": {
-      "login": "MrChico"
-    },
-    "number": 8812,
-    "title": "compiler metadata: location of function arguments",
-    "updatedAt": "2020-05-06T12:18:14Z"
   },
   {
     "author": {
@@ -19265,14 +19433,6 @@
   },
   {
     "author": {
-      "login": "3esmit"
-    },
-    "number": 8751,
-    "title": "abi.getSig is missing / no method for reading abi function selector",
-    "updatedAt": "2020-04-23T11:56:30Z"
-  },
-  {
-    "author": {
       "login": "MrChico"
     },
     "number": 8758,
@@ -19515,14 +19675,6 @@
     "author": {
       "login": "bshastry"
     },
-    "number": 8636,
-    "title": "[Fuzzing] Write a semantic fuzzer for testing Solidity inheritance rules ",
-    "updatedAt": "2020-04-20T14:13:38Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
     "number": 8704,
     "title": "[Fuzzing] Permit linking of libraries in fuzzer harnesses",
     "updatedAt": "2020-04-20T13:11:08Z"
@@ -19569,14 +19721,6 @@
   },
   {
     "author": {
-      "login": "nicholashc"
-    },
-    "number": 8081,
-    "title": "Introduce error instead of warning for functions called \"fallback\" or \"receive\"",
-    "updatedAt": "2020-04-15T13:17:15Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 8560,
@@ -19614,14 +19758,6 @@
     "number": 8657,
     "title": "[SMTChecker] ICE because assertion smt::isInteger(_op.annotation().type->category()) fails",
     "updatedAt": "2020-04-12T11:35:55Z"
-  },
-  {
-    "author": {
-      "login": "pirapira"
-    },
-    "number": 2173,
-    "title": "doc: add description about gas estimate",
-    "updatedAt": "2020-04-11T14:10:17Z"
   },
   {
     "author": {
@@ -19678,22 +19814,6 @@
     "number": 8590,
     "title": "[solc] Internal compiler error when encountering non-encodable `f{gas: 2}` type",
     "updatedAt": "2020-04-09T07:39:18Z"
-  },
-  {
-    "author": {
-      "login": "k06a"
-    },
-    "number": 7922,
-    "title": "Allow selectors to be used in constants assignment and support overloading",
-    "updatedAt": "2020-04-08T11:29:45Z"
-  },
-  {
-    "author": {
-      "login": "MicahZoltu"
-    },
-    "number": 8433,
-    "title": "Invariants",
-    "updatedAt": "2020-04-08T11:29:45Z"
   },
   {
     "author": {
@@ -19897,14 +20017,6 @@
   },
   {
     "author": {
-      "login": "chriseth"
-    },
-    "number": 8559,
-    "title": "[SolYul] Consider allowing access to internal functions from inline assembly when compiling to yul.",
-    "updatedAt": "2020-03-31T19:19:31Z"
-  },
-  {
-    "author": {
       "login": "KyleBenzle"
     },
     "number": 8546,
@@ -19918,14 +20030,6 @@
     "number": 8521,
     "title": "Replace grammar.txt by Solidity.g4",
     "updatedAt": "2020-03-30T13:37:39Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 2435,
-    "title": "Make copy / reference semantics more explicit",
-    "updatedAt": "2020-03-30T11:02:30Z"
   },
   {
     "author": {
@@ -20102,14 +20206,6 @@
     "number": 8418,
     "title": "[solc] ASTUtils.cpp throws ICE \"Identifier is not referencing a variable declaration\"",
     "updatedAt": "2020-03-12T15:10:39Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 8490,
-    "title": "Discussion: Delegate contracts / dynamic libraries / upgradable contracts",
-    "updatedAt": "2020-03-12T15:04:37Z"
   },
   {
     "author": {
@@ -20433,14 +20529,6 @@
   },
   {
     "author": {
-      "login": "kadenzipfel"
-    },
-    "number": 8129,
-    "title": "[DOCS] Possible DoS with block gas limit on blind auction example contract",
-    "updatedAt": "2020-02-24T12:08:48Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 8109,
@@ -20486,14 +20574,6 @@
     "number": 8171,
     "title": "Legacy Assembly refers to comments in the code",
     "updatedAt": "2020-02-19T15:09:02Z"
-  },
-  {
-    "author": {
-      "login": "chriseth"
-    },
-    "number": 6220,
-    "title": "Change regular calldata arrays to only use a single stack slot",
-    "updatedAt": "2020-02-19T14:25:16Z"
   },
   {
     "author": {
@@ -20993,14 +21073,6 @@
   },
   {
     "author": {
-      "login": "guylando"
-    },
-    "number": 6784,
-    "title": "Some documentation problems",
-    "updatedAt": "2020-01-24T00:03:52Z"
-  },
-  {
-    "author": {
       "login": "Jorropo"
     },
     "number": 6837,
@@ -21425,14 +21497,6 @@
   },
   {
     "author": {
-      "login": "sifmelcara"
-    },
-    "number": 6978,
-    "title": "Specification of ABI decoding (especially padding in bytes)",
-    "updatedAt": "2020-01-08T09:47:37Z"
-  },
-  {
-    "author": {
       "login": "chriseth"
     },
     "number": 7800,
@@ -21814,14 +21878,6 @@
     "number": 7704,
     "title": "[Build] Build evmone from source for ubuntu 18.04",
     "updatedAt": "2019-12-12T22:32:29Z"
-  },
-  {
-    "author": {
-      "login": "digulla"
-    },
-    "number": 7931,
-    "title": "Extend ABI documentation of function types",
-    "updatedAt": "2019-12-12T22:22:52Z"
   },
   {
     "author": {
@@ -22822,14 +22878,6 @@
     "number": 6531,
     "title": "[yul] add \"return\" statement",
     "updatedAt": "2019-10-30T10:16:11Z"
-  },
-  {
-    "author": {
-      "login": "bshastry"
-    },
-    "number": 7585,
-    "title": "[RFC] modeling gas cost in yul interpreter",
-    "updatedAt": "2019-10-30T10:07:11Z"
   },
   {
     "author": {
@@ -32142,14 +32190,6 @@
     "number": 4279,
     "title": "Interface show warning if missing solidity version",
     "updatedAt": "2018-06-14T21:06:57Z"
-  },
-  {
-    "author": {
-      "login": "axic"
-    },
-    "number": 3354,
-    "title": "Infinite gas reported for constant string getter",
-    "updatedAt": "2018-06-13T14:14:47Z"
   },
   {
     "author": {

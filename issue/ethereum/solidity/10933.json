@@ -40,21 +40,40 @@
       "description": "Any changes to the language, e.g. new features"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 3,
+  "comments": 4,
   "created_at": "2021-02-09T21:07:54Z",
-  "updated_at": "2022-08-17T13:49:46Z",
-  "closed_at": null,
+  "updated_at": "2022-09-26T20:54:49Z",
+  "closed_at": "2022-09-26T20:54:48Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "## Abstract\r\n\r\nProposing the `abi.validate` function to provide a way for error handling before `abi.decode`.\r\n\r\n## Motivation\r\n\r\nWhen dealing with decoding input `bytes`, `abi.decode` is often used. It is often necessary to do sanity checks on user provided inputs, for example userData in ERC-777 or user data in [Superfluid protocol](https://github.com/superfluid-finance/protocol-monorepo/). However in current solidity, it is neither possible to check validity of the format before sending to `abi.decode`, nor possible to try/catch on `abi.decode` itself, hence making the sanity check of input data almost impossible (unless writing your own format check).\r\n\r\n## Specification\r\n\r\nIn order to solve this problem, I propose a simple function `abi.validate(bytes, (abi types)` that will return a boolean on the validity of the format.\r\n\r\n## Backwards Compatibility\r\n\r\nThis should be a new function, no backward compatibility issue.",
-  "closed_by": null,
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/10933/reactions",
     "total_count": 0,
@@ -69,7 +88,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/10933/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "not_planned"
 }
 [
   {
@@ -194,6 +213,50 @@
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/776637404/reactions",
       "total_count": 1,
       "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258621876",
+    "html_url": "https://github.com/ethereum/solidity/issues/10933#issuecomment-1258621876",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/10933",
+    "id": 1258621876,
+    "node_id": "IC_kwDOAm_5kc5LBQu0",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-26T20:54:48Z",
+    "updated_at": "2022-09-26T20:54:48Z",
+    "author_association": "MEMBER",
+    "body": "No point keeping two issues for this so I'm closing this in favor of #10381.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258621876/reactions",
+      "total_count": 0,
+      "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

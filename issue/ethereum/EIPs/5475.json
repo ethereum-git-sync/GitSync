@@ -58,21 +58,40 @@
       "description": "Relates to an EIP Process"
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 12,
+  "comments": 13,
   "created_at": "2022-08-17T11:58:53Z",
-  "updated_at": "2022-09-21T00:25:36Z",
-  "closed_at": null,
+  "updated_at": "2022-09-27T00:05:44Z",
+  "closed_at": "2022-09-26T23:04:50Z",
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "EIP-1 mandates a \"final\" status to be terminal. But the current snapshot of EIP-712 is flawed in various ways, as discussed in #5457 \r\n\r\nMore over, it has two \"specification“ sections.\r\n\r\nWe need to make the following decision:\r\n\r\nOption 1: rollback EIP-712 status from FINAL back to DRAFT to allow massive update, a one time exception to EIP-1 mandate\r\nOption 2: encourage original authors of EIP-712 to write a new EIP with new number that \"updates\" EI-712(thus considered EIP-712 deprecated) .\r\n\r\nAlso feel free to suggest other options.\r\n\r\n@Pandapip1 @lightclient @SamWilsn @axic @MicahZoltu @gcolvin  for thoughts",
-  "closed_by": null,
+  "closed_by": {
+    "login": "xinbenlv",
+    "id": 640325,
+    "node_id": "MDQ6VXNlcjY0MDMyNQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/640325?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xinbenlv",
+    "html_url": "https://github.com/xinbenlv",
+    "followers_url": "https://api.github.com/users/xinbenlv/followers",
+    "following_url": "https://api.github.com/users/xinbenlv/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xinbenlv/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xinbenlv/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xinbenlv/subscriptions",
+    "organizations_url": "https://api.github.com/users/xinbenlv/orgs",
+    "repos_url": "https://api.github.com/users/xinbenlv/repos",
+    "events_url": "https://api.github.com/users/xinbenlv/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xinbenlv/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/EIPs/issues/5475/reactions",
     "total_count": 1,
@@ -87,7 +106,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/5475/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -606,6 +625,50 @@
     "body": "There has been no activity on this issue for 1 week. It will be closed after 3 months of inactivity.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1253047566/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1258746234",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5475#issuecomment-1258746234",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5475",
+    "id": 1258746234,
+    "node_id": "IC_kwDOAq426M5LBvF6",
+    "user": {
+      "login": "xinbenlv",
+      "id": 640325,
+      "node_id": "MDQ6VXNlcjY0MDMyNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/640325?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xinbenlv",
+      "html_url": "https://github.com/xinbenlv",
+      "followers_url": "https://api.github.com/users/xinbenlv/followers",
+      "following_url": "https://api.github.com/users/xinbenlv/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xinbenlv/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xinbenlv/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xinbenlv/subscriptions",
+      "organizations_url": "https://api.github.com/users/xinbenlv/orgs",
+      "repos_url": "https://api.github.com/users/xinbenlv/repos",
+      "events_url": "https://api.github.com/users/xinbenlv/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xinbenlv/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-26T23:05:11Z",
+    "updated_at": "2022-09-26T23:05:11Z",
+    "author_association": "CONTRIBUTOR",
+    "body": "Closing for now. Will revisit when another report of 712 error comes up.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1258746234/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

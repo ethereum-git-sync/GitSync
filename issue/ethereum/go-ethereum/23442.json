@@ -49,7 +49,7 @@
       "description": ""
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
@@ -58,12 +58,31 @@
   "milestone": null,
   "comments": 2,
   "created_at": "2021-08-23T20:24:23Z",
-  "updated_at": "2022-08-09T07:35:19Z",
-  "closed_at": null,
+  "updated_at": "2022-09-27T12:10:18Z",
+  "closed_at": "2022-09-27T12:10:18Z",
   "author_association": "NONE",
   "active_lock_reason": null,
   "body": "#### System information\r\n\r\nGeth version: `1.10.6-stable`\r\nOS & Version: Linux (ubuntu)\r\nCommit hash : (if `576681f29b895dd39e559b7ba17fcd89b42e4833`)\r\n\r\n#### Expected behaviour\r\ngeth to sync\r\n\r\n\r\n#### Actual behaviour\r\nnode stoped syncing and puts out an error message\r\n\r\n Synchronisation failed, dropping peer    peer=58eed242c8ab9eaad982c4d1e128be13c26a45d36c6cc81eaea6235b79f20ef5 err=\"retrieved hash chain is invalid: missing trie node 8f59c5b704dde5f26380515cf4867ba01d5f16c0947d9cb3737ed84f594f832f (path 080c0107)\"\r\n\r\n \r\n\r\n#### Steps to reproduce the behaviour\r\n\r\n\r\n#### Backtrace\r\nINFO [08-23|20:18:08.054] Importing heavy sidechain segment        blocks=795 start=13,039,900 end=13,040,694\r\nWARN [08-23|20:18:08.222] Synchronisation failed, dropping peer    peer=41311627a2ef32de2c8863778ac6de99cf2525090b4214f43c8896a38568d782 err=\"retrieved hash chain is invalid: missing trie node 8f59c5b704dde5f26380515cf4867ba01d5f16c0947d9cb3737ed84f594f832f (path 080c0107)\"\r\nINFO [08-23|20:18:10.337] Importing heavy sidechain segment        blocks=795 start=13,039,900 end=13,040,694\r\nWARN [08-23|20:18:10.492] Synchronisation failed, dropping peer    peer=da36db1373e729e8c9a37525d829e36360a44ab01427a1a972e7ef64e106a2a4 err=\"retrieved hash chain is invalid: missing trie node 8f59c5b704dde5f26380515cf4867ba01d5f16c0947d9cb3737ed84f594f832f (path 080c0107)\"\r\nINFO [08-23|20:18:16.841] Importing heavy sidechain segment        blocks=795 start=13,039,900 end=13,040,694\r\nWARN [08-23|20:18:16.991] Synchronisation failed, dropping peer    peer=fca96cc686bb8a8cb09e8acf9ee8240ac7e29e3d4ac95341034ae74d0a42285d err=\"retrieved hash chain is invalid: missing trie node 8f59c5b704dde5f26380515cf4867ba01d5f16c0947d9cb3737ed84f594f832f (path 080c0107)\"\r\nWARN [08-23|20:19:16.993] Synchronisation failed, dropping peer    peer=fca96cc686bb8a8cb09e8acf9ee8240ac7e29e3d4ac95341034ae74d0a42285d err=timeout\r\nWARN [08-23|20:19:29.797] Checkpoint challenge timed out, dropping id=276a899636d05b06 conn=dyndial addr=47.251.54.143:30303  type=Geth/v1.10.6-unstabl...\r\nWARN [08-23|20:20:17.113] Synchronisation failed, dropping peer    peer=70c0062211508a75f4d4b8c7b3d9410d60ed90ade3b8548b22436aae858fe40d err=timeout\r\nWARN [08-23|20:20:17.114] Synchronisation failed, retrying         err=\"peer is unknown or unhealthy\"\r\nINFO [08-23|20:22:29.731] Downloader queue stats                   receiptTasks=0 blockTasks=0  itemSize=85.01KiB  throttle=3084\r\nINFO [08-23|20:22:31.357] Importing heavy sidechain segment        blocks=795 start=13,039,900 end=13,040,694\r\nWARN [08-23|20:22:31.522] Synchronisation failed, dropping peer    peer=8c0ccb25da7bc0d863fdff4df843124a95e9079ce406d1c86a1413b3f2b757cd err=\"retrieved hash chain is invalid: missing trie node 8f59c5b704dde5f26380515cf4867ba01d5f16c0947d9cb3737ed84f594f832f (path 080c0107)\"\r\n````\r\n[backtrace]\r\n````\r\n\r\nWhen submitting logs: please submit them as text and not screenshots.",
-  "closed_by": null,
+  "closed_by": {
+    "login": "ligi",
+    "id": 111600,
+    "node_id": "MDQ6VXNlcjExMTYwMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/111600?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ligi",
+    "html_url": "https://github.com/ligi",
+    "followers_url": "https://api.github.com/users/ligi/followers",
+    "following_url": "https://api.github.com/users/ligi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ligi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ligi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ligi/subscriptions",
+    "organizations_url": "https://api.github.com/users/ligi/orgs",
+    "repos_url": "https://api.github.com/users/ligi/repos",
+    "events_url": "https://api.github.com/users/ligi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ligi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23442/reactions",
     "total_count": 0,
@@ -78,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23442/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {

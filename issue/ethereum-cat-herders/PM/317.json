@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/317",
+  "repository_url": "https://api.github.com/repos/ethereum-cat-herders/PM",
+  "labels_url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/317/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/317/comments",
+  "events_url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/317/events",
+  "html_url": "https://github.com/ethereum-cat-herders/PM/issues/317",
+  "id": 1386708731,
+  "node_id": "I_kwDOChb3Rs5Sp377",
+  "number": 317,
+  "title": "Ethereum Cat Herders Meeting #94",
+  "user": {
+    "login": "poojaranjan",
+    "id": 29681685,
+    "node_id": "MDQ6VXNlcjI5NjgxNjg1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/29681685?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/poojaranjan",
+    "html_url": "https://github.com/poojaranjan",
+    "followers_url": "https://api.github.com/users/poojaranjan/followers",
+    "following_url": "https://api.github.com/users/poojaranjan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/poojaranjan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/poojaranjan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/poojaranjan/subscriptions",
+    "organizations_url": "https://api.github.com/users/poojaranjan/orgs",
+    "repos_url": "https://api.github.com/users/poojaranjan/repos",
+    "events_url": "https://api.github.com/users/poojaranjan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/poojaranjan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-26T20:53:35Z",
+  "updated_at": "2022-09-27T14:41:28Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Date and Time\r\n\r\nSep 26, 2022, at 15:00 UTC\r\n\r\n## Location \r\n\r\nZoom: https://us02web.zoom.us/j/84834303064?pwd=YTVDNUxvSjEzL1VTOXNoNmI1a2RlZz09\r\n\r\nVideo at YouTube: https://www.youtube.com/channel/UCD9iiIwTRtLDYcEWONs2Q3A\r\n\r\n\r\n## Agenda\r\n\r\nNew users on ECH Discord and/or contributor's introduction\r\n\r\n### 1. Ethereum network upgrades\r\n- [The Merge](https://ethereumcatherders.com/the_merge/)  \r\n   - [Ethereum Mainnet Merge Viewing Party](https://www.youtube.com/watch?v=Nx-jYgI0QVI)\r\n- [Shanghai](https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md) & [Capella](https://github.com/ethereum/consensus-specs/tree/dev/specs/capella)\r\n\r\nProposed change in the Core-EIP process  \r\n- Core EIPs in an Executable Spec World [Proposal](https://notes.ethereum.org/@timbeiko/executable-eips)\r\nand [Discussion](https://ethereum-magicians.org/t/core-eips-in-an-executable-spec-world/8640)\r\n   \r\n### 2. Events & hackathon\r\n- [Devcon](https://devcon.org/) Oct 11-14, 2022\r\n- [ETHIndia](https://ethindia.co/) Dec 2nd - 4th, 2022\r\n\r\n### 3. New initiative/association\r\n- EIP Editing Office Hour [Announcement](https://medium.com/ethereum-cat-herders/introducing-eip-editing-office-hour-9f04a95a26ba)\r\n- Decentralized meeting - Huddle01\r\n- Commercials or Sponsor to videos on ECH YouTube\r\n\r\n### 4. ECH updates\r\n- ECH Stats.\r\n    - [Twitter](https://twitter.com/EthCatHerders) - 6455 Followers\r\n    - [Discord](https://discord.io/EthCatHerders) - Over 1.21k users\r\n    - [YouTube](https://studio.youtube.com/channel/UCD9iiIwTRtLDYcEWONs2Q3A) - Over 2.7k subscribers\r\n    - [LinkedIn](https://www.linkedin.com/company/ethereum-cat-herders/) - 244 Followers\r\n- [ECH website](https://www.ethereumcatherders.com/)\r\n   - [Issues](https://github.com/ethereum-cat-herders/ech-website-v2/issues)\r\n- [ECH engineering](https://github.com/ethereum-cat-herders/PM/issues/266) \r\n  - [EIP bot](https://github.com/ethereum/EIP-Bot/issues) & [EIPV](https://github.com/ethereum/eipv/issues)\r\n  - [Learn2Earn](https://github.com/ethereum-cat-herders/L2E)\r\n- ECH Operations \r\n   - ECH GitHub backup & [YouTube backup](https://hackmd.io/@poojaranjan/ECHBackup)\r\n   - [ECH Podcast](https://open.spotify.com/show/7dgxKMkSyy3HWtQW7OfqXA)\r\n- GitPOAP for ACD meeting 150, CL meeting 100 & [The Merge](https://twitter.com/gitpoap/status/1569738148925657094)\r\n- [EIPs Insight](https://hackmd.io/@poojaranjan/EthereumImprovementProposalsInsight)\r\n- [PEEPanEIP](https://www.youtube.com/playlist?list=PL4cwHXAawZxqu0PKKyMzG_3BJV_xZTi1F)  \r\n    - Upcoming meetings can be found on [PEEPanEIP schedule](https://github.com/ethereum-cat-herders/PM/projects/2)\r\n\r\n- [Meeting notes](https://docs.google.com/spreadsheets/d/1axM1KaKc-GCcoPbAnYTOhgLnxXsBVoO5XRjTN3CLnck/edit#gid=0) and action items for ECH \r\n\r\n  - All Core Dev meeting [notes 147](https://github.com/darkfire-rain/pm/blob/patch-1/AllCoreDevs-Meetings/Meeting%20147.md)\r\n  - Consensus meeting [notes 96](https://github.com/ethereum/pm/pull/634/commits/bc8e7a476b04abad170944ec4148b907c641b5a4)\r\n  - EIP Improvement Process meeting 65    \r\n\r\n**Other community meetings**\r\n    -  EIP Editing Office Hour [Announcement](https://medium.com/ethereum-cat-herders/introducing-eip-editing-office-hour-9f04a95a26ba)  [Meeting 2 Recording](https://youtu.be/YAKJDxBkItg)\r\n  - KZG-Ceremony Breakout Call # 8 [Recording](https://youtu.be/GUhlpYOZ8Lo)\r\n\r\n### 5. Review of outstanding action items from previous ECH meetings\r\n- [Meeting 93](https://github.com/ethereum-cat-herders/PM/blob/87516c30ffa24a1216fd570c6a30c77cdb84643d/All%20Ethereum%20Cat%20Herder%20Meetings/Meeting%20093.md)\r\n\r\n#### The date for the next meeting - Oct 11, 2022. \r\n\r\n (Anything else, leave a comment.)",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/317/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum-cat-herders/PM/issues/317/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

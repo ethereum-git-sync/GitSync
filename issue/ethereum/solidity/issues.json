@@ -1,6 +1,30 @@
 [
   {
     "author": {
+      "login": "cameel"
+    },
+    "number": 13583,
+    "title": "Bytecode compare runs with `--via-ir`",
+    "updatedAt": "2022-09-28T19:26:45Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13584,
+    "title": "Docstring style check in CI",
+    "updatedAt": "2022-09-28T19:25:47Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 11365,
+    "title": "Bytecode check for Windows binaries added to solc-bin",
+    "updatedAt": "2022-09-28T19:19:29Z"
+  },
+  {
+    "author": {
       "login": "alcuadrado"
     },
     "number": 11351,
@@ -11414,14 +11438,6 @@
     "number": 11346,
     "title": "provide straightforward way to leverage solc from Go",
     "updatedAt": "2021-05-10T09:54:27Z"
-  },
-  {
-    "author": {
-      "login": "cameel"
-    },
-    "number": 11365,
-    "title": "Bytecode check for Windows binaries added to solc-bin",
-    "updatedAt": "2021-05-08T21:28:44Z"
   },
   {
     "author": {

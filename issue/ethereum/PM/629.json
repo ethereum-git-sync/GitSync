@@ -32,21 +32,40 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 1,
+  "comments": 2,
   "created_at": "2022-09-21T16:40:03Z",
-  "updated_at": "2022-09-22T13:51:17Z",
-  "closed_at": null,
+  "updated_at": "2022-09-27T15:06:26Z",
+  "closed_at": "2022-09-27T15:06:25Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "# Consensus-layer Call 96 Agenda\r\n[prev: call 95](https://github.com/ethereum/pm/issues/618)\r\n\r\nMeeting Date/Time: Thursday 2022/9/22 at 14:00 UTC\r\nMeeting Duration 1.5 hours \r\n[livestream](https://youtu.be/_yogw67HxZY)\r\n\r\n1. Merge \r\n2. mev-boost\r\n    * quick summary\r\n    *  SSE subscription for new payload: https://github.com/ethereum/beacon-APIs/issues/244\r\n6. Research, spec, etc\r\n8. Open Discussion/Closing Remarks\r\n",
-  "closed_by": null,
+  "closed_by": {
+    "login": "timbeiko",
+    "id": 9390255,
+    "node_id": "MDQ6VXNlcjkzOTAyNTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9390255?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/timbeiko",
+    "html_url": "https://github.com/timbeiko",
+    "followers_url": "https://api.github.com/users/timbeiko/followers",
+    "following_url": "https://api.github.com/users/timbeiko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/timbeiko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/timbeiko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/timbeiko/subscriptions",
+    "organizations_url": "https://api.github.com/users/timbeiko/orgs",
+    "repos_url": "https://api.github.com/users/timbeiko/repos",
+    "events_url": "https://api.github.com/users/timbeiko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/timbeiko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/pm/issues/629/reactions",
     "total_count": 0,
@@ -61,7 +80,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/pm/issues/629/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -96,6 +115,50 @@
     "body": "i'd like to add two quick topics:\r\n\r\n1. mev-boost - summary of the first week\r\n2. standardization of beacon-API SSE subscription for newPayload event to trigger block building: https://github.com/ethereum/beacon-APIs/issues/244\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/pm/issues/comments/1253993021/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/pm/issues/comments/1259645210",
+    "html_url": "https://github.com/ethereum/pm/issues/629#issuecomment-1259645210",
+    "issue_url": "https://api.github.com/repos/ethereum/pm/issues/629",
+    "id": 1259645210,
+    "node_id": "IC_kwDOBCfO0M5LFKka",
+    "user": {
+      "login": "timbeiko",
+      "id": 9390255,
+      "node_id": "MDQ6VXNlcjkzOTAyNTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9390255?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/timbeiko",
+      "html_url": "https://github.com/timbeiko",
+      "followers_url": "https://api.github.com/users/timbeiko/followers",
+      "following_url": "https://api.github.com/users/timbeiko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/timbeiko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/timbeiko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/timbeiko/subscriptions",
+      "organizations_url": "https://api.github.com/users/timbeiko/orgs",
+      "repos_url": "https://api.github.com/users/timbeiko/repos",
+      "events_url": "https://api.github.com/users/timbeiko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/timbeiko/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-27T15:06:25Z",
+    "updated_at": "2022-09-27T15:06:25Z",
+    "author_association": "MEMBER",
+    "body": "closed in favour of https://github.com/ethereum/pm/issues/630",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/pm/issues/comments/1259645210/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

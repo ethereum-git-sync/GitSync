@@ -1,6 +1,14 @@
 [
   {
     "author": {
+      "login": "fubuloubu"
+    },
+    "number": 2294,
+    "title": "EIP-2294: Explicit bound to Chain ID size",
+    "updatedAt": "2022-09-28T18:53:43Z"
+  },
+  {
+    "author": {
       "login": "mattdf"
     },
     "number": 603,
@@ -4630,14 +4638,6 @@
     "number": 2281,
     "title": "(discussion) EIP-2280: erc-20 extension for native meta transactions support",
     "updatedAt": "2021-12-04T20:11:56Z"
-  },
-  {
-    "author": {
-      "login": "fubuloubu"
-    },
-    "number": 2294,
-    "title": "EIP-2294: Explicit bound to Chain ID size",
-    "updatedAt": "2021-12-04T20:11:54Z"
   },
   {
     "author": {

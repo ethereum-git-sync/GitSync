@@ -6,5 +6,13 @@
     "number": 2940,
     "title": "Track workspace should activate Dgit plugin",
     "updatedAt": "2022-09-29T09:00:59Z"
+  },
+  {
+    "author": {
+      "login": "ioedeveloper"
+    },
+    "number": 2957,
+    "title": "Update UI after workspace template options resets.",
+    "updatedAt": "2022-09-28T12:49:51Z"
   }
 ]

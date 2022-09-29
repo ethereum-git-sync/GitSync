@@ -14,5 +14,13 @@
     "number": 2957,
     "title": "Update UI after workspace template options resets.",
     "updatedAt": "2022-09-28T12:49:51Z"
+  },
+  {
+    "author": {
+      "login": "Aniket-Engg"
+    },
+    "number": 2941,
+    "title": "Issue with Listen on Hardhat compilation",
+    "updatedAt": "2022-09-28T11:44:11Z"
   }
 ]

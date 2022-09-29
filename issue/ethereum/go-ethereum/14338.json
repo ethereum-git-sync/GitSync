@@ -335,10 +335,10 @@
     "body": "That sounds more like a description of the bug than an resolution",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/359246300/reactions",
-      "total_count": 34,
+      "total_count": 35,
       "+1": 25,
       "-1": 0,
-      "laugh": 9,
+      "laugh": 10,
       "hooray": 0,
       "confused": 0,
       "heart": 0,

@@ -289,8 +289,8 @@
     "body": "@holiman Hello, we have the same issue by using web3.js\r\n\r\n```\r\nError: Invalid JSON RPC response: \"\"\r\n    at Object.InvalidResponse (/worker/node_modules/web3-core-helpers/lib/errors.js:43:16)\r\n    at XMLHttpRequest.request.onreadystatechange (/worker/node_modules/web3-providers-http/lib/index.js:95:32)\r\n    at XMLHttpRequestEventTarget.dispatchEvent (/worker/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:22)\r\n    at XMLHttpRequest._setReadyState (/worker/node_modules/xhr2-cookies/dist/xml-http-request.js:208:14)\r\n    at XMLHttpRequest._onHttpRequestError (/worker/node_modules/xhr2-cookies/dist/xml-http-request.js:349:14)\r\n    at ClientRequest.<anonymous> (/worker/node_modules/xhr2-cookies/dist/xml-http-request.js:252:61)\r\n    at ClientRequest.emit (node:events:527:28)\r\n    at Socket.socketOnEnd (node:_http_client:478:9)\r\n    at Socket.emit (node:events:539:35)\r\n    at endReadableNT (node:internal/streams/readable:1345:12)\r\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)\r\n```\r\n\r\nFrom our internal tests, every eth_getLogs request longer 30 seconds will return an empty response. Do you maybe have an idea where this timeout limit can be managed?\r\n\r\nThanks in advance.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1185693584/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

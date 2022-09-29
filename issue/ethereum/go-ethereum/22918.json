@@ -211,13 +211,13 @@
     "body": "I think the best way to do so is:\r\n```\r\nfrom, err := types.Sender(types.NewEIP155Signer(tx.ChainId()), tx) \r\nif err != nil {\r\n    from, err := types.Sender(types.HomesteadSigner{}, tx) \r\n}\r\n```\r\nOr you can use the ` types.LatestSignerForChainID(chainID *big.Int)` function to get the latest signer",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/845865765/reactions",
-      "total_count": 5,
+      "total_count": 6,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 5,
+      "heart": 6,
       "rocket": 0,
       "eyes": 0
     },

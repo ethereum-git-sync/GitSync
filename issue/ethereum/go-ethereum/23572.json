@@ -76,8 +76,8 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23572/reactions",
-    "total_count": 74,
-    "+1": 74,
+    "total_count": 73,
+    "+1": 73,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -123,14 +123,14 @@
     "body": "Or better yet, can someone send me a bajillion Rinkeby ETH and I'll spin up a new faucet? ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/919094928/reactions",
-      "total_count": 50,
-      "+1": 33,
+      "total_count": 48,
+      "+1": 32,
       "-1": 0,
       "laugh": 5,
       "hooray": 0,
       "confused": 0,
       "heart": 0,
-      "rocket": 12,
+      "rocket": 11,
       "eyes": 0
     },
     "performed_via_github_app": null

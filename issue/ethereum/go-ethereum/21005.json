@@ -299,8 +299,8 @@
     "body": "An example for correct usage:\r\n```\r\ndebug.standardTraceBlockToFile(\"0x6c0f5361d0161200637472a98e6514bb479e18fcde4685a016fd5a6d7d6e0069\", {txHash:\"0x5826b1d1a53befc97a3ad5e8eb909b201a7b6ec3e59ef45d8bfc0b1061bf0125\", disableMemory:false, reexec:6000000})\r\n```\r\nwe'll update the docs soonish",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/752031348/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

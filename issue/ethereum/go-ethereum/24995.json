@@ -368,10 +368,10 @@
     "body": "Would hate to, but do you think it just needs to be reloaded from scratch?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1144052291/reactions",
-      "total_count": 0,
+      "total_count": 1,
       "+1": 0,
       "-1": 0,
-      "laugh": 0,
+      "laugh": 1,
       "hooray": 0,
       "confused": 0,
       "heart": 0,

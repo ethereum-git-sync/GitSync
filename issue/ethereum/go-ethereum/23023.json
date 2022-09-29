@@ -348,7 +348,7 @@
     },
     "created_at": "2021-06-23T05:39:26Z",
     "updated_at": "2021-06-23T05:39:26Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "#23009 ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/866544302/reactions",

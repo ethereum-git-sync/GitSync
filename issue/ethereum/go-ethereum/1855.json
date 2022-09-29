@@ -103,8 +103,8 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1855/reactions",
-    "total_count": 9,
-    "+1": 9,
+    "total_count": 10,
+    "+1": 10,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,

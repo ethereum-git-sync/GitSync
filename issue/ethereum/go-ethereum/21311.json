@@ -203,13 +203,13 @@
     "body": "Are you sure the fund `0xc9f51aaf29433a2a916aa5fa704ef192db0d0d2d ` has is not zero? The capped gas limit is zero because there is NO associated fund.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/656451658/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 2,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 0,
+      "heart": 1,
       "rocket": 0,
       "eyes": 0
     },
@@ -243,7 +243,7 @@
     },
     "created_at": "2020-07-17T13:51:43Z",
     "updated_at": "2020-07-17T13:51:43Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Just stumbled on this thing, it's related to large account balances.\r\nIf you have a genesis file and some initial accounts like this:\r\n```\r\n     'df08f82de32b8d460adbe8d72043e3a7e25a3b39': {\r\n-      'balance': '0x200000000000000000000000000000000000000000000000000000000000000',\r\n+      'balance': '0x00000000000000000000000000000000000000000000ffffffffffffffffffff',\r\n     },\r\n```\r\n\r\nusing a much smaller number 'fixes' the issue. The last known good version was v1.9.9 if that helps.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/660118699/reactions",

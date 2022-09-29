@@ -20014,5 +20014,13 @@
     "number": 20307,
     "title": "abigen couldn't supported to decode type array when a contract called other contract",
     "updatedAt": "2020-03-06T06:39:57Z"
+  },
+  {
+    "author": {
+      "login": "BattleBird"
+    },
+    "number": 20744,
+    "title": "What is the meaning of the gas in{\"gasUsed\":\"0x2540be400\"}?",
+    "updatedAt": "2020-03-05T16:50:01Z"
   }
 ]

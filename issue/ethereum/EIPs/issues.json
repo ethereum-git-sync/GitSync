@@ -6,5 +6,13 @@
     "number": 2294,
     "title": "EIP-2294: Explicit bound to Chain ID size",
     "updatedAt": "2022-09-29T05:38:01Z"
+  },
+  {
+    "author": {
+      "login": "mattdf"
+    },
+    "number": 603,
+    "title": "Add ECADD and ECMUL precompiles for secp256k1",
+    "updatedAt": "2022-09-28T09:51:05Z"
   }
 ]

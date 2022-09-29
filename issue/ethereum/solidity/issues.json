@@ -14,5 +14,13 @@
     "number": 13585,
     "title": "Feature Request: return the slot index for a given variable",
     "updatedAt": "2022-09-29T01:14:48Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 13583,
+    "title": "Bytecode compare runs with `--via-ir`",
+    "updatedAt": "2022-09-28T19:26:45Z"
   }
 ]

@@ -651,8 +651,8 @@
     "body": "From the available options I'm very much for B2. Suggestions:\n1. Using test limit of 2^63 gas and the call cost of 700 from #150 should give the depth limit of 2094 according to [WolframAlpha](https://www.wolframalpha.com/input/?i=a_n+%3D+63%2F64*%28a_n-1+-+700%29;a_0%3D2%5E63;) or 2357 according to @vbuterin formula. It is still over twice as big as the current limit, se we might have issues with stack overflows.\n2. I would use the formula `g - (g // 64)` instead of `(g * 63) // 64` to avoid overflows in implementations.\n3. Please update the description if anything has become obsoleted by recent attacks and/or #150.\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/253055248/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

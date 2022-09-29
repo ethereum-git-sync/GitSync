@@ -76,8 +76,8 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/EIPs/issues/1724/reactions",
-    "total_count": 85,
-    "+1": 47,
+    "total_count": 86,
+    "+1": 48,
     "-1": 0,
     "laugh": 0,
     "hooray": 11,

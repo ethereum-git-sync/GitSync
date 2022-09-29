@@ -599,8 +599,8 @@
     "body": "@vongohren A significant difference between #735 claims and #1238 badges is information ownership. In #735 the Claim Holder owns any claims made about themselves. The problem with this is that there is no way for a Claim Issuer to revoke or alter a claim once it has been issued. While #735 does specify a `removeClaim` method, a malicious implementation could simply ignore that method call, because _they own the claim_.\r\n\r\nImagine that SafeEmploy™, a background checking company, issues a claim about Timmy. The claim states that Timmy has never been convicted of any felonies. Timmy makes some bad decisions, and now that claim is no longer true. SafeEmploy™ executes `removeClaim`, but Timmy's #735 contract just ignores it, because Timmy wants to stay employed (and is crypto-clever).\r\n\r\n#1238 badges do not have this problem. Ownership of a badge/claim is entirely determined by the contract **issuing** the badges, not the one **receiving** them. The issuer is free to remove or change those badges as they see fit. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/410405668/reactions",
-      "total_count": 3,
-      "+1": 3,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

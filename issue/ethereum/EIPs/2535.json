@@ -76,15 +76,15 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/EIPs/issues/2535/reactions",
-    "total_count": 111,
-    "+1": 59,
+    "total_count": 115,
+    "+1": 60,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 17,
-    "rocket": 25,
-    "eyes": 10
+    "heart": 18,
+    "rocket": 26,
+    "eyes": 11
   },
   "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/2535/timeline",
   "performed_via_github_app": null,

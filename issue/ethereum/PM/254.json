@@ -68,14 +68,14 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/pm/issues/254/reactions",
-    "total_count": 541,
-    "+1": 182,
+    "total_count": 538,
+    "+1": 181,
     "-1": 1,
     "laugh": 42,
     "hooray": 114,
     "confused": 0,
-    "heart": 92,
-    "rocket": 62,
+    "heart": 91,
+    "rocket": 61,
     "eyes": 48
   },
   "timeline_url": "https://api.github.com/repos/ethereum/pm/issues/254/timeline",

@@ -951,11 +951,11 @@
     "body": "**TL;DR:**\r\n* Goerli will be maintained with an open validator set \r\n* Sepolia will be maintained with a permissioned validator set\r\n* Kiln, Ropsten, Rinkeby will be deprecated, more on that [here](https://blog.ethereum.org/2022/06/21/testnet-deprecation/)",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/pm/issues/comments/1168039855/reactions",
-      "total_count": 4,
+      "total_count": 5,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
-      "hooray": 4,
+      "hooray": 5,
       "confused": 0,
       "heart": 0,
       "rocket": 0,

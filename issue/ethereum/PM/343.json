@@ -49,8 +49,8 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/pm/issues/343/reactions",
-    "total_count": 8,
-    "+1": 5,
+    "total_count": 9,
+    "+1": 6,
     "-1": 1,
     "laugh": 1,
     "hooray": 1,
@@ -96,8 +96,8 @@
     "body": "Just wanted to pipe up here and say that EIP-2537 would unlock a lot of cool use cases for a protocol we're building.  I know there is a lot going on with the eth2 merge, but we are patiently waiting for this precompile to make it in to a fork.  Any prioritization to add this in the next fork would be greatly appreciated.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/pm/issues/comments/929518416/reactions",
-      "total_count": 9,
-      "+1": 9,
+      "total_count": 10,
+      "+1": 10,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

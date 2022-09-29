@@ -43,7 +43,7 @@
   "created_at": "2022-06-01T16:13:42Z",
   "updated_at": "2022-06-03T01:06:58Z",
   "closed_at": null,
-  "author_association": "NONE",
+  "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "https://github.com/ethereum-cat-herders/EIPIP - the unofficial (but for all intents and purposes official) meeting to discuss EIPs\r\nhttps://github.com/ethereum-cat-herders/PM - an unofficial (again, though, practically official) meeting for Ethereum core devs",
   "closed_by": null,
@@ -136,7 +136,7 @@
     },
     "created_at": "2022-06-03T01:06:58Z",
     "updated_at": "2022-06-03T01:06:58Z",
-    "author_association": "NONE",
+    "author_association": "MEMBER",
     "body": "I meant specifically only including links in the readme (for discoverability purposes)",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/pm/issues/comments/1145486213/reactions",

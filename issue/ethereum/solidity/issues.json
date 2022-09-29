@@ -6,5 +6,13 @@
     "number": 11813,
     "title": "Try out include-what-you-use",
     "updatedAt": "2022-09-29T20:47:50Z"
+  },
+  {
+    "author": {
+      "login": "cameel"
+    },
+    "number": 12244,
+    "title": "Switch from js-ipld to js-multiformats in solc-bin",
+    "updatedAt": "2022-09-29T17:03:06Z"
   }
 ]

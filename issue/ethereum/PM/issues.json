@@ -1,19 +1,19 @@
 [
   {
     "author": {
+      "login": "timbeiko"
+    },
+    "number": 628,
+    "title": "EIP-4844 Breakout Room #4",
+    "updatedAt": "2022-09-29T22:26:28Z"
+  },
+  {
+    "author": {
       "login": "tvanepps"
     },
     "number": 636,
     "title": "KZG-Ceremony Call #9",
     "updatedAt": "2022-09-29T11:11:21Z"
-  },
-  {
-    "author": {
-      "login": "timbeiko"
-    },
-    "number": 628,
-    "title": "EIP-4844 Breakout Room #4",
-    "updatedAt": "2022-09-27T15:09:29Z"
   },
   {
     "author": {

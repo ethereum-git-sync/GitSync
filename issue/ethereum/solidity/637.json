@@ -40,15 +40,6 @@
       "description": ""
     },
     {
-      "id": 249074437,
-      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
-      "name": "enhancement",
-      "color": "84b6eb",
-      "default": true,
-      "description": null
-    },
-    {
       "id": 249074438,
       "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzg=",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/help%20wanted",

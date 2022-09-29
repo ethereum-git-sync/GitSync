@@ -285,10 +285,10 @@
     "body": "Use `pubic` instead of `external` to fix it",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/557008398/reactions",
-      "total_count": 0,
+      "total_count": 1,
       "+1": 0,
       "-1": 0,
-      "laugh": 0,
+      "laugh": 1,
       "hooray": 0,
       "confused": 0,
       "heart": 0,

@@ -1,11 +1,19 @@
 [
   {
     "author": {
+      "login": "lansehuiyi6"
+    },
+    "number": 25626,
+    "title": "Geth 1.10.21 -> 1.10.23 fail to start, the follow error was got. Fatal: Failed to register the Ethereum service: ancient chain segments already extracted, please set --datadir.ancient to the correct path",
+    "updatedAt": "2022-09-29T02:48:38Z"
+  },
+  {
+    "author": {
       "login": "Squee451"
     },
     "number": 25887,
     "title": "On moving all files to external Hard Drive, Geth won't start",
-    "updatedAt": "2022-09-29T02:16:08Z"
+    "updatedAt": "2022-09-29T02:16:18Z"
   },
   {
     "author": {
@@ -718,14 +726,6 @@
     "number": 25780,
     "title": "make: *** [Makefile:17: all] Error 1",
     "updatedAt": "2022-09-16T03:36:58Z"
-  },
-  {
-    "author": {
-      "login": "lansehuiyi6"
-    },
-    "number": 25626,
-    "title": "Geth 1.10.21 -> 1.10.23 fail to start, the follow error was got. Fatal: Failed to register the Ethereum service: ancient chain segments already extracted, please set --datadir.ancient to the correct path",
-    "updatedAt": "2022-09-15T17:08:24Z"
   },
   {
     "author": {

@@ -14,5 +14,13 @@
     "number": 12587,
     "title": "Immutable dynamic arrays",
     "updatedAt": "2022-09-29T14:01:16Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 13477,
+    "title": "[SMTChecker] CHC engine throws std::out_of_range",
+    "updatedAt": "2022-09-29T11:14:59Z"
   }
 ]

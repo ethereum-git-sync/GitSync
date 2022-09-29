@@ -12558,5 +12558,13 @@
     "number": 10917,
     "title": "[Sol->Yul] Invalid code generation when deleting function type storage var",
     "updatedAt": "2021-02-24T12:24:32Z"
+  },
+  {
+    "author": {
+      "login": "bshastry"
+    },
+    "number": 10870,
+    "title": "[codegen] bad cast during pop of storage array",
+    "updatedAt": "2021-02-23T16:49:18Z"
   }
 ]

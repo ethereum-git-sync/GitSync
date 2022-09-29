@@ -6,5 +6,13 @@
     "number": 7665,
     "title": "Pretty print expected json output of command line tests.",
     "updatedAt": "2022-09-29T04:48:11Z"
+  },
+  {
+    "author": {
+      "login": "xinbenlv"
+    },
+    "number": 13585,
+    "title": "Feature Request: return the slot index for a given variable",
+    "updatedAt": "2022-09-29T01:14:48Z"
   }
 ]

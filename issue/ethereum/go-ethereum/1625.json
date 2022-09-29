@@ -654,49 +654,5 @@
       "eyes": 0
     },
     "performed_via_github_app": null
-  },
-  {
-    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/178128424",
-    "html_url": "https://github.com/ethereum/go-ethereum/issues/1625#issuecomment-178128424",
-    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/1625",
-    "id": 178128424,
-    "node_id": "MDEyOklzc3VlQ29tbWVudDE3ODEyODQyNA==",
-    "user": {
-      "login": "sirhill",
-      "id": 4115788,
-      "node_id": "MDQ6VXNlcjQxMTU3ODg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4115788?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/sirhill",
-      "html_url": "https://github.com/sirhill",
-      "followers_url": "https://api.github.com/users/sirhill/followers",
-      "following_url": "https://api.github.com/users/sirhill/following{/other_user}",
-      "gists_url": "https://api.github.com/users/sirhill/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/sirhill/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/sirhill/subscriptions",
-      "organizations_url": "https://api.github.com/users/sirhill/orgs",
-      "repos_url": "https://api.github.com/users/sirhill/repos",
-      "events_url": "https://api.github.com/users/sirhill/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/sirhill/received_events",
-      "type": "User",
-      "site_admin": false
-    },
-    "created_at": "2016-02-01T18:54:57Z",
-    "updated_at": "2016-02-01T18:54:57Z",
-    "author_association": "NONE",
-    "body": "I had this problem using the raspberry pi arch linux image. I did like croqaz and it saves me a lot of time. I am still discovering ethereum, but I will probably redo a more recent image for the raspberry pi (seems to be over 6/7 month old).\n",
-    "reactions": {
-      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/178128424/reactions",
-      "total_count": 0,
-      "+1": 0,
-      "-1": 0,
-      "laugh": 0,
-      "hooray": 0,
-      "confused": 0,
-      "heart": 0,
-      "rocket": 0,
-      "eyes": 0
-    },
-    "performed_via_github_app": null
   }
 ]

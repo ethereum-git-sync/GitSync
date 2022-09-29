@@ -339,7 +339,7 @@
     },
     "created_at": "2022-06-14T19:41:47Z",
     "updated_at": "2022-06-14T20:17:39Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "I don't know if this is related, but I have the following issue:\r\n\r\n```\r\ninterface A {\r\n    function x() public returns (uint256);\r\n}\r\n\r\ncontract B is A {\r\n    uint256 public x;\r\n}\r\n\r\ncontract C is A, B {\r\n}\r\n```\r\n\r\nI get an error that contract C should be marked as `abstract` because it does not implement `function x()` from interface A (but it does implement this function, via the implicit function created from the inherited `uint256 public x` in contract `B`).",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1155640420/reactions",

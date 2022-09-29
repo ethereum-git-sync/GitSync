@@ -115,9 +115,9 @@
     "body": "This is on purpose. Arrays are not returned by value from getters. Instead index access is provided for them. Since it is not possible for structs, we decided to drop these arrays. Unfortunately, you have to implement your own getter function if you want this functionality.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1075286538/reactions",
-      "total_count": 1,
+      "total_count": 2,
       "+1": 0,
-      "-1": 1,
+      "-1": 2,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,

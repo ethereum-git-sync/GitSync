@@ -43,7 +43,7 @@
   "created_at": "2022-06-15T09:47:32Z",
   "updated_at": "2022-06-15T11:25:50Z",
   "closed_at": "2022-06-15T11:25:50Z",
-  "author_association": "NONE",
+  "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "## Description\r\n\r\nSolidity's fallback function can give rise to [serious security vulnerabilities](https://media.dedaub.com/phantom-functions-and-the-billion-dollar-no-op-c56f062ae49f), potentially resulting in the loss of enormous amounts of money.\r\n\r\nFurthermore, the rollover to the fallback function may also give rise to unexpected behavior, e.g. if an ERC777 token recipient registers its `ERC777TokensRecipient` interface properly via ERC1820, but the programmer misspells the notification function `tokensReceived` as `toknsReceived`, and the token recipient contract implements a non-reverting fallback function, the ERC777 token contract will think it has successfully sent to the token recipient contract, even though the `tokensReceived` function is not defined in the token recipient contract. This breaks the ERC777 specification.\r\n\r\nThere needs to be a way to specify that `.call` should not roll over to the fallback function, e.g.:\r\n\r\n`addr.call{value: X, enableFallback: false}( ... );`\r\n\r\nArguably `enableFallback` should even be `false` by default, given the magnitude of the possible vulnerabilities exposed by this.\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.14\r\n",
   "closed_by": {
@@ -199,7 +199,7 @@
     },
     "created_at": "2022-06-15T09:58:18Z",
     "updated_at": "2022-06-15T09:58:44Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Can't the caller verify whether the callee actually implements the required function? I know this can't be done from Solidity per se, but can't it be done somehow in Yul or by the EVM?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1156261197/reactions",
@@ -287,7 +287,7 @@
     },
     "created_at": "2022-06-15T09:59:29Z",
     "updated_at": "2022-06-15T09:59:29Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "This seems like a gaping hole in EVM capability... is there interest in extending the EVM to add ABI introspection?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1156262307/reactions",
@@ -375,7 +375,7 @@
     },
     "created_at": "2022-06-15T10:02:42Z",
     "updated_at": "2022-06-15T10:02:42Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Or at least, this could be implemented by the callee, if it is signaled by the caller that the caller does not want the fallback function to ever be called. Then as long as callees are built with a supported version of Solidity, the callee could enforce the caller's fallback preferences. Obviously this still has room for vulnerabilities (anybody could use an older compiler to ignore the caller's wishes), but it would close many loopholes in the majority of cases.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1156266094/reactions",
@@ -463,7 +463,7 @@
     },
     "created_at": "2022-06-15T10:05:14Z",
     "updated_at": "2022-06-15T10:06:19Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Wouldn't a zero-parameter payable function rollover to `receive` then, because the calldata would be empty?  (I have one of these functions in my code.) That's the same vulnerability, because the wrong function may get called if the function name has a typo or something.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1156268762/reactions",
@@ -551,7 +551,7 @@
     },
     "created_at": "2022-06-15T10:11:02Z",
     "updated_at": "2022-06-15T10:11:26Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Ah, got it. Thanks for taking the time to explain.\r\n\r\nWell I can already fix this on the callee side, to protect the callee contract from causing problems for other contracts at least, by adding a definition for `fallback` that simply reverts. But it's the caller side I'm worried about. In the URL I provided, the caller has no way to know that their call failed, which creates the security vulnerability. In the ERC777 recipient notification example I gave, Solidity's automatic fallback call actually breaks the ERC777 spec.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1156274998/reactions",
@@ -639,7 +639,7 @@
     },
     "created_at": "2022-06-15T10:39:44Z",
     "updated_at": "2022-06-15T10:39:44Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "I read the documentation I could find on `fallback()` and `receive()`, including the 0.6.0 post about this. But I'm still hazy on what happens if these are not defined. So if I don't define `fallback()` or `receive()`, but (for argument's sake) I have a `payable` function of a different name in my contract, then I can only call the contract with functions that are actually defined (because there is no `fallback()`, I can't send ETH directly to the contract address using `.send()` or `.transfer()`, but I can send ETH to the `payable` function that I defined that is not `receive`?\r\n\r\nI'm trying to determine if there is any reason to add this code (or is this exactly what happens if these functions are not defined?).\r\n\r\n```\r\n    fallback() external {\r\n        revert();\r\n    }\r\n\r\n    receive() external payable {\r\n        revert();\r\n    }\r\n```",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1156307564/reactions",
@@ -727,7 +727,7 @@
     },
     "created_at": "2022-06-15T11:17:42Z",
     "updated_at": "2022-06-15T11:18:03Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "OK, thanks.\r\n\r\nIf there really is no way for the caller to prevent calls with non-empty calldata triggering the fallback function, then you can go ahead and close this issue (although it's a real shame that this is not possible...).",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1156343146/reactions",

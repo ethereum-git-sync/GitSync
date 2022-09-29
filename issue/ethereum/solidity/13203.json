@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 249074437,
-      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
-      "name": "enhancement",
-      "color": "84b6eb",
-      "default": true,
-      "description": null
-    },
-    {
       "id": 3515010024,
       "node_id": "LA_kwDOAm_5kc7Rgsvo",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue%20candidate",

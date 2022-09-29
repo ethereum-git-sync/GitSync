@@ -43,7 +43,7 @@
   "created_at": "2022-06-13T22:55:26Z",
   "updated_at": "2022-06-15T02:42:31Z",
   "closed_at": "2022-06-15T02:42:31Z",
-  "author_association": "NONE",
+  "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "## Description\r\n\r\nConsider the following code:\r\n\r\n```solidity\r\ninterface IA {\r\n    function balanceOf(address addr) external view returns (uint256);\r\n}\r\n\r\ninterface IB {\r\n    function balanceOf(address addr) external view returns (uint256);\r\n}\r\n\r\nabstract contract SuperContract is IA, IB {\r\n    function balanceOf(address addr) external view override(IA, IB) returns (uint256);  // (*)\r\n}\r\n\r\ncontract SubContract is SuperContract, IA, IB {\r\n    mapping(address => uint256) private _balances;\r\n\r\n    function balanceOf(address addr) external view override(IA, IB) returns (uint256) {\r\n        return _balances[addr];\r\n    }\r\n}\r\n```\r\n\r\nIf the line marked `// (*)` is removed, then the Solidity compiler will give an error like the following:\r\n\r\n```\r\nTypeError: Derived contract must override function \"balanceOf\". Two or more base classes define function with same name and parameter types.\r\n  --> contracts/MyContracts.sol:9:1:\r\n   |\r\n 9 | abstract contract SuperContract is IA, IB {\r\n   | ^ (Relevant source part starts here and spans across multiple lines).\r\nNote: Definition in \"IA\": \r\n  --> contracts/MyContracts.sol:1:5:\r\n   |\r\n 1 |     function balanceOf(address addr) external view override(IA, IB) returns (uint256);\r\n   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nNote: Definition in \"IB\": \r\n  --> contracts/MyContracts.sol:5:5:\r\n   |\r\n 5 |     function balanceOf(address addr) external view override(IA, IB) returns (uint256);\r\n   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n```\r\n\r\nInstead, since `SuperContract` is marked `abstract`, it should not be required to implement or even declare every interface it inherits. Any multiply-inherited interface functions should be linearized and merged with C3 linearization, then turned into abstract function definitions of the abstract contract, without the user needing to declare them.\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.14\r\n",
   "closed_by": {
@@ -111,7 +111,7 @@
     },
     "created_at": "2022-06-15T01:19:37Z",
     "updated_at": "2022-06-15T01:21:58Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Actually I cut the example down from a larger real-world codebase, so I just simulated the error message, but when I compile just the code shown, with line `// (*)` either present or removed, I get:\r\n\r\n```\r\nTypeError: Linearization of inheritance graph impossible\r\n  --> contracts/Contracts.sol:13:1:\r\n   |\r\n13 | contract SubContract is SuperContract, IA, IB {\r\n   | ^ (Relevant source part starts here and spans across multiple lines).\r\n\r\n\r\nError HH600: Compilation failed\r\n```",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1155871525/reactions",
@@ -199,7 +199,7 @@
     },
     "created_at": "2022-06-15T02:42:31Z",
     "updated_at": "2022-06-15T02:42:31Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "I'm going to close this because I can't seem to generate a proper minimal testcase for this, there must be something else going wrong with my real-world example. Sorry for the spam.\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1155920423/reactions",

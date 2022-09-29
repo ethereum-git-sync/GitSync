@@ -169,8 +169,8 @@
     "body": "Should be consider not making it a blank alias (like we had for `sha256` vs `sha3`), but enable one or the other based on the `evmVersion` selected?\r\n\r\nI think that would make more sense, as it gives an indication to the user of a potential issue. Of course one can deploy a contract compiled for an older evm version, so it is not bulletproof.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1242217074/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -565,8 +565,8 @@
     "body": "Decision from the call today: we'll do it the same way Vyper does, i.e.\r\n- we’ll keep both `difficulty` and `prevrandao` usable on all EVM versions.\r\n- the EVM version will decide whether we output one or the other,\r\n- there will be a warning if you use `difficulty` on `paris` and when you use `prevrandao` on older versions.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1246792479/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -741,8 +741,8 @@
     "body": "> Aren't we outputting the opcode anyway, which is staying the same?\r\n\r\nI meant the name of the opcode, which does change. It's the numeric value used in bytecode (`0x44`) that stays the same. So bytecode will not change but Solidity, Yul and EVM asm output will.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1247249752/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

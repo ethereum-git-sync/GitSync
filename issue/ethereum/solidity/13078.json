@@ -69,7 +69,7 @@
   "created_at": "2022-05-29T08:23:56Z",
   "updated_at": "2022-06-10T11:34:33Z",
   "closed_at": null,
-  "author_association": "NONE",
+  "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "## Description\r\n\r\nUsing trinary comparison operators causes type inference to fail.\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.14\r\n- Target EVM version (as per compiler settings): unknown\r\n- Framework/IDE (e.g. Truffle or Remix): Hardhat\r\n- EVM execution environment / backend / blockchain client:\r\n- Operating system: Linux\r\n\r\n## Steps to Reproduce\r\n\r\n```solidity\r\n    function ab(int a, int b) public returns (int) {\r\n        return a < b ? -1 : 0;\r\n    }\r\n```\r\n\r\nYields\r\n\r\n```\r\nTypeError: True expression's type int8 does not match false expression's type uint8.\r\n    |\r\n16 |         return a < b ? -1\r\n    |                ^ (Relevant source part starts here and spans across multiple lines).\r\n```\r\n\r\nSo there are really two problems:\r\n\r\n1. The trinary operator's true and false operands are not appropriately unified to `int8` (which works for both operands)\r\n2. The trinary operator's true and false operands are not correctly widened from `int8` to the return type `int`.\r\n\r\nThe solution is a bit ugly:\r\n\r\n```solidity\r\n    function ab(int a, int b) public returns (int) {\r\n        return a < b ? int(-1) : int(0);\r\n    }\r\n```",
   "closed_by": null,
@@ -206,7 +206,7 @@
     },
     "created_at": "2022-06-03T12:26:10Z",
     "updated_at": "2022-06-03T12:26:10Z",
-    "author_association": "COLLABORATOR",
+    "author_association": "MEMBER",
     "body": "@cameel a type deduction mechanism for inline arrays the compiler currently use surly is not perfect and a bit tricky. To see that, please just try to change order of array elements in your example so you have:\r\n`int8 [2] memory x = [0, -1];`\r\nSuch a small change and compilation end up with an error. That's because the compiler relays on a type of the first element of an array literal. Luckily, this is going to be changed soon.\r\nNevertheless, I am not sure if deduction mechanisms of the array literals and ternary operator have that much in common. But, I agree that the only problem we have in this ticket is the compiler inability to deduce `int8` as a ternary operator operation type. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1145911419/reactions",
@@ -294,7 +294,7 @@
     },
     "created_at": "2022-06-06T10:56:38Z",
     "updated_at": "2022-06-06T10:56:38Z",
-    "author_association": "COLLABORATOR",
+    "author_association": "MEMBER",
     "body": "\r\nI have looked over the documentation and found this:\r\n- The type in which operator is performed is a common type of the operands and can be found only if one operand type can be implicitly converted to the other.\r\n- For literals, the compiler uses their mobile type to find common type.\r\n- Mobile type is the smallest type that can hold the value. Unsigned types of the same bit-width are considered “smaller” than the signed types.\r\n\r\nIn view of the above, `-1` is being converted to `int8`. At the same time `0` is being converted to `uint8` cause unsigned type is considered to be smaller then  signed. Since that moment, the compiler uses mobile types. \r\nBecause the compiler cannot guarantee lossless conversion between int8 and uint8, the code compilation fails. This is exactly why explicit conversion is necessary in this case.\r\n\r\n@cameel For now I can see two options to address this problem.  First one is to deduce common type based on literals instead of their mobile types. This can help to fix this ticket and similar cases, but also can be tricky since does not concern types other than literals (e.g. `condition ? variable_a : variable_b`).  However, do we want to change anything but literals?\r\nThe second option would be to provide a new mechanism to deduce common type of numerical types. It should come with a type promotion algorithm. For instance `int8` and `uint8` could be promoted to `int16`. Does it make sense?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1147320730/reactions",
@@ -382,7 +382,7 @@
     },
     "created_at": "2022-06-10T11:34:33Z",
     "updated_at": "2022-06-10T11:34:33Z",
-    "author_association": "COLLABORATOR",
+    "author_association": "MEMBER",
     "body": "@cameel I created a draft with the simplest solution for the issue. Please let me know if like it. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1152266025/reactions",

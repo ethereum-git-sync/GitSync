@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 692642590,
-      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
-      "name": "feature",
-      "color": "fbca04",
-      "default": false,
-      "description": null
-    },
-    {
       "id": 785717317,
       "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
@@ -60,7 +51,7 @@
   "created_at": "2022-06-25T17:55:37Z",
   "updated_at": "2022-07-18T19:34:19Z",
   "closed_at": "2022-06-27T09:51:36Z",
-  "author_association": "NONE",
+  "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "## Abstract\r\n\r\nCasting from `bytes` to a value type should unpack just the required number of bytes from the bytes array. For example, given `bytes memory b`, it should be possible to do `bytes4 b4 = bytes4(b);`\r\n\r\n## Motivation\r\n\r\nThe primary motivation for this is for decoding the return value of low-level calls, when there is only one return value:\r\n\r\n```solidity\r\n    (bool success, bytes memory returnData) = addr.call(abiEncoding);\r\n```\r\n\r\n## Specification\r\n\r\nGiven `returnData` as returned from a `call` as shown above, there needs to be a way to easily read a single value of a given type from the return data, without using assembly.\r\n\r\nThe assembly version would be, e.g. for `bytes4` return type,\r\n\r\n```solidity\r\n    if (success) {\r\n        bytes4 val;\r\n        if (returnData.length >= 4) {\r\n            assembly {\r\n                val := mload(add(returnData, 32))\r\n            }\r\n        } else {\r\n            val = 0;\r\n        }\r\n        // do something with val here\r\n    }\r\n```\r\n\r\nThis sort of pattern seems to be needed for any return type other than `string`, because (as far as I can tell) you can't accomplish this by merely casting, e.g. if you expect a `bytes4` as the return value, you can't just go `bytes4(returnData)`.\r\n\r\nHowever assembly sections are always flagged in security audits as potential issues, and additionally, assembly potentially makes code unportable in future to other blockchains or other VMs, etc.\r\n\r\nCasting should work for any value type, e.g. if a function call returns a boolean, you should be able to do `bool flag = bool(returnData);`. Currently this requires the same pattern shown above, with `bytes4` replaced with `bool`, or if implementing this in pure Solidity, something like:\r\n\r\n```solidity\r\n    bool retVal = success && returnData.length > 0 ? returnData[0] != 0 : false;\r\n```\r\n\r\nit would be much better to be able to do something like \r\n\r\n```solidity\r\n    bool retVal = success && bool(returnData);\r\n```\r\n\r\nOf course if `returnData.length` is too short to hold the target type, then the cast should throw.\r\n\r\n## Backwards Compatibility\r\n\r\nThis would be fully backwards-compatible, as currently the type of casting suggested above raises an error.\r\n",
   "closed_by": {
@@ -172,7 +163,7 @@
     },
     "created_at": "2022-06-27T23:33:09Z",
     "updated_at": "2022-06-27T23:33:09Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "@hrkrshnn this definitely does not work, even on Solidity 0.8.15.  `bool(bytesVal)` gives `TypeError: Explicit type conversion not allowed from \"bytes memory\" to \"bool\".`  `bytes4(bytesVal)` gives `TypeError: Type bytes memory is not implicitly convertible to expected type bytes4.`\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1168035534/reactions",
@@ -260,7 +251,7 @@
     },
     "created_at": "2022-07-16T20:33:01Z",
     "updated_at": "2022-07-16T20:33:01Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "@hrkrshnn Yes, I'm sure (your `bytes4` example works, but changing the type to `bool` definitely doesn't) -- the following in your remix gist gives an error:\r\n\r\n```solidity\r\ncontract C {\r\n    function convert(bytes memory m) external pure returns (bool) {\r\n        return bool(m);\r\n    }\r\n}\r\n```\r\n\r\n```\r\nTypeError: Explicit type conversion not allowed from \"bytes memory\" to \"bool\".\r\n--> gist-c1177b487cb41b7dfda95553a022a728/convert.sol:4:16:\r\n|\r\n4 | return bool(m);\r\n| ^^^^^^^\r\n```\r\n\r\nOther types such as `uint256` also cannot be loaded from the beginning of a `bytes` array in the same way, which leads to the need to drop assembly code into a program just to parse out typed data from `bytes`.\r\n\r\nI had a contract where this conversion wasn't working for `bytes4` either, but I'll have to roll back to an earlier version and try to cut it down to a minimal reproducer.\r\n\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1186285737/reactions",
@@ -348,7 +339,7 @@
     },
     "created_at": "2022-07-16T20:44:06Z",
     "updated_at": "2022-07-16T20:44:19Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "I would expect a bool conversion to work exactly the same as the pattern I gave earlier:\r\n\r\n```solidity\r\n    if (success) {\r\n        bool val;\r\n        if (returnData.length >= 1) {\r\n            assembly {\r\n                val := mload(add(returnData, 32))\r\n            }\r\n        } else {\r\n            val = false;\r\n        }\r\n        // do something with val here\r\n    }\r\n```\r\n\r\nI assume this loads only the first byte of the `returnData` array, and if it is nonzero, the resulting value is true.\r\n\r\nIs the ambiguity you raise referring to whether the bool is packed or not? (I assume the packed version is stored as one byte, and the non-packed encoding stores it as a `uint256`?) \r\n\r\nMaybe I'm going crazy but I tried to reproduce this with `bytes4`, and couldn't reproduce the problem, even though I first saw this conversion limitation with `bytes4`, and ran into it several times. I just can't seem to trigger it anymore.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1186287900/reactions",
@@ -392,7 +383,7 @@
     },
     "created_at": "2022-07-16T20:46:58Z",
     "updated_at": "2022-07-16T20:47:13Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "This needs to be supported for `uint256` at the very least, but probably for all integer types.\r\n\r\nIn the more general case, it would be great to be able to do something like:\r\n\r\n`(uint256 x, uint32 y, bool z) = (uint256, uint32, bool)(myBytesArray);`\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1186288458/reactions",
@@ -524,7 +515,7 @@
     },
     "created_at": "2022-07-18T17:47:06Z",
     "updated_at": "2022-07-18T17:47:06Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Right, I have been using low-level calls, primarily because I wanted the result of the call in the `(bool success, bytes memory returnData)` return format, so that the whole transaction wouldn't be reverted if a call failed, and so that if it did fail, I could decode exactly why it failed and react accordingly. Yes, #11125 is closely related to the concerns I had that led me to calling external contracts in this way.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1187921951/reactions",
@@ -612,7 +603,7 @@
     },
     "created_at": "2022-07-18T19:31:29Z",
     "updated_at": "2022-07-18T19:34:19Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "> It would help if you could share a bit about your particular use case in that issue.\r\n\r\nI was trying to call a range of external contracts implementing interfaces that all had different rules about what should be done if the callee address was an EOA, and/or if the callee function was not implemented in a contract, and/or if the callee function reverted, and/or if the contract function did not revert but returned the wrong value.\r\n\r\nThe `catch Error(string memory reason)` and `catch (bytes memory data)` constructs in Solidity were not very helpful, because `(bytes memory data)` still had to be decoded anyway, and some call situations (e.g. trying to call a function on an EOA) reverted with empty data, rather than with `Error`.\r\n\r\nIn the end it got complex enough trying to implement the required logic every time that I ended up creating a single all-singing external caller function that just worked directly with\r\n\r\n```solidity\r\n(bool success, bytes memory returnData) = addr.call{value: ethValue}(abiEncoding);\r\n```\r\n\r\nthen implemented all the complex return logic that I needed based on the two return values.\r\n\r\nI ended up reverting this back to `ISomeInterface(addr).someFunction()` calls because security auditors didn't like the use of `address.call`, and I just had to add some checks before each call, such as `require(isContract(addr), \"Not a contract\")` to prevent cases where external calls would revert the transaction without any reason code. But I liked the robustness of the way I had it implemented before.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1188214225/reactions",

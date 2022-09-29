@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 692642590,
-      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
-      "name": "feature",
-      "color": "fbca04",
-      "default": false,
-      "description": null
-    },
-    {
       "id": 3784569283,
       "node_id": "LA_kwDOAm_5kc7hk_HD",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20server",

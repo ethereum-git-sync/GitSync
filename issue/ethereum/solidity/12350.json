@@ -650,7 +650,7 @@
     },
     "created_at": "2022-02-24T10:41:29Z",
     "updated_at": "2022-02-24T10:41:49Z",
-    "author_association": "COLLABORATOR",
+    "author_association": "MEMBER",
     "body": "> In any case, we do attempt to set the locale to `C` to avoid such problems and this bug means that somehow it's not enough. And once we fix it, we should recommend frameworks to set it on their side as a workaround because old binaries will still be affected.\r\n\r\n@cameel, Actually, we try to set locale to the system environment locale first. Only if it fails, we do attempt to set the locale to `C`:\r\nhttps://github.com/ethereum/solidity/blob/e7d93f83769dd68c9d97e9be813595839dfcd1e2/solc/main.cpp#L52-L55\r\n\r\n\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1049722498/reactions",
@@ -738,7 +738,7 @@
     },
     "created_at": "2022-02-25T09:15:12Z",
     "updated_at": "2022-02-25T09:15:12Z",
-    "author_association": "COLLABORATOR",
+    "author_association": "MEMBER",
     "body": "I did a little research on why this code is here and found [the original issue](https://github.com/ethereum/solidity/issues/674). Apparently, there was some problem with solc in case of invalid environment locale setting. 'export LC_ALL=C' was a workaround for that so I am not sure why solution involved environment default locale. Anyway, I agree we should change that.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1050674278/reactions",

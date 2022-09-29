@@ -423,8 +423,8 @@
     "body": "Found curious ways to avoid this issue, just prepend `bytes28(0)` to parse selector as `bytes32`:\r\n```\r\nabi.decode(\r\n    abi.encodePacked(bytes28(0), msg.data),\r\n    (bytes32,address,uint256)\r\n);\r\n```",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/612031974/reactions",
-      "total_count": 15,
-      "+1": 15,
+      "total_count": 16,
+      "+1": 16,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -599,8 +599,8 @@
     "body": "This is not supposed to be fixed, because it is not an issue: msg.data is not abi encoded (only what comes after the function selector is). You can use array slices for this.\r\n\r\n```\r\nabi.decode(msg.data[4:], (...));\r\n```",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1116628009/reactions",
-      "total_count": 2,
-      "+1": 2,
+      "total_count": 3,
+      "+1": 3,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

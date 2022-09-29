@@ -1031,11 +1031,11 @@
     "body": "@oscariquelme01 they called the package `solidity_ls` on nvm-lspconfig. Conf is [here](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#solidity_ls). ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1257197286/reactions",
-      "total_count": 0,
+      "total_count": 1,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
-      "hooray": 0,
+      "hooray": 1,
       "confused": 0,
       "heart": 0,
       "rocket": 0,

@@ -511,8 +511,8 @@
     "body": "> > and the free-memory-pointer is only ever initialized with the memory offset past the memory reserved for the moved variables.\r\n> \r\n> Does this mean that if my code feature 10 mutually exclusive code paths, each of which results in one value being promoted to memory, the contract will allocate all 10 words in all cases?\r\n\r\nDepends. The slots are allocated per Yul function post optimizer. Disjoint paths through the call graph of these functions can be assigned shared slots. So if you're lucky and the 10 mutually exclusive code paths end up in separate yul functions that live in disjoint paths in the call graph, only one word will be allocated.\r\n\r\nWhether slots can be shared, *could* be determined on a more fine-grained level than per Yul function, but (as the main topic of this issue correctly touches) the compiler is much worse at wasting memory during free-memory pointer based allocation, so our priority is to first fix that and only then to fine-tune assigning memory slots for variables further (if it turns out that's worthwhile).",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1244482918/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

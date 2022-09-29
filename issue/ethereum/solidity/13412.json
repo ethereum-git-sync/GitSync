@@ -115,8 +115,8 @@
     "body": "`msg` is a global object specifically meant to represent the transaction input. The fact that the value is the same in nested calls is the expected behavior.\r\n\r\nIf you're interested in the selector of the current function instead, you should use the `.selector` member on that function:\r\n\r\n```solidity\r\ncontract MsgDataTester {\r\n    event MsgDataLogger(bytes4 data);\r\n\r\n    function one(uint256 a) public {\r\n        emit MsgDataLogger(this.one.selector);\r\n        two(2);\r\n    }\r\n\r\n    function two(uint256 b) public {\r\n        emit MsgDataLogger(this.two.selector);\r\n    }\r\n}\r\n```\r\n\r\n> This makes it impossible to distinguish between different functions in solidity code in nested calls as calldata returns only the first function signature in the chain. Is there a way to get around this?\r\n\r\n`two(2)` in your code is an internal call so you can't really \"distinguish\" it in the sense that it's running in the same context. It has the access to the same stack, memory, etc. If you made it an external call (`this.two(2)`), `msg.sig` would have a different value just as you expect it. But I'm not sure if this is really what you're after. External calls to your own contract are not a common thing and I suspect that's not what you need.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1219615977/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

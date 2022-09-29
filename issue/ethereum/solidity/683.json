@@ -68,9 +68,9 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/683/reactions",
-    "total_count": 25,
-    "+1": 18,
-    "-1": 7,
+    "total_count": 27,
+    "+1": 19,
+    "-1": 8,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,

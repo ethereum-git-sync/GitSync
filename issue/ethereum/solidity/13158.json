@@ -211,8 +211,8 @@
     "body": "Yeah, you have a lot of local variables in ``revealWinner``, which apparently is too much for the legacy code generation path to handle - this is a known issue \r\nIf you add ``\"viaIR\": true,`` to the compiler settings in your config, i.e. switch to the new optimized via-IR code generation pipeline, the issue should vanish.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1157987863/reactions",
-      "total_count": 3,
-      "+1": 3,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

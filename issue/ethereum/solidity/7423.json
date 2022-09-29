@@ -57,8 +57,8 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/7423/reactions",
-    "total_count": 7,
-    "+1": 7,
+    "total_count": 8,
+    "+1": 8,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -104,8 +104,8 @@
     "body": "Are there any updates on this issue? ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1076492957/reactions",
-      "total_count": 8,
-      "+1": 8,
+      "total_count": 9,
+      "+1": 9,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

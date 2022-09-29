@@ -233,7 +233,7 @@
     },
     "created_at": "2022-09-15T16:27:15Z",
     "updated_at": "2022-09-15T16:27:15Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "@matheusaaguiar May I take it?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1248338113/reactions",
@@ -321,7 +321,7 @@
     },
     "created_at": "2022-09-18T06:25:07Z",
     "updated_at": "2022-09-18T06:25:07Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "@matheusaaguiar let me clarify I'm moving in the right direction. There is a script `cmdlineTests.sh` that runs cmdlineTests. The script executes test with the `command_args=\"--standard-json \"$(cat \"${tdir}/args\" 2>/dev/null || true)`.\r\n\r\nThe `--standard-json` arg which means I specify a test output in a json format, like here: [linking_standard_solidity/output.json](https://github.com/ethereum/solidity/blob/develop/test/cmdlineTests/linking_standard_solidity/output.json):\r\n\r\n`{\"contracts\":{\"A\":{\"C\":{\"evm\":{\"bytecode\":{\"linkReferences\":{},\"object\":\"<BYTECODE REMOVED>\"}}}}},\"sources\":{\"A\":{\"id\":0}}}`\r\n\r\nbut we want to give a user opportunity to write an output in a `--pretty-json` format like that:\r\n\r\n```\r\n{\r\n    \"contracts\":{\r\n        \"A\":{\r\n            \"C\":{\r\n                \"evm\":{\r\n                    \"bytecode\":{\r\n                        \"linkReferences\":{\r\n                            \r\n                        },\r\n                        \"object\":\"<BYTECODE REMOVED>\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    },\r\n    \"sources\":{\r\n        \"A\":{\r\n            \"id\":0\r\n        }\r\n    }\r\n}\r\n```\r\n\r\nMy questions are:\r\n1. Am I right that it is desirable to add a cmd line arg for the whole script like `cmdlineTests.sh --pretty-json`\r\n2. If yes how the existing test cases should be managed:\r\n  a. if there is no `--pretty-json` in the **args** or the output is not in a json format then it should be ignored?\r\n  b. if the output not in the prettified json format then prettify it first, and compare afterwards?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1250202160/reactions",
@@ -453,7 +453,7 @@
     },
     "created_at": "2022-09-23T10:04:31Z",
     "updated_at": "2022-09-23T10:04:31Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "hi @matheusaaguiar @cameel before proceeding with the main subject of this issue I decided to build and run all tests including both z3 and CVC4. I founded a small suspicious place but I'm not sure whether it is a known bit. If it is I can create a PR to fix it. If not please advise.\r\n\r\nHere we have the following:\r\n\r\nhttps://github.com/ethereum/solidity/blob/b12b845739d7dfd540e7eef624b39052f0ab8a7d/libsmtutil/CVC4Interface.cpp#L242\r\n\r\nbut it the CVC4 [bitvector.h](https://github.com/CVC4/CVC4-archived/blob/40eac7f0529176bcc8464d6c4c8804fbde628c2b/src/util/bitvector.h) there are two constructors that make this call ambiguous:\r\n\r\n```\r\n  BitVector(unsigned size, uint32_t z) : d_size(size), d_value(z)\r\n  {\r\n    d_value = d_value.modByPow2(size);\r\n  }\r\n\r\n  BitVector(unsigned size, uint64_t z) : d_size(size), d_value(z)\r\n  {\r\n    d_value = d_value.modByPow2(size);\r\n  }\r\n\r\n```\r\n\r\nI suggest to put an explicit cast for a proper call. I have already test it on my environment, works fine.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1256021574/reactions",
@@ -541,7 +541,7 @@
     },
     "created_at": "2022-09-23T11:49:50Z",
     "updated_at": "2022-09-23T11:49:50Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "@cameel it even generates an error due to an ambiguous call",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1256112504/reactions",
@@ -629,7 +629,7 @@
     },
     "created_at": "2022-09-23T11:54:59Z",
     "updated_at": "2022-09-23T11:54:59Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "@cameel I'm on MacOS 12.5\r\nApple clang version 14.0.0 (clang-1400.0.29.102)\r\nTarget: x86_64-apple-darwin21.6.0\r\nThread model: posix",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1256117173/reactions",
@@ -717,7 +717,7 @@
     },
     "created_at": "2022-09-23T15:41:35Z",
     "updated_at": "2022-09-23T15:41:35Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "> Thanks. I guess that's it. We don't install CVC4 on macOS. Maybe we should. What do you think @leonardoalt?\r\n\r\nPR #13556 created",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1256374116/reactions",
@@ -761,7 +761,7 @@
     },
     "created_at": "2022-09-24T09:48:52Z",
     "updated_at": "2022-09-24T09:48:52Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "@cameel @matheusaaguiar sorry for being a nerd but why there are byte/op codes, a source map sometimes are present in tests like here:\r\nhttps://github.com/ethereum/solidity/blob/3ddf5db755e7ada1e26c4850764d5f7ad988333e/test/cmdlineTests/standard_yul_immutable_references/output.json#L15\r\nbut sometimes are not like here:\r\nhttps://github.com/ethereum/solidity/blob/3ddf5db755e7ada1e26c4850764d5f7ad988333e/test/cmdlineTests/standard_yul_object/output.json#L17\r\n\r\nwhat should I do? substitute byte code (etc.) with the` <BYTECODE REMOVED>` or not?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1256926828/reactions",

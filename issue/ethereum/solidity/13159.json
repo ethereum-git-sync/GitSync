@@ -96,7 +96,7 @@
     "body": "Hi. Did you fix this error? I have the same shit :/",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1169768414/reactions",
-      "total_count": 0,
+      "total_count": 1,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
@@ -104,7 +104,7 @@
       "confused": 0,
       "heart": 0,
       "rocket": 0,
-      "eyes": 0
+      "eyes": 1
     },
     "performed_via_github_app": null
   },
@@ -184,8 +184,8 @@
     "body": "Add `allowUnlimitedContractSize: true` to your hardhat.config.ts under defaultNetworks.networks both \"hardhat\" and \"localhost\".\r\nAt least it worked for me.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1181803918/reactions",
-      "total_count": 9,
-      "+1": 9,
+      "total_count": 11,
+      "+1": 11,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

@@ -333,8 +333,8 @@
     "body": "Thanks for your suggestions, they all sound good! I'm not sure if we are currently doing CSE for calls to user-defined functions. We did some work on extending the side-effects structure also to user-defined functions, so it might already be there, but could also be in an \"almost finished\" open pull request :)",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1200947608/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

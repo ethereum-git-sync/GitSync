@@ -6,5 +6,13 @@
     "number": 13588,
     "title": "Unexpected packed abi encoding in solidity abi.encode operation ",
     "updatedAt": "2022-09-29T14:23:33Z"
+  },
+  {
+    "author": {
+      "login": "nventuro"
+    },
+    "number": 12587,
+    "title": "Immutable dynamic arrays",
+    "updatedAt": "2022-09-29T14:01:16Z"
   }
 ]

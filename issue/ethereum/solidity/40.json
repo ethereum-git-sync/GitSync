@@ -30,15 +30,7 @@
     "site_admin": false
   },
   "labels": [
-    {
-      "id": 249074437,
-      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
-      "name": "enhancement",
-      "color": "84b6eb",
-      "default": true,
-      "description": null
-    }
+
   ],
   "state": "closed",
   "locked": false,
@@ -343,8 +335,8 @@
     "body": "```\r\n    struct Patient {\r\n        bytes32 name;\r\n        uint weight; // weight is accumulated by delegation\r\n        uint height;  // if true, that person already voted\r\n        uint NHSNum;  //include timestamp\r\n        bytes32 specialty;  \r\n        bytes32 consultant;\r\n        bytes32 diagnoses;\r\n        uint Creatinite;\r\n        uint Sodium;\r\n        uint Potassium;\r\n        uint eGFR;\r\n        uint Urea;\r\n    }\r\n    Patient[] patients;\r\n\r\n    function allPatients() constant returns(Patient[]) {\r\n        return patients;\r\n    }\r\n```\r\n\r\nwithout internal in allPatients() it will cause same error.\r\nwhy such a basic feature not implement in?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/311886674/reactions",
-      "total_count": 3,
-      "+1": 3,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

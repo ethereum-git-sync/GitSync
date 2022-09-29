@@ -387,8 +387,8 @@
     "body": "In case someone else faces the same problem, for the stack log, the simplest \"fix\" is to change in eth/api.go, formatLogs function, from\n\n`formattedStructLogs[index].Stack[i] = fmt.Sprintf(\"%x\", common.LeftPadBytes(stackValue.Bytes(), 32))`\n\nto \n\n`formattedStructLogs[index].Stack[i] = fmt.Sprintf(\"%x\", stackValue.Bytes())`\n\nthis removes the zero padding in the json for the stack values, which is easy to add back on the client side if you need it, and can drastically helps with json size without losing data.\n\nAnother more minor but still effective change is to concatenante the Op and Error fields, which allows removing the (typically empty) Error field from the json, untangling the concatenation is simple to handle client-side.\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/219645523/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

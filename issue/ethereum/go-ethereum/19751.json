@@ -115,13 +115,13 @@
     "body": "Originally Ethereum used `27` / `28` (which internally is just `0` / `1`, just some weird bitcoin legacy to add 27). Later when we needed to support chain IDs in the signatures, the V as changed to `ID*2 + 35` / `ID*2 + 35`. However, both V's are still supported on mainnet (Homestead vs. EIP155).  The code was messy to pass V's around from low level crypto primitives in 27/28 notation, and then later for EIP155 to subtract 27, then do the whole x2+35 magic.\r\n\r\nThe current logic is that the low level crypto operations returns 0/1 (because that **is** the canonical V value), and the higher level signers (Frontier, Homestead, EIP155) convert that V to whatever Ethereum specs on top of secp256k1.\r\n\r\nTL;DR: Use the high level signers, don't use the secp256k1 library directly. If you use the low level crypto library directly, you need to be aware of how generic ECC relates to Ethereum signatures.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/504900739/reactions",
-      "total_count": 1,
+      "total_count": 3,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 1,
+      "heart": 3,
       "rocket": 0,
       "eyes": 0
     },

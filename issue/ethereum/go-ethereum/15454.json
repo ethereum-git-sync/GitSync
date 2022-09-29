@@ -203,13 +203,13 @@
     "body": "FYI I am running a few light servers at my own expense, and my nodes get saturated with light client peer connections. The \"fix\" here is more people in the community running nodes and enabling the light server (see [here](https://ethereum.stackexchange.com/questions/11014/how-to-run-a-server-for-light-clients)), please consider helping the cause and running a light server too :smile:.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/352216741/reactions",
-      "total_count": 7,
+      "total_count": 9,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 7,
+      "heart": 9,
       "rocket": 0,
       "eyes": 0
     },

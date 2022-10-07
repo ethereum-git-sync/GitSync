@@ -67,7 +67,7 @@
   "milestone": null,
   "comments": 7,
   "created_at": "2021-11-25T03:45:14Z",
-  "updated_at": "2022-09-14T15:51:27Z",
+  "updated_at": "2022-10-03T10:28:37Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -381,9 +381,9 @@
       "site_admin": false
     },
     "created_at": "2022-09-13T15:40:31Z",
-    "updated_at": "2022-09-13T15:40:31Z",
+    "updated_at": "2022-10-03T10:28:37Z",
     "author_association": "NONE",
-    "body": "It looks like losing contract->address implicit conversion was a side-effect of disallowing sideways contract casting. Sadly that represents quite a loss in quality of life. I don't see any good reason for it, you can have both.\r\n\r\nSince [0.8.0](https://blog.soliditylang.org/2020/12/16/solidity-v0.8.0-release-announcement/) explicit conversions \"are only possible when there is at most one change in sign, width, payability or type-category\". You could add \"or in contract hierarchy branch\" to the previous sentence. Then, just like with `x : uint24`, `f1(uint)`, `g1(bytes3)` you can write `f1(x)` but can't write `g1(x)`, you could also have the following: with `c : Contract`, `f2(address)`, `g2(OtherContract)`[1], you could write `f2(c)` but you couldn't write `g2(c)`. That would increase quality of life quite a bit.\r\n\r\n[1] `OtherContract` neither an ancestor nor a descendant of `Contract`.",
+    "body": "It looks like losing contract->address implicit conversion was a side-effect of disallowing sideways contract casting. Sadly that represents quite a loss in quality of life. I don't see any good reason for it, you can have both.\r\n\r\nedited for clarity/fixes: this responds to\r\n\r\n> If an implicit conversion was allowed, you could still do A(b) because b would be implicitly converted to address and then the address explicitly converted to A.\r\n\r\nSince [0.8.0](https://blog.soliditylang.org/2020/12/16/solidity-v0.8.0-release-announcement/) explicit conversions \"are only possible when there is at most one change in sign, width, payability or type-category\". You could add \"and none in contract hierarchy branch\" to the previous sentence. Then you take `address` as the root of the contract inheritance tree, and you can reenable implicit conversion everywhere. Then you would get the following (comparing with uints):\r\n\r\n|              | numbers    | contracts    |\r\n|--------------|------------|--------------|\r\n| value        | x:uint24   | x:Contract1  |\r\n| OK function  | f(uint256) | f(address)   |\r\n| Bad function | g(bytes3)  | f(Contract2) |\r\n| f(x)         | ✅          | ✅            |\r\n| g(x)         | ❌          | ❌            |\r\n\r\n(`Contract2` neither an ancestor nor a descendant of `Contract`.)",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1245594942/reactions",
       "total_count": 2,

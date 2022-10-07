@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13590",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13590/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13590/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13590/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13590",
+  "id": 1391656317,
+  "node_id": "I_kwDOAm_5kc5S8v19",
+  "number": 13590,
+  "title": "Wrong behaviour achieved by example code - Voting example",
+  "user": {
+    "login": "lazaralex98",
+    "id": 28998786,
+    "node_id": "MDQ6VXNlcjI4OTk4Nzg2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/28998786?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lazaralex98",
+    "html_url": "https://github.com/lazaralex98",
+    "followers_url": "https://api.github.com/users/lazaralex98/followers",
+    "following_url": "https://api.github.com/users/lazaralex98/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lazaralex98/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lazaralex98/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lazaralex98/subscriptions",
+    "organizations_url": "https://api.github.com/users/lazaralex98/orgs",
+    "repos_url": "https://api.github.com/users/lazaralex98/repos",
+    "events_url": "https://api.github.com/users/lazaralex98/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lazaralex98/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-30T00:32:22Z",
+  "updated_at": "2022-09-30T00:32:22Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "## Page\r\n\r\n[Solidity by Example - Voting](https://docs.soliditylang.org/en/latest/solidity-by-example.html#voting)\r\n\r\n## Abstract\r\n\r\nIn the example of the voting contract, the `delegate` method, at its very end, has this piece of code:\r\n\r\n```solidity\r\nif (delegate_.voted) {\r\n    // If the delegate already voted,\r\n    // directly add to the number of votes\r\n    proposals[delegate_.vote].voteCount += sender.weight;\r\n} else {\r\n    // If the delegate did not vote yet,\r\n    // add to her weight.\r\n    delegate_.weight += sender.weight;\r\n}\r\n```\r\n\r\nThe above code does indeed compile, but doesn't achieve the wanted behaviour. \r\n\r\nTo exemplify what I mean, imagine: a dev would build on top of the example to implement a 'revokeVote` method. Whenever the delegate revokes his votes he loses out on the weight that has been assigned to him by the voter when his vote was already cast.\r\n\r\nIt doesn't make sense to use an `if/else`. The delegate should be receiving the weight regardless, like this:\r\n\r\n```solidity\r\ndelegate_.weight += sender.weight;\r\nif (delegate_.voted) {\r\n    proposals[delegate_.vote].voteCount += sender.weight;\r\n}  \r\n```\r\n\r\n## Pull request\r\n\r\nI'm used to adding a PR after the issue, so I'll keep this empty for the moment and update later.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13590/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13590/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

@@ -216,7 +216,7 @@
     },
     "created_at": "2021-06-08T10:46:46Z",
     "updated_at": "2021-06-08T10:46:46Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Do we even need the subcommittees? It might be too late to make this kind of change, but it seems like a lot of nuance for reducing the messages we might get by a couple of hundred... I assume it's to reduce the load on light clients...",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/856658281/reactions",

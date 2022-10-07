@@ -276,7 +276,7 @@
     },
     "created_at": "2022-06-27T23:50:52Z",
     "updated_at": "2022-06-27T23:50:52Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "> Relayers incurring additional overhead (spam),\r\n\r\nsome low-hanging fruit here is to only allow 1 bid per builder per slot, which seems like it would go a long way to prevent any type of PGA-style behavior. if we have some cancellation mechanism then that would be 0 or 1 bids per slot\r\n\r\n> further incentive for validators to wait\r\n\r\nhonest validators are already enforcing a timeout on the availability of headers, cf. the `BUILDER_PROPOSAL_DELAY_TOLERANCE` constant and its usage here: https://github.com/ethereum/builder-specs/blob/main/specs/validator.md#relation-to-local-block-building; validators are free to deviate of course, but in practice defaults do go a long way\r\n\r\neven if we only allow 1 bid per builder per slot, we still have the \"first mover disadvantage\" if the \"mempool\" is public... \r\n\r\nthe only immediate issue I see with making the \"mempool\" private is that it harms validator privacy as in expectation only the proposer will be making a request in a given slot -- if you can pull off any sort of correlation attacks, then you can start mapping proposers to their IPs. there are mitigations here and you have this problem to a lesser extent (up to the size of the \"anonymity set\") w/ the public \"mempool\" so it may not be worth worrying about here.\r\n\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1168045660/reactions",

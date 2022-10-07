@@ -264,8 +264,8 @@
     "body": "At this time, support for LES after the merge is under heavy development. We are hoping to ship an experimental version of standalone LES-on-PoS in late October.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1238097540/reactions",
-      "total_count": 6,
-      "+1": 6,
+      "total_count": 7,
+      "+1": 7,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

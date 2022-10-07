@@ -122,8 +122,8 @@
     "body": "Not directly related to crlists, but I was thinking that PBS generally makes large-scale censorship by eg state actors a lot easier. If you have a bunch of money and want to make Ethereum effectively stop processing txns for a bit, currently you have to send lots of txns from many accounts with sufficiently high priority fee to box everyone else out (and you can't even know this exactly due to private relays), but not too many txns that you increase gas target and make it quadratically expensive to continue censoring.\r\n\r\nWith unsealed-bid PBS (I think sealed-bid is not incentive-compatible), on the other hand, you can just construct a block with gastarget worth of noop txns along with a proposer payment of current_best_bid + epsilon.",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1185806674/reactions",
-      "total_count": 2,
-      "+1": 2,
+      "total_count": 3,
+      "+1": 3,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -386,8 +386,8 @@
     "body": "> What I'm thinking is that this could be just an expectation of how builders work, and it can be reflected on their monitoring and rating, or demanded on the specification.\r\nSo, if blocks are on average 50% full, and there's a builder that sends a block that's 30% full, we can say they are censoring or being lazy. If we require all builders to include a percentage of transactions from the mempool, sorted by gas, would that prevent censoring?\r\n\r\nI'll play devil's advocate, as usual :) \r\n- I think requiring blocks to meet the gas target does ~nothing for censorship-resistance. All it does is make it marginally more annoying to censor: now you have to spend a bit more effort to fill up the block with some sybil transactions\r\n- I also think requiring builders to include a percentage of mempool txns does ~nothing. You can have lots of sybil EOAs and maintain lots of no-op sybil txns in the mempool at all times and fill up your censoring blocks with those\r\n- I also think that, game-theoretically, you can't really \"require\" anything. Let's say we make mev-boost ignore blocks that are <30% full. Then say some rich but lazy censoring builder says \"hai guys for the next 100 blocks I'm going to propose blocks with a single transaction paying you (the proposer) 50ETH; if you want in then add me as a relay and run this mev-boost patch\". Do we really think no proposers will defect, especially if this game is repeated?",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1189291338/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -602,7 +602,7 @@
     },
     "created_at": "2022-08-11T21:13:55Z",
     "updated_at": "2022-08-11T21:13:55Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "I will chime in with a very low-res version of this idea: mandate that \"honest\" proposers forgo the builder network in lieu of their local builder w/ public mempool every N of M slots.\r\n\r\nIf this policy is hard-coded into consensus clients as a default, and there is an honest majority of the stake, you'd end up in practice getting some blocks every so often exclusively using the public mempool and I claim this is a very rough approximation of what crLists etc want to accomplish",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1212498416/reactions",

@@ -584,7 +584,7 @@
     },
     "created_at": "2022-07-27T20:21:56Z",
     "updated_at": "2022-07-27T20:21:56Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "> question: should the local execution client build a block in parallel so it is ready in case the relay fails?\r\n\r\nthere is currently a 1 second timeout for mev-boost to fail to produce a block before the proposer moves to a local pathway: https://github.com/ethereum/builder-specs/blob/main/specs/validator.md#relation-to-local-block-building\r\n\r\nmy only hesitation with local building in parallel is if the resource cost hinders those who would otherwise run nodes, e.g. at-home stakers\r\n\r\nalthough we should assume any proposer is sufficiently resourced to produce a block w/o the builder network and this kind of suggests we should update the directive in the builder-specs",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1197326006/reactions",
@@ -760,7 +760,7 @@
     },
     "created_at": "2022-08-02T15:14:31Z",
     "updated_at": "2022-08-02T15:14:31Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "> I am wondering shouldn't there be a timeout in the builder spec similar to BUILDER_PROPOSAL_DELAY_TOLERANCE (1s) for getting the payload from the builders? That way worst case scenario, block wouldn't get delayed too much and if a local ExecutionPayload is already available, the proposal could still happen in time.\r\n\r\nif I'm following you, you are referring to a timeout on the call to get the complete payload from the builder after having already signed the bid\r\n\r\nin this scenario, a proposer does not want to publish a competing block as it would be a slashable offence \r\n\r\nI think building in parallel makes sense but the proposer should only ever make one (1) signature for a given slot",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1202793062/reactions",
@@ -936,7 +936,7 @@
     },
     "created_at": "2022-08-03T14:24:30Z",
     "updated_at": "2022-08-03T14:24:30Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "> mitigating any malicious delays when requesting the payload.\r\nall this would really do is make sure the one caller is not affected, which I guess is worth considering but to my knowledge clients have timeouts across the entire proposal process so that would catch this already (?)\r\n\r\nthis feels like a thing that doesn't go into the *spec*\r\n\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1204019931/reactions",

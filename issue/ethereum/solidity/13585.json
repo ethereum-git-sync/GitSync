@@ -41,11 +41,11 @@
   "milestone": null,
   "comments": 0,
   "created_at": "2022-09-29T01:14:28Z",
-  "updated_at": "2022-09-29T01:14:48Z",
+  "updated_at": "2022-09-30T00:02:46Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
-  "body": "Dear Solidity dev community, just wanna ran this idea by you: Can we have a built-in method for solidity to return the slot index of a variable? Just like the `type(SomeInterface).interfaceId;` returns the interfaceId for the type `SomeInterface`, returning the slot index making it so much less error-prone when needing to work with SSTORE and SLOAD and other things. I am sure this information already exist in the compiler.\r\n\r\nPlease also help advise if this is no the right channel to make suggestions. Is there something like Solidity Improvement Proposal?\r\n",
+  "body": "Dear Solidity dev community, just wanna ran this idea by you: Can we have a built-in method for solidity to return the slot index of a variable? Just like the `type(SomeInterface).interfaceId;` returns the interfaceId for the type `SomeInterface`, returning the slot index making it so much less error-prone when needing to work with SSTORE and SLOAD and other things. I am sure this information already exist in the compiler. The benefit is making it more testable and easy to interact with other APIs\r\n\r\nPlease also help advise if this is no the right channel to make suggestions. Is there something like Solidity Improvement Proposal?\r\n\r\n\r\n",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/13585/reactions",

@@ -66,8 +66,8 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/flashbots/mev-boost/issues/273/reactions",
-    "total_count": 8,
-    "+1": 6,
+    "total_count": 9,
+    "+1": 7,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -201,13 +201,13 @@
     "body": "Thanks for the contribution! And sorry for being slow to respond on this. It was on the radar, but due to the merge there were so many other priorities.\r\n\r\nI wonder if there's an appetite for this feature from a wider audience. Could people please signify their interest by 👍 the initial comment above?",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1255916951/reactions",
-      "total_count": 1,
+      "total_count": 2,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 1,
+      "heart": 2,
       "rocket": 0,
       "eyes": 0
     },

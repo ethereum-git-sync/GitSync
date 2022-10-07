@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25897",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25897/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25897/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25897/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25897",
+  "id": 1391950412,
+  "node_id": "I_kwDOAOvK985S93pM",
+  "number": 25897,
+  "title": "Sign Transaction ArgumentError (comparison of String with 1 failed)",
+  "user": {
+    "login": "samuarti",
+    "id": 114726459,
+    "node_id": "U_kgDOBtaWOw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/114726459?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/samuarti",
+    "html_url": "https://github.com/samuarti",
+    "followers_url": "https://api.github.com/users/samuarti/followers",
+    "following_url": "https://api.github.com/users/samuarti/following{/other_user}",
+    "gists_url": "https://api.github.com/users/samuarti/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/samuarti/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/samuarti/subscriptions",
+    "organizations_url": "https://api.github.com/users/samuarti/orgs",
+    "repos_url": "https://api.github.com/users/samuarti/repos",
+    "events_url": "https://api.github.com/users/samuarti/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/samuarti/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-30T07:07:28Z",
+  "updated_at": "2022-09-30T07:09:08Z",
+  "closed_at": "2022-09-30T07:09:08Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "#### System information\r\n\r\nGeth version:     eth (0.5.7)`\r\nCL client & version: e.g. lighthouse/nimbus/prysm@v1.0.0\r\nOS & Version: Windows/Linux/OSX\r\nCommit hash : (if `develop`)\r\n\r\n#### Expected behaviour\r\nWhen we trying to do  sign the  transactions its return error.\r\n ( ArgumentError (comparison of String with 1 failed)).\r\n\r\n###### Log error\r\n     pkey =  <Eth::Key:0x0000559d893b2b90 @private_key=#<Secp256k1::PrivateKey:0x0000559d893b25f0 @data=\"x\\xE6\\x1F\\\"^4\\rG\\x16\\xEFC\\xEC\\xC9l\\xE4\\xB3cD\\x95\\x8F\\xC1\\xDEl\\xCF\\xDC\\xDC\\xA9?\\xA0U\\x0F\\x93\">, @public_key=#<Secp256k1::PublicKey:0x0000559d893b2550>>\r\n   txn.sign(pkey)\r\n   {\"level\":\"ERROR\",\"time\":\"2022-09-30 06:42:20\",\"message\":\"#<ArgumentError: comparison of String with 1 failed>\"}\r\n\r\n",
+  "closed_by": {
+    "login": "samuarti",
+    "id": 114726459,
+    "node_id": "U_kgDOBtaWOw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/114726459?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/samuarti",
+    "html_url": "https://github.com/samuarti",
+    "followers_url": "https://api.github.com/users/samuarti/followers",
+    "following_url": "https://api.github.com/users/samuarti/following{/other_user}",
+    "gists_url": "https://api.github.com/users/samuarti/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/samuarti/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/samuarti/subscriptions",
+    "organizations_url": "https://api.github.com/users/samuarti/orgs",
+    "repos_url": "https://api.github.com/users/samuarti/repos",
+    "events_url": "https://api.github.com/users/samuarti/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/samuarti/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25897/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25897/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

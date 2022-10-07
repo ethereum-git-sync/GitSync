@@ -335,8 +335,8 @@
     "body": "Connected to the local RPC port worked for me: \r\n\r\ngeth attach http://localhost:8545 ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/335256307/reactions",
-      "total_count": 21,
-      "+1": 13,
+      "total_count": 22,
+      "+1": 14,
       "-1": 7,
       "laugh": 1,
       "hooray": 0,

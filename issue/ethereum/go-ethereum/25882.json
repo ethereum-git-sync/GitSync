@@ -123,8 +123,8 @@
     "body": "Huh, good catch. Unsure how that happened. Fixed the latest release so hopefully we'll keep using the correct URL from this point onward. Will not retrospectively change the release notes for past releases though. Thank you",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1261251298/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

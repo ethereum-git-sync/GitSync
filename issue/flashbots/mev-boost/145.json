@@ -124,15 +124,15 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/flashbots/mev-boost/issues/145/reactions",
-    "total_count": 20,
+    "total_count": 23,
     "+1": 0,
     "-1": 1,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
-    "heart": 0,
-    "rocket": 11,
-    "eyes": 8
+    "heart": 1,
+    "rocket": 12,
+    "eyes": 9
   },
   "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/145/timeline",
   "performed_via_github_app": null,
@@ -171,8 +171,8 @@
     "body": "Hi,\r\nI'm currently a searcher operating a few strats around the place, and interested in operating a builder. I believe that I can as a builder by constructing blocks with profitable txs created by my bots. However, I think that moving into an aggregated block system rather than the current aggregated relay would mean generally less profit for block producers and less inclusion for off-chain mev txs, as a majority of mev extraction txs would not be able to be seen by a builder, since there would be many and searchers either would have to run their own builder or go back to PGA. Additionally, if a searcher was not to run a builder, or for users interested in a private tx service they would have to build trusted relationships with certain builders, to reduce leaking of txs and other harmful activities, which would reduce inclusion",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1166691649/reactions",
-      "total_count": 3,
-      "+1": 3,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -303,14 +303,14 @@
     "body": "bloXroute is planning to run its own builder and a relay",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1172379728/reactions",
-      "total_count": 2,
+      "total_count": 3,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
       "heart": 0,
-      "rocket": 2,
+      "rocket": 3,
       "eyes": 0
     },
     "performed_via_github_app": null
@@ -479,9 +479,9 @@
     "body": "> So, we heard you want to run a builder! Tell us more :)\r\n> \r\n> The [builder API specification](https://ethereum.github.io/builder-specs/) is open and every validator can select their own builders. However, there are still open questions that we need to resolve with the humans in the ethereum ecosystem to get a permissionless and fully decentralized design. Following [the plan](https://github.com/flashbots/mev-boost/wiki/The-Plan-(tm)) towards proposer/builder separation we are [researching and prototyping](https://github.com/flashbots/mev-boost/wiki/Research) solutions for decentralization. Coming next is the addition of independent block builders to the Flashbots relay.\r\n> \r\n> Tell us more about who you are, what is your role in the ecosystem, how will you profit from running a builder, how are you going to contribute to answer the [open questions](https://github.com/flashbots/mev-boost/wiki/Research#open-questions), in order to get us to the trustless proposer/builder separation. Leave a comment in this issue so we can talk about collaboration.\r\n\r\n\r\n\r\nHi all!\r\n\r\n**Who are we & what is our role in the ecosystem:**\r\nWe are a ventured backed crypto trading firm that specializes in atomic intra-block and cross chain arbitrage as well as a plethora of other on-chain strategies like liquidations and exotics. We have invested a lot of resources into infrastructure to be able compete at a very high level and would like to use our experience in MEV as a searcher as well as some of our infrastructure e.g. custom high performance EVM implementations, to run a builder. \r\n\r\n**How will we profit from block building:**\r\nWe have developed a novel model for a searcher marketplace with different characteristics compared to flashbots sealed bid blockspace auction. \r\nWe believe features like fair ordering, minimization of frontrunning/sandwiching and other unique features that we have in the works will be an important value add to the space and allow both users and searchers to have a more diverse set of choices when it comes to expressing a preference of how transactions/bundles will be handled for block inclusion. There are some hurdles that we will have to overcome at the beginning to bootstrap the marketplace and be competitive, so we would like to start prototyping and building as soon as possible (ideally on some of the testnets before the merge)\r\n\r\n\r\n**How are we going to contribute to answer some of the open questions:**\r\nBlock construction is going to be a core focus for our business, hence we will dedicate full-time resources towards integrating with the builder spec etc and expect to be working closely with Flashbots/EF. What excites us about being early is that it will allow us to contribute and help shape how block construction as an industry will evolve.\r\n\r\n**TLDR:**\r\nWe believe that PBS (and MEV-Boost as an interim step) is one of the most exciting things happening in the space and are very keen to be part of it from the begging!\r\n\r\n@elopio  @thegostep  @astarinmymind   Plz DM me in regards to how we can best get started. \r\n\r\nDiscord handle: Builder#4439\r\n\r\nPS: Anyone reading this who is as excited about block construction as we are and has the technical chops to build cool tech and is interested in joining a our team. DM's are open \r\n\r\n\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1183583930/reactions",
-      "total_count": 2,
+      "total_count": 3,
       "+1": 0,
-      "-1": 2,
+      "-1": 3,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
@@ -563,18 +563,18 @@
     },
     "created_at": "2022-07-19T19:49:44Z",
     "updated_at": "2022-07-19T19:50:01Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Hi all, raising a related issue with how we will implement spam protection at the Flashbots Relay for builders here: https://github.com/flashbots/mev-boost/issues/219\r\n\r\nWill tag some of you there",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1189488294/reactions",
-      "total_count": 1,
+      "total_count": 2,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
       "heart": 0,
-      "rocket": 1,
+      "rocket": 2,
       "eyes": 0
     },
     "performed_via_github_app": null
@@ -831,14 +831,14 @@
     "body": "Oh and, I might be thinking of making a builder implem in c++",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1226563362/reactions",
-      "total_count": 1,
+      "total_count": 2,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
       "heart": 0,
-      "rocket": 1,
+      "rocket": 2,
       "eyes": 0
     },
     "performed_via_github_app": null
@@ -875,13 +875,13 @@
     "body": "The [Flashbots Goerli relay](https://builder-relay-goerli.flashbots.net/) now allows block submissions by external builders 🎉 \r\n\r\nSee also [Relay API documentation - Block Builder API](https://flashbots.notion.site/Relay-API-Spec-5fb0819366954962bc02e81cb33840f5#854339c909a042d0bbca6e8f8069674e)\r\n\r\nThe endpoints are:\r\n\r\n* `getValidators`: https://builder-relay-goerli.flashbots.net/relay/v1/builder/validators (GET)\r\n* `submitBlock`: https://builder-relay-goerli.flashbots.net/relay/v1/builder/blocks (POST)\r\n\r\nRate-limit for submissions is currently ~10~ 30 / minute, we'll allow more soon (the goal is to allow ~ 1 request per sec).",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1234767770/reactions",
-      "total_count": 2,
+      "total_count": 3,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 2,
+      "heart": 3,
       "rocket": 0,
       "eyes": 0
     },
@@ -1227,13 +1227,13 @@
     "body": "**Mainnet relay block submission endpoints:**\r\n\r\n- `getValidators`: [https://boost-relay.flashbots.net/relay/v1/builder/validators](https://boost-relay.flashbots.net/relay/v1/builder/validators) (GET) - array of proposer preferences for registered validators with assigned duties in the current and next epoch\r\n- `submitBlock`: [https://boost-relay.flashbots.net/relay/v1/builder/blocks](https://boost-relay.flashbots.net/relay/v1/builder/blocks) (POST)",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1246489120/reactions",
-      "total_count": 0,
+      "total_count": 1,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 0,
+      "heart": 1,
       "rocket": 0,
       "eyes": 0
     },

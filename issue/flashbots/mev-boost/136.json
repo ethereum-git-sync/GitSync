@@ -128,7 +128,7 @@
     },
     "created_at": "2022-06-07T22:37:00Z",
     "updated_at": "2022-06-07T22:39:21Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "just pointing out that this is a classic \"security vs convenience\" trade-off.\r\n\r\nif we assume a \"battle-hardened\" validation setup then not only does the operator have to open IP access to the relays but also to this \"relay provider\" and the relay provider *must* take a lot of care to not be compromised.\r\n\r\nthe \"low-hanging fruit\" class of damage that could be done by compromise of an endpoint like this issue suggests is pretty minimal although I can see how it could be exploited for a liveness fault (esp. if I found a zero-day in the local builder fallback pipeline) -- im sure we can think of increasingly damaging attacks if we spend more time on it",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1149240906/reactions",
@@ -172,7 +172,7 @@
     },
     "created_at": "2022-06-07T22:38:40Z",
     "updated_at": "2022-06-07T22:38:40Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "its also worth considering other discovery mechanisms beyond a registry provided by a direct API.\r\n\r\nI know at least ethereum and bitcoin have DNS-based discovery modes (if someone goes down this road, look into authenticating the DNS records a la DNSSEC) and in the limit we could even bake our own discovery layer on top of discv5.",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1149241854/reactions",
@@ -260,7 +260,7 @@
     },
     "created_at": "2022-06-27T23:23:54Z",
     "updated_at": "2022-06-27T23:23:54Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "yeah I think re-loading a local file is much easier to secure than making arbitrary network requests :)",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1168030212/reactions",

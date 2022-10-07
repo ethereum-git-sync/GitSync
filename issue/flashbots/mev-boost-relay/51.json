@@ -1,8 +1,119 @@
 {
-  "message": "API rate limit exceeded for user ID 93719879.",
-  "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
+  "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51",
+  "repository_url": "https://api.github.com/repos/flashbots/mev-boost-relay",
+  "labels_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51/labels{/name}",
+  "comments_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51/comments",
+  "events_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51/events",
+  "html_url": "https://github.com/flashbots/mev-boost-relay/issues/51",
+  "id": 1335903958,
+  "node_id": "I_kwDOHXha9s5PoEbW",
+  "number": 51,
+  "title": "Should builder block submissions override previous one by same builder even if less profitable?",
+  "user": {
+    "login": "metachris",
+    "id": 116939,
+    "node_id": "MDQ6VXNlcjExNjkzOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/metachris",
+    "html_url": "https://github.com/metachris",
+    "followers_url": "https://api.github.com/users/metachris/followers",
+    "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+    "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+    "organizations_url": "https://api.github.com/users/metachris/orgs",
+    "repos_url": "https://api.github.com/users/metachris/repos",
+    "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/metachris/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 4426109452,
+      "node_id": "LA_kwDOHXha9s8AAAABB9ESDA",
+      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/labels/brainstorming",
+      "name": "brainstorming",
+      "color": "FF69B4",
+      "default": false,
+      "description": "Currently in discussion"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-08-11T12:40:07Z",
+  "updated_at": "2022-10-03T08:41:21Z",
+  "closed_at": null,
+  "author_association": "COLLABORATOR",
+  "active_lock_reason": null,
+  "body": "See also: [at what level should cancellations be allowed, if at all? #113](https://github.com/flashbots/mev-boost/issues/113)\r\n",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
 }
-{
-  "message": "API rate limit exceeded for user ID 93719879.",
-  "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
-}
+[
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1265120102",
+    "html_url": "https://github.com/flashbots/mev-boost-relay/issues/51#issuecomment-1265120102",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/51",
+    "id": 1265120102,
+    "node_id": "IC_kwDOHXha9s5LaDNm",
+    "user": {
+      "login": "metachris",
+      "id": 116939,
+      "node_id": "MDQ6VXNlcjExNjkzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/metachris",
+      "html_url": "https://github.com/metachris",
+      "followers_url": "https://api.github.com/users/metachris/followers",
+      "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+      "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+      "organizations_url": "https://api.github.com/users/metachris/orgs",
+      "repos_url": "https://api.github.com/users/metachris/repos",
+      "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/metachris/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-10-03T08:41:21Z",
+    "updated_at": "2022-10-03T08:41:21Z",
+    "author_association": "COLLABORATOR",
+    "body": "Perhaps this feature could be opt-in (i.e. with a request header), it might be a little risky for less sophisticated builders to accidentally overwrite their better blocks before 🤔 \r\n\r\nImplementation-wise it could look like this:\r\n- for each builder, keep the latest bid around in a cache (redis / db)\r\n- once a builder submits a new bid, replace the latest bid in the cache and prepare the current best-bid to be delivered on getHeader requests ",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost-relay/issues/comments/1265120102/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

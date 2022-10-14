@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/4514",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/4514/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/4514/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/4514/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/4514",
+  "id": 1068316575,
+  "node_id": "I_kwDOAq426M4_rTef",
+  "number": 4514,
+  "title": "that is, not all nodes participate in the round?",
+  "user": {
+    "login": "Jansteph7734",
+    "id": 95351291,
+    "node_id": "U_kgDOBa7x-w",
+    "avatar_url": "https://avatars.githubusercontent.com/u/95351291?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Jansteph7734",
+    "html_url": "https://github.com/Jansteph7734",
+    "followers_url": "https://api.github.com/users/Jansteph7734/followers",
+    "following_url": "https://api.github.com/users/Jansteph7734/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Jansteph7734/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Jansteph7734/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Jansteph7734/subscriptions",
+    "organizations_url": "https://api.github.com/users/Jansteph7734/orgs",
+    "repos_url": "https://api.github.com/users/Jansteph7734/repos",
+    "events_url": "https://api.github.com/users/Jansteph7734/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Jansteph7734/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2021-12-01T11:56:13Z",
+  "updated_at": "2022-07-18T19:18:26Z",
+  "closed_at": "2021-12-01T12:18:48Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "that is, not all nodes participate in the round?\r\n\r\n_Originally posted by @robertox186 in https://github.com/ethereum/EIPs/issues/650#issuecomment-905706904_",
+  "closed_by": {
+    "login": "MicahZoltu",
+    "id": 886059,
+    "node_id": "MDQ6VXNlcjg4NjA1OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/886059?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MicahZoltu",
+    "html_url": "https://github.com/MicahZoltu",
+    "followers_url": "https://api.github.com/users/MicahZoltu/followers",
+    "following_url": "https://api.github.com/users/MicahZoltu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MicahZoltu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MicahZoltu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MicahZoltu/subscriptions",
+    "organizations_url": "https://api.github.com/users/MicahZoltu/orgs",
+    "repos_url": "https://api.github.com/users/MicahZoltu/repos",
+    "events_url": "https://api.github.com/users/MicahZoltu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MicahZoltu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/4514/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/4514/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

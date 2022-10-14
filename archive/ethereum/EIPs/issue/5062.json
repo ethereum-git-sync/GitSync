@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/5062",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/5062/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/5062/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/5062/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/5062",
+  "id": 1222031539,
+  "node_id": "I_kwDOAq426M5I1riz",
+  "number": 5062,
+  "title": "EIP-644: A standard for permission token",
+  "user": {
+    "login": "chiro-hiro",
+    "id": 8078873,
+    "node_id": "MDQ6VXNlcjgwNzg4NzM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8078873?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chiro-hiro",
+    "html_url": "https://github.com/chiro-hiro",
+    "followers_url": "https://api.github.com/users/chiro-hiro/followers",
+    "following_url": "https://api.github.com/users/chiro-hiro/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chiro-hiro/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chiro-hiro/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chiro-hiro/subscriptions",
+    "organizations_url": "https://api.github.com/users/chiro-hiro/orgs",
+    "repos_url": "https://api.github.com/users/chiro-hiro/repos",
+    "events_url": "https://api.github.com/users/chiro-hiro/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chiro-hiro/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-05-01T05:44:28Z",
+  "updated_at": "2022-07-18T18:07:53Z",
+  "closed_at": "2022-05-01T16:26:37Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "# Abstract\r\n\r\nA new token standard that held the permission of an address in an ecosystem. A permission token can be transferred by the owner and can be granted/revoked to an authorized operator.\r\n\r\n# Motivation\r\nWe still need implement and manage smart contract by permissioned addresses that's why you may see special roles like Owner, Operator.... These permissions aren't managed correctly and it's really hard if we want to transfer, grant, revoke permissions.\r\n\r\nLet's check the `Ownable.sol`\r\n\r\n```solidity\r\n// SPDX-License-Identifier: MIT\r\n// OpenZeppelin Contracts v4.4.1 (access/Ownable.sol)\r\n\r\npragma solidity ^0.8.0;\r\n\r\nimport \"../utils/Context.sol\";\r\n\r\nabstract contract Ownable is Context {\r\n    address private _owner;\r\n\r\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\r\n\r\n    constructor() {\r\n        _transferOwnership(_msgSender());\r\n    }\r\n\r\n    function owner() public view virtual returns (address) {\r\n        return _owner;\r\n    }\r\n\r\n    modifier onlyOwner() {\r\n        require(owner() == _msgSender(), \"Ownable: caller is not the owner\");\r\n        _;\r\n    }\r\n\r\n    function renounceOwnership() public virtual onlyOwner {\r\n        _transferOwnership(address(0));\r\n    }\r\n\r\n    function transferOwnership(address newOwner) public virtual onlyOwner {\r\n        require(newOwner != address(0), \"Ownable: new owner is the zero address\");\r\n        _transferOwnership(newOwner);\r\n    }\r\n\r\n    function _transferOwnership(address newOwner) internal virtual {\r\n        address oldOwner = _owner;\r\n        _owner = newOwner;\r\n        emit OwnershipTransferred(oldOwner, newOwner);\r\n    }\r\n}\r\n```\r\n\r\nThis contract is only able to provide basic permission for an owner, define another role or permission is expensive and it's hard to mange the relationship between smart contracts.\r\n\r\nWe want to prevent the smart contract to be called as soon as the caller don't have the required permission.\r\n\r\n# Specification\r\n\r\nThis token shares the same interface with other standard:\r\n\r\n```solidity\r\ninterface PermissionToken {\r\n    function name() external returns(string memory);\r\n    function symbol() external returns(string memory);\r\n    function transfer(address to, uint256 permission) external returns(bool);\r\n    function balanceOf(address owner) external view returns(uint256)\r\n}\r\n```\r\n\r\n*Note:* _I don't think permission allowance is a good idea but let's discuss later._\r\n\r\n## Storage\r\n\r\nA mapping can be used to store 256 bits of permissions of an address:\r\n\r\n```solidity\r\nmapping (address => uint256) balances;\r\n```\r\n\r\nWe can define a permission is a power of 2:\r\n\r\n```solidity\r\nuint256 constant PERMISSION_NONE = 0;\r\nuint256 constant PERMISSION_CREATE = 1;\r\nuint256 constant PERMISSION_SIGN = 2;\r\nuint256 constant PERMISSION_EXECUTE = 4;\r\n```\r\n\r\nTo check an address have some certain permissions, we just need to do a simple trick by using bitmask check.\r\n\r\n## Checking\r\n\r\nDefine a role:\r\n\r\n```solidity\r\nuint256 constant ROLE_ADMIN = PERMISSION_CREATE | PERMISSION_SIGN | PERMISSION_EXECUTE;\r\n```\r\n\r\nCheck role and permission:\r\n\r\n```solidity\r\nmodifier onlyAllow(uint256 permission) {\r\n    require(permissionToken.balanceOf(msg.sender) & permission > 0, 'Access Denied');\r\n    _;\r\n}\r\n\r\nfunction upgradeContract() onlyAllow(ROLE_ADMIN) {\r\n    // some special code\r\n}\r\n```\r\n\r\n## Transfer permissions\r\n\r\nTransfer method allows an owner to transfer a subset of their permissions to another address.\r\n\r\n```solidity\r\nfunction transfer(address to, uint256 \u001Dpermissions) external returns(bool) {\r\n    require(balances[msg.sender] & permissions > 0);\r\n    require(address(to) != address(0));\r\n    // Remove permissions from sender\r\n    balances[msg.sender] =  (balances[msg.sender] | permissions) ^ permissions;\r\n    // Assign permissions to receiver\r\n    balances[to] = balances[to] | permissions;\r\n    return balances[to] & permissions > 0;\r\n}\r\n```\r\n\r\n## Delegate permissions\r\n\r\nAllow an authorized operator to trigger smart contract for behalf of permission owner.\r\n\r\n**Note:** _Authorized operator can not transfer delegated permissions._\r\n\r\n# Conclusion\r\n- This approach could help reduce security fault regarding to permission management\r\n- This proposal simplifies management process and it is extendable in the future _(apparently you can define 256 permissions and 2^256 roles)_.\r\n- This standard can be used to secure the interaction between two different ecosystems.\r\n- An owner can grant a subset of their permission to a given address and they can revoke the access anytime.",
+  "closed_by": {
+    "login": "chiro-hiro",
+    "id": 8078873,
+    "node_id": "MDQ6VXNlcjgwNzg4NzM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8078873?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chiro-hiro",
+    "html_url": "https://github.com/chiro-hiro",
+    "followers_url": "https://api.github.com/users/chiro-hiro/followers",
+    "following_url": "https://api.github.com/users/chiro-hiro/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chiro-hiro/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chiro-hiro/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chiro-hiro/subscriptions",
+    "organizations_url": "https://api.github.com/users/chiro-hiro/orgs",
+    "repos_url": "https://api.github.com/users/chiro-hiro/repos",
+    "events_url": "https://api.github.com/users/chiro-hiro/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chiro-hiro/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/5062/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/5062/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

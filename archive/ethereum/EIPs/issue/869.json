@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/869",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/869/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/869/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/869/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/869",
+  "id": 294288750,
+  "node_id": "MDU6SXNzdWUyOTQyODg3NTA=",
+  "number": 869,
+  "title": "How to use gas from other wallet",
+  "user": {
+    "login": "jayantbramhankar",
+    "id": 3996382,
+    "node_id": "MDQ6VXNlcjM5OTYzODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3996382?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jayantbramhankar",
+    "html_url": "https://github.com/jayantbramhankar",
+    "followers_url": "https://api.github.com/users/jayantbramhankar/followers",
+    "following_url": "https://api.github.com/users/jayantbramhankar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jayantbramhankar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jayantbramhankar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jayantbramhankar/subscriptions",
+    "organizations_url": "https://api.github.com/users/jayantbramhankar/orgs",
+    "repos_url": "https://api.github.com/users/jayantbramhankar/repos",
+    "events_url": "https://api.github.com/users/jayantbramhankar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jayantbramhankar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-02-05T06:42:22Z",
+  "updated_at": "2018-02-05T06:58:49Z",
+  "closed_at": "2018-02-05T06:58:49Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "I've created an HD wallet containing many accounts, where wallet.GetAccount(0) holds ETHERs and other wallets been used receive ERC20 tokens for users.\r\n\r\nHow can I transfer these tokens from child to main(0) account.\r\n\r\nIs there any way to use main account gas. \r\nI'm using  [https://github.com/Nethereum/Nethereum](https://github.com/Nethereum/Nethereum) library in Asp.net MVC.\r\n\r\nThanks.",
+  "closed_by": {
+    "login": "jayantbramhankar",
+    "id": 3996382,
+    "node_id": "MDQ6VXNlcjM5OTYzODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3996382?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jayantbramhankar",
+    "html_url": "https://github.com/jayantbramhankar",
+    "followers_url": "https://api.github.com/users/jayantbramhankar/followers",
+    "following_url": "https://api.github.com/users/jayantbramhankar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jayantbramhankar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jayantbramhankar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jayantbramhankar/subscriptions",
+    "organizations_url": "https://api.github.com/users/jayantbramhankar/orgs",
+    "repos_url": "https://api.github.com/users/jayantbramhankar/repos",
+    "events_url": "https://api.github.com/users/jayantbramhankar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jayantbramhankar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/869/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/869/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

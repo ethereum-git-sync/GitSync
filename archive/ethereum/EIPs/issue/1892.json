@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/1892",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/1892/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/1892/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/1892/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/1892",
+  "id": 427566483,
+  "node_id": "MDU6SXNzdWU0Mjc1NjY0ODM=",
+  "number": 1892,
+  "title": "ERC20D: rent-compatible ERC20 migration",
+  "user": {
+    "login": "Agusx1211",
+    "id": 12701942,
+    "node_id": "MDQ6VXNlcjEyNzAxOTQy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12701942?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Agusx1211",
+    "html_url": "https://github.com/Agusx1211",
+    "followers_url": "https://api.github.com/users/Agusx1211/followers",
+    "following_url": "https://api.github.com/users/Agusx1211/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Agusx1211/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Agusx1211/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Agusx1211/subscriptions",
+    "organizations_url": "https://api.github.com/users/Agusx1211/orgs",
+    "repos_url": "https://api.github.com/users/Agusx1211/repos",
+    "events_url": "https://api.github.com/users/Agusx1211/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Agusx1211/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-04-01T08:07:43Z",
+  "updated_at": "2019-05-31T16:00:58Z",
+  "closed_at": "2019-05-31T16:00:58Z",
+  "author_association": "CONTRIBUTOR",
+  "active_lock_reason": null,
+  "body": "```\r\neip: 1892\r\ntitle: ERC20D rent-compatible ERC20 migration\r\nauthor: Agustin Aguilar <agusxrun@gmail.com>\r\nstatus: Work in progress (WIP)\r\ntype: Informational\r\ncreated: 01-04-2019\r\nresolution: --\r\n```\r\n\r\n# Abstract\r\n\r\nThe following document describes a proposal on how to migrate an existing ERC20 (https://github.com/ethereum/eips/issues/20) token to a rent compatible implementation of the ERC20 (https://github.com/ethereum/eips/issues/20) standard.\r\n\r\n# Motivation\r\n\r\nThe implementation of any rent mechanism in the Ethereum network (https://github.com/ethereum/EIPs/issues/35) (https://github.com/ethereum/EIPs/issues/87) (https://github.com/ethereum/EIPs/issues/88) (https://github.com/ethereum/EIPs/pull/755) (https://github.com/ethereum/EIPs/issues/1418) may open a griefing channel on almost all existing ERC20 tokens.\r\n\r\nMost of the existing implementations relay on the main contract to store all balances and allowances, this can be exploited to bloat the contract storage, rendering the rent expensive or impossible to pay.\r\n\r\nThis proposal describes a process to migrate an ERC20 token to a new contract, invulnerable to such griefing.\r\n\r\n# Glossary\r\n\r\nThis document references to the Distributed implementation of ERC20 as **ERC20D**.\r\n\r\n# Implementation\r\n\r\nThere is no need to change the existing ERC20 interface; the problem can be solved by splitting each balance/allowance registry into its own storage space.\r\n\r\nThe CREATE2 opcode allows us to use contracts as storage slots, without using any of the parent contract storage.\r\n\r\n## Storage unit contract\r\n\r\nThis is a Solidity implementation of a storage contract, the deployer of the contract is the owner, and can write values to the storage.\r\n\r\n```solidity\r\ncontract StorageUnit {\r\n    address private owner;\r\n    mapping(bytes32 => bytes32) private store;\r\n\r\n    constructor() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    function write(bytes32 _key, bytes32 _value) external {\r\n        require(msg.sender == owner);\r\n        store[_key] = _value;\r\n    }\r\n\r\n    function read(bytes32 _key) external view returns (bytes32) {\r\n        return store[_key];\r\n    }\r\n}\r\n```\r\n\r\n\r\n## Library to read and write storage units\r\n\r\nThe library is used to read and write storage units with a syntax similar to the native storage of Solidity.\r\n\r\n\r\n```solidity\r\nlibrary DistributedStorage {\r\n\r\n    // Returns true if _addr is not a contract\r\n    function _isNotContract(address _addr) internal view returns (bool i) {\r\n        assembly {\r\n            i := iszero(extcodesize(_addr))\r\n        }\r\n    }\r\n\r\n    // Returns the address of a contract slot for a given _space\r\n    function _contractSlot(bytes32 _space) private view returns (address) {\r\n        return address(\r\n            uint256(\r\n                keccak256(\r\n                    abi.encodePacked(\r\n                        byte(0xff),\r\n                        address(this),\r\n                        _space,\r\n                        keccak256(type(StorageUnit).creationCode)\r\n                    )\r\n                )\r\n            )\r\n        );\r\n    }\r\n\r\n    // Deploys the contract for the _space slot\r\n    function _deploy(bytes32 _space) private {\r\n        bytes memory slotcode = type(StorageUnit).creationCode;\r\n        assembly{\r\n            pop(create2(0, add(slotcode, 0x20), mload(slotcode), _space))\r\n        }\r\n    }\r\n\r\n    // Writes a value using another contract storage\r\n    // the contract used is determined by the _space value\r\n    // the storage slot is determined by the _key value\r\n    function write(\r\n        bytes32 _space,\r\n        bytes32 _key,\r\n        bytes32 _value\r\n    ) internal {\r\n        address store = _contractSlot(_space);\r\n        \r\n        // If the contract does not exist\r\n        // deploy it before writing to the storage\r\n        if (_isNotContract(store)) {\r\n            deploy(_struct);\r\n        }\r\n\r\n        StorageUnit(store).write(_key, _value);\r\n    }\r\n\r\n    // Reads a value from another contract storage\r\n    // the contract used is determined by the _space value\r\n    // the storage slot is determined by the _key value\r\n    function read(\r\n        bytes32 _space,\r\n        bytes32 _key\r\n    ) internal view returns (bytes32) {\r\n        address store = _contractSlot(_space);\r\n\r\n        // If the contract does not exist\r\n        // the readed value must be zero\r\n        if (_isNotContract(store)) {\r\n            return bytes32(0x0);\r\n        }\r\n\r\n        return StorageUnit(store).read(_key);\r\n    }\r\n}\r\n```\r\n\r\n## ERC20D Implementation\r\n\r\nThe ERC20 interface can be implemented using the DistributedStorage library.\r\n\r\n```solidity\r\ncontract ERC20D {\r\n    using DistributedStorage for bytes32;\r\n\r\n    event Transfer(address indexed _from, address indexed _to, uint256 _value);\r\n    event Approval(address indexed _owner, address indexed _spender, uint256 _value);\r\n\r\n    uint256 public totalSupply;\r\n\r\n    // ///\r\n    // ERC20 Implementation\r\n    // ///\r\n\r\n    function balanceOf(address _addr) external view returns (uint256) {\r\n        return _balanceOf(_addr);\r\n    }\r\n    \r\n    function allowance(address _addr, address _spender) external view returns (uint256) {\r\n        return _allowance(_addr, _spender);\r\n    }\r\n    \r\n    function totalSupply() external view returns (uint256) {\r\n        return _totalSupply;\r\n    }\r\n\r\n    function approve(address _spender, uint256 _value) external returns (bool) {\r\n        emit Approval(msg.sender, _spender, _value);\r\n        _setAllowance(msg.sender, _spender, _value);\r\n        return true;\r\n    }\r\n    \r\n    function transfer(address _to, uint256 _value) external returns (bool) {\r\n        _transfer(msg.sender, _to, _value);\r\n        return true;\r\n    }\r\n\r\n    function transferFrom(address _from, address _to, uint256 _value) external returns (bool) {\r\n        uint256 allowanceFrom = _allowance(_from, msg.sender);\r\n        require(allowanceFrom >= _value);\r\n        _setAllowance(_from, msg.sender, allowanceFrom - _value);\r\n        _transfer(_from, _to, _value);\r\n        return true;\r\n    }\r\n\r\n    // ///\r\n    // ERC20 Internal methods\r\n    // ///\r\n\r\n    function _transfer(address _from, address _to, uint256 _value) internal {\r\n        uint256 balanceFrom = _balanceOf(_from);\r\n        require(balanceFrom >= _value);\r\n        _setBalance(_from, balanceFrom - _value);\r\n        _setBalance(_to, _balanceOf(_to) + _value);\r\n        emit Transfer(_from, _to, _value);\r\n    }\r\n\r\n    function _mint(address _to, uint256 _value) internal {\r\n        emit Transfer(address(0), _to, _value);\r\n        totalSupply = totalSupply +_value;\r\n        _setBalance(_to, _balanceOf(_to + _value));\r\n    }\r\n\r\n    function _burn(address _from, uint256 _value) internal {\r\n        uint256 balanceFrom = _balanceOf(msg.sender);\r\n        require(balanceFrom >= _value);\r\n        require(totalSupply >= _value);\r\n        totalSupply = totalSupply - _value;\r\n        _setBalance(_from, balanceFrom - _value);\r\n        emit Transfer(_from, address(0), _value);\r\n    }\r\n\r\n    // ///\r\n    // Read and write storage\r\n    // ///\r\n\r\n    function _balanceOf(address _addr) internal view returns (uint256) {\r\n        return uint256(bytes32(_addr).read(keccak256(\"balance\")));\r\n    }\r\n\r\n    function _allowance(address _addr, address _spender) internal view returns (uint256) {\r\n        return uint256(bytes32(_addr).read(keccak256(abi.encodePacked(\"allowance\", _spender))));\r\n    }\r\n\r\n    function _setBalance(address _addr, uint256 _balance) private {\r\n        bytes32(_addr).write(\r\n            keccak256(\"balance\"),\r\n            bytes32(_balance)\r\n        );\r\n    }\r\n\r\n    function _setAllowance(address _addr, address _spender, uint256 _value) private {\r\n        bytes32(_addr).write(\r\n            keccak256(abi.encodePacked(\"allowance\", _spender)),\r\n            bytes32(_value)\r\n        );\r\n    }\r\n}\r\n```\r\n> Underflow and overflow checks must be added before using in production\r\n\r\nPlease note that the contracts above are an **example** only. It is not the standard.\r\n\r\n# Migration\r\n\r\nThe ERC20 to ERC20D migration should be performed in a progressive manner to avoid disruptions and loss of funds.\r\n\r\n## Migration interface\r\n\r\n```solidity\r\nfunction origin() public view returns (address);\r\nfunction migrate(uint256 _value) public;\r\nfunction immigrate(uint256 _value) public;\r\n```\r\n\r\n### Origin\r\n\r\nReturns the address of the original ERC20 token.\r\n\r\n```solidity\r\nfunction origin() public view returns (address);\r\n```\r\n\r\n## Native migration methods\r\n\r\n### Total supply\r\n\r\nAt the beginning of the migration, the totalSupply of the origin ERC20 is minted to the address of the original ERC20 contract to maintain an equal total supply.\r\n\r\nAll subsequent migrations and immigrations are transferred from and to the origin ERC20 token.\r\n\r\n```solidity\r\n    constructor(ERC20 _origin) public {\r\n        origin = _origin;\r\n        _mint(address(_origin), _origin.totalSupply());\r\n    }\r\n```\r\n\r\n### Migrate\r\n\r\nIt pulls ERC20 tokens and mints the same amount in ERC20D tokens, it should revert on failure.\r\n\r\n```solidity\r\n    function _migrate(address _from, uint256 _value) internal {\r\n        require(origin.transferFrom(_from, address(this), _value));\r\n        _transfer(address(origin), _from, _value);\r\n        emit Migrated(_from, _value);\r\n    }\r\n\r\n    function migrate(uint256 _value) external {\r\n        _migrate(msg.sender, _value);\r\n    }\r\n```\r\n\r\n### Immigrate\r\n\r\nIt burs ERC20D and transfers back the original ERC20 tokens, it should revert on failure.\r\n\r\n```solidity\r\n    function _immigrate(address _from, uint256 _value) internal {\r\n        _transfer(_from, address(origin), _value);\r\n        require(origin.transfer(_from, _value));\r\n        emit Immigrated(_from, _value);\r\n    }\r\n\r\n    function immigrate(uint256 _value) external {\r\n        _immigrate(msg.sender, _value);\r\n    }\r\n```\r\n\r\n## Live swap migration\r\n\r\nThe following would allow transferring ERC20D without having to migrate the ERC20 tokens previously.\r\n\r\nIf the user approved the ERC20D contract on the original ERC20 contract, his balance on the origin ERC20 contract could also be accessed with the **transfer** and **transferFrom** functions of ERC20D.\r\n\r\n```solidity\r\n    function _transfer(address _from, address _to, uint256 _value) internal {\r\n        uint256 balanceFrom = _from.balanceFrom(_from);\r\n\r\n        // _from has no balance, try migrate\r\n        if (balaceFrom < _value) {\r\n            uint256 required = _value - balaceFrom;\r\n            _migrate(_from, required);\r\n            emit LiveSwapMigrated(msg.sender, _from, required);\r\n        }\r\n\r\n        super._transfer(_from, _to, _value);\r\n    }\r\n```\r\n\r\n### Events\r\n\r\n#### Migrated\r\n\r\n```solidity\r\n    event Migrated(address indexed _from, uint256 _value);\r\n```\r\n\r\nTriggered when tokens are migrated from ERC20 to ERC20D.\r\n\r\n#### Immigrated\r\n\r\n```solidity\r\n    event Migrated(address indexed _from, uint256 _value);\r\n```\r\n\r\nTriggered when tokens are migrated from ERC20D to ERC20.\r\n\r\n#### LiveSwapMigrated\r\n\r\n```solidity\r\n    event LiveSwapMigrated(address indexed _by, address indexed _from, uint256 _value);\r\n```\r\n\r\nTriggered when tokens are migrated by a LiveSwap.\r\n\r\n# Backwards compatibility\r\n\r\nThe ERC20D is fully compliant with the ERC20 specification and can be treated as any other implementation.",
+  "closed_by": {
+    "login": "Agusx1211",
+    "id": 12701942,
+    "node_id": "MDQ6VXNlcjEyNzAxOTQy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12701942?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Agusx1211",
+    "html_url": "https://github.com/Agusx1211",
+    "followers_url": "https://api.github.com/users/Agusx1211/followers",
+    "following_url": "https://api.github.com/users/Agusx1211/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Agusx1211/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Agusx1211/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Agusx1211/subscriptions",
+    "organizations_url": "https://api.github.com/users/Agusx1211/orgs",
+    "repos_url": "https://api.github.com/users/Agusx1211/repos",
+    "events_url": "https://api.github.com/users/Agusx1211/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Agusx1211/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/1892/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/1892/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

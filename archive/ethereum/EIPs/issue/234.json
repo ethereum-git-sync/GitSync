@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/234",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/234/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/234/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/234/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/234",
+  "id": 216909579,
+  "node_id": "MDU6SXNzdWUyMTY5MDk1Nzk=",
+  "number": 234,
+  "title": "Add `blockHash` to JSON-RPC filter options.",
+  "user": {
+    "login": "MicahZoltu",
+    "id": 886059,
+    "node_id": "MDQ6VXNlcjg4NjA1OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/886059?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MicahZoltu",
+    "html_url": "https://github.com/MicahZoltu",
+    "followers_url": "https://api.github.com/users/MicahZoltu/followers",
+    "following_url": "https://api.github.com/users/MicahZoltu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MicahZoltu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MicahZoltu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MicahZoltu/subscriptions",
+    "organizations_url": "https://api.github.com/users/MicahZoltu/orgs",
+    "repos_url": "https://api.github.com/users/MicahZoltu/repos",
+    "events_url": "https://api.github.com/users/MicahZoltu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MicahZoltu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2017-03-24T21:29:29Z",
+  "updated_at": "2021-05-19T08:30:28Z",
+  "closed_at": "2021-05-19T08:30:28Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "## Preamble\r\n```\r\nEIP: <to be assigned>\r\nTitle: Add `blockHash` to JSON-RPC filter options.\r\nAuthor: Micah Zoltu\r\nType: <Standard Track | Informational | Meta>\r\nCategory: Interface\r\nStatus: Draft\r\nCreated: 2017-03-24\r\n```\r\n\r\n## Simple Summary\r\n\r\nAdd an option to JSON-RPC filter options (used by `eth_newFilter` and `eth_getLogs`) that allows specifying the block hash that should be included in the results.  This option would be an alternative to `fromBlock`/`toBlock` options.\r\n\r\n## Abstract\r\n\r\nThis addition would allow clients to fetch logs for specific blocks, whether those blocks were in the current main chain or not.  This resolves some issues that make it difficult/expensive to author robust clients due to the nature of chain reorgs, unreliable network connections and the result set not containing enough details in the empty case.\r\n\r\n## Specification\r\n\r\nThe filter options used by `eth_newFilter` would have an additional optional parameter named `blockHash` whose value is a single block hash.  The Ethereum node responding to the request would either send back an error if the block hash was not found or it would return the results matching the filter (per normal operation) constrained to the block provided.  Internally, this would function (presumably) similar to the `fromBlock` and `toBlock` filter options.\r\n\r\n## Rationale\r\n\r\nA client (dApp) who needs reliable notification of both log additions (on new blocks) and log removals (on chain reorgs) cannot achieve this while relying solely on subscriptions and filters.  This is because a combination of a network or remote node failure during a reorg can result in the client getting out of sync with reality.  An example of where this can happen with Websockets is when the client opens a web socket connection, sets up a log filter subscription, gets notified of some new logs, then loses the web socket connection, then (while disconnected) a re-org occurs, then the client connects back and establishes a new log filter.  In this scenario they will not receive notification of the log removals from the node because they were disconnected when the removals were broadcast and the loss of their connection resulted in the node forgetting about their existence.  A similar scenario can be concocted for HTTP clients where between polls for updates, the node goes down and comes back (resulting in loss of filter state) and a re-org also occurs between the same two polls.\r\n\r\nIn order to deal with this while still providing a robust mechanism for internal block/log additional/removal, the client can maintain a blockchain internally (last `n` blocks) and only subscribe/poll for new blocks.  When a new block is received, the client can reconcile their internal model with the new block, potentially back-filling parents or rolling back/removing blocks from their internal model to get in sync with the node.  This can account for any type of disconnect/reorg/outage scenario and also allows the client (as an added benefit) to talk to a cluster of Ethereum nodes (e.g., via round-robin) rather than being tightly coupled to a single node.\r\n\r\nOnce the user has a reliable stream of blocks, they can then look at the bloom filter for the new block and if the block *may* have logs of interest they can fetch the filtered logs for that block from the node.  The problem that arises is that a re-org may occur between when the client receives the block and when the client fetches the logs for that block.  Given the current set of filter options, the client can only ask for logs by block number.  In this scenario, the logs they get back will be for a block that *isn't* the block they want the logs for and is instead for a block that was re-orged in (and may not be fully reconciled with the internal client state).  This can be partially worked around by looking at the resulting logs themselves and identifying whether or not they are for the block hash requested.  However, if the result set is an empty array (no logs fetched) then the client is in a situation where they don't know what block the results are for.  The results could have been legitimately empty (bloom filter can yield false positives) for the block in question, or they could be receiving empty logs for a block that they don't know about.  At this point, there is no decision the client can make that allows them a guarantee of recovery.  They can assume the empty logs were for the correct block, but if they weren't then they will never try to fetch again.  This creates a problem if the block was only transiently re-orged out because it may come back before the next block poll so the client will never witness the reorg.  They can assume the empty logs were for the wrong block, an refetch them, but they may continue to get empty results putting them right back into the same situation.\r\n\r\nBy adding the ability to fetch logs by hash, the client can be guaranteed that if they get a result set, it is for the block in question.  If they get an error, then they can take appropriate action (e.g., rollback that block client-side and re-fetch latest).\r\n\r\n## Backwards Compatibility\r\n\r\nThe only potential issue here is the `fromBlock` and `toBlock` fields.  It wouldn't make sense to include both the hash and the number so it seems like `fromBlock`/`toBlock` should be mutually exclusive with `blockHash`.\r\n\r\n## Test Cases\r\n\r\n`{ \"jsonrpc\": \"2.0\", \"id\": 1, \"method\": \"eth_getLogs\", params: [{\"blockHash\": \"0xbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0c\"}] }` should return all of the logs for the block with hash `0xbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0c`.  If a `topics` field is added to the filter options then a filtered set of logs for that block should be returned.  If no block exists with that hash then an error should be returned with a `code` of `-32602`, a `message` of `\"Invalid params\"` and a `data` of `\"Block with hash 0xbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0cbl0c was not found.\"`.\r\n\r\n## Implementation\r\n\r\n- [ ] Geth\r\n- [ ] Parity\r\n- [ ] EthereumJ\r\n\r\n## Copyright\r\n\r\nCopyright and related rights waived via CC0.\r\n",
+  "closed_by": {
+    "login": "MicahZoltu",
+    "id": 886059,
+    "node_id": "MDQ6VXNlcjg4NjA1OQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/886059?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MicahZoltu",
+    "html_url": "https://github.com/MicahZoltu",
+    "followers_url": "https://api.github.com/users/MicahZoltu/followers",
+    "following_url": "https://api.github.com/users/MicahZoltu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MicahZoltu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MicahZoltu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MicahZoltu/subscriptions",
+    "organizations_url": "https://api.github.com/users/MicahZoltu/orgs",
+    "repos_url": "https://api.github.com/users/MicahZoltu/repos",
+    "events_url": "https://api.github.com/users/MicahZoltu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MicahZoltu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/234/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/234/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

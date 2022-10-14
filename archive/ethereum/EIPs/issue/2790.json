@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/2790",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/2790/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/2790/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/2790/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/2790",
+  "id": 657583959,
+  "node_id": "MDU6SXNzdWU2NTc1ODM5NTk=",
+  "number": 2790,
+  "title": "Wallet Permissions System",
+  "user": {
+    "login": "KaungPyaeSone-Crypto",
+    "id": 67493127,
+    "node_id": "MDQ6VXNlcjY3NDkzMTI3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/67493127?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/KaungPyaeSone-Crypto",
+    "html_url": "https://github.com/KaungPyaeSone-Crypto",
+    "followers_url": "https://api.github.com/users/KaungPyaeSone-Crypto/followers",
+    "following_url": "https://api.github.com/users/KaungPyaeSone-Crypto/following{/other_user}",
+    "gists_url": "https://api.github.com/users/KaungPyaeSone-Crypto/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/KaungPyaeSone-Crypto/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/KaungPyaeSone-Crypto/subscriptions",
+    "organizations_url": "https://api.github.com/users/KaungPyaeSone-Crypto/orgs",
+    "repos_url": "https://api.github.com/users/KaungPyaeSone-Crypto/repos",
+    "events_url": "https://api.github.com/users/KaungPyaeSone-Crypto/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/KaungPyaeSone-Crypto/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2020-07-15T19:05:15Z",
+  "updated_at": "2020-07-24T22:34:11Z",
+  "closed_at": "2020-07-24T22:34:11Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "ATTENTION! If you would like to submit an EIP and it has already been written as a draft (see the [template](https://github.com/ethereum/EIPs/blob/master/eip-template.md) for an example), please submit it as a [Pull Request](https://github.com/ethereum/EIPs/pulls).\r\n\r\nIf you are considering a proposal but would like to get some feedback on the idea before submitting a draft, then continue opening an Issue as a thread for discussion.  Note that the more clearly and completely you state your idea the higher the quality of the feedback you are likely to receive.\r\n\r\nKeep in mind the following guidelines from [EIP-1](https://eips.ethereum.org/EIPS/eip-1):\r\n\r\n> Each EIP must have a champion - someone who writes the EIP using the style and format described below, shepherds the discussions in the appropriate forums, and attempts to build community consensus around the idea. The EIP champion (a.k.a. Author) should first attempt to ascertain whether the idea is EIP-able. Posting to the the Protocol Discussion forum or opening an Issue is the best way to go about this.\r\n\r\n> Vetting an idea publicly before going as far as writing a EIP is meant to save the potential author time. Asking the Ethereum community first if an idea is original helps prevent too much time being spent on something that is guaranteed to be rejected based on prior discussions (searching the Internet does not always do the trick). It also helps to make sure the idea is applicable to the entire community and not just the author. Just because an idea sounds good to the author does not mean it will work for most people in most areas where Ethereum is used.\r\n\r\n> Once the champion has asked the Ethereum community as to whether an idea has any chance of acceptance, a draft EIP should be presented as a Pull Request. This gives the author a chance to flesh out the draft EIP to make properly formatted, of high quality, and to address initial concerns about the proposal.\r\n",
+  "closed_by": {
+    "login": "KaungPyaeSone-Crypto",
+    "id": 67493127,
+    "node_id": "MDQ6VXNlcjY3NDkzMTI3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/67493127?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/KaungPyaeSone-Crypto",
+    "html_url": "https://github.com/KaungPyaeSone-Crypto",
+    "followers_url": "https://api.github.com/users/KaungPyaeSone-Crypto/followers",
+    "following_url": "https://api.github.com/users/KaungPyaeSone-Crypto/following{/other_user}",
+    "gists_url": "https://api.github.com/users/KaungPyaeSone-Crypto/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/KaungPyaeSone-Crypto/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/KaungPyaeSone-Crypto/subscriptions",
+    "organizations_url": "https://api.github.com/users/KaungPyaeSone-Crypto/orgs",
+    "repos_url": "https://api.github.com/users/KaungPyaeSone-Crypto/repos",
+    "events_url": "https://api.github.com/users/KaungPyaeSone-Crypto/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/KaungPyaeSone-Crypto/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/2790/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/2790/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

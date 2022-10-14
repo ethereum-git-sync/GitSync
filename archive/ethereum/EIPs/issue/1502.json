@@ -1,0 +1,87 @@
+{
+  "url": "https://api.github.com/repos/ethereum/EIPs/issues/1502",
+  "repository_url": "https://api.github.com/repos/ethereum/EIPs",
+  "labels_url": "https://api.github.com/repos/ethereum/EIPs/issues/1502/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/EIPs/issues/1502/comments",
+  "events_url": "https://api.github.com/repos/ethereum/EIPs/issues/1502/events",
+  "html_url": "https://github.com/ethereum/EIPs/issues/1502",
+  "id": 371049535,
+  "node_id": "MDU6SXNzdWUzNzEwNDk1MzU=",
+  "number": 1502,
+  "title": "Changing Nomenclature Convention",
+  "user": {
+    "login": "OFRBG",
+    "id": 8671781,
+    "node_id": "MDQ6VXNlcjg2NzE3ODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8671781?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/OFRBG",
+    "html_url": "https://github.com/OFRBG",
+    "followers_url": "https://api.github.com/users/OFRBG/followers",
+    "following_url": "https://api.github.com/users/OFRBG/following{/other_user}",
+    "gists_url": "https://api.github.com/users/OFRBG/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/OFRBG/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/OFRBG/subscriptions",
+    "organizations_url": "https://api.github.com/users/OFRBG/orgs",
+    "repos_url": "https://api.github.com/users/OFRBG/repos",
+    "events_url": "https://api.github.com/users/OFRBG/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/OFRBG/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2018-10-17T12:33:12Z",
+  "updated_at": "2019-01-30T18:13:51Z",
+  "closed_at": "2019-01-30T18:13:51Z",
+  "author_association": "NONE",
+  "active_lock_reason": null,
+  "body": "As time moves forward, names stick around, sometimes for the worse. In this case, the name _smart contract_ is already becoming a natural, yet misleading, way to call automated addresses. For this reason I decided to open this issue, voicing the concern of many people of the crypto community in- and outside of Ethereum.\r\n\r\nWhat I would propose to facilitate the transition is to call [this](https://etherscan.io/address/0x4f38f4229924bfa28d58eeda496cc85e8016bccc) an **automated address**. To maintain the legacy name, the code _inside_, [this](https://etherscan.io/address/0x4f38f4229924bfa28d58eeda496cc85e8016bccc#code), would be called the **smart contract _code_** or **dapp code**.\r\n\r\nThis is especially important for two reasons: 1) regulations and 2) misconceptions. Regulations come into play because people outside of the tech sphere don't and probably won't understand what an automated address is. In their minds, calling it a smart contract makes it some sort of legally binding contract. Secondly, the idea of a smart contract address and its code should be separated. Even after 2 years I still see people confused as to why they need to send a transaction to a contract address when sending a token. Making a clear-cut separation of what the address _is_ and what the address _does_ will facilitate usage (e.g. differentiating \"automobile\" from \"engine\").\r\n\r\nIt is understandable that many community members will refrain from supporting this change to avoid confusion, but looking at the big picture, it is more likely that the last 2 years of adoption will adapt more quickly to this convention change than the risk-averse and non-tech-savvy future adopters.\r\n\r\n",
+  "closed_by": {
+    "login": "OFRBG",
+    "id": 8671781,
+    "node_id": "MDQ6VXNlcjg2NzE3ODE=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8671781?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/OFRBG",
+    "html_url": "https://github.com/OFRBG",
+    "followers_url": "https://api.github.com/users/OFRBG/followers",
+    "following_url": "https://api.github.com/users/OFRBG/following{/other_user}",
+    "gists_url": "https://api.github.com/users/OFRBG/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/OFRBG/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/OFRBG/subscriptions",
+    "organizations_url": "https://api.github.com/users/OFRBG/orgs",
+    "repos_url": "https://api.github.com/users/OFRBG/repos",
+    "events_url": "https://api.github.com/users/OFRBG/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/OFRBG/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/1502/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 1,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/EIPs/issues/1502/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

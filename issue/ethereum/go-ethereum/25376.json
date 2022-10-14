@@ -256,49 +256,5 @@
       "eyes": 0
     },
     "performed_via_github_app": null
-  },
-  {
-    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1207448342",
-    "html_url": "https://github.com/ethereum/go-ethereum/issues/25376#issuecomment-1207448342",
-    "issue_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25376",
-    "id": 1207448342,
-    "node_id": "IC_kwDOAOvK985H-DMW",
-    "user": {
-      "login": "ndevmetax",
-      "id": 110781644,
-      "node_id": "U_kgDOBppkzA",
-      "avatar_url": "https://avatars.githubusercontent.com/u/110781644?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/ndevmetax",
-      "html_url": "https://github.com/ndevmetax",
-      "followers_url": "https://api.github.com/users/ndevmetax/followers",
-      "following_url": "https://api.github.com/users/ndevmetax/following{/other_user}",
-      "gists_url": "https://api.github.com/users/ndevmetax/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/ndevmetax/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/ndevmetax/subscriptions",
-      "organizations_url": "https://api.github.com/users/ndevmetax/orgs",
-      "repos_url": "https://api.github.com/users/ndevmetax/repos",
-      "events_url": "https://api.github.com/users/ndevmetax/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/ndevmetax/received_events",
-      "type": "User",
-      "site_admin": false
-    },
-    "created_at": "2022-08-07T17:10:05Z",
-    "updated_at": "2022-08-07T17:10:05Z",
-    "author_association": "NONE",
-    "body": "> #### System information\r\n> Geth version: v1.10.20 OS & Version: Linux\r\n> \r\n> #### Expected behaviour\r\n> After enable the API, exposed on 8551, set up the jwt authentication token and exposes the port. I expect the beacon can communicate and get synced.\r\n> \r\n> #### Actual behaviour\r\n> The geth client shows strange logs I did not find what it means, I asked on the discord channel. The prysm client can access the endpoint of the API engine and the logs of prysm are goos, nothing strange.\r\n> \r\n> #### Steps to reproduce the behaviour\r\n> In this PR [dappnode/DAppNodePackage-ropsten#38](https://github.com/dappnode/DAppNodePackage-ropsten/pull/38) there are the docker-compose and dockerfiles.\r\n> \r\n> * docker-compose build\r\n> * docker-compose up -d\r\n> \r\n> Geth shows these errors.\r\n> \r\n> ```\r\n> ERROR[07-22|14:45:24.202] Beacon backfilling failed                err=\"beacon linkup unavailable locally: 12426527 [22f4998a556944321fb60da304c5978fa1ae3e6abb773b282be1526adf21f98c]\"\r\n> ERROR[07-22|14:45:36.359] Beacon sync linkup unavailable           number=12,426,527 hash=22f499..21f98c\r\n> ERROR[07-22|14:45:36.359] Beacon backfilling failed                err=\"beacon linkup unavailable locally: 12426527 [22f4998a556944321fb60da304c5978fa1ae3e6abb773b282be1526adf21f98c]\"\r\n> INFO [07-22|14:45:36.374] Forkchoice requested sync to new head    number=12,643,692 hash=54eeb3..f20a8f\r\n> ERROR[07-22|14:45:36.375] Beacon sync linkup unavailable           number=12,426,527 hash=22f499..21f98c\r\n> ERROR[07-22|14:45:36.375] Beacon backfilling failed                err=\"beacon linkup unavailable locally: 12426527 [22f4998a556944321fb60da304c5978fa1ae3e6abb773b282be1526adf21f98c]\"\r\n> ```\r\n> \r\n> Here you have all the logs. [ropsten-geth.txt](https://github.com/ethereum/go-ethereum/files/9168662/ropsten-geth.txt)\r\n> \r\n> On the prysm side the logs looks ok:\r\n> \r\n> ```\r\n> time=\"2022-07-22 14:47:19\" level=info msg=\"Called fork choice updated with optimistic block\" finalizedPayloadBlockHash=0xf5507812efd3 headPayloadBlockHash=0xa651957888e0 headSlot=381536 prefix=blockchain slot=381535\r\n> time=\"2022-07-22 14:47:19\" level=info msg=\"Synced new block\" block=0x381b8d3f... epoch=11923 finalizedEpoch=11921 finalizedRoot=0x4541251b... prefix=blockchain slot=381536\r\n> time=\"2022-07-22 14:47:19\" level=info msg=\"Finished applying state transition\" attestations=36 payloadHash=0xa651957888e0 prefix=blockchain slot=381536 syncBitsCount=448 txCount=13\r\n> time=\"2022-07-22 14:47:24\" level=info msg=\"Called new payload with optimistic block\" payloadBlockHash=0x08d318cc5926 prefix=blockchain slot=381537\r\n> time=\"2022-07-22 14:47:24\" level=info msg=\"Called fork choice updated with optimistic block\" finalizedPayloadBlockHash=0xf5507812efd3 headPayloadBlockHash=0x08d318cc5926 headSlot=381537 prefix=blockchain slot=381536\r\n> time=\"2022-07-22 14:47:24\" level=info msg=\"Synced new block\" block=0xc519b113... epoch=11923 finalizedEpoch=11921 finalizedRoot=0x4541251b... prefix=blockchain slot=381537\r\n> time=\"2022-07-22 14:47:24\" level=info msg=\"Finished applying state transition\" attestations=45 payloadHash=0x08d318cc5926 prefix=blockchain slot=381537 syncBitsCount=0 txCount=17\r\n> time=\"2022-07-22 14:47:29\" level=info msg=\"Peer summary\" activePeers=50 inbound=7 outbound=43 prefix=p2p\r\n> time=\"2022-07-22 14:47:36\" level=info msg=\"Called new payload with optimistic block\" payloadBlockHash=0x7aa642aea077 prefix=blockchain slot=381538\r\n> time=\"2022-07-22 14:47:36\" level=info msg=\"Called fork choice updated with optimistic block\" finalizedPayloadBlockHash=0xf5507812efd3 headPayloadBlockHash=0x7aa642aea077 headSlot=381538 prefix=blockchain slot=381537\r\n> time=\"2022-07-22 14:47:36\" level=info msg=\"Synced new block\" block=0xcbf89c06... epoch=11923 finalizedEpoch=11921 finalizedRoot=0x4541251b... prefix=blockchain slot=381538\r\n> time=\"2022-07-22 14:47:36\" level=info msg=\"Finished applying state transition\" attestations=36 payloadHash=0x7aa642aea077 prefix=blockchain slot=381538 syncBitsCount=448 txCount=20\r\n> ```\r\n> \r\n> [ropsten-geth.txt](https://github.com/ethereum/go-ethereum/files/9168662/ropsten-geth.txt)\r\n> \r\n> #### Backtrace\r\n> ```\r\n> [backtrace]\r\n> ```\r\n> \r\n> When submitting logs: please submit them as text and not screenshots.\r\n\r\n\r\nI had similar issues days ago and i sorted it with customer support via live chat https://direct.lc.chat/14390013/",
-    "reactions": {
-      "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1207448342/reactions",
-      "total_count": 0,
-      "+1": 0,
-      "-1": 0,
-      "laugh": 0,
-      "hooray": 0,
-      "confused": 0,
-      "heart": 0,
-      "rocket": 0,
-      "eyes": 0
-    },
-    "performed_via_github_app": null
   }
 ]

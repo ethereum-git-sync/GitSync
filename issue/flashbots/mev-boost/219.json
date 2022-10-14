@@ -60,7 +60,7 @@
   "created_at": "2022-07-19T17:27:23Z",
   "updated_at": "2022-08-14T20:01:09Z",
   "closed_at": null,
-  "author_association": "NONE",
+  "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "Relays have many jobs, among them is accepting blocks from many builders and figuring out which block is the most profitable for validators. One of the difficult parts of this job is that full blocks are large in size and costly to simulate. Without appropriate protections then a builder could spam many bad blocks at a relay, which would then be required to spend computational resources for no benefit. At the limit you can imagine builders actually overwhelming a relay with blocks and causing it to go down, which could have adverse effects on the overall network.\r\n\r\nOne option to prevent such spam would be to implement reputation scoring and priority queues similar to what Flashbots has done with our bundle relay on PoW ETH. That would need to be thought through and specced further.\r\n\r\nAnother option would be to require builders to deposit a small stake in a contract before they are allowed to submit blocks to a relay. The basic idea would be that if the builder starts to act maliciously then the relay can slash their stake, and the threat of this cost would act as a deterrent. \r\n\r\nAt the same time, we'd like to keep the barriers to entry for block building as low as possible. I'm not sure what a good stake requirement would be yet, but am open to ideas.\r\n\r\nIdeally we would like to have completely permissionless submission to our relay, and this is the goal, although with a tight timeline before the merge and limited internal resources we may have to settle for slightly higher barriers to entry at the merge and permissionless submission later.",
   "closed_by": null,
@@ -153,7 +153,7 @@
     },
     "created_at": "2022-07-19T19:50:08Z",
     "updated_at": "2022-07-19T19:50:08Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Would love to hear thoughts from you @jeromelaurens @sambacha @xcarlo @block-builder-22!",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1189488631/reactions",

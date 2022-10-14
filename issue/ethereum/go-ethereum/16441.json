@@ -85,8 +85,8 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/16441/reactions",
-    "total_count": 9,
-    "+1": 9,
+    "total_count": 11,
+    "+1": 11,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -308,9 +308,9 @@
     "body": "maybe you should --fast when you run geth.\r\nThis means fast sync, but do not download the whole block.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/391742064/reactions",
-      "total_count": 14,
+      "total_count": 15,
       "+1": 0,
-      "-1": 14,
+      "-1": 15,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,

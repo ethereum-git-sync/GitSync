@@ -76,14 +76,14 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23890/reactions",
-    "total_count": 0,
+    "total_count": 1,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
     "confused": 0,
     "heart": 0,
-    "rocket": 0,
+    "rocket": 1,
     "eyes": 0
   },
   "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/23890/timeline",
@@ -123,8 +123,8 @@
     "body": "You should use `types.LatestSignerForChainID()` instead of legacy EIP 155 signer. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/966794849/reactions",
-      "total_count": 12,
-      "+1": 10,
+      "total_count": 13,
+      "+1": 11,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

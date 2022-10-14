@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 249074437,
-      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
-      "name": "enhancement",
-      "color": "84b6eb",
-      "default": true,
-      "description": null
-    },
-    {
       "id": 437863668,
       "node_id": "MDU6TGFiZWw0Mzc4NjM2Njg=",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/build%20system%20:building_construction:",

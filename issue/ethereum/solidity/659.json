@@ -159,8 +159,8 @@
     "body": "Oh, with the ternary operator it is indeed very easy. Didn't know Solidity has that, but now I do see it mentioned in [the guide](http://solidity.readthedocs.io/en/latest/control-structures.html#control-structures).\n\nThanks!\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/226988770/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -203,8 +203,8 @@
     "body": "Unfortunately, the `flag ? 1 : 0` version (a) has a subtle footgun that\r\nmakes it easy to use incorrectly, and (b) is slower than the direct\r\nconversion. Consider the following contract, which tries to form a mask\r\nby shifting a boolean by a constant:\r\n\r\n```solidity\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract Benchmark {\r\n    function boolShiftedBad(bool _b) external pure returns (uint256) {\r\n        return (_b ? 1 : 0) << 8;\r\n    }\r\n    function boolShiftedSlow(bool _b) external pure returns (uint256) {\r\n        return uint256(_b ? 1 : 0) << 8;\r\n    }\r\n    function boolShiftedFast(bool _b) external pure returns (uint256) {\r\n        uint256 _bInt;\r\n        assembly {\r\n            // SAFETY: Simple bool-to-int cast.\r\n            _bInt := _b\r\n        }\r\n        return _bInt << 8;\r\n    }\r\n}\r\n```\r\n\r\nThe function `boolShiftedBad` tries the obvious approach as suggested\r\nin this thread. But in fact this function always returns `0`, even when\r\ncalled with `true` as its argument! This seems like it has to do with\r\nthe literals in `_b ? 1 : 0` being treated as `uint8`s for some reason.\r\nThe assembly shows an `0xff; and` after the `shl`, and replacing `<< 8`\r\nwith `<< 7` hides the problem (the code returns 127).\r\n\r\nIf the right-hand side of the shift is a `uint256` variable (`<< _v`),\r\nthen Solidity helpfully issues a warning. But if it's a `uint8`\r\nvariable---which is entirely reasonable, since `uint8 _v` indicates\r\nwhich bit to select in the `_b << _v` mask---then there is no warning!\r\n\r\nExplicitly converting `_b ? 1 : 0` to `uint256` works, as shown in\r\n`boolShiftedSlow`. However, this approach appears to have an overhead of\r\n40 gas, even with the optimizer enabled and set to `runs: 999999`. (Also\r\nwith `runs` set to `200` or `0`; it makes no difference.) Thus:\r\n\r\n```\r\nboolShiftedSlow(false): 21551 gas\r\nboolShiftedSlow(true):  21553 gas\r\nboolShiftedFast(false): 21511 gas\r\nboolShiftedFast(true):  21523 gas\r\n```\r\n\r\nLooking at the assembly, it looks like the `? 1 : 0` literally compiles\r\nto a jump, plus an `& 0xff`(?):\r\n\r\n```\r\n      0x08 /* \"contracts/Benchmark.sol\":322:323  8 */\r\n      dup3 /* \"contracts/Benchmark.sol\":307:309  _b */\r\n      tag_24 /* \"contracts/Benchmark.sol\":307:317  _b ? 1 : 0 */\r\n      jumpi\r\n      0x00 /* \"contracts/Benchmark.sol\":316:317  0 */\r\n      jump(tag_25) /* \"contracts/Benchmark.sol\":307:317  _b ? 1 : 0 */\r\n    tag_24:\r\n      0x01 /* \"contracts/Benchmark.sol\":312:313  1 */\r\n    tag_25: /* \"contracts/Benchmark.sol\":307:317  _b ? 1 : 0 */\r\n      0xff /* \"contracts/Benchmark.sol\":299:318  uint256(_b ? 1 : 0) */\r\n      and\r\n      swap1 /* \"contracts/Benchmark.sol\":299:323  uint256(_b ? 1 : 0) << 8 */\r\n      shl\r\n```\r\n\r\nThis seems pretty unfortunate, since this conversion doesn't actually\r\nrequire *anything* to be done at runtime. In my production contract, I\r\nsaved hundreds of gas by making this change to a few places that occur\r\nin a loop.\r\n\r\nIMHO, avoiding \"unwanted conversions\" is definitely desirable, but explicitly\r\nwriting the cast `uint256(_b)` is enough to signal that this conversion is, in\r\nfact, wanted. It'd be more readable, more safe, and more efficient.\r\n\r\n<details>\r\n<summary>Driver script</summary>\r\n\r\n```javascript\r\nconst hre = require(\"hardhat\"); // v2.8.0\r\n\r\nasync function main() {\r\n  await hre.run(\"compile\");\r\n  const Benchmark = await hre.ethers.getContractFactory(\"Benchmark\");\r\n  const benchmark = await Benchmark.deploy();\r\n  await benchmark.deployed();\r\n\r\n  // First, demonstrate that omitting an explicit `uint256` cast leads to the\r\n  // wrong answer.\r\n  for (const input of [false, true]) {\r\n    const result = await benchmark.boolShiftedBad(input);\r\n    console.log(`boolShiftedBad(${input}) = ${result}`);\r\n  }\r\n  console.log();\r\n\r\n  for (const method of [\"boolShiftedSlow\", \"boolShiftedFast\"]) {\r\n    for (const input of [false, true]) {\r\n      const result = await benchmark[method](input);\r\n      if (!result.eq(input << 8)) {\r\n        throw new Error(`wrong answer for ${method}(${input}): ${result}`);\r\n      }\r\n      const gas = await benchmark.estimateGas[method](input);\r\n      console.log(`${method}${`(${input}):`.padEnd(8)} ${gas} gas`);\r\n    }\r\n  }\r\n}\r\n\r\nmain().catch((e) => {\r\n  console.error(e);\r\n  process.exitStatus = 1;\r\n});\r\n```\r\n\r\n</details>\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1002713956/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -247,8 +247,8 @@
     "body": "I think the best way to solve this is to create a free function of the following form:\r\n```\r\nfunction toUInt256(bool x) pure returns (uint r) {\r\n  assembly { r := x }\r\n}\r\n```\r\nIt will very likely be inlined and as efficient as adding a conversion function to the compiler, with the added benefit that you can use \"follow definition\" to look up the semantics of this conversion function.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1002743770/reactions",
-      "total_count": 3,
-      "+1": 3,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

@@ -66,7 +66,7 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/remix-project/issues/413/reactions",
-    "total_count": 4,
+    "total_count": 5,
     "+1": 0,
     "-1": 0,
     "laugh": 0,
@@ -74,7 +74,7 @@
     "confused": 0,
     "heart": 0,
     "rocket": 0,
-    "eyes": 4
+    "eyes": 5
   },
   "timeline_url": "https://api.github.com/repos/ethereum/remix-project/issues/413/timeline",
   "performed_via_github_app": null,

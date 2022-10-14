@@ -448,7 +448,7 @@
     "body": "I used this command to pick the right post merge peers:\r\n```\r\n- '--eth.requiredblocks'\r\n            - 12308104=0x2a45451c8c2bfd4a110fd5865289f214cf29917706233864671f18b4b9bdeeab,12404042=0x48857952e9392048e2b8e1ffaf84b26859914348e7981acd735565c00b8e4179,12361752=0x27c093bdabb1530095d6ce23d9f2ed1f280fc6fb3d15baeb5e25ecc456af7ad1,12082227=0x33025036e9b0a1f901f2821bf231dc6e2df22e0921b42fb3b04dde3d560d8d00,12350712=0x5010949c3acdf1d076c9e4ee8aedbb539aca48ebe19638330bc02c5b1bfb953d\r\n```",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1164080444/reactions",
-      "total_count": 2,
+      "total_count": 3,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
@@ -456,7 +456,7 @@
       "confused": 0,
       "heart": 0,
       "rocket": 0,
-      "eyes": 2
+      "eyes": 3
     },
     "performed_via_github_app": null
   }

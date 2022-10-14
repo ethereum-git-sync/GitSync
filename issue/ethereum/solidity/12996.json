@@ -47,6 +47,33 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4438003076,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaNhA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20effort",
+      "name": "medium effort",
+      "color": "ff7df7",
+      "default": false,
+      "description": "Default level of effort"
+    },
+    {
+      "id": 4438153180,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjX3A",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20impact",
+      "name": "high impact",
+      "color": "001dff",
+      "default": false,
+      "description": "Changes are very prominent and affect users or the project in a major way."
+    },
+    {
+      "id": 4525128519,
+      "node_id": "LA_kwDOAm_5kc8AAAABDbf7Rw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/needs%20design",
+      "name": "needs design",
+      "color": "18F737",
+      "default": false,
+      "description": "The proposal is too vague to be implemented right away"
     }
   ],
   "state": "open",
@@ -58,7 +85,7 @@
   "milestone": null,
   "comments": 23,
   "created_at": "2022-05-10T08:08:39Z",
-  "updated_at": "2022-08-02T23:05:17Z",
+  "updated_at": "2022-10-03T14:39:25Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -113,8 +140,8 @@
     "body": "Just a comment on the name of the modifier: I don't like opinionated words like \"safe\" or \"protected\" because they give a false impression of safety or protection, we should find a more neutral one.\r\n\r\nAlso more generally: Also wrt. free functions, it might be a good idea to explicitly pass/provide something like a \"context\" as a parameter to functions that allows external calls (or maybe even state changes without external calls). In this case, we could have a special property on this context that allows state changes after an external call. By default, the context would transform into a \"constant state\" context after an external call - there are the linear types again.\r\n\r\nAlso something to consider more specifically to this issue: Is it OK to do another external call after the first external call? What about a delegatecall? Even if we do not use delegatecall, how do we distinguish a \"data contract\" that is associated to the current contract from a potentially malicious external contract?\r\n\r\nAfter all these questions, I'm more and more inclined that this should rather be \"off-loaded\" to user code and the compiler should instead provide the required features for the type system.\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1122093106/reactions",
-      "total_count": 3,
-      "+1": 3,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -289,8 +316,8 @@
     "body": "I think this shouldn't go into the language with `safe/protected` keywords and such, and should rather have similar behavior as checked arithmetic.\r\n\r\nIMO, reentrancy guards could be added by default for every external call, and bypassed if the call is in an `unchecked` block. This also follows Rust's `unsafe` style which seems popular.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1173550008/reactions",
-      "total_count": 2,
-      "+1": 2,
+      "total_count": 3,
+      "+1": 3,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -373,7 +400,7 @@
     },
     "created_at": "2022-07-04T10:16:19Z",
     "updated_at": "2022-07-04T10:17:38Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Standard reachability analysis should be able to determine quite easily whether any given line can modify state or call a function in another contract. Then Solidity just needs to ensure that every function has a partition between state modification first, and external calls second.\r\n\r\nIf you want the user to have to explicitly signify whether a function updates state, you already have that: non-`pure`/`view`. If you want the user to have to explicitly signify which functions can call other contracts, you could add a `caller` modifier or something. Then you could not call a state modifier function or modify state after a `caller` function or an `address.call` within any function -- and any function that calls a `caller` function or calls `address.call` also itself becomes a `caller` function.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1173634143/reactions",
@@ -461,7 +488,7 @@
     },
     "created_at": "2022-07-04T10:29:42Z",
     "updated_at": "2022-07-04T10:33:40Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "What I proposed is already basically what Slither does (minus the modifiers), but Solidity should give these warnings rather than Slither, because this is such a serious source of security vulnerabilities.\r\n\r\nYes, in the general case precise reachability analysis is uncomputable, unless you use conservative logic that looks to see whether something *might* be reachable given some specific runtime control flow (then reachability analysis becomes simple and computable).\r\n\r\nRe. the modifiers, there's a reason why Solidity made visibility modifiers and mutation modifiers required a few versions ago. Being explicit establishes a contract between the programmer and the compiler. And what I explained in my 2nd paragraph is exactly what Solidity already does (albeit with inverted logic) with mutation modifiers for pure/view functions. So basically the machinery is all already there in the compiler to implement this simply.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1173648701/reactions",
@@ -505,7 +532,7 @@
     },
     "created_at": "2022-07-16T20:54:38Z",
     "updated_at": "2022-07-16T20:54:38Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "It will be much easier to implement robust automatic runtime protections against reentrancy attacks at runtime once [EIP-1153](https://eips.ethereum.org/EIPS/eip-1153) is merged, because it will allow for flags to be set whose lifecycle is bound to a transaction.\r\n\r\nHowever, I believe the vast majority of reentrancy attack vulnerabilities can be detected and prevented through static analysis.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1186290000/reactions",
@@ -592,18 +619,18 @@
       "site_admin": false
     },
     "created_at": "2022-07-18T13:09:39Z",
-    "updated_at": "2022-07-23T15:28:55Z",
+    "updated_at": "2022-10-01T08:52:56Z",
     "author_association": "NONE",
-    "body": "As quickly discussed with @leonardoalt it would be good to compile a list of reentrancy attacks and to understand what kind of code design pattern would fit best. Also, IMHO we should not rely on EIP-1153 to be finalised and implemented soon - let's take the current status quo of the EVM and solc as the valid principles for the solution-finding process. Furthermore, I also think we need to be careful to jump to conclusions too fast. Past code patterns should not necessarily imply what future code patterns will look like (also wrt what is planned for e.g. solc `0.9.0`). Maybe to some extent, engineers must \"unlearn\" certain design patterns for the greater good.\r\n\r\nLet me try to share a common, chronological list of reentrancy attacks including their (mostly) detailed analyses:\r\n\r\n- [WETH white hat attack](https://github.com/pcaversaccio/reentrancy-attacks/issues/1#issuecomment-1188680199) – June 11, 2016\r\n- [The DAO attack](https://medium.com/@zhongqiangc/smart-contract-reentrancy-thedao-f2da1d25180c) – June 17, 2016\r\n- [SpankChain attack](https://medium.com/swlh/how-spankchain-got-hacked-af65b933393c) – October 9, 2018\r\n- [imBTC Uniswap pool attack](https://defirate.com/imbtc-uniswap-hack) – April 18, 2020\r\n- [Lendf.Me attack](https://slowmist.medium.com/slowmist-details-of-lendf-me-reentrancy-attack-3e168ab5f2b1) – April 19, 2020\r\n- [Akropolis attack](https://peckshield.medium.com/akropolis-incident-root-cause-analysis-c11ee59e05d4) – November 12, 2020\r\n- [ValueDeFi attack (cross-contract reentrancy attack)](https://inspexco.medium.com/value-defis-invalid-share-calculation-exploit-in-depth-analysis-1c8f97c1416e) – May 7, 2021\r\n- [Rari Capital attack (cross-contract reentrancy attack)](https://nipunp.medium.com/5-8-21-rari-capital-exploit-timeline-analysis-8beda31cbc1a) – May 8, 2021\r\n- [BurgerSwap attack](https://quillhashteam.medium.com/burgerswap-flash-loan-attack-analysis-888b1911daef) – May 27, 2021\r\n- [Iron Finance attack](https://thedefiant.io/not-just-a-bank-run-new-evidence-shows-iron-finance-crashed-due-to-code-exploit) – June 16, 2021\r\n- [PolyDEX attack](https://polydex.medium.com/plx-locker-smart-contract-incident-post-mortem-75342124a3e8) – June 20, 2021\r\n- [DeFiPie attack](https://medium.com/defipie/hacking-investigation-85e07454f1c9) – July 12, 2021\r\n- [Sanshu Inu attack](https://sanshunft.medium.com/woofdate-2-2-0-keanu-compensation-mfund-rebase-update-bcac09707e19) – July 20, 2021\r\n- [C.R.E.A.M. Finance attack](https://inspexco.medium.com/reentrancy-attack-on-cream-finance-incident-analysis-1c629686b6f5) – August 30, 2021\r\n- [Grim Finance attack](https://rekt.news/grim-finance-rekt) – December 18, 2021\r\n- [Visor Finance attack](https://medium.com/visorfinance/post-mortem-for-vvisr-staking-contract-exploit-and-upcoming-migration-7920e1dee55a) – December 21, 2021\r\n- [HypeBears attack](https://blocksecteam.medium.com/when-safemint-becomes-unsafe-lessons-from-the-hypebears-security-incident-2965209bda2a) – February 3, 2022\r\n- [Bacon Protocol attack](https://coincodecap.com/bacon-protocol-hacked-reportedly-1m-lost) – March 5, 2022\r\n- [Paraluni attack](https://coincodecap.com/paraluni-hacked-reportedly-1-7m-lost) – March 13, 2022\r\n- [Hundred Finance attack](https://twitter.com/danielvf/status/1503756428212936710) – March 15, 2022\r\n- [Agave Finance attack](https://twitter.com/Mudit__Gupta/status/1503783633877827586) – March 16, 2022\r\n- [Revest Finance attack](https://slowmist.medium.com/revest-finance-incident-analysis-6fcd9b6be207) – March 27, 2022\r\n- [Voltage Finance attack](https://rekt.news/voltage-finance-rekt) – March 31, 2022\r\n- [Fei Protocol attack](https://certik.medium.com/fei-protocol-incident-analysis-8527440696cc) – April 30, 2022\r\n- [Bistroo attack](https://bistroo.medium.com/post-incident-review-bist-single-asset-staking-binancesmartchain-security-breach-5194590605f) – May 7, 2022\r\n- [Ownly attack](https://twitter.com/ownlyio/status/1524362090940895234) – May 10, 2022\r\n- [Omni attack](https://twitter.com/BlockSecTeam/status/1546141457933025280) – July 10, 2022\r\n\r\n_Edit:_ I tweeted about it [here](https://twitter.com/pcaversaccio/status/1549019584824590336) and will add further incidents if reported by the community.\r\n\r\n_Update:_ Due to the overwhelming positive feedback I have received on Twitter, I decided to create my own repository [here](https://github.com/pcaversaccio/reentrancy-attacks) that tracks all of the reentrancy attacks. I will try my best to keep everything up to date.",
+    "body": "As quickly discussed with @leonardoalt it would be good to compile a list of reentrancy attacks and to understand what kind of code design pattern would fit best. Also, IMHO we should not rely on EIP-1153 to be finalised and implemented soon - let's take the current status quo of the EVM and solc as the valid principles for the solution-finding process. Furthermore, I also think we need to be careful to jump to conclusions too fast. Past code patterns should not necessarily imply what future code patterns will look like (also wrt what is planned for e.g. solc `0.9.0`). Maybe to some extent, engineers must \"unlearn\" certain design patterns for the greater good.\r\n\r\nLet me try to share a common, chronological list of reentrancy attacks including their (mostly) detailed analyses:\r\n\r\n- [WETH white hat attack](https://github.com/pcaversaccio/reentrancy-attacks/issues/1#issuecomment-1188680199) – June 11, 2016\r\n- [The DAO attack](https://medium.com/@zhongqiangc/smart-contract-reentrancy-thedao-f2da1d25180c) – June 17, 2016\r\n- [SpankChain attack](https://medium.com/swlh/how-spankchain-got-hacked-af65b933393c) – October 9, 2018\r\n- [imBTC Uniswap pool attack](https://defirate.com/imbtc-uniswap-hack) – April 18, 2020\r\n- [Lendf.Me attack](https://slowmist.medium.com/slowmist-details-of-lendf-me-reentrancy-attack-3e168ab5f2b1) – April 19, 2020\r\n- [Akropolis attack](https://peckshield.medium.com/akropolis-incident-root-cause-analysis-c11ee59e05d4) – November 12, 2020\r\n- [ValueDeFi attack](https://inspexco.medium.com/value-defis-invalid-share-calculation-exploit-in-depth-analysis-1c8f97c1416e) – May 7, 2021\r\n- [Rari Capital attack](https://nipunp.medium.com/5-8-21-rari-capital-exploit-timeline-analysis-8beda31cbc1a) – May 8, 2021\r\n- [BurgerSwap attack](https://quillhashteam.medium.com/burgerswap-flash-loan-attack-analysis-888b1911daef) – May 27, 2021\r\n- [Iron Finance attack](https://thedefiant.io/not-just-a-bank-run-new-evidence-shows-iron-finance-crashed-due-to-code-exploit) – June 16, 2021\r\n- [PolyDEX attack](https://polydex.medium.com/plx-locker-smart-contract-incident-post-mortem-75342124a3e8) – June 20, 2021\r\n- [DeFiPie attack](https://medium.com/defipie/hacking-investigation-85e07454f1c9) – July 12, 2021\r\n- [Sanshu Inu attack](https://sanshunft.medium.com/woofdate-2-2-0-keanu-compensation-mfund-rebase-update-bcac09707e19) – July 20, 2021\r\n- [C.R.E.A.M. Finance attack](https://inspexco.medium.com/reentrancy-attack-on-cream-finance-incident-analysis-1c629686b6f5) – August 30, 2021\r\n- [Grim Finance attack](https://rekt.news/grim-finance-rekt) – December 18, 2021\r\n- [Visor Finance attack](https://medium.com/visorfinance/post-mortem-for-vvisr-staking-contract-exploit-and-upcoming-migration-7920e1dee55a) – December 21, 2021\r\n- [HypeBears attack](https://blocksecteam.medium.com/when-safemint-becomes-unsafe-lessons-from-the-hypebears-security-incident-2965209bda2a) – February 3, 2022\r\n- [Bacon Protocol attack](https://coincodecap.com/bacon-protocol-hacked-reportedly-1m-lost) – March 5, 2022\r\n- [Paraluni attack](https://coincodecap.com/paraluni-hacked-reportedly-1-7m-lost) – March 13, 2022\r\n- [Hundred Finance attack](https://twitter.com/danielvf/status/1503756428212936710) – March 15, 2022\r\n- [Agave Finance attack](https://twitter.com/Mudit__Gupta/status/1503783633877827586) – March 16, 2022\r\n- [Revest Finance attack](https://slowmist.medium.com/revest-finance-incident-analysis-6fcd9b6be207) – March 27, 2022\r\n- [Voltage Finance attack](https://rekt.news/voltage-finance-rekt) – March 31, 2022\r\n- [BNB Brokers attack](https://twitter.com/BlockSecTeam/status/1519249933832171520) – April 27, 2022\r\n- [Fei Protocol attack](https://certik.medium.com/fei-protocol-incident-analysis-8527440696cc) – April 30, 2022\r\n- [Bistroo attack](https://bistroo.medium.com/post-incident-review-bist-single-asset-staking-binancesmartchain-security-breach-5194590605f) – May 7, 2022\r\n- [Ownly attack](https://twitter.com/ownlyio/status/1524362090940895234) – May 10, 2022\r\n- [Omni attack](https://twitter.com/BlockSecTeam/status/1546141457933025280) – July 10, 2022\r\n- [Thunder Brawl attack](https://twitter.com/peckshield/status/1575890733373849601) – September 30, 2022\r\n\r\n_Edit:_ I tweeted about it [here](https://twitter.com/pcaversaccio/status/1549019584824590336) and will add further incidents if reported by the community.\r\n\r\n_Update:_ Due to the overwhelming positive feedback I have received on Twitter, I decided to create my own repository [here](https://github.com/pcaversaccio/reentrancy-attacks) that tracks all of the reentrancy attacks. I will try my best to keep everything up to date.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1187381059/reactions",
-      "total_count": 36,
-      "+1": 23,
+      "total_count": 46,
+      "+1": 30,
       "-1": 0,
       "laugh": 0,
-      "hooray": 3,
+      "hooray": 4,
       "confused": 0,
-      "heart": 10,
+      "heart": 12,
       "rocket": 0,
       "eyes": 0
     },
@@ -725,7 +752,7 @@
     },
     "created_at": "2022-07-18T17:18:06Z",
     "updated_at": "2022-07-18T17:51:04Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "> Let me try to share a common, chronological list of reentrancy attacks including their (mostly) detailed analyses:\r\n\r\n@pcaversaccio an awesome list -- thanks for compiling this!\r\n\r\n> Adding a mutex to functions that write after external calls would not address cases where separate functions read from stale values or overwrite the same storage value.\r\n\r\n@0xalpharush Correct, it's insufficient to prevent state changes if a parent frame in the call stack is a call to an external contract. You have to prevent state changes if a call was made to an external contract _at any previous point in the same transaction_. This is why I referred to EIP-1153, since it will provide a supported mechanism for binding state to the life of a transaction.\r\n\r\nHowever, perhaps this can be approximated by calculating\r\n\r\n```solidity\r\nbytes32 transactionId = keccak256(abi.encode(block.chainid, block.number));\r\n```\r\n\r\nthen modifiers could be created for functions that call external contracts and functions that update internal state as follows:\r\n\r\n```solidity\r\ncontract X {\r\n    bytes32 private extContractLastCalled_transactionId;\r\n\r\n    modifier extContractCaller() {\r\n        extContractLastCalled_transactionId = keccak256(abi.encode(block.chainid, block.number));\r\n        _;\r\n    }\r\n\r\n    modifier updateState() {\r\n        require (keccak256(abi.encode(block.chainid, block.number)) != extContractLastCalled_transactionId,\r\n                    \"Can't update state after calling external contract in the same transaction\");\r\n        _;\r\n    }\r\n}\r\n```\r\n\r\nI think this would work, but it's not ideal, because\r\n\r\n1. It is coarse-grained (applying at the level of function definitions, rather than per-line). This means the programmer has to be careful to segregate functions into external caller functions and state updater functions. If function modification is done automatically by the compiler using the above pattern, it will have to fail if a function both updates state and calls an external contract.\r\n2. It fails at runtime, not compiletime (I'm pretty sure 99% of relevant cases could be caught statically, through control flow analysis -- basically anything that is computable, which excludes cases where e.g. you call a data-derived function selector or something).\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1187821841/reactions",
@@ -813,7 +840,7 @@
     },
     "created_at": "2022-07-19T07:46:31Z",
     "updated_at": "2022-07-19T07:46:31Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Actually I think `transactionId` may need to also hash `tx.origin`, i.e.\r\n\r\n```solidity\r\nbytes32 transactionId = keccak256(abi.encode(block.chainid, block.number, tx.origin));\r\n```\r\n\r\nAlthough this still doesn't handle the case of a single EOA submitting multiple transactions to be mined in a single block.\r\n\r\nIs there any other way to reliably differentiate different transactions?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1188714924/reactions",
@@ -945,7 +972,7 @@
     },
     "created_at": "2022-07-29T14:11:37Z",
     "updated_at": "2022-07-29T14:11:37Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "@pcaversaccio right, a hard fork would solve the problem in the wrong way. Reentrance can and should be statically determined. Slither already does this (although I don't know what degree of complexity it handles).",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1199352257/reactions",
@@ -1033,7 +1060,7 @@
     },
     "created_at": "2022-08-01T19:28:39Z",
     "updated_at": "2022-08-01T19:28:39Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "> With ERC777 it can be the other way around see: https://twitter.com/transmissions11/status/1496944873760428058\r\n\r\nGood point, and correct, I pointed that out here: https://github.com/OpenZeppelin/openzeppelin-contracts/issues/2620#issuecomment-1156118047\r\n\r\nThe ERC777 standard is insecure by default, and needs to be deprecated. But presumably there should be a compiler directive in case anyone really wanted to turn off Checks-Effects-Interactions order checking for a given function.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1201622750/reactions",
@@ -1081,8 +1108,8 @@
     "body": "My [EIP-5283](https://github.com/ethereum/EIPs/blob/0ac341a39e3927b0cb51aa4d2e96fc19475f1bc8/EIPS/eip-5283.md) represents the simplest hard-fork that provides the mutex functionality that is future-proof for EVM parallel tx execution with fine-grained parallelization. The sooner we introduce such a feature, the higher the number of deployed contracts will be parallelizable.\r\nI would also prefer the transient opcodes TLOAD and TSTORE to be used, but adding opcodes is not as easy, since it impacts a lot of tooling.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1203296364/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

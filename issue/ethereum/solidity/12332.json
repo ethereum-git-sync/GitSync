@@ -42,8 +42,8 @@
     {
       "id": 1012614086,
       "node_id": "MDU6TGFiZWwxMDEyNjE0MDg2",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20medium",
-      "name": "difficulty: medium",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20difficulty",
+      "name": "medium difficulty",
       "color": "7dcddb",
       "default": false,
       "description": ""
@@ -166,8 +166,8 @@
     "body": "It's up for grabs. #12244 is probably simpler though so I'd suggest starting with that one. And going back to this one when you're done.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1010992068/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

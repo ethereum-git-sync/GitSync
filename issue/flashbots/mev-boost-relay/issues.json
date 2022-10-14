@@ -1,6 +1,86 @@
 [
   {
     "author": {
+      "login": "metachris"
+    },
+    "number": 181,
+    "title": "feat: have all config/consts together, and print on startup",
+    "updatedAt": "2022-10-07T06:49:54Z"
+  },
+  {
+    "author": {
+      "login": "jtraglia"
+    },
+    "number": 53,
+    "title": "Potential SQL injection in Data API endpoint",
+    "updatedAt": "2022-10-06T17:49:18Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 155,
+    "title": "Node operator registration fails with 403",
+    "updatedAt": "2022-10-06T15:59:36Z"
+  },
+  {
+    "author": {
+      "login": "krasi-georgiev"
+    },
+    "number": 146,
+    "title": "Would you consider adding a helm chart to run the relay on k8s?",
+    "updatedAt": "2022-10-06T07:42:08Z"
+  },
+  {
+    "author": {
+      "login": "sambacha"
+    },
+    "number": 140,
+    "title": "Requiring CLA of contributions is a violation of the AGPL ",
+    "updatedAt": "2022-10-06T07:04:01Z"
+  },
+  {
+    "author": {
+      "login": "metachris"
+    },
+    "number": 135,
+    "title": "Write validator registrations from DB to Redis",
+    "updatedAt": "2022-10-06T06:51:18Z"
+  },
+  {
+    "author": {
+      "login": "metachris"
+    },
+    "number": 171,
+    "title": "Website: progressively enhance with JS loading update",
+    "updatedAt": "2022-10-03T14:57:06Z"
+  },
+  {
+    "author": {
+      "login": "metachris"
+    },
+    "number": 51,
+    "title": "Should builder block submissions override previous one by same builder even if less profitable?",
+    "updatedAt": "2022-10-03T08:41:21Z"
+  },
+  {
+    "author": {
+      "login": "metachris"
+    },
+    "number": 168,
+    "title": "Add postgres and database tests to CI",
+    "updatedAt": "2022-10-01T10:31:11Z"
+  },
+  {
+    "author": {
+      "login": "sambacha"
+    },
+    "number": 141,
+    "title": "Question: How to sign a corporate CLA with flashbots to contribute on behalf of my employer ",
+    "updatedAt": "2022-09-23T09:42:37Z"
+  },
+  {
+    "author": {
       "login": "aratz-lasa"
     },
     "number": 128,
@@ -14,38 +94,6 @@
     "number": 130,
     "title": "Block builder submissions - response status 200, but what happened?",
     "updatedAt": "2022-09-18T10:02:58Z"
-  },
-  {
-    "author": {
-      "login": "sambacha"
-    },
-    "number": 141,
-    "title": "Question: How to sign a corporate CLA with flashbots to contribute on behalf of my employer ",
-    "updatedAt": "2022-09-17T11:37:06Z"
-  },
-  {
-    "author": {
-      "login": "sambacha"
-    },
-    "number": 140,
-    "title": "Requiring CLA of contributions is a violation of the AGPL ",
-    "updatedAt": "2022-09-17T11:35:53Z"
-  },
-  {
-    "author": {
-      "login": "metachris"
-    },
-    "number": 51,
-    "title": "Should builder block submissions override previous one by same builder even if less profitable?",
-    "updatedAt": "2022-09-16T07:57:27Z"
-  },
-  {
-    "author": {
-      "login": "metachris"
-    },
-    "number": 135,
-    "title": "Write validator registrations from DB to Redis",
-    "updatedAt": "2022-09-16T07:56:46Z"
   },
   {
     "author": {
@@ -158,14 +206,6 @@
     "number": 28,
     "title": "Rename this repository to mev-boost-relay",
     "updatedAt": "2022-08-16T14:45:55Z"
-  },
-  {
-    "author": {
-      "login": "jtraglia"
-    },
-    "number": 53,
-    "title": "Potential SQL injection in Data API endpoint",
-    "updatedAt": "2022-08-12T18:48:12Z"
   },
   {
     "author": {

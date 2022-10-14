@@ -123,8 +123,8 @@
     "body": "The problem is, I think, that ipc binds are not supported across filesystems -- or maybe that the filesystem n `/mnt/t` does not support it. If you specify the `--ipcpath` to somewhere on your root system, it should work. Feel free to reopen otherwise. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/951099319/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

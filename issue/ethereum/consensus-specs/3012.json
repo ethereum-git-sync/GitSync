@@ -1,0 +1,76 @@
+{
+  "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/3012",
+  "repository_url": "https://api.github.com/repos/ethereum/consensus-specs",
+  "labels_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/3012/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/3012/comments",
+  "events_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/3012/events",
+  "html_url": "https://github.com/ethereum/consensus-specs/issues/3012",
+  "id": 1384116185,
+  "node_id": "I_kwDOCOoGbc5Sf-_Z",
+  "number": 3012,
+  "title": "Remove duplicate BLS tests from this repo",
+  "user": {
+    "login": "hwwhww",
+    "id": 9263930,
+    "node_id": "MDQ6VXNlcjkyNjM5MzA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/9263930?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hwwhww",
+    "html_url": "https://github.com/hwwhww",
+    "followers_url": "https://api.github.com/users/hwwhww/followers",
+    "following_url": "https://api.github.com/users/hwwhww/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hwwhww/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hwwhww/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hwwhww/subscriptions",
+    "organizations_url": "https://api.github.com/users/hwwhww/orgs",
+    "repos_url": "https://api.github.com/users/hwwhww/repos",
+    "events_url": "https://api.github.com/users/hwwhww/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hwwhww/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 1295439957,
+      "node_id": "MDU6TGFiZWwxMjk1NDM5OTU3",
+      "url": "https://api.github.com/repos/ethereum/consensus-specs/labels/scope:CI/tests/pyspec",
+      "name": "scope:CI/tests/pyspec",
+      "color": "BDC0BA",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-23T17:38:41Z",
+  "updated_at": "2022-09-23T17:38:41Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "### Issue\r\n\r\nThe [BLS signature testes](https://github.com/ethereum/consensus-specs/tree/dev/tests/generators/bls) has been forked and organized in https://github.com/ethereum/bls12-381-tests. The new repo is also a useful test suite for non-CL modules. e.g., EIP-2537\r\n\r\n### How to fix it\r\n\r\n- Ensure that `bls12-381-tests` covers all IETF draft v4 API test cases in this repo\r\n- Remove the duplicate tests from this repo\r\n\r\nI think after the clean-up, only the \"Ethereum extensions\" (`eth_aggregate_pubkeys` and `eth_fast_aggregate_verify`) tests will live in this repo.\r\n\r\n/cc @asanso ",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/3012/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/consensus-specs/issues/3012/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

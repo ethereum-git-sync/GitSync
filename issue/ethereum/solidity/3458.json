@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 692642590,
-      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
-      "name": "feature",
-      "color": "fbca04",
-      "default": false,
-      "description": null
-    },
-    {
       "id": 838064207,
       "node_id": "MDU6TGFiZWw4MzgwNjQyMDc=",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/annoys%20users%20:cry:",

@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 692642590,
-      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
-      "name": "feature",
-      "color": "fbca04",
-      "default": false,
-      "description": null
-    },
-    {
       "id": 785717317,
       "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
@@ -346,8 +337,8 @@
     "body": "`immutable` is a fantastic feature, in my opinion the best one developed in recent time by far. The number of design patterns it enables with minimal gas cost is surprisingly high.\r\n\r\n...but not being able to read an `immutable` variable during construction is a huge limitation. This might not be obvious at a first glance, since you could always store whatever is assigned to `immutable` locally, and use that instead:\r\n\r\n```solidity\r\ncontract Foo {\r\n    uint256 immutable bar;\r\n\r\n    constructor(uint256 baz) {\r\n        uint256 qux = foo(baz);\r\n        bar = qux;\r\n\r\n        useBar(qux); // can't pass bar, pass qux instead\r\n    }\r\n}\r\n```\r\n\r\nThe issue arises when using inheritance: if the immutable variable is held by a base contract, it will not be accessible to its children during construction.\r\n\r\n```solidity\r\ncontract Foo {\r\n    uint256 immutable bar;\r\n\r\n    constructor(uint256 baz) {\r\n        bar = foo(baz);\r\n    }\r\n}\r\n\r\ncontract Bar is Foo {\r\n    constructor(uint256 baz) Foo(baz) {\r\n        useBar(bar); // forbidden\r\n    }\r\n}\r\n```\r\n\r\nIf gas is not an issue, it could be argued that `foo` could also be called in `Bar`'s constructor in this example. But if this operation has side-effects (e.g. if it is the reuslt of an external call, such as registering with some other contract and getting an ID back), it is not possible to have this code duplicated in both parent and child.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/770283909/reactions",
-      "total_count": 3,
-      "+1": 3,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

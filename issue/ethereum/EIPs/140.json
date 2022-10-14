@@ -654,49 +654,5 @@
       "eyes": 0
     },
     "performed_via_github_app": null
-  },
-  {
-    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1226719392",
-    "html_url": "https://github.com/ethereum/EIPs/issues/140#issuecomment-1226719392",
-    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/140",
-    "id": 1226719392,
-    "node_id": "IC_kwDOAq426M5JHkCg",
-    "user": {
-      "login": "HSameet78",
-      "id": 96850881,
-      "node_id": "U_kgDOBcXTwQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/96850881?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/HSameet78",
-      "html_url": "https://github.com/HSameet78",
-      "followers_url": "https://api.github.com/users/HSameet78/followers",
-      "following_url": "https://api.github.com/users/HSameet78/following{/other_user}",
-      "gists_url": "https://api.github.com/users/HSameet78/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/HSameet78/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/HSameet78/subscriptions",
-      "organizations_url": "https://api.github.com/users/HSameet78/orgs",
-      "repos_url": "https://api.github.com/users/HSameet78/repos",
-      "events_url": "https://api.github.com/users/HSameet78/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/HSameet78/received_events",
-      "type": "User",
-      "site_admin": false
-    },
-    "created_at": "2022-08-25T03:12:04Z",
-    "updated_at": "2022-08-25T03:12:04Z",
-    "author_association": "NONE",
-    "body": "> <pre>\n>   EIP:\n>   Title: Opcode for exceptions that don't drain gas\n>   Author: Nikolai Mushegian (nikolai@nexusdev.us)\n>   Discussions-To: <email address>\n>   Status: Draft\n>   Type: Standards Track\n>   Created:\n>   Replaces:\n>   Superseded-By:\n>   Resolution:\n> </pre>\n> \n> \n> I tried to find an existing EIP for this and couldn't. This surprises me! Please help find existing discussion.\n> # Abstract\n> \n> Right now rolling back state requires manually triggering an EVM exception (eg invalid jump), which drains all gas for the subcall. I prefer throw-oriented error handling despite all the drawbacks (no error details, drains gas) because reverting all state when something unexpected happens feels much safer.\n> \n> The REVERT opcode would let you throw an exception without draining all the gas that the caller allocated to you.\n> \n> Related issues:\n> https://github.com/ethereum/EIPs/issues/62\n> https://github.com/ethereum/evm2.0-design/issues/43\n> # Details\n> \n> Extra things to consider\n> - Per #62, it would be useful to be able to pass back a return value to be interpreted as an error when an exception is thrown. Solidity already re-throws when the stack is 0 so this backwards compatible in terms of Solidity semantics but may not be if someone has done ASM hacking where they read the \"return\". This is a nice-to-have, if it can't be done than a simplified version which gives you back no useful information is still much better than \"deliberate invalid jump\".\n> \n\nHS1357",
-    "reactions": {
-      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1226719392/reactions",
-      "total_count": 0,
-      "+1": 0,
-      "-1": 0,
-      "laugh": 0,
-      "hooray": 0,
-      "confused": 0,
-      "heart": 0,
-      "rocket": 0,
-      "eyes": 0
-    },
-    "performed_via_github_app": null
   }
 ]

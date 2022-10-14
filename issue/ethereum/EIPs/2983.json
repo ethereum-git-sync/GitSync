@@ -299,8 +299,8 @@
     "body": "Hi, this seems to be closed for a while but still appears as in review on the page https://eips.ethereum.org/EIPS/eip-2980. Can anyone point to the legislated requirement that the tokens must be indivisible / have zero decimals?  Seems a big miss on the financial inclusion front, many brokers offering fractional investment these days.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1204070591/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

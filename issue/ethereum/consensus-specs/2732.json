@@ -243,7 +243,7 @@
     },
     "created_at": "2021-11-23T04:11:22Z",
     "updated_at": "2021-11-23T04:11:22Z",
-    "author_association": "NONE",
+    "author_association": "MEMBER",
     "body": ">CL can discern between SYNCING on chains where some PoS ancestor is validated and chains where they are rooted in an unknown PoW parent. Thus they have enough information to act accordingly (not halt block and attestation production).\r\n\r\nThis distinction by CL at the transition time should resolve and get the right/available/popular pow in the chain by allowing to use the local PoW to build the new merge block. Once the new terminal PoW is out there in network, validators should be able to vote on it.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/976154512/reactions",
@@ -507,7 +507,7 @@
     },
     "created_at": "2021-11-24T07:58:04Z",
     "updated_at": "2021-11-24T07:58:04Z",
-    "author_association": "NONE",
+    "author_association": "MEMBER",
     "body": "+1 for justified as it will signal early on that User needs to followup/escalate for the social consensus to kickin, hopefully before chain finalizes. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/977620701/reactions",

@@ -38,6 +38,33 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4372329032,
+      "node_id": "LA_kwDOAm_5kc8AAAABBJxySA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/roadmap",
+      "name": "roadmap",
+      "color": "ff8e00",
+      "default": false,
+      "description": "It's on our short-term roadmap"
+    },
+    {
+      "id": 4437999539,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIZ_sw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20effort",
+      "name": "high effort",
+      "color": "ff54f4",
+      "default": false,
+      "description": "A lot to implement but still doable by a single person. The task is large or difficult."
+    },
+    {
+      "id": 4438153180,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjX3A",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20impact",
+      "name": "high impact",
+      "color": "001dff",
+      "default": false,
+      "description": "Changes are very prominent and affect users or the project in a major way."
     }
   ],
   "state": "open",
@@ -47,9 +74,9 @@
 
   ],
   "milestone": null,
-  "comments": 22,
+  "comments": 23,
   "created_at": "2022-01-26T20:39:10Z",
-  "updated_at": "2022-09-01T12:42:18Z",
+  "updated_at": "2022-09-29T14:01:16Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -1028,6 +1055,50 @@
     "body": "> The only reason we need `code` data location in that statement, because otherwise it is unclear where it should be. \"Is it a copy, is it a reference?\"\r\n\r\nI honestly don't understand what you're saying :-). The `code` data location would distinguish state variables in storage from variables in the data section of the contract code - and distinguish references of things in code from references to things in storage. I see no relation to the question of references or copies whatsoever here.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1234226229/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1262329559",
+    "html_url": "https://github.com/ethereum/solidity/issues/12587#issuecomment-1262329559",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12587",
+    "id": 1262329559,
+    "node_id": "IC_kwDOAm_5kc5LPZ7X",
+    "user": {
+      "login": "k06a",
+      "id": 702124,
+      "node_id": "MDQ6VXNlcjcwMjEyNA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/702124?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/k06a",
+      "html_url": "https://github.com/k06a",
+      "followers_url": "https://api.github.com/users/k06a/followers",
+      "following_url": "https://api.github.com/users/k06a/following{/other_user}",
+      "gists_url": "https://api.github.com/users/k06a/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/k06a/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/k06a/subscriptions",
+      "organizations_url": "https://api.github.com/users/k06a/orgs",
+      "repos_url": "https://api.github.com/users/k06a/repos",
+      "events_url": "https://api.github.com/users/k06a/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/k06a/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-29T14:01:15Z",
+    "updated_at": "2022-09-29T14:01:15Z",
+    "author_association": "NONE",
+    "body": "Would love to see `code` location modifier implemented!",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1262329559/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

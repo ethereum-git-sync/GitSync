@@ -8,7 +8,7 @@
   "id": 663686900,
   "node_id": "MDU6SXNzdWU2NjM2ODY5MDA=",
   "number": 9470,
-  "title": "[yul] ICE because assembly object not found or does not contain code",
+  "title": "[yul] ICE when accessing a Yul data subobject: `Assembly object not found or does not contain code`",
   "user": {
     "login": "bshastry",
     "id": 2388185,
@@ -56,56 +56,45 @@
       "color": "c48f13",
       "default": false,
       "description": "Error is reported even though it shouldn't. Source is fine."
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438155599,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjhTw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20impact",
+      "name": "medium impact",
+      "color": "314aff",
+      "default": false,
+      "description": "Default level of impact"
+    },
+    {
+      "id": 4438488423,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI31Zw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have",
+      "name": "must have",
+      "color": "ffa12a",
+      "default": false,
+      "description": "Something we consider an essential part of Solidity 1.0."
     }
   ],
   "state": "open",
   "locked": false,
-  "assignee": {
-    "login": "mijovic",
-    "id": 23421619,
-    "node_id": "MDQ6VXNlcjIzNDIxNjE5",
-    "avatar_url": "https://avatars.githubusercontent.com/u/23421619?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/mijovic",
-    "html_url": "https://github.com/mijovic",
-    "followers_url": "https://api.github.com/users/mijovic/followers",
-    "following_url": "https://api.github.com/users/mijovic/following{/other_user}",
-    "gists_url": "https://api.github.com/users/mijovic/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/mijovic/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/mijovic/subscriptions",
-    "organizations_url": "https://api.github.com/users/mijovic/orgs",
-    "repos_url": "https://api.github.com/users/mijovic/repos",
-    "events_url": "https://api.github.com/users/mijovic/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/mijovic/received_events",
-    "type": "User",
-    "site_admin": false
-  },
+  "assignee": null,
   "assignees": [
-    {
-      "login": "mijovic",
-      "id": 23421619,
-      "node_id": "MDQ6VXNlcjIzNDIxNjE5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/23421619?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/mijovic",
-      "html_url": "https://github.com/mijovic",
-      "followers_url": "https://api.github.com/users/mijovic/followers",
-      "following_url": "https://api.github.com/users/mijovic/following{/other_user}",
-      "gists_url": "https://api.github.com/users/mijovic/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/mijovic/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/mijovic/subscriptions",
-      "organizations_url": "https://api.github.com/users/mijovic/orgs",
-      "repos_url": "https://api.github.com/users/mijovic/repos",
-      "events_url": "https://api.github.com/users/mijovic/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/mijovic/received_events",
-      "type": "User",
-      "site_admin": false
-    }
+
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 1,
   "created_at": "2020-07-22T11:24:24Z",
-  "updated_at": "2021-06-02T17:37:03Z",
+  "updated_at": "2022-09-26T22:30:15Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -128,5 +117,48 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258709319",
+    "html_url": "https://github.com/ethereum/solidity/issues/9470#issuecomment-1258709319",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/9470",
+    "id": 1258709319,
+    "node_id": "IC_kwDOAm_5kc5LBmFH",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-26T22:27:25Z",
+    "updated_at": "2022-09-26T22:28:17Z",
+    "author_association": "MEMBER",
+    "body": "Repro from #11175:\r\n```yul\r\nobject \"C_27\" {\r\n    code {\r\n        pop(datasize(\"C_27_deployed.datablock\"))\r\n        sstore(0, calldataload(0))\r\n    }\r\n    object \"C_27_deployed\" {\r\n        code {\r\n            sstore(1, calldataload(0))\r\n        }\r\n\r\n        data \"datablock\" hex\"a264697066735822\"\r\n    }\r\n}\r\n```\r\n```\r\nUncaught exception:\r\n/solidity/libyul/Object.cpp(140): Throw in function std::vector<long unsigned int> solidity::yul::Object::pathToSubObject(solidity::yul::YulString) const\r\nDynamic exception type: boost::wrapexcept<solidity::yul::YulAssertion>\r\nstd::exception::what: Assembly object <C_27_deployed.datablock> not found or does not contain code.\r\n[solidity::util::tag_comment*] = Assembly object <C_27_deployed.datablock> not found or does not contain code.\r\n```",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258709319/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

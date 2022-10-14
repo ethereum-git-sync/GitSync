@@ -83,9 +83,9 @@
 
   ],
   "milestone": null,
-  "comments": 0,
+  "comments": 2,
   "created_at": "2022-09-14T12:19:25Z",
-  "updated_at": "2022-09-15T12:48:05Z",
+  "updated_at": "2022-09-21T23:00:50Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -108,5 +108,92 @@
   "state_reason": null
 }
 [
-
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1253794340",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5652#issuecomment-1253794340",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5652",
+    "id": 1253794340,
+    "node_id": "IC_kwDOAq426M5Ku2Ik",
+    "user": {
+      "login": "SamWilsn",
+      "id": 57262657,
+      "node_id": "MDQ6VXNlcjU3MjYyNjU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57262657?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SamWilsn",
+      "html_url": "https://github.com/SamWilsn",
+      "followers_url": "https://api.github.com/users/SamWilsn/followers",
+      "following_url": "https://api.github.com/users/SamWilsn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SamWilsn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SamWilsn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SamWilsn/subscriptions",
+      "organizations_url": "https://api.github.com/users/SamWilsn/orgs",
+      "repos_url": "https://api.github.com/users/SamWilsn/repos",
+      "events_url": "https://api.github.com/users/SamWilsn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SamWilsn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-21T14:28:46Z",
+    "updated_at": "2022-09-21T14:28:46Z",
+    "author_association": "MEMBER",
+    "body": "If we decide the changes are errata, we can change a final EIP (and git keeps the history.)\r\n\r\nIf we decide it isn't errata, it's a new EIP and I think it deserves its own number.\r\n\r\n---\r\n\r\nI'm also concerned that complicating the EIP number namespace will just make things worse.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1253794340/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1254318587",
+    "html_url": "https://github.com/ethereum/EIPs/issues/5652#issuecomment-1254318587",
+    "issue_url": "https://api.github.com/repos/ethereum/EIPs/issues/5652",
+    "id": 1254318587,
+    "node_id": "IC_kwDOAq426M5Kw2H7",
+    "user": {
+      "login": "Pandapip1",
+      "id": 45835846,
+      "node_id": "MDQ6VXNlcjQ1ODM1ODQ2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45835846?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Pandapip1",
+      "html_url": "https://github.com/Pandapip1",
+      "followers_url": "https://api.github.com/users/Pandapip1/followers",
+      "following_url": "https://api.github.com/users/Pandapip1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Pandapip1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Pandapip1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Pandapip1/subscriptions",
+      "organizations_url": "https://api.github.com/users/Pandapip1/orgs",
+      "repos_url": "https://api.github.com/users/Pandapip1/repos",
+      "events_url": "https://api.github.com/users/Pandapip1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Pandapip1/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-21T23:00:50Z",
+    "updated_at": "2022-09-21T23:00:50Z",
+    "author_association": "MEMBER",
+    "body": "> If we decide the changes are errata, we can change a final EIP (and git keeps the history.)\r\n> If we decide it isn't errata, it's a new EIP and I think it deserves its own number.\r\n\r\nThe point here is that you might have something like EIP-712 where there are valid arguments for and against \"it's an errata\" vs \"it's actually a major change.\" Skipping the discussion and letting the authors make that judgment call saves EIP editor brain bandwidth.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/1254318587/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
 ]

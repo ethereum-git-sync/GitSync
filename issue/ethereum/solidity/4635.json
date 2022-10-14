@@ -38,15 +38,6 @@
       "color": "fc1313",
       "default": false,
       "description": ""
-    },
-    {
-      "id": 249074437,
-      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
-      "name": "enhancement",
-      "color": "84b6eb",
-      "default": true,
-      "description": null
     }
   ],
   "state": "closed",

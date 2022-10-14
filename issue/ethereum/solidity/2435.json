@@ -47,6 +47,42 @@
       "color": "9d76d3",
       "default": false,
       "description": "Any changes to the language, e.g. new features"
+    },
+    {
+      "id": 4372329032,
+      "node_id": "LA_kwDOAm_5kc8AAAABBJxySA",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/roadmap",
+      "name": "roadmap",
+      "color": "ff8e00",
+      "default": false,
+      "description": "It's on our short-term roadmap"
+    },
+    {
+      "id": 4437999539,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIZ_sw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20effort",
+      "name": "high effort",
+      "color": "ff54f4",
+      "default": false,
+      "description": "A lot to implement but still doable by a single person. The task is large or difficult."
+    },
+    {
+      "id": 4438153180,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjX3A",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20impact",
+      "name": "high impact",
+      "color": "001dff",
+      "default": false,
+      "description": "Changes are very prominent and affect users or the project in a major way."
+    },
+    {
+      "id": 4525128519,
+      "node_id": "LA_kwDOAm_5kc8AAAABDbf7Rw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/needs%20design",
+      "name": "needs design",
+      "color": "18F737",
+      "default": false,
+      "description": "The proposal is too vague to be implemented right away"
     }
   ],
   "state": "open",
@@ -58,7 +94,7 @@
   "milestone": null,
   "comments": 11,
   "created_at": "2017-06-21T17:06:06Z",
-  "updated_at": "2020-03-30T11:02:30Z",
+  "updated_at": "2022-09-26T23:25:16Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,

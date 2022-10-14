@@ -32,21 +32,40 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 4,
+  "comments": 5,
   "created_at": "2022-08-12T22:57:18Z",
-  "updated_at": "2022-08-17T03:49:12Z",
-  "closed_at": null,
+  "updated_at": "2022-09-23T08:19:13Z",
+  "closed_at": "2022-09-23T08:19:13Z",
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "When we just run `mev-boost`, should it connect to a default trusted relay?\r\n\r\nOr should the validators always pass in an argument the URL and public key of the relay they want to connect to?",
-  "closed_by": null,
+  "closed_by": {
+    "login": "metachris",
+    "id": 116939,
+    "node_id": "MDQ6VXNlcjExNjkzOQ==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/metachris",
+    "html_url": "https://github.com/metachris",
+    "followers_url": "https://api.github.com/users/metachris/followers",
+    "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+    "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+    "organizations_url": "https://api.github.com/users/metachris/orgs",
+    "repos_url": "https://api.github.com/users/metachris/repos",
+    "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/metachris/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/flashbots/mev-boost/issues/246/reactions",
     "total_count": 0,
@@ -61,7 +80,7 @@
   },
   "timeline_url": "https://api.github.com/repos/flashbots/mev-boost/issues/246/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -184,8 +203,8 @@
     "body": "If the only candidate default relays are required to blacklist/censor (https://github.com/flashbots/rpc-endpoint/pull/92), then I think a small UX hurdle is feature here.  \r\n\r\nFlashbots' stated goal is to reduce the erosion of \"neutrality, transparency, decentralization, and permissionlessness.\"\r\n \r\nA default relay with permissioned transactions works directly again 3 of those goals.\r\n\r\nMEV-Boost, by itself, creates a alternative pathway for validators to extract MEV if they so desire, in theory guiding them away from large centralized pools.  Without a default relay, validators motivated to extract MEV are forced to actively choose a relay and can evaluate it's merits in a decentralized way.\r\n\r\nMEV-Boost must either not have a default relay, or the default must be neutral and permissionless towards transactions.\r\n\r\nIf Flashbots is unable to run a relay that meets these requirements, I hope they will stand by their stated goals and not force their relay on MEV-Boost users and on the Ethereum ecosystem.",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1215471100/reactions",
-      "total_count": 4,
-      "+1": 4,
+      "total_count": 5,
+      "+1": 5,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -228,6 +247,50 @@
     "body": "> MEV-Boost must either not have a default relay, or the default must be neutral and permissionless towards transactions.\r\n> \r\n> If Flashbots is unable to run a relay that meets these requirements, I hope they will stand by their stated goals and not force their relay on MEV-Boost users and on the Ethereum ecosystem.\r\n\r\nthis 100%!",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1217429321/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1255923527",
+    "html_url": "https://github.com/flashbots/mev-boost/issues/246#issuecomment-1255923527",
+    "issue_url": "https://api.github.com/repos/flashbots/mev-boost/issues/246",
+    "id": 1255923527,
+    "node_id": "IC_kwDOGZSKs85K299H",
+    "user": {
+      "login": "metachris",
+      "id": 116939,
+      "node_id": "MDQ6VXNlcjExNjkzOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116939?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/metachris",
+      "html_url": "https://github.com/metachris",
+      "followers_url": "https://api.github.com/users/metachris/followers",
+      "following_url": "https://api.github.com/users/metachris/following{/other_user}",
+      "gists_url": "https://api.github.com/users/metachris/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/metachris/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/metachris/subscriptions",
+      "organizations_url": "https://api.github.com/users/metachris/orgs",
+      "repos_url": "https://api.github.com/users/metachris/repos",
+      "events_url": "https://api.github.com/users/metachris/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/metachris/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-23T08:19:13Z",
+    "updated_at": "2022-09-23T08:19:13Z",
+    "author_association": "COLLABORATOR",
+    "body": "We've decided against having a default relay. Closing now.",
+    "reactions": {
+      "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1255923527/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

@@ -1,0 +1,137 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13575",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13575/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13575/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13575/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13575",
+  "id": 1388516594,
+  "node_id": "I_kwDOAm_5kc5SwxTy",
+  "number": 13575,
+  "title": "Replace `boost::filesystem` with `std::filesystem`",
+  "user": {
+    "login": "axic",
+    "id": 20340,
+    "node_id": "MDQ6VXNlcjIwMzQw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/axic",
+    "html_url": "https://github.com/axic",
+    "followers_url": "https://api.github.com/users/axic/followers",
+    "following_url": "https://api.github.com/users/axic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+    "organizations_url": "https://api.github.com/users/axic/orgs",
+    "repos_url": "https://api.github.com/users/axic/repos",
+    "events_url": "https://api.github.com/users/axic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/axic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 4437999539,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIZ_sw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20effort",
+      "name": "high effort",
+      "color": "ff54f4",
+      "default": false,
+      "description": "A lot to implement but still doable by a single person. The task is large or difficult."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438780109,
+      "node_id": "LA_kwDOAm_5kc8AAAABCJJozQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/refactor",
+      "name": "refactor",
+      "color": "fcff07",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-09-27T23:42:34Z",
+  "updated_at": "2022-09-28T10:15:55Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Tracking issue for this task. See also https://github.com/ethereum/solidity/pull/7263#discussion_r314240318",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13575/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13575/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1260691352",
+    "html_url": "https://github.com/ethereum/solidity/issues/13575#issuecomment-1260691352",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13575",
+    "id": 1260691352,
+    "node_id": "IC_kwDOAm_5kc5LJJ-Y",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-28T10:14:41Z",
+    "updated_at": "2022-09-28T10:14:41Z",
+    "author_association": "MEMBER",
+    "body": "My comment from an earlier discussion on the topic (https://github.com/ethereum/solidity/pull/11650#issuecomment-879857238):\r\n> I think it's risky. There are subtle differences between the two that affect normalization (see for example https://github.com/boostorg/filesystem/issues/88#issuecomment-435102621) and I think we do not have enough test coverage related to paths to just swap one with another and expect things not to be broken in some way. The new stuff I'm adding is covered pretty extensively but the existing code mostly is not.\r\n\r\nI really think we need better coverage before we do this because these libraries have subtle differences that will affect us in corner cases. Note for example that we're using `filesystem` for resolving relative imports (even though they're not real paths):\r\nhttps://github.com/ethereum/solidity/blob/2201526a90a7ae318273e16480a88b4c7df8e690/libsolutil/CommonIO.cpp#L141-L159",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1260691352/reactions",
+      "total_count": 1,
+      "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

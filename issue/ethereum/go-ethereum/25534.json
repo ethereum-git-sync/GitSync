@@ -220,8 +220,8 @@
     "body": "Post merge there's a weird new quirk. If the beacon client tells us \"hey, sync your chain to this new HEAD\", then we will spin up a new sync cycle and do all the usual reportings. However, what usually happens is that the beacon client retrieves the (beacon) blocks 1 by 1, unpacks the payload and feeds it to us, 1 by 1. In that case, we're never really syncing, we're just receiving 1 new block each time, which we import.\r\n\r\nPerhaps we could (after the merge) visit this issue and extend the newpayload API to feed some more metadata from the beacon client to the execution so we might also know what's happening. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1220293736/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

@@ -115,8 +115,8 @@
     "body": "Apparently there is data missing from your database. This can happen if your PC was shut down abruptly while Geth was in the middle of writing database entries. I don't think there's an easy way our of this, the db is corrupted. You'll have to remove your chaindata `geth removedb` and sync from the start.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/299800031/reactions",
-      "total_count": 33,
-      "+1": 18,
+      "total_count": 34,
+      "+1": 19,
       "-1": 14,
       "laugh": 0,
       "hooray": 0,

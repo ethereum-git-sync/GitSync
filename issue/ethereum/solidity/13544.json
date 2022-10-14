@@ -1,0 +1,140 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13544",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13544/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13544/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13544/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13544",
+  "id": 1379418241,
+  "node_id": "I_kwDOAm_5kc5SOECB",
+  "number": 13544,
+  "title": "Pre-release warning stripping in CLI tests does not always produce correct JSON formatting when combined with `--pretty-print`",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 249074435,
+      "node_id": "MDU6TGFiZWwyNDkwNzQ0MzU=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/bug%20:bug:",
+      "name": "bug :bug:",
+      "color": "fc1313",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 717596767,
+      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438490842,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3-2g",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/should%20have",
+      "name": "should have",
+      "color": "ffbe6c",
+      "default": false,
+      "description": "We like the idea but it’s not important enough to be a part of the roadmap."
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-20T13:23:46Z",
+  "updated_at": "2022-09-23T11:42:25Z",
+  "closed_at": "2022-09-23T11:42:25Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "This came up in https://github.com/ethereum/solidity/pull/13162#pullrequestreview-1101249411.\r\n\r\nNon-release builds of the compiler always output an extra warning, which results in a different output between release and debug builds in CI:\r\n```\r\nWarning: This is a pre-release compiler version, please do not use it in production.\r\n```\r\n\r\nFor this reason `cmdlineTests.sh` script strips the warning from compile output. For Standard JSON this is more tricky, since the error is a part of an array and we have to match the JSON formatting of the expectations. The stripping code seems to have a small bug because in some cases the formatting it produces after stripping the warning differs from what we get when the warning is not there at all.\r\n\r\nWe need to adjust the stripping code to handle this corner case. It would be best if we could also solve the problem more generally by making the CLI tests simply ignore the JSON formatting.\r\n\r\nFixing this is likely a prerequisite for #7665, since enabling pretty printing may uncover this problem in other existing tests.\r\n\r\n### How to reproduce\r\nLet's look at the prettified Standard JSON output for this `input.json` file:\r\n```json\r\n{\r\n    \"language\": \"Solidity\",\r\n    \"sources\": {\r\n        \"url_not_found.sol\": {\r\n            \"urls\": [\"contract.sol\"]\r\n        }\r\n    }\r\n}\r\n```\r\n```bash\r\nsolc --standard-json input.json --pretty-json --json-indent 4\r\n```\r\nThis is what the output of a pre-release binary looks like unstripped:\r\n```json\r\n{\r\n    \"errors\":\r\n    [\r\n        {\r\n            \"component\": \"general\",\r\n            \"formattedMessage\": \"Cannot import url (\\\"contract.sol\\\"): File not found. Searched the following locations: \\\"\\\".\",\r\n            \"message\": \"Cannot import url (\\\"contract.sol\\\"): File not found. Searched the following locations: \\\"\\\".\",\r\n            \"severity\": \"error\",\r\n            \"type\": \"IOError\"\r\n        },\r\n        {\r\n            \"component\": \"general\",\r\n            \"errorCode\": \"3805\",\r\n            \"formattedMessage\": \"Warning: This is a pre-release compiler version, please do not use it in production.\\n\\n\",\r\n            \"message\": \"This is a pre-release compiler version, please do not use it in production.\",\r\n            \"severity\": \"warning\",\r\n            \"type\": \"Warning\"\r\n        }\r\n    ],\r\n    \"sources\": {}\r\n}\r\n```\r\nThe stripping in `cmdlineTests.sh` removes the pre-release warning, which results in this output:\r\n```json\r\n{\r\n    \"errors\":\r\n    [\r\n        {\r\n            \"component\": \"general\",\r\n            \"formattedMessage\": \"Cannot import url (\\\"contract.sol\\\"): File not found. Searched the following locations: \\\"\\\".\",\r\n            \"message\": \"Cannot import url (\\\"contract.sol\\\"): File not found. Searched the following locations: \\\"\\\".\",\r\n            \"severity\": \"error\",\r\n            \"type\": \"IOError\"\r\n        }],\r\n    \"sources\": {}\r\n}\r\n```\r\nNote the `}],` sequence in the output. A release binary, that does not output the warning produces a slightly different formatting in that spot:\r\n```json\r\n{\r\n    \"errors\":\r\n    [\r\n        {\r\n            \"component\": \"general\",\r\n            \"formattedMessage\": \"Cannot import url (\\\"contract.sol\\\"): File not found. Searched the following locations: \\\"\\\".\",\r\n            \"message\": \"Cannot import url (\\\"contract.sol\\\"): File not found. Searched the following locations: \\\"\\\".\",\r\n            \"severity\": \"error\",\r\n            \"type\": \"IOError\"\r\n        }\r\n    ],\r\n    \"sources\": {}\r\n}\r\n```\r\n\r\nAs a result, it's impossible to write a test with nicely formatted JSON output that matches both release and pre-release build output. For example in #13162 [`t_ubu_release` fails if we expect `}],`](https://app.circleci.com/pipelines/github/ethereum/solidity/26515/workflows/1537a81d-d798-4598-a7e3-4743160ca2c3/jobs/1174412) and [`t_ubu_cli` fails if we expect the other variant](https://app.circleci.com/pipelines/github/ethereum/solidity/26478/workflows/326ca1f8-e91e-4034-ba21-dfac16cd2b86/jobs/1172659).\r\n\r\n### The warning stripping code\r\nYou can find the code responsible for stripping this warning here:\r\nhttps://github.com/ethereum/solidity/blob/1fbee8259aca10ffe04efa47a21f31d7dee1baa9/test/cmdlineTests.sh#L189-L199",
+  "closed_by": {
+    "login": "nishant-sachdeva",
+    "id": 32475507,
+    "node_id": "MDQ6VXNlcjMyNDc1NTA3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/32475507?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nishant-sachdeva",
+    "html_url": "https://github.com/nishant-sachdeva",
+    "followers_url": "https://api.github.com/users/nishant-sachdeva/followers",
+    "following_url": "https://api.github.com/users/nishant-sachdeva/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nishant-sachdeva/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nishant-sachdeva/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nishant-sachdeva/subscriptions",
+    "organizations_url": "https://api.github.com/users/nishant-sachdeva/orgs",
+    "repos_url": "https://api.github.com/users/nishant-sachdeva/repos",
+    "events_url": "https://api.github.com/users/nishant-sachdeva/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nishant-sachdeva/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13544/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13544/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

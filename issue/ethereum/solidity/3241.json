@@ -68,8 +68,8 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/3241/reactions",
-    "total_count": 22,
-    "+1": 22,
+    "total_count": 23,
+    "+1": 23,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -159,13 +159,13 @@
     "body": "As a german speaker, those two sound pretty much the same to me (or maybe closer to [ijulia](https://github.com/JuliaLang/IJulia.jl), but still confusing). As a fellow programming language person I love the work you're doing and I know naming is hard, but please do consider choosing something with greater phonetic distance.\r\n\r\nI'm sure there's a ton of great names out there. Looks like a couple of them were proposed in #2131. I'd also be happy to help brainstorm further on naming, but that's probably not my place. I hope you'll consider this request, so both communities can avoid adding \"no, not that julia that's a totally different thing\" every time they talk about how cool their technology is.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/346685912/reactions",
-      "total_count": 3,
+      "total_count": 4,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 3,
+      "heart": 4,
       "rocket": 0,
       "eyes": 0
     },

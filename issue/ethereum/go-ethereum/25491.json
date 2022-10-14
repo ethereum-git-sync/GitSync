@@ -236,8 +236,8 @@
     "body": "hello,\r\nThis is the same problem as me, but this problem has been resolved, please click this link\r\n> https://github.com/ethereum/go-ethereum/issues/25438#issuecomment-1199434922",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1212835144/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

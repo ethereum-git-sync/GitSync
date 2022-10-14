@@ -136,7 +136,7 @@
     },
     "created_at": "2022-09-14T15:04:53Z",
     "updated_at": "2022-09-14T15:04:53Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Hi @cameel I'm new to Solidity but want to dig deeper into it. May I elaborate on this issue and provide an improvement? It takes some time and I will ask questions. Hope it won't be too bothering.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1246907357/reactions",
@@ -224,7 +224,7 @@
     },
     "created_at": "2022-09-15T16:20:00Z",
     "updated_at": "2022-09-15T16:20:00Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "hi @matheusaaguiar thanks for clarifying. Let me consider these two before. If this one will be still orphaned I grab it.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1248323292/reactions",

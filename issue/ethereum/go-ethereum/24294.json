@@ -255,8 +255,8 @@
     "body": "@karalabe Leveldb does support multiple readers if there are no writers. We have a fully working prototype here, and it's proven very useful so far: https://github.com/hudson-trading/go-ethereum/pull/2/files (not yet fully cleaned/code-reviewed).\r\n\r\nHow we want to use this in practice: have a live archival node writing to local flash; shut it down every so often; rsync node state to a read-only networked file system (pretty cheap thanks to mostly unchanging sstables). Then you can have massively parallel reads on archival state, without implementing the EVM or building a fancy caching layer. Geth-as-a-library executes calls using the read-only network file system.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1029296334/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

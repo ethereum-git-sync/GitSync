@@ -115,9 +115,9 @@
     "body": "sudo geth attch http://localhost:8545  should work",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/453397694/reactions",
-      "total_count": 14,
+      "total_count": 17,
       "+1": 0,
-      "-1": 14,
+      "-1": 17,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
@@ -247,7 +247,7 @@
     "body": "i got error please help me i am not able to connect geth attach\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/900926336/reactions",
-      "total_count": 5,
+      "total_count": 6,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
@@ -255,7 +255,7 @@
       "confused": 0,
       "heart": 0,
       "rocket": 0,
-      "eyes": 5
+      "eyes": 6
     },
     "performed_via_github_app": null
   }

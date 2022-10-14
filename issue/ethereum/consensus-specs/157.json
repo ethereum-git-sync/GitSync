@@ -475,8 +475,8 @@
     "body": "Something doesn't sit right here. If we want validators running on smaller, weaker devices, then we're obviously aiming to decentralize staking and network security across their globe - including those in 2.5th and maybe 3rd world countries. They will almost certainly not be running Beacon nodes to connect their validator(s) to (cost, bandwidth, network stability) especially because privacy and ddos resistance goes out the window then. \r\n\r\nThe whole point as I understood it was to have Beacon nodes provided by _someone_ and others who want to validate to connect to them. This results in a public service provider and private validators as service consumers. If I'm running my own Beacon node to power my own validators clients (if I can afford to run a Beacon node) then validator privacy means nothing because someone taking down my Beacon node takes down my validators too. There should absolutely be a way to whitelist beacons and to connect to them round-robin or fallback-style, and if one of them is the validator's own node, that's fine.\r\n\r\nIt just doesn't feel attack resistant enough to have the validator run everything - not just their own beacon, but their own VDF ASIC too. It's a technical mess that excludes citizens from validation imo.\r\n\r\nEdit for @crsCR: [A discussion about node types](https://ethresear.ch/t/node-types-in-ethereum-2-0/3668) and [something else](https://notes.ethereum.org/ypOe_OtHTy-Vnx2IAHbKjA)\r\n\r\n<sub>Sent with <a href=\"http://githawk.com\">GitHawk</a></sub>",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/443491807/reactions",
-      "total_count": 3,
-      "+1": 3,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

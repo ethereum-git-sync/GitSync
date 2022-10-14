@@ -38,15 +38,6 @@
       "color": "fef2c0",
       "default": false,
       "description": "Issues waiting for more input by the reporter"
-    },
-    {
-      "id": 692642590,
-      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
-      "name": "feature",
-      "color": "fbca04",
-      "default": false,
-      "description": null
     }
   ],
   "state": "closed",

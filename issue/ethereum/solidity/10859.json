@@ -123,13 +123,13 @@
     "body": "https://ethdebug.github.io/solidity-data-representation/#user-content-locations-in-detail-memory-in-detail-pointers-to-memory\r\n\r\nsection \"Storage: Lookup types\" might be a good reference for rewriting this section. Explanation of p is much clearer there",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/768857888/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 2,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 0,
+      "heart": 1,
       "rocket": 0,
       "eyes": 0
     },

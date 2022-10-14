@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 692642590,
-      "node_id": "MDU6TGFiZWw2OTI2NDI1OTA=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/feature",
-      "name": "feature",
-      "color": "fbca04",
-      "default": false,
-      "description": null
-    },
-    {
       "id": 785717317,
       "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
@@ -132,8 +123,8 @@
     "body": "`abi.decode` is the converse of `abi.encode`. From the fact that you are using `bytes4 sig` I assume that you are trying to do abi decoding and function selector decoding at the same time. This won't work because the abi encoding pads all types to 32 bytes, while the function selector is not padded.\r\n\r\nIf you change `_data` to `bytes calldata`, then you can use the following to decode: `abi.decode(_data[4:], (bytes32, address, bytes32, bytes32));`",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/660039240/reactions",
-      "total_count": 2,
-      "+1": 2,
+      "total_count": 3,
+      "+1": 3,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

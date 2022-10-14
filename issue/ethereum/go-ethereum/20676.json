@@ -203,8 +203,8 @@
     "body": "try this as config:\r\n\r\n```json\r\n \"config\": {\r\n        \"chainId\": 4777,\r\n        \"homesteadBlock\": 0,\r\n        \"eip150Block\": 0,\r\n        \"eip155Block\": 0,\r\n        \"eip158Block\": 0\r\n    },\r\n```",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/586865377/reactions",
-      "total_count": 34,
-      "+1": 27,
+      "total_count": 35,
+      "+1": 28,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

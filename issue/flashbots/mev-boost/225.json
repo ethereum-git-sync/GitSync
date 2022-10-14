@@ -285,7 +285,7 @@
     },
     "created_at": "2022-08-03T17:34:09Z",
     "updated_at": "2022-08-03T17:34:18Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "> Slashing is not only in case of double-signing, there are some more circumstances to get slashed for misbehaviour in proposing (wrong) blocks.\r\n\r\n@ChuckNorrison a proposer cannot be slashed for an invalid block, they can only be slashed if they sign two valid but otherwise different blocks\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1204269546/reactions",
@@ -329,7 +329,7 @@
     },
     "created_at": "2022-08-03T17:35:24Z",
     "updated_at": "2022-08-03T17:35:24Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "and for those reading the condition that you do not sign two conflicting blocks would (and should) be managed outside the mev-boost software",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1204270931/reactions",
@@ -373,7 +373,7 @@
     },
     "created_at": "2022-08-03T17:36:58Z",
     "updated_at": "2022-08-03T17:36:58Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "> What is the maximum damage that a malicious relayer could cause after a validator returns a signed header?\r\n\r\nthe only thing they could do at this point to cause any damage is withhold the execution payload the proposer is committing to via the signing of the header",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1204272620/reactions",

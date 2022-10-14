@@ -176,8 +176,8 @@
     "body": "In Ropsten, you are still syncing in PoW mode, where the sync target is the highest difficulty seen in your peers. After you reach the merge point 12350000-ish, the sync will be directed by your beacon node. If you were to use master branch (or the next stable release `1.10.22`), thn sync would not even start until the beacon client says so.\r\n\r\nI.e. 1. Everything's fine; 2. Sync in PoW will stop a bit later without a beacon client; 3. A beacon client will get you syncing further from that point.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1209327390/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

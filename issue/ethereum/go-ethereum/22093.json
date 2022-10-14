@@ -695,8 +695,8 @@
     "body": "I think this behavior is incorrect and Geth should return the transaction hash.  Calling `eth_sendRawTransaction` is (should be) an idempotent operation and no matter how many times you call it, you should always get the same result.  If the dapp actually wants to know if the transaction already exists, they can query for it.\r\n\r\nGenerally speaking, idempotency in API design improves robustness because it allows application authors to do \"at least once\" without having to worry about hitting unexpected code paths, rather than \"at most once\" (\"exactly once\" being impossible across failure domains of course).",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1162978272/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

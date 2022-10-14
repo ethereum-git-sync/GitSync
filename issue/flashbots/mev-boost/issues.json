@@ -1,11 +1,139 @@
 [
   {
     "author": {
+      "login": "danspina1"
+    },
+    "number": 364,
+    "title": "Validator failed to sign block",
+    "updatedAt": "2022-09-30T14:12:41Z"
+  },
+  {
+    "author": {
+      "login": "Chaz27"
+    },
+    "number": 359,
+    "title": "Prysm context deadline exceeded, falling back to building block locally",
+    "updatedAt": "2022-09-27T09:37:40Z"
+  },
+  {
+    "author": {
+      "login": "metachris"
+    },
+    "number": 357,
+    "title": "Proposal: rename `main` branch to `develop`",
+    "updatedAt": "2022-09-26T13:48:50Z"
+  },
+  {
+    "author": {
+      "login": "cyruskarsan"
+    },
+    "number": 352,
+    "title": "feature-request: Ubuntu PPA",
+    "updatedAt": "2022-09-24T19:11:27Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 246,
+    "title": "Should mev-boost have a default mainnet relay?",
+    "updatedAt": "2022-09-23T08:19:13Z"
+  },
+  {
+    "author": {
+      "login": "allboxes"
+    },
+    "number": 273,
+    "title": "Allow setting a minimum bid value to determine whether or not to use a block supplied by the builder API",
+    "updatedAt": "2022-09-23T08:18:46Z"
+  },
+  {
+    "author": {
+      "login": "Floristico"
+    },
+    "number": 292,
+    "title": "How does the validator choose the relay?",
+    "updatedAt": "2022-09-23T08:08:19Z"
+  },
+  {
+    "author": {
+      "login": "tersec"
+    },
+    "number": 311,
+    "title": "Allow more verbose logging of received payloads",
+    "updatedAt": "2022-09-23T06:20:00Z"
+  },
+  {
+    "author": {
+      "login": "skillful-alex"
+    },
+    "number": 337,
+    "title": "error: relay status error - unexpected status code 0",
+    "updatedAt": "2022-09-23T06:18:53Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 160,
+    "title": "Support mev-boost in lighthouse",
+    "updatedAt": "2022-09-23T06:08:09Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 158,
+    "title": "Support mev-boost in prysm",
+    "updatedAt": "2022-09-23T06:08:08Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 159,
+    "title": "Support mev-boost in nimbus",
+    "updatedAt": "2022-09-23T06:08:08Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 156,
+    "title": "Support mev-boost in teku",
+    "updatedAt": "2022-09-23T06:08:07Z"
+  },
+  {
+    "author": {
+      "login": "come-maiz"
+    },
+    "number": 157,
+    "title": "Support mev-boost in lodestar",
+    "updatedAt": "2022-09-23T06:08:07Z"
+  },
+  {
+    "author": {
+      "login": "moshe-blox"
+    },
+    "number": 262,
+    "title": "Frequent \"no bid received\"",
+    "updatedAt": "2022-09-22T21:15:28Z"
+  },
+  {
+    "author": {
+      "login": "PixelNoob"
+    },
+    "number": 336,
+    "title": "Fee recipient from connected builder does not match, using it anyways",
+    "updatedAt": "2022-09-20T11:07:04Z"
+  },
+  {
+    "author": {
       "login": "kwood"
     },
     "number": 330,
     "title": "Requests to other relays are canceled as soon as one relay returns",
-    "updatedAt": "2022-09-19T14:19:56Z"
+    "updatedAt": "2022-09-20T02:18:57Z"
   },
   {
     "author": {
@@ -14,14 +142,6 @@
     "number": 320,
     "title": "Cannot connect to Builder",
     "updatedAt": "2022-09-19T12:04:53Z"
-  },
-  {
-    "author": {
-      "login": "moshe-blox"
-    },
-    "number": 262,
-    "title": "Frequent \"no bid received\"",
-    "updatedAt": "2022-09-18T16:10:57Z"
   },
   {
     "author": {
@@ -81,14 +201,6 @@
   },
   {
     "author": {
-      "login": "tersec"
-    },
-    "number": 311,
-    "title": "Allow more verbose logging of received payloads",
-    "updatedAt": "2022-09-13T15:01:48Z"
-  },
-  {
-    "author": {
       "login": "remyroy"
     },
     "number": 286,
@@ -118,38 +230,6 @@
     "number": 220,
     "title": "Identifier for builder to proposer transaction",
     "updatedAt": "2022-09-08T14:08:29Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 160,
-    "title": "Support mev-boost in lighthouse",
-    "updatedAt": "2022-09-08T02:27:13Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 158,
-    "title": "Support mev-boost in prysm",
-    "updatedAt": "2022-09-08T02:02:40Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 156,
-    "title": "Support mev-boost in teku",
-    "updatedAt": "2022-09-08T01:08:58Z"
-  },
-  {
-    "author": {
-      "login": "Floristico"
-    },
-    "number": 292,
-    "title": "How does the validator choose the relay?",
-    "updatedAt": "2022-09-07T17:39:15Z"
   },
   {
     "author": {
@@ -305,14 +385,6 @@
   },
   {
     "author": {
-      "login": "allboxes"
-    },
-    "number": 273,
-    "title": "Allow users to set a fee cutoff to determine whether or not to use a block supplied by the builder API",
-    "updatedAt": "2022-08-28T22:02:26Z"
-  },
-  {
-    "author": {
       "login": "tbenr"
     },
     "number": 169,
@@ -345,14 +417,6 @@
   },
   {
     "author": {
-      "login": "come-maiz"
-    },
-    "number": 246,
-    "title": "Should mev-boost have a default mainnet relay?",
-    "updatedAt": "2022-08-17T03:49:12Z"
-  },
-  {
-    "author": {
       "login": "michaelsproul"
     },
     "number": 247,
@@ -374,14 +438,6 @@
     "number": 215,
     "title": "Censorship Resistance: crlists in mev-boost",
     "updatedAt": "2022-08-11T21:51:30Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 157,
-    "title": "Support mev-boost in lodestar",
-    "updatedAt": "2022-08-11T17:51:07Z"
   },
   {
     "author": {
@@ -670,14 +726,6 @@
     "number": 62,
     "title": "Use BLSPublicKeys for the list of relays",
     "updatedAt": "2022-06-20T08:31:47Z"
-  },
-  {
-    "author": {
-      "login": "come-maiz"
-    },
-    "number": 159,
-    "title": "Support mev-boost in nimbus",
-    "updatedAt": "2022-06-19T03:47:43Z"
   },
   {
     "author": {

@@ -360,8 +360,8 @@
     "body": "@MicahZoltu brought this up in the chat again and there is actually another good argument for having this for requires with message.\r\n\r\nThe argument so far was that one can always just define a function, but for reverts with reason this becomes a problem. Say we define\r\n```\r\nfunction require(condition, message, length) {\r\n  if iszero(condition) {\r\n    mstore(0, <sig>)\r\n    mstore(4, 0x20)\r\n    mstore(0x24, length)\r\n    mstore(0x44, message)\r\n    revert(0, add(0x44, length))\r\n  }\r\n}\r\n```\r\nAnd then use it several times, the optimizer likely won't inline this. This results in the message being pushed on the stack needlessly when the condition is true.\r\n\r\nSince we need builtins with mixed \"required literal\" and arbitrary arguments anyways for the immutables, this might be quite a good reason to introduce a ``require`` builtin...\r\nSo far I suggested to just use ``if condition { revertWithReason(\"msg\", 3) }`` with a custom defined function ``revertWithReason``, but that's (1) less readable and (2) inconvenient and error prone in that it requires the length to be explicitly stated.\r\nA builtin ``require(condition, <requiredLiteralReasonString>)`` would solve those problems and could potentially conveniently allow reason strings longer than 32-bytes transparently.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/608339115/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

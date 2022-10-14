@@ -203,8 +203,8 @@
     "body": "[Relevant Classic ECIP discussion on this subject](https://github.com/ethereumproject/ECIPs/issues/7). [Even more here](https://github.com/ethereumproject/ECIPs/pull/10). As far as I understand it, they're considering adding the blockhash of the nearest fork to the signing process. \n\nI'm not competent to speak on the cryptographic parts of this idea, but I'll note a philosophical difference between this and ECIP-1011. Here, picking CHAIN_ID requires human intervention to choose which community it belongs in, whereas a machine can compute the right blockhash to stick in if it detects even a minor fork. \n\nIn any case, the existence of two incompatible replay protection systems will hardly cause them to fail in their intended function. It's just a kind of balkanization of code that, IMHO, would be harmful for a future cross-chain metaetheral world. I'm not saying that doing our own system would be wrong, but that there's a non-zero cost to having different systems.\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/EIPs/issues/comments/254079903/reactions",
-      "total_count": 2,
-      "+1": 2,
+      "total_count": 3,
+      "+1": 3,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

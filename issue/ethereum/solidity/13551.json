@@ -1,0 +1,155 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13551",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13551/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13551/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13551/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13551",
+  "id": 1382221501,
+  "node_id": "I_kwDOAm_5kc5SYwa9",
+  "number": 13551,
+  "title": "[isoltest] Executing semantic tests at arbitrary paths",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 717596767,
+      "node_id": "MDU6TGFiZWw3MTc1OTY3Njc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue",
+      "name": "good first issue",
+      "color": "006b75",
+      "default": true,
+      "description": ""
+    },
+    {
+      "id": 1018738457,
+      "node_id": "MDU6TGFiZWwxMDE4NzM4NDU3",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/testing%20:hammer:",
+      "name": "testing :hammer:",
+      "color": "ffc6db",
+      "default": false,
+      "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    },
+    {
+      "id": 4438492402,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI4E8g",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/nice%20to%20have",
+      "name": "nice to have",
+      "color": "ffdeb3",
+      "default": false,
+      "description": "We don’t see a good reason not to have it but won’t go out of our way to implement it."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2022-09-22T10:33:13Z",
+  "updated_at": "2022-09-22T15:45:18Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Isoltest can execute contracts using evmone and we use that to implement semantic tests. Currently these tests have to be located inside `test/libsolidity/semanticTests/`. It would be convenient for debugging to be able to use isoltest to execute a code snippet from an arbitrary path by simply giving it that path on the command line.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13551/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13551/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1254851879",
+    "html_url": "https://github.com/ethereum/solidity/issues/13551#issuecomment-1254851879",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/13551",
+    "id": 1254851879,
+    "node_id": "IC_kwDOAm_5kc5Ky4Un",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-22T10:46:36Z",
+    "updated_at": "2022-09-22T10:46:36Z",
+    "author_association": "MEMBER",
+    "body": "My use case is that I often just go to `/tmp/` and create a file called `test.sol` when I want to try things out. I can easily compile that with `solc` but executing it with `isoltest` is more tedious:\r\n- It has to be copied over to the working copy and shows up as a stray file in git, etc. These are one-offs most of the time and I just prefer them automatically gone on reboot.\r\n- I always build out of tree so I have to add extra args to help isoltest locate my working copy in the first place (`--testpath <working copy path>/test`), which makes the command longer for no good reason.\r\n- Since test names are not full paths, I can't use Bash completion when I do something like `--test=semanticTests/my_test.sol`. I have to type out the full path unless I'm actually inside `test/libsolidity/` in the working copy.",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1254851879/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  }
+]

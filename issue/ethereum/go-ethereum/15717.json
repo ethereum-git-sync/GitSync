@@ -616,7 +616,7 @@
     "body": "@ArchetypicalDude this is awesome. i took some time to put the data into the table below.\r\n\r\n|  | LevelDB | Badger | BoltDB |\r\n| --- | ---: | ---: | ---: |\r\n| batchPuts (Overall) | 50.33M (17.79K/s) | **114.33M (45.59K/s)** | 33.42M (5.16K/s) |\r\n| batchWriteTimes (Overall) | 201.12K (71.08/s) | **324.80K (129.51/s)** | 32.48K (5.01/s) |\r\n| batchWrites (Overall) | 29.06G (10.27M/s) | **40.69G (16.22M/s)** | 3.76G (580.65K/s) |\r\n| dels (Overall) | 0 (0.00/s) | 0 (0.00/s) | 0 (0.00/s) |\r\n| gets (Overall) | 9.00M (3.18K/s) | 26.39M (10.52K/s) | **48.82M (7.53K/s)** |\r\n| misses (Overall) | 3.65M (1.29K/s) | **12.18M (4.85K/s)** | 0 (0.00/s) |\r\n| puts (Overall) | 2.13M (751.22/s) | **21.47M (8.56K/s)** | 4.55M (701.19/s) |\r\n| reads (Overall) | 2.57G (907.39K/s) | **5.14G (2.05M/s)** | 629.47M (97.10K/s) |\r\n| writes (Overall) | 258.72M (91.43K/s) | **2.63G (1.05M/s)** | 557.17M (85.95K/s) |\r\n\r\n@holiman good question. would love to learn more on how to explore this data, @ArchetypicalDude?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/374732950/reactions",
-      "total_count": 0,
+      "total_count": 1,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
@@ -624,7 +624,7 @@
       "confused": 0,
       "heart": 0,
       "rocket": 0,
-      "eyes": 0
+      "eyes": 1
     },
     "performed_via_github_app": null
   },
@@ -792,13 +792,13 @@
     "body": "@manishrjain https://github.com/siong1987/go-ethereum/pull/1 < I created this PR based on @ArchetypicalDude's commits so that I can easily visualize what has been changed with the Github UI.\r\n\r\nto run it, you can follow the `go-ethereum`'s installation guide here: https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu\r\n\r\nto get the metrics, the guide is here: https://github.com/ethereum/go-ethereum/wiki/Metrics-and-Monitoring\r\n\r\nnot sure that this is super helpful.\r\n\r\nfor the metrics, it was my bad to use the `Overall` metric. to see who is the winner, you can look more closely at the breakdown here:\r\n\r\nBoltDB:\r\n```javascript\r\ngets: {\r\n  Avg01Min: \"111.84K (1.86K/s)\",\r\n  Avg05Min: \"2.03M (6.76K/s)\",\r\n  Avg15Min: \"6.85M (7.61K/s)\",\r\n  Maximum: \"5.775065ms\",\r\n  Minimum: \"1.683µs\",\r\n  Overall: \"48.82M (7.53K/s)\",\r\n  Percentiles: {\r\n    20: \"2.516µs\",\r\n    5: \"2.06µs\",\r\n    50: \"3.197µs\",\r\n    80: \"5.647µs\",\r\n    95: \"13.839µs\"\r\n  }\r\n}\r\n```\r\n\r\nLevelDB:\r\n```javascript\r\ngets: {\r\n  Avg01Min: \"123.67K (2.06K/s)\",\r\n  Avg05Min: \"739.38K (2.46K/s)\",\r\n  Avg15Min: \"3.04M (3.38K/s)\",\r\n  Maximum: \"127.309714ms\",\r\n  Minimum: \"4.86µs\",\r\n  Overall: \"9.00M (3.18K/s)\",\r\n  Percentiles: {\r\n    20: \"6.11µs\",\r\n    5: \"5.583µs\",\r\n    50: \"7.396µs\",\r\n    80: \"18.321µs\",\r\n    95: \"39.912µs\"\r\n  }\r\n}\r\n```\r\n\r\nBadger:\r\n```javascript\r\ngets: {\r\n  Avg01Min: \"395.55K (6.59K/s)\",\r\n  Avg05Min: \"1.55M (5.16K/s)\",\r\n  Avg15Min: \"5.97M (6.64K/s)\",\r\n  Maximum: \"12.899981ms\",\r\n  Minimum: \"3.748µs\",\r\n  Overall: \"26.39M (10.52K/s)\",\r\n  Percentiles: {\r\n    20: \"6.305µs\",\r\n    5: \"4.746µs\",\r\n    50: \"9.289µs\",\r\n    80: \"17.561µs\",\r\n    95: \"150.561µs\"\r\n  }\r\n}\r\n```\r\n\r\nas you can see from the percentiles measurements:\r\n\r\n| Database       | BoltDB | LevelDB | Badger |\r\n| -------------: |---:| ---:| ---: |\r\n| 5 percentile gets | 2.06µs | 5.583µs | 4.746µs |\r\n| 20 percentile gets | 2.516µs | 6.11µs | 6.305µs |\r\n| 50 percentile gets | 3.197µs | 7.396µs | 9.289µs |\r\n| 80 percentile gets | 5.647µs | 18.321µs | 17.561µs |\r\n| 95 percentile gets | 13.839µs | 39.912µs | 150.561µs |",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/379152798/reactions",
-      "total_count": 4,
+      "total_count": 5,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 4,
+      "heart": 5,
       "rocket": 0,
       "eyes": 0
     },

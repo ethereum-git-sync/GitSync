@@ -123,8 +123,8 @@
     "body": "There are two types of sync, which both leads to a \"full node\". \r\n- statesync: `syncmode=snap` (or the old `syncmode=fast`)\r\n  - In this mode, the \"current\" state is downloaded from peers. With \"current\", I mean that it aims for the state at block `N`, where `N` is close to head when the sync starts, also called the pivot point. Since we cannot sync up quickly enough, we move the pivot point forward from time to time. Eventually, geth has the complete state for a certain block, but has still maybe ~100 blocks remaining to be fully in sync with head.  \r\n  - Once this mode reaches the point where it has the full state for a certain block, it switches over to \"block-by-block\" sync.\r\n- block-by-block-sync: `syncmode=full`. \r\n  - In this mode, geth imports and executes the contents of each block, from genesis to head. \r\n\r\nIf geth has performed a state-sync at any point, it will never redo that, but always progress block by block. It _is_ possible to bypass this, by deleting a certain metadata field (which one I don't recall right now), and do a new statesync, but it's not something we have implemented as part of the \"normal ux\". \r\n\r\nIn your logs, you seem ot have started a full-sync and gone up to block 786K. After a block-by-block sync is started, regardless of what you tell it to do, it will continue with the block-by-block sync. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1048532787/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

@@ -115,13 +115,13 @@
     "body": "Related: https://github.com/ethereum/solidity/issues/7877#issuecomment-780598691\r\n\r\nWe considered this but so far we could not agree on a good syntax.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1206799726/reactions",
-      "total_count": 0,
+      "total_count": 1,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 0,
+      "heart": 1,
       "rocket": 0,
       "eyes": 0
     },

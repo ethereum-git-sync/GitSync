@@ -51,8 +51,8 @@
     {
       "id": 1012614086,
       "node_id": "MDU6TGFiZWwxMDEyNjE0MDg2",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20medium",
-      "name": "difficulty: medium",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20difficulty",
+      "name": "medium difficulty",
       "color": "7dcddb",
       "default": false,
       "description": ""

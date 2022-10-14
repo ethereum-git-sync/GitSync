@@ -247,8 +247,8 @@
     "body": "Anyone else who comes across this error , this solution may work-->  `sudo apt install golang-go` and try again. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/799310753/reactions",
-      "total_count": 1,
-      "+1": 1,
+      "total_count": 2,
+      "+1": 2,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -291,14 +291,14 @@
     "body": "For anyone who ran into this, I did:\r\n\r\n```\r\n# Remove go.sum\r\nrm go.sum\r\n\r\n# Then re-generate go.sum\r\ngo mod tidy\r\n```",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/830326854/reactions",
-      "total_count": 2,
+      "total_count": 3,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 1,
       "confused": 0,
       "heart": 0,
-      "rocket": 1,
+      "rocket": 2,
       "eyes": 0
     },
     "performed_via_github_app": null

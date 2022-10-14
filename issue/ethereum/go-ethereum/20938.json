@@ -115,8 +115,8 @@
     "body": "There are about ~490.000.000 state entries and you have synced 315.249.558 of them.\n\nYour node does not know how many state entries there are in advance, so it can not show you this information. There are plans to improve this.\n\nhttps://github.com/ethereum/go-ethereum/issues/14647\nhttps://eips.ethereum.org/EIPS/eip-2029\nhttps://github.com/hayorov/ethereum-sync-metrics\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/615538116/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -159,8 +159,8 @@
     "body": "Syncing Ethereum is a pain point for many people, so I'll try to detail what's happening behind the scenes so there might be a bit less confusion.\r\n\r\nThe current default mode of sync for Geth is called fast sync. Instead of starting from the genesis block and reprocessing all the transactions that ever occurred (which could take weeks), fast sync downloads the blocks, and only verifies the associated proof-of-works. Downloading all the blocks is a straightforward and fast procedure and will relatively quickly reassemble the entire chain.\r\n\r\nMany people falsely assume that because they have the blocks, they are in sync. Unfortunately this is not the case, since no transaction was executed, so we do not have any account state available (ie. balances, nonces, smart contract code and data). These need to be downloaded separately and cross checked with the latest blocks. This phase is called the state trie download and it actually runs concurrently with the block downloads; alas it take a lot longer nowadays than downloading the blocks.\r\n\r\nSo, what's the state trie? In the Ethereum mainnet, there are a [ton of accounts already](https://etherscan.io/chart/address), which track the balance, nonce, etc of each user/contract. The accounts themselves are however insufficient to run a node, they need to be cryptographically linked to each block so that nodes can actually verify that the account's are not tampered with. This cryptographic linking is done by creating a tree data structure above the accounts, each level aggregating the layer below it into an ever smaller layer, until you reach the single root. This gigantic data structure containing all the accounts and the intermediate cryptographic proofs is called the state trie.\r\n\r\nOk, so why does this pose a problem? This trie data structure is an intricate interlink of hundreds of millions of tiny cryptographic proofs (trie nodes). To truly have a synchronized node, you need to download all the account data, as well as all the tiny cryptographic proofs to verify that noone in the network is trying to cheat you. This itself is already a crazy number of data items. The part where it gets even messier is that this data is constantly morphing: at every block (15s), about 1000 nodes are deleted from this trie and about 2000 new ones are added. This means your node needs to synchronize a dataset that is changing 200 times per second. The worst part is that while you are synchronizing, the network is moving forward, and state that you begun to download might disappear while you're downloading, so your node needs to constantly follow the network while trying to gather all the recent data. But until you actually do gather all the data, your local node is not usable since it cannot cryptographically prove anything about any accounts.\r\n\r\nIf you see that you are 64 blocks behind mainnet, you aren't yet synchronized, not even close. You are just done with the block download phase and still running the state downloads. You can see this yourself via the seemingly endless `Imported state entries [...]` stream of logs. You'll need to wait that out too before your node comes truly online.\r\n\r\n---\r\n\r\n**Q: The node just hangs on importing state enties?!**\r\n\r\nA: The node doesn't hang, it just doesn't know how large the state trie is in advance so it keeps on going and going and going until it discovers and downloads the entire thing.\r\n\r\nThe reason is that a block in Ethereum only contains the state root, a single hash of the root node. When the node begins synchronizing, it knows about exactly 1 node and tries to download it. That node, can refer up to 16 new nodes, so in the next step, we'll know about 16 new nodes and try to download those. As we go along the download, most of the nodes will reference new ones that we didn't know about until then. This is why you might be tempted to think it's stuck on the same numbers. It is not, rather it's discovering and downloading the trie as it goes along.\r\n\r\n**Q: I'm stuck at 64 blocks behind mainnet?!**\r\n\r\nA: As explained above, you are not stuck, just finished with the block download phase, waiting for the state download phase to complete too. This latter phase nowadays take a lot longer than just getting the blocks.\r\n\r\n**Q: Why does downloading the state take so long, I have good bandwidth?**\r\n\r\nA: State sync is mostly limited by disk IO, not bandwidth.\r\n\r\nThe state trie in Ethereum contains hundreds of millions of nodes, most of which take the form of a single hash referencing up to 16 other hashes. This is a horrible way to store data on a disk, because there's almost no structure in it, just random numbers referencing even more random numbers. This makes any underlying database weep, as it cannot optimize storing and looking up the data in any meaningful way.\r\n\r\nNot only is storing the data very suboptimal, but due to the 200 modification / second and pruning of past data, we cannot even download it is a properly pre-processed way to make it import faster without the underlying database shuffling it around too much. The end result is that even a fast sync nowadays incurs a huge disk IO cost, which is too much for a mechanical hard drive.\r\n\r\n**Q: Wait, so I can't run a full node on an HDD?**\r\n\r\nA: Unfortunately not. Doing a fast sync on an HDD will take more time than you're willing to wait with the current data schema. Even if you do wait it out, an HDD will not be able to keep up with the read/write requirements of transaction processing on mainnet.\r\n\r\nYou however should be able to run a light client on an HDD with minimal impact on system resources. If you wish to run a full node however, an SSD is your only option.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/616402016/reactions",
-      "total_count": 18,
-      "+1": 18,
+      "total_count": 20,
+      "+1": 20,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -467,14 +467,14 @@
     "body": "@karalabe I finally managed to sync a mainnet node in around 15 hours using` i3.2xlarge` AWS EC2 instance (8 core, 61 GiB RAM, 1.9 TiB NVMe SSD). It's way larger than what is needed but the main point being that its part of the family of _high I/O compute instances_ offered by AWS. I also selected that instance type based on the Geth teams benchmarks reported [here](https://blog.ethereum.org/2019/07/10/geth-v1-9-0/).\r\n\r\nI starting geth with the command: `geth --syncmode=fast --nousb --cache=4096 --maxpeers=50` (which I think these options are mostly defaults anyway).\r\n\r\n...about 15 hours later the logs read `Fast sync complete, auto disabling` which was great to see! :)",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/709270526/reactions",
-      "total_count": 3,
+      "total_count": 4,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
       "heart": 0,
-      "rocket": 3,
+      "rocket": 4,
       "eyes": 0
     },
     "performed_via_github_app": null
@@ -511,8 +511,8 @@
     "body": "I got issue today with geth, and I deleted db (I kept ancient) and run snapsync rebuild. It rebuild from freezer very fast, then run resync of blocks in aboun hour, after that it resync state for about 3-4h and now it is in \"state heal in progress\". It has no % to show progress so I am interested how long it would take to get full synced (how long healing phase lasts) and would it end up OK. Did I have to remove both DB and do a classic fast sync?\r\n\r\nThere is very little info about snapsync (and genreally syncing). I synced geth few times and it was always painfull.\r\n\r\nThanks in advance",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/834704416/reactions",
-      "total_count": 2,
-      "+1": 2,
+      "total_count": 3,
+      "+1": 3,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -555,8 +555,8 @@
     "body": "@nklak Hello, I ran geth in snap sync today and now it's in the 'state heal in progress' phase now. Did your node sync successfully in the end?",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/862296609/reactions",
-      "total_count": 6,
-      "+1": 6,
+      "total_count": 7,
+      "+1": 7,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -599,8 +599,8 @@
     "body": "@romon267 did yours sync in a reasonable amount of time? (to continue the chain of asking for followups) It is quite frustrating to have no idea what the number of accounts, slots, or nodes means. Very difficult to determine if the sync is making progress.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/920521076/reactions",
-      "total_count": 2,
-      "+1": 2,
+      "total_count": 3,
+      "+1": 3,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

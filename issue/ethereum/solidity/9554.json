@@ -819,13 +819,13 @@
     "body": "Feel like there should be something in-between `view` and `pure`\r\n\r\nit would be useful to have a another modifier that ensure these function only access bytecode and nothing else.\r\n\r\nthe `view` modifier is too general as even when you intend to use `immutables` as constants in your code, you do not get error when reading storage.\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1040754650/reactions",
-      "total_count": 1,
+      "total_count": 2,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 1,
+      "heart": 2,
       "rocket": 0,
       "eyes": 0
     },

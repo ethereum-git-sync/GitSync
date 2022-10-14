@@ -76,8 +76,8 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/4199/reactions",
-    "total_count": 1,
-    "+1": 1,
+    "total_count": 2,
+    "+1": 2,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -211,8 +211,8 @@
     "body": "Perhaps something like this works for you:\r\n```\r\npragma experimental \"v0.5.0\";\r\n\r\ncontract A {\r\n    constructor(string arg) public {}\r\n}\r\ncontract B is A {\r\n    constructor() public {}\r\n}\r\ncontract C is A {\r\n    constructor() public {}\r\n}\r\ncontract Final is A, B, C {\r\n    constructor() A(\"abc\") public {\r\n        \r\n    }\r\n}\r\n```",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/392750613/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

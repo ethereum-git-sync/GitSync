@@ -352,8 +352,8 @@
     "body": "Hey all,\r\n\r\n  Just wanted to do a small braindump. Full disclosure, I'm not familiar with the ETH 2.0 spec **at all**, neither with the communication requirements between beacon chain nodes and validators. That said, I can talk out of ETH 1.0 experience + general API experience.\r\n\r\n  Generally, the dumber and more boring a protocol is, the simpler it is to interface. At the end of the day, the goal of Ethereum is to bring developers together, so we should always prefer simplicity over other advantages.\r\n\r\n  There have been two proposals made here: gRPC and JSON-RPC. I honestly don't see any advantage in gRPC if we're building an open infrastructure. \"Nobody\" will want to (or be able to) roll their own gRPC implementation, so you are immediately limited by what you can implement on top of Ethereum purely, because you can't talk to it. This alone should be enough to rule out gRPC (this is why you don't see protobuf, cap'n proto and others on APIs). These frameworks are very nice for *internal calls* in proprietary systems, but not in public APIs that you want to maximize interoperability with.\r\n\r\n  That said, JSON-RPC is also a horrible choice. It's better than gRPC in that you can at least interface it easily, but the issue is that it is a stateful protocol, which makes it a non-composable protocol. Ethereum 1.0 made the huge mistake of permitting RPC calls that span requests (e.g. req1: create a filter; req2: query logs until block N; req3: query until block M, etc). This is a **huge** problem in internet infrastructure as it completely breaks horizontal scaling. All the requests must go to the same backend, because they are stateful. The backend cannot be restarted, the backend cannot be scaled, cannot be load balanced, cannot be updated, etc. JSON RPC works ok for communicating 1-1 with a dedicated node, but you cannot build public infrastructure out of it.\r\n\r\n My proposal is to seriously consider RESTful HTTP for **all** public APIs that Ethereum nodes need to serve. If you are unfamiliar with it, REST is simply a \"schema\" that defines how you should query data (\"GET /path/to/resource/\"), how you should upload data (\"POST /path/to/resource\") and how different errors should be conveyed (\"404 not found\"). It is a tiny specialization of the HTTP protocol, but the enormous power is that:\r\n\r\n * You can query if from any tool: curl, browser, literally any programming language. The data you get back is JSON that you need to interpret of course, but the \"input\" is mostly just URL parameters that you can even type in manually to test something.\r\n * Everything speaks HTTP. You can access it through a proxy, you can put it behind Tor, you can shove it on top of AppEngine, you can put an nginx load balancer in front, you can put a memcache in front, you can put Cloudflare in front, you can have AWS or GCE auto scale it for you. You can host one backend to serve it, or 100. You can serve it from multiple geographic locations (i.e. many data centers). You can have rotating DNS in front for failovers. You can have encryption and server authentication via TLS, you can add client authentication via client certs, or JWT tokens, or OAuth. You have well defined throttling mechanisms via tokenbuckets. You can even host your service through a Mashape/RapidAPI marketplace and make money for yourself.\r\n\r\nYou see, RESTful HTTP APIs are the building blocks of the modern internet. Everything on the internet is built to produce and consume it. If we go down the JSON RPC path, we remain yet another niche. Sure, some will support it, but the big guys will always be deterred. If we embrace proper architectures, Ethereum will be trivial to integrate into existing systems, giving it a huge boost in developer appeal.\r\n\r\nMy 2c.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/489660765/reactions",
-      "total_count": 31,
-      "+1": 30,
+      "total_count": 32,
+      "+1": 31,
       "-1": 1,
       "laugh": 0,
       "hooray": 0,
@@ -396,8 +396,8 @@
     "body": "Oh, just as a memo, the fact that the default reply format is JSON, is just a detail. Since the reply is just an HTTP response, you are free to send JSON, or any other format. Way back XML was also popular (e.g. \"GET /path/to/res.json\" vs. \"GET /path/to/res.xml\"), but there's nothing stopping us from also supporting a binary format (e.g. \"GET /path/to/res.rlp\" or \"GET /path/to/res.ssz\"). REST still works, it doesn't care, HTTP doesn't care, nothing cares. But we can immediately have both performance and simplicity: validators would use a binary format, and a web interface would use a json format.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/489663802/reactions",
-      "total_count": 6,
-      "+1": 6,
+      "total_count": 7,
+      "+1": 7,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -792,8 +792,8 @@
     "body": "Completely agree :) https://swagger.io/specification/",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/489675942/reactions",
-      "total_count": 3,
-      "+1": 3,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -1320,8 +1320,8 @@
     "body": "@zcstarr I can only reiterate, really. json-rpc is awesome for two peers having a dialogue. In the recent development of `clef`, the externalized signer from `geth`, we use bi-directional json-rpc between `clef` (daemon) and the ui. Both parties can send messages to the other, and get responses - have asyncronous dialogues. \r\n\r\nHowever, REST assumes that the communication is a _client_ requesting resources form a _server_ -- they are not _peers_. \r\n\r\nThe two models are inherently different, \r\n\r\n- The latter is inherently cache-friendly, \r\n- The latter does not make assumptions about a what partcular server answers a particular request (whereas json-rpc has individual sequential ID for each message, thus assuming a certain statefullness in the request/response) -- so the latter is easily load-balanced. \r\n\r\nI do believe that swagger is more mature than json-schemas, but regardless, I don't see that being the  the primary driver personally. Fwiw, there exists no json-schema for the eth 1.0 json-rpc, despite attempts historically to address this. It's been a source of bugs over many years. \r\n\r\nAs for locking into a transport, that's partially true. However, it also solves many other problems: \r\n\r\n- In the transport layer, one might want authorization. HTTP solves that (basic, digest, client-cert, other)\r\n- One might want session (long lived authororization). HTTP solves that with cookies, header-based solutions like `jwt` etc. \r\n- One might want per-resource cache-directives (http has it)\r\n- One might want content types, compression (and negotiation about compression)\r\n- One might want to utilize existing CA infrastructure and encryption, \r\n\r\nRegarding the points raised\r\n\r\n1. Breaks tooling\r\n  - There's quite a lot of tooling around http already, lots of tools that we don't even have to build, because they already exist across a variety of platforms\r\n2. No ability to batch request\r\n - HTTP does have batching, in the form of http pipelining. More paralellizability is coming with HTTP3 (see next point)\r\n3. Not true, HTTP3 is in the works, based on Quic. \r\n4. Maybe, can't say\r\n5. See reasons above\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/consensus-specs/issues/comments/506658711/reactions",
-      "total_count": 2,
-      "+1": 2,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

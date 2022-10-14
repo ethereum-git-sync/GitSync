@@ -79,11 +79,11 @@
   "milestone": null,
   "comments": 4,
   "created_at": "2020-10-29T12:20:35Z",
-  "updated_at": "2021-08-04T11:00:00Z",
+  "updated_at": "2022-09-27T14:43:50Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
-  "body": "The following features are missing in order to have feature parity:\r\n- [x] Add CBOR metadata to the bytecode (requires #10179)\r\n- [x] Support object (#10147)\r\n- [x] Support runtimeObject -- needs an improvement in AssemblyStack (see https://github.com/ethereum/solidity/pull/10147#discussion_r514193653)\r\n- [x] Add EIP-170 size check for runtimeObject (this could be moved to a generic location and not duplicated)\r\n- [x] Support assemblyItems / runtimeAssemblyitems -- needs a change to MachineAssemblyObject (#10866)\r\n- [ ] Support generatedSources\r\n- [x] Support assemblyString -- needs some refactoring or exposing MachineAssemblyObject (#10866)\r\n- [x] Support assemblyStringJSON -- needs major changes to libyul (exposing this EVM-specific field in MachineAssemblyObject) (#10866)\r\n- [ ] Support functionEntryPoints -- depends on assemblyItems\r\n- [x] Support gasEstimates -- depends on assemblyItems (#10866)\r\n- [x] Support sourceMapping / runtimeSourceMapping -- depends on assemblyItems or expose MachineAssemblyObject (#10866 -- but this will be useful after #11086)\r\n- [ ] Keep source locations passed down to assembly (#11086)",
+  "body": "The following features are missing in order to have feature parity:\r\n- [x] Add CBOR metadata to the bytecode (requires #10179)\r\n- [x] Support object (#10147)\r\n- [x] Support runtimeObject -- needs an improvement in AssemblyStack (see https://github.com/ethereum/solidity/pull/10147#discussion_r514193653)\r\n- [x] Add EIP-170 size check for runtimeObject (this could be moved to a generic location and not duplicated)\r\n- [x] Support assemblyItems / runtimeAssemblyitems -- needs a change to MachineAssemblyObject (#10866)\r\n- [ ] Support generatedSources\r\n- [x] Support assemblyString -- needs some refactoring or exposing MachineAssemblyObject (#10866)\r\n- [x] Support assemblyStringJSON -- needs major changes to libyul (exposing this EVM-specific field in MachineAssemblyObject) (#10866)\r\n- [ ] Support functionEntryPoints -- depends on assemblyItems\r\n- [x] Support gasEstimates -- depends on assemblyItems (#10866)\r\n- [x] Support sourceMapping / runtimeSourceMapping -- depends on assemblyItems or expose MachineAssemblyObject (#10866 -- but this will be useful after #11086)\r\n- [x] Keep source locations passed down to assembly (#11086)",
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/10152/reactions",

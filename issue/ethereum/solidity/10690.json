@@ -33,8 +33,8 @@
     {
       "id": 1012614240,
       "node_id": "MDU6TGFiZWwxMDEyNjE0MjQw",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20challenging",
-      "name": "difficulty: challenging",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/challenging%20difficulty",
+      "name": "challenging difficulty",
       "color": "c300d8",
       "default": false,
       "description": ""

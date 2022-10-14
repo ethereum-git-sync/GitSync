@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25869",
+  "repository_url": "https://api.github.com/repos/ethereum/go-ethereum",
+  "labels_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25869/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25869/comments",
+  "events_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25869/events",
+  "html_url": "https://github.com/ethereum/go-ethereum/issues/25869",
+  "id": 1385672291,
+  "node_id": "I_kwDOAOvK985Sl65j",
+  "number": 25869,
+  "title": "Data race via txpool",
+  "user": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 72233650,
+      "node_id": "MDU6TGFiZWw3MjIzMzY1MA==",
+      "url": "https://api.github.com/repos/ethereum/go-ethereum/labels/type:bug",
+      "name": "type:bug",
+      "color": "FF5E5E",
+      "default": false,
+      "description": ""
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-26T08:43:55Z",
+  "updated_at": "2022-09-26T09:34:17Z",
+  "closed_at": "2022-09-26T09:34:17Z",
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "Detected by travis cron\r\n\r\n```\r\nWARNING: DATA RACE\r\nRead at 0x00c000426348 by goroutine 87:\r\n  github.com/ethereum/go-ethereum/core.(*TxPool).Nonce()\r\n      /home/travis/gopath/src/github.com/ethereum/go-ethereum/core/tx_pool.go:466 +0xe8\r\n  github.com/ethereum/go-ethereum/miner.(*testWorkerBackend).newRandomTx()\r\n      /home/travis/gopath/src/github.com/ethereum/go-ethereum/miner/worker_test.go:194 +0x7d\r\n  github.com/ethereum/go-ethereum/miner.testGenerateBlockAndImport()\r\n      /home/travis/gopath/src/github.com/ethereum/go-ethereum/miner/worker_test.go:251 +0x8b7\r\n  github.com/ethereum/go-ethereum/miner.TestGenerateBlockAndImportEthash()\r\n      /home/travis/gopath/src/github.com/ethereum/go-ethereum/miner/worker_test.go:210 +0x30\r\n  testing.tRunner()\r\n      /home/travis/.gimme/versions/go1.19.1.linux.amd64/src/testing/testing.go:1446 +0x216\r\n  testing.(*T).Run.func1()\r\n      /home/travis/.gimme/versions/go1.19.1.linux.amd64/src/testing/testing.go:1493 +0x47\r\n\r\nPrevious write at 0x00c000426348 by goroutine 111:\r\n  github.com/ethereum/go-ethereum/core.(*TxPool).reset()\r\n      /home/travis/gopath/src/github.com/ethereum/go-ethereum/core/tx_pool.go:1291 +0xe3c\r\n  github.com/ethereum/go-ethereum/core.(*TxPool).runReorg()\r\n      /home/travis/gopath/src/github.com/ethereum/go-ethereum/core/tx_pool.go:1155 +0x373\r\n  github.com/ethereum/go-ethereum/core.(*TxPool).scheduleReorgLoop.func2()\r\n      /home/travis/gopath/src/github.com/ethereum/go-ethereum/core/tx_pool.go:1084 +0x71\r\n```\r\n```golang\r\n// Nonce returns the next nonce of an account, with all transactions executable\r\n// by the pool already applied on top.\r\nfunc (pool *TxPool) Nonce(addr common.Address) uint64 {\r\n\treturn pool.pendingNonces.get(addr) //           <- THIS LINE\r\n}\r\n```\r\n```golang\r\n\tpool.currentState = statedb\r\n\tpool.pendingNonces = newTxNoncer(statedb)   <-- PREVIOUS WRITE\r\n\tpool.currentMaxGas = newHead.GasLimit\r\n```\r\n",
+  "closed_by": {
+    "login": "holiman",
+    "id": 142290,
+    "node_id": "MDQ6VXNlcjE0MjI5MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/142290?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/holiman",
+    "html_url": "https://github.com/holiman",
+    "followers_url": "https://api.github.com/users/holiman/followers",
+    "following_url": "https://api.github.com/users/holiman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/holiman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/holiman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/holiman/subscriptions",
+    "organizations_url": "https://api.github.com/users/holiman/orgs",
+    "repos_url": "https://api.github.com/users/holiman/repos",
+    "events_url": "https://api.github.com/users/holiman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/holiman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25869/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25869/timeline",
+  "performed_via_github_app": null,
+  "state_reason": "completed"
+}
+[
+
+]

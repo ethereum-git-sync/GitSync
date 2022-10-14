@@ -379,13 +379,13 @@
     "body": "This code is still in https://goethereumbook.org/wallet-generate/ so I ended up here too - I think it's safe to replace the import with \"golang.org/x/crypto/sha3\" and use hash := sha3.NewLegacyKeccak256()",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/1058591046/reactions",
-      "total_count": 0,
+      "total_count": 1,
       "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,
-      "heart": 0,
+      "heart": 1,
       "rocket": 0,
       "eyes": 0
     },

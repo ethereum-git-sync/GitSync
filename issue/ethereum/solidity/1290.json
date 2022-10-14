@@ -40,6 +40,15 @@
       "description": null
     },
     {
+      "id": 785717317,
+      "node_id": "MDU6TGFiZWw3ODU3MTczMTc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/language%20design%20:rage4:",
+      "name": "language design :rage4:",
+      "color": "9d76d3",
+      "default": false,
+      "description": "Any changes to the language, e.g. new features"
+    },
+    {
       "id": 838064207,
       "node_id": "MDU6TGFiZWw4MzgwNjQyMDc=",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/annoys%20users%20:cry:",
@@ -47,6 +56,24 @@
       "color": "ea2cab",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
     }
   ],
   "state": "open",
@@ -56,9 +83,9 @@
 
   ],
   "milestone": null,
-  "comments": 11,
+  "comments": 12,
   "created_at": "2016-10-26T09:53:19Z",
-  "updated_at": "2022-08-17T13:49:54Z",
+  "updated_at": "2022-09-28T10:08:50Z",
   "closed_at": null,
   "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
@@ -572,6 +599,50 @@
     "body": "This is still an issue on 0.8.15:\r\n\r\n```Solidity\r\nContract Test1 {\r\n    uint256 public constant WAD = 1e18;\r\n}\r\n\r\nContract Test2 {\r\n    function getWad() external pure returns (uint256) {\r\n        return Test1.WAD();\r\n    }\r\n}\r\n```\r\n\r\nreturns `Member \"WAD\" not found or not visible after argument-dependent lookup in type(contract Test1). `",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1199397540/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1260198872",
+    "html_url": "https://github.com/ethereum/solidity/issues/1290#issuecomment-1260198872",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/1290",
+    "id": 1260198872,
+    "node_id": "IC_kwDOAm_5kc5LHRvY",
+    "user": {
+      "login": "itaborda",
+      "id": 2608289,
+      "node_id": "MDQ6VXNlcjI2MDgyODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2608289?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/itaborda",
+      "html_url": "https://github.com/itaborda",
+      "followers_url": "https://api.github.com/users/itaborda/followers",
+      "following_url": "https://api.github.com/users/itaborda/following{/other_user}",
+      "gists_url": "https://api.github.com/users/itaborda/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/itaborda/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/itaborda/subscriptions",
+      "organizations_url": "https://api.github.com/users/itaborda/orgs",
+      "repos_url": "https://api.github.com/users/itaborda/repos",
+      "events_url": "https://api.github.com/users/itaborda/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/itaborda/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-28T00:06:40Z",
+    "updated_at": "2022-09-28T00:06:40Z",
+    "author_association": "NONE",
+    "body": "I also believe that something like this would be perfectly possible\r\n\r\ntype(ContractWithConstant).CONSTANT_NAME\r\n\r\nvery similar to\r\n\r\ntype(uint).max",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1260198872/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

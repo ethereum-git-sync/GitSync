@@ -31,15 +31,6 @@
   },
   "labels": [
     {
-      "id": 249074437,
-      "node_id": "MDU6TGFiZWwyNDkwNzQ0Mzc=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/enhancement",
-      "name": "enhancement",
-      "color": "84b6eb",
-      "default": true,
-      "description": null
-    },
-    {
       "id": 467898404,
       "node_id": "MDU6TGFiZWw0Njc4OTg0MDQ=",
       "url": "https://api.github.com/repos/ethereum/solidity/labels/breaking%20change%20:warning:",

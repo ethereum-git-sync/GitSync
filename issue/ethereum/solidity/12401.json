@@ -51,7 +51,7 @@
   "created_at": "2021-12-12T05:52:03Z",
   "updated_at": "2022-08-17T13:48:46Z",
   "closed_at": null,
-  "author_association": "NONE",
+  "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "## Description\r\n\r\nGiven these two contracts, where `B` is trying to call the constructor of `A` with an empty array:\r\n\r\n```\r\ncontract A {\r\n    address[] addresses public;\r\n    constructor(address[] memory _addresses) {\r\n        addresses = _addresses;\r\n    }\r\n}\r\n\r\ncontract B is A {\r\n    constructor() A([]) {  // (*)\r\n    }\r\n}\r\n```\r\n\r\nAt line `(*)`, I get `TypeError: Unable to deduce common type for array elements.`\r\n\r\nIf I change the parameter from `[]` to `(address[]) []`, I get `TypeError: Invalid type for argument in modifier invocation. Invalid implicit conversion from type(address[] memory[] memory) to address[] memory requested.`\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.10\r\n- Target EVM version (as per compiler settings): compiler default\r\n- Framework/IDE (e.g. Truffle or Remix): Remix\r\n- EVM execution environment / backend / blockchain client:\r\n- Operating system: Linux\r\n\r\n## Steps to Reproduce\r\n\r\nSee above.\r\n\r\nRelated: #621.\r\n",
   "closed_by": null,
@@ -144,7 +144,7 @@
     },
     "created_at": "2021-12-13T12:50:52Z",
     "updated_at": "2021-12-13T12:50:52Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "You can bound the type by looking at where the data is being sent (in this case, the function parameter).\r\n\r\nAs a workaround, how do I create a typed empty array and pass it from a constructor to the suoerconstructir? I can't seem to find a way.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/992446278/reactions",
@@ -232,7 +232,7 @@
     },
     "created_at": "2021-12-13T20:33:05Z",
     "updated_at": "2021-12-13T20:34:31Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "Thanks for the suggestion, that solves my immediate problem, at least.\r\n\r\nFor locals, you can simply declare \r\n\r\n```\r\naddress[] memory empty;\r\nfunc(empty);\r\n```\r\n\r\nhowever `empty` cannot be declared without an assignment, for a field of the contract (and a local can't be declared before a superconstructor call). Shouldn't the syntax of fields and local variables be the same?\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/992870843/reactions",
@@ -320,7 +320,7 @@
     },
     "created_at": "2021-12-14T02:44:48Z",
     "updated_at": "2021-12-14T02:44:48Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "@petr-hejda Thanks, yes, that's what I was doing before, but I didn't want to pass the array into the sub-contract's constructor, so the function solution that @chriseth supplied works better in my case.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/993103107/reactions",

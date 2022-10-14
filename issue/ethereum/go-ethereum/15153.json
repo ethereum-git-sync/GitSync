@@ -159,8 +159,8 @@
     "body": "I'm syncing in fast mode, and I'm always ~64 block behind the endBlock. I know it's because of the state tries downloading. The problem is that geth keeps being killed, either by SIGKILL or by Supervisor (exit status 2; expected). Thus, the state tries keep resetting to zero and i'm not able to finish syncing. \r\nHow can I prevent geth from being killed, or limit the amount of memory it consumes?\r\nI use Geth [1.8.1-stable] on Ubuntu [16.04]. 3GB RAM. SSD.\r\n`geth --syncmode \"fast\" --cache=1536 --rpc --rpcaddr 127.0.0.1 rpcport=8545 --rpcapi \"web3,eth,debug\" --maxpeers \"128`\"\r\nthanks\r\nEDIT: I solved this by lowering the cache to 768",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/comments/372060521/reactions",
-      "total_count": 0,
-      "+1": 0,
+      "total_count": 1,
+      "+1": 1,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

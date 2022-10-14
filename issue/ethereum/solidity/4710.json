@@ -60,8 +60,8 @@
     {
       "id": 1012613901,
       "node_id": "MDU6TGFiZWwxMDEyNjEzOTAx",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/difficulty:%20easy",
-      "name": "difficulty: easy",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/easy%20difficulty",
+      "name": "easy difficulty",
       "color": "0b3f89",
       "default": false,
       "description": ""

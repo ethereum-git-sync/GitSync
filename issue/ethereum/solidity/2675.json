@@ -31,13 +31,31 @@
   },
   "labels": [
     {
-      "id": 455256446,
-      "node_id": "MDU6TGFiZWw0NTUyNTY0NDY=",
-      "url": "https://api.github.com/repos/ethereum/solidity/labels/waiting%20for%20more%20input",
-      "name": "waiting for more input",
-      "color": "fef2c0",
+      "id": 838064207,
+      "node_id": "MDU6TGFiZWw4MzgwNjQyMDc=",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/annoys%20users%20:cry:",
+      "name": "annoys users :cry:",
+      "color": "ea2cab",
       "default": false,
-      "description": "Issues waiting for more input by the reporter"
+      "description": ""
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438155599,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjhTw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/medium%20impact",
+      "name": "medium impact",
+      "color": "314aff",
+      "default": false,
+      "description": "Default level of impact"
     }
   ],
   "state": "open",
@@ -49,7 +67,7 @@
   "milestone": null,
   "comments": 30,
   "created_at": "2017-08-01T04:44:53Z",
-  "updated_at": "2022-09-11T18:57:27Z",
+  "updated_at": "2022-09-27T18:50:37Z",
   "closed_at": null,
   "author_association": "NONE",
   "active_lock_reason": null,
@@ -57,8 +75,8 @@
   "closed_by": null,
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/2675/reactions",
-    "total_count": 15,
-    "+1": 15,
+    "total_count": 16,
+    "+1": 16,
     "-1": 0,
     "laugh": 0,
     "hooray": 0,
@@ -236,8 +254,8 @@
     "body": "I think compiler and linter shouldn't be one thing without option to run each one separately. Turning off linter for 3rd party libraries is not extreme option. We don't run it on `node_modules` files, when we develop JS project, do we? ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/319316434/reactions",
-      "total_count": 7,
-      "+1": 7,
+      "total_count": 8,
+      "+1": 8,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -280,8 +298,8 @@
     "body": "> On the other hand, I guess we owe it to our users to constantly improve all code, including library code.\r\n\r\nIt's pretty naive to think people will happily start to make changes to 3rd party code when compiler makes them feel annoyed. They'll just use `grep` to filter out useless warnings. I wouldn't touch 3rd party code that's been audited and deployed on mainnet even if compiler warnings want me to. ",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/319321858/reactions",
-      "total_count": 10,
-      "+1": 10,
+      "total_count": 12,
+      "+1": 12,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -412,8 +430,8 @@
     "body": "I am a strong advocate of providing a mechanism for ignoring warnings.  I personally prefer per line warnings like in #2691 but warnings do need a way of being ignored.  The reasoning for this is because if you don't give people a way to ignore specific warnings, they will end up ignoring _all_ warnings just to silence a few.  We want to encourage people to treat warnings as errors for the purpose of CI and release, but we can only do that if we give them a way to ignore specific warnings when it is appropriate.  In a large project with thousands of lines of code, there is likely one or two places where the warning should be suppressed.  If the only option to the user is to ignore all warnings in CI in order to get a build pushed through, then we have just created a vector for introducing bugs in a project that otherwise would have followed a good procedure for minimizing risk.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/320073260/reactions",
-      "total_count": 44,
-      "+1": 40,
+      "total_count": 45,
+      "+1": 41,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -500,8 +518,8 @@
     "body": "> The reasoning for this is because if you don't give people a way to ignore specific warnings, they will end up ignoring _all_ warnings just to silence a few. \r\n\r\nOur team has stopped reading the several screens of warnings from OpenZeppelin, Chainlink, etc. that are being outputted and consequently we are missing the warnings from our own code now.  Wish there were an option to turn off the several screens of useless warnings so we can see the few from ours at the end only.  (you may debate if they are useless, but the vast majority are about license identifiers...). I may just implement the recommendation above from someone to grep out the useless ones.\r\n",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/777649255/reactions",
-      "total_count": 3,
-      "+1": 3,
+      "total_count": 4,
+      "+1": 4,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -1116,8 +1134,8 @@
     "body": "Oh, the SPDX thing I have *long* felt should be disablable.  It is incredibly opinionated about how licencing works and not everyone agrees on it.  I *personally* think it is amazingly dumb to have license information (metadata) inside my source files.  I have a repository wide license file and I don't want my source files cluttered with that stuff.  On top of that it limits licenses to SPDX licenses, which is constraining for any kind of iteration on the licensing front.\r\n\r\nIf you want to have opinionated things, put them in a litter and not a compiler.  It is totally inappropriate for a compiler to be checking for that.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/782821535/reactions",
-      "total_count": 4,
-      "+1": 4,
+      "total_count": 5,
+      "+1": 5,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,
@@ -1248,9 +1266,9 @@
     "body": "@chuckb You can install a version specific for Solidity 0.7 that does not have this warning with `npm install @openzeppelin/contracts@3.4.0-solc-0.7`. Hopefully this special version will not be necessary for future releases of Solidity.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/786047432/reactions",
-      "total_count": 1,
+      "total_count": 2,
       "+1": 1,
-      "-1": 0,
+      "-1": 1,
       "laugh": 0,
       "hooray": 0,
       "confused": 0,

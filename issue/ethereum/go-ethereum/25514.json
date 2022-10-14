@@ -76,10 +76,10 @@
   },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/go-ethereum/issues/25514/reactions",
-    "total_count": 16,
+    "total_count": 19,
     "+1": 0,
     "-1": 0,
-    "laugh": 14,
+    "laugh": 17,
     "hooray": 0,
     "confused": 0,
     "heart": 1,

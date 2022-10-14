@@ -69,7 +69,7 @@
   "created_at": "2022-06-13T22:38:17Z",
   "updated_at": "2022-08-28T21:25:43Z",
   "closed_at": null,
-  "author_association": "NONE",
+  "author_association": "CONTRIBUTOR",
   "active_lock_reason": null,
   "body": "## Description\r\n\r\nWhen trying to call an `external` function from the same contract, the error message generated is:\r\n\r\n```\r\nDeclarationError: Undeclared identifier. \"functionName\" is not (or not yet) visible at this point.\r\n```\r\n\r\nThis is confusing as a newcomer to Solidity. It took me forever to realize that `external` functions cannot be called by other functions within the same contract. The assumption I made was that `external` was a superset of `public`, but actually it is the other way around.\r\n\r\nI would suggest reporting an error like the following in this situation:\r\n\r\n```\r\nDeclarationError: Undeclared identifier. \"functionName\" is not visible at this point, because it is marked as external, not public.\r\n```\r\n\r\nSimilarly trying to call a `private` function from a subcontract should probably show the same sort of warning that the function is marked `private` and not `internal`, although the reason for lack of visibility is far more obvious in that situation.\r\n\r\n## Environment\r\n\r\n- Compiler version: 0.8.14\r\n",
   "closed_by": null,
@@ -162,7 +162,7 @@
     },
     "created_at": "2022-06-16T22:57:01Z",
     "updated_at": "2022-06-16T22:57:01Z",
-    "author_association": "NONE",
+    "author_association": "CONTRIBUTOR",
     "body": "`and thereby not visible unqualified` doesn't seem grammatical...\r\n\r\nIf this is some compiler-internal terminology, it should be surfaced in a more comprehensible way to the public via the error message.",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1158240227/reactions",

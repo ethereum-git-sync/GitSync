@@ -1,0 +1,94 @@
+{
+  "url": "https://api.github.com/repos/ethereum/solidity/issues/13550",
+  "repository_url": "https://api.github.com/repos/ethereum/solidity",
+  "labels_url": "https://api.github.com/repos/ethereum/solidity/issues/13550/labels{/name}",
+  "comments_url": "https://api.github.com/repos/ethereum/solidity/issues/13550/comments",
+  "events_url": "https://api.github.com/repos/ethereum/solidity/issues/13550/events",
+  "html_url": "https://github.com/ethereum/solidity/issues/13550",
+  "id": 1382209112,
+  "node_id": "I_kwDOAm_5kc5SYtZY",
+  "number": 13550,
+  "title": "Yul formatter",
+  "user": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 3515010024,
+      "node_id": "LA_kwDOAm_5kc7Rgsvo",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/good%20first%20issue%20candidate",
+      "name": "good first issue candidate",
+      "color": "91B44D",
+      "default": false,
+      "description": "Could be a \"good first issue\" but something is blocking it or it has open questions."
+    },
+    {
+      "id": 4438006499,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIaa4w",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20effort",
+      "name": "low effort",
+      "color": "ffb1fa",
+      "default": false,
+      "description": "There is not much implementation work to be done. The task is very easy or tiny."
+    },
+    {
+      "id": 4438157609,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjpKQ",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/low%20impact",
+      "name": "low impact",
+      "color": "5d71ff",
+      "default": false,
+      "description": "Changes are not very noticeable or potential benefits are limited."
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2022-09-22T10:23:21Z",
+  "updated_at": "2022-09-22T10:23:21Z",
+  "closed_at": null,
+  "author_association": "MEMBER",
+  "active_lock_reason": null,
+  "body": "This came up in https://github.com/ethereum/solidity/issues/12570#issuecomment-1253478487.\r\n\r\nThe compiler can parse Yul and output it after processing. Implementing a pretty-printer mode for Yul that does no actual processing would be trivial and potentially useful.\r\n\r\nNot sure if we actually want to do this (it's a bit tangential to compiler's main purpose) but on the other hand we already have all the pieces for it. Similar to the situation in #12753.",
+  "closed_by": null,
+  "reactions": {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/13550/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+  },
+  "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/13550/timeline",
+  "performed_via_github_app": null,
+  "state_reason": null
+}
+[
+
+]

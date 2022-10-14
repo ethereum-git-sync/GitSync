@@ -49,21 +49,40 @@
       "description": "Error is just badly reported. Should be a proper type error - source is not fine."
     }
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "assignees": [
 
   ],
   "milestone": null,
-  "comments": 2,
+  "comments": 3,
   "created_at": "2021-09-26T11:59:32Z",
-  "updated_at": "2021-09-27T21:08:05Z",
-  "closed_at": null,
+  "updated_at": "2022-09-27T00:08:46Z",
+  "closed_at": "2022-09-27T00:08:45Z",
   "author_association": "MEMBER",
   "active_lock_reason": null,
   "body": "```\r\npragma abicoder v2;\r\n\r\ncontract C {\r\nstruct S { function() internal a; }\r\nfunction f(S[2] calldata) public {}\r\n}\r\n```\r\n\r\nthrows\r\n\r\nhttps://github.com/ethereum/solidity/blob/3c8846e669ef7963bf9a84a856786b7d1d7dd01c/libsolidity/ast/Types.cpp#L2149",
-  "closed_by": null,
+  "closed_by": {
+    "login": "cameel",
+    "id": 137030,
+    "node_id": "MDQ6VXNlcjEzNzAzMA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cameel",
+    "html_url": "https://github.com/cameel",
+    "followers_url": "https://api.github.com/users/cameel/followers",
+    "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+    "organizations_url": "https://api.github.com/users/cameel/orgs",
+    "repos_url": "https://api.github.com/users/cameel/repos",
+    "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cameel/received_events",
+    "type": "User",
+    "site_admin": false
+  },
   "reactions": {
     "url": "https://api.github.com/repos/ethereum/solidity/issues/12028/reactions",
     "total_count": 0,
@@ -78,7 +97,7 @@
   },
   "timeline_url": "https://api.github.com/repos/ethereum/solidity/issues/12028/timeline",
   "performed_via_github_app": null,
-  "state_reason": null
+  "state_reason": "completed"
 }
 [
   {
@@ -159,6 +178,50 @@
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/928281284/reactions",
       "total_count": 1,
       "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258806788",
+    "html_url": "https://github.com/ethereum/solidity/issues/12028#issuecomment-1258806788",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/12028",
+    "id": 1258806788,
+    "node_id": "IC_kwDOAm_5kc5LB94E",
+    "user": {
+      "login": "cameel",
+      "id": 137030,
+      "node_id": "MDQ6VXNlcjEzNzAzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cameel",
+      "html_url": "https://github.com/cameel",
+      "followers_url": "https://api.github.com/users/cameel/followers",
+      "following_url": "https://api.github.com/users/cameel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cameel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cameel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cameel/subscriptions",
+      "organizations_url": "https://api.github.com/users/cameel/orgs",
+      "repos_url": "https://api.github.com/users/cameel/repos",
+      "events_url": "https://api.github.com/users/cameel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cameel/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-27T00:08:45Z",
+    "updated_at": "2022-09-27T00:08:45Z",
+    "author_association": "MEMBER",
+    "body": "Closing since #11610 has been fixed. Now the example from the description generates a proper error:\r\n```\r\nError: Internal type is not allowed for public or external functions.\r\n --> test.sol:5:12:\r\n  |\r\n5 | function f(S[2] calldata) public {}\r\n  |            ^^^^^^^^^^^^^\r\n```",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1258806788/reactions",
+      "total_count": 0,
+      "+1": 0,
       "-1": 0,
       "laugh": 0,
       "hooray": 0,

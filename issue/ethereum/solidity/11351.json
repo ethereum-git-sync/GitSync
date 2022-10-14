@@ -47,6 +47,33 @@
       "color": "3B8CF5",
       "default": false,
       "description": ""
+    },
+    {
+      "id": 4437999539,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIZ_sw",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20effort",
+      "name": "high effort",
+      "color": "ff54f4",
+      "default": false,
+      "description": "A lot to implement but still doable by a single person. The task is large or difficult."
+    },
+    {
+      "id": 4438153180,
+      "node_id": "LA_kwDOAm_5kc8AAAABCIjX3A",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/high%20impact",
+      "name": "high impact",
+      "color": "001dff",
+      "default": false,
+      "description": "Changes are very prominent and affect users or the project in a major way."
+    },
+    {
+      "id": 4438481746,
+      "node_id": "LA_kwDOAm_5kc8AAAABCI3bUg",
+      "url": "https://api.github.com/repos/ethereum/solidity/labels/must%20have%20eventually",
+      "name": "must have eventually",
+      "color": "ffb04d",
+      "default": false,
+      "description": "Something we consider essential but not enough to prevent us from releasing Solidity 1.0 without it."
     }
   ],
   "state": "open",
@@ -56,9 +83,9 @@
 
   ],
   "milestone": null,
-  "comments": 10,
+  "comments": 11,
   "created_at": "2021-05-05T16:05:24Z",
-  "updated_at": "2022-08-17T13:49:15Z",
+  "updated_at": "2022-09-28T16:35:50Z",
   "closed_at": null,
   "author_association": "MEMBER",
   "active_lock_reason": null,
@@ -509,6 +536,50 @@
     "body": "It is possible now to use CircleCI's ARM machines, but the image they have is a rather old Ubuntu. We use it in [Fizzy](https://github.com/wasmx/fizzy/blob/master/circle.yml#L519-L522):\r\n```yaml\r\n  arm64-native:\r\n    machine:\r\n      image: ubuntu-2004:current\r\n      resource_class: arm.large\r\n    steps:\r\n```",
     "reactions": {
       "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1152787027/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null
+  },
+  {
+    "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1261121838",
+    "html_url": "https://github.com/ethereum/solidity/issues/11351#issuecomment-1261121838",
+    "issue_url": "https://api.github.com/repos/ethereum/solidity/issues/11351",
+    "id": 1261121838,
+    "node_id": "IC_kwDOAm_5kc5LKzEu",
+    "user": {
+      "login": "axic",
+      "id": 20340,
+      "node_id": "MDQ6VXNlcjIwMzQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20340?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/axic",
+      "html_url": "https://github.com/axic",
+      "followers_url": "https://api.github.com/users/axic/followers",
+      "following_url": "https://api.github.com/users/axic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/axic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/axic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/axic/subscriptions",
+      "organizations_url": "https://api.github.com/users/axic/orgs",
+      "repos_url": "https://api.github.com/users/axic/repos",
+      "events_url": "https://api.github.com/users/axic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/axic/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2022-09-28T15:58:18Z",
+    "updated_at": "2022-09-28T15:58:47Z",
+    "author_association": "MEMBER",
+    "body": "Even windows+arm is now supported on github actions too: https://github.blog/changelog/2022-09-28-github-actions-self-hosted-runners-now-support-windows-arm-hardware/",
+    "reactions": {
+      "url": "https://api.github.com/repos/ethereum/solidity/issues/comments/1261121838/reactions",
       "total_count": 0,
       "+1": 0,
       "-1": 0,

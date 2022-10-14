@@ -378,7 +378,7 @@
     },
     "created_at": "2022-05-23T17:51:27Z",
     "updated_at": "2022-05-23T18:15:44Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "edit: I was talking w/ @metachris about the roles b/t builders, relays and proposers and some of what I wrote below may need to be adjusted, I'd suggest just holding tight on this for now\r\n\r\n@avsetsin welcome! I agree we should be able to track which builders and/or relays were involved in a given proposal.\r\n\r\nI'll assume when you say \"MEV-Boost\" you are referring to the overall pipeline and not that you are trying to identify that the particular relay mux software `mev-boost` is being used or not\r\n\r\nand from there I have a clarifying question for the issue: do we really care if we can identify the specific relay? or just that we want to attribute a proposal to a specific builder? some of this comes down to where we are today (just flashbots as the ~single builder/relay) and where I would like to see us head with a robust, healthy decentralized builder ecosystem with multiple competing players.\r\n\r\nif we want to build towards this wider world, then I think the critical thing is to expose `SignedBuilderBid`s (the builder can do this, the relay can provide as a service, there can be \"data availability\" DAOs that do this as part of a service, etc.) so that we can tie a given proposal on-chain (or even off-chain if you are collecting orphan blocks) to a given builder.\r\n\r\nif we want relay attributability as well (I personally haven't thought about this yet) then we will want to extend the https://github.com/ethereum/builder-specs so that relays sign over the `SignedBuilderBid`s\r\n\r\neither way, to bridge from here to then, I could see the flashbots relay exposing an endpoint for all of the `SignedBuilderBid`s they offer to proposers. Then anyone can compare which transactions end up in blocks against what the relay provides.  \r\n\r\nI would structure this as part of the \"relay APIs\" or even just flashbots-specific APIs for now and would not add this concern into the https://github.com/ethereum/builder-specs",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1134968486/reactions",
@@ -466,7 +466,7 @@
     },
     "created_at": "2022-05-27T17:51:24Z",
     "updated_at": "2022-05-27T17:51:24Z",
-    "author_association": "CONTRIBUTOR",
+    "author_association": "COLLABORATOR",
     "body": "yeah I can see the use case (and there are many others!) being valuable\r\n\r\nI opened this issue to see what the appetite is for how attributable we want each message to be to which actors\r\n\r\nhttps://github.com/ethereum/builder-specs/issues/23",
     "reactions": {
       "url": "https://api.github.com/repos/flashbots/mev-boost/issues/comments/1139893592/reactions",

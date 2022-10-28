@@ -24,6 +24,11 @@ Gitea: https://gitea.com/ethereum-git-sync
        https://gitea.com/tweth
 ```
 
+Issues are hosted here:
+```
+ethereum-git-sync/github/issues/archive
+```
+
 ## Server Set-up
 
 ### SSH Config

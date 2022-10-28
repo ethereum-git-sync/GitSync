@@ -26,7 +26,7 @@ Gitea: https://gitea.com/ethereum-git-sync
 
 Issues are hosted here:
 ```
-ethereum-git-sync/github/issues/archive
+github.com/ethereum-git-sync/github-issues-archive
 ```
 
 ## Server Set-up

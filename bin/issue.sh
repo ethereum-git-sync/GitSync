@@ -2,7 +2,6 @@
 
 API_LIMIT_REACHED=0
 ISSUE_DIRECTORY="/home/ubuntu/github-issues-archive/issue"
-#ISSUE_DIRECTORY="/home/ubuntu/GitSync/issue"
 
 function create_directory() {
 	echo "$ISSUE_DIRECTORY/$1" 
@@ -82,11 +81,11 @@ then
 	gather_issues ${1}
 	
 	cd $ISSUE_DIRECTORY/
-	#git fetch
-	#git merge
-	#git add .
-	#git commit -m "Updated issues for $1"
-	#git push
+	git fetch
+	git merge
+	git add .
+	git commit -m "Updated issues for $1"
+	git push
 else
 	echo "There is no repo to collect issues from."
 fi

@@ -16,6 +16,7 @@ ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM
 ethereum-git-sync/GitSync
 flashbots/mev-boost
+flashbots/mev-boost-relay
 ```
 
 Current Hosts:

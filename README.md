@@ -15,6 +15,7 @@ ethereum/PM
 ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM
 ethereum-git-sync/GitSync
+ethereum-git-sync/github-issues-archive
 flashbots/mev-boost
 flashbots/mev-boost-relay
 ```

@@ -12,12 +12,25 @@ ethereum/go-ethereum
 ethereum/remix-project
 ethereum/EIPs
 ethereum/PM
+ethereum/js-ethereum-cryptography
+ethereum/annotated-spec
+ethereum/execution-spec-tests
+ethereum/staking-launchpad
+ethereum/consensus-spec-tests
+ethereum/execution-specs
+ethereum/execution-apis
+ethereum/tests
+ethereum/py-evm
+ethereum/devp2p
+ethereum/yellowpaper
+ethereum/distributed-validator-specs
 ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM
 ethereum-git-sync/GitSync
 ethereum-git-sync/github-issues-archive
 flashbots/mev-boost
 flashbots/mev-boost-relay
+
 ```
 
 Current Hosts:

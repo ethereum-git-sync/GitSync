@@ -5,6 +5,7 @@ repo_owner="${1%%/*}"
 repo_name=${1#*/}
 account_gitea=""
 account_bitbucket=""
+account_name_modifier="gs-"
 ssh_gitea=""
 ssh_bitbucket="bitbucket.org"
 
@@ -36,16 +37,10 @@ then
 fi
 
 #Bitbucket
-#Repos under "ethereum" are synced to "ethereum-base" currently
-if [ "$repo_owner" = "ethereum" ]
-then
-	account_bitbucket="ethereum-base"
-else
-	account_bitbucket=$repo_owner
-fi
+account_bitbucket="$account_name_modifier$repo_owner"
 
 #Pushing to all services
 echo "Pushing to gitea"
-/usr/bin/git -C /home/ubuntu/GitSync/repo/github/$"$1" push --prune --mirror git@$ssh_gitea:$account_gitea/$"$repo_name"
+#/usr/bin/git -C /home/ubuntu/GitSync/repo/github/$"$1" push --prune --mirror git@$ssh_gitea:$account_gitea/$"$repo_name"
 echo "Pushing to bitbucket"
 /usr/bin/git -C /home/ubuntu/GitSync/repo/github/$"$1" push --prune --mirror git@$ssh_bitbucket:$account_bitbucket/$"$repo_name"

@@ -22,3 +22,10 @@ ethereum-git-sync/GitSync
 ethereum-git-sync/github-issues-archive
 flashbots/mev-boost
 flashbots/mev-boost-relay
+status-im/status-desktop
+status-im/status-mobile
+MetaMask/core
+matter-labs/zksync
+matter-labs/zksync-era
+MyEtherWallet/MyEtherWallet
+MyCryptoHQ/MyCrypto

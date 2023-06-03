@@ -59,8 +59,6 @@ Current Hosts:
 ```
 Gitea: https://gitea.com/ethereum-git-sync
        https://gitea.com/tweth
-
-Bitbucket
 ```
 
 Issues are hosted here:

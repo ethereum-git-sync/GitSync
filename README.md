@@ -37,6 +37,22 @@ matter-labs/zksync
 matter-labs/zksync-era
 MyEtherWallet/MyEtherWallet
 MyCryptoHQ/MyCrypto
+ledgerwatch/erigon
+hyperledger/besu
+NethermindEth/nethermind
+ConsenSys/teku
+prysmaticlabs/prysm
+ChainSafe/lodestar
+sigp/lighthouse
+ethereum-optimism/optimism
+OffchainLabs/arbitrum
+OpenZeppelin/openzeppelin-contracts
+trufflesuite/truffle
+NomicFoundation/hardhat
+ethers-io/ethers.js/
+eth-brownie/brownie
+foundry-rs/foundry
+vyperlang/vyper
 ```
 
 Current Hosts:

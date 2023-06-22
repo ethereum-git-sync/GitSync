@@ -65,7 +65,7 @@ function gather_issues() {
 				> $ISSUE_DIRECTORY/${1}/temp.json
 			cp $ISSUE_DIRECTORY/${1}/temp.json $ISSUE_DIRECTORY/${1}/issues_current.json
 			rm $ISSUE_DIRECTORY/${1}/temp.json
-			echo "API LIMIT REACHED @ ISSUE# $LINE"
+			echo "API LIMIT HIT AT ISSSUE# $ISSUE_NUMBER" 
 		fi
         done
 

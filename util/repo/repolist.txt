@@ -18,8 +18,6 @@ ethereum/yellowpaper
 ethereum/distributed-validator-specs
 ethereum-cat-herders/EIPIP
 ethereum-cat-herders/PM
-ethereum-git-sync/GitSync
-ethereum-git-sync/github-issues-archive
 flashbots/mev-boost
 flashbots/mev-boost-relay
 status-im/status-desktop
@@ -45,4 +43,5 @@ ethers-io/ethers.js/
 eth-brownie/brownie
 foundry-rs/foundry
 vyperlang/vyper
-
+ethereum-git-sync/GitSync
+ethereum-git-sync/github-issues-archive

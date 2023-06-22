@@ -59,6 +59,8 @@ Current Hosts:
 ```
 Gitea: https://gitea.com/ethereum-git-sync
        https://gitea.com/tweth
+
+Bitbucket
 ```
 
 Issues are hosted here:
@@ -88,6 +90,13 @@ Host gitea.com
 	HostName gitea.com
         PreferredAuthentications publickey
         IdentitiesOnly yes
+	IdentityFile ~/.ssh/SSH_KEY
+
+Host bitbucket.org
+	User git
+	HostName bitbucket.org
+	PreferredAuthentications publickey
+	IdentitiesOnly yes
 	IdentityFile ~/.ssh/SSH_KEY
 ```
 If multiple users for the same host are needed, a Host block can be copied, with only the Host name and IdentityFile needing updated to represent an additional user and their SSH key. Scripts should be updated to reflect this change as well (`git@gitea.com, git@gitea.com-2, etc.`).
